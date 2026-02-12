@@ -4,20 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "6de1426bb07d1631",
+        "id": "2632e6f3d909c8e6",
         "type": "tabs",
         "children": [
           {
-            "id": "e0160f3f7fabfab4",
+            "id": "831f92453b2714e6",
             "type": "leaf",
             "state": {
-              "type": "bases",
+              "type": "markdown",
               "state": {
-                "file": "Untitled.base",
-                "viewName": "表格"
+                "file": "Welcome.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-table",
-              "title": "Untitled"
+              "icon": "lucide-file",
+              "title": "Welcome"
             }
           }
         ]
@@ -83,8 +84,7 @@
               "title": "Source Control"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
@@ -104,7 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Untitled.base",
+                "file": "Welcome.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Untitled 的反向链接列表"
+              "title": "Welcome 的反向链接列表"
             }
           },
           {
@@ -123,12 +123,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Untitled.base",
+                "file": "Welcome.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Untitled 的出链列表"
+              "title": "Welcome 的出链列表"
             }
           },
           {
@@ -166,20 +166,22 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Untitled.base",
+                "file": "Welcome.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Untitled 的大纲"
+              "title": "Welcome 的大纲"
             }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -193,13 +195,15 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e0160f3f7fabfab4",
+  "active": "831f92453b2714e6",
   "lastOpenFiles": [
-    "未命名.md",
-    "Untitled.base",
+    "create a link.md",
+    "Welcome.md",
+    "Factor Investing Chapter 1.md",
     "2026-02-12.md",
+    "未命名.md",
     "Untitled.canvas",
-    "Untitled.md",
-    "Welcome.md"
+    "Untitled.base",
+    "未命名.base"
   ]
 }
