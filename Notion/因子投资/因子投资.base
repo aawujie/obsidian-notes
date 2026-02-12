@@ -1,0 +1,23 @@
+filters:
+  and:
+    - note["base"] == link("因子投资.base")
+properties:
+  file.name:
+    displayName: Page
+  Last edited time:
+    displayName: Last edited time
+  Tags:
+    displayName: Tags
+  Verification:
+    displayName: Verification
+  Owner:
+    displayName: Owner
+views:
+  - type: table
+    name: Table View
+    order:
+      - file.name
+      - Last edited time
+      - Tags
+      - Verification
+      - Owner
