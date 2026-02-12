@@ -4,17 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "2dcdb884cb489f23",
+        "id": "6de1426bb07d1631",
         "type": "tabs",
         "children": [
           {
-            "id": "23119d1d33a0e992",
+            "id": "e0160f3f7fabfab4",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "新标签页"
+              "type": "bases",
+              "state": {
+                "file": "Untitled.base",
+                "viewName": "表格"
+              },
+              "icon": "lucide-table",
+              "title": "Untitled"
             }
           }
         ]
@@ -101,6 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Untitled.base",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +114,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "反向链接"
+              "title": "Untitled 的反向链接列表"
             }
           },
           {
@@ -189,8 +193,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "7f656c576a4fd7eb",
+  "active": "e0160f3f7fabfab4",
   "lastOpenFiles": [
+    "未命名.md",
     "Untitled.base",
     "2026-02-12.md",
     "Untitled.canvas",
