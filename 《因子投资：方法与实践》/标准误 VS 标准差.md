@@ -1,7 +1,3 @@
----
-share_link: https://share.note.sx/xv5qm6ak#ewris84XG9VEnEtX/QIuBnlGyj7U6b+loESUXY5FG3E
-share_updated: 2026-02-12T19:58:39+08:00
----
 **标准误**（Standard Error，简称 **SE**）是统计学中一个非常重要的概念。简单来说，它衡量的是**<span style="color:rgb(195, 121, 251)">样本统计量（比如样本均值）与总体真实参数（比如总体均值）之间的差距</span>**。
 
 为了让你彻底理解，我们需要把它和**标准差**（Standard Deviation，简称 **SD**）区分开，这是最容易混淆的地方。
