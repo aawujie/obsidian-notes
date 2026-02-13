@@ -11,6 +11,8 @@
 
 在统计学里，矩是用来**描述一组数据 “长什么样” 的数字指标**。通过不同阶数的矩，你可以勾勒出一个概率分布的轮廓：
 
+![[Pasted image 20260213203153.png]]
+
 *   **一阶原点矩（Mean, <span style="color:rgb(255, 77, 77)">均值</span>）**：$E[X^1]$。
     *   描述<span style="color:rgb(195, 117, 255)">数据的<b>中心位置</b>在哪里</span>。
 *   **二阶中心矩（Variance, <span style="color:rgb(255, 77, 77)">方差</span>）**：$E[(X-\mu)^2]$。
@@ -45,7 +47,7 @@ $$E[f(data, parameter)] = 0$$
 
 ---
 
-## 4. 为什么要叫 “广义”？
+## 4. 为什么要叫 “广义” ？
 
 *   **矩估计（Method of Moments）**：如果我<span style="color:rgb(195, 117, 255)">有 2 个参数要猜</span>，我就<span style="color:rgb(195, 117, 255)">找 2 个矩条件</span>（2 个方程解 2 个未知数），这叫正好识别。
 *   **广义矩估计（GMM）**：如果我<span style="color:rgb(195, 117, 255)">有 2 个参数要猜</span>，但我手里<span style="color:rgb(195, 117, 255)">有 10 个矩条件</span>（10 个方程解 2 个未知数）。方程太多了，没法让每一个都精准等于 0。
