@@ -2,7 +2,7 @@
 share_link: https://share.note.sx/p9lc0bs5#mc7uGJBE0WzyEapAovVBauOaLTT8zvoU3jomyLEAKfc
 share_updated: 2026-02-13T14:11:41+08:00
 ---
-**GRS 检验（Gibbons-Ross-Shanken Test）** 被描述为评估多因子模型表现的“终极裁判”。如果说单个资产的 $t$ 检验是看某一只股票是否产生了超额收益，那么 <span style="color:rgb(195, 121, 251)">GRS 检验则是看<b>这一堆资产（投资组合）</b>是否能被该模型完全解释</span>。属于<span style="color:rgb(255, 77, 77)">联合检验</span>。
+**GRS 检验（Gibbons-Ross-Shanken Test）** 被描述为评估多因子模型表现的 “终极裁判”。如果说单个资产的 $t$ 检验是看某一只股票是否产生了超额收益，那么 <span style="color:rgb(195, 121, 251)">GRS 检验则是看<b>这一堆资产（投资组合）</b>是否能被该模型完全解释</span>。属于<span style="color:rgb(255, 77, 77)">联合检验</span>。
 
 ---
 
@@ -11,7 +11,7 @@ share_updated: 2026-02-13T14:11:41+08:00
 在时序回归中，我们可以得到每个资产 $i$ 的定价误差 $\alpha_i$。
 
 *   **单个检验的局限**：如果你检验 100 个组合，即便模型很完美，由于随机误差，统计上总会有那么 5 个左右的组合表现出“显著”的 $\alpha \neq 0$。这并不代表模型失效。
-*   **联合检验的必要**：我们需要一个统计量来判断：**这 $N$ 个资产的 $\alpha$ 向量从整体上看，是否显著偏离零向量？**
+*   **联合检验的必要**：我们需要一个统计量来判断：**<span style="color:rgb(255, 77, 77)">这 $N$ 个资产的 $\alpha$ 向量从整体上看，是否显著偏离零向量？</span>**
 
 ---
 
@@ -23,12 +23,12 @@ $$GRS = \left( \frac{T - N - K}{N} \right) \frac{\hat{\boldsymbol{\alpha}}' \hat
 
 ### 符号拆解：
 
-*   **$\hat{\boldsymbol{\alpha}}$**：$N \times 1$ 的向量，包含了所有资产回归出的定价误差（截距项）。
-*   **$\hat{\boldsymbol{\Sigma}}$**：$N \times N$ 的矩阵，是回归残差的协方差矩阵。
-*   **$\bar{\boldsymbol{\lambda}}$**：因子平均收益率向量。
-*   **$\hat{\boldsymbol{\Omega}}$**：因子的协方差矩阵。
-*   **$F(N, T-N-K)$**：GRS 统计量服从 $F$ 分布。
-*   $T−N−K$：就是你的数据量够不够大（自由度）。
+*   **$\hat{\boldsymbol{\alpha}}$**：$N \times 1$ 的向量，包含了<span style="color:rgb(112, 48, 160)">所有资产回归出的定价误差（截距项）</span>。
+*   **$\hat{\boldsymbol{\Sigma}}$**：$N \times N$ 的矩阵，是<span style="color:rgb(112, 48, 160)">回归残差的协方差矩阵</span>。
+*   **$\bar{\boldsymbol{\lambda}}$**：<span style="color:rgb(112, 48, 160)">因子平均收益率</span>向量。
+*   **$\hat{\boldsymbol{\Omega}}$**：<span style="color:rgb(112, 48, 160)">因子的协方差矩阵</span>。
+* $T−N−K$：就是你的数据量够不够大（<span style="color:rgb(112, 48, 160)">自由度</span>）。
+*   **$F(N, T-N-K)$**：GRS 统计量服从<span style="color:rgb(112, 48, 160)"> $F$ 分布</span>。
 
 ### 直观理解公式：
 
@@ -37,19 +37,19 @@ $$GRS = \left( \frac{T - N - K}{N} \right) \frac{\hat{\boldsymbol{\alpha}}' \hat
 
 ---
 
-## 3. 几何直观：夏普比率的“改进” (公式 2.68)
+## 3. 几何直观：夏普比率的 “改进” (公式 2.68)
 
-书中提供了一个极其迷人的视角：**GRS 检验本质上是在比较“夏普比率”。**
+书中提供了一个极其迷人的视角：**<span style="color:rgb(255, 77, 77)">GRS 检验本质上是在比较 “夏普比率”</span>。**
 
 $$GRS \propto \frac{\hat{\theta}_{N+K}^2 - \hat{\theta}_K^2}{1 + \hat{\theta}_K^2}$$
 
-*   **$\hat{\theta}_{K}$**：仅使用模型中 $K$ 个因子能构建出的**最大夏普比率**。
-*   **$\hat{\theta}_{N+K}$**：如果允许你使用这 $K$ 个因子加上这 $N$ 个资产，能构建出的**新的最大夏普比率**。
+*   **$\hat{\theta}_{K}$**：<span style="color:rgb(112, 48, 160)">仅使用模型中 $K$ 个因子能构建出的 **最大夏普比率**。</span>
+*   **$\hat{\theta}_{N+K}$**：<span style="color:rgb(112, 48, 160)">如果允许你使用这 $K$ 个因子加上这 $N$ 个资产，能构建出的<b>新的最大夏普比率</b>。</span>
 
 ### 结论：
 
-* 如果原模型（$K$ 个因子）非常牛，能够解释所有资产，那么加入那 $N$ 个资产后，最大夏普比率**不应该显著提升**。
-* 如果加入新资产后，夏普比率“暴涨”，说明原模型漏掉了重要的风险信息，$\alpha$ 很大，GRS 统计量就会很大，从而**拒绝原模型**。
+* <span style="color:rgb(255, 77, 77)">如果原模型（$K$ 个因子）非常牛，能够解释所有资产</span>，那么<span style="color:rgb(255, 77, 77)">加入那 $N$ 个资产后，最大夏普比率<b>不应该显著提升</b>。</span>
+* <span style="color:rgb(112, 48, 160)">如果加入新资产后，夏普比率 “暴涨”，说明原模型漏掉了重要的风险信息</span>，$\alpha$ 很大，GRS 统计量就会很大，从而**拒绝原模型**。
 
 ---
 
@@ -65,7 +65,7 @@ $$GRS \propto \frac{\hat{\theta}_{N+K}^2 - \hat{\theta}_K^2}{1 + \hat{\theta}_K^
 
 ---
 
-## 5. GRS 的“软肋”（局限性）
+## 5. GRS 的 “软肋”（局限性）
 
 书中提醒读者，GRS 虽然强大，但有两个前提：
 
