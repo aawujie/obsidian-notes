@@ -1,6 +1,6 @@
 ---
 share_link: https://share.note.sx/l22dlhiq#Ociv7WAAs8A/ewWME308juEQ0FAf+aXSd2sBiKNj870
-share_updated: 2026-02-13T15:46:20+08:00
+share_updated: 2026-02-13T16:18:43+08:00
 ---
 这部分内容被作者称为因子研究的“一切的基础”，是量化研究员必须掌握的核心技能。
 
