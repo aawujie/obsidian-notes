@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>龙虎榜分析 2026-02-13</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;800&family=JetBrains+Mono:wght@400;700&family=Noto+Serif+SC:wght@700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #1e1e2e 0%, #2d2b55 50%, #3e3a5f 100%);
+      background-attachment: fixed;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      font-size: 20px;
+      color: #333333;
+      line-height: 2;
+    }
+    .container {
+      width: 600px;
+      height: 800px;
+      background: #F9F9F6;
+      border-radius: 0;
+      box-shadow:
+        0 25px 50px rgba(0, 0, 0, 0.4),
+        0 10px 30px rgba(0, 10, 20, 0.3),
+        0 5px 15px rgba(0, 5, 15, 0.25);
+      overflow-y: auto;
+      overflow-x: hidden;
+    }
+    .container::-webkit-scrollbar { width: 0; background: transparent; }
+    .container { scrollbar-width: none; }
+    .content { padding: 20px 50px 50px 50px; }
+    h1 {
+      font-family: "Noto Serif SC", serif;
+      font-size: 38px;
+      font-weight: 700;
+      color: #000000;
+      line-height: 1.3;
+      margin: 0 0 10px 0;
+    }
+    h2 {
+      font-family: "Times New Roman", Times, serif;
+      font-size: 26px;
+      font-weight: 700;
+      color: #000000;
+      margin: 40px 0 20px 0;
+    }
+    h3 { font-size: 22px; font-weight: 600; color: #2c3e50; margin: 30px 0 15px 0; }
+    h4 { font-size: 20px; font-weight: 600; color: #5a6c7d; margin: 25px 0 12px 0; }
+    p { margin: 0 0 20px 0; font-size: 20px; color: #333333; line-height: 2; }
+    .metadata { font-size: 14px; color: #888888; margin-bottom: 24px; }
+    strong { font-weight: 700; }
+    em { font-style: normal; color: #000000; }
+    mark {
+      background: #fff59d;
+      color: #000000;
+      font-weight: bold;
+      border-bottom: 2px solid #ff9800;
+      border-radius: 4px;
+      padding: 2px 6px;
+    }
+    a { color: #4a9eff; text-decoration: none; transition: 0.2s ease; }
+    a:hover { text-decoration: underline; }
+    ul, ol { font-size: 20px; padding-left: 20px; margin: 0 0 20px 0; }
+    li { margin-bottom: 8px; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 15px;
+      margin: 16px 0 20px 0;
+      line-height: 1.6;
+    }
+    thead th {
+      background: #2c3e50;
+      color: #ffffff;
+      font-weight: 700;
+      padding: 10px 8px;
+      text-align: left;
+      font-size: 14px;
+    }
+    tbody td {
+      padding: 8px 8px;
+      border-bottom: 1px solid #e8e8e4;
+      font-size: 14px;
+    }
+    tbody tr:nth-child(even) { background: #f3f3ef; }
+    tbody tr:hover { background: #eef4ff; }
+    .up { color: #e53935; font-weight: 700; }
+    .down { color: #43a047; font-weight: 700; }
+    .net-buy { color: #e53935; }
+    .net-sell { color: #43a047; }
+    .section-divider { border: none; border-top: 2px solid #e0e0dc; margin: 30px 0; }
+    .signal-box {
+      background: #f5f5f0;
+      border-left: 4px solid #4a9eff;
+      padding: 16px 20px;
+      margin: 16px 0;
+      border-radius: 0 6px 6px 0;
+    }
+    .signal-box.bull { border-left-color: #e53935; }
+    .signal-box.bear { border-left-color: #43a047; }
+    .signal-box.watch { border-left-color: #ff9800; }
+    .signal-box h3 { margin: 0 0 10px 0; font-size: 20px; }
+    .signal-box li { font-size: 18px; margin-bottom: 6px; }
+    @media (max-width: 650px) {
+      body { padding: 10px; }
+      .container { width: 100%; height: auto; min-height: 80vh; }
+      .content { padding: 20px 30px 30px 30px; }
+      h1 { font-size: 36px; }
+      h2 { font-size: 24px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="content">
+      <h1>龙虎榜分析</h1>
+      <p class="metadata">2026-02-13（周五）· 共 63 条上榜记录（去重后约 40 只标的）</p>
+
+      <h2>一、资金净买入 TOP5</h2>
+      <table>
+        <thead>
+          <tr><th>排名</th><th>代码</th><th>名称</th><th>涨跌幅</th><th>净买额（亿）</th><th>上榜原因</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td>600410</td><td><strong>华胜天成</strong></td><td class="up">+10.01%</td><td class="net-buy">+5.02</td><td>换手率达20%</td></tr>
+          <tr><td>2</td><td>000833</td><td><strong>粤桂股份</strong></td><td class="up">+6.86%</td><td class="net-buy">+3.87</td><td>连续三日涨幅偏离累计20%</td></tr>
+          <tr><td>3</td><td>300251</td><td><strong>光线传媒</strong></td><td class="up">+15.39%</td><td class="net-buy">+3.46</td><td>日涨幅达15%</td></tr>
+          <tr><td>4</td><td>603268</td><td>*ST松发</td><td class="up">+5.00%</td><td class="net-buy">+3.17</td><td>ST连续三日涨幅</td></tr>
+          <tr><td>5</td><td>600589</td><td><strong>大位科技</strong></td><td class="down">-4.83%</td><td class="net-buy">+2.87</td><td>换手率+振幅</td></tr>
+        </tbody>
+      </table>
+      <p><strong>点评</strong>：华胜天成单日净买超 5 亿，资金最为凶猛；光线传媒 20cm 涨停伴随 3.46 亿净流入，主力态度坚决。大位科技虽然收跌，但资金逆势大幅净买近 3 亿，值得关注后续走势。</p>
+
+      <hr class="section-divider">
+
+      <h2>二、资金净卖出 TOP5</h2>
+      <table>
+        <thead>
+          <tr><th>排名</th><th>代码</th><th>名称</th><th>涨跌幅</th><th>净卖额（亿）</th><th>上榜原因</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td>001330</td><td><strong>博纳影业</strong></td><td class="up">+5.89%</td><td class="net-sell">-3.91</td><td>振幅+换手率达20%</td></tr>
+          <tr><td>2</td><td>300846</td><td><strong>首都在线</strong></td><td class="up">+3.67%</td><td class="net-sell">-3.78</td><td>换手率达30%</td></tr>
+          <tr><td>3</td><td>600481</td><td>双良节能</td><td class="down">-9.99%</td><td class="net-sell">-1.64</td><td>跌幅偏离</td></tr>
+          <tr><td>4</td><td>002491</td><td>通鼎互联</td><td class="down">-10.01%</td><td class="net-sell">-1.58</td><td>跌幅偏离</td></tr>
+          <tr><td>5</td><td>002957</td><td>科瑞技术</td><td class="down">-10.00%</td><td class="net-sell">-1.41</td><td>跌幅偏离</td></tr>
+        </tbody>
+      </table>
+      <p><strong>点评</strong>：博纳影业虽收涨 5.89%，但资金净卖近 4 亿，典型的「拉高出货」信号。首都在线同样收涨但净卖 3.78 亿，高换手+资金撤退，短期需警惕。双良节能跌停伴随 1.64 亿净卖，转债双良转债同日跌 16.57%，正股+转债双杀。</p>
+
+      <hr class="section-divider">
+
+      <h2>三、板块题材分布</h2>
+
+      <h3>AI / 数字经济（最强主线）</h3>
+      <table>
+        <thead>
+          <tr><th>代码</th><th>名称</th><th>涨跌幅</th><th>净买额（亿）</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>600410</td><td><strong>华胜天成</strong></td><td class="up">+10.01%</td><td class="net-buy">+5.02</td></tr>
+          <tr><td>603533</td><td><strong>掌阅科技</strong></td><td class="up">+10.00%</td><td class="net-buy">+2.81</td></tr>
+          <tr><td>000021</td><td><strong>深科技</strong></td><td class="up">+10.02%</td><td class="net-buy">+1.83</td></tr>
+          <tr><td>300449</td><td><strong>汉邦高科</strong></td><td class="up">+20.00%</td><td class="net-buy">+1.27</td></tr>
+          <tr><td>002467</td><td>二六三</td><td class="up">+5.31%</td><td class="net-buy">+1.15</td></tr>
+          <tr><td>600589</td><td><strong>大位科技</strong></td><td class="down">-4.83%</td><td class="net-buy">+2.87</td></tr>
+          <tr><td>603138</td><td>海量数据</td><td class="up">+2.79%</td><td class="net-sell">-0.18</td></tr>
+          <tr><td>300846</td><td>首都在线</td><td class="up">+3.67%</td><td class="net-sell">-3.78</td></tr>
+        </tbody>
+      </table>
+      <p><strong>小结</strong>：AI/数字经济方向上榜最多，华胜天成、掌阅科技、深科技集体涨停+大额净买，是当日绝对主线。但首都在线高换手巨额净卖，分化已现。</p>
+
+      <h3>影视传媒</h3>
+      <table>
+        <thead>
+          <tr><th>代码</th><th>名称</th><th>涨跌幅</th><th>净买额（亿）</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>300251</td><td><strong>光线传媒</strong></td><td class="up">+15.39%</td><td class="net-buy">+3.46</td></tr>
+          <tr><td>603103</td><td>横店影视</td><td class="up">+6.63%</td><td class="net-buy">+0.07</td></tr>
+          <tr><td>001330</td><td>博纳影业</td><td class="up">+5.89%</td><td class="net-sell">-3.91</td></tr>
+          <tr><td>000892</td><td>欢瑞世纪</td><td class="down">-9.94%</td><td class="net-sell">-1.31</td></tr>
+          <tr><td>300182</td><td>捷成股份</td><td class="down">-10.61%</td><td class="net-sell">-1.26</td></tr>
+          <tr><td>301231</td><td>荣信文化</td><td class="down">-7.86%</td><td class="net-sell">-0.23</td></tr>
+        </tbody>
+      </table>
+      <p><strong>小结</strong>：影视板块严重分化。光线传媒 20cm 涨停+3.46 亿净买，一枝独秀；博纳影业拉高出货净卖近 4 亿；欢瑞世纪、捷成股份跌停被砸。板块内部多空激烈博弈，龙头效应明显。</p>
+
+      <h3>机械 / 制造 / 军工</h3>
+      <table>
+        <thead>
+          <tr><th>代码</th><th>名称</th><th>涨跌幅</th><th>净买额（亿）</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>002703</td><td><strong>浙江世宝</strong></td><td class="up">+10.02%</td><td class="net-buy">+2.43</td></tr>
+          <tr><td>002009</td><td><strong>天奇股份</strong></td><td class="up">+10.00%</td><td class="net-buy">+2.29</td></tr>
+          <tr><td>605289</td><td><strong>罗曼股份</strong></td><td class="up">+10.00%</td><td class="net-buy">+1.74</td></tr>
+          <tr><td>601777</td><td><strong>千里科技</strong></td><td class="up">+10.05%</td><td class="net-buy">+1.53</td></tr>
+          <tr><td>600984</td><td><strong>建设机械</strong></td><td class="up">+10.07%</td><td class="net-buy">+1.21</td></tr>
+          <tr><td>300719</td><td><strong>安达维尔</strong></td><td class="up">+19.99%</td><td class="net-buy">+0.60</td></tr>
+          <tr><td>300589</td><td>江龙船艇</td><td class="up">+8.17%</td><td class="net-buy">+0.48</td></tr>
+          <tr><td>601890</td><td>亚星锚链</td><td class="up">+10.04%</td><td class="net-buy">+0.22</td></tr>
+        </tbody>
+      </table>
+      <p><strong>小结</strong>：机械/军工方向多只涨停且全部净买入，资金一致性强。浙江世宝（汽车零部件）、天奇股份（锂电回收）、安达维尔（军工 20cm）表现突出。</p>
+
+      <h3>新材料 / 化工 / 电缆</h3>
+      <table>
+        <thead>
+          <tr><th>代码</th><th>名称</th><th>涨跌幅</th><th>净买额（亿）</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>002498</td><td><strong>汉缆股份</strong></td><td class="up">+10.08%</td><td class="net-buy">+3.77（连续三日）</td></tr>
+          <tr><td>000859</td><td><strong>国风新材</strong></td><td class="up">+10.02%</td><td class="net-buy">+2.26</td></tr>
+          <tr><td>605033</td><td>美邦股份</td><td class="up">+10.02%</td><td class="net-buy">+0.31</td></tr>
+          <tr><td>603618</td><td>杭电股份</td><td class="down">-9.99%</td><td class="net-buy">+0.23（逆势买入）</td></tr>
+          <tr><td>600481</td><td>双良节能</td><td class="down">-9.99%</td><td class="net-sell">-1.64</td></tr>
+        </tbody>
+      </table>
+      <p><strong>小结</strong>：汉缆股份连续三日涨幅偏离，累计净买 3.77 亿，是电缆方向的领涨龙头。杭电股份虽跌停但资金逆势净买，可能有抄底资金介入。</p>
+
+      <h3>建筑 / 地产</h3>
+      <table>
+        <thead>
+          <tr><th>代码</th><th>名称</th><th>涨跌幅</th><th>净买额（亿）</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>000833</td><td><strong>粤桂股份</strong></td><td class="up">+6.86%</td><td class="net-buy">+3.87</td></tr>
+          <tr><td>600629</td><td>华建集团</td><td class="up">+10.02%</td><td class="net-buy">+0.27</td></tr>
+          <tr><td>605287</td><td>德才股份</td><td class="down">-10.01%</td><td class="net-sell">-0.23</td></tr>
+        </tbody>
+      </table>
+
+      <hr class="section-divider">
+
+      <h2>四、关键信号总结</h2>
+
+      <div class="signal-box bull">
+        <h3>多头信号</h3>
+        <ul>
+          <li><strong>AI/数字经济是当日最强主线</strong>：华胜天成 5 亿净买领衔，掌阅科技、深科技、汉邦高科集体涨停</li>
+          <li><strong>机械军工资金一致看多</strong>：多只涨停且全部净买，无分歧</li>
+          <li><strong>汉缆股份连板趋势</strong>：连续三日涨幅偏离，累计净买近 4 亿</li>
+        </ul>
+      </div>
+
+      <div class="signal-box bear">
+        <h3>空头信号</h3>
+        <ul>
+          <li><strong>影视传媒分化严重</strong>：博纳影业拉高出货近 4 亿，欢瑞世纪/捷成股份跌停</li>
+          <li><strong>首都在线高位出货</strong>：收涨但净卖 3.78 亿，换手率超 30%</li>
+          <li><strong>双良节能正股+转债双杀</strong>：跌停+转债跌 16.57%</li>
+        </ul>
+      </div>
+
+      <div class="signal-box watch">
+        <h3>值得跟踪</h3>
+        <ul>
+          <li><strong>大位科技</strong>：收跌但逆势净买 2.87 亿，资金态度与股价背离</li>
+          <li><strong>杭电股份</strong>：跌停但净买 0.23 亿，可能有资金抄底</li>
+          <li><strong>特发信息</strong>：跌停但净买 0.58 亿，同样逆势吸筹</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>
