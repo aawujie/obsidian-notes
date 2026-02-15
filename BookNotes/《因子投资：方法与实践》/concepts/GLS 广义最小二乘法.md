@@ -42,7 +42,8 @@ $$\hat{\lambda}_{GLS} = (\boldsymbol{\beta}' \boldsymbol{\Sigma}^{-1} \boldsymbo
 
 使用 GLS 后，我们可以得到更严谨的定价误差估计：
 
-*   **定价误差 (公式 2.27)**：$\hat{\alpha}_{GLS} = E_T[\boldsymbol{R}^e] - \boldsymbol{\beta} \hat{\lambda}_{GLS}$
+*   **定价误差 (公式 2.27)**：
+	$$\hat{\alpha}_{GLS} = E_T[\boldsymbol{R}^e] - \boldsymbol{\beta} \hat{\lambda}_{GLS}$$
 *   **联合检验 (公式 2.31)**：通过构建 $\chi^2$（卡方）统计量，联合检验所有资产的 $\alpha$ 是否为 0。
 
 **注意（Shanken 修正）**：
