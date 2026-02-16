@@ -1,3 +1,7 @@
+---
+share_link: https://share.note.sx/opcs572w#XAREWYU+1bofehAosAQdYp51celtYD4HxWvO7FMjMC8
+share_updated: 2026-02-17T03:01:43+08:00
+---
 # GVHMR — 从单目视频恢复世界坐标系下的人体运动
 
 > **论文**: World-Grounded Human Motion Recovery via Gravity-View Coordinates
