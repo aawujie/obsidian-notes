@@ -37,13 +37,13 @@ Shanken 提出，在计算因子溢价 $\hat{\lambda}$ 的协方差矩阵时，�
 $$ \text{修正系数} = (1 + \hat{\boldsymbol{\lambda}}' \hat{\boldsymbol{\Sigma}}_f^{-1} \hat{\boldsymbol{\lambda}}) $$
 
 其中：
-*   $\hat{\boldsymbol{\lambda}}$：估算出的因子溢价（均值）。
-*   $\hat{\boldsymbol{\Sigma}}_f^{-1}$：因子收益率协方差矩阵的逆。
+*   $\hat{\boldsymbol{\lambda}}$：<span style="color:rgb(255, 77, 77)">估算出的因子溢价（均值）</span>。
+*   $\hat{\boldsymbol{\Sigma}}_f^{-1}$：<span style="color:rgb(255, 77, 77)">因子收益率协方差矩阵的逆</span>。
 
 **修正后的方差公式（直观理解）：**
 $$ Var(\hat{\lambda})_{修正} = Var(\hat{\lambda})_{标准} \times \underbrace{(1 + \text{因子收益的二次项})}_{\text{Shanken 修正项}} $$
 
-*注：这个修正项本质上取决于因子的夏普比率。因子历史表现越强（夏普比率越高），修正的幅度就越大。*
+*注：<span style="color:rgb(195, 117, 255)">这个修正项本质上取决于因子的夏普比率</span>。<span style="color:rgb(255, 77, 77)">因子历史表现越强（夏普比率越高），修正的幅度就越大。</span>*
 
 ---
 
@@ -64,10 +64,10 @@ $$ Var(\hat{\lambda})_{修正} = Var(\hat{\lambda})_{标准} \times \underbrace{
 
 *   **学术标准**：在发表关于资产定价的顶级论文时，如果使用两步回归法，Shanken 修正几乎是**强制性**的。
 *   **防坑指南**：如果你在回测中发现一个因子 $t$ 值为 2.1（刚刚过关），但在做了 Shanken 修正后，$t$ 值降到了 1.5，那么请果断放弃这个因子。它经不起统计严谨性的推敲。
-*   **现代替代方案**：现在的量化研究有时会使用 **GMM（广义矩估计）**，因为 GMM 在数学框架内已经自动考虑了这种两步走的估计误差，无需手动进行 Shanken 修正。
+*   **现代替代方案**：现在的量化研究有时会使用 **GMM（广义矩估计）**，因为 <span style="color:rgb(255, 77, 77)">GMM 在数学框架内已经自动考虑了这种两步走的估计误差</span>，<span style="color:rgb(255, 77, 77)">无需手动进行 Shanken 修正</span>。
 
 ---
 
 ### 💡 一句话总结
 
-**“Shanken 修正就是给因子的显著性‘挤水’。它承认了 $\beta$ 是估算出来的而非真实值，从而给出了更诚实、更保守的显著性检验。”**
+**“Shanken 修正就是<span style="color:rgb(255, 77, 77)">给因子的显著性‘挤水’</span>。它承认了 $\beta$ 是估算出来的而非真实值，从而给出了更诚实、更保守的显著性检验。”**

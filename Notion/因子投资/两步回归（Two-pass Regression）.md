@@ -1,3 +1,7 @@
+---
+share_link: https://share.note.sx/vfczmxip#YESEJQG2FF8ov1O1eAp8AApGm1g7hxY/nL7CXa19buM
+share_updated: 2026-02-16T00:49:50+08:00
+---
 ## 1. 什么是两步回归 (Two-pass Regression)？
 
 它是实证资产定价中检验多因子模型（如 Fama-French 三因子）的**标准工作流**。
