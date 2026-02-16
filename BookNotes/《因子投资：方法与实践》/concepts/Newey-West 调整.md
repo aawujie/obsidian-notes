@@ -2,7 +2,6 @@
 share_link: https://share.note.sx/sm48jofk#fy1DjQ1BR0+aNI7H/t1nyzabPjL0da9kfvZlC6KvjQ0
 share_updated: 2026-02-16T16:16:08+08:00
 ---
-
 简单来说，它是<span style="color:rgb(255, 77, 77)">对 <b>t 检验（t-statistic）</b> 的一种 “修正补丁”</span>。
 
 如果说 OLS（普通最小二乘法）是在理想的无菌实验室里做检查，那么 Newey-West 就是**专门为了在充满细菌（噪音和干扰）的现实环境中也能得出正确结论**而设计的工具。
