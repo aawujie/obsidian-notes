@@ -19,7 +19,7 @@
 
 *   **动作**：**<span style="color:rgb(255, 77, 77)">先看看每个资产对因子的敏感程度。</span>**
 *   **方法**：用历史数据做时序回归。
-    *   $$ R_{it} = a_i + \beta_i f_t + \epsilon_{it} $$
+    $$ R_{it} = a_i + \beta_i f_t + \epsilon_{it} $$
 *   **产出**：<span style="color:rgb(255, 77, 77)">得到每个资产的因子暴露 <b>$\hat{\beta}_i$</b>。</span>
 
 ### 第二步：估算 $\lambda$ (横截面)
@@ -28,8 +28,8 @@
 *   **公式 (2.18)**：
     $$ E[R_i^e] = \gamma + \hat{\beta}_i \lambda + \alpha_i $$
 *   **目标**：
-    *   **<span style="color:rgb(255, 77, 77)">最小化<i>*所有资产定价误差 ($\alpha</i>i$) 的平方和。</span>
-    *   **求解**因子风险溢价 ($\lambda$)。
+    <span style="color:rgb(255, 77, 77)">**最小化<i>**所有资产定价误差 ($\alpha_i$) 的平方和。</span>
+    求解因子风险溢价 ($\lambda$)。
 
 ---
 
