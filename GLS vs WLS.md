@@ -22,10 +22,10 @@
 
 在 GLS 的框架下，我们需要用到权重矩阵 $\boldsymbol{\Sigma}$：
 
-*   如果 $\boldsymbol{\Sigma}$ 是**对角矩阵**（只有对角线上有不同的权重），那么 **GLS 就变成了 WLS**。
-*   如果 $\boldsymbol{\Sigma}$ 是**单位矩阵**（对角线全是 1，其他全是 0），那么 **GLS 就变成了 OLS**。
+*   如果<span style="color:rgb(255, 77, 77)"> $\boldsymbol{\Sigma}$ 是**对角矩阵</span>**（只有对角线上有不同的权重），那么 **<span style="color:rgb(255, 77, 77)">GLS 就变成了 WLS**</span>。
+*   如果<span style="color:rgb(255, 77, 77)"> $\boldsymbol{\Sigma}$ 是**单位矩阵</span>**（对角线全是 1，其他全是 0），那么 **<span style="color:rgb(255, 77, 77)">GLS 就变成了 OLS</span>**。
 
-**结论：GLS 是最顶层的概念，WLS 是去掉了“相关性”后的简化版 GLS。**
+**结论：<span style="color:rgb(255, 77, 77)">GLS 是最顶层的概念，WLS 是去掉了“相关性”后的简化版 GLS。</span>**
 
 ---
 
