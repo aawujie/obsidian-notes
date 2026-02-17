@@ -19,6 +19,7 @@
 $$ R_{it}^e = \alpha_i + \boldsymbol{\beta}_i' \boldsymbol{\lambda}_t + \varepsilon_{it} $$
 
 ### 符号拆解：
+
 *   **$R_{it}^e$ (Y 变量)**：<span style="color:rgb(255, 77, 77)">资产 $i$ 在 $t$ 时刻的超额收益。</span>
 *   **$\boldsymbol{\lambda}_t$ (X 变量)**：<span style="color:rgb(195, 117, 255)">因子在 $t$ 时刻的<b>实际收益率</b></span>（Realized Return）。
     *   *关键点：这里的 <span style="color:rgb(195, 117, 255)">$X$ 是已知的</span>、观测到的因子收益序列。*
@@ -61,7 +62,7 @@ $$ R_{it}^e = \alpha_i + \boldsymbol{\beta}_i' \boldsymbol{\lambda}_t + \varepsi
 
 **对比截面回归：**
 
-*   **<span style="color:rgb(255, 77, 77)">截面回归 (OLS)** 是“软”的</span>。它画出的线，<span style="color:rgb(255, 77, 77)">只要求离所有资产的距离最近</span>（最小二乘），**<span style="color:rgb(255, 77, 77)">不强制穿过原点或因子均值点</span>**。
+*   **<span style="color:rgb(255, 77, 77)">截面回归 (OLS) ** 是“软”的</span>。它画出的线，<span style="color:rgb(255, 77, 77)">只要求离所有资产的距离最近</span>（最小二乘），**<span style="color:rgb(255, 77, 77)">不强制穿过原点或因子均值点</span>**。
 *   **结果**：所以，截面回归算出的因子溢价（$\lambda$）往往不等于因子的历史平均收益率。
 
 ---

@@ -37,6 +37,7 @@ $$R_{it}^e = \alpha_i + \boldsymbol{\beta}_i' \boldsymbol{\lambda}_t + \varepsil
 
 截面回归比时序回归更“务实”，它不要求直线必须经过原点。
 
+- 它认为：<span style="color:rgb(255, 77, 77)">因子的历史平均收益可能有噪声</span>，不准确。我<span style="color:rgb(255, 77, 77)">宁愿根据资产的表现倒推因子值多少钱</span>。
 *   **几何表现**：它画出的直线是为了让所有资产点离线最近（最小二乘）。
 *   **结论**：它算出的因子溢价 $\lambda$ 可能不等于因子的历史均值。
 
