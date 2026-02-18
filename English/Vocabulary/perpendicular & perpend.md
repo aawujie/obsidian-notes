@@ -13,7 +13,8 @@
 - 适用领域：数学、几何、工程（日常/专业通用）
 - 典型例句：
   > The wall is perpendicular to the floor.  
-  > 墙壁与地板垂直。
+  > 	墙壁与地板垂直。
+
 - 搭配：be perpendicular to（与……垂直）
 
 ## 三、perpend
@@ -24,7 +25,8 @@
 - 用法场景：书面语、正式文体、文学作品
 - 典型例句：
   > She paused to perpend the implications of his words.  
-  > 她停顿了一下，仔细琢磨他话语中的深意。
+  > 她停顿了一下，仔细琢磨他话语中的深意。  
+
 - 近义词：contemplate, ponder, deliberate
 
 ## 四、核心关系总结
