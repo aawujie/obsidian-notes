@@ -45,3 +45,8 @@
 ############################
 
 *.log
+
+
+# Large files
+./1.English/顾家北手把手教你雅思写作6_0版_顾家北_GuJiabei_Z_Library.pdf
+./4.Robot/ML&DL/StatQuest-En.pdf
