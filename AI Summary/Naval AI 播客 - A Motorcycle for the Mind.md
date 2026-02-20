@@ -6,7 +6,7 @@
 
 ---
 
-![图像](https://pbs.twimg.com/media/HBk_iy1bUAMNtLz?format=jpg&name=medium)
+![[Pasted image 20260220181052.png]]
 
 ## 核心观点
 
