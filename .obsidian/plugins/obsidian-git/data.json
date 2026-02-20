@@ -14,7 +14,7 @@
   "showErrorNotices": true,
   "disablePopupsForNoChanges": true,
   "listChangedFilesInMessageBody": false,
-  "showStatusBar": true,
+  "showStatusBar": false,
   "updateSubmodules": false,
   "syncMethod": "rebase",
   "mergeStrategy": "none",
