@@ -34,7 +34,11 @@ tags:
 
 本教程面向已经完成 OpenClaw 基础配置的用户。在开始之前，请确认你已经：
 
-✅ 成功安装 OpenClaw 并能正常运行 ✅ 完成基本配置文件的创建（[SOUL.md](http://soul.md/) / [USER.md](http://user.md/) / [IDENTITY.md](http://identity.md/)） ✅ 了解记忆系统的基本概念（[MEMORY.md](http://memory.md/) 和 memorySearch） ✅ 熟悉 workspace 目录结构 ✅ 具备基本的命令行操作能力
+✅ 成功安装 OpenClaw 并能正常运行 
+✅ 完成基本配置文件的创建（[SOUL.md](http://soul.md/) / [USER.md](http://user.md/) / [IDENTITY.md](http://identity.md/)） 
+✅ 了解记忆系统的基本概念（[MEMORY.md](http://memory.md/) 和 memorySearch） 
+✅ 熟悉 workspace 目录结构 
+✅ 具备基本的命令行操作能力
 
 如果上述条件尚未满足，建议先阅读 
 [https://x.com/onehopeA9/status/2025934420893708433](https://x.com/onehopeA9/status/2025934420893708433)
@@ -357,7 +361,7 @@ Skills 提供你的工具能力。需要使用某个工具时，查看其 SKILL.
 
 **问题 1：长对话后 AI “失忆”** 当对话内容超过上下文窗口限制时，OpenClaw 会自动压缩旧对话，这个过程可能导致重要信息丢失。
 
-**问题 2：检索命中率不理想** 日志格式不统一、缺少标签、信息密度低，导致 memorySearch 难以找到相关内容。
+**问题 2：检索命中率不理想** 日志格式不统一、缺少标签、信息密度低，导致memorySearch 难以找到相关内容。
 
 **问题 3：记忆文件缺乏维护** 随着时间推移，过期信息堆积，噪音增加，影响检索质量。
 
