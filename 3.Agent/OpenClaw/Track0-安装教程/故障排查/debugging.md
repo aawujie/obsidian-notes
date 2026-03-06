@@ -135,4 +135,4 @@ openclaw logs --follow
 
 ---
 
-_下一步：[故障排查](./troubleshooting)_
+_下一步：[故障排查](3.Agent/OpenClaw/Track0-安装教程/故障排查/troubleshooting.md)_

@@ -7,7 +7,7 @@ description: "OpenClaw 快速入门：命令行向导安装指南。> 这是 方
 # 命令行向导安装指南
 
 > 这是 **方式二：命令行安装** 的安装指南，支持 macOS、Linux、Windows。
-> 如果你想用图形界面安装，请看 [macOS App 首次启动指南](./onboarding)。
+> 如果你想用图形界面安装，请看 [macOS App 首次启动指南](onboarding.md)。
 
 通过运行一条命令，向导会一步步问你问题，你只需要回答，最后自动帮你配置好一切。全程大约 10 分钟。
 
@@ -18,7 +18,7 @@ description: "OpenClaw 快速入门：命令行向导安装指南。> 这是 方
 开始之前，请确认你的电脑上已经安装了：
 
 - **Node.js 22 或更高版本** — [点此下载 Node.js](https://nodejs.org)（选 LTS 版本即可）
-- **一个 AI API 密钥**（推荐 Anthropic/Claude）— [还没有？先去获取](./getting-started#第一步准备-api-密钥)
+- **一个 AI API 密钥**（推荐 Anthropic/Claude）— [还没有？先去获取](getting-started.md#第一步准备-api-密钥)
 
 验证 Node.js 是否已安装（在终端里输入）：
 

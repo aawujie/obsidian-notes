@@ -82,7 +82,7 @@ description: "OpenClaw 帮助：常见问题（Frequently Asked Questions）。�
 > openclaw logs --tail 100
 > ```
 >
-> 更多调试选项请参考 [调试指南](./debugging)。
+> 更多调试选项请参考 [调试指南](debugging.md)。
 
 > [!abstract]- 如何卸载 OpenClaw？
 > ```bash
@@ -117,7 +117,7 @@ description: "OpenClaw 帮助：常见问题（Frequently Asked Questions）。�
 > └── workspaces/       # Agent 工作区
 > ```
 >
-> 你可以通过环境变量 `OPENCLAW_HOME` 修改默认路径，详见 [环境变量](./environment)。
+> 你可以通过环境变量 `OPENCLAW_HOME` 修改默认路径，详见 [环境变量](environment.md)。
 
 > [!abstract]- 支持哪些 AI 模型？
 > OpenClaw 支持多种 AI 模型后端：
@@ -147,4 +147,4 @@ description: "OpenClaw 帮助：常见问题（Frequently Asked Questions）。�
 
 ---
 
-_下一步：[调试指南](./debugging)_
+_下一步：[调试指南](debugging.md)_

@@ -286,4 +286,4 @@ openclaw cron history --limit 20
 
 ---
 
-_下一步：[Cron vs Heartbeat 对比](./cron-vs-heartbeat) | [Webhook 外部触发](./webhook) | [故障排查](./troubleshooting)_
+_下一步：[Cron vs Heartbeat 对比](cron-vs-heartbeat.md) | [Webhook 外部触发](webhook.md) | [故障排查](3.Agent/OpenClaw/Track0-安装教程/自动化/troubleshooting.md)_

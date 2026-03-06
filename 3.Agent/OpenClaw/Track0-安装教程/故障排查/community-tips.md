@@ -278,4 +278,4 @@ openclaw agents set-identity --agent code --name "小赖"
 
 ---
 
-_下一步：[常见问题 FAQ](./faq) | [故障排查](./troubleshooting)_
+_下一步：[常见问题 FAQ](faq.md) | [故障排查](3.Agent/OpenClaw/Track0-安装教程/故障排查/troubleshooting.md)_

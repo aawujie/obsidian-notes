@@ -199,4 +199,4 @@ echo "0 7 * * * /path/to/check-auth.sh >> /var/log/openclaw-auth.log 2>&1" | cro
 
 ---
 
-_下一步：[故障排查](./troubleshooting) | [Gmail PubSub 集成](./gmail-pubsub) | [自动化概览](./index)_
+_下一步：[故障排查](3.Agent/OpenClaw/Track0-安装教程/自动化/troubleshooting.md) | [Gmail PubSub 集成](gmail-pubsub.md) | [自动化概览](3.Agent/OpenClaw/Track0-安装教程/自动化/index.md)_

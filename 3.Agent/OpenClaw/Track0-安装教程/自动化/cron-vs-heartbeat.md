@@ -152,4 +152,4 @@ Cron 在精确的时间点触发 Agent 执行，就像一个定闹钟的助手�
 
 ---
 
-_下一步：[Cron 定时任务详细配置](./cron-jobs) | [故障排查](./troubleshooting) | [自动化概览](./index)_
+_下一步：[Cron 定时任务详细配置](cron-jobs.md) | [故障排查](3.Agent/OpenClaw/Track0-安装教程/自动化/troubleshooting.md) | [自动化概览](3.Agent/OpenClaw/Track0-安装教程/自动化/index.md)_

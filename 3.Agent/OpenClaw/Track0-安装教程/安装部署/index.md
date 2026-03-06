@@ -26,7 +26,7 @@ node --version
 ```
 
 - 看到 `v22.x.x` 或更大的数字 → 可以直接安装
-- 看到版本太低或"找不到命令" → 先看[安装 Node.js](./node)
+- 看到版本太低或"找不到命令" → 先看[安装 Node.js](node.md)
 
 > [!info] Windows 用户特别说明
 > 在 Windows 上，我们**强烈建议**用 WSL2（Windows 的 Linux 子系统）来运行 OpenClaw。
@@ -92,8 +92,8 @@ openclaw onboard --install-daemon
 
 | 方式 | 适合谁 |
 |------|--------|
-| [Docker 部署](./docker) | 想在容器里运行的技术用户 |
-| [Nix 安装](./nix) | 使用 Nix 包管理器的用户 |
+| [Docker 部署](docker.md) | 想在容器里运行的技术用户 |
+| [Nix 安装](nix.md) | 使用 Nix 包管理器的用户 |
 | [从源码编译](/tutorials/getting-started/setup) | 开发者，想改代码的人 |
 
 ---
@@ -138,7 +138,7 @@ openclaw dashboard      # 打开控制面板（会自动打开浏览器）
 > 直接重新运行安装命令就可以，不需要先卸载。安装脚本会自动覆盖旧版本。
 
 > [!abstract]- 想卸载怎么办？
-> 参考[卸载说明](./uninstall)。
+> 参考[卸载说明](uninstall.md)。
 
 ---
 

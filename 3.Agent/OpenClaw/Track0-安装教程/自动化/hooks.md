@@ -245,4 +245,4 @@ env | grep OPENCLAW_  # 打印所有 OpenClaw 注入的环境变量
 
 ---
 
-_下一步：[Cron 定时任务](./cron-jobs) | [Webhook 外部触发](./webhook) | [自动化概览](./index)_
+_下一步：[Cron 定时任务](cron-jobs.md) | [Webhook 外部触发](webhook.md) | [自动化概览](3.Agent/OpenClaw/Track0-安装教程/自动化/index.md)_

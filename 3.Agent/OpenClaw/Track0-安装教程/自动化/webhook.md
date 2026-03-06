@@ -227,4 +227,4 @@ Authorization: Bearer your-secret-token
 
 ---
 
-_下一步：[Cron 定时任务](./cron-jobs) | [Hooks 事件钩子](./hooks) | [自动化概览](./index)_
+_下一步：[Cron 定时任务](cron-jobs.md) | [Hooks 事件钩子](hooks.md) | [自动化概览](3.Agent/OpenClaw/Track0-安装教程/自动化/index.md)_

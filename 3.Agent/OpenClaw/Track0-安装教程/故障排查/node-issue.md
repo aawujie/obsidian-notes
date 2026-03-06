@@ -158,4 +158,4 @@ bun add -d tsx@3.12.2
 
 ---
 
-_下一步：[帮助中心](./index)_
+_下一步：[帮助中心](3.Agent/OpenClaw/Track0-安装教程/故障排查/index.md)_

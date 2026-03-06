@@ -90,7 +90,7 @@ OpenClaw 提供两种安装方式，选一种适合你的就行：
 **下载 macOS App：**
 前往 [GitHub Releases](https://github.com/openclaw/openclaw/releases) 页面，下载最新版本的 `.dmg` 文件，双击安装。
 
-**→ [去 macOS App 首次启动指南](./onboarding)**
+**→ [去 macOS App 首次启动指南](onboarding.md)**
 
 ---
 
@@ -102,7 +102,7 @@ OpenClaw 提供两种安装方式，选一种适合你的就行：
 - ✅ 灵活配置，适合高级用法
 - ⚠️ 需要使用终端（命令行），共 9 步，大约 10 分钟
 
-**→ [去命令行向导安装指南](./wizard)**
+**→ [去命令行向导安装指南](wizard.md)**
 
 ---
 
@@ -114,4 +114,4 @@ OpenClaw 提供两种安装方式，选一种适合你的就行：
 
 如果安装过程中遇到了问题，或者想了解更多配置：
 
-**→ [安装后配置与常见问题](./setup)**
+**→ [安装后配置与常见问题](setup.md)**

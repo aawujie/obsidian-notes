@@ -22,12 +22,12 @@
 
 优先级从高到低：
 
-| 层级 | 路径 | 说明 |
-|------|------|------|
-| **Enterprise** | `/Library/Application Support/Cursor/hooks.json` | 系统级配置 |
-| **Team** | 云端下发 | 企业版控制台配置 |
-| **Project** | `<project>/.cursor/hooks.json` | 项目级，随代码提交 |
-| **User** | `~/.cursor/hooks.json` | 用户级全局配置 |
+| 层级             | 路径                                               | 说明        |
+| -------------- | ------------------------------------------------ | --------- |
+| **Enterprise** | `/Library/Application Support/Cursor/hooks.json` | 系统级配置     |
+| **Team**       | 云端下发                                             | 企业版控制台配置  |
+| **Project**    | `<project>/.cursor/hooks.json`                   | 项目级，随代码提交 |
+| **User**       | `~/.cursor/hooks.json`                           | 用户级全局配置   |
 
 ---
 
@@ -281,4 +281,4 @@ fi
 
 ## 🏷️ 标签
 
-#Cursor #AI 编程 #Hooks #开发工具 #自动化 #安全
+#Cursor #AI编程 #Hooks #开发工具 #自动化 #安全

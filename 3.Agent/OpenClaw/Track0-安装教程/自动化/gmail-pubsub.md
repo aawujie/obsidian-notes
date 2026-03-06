@@ -224,4 +224,4 @@ openclaw channels gmail cleanup
 
 ---
 
-_下一步：[OAuth 认证监控](./auth-monitoring) | [轮询通道](./poll) | [自动化概览](./index)_
+_下一步：[OAuth 认证监控](auth-monitoring.md) | [轮询通道](poll.md) | [自动化概览](3.Agent/OpenClaw/Track0-安装教程/自动化/index.md)_

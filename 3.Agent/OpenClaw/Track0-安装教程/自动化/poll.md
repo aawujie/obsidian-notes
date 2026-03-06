@@ -32,7 +32,7 @@ openclaw logs --filter poll --limit 20
 ```
 
 > [!tip] 轮询 vs 推送
-> 如果你的通道支持推送（如 Gmail PubSub），推荐优先使用推送方式，实时性更好且资源消耗更少。查看 [Gmail PubSub 集成](./gmail-pubsub)。
+> 如果你的通道支持推送（如 Gmail PubSub），推荐优先使用推送方式，实时性更好且资源消耗更少。查看 [Gmail PubSub 集成](gmail-pubsub.md)。
 
 ---
 
@@ -145,4 +145,4 @@ Agent：[调用 poll_channel 工具] 正在轮询 WhatsApp...
 
 ---
 
-_下一步：[Gmail PubSub 推送集成](./gmail-pubsub) | [Cron 定时任务](./cron-jobs) | [自动化概览](./index)_
+_下一步：[Gmail PubSub 推送集成](gmail-pubsub.md) | [Cron 定时任务](cron-jobs.md) | [自动化概览](3.Agent/OpenClaw/Track0-安装教程/自动化/index.md)_
