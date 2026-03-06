@@ -81,11 +81,10 @@ OpenClaw 想要找到和连接本地网络上的设备
 2. 在输入框里粘贴你的 API 密钥（`sk-ant-` 开头那串字符）
 3. 点击确认
 
-::: tip 还没有 API 密钥？
-1. 访问 [console.anthropic.com](https://console.anthropic.com)
-2. 注册并登录
-3. 点击 "API Keys" → "Create Key"，复制密钥（只显示一次！）
-:::
+> [!tip] 还没有 API 密钥？
+> 1. 访问 [console.anthropic.com](https://console.anthropic.com)
+> 2. 注册并登录
+> 3. 点击 "API Keys" → "Create Key"，复制密钥（只显示一次！）
 
 ---
 
@@ -145,21 +144,18 @@ OpenClaw 现在已经在运行了，但你还需要把它和你的聊天软件�
 
 ## 常见问题
 
-::: details 菜单栏里没有看到图标？
-可能是应用没有启动成功。
+> [!abstract]- 菜单栏里没有看到图标？
+> 可能是应用没有启动成功。
+>
+> 1. 在 Finder 里找到 OpenClaw.app，双击重新打开
+> 2. 如果出现安全警告，按照第一步的方法处理
 
-1. 在 Finder 里找到 OpenClaw.app，双击重新打开
-2. 如果出现安全警告，按照第一步的方法处理
-:::
+> [!abstract]- AI 助手没有回复？
+> 按顺序检查：
+>
+> 1. 菜单栏图标是否正常显示（不是红色）
+> 2. API 密钥是否正确（可以在应用设置里重新填写）
+> 3. 网络是否能访问 Anthropic / OpenAI（中国大陆可能需要代理）
 
-::: details AI 助手没有回复？
-按顺序检查：
-
-1. 菜单栏图标是否正常显示（不是红色）
-2. API 密钥是否正确（可以在应用设置里重新填写）
-3. 网络是否能访问 Anthropic / OpenAI（中国大陆可能需要代理）
-:::
-
-::: details 怎么在 Telegram 里使用 AI？
-需要连接"通道"。→ [查看 Telegram 接入教程](../channels/telegram)
-:::
+> [!abstract]- 怎么在 Telegram 里使用 AI？
+> 需要连接"通道"。→ [查看 Telegram 接入教程](../channels/telegram)

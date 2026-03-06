@@ -35,12 +35,11 @@ openclaw clawhub remove code-review
 
 ClawHub 是一个社区驱动的技能生态系统，类似于 npm 之于 Node.js 生态。任何人都可以将自己编写的技能包发布到 ClawHub，供其他用户使用。
 
-::: info 技能包包含什么？
-- **工具定义**：扩展 Agent 可以调用的工具
-- **提示模板**：针对特定任务优化的 System Prompt
-- **工作流模板**：多步骤任务的执行流程
-- **配置预设**：常见场景的推荐配置
-:::
+> [!info] 技能包包含什么？
+> - **工具定义**：扩展 Agent 可以调用的工具
+> - **提示模板**：针对特定任务优化的 System Prompt
+> - **工作流模板**：多步骤任务的执行流程
+> - **配置预设**：常见场景的推荐配置
 
 ---
 
@@ -86,11 +85,10 @@ openclaw clawhub install data-analyst
 
 ## 安全与审核（Moderation）
 
-::: warning 安装前请确认
-- ClawHub 对所有提交的技能包进行自动安全扫描
-- 社区认证（Verified）的技能包经过人工审核，安全性更高
-- 安装来源不明的技能包前，请先查看其源码和权限申请
-:::
+> [!warning] 安装前请确认
+> - ClawHub 对所有提交的技能包进行自动安全扫描
+> - 社区认证（Verified）的技能包经过人工审核，安全性更高
+> - 安装来源不明的技能包前，请先查看其源码和权限申请
 
 技能包的信任级别：
 
@@ -104,30 +102,26 @@ openclaw clawhub install data-analyst
 
 ## 高级功能
 
-::: details 依赖管理与版本锁定
+> [!abstract]- 依赖管理与版本锁定
+> 技能包之间可以有依赖关系，安装时会自动解析：
+>
+> ```bash
+> # 安装指定版本
+> openclaw clawhub install code-review@2.1.0
+> 
+> # 查看依赖树
+> openclaw clawhub deps code-review
+> ```
+>
+> 版本锁定文件位于：`~/.openclaw/clawhub.lock`，建议将其加入版本控制，确保团队使用相同版本。
 
-技能包之间可以有依赖关系，安装时会自动解析：
-
-```bash
-# 安装指定版本
-openclaw clawhub install code-review@2.1.0
-
-# 查看依赖树
-openclaw clawhub deps code-review
-```
-
-版本锁定文件位于：`~/.openclaw/clawhub.lock`，建议将其加入版本控制，确保团队使用相同版本。
-:::
-
-::: details 影响 ClawHub 行为的环境变量
-
-| 变量名 | 说明 | 默认值 |
-|--------|------|--------|
-| `CLAWHUB_REGISTRY` | 自定义 ClawHub 镜像地址 | 官方源 |
-| `CLAWHUB_CACHE_DIR` | 技能包缓存目录 | `~/.openclaw/cache` |
-| `CLAWHUB_TIMEOUT` | 下载超时时间（秒） | `30` |
-| `CLAWHUB_PROXY` | 代理服务器地址 | 无 |
-:::
+> [!abstract]- 影响 ClawHub 行为的环境变量
+> | 变量名 | 说明 | 默认值 |
+> |--------|------|--------|
+> | `CLAWHUB_REGISTRY` | 自定义 ClawHub 镜像地址 | 官方源 |
+> | `CLAWHUB_CACHE_DIR` | 技能包缓存目录 | `~/.openclaw/cache` |
+> | `CLAWHUB_TIMEOUT` | 下载超时时间（秒） | `30` |
+> | `CLAWHUB_PROXY` | 代理服务器地址 | 无 |
 
 ---
 

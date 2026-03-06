@@ -72,27 +72,24 @@ E2E 测试会启动一个完整的 Gateway 实例，模拟真实的消息流转�
 npm run test:e2e
 ```
 
-::: info
-部分 E2E 测试场景使用 Mock 替代真实 API，无需 API Key 即可运行。需要真实 API 的测试场景会在运行前检查并提示。
-:::
-
----
-
-## Live 测试（实时模型测试）
-
-Live 测试会调用真实的 AI 模型 API，验证端到端的模型响应是否符合预期。
-
-运行前需要配置对应模型的 API Key：
-
-```bash
-# 设置 Anthropic API Key
-export ANTHROPIC_API_KEY=sk-ant-xxxxx
-
-# 运行 Live 测试
-npm run test:live
-```
-
-::: warning
+> [!info] 部分 E2E 测试场景使用 Mock 替代真实 API，无需 API Key 即可运行。需要真实 API 的测试场景会在运行前检查并提示。
+> :::
+>
+> ---
+>
+> ## Live 测试（实时模型测试）
+>
+> Live 测试会调用真实的 AI 模型 API，验证端到端的模型响应是否符合预期。
+>
+> 运行前需要配置对应模型的 API Key：
+>
+> ```bash
+> # 设置 Anthropic API Key
+> export ANTHROPIC_API_KEY=sk-ant-xxxxx
+> 
+> # 运行 Live 测试
+> npm run test:live
+> ``` warning
 Live 测试会消耗真实的 API 额度，请注意控制运行频率，避免不必要的费用。
 :::
 
@@ -161,20 +158,19 @@ npm run test:skill -- --skill my-custom-skill
 npm run test:skill:all
 ```
 
-::: details 技能测试配置示例
-```json5
-{
-  skill: "my-custom-skill",
-  testCases: [
-    {
-      input: "帮我查询天气",
-      expectedTool: "weather-fetch",
-      expectedOutput: { contains: "温度" }
-    }
-  ]
-}
-```
-:::
+> [!abstract]- 技能测试配置示例
+> ```json5
+> {
+>   skill: "my-custom-skill",
+>   testCases: [
+>     {
+>       input: "帮我查询天气",
+>       expectedTool: "weather-fetch",
+>       expectedOutput: { contains: "温度" }
+>     }
+>   ]
+> }
+> ```
 
 ---
 
@@ -186,25 +182,24 @@ npm run test:skill:all
 2. 命名格式：`<功能描述>.regression.test.ts`
 3. 测试结构参考以下模板：
 
-::: details 回归测试模板
-```typescript
-import { describe, it, expect } from "bun:test";
-
-describe("功能名称 - 回归测试", () => {
-  it("应该正确处理 <场景描述>", async () => {
-    // 准备
-    const input = "测试输入";
-
-    // 执行
-    const result = await yourFunction(input);
-
-    // 验证
-    expect(result).toBeDefined();
-    expect(result.status).toBe("success");
-  });
-});
-```
-:::
+> [!abstract]- 回归测试模板
+> ```typescript
+> import { describe, it, expect } from "bun:test";
+> 
+> describe("功能名称 - 回归测试", () => {
+>   it("应该正确处理 <场景描述>", async () => {
+>     // 准备
+>     const input = "测试输入";
+> 
+>     // 执行
+>     const result = await yourFunction(input);
+> 
+>     // 验证
+>     expect(result).toBeDefined();
+>     expect(result.status).toBe("success");
+>   });
+> });
+> ```
 
 ---
 

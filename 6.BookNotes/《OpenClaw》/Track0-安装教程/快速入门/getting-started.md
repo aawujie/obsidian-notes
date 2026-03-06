@@ -16,9 +16,8 @@ OpenClaw 是一个运行在你自己电脑上的 AI 助手平台。安装完成�
 
 OpenClaw 本身是免费的，但它需要借助第三方 AI 服务来产生智能回复。**你需要提前准备好一个 AI API 密钥。**
 
-::: info API 提供商不限于 Anthropic
-你可以自由选择任意支持的 AI 服务商，无需绑定某一家。下面列出了常见的几种选择，按需挑选即可。
-:::
+> [!info] API 提供商不限于 Anthropic
+> 你可以自由选择任意支持的 AI 服务商，无需绑定某一家。下面列出了常见的几种选择，按需挑选即可。
 
 ### 可选的 AI 提供商
 
@@ -34,46 +33,41 @@ OpenClaw 本身是免费的，但它需要借助第三方 AI 服务来产生智�
 
 ### 各平台获取密钥方法
 
-::: details Anthropic（Claude）— 官方推荐
-1. 访问 [console.anthropic.com](https://console.anthropic.com)，注册并登录
-2. 点击左侧菜单 **"API Keys"** → **"Create Key"**
-3. 给密钥起个名字，点击确认
-4. **立刻复制**这串密钥（以 `sk-ant-` 开头）——**只显示一次！**
+> [!abstract]- Anthropic（Claude）— 官方推荐
+> 1. 访问 [console.anthropic.com](https://console.anthropic.com)，注册并登录
+> 2. 点击左侧菜单 **"API Keys"** → **"Create Key"**
+> 3. 给密钥起个名字，点击确认
+> 4. **立刻复制**这串密钥（以 `sk-ant-` 开头）——**只显示一次！**
+>
+> > 需要信用卡充值，国内需要翻墙访问。
 
-> 需要信用卡充值，国内需要翻墙访问。
-:::
+> [!abstract]- DeepSeek — 国内首选，超高性价比
+> 1. 访问 [platform.deepseek.com](https://platform.deepseek.com)，注册并登录
+> 2. 点击右上角头像 → **"API Keys"** → **"创建 API Key"**
+> 3. 复制密钥（以 `sk-` 开头）
+>
+> > 支持微信 / 支付宝充值，国内直连，价格极低。
 
-::: details DeepSeek — 国内首选，超高性价比
-1. 访问 [platform.deepseek.com](https://platform.deepseek.com)，注册并登录
-2. 点击右上角头像 → **"API Keys"** → **"创建 API Key"**
-3. 复制密钥（以 `sk-` 开头）
+> [!abstract]- OpenAI（ChatGPT）
+> 1. 访问 [platform.openai.com](https://platform.openai.com)，支持用 **Google / Microsoft 账号 OAuth 登录**，无需单独注册
+> 2. 点击左侧 **"API Keys"** → **"Create new secret key"**
+> 3. 复制密钥（以 `sk-` 开头）
+>
+> > 需要信用卡充值，国内需要翻墙访问。
 
-> 支持微信 / 支付宝充值，国内直连，价格极低。
-:::
+> [!abstract]- Google Gemini
+> 1. 访问 [aistudio.google.com](https://aistudio.google.com)，用 Google 账号登录
+> 2. 点击左侧 **"Get API key"** → **"Create API key"**
+> 3. 复制生成的密钥
+>
+> > 有免费额度，国内需要翻墙访问。
 
-::: details OpenAI（ChatGPT）
-1. 访问 [platform.openai.com](https://platform.openai.com)，支持用 **Google / Microsoft 账号 OAuth 登录**，无需单独注册
-2. 点击左侧 **"API Keys"** → **"Create new secret key"**
-3. 复制密钥（以 `sk-` 开头）
-
-> 需要信用卡充值，国内需要翻墙访问。
-:::
-
-::: details Google Gemini
-1. 访问 [aistudio.google.com](https://aistudio.google.com)，用 Google 账号登录
-2. 点击左侧 **"Get API key"** → **"Create API key"**
-3. 复制生成的密钥
-
-> 有免费额度，国内需要翻墙访问。
-:::
-
-::: details 阿里云百炼（通义千问）
-1. 访问 [bailian.console.aliyun.com](https://bailian.console.aliyun.com)，用阿里云账号登录
-2. 点击右上角 **"API-KEY"** → **"创建 API-KEY"**
-3. 复制密钥（以 `sk-` 开头）
-
-> 国内直连，支持支付宝充值，有免费试用额度。
-:::
+> [!abstract]- 阿里云百炼（通义千问）
+> 1. 访问 [bailian.console.aliyun.com](https://bailian.console.aliyun.com)，用阿里云账号登录
+> 2. 点击右上角 **"API-KEY"** → **"创建 API-KEY"**
+> 3. 复制密钥（以 `sk-` 开头）
+>
+> > 国内直连，支持支付宝充值，有免费试用额度。
 
 ---
 

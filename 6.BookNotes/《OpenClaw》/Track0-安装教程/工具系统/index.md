@@ -67,9 +67,8 @@ OpenClaw 通过工具（Tools）让 Agent 拥有超越对话的实际执行能�
 }
 ```
 
-::: tip 最小权限原则
-只为 Agent 启用它实际需要的工具。限制工具范围不仅能降低安全风险，也能让 Agent 的行为更加可预测。
-:::
+> [!tip] 最小权限原则
+> 只为 Agent 启用它实际需要的工具。限制工具范围不仅能降低安全风险，也能让 Agent 的行为更加可预测。
 
 ---
 
@@ -91,9 +90,8 @@ OpenClaw 通过工具（Tools）让 Agent 拥有超越对话的实际执行能�
 openclaw start --disable-tools browser,exec
 ```
 
-::: warning
-禁用工具后，Agent 将无法使用该工具，即使用户明确要求也不会执行。请确保你了解禁用某工具对 Agent 功能的影响。
-:::
+> [!warning]
+> 禁用工具后，Agent 将无法使用该工具，即使用户明确要求也不会执行。请确保你了解禁用某工具对 Agent 功能的影响。
 
 ---
 

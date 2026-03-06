@@ -41,26 +41,25 @@ auto（自动）  ask（询问）  deny（拒绝）
 ~/.openclaw/approvals.json
 ```
 
-::: details 示例 approvals.json 格式
-```json
-{
-  "rules": [
-    {
-      "pattern": "git *",
-      "policy": "auto"
-    },
-    {
-      "pattern": "npm install *",
-      "policy": "ask"
-    },
-    {
-      "pattern": "rm -rf *",
-      "policy": "deny"
-    }
-  ]
-}
-```
-:::
+> [!abstract]- 示例 approvals.json 格式
+> ```json
+> {
+>   "rules": [
+>     {
+>       "pattern": "git *",
+>       "policy": "auto"
+>     },
+>     {
+>       "pattern": "npm install *",
+>       "policy": "ask"
+>     },
+>     {
+>       "pattern": "rm -rf *",
+>       "policy": "deny"
+>     }
+>   ]
+> }
+> ```
 
 ---
 
@@ -128,9 +127,8 @@ auto（自动）  ask（询问）  deny（拒绝）
 }
 ```
 
-::: tip 使用通配符
-运行列表支持 `*` 通配符匹配任意字符串。例如 `git *` 匹配所有 git 子命令。
-:::
+> [!tip] 使用通配符
+> 运行列表支持 `*` 通配符匹配任意字符串。例如 `git *` 匹配所有 git 子命令。
 
 ---
 
@@ -138,19 +136,18 @@ auto（自动）  ask（询问）  deny（拒绝）
 
 OpenClaw 内置了一份安全命令白名单（Safe Bins），这些命令被认为风险极低，会根据策略自动处理：
 
-::: details 内置安全命令列表
-以下命令默认归类为安全命令：
-
-**文件查看**：`ls`、`cat`、`head`、`tail`、`grep`、`find`、`wc`、`sort`、`uniq`
-
-**版本控制（只读）**：`git status`、`git log`、`git diff`、`git branch`
-
-**系统信息**：`pwd`、`whoami`、`date`、`echo`、`env`、`which`
-
-**包管理（只读）**：`npm list`、`pip list`、`pip show`
-
-注意：即使在安全列表中，具体策略仍由规则配置决定。
-:::
+> [!abstract]- 内置安全命令列表
+> 以下命令默认归类为安全命令：
+>
+> **文件查看**：`ls`、`cat`、`head`、`tail`、`grep`、`find`、`wc`、`sort`、`uniq`
+>
+> **版本控制（只读）**：`git status`、`git log`、`git diff`、`git branch`
+>
+> **系统信息**：`pwd`、`whoami`、`date`、`echo`、`env`、`which`
+>
+> **包管理（只读）**：`npm list`、`pip list`、`pip show`
+>
+> 注意：即使在安全列表中，具体策略仍由规则配置决定。
 
 ---
 
@@ -195,24 +192,22 @@ openclaw approvals remove "npm run *"
 
 在 macOS 上，当命令需要审批时，OpenClaw 会通过系统通知推送审批请求。你可以在不切换窗口的情况下，直接从通知中心批准或拒绝：
 
-::: details 配置 macOS 通知
-确保系统偏好设置中允许 OpenClaw 发送通知：
-
-1. 打开 **系统设置** → **通知**
-2. 找到 OpenClaw，确保通知已启用
-3. 推荐开启"横幅"或"提醒"样式，方便快速响应
-:::
+> [!abstract]- 配置 macOS 通知
+> 确保系统偏好设置中允许 OpenClaw 发送通知：
+>
+> 1. 打开 **系统设置** → **通知**
+> 2. 找到 OpenClaw，确保通知已启用
+> 3. 推荐开启"横幅"或"提醒"样式，方便快速响应
 
 ---
 
 ## 审批的安全影响（Implications）
 
-::: warning 批准操作前请仔细阅读
-- **"总是允许"会永久添加到运行列表**，后续相同模式的命令将不再询问
-- 通配符范围越广，潜在风险越大（例如 `npm *` 覆盖所有 npm 命令）
-- 定期审查运行列表，删除不再需要的规则
-- 在生产环境中，建议所有命令都走 `ask` 策略，不使用 `auto`
-:::
+> [!warning] 批准操作前请仔细阅读
+> - **"总是允许"会永久添加到运行列表**，后续相同模式的命令将不再询问
+> - 通配符范围越广，潜在风险越大（例如 `npm *` 覆盖所有 npm 命令）
+> - 定期审查运行列表，删除不再需要的规则
+> - 在生产环境中，建议所有命令都走 `ask` 策略，不使用 `auto`
 
 ---
 

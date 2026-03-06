@@ -90,63 +90,57 @@ Agent 级配置（Agent-level）
 
 ## 不同场景的推荐配置
 
-::: details 内容生成场景
+> [!abstract]- 内容生成场景
+> ```json5
+> {
+>   agents: {
+>     "writer": {
+>       tools: {
+>         allowed: ["web", "skills"],
+>         sandbox: "normal"
+>       }
+>     }
+>   }
+> }
+> ```
 
-```json5
-{
-  agents: {
-    "writer": {
-      tools: {
-        allowed: ["web", "skills"],
-        sandbox: "normal"
-      }
-    }
-  }
-}
-```
-:::
+> [!abstract]- 代码执行场景
+> ```json5
+> {
+>   agents: {
+>     "coder": {
+>       tools: {
+>         allowed: ["exec", "filesystem"],
+>         sandbox: "strict",
+>         exec: {
+>           // 只允许在指定目录执行
+>           workdir: "/sandbox/projects",
+>           // 限制可执行的命令
+>           allowedCommands: ["python", "node", "npm"]
+>         }
+>       }
+>     }
+>   }
+> }
+> ```
 
-::: details 代码执行场景
-
-```json5
-{
-  agents: {
-    "coder": {
-      tools: {
-        allowed: ["exec", "filesystem"],
-        sandbox: "strict",
-        exec: {
-          // 只允许在指定目录执行
-          workdir: "/sandbox/projects",
-          // 限制可执行的命令
-          allowedCommands: ["python", "node", "npm"]
-        }
-      }
-    }
-  }
-}
-```
-:::
-
-::: details 数据采集场景
-
-```json5
-{
-  agents: {
-    "scraper": {
-      tools: {
-        allowed: ["web", "browser"],
-        sandbox: "strict",
-        web: {
-          // 限制只能访问指定域名
-          allowedDomains: ["example.com", "data.gov"]
-        }
-      }
-    }
-  }
-}
-```
-:::
+> [!abstract]- 数据采集场景
+> ```json5
+> {
+>   agents: {
+>     "scraper": {
+>       tools: {
+>         allowed: ["web", "browser"],
+>         sandbox: "strict",
+>         web: {
+>           // 限制只能访问指定域名
+>           allowedDomains: ["example.com", "data.gov"]
+>         }
+>       }
+>     }
+>   }
+> }
+> ```
 
 ---
 
@@ -169,44 +163,40 @@ openclaw run --agent analyst --dry-run "执行 ls /etc"
 
 ## 从旧版本迁移工具配置
 
-::: details 迁移指南（v1.x → v2.x）
-
-旧版本使用扁平化的 `allowedTools` 数组，新版本改为按 Agent 分组的结构：
-
-**旧版配置：**
-```json5
-{
-  allowedTools: ["web", "exec"]
-}
-```
-
-**新版配置：**
-```json5
-{
-  tools: {
-    allowed: ["web", "exec"]
-  }
-}
-```
-
-运行迁移命令自动转换：
-```bash
-openclaw config migrate --from v1 --to v2
-```
-:::
+> [!abstract]- 迁移指南（v1.x → v2.x）
+> 旧版本使用扁平化的 `allowedTools` 数组，新版本改为按 Agent 分组的结构：
+>
+> **旧版配置：**
+> ```json5
+> {
+>   allowedTools: ["web", "exec"]
+> }
+> ```
+>
+> **新版配置：**
+> ```json5
+> {
+>   tools: {
+>     allowed: ["web", "exec"]
+>   }
+> }
+> ```
+>
+> 运行迁移命令自动转换：
+> ```bash
+> openclaw config migrate --from v1 --to v2
+> ```
 
 ---
 
 ## 故障排查
 
-::: warning 常见配置问题
-
-**Agent 使用了不在 allowed 列表中的工具**：检查会话级配置是否意外覆盖了 Agent 级配置。会话级配置优先级最高，会覆盖 Agent 级设置。
-
-**sandbox: none 不生效**：部分部署环境会强制启用最低沙箱级别，检查 OpenClaw 的部署配置文件（`deploy.config.json`）中是否有 `forceSandbox` 选项。
-
-**工具权限继承异常**：如果全局配置和 Agent 级配置都设置了 `allowed`，Agent 级配置会完全替换（而非合并）全局配置。如需合并，使用 `extend: true` 选项。
-:::
+> [!warning] 常见配置问题
+> **Agent 使用了不在 allowed 列表中的工具**：检查会话级配置是否意外覆盖了 Agent 级配置。会话级配置优先级最高，会覆盖 Agent 级设置。
+>
+> **sandbox: none 不生效**：部分部署环境会强制启用最低沙箱级别，检查 OpenClaw 的部署配置文件（`deploy.config.json`）中是否有 `forceSandbox` 选项。
+>
+> **工具权限继承异常**：如果全局配置和 Agent 级配置都设置了 `allowed`，Agent 级配置会完全替换（而非合并）全局配置。如需合并，使用 `extend: true` 选项。
 
 ---
 

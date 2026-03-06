@@ -97,9 +97,8 @@ Agent 直接控制你计算机上安装的 Chromium 浏览器。适合个人使�
 }
 ```
 
-::: tip Browserless 集成
-使用 Browserless 时，你需要注册账号并获取 API Token。云端浏览器不占用本地资源，适合持续运行的自动化任务。
-:::
+> [!tip] Browserless 集成
+> 使用 Browserless 时，你需要注册账号并获取 API Token。云端浏览器不占用本地资源，适合持续运行的自动化任务。
 
 ---
 
@@ -107,23 +106,22 @@ Agent 直接控制你计算机上安装的 Chromium 浏览器。适合个人使�
 
 在分布式节点部署中，可以为每个节点配置独立的浏览器代理，实现隔离的浏览器会话管理。
 
-::: details 查看分布式节点配置示例
-```json5
-{
-  nodes: {
-    "worker-1": {
-      tools: {
-        browser: {
-          enabled: true,
-          remote: true,
-          remoteUrl: "wss://node1.browserless.io?token=${NODE1_TOKEN}"
-        }
-      }
-    }
-  }
-}
-```
-:::
+> [!abstract]- 查看分布式节点配置示例
+> ```json5
+> {
+>   nodes: {
+>     "worker-1": {
+>       tools: {
+>         browser: {
+>           enabled: true,
+>           remote: true,
+>           remoteUrl: "wss://node1.browserless.io?token=${NODE1_TOKEN}"
+>         }
+>       }
+>     }
+>   }
+> }
+> ```
 
 ---
 
@@ -147,13 +145,12 @@ openclaw browser open https://example.com
 
 浏览器工具支持等待特定元素加载后再继续操作，避免因页面未完全加载导致的失败：
 
-::: details 等待策略说明
-- **等待元素出现**：等待页面中某个 CSS 选择器对应的元素出现
-- **等待网络空闲**：等待页面所有网络请求完成
-- **固定时间等待**：等待指定毫秒数
-
-这些策略由 Agent 根据任务自动选择，通常不需要手动配置。
-:::
+> [!abstract]- 等待策略说明
+> - **等待元素出现**：等待页面中某个 CSS 选择器对应的元素出现
+> - **等待网络空闲**：等待页面所有网络请求完成
+> - **固定时间等待**：等待指定毫秒数
+>
+> 这些策略由 Agent 根据任务自动选择，通常不需要手动配置。
 
 ---
 
@@ -161,27 +158,25 @@ openclaw browser open https://example.com
 
 你可以通过 Chrome DevTools Protocol（CDP）连接到 Agent 正在控制的浏览器，实时查看操作过程：
 
-::: details 如何连接 CDP 调试
-1. 启动带调试端口的 OpenClaw：
-   ```bash
-   openclaw start --browser-debug-port 9222
-   ```
-2. 在 Chrome 浏览器地址栏输入：
-   ```
-   chrome://inspect
-   ```
-3. 点击 "Configure..." 添加 `localhost:9222`，即可看到 Agent 控制的浏览器标签页。
-:::
+> [!abstract]- 如何连接 CDP 调试
+> 1. 启动带调试端口的 OpenClaw：
+>    ```bash
+>    openclaw start --browser-debug-port 9222
+>    ```
+> 2. 在 Chrome 浏览器地址栏输入：
+>    ```
+>    chrome://inspect
+>    ```
+> 3. 点击 "Configure..." 添加 `localhost:9222`，即可看到 Agent 控制的浏览器标签页。
 
 ---
 
 ## 安全与隔离
 
-::: warning 安全注意
-- **Cookie 隔离**：不同 `profile` 配置完全隔离，Agent 无法跨配置文件访问登录状态
-- **登录凭证处理**：不要让 Agent 在不受信任的网站输入真实密码。建议为自动化场景创建专用账号
-- **沙箱运行**：本地浏览器运行在 Playwright 的沙箱环境中，与系统其他浏览器实例隔离
-:::
+> [!warning] 安全注意
+> - **Cookie 隔离**：不同 `profile` 配置完全隔离，Agent 无法跨配置文件访问登录状态
+> - **登录凭证处理**：不要让 Agent 在不受信任的网站输入真实密码。建议为自动化场景创建专用账号
+> - **沙箱运行**：本地浏览器运行在 Playwright 的沙箱环境中，与系统其他浏览器实例隔离
 
 ---
 

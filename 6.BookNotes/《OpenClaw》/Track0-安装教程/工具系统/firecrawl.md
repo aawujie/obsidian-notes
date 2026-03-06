@@ -48,14 +48,13 @@ Firecrawl 通过隐身模式（Stealth Mode）和真实浏览器环境解决这�
 }
 ```
 
-::: tip 推荐使用环境变量
-将 API Key 存储在环境变量 `FIRECRAWL_API_KEY` 中，避免将密钥直接写入配置文件。
-
-```bash
-# 在 shell 配置文件（~/.bashrc 或 ~/.zshrc）中添加
-export FIRECRAWL_API_KEY="fc-your-api-key-here"
-```
-:::
+> [!tip] 推荐使用环境变量
+> 将 API Key 存储在环境变量 `FIRECRAWL_API_KEY` 中，避免将密钥直接写入配置文件。
+>
+> ```bash
+> # 在 shell 配置文件（~/.bashrc 或 ~/.zshrc）中添加
+> export FIRECRAWL_API_KEY="fc-your-api-key-here"
+> ```
 
 ---
 
@@ -77,35 +76,27 @@ openclaw run "用 Firecrawl 抓取 https://example.com 的最新价格信息"
 
 ## 隐身模式与机器人规避
 
-::: info Firecrawl 如何绕过反爬检测？
-- **真实浏览器指纹**：模拟真实用户的浏览器特征（User-Agent、字体、分辨率等）
-- **JavaScript 渲染**：完整执行页面 JavaScript，等待动态内容加载完成
-- **IP 轮换**：自动切换出口 IP，避免触发频率限制
-- **行为模拟**：模拟人类的滚动、点击行为
-:::
+> [!info] Firecrawl 如何绕过反爬检测？
+> - **真实浏览器指纹**：模拟真实用户的浏览器特征（User-Agent、字体、分辨率等）
+> - **JavaScript 渲染**：完整执行页面 JavaScript，等待动态内容加载完成
+> - **IP 轮换**：自动切换出口 IP，避免触发频率限制
+> - **行为模拟**：模拟人类的滚动、点击行为
 
-::: warning 合规使用提醒
-使用 Firecrawl 抓取网站内容时，请遵守目标网站的使用条款（ToS）和 `robots.txt` 规定。不要将其用于未经授权的数据采集。
-:::
+> [!warning] 合规使用提醒
+> 使用 Firecrawl 抓取网站内容时，请遵守目标网站的使用条款（ToS）和 `robots.txt` 规定。不要将其用于未经授权的数据采集。
 
 ---
 
 ## 常见问题
 
-::: details API 调用失败怎么办？
+> [!abstract]- API 调用失败怎么办？
+> 1. 检查 API Key 是否正确配置且未过期
+> 2. 确认账号余额是否充足（Firecrawl 按使用量计费）
+> 3. 查看 Firecrawl 官方状态页确认服务是否正常
+> 4. 检查目标 URL 是否在 Firecrawl 支持的抓取范围内
 
-1. 检查 API Key 是否正确配置且未过期
-2. 确认账号余额是否充足（Firecrawl 按使用量计费）
-3. 查看 Firecrawl 官方状态页确认服务是否正常
-4. 检查目标 URL 是否在 Firecrawl 支持的抓取范围内
-
-:::
-
-::: details 抓取结果不完整怎么办？
-
-某些页面需要登录后才能查看完整内容，这类情况 Firecrawl 也无法解决。建议结合浏览器工具和手动登录（Manual Login）来处理需要身份验证的页面。
-
-:::
+> [!abstract]- 抓取结果不完整怎么办？
+> 某些页面需要登录后才能查看完整内容，这类情况 Firecrawl 也无法解决。建议结合浏览器工具和手动登录（Manual Login）来处理需要身份验证的页面。
 
 ---
 

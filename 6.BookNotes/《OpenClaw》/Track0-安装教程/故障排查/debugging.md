@@ -25,9 +25,8 @@ description: "OpenClaw 帮助：调试指南（Debugging Guide）。当 Agent �
 }
 ```
 
-::: tip 配置文件位置
-默认配置文件路径为 `~/.openclaw/config.json5`。运行 `openclaw config edit` 可以直接打开编辑。
-:::
+> [!tip] 配置文件位置
+> 默认配置文件路径为 `~/.openclaw/config.json5`。运行 `openclaw config edit` 可以直接打开编辑。
 
 修改配置后，重启 Gateway 使配置生效：
 
@@ -57,15 +56,14 @@ openclaw gateway --watch
 - 流式输出中断
 - Token 截断问题
 
-::: details 查看原始流日志示例
-```json5
-[stream] --> POST https://api.anthropic.com/v1/messages
-[stream] <-- 200 OK
-[stream] data: {"type":"content_block_start","index":0,...}
-[stream] data: {"type":"content_block_delta","delta":{"text":"你好"},...}
-[stream] data: [DONE]
-```
-:::
+> [!abstract]- 查看原始流日志示例
+> ```json5
+> [stream] --> POST https://api.anthropic.com/v1/messages
+> [stream] <-- 200 OK
+> [stream] data: {"type":"content_block_start","index":0,...}
+> [stream] data: {"type":"content_block_delta","delta":{"text":"你好"},...}
+> [stream] data: [DONE]
+> ```
 
 ---
 
@@ -77,13 +75,12 @@ openclaw gateway --watch
 - 工具调用参数丢失
 - 消息组装异常
 
-::: details 查看原始块日志示例
-```json5
-[chunk] type=text content="你好，我是" index=0
-[chunk] type=tool_use name="search" input={"query":"..."} index=1
-[chunk] type=text content="根据搜索结果..." index=2
-```
-:::
+> [!abstract]- 查看原始块日志示例
+> ```json5
+> [chunk] type=text content="你好，我是" index=0
+> [chunk] type=tool_use name="search" input={"query":"..."} index=1
+> [chunk] type=text content="根据搜索结果..." index=2
+> ```
 
 ---
 
@@ -107,38 +104,34 @@ openclaw logs --follow
 
 ## 常见调试场景
 
-::: details API 调用失败
-1. 开启 `rawStream: true`，查看完整的 HTTP 请求和响应
-2. 确认 API Key 是否正确：`openclaw config show`
-3. 检查 API 端点是否可访问：`curl https://api.anthropic.com/v1/models`
-4. 查看错误码含义（401 = 未授权，429 = 超速限制，500 = 服务端错误）
-:::
+> [!abstract]- API 调用失败
+> 1. 开启 `rawStream: true`，查看完整的 HTTP 请求和响应
+> 2. 确认 API Key 是否正确：`openclaw config show`
+> 3. 检查 API 端点是否可访问：`curl https://api.anthropic.com/v1/models`
+> 4. 查看错误码含义（401 = 未授权，429 = 超速限制，500 = 服务端错误）
 
-::: details 消息未送达
-1. 开启 `verbose: true`，查看消息路由日志
-2. 确认通道连接状态：`openclaw channels status`
-3. 查看 Gateway 事件：`openclaw gateway --watch`
-4. 检查通道 Token 是否过期
-:::
+> [!abstract]- 消息未送达
+> 1. 开启 `verbose: true`，查看消息路由日志
+> 2. 确认通道连接状态：`openclaw channels status`
+> 3. 查看 Gateway 事件：`openclaw gateway --watch`
+> 4. 检查通道 Token 是否过期
 
-::: details 工具执行错误
-1. 开启 `rawChunks: true`，查看工具调用参数
-2. 检查工具定义是否与模型期望格式匹配
-3. 手动测试工具脚本是否正常运行
-4. 查看工具执行日志：`openclaw logs --filter tools`
-:::
+> [!abstract]- 工具执行错误
+> 1. 开启 `rawChunks: true`，查看工具调用参数
+> 2. 检查工具定义是否与模型期望格式匹配
+> 3. 手动测试工具脚本是否正常运行
+> 4. 查看工具执行日志：`openclaw logs --filter tools`
 
 ---
 
-::: warning 安全注意事项
-调试日志（尤其是 `rawStream` 和 `rawChunks`）可能包含：
-
-- API Key 片段
-- 用户输入内容
-- 模型返回的敏感信息
-
-**生产环境请勿开启调试模式。** 调试完成后，务必将 `debug.enabled` 改回 `false` 并重启 Gateway。
-:::
+> [!warning] 安全注意事项
+> 调试日志（尤其是 `rawStream` 和 `rawChunks`）可能包含：
+>
+> - API Key 片段
+> - 用户输入内容
+> - 模型返回的敏感信息
+>
+> **生产环境请勿开启调试模式。** 调试完成后，务必将 `debug.enabled` 改回 `false` 并重启 Gateway。
 
 ---
 

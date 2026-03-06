@@ -83,9 +83,8 @@ choco install nodejs-lts
 
 去 [nodejs.org](https://nodejs.org/) 下载 Windows 安装包（.msi 文件），双击安装。
 
-::: info Windows 用户提示
-在 Windows 上，我们推荐使用 **WSL2**（Windows 的 Linux 子系统）运行 OpenClaw，体验更好。安装 WSL2：用管理员 PowerShell 运行 `wsl --install`，重启后进入 Ubuntu 子系统，再按 Linux 方式安装 Node.js。
-:::
+> [!info] Windows 用户提示
+> 在 Windows 上，我们推荐使用 **WSL2**（Windows 的 Linux 子系统）运行 OpenClaw，体验更好。安装 WSL2：用管理员 PowerShell 运行 `wsl --install`，重启后进入 Ubuntu 子系统，再按 Linux 方式安装 Node.js。
 
 ---
 
@@ -106,31 +105,28 @@ npm -v
 
 如果你需要在多个 Node.js 版本之间切换，可以用版本管理器：
 
-::: details nvm / fnm / mise 安装方式
-
-**fnm（推荐，速度最快）：**
-
-```bash
-# 安装 fnm
-curl -fsSL https://fnm.vercel.app/install | bash
-
-# 安装并使用 Node 22
-fnm install 22
-fnm use 22
-```
-
-**nvm（macOS/Linux 经典选项）：**
-
-```bash
-# 安装 nvm
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.0/install.sh | bash
-
-# 重新打开终端，然后安装 Node 22
-nvm install 22
-nvm use 22
-```
-
-::: warning 注意
+> [!abstract]- nvm / fnm / mise 安装方式
+> **fnm（推荐，速度最快）：**
+>
+> ```bash
+> # 安装 fnm
+> curl -fsSL https://fnm.vercel.app/install | bash
+> 
+> # 安装并使用 Node 22
+> fnm install 22
+> fnm use 22
+> ```
+>
+> **nvm（macOS/Linux 经典选项）：**
+>
+> ```bash
+> # 安装 nvm
+> curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.0/install.sh | bash
+> 
+> # 重新打开终端，然后安装 Node 22
+> nvm install 22
+> nvm use 22
+> ``` warning 注意
 确保版本管理器的初始化命令已经加入 `~/.zshrc` 或 `~/.bashrc`，否则每次打开新终端都需要重新设置。
 :::
 
@@ -140,49 +136,43 @@ nvm use 22
 
 ## 常见问题
 
-::: details 装完 Node 后，openclaw 命令还是找不到？
+> [!abstract]- 装完 Node 后，openclaw 命令还是找不到？
+> 这通常是 PATH 路径没有配置好，系统不知道去哪里找 openclaw 命令。
+>
+> **诊断：**
+>
+> ```bash
+> npm prefix -g
+> echo $PATH
+> ```
+>
+> 查看 `npm prefix -g` 的输出路径，是否包含在 `$PATH` 里。
+>
+> **修复（macOS/Linux）：**
+>
+> 把下面这行加到 `~/.zshrc` 或 `~/.bashrc` 的末尾：
+>
+> ```bash
+> export PATH="$(npm prefix -g)/bin:$PATH"
+> ```
+>
+> 然后运行：
+>
+> ```bash
+> source ~/.zshrc   # 或 source ~/.bashrc
+> ```
+>
+> **修复（Windows）：**
+>
+> 打开"设置" → 搜索"编辑系统环境变量" → 找到 PATH → 添加 `npm prefix -g` 命令输出的路径。
 
-这通常是 PATH 路径没有配置好，系统不知道去哪里找 openclaw 命令。
-
-**诊断：**
-
-```bash
-npm prefix -g
-echo $PATH
-```
-
-查看 `npm prefix -g` 的输出路径，是否包含在 `$PATH` 里。
-
-**修复（macOS/Linux）：**
-
-把下面这行加到 `~/.zshrc` 或 `~/.bashrc` 的末尾：
-
-```bash
-export PATH="$(npm prefix -g)/bin:$PATH"
-```
-
-然后运行：
-
-```bash
-source ~/.zshrc   # 或 source ~/.bashrc
-```
-
-**修复（Windows）：**
-
-打开"设置" → 搜索"编辑系统环境变量" → 找到 PATH → 添加 `npm prefix -g` 命令输出的路径。
-
-:::
-
-::: details Linux 上 npm install 提示权限错误（EACCES）？
-
-把 npm 的全局安装目录改到用户自己的文件夹里：
-
-```bash
-mkdir -p "$HOME/.npm-global"
-npm config set prefix "$HOME/.npm-global"
-export PATH="$HOME/.npm-global/bin:$PATH"
-```
-
-把最后那行 `export PATH=...` 加到 `~/.bashrc` 或 `~/.zshrc` 里，让它永久生效。
-
-:::
+> [!abstract]- Linux 上 npm install 提示权限错误（EACCES）？
+> 把 npm 的全局安装目录改到用户自己的文件夹里：
+>
+> ```bash
+> mkdir -p "$HOME/.npm-global"
+> npm config set prefix "$HOME/.npm-global"
+> export PATH="$HOME/.npm-global/bin:$PATH"
+> ```
+>
+> 把最后那行 `export PATH=...` 加到 `~/.bashrc` 或 `~/.zshrc` 里，让它永久生效。

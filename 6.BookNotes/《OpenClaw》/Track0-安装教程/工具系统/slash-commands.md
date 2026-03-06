@@ -71,12 +71,11 @@ description: "OpenClaw 工具系统：斜杠命令（Slash Commands）。斜杠�
 | `action` | string | 内置动作（`clearContext`、`toggleVerbose` 等） |
 | `model` | string | 此命令使用的特定模型（可选） |
 
-::: details 可用内置动作（action）列表
-| 动作名 | 说明 |
-|--------|------|
-| `clearContext` | 清除当前会话上下文，相当于 `/reset` |
-| `toggleVerbose` | 切换详细日志输出模式，相当于 `/verbose` |
-:::
+> [!abstract]- 可用内置动作（action）列表
+> | 动作名 | 说明 |
+> |--------|------|
+> | `clearContext` | 清除当前会话上下文，相当于 `/reset` |
+> | `toggleVerbose` | 切换详细日志输出模式，相当于 `/verbose` |
 
 ---
 
@@ -138,13 +137,12 @@ openclaw agent --message "/reset 你是一个代码审查专家，请审查以�
 
 使用 `/debug` 命令可以临时切换调试模式，查看 Agent 的内部状态：
 
-::: details 调试模式显示的信息
-- 工具调用的完整参数和返回值
-- Token 使用量统计
-- 每步推理的耗时
-- 当前激活的技能列表
-- 上下文窗口使用率
-:::
+> [!abstract]- 调试模式显示的信息
+> - 工具调用的完整参数和返回值
+> - Token 使用量统计
+> - 每步推理的耗时
+> - 当前激活的技能列表
+> - 上下文窗口使用率
 
 ---
 
@@ -158,9 +156,8 @@ openclaw agent --message "/reset 你是一个代码审查专家，请审查以�
 /verbose off              ← 关闭详细模式
 ```
 
-::: info
-通过斜杠命令修改的配置只影响当前会话，不会持久化到配置文件。重启或新建会话后恢复默认设置。
-:::
+> [!info]
+> 通过斜杠命令修改的配置只影响当前会话，不会持久化到配置文件。重启或新建会话后恢复默认设置。
 
 ---
 

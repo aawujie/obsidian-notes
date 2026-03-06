@@ -25,16 +25,14 @@ OpenClaw 的 Chrome 扩展让浏览器与 Agent 深度集成，你可以直接�
 3. 点击"加载已解压的扩展程序"
 4. 选择 OpenClaw 扩展所在的本地目录
 
-::: details 扩展文件默认路径
-
-```bash
-# macOS/Linux
-~/.openclaw/extensions/chrome
-
-# Windows
-C:\Users\<你的用户名>\.openclaw\extensions\chrome
-```
-:::
+> [!abstract]- 扩展文件默认路径
+> ```bash
+> # macOS/Linux
+> ~/.openclaw/extensions/chrome
+> 
+> # Windows
+> C:\Users\<你的用户名>\.openclaw\extensions\chrome
+> ```
 
 ---
 
@@ -78,39 +76,36 @@ C:\Users\<你的用户名>\.openclaw\extensions\chrome
 }
 ```
 
-::: tip 端口转发方法
-如果远程实例没有公网访问，可以通过 SSH 端口转发建立连接：
-
-```bash
-# 将远程 3000 端口映射到本地
-ssh -N -L 3000:localhost:3000 user@your-server.example.com
-```
-
-然后在扩展中填写本地地址 `ws://localhost:3000/gateway`。
-:::
+> [!tip] 端口转发方法
+> 如果远程实例没有公网访问，可以通过 SSH 端口转发建立连接：
+>
+> ```bash
+> # 将远程 3000 端口映射到本地
+> ssh -N -L 3000:localhost:3000 user@your-server.example.com
+> ```
+>
+> 然后在扩展中填写本地地址 `ws://localhost:3000/gateway`。
 
 ---
 
 ## 沙箱化与权限隔离
 
-::: info 扩展权限说明
-Chrome 扩展运行在独立的权限上下文中。OpenClaw 扩展仅申请以下必要权限：
-- `activeTab`：访问当前活动标签页
-- `storage`：保存连接配置
-- `nativeMessaging`：与本地 OpenClaw 进程通信
-
-扩展不会读取你浏览器中的密码或其他敏感数据。
-:::
+> [!info] 扩展权限说明
+> Chrome 扩展运行在独立的权限上下文中。OpenClaw 扩展仅申请以下必要权限：
+> - `activeTab`：访问当前活动标签页
+> - `storage`：保存连接配置
+> - `nativeMessaging`：与本地 OpenClaw 进程通信
+>
+> 扩展不会读取你浏览器中的密码或其他敏感数据。
 
 ---
 
 ## 安全含义
 
-::: warning 注意事项
-- 不要将扩展连接到不可信的远程 OpenClaw 实例
-- 远程 Gateway URL 应使用 WSS（加密 WebSocket），不要使用明文 WS
-- 定期检查已连接的 Agent 会话，及时分离不再需要的连接
-:::
+> [!warning] 注意事项
+> - 不要将扩展连接到不可信的远程 OpenClaw 实例
+> - 远程 Gateway URL 应使用 WSS（加密 WebSocket），不要使用明文 WS
+> - 定期检查已连接的 Agent 会话，及时分离不再需要的连接
 
 ---
 

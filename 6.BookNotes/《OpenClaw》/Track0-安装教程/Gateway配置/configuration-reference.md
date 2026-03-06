@@ -33,11 +33,10 @@ description: "~/.openclaw/openclaw.json 的完整逐字段参考"
 | `open`                | 绕过群组白名单（提及门控仍然生效）                     |
 | `disabled`            | 阻止所有群组/房间消息                                  |
 
-::: info 说明
-`channels.defaults.groupPolicy` 设置当提供商（Provider）的 `groupPolicy` 未设置时的默认值。
-配对码在 1 小时后过期。每个通道待处理的私聊配对请求上限为 **3 个**。
-Slack/Discord 有特殊回退机制：如果其提供商配置段完全缺失，运行时群组策略可能会解析为 `open`（并显示启动警告）。
-:::
+> [!info] 说明
+> `channels.defaults.groupPolicy` 设置当提供商（Provider）的 `groupPolicy` 未设置时的默认值。
+> 配对码在 1 小时后过期。每个通道待处理的私聊配对请求上限为 **3 个**。
+> Slack/Discord 有特殊回退机制：如果其提供商配置段完全缺失，运行时群组策略可能会解析为 `open`（并显示启动警告）。
 
 
 ### WhatsApp
@@ -75,29 +74,26 @@ WhatsApp 通过网关的 Web 通道（Baileys Web）运行。当存在已链接�
 }
 ```
 
-::: details 多账户 WhatsApp
-
-```json5
-{
-  channels: {
-    whatsapp: {
-      accounts: {
-        default: {},
-        personal: {},
-        biz: {
-          // authDir: "~/.openclaw/credentials/whatsapp/biz",
-        },
-      },
-    },
-  },
-}
-```
-
-- 出站命令默认使用 `default` 账户（如果存在）；否则使用第一个已配置的账户 ID（按排序）。
-- 旧版单账户 Baileys 认证目录会被 `openclaw doctor` 迁移到 `whatsapp/default`。
-- 按账户覆盖：`channels.whatsapp.accounts.<id>.sendReadReceipts`、`channels.whatsapp.accounts.<id>.dmPolicy`、`channels.whatsapp.accounts.<id>.allowFrom`。
-
-:::
+> [!abstract]- 多账户 WhatsApp
+> ```json5
+> {
+>   channels: {
+>     whatsapp: {
+>       accounts: {
+>         default: {},
+>         personal: {},
+>         biz: {
+>           // authDir: "~/.openclaw/credentials/whatsapp/biz",
+>         },
+>       },
+>     },
+>   },
+> }
+> ```
+>
+> - 出站命令默认使用 `default` 账户（如果存在）；否则使用第一个已配置的账户 ID（按排序）。
+> - 旧版单账户 Baileys 认证目录会被 `openclaw doctor` 迁移到 `whatsapp/default`。
+> - 按账户覆盖：`channels.whatsapp.accounts.<id>.sendReadReceipts`、`channels.whatsapp.accounts.<id>.dmPolicy`、`channels.whatsapp.accounts.<id>.allowFrom`。
 
 
 ### Telegram
@@ -403,14 +399,11 @@ OpenClaw 生成 `imsg rpc`（通过 stdio 的 JSON-RPC）。无需守护进程�
 - 建议使用 `chat_id:<id>` 作为目标。使用 `imsg chats --limit 20` 列出聊天。
 - `cliPath` 可以指向 SSH 包装器；设置 `remoteHost` 以进行 SCP 附件获取。
 
-::: details iMessage SSH 包装器示例
-
-```bash
-#!/usr/bin/env bash
-exec ssh -T gateway-host imsg "$@"
-```
-
-:::
+> [!abstract]- iMessage SSH 包装器示例
+> ```bash
+> #!/usr/bin/env bash
+> exec ssh -T gateway-host imsg "$@"
+> ```
 
 
 ### 多账户（所有通道）
@@ -527,19 +520,16 @@ exec ssh -T gateway-host imsg "$@"
 }
 ```
 
-::: details 命令详情
-
-- 文本命令必须是以 `/` 开头的**独立**消息。
-- `native: "auto"` 为 Discord/Telegram 启用原生命令，Slack 保持关闭。
-- 按通道覆盖：`channels.discord.commands.native`（布尔值或 `"auto"`）。`false` 会清除之前注册的命令。
-- `channels.telegram.customCommands` 添加额外的 Telegram Bot 菜单项。
-- `bash: true` 启用 `! <cmd>` 执行宿主 Shell。需要 `tools.elevated.enabled` 且发送者在 `tools.elevated.allowFrom.<channel>` 中。
-- `config: true` 启用 `/config`（读取/写入 `openclaw.json`）。
-- `channels.<provider>.configWrites` 控制每个通道的配置修改权限（默认：true）。
-- `allowFrom` 按提供商设置。设置后，它是**唯一**的授权来源（通道白名单/配对和 `useAccessGroups` 被忽略）。
-- `useAccessGroups: false` 允许命令在未设置 `allowFrom` 时绕过访问组策略。
-
-:::
+> [!abstract]- 命令详情
+> - 文本命令必须是以 `/` 开头的**独立**消息。
+> - `native: "auto"` 为 Discord/Telegram 启用原生命令，Slack 保持关闭。
+> - 按通道覆盖：`channels.discord.commands.native`（布尔值或 `"auto"`）。`false` 会清除之前注册的命令。
+> - `channels.telegram.customCommands` 添加额外的 Telegram Bot 菜单项。
+> - `bash: true` 启用 `! <cmd>` 执行宿主 Shell。需要 `tools.elevated.enabled` 且发送者在 `tools.elevated.allowFrom.<channel>` 中。
+> - `config: true` 启用 `/config`（读取/写入 `openclaw.json`）。
+> - `channels.<provider>.configWrites` 控制每个通道的配置修改权限（默认：true）。
+> - `allowFrom` 按提供商设置。设置后，它是**唯一**的授权来源（通道白名单/配对和 `useAccessGroups` 被忽略）。
+> - `useAccessGroups: false` 允许命令在未设置 `allowFrom` 时绕过访问组策略。
 
 
 ---
@@ -775,23 +765,20 @@ Z.AI GLM-4.x 模型会自动启用思维模式，除非你设置了 `--thinking 
 }
 ```
 
-::: details cache-ttl 模式行为
-
-- `mode: "cache-ttl"` 启用修剪处理。
-- `ttl` 控制修剪再次运行的间隔（在上次缓存触碰之后）。
-- 修剪首先对超大工具结果进行软裁剪，然后在需要时对较旧的工具结果进行硬清除。
-
-**软裁剪**保留开头和结尾，在中间插入 `...`。
-
-**硬清除**用占位符替换整个工具结果。
-
-注意：
-
-- 图像块永远不会被裁剪/清除。
-- 比例基于字符（近似值），不是精确的 Token 计数。
-- 如果助手消息少于 `keepLastAssistants` 条，则跳过修剪。
-
-:::
+> [!abstract]- cache-ttl 模式行为
+> - `mode: "cache-ttl"` 启用修剪处理。
+> - `ttl` 控制修剪再次运行的间隔（在上次缓存触碰之后）。
+> - 修剪首先对超大工具结果进行软裁剪，然后在需要时对较旧的工具结果进行硬清除。
+>
+> **软裁剪**保留开头和结尾，在中间插入 `...`。
+>
+> **硬清除**用占位符替换整个工具结果。
+>
+> 注意：
+>
+> - 图像块永远不会被裁剪/清除。
+> - 比例基于字符（近似值），不是精确的 Token 计数。
+> - 如果助手消息少于 `keepLastAssistants` 条，则跳过修剪。
 
 
 参阅[会话修剪（Session Pruning）](/concepts/session-pruning)了解行为详情。
@@ -916,34 +903,31 @@ Z.AI GLM-4.x 模型会自动启用思维模式，除非你设置了 `--thinking 
 }
 ```
 
-::: details 沙箱详情
-
-**工作区访问：**
-
-- `none`：按作用域在 `~/.openclaw/sandboxes` 下创建沙箱工作区
-- `ro`：沙箱工作区在 `/workspace`，代理工作区以只读方式挂载在 `/agent`
-- `rw`：代理工作区以读写方式挂载在 `/workspace`
-
-**作用域：**
-
-- `session`：按会话的容器 + 工作区
-- `agent`：每个代理一个容器 + 工作区（默认）
-- `shared`：共享容器和工作区（无跨会话隔离）
-
-**`setupCommand`** 在容器创建后运行一次（通过 `sh -lc`）。需要网络出站、可写根目录、root 用户。
-
-**容器默认使用 `network: "none"`** ——如果代理需要出站访问，请设为 `"bridge"`。
-
-**入站附件**会被暂存到活动工作区的 `media/inbound/*` 中。
-
-**`docker.binds`** 挂载额外的宿主目录；全局和按代理的绑定会合并。
-
-**沙箱浏览器**（`sandbox.browser.enabled`）：容器中的 Chromium + CDP。noVNC URL 会注入系统提示。不需要在主配置中启用 `browser.enabled`。
-
-- `allowHostControl: false`（默认）阻止沙箱会话控制宿主浏览器。
-- `sandbox.browser.binds` 将额外的宿主目录仅挂载到沙箱浏览器容器中。设置后（包括 `[]`），它会替换浏览器容器的 `docker.binds`。
-
-:::
+> [!abstract]- 沙箱详情
+> **工作区访问：**
+>
+> - `none`：按作用域在 `~/.openclaw/sandboxes` 下创建沙箱工作区
+> - `ro`：沙箱工作区在 `/workspace`，代理工作区以只读方式挂载在 `/agent`
+> - `rw`：代理工作区以读写方式挂载在 `/workspace`
+>
+> **作用域：**
+>
+> - `session`：按会话的容器 + 工作区
+> - `agent`：每个代理一个容器 + 工作区（默认）
+> - `shared`：共享容器和工作区（无跨会话隔离）
+>
+> **`setupCommand`** 在容器创建后运行一次（通过 `sh -lc`）。需要网络出站、可写根目录、root 用户。
+>
+> **容器默认使用 `network: "none"`** ——如果代理需要出站访问，请设为 `"bridge"`。
+>
+> **入站附件**会被暂存到活动工作区的 `media/inbound/*` 中。
+>
+> **`docker.binds`** 挂载额外的宿主目录；全局和按代理的绑定会合并。
+>
+> **沙箱浏览器**（`sandbox.browser.enabled`）：容器中的 Chromium + CDP。noVNC URL 会注入系统提示。不需要在主配置中启用 `browser.enabled`。
+>
+> - `allowHostControl: false`（默认）阻止沙箱会话控制宿主浏览器。
+> - `sandbox.browser.binds` 将额外的宿主目录仅挂载到沙箱浏览器容器中。设置后（包括 `[]`），它会替换浏览器容器的 `docker.binds`。
 
 
 构建镜像：
@@ -1035,100 +1019,91 @@ scripts/sandbox-browser-setup.sh   # 可选浏览器镜像
 
 ### 按代理访问配置
 
-::: details 完全访问（无沙箱）
-
-```json5
-{
-  agents: {
-    list: [
-      {
-        id: "personal",
-        workspace: "~/.openclaw/workspace-personal",
-        sandbox: { mode: "off" },
-      },
-    ],
-  },
-}
-```
-
-:::
+> [!abstract]- 完全访问（无沙箱）
+> ```json5
+> {
+>   agents: {
+>     list: [
+>       {
+>         id: "personal",
+>         workspace: "~/.openclaw/workspace-personal",
+>         sandbox: { mode: "off" },
+>       },
+>     ],
+>   },
+> }
+> ```
 
 
-::: details 只读工具 + 工作区
-
-```json5
-{
-  agents: {
-    list: [
-      {
-        id: "family",
-        workspace: "~/.openclaw/workspace-family",
-        sandbox: { mode: "all", scope: "agent", workspaceAccess: "ro" },
-        tools: {
-          allow: [
-            "read",
-            "sessions_list",
-            "sessions_history",
-            "sessions_send",
-            "sessions_spawn",
-            "session_status",
-          ],
-          deny: ["write", "edit", "apply_patch", "exec", "process", "browser"],
-        },
-      },
-    ],
-  },
-}
-```
-
-:::
+> [!abstract]- 只读工具 + 工作区
+> ```json5
+> {
+>   agents: {
+>     list: [
+>       {
+>         id: "family",
+>         workspace: "~/.openclaw/workspace-family",
+>         sandbox: { mode: "all", scope: "agent", workspaceAccess: "ro" },
+>         tools: {
+>           allow: [
+>             "read",
+>             "sessions_list",
+>             "sessions_history",
+>             "sessions_send",
+>             "sessions_spawn",
+>             "session_status",
+>           ],
+>           deny: ["write", "edit", "apply_patch", "exec", "process", "browser"],
+>         },
+>       },
+>     ],
+>   },
+> }
+> ```
 
 
-::: details 无文件系统访问（仅消息）
-
-```json5
-{
-  agents: {
-    list: [
-      {
-        id: "public",
-        workspace: "~/.openclaw/workspace-public",
-        sandbox: { mode: "all", scope: "agent", workspaceAccess: "none" },
-        tools: {
-          allow: [
-            "sessions_list",
-            "sessions_history",
-            "sessions_send",
-            "sessions_spawn",
-            "session_status",
-            "whatsapp",
-            "telegram",
-            "slack",
-            "discord",
-            "gateway",
-          ],
-          deny: [
-            "read",
-            "write",
-            "edit",
-            "apply_patch",
-            "exec",
-            "process",
-            "browser",
-            "canvas",
-            "nodes",
-            "cron",
-            "gateway",
-            "image",
-          ],
-        },
-      },
-    ],
-  },
-}
-```
-
-:::
+> [!abstract]- 无文件系统访问（仅消息）
+> ```json5
+> {
+>   agents: {
+>     list: [
+>       {
+>         id: "public",
+>         workspace: "~/.openclaw/workspace-public",
+>         sandbox: { mode: "all", scope: "agent", workspaceAccess: "none" },
+>         tools: {
+>           allow: [
+>             "sessions_list",
+>             "sessions_history",
+>             "sessions_send",
+>             "sessions_spawn",
+>             "session_status",
+>             "whatsapp",
+>             "telegram",
+>             "slack",
+>             "discord",
+>             "gateway",
+>           ],
+>           deny: [
+>             "read",
+>             "write",
+>             "edit",
+>             "apply_patch",
+>             "exec",
+>             "process",
+>             "browser",
+>             "canvas",
+>             "nodes",
+>             "cron",
+>             "gateway",
+>             "image",
+>           ],
+>         },
+>       },
+>     ],
+>   },
+> }
+> ```
 
 
 参阅[多代理沙箱与工具（Multi-Agent Sandbox & Tools）](/tools/multi-agent-sandbox-tools)了解优先级详情。
@@ -1173,21 +1148,18 @@ scripts/sandbox-browser-setup.sh   # 可选浏览器镜像
 }
 ```
 
-::: details 会话字段详情
-
-- **`dmScope`**：私聊的分组方式。
-  - `main`：所有私聊共享主会话。
-  - `per-peer`：跨通道按发送者 ID 隔离。
-  - `per-channel-peer`：按通道 + 发送者隔离（推荐用于多用户收件箱）。
-  - `per-account-channel-peer`：按账户 + 通道 + 发送者隔离（推荐用于多账户）。
-- **`identityLinks`**：将规范 ID 映射到带提供商前缀的对端，用于跨通道会话共享。
-- **`reset`**：主要重置策略。`daily` 在本地时间 `atHour` 重置；`idle` 在 `idleMinutes` 后重置。同时配置时，先到期的生效。
-- **`resetByType`**：按类型覆盖（`direct`、`group`、`thread`）。旧版 `dm` 可作为 `direct` 的别名。
-- **`mainKey`**：旧版字段。运行时现在始终使用 `"main"` 作为主私聊桶。
-- **`sendPolicy`**：按 `channel`、`chatType`（`direct|group|channel`，旧版 `dm` 别名）、`keyPrefix` 或 `rawKeyPrefix` 匹配。第一个 deny 生效。
-- **`maintenance`**：`warn` 在驱逐时警告活动会话；`enforce` 执行修剪和轮转。
-
-:::
+> [!abstract]- 会话字段详情
+> - **`dmScope`**：私聊的分组方式。
+>   - `main`：所有私聊共享主会话。
+>   - `per-peer`：跨通道按发送者 ID 隔离。
+>   - `per-channel-peer`：按通道 + 发送者隔离（推荐用于多用户收件箱）。
+>   - `per-account-channel-peer`：按账户 + 通道 + 发送者隔离（推荐用于多账户）。
+> - **`identityLinks`**：将规范 ID 映射到带提供商前缀的对端，用于跨通道会话共享。
+> - **`reset`**：主要重置策略。`daily` 在本地时间 `atHour` 重置；`idle` 在 `idleMinutes` 后重置。同时配置时，先到期的生效。
+> - **`resetByType`**：按类型覆盖（`direct`、`group`、`thread`）。旧版 `dm` 可作为 `direct` 的别名。
+> - **`mainKey`**：旧版字段。运行时现在始终使用 `"main"` 作为主私聊桶。
+> - **`sendPolicy`**：按 `channel`、`chatType`（`direct|group|channel`，旧版 `dm` 别名）、`keyPrefix` 或 `rawKeyPrefix` 匹配。第一个 deny 生效。
+> - **`maintenance`**：`warn` 在驱逐时警告活动会话；`enforce` 执行修剪和轮转。
 
 
 ---
@@ -1475,28 +1447,25 @@ Talk 模式（macOS/iOS/Android）的默认值。
 }
 ```
 
-::: details 媒体模型条目字段
-
-**提供商条目**（`type: "provider"` 或省略）：
-
-- `provider`：API 提供商 ID（`openai`、`anthropic`、`google`/`gemini`、`groq` 等）
-- `model`：模型 ID 覆盖
-- `profile` / `preferredProfile`：认证配置文件选择
-
-**CLI 条目**（`type: "cli"`）：
-
-- `command`：要运行的可执行文件
-- `args`：模板化参数（支持 &#123;&#123;MediaPath&#125;&#125;、&#123;&#123;Prompt&#125;&#125;、&#123;&#123;MaxChars&#125;&#125; 等）
-
-**通用字段：**
-
-- `capabilities`：可选列表（`image`、`audio`、`video`）。默认值：`openai`/`anthropic`/`minimax` → image，`google` → image+audio+video，`groq` → audio。
-- `prompt`、`maxChars`、`maxBytes`、`timeoutSeconds`、`language`：按条目覆盖。
-- 失败时回退到下一个条目。
-
-提供商认证遵循标准顺序：认证配置文件 → 环境变量 → `models.providers.*.apiKey`。
-
-:::
+> [!abstract]- 媒体模型条目字段
+> **提供商条目**（`type: "provider"` 或省略）：
+>
+> - `provider`：API 提供商 ID（`openai`、`anthropic`、`google`/`gemini`、`groq` 等）
+> - `model`：模型 ID 覆盖
+> - `profile` / `preferredProfile`：认证配置文件选择
+>
+> **CLI 条目**（`type: "cli"`）：
+>
+> - `command`：要运行的可执行文件
+> - `args`：模板化参数（支持 &#123;&#123;MediaPath&#125;&#125;、&#123;&#123;Prompt&#125;&#125;、&#123;&#123;MaxChars&#125;&#125; 等）
+>
+> **通用字段：**
+>
+> - `capabilities`：可选列表（`image`、`audio`、`video`）。默认值：`openai`/`anthropic`/`minimax` → image，`google` → image+audio+video，`groq` → audio。
+> - `prompt`、`maxChars`、`maxBytes`、`timeoutSeconds`、`language`：按条目覆盖。
+> - 失败时回退到下一个条目。
+>
+> 提供商认证遵循标准顺序：认证配置文件 → 环境变量 → `models.providers.*.apiKey`。
 
 
 ### `tools.agentToAgent`
@@ -1568,230 +1537,206 @@ OpenClaw 使用 pi-coding-agent 模型目录。通过配置中的 `models.provid
 
 ### 提供商示例
 
-::: details Cerebras（GLM 4.6 / 4.7）
-
-```json5
-{
-  env: { CEREBRAS_API_KEY: "sk-..." },
-  agents: {
-    defaults: {
-      model: {
-        primary: "cerebras/zai-glm-4.7",
-        fallbacks: ["cerebras/zai-glm-4.6"],
-      },
-      models: {
-        "cerebras/zai-glm-4.7": { alias: "GLM 4.7 (Cerebras)" },
-        "cerebras/zai-glm-4.6": { alias: "GLM 4.6 (Cerebras)" },
-      },
-    },
-  },
-  models: {
-    mode: "merge",
-    providers: {
-      cerebras: {
-        baseUrl: "https://api.cerebras.ai/v1",
-        apiKey: "${CEREBRAS_API_KEY}",
-        api: "openai-completions",
-        models: [
-          { id: "zai-glm-4.7", name: "GLM 4.7 (Cerebras)" },
-          { id: "zai-glm-4.6", name: "GLM 4.6 (Cerebras)" },
-        ],
-      },
-    },
-  },
-}
-```
-
-Cerebras 使用 `cerebras/zai-glm-4.7`；Z.AI 直连使用 `zai/glm-4.7`。
-
-:::
+> [!abstract]- Cerebras（GLM 4.6 / 4.7）
+> ```json5
+> {
+>   env: { CEREBRAS_API_KEY: "sk-..." },
+>   agents: {
+>     defaults: {
+>       model: {
+>         primary: "cerebras/zai-glm-4.7",
+>         fallbacks: ["cerebras/zai-glm-4.6"],
+>       },
+>       models: {
+>         "cerebras/zai-glm-4.7": { alias: "GLM 4.7 (Cerebras)" },
+>         "cerebras/zai-glm-4.6": { alias: "GLM 4.6 (Cerebras)" },
+>       },
+>     },
+>   },
+>   models: {
+>     mode: "merge",
+>     providers: {
+>       cerebras: {
+>         baseUrl: "https://api.cerebras.ai/v1",
+>         apiKey: "${CEREBRAS_API_KEY}",
+>         api: "openai-completions",
+>         models: [
+>           { id: "zai-glm-4.7", name: "GLM 4.7 (Cerebras)" },
+>           { id: "zai-glm-4.6", name: "GLM 4.6 (Cerebras)" },
+>         ],
+>       },
+>     },
+>   },
+> }
+> ```
+>
+> Cerebras 使用 `cerebras/zai-glm-4.7`；Z.AI 直连使用 `zai/glm-4.7`。
 
 
-::: details OpenCode Zen
-
-```json5
-{
-  agents: {
-    defaults: {
-      model: { primary: "opencode/claude-opus-4-6" },
-      models: { "opencode/claude-opus-4-6": { alias: "Opus" } },
-    },
-  },
-}
-```
-
-设置 `OPENCODE_API_KEY`（或 `OPENCODE_ZEN_API_KEY`）。快捷方式：`openclaw onboard --auth-choice opencode-zen`。
-
-:::
+> [!abstract]- OpenCode Zen
+> ```json5
+> {
+>   agents: {
+>     defaults: {
+>       model: { primary: "opencode/claude-opus-4-6" },
+>       models: { "opencode/claude-opus-4-6": { alias: "Opus" } },
+>     },
+>   },
+> }
+> ```
+>
+> 设置 `OPENCODE_API_KEY`（或 `OPENCODE_ZEN_API_KEY`）。快捷方式：`openclaw onboard --auth-choice opencode-zen`。
 
 
-::: details Z.AI（GLM-4.7）
-
-```json5
-{
-  agents: {
-    defaults: {
-      model: { primary: "zai/glm-4.7" },
-      models: { "zai/glm-4.7": {} },
-    },
-  },
-}
-```
-
-设置 `ZAI_API_KEY`。`z.ai/*` 和 `z-ai/*` 可作为别名。快捷方式：`openclaw onboard --auth-choice zai-api-key`。
-
-- 通用端点：`https://api.z.ai/api/paas/v4`
-- 编码端点（默认）：`https://api.z.ai/api/coding/paas/v4`
-- 如需通用端点，请定义一个带有基础 URL 覆盖的自定义提供商。
-
-:::
+> [!abstract]- Z.AI（GLM-4.7）
+> ```json5
+> {
+>   agents: {
+>     defaults: {
+>       model: { primary: "zai/glm-4.7" },
+>       models: { "zai/glm-4.7": {} },
+>     },
+>   },
+> }
+> ```
+>
+> 设置 `ZAI_API_KEY`。`z.ai/*` 和 `z-ai/*` 可作为别名。快捷方式：`openclaw onboard --auth-choice zai-api-key`。
+>
+> - 通用端点：`https://api.z.ai/api/paas/v4`
+> - 编码端点（默认）：`https://api.z.ai/api/coding/paas/v4`
+> - 如需通用端点，请定义一个带有基础 URL 覆盖的自定义提供商。
 
 
-::: details Moonshot AI（Kimi）
-
-```json5
-{
-  env: { MOONSHOT_API_KEY: "sk-..." },
-  agents: {
-    defaults: {
-      model: { primary: "moonshot/kimi-k2.5" },
-      models: { "moonshot/kimi-k2.5": { alias: "Kimi K2.5" } },
-    },
-  },
-  models: {
-    mode: "merge",
-    providers: {
-      moonshot: {
-        baseUrl: "https://api.moonshot.ai/v1",
-        apiKey: "${MOONSHOT_API_KEY}",
-        api: "openai-completions",
-        models: [
-          {
-            id: "kimi-k2.5",
-            name: "Kimi K2.5",
-            reasoning: false,
-            input: ["text"],
-            cost: { input: 0, output: 0, cacheRead: 0, cacheWrite: 0 },
-            contextWindow: 256000,
-            maxTokens: 8192,
-          },
-        ],
-      },
-    },
-  },
-}
-```
-
-如需中国端点：`baseUrl: "https://api.moonshot.cn/v1"` 或 `openclaw onboard --auth-choice moonshot-api-key-cn`。
-
-:::
+> [!abstract]- Moonshot AI（Kimi）
+> ```json5
+> {
+>   env: { MOONSHOT_API_KEY: "sk-..." },
+>   agents: {
+>     defaults: {
+>       model: { primary: "moonshot/kimi-k2.5" },
+>       models: { "moonshot/kimi-k2.5": { alias: "Kimi K2.5" } },
+>     },
+>   },
+>   models: {
+>     mode: "merge",
+>     providers: {
+>       moonshot: {
+>         baseUrl: "https://api.moonshot.ai/v1",
+>         apiKey: "${MOONSHOT_API_KEY}",
+>         api: "openai-completions",
+>         models: [
+>           {
+>             id: "kimi-k2.5",
+>             name: "Kimi K2.5",
+>             reasoning: false,
+>             input: ["text"],
+>             cost: { input: 0, output: 0, cacheRead: 0, cacheWrite: 0 },
+>             contextWindow: 256000,
+>             maxTokens: 8192,
+>           },
+>         ],
+>       },
+>     },
+>   },
+> }
+> ```
+>
+> 如需中国端点：`baseUrl: "https://api.moonshot.cn/v1"` 或 `openclaw onboard --auth-choice moonshot-api-key-cn`。
 
 
-::: details Kimi Coding
-
-```json5
-{
-  env: { KIMI_API_KEY: "sk-..." },
-  agents: {
-    defaults: {
-      model: { primary: "kimi-coding/k2p5" },
-      models: { "kimi-coding/k2p5": { alias: "Kimi K2.5" } },
-    },
-  },
-}
-```
-
-Anthropic 兼容，内置提供商。快捷方式：`openclaw onboard --auth-choice kimi-code-api-key`。
-
-:::
+> [!abstract]- Kimi Coding
+> ```json5
+> {
+>   env: { KIMI_API_KEY: "sk-..." },
+>   agents: {
+>     defaults: {
+>       model: { primary: "kimi-coding/k2p5" },
+>       models: { "kimi-coding/k2p5": { alias: "Kimi K2.5" } },
+>     },
+>   },
+> }
+> ```
+>
+> Anthropic 兼容，内置提供商。快捷方式：`openclaw onboard --auth-choice kimi-code-api-key`。
 
 
-::: details Synthetic（Anthropic 兼容）
-
-```json5
-{
-  env: { SYNTHETIC_API_KEY: "sk-..." },
-  agents: {
-    defaults: {
-      model: { primary: "synthetic/hf:MiniMaxAI/MiniMax-M2.1" },
-      models: { "synthetic/hf:MiniMaxAI/MiniMax-M2.1": { alias: "MiniMax M2.1" } },
-    },
-  },
-  models: {
-    mode: "merge",
-    providers: {
-      synthetic: {
-        baseUrl: "https://api.synthetic.new/anthropic",
-        apiKey: "${SYNTHETIC_API_KEY}",
-        api: "anthropic-messages",
-        models: [
-          {
-            id: "hf:MiniMaxAI/MiniMax-M2.1",
-            name: "MiniMax M2.1",
-            reasoning: false,
-            input: ["text"],
-            cost: { input: 0, output: 0, cacheRead: 0, cacheWrite: 0 },
-            contextWindow: 192000,
-            maxTokens: 65536,
-          },
-        ],
-      },
-    },
-  },
-}
-```
-
-基础 URL 应省略 `/v1`（Anthropic 客户端会自动追加）。快捷方式：`openclaw onboard --auth-choice synthetic-api-key`。
-
-:::
+> [!abstract]- Synthetic（Anthropic 兼容）
+> ```json5
+> {
+>   env: { SYNTHETIC_API_KEY: "sk-..." },
+>   agents: {
+>     defaults: {
+>       model: { primary: "synthetic/hf:MiniMaxAI/MiniMax-M2.1" },
+>       models: { "synthetic/hf:MiniMaxAI/MiniMax-M2.1": { alias: "MiniMax M2.1" } },
+>     },
+>   },
+>   models: {
+>     mode: "merge",
+>     providers: {
+>       synthetic: {
+>         baseUrl: "https://api.synthetic.new/anthropic",
+>         apiKey: "${SYNTHETIC_API_KEY}",
+>         api: "anthropic-messages",
+>         models: [
+>           {
+>             id: "hf:MiniMaxAI/MiniMax-M2.1",
+>             name: "MiniMax M2.1",
+>             reasoning: false,
+>             input: ["text"],
+>             cost: { input: 0, output: 0, cacheRead: 0, cacheWrite: 0 },
+>             contextWindow: 192000,
+>             maxTokens: 65536,
+>           },
+>         ],
+>       },
+>     },
+>   },
+> }
+> ```
+>
+> 基础 URL 应省略 `/v1`（Anthropic 客户端会自动追加）。快捷方式：`openclaw onboard --auth-choice synthetic-api-key`。
 
 
-::: details MiniMax M2.1（直连）
-
-```json5
-{
-  agents: {
-    defaults: {
-      model: { primary: "minimax/MiniMax-M2.1" },
-      models: {
-        "minimax/MiniMax-M2.1": { alias: "Minimax" },
-      },
-    },
-  },
-  models: {
-    mode: "merge",
-    providers: {
-      minimax: {
-        baseUrl: "https://api.minimax.io/anthropic",
-        apiKey: "${MINIMAX_API_KEY}",
-        api: "anthropic-messages",
-        models: [
-          {
-            id: "MiniMax-M2.1",
-            name: "MiniMax M2.1",
-            reasoning: false,
-            input: ["text"],
-            cost: { input: 15, output: 60, cacheRead: 2, cacheWrite: 10 },
-            contextWindow: 200000,
-            maxTokens: 8192,
-          },
-        ],
-      },
-    },
-  },
-}
-```
-
-设置 `MINIMAX_API_KEY`。快捷方式：`openclaw onboard --auth-choice minimax-api`。
-
-:::
+> [!abstract]- MiniMax M2.1（直连）
+> ```json5
+> {
+>   agents: {
+>     defaults: {
+>       model: { primary: "minimax/MiniMax-M2.1" },
+>       models: {
+>         "minimax/MiniMax-M2.1": { alias: "Minimax" },
+>       },
+>     },
+>   },
+>   models: {
+>     mode: "merge",
+>     providers: {
+>       minimax: {
+>         baseUrl: "https://api.minimax.io/anthropic",
+>         apiKey: "${MINIMAX_API_KEY}",
+>         api: "anthropic-messages",
+>         models: [
+>           {
+>             id: "MiniMax-M2.1",
+>             name: "MiniMax M2.1",
+>             reasoning: false,
+>             input: ["text"],
+>             cost: { input: 15, output: 60, cacheRead: 2, cacheWrite: 10 },
+>             contextWindow: 200000,
+>             maxTokens: 8192,
+>           },
+>         ],
+>       },
+>     },
+>   },
+> }
+> ```
+>
+> 设置 `MINIMAX_API_KEY`。快捷方式：`openclaw onboard --auth-choice minimax-api`。
 
 
-::: details 本地模型（LM Studio）
-
-参阅[本地模型（Local Models）](/gateway/local-models)。简而言之：在高性能硬件上通过 LM Studio Responses API 运行 MiniMax M2.1；保留合并的托管模型作为回退。
-
-:::
+> [!abstract]- 本地模型（LM Studio）
+> 参阅[本地模型（Local Models）](/gateway/local-models)。简而言之：在高性能硬件上通过 LM Studio Responses API 运行 MiniMax M2.1；保留合并的托管模型作为回退。
 
 
 ---
@@ -1953,24 +1898,21 @@ Anthropic 兼容，内置提供商。快捷方式：`openclaw onboard --auth-cho
 }
 ```
 
-::: details 网关字段详情
-
-- `mode`：`local`（运行网关）或 `remote`（连接到远程网关）。非 `local` 时网关拒绝启动。
-- `port`：单一复用端口，用于 WS + HTTP。优先级：`--port` > `OPENCLAW_GATEWAY_PORT` > `gateway.port` > `18789`。
-- `bind`：`auto`、`loopback`（默认）、`lan`（`0.0.0.0`）、`tailnet`（仅 Tailscale IP）或 `custom`。
-- **认证**：默认必需。非本地回环绑定需要共享 Token/密码。引导向导默认生成 Token。
-- `auth.mode: "trusted-proxy"`：将认证委托给身份感知的反向代理，并信任来自 `gateway.trustedProxies` 的身份头（参阅[受信代理认证（Trusted Proxy Auth）](/gateway/trusted-proxy-auth)）。
-- `auth.allowTailscale`：为 `true` 时，Tailscale Serve 身份头满足认证（通过 `tailscale whois` 验证）。当 `tailscale.mode = "serve"` 时默认为 `true`。
-- `auth.rateLimit`：可选的认证失败限流器。按客户端 IP 和认证范围应用（共享密钥和设备 Token 独立跟踪）。被阻止的尝试返回 `429` + `Retry-After`。
-  - `auth.rateLimit.exemptLoopback` 默认为 `true`；设为 `false` 可对 localhost 流量也进行限流（适用于测试环境或严格的代理部署）。
-- `tailscale.mode`：`serve`（仅 tailnet，本地回环绑定）或 `funnel`（公开，需要认证）。
-- `remote.transport`：`ssh`（默认）或 `direct`（ws/wss）。使用 `direct` 时，`remote.url` 必须为 `ws://` 或 `wss://`。
-- `gateway.remote.token` 仅用于远程 CLI 调用；不启用本地网关认证。
-- `trustedProxies`：终止 TLS 的反向代理 IP。仅列出你控制的代理。
-- `gateway.tools.deny`：HTTP `POST /tools/invoke` 额外阻止的工具名称（扩展默认拒绝列表）。
-- `gateway.tools.allow`：从默认 HTTP 拒绝列表中移除的工具名称。
-
-:::
+> [!abstract]- 网关字段详情
+> - `mode`：`local`（运行网关）或 `remote`（连接到远程网关）。非 `local` 时网关拒绝启动。
+> - `port`：单一复用端口，用于 WS + HTTP。优先级：`--port` > `OPENCLAW_GATEWAY_PORT` > `gateway.port` > `18789`。
+> - `bind`：`auto`、`loopback`（默认）、`lan`（`0.0.0.0`）、`tailnet`（仅 Tailscale IP）或 `custom`。
+> - **认证**：默认必需。非本地回环绑定需要共享 Token/密码。引导向导默认生成 Token。
+> - `auth.mode: "trusted-proxy"`：将认证委托给身份感知的反向代理，并信任来自 `gateway.trustedProxies` 的身份头（参阅[受信代理认证（Trusted Proxy Auth）](/gateway/trusted-proxy-auth)）。
+> - `auth.allowTailscale`：为 `true` 时，Tailscale Serve 身份头满足认证（通过 `tailscale whois` 验证）。当 `tailscale.mode = "serve"` 时默认为 `true`。
+> - `auth.rateLimit`：可选的认证失败限流器。按客户端 IP 和认证范围应用（共享密钥和设备 Token 独立跟踪）。被阻止的尝试返回 `429` + `Retry-After`。
+>   - `auth.rateLimit.exemptLoopback` 默认为 `true`；设为 `false` 可对 localhost 流量也进行限流（适用于测试环境或严格的代理部署）。
+> - `tailscale.mode`：`serve`（仅 tailnet，本地回环绑定）或 `funnel`（公开，需要认证）。
+> - `remote.transport`：`ssh`（默认）或 `direct`（ws/wss）。使用 `direct` 时，`remote.url` 必须为 `ws://` 或 `wss://`。
+> - `gateway.remote.token` 仅用于远程 CLI 调用；不启用本地网关认证。
+> - `trustedProxies`：终止 TLS 的反向代理 IP。仅列出你控制的代理。
+> - `gateway.tools.deny`：HTTP `POST /tools/invoke` 额外阻止的工具名称（扩展默认拒绝列表）。
+> - `gateway.tools.allow`：从默认 HTTP 拒绝列表中移除的工具名称。
 
 
 ### OpenAI 兼容端点
@@ -2040,22 +1982,19 @@ openclaw gateway --port 19001
   - 仅当 `hooks.allowRequestSessionKey=true`（默认：`false`）时才接受请求载荷中的 `sessionKey`。
 - `POST /hooks/<name>` → 通过 `hooks.mappings` 解析
 
-::: details 映射详情
-
-- `match.path` 匹配 `/hooks` 之后的子路径（例如 `/hooks/gmail` → `gmail`）。
-- `match.source` 匹配通用路径的载荷字段。
-- 模板如 &#123;&#123;messages[0].subject&#125;&#125; 从载荷中读取。
-- `transform` 可以指向一个返回钩子动作的 JS/TS 模块。
-  - `transform.module` 必须是相对路径且保持在 `hooks.transformsDir` 内（绝对路径和路径遍历会被拒绝）。
-- `agentId` 路由到特定代理；未知 ID 回退到默认值。
-- `allowedAgentIds`：限制显式路由（`*` 或省略 = 允许全部，`[]` = 拒绝全部）。
-- `defaultSessionKey`：无显式 `sessionKey` 的钩子代理运行的可选固定会话键。
-- `allowRequestSessionKey`：允许 `/hooks/agent` 调用方设置 `sessionKey`（默认：`false`）。
-- `allowedSessionKeyPrefixes`：显式 `sessionKey` 值（请求 + 映射）的可选前缀白名单，例如 `["hook:"]`。
-- `deliver: true` 将最终回复发送到通道；`channel` 默认为 `last`。
-- `model` 覆盖此钩子运行的 LLM（如果设置了模型目录，必须是允许的模型）。
-
-:::
+> [!abstract]- 映射详情
+> - `match.path` 匹配 `/hooks` 之后的子路径（例如 `/hooks/gmail` → `gmail`）。
+> - `match.source` 匹配通用路径的载荷字段。
+> - 模板如 &#123;&#123;messages[0].subject&#125;&#125; 从载荷中读取。
+> - `transform` 可以指向一个返回钩子动作的 JS/TS 模块。
+>   - `transform.module` 必须是相对路径且保持在 `hooks.transformsDir` 内（绝对路径和路径遍历会被拒绝）。
+> - `agentId` 路由到特定代理；未知 ID 回退到默认值。
+> - `allowedAgentIds`：限制显式路由（`*` 或省略 = 允许全部，`[]` = 拒绝全部）。
+> - `defaultSessionKey`：无显式 `sessionKey` 的钩子代理运行的可选固定会话键。
+> - `allowRequestSessionKey`：允许 `/hooks/agent` 调用方设置 `sessionKey`（默认：`false`）。
+> - `allowedSessionKeyPrefixes`：显式 `sessionKey` 值（请求 + 映射）的可选前缀白名单，例如 `["hook:"]`。
+> - `deliver: true` 将最终回复发送到通道；`channel` 默认为 `last`。
+> - `model` 覆盖此钩子运行的 LLM（如果设置了模型目录，必须是允许的模型）。
 
 
 ### Gmail 集成
@@ -2282,23 +2221,20 @@ openclaw gateway --port 19001
 
 当前版本不再包含 TCP Bridge。节点通过网关 WebSocket 连接。`bridge.*` 键不再属于配置模式（移除前验证会失败；`openclaw doctor --fix` 可以清除未知键）。
 
-::: details 旧版 Bridge 配置（历史参考）
-
-```json
-{
-  "bridge": {
-    "enabled": true,
-    "port": 18790,
-    "bind": "tailnet",
-    "tls": {
-      "enabled": true,
-      "autoGenerate": true
-    }
-  }
-}
-```
-
-:::
+> [!abstract]- 旧版 Bridge 配置（历史参考）
+> ```json
+> {
+>   "bridge": {
+>     "enabled": true,
+>     "port": 18790,
+>     "bind": "tailnet",
+>     "tls": {
+>       "enabled": true,
+>       "autoGenerate": true
+>     }
+>   }
+> }
+> ```
 
 
 ---

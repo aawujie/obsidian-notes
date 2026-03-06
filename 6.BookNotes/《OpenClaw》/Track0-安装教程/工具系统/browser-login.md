@@ -26,21 +26,19 @@ description: "OpenClaw 工具系统：浏览器手动登录（Manual Login）。
 
 **第二步：找到 Chrome 配置文件路径**
 
-::: details 各系统默认路径
-
-```bash
-# macOS
-~/Library/Application Support/Google/Chrome/Default
-
-# Linux
-~/.config/google-chrome/Default
-
-# Windows
-C:\Users\<你的用户名>\AppData\Local\Google\Chrome\User Data\Default
-```
-
-如果你使用了多个 Chrome 配置文件，可以在 Chrome 地址栏输入 `chrome://version/`，查看"个人资料路径"一栏。
-:::
+> [!abstract]- 各系统默认路径
+> ```bash
+> # macOS
+> ~/Library/Application Support/Google/Chrome/Default
+> 
+> # Linux
+> ~/.config/google-chrome/Default
+> 
+> # Windows
+> C:\Users\<你的用户名>\AppData\Local\Google\Chrome\User Data\Default
+> ```
+>
+> 如果你使用了多个 Chrome 配置文件，可以在 Chrome 地址栏输入 `chrome://version/`，查看"个人资料路径"一栏。
 
 **第三步：在 OpenClaw 配置中指定该路径**
 
@@ -62,9 +60,8 @@ Agent 使用该配置文件启动 Chrome 时，会自动继承你的登录状态
 
 ## 沙箱化浏览器访问
 
-::: info 什么是沙箱化？
-在隔离环境（沙箱）中使用已登录的配置文件时，Agent 的操作被限制在安全边界内，防止意外访问其他网站或泄露数据。
-:::
+> [!info] 什么是沙箱化？
+> 在隔离环境（沙箱）中使用已登录的配置文件时，Agent 的操作被限制在安全边界内，防止意外访问其他网站或泄露数据。
 
 你可以同时启用沙箱模式和 Chrome 配置文件：
 
@@ -83,11 +80,10 @@ Agent 使用该配置文件启动 Chrome 时，会自动继承你的登录状态
 
 ## 安全提示
 
-::: warning 重要安全提醒
-- **不要分享含有登录凭证的配置文件**：Chrome 配置文件中保存了你的 Cookie、密码和登录状态，分享给他人等于分享账号访问权限
-- **不要将配置文件路径提交到版本控制**：避免在 Git 仓库中暴露本地路径信息
-- **定期清理登录态**：任务完成后，如果不再需要 Agent 访问该账号，建议在 Chrome 中退出登录
-:::
+> [!warning] 重要安全提醒
+> - **不要分享含有登录凭证的配置文件**：Chrome 配置文件中保存了你的 Cookie、密码和登录状态，分享给他人等于分享账号访问权限
+> - **不要将配置文件路径提交到版本控制**：避免在 Git 仓库中暴露本地路径信息
+> - **定期清理登录态**：任务完成后，如果不再需要 Agent 访问该账号，建议在 Chrome 中退出登录
 
 ---
 

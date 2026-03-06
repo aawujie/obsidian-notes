@@ -140,37 +140,29 @@ openclaw gateway restart
 
 ## 常见问题
 
-::: details 网关停止了怎么重启？
+> [!abstract]- 网关停止了怎么重启？
+> ```bash
+> openclaw gateway start
+> ```
+>
+> 如果已经安装为系统服务，重启电脑后会自动恢复。
 
-```bash
-openclaw gateway start
-```
+> [!abstract]- 想彻底卸载 OpenClaw？
+> ```bash
+> openclaw service uninstall   # 先停止系统服务
+> npm uninstall -g openclaw    # 再卸载程序
+> ```
+>
+> 配置和聊天记录保存在 `~/.openclaw/`，手动删除即可完全清除。
 
-如果已经安装为系统服务，重启电脑后会自动恢复。
-:::
+> [!abstract]- AI 回复变慢了，怎么排查？
+> 1. 先跑 `openclaw doctor` 自动诊断
+> 2. 查看实时日志 `openclaw logs --follow`，找报错信息
+> 3. 检查你的 API 密钥是否还有额度（登录 AI 服务商后台查看）
 
-::: details 想彻底卸载 OpenClaw？
-
-```bash
-openclaw service uninstall   # 先停止系统服务
-npm uninstall -g openclaw    # 再卸载程序
-```
-
-配置和聊天记录保存在 `~/.openclaw/`，手动删除即可完全清除。
-:::
-
-::: details AI 回复变慢了，怎么排查？
-
-1. 先跑 `openclaw doctor` 自动诊断
-2. 查看实时日志 `openclaw logs --follow`，找报错信息
-3. 检查你的 API 密钥是否还有额度（登录 AI 服务商后台查看）
-:::
-
-::: details 怎么完全重置配置？
-
-```bash
-openclaw onboard --reset
-```
-
-这会重置所有配置，但**不会删除聊天记录**。
-:::
+> [!abstract]- 怎么完全重置配置？
+> ```bash
+> openclaw onboard --reset
+> ```
+>
+> 这会重置所有配置，但**不会删除聊天记录**。

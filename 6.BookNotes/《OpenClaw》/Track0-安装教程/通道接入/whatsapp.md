@@ -70,65 +70,49 @@ openclaw pairing approve whatsapp <CODE>
     配对请求在 1 小时后过期。每个通道的待处理请求上限为 3 个。
 
 
-::: info 说明
-OpenClaw 推荐尽可能在独立号码上运行 WhatsApp。（通道元数据和引导流程针对该设置优化，但个人号码设置也受支持。）
-:::
+> [!info] 说明
+> OpenClaw 推荐尽可能在独立号码上运行 WhatsApp。（通道元数据和引导流程针对该设置优化，但个人号码设置也受支持。）
 
 ---
 
 ## 部署模式
 
 
-::: details 专用号码（推荐）
-
-    这是最清晰的运营模式：
-
-    - 为 OpenClaw 使用独立的 WhatsApp 身份
-    - 更清晰的私信白名单和路由边界
-    - 较低的自聊天混淆概率
-
-    最小策略模式：
-
-```json5
-{
-  channels: {
-    whatsapp: {
-      dmPolicy: "allowlist",
-      allowFrom: ["+15551234567"],
-    },
-  },
-}
-```
-
-  
-
-:::
+> [!abstract]- 专用号码（推荐）
+> 这是最清晰的运营模式：
+>
+>     - 为 OpenClaw 使用独立的 WhatsApp 身份
+>     - 更清晰的私信白名单和路由边界
+>     - 较低的自聊天混淆概率
+>
+>     最小策略模式：
+>
+> ```json5
+> {
+>   channels: {
+>     whatsapp: {
+>       dmPolicy: "allowlist",
+>       allowFrom: ["+15551234567"],
+>     },
+>   },
+> }
+> ```
 
 
-::: details 个人号码回退
-
-    引导向导支持个人号码模式并写入自聊天友好的基线：
-
-    - `dmPolicy: "allowlist"`
-    - `allowFrom` 包含你的个人号码
-    - `selfChatMode: true`
-
-    运行时，自聊天保护基于链接的自身号码和 `allowFrom`。
-
-  
-
-:::
+> [!abstract]- 个人号码回退
+> 引导向导支持个人号码模式并写入自聊天友好的基线：
+>
+>     - `dmPolicy: "allowlist"`
+>     - `allowFrom` 包含你的个人号码
+>     - `selfChatMode: true`
+>
+>     运行时，自聊天保护基于链接的自身号码和 `allowFrom`。
 
 
-::: details 仅 WhatsApp Web 通道范围
-
-    当前 OpenClaw 通道架构中的消息平台通道基于 WhatsApp Web（`Baileys`）。
-
-    内置聊天通道注册表中没有单独的 Twilio WhatsApp 消息通道。
-
-  
-
-:::
+> [!abstract]- 仅 WhatsApp Web 通道范围
+> 当前 OpenClaw 通道架构中的消息平台通道基于 WhatsApp Web（`Baileys`）。
+>
+>     内置聊天通道注册表中没有单独的 Twilio WhatsApp 消息通道。
 
 ---
 
@@ -217,135 +201,103 @@ OpenClaw 推荐尽可能在独立号码上运行 WhatsApp。（通道元数据�
 ## 消息标准化和上下文
 
 
-::: details 入站信封 + 回复上下文
-
-    传入的 WhatsApp 消息被包装在共享的入站信封中。
-
-    如果存在引用回复，上下文以此格式附加：
-
-```text
-[Replying to <sender> id:<stanzaId>]
-<quoted body or media placeholder>
-[/Replying]
-```
-
-    回复元数据字段在可用时也被填充（`ReplyToId`、`ReplyToBody`、`ReplyToSender`、发送者 JID/E.164）。
-
-  
-
-:::
+> [!abstract]- 入站信封 + 回复上下文
+> 传入的 WhatsApp 消息被包装在共享的入站信封中。
+>
+>     如果存在引用回复，上下文以此格式附加：
+>
+> ```text
+> [Replying to <sender> id:<stanzaId>]
+> <quoted body or media placeholder>
+> [/Replying]
+> ```
+>
+>     回复元数据字段在可用时也被填充（`ReplyToId`、`ReplyToBody`、`ReplyToSender`、发送者 JID/E.164）。
 
 
-::: details 媒体占位符和位置/联系人提取
-
-    纯媒体入站消息使用占位符标准化，如：
-
-    - `<media:image>`
-    - `<media:video>`
-    - `<media:audio>`
-    - `<media:document>`
-    - `<media:sticker>`
-
-    位置和联系人载荷在路由前被标准化为文本上下文。
-
-  
-
-:::
+> [!abstract]- 媒体占位符和位置/联系人提取
+> 纯媒体入站消息使用占位符标准化，如：
+>
+>     - `<media:image>`
+>     - `<media:video>`
+>     - `<media:audio>`
+>     - `<media:document>`
+>     - `<media:sticker>`
+>
+>     位置和联系人载荷在路由前被标准化为文本上下文。
 
 
-::: details 待处理群组历史注入
-
-    对于群组，未处理的消息可以被缓冲并在机器人最终被触发时作为上下文注入。
-
-    - 默认限制：`50`
-    - 配置：`channels.whatsapp.historyLimit`
-    - 回退：`messages.groupChat.historyLimit`
-    - `0` 禁用
-
-    注入标记：
-
-    - `[Chat messages since your last reply - for context]`
-    - `[Current message - respond to this]`
-
-  
-
-:::
+> [!abstract]- 待处理群组历史注入
+> 对于群组，未处理的消息可以被缓冲并在机器人最终被触发时作为上下文注入。
+>
+>     - 默认限制：`50`
+>     - 配置：`channels.whatsapp.historyLimit`
+>     - 回退：`messages.groupChat.historyLimit`
+>     - `0` 禁用
+>
+>     注入标记：
+>
+>     - `[Chat messages since your last reply - for context]`
+>     - `[Current message - respond to this]`
 
 
-::: details 已读回执
-
-    已读回执默认对接受的入站 WhatsApp 消息启用。
-
-    全局禁用：
-
-```json5
-{
-  channels: {
-    whatsapp: {
-      sendReadReceipts: false,
-    },
-  },
-}
-```
-
-    按账户覆盖：
-
-```json5
-{
-  channels: {
-    whatsapp: {
-      accounts: {
-        work: {
-          sendReadReceipts: false,
-        },
-      },
-    },
-  },
-}
-```
-
-    即使全局启用，自聊天轮次也跳过已读回执。
-
-  
-
-:::
+> [!abstract]- 已读回执
+> 已读回执默认对接受的入站 WhatsApp 消息启用。
+>
+>     全局禁用：
+>
+> ```json5
+> {
+>   channels: {
+>     whatsapp: {
+>       sendReadReceipts: false,
+>     },
+>   },
+> }
+> ```
+>
+>     按账户覆盖：
+>
+> ```json5
+> {
+>   channels: {
+>     whatsapp: {
+>       accounts: {
+>         work: {
+>           sendReadReceipts: false,
+>         },
+>       },
+>     },
+>   },
+> }
+> ```
+>
+>     即使全局启用，自聊天轮次也跳过已读回执。
 
 ---
 
 ## 投递、分块和媒体
 
 
-::: details 文本分块
-
-    - 默认分块限制：`channels.whatsapp.textChunkLimit = 4000`
-    - `channels.whatsapp.chunkMode = "length" | "newline"`
-    - `newline` 模式优先使用段落边界（空行），然后回退到按长度安全分块
-  
-
-:::
+> [!abstract]- 文本分块
+> - 默认分块限制：`channels.whatsapp.textChunkLimit = 4000`
+>     - `channels.whatsapp.chunkMode = "length" | "newline"`
+>     - `newline` 模式优先使用段落边界（空行），然后回退到按长度安全分块
 
 
-::: details 出站媒体行为
-
-    - 支持图片、视频、音频（PTT 语音笔记）和文档载荷
-    - `audio/ogg` 被改写为 `audio/ogg; codecs=opus` 以兼容语音笔记
-    - 通过 `gifPlayback: true` 在视频发送时支持动画 GIF 播放
-    - 发送多媒体回复载荷时，标题应用于第一个媒体项
-    - 媒体源可以是 HTTP(S)、`file://` 或本地路径
-  
-
-:::
+> [!abstract]- 出站媒体行为
+> - 支持图片、视频、音频（PTT 语音笔记）和文档载荷
+>     - `audio/ogg` 被改写为 `audio/ogg; codecs=opus` 以兼容语音笔记
+>     - 通过 `gifPlayback: true` 在视频发送时支持动画 GIF 播放
+>     - 发送多媒体回复载荷时，标题应用于第一个媒体项
+>     - 媒体源可以是 HTTP(S)、`file://` 或本地路径
 
 
-::: details 媒体大小限制和回退行为
-
-    - 入站媒体保存上限：`channels.whatsapp.mediaMaxMb`（默认 `50`）
-    - 自动回复的出站媒体上限：`agents.defaults.mediaMaxMb`（默认 `5MB`）
-    - 图片自动优化（调整大小/质量扫描）以适应限制
-    - 媒体发送失败时，第一项回退发送文本警告而不是静默丢弃响应
-  
-
-:::
+> [!abstract]- 媒体大小限制和回退行为
+> - 入站媒体保存上限：`channels.whatsapp.mediaMaxMb`（默认 `50`）
+>     - 自动回复的出站媒体上限：`agents.defaults.mediaMaxMb`（默认 `5MB`）
+>     - 图片自动优化（调整大小/质量扫描）以适应限制
+>     - 媒体发送失败时，第一项回退发送文本警告而不是静默丢弃响应
 
 ---
 
@@ -379,35 +331,22 @@ WhatsApp 支持通过 `channels.whatsapp.ackReaction` 在入站接收时立即�
 ## 多账户和凭据
 
 
-::: details 账户选择和默认值
-
-    - 账户 ID 来自 `channels.whatsapp.accounts`
-    - 默认账户选择：如存在则为 `default`，否则为第一个配置的账户 ID（排序后）
-    - 账户 ID 在内部查找时被标准化
-  
-
-:::
+> [!abstract]- 账户选择和默认值
+> - 账户 ID 来自 `channels.whatsapp.accounts`
+>     - 默认账户选择：如存在则为 `default`，否则为第一个配置的账户 ID（排序后）
+>     - 账户 ID 在内部查找时被标准化
 
 
-::: details 凭据路径和旧版兼容性
-
-    - 当前认证路径：`~/.openclaw/credentials/whatsapp/<accountId>/creds.json`
-    - 备份文件：`creds.json.bak`
-    - `~/.openclaw/credentials/` 中的旧版默认认证在默认账户流程中仍被识别/迁移
-  
-
-:::
+> [!abstract]- 凭据路径和旧版兼容性
+> - 当前认证路径：`~/.openclaw/credentials/whatsapp/<accountId>/creds.json`
+>     - 备份文件：`creds.json.bak`
+>     - `~/.openclaw/credentials/` 中的旧版默认认证在默认账户流程中仍被识别/迁移
 
 
-::: details 登出行为
-
-    `openclaw channels logout --channel whatsapp [--account <id>]` 清除该账户的 WhatsApp 认证状态。
-
-    在旧版认证目录中，`oauth.json` 被保留，而 Baileys 认证文件被移除。
-
-  
-
-:::
+> [!abstract]- 登出行为
+> `openclaw channels logout --channel whatsapp [--account <id>]` 清除该账户的 WhatsApp 认证状态。
+>
+>     在旧版认证目录中，`oauth.json` 被保留，而 Baileys 认证文件被移除。
 
 ---
 
@@ -424,71 +363,47 @@ WhatsApp 支持通过 `channels.whatsapp.ackReaction` 在入站接收时立即�
 ## 故障排查
 
 
-::: details 未链接（需要 QR 码）
-
-    症状：通道状态报告未链接。
-
-    修复：
-
-```bash
-openclaw channels login --channel whatsapp
-openclaw channels status
-```
-
-  
-
-:::
+> [!abstract]- 未链接（需要 QR 码）
+> 症状：通道状态报告未链接。
+>
+>     修复：
+>
+> ```bash
+> openclaw channels login --channel whatsapp
+> openclaw channels status
+> ```
 
 
-::: details 已链接但断开连接/重连循环
-
-    症状：已链接账户反复断开连接或重连尝试。
-
-    修复：
-
-```bash
-openclaw doctor
-openclaw logs --follow
-```
-
-    如需要，使用 `channels login` 重新链接。
-
-  
-
-:::
+> [!abstract]- 已链接但断开连接/重连循环
+> 症状：已链接账户反复断开连接或重连尝试。
+>
+>     修复：
+>
+> ```bash
+> openclaw doctor
+> openclaw logs --follow
+> ```
+>
+>     如需要，使用 `channels login` 重新链接。
 
 
-::: details 发送时无活跃监听器
-
-    当目标账户没有活跃的网关监听器时，出站发送会快速失败。
-
-    确保网关正在运行且账户已链接。
-
-  
-
-:::
+> [!abstract]- 发送时无活跃监听器
+> 当目标账户没有活跃的网关监听器时，出站发送会快速失败。
+>
+>     确保网关正在运行且账户已链接。
 
 
-::: details 群组消息意外被忽略
-
-    按此顺序检查：
-
-    - `groupPolicy`
-    - `groupAllowFrom` / `allowFrom`
-    - `groups` 白名单条目
-    - 提及门控（`requireMention` + 提及模式）
-
-  
-
-:::
+> [!abstract]- 群组消息意外被忽略
+> 按此顺序检查：
+>
+>     - `groupPolicy`
+>     - `groupAllowFrom` / `allowFrom`
+>     - `groups` 白名单条目
+>     - 提及门控（`requireMention` + 提及模式）
 
 
-::: details Bun 运行时警告
-
-    WhatsApp 网关运行时应使用 Node。Bun 被标记为不兼容稳定的 WhatsApp/Telegram 网关操作。
-  
-
-:::
+> [!abstract]- Bun 运行时警告
+> WhatsApp 网关运行时应使用 Node。Bun 被标记为不兼容稳定的 WhatsApp/Telegram 网关操作。
 
 ---
 

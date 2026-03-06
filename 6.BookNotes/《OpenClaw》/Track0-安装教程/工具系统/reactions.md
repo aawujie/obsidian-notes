@@ -14,13 +14,12 @@ description: "OpenClaw 工具系统：表情回应（Reactions）。表情回应
 
 在自动化场景中，Agent 常常需要处理大量消息。对于"已收到"、"正在处理"、"完成"等简单状态，用表情回应代替文字回复，可以大幅减少通道的消息噪音，同时让用户一眼看出任务状态。
 
-::: info 常见使用场景
-- 👍 确认收到消息，正在处理
-- ✅ 任务已完成
-- ❌ 任务失败或拒绝执行
-- ⏳ 任务正在等待中
-- ❤️ 用户反馈、情感交互
-:::
+> [!info] 常见使用场景
+> - 👍 确认收到消息，正在处理
+> - ✅ 任务已完成
+> - ❌ 任务失败或拒绝执行
+> - ⏳ 任务正在等待中
+> - ❤️ 用户反馈、情感交互
 
 ---
 
@@ -48,32 +47,30 @@ Agent 通过内置工具发送表情回应：
 openclaw run "处理用户请求时，先发送 👍 表示收到，完成后发送 ✅"
 ```
 
-::: details 工具调用示例（开发者参考）
-
-Agent 内部使用 `send_reaction` 工具：
-
-```json5
-{
-  tool: "send_reaction",
-  params: {
-    messageId: "msg_12345",
-    emoji: "👍"
-  }
-}
-```
-
-移除表情回应：
-
-```json5
-{
-  tool: "remove_reaction",
-  params: {
-    messageId: "msg_12345",
-    emoji: "👍"
-  }
-}
-```
-:::
+> [!abstract]- 工具调用示例（开发者参考）
+> Agent 内部使用 `send_reaction` 工具：
+>
+> ```json5
+> {
+>   tool: "send_reaction",
+>   params: {
+>     messageId: "msg_12345",
+>     emoji: "👍"
+>   }
+> }
+> ```
+>
+> 移除表情回应：
+>
+> ```json5
+> {
+>   tool: "remove_reaction",
+>   params: {
+>     messageId: "msg_12345",
+>     emoji: "👍"
+>   }
+> }
+> ```
 
 ---
 
@@ -99,29 +96,27 @@ Agent 内部使用 `send_reaction` 工具：
 }
 ```
 
-::: tip 按通道单独配置
-如果某个通道不支持表情回应，可以单独禁用：
-
-```json5
-{
-  channels: {
-    "my-webhook": {
-      reactions: { enabled: false }
-    }
-  }
-}
-```
-:::
+> [!tip] 按通道单独配置
+> 如果某个通道不支持表情回应，可以单独禁用：
+>
+> ```json5
+> {
+>   channels: {
+>     "my-webhook": {
+>       reactions: { enabled: false }
+>     }
+>   }
+> }
+> ```
 
 ---
 
 ## 注意事项
 
-::: warning 平台限制
-- Telegram 对表情回应有严格限制：只能使用 Telegram 内置的"精选表情"，不支持任意 Unicode 表情
-- 某些旧版本的 Discord 机器人权限可能不包含"添加表情回应"，需要在机器人权限设置中单独开启
-- 部分自定义通道（如 Webhook）可能不支持表情回应，会静默忽略该操作
-:::
+> [!warning] 平台限制
+> - Telegram 对表情回应有严格限制：只能使用 Telegram 内置的"精选表情"，不支持任意 Unicode 表情
+> - 某些旧版本的 Discord 机器人权限可能不包含"添加表情回应"，需要在机器人权限设置中单独开启
+> - 部分自定义通道（如 Webhook）可能不支持表情回应，会静默忽略该操作
 
 ---
 

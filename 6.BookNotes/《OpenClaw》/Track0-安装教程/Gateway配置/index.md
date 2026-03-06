@@ -60,10 +60,9 @@ openclaw gateway --port 18789
 
 这样网关会在终端窗口里运行，关掉终端窗口就停止了。
 
-::: tip 什么时候用哪种方式？
-- **日常使用**：用后台服务（方式一）
-- **测试/排查问题**：用手动运行（方式二），这样可以实时看到日志信息
-:::
+> [!tip] 什么时候用哪种方式？
+> - **日常使用**：用后台服务（方式一）
+> - **测试/排查问题**：用手动运行（方式二），这样可以实时看到日志信息
 
 ---
 
@@ -119,66 +118,54 @@ openclaw logs --follow
 
 ## 常见问题
 
-::: details 网关启动失败，提示"端口已被占用"？
+> [!abstract]- 网关启动失败，提示"端口已被占用"？
+> 有另一个程序占用了 18789 端口，或者你已经有一个网关在运行了。
+>
+> 强制关闭占用端口的进程并重新启动：
+>
+> ```bash
+> openclaw gateway --force
+> ```
+>
+> 或者换一个端口：
+>
+> ```bash
+> openclaw gateway --port 18790
+> ```
 
-有另一个程序占用了 18789 端口，或者你已经有一个网关在运行了。
+> [!abstract]- 网关一直崩溃，怎么排查？
+> 先运行自动诊断：
+>
+> ```bash
+> openclaw doctor
+> ```
+>
+> 然后查看详细日志：
+>
+> ```bash
+> openclaw logs --follow
+> ```
+>
+> 如果还是解决不了，可以在 [GitHub Issues](https://github.com/openclaw/openclaw/issues) 提问，把日志内容贴上去。
 
-强制关闭占用端口的进程并重新启动：
+> [!abstract]- 网关在运行，但 AI 没有回复？
+> 检查聊天软件（通道）是否正常连接：
+>
+> ```bash
+> openclaw channels status --probe
+> ```
+>
+> 如果某个通道显示错误，参考对应通道的故障排查文档：[通道故障排查](/tutorials/channels/troubleshooting)
 
-```bash
-openclaw gateway --force
-```
-
-或者换一个端口：
-
-```bash
-openclaw gateway --port 18790
-```
-
-:::
-
-::: details 网关一直崩溃，怎么排查？
-
-先运行自动诊断：
-
-```bash
-openclaw doctor
-```
-
-然后查看详细日志：
-
-```bash
-openclaw logs --follow
-```
-
-如果还是解决不了，可以在 [GitHub Issues](https://github.com/openclaw/openclaw/issues) 提问，把日志内容贴上去。
-
-:::
-
-::: details 网关在运行，但 AI 没有回复？
-
-检查聊天软件（通道）是否正常连接：
-
-```bash
-openclaw channels status --probe
-```
-
-如果某个通道显示错误，参考对应通道的故障排查文档：[通道故障排查](/tutorials/channels/troubleshooting)
-
-:::
-
-::: details 想从外网（比如在公司）访问家里的 OpenClaw？
-
-推荐使用 Tailscale（一种安全的内网穿透工具）来实现远程访问。
-
-基本步骤：
-1. 在运行 OpenClaw 的电脑上安装 Tailscale
-2. 配置 OpenClaw 使用 Tailscale 地址
-3. 在另一台设备上也安装 Tailscale，就可以通过 Tailscale 内网地址访问了
-
-详细配置：[认证与安全](/tutorials/gateway/authentication)
-
-:::
+> [!abstract]- 想从外网（比如在公司）访问家里的 OpenClaw？
+> 推荐使用 Tailscale（一种安全的内网穿透工具）来实现远程访问。
+>
+> 基本步骤：
+> 1. 在运行 OpenClaw 的电脑上安装 Tailscale
+> 2. 配置 OpenClaw 使用 Tailscale 地址
+> 3. 在另一台设备上也安装 Tailscale，就可以通过 Tailscale 内网地址访问了
+>
+> 详细配置：[认证与安全](/tutorials/gateway/authentication)
 
 ---
 

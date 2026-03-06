@@ -62,51 +62,49 @@ temp.py
 
 ## 脚本模板
 
-::: details Bash 脚本模板
-```bash
-#!/usr/bin/env bash
-set -euo pipefail
+> [!abstract]- Bash 脚本模板
+> ```bash
+> #!/usr/bin/env bash
+> set -euo pipefail
+> 
+> # 脚本说明：<描述这个脚本做什么>
+> # 用法：./script-name.sh [参数]
+> 
+> # 使用环境变量而非硬编码路径
+> OPENCLAW_HOME="${OPENCLAW_HOME:-$HOME/.openclaw}"
+> 
+> # 主逻辑
+> main() {
+>   echo "开始执行..."
+>   # 你的逻辑
+> }
+> 
+> main "$@"
+> ```
 
-# 脚本说明：<描述这个脚本做什么>
-# 用法：./script-name.sh [参数]
-
-# 使用环境变量而非硬编码路径
-OPENCLAW_HOME="${OPENCLAW_HOME:-$HOME/.openclaw}"
-
-# 主逻辑
-main() {
-  echo "开始执行..."
-  # 你的逻辑
-}
-
-main "$@"
-```
-:::
-
-::: details Python 脚本模板
-```python
-#!/usr/bin/env python3
-"""
-脚本说明：<描述这个脚本做什么>
-用法：python script-name.py [参数]
-"""
-
-import os
-import sys
-
-# 使用环境变量而非硬编码路径
-OPENCLAW_HOME = os.environ.get("OPENCLAW_HOME", os.path.expanduser("~/.openclaw"))
-
-
-def main():
-    print("开始执行...")
-    # 你的逻辑
-
-
-if __name__ == "__main__":
-    main()
-```
-:::
+> [!abstract]- Python 脚本模板
+> ```python
+> #!/usr/bin/env python3
+> """
+> 脚本说明：<描述这个脚本做什么>
+> 用法：python script-name.py [参数]
+> """
+> 
+> import os
+> import sys
+> 
+> # 使用环境变量而非硬编码路径
+> OPENCLAW_HOME = os.environ.get("OPENCLAW_HOME", os.path.expanduser("~/.openclaw"))
+> 
+> 
+> def main():
+>     print("开始执行...")
+>     # 你的逻辑
+> 
+> 
+> if __name__ == "__main__":
+>     main()
+> ```
 
 ---
 
@@ -154,14 +152,13 @@ echo "[ERROR] 无法连接到 $URL" >&2
 
 ---
 
-::: info 脚本权限问题
-如果脚本执行时报 `Permission denied`，检查文件权限：
-```bash
-ls -la ~/.openclaw/scripts/
-# 确保有 x（可执行）权限
-chmod +x ~/.openclaw/scripts/your-script.sh
-```
-:::
+> [!info] 脚本权限问题
+> 如果脚本执行时报 `Permission denied`，检查文件权限：
+> ```bash
+> ls -la ~/.openclaw/scripts/
+> # 确保有 x（可执行）权限
+> chmod +x ~/.openclaw/scripts/your-script.sh
+> ```
 
 ---
 

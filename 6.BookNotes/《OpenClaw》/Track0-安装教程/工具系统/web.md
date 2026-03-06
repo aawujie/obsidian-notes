@@ -90,11 +90,10 @@ Perplexity 在搜索结果基础上增加了 AI 摘要，适合需要综合信�
 }
 ```
 
-::: tip 如何选择
-- 需要原始搜索结果 → 选 Brave Search
-- 需要 AI 整合分析的摘要 → 选 Perplexity
-- 搜索量较大、成本敏感 → 选 Brave Search（更经济）
-:::
+> [!tip] 如何选择
+> - 需要原始搜索结果 → 选 Brave Search
+> - 需要 AI 整合分析的摘要 → 选 Perplexity
+> - 搜索量较大、成本敏感 → 选 Brave Search（更经济）
 
 ---
 
@@ -143,11 +142,9 @@ Perplexity 在搜索结果基础上增加了 AI 摘要，适合需要综合信�
 | `maxSize` | string | `"1MB"` | 单次抓取内容大小上限 |
 | `timeout` | number | `15000` | 请求超时时间（毫秒） |
 
-::: warning
-web_fetch 会访问任意 URL，请注意：
-- 不要让 Agent 抓取包含敏感信息的内部网络地址
-- 大型页面可能消耗大量 Token，建议设置合理的 `maxSize` 限制
-:::
+> [!warning] web_fetch 会访问任意 URL，请注意：
+> - 不要让 Agent 抓取包含敏感信息的内部网络地址
+> - 大型页面可能消耗大量 Token，建议设置合理的 `maxSize` 限制
 
 ---
 
@@ -155,27 +152,26 @@ web_fetch 会访问任意 URL，请注意：
 
 当主要搜索工具失败或需要更复杂的网页内容提取时，可以配置 Firecrawl 作为备用：
 
-::: details Firecrawl 集成配置
-Firecrawl 提供更强大的网页内容提取能力，支持 JavaScript 渲染的动态页面：
-
-```json5
-{
-  tools: {
-    web: {
-      fetch: {
-        enabled: true,
-        fallback: {
-          provider: "firecrawl",
-          apiKey: "${FIRECRAWL_API_KEY}"
-        }
-      }
-    }
-  }
-}
-```
-
-Firecrawl 作为备用方案，只在主要抓取方法失败时启用，不影响正常操作流程。
-:::
+> [!abstract]- Firecrawl 集成配置
+> Firecrawl 提供更强大的网页内容提取能力，支持 JavaScript 渲染的动态页面：
+>
+> ```json5
+> {
+>   tools: {
+>     web: {
+>       fetch: {
+>         enabled: true,
+>         fallback: {
+>           provider: "firecrawl",
+>           apiKey: "${FIRECRAWL_API_KEY}"
+>         }
+>       }
+>     }
+>   }
+> }
+> ```
+>
+> Firecrawl 作为备用方案，只在主要抓取方法失败时启用，不影响正常操作流程。
 
 ---
 

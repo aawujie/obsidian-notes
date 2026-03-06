@@ -98,11 +98,10 @@ description: "OpenClaw 工具系统：思考模式（Thinking Mode）。思考�
 /reasoning collapsed
 ```
 
-::: info 什么时候需要查看推理过程？
-- 调试 Agent 的决策逻辑
-- 验证复杂分析的推理步骤是否正确
-- 教学场景中展示 AI 的思考方式
-:::
+> [!info] 什么时候需要查看推理过程？
+> - 调试 Agent 的决策逻辑
+> - 验证复杂分析的推理步骤是否正确
+> - 教学场景中展示 AI 的思考方式
 
 ---
 
@@ -132,19 +131,17 @@ description: "OpenClaw 工具系统：思考模式（Thinking Mode）。思考�
 2. 点击切换开启/关闭当前会话的思考模式
 3. 开启后图标会变为高亮状态，发送的每条消息都将使用扩展思考
 
-::: tip 快捷键
-在 Web Chat UI 中，可以使用 `Ctrl + Shift + T`（macOS: `Cmd + Shift + T`）快速切换思考模式。
-:::
+> [!tip] 快捷键
+> 在 Web Chat UI 中，可以使用 `Ctrl + Shift + T`（macOS: `Cmd + Shift + T`）快速切换思考模式。
 
 ---
 
 ## 注意事项
 
-::: warning 使用思考模式的注意事项
-- **响应时间**：思考模式下，Claude 需要更多时间生成回复，请耐心等待
-- **Token 消耗**：扩展思考会消耗更多 Token（内部思考过程也计入用量）
-- **模型支持**：思考模式仅在支持 Extended Thinking 的 Claude 模型版本上可用，旧版本模型会忽略该指令
-:::
+> [!warning] 使用思考模式的注意事项
+> - **响应时间**：思考模式下，Claude 需要更多时间生成回复，请耐心等待
+> - **Token 消耗**：扩展思考会消耗更多 Token（内部思考过程也计入用量）
+> - **模型支持**：思考模式仅在支持 Extended Thinking 的 Claude 模型版本上可用，旧版本模型会忽略该指令
 
 ---
 

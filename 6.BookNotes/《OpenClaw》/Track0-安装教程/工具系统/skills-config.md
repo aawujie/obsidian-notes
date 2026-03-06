@@ -161,9 +161,8 @@ description: "OpenClaw 工具系统：技能配置参考（Skills Config Referen
 }
 ```
 
-::: warning 安全注意
-不要在配置文件中硬编码 API Key 等敏感信息。使用 `"${ENV_VAR_NAME}"` 语法从环境变量中引用，避免密钥泄露到代码仓库。
-:::
+> [!warning] 安全注意
+> 不要在配置文件中硬编码 API Key 等敏感信息。使用 `"${ENV_VAR_NAME}"` 语法从环境变量中引用，避免密钥泄露到代码仓库。
 
 ---
 
@@ -171,26 +170,25 @@ description: "OpenClaw 工具系统：技能配置参考（Skills Config Referen
 
 不同技能的环境变量相互隔离，技能 A 无法访问技能 B 配置的环境变量：
 
-::: details 隔离机制说明
-```json5
-{
-  skills: {
-    "skill-a": {
-      env: {
-        SECRET: "value-a"   // 只有 skill-a 的指令可以引用此变量
-      }
-    },
-    "skill-b": {
-      env: {
-        SECRET: "value-b"   // skill-b 有自己独立的 SECRET 值
-      }
-    }
-  }
-}
-```
-
-每个技能在注入提示词时，只能看到自己 `env` 中配置的变量，保证技能间的隔离性。
-:::
+> [!abstract]- 隔离机制说明
+> ```json5
+> {
+>   skills: {
+>     "skill-a": {
+>       env: {
+>         SECRET: "value-a"   // 只有 skill-a 的指令可以引用此变量
+>       }
+>     },
+>     "skill-b": {
+>       env: {
+>         SECRET: "value-b"   // skill-b 有自己独立的 SECRET 值
+>       }
+>     }
+>   }
+> }
+> ```
+>
+> 每个技能在注入提示词时，只能看到自己 `env` 中配置的变量，保证技能间的隔离性。
 
 ---
 

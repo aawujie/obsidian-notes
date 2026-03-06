@@ -8,9 +8,8 @@ description: "来自社区的真实 OpenClaw 项目"
 
 来自社区的真实项目。看看人们用 OpenClaw 构建了什么。
 
-::: info
-**想被展示？** 在 [Discord #showcase 频道](https://discord.gg/clawd)分享你的项目或在 [X 上 @openclaw](https://x.com/openclaw)。
-:::
+> [!info]
+> **想被展示？** 在 [Discord #showcase 频道](https://discord.gg/clawd)分享你的项目或在 [X 上 @openclaw](https://x.com/openclaw)。
 
 
 ## OpenClaw 实战

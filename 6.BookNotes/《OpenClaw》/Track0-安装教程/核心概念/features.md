@@ -36,6 +36,5 @@ description: "OpenClaw 核心概念：功能特性。- 通道（Channels） — 
 - 带配对和 Canvas 界面的 iOS 节点
 - 带配对、Canvas、聊天和相机的 Android 节点
 
-::: info 说明
-旧版 Claude、Codex、Gemini 和 Opencode 路径已被移除。Pi 是唯一的编程智能体路径。
-:::
+> [!info] 说明
+> 旧版 Claude、Codex、Gemini 和 Opencode 路径已被移除。Pi 是唯一的编程智能体路径。

@@ -34,9 +34,8 @@ sidebarTitle: "帮助中心"
 - **要跑测试或验证改动** → 看 [测试指南](./testing)
 - **Node.js 报错 `__name is not a function`** → 看 [Node.js 问题排查](./node-issue)
 
-::: tip 还是解决不了？
-可以前往 [GitHub Issues](https://github.com/openclaw/openclaw/issues) 提交问题，或者加入社区讨论。
-:::
+> [!tip] 还是解决不了？
+> 可以前往 [GitHub Issues](https://github.com/openclaw/openclaw/issues) 提交问题，或者加入社区讨论。
 
 ---
 

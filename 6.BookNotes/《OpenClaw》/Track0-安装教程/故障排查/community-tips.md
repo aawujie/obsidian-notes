@@ -42,14 +42,12 @@ ls ~/.openclaw/skills/my-skill/SKILL.md
 openclaw gateway restart
 ```
 
-::: tip 放哪个目录？
-- 所有项目通用的技能 → `~/.openclaw/skills/`（全局）
-- 特定项目专用的技能 → `<workspace>/skills/`（工作区级，优先级更高）
-:::
+> [!tip] 放哪个目录？
+> - 所有项目通用的技能 → `~/.openclaw/skills/`（全局）
+> - 特定项目专用的技能 → `<workspace>/skills/`（工作区级，优先级更高）
 
-::: warning 安全提醒
-从第三方来源安装技能前，务必阅读 `SKILL.md` 内容。技能会注入到 Agent 提示词中，恶意技能可能改变 Agent 行为。
-:::
+> [!warning] 安全提醒
+> 从第三方来源安装技能前，务必阅读 `SKILL.md` 内容。技能会注入到 Agent 提示词中，恶意技能可能改变 Agent 行为。
 
 ---
 
@@ -96,9 +94,8 @@ OpenClaw 通过社区插件支持钉钉（DingTalk）通道。
 
 ### 创建钉钉企业与机器人
 
-::: tip 不需要企业管理员
-自行在钉钉创建一个企业即可，无需现有企业管理员审批。对话框支持跨企业通信，不影响日常使用。
-:::
+> [!tip] 不需要企业管理员
+> 自行在钉钉创建一个企业即可，无需现有企业管理员审批。对话框支持跨企业通信，不影响日常使用。
 
 **第一步：创建钉钉企业内部应用**
 
@@ -256,9 +253,8 @@ openclaw agents set-identity --agent code --name "小赖"
 }
 ```
 
-::: tip 关于 bindings
-`bindings` 通过 `match` 规则将消息路由到不同智能体。`peer.kind` 可以是 `"direct"`（私聊）或 `"group"`（群组），`peer.id` 填对应的用户/群组 ID。查看日志（`openclaw logs --follow`）可以找到实际的 ID 值。更多路由规则见 [通道路由](../channels/channel-routing)。
-:::
+> [!tip] 关于 bindings
+> `bindings` 通过 `match` 规则将消息路由到不同智能体。`peer.kind` 可以是 `"direct"`（私聊）或 `"group"`（群组），`peer.id` 填对应的用户/群组 ID。查看日志（`openclaw logs --follow`）可以找到实际的 ID 值。更多路由规则见 [通道路由](../channels/channel-routing)。
 
 ### 智能体独立配置项
 

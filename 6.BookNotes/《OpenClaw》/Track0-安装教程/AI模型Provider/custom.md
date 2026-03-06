@@ -153,9 +153,8 @@ OpenClaw 内置了对主流 AI 服务商的支持，同时也允许你通过 `mo
 
 适用于 Synthetic、MiniMax 等 Anthropic 协议兼容服务：
 
-::: tip 注意
-`anthropic-messages` 协议下，`baseUrl` 应省略 `/v1`，Anthropic 客户端会自动追加。
-:::
+> [!tip] 注意
+> `anthropic-messages` 协议下，`baseUrl` 应省略 `/v1`，Anthropic 客户端会自动追加。
 
 ```json5
 {
@@ -299,36 +298,27 @@ openclaw models list      # 列出所有可用模型（包含自定义提供商�
 
 ## 常见问题
 
-::: details 模型调用成功但工具调用不工作？
+> [!abstract]- 模型调用成功但工具调用不工作？
+> 部分 OpenAI 兼容 API 不完整支持 Function Calling / Tool Use。可尝试：
+> - 确认服务端支持 `tools` 参数
+> - 换用支持工具调用的模型（如 Qwen2.5-Coder、Llama 3.3 等）
+> - 对于 OpenAI 兼容层，某些服务需要设置 `params: { streaming: false }` 禁用流式
 
-部分 OpenAI 兼容 API 不完整支持 Function Calling / Tool Use。可尝试：
-- 确认服务端支持 `tools` 参数
-- 换用支持工具调用的模型（如 Qwen2.5-Coder、Llama 3.3 等）
-- 对于 OpenAI 兼容层，某些服务需要设置 `params: { streaming: false }` 禁用流式
+> [!abstract]- API 密钥如何安全存储？
+> 推荐使用环境变量 + 配置中的 `${ENV_VAR}` 语法，避免密钥明文写入配置文件：
+>
+> ```bash
+> # ~/.openclaw/.env 或 .env（网关启动目录）
+> MY_API_KEY=sk-...
+> ```
+>
+> ```json5
+> // openclaw.json
+> { models: { providers: { "my-provider": { apiKey: "${MY_API_KEY}" } } } }
+> ```
 
-:::
-
-::: details API 密钥如何安全存储？
-
-推荐使用环境变量 + 配置中的 `${ENV_VAR}` 语法，避免密钥明文写入配置文件：
-
-```bash
-# ~/.openclaw/.env 或 .env（网关启动目录）
-MY_API_KEY=sk-...
-```
-
-```json5
-// openclaw.json
-{ models: { providers: { "my-provider": { apiKey: "${MY_API_KEY}" } } } }
-```
-
-:::
-
-::: details `merge` 和 `replace` 模式什么时候用 `replace`？
-
-当你希望**只使用自定义提供商**（完全禁用 Anthropic、OpenAI 等内置提供商）时使用 `replace`。大多数情况下保持默认 `merge` 即可。
-
-:::
+> [!abstract]- `merge` 和 `replace` 模式什么时候用 `replace`？
+> 当你希望**只使用自定义提供商**（完全禁用 Anthropic、OpenAI 等内置提供商）时使用 `replace`。大多数情况下保持默认 `merge` 即可。
 
 ---
 

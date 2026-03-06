@@ -25,9 +25,8 @@ description: "OpenClaw 快速入门：智能体（Agent）引导启动。引导�
 
 引导启动始终在**网关（Gateway）主机**上运行。如果 macOS 应用连接到远程网关（Gateway），则工作区（Workspace）和引导文件位于该远程机器上。
 
-::: info 说明
-当网关（Gateway）运行在另一台机器上时，请在网关（Gateway）主机上编辑工作区文件（例如 `user@gateway-host:~/.openclaw/workspace`）。
-:::
+> [!info] 说明
+> 当网关（Gateway）运行在另一台机器上时，请在网关（Gateway）主机上编辑工作区文件（例如 `user@gateway-host:~/.openclaw/workspace`）。
 
 ---
 

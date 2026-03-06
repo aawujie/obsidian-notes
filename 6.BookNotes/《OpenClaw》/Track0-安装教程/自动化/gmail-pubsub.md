@@ -80,12 +80,11 @@ openclaw channels gmail watch
 openclaw logs --filter gmail --follow
 ```
 
-::: tip 一次性完整设置命令
-如果你是第一次配置，可以使用向导命令完成所有步骤：
-```bash
-openclaw channels gmail setup
-```
-:::
+> [!tip] 一次性完整设置命令
+> 如果你是第一次配置，可以使用向导命令完成所有步骤：
+> ```bash
+> openclaw channels gmail setup
+> ```
 
 ---
 
@@ -137,33 +136,32 @@ OpenClaw 获取邮件详情
 
 ### Watch 刷新机制
 
-::: warning Gmail Watch 每 7 天过期
-Gmail 的推送订阅（Watch）有效期为 **7 天**，到期后必须重新调用 Watch 才能继续接收推送。
-
-推荐使用 Cron 任务自动续期：
-
-```json5
-{
-  cron: {
-    jobs: [
-      {
-        // 每月 1 日早上 8 点自动刷新（Watch 有效期 7 天，按月刷新确保不过期）
-        schedule: "0 8 1 * *",
-        agent: "system-maintenance",
-        message: "请执行 Gmail Watch 续期操作：openclaw channels gmail watch"
-      }
-    ]
-  }
-}
-```
-
-或者直接用系统 cron 运行命令：
-
-```bash
-# 在系统 crontab 中添加（每月 1 日早上 8 点刷新）
-0 8 1 * * /usr/local/bin/openclaw channels gmail watch
-```
-:::
+> [!warning] Gmail Watch 每 7 天过期
+> Gmail 的推送订阅（Watch）有效期为 **7 天**，到期后必须重新调用 Watch 才能继续接收推送。
+>
+> 推荐使用 Cron 任务自动续期：
+>
+> ```json5
+> {
+>   cron: {
+>     jobs: [
+>       {
+>         // 每月 1 日早上 8 点自动刷新（Watch 有效期 7 天，按月刷新确保不过期）
+>         schedule: "0 8 1 * *",
+>         agent: "system-maintenance",
+>         message: "请执行 Gmail Watch 续期操作：openclaw channels gmail watch"
+>       }
+>     ]
+>   }
+> }
+> ```
+>
+> 或者直接用系统 cron 运行命令：
+>
+> ```bash
+> # 在系统 crontab 中添加（每月 1 日早上 8 点刷新）
+> 0 8 1 * * /usr/local/bin/openclaw channels gmail watch
+> ```
 
 ---
 
@@ -193,42 +191,36 @@ openclaw channels gmail cleanup
 
 ### 故障排查
 
-::: details 推送不工作：没有收到新邮件通知
+> [!abstract]- 推送不工作：没有收到新邮件通知
+> 1. 确认 Watch 是否活跃：`openclaw channels gmail status`
+> 2. 检查 IAM 权限是否正确配置（Step 2 的授权步骤）
+> 3. 验证 Pub/Sub 订阅是否有未确认消息：
+>    ```bash
+>    gcloud pubsub subscriptions describe openclaw-gmail-sub
+>    ```
+> 4. 手动触发一次拉取：`openclaw channels gmail pull`
 
-1. 确认 Watch 是否活跃：`openclaw channels gmail status`
-2. 检查 IAM 权限是否正确配置（Step 2 的授权步骤）
-3. 验证 Pub/Sub 订阅是否有未确认消息：
-   ```bash
-   gcloud pubsub subscriptions describe openclaw-gmail-sub
-   ```
-4. 手动触发一次拉取：`openclaw channels gmail pull`
-:::
+> [!abstract]- Watch 已过期：超过 7 天未刷新
+> ```bash
+> # 重新启动 Watch
+> openclaw channels gmail watch
+> ```
+>
+> Watch 过期期间收到的邮件不会补发通知。如需处理漏掉的邮件，可手动轮询：
+>
+> ```bash
+> openclaw channels poll --channel gmail
+> ```
 
-::: details Watch 已过期：超过 7 天未刷新
-
-```bash
-# 重新启动 Watch
-openclaw channels gmail watch
-```
-
-Watch 过期期间收到的邮件不会补发通知。如需处理漏掉的邮件，可手动轮询：
-
-```bash
-openclaw channels poll --channel gmail
-```
-:::
-
-::: details 权限错误（403 Forbidden）
-
-检查 OAuth 授权范围是否包含以下权限：
-- `https://www.googleapis.com/auth/gmail.readonly`
-- `https://www.googleapis.com/auth/pubsub`
-
-重新授权：
-```bash
-openclaw auth gmail --force-reauth
-```
-:::
+> [!abstract]- 权限错误（403 Forbidden）
+> 检查 OAuth 授权范围是否包含以下权限：
+> - `https://www.googleapis.com/auth/gmail.readonly`
+> - `https://www.googleapis.com/auth/pubsub`
+>
+> 重新授权：
+> ```bash
+> openclaw auth gmail --force-reauth
+> ```
 
 ---
 

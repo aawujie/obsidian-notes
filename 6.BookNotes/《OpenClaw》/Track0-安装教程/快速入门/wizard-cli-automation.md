@@ -8,9 +8,8 @@ description: "OpenClaw 快速入门：CLI 自动化。不代表非交互模式�
 
 使用 `--non-interactive` 来自动化 `openclaw onboard`。
 
-::: info 说明
-`--json` 不代表非交互模式。对于脚本，请使用 `--non-interactive`（和 `--workspace`）。
-:::
+> [!info] 说明
+> `--json` 不代表非交互模式。对于脚本，请使用 `--non-interactive`（和 `--workspace`）。
 
 ---
 
@@ -35,126 +34,93 @@ openclaw onboard --non-interactive \
 ## 特定提供商示例
 
 
-::: details Gemini 示例
+> [!abstract]- Gemini 示例
+> ```bash
+> openclaw onboard --non-interactive \
+>   --mode local \
+>   --auth-choice gemini-api-key \
+>   --gemini-api-key "$GEMINI_API_KEY" \
+>   --gateway-port 18789 \
+>   --gateway-bind loopback
+> ```
 
-```bash
-openclaw onboard --non-interactive \
-  --mode local \
-  --auth-choice gemini-api-key \
-  --gemini-api-key "$GEMINI_API_KEY" \
-  --gateway-port 18789 \
-  --gateway-bind loopback
-```
-  
+> [!abstract]- Z.AI 示例
+> ```bash
+> openclaw onboard --non-interactive \
+>   --mode local \
+>   --auth-choice zai-api-key \
+>   --zai-api-key "$ZAI_API_KEY" \
+>   --gateway-port 18789 \
+>   --gateway-bind loopback
+> ```
 
-:::
+> [!abstract]- Vercel AI Gateway 示例
+> ```bash
+> openclaw onboard --non-interactive \
+>   --mode local \
+>   --auth-choice ai-gateway-api-key \
+>   --ai-gateway-api-key "$AI_GATEWAY_API_KEY" \
+>   --gateway-port 18789 \
+>   --gateway-bind loopback
+> ```
 
-::: details Z.AI 示例
+> [!abstract]- Cloudflare AI Gateway 示例
+> ```bash
+> openclaw onboard --non-interactive \
+>   --mode local \
+>   --auth-choice cloudflare-ai-gateway-api-key \
+>   --cloudflare-ai-gateway-account-id "your-account-id" \
+>   --cloudflare-ai-gateway-gateway-id "your-gateway-id" \
+>   --cloudflare-ai-gateway-api-key "$CLOUDFLARE_AI_GATEWAY_API_KEY" \
+>   --gateway-port 18789 \
+>   --gateway-bind loopback
+> ```
 
-```bash
-openclaw onboard --non-interactive \
-  --mode local \
-  --auth-choice zai-api-key \
-  --zai-api-key "$ZAI_API_KEY" \
-  --gateway-port 18789 \
-  --gateway-bind loopback
-```
-  
+> [!abstract]- Moonshot 示例
+> ```bash
+> openclaw onboard --non-interactive \
+>   --mode local \
+>   --auth-choice moonshot-api-key \
+>   --moonshot-api-key "$MOONSHOT_API_KEY" \
+>   --gateway-port 18789 \
+>   --gateway-bind loopback
+> ```
 
-:::
+> [!abstract]- Synthetic 示例
+> ```bash
+> openclaw onboard --non-interactive \
+>   --mode local \
+>   --auth-choice synthetic-api-key \
+>   --synthetic-api-key "$SYNTHETIC_API_KEY" \
+>   --gateway-port 18789 \
+>   --gateway-bind loopback
+> ```
 
-::: details Vercel AI Gateway 示例
+> [!abstract]- OpenCode Zen 示例
+> ```bash
+> openclaw onboard --non-interactive \
+>   --mode local \
+>   --auth-choice opencode-zen \
+>   --opencode-zen-api-key "$OPENCODE_API_KEY" \
+>   --gateway-port 18789 \
+>   --gateway-bind loopback
+> ```
 
-```bash
-openclaw onboard --non-interactive \
-  --mode local \
-  --auth-choice ai-gateway-api-key \
-  --ai-gateway-api-key "$AI_GATEWAY_API_KEY" \
-  --gateway-port 18789 \
-  --gateway-bind loopback
-```
-  
-
-:::
-
-::: details Cloudflare AI Gateway 示例
-
-```bash
-openclaw onboard --non-interactive \
-  --mode local \
-  --auth-choice cloudflare-ai-gateway-api-key \
-  --cloudflare-ai-gateway-account-id "your-account-id" \
-  --cloudflare-ai-gateway-gateway-id "your-gateway-id" \
-  --cloudflare-ai-gateway-api-key "$CLOUDFLARE_AI_GATEWAY_API_KEY" \
-  --gateway-port 18789 \
-  --gateway-bind loopback
-```
-  
-
-:::
-
-::: details Moonshot 示例
-
-```bash
-openclaw onboard --non-interactive \
-  --mode local \
-  --auth-choice moonshot-api-key \
-  --moonshot-api-key "$MOONSHOT_API_KEY" \
-  --gateway-port 18789 \
-  --gateway-bind loopback
-```
-  
-
-:::
-
-::: details Synthetic 示例
-
-```bash
-openclaw onboard --non-interactive \
-  --mode local \
-  --auth-choice synthetic-api-key \
-  --synthetic-api-key "$SYNTHETIC_API_KEY" \
-  --gateway-port 18789 \
-  --gateway-bind loopback
-```
-  
-
-:::
-
-::: details OpenCode Zen 示例
-
-```bash
-openclaw onboard --non-interactive \
-  --mode local \
-  --auth-choice opencode-zen \
-  --opencode-zen-api-key "$OPENCODE_API_KEY" \
-  --gateway-port 18789 \
-  --gateway-bind loopback
-```
-  
-
-:::
-
-::: details 自定义提供商示例
-
-```bash
-openclaw onboard --non-interactive \
-  --mode local \
-  --auth-choice custom-api-key \
-  --custom-base-url "https://llm.example.com/v1" \
-  --custom-model-id "foo-large" \
-  --custom-api-key "$CUSTOM_API_KEY" \
-  --custom-provider-id "my-custom" \
-  --custom-compatibility anthropic \
-  --gateway-port 18789 \
-  --gateway-bind loopback
-```
-
-    `--custom-api-key` 是可选的。如果省略，入门引导会检查 `CUSTOM_API_KEY`。
-
-  
-
-:::
+> [!abstract]- 自定义提供商示例
+> ```bash
+> openclaw onboard --non-interactive \
+>   --mode local \
+>   --auth-choice custom-api-key \
+>   --custom-base-url "https://llm.example.com/v1" \
+>   --custom-model-id "foo-large" \
+>   --custom-api-key "$CUSTOM_API_KEY" \
+>   --custom-provider-id "my-custom" \
+>   --custom-compatibility anthropic \
+>   --gateway-port 18789 \
+>   --gateway-bind loopback
+> ```
+>
+>     `--custom-api-key` 是可选的。如果省略，入门引导会检查 `CUSTOM_API_KEY`。
 
 ---
 

@@ -78,106 +78,100 @@ openclaw config show
 
 ### Cron 任务不在预期时间执行
 
-::: details 排查步骤
-
-**检查 1：Gateway 是否在运行**
-
-```bash
-openclaw gateway status
-```
-
-如果未运行：
-```bash
-openclaw gateway start
-```
-
-**检查 2：查看 Cron 任务列表和下次执行时间**
-
-```bash
-openclaw cron list
-```
-
-输出中的 `NEXT RUN` 列显示下次执行时间。如果时间不对，检查时区配置。
-
-**检查 3：验证 cron 表达式**
-
-```bash
-# 本地验证（需要安装 node-cron 或类似工具）
-# 推荐直接用在线工具：https://crontab.guru
-```
-
-**检查 4：检查 Agent 是否存在**
-
-```bash
-openclaw agents list
-```
-
-确认配置中的 `agent` 字段名称与列表完全一致（区分大小写）。
-:::
+> [!abstract]- 排查步骤
+> **检查 1：Gateway 是否在运行**
+>
+> ```bash
+> openclaw gateway status
+> ```
+>
+> 如果未运行：
+> ```bash
+> openclaw gateway start
+> ```
+>
+> **检查 2：查看 Cron 任务列表和下次执行时间**
+>
+> ```bash
+> openclaw cron list
+> ```
+>
+> 输出中的 `NEXT RUN` 列显示下次执行时间。如果时间不对，检查时区配置。
+>
+> **检查 3：验证 cron 表达式**
+>
+> ```bash
+> # 本地验证（需要安装 node-cron 或类似工具）
+> # 推荐直接用在线工具：https://crontab.guru
+> ```
+>
+> **检查 4：检查 Agent 是否存在**
+>
+> ```bash
+> openclaw agents list
+> ```
+>
+> 确认配置中的 `agent` 字段名称与列表完全一致（区分大小写）。
 
 ---
 
 ### Cron 任务重复执行
 
-::: details 原因和解决方法
-
-**原因：** 系统中运行了多个 OpenClaw Gateway 实例，每个实例都在独立调度 Cron，导致同一任务被执行多次。
-
-**诊断：**
-
-```bash
-# 查看所有运行中的 Gateway 进程
-ps aux | grep "openclaw gateway"
-# 或
-openclaw gateway list-instances
-```
-
-**解决：** 停止多余的 Gateway 实例，确保只有一个在运行：
-
-```bash
-# 停止所有 Gateway
-openclaw gateway stop --all
-
-# 重新启动单个 Gateway
-openclaw gateway start
-```
-:::
+> [!abstract]- 原因和解决方法
+> **原因：** 系统中运行了多个 OpenClaw Gateway 实例，每个实例都在独立调度 Cron，导致同一任务被执行多次。
+>
+> **诊断：**
+>
+> ```bash
+> # 查看所有运行中的 Gateway 进程
+> ps aux | grep "openclaw gateway"
+> # 或
+> openclaw gateway list-instances
+> ```
+>
+> **解决：** 停止多余的 Gateway 实例，确保只有一个在运行：
+>
+> ```bash
+> # 停止所有 Gateway
+> openclaw gateway stop --all
+> 
+> # 重新启动单个 Gateway
+> openclaw gateway start
+> ```
 
 ---
 
 ### 时区问题导致 Cron 不按时执行
 
-::: details 诊断和配置
-
-```bash
-# 查看服务器当前时区
-date
-timedatectl  # Linux 系统
-
-# 查看 OpenClaw 识别的时区
-openclaw config show | grep timezone
-```
-
-在配置文件中显式设置时区（推荐）：
-
-```json5
-{
-  cron: {
-    // 所有 Cron 任务使用北京时间
-    timezone: "Asia/Shanghai",
-    jobs: [
-      {
-        schedule: "0 9 * * 1-5",
-        // 也可以单独为某个任务设置时区
-        // timezone: "America/New_York",
-        agent: "daily-report",
-        message: "生成日报"
-      }
-    ]
-  }
-}
-```
-:::
+> [!abstract]- 诊断和配置
+> ```bash
+> # 查看服务器当前时区
+> date
+> timedatectl  # Linux 系统
+> 
+> # 查看 OpenClaw 识别的时区
+> openclaw config show | grep timezone
+> ```
+>
+> 在配置文件中显式设置时区（推荐）：
+>
+> ```json5
+> {
+>   cron: {
+>     // 所有 Cron 任务使用北京时间
+>     timezone: "Asia/Shanghai",
+>     jobs: [
+>       {
+>         schedule: "0 9 * * 1-5",
+>         // 也可以单独为某个任务设置时区
+>         // timezone: "America/New_York",
+>         agent: "daily-report",
+>         message: "生成日报"
+>       }
+>     ]
+>   }
+> }
+> ```
 
 ---
 
@@ -185,32 +179,30 @@ openclaw config show | grep timezone
 
 ### Heartbeat 停止发送
 
-::: details 排查步骤
-
-**检查 1：Agent 是否仍在运行**
-
-```bash
-openclaw agents status <agent-name>
-```
-
-**检查 2：查看 Heartbeat 日志**
-
-```bash
-openclaw logs --filter heartbeat --agent <agent-name>
-```
-
-**检查 3：重启 Agent**
-
-```bash
-openclaw agents restart <agent-name>
-```
-
-**检查 4：验证 Heartbeat 配置**
-
-```bash
-openclaw config show | grep -A 5 heartbeat
-```
-:::
+> [!abstract]- 排查步骤
+> **检查 1：Agent 是否仍在运行**
+>
+> ```bash
+> openclaw agents status <agent-name>
+> ```
+>
+> **检查 2：查看 Heartbeat 日志**
+>
+> ```bash
+> openclaw logs --filter heartbeat --agent <agent-name>
+> ```
+>
+> **检查 3：重启 Agent**
+>
+> ```bash
+> openclaw agents restart <agent-name>
+> ```
+>
+> **检查 4：验证 Heartbeat 配置**
+>
+> ```bash
+> openclaw config show | grep -A 5 heartbeat
+> ```
 
 ---
 
@@ -243,9 +235,8 @@ openclaw agents list
 openclaw config show | grep -A 10 webhooks
 ```
 
-::: warning Agent 名称区分大小写
-`my-agent` 和 `My-Agent` 是不同的 Agent 名称，请确保配置中的名称完全一致。
-:::
+> [!warning] Agent 名称区分大小写
+> `my-agent` 和 `My-Agent` 是不同的 Agent 名称，请确保配置中的名称完全一致。
 
 ---
 
@@ -306,11 +297,10 @@ openclaw logs --json | jq '.[] | select(.level == "error")'
 
 ---
 
-::: info 问题仍未解决？
-如果以上步骤都无法解决你的问题，可以：
-1. 查看 [GitHub Issues](https://github.com/openclaw/openclaw/issues) 确认是否是已知问题
-2. 收集完整日志（`openclaw logs --json > debug.log`）提交问题报告
-:::
+> [!info] 问题仍未解决？
+> 如果以上步骤都无法解决你的问题，可以：
+> 1. 查看 [GitHub Issues](https://github.com/openclaw/openclaw/issues) 确认是否是已知问题
+> 2. 收集完整日志（`openclaw logs --json > debug.log`）提交问题报告
 
 ---
 

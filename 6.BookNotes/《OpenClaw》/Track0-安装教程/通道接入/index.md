@@ -131,25 +131,16 @@ openclaw pairing approve <码>   # 批准某人
 
 ## 常见问题
 
-::: details 能同时连接多个聊天软件吗？
+> [!abstract]- 能同时连接多个聊天软件吗？
+> 可以！你可以同时连接 Telegram、WhatsApp、Discord 等多个通道。OpenClaw 会根据消息来源自动路由，AI 助手在哪个软件里收到消息，就在哪个软件里回复。
 
-可以！你可以同时连接 Telegram、WhatsApp、Discord 等多个通道。OpenClaw 会根据消息来源自动路由，AI 助手在哪个软件里收到消息，就在哪个软件里回复。
+> [!abstract]- WhatsApp 需要一直保持手机开着吗？
+> WhatsApp 的连接方式（Baileys）是通过扫码关联你的 WhatsApp 账号，类似于 WhatsApp Web。手机不需要一直开着，但如果手机上的 WhatsApp 被注销，需要重新扫码。
 
-:::
-
-::: details WhatsApp 需要一直保持手机开着吗？
-
-WhatsApp 的连接方式（Baileys）是通过扫码关联你的 WhatsApp 账号，类似于 WhatsApp Web。手机不需要一直开着，但如果手机上的 WhatsApp 被注销，需要重新扫码。
-
-:::
-
-::: details 连接之后 AI 不回复，怎么办？
-
-按顺序检查：
-
-1. 确认网关在运行：`openclaw gateway status`
-2. 确认通道已连接：`openclaw channels status`
-3. 检查是否有待审批的配对请求：`openclaw pairing list`
-4. 如果还有问题，查看日志：`openclaw logs --follow`
-
-:::
+> [!abstract]- 连接之后 AI 不回复，怎么办？
+> 按顺序检查：
+>
+> 1. 确认网关在运行：`openclaw gateway status`
+> 2. 确认通道已连接：`openclaw channels status`
+> 3. 检查是否有待审批的配对请求：`openclaw pairing list`
+> 4. 如果还有问题，查看日志：`openclaw logs --follow`

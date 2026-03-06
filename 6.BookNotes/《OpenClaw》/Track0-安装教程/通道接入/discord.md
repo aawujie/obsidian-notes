@@ -87,32 +87,23 @@ openclaw pairing approve discord <CODE>  # 批准（把 CODE 替换成实际的�
 
 ## 常见问题
 
-::: details Bot 在频道里不回复怎么办？
+> [!abstract]- Bot 在频道里不回复怎么办？
+> 默认情况下，Bot 在服务器频道里只在被 @提及 时才会回复（保护，防止误触）。
+>
+> 在频道里输入 `@你的Bot名字 你好` 来触发回复。
+>
+> 如果想让 Bot 不需要 @ 也能回复，需要修改配置（进阶设置）。
 
-默认情况下，Bot 在服务器频道里只在被 @提及 时才会回复（保护，防止误触）。
+> [!abstract]- Bot Token 是什么，忘记了怎么办？
+> Bot Token 是你的 Bot 的登录密码，非常重要。如果忘记了：
+> 1. 去 [Discord 开发者门户](https://discord.com/developers/applications)
+> 2. 找到你的应用 → Bot → Reset Token
+> 3. 重新复制新 Token，重新配置
+>
+> **Token 泄露了很危险**，别人可以用你的 Bot 做坏事。如果不小心泄露了，立即 Reset。
 
-在频道里输入 `@你的Bot名字 你好` 来触发回复。
-
-如果想让 Bot 不需要 @ 也能回复，需要修改配置（进阶设置）。
-
-:::
-
-::: details Bot Token 是什么，忘记了怎么办？
-
-Bot Token 是你的 Bot 的登录密码，非常重要。如果忘记了：
-1. 去 [Discord 开发者门户](https://discord.com/developers/applications)
-2. 找到你的应用 → Bot → Reset Token
-3. 重新复制新 Token，重新配置
-
-**Token 泄露了很危险**，别人可以用你的 Bot 做坏事。如果不小心泄露了，立即 Reset。
-
-:::
-
-::: details 可以在多个服务器里用同一个 Bot 吗？
-
-可以！一个 Bot Token 可以把 Bot 邀请进任意多的服务器。在每个服务器里，你都需要单独批准配对请求。
-
-:::
+> [!abstract]- 可以在多个服务器里用同一个 Bot 吗？
+> 可以！一个 Bot Token 可以把 Bot 邀请进任意多的服务器。在每个服务器里，你都需要单独批准配对请求。
 
 ---
 
@@ -184,9 +175,8 @@ openclaw pairing approve discord <CODE>
     配对码在 1 小时后过期。
 
 
-::: info 说明
-Token 解析是账户感知的。配置 Token 值优先于环境变量回退。`DISCORD_BOT_TOKEN` 仅用于默认账户。
-:::
+> [!info] 说明
+> Token 解析是账户感知的。配置 Token 值优先于环境变量回退。`DISCORD_BOT_TOKEN` 仅用于默认账户。
 
 
 ## 运行时模型
@@ -310,66 +300,46 @@ Token 解析是账户感知的。配置 Token 值优先于环境变量回退。`
 ## 开发者门户设置
 
 
-::: details 创建应用和机器人
-
-    1. Discord Developer Portal -> **Applications** -> **New Application**
-    2. **Bot** -> **Add Bot**
-    3. 复制机器人 Token
-
-  
-
-:::
+> [!abstract]- 创建应用和机器人
+> 1. Discord Developer Portal -> **Applications** -> **New Application**
+>     2. **Bot** -> **Add Bot**
+>     3. 复制机器人 Token
 
 
-::: details 特权 Intent
-
-    在 **Bot -> Privileged Gateway Intents** 中，启用：
-
-    - Message Content Intent
-    - Server Members Intent（推荐）
-
-    Presence Intent 是可选的，仅在你需要接收在线状态更新时才需要。设置机器人在线状态（`setPresence`）不需要启用成员的在线状态更新。
-
-  
-
-:::
+> [!abstract]- 特权 Intent
+> 在 **Bot -> Privileged Gateway Intents** 中，启用：
+>
+>     - Message Content Intent
+>     - Server Members Intent（推荐）
+>
+>     Presence Intent 是可选的，仅在你需要接收在线状态更新时才需要。设置机器人在线状态（`setPresence`）不需要启用成员的在线状态更新。
 
 
-::: details OAuth scope 和基本权限
-
-    OAuth URL 生成器：
-
-    - scope：`bot`、`applications.commands`
-
-    典型基本权限：
-
-    - View Channels
-    - Send Messages
-    - Read Message History
-    - Embed Links
-    - Attach Files
-    - Add Reactions（可选）
-
-    除非明确需要，否则避免使用 `Administrator`。
-
-  
-
-:::
+> [!abstract]- OAuth scope 和基本权限
+> OAuth URL 生成器：
+>
+>     - scope：`bot`、`applications.commands`
+>
+>     典型基本权限：
+>
+>     - View Channels
+>     - Send Messages
+>     - Read Message History
+>     - Embed Links
+>     - Attach Files
+>     - Add Reactions（可选）
+>
+>     除非明确需要，否则避免使用 `Administrator`。
 
 
-::: details 复制 ID
-
-    启用 Discord 开发者模式，然后复制：
-
-    - 服务器 ID
-    - 频道 ID
-    - 用户 ID
-
-    在 OpenClaw 配置中推荐使用数字 ID 以便可靠审计和探测。
-
-  
-
-:::
+> [!abstract]- 复制 ID
+> 启用 Discord 开发者模式，然后复制：
+>
+>     - 服务器 ID
+>     - 频道 ID
+>     - 用户 ID
+>
+>     在 OpenClaw 配置中推荐使用数字 ID 以便可靠审计和探测。
 
 
 ## 原生命令和命令授权
@@ -385,234 +355,194 @@ Token 解析是账户感知的。配置 Token 值优先于环境变量回退。`
 ## 功能详情
 
 
-::: details 回复标签和原生回复
-
-    Discord 支持智能体输出中的回复标签：
-
-    - `[[reply_to_current]]`
-    - `[[reply_to:<id>]]`
-
-    由 `channels.discord.replyToMode` 控制：
-
-    - `off`（默认）
-    - `first`
-    - `all`
-
-    注意：`off` 禁用隐式回复线程。显式的 `[[reply_to_*]]` 标签仍然有效。
-
-    消息 ID 在上下文/历史中展示，以便智能体可以定向特定消息。
-
-  
-
-:::
-
-
-::: details 历史、上下文和线程行为
-
-    公会历史上下文：
-
-    - `channels.discord.historyLimit` 默认 `20`
-    - 回退：`messages.groupChat.historyLimit`
-    - `0` 禁用
-
-    DM 历史控制：
-
-    - `channels.discord.dmHistoryLimit`
-    - `channels.discord.dms["<user_id>"].historyLimit`
-
-    线程行为：
-
-    - Discord 线程作为频道会话路由
-    - 父线程元数据可用于父会话关联
-    - 线程配置继承父频道配置，除非存在特定于线程的条目
-
-    频道主题作为**不受信任的**上下文注入（不作为系统提示）。
-
-  
-
-:::
-
-
-::: details 表情回应通知
-
-    按公会的表情回应通知模式：
-
-    - `off`
-    - `own`（默认）
-    - `all`
-    - `allowlist`（使用 `guilds.<id>.users`）
-
-    表情回应事件被转换为系统事件并附加到路由的 Discord 会话。
-
-  
-
-:::
-
-
-::: details 配置写入
-
-    默认启用通道发起的配置写入。
-
-    这影响 `/config set|unset` 流程（当启用命令功能时）。
-
-    禁用：
-
-```json5
-{
-  channels: {
-    discord: {
-      configWrites: false,
-    },
-  },
-}
-```
-
-  
-
-:::
-
-
-::: details 网关代理
-
-    通过 `channels.discord.proxy` 将 Discord 网关 WebSocket 流量路由通过 HTTP(S) 代理。
-
-```json5
-{
-  channels: {
-    discord: {
-      proxy: "http://proxy.example:8080",
-    },
-  },
-}
-```
-
-    按账户覆盖：
-
-```json5
-{
-  channels: {
-    discord: {
-      accounts: {
-        primary: {
-          proxy: "http://proxy.example:8080",
-        },
-      },
-    },
-  },
-}
-```
-
-  
-
-:::
-
-
-::: details PluralKit 支持
-
-    启用 PluralKit 解析以将代理消息映射到系统成员身份：
-
-```json5
-{
-  channels: {
-    discord: {
-      pluralkit: {
-        enabled: true,
-        token: "pk_live_...", // optional; needed for private systems
-      },
-    },
-  },
-}
-```
-
-    说明：
-
-    - 白名单可以使用 `pk:<memberId>`
-    - 成员显示名称按名称/slug 匹配
-    - 查找使用原始消息 ID 并受时间窗口限制
-    - 如果查找失败，代理消息被视为机器人消息并被丢弃，除非 `allowBots=true`
-
-  
-
-:::
-
-
-::: details 在线状态配置
-
-    在线状态更新仅在你设置了状态或活动字段时才会应用。
-
-    仅设置状态的示例：
-
-```json5
-{
-  channels: {
-    discord: {
-      status: "idle",
-    },
-  },
-}
-```
-
-    活动示例（自定义状态是默认的活动类型）：
-
-```json5
-{
-  channels: {
-    discord: {
-      activity: "Focus time",
-      activityType: 4,
-    },
-  },
-}
-```
-
-    直播示例：
-
-```json5
-{
-  channels: {
-    discord: {
-      activity: "Live coding",
-      activityType: 1,
-      activityUrl: "https://twitch.tv/openclaw",
-    },
-  },
-}
-```
-
-    活动类型映射：
-
-    - 0: Playing
-    - 1: Streaming（需要 `activityUrl`）
-    - 2: Listening
-    - 3: Watching
-    - 4: Custom（使用活动文本作为状态内容；emoji 可选）
-    - 5: Competing
-
-  
-
-:::
-
-
-::: details Discord 中的执行审批
-
-    Discord 支持在私信中基于按钮的执行审批，并可选择在原始频道中发布审批提示。
-
-    配置路径：
-
-    - `channels.discord.execApprovals.enabled`
-    - `channels.discord.execApprovals.approvers`
-    - `channels.discord.execApprovals.target`（`dm` | `channel` | `both`，默认：`dm`）
-    - `agentFilter`、`sessionFilter`、`cleanupAfterResolve`
-
-    当 `target` 为 `channel` 或 `both` 时，审批提示在频道中可见。只有配置的审批者可以使用按钮；其他用户收到临时拒绝消息。审批提示包含命令文本，因此仅在受信任的频道中启用频道投递。如果无法从会话键中导出频道 ID，OpenClaw 回退到私信投递。
-
-    如果审批因未知审批 ID 而失败，请验证审批者列表和功能启用状态。
-
-    相关文档：[执行审批](/tools/exec-approvals)
-
-  
-
-:::
+> [!abstract]- 回复标签和原生回复
+> Discord 支持智能体输出中的回复标签：
+>
+>     - `[[reply_to_current]]`
+>     - `[[reply_to:<id>]]`
+>
+>     由 `channels.discord.replyToMode` 控制：
+>
+>     - `off`（默认）
+>     - `first`
+>     - `all`
+>
+>     注意：`off` 禁用隐式回复线程。显式的 `[[reply_to_*]]` 标签仍然有效。
+>
+>     消息 ID 在上下文/历史中展示，以便智能体可以定向特定消息。
+
+
+> [!abstract]- 历史、上下文和线程行为
+> 公会历史上下文：
+>
+>     - `channels.discord.historyLimit` 默认 `20`
+>     - 回退：`messages.groupChat.historyLimit`
+>     - `0` 禁用
+>
+>     DM 历史控制：
+>
+>     - `channels.discord.dmHistoryLimit`
+>     - `channels.discord.dms["<user_id>"].historyLimit`
+>
+>     线程行为：
+>
+>     - Discord 线程作为频道会话路由
+>     - 父线程元数据可用于父会话关联
+>     - 线程配置继承父频道配置，除非存在特定于线程的条目
+>
+>     频道主题作为**不受信任的**上下文注入（不作为系统提示）。
+
+
+> [!abstract]- 表情回应通知
+> 按公会的表情回应通知模式：
+>
+>     - `off`
+>     - `own`（默认）
+>     - `all`
+>     - `allowlist`（使用 `guilds.<id>.users`）
+>
+>     表情回应事件被转换为系统事件并附加到路由的 Discord 会话。
+
+
+> [!abstract]- 配置写入
+> 默认启用通道发起的配置写入。
+>
+>     这影响 `/config set|unset` 流程（当启用命令功能时）。
+>
+>     禁用：
+>
+> ```json5
+> {
+>   channels: {
+>     discord: {
+>       configWrites: false,
+>     },
+>   },
+> }
+> ```
+
+
+> [!abstract]- 网关代理
+> 通过 `channels.discord.proxy` 将 Discord 网关 WebSocket 流量路由通过 HTTP(S) 代理。
+>
+> ```json5
+> {
+>   channels: {
+>     discord: {
+>       proxy: "http://proxy.example:8080",
+>     },
+>   },
+> }
+> ```
+>
+>     按账户覆盖：
+>
+> ```json5
+> {
+>   channels: {
+>     discord: {
+>       accounts: {
+>         primary: {
+>           proxy: "http://proxy.example:8080",
+>         },
+>       },
+>     },
+>   },
+> }
+> ```
+
+
+> [!abstract]- PluralKit 支持
+> 启用 PluralKit 解析以将代理消息映射到系统成员身份：
+>
+> ```json5
+> {
+>   channels: {
+>     discord: {
+>       pluralkit: {
+>         enabled: true,
+>         token: "pk_live_...", // optional; needed for private systems
+>       },
+>     },
+>   },
+> }
+> ```
+>
+>     说明：
+>
+>     - 白名单可以使用 `pk:<memberId>`
+>     - 成员显示名称按名称/slug 匹配
+>     - 查找使用原始消息 ID 并受时间窗口限制
+>     - 如果查找失败，代理消息被视为机器人消息并被丢弃，除非 `allowBots=true`
+
+
+> [!abstract]- 在线状态配置
+> 在线状态更新仅在你设置了状态或活动字段时才会应用。
+>
+>     仅设置状态的示例：
+>
+> ```json5
+> {
+>   channels: {
+>     discord: {
+>       status: "idle",
+>     },
+>   },
+> }
+> ```
+>
+>     活动示例（自定义状态是默认的活动类型）：
+>
+> ```json5
+> {
+>   channels: {
+>     discord: {
+>       activity: "Focus time",
+>       activityType: 4,
+>     },
+>   },
+> }
+> ```
+>
+>     直播示例：
+>
+> ```json5
+> {
+>   channels: {
+>     discord: {
+>       activity: "Live coding",
+>       activityType: 1,
+>       activityUrl: "https://twitch.tv/openclaw",
+>     },
+>   },
+> }
+> ```
+>
+>     活动类型映射：
+>
+>     - 0: Playing
+>     - 1: Streaming（需要 `activityUrl`）
+>     - 2: Listening
+>     - 3: Watching
+>     - 4: Custom（使用活动文本作为状态内容；emoji 可选）
+>     - 5: Competing
+
+
+> [!abstract]- Discord 中的执行审批
+> Discord 支持在私信中基于按钮的执行审批，并可选择在原始频道中发布审批提示。
+>
+>     配置路径：
+>
+>     - `channels.discord.execApprovals.enabled`
+>     - `channels.discord.execApprovals.approvers`
+>     - `channels.discord.execApprovals.target`（`dm` | `channel` | `both`，默认：`dm`）
+>     - `agentFilter`、`sessionFilter`、`cleanupAfterResolve`
+>
+>     当 `target` 为 `channel` 或 `both` 时，审批提示在频道中可见。只有配置的审批者可以使用按钮；其他用户收到临时拒绝消息。审批提示包含命令文本，因此仅在受信任的频道中启用频道投递。如果无法从会话键中导出频道 ID，OpenClaw 回退到私信投递。
+>
+>     如果审批因未知审批 ID 而失败，请验证审批者列表和功能启用状态。
+>
+>     相关文档：[执行审批](/tools/exec-approvals)
 
 
 ## 工具和操作门控
@@ -656,81 +586,51 @@ message(action="send", channel="discord", target="channel:123", path="/path/to/a
 ## 故障排查
 
 
-::: details 使用了不允许的 Intent 或机器人看不到公会消息
-
-    - 启用 Message Content Intent
-    - 当你依赖用户/成员解析时启用 Server Members Intent
-    - 更改 Intent 后重启网关
-
-  
-
-:::
+> [!abstract]- 使用了不允许的 Intent 或机器人看不到公会消息
+> - 启用 Message Content Intent
+>     - 当你依赖用户/成员解析时启用 Server Members Intent
+>     - 更改 Intent 后重启网关
 
 
-::: details 公会消息意外被阻止
-
-    - 验证 `groupPolicy`
-    - 验证 `channels.discord.guilds` 下的公会白名单
-    - 如果公会存在 `channels` 映射，仅允许列出的频道
-    - 验证 `requireMention` 行为和提及模式
-
-    有用的检查：
-
-```bash
-openclaw doctor
-openclaw channels status --probe
-openclaw logs --follow
-```
-
-  
-
-:::
+> [!abstract]- 公会消息意外被阻止
+> - 验证 `groupPolicy`
+>     - 验证 `channels.discord.guilds` 下的公会白名单
+>     - 如果公会存在 `channels` 映射，仅允许列出的频道
+>     - 验证 `requireMention` 行为和提及模式
+>
+>     有用的检查：
+>
+> ```bash
+> openclaw doctor
+> openclaw channels status --probe
+> openclaw logs --follow
+> ```
 
 
-::: details 设置 requireMention 为 false 但仍被阻止
-
-    常见原因：
-
-    - `groupPolicy="allowlist"` 但没有匹配的公会/频道白名单
-    - `requireMention` 配置在错误的位置（必须在 `channels.discord.guilds` 或频道条目下）
-    - 发送者被公会/频道 `users` 白名单阻止
-
-  
-
-:::
+> [!abstract]- 设置 requireMention 为 false 但仍被阻止
+> 常见原因：
+>
+>     - `groupPolicy="allowlist"` 但没有匹配的公会/频道白名单
+>     - `requireMention` 配置在错误的位置（必须在 `channels.discord.guilds` 或频道条目下）
+>     - 发送者被公会/频道 `users` 白名单阻止
 
 
-::: details 权限审计不匹配
-
-    `channels status --probe` 权限检查仅适用于数字频道 ID。
-
-    如果你使用 slug 键，运行时匹配仍然可以工作，但探测无法完全验证权限。
-
-  
-
-:::
+> [!abstract]- 权限审计不匹配
+> `channels status --probe` 权限检查仅适用于数字频道 ID。
+>
+>     如果你使用 slug 键，运行时匹配仍然可以工作，但探测无法完全验证权限。
 
 
-::: details 私信和配对问题
-
-    - DM 禁用：`channels.discord.dm.enabled=false`
-    - DM 策略禁用：`channels.discord.dmPolicy="disabled"`（旧版：`channels.discord.dm.policy`）
-    - 在 `pairing` 模式下等待配对批准
-
-  
-
-:::
+> [!abstract]- 私信和配对问题
+> - DM 禁用：`channels.discord.dm.enabled=false`
+>     - DM 策略禁用：`channels.discord.dmPolicy="disabled"`（旧版：`channels.discord.dm.policy`）
+>     - 在 `pairing` 模式下等待配对批准
 
 
-::: details 机器人对机器人循环
-
-    默认忽略机器人发送的消息。
-
-    如果你设置了 `channels.discord.allowBots=true`，请使用严格的提及和白名单规则以避免循环行为。
-
-  
-
-:::
+> [!abstract]- 机器人对机器人循环
+> 默认忽略机器人发送的消息。
+>
+>     如果你设置了 `channels.discord.allowBots=true`，请使用严格的提及和白名单规则以避免循环行为。
 
 
 ## 配置参考指引

@@ -124,9 +124,8 @@ openclaw gateway
 - `userToken`（`xoxp-...`）仅支持配置（无环境变量回退），默认为只读行为（`userTokenReadOnly: true`）。
 - 可选：如果你想让出站消息使用活跃智能体的身份（自定义 `username` 和图标），添加 `chat:write.customize`。`icon_emoji` 使用 `:emoji_name:` 语法。
 
-::: tip 提示
-对于操作/目录读取，配置时优先使用用户 Token。对于写入，优先使用机器人 Token；仅当 `userTokenReadOnly: false` 且机器人 Token 不可用时，才允许用户 Token 写入。
-:::
+> [!tip] 提示
+> 对于操作/目录读取，配置时优先使用用户 Token。对于写入，优先使用机器人 Token；仅当 `userTokenReadOnly: false` 且机器人 Token 不可用时，才允许用户 Token 写入。
 
 ---
 
@@ -241,40 +240,26 @@ openclaw gateway
 ## 媒体、分块和投递
 
 
-::: details 入站附件
-
-    Slack 文件附件从 Slack 托管的私有 URL 下载（Token 认证的请求流程），在获取成功且大小限制允许时写入媒体存储。
-
-    运行时入站大小上限默认为 `20MB`，除非通过 `channels.slack.mediaMaxMb` 覆盖。
-
-  
-
-:::
+> [!abstract]- 入站附件
+> Slack 文件附件从 Slack 托管的私有 URL 下载（Token 认证的请求流程），在获取成功且大小限制允许时写入媒体存储。
+>
+>     运行时入站大小上限默认为 `20MB`，除非通过 `channels.slack.mediaMaxMb` 覆盖。
 
 
-::: details 出站文本和文件
-
-    - 文本分块使用 `channels.slack.textChunkLimit`（默认 4000）
-    - `channels.slack.chunkMode="newline"` 启用段落优先分割
-    - 文件发送使用 Slack 上传 API，可包含线程回复（`thread_ts`）
-    - 出站媒体上限在配置时遵循 `channels.slack.mediaMaxMb`；否则通道发送使用媒体管道的 MIME 类型默认值
-  
-
-:::
+> [!abstract]- 出站文本和文件
+> - 文本分块使用 `channels.slack.textChunkLimit`（默认 4000）
+>     - `channels.slack.chunkMode="newline"` 启用段落优先分割
+>     - 文件发送使用 Slack 上传 API，可包含线程回复（`thread_ts`）
+>     - 出站媒体上限在配置时遵循 `channels.slack.mediaMaxMb`；否则通道发送使用媒体管道的 MIME 类型默认值
 
 
-::: details 投递目标
-
-    首选显式目标：
-
-    - `user:<id>` 用于私信
-    - `channel:<id>` 用于频道
-
-    Slack 私信在发送到用户目标时通过 Slack 会话 API 打开。
-
-  
-
-:::
+> [!abstract]- 投递目标
+> 首选显式目标：
+>
+>     - `user:<id>` 用于私信
+>     - `channel:<id>` 用于频道
+>
+>     Slack 私信在发送到用户目标时通过 Slack 会话 API 打开。
 
 ---
 
@@ -307,174 +292,140 @@ Slack 操作由 `channels.slack.actions.*` 控制。
 ## Manifest 和权限检查清单
 
 
-::: details Slack 应用 manifest 示例
-
-```json
-{
-  "display_information": {
-    "name": "OpenClaw",
-    "description": "Slack connector for OpenClaw"
-  },
-  "features": {
-    "bot_user": {
-      "display_name": "OpenClaw",
-      "always_online": false
-    },
-    "app_home": {
-      "messages_tab_enabled": true,
-      "messages_tab_read_only_enabled": false
-    },
-    "slash_commands": [
-      {
-        "command": "/openclaw",
-        "description": "Send a message to OpenClaw",
-        "should_escape": false
-      }
-    ]
-  },
-  "oauth_config": {
-    "scopes": {
-      "bot": [
-        "chat:write",
-        "channels:history",
-        "channels:read",
-        "groups:history",
-        "im:history",
-        "mpim:history",
-        "users:read",
-        "app_mentions:read",
-        "reactions:read",
-        "reactions:write",
-        "pins:read",
-        "pins:write",
-        "emoji:read",
-        "commands",
-        "files:read",
-        "files:write"
-      ]
-    }
-  },
-  "settings": {
-    "socket_mode_enabled": true,
-    "event_subscriptions": {
-      "bot_events": [
-        "app_mention",
-        "message.channels",
-        "message.groups",
-        "message.im",
-        "message.mpim",
-        "reaction_added",
-        "reaction_removed",
-        "member_joined_channel",
-        "member_left_channel",
-        "channel_rename",
-        "pin_added",
-        "pin_removed"
-      ]
-    }
-  }
-}
-```
-
-  
-
-:::
+> [!abstract]- Slack 应用 manifest 示例
+> ```json
+> {
+>   "display_information": {
+>     "name": "OpenClaw",
+>     "description": "Slack connector for OpenClaw"
+>   },
+>   "features": {
+>     "bot_user": {
+>       "display_name": "OpenClaw",
+>       "always_online": false
+>     },
+>     "app_home": {
+>       "messages_tab_enabled": true,
+>       "messages_tab_read_only_enabled": false
+>     },
+>     "slash_commands": [
+>       {
+>         "command": "/openclaw",
+>         "description": "Send a message to OpenClaw",
+>         "should_escape": false
+>       }
+>     ]
+>   },
+>   "oauth_config": {
+>     "scopes": {
+>       "bot": [
+>         "chat:write",
+>         "channels:history",
+>         "channels:read",
+>         "groups:history",
+>         "im:history",
+>         "mpim:history",
+>         "users:read",
+>         "app_mentions:read",
+>         "reactions:read",
+>         "reactions:write",
+>         "pins:read",
+>         "pins:write",
+>         "emoji:read",
+>         "commands",
+>         "files:read",
+>         "files:write"
+>       ]
+>     }
+>   },
+>   "settings": {
+>     "socket_mode_enabled": true,
+>     "event_subscriptions": {
+>       "bot_events": [
+>         "app_mention",
+>         "message.channels",
+>         "message.groups",
+>         "message.im",
+>         "message.mpim",
+>         "reaction_added",
+>         "reaction_removed",
+>         "member_joined_channel",
+>         "member_left_channel",
+>         "channel_rename",
+>         "pin_added",
+>         "pin_removed"
+>       ]
+>     }
+>   }
+> }
+> ```
 
 
-::: details 可选用户 Token 权限范围（读取操作）
-
-    如果你配置了 `channels.slack.userToken`，典型的读取权限范围有：
-
-    - `channels:history`、`groups:history`、`im:history`、`mpim:history`
-    - `channels:read`、`groups:read`、`im:read`、`mpim:read`
-    - `users:read`
-    - `reactions:read`
-    - `pins:read`
-    - `emoji:read`
-    - `search:read`（如果你依赖 Slack 搜索读取）
-
-  
-
-:::
+> [!abstract]- 可选用户 Token 权限范围（读取操作）
+> 如果你配置了 `channels.slack.userToken`，典型的读取权限范围有：
+>
+>     - `channels:history`、`groups:history`、`im:history`、`mpim:history`
+>     - `channels:read`、`groups:read`、`im:read`、`mpim:read`
+>     - `users:read`
+>     - `reactions:read`
+>     - `pins:read`
+>     - `emoji:read`
+>     - `search:read`（如果你依赖 Slack 搜索读取）
 
 ---
 
 ## 故障排查
 
 
-::: details 频道中无回复
-
-    按顺序检查：
-
-    - `groupPolicy`
-    - 频道白名单（`channels.slack.channels`）
-    - `requireMention`
-    - 按频道 `users` 白名单
-
-    有用的命令：
-
-```bash
-openclaw channels status --probe
-openclaw logs --follow
-openclaw doctor
-```
-
-  
-
-:::
+> [!abstract]- 频道中无回复
+> 按顺序检查：
+>
+>     - `groupPolicy`
+>     - 频道白名单（`channels.slack.channels`）
+>     - `requireMention`
+>     - 按频道 `users` 白名单
+>
+>     有用的命令：
+>
+> ```bash
+> openclaw channels status --probe
+> openclaw logs --follow
+> openclaw doctor
+> ```
 
 
-::: details 私信被忽略
-
-    检查：
-
-    - `channels.slack.dm.enabled`
-    - `channels.slack.dmPolicy`（或旧版 `channels.slack.dm.policy`）
-    - 配对批准/白名单条目
-
-```bash
-openclaw pairing list slack
-```
-
-  
-
-:::
+> [!abstract]- 私信被忽略
+> 检查：
+>
+>     - `channels.slack.dm.enabled`
+>     - `channels.slack.dmPolicy`（或旧版 `channels.slack.dm.policy`）
+>     - 配对批准/白名单条目
+>
+> ```bash
+> openclaw pairing list slack
+> ```
 
 
-::: details Socket Mode 未连接
-
-    验证机器人 + 应用 Token 以及 Slack 应用设置中的 Socket Mode 启用状态。
-  
-
-:::
+> [!abstract]- Socket Mode 未连接
+> 验证机器人 + 应用 Token 以及 Slack 应用设置中的 Socket Mode 启用状态。
 
 
-::: details HTTP 模式未接收事件
-
-    验证：
-
-    - Signing Secret
-    - Webhook 路径
-    - Slack Request URL（Events + Interactivity + Slash Commands）
-    - 每个 HTTP 账户的唯一 `webhookPath`
-
-  
-
-:::
+> [!abstract]- HTTP 模式未接收事件
+> 验证：
+>
+>     - Signing Secret
+>     - Webhook 路径
+>     - Slack Request URL（Events + Interactivity + Slash Commands）
+>     - 每个 HTTP 账户的唯一 `webhookPath`
 
 
-::: details 原生/斜杠命令未触发
-
-    确认你的意图是：
-
-    - 原生命令模式（`channels.slack.commands.native: true`）并在 Slack 中注册了对应的斜杠命令
-    - 还是单斜杠命令模式（`channels.slack.slashCommand.enabled: true`）
-
-    同时检查 `commands.useAccessGroups` 和频道/用户白名单。
-
-  
-
-:::
+> [!abstract]- 原生/斜杠命令未触发
+> 确认你的意图是：
+>
+>     - 原生命令模式（`channels.slack.commands.native: true`）并在 Slack 中注册了对应的斜杠命令
+>     - 还是单斜杠命令模式（`channels.slack.slashCommand.enabled: true`）
+>
+>     同时检查 `commands.useAccessGroups` 和频道/用户白名单。
 
 ---
 

@@ -1,0 +1,5 @@
+/* 让 Mermaid 图表自动适应页面宽度 */
+.mermaid svg {
+    max-width: 100%;
+    height: auto;
+}

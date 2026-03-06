@@ -54,46 +54,43 @@ npm install -D tsx@3.12.2
 bun add -d tsx@3.12.2
 ```
 
-::: tip
-`tsx@3.12.x` 系列对大多数 OpenClaw 用例是稳定的。如果你使用的是 `4.x`，遇到此问题的概率较高。
-:::
-
-### 方案 2：使用 ts-node 替代
-
-如果降级 tsx 不可行，改用 `ts-node` 作为 TypeScript 执行器：
-
-```bash
-# 安装 ts-node
-npm install -D ts-node
-
-# 运行脚本
-npx ts-node your-script.ts
-```
-
-同时在 `tsconfig.json` 中确认以下配置：
-
-```json5
-{
-  compilerOptions: {
-    module: "CommonJS",    // ts-node 默认需要 CommonJS
-    target: "ES2020"
-  }
-}
-```
-
-### 方案 3：直接运行编译后的 JS
-
-先用 `tsc` 将 TypeScript 编译为 JavaScript，再用 Node.js 直接执行，绕过 tsx / ts-node 的转换问题：
-
-```bash
-# 编译 TypeScript
-npx tsc
-
-# 运行编译后的 JS
-node dist/your-script.js
-```
-
-::: details tsconfig.json 参考配置
+> [!tip] `tsx@3.12.x` 系列对大多数 OpenClaw 用例是稳定的。如果你使用的是 `4.x`，遇到此问题的概率较高。
+> :::
+>
+> ### 方案 2：使用 ts-node 替代
+>
+> 如果降级 tsx 不可行，改用 `ts-node` 作为 TypeScript 执行器：
+>
+> ```bash
+> # 安装 ts-node
+> npm install -D ts-node
+> 
+> # 运行脚本
+> npx ts-node your-script.ts
+> ```
+>
+> 同时在 `tsconfig.json` 中确认以下配置：
+>
+> ```json5
+> {
+>   compilerOptions: {
+>     module: "CommonJS",    // ts-node 默认需要 CommonJS
+>     target: "ES2020"
+>   }
+> }
+> ```
+>
+> ### 方案 3：直接运行编译后的 JS
+>
+> 先用 `tsc` 将 TypeScript 编译为 JavaScript，再用 Node.js 直接执行，绕过 tsx / ts-node 的转换问题：
+>
+> ```bash
+> # 编译 TypeScript
+> npx tsc
+> 
+> # 运行编译后的 JS
+> node dist/your-script.js
+> ``` details tsconfig.json 参考配置
 ```json5
 {
   compilerOptions: {
@@ -144,13 +141,12 @@ node dist/your-script.js
 
 ---
 
-::: warning 已知影响版本
-- `tsx@4.0.0` ~ `tsx@4.6.x`：在部分场景下出现此问题
-- `tsx@3.12.2`：已验证稳定
-- `tsx@4.7.0+`：官方已修复，可尝试升级到最新版
-
-建议在锁定版本（`package-lock.json` 或 `bun.lockb`）中固定 tsx 版本，避免自动升级引入问题。
-:::
+> [!warning] 已知影响版本
+> - `tsx@4.0.0` ~ `tsx@4.6.x`：在部分场景下出现此问题
+> - `tsx@3.12.2`：已验证稳定
+> - `tsx@4.7.0+`：官方已修复，可尝试升级到最新版
+>
+> 建议在锁定版本（`package-lock.json` 或 `bun.lockb`）中固定 tsx 版本，避免自动升级引入问题。
 
 ---
 

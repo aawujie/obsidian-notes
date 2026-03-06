@@ -54,9 +54,8 @@ openclaw auth refresh --all
 }
 ```
 
-::: tip 将认证监控纳入日常运维
-建议把 Token 状态检查加入到你的日常巡检清单，或者配置 Cron 自动检查，避免服务因认证失效而中断。
-:::
+> [!tip] 将认证监控纳入日常运维
+> 建议把 Token 状态检查加入到你的日常巡检清单，或者配置 Cron 自动检查，避免服务因认证失效而中断。
 
 ---
 
@@ -163,43 +162,40 @@ echo "0 7 * * * /path/to/check-auth.sh >> /var/log/openclaw-auth.log 2>&1" | cro
 | MS Teams | Azure AD Token | 1小时 | 是（通过 MSAL）|
 | WhatsApp | Business API | 60天 | 需要手动刷新 |
 
-::: warning WhatsApp Business API Token 需要手动刷新
-WhatsApp Business API 的 Token 有效期为 60 天，且不支持自动刷新。建议：
-1. 在日历中设置 50 天提醒
-2. 或使用监控脚本检测到期前告警
-3. 每次刷新后更新 OpenClaw 配置
-:::
+> [!warning] WhatsApp Business API Token 需要手动刷新
+> WhatsApp Business API 的 Token 有效期为 60 天，且不支持自动刷新。建议：
+> 1. 在日历中设置 50 天提醒
+> 2. 或使用监控脚本检测到期前告警
+> 3. 每次刷新后更新 OpenClaw 配置
 
 ---
 
 ### 最佳实践
 
-::: tip 认证运维三步法
-
-1. **主动监控**：配置 Cron 每天检查 Token 状态，不要等到失效了才发现
-2. **提前刷新**：在 Token 过期前 7 天刷新，留出足够的缓冲时间
-3. **告警通知**：配置刷新失败时的告警通道（如发送 Slack 消息），确保人工及时介入
-
-```json5
-{
-  cron: {
-    jobs: [
-      {
-        schedule: "0 7 * * *",
-        agent: "ops-agent",
-        message: "检查并刷新即将过期的 OAuth Token，如果刷新失败请通过 Slack 发送告警到 #ops-alerts 频道",
-        delivery: {
-          channel: "slack",
-          target: "#ops-alerts",
-          // 只在失败时发送
-          onFailure: true
-        }
-      }
-    ]
-  }
-}
-```
-:::
+> [!tip] 认证运维三步法
+> 1. **主动监控**：配置 Cron 每天检查 Token 状态，不要等到失效了才发现
+> 2. **提前刷新**：在 Token 过期前 7 天刷新，留出足够的缓冲时间
+> 3. **告警通知**：配置刷新失败时的告警通道（如发送 Slack 消息），确保人工及时介入
+>
+> ```json5
+> {
+>   cron: {
+>     jobs: [
+>       {
+>         schedule: "0 7 * * *",
+>         agent: "ops-agent",
+>         message: "检查并刷新即将过期的 OAuth Token，如果刷新失败请通过 Slack 发送告警到 #ops-alerts 频道",
+>         delivery: {
+>           channel: "slack",
+>           target: "#ops-alerts",
+>           // 只在失败时发送
+>           onFailure: true
+>         }
+>       }
+>     ]
+>   }
+> }
+> ```
 
 ---
 

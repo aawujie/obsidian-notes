@@ -14,11 +14,10 @@ description: "OpenClaw 工具系统：应用补丁工具（Apply Patch Tool）�
 
 直接覆盖文件的方式容易导致意外丢失内容，尤其是在多处小改动的场景下。`apply_patch` 使用标准 unified diff 格式，让每次变更都清晰可追溯。
 
-::: info 适用场景
+适用场景
 - Agent 自动修复 Bug
 - 代码重构时局部调整
 - 多文件批量补丁应用
-:::
 
 ---
 
@@ -40,34 +39,30 @@ description: "OpenClaw 工具系统：应用补丁工具（Apply Patch Tool）�
 openclaw run "修复 src/utils.js 第 42 行的空指针问题"
 ```
 
-::: details apply_patch 内部调用示例（unified diff 格式）
-
-```diff
---- a/src/utils.js
-+++ b/src/utils.js
-@@ -40,7 +40,7 @@
- function processData(input) {
--  return input.value.trim();
-+  return input?.value?.trim() ?? '';
- }
-```
-
-Agent 会自动构建上述格式的 patch，并通过 `apply_patch` 工具提交变更。
-:::
+> [!abstract]- apply_patch 内部调用示例（unified diff 格式）
+> ```diff
+> --- a/src/utils.js
+> +++ b/src/utils.js
+> @@ -40,7 +40,7 @@
+>  function processData(input) {
+> -  return input.value.trim();
+> +  return input?.value?.trim() ?? '';
+>  }
+> ```
+>
+> Agent 会自动构建上述格式的 patch，并通过 `apply_patch` 工具提交变更。
 
 ---
 
 ## 注意事项
 
-::: warning 使用前请确认
-- **格式要求**：patch 必须是标准 unified diff 格式（`diff -u` 输出的格式），不支持其他 diff 格式
-- **路径限制**：目标文件路径必须在当前工作区（workspace）范围内，不能修改工作区外的文件
-- **超大补丁**：单次 patch 内容过大时，建议拆分为多个小补丁分批处理，避免应用失败
-:::
+> [!warning] 使用前请确认
+> - **格式要求**：patch 必须是标准 unified diff 格式（`diff -u` 输出的格式），不支持其他 diff 格式
+> - **路径限制**：目标文件路径必须在当前工作区（workspace）范围内，不能修改工作区外的文件
+> - **超大补丁**：单次 patch 内容过大时，建议拆分为多个小补丁分批处理，避免应用失败
 
-::: tip 调试建议
-如果补丁应用失败，可以先用 `diff -u 原文件 新文件` 手动生成并验证 patch 内容格式是否正确。
-:::
+> [!tip] 调试建议
+> 如果补丁应用失败，可以先用 `diff -u 原文件 新文件` 手动生成并验证 patch 内容格式是否正确。
 
 ---
 

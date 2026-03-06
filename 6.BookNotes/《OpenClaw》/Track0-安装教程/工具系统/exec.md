@@ -106,9 +106,8 @@ Agent 请求执行以下命令：
 是否允许？[y/N]
 ```
 
-::: tip 配置审批行为
-更细粒度的审批规则配置，请参考 [执行审批（Exec Approvals）](/tutorials/tools/exec-approvals) 页面。
-:::
+> [!tip] 配置审批行为
+> 更细粒度的审批规则配置，请参考 [执行审批（Exec Approvals）](/tutorials/tools/exec-approvals) 页面。
 
 ---
 
@@ -136,15 +135,14 @@ Agent 请求执行以下命令：
 
 OpenClaw 内置了一份预设安全命令列表，这些命令被认为风险较低，可以在没有明确白名单的情况下自动执行：
 
-::: details 内置安全命令列表
-常见安全命令包括：
-- 文件查看：`ls`、`cat`、`head`、`tail`、`find`、`grep`
-- 版本控制：`git status`、`git log`、`git diff`（只读操作）
-- 包管理（只读）：`npm list`、`pip list`
-- 系统信息：`pwd`、`whoami`、`date`、`echo`
-
-注意：即使是"安全"命令，也会受到 `allowedBinaries` 白名单的约束。
-:::
+> [!abstract]- 内置安全命令列表
+> 常见安全命令包括：
+> - 文件查看：`ls`、`cat`、`head`、`tail`、`find`、`grep`
+> - 版本控制：`git status`、`git log`、`git diff`（只读操作）
+> - 包管理（只读）：`npm list`、`pip list`
+> - 系统信息：`pwd`、`whoami`、`date`、`echo`
+>
+> 注意：即使是"安全"命令，也会受到 `allowedBinaries` 白名单的约束。
 
 ---
 
@@ -152,30 +150,28 @@ OpenClaw 内置了一份预设安全命令列表，这些命令被认为风险�
 
 `apply_patch` 是 exec 工具的扩展能力，允许 Agent 直接对文件应用 diff 格式的补丁，而不需要执行完整的编辑命令：
 
-::: details apply_patch 使用说明
-Agent 可以生成标准 unified diff 格式的补丁并直接应用：
-
-```json5
---- a/config.json
-+++ b/config.json
-@@ -1,5 +1,6 @@
- {
-   "name": "my-project",
-+  "version": "1.0.0",
-   "enabled": true
- }
-```
-
-此操作受 exec 工具的授权模型保护，高风险文件修改会触发审批流程。
-:::
+> [!abstract]- apply_patch 使用说明
+> Agent 可以生成标准 unified diff 格式的补丁并直接应用：
+>
+> ```json5
+> --- a/config.json
+> +++ b/config.json
+> @@ -1,5 +1,6 @@
+>  {
+>    "name": "my-project",
+> +  "version": "1.0.0",
+>    "enabled": true
+>  }
+> ```
+>
+> 此操作受 exec 工具的授权模型保护，高风险文件修改会触发审批流程。
 
 ---
 
-::: warning 安全注意
-- 不要将 `rm`、`sudo`、`chmod` 等高危命令加入自动执行白名单
-- 对于生产环境，建议所有命令都走审批流程（不配置 `allowedBinaries`）
-- 定期审查 Agent 的命令执行历史，确保没有异常操作
-:::
+> [!warning] 安全注意
+> - 不要将 `rm`、`sudo`、`chmod` 等高危命令加入自动执行白名单
+> - 对于生产环境，建议所有命令都走审批流程（不配置 `allowedBinaries`）
+> - 定期审查 Agent 的命令执行历史，确保没有异常操作
 
 ---
 

@@ -28,12 +28,11 @@ node --version
 - 看到 `v22.x.x` 或更大的数字 → 可以直接安装
 - 看到版本太低或"找不到命令" → 先看[安装 Node.js](./node)
 
-::: info Windows 用户特别说明
-在 Windows 上，我们**强烈建议**用 WSL2（Windows 的 Linux 子系统）来运行 OpenClaw。
-WSL2 的安装方法：用管理员权限打开 PowerShell，输入 `wsl --install`，重启后即可。
-
-不熟悉 WSL2？可以先阅读微软的[官方教程](https://learn.microsoft.com/zh-cn/windows/wsl/install)。
-:::
+> [!info] Windows 用户特别说明
+> 在 Windows 上，我们**强烈建议**用 WSL2（Windows 的 Linux 子系统）来运行 OpenClaw。
+> WSL2 的安装方法：用管理员权限打开 PowerShell，输入 `wsl --install`，重启后即可。
+>
+> 不熟悉 WSL2？可以先阅读微软的[官方教程](https://learn.microsoft.com/zh-cn/windows/wsl/install)。
 
 ---
 
@@ -81,12 +80,11 @@ openclaw onboard --install-daemon
 
 安装完后，运行第二行命令来启动设置向导。
 
-::: tip 遇到安装错误？
-如果提示 `sharp` 相关错误，试试这个命令：
-```bash
-SHARP_IGNORE_GLOBAL_LIBVIPS=1 npm install -g openclaw@latest
-```
-:::
+> [!tip] 遇到安装错误？
+> 如果提示 `sharp` 相关错误，试试这个命令：
+> ```bash
+> SHARP_IGNORE_GLOBAL_LIBVIPS=1 npm install -g openclaw@latest
+> ```
 
 ---
 
@@ -119,37 +117,28 @@ openclaw dashboard      # 打开控制面板（会自动打开浏览器）
 
 ## 常见问题
 
-::: details 安装完后输入 "openclaw" 提示找不到命令？
+> [!abstract]- 安装完后输入 "openclaw" 提示找不到命令？
+> 这是因为系统不知道 openclaw 安装在哪里。需要告诉它：
+>
+> ```bash
+> # 先查看 npm 的安装路径
+> npm prefix -g
+> 
+> # 然后把这个路径加到系统路径里
+> # 把下面这行加到 ~/.zshrc 或 ~/.bashrc 文件末尾
+> export PATH="$(npm prefix -g)/bin:$PATH"
+> 
+> # 让修改立即生效
+> source ~/.zshrc   # 或者 source ~/.bashrc
+> ```
+>
+> 然后重新打开终端，再试一次 `openclaw --version`。
 
-这是因为系统不知道 openclaw 安装在哪里。需要告诉它：
+> [!abstract]- 安装过程中断，怎么重新安装？
+> 直接重新运行安装命令就可以，不需要先卸载。安装脚本会自动覆盖旧版本。
 
-```bash
-# 先查看 npm 的安装路径
-npm prefix -g
-
-# 然后把这个路径加到系统路径里
-# 把下面这行加到 ~/.zshrc 或 ~/.bashrc 文件末尾
-export PATH="$(npm prefix -g)/bin:$PATH"
-
-# 让修改立即生效
-source ~/.zshrc   # 或者 source ~/.bashrc
-```
-
-然后重新打开终端，再试一次 `openclaw --version`。
-
-:::
-
-::: details 安装过程中断，怎么重新安装？
-
-直接重新运行安装命令就可以，不需要先卸载。安装脚本会自动覆盖旧版本。
-
-:::
-
-::: details 想卸载怎么办？
-
-参考[卸载说明](./uninstall)。
-
-:::
+> [!abstract]- 想卸载怎么办？
+> 参考[卸载说明](./uninstall)。
 
 ---
 

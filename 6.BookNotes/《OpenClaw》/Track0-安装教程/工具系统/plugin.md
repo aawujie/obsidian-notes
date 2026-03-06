@@ -106,83 +106,71 @@ OpenClaw 按以下顺序搜索插件：
 
 ## 插件类型详解
 
-::: details Provider 插件：扩展模型提供商
+> [!abstract]- Provider 插件：扩展模型提供商
+> Provider 插件让你接入 OpenClaw 官方未支持的 LLM 服务：
+>
+> ```json5
+> // 插件配置示例
+> {
+>   type: "provider",
+>   name: "my-llm",
+>   endpoint: "https://api.my-llm.com/v1",
+>   models: ["my-model-7b", "my-model-13b"]
+> }
+> ```
 
-Provider 插件让你接入 OpenClaw 官方未支持的 LLM 服务：
+> [!abstract]- 通道插件（Channel Plugin）：添加新聊天通道
+> 通道插件将 OpenClaw 接入新的消息平台：
+>
+> - 实现 `onMessage(msg)` 接收消息
+> - 调用 `sendMessage(reply)` 发送响应
+> - 注册到 `channel` 插件槽
+>
+> 支持的通道类型：Webhook、WebSocket、轮询
 
-```json5
-// 插件配置示例
-{
-  type: "provider",
-  name: "my-llm",
-  endpoint: "https://api.my-llm.com/v1",
-  models: ["my-model-7b", "my-model-13b"]
-}
-```
-:::
+> [!abstract]- Agent 工具插件：为 Agent 添加新工具
+> ```javascript
+> // 工具插件示例结构
+> module.exports = {
+>   name: "my-tool",
+>   description: "我的自定义工具",
+>   parameters: {
+>     input: { type: "string", description: "输入内容" }
+>   },
+>   async execute({ input }) {
+>     // 工具逻辑
+>     return { result: `处理结果: ${input}` };
+>   }
+> };
+> ```
 
-::: details 通道插件（Channel Plugin）：添加新聊天通道
+> [!abstract]- 注册 Gateway RPC 方法
+> 插件可以向 Gateway 注册新的 API 方法，供外部系统调用：
+>
+> ```javascript
+> gateway.register("myPlugin.doSomething", async (params) => {
+>   return { status: "ok", data: params };
+> });
+> ```
 
-通道插件将 OpenClaw 接入新的消息平台：
+> [!abstract]- 自动回复命令（斜杠命令）
+> 插件可以注册斜杠命令，用户在聊天中输入 `/命令名` 即可触发：
+>
+> ```javascript
+> plugin.registerCommand("/analyze", async (args, context) => {
+>   return `分析结果：${args}`;
+> });
+> ```
 
-- 实现 `onMessage(msg)` 接收消息
-- 调用 `sendMessage(reply)` 发送响应
-- 注册到 `channel` 插件槽
-
-支持的通道类型：Webhook、WebSocket、轮询
-:::
-
-::: details Agent 工具插件：为 Agent 添加新工具
-
-```javascript
-// 工具插件示例结构
-module.exports = {
-  name: "my-tool",
-  description: "我的自定义工具",
-  parameters: {
-    input: { type: "string", description: "输入内容" }
-  },
-  async execute({ input }) {
-    // 工具逻辑
-    return { result: `处理结果: ${input}` };
-  }
-};
-```
-:::
-
-::: details 注册 Gateway RPC 方法
-
-插件可以向 Gateway 注册新的 API 方法，供外部系统调用：
-
-```javascript
-gateway.register("myPlugin.doSomething", async (params) => {
-  return { status: "ok", data: params };
-});
-```
-:::
-
-::: details 自动回复命令（斜杠命令）
-
-插件可以注册斜杠命令，用户在聊天中输入 `/命令名` 即可触发：
-
-```javascript
-plugin.registerCommand("/analyze", async (args, context) => {
-  return `分析结果：${args}`;
-});
-```
-:::
-
-::: details 后台服务
-
-插件可以运行持久化的后台进程，如定时任务、消息监听等：
-
-```javascript
-plugin.startService(async () => {
-  // 每分钟执行一次
-  setInterval(() => checkForUpdates(), 60000);
-});
-```
-:::
+> [!abstract]- 后台服务
+> 插件可以运行持久化的后台进程，如定时任务、消息监听等：
+>
+> ```javascript
+> plugin.startService(async () => {
+>   // 每分钟执行一次
+>   setInterval(() => checkForUpdates(), 60000);
+> });
+> ```
 
 ---
 
@@ -221,12 +209,11 @@ plugin.startService(async () => {
 
 ## 安全
 
-::: warning 插件安全审核
-- 安装第三方插件前，请阅读其源码和权限申请列表
-- 插件运行在与 OpenClaw 主进程相同的权限下，恶意插件可能访问系统资源
-- 优先选择 ClawHub 上标注为 "Verified" 的官方审核插件
-- 定期更新插件以获取安全补丁
-:::
+> [!warning] 插件安全审核
+> - 安装第三方插件前，请阅读其源码和权限申请列表
+> - 插件运行在与 OpenClaw 主进程相同的权限下，恶意插件可能访问系统资源
+> - 优先选择 ClawHub 上标注为 "Verified" 的官方审核插件
+> - 定期更新插件以获取安全补丁
 
 ---
 

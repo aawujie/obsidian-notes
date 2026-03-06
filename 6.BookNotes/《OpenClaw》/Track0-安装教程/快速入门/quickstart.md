@@ -24,9 +24,8 @@ curl -fsSL https://openclaw.ai/install.sh | bash
 iwr -useb https://openclaw.ai/install.ps1 | iex
 ```
 
-::: info 前提条件
-需要 Node.js 22 或更新版本。用 `node -v` 检查。没有的话先看[安装 Node.js](/tutorials/installation/node)。
-:::
+> [!info] 前提条件
+> 需要 Node.js 22 或更新版本。用 `node -v` 检查。没有的话先看[安装 Node.js](/tutorials/installation/node)。
 
 ---
 

@@ -96,14 +96,13 @@ Enter your Anthropic API key:
 > （在这里粘贴你的密钥，回车确认）
 ```
 
-::: tip 还没有 API 密钥？
-1. 访问 [console.anthropic.com](https://console.anthropic.com)
-2. 注册账号并登录
-3. 点击 "API Keys" → "Create Key"，复制密钥（以 `sk-ant-` 开头）
-4. 回到终端，粘贴进去
-
-**注意：密钥只显示一次，创建后立刻复制保存好！**
-:::
+> [!tip] 还没有 API 密钥？
+> 1. 访问 [console.anthropic.com](https://console.anthropic.com)
+> 2. 注册账号并登录
+> 3. 点击 "API Keys" → "Create Key"，复制密钥（以 `sk-ant-` 开头）
+> 4. 回到终端，粘贴进去
+>
+> **注意：密钥只显示一次，创建后立刻复制保存好！**
 
 ---
 
@@ -256,36 +255,30 @@ openclaw configure --section model
 
 ## 常见问题
 
-::: details 向导中途卡住了，怎么办？
-按 `Ctrl + C` 退出，然后重新运行 `openclaw onboard`。之前的配置会保留，向导会从出错的地方继续。
-:::
+> [!abstract]- 向导中途卡住了，怎么办？
+> 按 `Ctrl + C` 退出，然后重新运行 `openclaw onboard`。之前的配置会保留，向导会从出错的地方继续。
 
-::: details 向导完成了，但 AI 不回复，怎么排查？
+> [!abstract]- 向导完成了，但 AI 不回复，怎么排查？
+> 按顺序检查：
+>
+> ```bash
+> openclaw doctor           # 自动诊断所有问题
+> openclaw gateway status   # 检查网关是否在运行
+> openclaw channels status  # 检查通道连接是否正常
+> ```
 
-按顺序检查：
+> [!abstract]- 想重新来过，清空配置重装？
+> ```bash
+> openclaw onboard --reset
+> ```
+>
+> 加 `--reset` 会重置所有配置，但**不会删除你的聊天记录**。
 
-```bash
-openclaw doctor           # 自动诊断所有问题
-openclaw gateway status   # 检查网关是否在运行
-openclaw channels status  # 检查通道连接是否正常
-```
-:::
-
-::: details 想重新来过，清空配置重装？
-
-```bash
-openclaw onboard --reset
-```
-
-加 `--reset` 会重置所有配置，但**不会删除你的聊天记录**。
-:::
-
-::: details `openclaw` 命令找不到？
-可能是 npm 全局安装的路径没有加入系统 PATH。尝试：
-
-```bash
-npx openclaw --version
-```
-
-或者重新打开终端窗口再试。
-:::
+> [!abstract]- `openclaw` 命令找不到？
+> 可能是 npm 全局安装的路径没有加入系统 PATH。尝试：
+>
+> ```bash
+> npx openclaw --version
+> ```
+>
+> 或者重新打开终端窗口再试。

@@ -86,41 +86,38 @@ openclaw agent --session "my-work-session" --message "刚才说的模块，从�
 # Agent 会记住第一次的上下文，给出相关建议
 ```
 
-::: tip
-会话 Key 可以自定义，建议使用有意义的名称（如项目名 + 日期）便于管理。不指定 `--session` 时，每次调用都是独立的无状态请求。
-:::
-
----
-
-## 输出格式
-
-### 文本格式（默认）
-
-```bash
-openclaw agent --message "2+2等于几" --output text
-
-# 输出：
-# 4
-```
-
-### JSON 格式
-
-适合在脚本中解析 Agent 的结构化响应：
-
-```bash
-openclaw agent --message "用 JSON 格式列出三种编程语言" --output json
-
-# 输出：
-# {
-#   "response": "...",
-#   "sessionId": "abc123",
-#   "tokensUsed": 150,
-#   "model": "claude-sonnet-4-6",
-#   "duration": 1234
-# }
-```
-
-::: details 使用 jq 解析 JSON 输出
+> [!tip] 会话 Key 可以自定义，建议使用有意义的名称（如项目名 + 日期）便于管理。不指定 `--session` 时，每次调用都是独立的无状态请求。
+> :::
+>
+> ---
+>
+> ## 输出格式
+>
+> ### 文本格式（默认）
+>
+> ```bash
+> openclaw agent --message "2+2等于几" --output text
+> 
+> # 输出：
+> # 4
+> ```
+>
+> ### JSON 格式
+>
+> 适合在脚本中解析 Agent 的结构化响应：
+>
+> ```bash
+> openclaw agent --message "用 JSON 格式列出三种编程语言" --output json
+> 
+> # 输出：
+> # {
+> #   "response": "...",
+> #   "sessionId": "abc123",
+> #   "tokensUsed": 150,
+> #   "model": "claude-sonnet-4-6",
+> #   "duration": 1234
+> # }
+> ``` details 使用 jq 解析 JSON 输出
 ```bash
 # 只提取响应文本
 openclaw agent --message "问题" --output json | jq -r '.response'
@@ -181,9 +178,8 @@ openclaw agent \
 
 ---
 
-::: info 与聊天界面的区别
-`openclaw agent` 是无状态的单次调用模式（除非指定 `--session`）。它不会显示工具调用过程、不支持交互式确认，适合自动化场景。如果你需要交互式的多轮对话，请使用聊天界面。
-:::
+> [!info] 与聊天界面的区别
+> `openclaw agent` 是无状态的单次调用模式（除非指定 `--session`）。它不会显示工具调用过程、不支持交互式确认，适合自动化场景。如果你需要交互式的多轮对话，请使用聊天界面。
 
 ---
 

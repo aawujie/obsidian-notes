@@ -9,5 +9,6 @@
   "obsidian-epub-plugin",
   "data-files-editor",
   "obsidian-tasks-plugin",
-  "dust-calendar"
+  "dust-calendar",
+  "diagram-zoom-drag"
 ]

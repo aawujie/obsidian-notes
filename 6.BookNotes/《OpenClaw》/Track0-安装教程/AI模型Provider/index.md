@@ -42,12 +42,11 @@ OpenClaw 本身只是一个"管家"，它把消息传递给真正的 AI 模型�
 - **Anthropic**：[console.anthropic.com](https://console.anthropic.com) → API Keys → Create Key
 - **OpenAI**：[platform.openai.com](https://platform.openai.com) → API Keys → Create New
 
-::: tip API 密钥长什么样？
-- Anthropic 密钥：以 `sk-ant-` 开头
-- OpenAI 密钥：以 `sk-` 开头
-
-**请妥善保管，不要分享给别人！** 别人用了你的密钥，费用会算在你头上。
-:::
+> [!tip] API 密钥长什么样？
+> - Anthropic 密钥：以 `sk-ant-` 开头
+> - OpenAI 密钥：以 `sk-` 开头
+>
+> **请妥善保管，不要分享给别人！** 别人用了你的密钥，费用会算在你头上。
 
 ### 第二步：填入 OpenClaw
 
@@ -112,28 +111,19 @@ openclaw configure
 
 ## 常见问题
 
-::: details API 密钥需要花多少钱？
+> [!abstract]- API 密钥需要花多少钱？
+> 大多数 AI 服务都是"按量计费"——你用多少，付多少。每次对话消耗的钱非常少（通常是几分到几毛钱人民币）。
+>
+> 如果你只是个人日常使用，每月花费通常在 1-10 美元之间。
+>
+> 很多服务还有免费额度，Anthropic 和 OpenAI 新用户都有一定的免费试用额度。
 
-大多数 AI 服务都是"按量计费"——你用多少，付多少。每次对话消耗的钱非常少（通常是几分到几毛钱人民币）。
+> [!abstract]- 能同时配置多个提供商吗？
+> 可以！OpenClaw 支持配置多个提供商，如果主要提供商不可用，可以自动切换到备用提供商（"模型回退"功能）。
 
-如果你只是个人日常使用，每月花费通常在 1-10 美元之间。
-
-很多服务还有免费额度，Anthropic 和 OpenAI 新用户都有一定的免费试用额度。
-
-:::
-
-::: details 能同时配置多个提供商吗？
-
-可以！OpenClaw 支持配置多个提供商，如果主要提供商不可用，可以自动切换到备用提供商（"模型回退"功能）。
-
-:::
-
-::: details 想完全免费用，怎么办？
-
-使用 Ollama 可以在本地运行开源 AI 模型，完全免费，数据也不会上传到外部服务器。
-
-缺点：需要较好的电脑（建议显卡内存 8GB 以上），并且开源模型的能力可能不如 Claude 或 GPT-4 强。
-
-[查看 Ollama 配置教程](/tutorials/providers/ollama)
-
-:::
+> [!abstract]- 想完全免费用，怎么办？
+> 使用 Ollama 可以在本地运行开源 AI 模型，完全免费，数据也不会上传到外部服务器。
+>
+> 缺点：需要较好的电脑（建议显卡内存 8GB 以上），并且开源模型的能力可能不如 Claude 或 GPT-4 强。
+>
+> [查看 Ollama 配置教程](/tutorials/providers/ollama)

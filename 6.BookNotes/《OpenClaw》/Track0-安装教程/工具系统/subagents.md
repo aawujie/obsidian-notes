@@ -98,13 +98,12 @@ openclaw sessions stop --all-subagents
 
 子 Agent 启动时会向主 Agent 发出声明（Announce），告知自己的能力和任务范围。这个机制确保主 Agent 了解每个子 Agent 的状态：
 
-::: details 宣布机制详情
-1. 主 Agent 创建子 Agent 请求
-2. 子 Agent 初始化，加载分配的工具和技能
-3. 子 Agent 向主 Agent 宣布就绪，附带能力描述
-4. 主 Agent 确认接收，开始分配任务
-5. 任务完成后，子 Agent 返回结果并关闭
-:::
+> [!abstract]- 宣布机制详情
+> 1. 主 Agent 创建子 Agent 请求
+> 2. 子 Agent 初始化，加载分配的工具和技能
+> 3. 子 Agent 向主 Agent 宣布就绪，附带能力描述
+> 4. 主 Agent 确认接收，开始分配任务
+> 5. 任务完成后，子 Agent 返回结果并关闭
 
 ---
 
@@ -128,9 +127,8 @@ openclaw sessions stop --all-subagents
 }
 ```
 
-::: tip 最小权限原则
-为子 Agent 设置比主 Agent 更严格的工具限制是最佳实践。子 Agent 通常只需要完成特定任务，不需要完整权限。
-:::
+> [!tip] 最小权限原则
+> 为子 Agent 设置比主 Agent 更严格的工具限制是最佳实践。子 Agent 通常只需要完成特定任务，不需要完整权限。
 
 ---
 
@@ -138,11 +136,10 @@ openclaw sessions stop --all-subagents
 
 子 Agent 默认继承主 Agent 的认证信息（API Key、OAuth Token 等），无需单独配置：
 
-::: details 认证继承说明
-- 子 Agent 使用与主 Agent 相同的 AI 模型 API Key
-- 子 Agent 访问外部服务时使用主 Agent 的凭证
-- 如果需要子 Agent 使用不同凭证，可以在子 Agent 配置中单独指定
-:::
+> [!abstract]- 认证继承说明
+> - 子 Agent 使用与主 Agent 相同的 AI 模型 API Key
+> - 子 Agent 访问外部服务时使用主 Agent 的凭证
+> - 如果需要子 Agent 使用不同凭证，可以在子 Agent 配置中单独指定
 
 ---
 
@@ -164,41 +161,38 @@ openclaw sessions stop --all-subagents
 }
 ```
 
-::: warning
-传递过多上下文会增加子 Agent 的 Token 消耗。默认配置已针对效率和功能做了平衡，建议只在有明确需求时修改。
-:::
-
----
-
-## 停止子 Agent
-
-有时你需要手动停止运行中的子 Agent：
-
-```bash
-# 在聊天界面中
-/stop-subagents
-
-# 停止特定子 Agent
-/stop-subagent <agent-id>
-```
-
-或者通过斜杠命令紧急停止所有子 Agent：
-
-```text
-/kill-all
-```
-
----
-
-## 使用限制
-
-| 限制项 | 默认值 | 说明 |
-|--------|--------|------|
-| 最大并发数 | 3 | 同时运行的子 Agent 上限 |
-| 单个超时 | 120 秒 | 子 Agent 单次任务超时时间 |
-| 嵌套深度 | 2 层 | 子 Agent 可以再启动子 Agent，但最多 2 层 |
-
-::: details 修改限制配置
+> [!warning] 传递过多上下文会增加子 Agent 的 Token 消耗。默认配置已针对效率和功能做了平衡，建议只在有明确需求时修改。
+> :::
+>
+> ---
+>
+> ## 停止子 Agent
+>
+> 有时你需要手动停止运行中的子 Agent：
+>
+> ```bash
+> # 在聊天界面中
+> /stop-subagents
+> 
+> # 停止特定子 Agent
+> /stop-subagent <agent-id>
+> ```
+>
+> 或者通过斜杠命令紧急停止所有子 Agent：
+>
+> ```text
+> /kill-all
+> ```
+>
+> ---
+>
+> ## 使用限制
+>
+> | 限制项 | 默认值 | 说明 |
+> |--------|--------|------|
+> | 最大并发数 | 3 | 同时运行的子 Agent 上限 |
+> | 单个超时 | 120 秒 | 子 Agent 单次任务超时时间 |
+> | 嵌套深度 | 2 层 | 子 Agent 可以再启动子 Agent，但最多 2 层 | details 修改限制配置
 ```json5
 {
   agents: {

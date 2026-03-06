@@ -33,9 +33,8 @@ sudo dpkg -i google-chrome-stable_current_amd64.deb
 sudo apt-get install -f
 ```
 
-::: info 为什么不推荐 Snap 版 Chromium？
-Snap 软件包在沙箱内运行，有额外的系统调用限制（seccomp 过滤），这与 Chrome 自身的沙箱机制产生冲突，导致 CDP 无法正常启动。
-:::
+> [!info] 为什么不推荐 Snap 版 Chromium？
+> Snap 软件包在沙箱内运行，有额外的系统调用限制（seccomp 过滤），这与 Chrome 自身的沙箱机制产生冲突，导致 CDP 无法正常启动。
 
 ---
 
@@ -43,9 +42,8 @@ Snap 软件包在沙箱内运行，有额外的系统调用限制（seccomp 过�
 
 如果你在非 root 用户环境下仍然遇到权限问题，可以为 Chrome 添加 `--no-sandbox` 标志。
 
-::: warning 安全提醒
-`--no-sandbox` 会禁用 Chrome 的进程沙箱，仅建议在受控的开发/测试环境中使用，不建议在生产环境或处理敏感数据时使用。
-:::
+> [!warning] 安全提醒
+> `--no-sandbox` 会禁用 Chrome 的进程沙箱，仅建议在受控的开发/测试环境中使用，不建议在生产环境或处理敏感数据时使用。
 
 在 OpenClaw 配置中指定启动参数：
 
@@ -102,16 +100,14 @@ curl http://localhost:9222/json/version
 | `Connection refused` on port 9222 | Chrome 未启动或端口被占用 | 检查是否有其他 Chrome 实例正在运行 |
 | `Error: spawn EACCES` | 可执行文件没有执行权限 | 运行 `chmod +x /usr/bin/google-chrome-stable` |
 
-::: details 完整调试日志查看方法
-
-```bash
-# 查看 OpenClaw 的浏览器启动日志
-openclaw logs --filter browser
-
-# 或者直接测试 Chrome 启动
-google-chrome-stable --headless --remote-debugging-port=9222 2>&1 | head -50
-```
-:::
+> [!abstract]- 完整调试日志查看方法
+> ```bash
+> # 查看 OpenClaw 的浏览器启动日志
+> openclaw logs --filter browser
+> 
+> # 或者直接测试 Chrome 启动
+> google-chrome-stable --headless --remote-debugging-port=9222 2>&1 | head -50
+> ```
 
 ---
 

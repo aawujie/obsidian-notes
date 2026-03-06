@@ -55,9 +55,8 @@ curl -X POST https://your-gateway/hooks/agent \
 }
 ```
 
-::: tip 快速验证 Webhook 是否正常工作
-先用 `/hooks/wake` 端点做连通性测试，它只唤醒 Agent 不发送消息，响应更快。
-:::
+> [!tip] 快速验证 Webhook 是否正常工作
+> 先用 `/hooks/wake` 端点做连通性测试，它只唤醒 Agent 不发送消息，响应更快。
 
 ---
 
@@ -116,37 +115,35 @@ Authorization: Bearer your-secret-token
 
 会话密钥决定了 Webhook 触发的 Agent 运行在哪个会话中：
 
-::: details 固定 Session Key（推荐用于持续任务）
-使用固定的 `sessionKey`，每次 Webhook 触发都复用同一会话，Agent 能保持上下文记忆。
+> [!abstract]- 固定 Session Key（推荐用于持续任务）
+> 使用固定的 `sessionKey`，每次 Webhook 触发都复用同一会话，Agent 能保持上下文记忆。
+>
+> ```json5
+> {
+>   webhooks: {
+>     agents: {
+>       "monitor-agent": {
+>         // 固定 Key：所有 Webhook 触发共享同一会话
+>         sessionKey: "monitor-persistent-session"
+>       }
+>     }
+>   }
+> }
+> ```
 
-```json5
-{
-  webhooks: {
-    agents: {
-      "monitor-agent": {
-        // 固定 Key：所有 Webhook 触发共享同一会话
-        sessionKey: "monitor-persistent-session"
-      }
-    }
-  }
-}
-```
-:::
-
-::: details 动态 Session Key（推荐用于独立任务）
-在请求体中动态传入 `sessionKey`，每次任务使用独立会话，互不干扰。
-
-```bash
-curl -X POST https://your-gateway/hooks/agent \
-  -H "Authorization: Bearer your-secret-token" \
-  -H "Content-Type: application/json" \
-  -d '{
-    "agent": "my-agent",
-    "message": "处理订单 #12345",
-    "sessionKey": "order-12345-session"
-  }'
-```
-:::
+> [!abstract]- 动态 Session Key（推荐用于独立任务）
+> 在请求体中动态传入 `sessionKey`，每次任务使用独立会话，互不干扰。
+>
+> ```bash
+> curl -X POST https://your-gateway/hooks/agent \
+>   -H "Authorization: Bearer your-secret-token" \
+>   -H "Content-Type: application/json" \
+>   -d '{
+>     "agent": "my-agent",
+>     "message": "处理订单 #12345",
+>     "sessionKey": "order-12345-session"
+>   }'
+> ```
 
 ---
 
@@ -177,60 +174,56 @@ curl -X POST https://your-gateway/hooks/agent \
 
 ### 使用场景示例
 
-::: details GitHub Actions 集成
-在 CI/CD 流程完成后，触发 Agent 发送部署通知：
+> [!abstract]- GitHub Actions 集成
+> 在 CI/CD 流程完成后，触发 Agent 发送部署通知：
+>
+> ```yaml
+> # .github/workflows/deploy.yml
+> - name: 通知 OpenClaw Agent
+>   run: |
+>     curl -X POST ${{ secrets.OPENCLAW_GATEWAY_URL }}/hooks/agent \
+>       -H "Authorization: Bearer ${{ secrets.OPENCLAW_SECRET }}" \
+>       -H "Content-Type: application/json" \
+>       -d '{
+>         "agent": "devops-agent",
+>         "message": "生产环境部署完成，版本 ${{ github.sha }}，请检查服务状态"
+>       }'
+> ```
 
-```yaml
-# .github/workflows/deploy.yml
-- name: 通知 OpenClaw Agent
-  run: |
-    curl -X POST ${{ secrets.OPENCLAW_GATEWAY_URL }}/hooks/agent \
-      -H "Authorization: Bearer ${{ secrets.OPENCLAW_SECRET }}" \
-      -H "Content-Type: application/json" \
-      -d '{
-        "agent": "devops-agent",
-        "message": "生产环境部署完成，版本 ${{ github.sha }}，请检查服务状态"
-      }'
-```
-:::
-
-::: details 监控告警集成
-当监控系统检测到异常时，自动触发 Agent 分析和响应：
-
-```bash
-#!/bin/bash
-# 告警处理脚本
-ALERT_MSG="$1"
-
-curl -X POST https://your-gateway/hooks/agent \
-  -H "Authorization: Bearer your-secret-token" \
-  -H "Content-Type: application/json" \
-  -d "{
-    \"agent\": \"alert-handler\",
-    \"message\": \"收到告警：${ALERT_MSG}，请分析原因并给出处理建议\"
-  }"
-```
-:::
+> [!abstract]- 监控告警集成
+> 当监控系统检测到异常时，自动触发 Agent 分析和响应：
+>
+> ```bash
+> #!/bin/bash
+> # 告警处理脚本
+> ALERT_MSG="$1"
+> 
+> curl -X POST https://your-gateway/hooks/agent \
+>   -H "Authorization: Bearer your-secret-token" \
+>   -H "Content-Type: application/json" \
+>   -d "{
+>     \"agent\": \"alert-handler\",
+>     \"message\": \"收到告警：${ALERT_MSG}，请分析原因并给出处理建议\"
+>   }"
+> ```
 
 ---
 
 ### 安全注意事项
 
-::: warning 生产环境安全清单
-
-1. **使用强密钥**：Secret 至少 32 位随机字符，可用以下命令生成：
-   ```bash
-   openssl rand -hex 32
-   ```
-
-2. **限制 IP 白名单**：在 Gateway 或反向代理层限制只允许可信 IP 访问 Webhook 端点。
-
-3. **不在消息中传递敏感数据**：Webhook 的 `message` 字段会进入 Agent 上下文，避免传递密码、API Key 等敏感信息。
-
-4. **使用 HTTPS**：确保 Gateway 通过 HTTPS 暴露，防止 Token 在传输中泄露。
-
-5. **定期轮换密钥**：定期更新 `secret` 配置并同步更新调用方。
-:::
+> [!warning] 生产环境安全清单
+> 1. **使用强密钥**：Secret 至少 32 位随机字符，可用以下命令生成：
+>    ```bash
+>    openssl rand -hex 32
+>    ```
+>
+> 2. **限制 IP 白名单**：在 Gateway 或反向代理层限制只允许可信 IP 访问 Webhook 端点。
+>
+> 3. **不在消息中传递敏感数据**：Webhook 的 `message` 字段会进入 Agent 上下文，避免传递密码、API Key 等敏感信息。
+>
+> 4. **使用 HTTPS**：确保 Gateway 通过 HTTPS 暴露，防止 Token 在传输中泄露。
+>
+> 5. **定期轮换密钥**：定期更新 `secret` 配置并同步更新调用方。
 
 ---
 

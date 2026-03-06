@@ -44,9 +44,8 @@ openclaw hooks list
 openclaw hooks run session-started
 ```
 
-::: tip 文件名即事件名
-Hook 脚本的文件名就是它监听的事件名称。比如文件名为 `message-received`，就会在每次收到消息时自动执行。
-:::
+> [!tip] 文件名即事件名
+> Hook 脚本的文件名就是它监听的事件名称。比如文件名为 `message-received`，就会在每次收到消息时自动执行。
 
 ---
 
@@ -61,9 +60,8 @@ OpenClaw 启动时会扫描以下两个目录中的可执行文件作为 Hook：
 | `~/.openclaw/hooks/` | 全局 Hook，对所有项目生效 |
 | `.openclaw/hooks/`（项目根目录） | 项目级 Hook，仅对当前项目生效 |
 
-::: tip 优先级说明
-同名 Hook 同时存在时，项目级（`.openclaw/hooks/`）优先级高于全局（`~/.openclaw/hooks/`）。
-:::
+> [!tip] 优先级说明
+> 同名 Hook 同时存在时，项目级（`.openclaw/hooks/`）优先级高于全局（`~/.openclaw/hooks/`）。
 
 ---
 
@@ -137,12 +135,11 @@ if "敏感词" in response:
     sys.exit(1)
 ```
 
-::: warning 脚本必须有可执行权限
-确保脚本文件有执行权限，否则 Hook 不会被运行：
-```bash
-chmod +x ~/.openclaw/hooks/your-hook-name
-```
-:::
+> [!warning] 脚本必须有可执行权限
+> 确保脚本文件有执行权限，否则 Hook 不会被运行：
+> ```bash
+> chmod +x ~/.openclaw/hooks/your-hook-name
+> ```
 
 ---
 
@@ -150,31 +147,27 @@ chmod +x ~/.openclaw/hooks/your-hook-name
 
 OpenClaw 内置了几个开箱即用的 Hook，可直接启用：
 
-::: details session-memory：跨会话记忆注入
-在每个新会话开始时，将上次会话的关键信息注入当前上下文，实现跨会话记忆。
+> [!abstract]- session-memory：跨会话记忆注入
+> 在每个新会话开始时，将上次会话的关键信息注入当前上下文，实现跨会话记忆。
+>
+> ```bash
+> # 启用方式：在配置中引用内置 Hook
+> # openclaw/hooks/session-memory 已内置，无需手动创建
+> ```
 
-```bash
-# 启用方式：在配置中引用内置 Hook
-# openclaw/hooks/session-memory 已内置，无需手动创建
-```
-:::
+> [!abstract]- bootstrap-extra-files：启动时注入额外文件
+> 会话启动时自动将指定文件内容注入 Agent 上下文，适合注入项目说明或规范文档。
+>
+> ```bash
+> # 配置示例
+> # 将 PROJECT_SPEC.md 在每次启动时自动注入
+> ```
 
-::: details bootstrap-extra-files：启动时注入额外文件
-会话启动时自动将指定文件内容注入 Agent 上下文，适合注入项目说明或规范文档。
+> [!abstract]- command-logger：命令记录
+> 自动记录 Agent 执行的所有命令到日志文件，方便审计。
 
-```bash
-# 配置示例
-# 将 PROJECT_SPEC.md 在每次启动时自动注入
-```
-:::
-
-::: details command-logger：命令记录
-自动记录 Agent 执行的所有命令到日志文件，方便审计。
-:::
-
-::: details boot-md：启动时加载 BOOT.md
-启动时自动读取项目根目录的 `BOOT.md` 文件，将其作为系统提示注入。
-:::
+> [!abstract]- boot-md：启动时加载 BOOT.md
+> 启动时自动读取项目根目录的 `BOOT.md` 文件，将其作为系统提示注入。
 
 ---
 
@@ -232,25 +225,23 @@ env | grep OPENCLAW_  # 打印所有 OpenClaw 注入的环境变量
 
 ### 最佳实践
 
-::: tip 编写高质量 Hook 的三个原则
-
-**1. 幂等性（Idempotent）**
-同一个 Hook 被多次执行，结果应该相同。避免重复追加、重复创建等副作用。
-
-**2. 快速执行（Fast）**
-Hook 是同步执行的，耗时过长会阻塞 Agent 响应。耗时操作应该异步处理或写入队列。
-
-```bash
-# 不推荐：同步等待耗时操作
-curl -X POST https://slow-api.example.com/notify
-
-# 推荐：后台异步处理
-curl -X POST https://slow-api.example.com/notify &
-```
-
-**3. 安全处理敏感数据**
-Hook 接收的环境变量可能包含用户消息内容。注意不要将敏感数据写入不安全的位置或传输到第三方。
-:::
+> [!tip] 编写高质量 Hook 的三个原则
+> **1. 幂等性（Idempotent）**
+> 同一个 Hook 被多次执行，结果应该相同。避免重复追加、重复创建等副作用。
+>
+> **2. 快速执行（Fast）**
+> Hook 是同步执行的，耗时过长会阻塞 Agent 响应。耗时操作应该异步处理或写入队列。
+>
+> ```bash
+> # 不推荐：同步等待耗时操作
+> curl -X POST https://slow-api.example.com/notify
+> 
+> # 推荐：后台异步处理
+> curl -X POST https://slow-api.example.com/notify &
+> ```
+>
+> **3. 安全处理敏感数据**
+> Hook 接收的环境变量可能包含用户消息内容。注意不要将敏感数据写入不安全的位置或传输到第三方。
 
 ---
 

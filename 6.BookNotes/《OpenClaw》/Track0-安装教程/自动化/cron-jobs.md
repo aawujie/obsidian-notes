@@ -55,9 +55,8 @@ daily-summary  0 9 * * 1-5    2026-02-23 09:00:00   daily-summary
 openclaw cron run daily-summary
 ```
 
-::: tip 验证 cron 表达式
-不确定 cron 表达式是否正确？可以用在线工具验证：[crontab.guru](https://crontab.guru) 是一个常用的 cron 表达式解析器。
-:::
+> [!tip] 验证 cron 表达式
+> 不确定 cron 表达式是否正确？可以用在线工具验证：[crontab.guru](https://crontab.guru) 是一个常用的 cron 表达式解析器。
 
 ---
 
@@ -134,11 +133,10 @@ Cron 任务支持两种执行模式：
 }
 ```
 
-::: tip 如何选择执行模式？
-- 需要 Agent 记住上次状态 → 主会话模式
-- 每次任务完全独立、互不影响 → 隔离执行模式
-- 不确定时，推荐隔离执行模式，更安全可预期
-:::
+> [!tip] 如何选择执行模式？
+> - 需要 Agent 记住上次状态 → 主会话模式
+> - 每次任务完全独立、互不影响 → 隔离执行模式
+> - 不确定时，推荐隔离执行模式，更安全可预期
 
 ---
 
@@ -217,9 +215,8 @@ openclaw cron resume <job-name>
 
 ### 时区（Timezone）设置
 
-::: warning 时区问题是 Cron 常见踩坑点
-默认情况下，Cron 使用服务器系统时区。如果服务器在境外，实际触发时间可能与预期不符。
-:::
+> [!warning] 时区问题是 Cron 常见踩坑点
+> 默认情况下，Cron 使用服务器系统时区。如果服务器在境外，实际触发时间可能与预期不符。
 
 在配置中显式指定时区：
 
@@ -273,23 +270,19 @@ openclaw cron history --limit 20
 
 ### 故障排查
 
-::: details Cron 任务没有在预期时间执行
+> [!abstract]- Cron 任务没有在预期时间执行
+> 1. 确认 Gateway 正在运行：`openclaw gateway status`
+> 2. 检查时区配置是否正确：`openclaw cron list` 查看"NEXT RUN"时间
+> 3. 验证 cron 表达式：用 `crontab.guru` 验证
+> 4. 查看日志：`openclaw logs --filter cron`
 
-1. 确认 Gateway 正在运行：`openclaw gateway status`
-2. 检查时区配置是否正确：`openclaw cron list` 查看"NEXT RUN"时间
-3. 验证 cron 表达式：用 `crontab.guru` 验证
-4. 查看日志：`openclaw logs --filter cron`
-:::
-
-::: details 手动触发成功但定时不触发
-
-可能原因：Gateway 未启动或意外退出。检查 Gateway 进程：
-
-```bash
-openclaw gateway status
-openclaw gateway start  # 如果未运行则启动
-```
-:::
+> [!abstract]- 手动触发成功但定时不触发
+> 可能原因：Gateway 未启动或意外退出。检查 Gateway 进程：
+>
+> ```bash
+> openclaw gateway status
+> openclaw gateway start  # 如果未运行则启动
+> ```
 
 ---
 

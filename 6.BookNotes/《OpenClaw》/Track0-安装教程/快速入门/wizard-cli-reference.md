@@ -96,10 +96,9 @@ description: "OpenClaw 快速入门：CLI 入门引导参考。本页面是  的
     - 摘要和后续步骤，包括 iOS、Android 和 macOS 应用选项。
 
 
-::: info 说明
-如果未检测到 GUI，向导会打印控制面板 UI 的 SSH 端口转发指令，而不是打开浏览器。
-如果控制面板 UI 资源缺失，向导会尝试构建它们；回退方式是 `pnpm ui:build`（自动安装 UI 依赖）。
-:::
+> [!info] 说明
+> 如果未检测到 GUI，向导会打印控制面板 UI 的 SSH 端口转发指令，而不是打开浏览器。
+> 如果控制面板 UI 资源缺失，向导会尝试构建它们；回退方式是 `pnpm ui:build`（自动安装 UI 依赖）。
 
 ---
 
@@ -107,17 +106,14 @@ description: "OpenClaw 快速入门：CLI 入门引导参考。本页面是  的
 
 远程模式配置本机连接到其他位置的网关（Gateway）。
 
-::: info
-远程模式不会在远程主机上安装或修改任何内容。
-:::
-
-
-你需要设置的内容：
-
-- 远程网关 URL（`ws://...`）
-- Token（如果远程网关需要认证，推荐使用）
-
-::: info 说明
+> [!info] 远程模式不会在远程主机上安装或修改任何内容。
+> :::
+>
+>
+> 你需要设置的内容：
+>
+> - 远程网关 URL（`ws://...`）
+> - Token（如果远程网关需要认证，推荐使用） info 说明
 - 如果网关仅限 loopback，请使用 SSH 隧道或 tailnet。
 - 发现提示：
   - macOS：Bonjour（`dns-sd`）
@@ -129,144 +125,76 @@ description: "OpenClaw 快速入门：CLI 入门引导参考。本页面是  的
 ## 认证和模型选项
 
 
-::: details Anthropic API 密钥（推荐）
+> [!abstract]- Anthropic API 密钥（推荐）
+> 如果存在 `ANTHROPIC_API_KEY` 则使用该值，否则提示输入密钥，然后为守护进程保存。
 
-    如果存在 `ANTHROPIC_API_KEY` 则使用该值，否则提示输入密钥，然后为守护进程保存。
-  
+> [!abstract]- Anthropic OAuth (Claude Code CLI)
+> - macOS：检查 Keychain 项 "Claude Code-credentials"
+>     - Linux 和 Windows：如果存在则复用 `~/.claude/.credentials.json`
+>
+>     在 macOS 上，选择"始终允许"以便 launchd 启动时不会阻塞。
 
-:::
+> [!abstract]- Anthropic token（setup-token 粘贴）
+> 在任何机器上运行 `claude setup-token`，然后粘贴 Token。
+>     可以命名；留空使用默认名称。
 
-::: details Anthropic OAuth (Claude Code CLI)
+> [!abstract]- OpenAI Code 订阅（Codex CLI 复用）
+> 如果 `~/.codex/auth.json` 存在，向导可以复用它。
 
-    - macOS：检查 Keychain 项 "Claude Code-credentials"
-    - Linux 和 Windows：如果存在则复用 `~/.claude/.credentials.json`
+> [!abstract]- OpenAI Code 订阅 (OAuth)
+> 浏览器流程；粘贴 `code#state`。
+>
+>     当模型未设置或为 `openai/*` 时，将 `agents.defaults.model` 设置为 `openai-codex/gpt-5.3-codex`。
 
-    在 macOS 上，选择"始终允许"以便 launchd 启动时不会阻塞。
+> [!abstract]- OpenAI API 密钥
+> 如果存在 `OPENAI_API_KEY` 则使用该值，否则提示输入密钥，然后保存到
+>     `~/.openclaw/.env` 以便 launchd 读取。
+>
+>     当模型未设置、为 `openai/*` 或 `openai-codex/*` 时，将 `agents.defaults.model` 设置为 `openai/gpt-5.1-codex`。
 
-  
+> [!abstract]- xAI (Grok) API 密钥
+> 提示输入 `XAI_API_KEY` 并配置 xAI 作为模型提供商。
 
-:::
+> [!abstract]- OpenCode Zen
+> 提示输入 `OPENCODE_API_KEY`（或 `OPENCODE_ZEN_API_KEY`）。
+>     设置 URL：[opencode.ai/auth](https://opencode.ai/auth)。
 
-::: details Anthropic token（setup-token 粘贴）
+> [!abstract]- API 密钥（通用）
+> 为你存储密钥。
 
-    在任何机器上运行 `claude setup-token`，然后粘贴 Token。
-    可以命名；留空使用默认名称。
-  
+> [!abstract]- Vercel AI Gateway
+> 提示输入 `AI_GATEWAY_API_KEY`。
+>     更多详情：[Vercel AI Gateway](/providers/vercel-ai-gateway)。
 
-:::
+> [!abstract]- Cloudflare AI Gateway
+> 提示输入账号 ID、网关 ID 和 `CLOUDFLARE_AI_GATEWAY_API_KEY`。
+>     更多详情：[Cloudflare AI Gateway](/providers/cloudflare-ai-gateway)。
 
-::: details OpenAI Code 订阅（Codex CLI 复用）
+> [!abstract]- MiniMax M2.1
+> 配置自动写入。
+>     更多详情：[MiniMax](/providers/minimax)。
 
-    如果 `~/.codex/auth.json` 存在，向导可以复用它。
-  
+> [!abstract]- Synthetic（Anthropic 兼容）
+> 提示输入 `SYNTHETIC_API_KEY`。
+>     更多详情：[Synthetic](/providers/synthetic)。
 
-:::
+> [!abstract]- Moonshot 和 Kimi Coding
+> Moonshot (Kimi K2) 和 Kimi Coding 的配置自动写入。
+>     更多详情：[Moonshot AI (Kimi + Kimi Coding)](/providers/moonshot)。
 
-::: details OpenAI Code 订阅 (OAuth)
+> [!abstract]- 自定义提供商
+> 兼容 OpenAI 和 Anthropic 端点。
+>
+>     非交互参数：
+>     - `--auth-choice custom-api-key`
+>     - `--custom-base-url`
+>     - `--custom-model-id`
+>     - `--custom-api-key`（可选；回退到 `CUSTOM_API_KEY`）
+>     - `--custom-provider-id`（可选）
+>     - `--custom-compatibility <openai|anthropic>`（可选；默认 `openai`）
 
-    浏览器流程；粘贴 `code#state`。
-
-    当模型未设置或为 `openai/*` 时，将 `agents.defaults.model` 设置为 `openai-codex/gpt-5.3-codex`。
-
-  
-
-:::
-
-::: details OpenAI API 密钥
-
-    如果存在 `OPENAI_API_KEY` 则使用该值，否则提示输入密钥，然后保存到
-    `~/.openclaw/.env` 以便 launchd 读取。
-
-    当模型未设置、为 `openai/*` 或 `openai-codex/*` 时，将 `agents.defaults.model` 设置为 `openai/gpt-5.1-codex`。
-
-  
-
-:::
-
-::: details xAI (Grok) API 密钥
-
-    提示输入 `XAI_API_KEY` 并配置 xAI 作为模型提供商。
-  
-
-:::
-
-::: details OpenCode Zen
-
-    提示输入 `OPENCODE_API_KEY`（或 `OPENCODE_ZEN_API_KEY`）。
-    设置 URL：[opencode.ai/auth](https://opencode.ai/auth)。
-  
-
-:::
-
-::: details API 密钥（通用）
-
-    为你存储密钥。
-  
-
-:::
-
-::: details Vercel AI Gateway
-
-    提示输入 `AI_GATEWAY_API_KEY`。
-    更多详情：[Vercel AI Gateway](/providers/vercel-ai-gateway)。
-  
-
-:::
-
-::: details Cloudflare AI Gateway
-
-    提示输入账号 ID、网关 ID 和 `CLOUDFLARE_AI_GATEWAY_API_KEY`。
-    更多详情：[Cloudflare AI Gateway](/providers/cloudflare-ai-gateway)。
-  
-
-:::
-
-::: details MiniMax M2.1
-
-    配置自动写入。
-    更多详情：[MiniMax](/providers/minimax)。
-  
-
-:::
-
-::: details Synthetic（Anthropic 兼容）
-
-    提示输入 `SYNTHETIC_API_KEY`。
-    更多详情：[Synthetic](/providers/synthetic)。
-  
-
-:::
-
-::: details Moonshot 和 Kimi Coding
-
-    Moonshot (Kimi K2) 和 Kimi Coding 的配置自动写入。
-    更多详情：[Moonshot AI (Kimi + Kimi Coding)](/providers/moonshot)。
-  
-
-:::
-
-::: details 自定义提供商
-
-    兼容 OpenAI 和 Anthropic 端点。
-
-    非交互参数：
-    - `--auth-choice custom-api-key`
-    - `--custom-base-url`
-    - `--custom-model-id`
-    - `--custom-api-key`（可选；回退到 `CUSTOM_API_KEY`）
-    - `--custom-provider-id`（可选）
-    - `--custom-compatibility <openai|anthropic>`（可选；默认 `openai`）
-
-  
-
-:::
-
-::: details 跳过
-
-    不配置认证。
-  
-
-:::
+> [!abstract]- 跳过
+> 不配置认证。
 
 
 模型行为：
@@ -279,11 +207,10 @@ description: "OpenClaw 快速入门：CLI 入门引导参考。本页面是  的
 - OAuth 凭证：`~/.openclaw/credentials/oauth.json`
 - 认证档案（API 密钥 + OAuth）：`~/.openclaw/agents/<agentId>/agent/auth-profiles.json`
 
-::: info 说明
-无头和服务器提示：在有浏览器的机器上完成 OAuth，然后将
-`~/.openclaw/credentials/oauth.json`（或 `$OPENCLAW_STATE_DIR/credentials/oauth.json`）
-复制到网关主机。
-:::
+> [!info] 说明
+> 无头和服务器提示：在有浏览器的机器上完成 OAuth，然后将
+> `~/.openclaw/credentials/oauth.json`（或 `$OPENCLAW_STATE_DIR/credentials/oauth.json`）
+> 复制到网关主机。
 
 ---
 
@@ -308,10 +235,9 @@ description: "OpenClaw 快速入门：CLI 入门引导参考。本页面是  的
 WhatsApp 凭证存放在 `~/.openclaw/credentials/whatsapp/<accountId>/` 下。
 会话（Session）存储在 `~/.openclaw/agents/<agentId>/sessions/` 下。
 
-::: info 说明
-部分通道以插件形式提供。在入门引导中选中时，向导会在通道配置之前
-提示安装插件（npm 或本地路径）。
-:::
+> [!info] 说明
+> 部分通道以插件形式提供。在入门引导中选中时，向导会在通道配置之前
+> 提示安装插件（npm 或本地路径）。
 
 
 网关向导 RPC：

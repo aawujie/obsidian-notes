@@ -6,9 +6,8 @@ description: "OpenClaw 快速入门：文档中心。如果你是 OpenClaw 的�
 
 # 文档中心
 
-::: info 说明
-如果你是 OpenClaw 的新用户，请从 [快速入门](/start/getting-started) 开始。
-:::
+> [!info] 说明
+> 如果你是 OpenClaw 的新用户，请从 [快速入门](/start/getting-started) 开始。
 
 
 使用这些中心页面来发现每一个页面，包括深入探讨和参考文档中未出现在左侧导航栏的内容。
