@@ -73,14 +73,14 @@ Cursor 包含三个内置子代理，Agent 会在合适场景下自动使用，�
 
 ### 文件位置
 
-| 类型 | 位置 | 适用范围 |
-|------|------|----------|
-| **项目子代理** | `.cursor/agents/` | 仅限当前项目 |
-| | `.claude/agents/` | 仅限当前项目 (Claude 兼容) |
-| | `.codex/agents/` | 仅限当前项目 (Codex 兼容) |
-| **用户子代理** | `~/.cursor/agents/` | 当前用户的所有项目 |
-| | `~/.claude/agents/` | 当前用户的所有项目 (Claude 兼容) |
-| | `~/.codex/agents/` | 当前用户的所有项目 (Codex 兼容) |
+| 类型        | 位置                  | 适用范围                                                  |
+| --------- | ------------------- | ----------------------------------------------------- |
+| **项目子代理** | `.cursor/agents/`   | 仅限当前项目                                                |
+|           | `.claude/agents/`   | 仅限当前项目 (Claude 兼容)                                    |
+|           | `.codex/agents/`    | 仅限当前项目 (Codex 兼容)                                     |
+| **用户子代理** | `~/.cursor/agents/` | <span style="color:rgb(255, 77, 77)">当前用户的所有项目</span> |
+|           | `~/.claude/agents/` | 当前用户的所有项目 (Claude 兼容)                                 |
+|           | `~/.codex/agents/`  | 当前用户的所有项目 (Codex 兼容)                                  |
 
 **优先级**：项目子代理 > 用户子代理；`.cursor/` > `.claude/` > `.codex/`
 
@@ -153,7 +153,7 @@ Agent 会根据以下因素主动委派任务：
 
 ### 并行执行
 
-在一条消息中发送多个 Task 工具调用，子代理会并行运行：
+在一条消息中<span style="color:rgb(255, 77, 77)">发送多个 Task 工具调用</span>，子代理会并行运行：
 
 ```text
 > Review the API changes and update the documentation in parallel
@@ -167,7 +167,7 @@ Agent 会根据以下因素主动委派任务：
 > Resume agent abc123 and analyze the remaining test failures
 ```
 
-后台子代理会将状态记录到 `~/.cursor/subagents/`。
+<span style="color:rgb(255, 77, 77)">后台子代理会将状态记录到 `~/.cursor/subagents/`</span>。
 
 ---
 
@@ -281,14 +281,14 @@ Report test results with:
 - **将子代理纳入版本控制** — 把 `.cursor/agents/` 提交到代码仓库
 - **从 Agent 生成的代理开始** — 先让 Agent 起草初始配置，再自定义
 
-### 反模式（避免）
+### <span style="color:rgb(255, 77, 77)">反模式（避免）</span>
 
-| 反模式 | 问题 | 改进 |
-|--------|------|------|
-| **几十个通用型子代理** | Agent 不知道何时用，维护成本高 | 从 2-3 个聚焦明确的开始 |
-| **描述含糊** | "Use for general tasks" 无指导意义 | 具体说明使用场景 |
-| **提示词过长** | 2000+ 字让子代理更慢、难维护 | 保持简洁聚焦 |
-| **重复 slash command** | 单一用途任务不需要上下文隔离 | 改用 slash command |
+| 反模式                  | 问题                                                               | 改进               |
+| -------------------- | ---------------------------------------------------------------- | ---------------- |
+| **几十个通用型子代理**        | <span style="color:rgb(195, 117, 255)">Agent 不知道何时用，维护成本高</span> | 从 2-3 个聚焦明确的开始   |
+| **描述含糊**             | "Use for general tasks" 无指导意义                                    | 具体说明使用场景         |
+| **提示词过长**            | <span style="color:rgb(255, 77, 77)">2000+ 字让子代理更慢、难维护</span>    | 保持简洁聚焦           |
+| **重复 slash command** | 单一用途任务不需要上下文隔离                                                   | 改用 slash command |
 
 ---
 
@@ -370,4 +370,4 @@ security-reviewer 子代理应检查代码中的常见漏洞，
 
 ## 🏷️ 标签
 
-#Cursor #AI 编程 #Subagents #多代理系统 #开发工具 #自动化
+#Cursor #AI编程 #Subagents #多代理系统 #开发工具 #自动化

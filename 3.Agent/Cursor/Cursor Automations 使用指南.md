@@ -283,4 +283,4 @@ Automations 包含与其他 Cloud Agent 相同的基础工具集，还可启用�
 
 ## 🏷️ 标签
 
-#Cursor #AI 编程 #Automations #自动化 #CloudAgent #CI/CD #DevOps
+#Cursor #AI编程 #Automations #自动化 #CloudAgent #CI/CD #DevOps
