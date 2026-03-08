@@ -1,3 +1,7 @@
+---
+share_link: https://share.note.sx/nww458ml#AYBogEKy6a/8bvKGUHWhA/Q940NkNAW5Ims6/BMgBMI
+share_updated: 2026-03-08T21:36:09+08:00
+---
 # 纳瓦尔 Naval 最新访谈 - AI 是思想的摩托车
 
 **标签**: #AI #创业 #一人公司 #教育 #人性 #Naval
