@@ -22,10 +22,10 @@
 
 ### 创建步骤
 
-1. **选择触发条件** — 如每小时运行一次，或 PR 打开时触发
-2. **编写提示词和执行说明** — 定义 agent 应该做什么
-3. **选择工具** — 如 Send to Slack、Comment on Pull Request、MCP 工具等
-4. **创建并观察运行** — 启动自动化并监控执行
+1. **<span style="color:rgb(195, 117, 255)"><span style="color:rgb(195, 117, 255)">选择触发条件**</span></span> — 如每小时运行一次，或 PR 打开时触发
+2. **<span style="color:rgb(195, 117, 255)">编写提示词和执行说明**</span> — 定义 agent 应该做什么
+3. **<span style="color:rgb(195, 117, 255)">选择工具</span>** — 如 Send to Slack、Comment on Pull Request、MCP 工具等
+4. **<span style="color:rgb(195, 117, 255)">创建并观察运行</span>** — 启动自动化并监控执行
 
 ### 计费
 
@@ -35,7 +35,7 @@ Automations 创建 Cloud Agent，根据 [Cloud Agent 用量](https://cursor.com/
 
 ## ⏰ 触发器
 
-触发器决定何时运行自动化流程。一个自动化可有多个触发器，**任意一个触发**即运行。
+<span style="color:rgb(255, 77, 77)">触发器决定何时运行自动化流程。</span>一个自动化可有多个触发器，**任意一个触发**即运行。
 
 > ⚠️ 对于 Scheduled 或 Slack 触发器，需选择仓库和分支（Cursor 无法从 PR 推断）。
 
@@ -75,11 +75,11 @@ Automations 创建 Cloud Agent，根据 [Cloud Agent 用量](https://cursor.com/
 
 **消息过滤器**：不设置时仅在顶层消息触发；添加关键字或正则表达式可让线程回复也触发。
 
-### Webhook 触发器
+### <span style="color:rgb(255, 77, 77)">Webhook 触发器</span>
 
-为自动化创建私有 HTTP 端点，发送 POST 请求即可启动运行。
+为自动化<span style="color:rgb(255, 77, 77)">创建私有 HTTP 端点</span>，<span style="color:rgb(255, 77, 77)">发送 POST 请求即可启动运行。</span>
 
-**用途**：连接内部系统、CI 流水线、监控工具或自定义应用。
+**用途**：<span style="color:rgb(195, 117, 255)">连接内部系统</span>、CI 流水线、<span style="color:rgb(195, 117, 255)">监控工具</span>或<span style="color:rgb(195, 117, 255)">自定义应用</span>。
 
 **获取方式**：保存自动化后生成 webhook URL 和 API 密钥。
 
@@ -183,22 +183,22 @@ Automations 包含与其他 Cloud Agent 相同的基础工具集，还可启用�
 
 ### 权限 (Permissions)
 
-| 权限级别 | 说明 |
-|----------|------|
-| **私有** | 只有你可以管理，团队管理员可查看并禁用 |
-| **团队可见** | 只有你可以管理，团队成员可查看，团队管理员可禁用 |
+| 权限级别     | 说明                             |
+| -------- | ------------------------------ |
+| **私有**   | 只有你可以管理，团队管理员可查看并禁用            |
+| **团队可见** | 只有你可以管理，团队成员可查看，团队管理员可禁用       |
 | **团队拥有** | 团队成员可查看，只有团队管理员可管理（需团队管理员权限创建） |
 
 ### 身份 (Identity)
 
 自动化在外部服务上执行操作时使用的身份：
 
-| 操作 | 身份 |
-|------|------|
-| GitHub 评论、审核批准、评审请求 | `cursor` |
-| 团队级自动化打开 PR | `cursor` |
-| 私有自动化打开 PR | 你的 GitHub 账号 |
-| Slack 消息 | Cursor 机器人 |
+| 操作                  | 身份           |
+| ------------------- | ------------ |
+| GitHub 评论、审核批准、评审请求 | `cursor`     |
+| 团队级自动化打开 PR         | `cursor`     |
+| 私有自动化打开 PR          | 你的 GitHub 账号 |
+| Slack 消息            | Cursor 机器人   |
 
 ---
 
@@ -235,29 +235,29 @@ Automations 包含与其他 Cloud Agent 相同的基础工具集，还可启用�
 
 ---
 
-## 💡 使用场景示例
+## 💡 <span style="color:rgb(255, 77, 77)">使用场景示例</span>
 
 ### 1. 自动清理功能标志
 
 **触发器**：定时（每周日凌晨）
 **工具**：创建 Pull Request
-**提示词**：扫描代码库中已过期或未使用的功能标志，创建清理 PR。
+**提示词**：扫描代码库中已过期或未使用的功能标志，<span style="color:rgb(255, 77, 77)">创建清理 PR</span>。
 
 ### 2. 安全漏洞审查
 
 **触发器**：拉取请求已打开
 **工具**：在 PR 中发表评论、MCP 服务器（安全扫描工具）
-**提示词**：审查新 PR 的安全问题，在代码行内评论发现的问题。
+**提示词**：<span style="color:rgb(255, 77, 77)">审查新 PR 的安全问题</span>，在代码行内评论发现的问题。
 
 ### 3. Slack Bug 分级
 
-**触发器**：Slack 频道新消息（含关键字 "bug" 或 "error"）
+**触发器**：<span style="color:rgb(255, 77, 77)">Slack 频道新消息（含关键字 "bug" 或 "error"）</span>
 **工具**：读取 Slack 频道、发送到 Slack、创建 Issue（Linear）
 **提示词**：分析 Slack 中报告的 bug，收集上下文，创建 Linear issue 并回复频道。
 
 ### 4. CI 失败自动修复
 
-**触发器**：CI 已完成（状态：失败）
+**触发器**：<span style="color:rgb(255, 77, 77)">CI 已完成（状态：失败）</span>
 **工具**：创建 Pull Request、读取日志
 **提示词**：分析 CI 失败原因，尝试自动修复，创建修复 PR。
 
