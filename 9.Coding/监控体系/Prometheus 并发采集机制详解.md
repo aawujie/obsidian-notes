@@ -12,14 +12,15 @@
 
 - 是多线程吗？
 - 是多进程吗？
+- Goroutine 用单核还是多核？
 - 数据会冲突吗？
 - 性能如何？
 
 ---
 
-## 🎯 答案：Pull Model + Goroutine
+## 🎯 答案：Pull Model + Goroutine 两级调度
 
-> **不是多线程/多进程，而是 Prometheus 的 "Scrape 模型"（抓取模型）+ Go 语言 Goroutine 并发**
+> **不是传统多线程/多进程，而是 Prometheus 的 "Scrape 模型"（抓取模型）+ Go 语言 Goroutine 两级调度并发**
 
 ---
 
@@ -116,57 +117,166 @@ scrape_configs:
 
 ---
 
-### 3. 并发模型：Goroutine（协程）
+### 3. 并发模型：Goroutine 两级调度
 
-Prometheus 用 **Go 语言** 编写，使用 **Goroutine**（轻量级协程）实现并发：
+Prometheus 用 **Go 语言** 编写，使用 **Goroutine**（轻量级协程）实现并发。
+
+#### ⚠️ 关键：<span style="color:rgb(255, 77, 77)">两级调度模型</span>
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│                  Scrape Manager                             │
+│              Go 两级调度架构                                 │
+├─────────────────────────────────────────────────────────────┤
 │                                                             │
-│  主线程 → 启动各个 Job 的 Scrape Loop                        │
-│              ↓                                              │
-│  ┌─────────────────────────────────────────────────────┐   │
-│  │  Goroutine 1 (Scrape Loop: node-exporter)           │   │
-│  │    while true:                                      │   │
-│  │      HTTP GET http://localhost:9100/metrics         │   │
-│  │      解析响应 → 添加标签 (job, instance)             │   │
-│  │      写入 TSDB                                      │   │
-│  │      sleep 15s                                      │   │
-│  └─────────────────────────────────────────────────────┘   │
+│  【用户态调度】Go Runtime Scheduler                         │
+│  Goroutine → OS Thread (M:N 映射)                           │
+│         ↓                                                   │
+│  Go 运行时在用户态决定哪个 Goroutine 在哪个 OS Thread 上运行    │
+│         ↓                                                   │
+│  【内核态调度】OS Kernel Scheduler                          │
+│  OS Thread → CPU Core                                       │
+│         ↓                                                   │
+│  操作系统内核决定哪个 Thread 在哪个 CPU 核心上运行             │
 │                                                             │
-│  ┌─────────────────────────────────────────────────────┐   │
-│  │  Goroutine 2 (Scrape Loop: gitlab-exporter)         │   │
-│  │    while true:                                      │   │
-│  │      HTTP GET http://localhost:8080/metrics         │   │
-│  │      解析响应 → 添加标签 (job, instance)             │   │
-│  │      写入 TSDB                                      │   │
-│  │      sleep 30s                                      │   │
-│  └─────────────────────────────────────────────────────┘   │
+└─────────────────────────────────────────────────────────────┘
+```
+
+#### M:N 调度模型详解
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                  Go M:N 调度                                │
+├─────────────────────────────────────────────────────────────┤
 │                                                             │
-│  ┌─────────────────────────────────────────────────────┐   │
-│  │  Goroutine 3 (Scrape Loop: mysql-exporter)          │   │
-│  │    while true:                                      │   │
-│  │      HTTP GET http://localhost:9104/metrics         │   │
-│  │      解析响应 → 添加标签 (job, instance)             │   │
-│  │      写入 TSDB                                      │   │
-│  │      sleep 15s                                      │   │
-│  └─────────────────────────────────────────────────────┘   │
+│  10000 Goroutines  →  8 OS Threads  →  8 CPU Cores         │
+│       ↓                    ↓                 ↓              │
+│    用户态               内核态             硬件              │
+│   (Go 调度)           (OS 调度)                            │
+│                                                             │
+│  优势：                                                     │
+│  - Goroutine 切换不需要内核参与                            │
+│  - 少量 OS Thread 减少内核调度开销                         │
+│  - 自动负载均衡                                            │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+#### 为什么 Goroutine 比传统线程高效？
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                传统线程 vs Goroutine 切换                    │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  【传统线程】                                                │
+│  Thread 切换 → 系统调用 → 内核态 → 保存寄存器 → 恢复寄存器   │
+│              ↑                                              │
+│         每次切换都要进入内核态，开销大！                      │
+│                                                             │
+│  【Goroutine】                                               │
+│  Goroutine 切换 → Go 运行时 → 保存少量寄存器 → 恢复寄存器    │
+│                 ↑                                           │
+│            纯用户态切换，开销极低！                          │
+│                 ↓                                           │
+│  OS Thread 切换 → 内核态 (由 OS 决定，Go 无法控制)            │
+│                                                             │
+│  关键：Goroutine 大部分切换在用户态完成，                    │
+│        只有 OS Thread 调度才需要内核态！                      │
 │                                                             │
 └─────────────────────────────────────────────────────────────┘
 ```
 
 ### Goroutine vs 传统线程
 
-| 特性 | Goroutine | 传统线程 |
-|------|-----------|----------|
-| **内存占用** | 几 KB | 几 MB |
-| **创建开销** | 极低 | 较高 |
-| **调度** | Go 运行时用户态调度 | 操作系统内核调度 |
-| **并发数** | 数万 + | 数百 - 数千 |
-| **通信** | Channel | 锁/信号量 |
+| 特性       | Goroutine                                                 | 传统线程                     |
+| -------- | --------------------------------------------------------- | ------------------------ |
+| **内存占用** | 几 KB (栈)                                                  | 几 MB (栈)                 |
+| **创建开销** | 极低 (用户态分配)                                                | 较高 (系统调用)                |
+| **调度**   | **两级调度**：<br>1. Go 运行时 (用户态)<br>2. OS 内核 (内核态)            | **一级调度**：<br>OS 内核 (内核态) |
+| **并发数**  | 数万 +                                                      | 数百 - 数千                  |
+| **切换开销** | 低 (用户态切换)                                                 | 高 (内核态切换)                |
+| **通信**   | <span style="color:rgb(255, 77, 77)">Channel</span> (用户态) | 锁/信号量 (内核态)              |
 
 **优势**：Prometheus 可以为每个 Job、每个 Target 创建独立的 Goroutine，并发抓取而几乎无开销。
+
+---
+
+### 💡 Goroutine 使用单核还是多核？
+
+**答案：多核！Go 运行时自动利用所有可用的 CPU 核心。**
+
+#### <span style="color:rgb(255, 77, 77)">GOMAXPROCS</span> 机制
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│              Go 多核调度架构                                 │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  Go Program (Prometheus)                                    │
+│         ↓                                                   │
+│  GOMAXPROCS = CPU 核心数 (默认)                              │
+│         ↓                                                   │
+│  ┌─────────────────────────────────────────────────────┐   │
+│  │ OS Thread 1  → CPU Core 1                           │   │
+│  │   ├─ Goroutine 1 (Scrape: node-exporter)            │   │
+│  │   ├─ Goroutine 5 (Scrape: mysql-exporter)           │   │
+│  │   └─ Goroutine 9 (Query handler)                    │   │
+│  │                                                     │   │
+│  │ OS Thread 2  → CPU Core 2                           │   │
+│  │   ├─ Goroutine 2 (Scrape: gitlab-exporter)         │   │
+│  │   ├─ Goroutine 6 (TSDB compaction)                 │   │
+│  │   └─ Goroutine 10 (Alert manager)                  │   │
+│  │                                                     │   │
+│  │ OS Thread 3  → CPU Core 3                           │   │
+│  │   ├─ Goroutine 3 (Scrape: redis-exporter)          │   │
+│  │   └─ Goroutine 7 (Remote write)                    │   │
+│  │                                                     │   │
+│  │ OS Thread 4  → CPU Core 4                           │   │
+│  │   ├─ Goroutine 4 (Scrape: nginx-exporter)          │   │
+│  │   └─ Goroutine 8 (HTTP server)                     │   │
+│  └─────────────────────────────────────────────────────┘   │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+#### 关键配置：GOMAXPROCS
+
+| 配置 | 说明 | 默认值 |
+|------|------|--------|
+| **GOMAXPROCS** | 限制 Go 程序使用的 CPU 核心数 | Go 1.5+ = CPU 核心数 |
+| **查看当前值** | `runtime.GOMAXPROCS(0)` | - |
+| **设置方式** | 环境变量 `GOMAXPROCS=4` 或代码设置 | - |
+
+```bash
+# 启动时设置
+GOMAXPROCS=4 prometheus
+
+# 或者在 Kubernetes 中
+env:
+  - name: GOMAXPROCS
+    value: "4"
+```
+
+#### 多核优势
+
+| 优势         | 说明                                   |
+| ---------- | ------------------------------------ |
+| **并行抓取**   | 多个 Goroutine 在不同 CPU 核心上同时执行 HTTP 请求 |
+| **并行写入**   | TSDB 写入和 Scrape 可以并行执行               |
+| **不阻塞查询**  | 查询处理在独立 Goroutine 上，不影响抓取            |
+| **自动负载均衡** | Go 调度器自动将 Goroutine 分配到空闲核心          |
+
+#### 实际测试
+
+```bash
+# 查看你的 Mac 有几个 CPU 核心
+sysctl -n hw.ncpu
+
+# 启动 Prometheus 并查看 CPU 使用
+docker stats prometheus
+
+# 如果 GOMAXPROCS 设置正确，应该能看到多核 CPU 都被利用
+```
 
 ---
 
@@ -230,7 +340,7 @@ pod1        pod2      pod3  pod4  (同时抓取)
 
 多个 Goroutine 同时写入 TSDB，如何保证数据安全？
 
-### 1. WAL (Write-Ahead Log)
+### 1. <span style="color:rgb(255, 77, 77)">WAL (Write-Ahead Log)</span>
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
@@ -338,10 +448,10 @@ pod1        pod2      pod3  pod4  (同时抓取)
 
 | 数据库 | 并发模型 | 采集方式 |
 |--------|----------|----------|
-| **Prometheus** | Goroutine | Pull |
+| **Prometheus** | Goroutine 两级调度 | Pull |
 | **InfluxDB** | 线程池 | Push |
 | **TimescaleDB** | PostgreSQL 进程 | Push |
-| **VictoriaMetrics** | Goroutine | Pull/Push |
+| **VictoriaMetrics** | Goroutine 两级调度 | Pull/Push |
 
 ---
 
@@ -351,6 +461,8 @@ pod1        pod2      pod3  pod4  (同时抓取)
 |------|------|
 | **是多线程吗？** | ❌ 不是传统线程，是 **Goroutine（协程）** |
 | **是多进程吗？** | ❌ 不是，单进程多协程模型 |
+| **使用单核还是多核？** | ✅ **多核**，Go 自动利用所有 CPU 核心 |
+| **只在用户态调度吗？** | ❌ 不是，**两级调度**（用户态 + 内核态） |
 | **如何并发抓取？** | 每个 Job 一个 Goroutine，并行执行 |
 | **数据会冲突吗？** | ❌ 不会，TSDB 有完善的并发控制 |
 | **性能如何？** | 单节点可处理 100 万 + 时间序列 |
@@ -376,7 +488,7 @@ pod1        pod2      pod3  pod4  (同时抓取)
     └─ 批量提交
 ```
 
-> **不是多线程/多进程采集，而是 Prometheus 主动拉取 + Goroutine 并发！**
+> **不是多线程/多进程采集，而是 Prometheus 主动拉取 + Goroutine 两级调度并发！**
 
 ---
 
@@ -387,12 +499,14 @@ pod1        pod2      pod3  pod4  (同时抓取)
 - [Prometheus Architecture](https://prometheus.io/docs/introduction/overview/)
 - [Prometheus TSDB](https://prometheus.io/docs/prometheus/latest/storage/)
 - [Go Goroutines](https://go.dev/tour/concurrency/1)
+- [Go Scheduler](https://go.dev/blog/scheduler)
 
 ### 源码阅读
 
 - [Scrape Manager](https://github.com/prometheus/prometheus/blob/main/scrape/manager.go)
 - [Scrape Loop](https://github.com/prometheus/prometheus/blob/main/scrape/scrape.go)
 - [TSDB](https://github.com/prometheus/prometheus/tree/main/tsdb)
+- [Go Runtime Scheduler](https://github.com/golang/go/blob/master/src/runtime/proc.go)
 
 ### 相关笔记
 
