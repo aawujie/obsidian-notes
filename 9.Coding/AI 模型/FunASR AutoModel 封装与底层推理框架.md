@@ -11,8 +11,8 @@
 **`AutoModel` 是封装好的吗？底层推理用的什么框架？**
 
 > **答案**：
-> 1. ✅ **AutoModel 是封装好的高级 API**，一行代码加载模型
-> 2. 🔧 **底层推理框架：PyTorch（默认） / ONNX Runtime（可选）**
+> 1. ✅ **AutoModel 是封装好的高级 API**，<span style="color:rgb(255, 77, 77)">一行代码加载模型</span>
+> 2. 🔧 **底层推理框架：<span style="color:rgb(255, 77, 77)">PyTorch（默认） / ONNX Runtime（可选）</span>**
 
 ---
 
@@ -41,14 +41,14 @@
 └─────────────────────────────────────────────────────────────┘
 ```
 
-### 各层职责
+### <span style="color:rgb(255, 77, 77)">各层职责</span>
 
-| 层级 | 组件 | 职责 | 开发者感知 |
-|------|------|------|-----------|
-| **应用层** | AutoModel | 统一接口，简化使用 | ✅ 直接接触 |
-| **模型层** | Model Class | 网络结构定义 | ⚠️ 可选接触 |
-| **推理层** | PyTorch/ONNX | 张量计算、GPU 加速 | ❌ 完全隐藏 |
-| **硬件层** | CPU/GPU | 实际执行计算 | ❌ 完全隐藏 |
+| 层级      | 组件           | 职责          | 开发者感知   |
+| ------- | ------------ | ----------- | ------- |
+| **应用层** | AutoModel    | 统一接口，简化使用   | ✅ 直接接触  |
+| **模型层** | Model Class  | 网络结构定义      | ⚠️ 可选接触 |
+| **推理层** | PyTorch/ONNX | 张量计算、GPU 加速 | ❌ 完全隐藏  |
+| **硬件层** | CPU/GPU      | 实际执行计算      | ❌ 完全隐藏  |
 
 ---
 
@@ -56,7 +56,7 @@
 
 ### 使用前 vs 使用后
 
-#### ❌ 不用 AutoModel（手动处理）
+#### ❌ <span style="color:rgb(195, 117, 255)">不用 AutoModel（手动处理）</span>
 
 ```python
 from funasr.models.paraformer import ParaformerModel
@@ -119,7 +119,7 @@ print(f"识别结果：{text}")
 
 ---
 
-#### ✅ 用 AutoModel（一行搞定）
+#### ✅ <span style="color:rgb(195, 117, 255)">用 AutoModel（一行搞定）</span>
 
 ```python
 from funasr import AutoModel
@@ -214,7 +214,7 @@ funasr/
 
 ## 🔧 底层推理框架
 
-### 主要框架：PyTorch
+### <span style="color:rgb(195, 117, 255)">主要框架：PyTorch</span>
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
