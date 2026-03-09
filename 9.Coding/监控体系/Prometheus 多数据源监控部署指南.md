@@ -6,47 +6,76 @@
 
 ---
 
-## 📌 概述
+## 📌 核心思想
+
+> **Exporter <span style="color:rgb(255, 77, 77)">多样化</span>，Prometheus <span style="color:rgb(255, 77, 77)">统一化</span>，Grafana <span style="color:rgb(255, 77, 77)">简单化</span>**
 
 在真实生产环境中，需要监控的数据源多种多样：**GitLab CI/CD**、**NVIDIA GPU 集群**、**数据库**、**消息队列**、**Web 服务**等。
 
-本文介绍如何在 Prometheus + Grafana 架构下，统一接入和管理多数据源监控。
+**关键问题**：是否需要为每个数据源配置一个 Grafana 数据源？
+
+**答案**：❌ 不需要！<span style="color:rgb(255, 77, 77)"><b>只需一个 Prometheus 数据源</b></span>，所有监控数据都通过它统一接入。
 
 ---
 
-## 🏗️ 整体架构
+## 🏗️ 为什么只需要一个 Prometheus 数据源？
+
+### 三层架构
 
 ```
-┌─────────────────────────────────────────────────────────────────┐
-│                    多数据源监控架构                              │
-├─────────────────────────────────────────────────────────────────┤
-│                                                                 │
-│  GitLab      NVIDIA GPU      MySQL      Nginx      自定义应用    │
-│    ↓            ↓             ↓          ↓           ↓          │
-│  GitLab     DCGM-Exporter  MySQL       Nginx      App Metrics   │
-│  Exporter   (NVIDIA)      Exporter    Exporter     Exporter    │
-│    ↓            ↓             ↓          ↓           ↓          │
-│  :8080       :9400          :9104      :9113       :8000        │
-│    └────────────┴────────────┴──────────┴───────────┘           │
-│                         ↓                                       │
-│              ┌─────────────────────┐                            │
-│              │    Prometheus       │                            │
-│              │  (统一抓取 + 存储)    │                            │
-│              └─────────────────────┘                            │
-│                         ↓                                       │
-│              ┌─────────────────────┐                            │
-│              │      Grafana        │                            │
-│              │  (统一展示 + 告警)    │                            │
-│              └─────────────────────┘                            │
-│                                                                 │
-└─────────────────────────────────────────────────────────────────┘
+┌─────────────────────────────────────────────────────────────┐
+│                    多数据源监控架构                          │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  【采集层】Exporter 多样化                                   │
+│  GitLab      Mac 系统      MySQL      Nginx      GPU        │
+│    ↓           ↓             ↓          ↓         ↓         │
+│  GitLab     Node         MySQL       Nginx     DCGM        │
+│  Exporter   Exporter     Exporter    Exporter  Exporter    │
+│    ↓           ↓             ↓          ↓         ↓         │
+│  :8080      :9100         :9104      :9113     :9400       │
+│    └───────────┴─────────────┴──────────┴─────────┘         │
+│                            ↓                                │
+│  【存储层】Prometheus 统一化                                 │
+│              ┌─────────────────────────┐                    │
+│              │    Prometheus           │                    │
+│              │  (唯一数据源/核心枢纽)    │                    │
+│              └─────────────────────────┘                    │
+│                            ↓                                │
+│  【展示层】Grafana 简单化                                    │
+│              ┌─────────────────────────┐                    │
+│              │    Grafana              │                    │
+│              │  (只连接 Prometheus)     │                    │
+│              └─────────────────────────┘                    │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
 ```
+
+### 各层级作用对比
+
+| 层级 | 组件 | 作用 | 数量 |
+|------|------|------|------|
+| **采集层** | Exporter | 采集不同数据源的指标 | 多个（每个数据源一个） |
+| **存储层** | Prometheus | 统一存储所有指标 | **1 个**（核心枢纽） |
+| **展示层** | Grafana | 统一展示和告警 | **1 个**（连接 Prometheus） |
 
 ### 核心逻辑
 
 ```
-不同数据源 → 部署对应 Exporter → Prometheus 配置抓取 → Grafana 导入仪表盘
+不同数据源 → 部署对应 Exporter → Prometheus 统一抓取 → Grafana 一个数据源展示
 ```
+
+---
+
+## ✅ 优势
+
+| 优势 | 说明 |
+|------|------|
+| **统一管理** | 所有指标在一个地方查询，无需切换数据源 |
+| **简化配置** | Grafana 只需配置一个 Prometheus 数据源 |
+| **跨数据源关联** | 可以在一个图表中对比不同系统（如 CPU vs GitLab 构建数） |
+| **易于扩展** | 添加新数据源只需加 Exporter，Grafana 无需改动 |
+| **降低复杂度** | 不需要管理多个数据源连接和权限 |
 
 ---
 
@@ -65,7 +94,6 @@
 | **Elasticsearch** | elasticsearch_exporter | 9114 | 2326 |
 | **Kafka** | kafka_exporter | 9308 | 7589 |
 | **RabbitMQ** | rabbitmq_exporter | 9419 | 10991 |
-| **Blackbox** | blackbox_exporter | 9115 | 5344 |
 | **Node Exporter** | node-exporter | 9100 | 1860 |
 
 ---
@@ -79,7 +107,7 @@
 version: '3.8'
 
 services:
-  # ============ Prometheus ============
+  # ============ Prometheus (统一存储) ============
   prometheus:
     image: prom/prometheus:latest
     container_name: prometheus
@@ -94,7 +122,7 @@ services:
       - '--web.enable-lifecycle'
     restart: unless-stopped
 
-  # ============ Grafana ============
+  # ============ Grafana (统一展示) ============
   grafana:
     image: grafana/grafana:latest
     container_name: grafana
@@ -106,12 +134,13 @@ services:
     environment:
       - GF_SECURITY_ADMIN_USER=admin
       - GF_SECURITY_ADMIN_PASSWORD=admin
-      - GF_INSTALL_PLUGINS=grafana-clock-panel,grafana-piechart-panel
     restart: unless-stopped
     depends_on:
       - prometheus
 
-  # ============ Node Exporter (本机监控) ============
+  # ============ 各种 Exporter (按需添加) ============
+  
+  # Mac/服务器监控
   node-exporter:
     image: prom/node-exporter:latest
     container_name: node-exporter
@@ -124,10 +153,9 @@ services:
     command:
       - '--path.procfs=/host/proc'
       - '--path.sysfs=/host/sys'
-      - '--collector.filesystem.mount-points-exclude=^/(sys|proc|dev|host|etc)($$|/)'
     restart: unless-stopped
 
-  # ============ GitLab Pipeline Exporter ============
+  # GitLab Pipeline
   gitlab-exporter:
     image: quay.io/qubecir/gitlab-ci-pipelines-exporter:latest
     container_name: gitlab-exporter
@@ -137,38 +165,17 @@ services:
       - ./gitlab-exporter-config.yml:/etc/gitlab-ci-pipelines-exporter/config.yml
     restart: unless-stopped
 
-  # ============ NVIDIA GPU Exporter (DCGM) ============
-  # 需要宿主机有 NVIDIA 驱动和 GPU
-  dcgm-exporter:
-    image: nvcr.io/nvidia/k8s/dcgm-exporter:latest
-    container_name: dcgm-exporter
-    ports:
-      - "9400:9400"
-    runtime: nvidia
-    cap_add:
-      - SYS_ADMIN
-    environment:
-      - DCGM_EXPORTER_LISTEN=:9400
-    restart: unless-stopped
-    deploy:
-      resources:
-        reservations:
-          devices:
-            - driver: nvidia
-              count: all
-              capabilities: [gpu]
-
-  # ============ MySQL Exporter ============
+  # MySQL
   mysql-exporter:
     image: prom/mysqld-exporter:latest
     container_name: mysql-exporter
     ports:
       - "9104:9104"
     environment:
-      - DATA_SOURCE_NAME=monitor:password@(mysql-host:3306)/
+      - DATA_SOURCE_NAME=user:password@(mysql-host:3306)/
     restart: unless-stopped
 
-  # ============ Redis Exporter ============
+  # Redis
   redis-exporter:
     image: oliver006/redis_exporter:latest
     container_name: redis-exporter
@@ -176,10 +183,9 @@ services:
       - "9121:9121"
     command:
       - '--redis.addr=redis-host:6379'
-      - '--redis.password=your-password'
     restart: unless-stopped
 
-  # ============ Nginx Exporter ============
+  # Nginx
   nginx-exporter:
     image: nginx/nginx-prometheus-exporter:latest
     container_name: nginx-exporter
@@ -206,67 +212,45 @@ global:
   external_labels:
     monitor: 'multi-source-monitor'
 
-# 告警规则
-rule_files:
-  - "alert_rules.yml"
-
 # 抓取配置
 scrape_configs:
   # Prometheus 自身
   - job_name: 'prometheus'
     static_configs:
       - targets: ['localhost:9090']
-    labels:
-      category: 'monitoring'
 
   # Node Exporter (服务器指标)
   - job_name: 'node-exporter'
     static_configs:
       - targets: ['host.docker.internal:9100']
-    labels:
-      category: 'infrastructure'
 
   # GitLab Pipeline
   - job_name: 'gitlab-exporter'
     static_configs:
       - targets: ['gitlab-exporter:8080']
     scrape_interval: 30s
-    labels:
-      category: 'cicd'
-
-  # NVIDIA GPU
-  - job_name: 'dcgm-exporter'
-    static_configs:
-      - targets: ['dcgm-exporter:9400']
-    scrape_interval: 15s
-    labels:
-      category: 'gpu'
 
   # MySQL
   - job_name: 'mysql-exporter'
     static_configs:
       - targets: ['mysql-exporter:9104']
-    labels:
-      category: 'database'
 
   # Redis
   - job_name: 'redis-exporter'
     static_configs:
       - targets: ['redis-exporter:9121']
-    labels:
-      category: 'database'
 
   # Nginx
   - job_name: 'nginx-exporter'
     static_configs:
       - targets: ['nginx-exporter:9113']
-    labels:
-      category: 'web'
 ```
+
+**关键点**：每个数据源一个 `job_name`，通过 `job` 标签区分。
 
 ---
 
-## 📊 Grafana 仪表盘配置
+## 📊 Grafana 配置
 
 ### 自动配置数据源
 
@@ -279,14 +263,16 @@ datasources:
     type: prometheus
     access: proxy
     url: http://prometheus:9090
-    isDefault: true
+    isDefault: true      # ← 设为默认，导入仪表盘时自动选中
     editable: true
 ```
 
+**效果**：Grafana 启动时自动创建 Prometheus 数据源，无需手动配置！
+
 ### 推荐仪表盘模板
 
-| 监控对象 | 仪表盘 ID | 导入命令 |
-|----------|-----------|----------|
+| 监控对象 | 仪表盘 ID | 说明 |
+|----------|-----------|------|
 | **Node Exporter** | 1860 | 最全面的服务器监控 |
 | **NVIDIA GPU** | 12239 | DCGM Exporter 官方 |
 | **MySQL** | 9614 | 官方推荐 |
@@ -297,95 +283,70 @@ datasources:
 
 ### 导入方法
 
-**方法 A：在线导入（推荐）**
 1. Grafana → Dashboards → Import
-2. 输入仪表盘 ID（如 `12239`）
-3. 选择 Prometheus 数据源
+2. 输入仪表盘 ID（如 `1860`）
+3. **Prometheus 已自动选中**（因为是默认数据源）
 4. 点击 Import
-
-**方法 B：离线导入**
-1. 从 https://grafana.com/grafana/dashboards/ 下载 JSON
-2. Grafana → Dashboards → Import → Upload JSON file
 
 ---
 
-## 🎯 专项配置：NVIDIA GPU 监控
+## 🔍 如何在 Grafana 中区分不同数据源？
 
-### DCGM Exporter 配置
+### 通过 job 标签筛选
 
-```yaml
-# dcgm-exporter-config.yaml
-version: 0.1.0
-no-hostname: false
-collectors:
-  - fieldID: 100
-    fieldName: DCGM_FI_DEV_GPU_TEMP
-    fieldHelp: Temperature Help info
-  - fieldID: 155
-    fieldName: DCGM_FI_DEV_POWER_USAGE
-    fieldHelp: Power Usage Help info
-  - fieldID: 203
-    fieldName: DCGM_FI_DEV_GPU_UTIL
-    fieldHelp: GPU Utilization Help info
-  - fieldID: 204
-    fieldName: DCGM_FI_DEV_MEM_COPY_UTIL
-    fieldHelp: Memory Copy Utilization Help info
-  - fieldID: 205
-    fieldName: DCGM_FI_DEV_ENC_UTIL
-    fieldHelp: Encoder Utilization Help info
-  - fieldID: 206
-    fieldName: DCGM_FI_DEV_DEC_UTIL
-    fieldHelp: Decoder Utilization Help info
+每个 Exporter 在 Prometheus 中对应一个 `job`，通过标签筛选：
+
+```promql
+# 只查 Mac 系统指标
+{job="node-exporter"}
+
+# 只查 GitLab 指标
+{job="gitlab-exporter"}
+
+# 只查 MySQL 指标
+{job="mysql-exporter"}
+
+# 查所有目标状态
+up
 ```
 
-### 关键 GPU 指标
+### 通过指标前缀区分
 
-| 指标名 | 说明 | 告警阈值 |
-|--------|------|----------|
-| `DCGM_FI_DEV_GPU_TEMP` | GPU 温度 | > 85°C |
-| `DCGM_FI_DEV_POWER_USAGE` | 功耗 (W) | > 额定功率 90% |
-| `DCGM_FI_DEV_GPU_UTIL` | GPU 利用率 | - |
-| `DCGM_FI_DEV_MEM_COPY_UTIL` | 显存拷贝利用率 | - |
-| `DCGM_FI_DEV_FB_FREE` | 显存剩余 | < 10% |
-| `DCGM_FI_DEV_SM_CLOCK` | SM 时钟频率 | - |
-| `DCGM_FI_DEV_RETIRED_DBE` | 双位 ECC 错误 | > 0 |
+| 数据源 | 指标前缀 | 示例 |
+|--------|----------|------|
+| Node Exporter | `node_` | `node_cpu_seconds_total` |
+| GitLab | `gitlab_ci_` | `gitlab_ci_pipeline_status` |
+| MySQL | `mysql_` | `mysql_global_status_connections` |
+| Redis | `redis_` | `redis_connected_clients` |
+| Nginx | `nginx_` | `nginx_http_requests_total` |
+| GPU (DCGM) | `DCGM_` | `DCGM_FI_DEV_GPU_TEMP` |
 
-### GPU 告警规则
+---
 
-```yaml
-# alert_rules.yml
-groups:
-  - name: gpu_alerts
-    rules:
-      # GPU 温度过高
-      - alert: GPUTemperatureHigh
-        expr: DCGM_FI_DEV_GPU_TEMP > 85
-        for: 5m
-        labels:
-          severity: critical
-        annotations:
-          summary: "GPU {{ $labels.gpu }} 温度过高"
-          description: "GPU {{ $labels.gpu }} 温度 {{ $value }}°C 超过 85°C"
+## 📈 仪表盘组织方式
 
-      # GPU 显存不足
-      - alert: GPUMemoryLow
-        expr: DCGM_FI_DEV_FB_FREE / DCGM_FI_DEV_FB_TOTAL < 0.1
-        for: 10m
-        labels:
-          severity: warning
-        annotations:
-          summary: "GPU {{ $labels.gpu }} 显存不足"
-          description: "GPU {{ $labels.gpu }} 剩余显存 {{ $value | humanizePercentage }}"
+| 方式 | 说明 | 适用场景 |
+|------|------|----------|
+| **不同仪表盘** | 每个数据源一个独立仪表盘 | 推荐，清晰分离 |
+| **同一仪表盘不同 Panel** | 一个仪表盘里多个面板展示不同数据源 | 需要对比分析 |
+| **文件夹分类** | 按业务/环境分组（如 Prod/Staging） | 多环境管理 |
 
-      # GPU ECC 错误
-      - alert: GPUECCError
-        expr: DCGM_FI_DEV_RETIRED_DBE > 0
-        for: 1m
-        labels:
-          severity: critical
-        annotations:
-          summary: "GPU {{ $labels.gpu }} ECC 错误"
-          description: "GPU {{ $labels.gpu }} 检测到 {{ $value }} 个双位 ECC 错误"
+### 推荐结构
+
+```
+Grafana Dashboards/
+├── 📁 Infrastructure/
+│   ├── Node Exporter Full (Mac/服务器)
+│   └── Docker Container
+├── 📁 Database/
+│   ├── MySQL Overview
+│   └── Redis Dashboard
+├── 📁 CI/CD/
+│   └── GitLab Pipeline
+├── 📁 Web/
+│   └── Nginx Dashboard
+└── 📁 GPU/
+    └── NVIDIA DCGM
 ```
 
 ---
@@ -398,7 +359,7 @@ groups:
 # gitlab-exporter-config.yml
 gitlab:
   url: https://gitlab.com
-  token: glpat-xxxxxxxxxxxxx
+  token: glpat-xxxxxxxxxxxxx  # 需要 read_api 权限
 
 projects:
   - name: group/project-1
@@ -407,7 +368,7 @@ projects:
 pull:
   pipelines:
     enabled: true
-    max_age_seconds: 86400
+    max_age_seconds: 86400  # 只拉取 24 小时内的数据
 ```
 
 ### 关键指标
@@ -434,19 +395,71 @@ sum(increase(gitlab_ci_pipeline_run_count{status="failed"}[1h]))
 
 ---
 
+## 🎯 专项配置：NVIDIA GPU 监控
+
+### DCGM Exporter 配置
+
+```yaml
+# docker-compose.yml 片段
+dcgm-exporter:
+  image: nvcr.io/nvidia/k8s/dcgm-exporter:latest
+  container_name: dcgm-exporter
+  ports:
+    - "9400:9400"
+  runtime: nvidia
+  cap_add:
+    - SYS_ADMIN
+  deploy:
+    resources:
+      reservations:
+        devices:
+          - driver: nvidia
+            count: all
+            capabilities: [gpu]
+```
+
+### 关键 GPU 指标
+
+| 指标名 | 说明 | 告警阈值 |
+|--------|------|----------|
+| `DCGM_FI_DEV_GPU_TEMP` | GPU 温度 | > 85°C |
+| `DCGM_FI_DEV_POWER_USAGE` | 功耗 (W) | > 额定功率 90% |
+| `DCGM_FI_DEV_GPU_UTIL` | GPU 利用率 | - |
+| `DCGM_FI_DEV_FB_FREE` | 显存剩余 | < 10% |
+| `DCGM_FI_DEV_RETIRED_DBE` | 双位 ECC 错误 | > 0 |
+
+### GPU 告警规则
+
+```yaml
+# alert_rules.yml
+groups:
+  - name: gpu_alerts
+    rules:
+      - alert: GPUTemperatureHigh
+        expr: DCGM_FI_DEV_GPU_TEMP > 85
+        for: 5m
+        labels:
+          severity: critical
+        annotations:
+          summary: "GPU {{ $labels.gpu }} 温度过高"
+          description: "温度 {{ $value }}°C 超过 85°C"
+```
+
+---
+
 ## ✅ 快速验证
 
 ```bash
 # 1. 启动所有服务
-docker-compose up -d
+docker compose up -d
 
 # 2. 查看服务状态
-docker-compose ps
+docker compose ps
 
 # 3. 检查 Exporter 是否正常
 curl http://localhost:9100/metrics    # Node Exporter
-curl http://localhost:9400/metrics    # NVIDIA GPU
 curl http://localhost:8081/metrics    # GitLab Exporter
+curl http://localhost:9104/metrics    # MySQL Exporter
 
 # 4. 检查 Prometheus 抓取目标
 # 浏览器访问：http://localhost:9090/targets
@@ -455,12 +468,12 @@ curl http://localhost:8081/metrics    # GitLab Exporter
 # 5. 测试 PromQL 查询
 # 浏览器访问：http://localhost:9090/graph
 # 输入：up                    → 所有 job 状态
-# 输入：DCGM_FI_DEV_GPU_TEMP  → GPU 温度
-# 输入：node_cpu_seconds_total → CPU 使用率
+# 输入：{job="node-exporter"} → 只查 Node Exporter 指标
 
 # 6. 访问 Grafana
 # 浏览器访问：http://localhost:3000
 # 账号/密码：admin / admin
+# 导入仪表盘 ID: 1860 (Node Exporter Full)
 ```
 
 ---
@@ -475,7 +488,7 @@ curl http://localhost:8081/metrics    # GitLab Exporter
 | **标签管理** | 给不同 job 加标签便于筛选（如 `category`, `env`） |
 | **资源消耗** | Exporter 越多，Prometheus 内存占用越高 |
 | **数据保留** | 默认 15 天，需要长期存储用 Thanos |
-| **NVIDIA GPU** | 需要宿主机安装 NVIDIA 驱动，Docker 需要 nvidia-runtime |
+| **NVIDIA GPU** | 需要宿主机安装 NVIDIA 驱动 |
 | **Mac 监控** | Node Exporter 在 Mac 上部分指标不可用 |
 
 ---
@@ -486,10 +499,10 @@ curl http://localhost:8081/metrics    # GitLab Exporter
 
 ```bash
 # 1. 检查容器是否运行
-docker-compose ps
+docker compose ps
 
 # 2. 查看容器日志
-docker-compose logs <exporter-name>
+docker compose logs <exporter-name>
 
 # 3. 测试网络连通性
 docker exec prometheus wget -q http://<exporter>:<port>/metrics
@@ -508,9 +521,9 @@ docker exec prometheus cat /etc/prometheus/prometheus.yml
 # Grafana 右上角时间范围是否正确
 
 # 3. 确认标签过滤
-# 是否使用了错误的标签过滤条件
+# 是否使用了错误的 job 标签
 
-# 4. 使用 explore 模式
+# 4. 使用 Explore 模式
 # Grafana → Explore → 输入指标名测试
 ```
 
@@ -549,6 +562,19 @@ docker exec prometheus cat /etc/prometheus/prometheus.yml
 - [[Prometheus & Grafana 监控体系指南]]
 - [[时序数据库 (TSDB) 完全指南]]
 - [[Kubernetes 监控体系]]
+
+---
+
+## 📝 总结
+
+| 问题 | 答案 |
+|------|------|
+| **需要多个 Grafana 数据源吗？** | ❌ 不需要，一个 Prometheus 就够了 |
+| **如何区分不同监控对象？** | 通过 `job` 标签和指标前缀 |
+| **添加新数据源要改 Grafana 吗？** | ❌ 不用，只需加 Exporter + 改 Prometheus 配置 |
+| **Grafana 仪表盘怎么组织？** | 按数据源/业务创建不同仪表盘 |
+
+> **核心思想**：Exporter 多样化，Prometheus 统一化，Grafana 简单化
 
 ---
 
