@@ -1,3 +1,7 @@
+---
+share_link: https://share.note.sx/umbvnzgp#3PMOHZroTJa6WxF8s2+wzslWctYCJJAuJBS+53JitvQ
+share_updated: 2026-03-21T16:18:24+08:00
+---
 # 李宏毅：Self-Attention 与 Transformer 详解
 
 > 视频笔记整理（完整版）| 深度学习架构核心
