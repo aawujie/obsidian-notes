@@ -84,17 +84,17 @@ JavaScript  █                               1KB  (0.1%)
 
 ### 技术选型
 
-| 层级 | 技术 | 说明 |
-|------|------|------|
-| **后端框架** | AdonisJS | Node.js 全栈框架 |
-| **前端框架** | Vue.js + Inertia.js | 单页应用 |
-| **样式** | TailwindCSS | 原子化 CSS |
-| **构建工具** | Vite | 快速构建 |
-| **容器化** | Docker + Docker Compose | 服务编排 |
-| **数据库** | MySQL | 持久化存储 |
-| **缓存** | Redis | 会话和缓存 |
-| **AI 推理** | Ollama | 本地 LLM 运行时 |
-| **向量数据库** | Qdrant | RAG 语义搜索 |
+| 层级        | 技术                      | 说明           |
+| --------- | ----------------------- | ------------ |
+| **后端框架**  | AdonisJS                | Node.js 全栈框架 |
+| **前端框架**  | Vue.js + Inertia.js     | 单页应用         |
+| **样式**    | TailwindCSS             | 原子化 CSS      |
+| **构建工具**  | Vite                    | 快速构建         |
+| **容器化**   | Docker + Docker Compose | 服务编排         |
+| **数据库**   | MySQL                   | 持久化存储        |
+| **缓存**    | Redis                   | 会话和缓存        |
+| **AI 推理** | Ollama                  | 本地 LLM 运行时   |
+| **向量数据库** | Qdrant                  | RAG 语义搜索     |
 
 ---
 
@@ -138,13 +138,13 @@ project-nomad/
 
 ### 推荐配置（运行 AI）
 
-| 组件 | 要求 |
-|------|------|
-| **处理器** | AMD Ryzen 7 / Intel Core i7 或更高 |
-| **内存** | 32 GB |
-| **显卡** | NVIDIA RTX 3060 或 AMD 同等级（显存越大可运行越大模型） |
-| **存储** | 250 GB SSD |
-| **操作系统** | Debian-based（推荐 Ubuntu） |
+| 组件       | 要求                                     |
+| -------- | -------------------------------------- |
+| **处理器**  | AMD Ryzen 7 / Intel Core i7 或更高        |
+| **内存**   | 32 GB                                  |
+| **显卡**   | NVIDIA RTX 3060 或 AMD 同等级（显存越大可运行越大模型） |
+| **存储**   | 250 GB SSD                             |
+| **操作系统** | Debian-based（推荐 Ubuntu）                |
 
 ---
 
@@ -283,7 +283,40 @@ http://DEVICE_IP:8080
 
 ## 十一、技术亮点
 
-### 1. 完全容器化
+### 1. AI 模型支持
+
+Project N.O.M.A.D 使用 **Ollama** 作为 AI 推理引擎，支持 Ollama 生态的所有模型。
+
+**官方说明**：
+- AI 模型占用空间：**10-40GB**（取决于模型大小）
+- GPU 加速效果：CPU 10-15 tokens/s → GPU 100+ tokens/s（提升 10-20x）
+
+**⚠️ 项目未推荐具体模型**，用户需自行选择。根据显存大小，可参考：
+
+| 显存 | 推荐模型 | 参数量 | 适用场景 |
+|------|----------|--------|----------|
+| 4-6 GB | Phi-3 Mini, Gemma 2B | 2-3B | 简单对话 |
+| 8-12 GB | Llama 3.1 8B, Mistral 7B, Qwen 2.5 7B | 7-8B | 通用任务 ✅ |
+| 16-24 GB | Llama 3.1 13B, Qwen 2.5 14B | 13-14B | 复杂任务 |
+| 40+ GB | Llama 3.1 70B, Qwen 2.5 72B | 70B+ | 专业推理 |
+
+**使用方式**：
+```bash
+# 通过 Ollama CLI 下载模型（在服务器终端执行）
+ollama pull llama3.1:8b
+ollama pull mistral:7b
+ollama pull qwen2.5:7b
+```
+
+**特点**：
+- ✅ 完全离线运行，数据不离开本地
+- ✅ GPU 加速（NVIDIA CUDA / AMD ROCm）
+- ✅ RAG 语义搜索（Qdrant 向量数据库）
+- ✅ 支持文档上传和知识库构建
+
+---
+
+### 2. 完全容器化
 
 ```yaml
 # 所有服务通过 Docker Compose 编排
