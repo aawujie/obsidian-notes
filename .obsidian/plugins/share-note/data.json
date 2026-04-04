@@ -10,9 +10,10 @@
   "removeYaml": true,
   "removeBacklinksFooter": true,
   "removeElements": "",
-  "expiry": "",
+  "expiry": "7",
   "clipboard": true,
   "shareUnencrypted": false,
   "authRedirect": null,
-  "debug": 0
+  "debug": 0,
+  "shares": {}
 }
