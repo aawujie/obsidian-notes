@@ -1,6 +1,9 @@
 ---
-tags: [线性代数，术语，词源，翻译]
+tags:
+  - 线性代数，术语，词源，翻译
 created: 2026-04-08
+share_link: https://share.note.sx/1stczxjw#hmI9MLN/uAgUOpdfTLlthdDK32iS5O3aSpSzKatijEI
+share_updated: 2026-04-08T22:58:51+08:00
 ---
 # Eigenvalue 与 Singular Value
 
@@ -717,6 +720,7 @@ $$A = U\Sigma V^T = \sum_{i=1}^r \sigma_i u_i v_i^T$$
 - 都可以写成**秩 -1 矩阵的和**（谱分解/SVD）
 
 **区别**：
+
 | 对比项 | 特征值 | 奇异值 |
 |--------|--------|--------|
 | **找什么** | "方向不变的向量" | "拉伸最大的方向" |
