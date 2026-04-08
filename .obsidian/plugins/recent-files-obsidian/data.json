@@ -1,6 +1,26 @@
 {
   "recentFiles": [
     {
+      "basename": "Eigenvalue与SingularValue词源辨析",
+      "path": "2.Math/01-线性代数/Eigenvalue与SingularValue词源辨析.md"
+    },
+    {
+      "basename": "Eigenvalue与SingularValue词源辨析 1",
+      "path": "2.Math/01-线性代数/Eigenvalue与SingularValue词源辨析 1.md"
+    },
+    {
+      "basename": "彻底搞懂奇异值分解 SVD V1",
+      "path": "2.Math/01-线性代数/彻底搞懂奇异值分解 SVD V1.md"
+    },
+    {
+      "basename": "特征值与奇异值对比",
+      "path": "2.Math/特征值与奇异值对比.md"
+    },
+    {
+      "basename": "傅里叶变换——从坐标系到频谱的完整推导",
+      "path": "2.Math/傅里叶变换——从坐标系到频谱的完整推导.md"
+    },
+    {
       "basename": "矩阵迹 tr(A)",
       "path": "2.Math/矩阵迹 tr(A).md"
     },
@@ -23,10 +43,6 @@
     {
       "basename": "特征向量与特征值",
       "path": "2.Math/01-线性代数/特征向量与特征值.md"
-    },
-    {
-      "basename": "彻底搞懂奇异值分解 SVD V1",
-      "path": "2.Math/01-线性代数/彻底搞懂奇异值分解 SVD V1.md"
     },
     {
       "basename": "线性代数在深度学习中的应用",
