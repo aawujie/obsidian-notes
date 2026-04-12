@@ -1,6 +1,18 @@
 {
   "recentFiles": [
     {
+      "basename": "YaRN - RoPE 上下文扩展",
+      "path": "3.Agent/YaRN - RoPE 上下文扩展.md"
+    },
+    {
+      "basename": "混合精度训练 Mixed Precision Training",
+      "path": "3.Agent/混合精度训练 Mixed Precision Training.md"
+    },
+    {
+      "basename": "Logits 详解",
+      "path": "2.Math/05-机器学习数学/Logits 详解.md"
+    },
+    {
       "basename": "PCA 主成分分析",
       "path": "2.Math/01-线性代数/PCA 主成分分析.md"
     },
