@@ -5,6 +5,14 @@
       "path": "3.Agent/YaRN - RoPE 上下文扩展.md"
     },
     {
+      "basename": "temperature_softmax",
+      "path": "3.Agent/imgs/temperature_softmax.png"
+    },
+    {
+      "basename": "深度学习需要哪些数学",
+      "path": "2.Math/深度学习需要哪些数学.md"
+    },
+    {
       "basename": "混合精度训练 Mixed Precision Training",
       "path": "3.Agent/混合精度训练 Mixed Precision Training.md"
     },

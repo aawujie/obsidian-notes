@@ -49,7 +49,62 @@ temperature = (L_train / L_current)^(1/α)
 - α: 超参数（通常 1 或 2）
 ```
 
-### 直观理解
+### 温度是什么？直观理解
+
+温度控制注意力分布的**"平滑程度"**：
+
+| 温度 | 效果 | 类比 |
+|------|------|------|
+| **temperature = 1** | 标准 softmax | 正常音量 |
+| **temperature > 1** | 分布更平滑 | 音量调小，差异变小 |
+| **temperature < 1** | 分布更尖锐 | 音量调大，差异变大 |
+
+#### Code Demo
+
+```python
+import torch
+
+scores = torch.tensor([1.0, 2.0, 3.0])
+
+# temperature = 1 (standard)
+softmax_1 = torch.softmax(scores / 1, dim=0)
+# → [0.09, 0.24, 0.67]  obvious difference
+
+# temperature = 2 (smoother)
+softmax_2 = torch.softmax(scores / 2, dim=0)  
+# → [0.18, 0.32, 0.50]  smaller difference
+
+# temperature = 0.5 (sharper)
+softmax_05 = torch.softmax(scores / 0.5, dim=0)
+# → [0.02, 0.12, 0.86]  larger difference
+```
+
+![Temperature 对 Softmax 分布的影响](temperature_softmax.png)
+
+*上图直观展示：temperature 越大，概率分布越平滑（差距越小）；temperature 越小，分布越尖锐（差距越大）*
+
+#### 为什么 YaRN 需要增大温度？
+
+**问题：序列变长 → 注意力变"尖锐"**
+
+```
+短序列（训练时）：
+位置 1 和位置 10 的注意力：[0.1, 0.2] → softmax → [0.45, 0.55]  较平滑
+
+长序列（推理时）：
+位置 1 和位置 100 的注意力：[0.01, 0.1] → softmax → [0.02, 0.98]  太尖锐！
+```
+
+**尖锐的问题**：模型只关注极少数位置，忽略其他重要信息。
+
+**解决**：增大温度 → 强制平滑
+
+```python
+长序列 + temperature=2：
+[0.01, 0.1] / 2 = [0.005, 0.05] → softmax → [0.12, 0.88]  更平滑！
+```
+
+### 场景对比
 
 | 场景 | 温度调整 | 效果 |
 |------|----------|------|
@@ -96,13 +151,13 @@ temperature = (L_train / L_current)^(1/α)
 
 ### 现代大模型的选择
 
-| 模型 | 基础位置编码 | 扩展方案 | 上下文长度 |
-|------|-------------|----------|-----------|
-| LLaMA-1 | RoPE | 无 | 2048 |
-| LLaMA-2 | RoPE | 部分使用 YaRN | 4096 |
-| Mistral-7B | RoPE | Sliding Window + YaRN | 8192/32K |
-| Yi-34B | RoPE | YaRN | 200K |
-| GPT-4 | 未知 | 类似技术 | 128K |
+| 模型         | 基础位置编码 | 扩展方案                  | 上下文长度    |
+| ---------- | ------ | --------------------- | -------- |
+| LLaMA-1    | RoPE   | 无                     | 2048     |
+| LLaMA-2    | RoPE   | 部分使用 YaRN             | 4096     |
+| Mistral-7B | RoPE   | Sliding Window + YaRN | 8192/32K |
+| Yi-34B     | RoPE   | YaRN                  | 200K     |
+| GPT-4      | 未知     | 类似技术                  | 128K     |
 
 ### 代码示例（概念）
 
@@ -162,7 +217,7 @@ R(θ, m) = [[cos(mθ), -sin(mθ)],
 
 ### YaRN 的温度缩放
 
-关键洞察：**长序列的注意力分布应该与短序列相似**
+关键洞察：<span style="color:rgb(255, 77, 77)"><b>长序列的注意力分布应该与短序列相似</b></span>
 
 ```
 原始注意力: A_ij = softmax(q_i · k_j / √d)
@@ -189,10 +244,10 @@ YaRN 注意力: A_ij = softmax(q_i · k_j / (temperature × √d))
 α = 2: 平方根温度缩放（更保守）
 ```
 
-| α 值 | 适用场景 |
-|------|----------|
-| 1.0 | 2-4 倍外推 |
-| 2.0 | 4-8 倍外推 |
+| α 值 | 适用场景     |
+| --- | -------- |
+| 1.0 | 2-4 倍外推  |
+| 2.0 | 4-8 倍外推  |
 | 4.0 | 8-16 倍外推 |
 
 ### 实际调优建议
@@ -205,6 +260,8 @@ YaRN 注意力: A_ij = softmax(q_i · k_j / (temperature × √d))
 ---
 
 ## 一句话总结
+
+> **温度 = "注意力分散器"**：序列太长 → 注意力太集中 → 增大温度 → 强制分散注意力 → 恢复训练时的分布
 
 > **RoPE 编码位置信息，YaRN 通过温度缩放让模型"感觉"序列没那么长，从而实现免训练的长上下文扩展。**
 
