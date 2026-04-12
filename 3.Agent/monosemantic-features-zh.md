@@ -100,6 +100,8 @@ Figure 1 shows examples of features we found. Each feature is visualized by show
 | 特征 4 | 专有名词 | 人名和地名 |
 | 特征 5 | 数字 | 数量数值 |
 
+![Figure 1](images/figure_001.png)
+
 **Figure 1:** Examples of monosemantic features found by the SAE. Each row shows a different feature, with the tokens and contexts that most strongly activate it.
 
 **图 1：** SAE 发现的单语义特征示例。每一行显示一个不同的特征，以及最能激活它的词元和上下文。
@@ -649,7 +651,7 @@ Logit 权重有第二个模式，如前所述：
 
 我们认为特征分裂解释了这种现象：模型没有学习一个在字母 P 上触发的单一特征，这些特征在 token " P"上触发，在它作为第一个 token 出现的单词中，例如 [ P][attern]。相反，它学习了许多在不同上下文中在 P 上触发的特征，在这种情况下，我们通过手动检查而不是 cosine similarity 发现了细化的 P 特征。对神经元激活和输出 logits 有相应不同的影响（见下文）。在足够粗略的级别上，字典学习无法区分这些，但当我们允许它使用更多学习稀疏特征时，特征分裂并细化为在不同上下文中触发的各种 P 特征的动物园。
 
-![Figure 46](images/figure_46.png)
+![Figure 46](images/figure_046.png)
 
 ["Bug" 2: 单个上下文的多个特征](index.html#features-seem-like-bugs-2)
 我们还观察到了相反的情况，其中多个特征似乎覆盖了大致相同的概念或上下文。例如，在 [A/1](vis/a1.html) 中有三个特征在（子集）base64 字符串上触发，并预测合理的 base64 token，如 zf、mF 和 Gp。其中一个特征在 earlier [详细讨论过](index.html#feature-base64)，我们展示了它在 base64 字符串上触发。但我们也观察到它并非在所有 base64 字符串上触发——为什么？其他两个特征在做什么？为什么有三个？
