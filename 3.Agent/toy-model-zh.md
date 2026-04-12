@@ -30,7 +30,7 @@ Sept 14, 2022
 
 考虑一个 toy model，我们训练一个五特征的嵌入，这些特征具有不同的重要性[^1]，嵌入到二维空间中，之后添加 ReLU 进行过滤，并改变特征的稀疏性。对于密集特征，模型学习表示最重要的两个特征的正交基（类似于主成分分析 PCA 可能给出的结果），而其他三个特征未被表示。但如果我们使特征稀疏，情况就会改变：
 
-![Figure 13](images_toy/figure_013.png)
+![Figure 13](images_toy/figure\_013.png)
 
 此图及其他一些图可以使用我们 [Github repo](https://github.com/anthropics/toy-models-of-superposition) 中的 [toy model framework Colab notebook](https://colab.research.google.com/github/anthropics/toy-models-of-superposition/blob/main/toy_models.ipynb) 复现。
 
@@ -126,7 +126,7 @@ Superposition 在之前的工作中已被假设，在某些情况下，假设类
 
 但许多神经网络层并非如此。通常，架构的某些东西使基方向变得特殊，例如应用 activation function（激活函数）。这"打破了对称性"，使这些方向变得特殊，并可能鼓励特征与基维度对齐。我们称此为 **privileged basis**，并称基方向为"neurons"（神经元）。通常，这些神经元对应于可解释的特征。
 
-![Figure 14](images_toy/figure_014.png)
+![Figure 14](images_toy/figure\_014.png)
 
 [^1]: 其中"重要性"是均方误差损失上的标量乘数。
 从这个角度来看，只有当一个神经元处于特权基（privileged basis）中时，询问它是否可解释才有意义。实际上，我们通常只为处于特权基中的基方向保留"神经元"这个词。（参见更长的讨论 [这里](https://transformer-circuits.pub/2022/solu/index.html#section-3-2)。）
@@ -137,7 +137,7 @@ Superposition 在之前的工作中已被假设，在某些情况下，假设类
 
 即使存在特权基，神经元也常常是"多语义的"（polysemantic），对几个不相关的特征都有响应。对此的一种解释是 [超位置假说](https://distill.pub/2020/circuits/zoom-in/#claim-2-superposition)。粗略地说，超位置的思想是神经网络"想要表示的特征比它们拥有的神经元更多"，因此它们利用高维空间的性质来模拟一个拥有更多神经元的模型。
 
-![Figure 15](images_toy/figure_015.png)
+![Figure 15](images_toy/figure\_015.png)
 
 数学中的几个结果表明这样的事情可能是合理的：
 
@@ -146,11 +146,11 @@ Superposition 在之前的工作中已被假设，在某些情况下，假设类
 
 具体来说，在超位置假说中，特征被表示为神经元输出向量空间中的几乎正交方向。由于特征只是几乎正交的，一个特征的激活看起来像其他特征轻微激活。容忍这种"噪声"或"干扰"是有代价的。但对于具有高度稀疏特征的神经网络，这种代价可能被能够表示更多特征的好处所抵消！（关键是，稀疏性大大降低了成本，因为稀疏特征很少激活从而相互干扰，而非线性激活函数创造了过滤少量噪声的机会。）
 
-![Figure 16](images_toy/figure_016.png)
+![Figure 16](images_toy/figure\_016.png)
 
 一种思考方式是，一个小型神经网络可能能够噪声性地"模拟"一个稀疏的更大模型：
 
-![Figure 17](images_toy/figure_017.png)
+![Figure 17](images_toy/figure\_017.png)
 
 虽然我们是针对神经元来描述超位置的，但它也可能发生在具有非特权基的表示中，例如词嵌入（word embedding）。超位置仅仅意味着特征比维度更多。
 
@@ -159,7 +159,7 @@ Superposition 在之前的工作中已被假设，在某些情况下，假设类
 本节中的思想可以根据神经网络表示可能具有的四个渐进更严格的属性来思考。
 
 - 可分解性（Decomposability）：神经网络激活如果可分解，就可以分解为特征，其含义不依赖于其他特征的值。（这个属性最终是最重要的——参见分解在击败维度灾难中的作用。）
-- 线性（Linearity）：特征对应于方向。每个特征 f_i 有一个对应的表示方向 W\_i。多个特征 f_1, f_2… 以值 x_{f\_1}, x_{f\_2}… 激活的表示为 x_{f\_1}W_{f\_1} + x_{f\_2}W_{f\_2}....
+- 线性（Linearity）：特征对应于方向。每个特征 f_i 有一个对应的表示方向 W\_i。多个特征 f\_1, f\_2… 以值 x_{f\_1}, x_{f\_2}… 激活的表示为 x_{f\_1}W_{f\_1} + x_{f\_2}W_{f\_2}....
 - 超位置与非超位置（Superposition vs Non-Superposition）：如果 W^TW 不可逆，则线性表示表现出超位置。如果 W^TW 可逆，则不表现出超位置。
 - 基对齐（Basis-Aligned）：如果所有 W\_i 都是 one-hot 基向量，则表示是基对齐的。如果所有 W\_i 都是稀疏的，则表示是部分基对齐的。这需要一个特权基。
 
@@ -175,7 +175,7 @@ Superposition 在之前的工作中已被假设，在某些情况下，假设类
 
 我们的目标是探索神经网络是否可以将高维向量 x \in R^n 投影到更低维的向量 h\in R^m 中，然后恢复它。这个实验设置也可以看作是一个自编码器（autoencoder）在重构 x。
 
-![Figure 18](images_toy/figure_018.png)
+![Figure 18](images_toy/figure\_018.png)
 
 #### [特征向量 (x)](index.html#demonstrating-setup-x)
 
@@ -223,7 +223,7 @@ x' ~=~\text{ReLU}(W^TWx + b)
 
 主要问题是如何可视化结果。最简单的方法是可视化 W^TW（一个特征×特征矩阵）和 b（一个特征长度向量）。注意，特征从最重要到最不重要排列，所以结果有相当好的结构。这是一个这种可视化可能看起来的例子，对于一个小型模型（n=20; m=5），它以"预期的线性模型式"行为，只表示与它拥有的维度一样多的特征：
 
-![Figure 19](images_toy/figure_019.png)
+![Figure 19](images_toy/figure\_019.png)
 
 但我们真正关心的是这个假设的超位置现象——模型是否通过非正交存储来表示"额外特征"？有没有办法更明确地获取它？嗯，一个问题就是模型学会表示多少个特征。对于任何特征，无论它是否被表示，都由 ||W\_i|| 决定，即其嵌入向量的范数。
 
@@ -231,17 +231,17 @@ x' ~=~\text{ReLU}(W^TWx + b)
 
 我们可以用这种方式可视化我们之前看过的模型：
 
-![Figure 20](images_toy/figure_020.png)
+![Figure 20](images_toy/figure\_020.png)
 
 现在我们有了可视化模型的方法，我们可以开始实际做实验了。我们将首先考虑只有几个特征的模型（n=20; m=5; I_i=0.7^i）。这将使我们很容易直观地看到发生了什么。我们考虑一个线性模型，以及在具有不同特征稀疏度级别的数据上训练的几个 ReLU 输出模型：
 
-![Figure 21](images_toy/figure_021.png)
+![Figure 21](images_toy/figure\_021.png)
 
 正如我们的标准直觉所预期的那样，线性模型总是学习最重要的前 m 个特征，类似于学习前几个主成分。ReLU 输出模型在密集特征上表现相同（1-S=1.0），但随着稀疏度增加，我们看到超位置出现。模型通过让它们彼此不正交来表示更多特征。它从较不重要的特征开始，逐渐影响最重要的特征。最初这涉及将它们排列成对跖对（antipodal pairs），其中一个特征的表示向量正好是另一个的负值，但我们观察到随着它表示更多特征，它逐渐过渡到其他几何结构。我们将在后面的 [超位置的几何](index.html#geometry) 部分进一步讨论特征几何。
 
 对于具有更多特征和隐藏维度的模型，结果在性质上是相似的。例如，如果我们考虑一个具有 m=20 隐藏维度和 n=80 特征的模型（重要性增加到 I_i=0.9^i 以考虑拥有更多特征），我们基本上观察到上述可视化的缩放版本：
 
-![Figure 22](images_toy/figure_022.png)
+![Figure 22](images_toy/figure\_022.png)
 
 ### [数学理解](index.html#demonstrating-math)
 
@@ -253,7 +253,7 @@ x' ~=~\text{ReLU}(W^TWx + b)
 
 更深入的理解可以来自 Saxe et al. 的结果，他们研究线性神经网络的学习动态——即没有激活函数的神经网络。这样的模型最终是线性函数，但因为它们是多个线性函数的组合，动态可能相当复杂。他们论文的要点揭示了神经网络权重可以被认为是优化一个简单的闭式解。我们可以调整他们的问题，使其与我们的线性情况更相似，我们让模型为 x' = W^TWx，但让 x 像 Saxe 中那样高斯分布。揭示了以下方程：
 
-![Figure 23](images_toy/figure_023.png)
+![Figure 23](images_toy/figure\_023.png)
 
 Saxe 的结果揭示了在所考虑的模型中，有两种根本的竞争力量控制学习动态。首先，模型可以通过表示更多特征来获得更好的损失（我们将其标记为"特征收益"）。但如果它表示超过它可以正交拟合的特征，由于特征之间的"干扰"，它也会获得更差的损失。作为一个简短的旁注，有趣的是对比线性模型干扰 \sum_{i\neq j}|W\_i \cdot W_J|^2 与压缩感知中的 [相干性](https://en.wikipedia.org/wiki/Mutual_coherence_(linear_algebra)) 概念 \max_{i\neq j}|W\_i \cdot W_J|。我们可以将它们视为同一向量的 L^2 和 L^\infty 范数。事实上，这使得线性模型表示比其维度更多的特征永远不值得。为了证明超位置在线性模型中永远不是最优的，求解损失梯度为零或咨询 Saxe et al.。
 
@@ -261,7 +261,7 @@ Saxe 的结果揭示了在所考虑的模型中，有两种根本的竞争力量
 
 对 x 的积分根据 ((1\!-\!S)+S)^n 的二项式展开分解为每个稀疏模式的项。我们可以将稀疏的项分组，将损失重写为 L = (1\!-\!S)^n L\_n +\ldots+ (1\!-\!S)S^{n-1} L\_1+ S^n L\_0，每个 L_k 对应于输入是 k-稀疏向量时的损失。注意，当 S\to 1 时，L\_1 和 L\_0 占主导地位。L\_0 项对应于零向量上的损失，只是对正偏置的惩罚 \sum_i \text{ReLU}(b_i)^2。所以有趣的项是 L\_1，即 1-稀疏向量上的损失：
 
-![Figure 24](images_toy/figure_024.png)
+![Figure 24](images_toy/figure\_024.png)
 
 这个新方程与化学中著名的 [Thomson 问题](https://en.wikipedia.org/wiki/Thomson_problem) 有些相似。特别是，如果我们假设统一重要性并且有固定数量的特征，||W\_i|| = 1，其余的 ||W\_i|| = 0，并且 b_i = 0，那么特征收益项是常数，干扰项成为广义 Thomson 问题——我们只是用稍微不寻常的能量函数在球体表面上打包点。（当我们恢复下一节的经验调查时，我们会看到这可以是一个富有成效的类比！）
 
@@ -279,7 +279,7 @@ Saxe 的结果揭示了在所考虑的模型中，有两种根本的竞争力量
 
 我们可以将其与理论的"玩具模型的玩具模型"进行比较，我们可以得到不同权重配置的损失的闭式解，作为重要性和稀疏度的函数。在 1 维中存储 2 特征有三种自然方式：W=[1,0]（忽略 [0,1]，丢弃额外特征），W=[0,1]（忽略 [1,0]，丢弃第一个特征以给额外特征专用维度），以及 W=[1,-1]（以超位置存储特征，失去表示 [1,1] 的能力，即两个特征同时的组合）。我们称最后一个解为"对跖"（antipodal），因为两个基向量 [1, 0] 和 [0, 1] 被映射到相反方向。事实证明，我们可以分析地确定这些解的损失（详情可以在 [这个 notebook](https://github.com/wattenberg/superposition/blob/main/Exploring_Exact_Toy_Models.ipynb) 中找到）。
 
-![Figure 25](images_toy/figure_025.png)
+![Figure 25](images_toy/figure\_025.png)
 
 正如预期的那样，稀疏性对于超位置发生是必要的，但我们可以看到它以有趣的方式与相对特征重要性相互作用。但最有趣的是，在经验和理论图中似乎都存在真正的相变！最优权重配置在大小和超位置上不连续地变化。（在理论模型中，我们可以分析地确认存在一阶相变：函数之间存在交叉，导致最优损失的导数不连续。）
 
@@ -287,7 +287,7 @@ Saxe 的结果揭示了在所考虑的模型中，有两种根本的竞争力量
 
 对于理论模型，我们现在考虑四种自然解。我们可以通过询问"W 忽略了什么特征方向？"来描述解。例如，W 可能只是不表示额外特征——我们将其写为 W \perp [0, 0, 1]。或者 W 可能忽略其他特征之一，W \perp [1, 0, 0]。但有趣的是，有两种使用超位置来制造对跖对的方法。我们可以将"额外特征"与另一个特征放入对跖对（W \perp [0, 1, 1]），或者将其他两个特征放入超位置并给额外特征专用维度（W \perp [1, 1, 0]）。这些解的闭式损失详情可以在 [这个 notebook](https://github.com/wattenberg/superposition/blob/main/Exploring_Exact_Toy_Models.ipynb) 中找到。我们不考虑最后一个解，即将所有特征放入联合超位置 W \perp [1, 1, 1]。
 
-![Figure 26](images_toy/figure_026.png)
+![Figure 26](images_toy/figure\_026.png)
 
 这些图表明，在不同特征编码策略之间确实存在相变。然而，我们将在下一节中看到，这个初步视图没有捕捉到更复杂的结构。
 
@@ -307,7 +307,7 @@ Saxe 的结果揭示了在所考虑的模型中，有两种根本的竞争力量
 
 我们将绘制 D^* = m / ||W||_F^2，我们可以将其视为"每个特征的维度"：
 
-![Figure 27](images_toy/figure_027.png)
+![Figure 27](images_toy/figure\_027.png)
 
 令人惊讶的是，我们发现这个图在 1 和 1/2 处是"粘性的"。（这非常模糊地类似于分数量子霍尔效应——参见例如 [这个图](https://www.researchgate.net/profile/Charles-Dunkl/publication/318205131/figure/fig3/AS:512607505350656@1499226561051/Fractional-quantum-Hall-effect.png)。）为什么会这样？经检查，1/2"粘点"似乎对应于一个精确的几何排列，特征以"对跖对"出现，每个正好是另一个的负值，允许将两个特征打包到每个隐藏维度中。似乎对跖对非常有效，以至于模型在稀疏状态的广泛范围内优先使用它们。
 
@@ -334,7 +334,7 @@ D_i ~=~ \frac{||W\_i||^2}{\sum_j (\hat{W\_i} \cdot W\_j)^2}
 
 让我们看看结果图，然后我们将尝试弄清楚它向我们展示了什么：
 
-![Figure 28](images_toy/figure_028.png)
+![Figure 28](images_toy/figure\_028.png)
 这些点为什么聚集在特定的分数上？？我们很快就会看到，模型倾向于创建特定的权重几何结构，并在不同配置之间跳跃。
 
 在上一节中，我们发展了关于叠加作为相变的理论。但这个图上 0（不学习特征）和 1（为特征分配一个维度）之间的一切都是叠加。当特征具有分数维度时就会发生叠加。也就是说——叠加不是单一的现象！
@@ -351,7 +351,7 @@ D_i ~=~ \frac{||W\_i||^2}{\sum_j (\hat{W\_i} \cdot W\_j)^2}
 
 特别是，许多 Thomson 解可以被理解为 [tegum 积](https://polytope.miraheze.org/wiki/Tegum_product)（一种通过在正交子空间中嵌入两个多胞形来构造多胞形的操作）的较小均匀多胞形。（在之前的特征几何图形可视化中，当且仅当两个子图位于不同的 tegum 因子中时，它们是不连通的。）因此，我们应该期望它们的维度实际上对应于底层因子均匀多胞形。
 
-![Figure 29](images_toy/figure_029.png)
+![Figure 29](images_toy/figure\_029.png)
 
 这也表明了一个可能的原因，为什么我们观察到 3D Thomson 问题解，尽管我们实际上在研究更高维版本的问题。就像许多 3D Thomson 解是 2D 和 1D 解的 tegum 积一样，也许更高维的解通常是 1D、2D 和 3D 解的 tegum 积。
 
@@ -365,7 +365,7 @@ tegum 积中因子的正交性具有有趣的含义。就叠加而言，这意�
 
 换句话说，多胞形与叠加策略之间存在精确的对应关系。例如，在 2 维空间中将三个特征置于叠加状态的每种策略都对应一个三角形，每个三角形都对应这样的策略。从这个角度来看，如果我们有三个同等重要且同等稀疏的特征，最优策略是等边三角形就不足为奇了。
 
-![Figure 30](images_toy/figure_030.png)
+![Figure 30](images_toy/figure\_030.png)
 
 这种对应关系也可以反向进行。假设我们有一个形式为 W^TW 的秩为 (n-i) 的矩阵。我们可以通过 W 未表示的维度来表征它——也就是说，哪些方向与 W 正交？例如，如果我们有一个 (n-1) 矩阵，我们可能会问 W 未表示的单个方向是什么？如果我们假设 W^TW 在不表示某些向量的约束下尽可能"像单位矩阵"，这就特别有信息量。
 
@@ -391,7 +391,7 @@ tegum 积中因子的正交性具有有趣的含义。就叠加而言，这意�
 
 为了可视化解，我们将它们规范化，以一致的方式旋转它们以相互对齐。
 
-![Figure 31](images_toy/figure_031.png)
+![Figure 31](images_toy/figure\_031.png)
 
 这些结果似乎表明，至少在某些情况下，非均匀叠加可以被理解为均匀叠加的变形以及在均匀叠加配置之间跳跃，而不是完全不同的机制。由于均匀叠加具有许多可理解的结构，而现实世界的叠加几乎肯定是非均匀的，这似乎非常有希望！
 
@@ -419,7 +419,7 @@ tegum 积中因子的正交性具有有趣的含义。就叠加而言，这意�
 
 对于我们的初步调查，我们简单地训练一些具有相关和反相关特征的小型玩具模型并观察发生了什么。为了便于研究，我们将自己限制在 m=2 的情况下，我们可以将权重明确可视化为 2D 空间中的点。一般来说，这样的解可以被理解为单元圆上点的集合。为了使解易于比较，我们旋转和翻转解以相互对齐。
 
-![Figure 32](images_toy/figure_032.png)
+![Figure 32](images_toy/figure\_032.png)
 
 #### [局部近似正交基](index.html#geometry-local-bases)
 
@@ -427,7 +427,7 @@ tegum 积中因子的正交性具有有趣的含义。就叠加而言，这意�
 
 为了研究这一点，我们训练了一个具有两组相关特征的较大模型并可视化 W^TW。
 
-![Figure 33](images_toy/figure_033.png)
+![Figure 33](images_toy/figure\_033.png)
 
 如果这个结果在真实神经网络中成立，它表明我们可能能够做出一种"局部非叠加"假设，其中对于某些子分布，我们可以假设激活的特征不在叠加中。这可能是一个强大的结果，使我们能够自信地使用诸如 PCA 之类的方法，这些方法在叠加的背景下通常使用可能没有原则。
 
@@ -439,7 +439,7 @@ tegum 积中因子的正交性具有有趣的含义。就叠加而言，这意�
 
 随着我们改变特征的稀疏性，我们发现在非常稀疏的区域，我们观察到预期的叠加，特征排列在六边形中，相关特征并排。随着我们减少稀疏性，特征逐渐"坍缩"到它们的主成分中。在非常密集的区域，解变得等同于 PCA。
 
-![Figure 34](images_toy/figure_034.png)
+![Figure 34](images_toy/figure\_034.png)
 
 这些结果似乎暗示 PCA 和叠加在某种意义上是互补的策略，彼此权衡。随着特征变得更加相关，PCA 成为更好的策略。随着特征变得更加稀疏，叠加成为更好的策略。当特征既稀疏又相关时，似乎会出现每种策略的混合。能够更深入地理解这个权衡空间会很好。
 
@@ -461,7 +461,7 @@ tegum 积中因子的正交性具有有趣的含义。就叠加而言，这意�
 
 一个自然的问题是，这些特征维度在训练过程中会发生什么。让我们选择一个所有特征都收敛到二角形的模型并观察。在第一个图中，每条彩色线对应于单个特征的维度。第二个图显示了损失曲线在同一持续时间内的变化。
 
-![Figure 35](images_toy/figure_035.png)
+![Figure 35](images_toy/figure\_035.png)
 
 注意一些特征的维度如何在不同值之间"跳跃"并交换位置。当这种情况发生时，损失曲线也经历突然下降（第一次跳跃时非常小，第二次跳跃时较大）。
 
@@ -475,7 +475,7 @@ tegum 积中因子的正交性具有有趣的含义。就叠加而言，这意�
 
 一个特别有趣的例子发生在 [相关特征](index.html#geometry-correlated-setup) 的背景下，如前一节所研究。考虑在 m=3 维度内的叠加中表示 n=6 特征的问题。如果我们有 6 个特征是 2 组 3 个相关特征，我们观察到一个非常有趣的模式。学习以不同的机制进行，这些机制在损失曲线中可见，每个机制对应于一个不同的几何变换：
 
-![Figure 36](images_toy/figure_036.png)
+![Figure 36](images_toy/figure\_036.png)
 
 （虽然最后的解——一个具有来自不同相关集的特征排列成反向对的八面体——似乎是一个强大的吸引子，但上面可视化的学习轨迹似乎是吸引模型的几个不同学习轨迹之一。不同的轨迹在步骤 C 处有所不同：有时模型从一开始就被直接拉入反棱柱配置，或者将特征组织成反向对。据推测，这取决于当步骤 B 结束时模型最接近哪个特征几何结构。）
 
@@ -499,7 +499,7 @@ tegum 积中因子的正交性具有有趣的含义。就叠加而言，这意�
 
 我们发现，随着叠加的形成，对抗样本的脆弱性急剧增加（增加>3 倍），并且脆弱性水平密切跟踪每维特征数（[特征维度](index.html#geometry-dimensionality) 的倒数）。
 
-![Figure 37](images_toy/figure_037.png)
+![Figure 37](images_toy/figure\_037.png)
 
 我们不愿推测叠加在实际中对对抗样本的出现有多大责任。有关于为什么对抗样本出现而不参考叠加的引人注目的理论（例如）。但有趣的是注意，如果一个人想要论证"叠加最大化立场"，许多与对抗样本相关的有趣现象确实可以从叠加中预测。如上所见，叠加可以用来解释为什么对抗样本存在。它还预测对抗鲁棒模型将具有更差的性能，因为使模型鲁棒需要放弃叠加并表示更少的特征。它预测更多对抗鲁棒模型可能更具可解释性（参见例如）。最后，如果叠加中特征的排列受到哪些特征相关或反相关的强烈影响（参见 [关于此的早期结果](index.html#geometry-correlated)），它可以说可以预测对抗样本的迁移（参见例如）。未来的工作可能会很有趣，看看叠加是对抗样本的重要贡献者这一假设能走多远。
 
@@ -524,7 +524,7 @@ x' = ReLU(W^T h + b)
 
 我们很快就会更详细地讨论这一点，但这里是从线性隐藏层模型和 ReLU 隐藏层模型产生的权重的比较：
 
-![Figure 38](images_toy/figure_038.png)
+![Figure 38](images_toy/figure\_038.png)
 
 回想一下，我们将输入中的基元素视为"特征"，将中间层中的基元素视为"神经元"。因此 W 是从特征到神经元的映射。
 
@@ -543,7 +543,7 @@ x' = ReLU(W^T h + b)
 
 当模型变大时，这种堆叠图可视化会很漂亮。它还能让多义神经元（polysemantic neurons）变得明显：它们简单地对应于拥有多个权重。
 
-![Figure 39](images_toy/figure_039.png)
+![Figure 39](images_toy/figure\_039.png)
 
 我们现在将可视化一个 ReLU 隐藏层 toy model，其中 n=10，m=5，I^i = 0.75^i，并变化特征稀疏度水平。我们选择了一个非常小的模型（只有 5 个神经元），既为了便于可视化，也为了规避这个 toy model 的一些问题，我们将在下面讨论。
 
@@ -551,7 +551,7 @@ x' = ReLU(W^T h + b)
 
 解在下面可视化，既可视化了原始 W，也展示了神经元堆叠条形图。我们根据特征是否处于叠加态（superposition）来给堆叠条形图中的特征着色，并根据神经元存储的是否多于一个特征，将神经元着色为单义（monosemantic）或多义（polysemantic）。神经元顺序是手工选择的（因为它是任意的）。
 
-![Figure 40](images_toy/figure_040.png)
+![Figure 40](images_toy/figure\_040.png)
 
 最重要的是要注意，随着稀疏度增加，存在从单义神经元到多义神经元的转变。单义神经元确实在某些机制中存在！多义神经元存在于其他机制中。它们可以同时存在于同一个模型中！此外，虽然不太清楚如何形式化这一点，但看起来很像存在一个神经元级别的相变（phase change），与我们之前看到的特征相变相呼应。
 
@@ -569,7 +569,7 @@ x' = ReLU(W^T h + b)
 
 为了探索这一点，我们考虑一个新设置，其中我们将输入层和输出层想象为我们假设的解耦模型（disentangled model）的层，但将隐藏层设为更小的层，我们想象它是可能使用叠加态的观测模型。然后我们将尝试计算一个简单的非线性函数，并探索它是否可以使用叠加态来完成这个任务。由于模型将具有（并且需要使用）隐藏层非线性，我们还将看到特征与特权基对齐。
 
-![Figure 41](images_toy/figure_041.png)
+![Figure 41](images_toy/figure\_041.png)
 
 具体来说，我们将让模型计算 y=\text{abs}(x)。绝对值是一个有吸引力的函数，因为有一个非常简单的方法用 ReLU 神经元计算它：\text{abs}(x) = \text{ReLU}(x) + \text{ReLU}(-x)。这个简单结构将使我们很容易研究隐藏层如何被用于计算的几何结构。
 
@@ -581,26 +581,26 @@ x' = ReLU(W^T h + b)
 
 按照上一节，我们将考虑"ReLU 隐藏层"toy model 变体，但不再将两个权重绑定为相同：
 
-h = \text{ReLU}(W_1x) 
-y' = \text{ReLU}(W_2h+b)
+h = \text{ReLU}(W\_1x) 
+y' = \text{ReLU}(W\_2h+b)
 
 损失仍然是均方误差，按特征重要性 I_i 加权，与之前相同。
 
 ### [基本结果](index.html#computation-basic)
 
-使用这个模型，研究单个特征如何嵌入变得不那么直接了；由于隐藏层上的 ReLU，我们不能只研究 W_2^TW_1。而且因为 W_2 和 W_1 现在是独立学习的，我们不能只研究 W_1 的列。我们相信通过一些操作，我们可以通过独立考虑"正特征"和"负特征"来恢复早期模型的大部分简单性，但我们将专注于另一种视角。
+使用这个模型，研究单个特征如何嵌入变得不那么直接了；由于隐藏层上的 ReLU，我们不能只研究 W\_2^TW\_1。而且因为 W\_2 和 W\_1 现在是独立学习的，我们不能只研究 W\_1 的列。我们相信通过一些操作，我们可以通过独立考虑"正特征"和"负特征"来恢复早期模型的大部分简单性，但我们将专注于另一种视角。
 
 正如我们在上一节看到的，拥有隐藏层激活函数意味着从神经元角度可视化权重是有意义的。我们可以直接可视化 W，或者像之前那样作为神经元堆叠图。我们也可以将其可视化为图，这有时有助于理解计算。
 
-![Figure 42](images_toy/figure_042.png)
+![Figure 42](images_toy/figure\_042.png)
 
 让我们看看当我们训练一个具有 n=3 个特征的模型在 m=6 个隐藏层神经元上执行绝对值时会发生什么。如果没有叠加态，模型需要两个隐藏层神经元来为一个特征实现绝对值。
 
 所得模型——除了一个关于重新缩放输入和输出权重的微妙问题[^note]——完全按照人们预期的方式执行绝对值。对于每个输入特征 x\_i，它构建一个"正侧"神经元 \text{ReLU}(x\_i) 和一个"负侧"神经元 \text{ReLU}(-x\_i)。然后将它们相加以计算绝对值：
 
-[^note]: 注意模型在学习 W_1 时有一个自由度：我们可以通过将 W_1 的该行乘以 \alpha，将 W_2 的该列乘以 \alpha^{-1} 来重新缩放任何隐藏单元，并得到相同的模型。为了可视化的一致性，我们在可视化之前重新缩放每个隐藏单元，使得从 W_1 到该神经元的最大幅度权重的幅度为 1。
+[^note]: 注意模型在学习 W\_1 时有一个自由度：我们可以通过将 W\_1 的该行乘以 \alpha，将 W\_2 的该列乘以 \alpha^{-1} 来重新缩放任何隐藏单元，并得到相同的模型。为了可视化的一致性，我们在可视化之前重新缩放每个隐藏单元，使得从 W\_1 到该神经元的最大幅度权重的幅度为 1。
 
-![Figure 43](images_toy/figure_043.png)
+![Figure 43](images_toy/figure\_043.png)
 
 ### [叠加态 vs 稀疏度](index.html#computation-super-v-sparsity)
 
@@ -610,7 +610,7 @@ y' = \text{ReLU}(W_2h+b)
 
 关于可视化的几点说明：由于我们主要感兴趣的是理解叠加态和多义神经元，我们将展示权重绝对值的堆叠权重图。特征按叠加态着色。为了使图表更易读，神经元根据它们的多义程度（根据图表目测判断）进行淡色着色。神经元顺序按最大特征的重要性排序。
 
-![Figure 44](images_toy/figure_044.png)
+![Figure 44](images_toy/figure\_044.png)
 
 就像我们在 ReLU 隐藏层模型中看到的那样，这些结果表明，在适当的情况下，激活函数会创建特权基并导致特征与基维度对齐。在密集机制中，我们最终得到每个神经元表示一个单一特征，我们可以直接从神经元激活中读取特征值。
 
@@ -620,7 +620,7 @@ y' = \text{ReLU}(W_2h+b)
 
 关注中间稀疏度机制，我们发现几个额外的定性行为，我们发现它们迷人地类似于在真实、全尺寸神经网络中观察到的行为：
 
-![Figure 45](images_toy/figure_045.png)
+![Figure 45](images_toy/figure\_045.png)
 
 首先，我们发现在某些机制中，模型的许多神经元将编码纯特征，但其中一部分将是高度多义的。这类似于我们之前在 ReLU 输出模型中看到的[相变](index.html#phase-change)。然而，在那种情况下，相变是相对于特征的，更重要的特征不被放入叠加态。在这个实验中，神经元没有任何内在重要性，但我们看到表示最重要特征的神经元（在左侧）往往是单义的。
 
@@ -638,17 +638,17 @@ y' = \text{ReLU}(W_2h+b)
 
 然而，有一些神经元在做其他事情……
 
-![Figure 46](images_toy/figure_046.png)
+![Figure 46](images_toy/figure\_046.png)
 
 这些其他神经元实现了两个非对称叠加态和抑制（inhibition）的实例。每个实例由两个神经元组成：
 
-![Figure 47](images_toy/figure_047.png)
+![Figure 47](images_toy/figure\_047.png)
 
 一个神经元进行非对称叠加态。在正常叠加态中，人们可能会以相等权重存储特征（例如 W=[1,-1]），然后具有相等输出权重（W=[1,1]）。在非对称叠加态中，人们以不同幅度存储特征（例如 W=[2,-\frac{1}{2}]），然后具有互逆输出权重（例如 W=[\frac{1}{2}, 2]）。这导致一个特征严重干扰另一个特征，但避免另一个干扰第一个！
 
 为了避免这种干扰的后果，模型有另一个神经元在本来会有正干扰的情况下强烈抑制该特征。这本质上将正干扰（可能会大大增加损失）转换为负干扰（由于输出 ReLU，后果有限）。
 
-![Figure 48](images_toy/figure_048.png)
+![Figure 48](images_toy/figure\_048.png)
 
 还有一些其他权重这无法解释。（我们相信它们实际上是小的条件偏置。）但这种非对称叠加态和抑制模式似乎是主要故事。
 
@@ -710,7 +710,7 @@ y' = \text{ReLU}(W_2h+b)
 
 创建无叠加态模型的相反策略是采用具有叠加态的常规模型，并事后找到描述特征如何嵌入的过完备基。这似乎是一个相对标准的稀疏编码（sparse coding）（或字典学习）问题，我们想获取神经网络层的激活并找出哪些方向对应于特征。[^note5]
 
-[^note5]: 更正式地说，给定隐藏层激活 h \sim [m] 的矩阵 H \sim [d,m] ~=~[h_0, h_1, …] 在 d 个刺激上采样，如果我们相信有 n 个底层特征，我们可以尝试找到矩阵 A\sim [d,n] 和 B \sim [n,m] 使得 A 是稀疏的。一些先前的工作已经探索了这种方法。
+[^note5]: 更正式地说，给定隐藏层激活 h \sim [m] 的矩阵 H \sim [d,m] ~=~[h\_0, h\_1, …] 在 d 个刺激上采样，如果我们相信有 n 个底层特征，我们可以尝试找到矩阵 A\sim [d,n] 和 B \sim [n,m] 使得 A 是稀疏的。一些先前的工作已经探索了这种方法。
 
 这样做的好处是我们不需要担心是否损害模型性能。另一方面，许多其他事情变得更难：
 
@@ -853,7 +853,7 @@ Redwood Research 一直在研究多元语义性的玩具模型，受到 Anthropi
 
 更新：Redwood 在前一条评论中提到的研究，Polysemanticity and Capacity in Neural Networks（[Alignment Forum](https://www.alignmentforum.org/posts/kWp4R9SYgKJFHAufB/polysemanticity-and-capacity-in-neural-networks)，[Arxiv](https://arxiv.org/abs/2210.01892)）已经发表！他们研究了一个稍有不同的玩具模型，并得到了一些非常有趣的结果。亮点包括对理解玩具模型变体的分析牵引力、根据约束优化理解超定位，以及对不同激活函数作用的分析。
 
-![Figure 49](images_toy/figure_049.png)
+![Figure 49](images_toy/figure\_049.png)
 
 ### [复现和进一步结果](index.html#comment-deepmind)
 
@@ -867,13 +867,13 @@ Redwood Research 一直在研究多元语义性的玩具模型，受到 Anthropi
 
 进行这种替换使积分在分析上可处理，这允许我们绘制完整的损失表面并直接求解损失最小值。我们在下面展示了一些示例损失表面：
 
-![Figure 50](images_toy/figure_050.png)
+![Figure 50](images_toy/figure\_050.png)
 
-虽然这些损失表面中的许多（图 1a, 1b）具有与 [超定位作为相变](index.html#phase-change) 一节中使用的网络权重之一在质量上相似的最小值，但我们也发现了一个新的相，其中 W_1\simeq W_2 \simeq \frac{1}{\sqrt{2}}：权重相似而不是反向（antipodal）。这种"困惑特征"（confused feature）机制在稀疏性低且两个特征都重要时出现（图 1c）。（这与 [超定位的几何——相关特征的坍缩](index.html#geometry-collapsing) 中描述的行为略有相似，但在没有特征相关的情况下发生！）此外，虽然我们找到的解通常在质量上与 [超定位作为相变](index.html#phase-change) 中使用的权重相似，但它们在数量上可能不同，如图 1a 所示。从图 1a 到图 1b 的转变是连续的：随着稀疏程度的改变，最小值在权重空间中平滑移动。这解释了相图中三重（triple point）点周围的"模糊"区域。
+虽然这些损失表面中的许多（图 1a, 1b）具有与 [超定位作为相变](index.html#phase-change) 一节中使用的网络权重之一在质量上相似的最小值，但我们也发现了一个新的相，其中 W\_1\simeq W\_2 \simeq \frac{1}{\sqrt{2}}：权重相似而不是反向（antipodal）。这种"困惑特征"（confused feature）机制在稀疏性低且两个特征都重要时出现（图 1c）。（这与 [超定位的几何——相关特征的坍缩](index.html#geometry-collapsing) 中描述的行为略有相似，但在没有特征相关的情况下发生！）此外，虽然我们找到的解通常在质量上与 [超定位作为相变](index.html#phase-change) 中使用的权重相似，但它们在数量上可能不同，如图 1a 所示。从图 1a 到图 1b 的转变是连续的：随着稀疏程度的改变，最小值在权重空间中平滑移动。这解释了相图中三重（triple point）点周围的"模糊"区域。
 
-如图 1c 所示，稀疏性和相对特征重要性的一些组合导致损失表面具有两个最小值（一旦考虑了对称性 (W_1, W_2) \to (-W_1, -W_2)）。如果这种模式对更大的 n 和 m 值成立（我们没有理由认为它不会），这可以解释 [离散"能级"跳跃现象](index.html#learning-jumps)，因为解在最小值之间跳跃。在某些情况下（例如当参数接近相变所需的参数时），全局最小值可能具有比局部最小值小得多的吸引盆（basin of attraction）。反向和困惑特征解之间的转变似乎是不连续的。
+如图 1c 所示，稀疏性和相对特征重要性的一些组合导致损失表面具有两个最小值（一旦考虑了对称性 (W\_1, W\_2) \to (-W\_1, -W\_2)）。如果这种模式对更大的 n 和 m 值成立（我们没有理由认为它不会），这可以解释 [离散"能级"跳跃现象](index.html#learning-jumps)，因为解在最小值之间跳跃。在某些情况下（例如当参数接近相变所需的参数时），全局最小值可能具有比局部最小值小得多的吸引盆（basin of attraction）。反向和困惑特征解之间的转变似乎是不连续的。
 
-原作者回应：这种对 n=2, m=1 情况的闭式分析很迷人。我们没有意识到 W_1\simeq W_2 \simeq \frac{1}{\sqrt{2}} 可以在没有相关特征的情况下成为解！对"模糊行为"的澄清和对局部最小值的观察也非常有趣。更一般地说，我们非常感激对我们核心结果的独立复现。
+原作者回应：这种对 n=2, m=1 情况的闭式分析很迷人。我们没有意识到 W\_1\simeq W\_2 \simeq \frac{1}{\sqrt{2}} 可以在没有相关特征的情况下成为解！对"模糊行为"的澄清和对局部最小值的观察也非常有趣。更一般地说，我们非常感激对我们核心结果的独立复现。
 
 ### [复现](index.html#comment-openai)
 
@@ -914,7 +914,7 @@ Tom Henighan 和 Chris Olah 是原始论文的作者。
 
 需要更多调查才能真正理解这种现象。
 
-![Figure 51](images_toy/figure_051.png)
+![Figure 51](images_toy/figure\_051.png)
 
 ### [复现](index.html#comment-hobbhahn)
 
@@ -961,15 +961,15 @@ Neel Nanda 是机制可解释性（mechanistic interpretability）的外部研�
 
  D_i ~=~ \frac{||W\_i||^2}{\sum_j (\hat{W\_i} \cdot W\_j)^2}, 
 
-其中 W\_i 是第 i 个 feature，\hat{W\_i}=W\_i / \| W\_i \|_2 是其归一化版本。为简化符号，我们假设有 n 个 features，每个都是 d 维实向量。
+其中 W\_i 是第 i 个 feature，\hat{W\_i}=W\_i / \| W\_i \|\_2 是其归一化版本。为简化符号，我们假设有 n 个 features，每个都是 d 维实向量。
 
 根据这个定义，论文指出"根据经验，当 features 在某种意义上'高效打包'时，所有 features 的 dimensionality 之和似乎等于 embedding 维度数。"在这条评论中，我指出了对这一观察的自然理论解释。该论证是通过矩阵近似中的 leverage score 概念进行的。我会先定义它，然后解释它如何与 feature dimensionality 联系起来。
 
 在概念层面上，leverage score 是衡量某一行在构成矩阵行空间时的重要性度量。例如，如果一行与所有其他行正交，其 leverage score 为 1，意味着它最重要。这是自然的，因为移除它会降低矩阵的秩并完全改变行空间。形式上，如果 W 是 n×d 矩阵（可以认为是高而窄的，所以 n > d），那么第 i 行 W\_i 的 leverage score 是：
 
- \tau_i = \max_{x : \|x\|_2 = 1} \frac{\langle W\_i , x \rangle^2}{\sum_{j=1}^n \langle W\_j , x \rangle^2}. 
+ \tau_i = \max_{x : \|x\|\_2 = 1} \frac{\langle W\_i , x \rangle^2}{\sum_{j=1}^n \langle W\_j , x \rangle^2}. 
 
-注意分母项等于 \| Wx \|_2^2。因此，W\_i 的 leverage score 是 \langle W\_i, x\rangle^2 对 || Wx ||^2 所能做出的最大贡献（在所有可能的方向 x 上）。这是一个介于 0 和 1 之间的分数。还可以观察到，这确实具有一个很好的性质：如果 W\_i 与所有其他行正交，\tau_i 等于 1，因为分母求和中除第 i 项外的所有项都为 0。
+注意分母项等于 \| Wx \|\_2^2。因此，W\_i 的 leverage score 是 \langle W\_i, x\rangle^2 对 || Wx ||^2 所能做出的最大贡献（在所有可能的方向 x 上）。这是一个介于 0 和 1 之间的分数。还可以观察到，这确实具有一个很好的性质：如果 W\_i 与所有其他行正交，\tau_i 等于 1，因为分母求和中除第 i 项外的所有项都为 0。
 
 关于这个定义的三个简要说明：
 
@@ -1058,29 +1058,29 @@ BibTeX Citation:
 
 我们可以比较 x 和 y 的随机均匀 dense 值上的均方误差损失，并看到即使 epsilon 大到 0.1 且 Z 值小到 3，非线性压缩也优于线性压缩，例如选择其中一个维度或使用平均值：
 
-![Figure 52](images_toy/figure_052.png)
+![Figure 52](images_toy/figure\_052.png)
 
 ### [Connection between compressed sensing lower bounds and the toy model](index.html#compressed-sensing-connection-proof)
 
 在这里，我们形式化了 compressed sensing lower bound 和 toy model 之间的关系。
 
-令 T(x) : \mathbb{R}^n \to \mathbb{R}^n 为由 T(x) = \mathrm{ReLU}(W_2 W_1 x - b) 定义的完整 toy model autoencoder，其中 W_1 是 m×n 矩阵，W_2 是 n×m 矩阵。
+令 T(x) : \mathbb{R}^n \to \mathbb{R}^n 为由 T(x) = \mathrm{ReLU}(W\_2 W\_1 x - b) 定义的完整 toy model autoencoder，其中 W\_1 是 m×n 矩阵，W\_2 是 n×m 矩阵。
 
 我们推导出以下定理：
 
-**Theorem 1.** 假设 toy model 通过 T(x) 恢复所有 x，使得 \|T(x) - x\|_2 \leq \varepsilon 对于足够小的 \varepsilon 成立，且 W_1 具有 (\delta, k) restricted isometry property。投影矩阵 W 的内部维度为 m = \Omega(k log(n/k))。
+**Theorem 1.** 假设 toy model 通过 T(x) 恢复所有 x，使得 \|T(x) - x\|\_2 \leq \varepsilon 对于足够小的 \varepsilon 成立，且 W\_1 具有 (\delta, k) restricted isometry property。投影矩阵 W 的内部维度为 m = \Omega(k log(n/k))。
 
 我们通过将 toy model 框架化为 compressed sensing 算法来证明这个结果。这样做的主要障碍是我们的优化只搜索与原始向量在 \ell_2 距离上接近的向量，而本身可能不完全是 k-sparse。以下引理通过去噪步骤解决了这个担忧：
 
-**Lemma 1.** 假设我们有一个具有 Theorem 1 中性质的 toy model T(x)。那么存在一个针对测量矩阵 W_1 的 compressed sensing 算法 f(y) : \mathbb{R}^m \to \mathbb{R}^n。
+**Lemma 1.** 假设我们有一个具有 Theorem 1 中性质的 toy model T(x)。那么存在一个针对测量矩阵 W\_1 的 compressed sensing 算法 f(y) : \mathbb{R}^m \to \mathbb{R}^n。
 
-**Proof.** 我们按如下方式构造 f(y)。首先，计算 \tilde{x} = \mathrm{ReLU}(W_2 y - b)，如 T(x) 中所示。这产生向量 \tilde{x} = T(x)，因此根据假设 \|T(x) - x\|_2 \leq \varepsilon。接下来，我们对 \tilde{x} 进行阈值处理以获得 \tilde{x}'，方法是从中删除除其 k 个最大条目外的所有内容。最后，我们求解优化问题：\min_{x'} \|x' - \tilde{x}'\| 受限于 W_1 x' = y，这是凸的，因为 x' 和 \tilde{x}' 具有相同的 support。对于足够小的 \varepsilon（具体来说，\varepsilon 小于 x 中第 (k+1) 个最大条目），\tilde{x} 和 x 的最近 k-sparse 向量具有相同的 support，因此凸优化问题有唯一解：x 的最近 k-sparse 向量。因此，f 是 W_1 的 compressed sensing 算法，近似因子为 1。\qed。
+**Proof.** 我们按如下方式构造 f(y)。首先，计算 \tilde{x} = \mathrm{ReLU}(W\_2 y - b)，如 T(x) 中所示。这产生向量 \tilde{x} = T(x)，因此根据假设 \|T(x) - x\|\_2 \leq \varepsilon。接下来，我们对 \tilde{x} 进行阈值处理以获得 \tilde{x}'，方法是从中删除除其 k 个最大条目外的所有内容。最后，我们求解优化问题：\min_{x'} \|x' - \tilde{x}'\| 受限于 W\_1 x' = y，这是凸的，因为 x' 和 \tilde{x}' 具有相同的 support。对于足够小的 \varepsilon（具体来说，\varepsilon 小于 x 中第 (k+1) 个最大条目），\tilde{x} 和 x 的最近 k-sparse 向量具有相同的 support，因此凸优化问题有唯一解：x 的最近 k-sparse 向量。因此，f 是 W\_1 的 compressed sensing 算法，近似因子为 1。\qed。
 
 最后，我们使用 Do Ba、Indyk、Price 和 Woodruff 的确定性 compressed sensing lower bound：
 
 **Theorem 2** (Corollary 3.1 in )。给定具有 restricted isometry property 的 k×n 矩阵 A，稀疏恢复算法从 Ax 中找到 x \in \mathbb{R}^n 的 k-sparse 近似 \hat{x}，使得
 
-\|x - \hat{x}\|_1 \leq C(k) \min_{x', \|x'\|_0 \leq k} \|x - x'\|_1
+\|x - \hat{x}\|\_1 \leq C(k) \min_{x', \|x'\|\_0 \leq k} \|x - x'\|\_1
 
 对于近似因子 C(k)。如果 C(k) = O(1)，则稀疏恢复算法仅当 m = \Omega(k \log (n/k)) 时存在。
 
