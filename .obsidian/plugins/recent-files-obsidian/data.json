@@ -1,6 +1,26 @@
 {
   "recentFiles": [
     {
+      "basename": "monosemantic-features-zh",
+      "path": "3.Agent/monosemantic-features-zh.md"
+    },
+    {
+      "basename": "Towards-Monosemanticity",
+      "path": "3.Agent/Towards-Monosemanticity.md"
+    },
+    {
+      "basename": "figure_002",
+      "path": "3.Agent/monosemantic-features-images/images/figure_002.png"
+    },
+    {
+      "basename": "figure_001",
+      "path": "3.Agent/monosemantic-features-images/images/figure_001.png"
+    },
+    {
+      "basename": "Transformer MLP 如何存储知识",
+      "path": "3.Agent/Transformer MLP 如何存储知识.md"
+    },
+    {
       "basename": "YaRN - RoPE 上下文扩展",
       "path": "3.Agent/YaRN - RoPE 上下文扩展.md"
     },
