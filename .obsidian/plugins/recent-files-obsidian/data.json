@@ -1,6 +1,18 @@
 {
   "recentFiles": [
     {
+      "basename": "睡眠科学 - YouTube 视频笔记",
+      "path": "8.AI Summary/健康与科学/睡眠科学 - YouTube 视频笔记.md"
+    },
+    {
+      "basename": "救猫咪2：经典电影剧本解析",
+      "path": "6.BookNotes/Weread/文学/救猫咪2：经典电影剧本解析.md"
+    },
+    {
+      "basename": "Naval - 接受人性的阴暗：没人希望你过得比他好",
+      "path": "6.BookNotes/Naval - 接受人性的阴暗：没人希望你过得比他好.md"
+    },
+    {
       "basename": "perpendicular & perpend",
       "path": "1.English/Vocabulary/perpendicular & perpend.md"
     },
@@ -187,18 +199,6 @@
     {
       "basename": "figure_001",
       "path": "3.Agent/monosemantic-features-images/images/figure_001.png"
-    },
-    {
-      "basename": "Transformer MLP 如何存储知识",
-      "path": "3.Agent/Transformer MLP 如何存储知识.md"
-    },
-    {
-      "basename": "YaRN - RoPE 上下文扩展",
-      "path": "3.Agent/YaRN - RoPE 上下文扩展.md"
-    },
-    {
-      "basename": "temperature_softmax",
-      "path": "3.Agent/imgs/temperature_softmax.png"
     }
   ],
   "omittedPaths": [],
