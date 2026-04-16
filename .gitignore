@@ -47,13 +47,9 @@
 *.log
 
 
-# Large files
-1.English/顾家北手把手教你雅思写作6_0版_顾家北_GuJiabei_Z_Library.pdf
-4.Robot/ML&DL/StatQuest-En.pdf
-1.English/GRE-All-In-One/Verbal/Reading/解密GRE阅读逻辑线.pdf
-1.English/GRE-All-In-One/Verbal/Text-Completion/Magoosh机经/Magoosh语文-1.pdf
-1.English/GRE-All-In-One/Verbal/Text-Completion/Magoosh机经/Magoosh语文-2.pdf
-9.Coding/CUDA C编程权威指南 (高性能计算技术丛书).pdf
-4.Robot/ML&DL/StatQuest-Zh.pdf
-4.Robot/Control/2013_预测控制(2nd).pdf
-Chaos/商业/万物皆模型之《孙子兵法》72篇.pdf
+############################
+# 大文件（PDF/EPUB）
+############################
+
+*.pdf
+*.epub

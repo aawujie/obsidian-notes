@@ -9,7 +9,9 @@
   "obsidian-epub-plugin",
   "data-files-editor",
   "obsidian-tasks-plugin",
-  "dust-calendar",
   "diagram-zoom-drag",
-  "recent-files-obsidian"
+  "recent-files-obsidian",
+  "surfing",
+  "obsidian-weread-plugin",
+  "dust-calendar"
 ]
