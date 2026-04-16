@@ -1,6 +1,98 @@
 {
   "recentFiles": [
     {
+      "basename": "perpendicular & perpend",
+      "path": "1.English/Vocabulary/perpendicular & perpend.md"
+    },
+    {
+      "basename": "SSO：无需人工标注，自动对齐 LLM！",
+      "path": "4.Robot/ML&DL/Arxiv 一周进展报告（大模型方向）/20241018-20241024/SSO：无需人工标注，自动对齐 LLM！.md"
+    },
+    {
+      "basename": "LongRAG：长文本问答的 “超级导航仪”，精准定位答案",
+      "path": "4.Robot/ML&DL/Arxiv 一周进展报告（大模型方向）/20241018-20241024/LongRAG：长文本问答的 “超级导航仪”，精准定位答案.md"
+    },
+    {
+      "basename": "DeepSeek最新多模态大模型，理解与生成同时遥遥领先!",
+      "path": "4.Robot/ML&DL/Arxiv 一周进展报告（大模型方向）/20241018-20241024/DeepSeek最新多模态大模型，理解与生成同时遥遥领先!.md"
+    },
+    {
+      "basename": "Docker 打镜像原理",
+      "path": "9.Coding/Docker/Docker 打镜像原理.md"
+    },
+    {
+      "basename": "和平演变",
+      "path": "Chaos/和平演变.md"
+    },
+    {
+      "basename": "万物皆模型之《孙子兵法》72篇",
+      "path": "Chaos/商业/万物皆模型之《孙子兵法》72篇.pdf"
+    },
+    {
+      "basename": "水滴项链录音器 - 技术方案",
+      "path": "Chaos/Projects/水滴项链录音器 - 技术方案.md"
+    },
+    {
+      "basename": "Pasted image 20260301140825",
+      "path": "Chaos/Projects/Pasted image 20260301140825.png"
+    },
+    {
+      "basename": "Pasted image 20260301141119",
+      "path": "Chaos/Projects/Pasted image 20260301141119.png"
+    },
+    {
+      "basename": "熵的本质-十层理解",
+      "path": "Chaos/Physics/熵的本质-十层理解.md"
+    },
+    {
+      "basename": "Econometrics",
+      "path": "Chaos/Notion/因子投资/Econometrics.md"
+    },
+    {
+      "basename": "因子投资",
+      "path": "Chaos/Notion/因子投资/因子投资.base"
+    },
+    {
+      "basename": "Pasted image 20260220181052",
+      "path": "8.AI Summary/imgs/Pasted image 20260220181052.png"
+    },
+    {
+      "basename": "AI 时代的五大个人机会",
+      "path": "8.AI Summary/AI 与技术/AI 时代的五大个人机会.md"
+    },
+    {
+      "basename": "00-索引",
+      "path": "8.AI Summary/AI 与技术/00-索引.md"
+    },
+    {
+      "basename": "Chaport 在线聊天工具使用教程",
+      "path": "7.Marketing/Chaport 在线聊天工具使用教程.md"
+    },
+    {
+      "basename": "awesome-ceo",
+      "path": "7.Marketing/awesome-ceo.md"
+    },
+    {
+      "basename": "Pasted image 20260217234806",
+      "path": "5.Finance/imgs/Pasted image 20260217234806.png"
+    },
+    {
+      "basename": "Pasted image 20260217235051",
+      "path": "5.Finance/imgs/Pasted image 20260217235051.png"
+    },
+    {
+      "basename": "Pasted image 20260217234929",
+      "path": "5.Finance/imgs/Pasted image 20260217234929.png"
+    },
+    {
+      "basename": "Pasted image 20260217234820",
+      "path": "5.Finance/imgs/Pasted image 20260217234820.png"
+    },
+    {
+      "basename": "提示词示例-Gemini 3 Pro",
+      "path": "5.Finance/PandaAI大模型提示词/提示词示例-Gemini 3 Pro.txt"
+    },
+    {
       "basename": "Index",
       "path": "Index.base"
     },
@@ -107,90 +199,6 @@
     {
       "basename": "temperature_softmax",
       "path": "3.Agent/imgs/temperature_softmax.png"
-    },
-    {
-      "basename": "深度学习需要哪些数学",
-      "path": "2.Math/深度学习需要哪些数学.md"
-    },
-    {
-      "basename": "混合精度训练 Mixed Precision Training",
-      "path": "3.Agent/混合精度训练 Mixed Precision Training.md"
-    },
-    {
-      "basename": "Logits 详解",
-      "path": "2.Math/05-机器学习数学/Logits 详解.md"
-    },
-    {
-      "basename": "PCA 主成分分析",
-      "path": "2.Math/01-线性代数/PCA 主成分分析.md"
-    },
-    {
-      "basename": "特征值分解与谱分解",
-      "path": "2.Math/01-线性代数/特征值分解与谱分解.md"
-    },
-    {
-      "basename": "skeptric - Measuring a Language Model",
-      "path": "Clippings/skeptric - Measuring a Language Model.md"
-    },
-    {
-      "basename": "WandB-Weights-and-Biases",
-      "path": "3.Agent/工具使用/WandB-Weights-and-Biases.md"
-    },
-    {
-      "basename": "Naval - 接受人性的阴暗：没人希望你过得比他好",
-      "path": "6.BookNotes/Naval - 接受人性的阴暗：没人希望你过得比他好.md"
-    },
-    {
-      "basename": "Naval - 钱和性是人性的 X 光机",
-      "path": "6.BookNotes/Naval - 钱和性是人性的 X 光机.md"
-    },
-    {
-      "basename": "量化交易：算法、分析、数据、模型和优化",
-      "path": "5.Finance/量化交易：算法、分析、数据、模型和优化.pdf"
-    },
-    {
-      "basename": "Eigenvalue 与 SingularValue 词源辨析",
-      "path": "2.Math/01-线性代数/Eigenvalue 与 SingularValue 词源辨析.md"
-    },
-    {
-      "basename": "彻底搞懂奇异值分解 SVD V1",
-      "path": "2.Math/01-线性代数/彻底搞懂奇异值分解 SVD V1.md"
-    },
-    {
-      "basename": "特征值与奇异值对比",
-      "path": "2.Math/01-线性代数/特征值与奇异值对比.md"
-    },
-    {
-      "basename": "傅里叶变换——从坐标系到频谱的完整推导",
-      "path": "2.Math/01-线性代数/傅里叶变换——从坐标系到频谱的完整推导.md"
-    },
-    {
-      "basename": "矩阵迹 tr(A)",
-      "path": "2.Math/01-线性代数/矩阵迹 tr(A).md"
-    },
-    {
-      "basename": "线性代数的本质",
-      "path": "2.Math/01-线性代数/线性代数的本质.md"
-    },
-    {
-      "basename": "特征值分解（Eigendecomposition）详解",
-      "path": "2.Math/01-线性代数/特征值分解（Eigendecomposition）详解.md"
-    },
-    {
-      "basename": "彻底搞懂奇异值分解 SVD V2",
-      "path": "2.Math/01-线性代数/彻底搞懂奇异值分解 SVD V2.md"
-    },
-    {
-      "basename": "行列式",
-      "path": "2.Math/01-线性代数/行列式.md"
-    },
-    {
-      "basename": "特征向量与特征值",
-      "path": "2.Math/01-线性代数/特征向量与特征值.md"
-    },
-    {
-      "basename": "线性代数在深度学习中的应用",
-      "path": "2.Math/01-线性代数/线性代数在深度学习中的应用.md"
     }
   ],
   "omittedPaths": [],
