@@ -1,0 +1,11 @@
+/* Obsidian Terminal 插件 - 字体和缩放调整 */
+
+/* 终端字体大小 */
+.workspace-leaf-content[data-type="terminal:terminal"] .xterm {
+  font-size: 10px;
+}
+
+/* 终端行高 */
+.workspace-leaf-content[data-type="terminal:terminal"] .xterm-viewport {
+  line-height: 1.2;
+}

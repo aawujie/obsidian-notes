@@ -5,7 +5,6 @@
   "colored-text",
   "easy-typing-obsidian",
   "dataview",
-  "terminal",
   "obsidian-epub-plugin",
   "data-files-editor",
   "obsidian-tasks-plugin",
@@ -13,5 +12,6 @@
   "recent-files-obsidian",
   "surfing",
   "obsidian-weread-plugin",
-  "dust-calendar"
+  "dust-calendar",
+  "terminal"
 ]
