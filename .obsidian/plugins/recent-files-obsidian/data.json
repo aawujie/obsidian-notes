@@ -1,20 +1,80 @@
 {
   "recentFiles": [
     {
-      "basename": "awesome-ceo",
-      "path": "7.Marketing/awesome-ceo.md"
+      "basename": "2026-02-22",
+      "path": "0.DailyTask/2026/2026-02-22.md"
+    },
+    {
+      "basename": "2026-02-23",
+      "path": "0.DailyTask/2026/2026-02-23.md"
+    },
+    {
+      "basename": "2026-02-27",
+      "path": "0.DailyTask/2026/2026-02-27.md"
+    },
+    {
+      "basename": "提示词示例-松鼠",
+      "path": "5.Finance/PandaAI大模型提示词/提示词示例-松鼠.txt"
+    },
+    {
+      "basename": "提示词示例-豆包",
+      "path": "5.Finance/PandaAI大模型提示词/提示词示例-豆包.txt"
+    },
+    {
+      "basename": "Pasted image 20260217235113",
+      "path": "5.Finance/imgs/Pasted image 20260217235113.png"
+    },
+    {
+      "basename": "Pasted image 20260217235210",
+      "path": "5.Finance/imgs/Pasted image 20260217235210.png"
+    },
+    {
+      "basename": "MM 定理 - Modigliani_Miller Theorem",
+      "path": "5.Finance/MM 定理 - Modigliani_Miller Theorem.md"
+    },
+    {
+      "basename": "有效市场假说 - EMH 详解",
+      "path": "5.Finance/有效市场假说 - EMH 详解.md"
+    },
+    {
+      "basename": "TradingAgents-CN 调研报告",
+      "path": "5.Finance/TradingAgents-CN/TradingAgents-CN 调研报告.md"
+    },
+    {
+      "basename": "龙虎榜分析_20260213",
+      "path": "5.Finance/imgs/龙虎榜分析_20260213.png"
+    },
+    {
+      "basename": "Pasted image 20260217234923",
+      "path": "5.Finance/imgs/Pasted image 20260217234923.png"
+    },
+    {
+      "basename": "Pasted image 20260217234806",
+      "path": "5.Finance/imgs/Pasted image 20260217234806.png"
+    },
+    {
+      "basename": "和平演变",
+      "path": "Chaos/和平演变.md"
+    },
+    {
+      "basename": "彻底搞懂奇异值分解 SVD V1",
+      "path": "2.Math/01-线性代数/彻底搞懂奇异值分解 SVD V1.md"
+    },
+    {
+      "basename": "彻底搞懂奇异值分解（SVD）",
+      "path": "2.Math/01-线性代数/彻底搞懂奇异值分解（SVD）.md"
     },
     {
       "basename": "_Index",
-      "path": "9.Coding/_Index.md"
+      "path": "8.Coding/_Index.md"
     },
     {
       "basename": "tenacitOS 项目分析",
-      "path": "9.Coding/04-项目文档/tenacitOS 项目分析.md"
+      "path": "8.Coding/04-项目文档/tenacitOS 项目分析.md"
     },
     {
       "basename": "深度学习 - 卷积神经网络局部性",
-      "path": "9.Coding/01-深度学习/CNN与卷积/深度学习 - 卷积神经网络局部性.md"
+      "path": "8.Coding/01-深度学习/CNN与卷积/深度学习 - 卷积神经网络局部性.md"
     },
     {
       "basename": "深度学习需要哪些数学",
@@ -34,11 +94,7 @@
     },
     {
       "basename": "Daily Routine",
-      "path": "10.WorkOut/Daily Routine.md"
-    },
-    {
-      "basename": "TradingAgents-CN 调研报告",
-      "path": "5.Finance/TradingAgents-CN/TradingAgents-CN 调研报告.md"
+      "path": "9.WorkOut/Daily Routine.md"
     },
     {
       "basename": "Index",
@@ -46,7 +102,7 @@
     },
     {
       "basename": "睡眠科学 - YouTube 视频笔记",
-      "path": "8.AI Summary/健康与科学/睡眠科学 - YouTube 视频笔记.md"
+      "path": "7.AI Summary/健康与科学/睡眠科学 - YouTube 视频笔记.md"
     },
     {
       "basename": "救猫咪2：经典电影剧本解析",
@@ -71,10 +127,6 @@
     {
       "basename": "DeepSeek最新多模态大模型，理解与生成同时遥遥领先!",
       "path": "4.Robot/ML&DL/Arxiv 一周进展报告（大模型方向）/20241018-20241024/DeepSeek最新多模态大模型，理解与生成同时遥遥领先!.md"
-    },
-    {
-      "basename": "和平演变",
-      "path": "Chaos/和平演变.md"
     },
     {
       "basename": "万物皆模型之《孙子兵法》72篇",
@@ -106,23 +158,15 @@
     },
     {
       "basename": "Pasted image 20260220181052",
-      "path": "8.AI Summary/imgs/Pasted image 20260220181052.png"
+      "path": "7.AI Summary/imgs/Pasted image 20260220181052.png"
     },
     {
       "basename": "AI 时代的五大个人机会",
-      "path": "8.AI Summary/AI 与技术/AI 时代的五大个人机会.md"
+      "path": "7.AI Summary/AI 与技术/AI 时代的五大个人机会.md"
     },
     {
       "basename": "00-索引",
-      "path": "8.AI Summary/AI 与技术/00-索引.md"
-    },
-    {
-      "basename": "Chaport 在线聊天工具使用教程",
-      "path": "7.Marketing/Chaport 在线聊天工具使用教程.md"
-    },
-    {
-      "basename": "Pasted image 20260217234806",
-      "path": "5.Finance/imgs/Pasted image 20260217234806.png"
+      "path": "7.AI Summary/AI 与技术/00-索引.md"
     },
     {
       "basename": "Pasted image 20260217235051",
