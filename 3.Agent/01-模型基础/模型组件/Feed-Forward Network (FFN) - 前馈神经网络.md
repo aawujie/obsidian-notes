@@ -457,4 +457,4 @@ deep_ffn = DeepFFN(128, [256, 512, 256], 10)
 **标签**: #深度学习 #神经网络 #FFN #前馈网络 #Transformer #模型架构
 
 **创建日期**: 2026-03-23
-**相关**: [[LayerNorm vs Softmax - 本质区别]] [[Transformer 架构详解]] [[激活函数对比]] [[PyTorch 参数管理 - Parameter vs Buffer]]
+**相关**: [[LayerNorm vs Softmax - 本质区别]] [[Transformer架构从零理解]] [[激活函数对比]] [[PyTorch 参数管理 - Parameter vs Buffer]]

@@ -215,7 +215,7 @@
 - [[Seq2Seq 束搜索算法速记]]
 - [[注意力机制 Attention 核心原理]]
 - [[循环神经网络 RNN 基础]]
-- [[Transformer 架构详解]] ← 待创建
+- [[Transformer架构从零理解]] ← 待创建
 
 ---
 

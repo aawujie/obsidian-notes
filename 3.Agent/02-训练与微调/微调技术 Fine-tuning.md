@@ -82,7 +82,7 @@
 - [[迁移学习 Transfer Learning]]
 - [[预训练模型 Pre-trained Models]]
 - [[ImageNet]]
-- [[卷积神经网络 CNN]]
+- [[深度学习 - 卷积层核心概念]]
 - [[过拟合与正则化]]
 
 ---

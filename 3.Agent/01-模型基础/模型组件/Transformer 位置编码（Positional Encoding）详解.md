@@ -456,4 +456,4 @@ class LearnablePositionalEncoding(nn.Module):
 **标签**: #Transformer #位置编码 #深度学习 #NLP #Attention 机制
 
 **创建日期**: 2026-03-23
-**相关**: [[Feed-Forward Network (FFN) - 前馈神经网络]] [[Transformer 架构详解]] [[LayerNorm vs Softmax - 本质区别]]
+**相关**: [[Feed-Forward Network (FFN) - 前馈神经网络]] [[Transformer架构从零理解]] [[LayerNorm vs Softmax - 本质区别]]

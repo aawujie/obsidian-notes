@@ -270,7 +270,7 @@ YaRN 注意力: A_ij = softmax(q_i · k_j / (temperature × √d))
 ## 相关概念
 
 - [[RoPE - 旋转位置编码]]
-- [[Transformer 注意力机制]]
+- [[注意力机制详解]]
 - [[大模型上下文扩展技术]]
 - [[NTK-aware 位置编码]]
 - [[位置插值 PI]]

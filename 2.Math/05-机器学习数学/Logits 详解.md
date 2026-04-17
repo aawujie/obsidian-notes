@@ -131,6 +131,6 @@ soft_logits = logits / T  # 分布更"软"（更均匀）
 ## 相关概念
 
 - [[Softmax 函数]]
-- [[交叉熵损失]]
+- [[Entropy_CrossEntropy_KLDivergence]]
 - [[温度缩放]]
 - [[神经网络输出层]]

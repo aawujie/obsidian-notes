@@ -95,12 +95,12 @@ tags: [因子投资，量化]   # 标签
 
 ## 今天做了什么
 - 推进了 [[因子投资研究]] 项目
-- 学习了 [[MM 定理]] 和 [[有效市场假说]]
+- 学习了 [[MM 定理 - Modigliani_Miller Theorem]] 和 [[有效市场假说 - EMH 详解]]
 
 # 因子投资研究 (项目)
 
 ## 进展
-- 2026-02-21: [[2026-02-21]] - 完成 [[MM 定理]] 笔记
+- 2026-02-21: [[2026-02-21]] - 完成 [[MM 定理 - Modigliani_Miller Theorem]] 笔记
 ```
 
 ---
@@ -211,7 +211,7 @@ created: 2026-02-21
 **Key Constraints:**
 - Timeline: 4 个月
 - Resources: 聚宽数据、Python
-- Dependencies: 需要先学 [[MM 定理]]
+- Dependencies: 需要先学 [[MM 定理 - Modigliani_Miller Theorem]]
 
 ---
 
@@ -219,7 +219,7 @@ created: 2026-02-21
 
 ### Phase 1: 理论学习
 - [ ] 阅读《因子投资：方法与实践》
-- [ ] 学习 [[EMH]] 和 [[MM 定理]]
+- [ ] 学习 [[有效市场假说 - EMH 详解]] 和 [[MM 定理 - Modigliani_Miller Theorem]]
 - [ ] 理解 Fama-French 三因子
 
 ### Phase 2: 数据收集
@@ -236,12 +236,12 @@ created: 2026-02-21
 
 ## Progress
 
-- 2026-02-21: [[2026-02-21]] - 项目启动，完成 [[MM 定理]] 笔记
+- 2026-02-21: [[2026-02-21]] - 项目启动，完成 [[MM 定理 - Modigliani_Miller Theorem]] 笔记
 
 ---
 
 ## Related
-- [[有效市场假说]]
+- [[有效市场假说 - EMH 详解]]
 - [[资本资产定价模型]]
 
 ---
@@ -495,7 +495,7 @@ Knowledge Manager and Daily Planner
    - 40_Wiki/利息税盾.md（原子概念）
    ↓
 3. 链接到现有知识：
-   - [[有效市场假说]]
+   - [[有效市场假说 - EMH 详解]]
    - [[因子投资研究]]（项目）
 ```
 

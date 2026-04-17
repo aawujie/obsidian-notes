@@ -353,4 +353,4 @@ probs = softmax(logits)
 **标签**: #深度学习 #归一化 #LayerNorm #Softmax #Transformer #神经网络基础
 
 **创建日期**: 2026-03-23
-**相关**: [[BatchNorm vs LayerNorm]] [[Transformer 架构详解]] [[激活函数对比]] [[可学习参数]]
+**相关**: [[LayerNorm vs Softmax - 本质区别]] [[Transformer架构从零理解]] [[激活函数对比]] [[可学习参数]]

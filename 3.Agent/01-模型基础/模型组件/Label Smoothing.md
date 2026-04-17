@@ -135,6 +135,6 @@ $$KL(q' \| p) = \sum q'(x) \log\frac{q'(x)}{p(x)} = -H(q') + CE(q', p)$$
 
 ## 相关笔记
 
-- [[交叉熵损失]] —— 标准交叉熵详解
+- [[Entropy_CrossEntropy_KLDivergence]] —— 标准交叉熵详解
 - [[Transformer训练篇]] —— Label Smoothing 在 Transformer 中的应用
 - [[正则化技术]] —— Dropout、Weight Decay 等其他正则化方法

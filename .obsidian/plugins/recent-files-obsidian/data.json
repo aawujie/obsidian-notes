@@ -1,6 +1,22 @@
 {
   "recentFiles": [
     {
+      "basename": "五种-Agent-Skill-设计模式",
+      "path": "3.Agent/04-Agent架构与模式/五种-Agent-Skill-设计模式.md"
+    },
+    {
+      "basename": "monosemantic-features-zh",
+      "path": "3.Agent/01-模型基础/可解释性/monosemantic-features-zh.md"
+    },
+    {
+      "basename": "稀疏自编码器 Sparse Autoencoder",
+      "path": "3.Agent/01-模型基础/可解释性/稀疏自编码器 Sparse Autoencoder.md"
+    },
+    {
+      "basename": "figure_001",
+      "path": "3.Agent/01-模型基础/可解释性/images_toy/figure_001.png"
+    },
+    {
       "basename": "2026-02-22",
       "path": "0.DailyTask/2026/2026-02-22.md"
     },
@@ -183,18 +199,6 @@
     {
       "basename": "提示词示例-Gemini 3 Pro",
       "path": "5.Finance/PandaAI大模型提示词/提示词示例-Gemini 3 Pro.txt"
-    },
-    {
-      "basename": "这世界既残酷也温柔",
-      "path": "6.BookNotes/Weread/个人成长/这世界既残酷也温柔.md"
-    },
-    {
-      "basename": "因子投资：方法与实践",
-      "path": "6.BookNotes/Weread/经济理财/因子投资：方法与实践.md"
-    },
-    {
-      "basename": "雅思口语高级课程讲义-亚夏尔",
-      "path": "1.English/雅思口语高级课程讲义-亚夏尔.pdf"
     }
   ],
   "omittedPaths": [

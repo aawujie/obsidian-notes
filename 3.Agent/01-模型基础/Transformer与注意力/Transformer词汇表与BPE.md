@@ -256,7 +256,7 @@ print(encoded.ids)     # [1234, 5678]
 
 ## 相关笔记
 
-- [[BPE分词详解]] —— BPE 算法详细原理
+- [[Transformer词汇表与BPE]] —— BPE 算法详细原理
 - [[WordPiece分词]] —— BERT 使用的分词方法
 - [[SentencePiece]] —— 另一种子词分词方法
 - [[词汇表Vocabulary构建]] —— 如何构建自己的词汇表

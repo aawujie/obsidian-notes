@@ -141,7 +141,7 @@ $$ \alpha_i = \frac{\exp(-\frac{(q-k_i)^2}{2\sigma^2})}{\sum_j \exp(-\frac{(q-k_
 - [[Seq2Seq 束搜索算法速记]]
 - [[循环神经网络 RNN 基础]]
 - [[1×1 卷积通道降维原理（Inception 核心）]]
-- [[Transformer 架构详解]] ← 待创建
+- [[Transformer架构从零理解]] ← 待创建
 
 ---
 

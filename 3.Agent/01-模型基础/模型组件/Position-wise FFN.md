@@ -239,5 +239,5 @@ class SwiGLU(nn.Module):
 ## 相关笔记
 
 - [[Transformer架构从零理解]] —— FFN 在 Transformer 中的位置
-- [[Multi-Head Attention]] —— 与 FFN 互补的注意力机制
+- [[多头注意力深入理解]] —— 与 FFN 互补的注意力机制
 - [[激活函数]] —— ReLU、GELU、Swish 等

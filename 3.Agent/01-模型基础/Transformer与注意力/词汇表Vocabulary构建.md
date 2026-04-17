@@ -228,5 +228,5 @@ with open("vocab.json", "w") as f:
 ## 相关笔记
 
 - [[Transformer训练篇]] —— 词汇表在训练中的使用
-- [[BPE分词]] —— 子词分词方法
-- [[Embedding层]] —— ID 如何变成向量
+- [[Transformer词汇表与BPE]] —— 子词分词方法
+- [[Embedding全面理解]] —— ID 如何变成向量

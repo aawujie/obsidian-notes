@@ -207,7 +207,7 @@ Step 4 (预测 "student"):
 
 ## 相关笔记
 
-- [[Multi-Head Attention]] —— 多头注意力基础
+- [[多头注意力深入理解]] —— 多头注意力基础
 - [[Transformer架构从零理解]] —— 完整架构解析
 - [[transformer_training_marimo]] —— 训练代码实现
 - [[Causal Mask]] —— 因果掩码详解
