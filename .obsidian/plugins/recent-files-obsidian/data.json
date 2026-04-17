@@ -1,6 +1,22 @@
 {
   "recentFiles": [
     {
+      "basename": "awesome-ceo",
+      "path": "7.Marketing/awesome-ceo.md"
+    },
+    {
+      "basename": "_Index",
+      "path": "9.Coding/_Index.md"
+    },
+    {
+      "basename": "tenacitOS 项目分析",
+      "path": "9.Coding/04-项目文档/tenacitOS 项目分析.md"
+    },
+    {
+      "basename": "深度学习 - 卷积神经网络局部性",
+      "path": "9.Coding/01-深度学习/CNN与卷积/深度学习 - 卷积神经网络局部性.md"
+    },
+    {
       "basename": "深度学习需要哪些数学",
       "path": "2.Math/深度学习需要哪些数学.md"
     },
@@ -23,10 +39,6 @@
     {
       "basename": "TradingAgents-CN 调研报告",
       "path": "5.Finance/TradingAgents-CN/TradingAgents-CN 调研报告.md"
-    },
-    {
-      "basename": "gui 模块",
-      "path": "9.Coding/项目文档/software-in-loop/gui 模块.md"
     },
     {
       "basename": "Index",
@@ -59,10 +71,6 @@
     {
       "basename": "DeepSeek最新多模态大模型，理解与生成同时遥遥领先!",
       "path": "4.Robot/ML&DL/Arxiv 一周进展报告（大模型方向）/20241018-20241024/DeepSeek最新多模态大模型，理解与生成同时遥遥领先!.md"
-    },
-    {
-      "basename": "Docker 打镜像原理",
-      "path": "9.Coding/Docker/Docker 打镜像原理.md"
     },
     {
       "basename": "和平演变",
@@ -113,10 +121,6 @@
       "path": "7.Marketing/Chaport 在线聊天工具使用教程.md"
     },
     {
-      "basename": "awesome-ceo",
-      "path": "7.Marketing/awesome-ceo.md"
-    },
-    {
       "basename": "Pasted image 20260217234806",
       "path": "5.Finance/imgs/Pasted image 20260217234806.png"
     },
@@ -149,8 +153,13 @@
       "path": "1.English/雅思口语高级课程讲义-亚夏尔.pdf"
     }
   ],
-  "omittedPaths": [],
-  "omittedTags": [],
+  "omittedPaths": [
+    ""
+  ],
+  "omittedTags": [
+    ""
+  ],
   "updateOn": "file-open",
-  "omitBookmarks": false
+  "omitBookmarks": false,
+  "maxLength": null
 }
