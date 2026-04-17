@@ -1,0 +1,1516 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>奇异值分解 SVD 可视化</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #0f1117;
+  --card: #1a1d28;
+  --card-hover: #222638;
+  --accent: #f97316;
+  --accent2: #38bdf8;
+  --accent3: #a3e635;
+  --accent4: #e879f9;
+  --text: #e8e6e3;
+  --text-dim: #8b8d93;
+  --border: #2a2d3a;
+  --u-color: #38bdf8;
+  --s-color: #f97316;
+  --v-color: #a3e635;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Noto Sans SC', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.8;
+  overflow-x: hidden;
+}
+
+.container { max-width: 920px; margin: 0 auto; padding: 40px 24px; }
+
+h1 {
+  font-size: 2.2em;
+  font-weight: 700;
+  margin-bottom: 8px;
+  background: linear-gradient(135deg, var(--s-color), var(--accent2));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.subtitle { color: var(--text-dim); font-size: 0.95em; margin-bottom: 48px; }
+
+.section { margin-bottom: 56px; animation: fadeUp 0.6s ease-out both; }
+.section:nth-child(2) { animation-delay: 0.1s; }
+.section:nth-child(3) { animation-delay: 0.2s; }
+.section:nth-child(4) { animation-delay: 0.3s; }
+.section:nth-child(5) { animation-delay: 0.4s; }
+.section:nth-child(6) { animation-delay: 0.5s; }
+.section:nth-child(7) { animation-delay: 0.6s; }
+.section:nth-child(8) { animation-delay: 0.7s; }
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+h2 {
+  font-size: 1.45em; font-weight: 600; margin-bottom: 16px;
+  display: flex; align-items: center; gap: 12px;
+}
+
+h2 .step {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 34px; height: 34px; border-radius: 50%;
+  background: var(--accent); color: #fff; font-size: 0.72em; font-weight: 700; flex-shrink: 0;
+}
+
+p { color: var(--text); font-size: 0.95em; margin-bottom: 14px; }
+
+.note {
+  background: var(--card); border-left: 3px solid var(--accent2);
+  padding: 14px 18px; border-radius: 0 8px 8px 0;
+  color: var(--text-dim); font-size: 0.88em; margin-bottom: 16px;
+}
+
+.card {
+  background: var(--card); border: 1px solid var(--border);
+  border-radius: 14px; padding: 24px; margin: 16px 0;
+}
+
+.demo-title {
+  font-size: 0.82em; color: var(--accent); font-weight: 600;
+  text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px;
+}
+
+.formula-block {
+  background: #12151f; border: 1px solid var(--border);
+  border-radius: 10px; padding: 20px; text-align: center; margin: 16px 0;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.formula-big { font-size: 1.45em; color: var(--text); letter-spacing: 2px; }
+.formula-label { font-size: 0.78em; color: var(--text-dim); margin-top: 10px; }
+
+.col-u { color: var(--u-color); }
+.col-s { color: var(--s-color); }
+.col-v { color: var(--v-color); }
+
+.canvas-wrap {
+  position: relative; width: 100%; border-radius: 12px;
+  overflow: hidden; background: #0a0c12; border: 1px solid var(--border);
+}
+
+canvas { display: block; width: 100%; }
+
+.controls {
+  display: flex; flex-wrap: wrap; gap: 12px; margin: 14px 0; align-items: center;
+}
+
+.ctrl-group { display: flex; flex-direction: column; gap: 4px; }
+
+.ctrl-group label { font-size: 0.78em; color: var(--text-dim); font-family: 'JetBrains Mono', monospace; }
+.ctrl-group input[type=range] { width: 140px; accent-color: var(--accent); }
+.ctrl-group .val { font-size: 0.78em; color: var(--accent3); font-family: 'JetBrains Mono', monospace; text-align: right; }
+
+.btn {
+  background: linear-gradient(135deg, var(--accent), #c2410c);
+  color: #fff; border: none; border-radius: 8px;
+  padding: 8px 18px; font-size: 0.88em; cursor: pointer;
+  font-family: 'Noto Sans SC', sans-serif;
+  transition: opacity 0.2s, transform 0.1s;
+}
+.btn:hover { opacity: 0.85; transform: translateY(-1px); }
+.btn-secondary { background: var(--card-hover); border: 1px solid var(--border); color: var(--text); }
+
+.matrix-inputs {
+  display: inline-grid; grid-template-columns: 1fr 1fr 1fr;
+  gap: 5px; background: #12151f; border: 1px solid var(--border);
+  border-radius: 10px; padding: 10px;
+}
+
+.matrix-inputs input {
+  width: 56px; background: var(--card); border: 1px solid var(--border);
+  border-radius: 6px; color: var(--text); font-family: 'JetBrains Mono', monospace;
+  font-size: 0.95em; padding: 5px 6px; text-align: center; outline: none;
+  transition: border-color 0.2s;
+}
+
+.matrix-inputs input:focus { border-color: var(--accent); }
+
+.matrix-inputs-2x2 { grid-template-columns: 1fr 1fr; }
+
+.legend {
+  display: flex; gap: 16px; flex-wrap: wrap; margin: 10px 0;
+}
+.legend-item {
+  display: flex; align-items: center; gap: 6px;
+  font-size: 0.82em; color: var(--text-dim);
+}
+.legend-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+
+.three-parts {
+  display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 14px; margin: 16px 0;
+}
+
+.part-card {
+  background: #12151f; border-radius: 12px; padding: 18px; border: 1px solid var(--border);
+  text-align: center; transition: all 0.2s;
+}
+
+.part-card:hover { transform: translateY(-2px); }
+.part-card .sym { font-size: 2em; font-family: 'JetBrains Mono', monospace; font-weight: 700; margin-bottom: 8px; }
+.part-card h4 { font-size: 0.88em; margin-bottom: 4px; }
+.part-card p { font-size: 0.78em; color: var(--text-dim); margin: 0; }
+.part-card .shape { font-size: 0.72em; color: var(--text-dim); font-family: 'JetBrains Mono', monospace; margin-top: 6px; }
+
+.info-row {
+  display: flex; gap: 12px; flex-wrap: wrap; margin: 12px 0;
+}
+
+.info-badge {
+  background: #12151f; border: 1px solid var(--border);
+  border-radius: 8px; padding: 8px 14px;
+  font-family: 'JetBrains Mono', monospace; font-size: 0.82em;
+}
+.info-badge span { color: var(--text-dim); }
+
+.tabs {
+  display: flex; gap: 4px; margin-bottom: 16px;
+  background: var(--card); border-radius: 10px; padding: 4px;
+}
+.tab {
+  flex: 1; padding: 8px; text-align: center; border-radius: 7px;
+  font-size: 0.85em; cursor: pointer; transition: all 0.2s; color: var(--text-dim);
+}
+.tab.active { background: var(--accent); color: #fff; font-weight: 600; }
+
+.app-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+
+.app-card {
+  background: var(--card); border: 1px solid var(--border);
+  border-radius: 12px; padding: 18px; transition: all 0.2s;
+}
+.app-card:hover { border-color: var(--accent); transform: translateY(-2px); }
+.app-card h4 { font-size: 0.95em; margin-bottom: 6px; color: var(--accent2); }
+.app-card p { font-size: 0.82em; color: var(--text-dim); margin: 0; }
+
+/* SVD vs EVD comparison */
+.compare-grid {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 16px 0;
+}
+.compare-card {
+  background: var(--card); border-radius: 12px; padding: 18px;
+  border: 1px solid var(--border);
+}
+.compare-card h4 { font-size: 0.95em; margin-bottom: 10px; }
+.compare-card ul { padding-left: 18px; }
+.compare-card li { font-size: 0.82em; color: var(--text-dim); margin-bottom: 4px; }
+
+.mat-tab-btn {
+  background: var(--card); border: 1px solid var(--border);
+  color: var(--text-dim); border-radius: 7px; padding: 5px 12px;
+  font-size: 0.8em; cursor: pointer; font-family: 'Noto Sans SC', sans-serif;
+  transition: all 0.15s;
+}
+.mat-tab-btn:hover { border-color: var(--accent); color: var(--text); }
+.mat-tab-btn.active { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+
+/* Low-rank slider */
+.rank-display {
+  display: flex; align-items: center; gap: 16px; flex-wrap: wrap; margin: 12px 0;
+}
+.rank-number {
+  font-size: 2em; font-weight: 700; font-family: 'JetBrains Mono', monospace;
+  color: var(--accent);
+}
+.rank-info { font-size: 0.82em; color: var(--text-dim); }
+
+/* Image canvas */
+.img-canvas-row {
+  display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; margin: 12px 0;
+}
+.img-panel { text-align: center; }
+.img-panel canvas { border-radius: 8px; border: 1px solid var(--border); max-width: 100%; }
+.img-panel p { font-size: 0.75em; color: var(--text-dim); margin-top: 4px; }
+
+.anim-bar { height: 3px; background: var(--border); border-radius: 2px; margin-top: 8px; overflow: hidden; }
+.anim-bar-fill { height: 100%; background: linear-gradient(90deg, var(--accent), var(--accent2)); border-radius: 2px; }
+
+.step-desc-box {
+  margin-top: 12px; font-size: 0.88em; color: var(--text-dim);
+  padding: 12px; background: #12151f; border-radius: 8px; min-height: 48px;
+}
+
+code {
+  font-family: 'JetBrains Mono', monospace; font-size: 0.88em;
+  background: #12151f; padding: 1px 5px; border-radius: 4px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+  <h1>奇异值分解 SVD</h1>
+  <p class="subtitle">Singular Value Decomposition — 任意矩阵的终极分解</p>
+
+  <!-- Section 1: 动机 -->
+  <div class="section">
+    <h2><span class="step">1</span>为什么需要 SVD？EVD 的局限</h2>
+    <p>特征值分解 (EVD) 很强大，但有致命限制：<strong>只能处理方阵，且要求可对角化</strong>。</p>
+    <p>现实中遇到的矩阵往往是 m×n 的"非方阵"：图像像素矩阵、词向量矩阵、神经网络权重矩阵……</p>
+
+    <div class="compare-grid">
+      <div class="compare-card" style="border-color:#f87171;">
+        <h4 style="color:#f87171;">⚠️ EVD 的限制</h4>
+        <ul>
+          <li>只能处理 n×n 方阵</li>
+          <li>需要 n 个线性独立的特征向量</li>
+          <li>可能有复数特征值</li>
+          <li>不能保证特征向量正交</li>
+        </ul>
+      </div>
+      <div class="compare-card" style="border-color:#34d399;">
+        <h4 style="color:#34d399;">✅ SVD 的优势</h4>
+        <ul>
+          <li>适用于任意 m×n 矩阵</li>
+          <li>永远存在，不会失败</li>
+          <li>奇异值永远是非负实数</li>
+          <li>U 和 V 都是正交矩阵</li>
+        </ul>
+      </div>
+    </div>
+    <div class="note">SVD 是 EVD 的"超级升级版"。对于方阵，两者有深刻联系：A 的奇异值 = AᵀA 的特征值的平方根。</div>
+  </div>
+
+  <!-- Section 2: 公式 -->
+  <div class="section">
+    <h2><span class="step">2</span>SVD 公式：A = UΣVᵀ</h2>
+
+    <div class="formula-block">
+      <div class="formula-big">
+        <span style="color:var(--text)">A</span>
+        <span style="color:var(--text)"> = </span>
+        <span class="col-u">U</span>
+        <span class="col-s"> Σ </span>
+        <span class="col-v">Vᵀ</span>
+      </div>
+      <div class="formula-label">任意 m×n 矩阵 A 都可以这样分解</div>
+    </div>
+
+    <div class="three-parts">
+      <div class="part-card" style="border-color:var(--u-color)30">
+        <div class="sym col-u">U</div>
+        <h4>左奇异向量矩阵</h4>
+        <p>列向量是 <code>AAᵀ</code> 的特征向量</p>
+        <div class="shape">形状: m × m（正交矩阵）</div>
+      </div>
+      <div class="part-card" style="border-color:var(--s-color)30">
+        <div class="sym col-s">Σ</div>
+        <h4>奇异值对角矩阵</h4>
+        <p>对角线上是奇异值 σ₁ ≥ σ₂ ≥ … ≥ 0</p>
+        <div class="shape">形状: m × n（非方形对角）</div>
+      </div>
+      <div class="part-card" style="border-color:var(--v-color)30">
+        <div class="sym col-v">Vᵀ</div>
+        <h4>右奇异向量矩阵</h4>
+        <p>行向量是 <code>AᵀA</code> 的特征向量</p>
+        <div class="shape">形状: n × n（正交矩阵）</div>
+      </div>
+    </div>
+
+    <div class="note">奇异值 σᵢ = √λᵢ(AᵀA)，它们衡量各方向上的"拉伸强度"。最大奇异值 = 矩阵的谱范数。</div>
+  </div>
+
+  <!-- Section 3: 几何可视化 -->
+  <div class="section">
+    <h2><span class="step">3</span>几何核心：单位圆变椭圆</h2>
+    <p>SVD 最美的几何含义：<strong>任何矩阵变换都把单位球变成椭球</strong>。椭球的半轴长度 = 奇异值，方向 = 奇异向量。</p>
+
+    <div class="card">
+      <div class="demo-title">交互演示 — 观察 A 如何把单位圆变成椭圆</div>
+
+      <div style="display:flex; gap:20px; flex-wrap:wrap; align-items:flex-start; margin-bottom:16px;">
+        <div>
+          <div style="font-size:0.8em; color:var(--text-dim); margin-bottom:6px;">矩阵 A (2×2) =</div>
+          <div class="matrix-inputs matrix-inputs-2x2">
+            <input type="number" id="a11" value="3" step="0.5">
+            <input type="number" id="a12" value="1" step="0.5">
+            <input type="number" id="a21" value="1" step="0.5">
+            <input type="number" id="a22" value="2" step="0.5">
+          </div>
+        </div>
+        <div class="info-row" style="flex:1; flex-wrap:wrap; align-items:flex-start; gap:10px;">
+          <div class="info-badge"><span>σ₁ = </span><span id="sv1" style="color:var(--accent)">—</span></div>
+          <div class="info-badge"><span>σ₂ = </span><span id="sv2" style="color:var(--accent)">—</span></div>
+          <div class="info-badge"><span>秩 = </span><span id="rank-val" style="color:var(--accent2)">—</span></div>
+          <div class="info-badge"><span>条件数 = </span><span id="cond-val" style="color:var(--accent3)">—</span></div>
+          <div class="info-badge"><span>F-范数 = </span><span id="fnorm-val" style="color:var(--accent4)">—</span></div>
+        </div>
+      </div>
+
+      <div class="controls">
+        <div class="ctrl-group">
+          <label>动画进度 t</label>
+          <input type="range" id="t-slider" min="0" max="1" step="0.01" value="0">
+          <div class="val" id="t-val">0.00</div>
+        </div>
+        <button class="btn" id="animate-btn">▶ 播放动画</button>
+        <button class="btn btn-secondary" id="reset-btn">重置</button>
+      </div>
+
+      <div class="legend">
+        <div class="legend-item"><div class="legend-dot" style="background:#4b5563;border:1px solid #6b7280"></div>原始单位圆</div>
+        <div class="legend-item"><div class="legend-dot" style="background:var(--accent)"></div>变换后的椭圆</div>
+        <div class="legend-item"><div class="legend-dot" style="background:var(--u-color)"></div>左奇异向量 uᵢ（椭圆轴方向）</div>
+        <div class="legend-item"><div class="legend-dot" style="background:var(--v-color)"></div>右奇异向量 vᵢ（输入空间方向）</div>
+      </div>
+
+      <div class="canvas-wrap">
+        <canvas id="circle-canvas" height="420"></canvas>
+      </div>
+      <div class="anim-bar"><div class="anim-bar-fill" id="anim-bar-fill" style="width:0%"></div></div>
+
+      <div class="note" style="margin-top:20px;">
+        <strong>💡 动画在做什么？</strong><br>
+        单位圆上采样了 200 个点，每个点是一个向量 <code>[cos θ, sin θ]</code>。<br>
+        滑动 t：每个点从"原始位置"线性插值到"矩阵 A 作用后的位置"。<br>
+        t=0 → 单位圆；t=1 → 被 A 拉伸后的椭圆。你看到的是<strong>所有点同时被 A 变换</strong>的过程。
+      </div>
+
+      <div class="note" style="margin-top:12px;">
+        <strong>💡 矩阵的列是什么？</strong><br>
+        矩阵 A 的每一列是一个<strong>列向量</strong>，代表"标准基向量被变换后落在哪里"：<br>
+        &nbsp;&nbsp;• 第一列 = <code>[1, 0]</code> 变换后的位置<br>
+        &nbsp;&nbsp;• 第二列 = <code>[0, 1]</code> 变换后的位置<br><br>
+        任意向量 <code>[x, y]</code> 变换后 = <code>x × 第一列 + y × 第二列</code><br>
+        例：A = [[3,1],[1,2]]，变换 [2, 1]：<br>
+        &nbsp;&nbsp;= 2×[3,1] + 1×[1,2] = [6,2] + [1,2] = <strong>[7, 4]</strong><br><br>
+        所以两列是"积木"，任何点的变换结果都是它们的线性组合，权重就是该点的 x 和 y。
+      </div>
+    </div>
+  </div>
+
+  <!-- Section 4: 三步分解 -->
+  <div class="section">
+    <h2><span class="step">4</span>三步分解：旋转 → 缩放 → 旋转</h2>
+    <p>A = UΣVᵀ 的变换可以分成三步，每步都有清晰的几何含义：</p>
+
+    <div class="card">
+      <div class="demo-title">三步变换动画</div>
+      <div class="tabs" id="step-tabs">
+        <div class="tab active" data-step="0">完整 A</div>
+        <div class="tab" data-step="1">① Vᵀ 旋转</div>
+        <div class="tab" data-step="2">② Σ 缩放</div>
+        <div class="tab" data-step="3">③ U 旋转</div>
+      </div>
+      <div class="canvas-wrap">
+        <canvas id="steps-canvas" height="360"></canvas>
+      </div>
+      <div class="step-desc-box" id="step-desc">
+        完整变换 A：把单位圆直接变换成椭圆，相当于三步合一。
+      </div>
+    </div>
+  </div>
+
+  <!-- Section 5: 截断 SVD -->
+  <div class="section">
+    <h2><span class="step">5</span>截断 SVD：低秩近似</h2>
+    <p>SVD 最强大的应用：<strong>只保留前 k 个奇异值</strong>，得到最优的低秩近似矩阵 Aₖ。</p>
+
+    <div class="formula-block">
+      <div class="formula-big" style="font-size:1.1em">
+        A ≈ Aₖ = <span class="col-u">u₁</span><span class="col-s">σ₁</span><span class="col-v">v₁ᵀ</span>
+        + <span class="col-u">u₂</span><span class="col-s">σ₂</span><span class="col-v">v₂ᵀ</span>
+        + … +
+        <span class="col-u">uₖ</span><span class="col-s">σₖ</span><span class="col-v">vₖᵀ</span>
+      </div>
+      <div class="formula-label">Eckart–Young 定理：Aₖ 是所有秩-k 矩阵中最接近 A 的（按 Frobenius 范数）</div>
+    </div>
+
+    <div class="card">
+      <div class="demo-title">图像低秩压缩演示（生成图像）</div>
+
+      <div class="rank-display">
+        <div>
+          <div style="font-size:0.78em;color:var(--text-dim);">保留奇异值数量 k</div>
+          <div class="rank-number" id="rank-k">8</div>
+        </div>
+        <div class="ctrl-group" style="flex:1">
+          <label>k = <span id="rank-label">8</span></label>
+          <input type="range" id="rank-slider" min="1" max="32" value="8" style="width:100%">
+          <div class="val" id="rank-info">压缩率：—</div>
+        </div>
+      </div>
+
+      <div class="img-canvas-row">
+        <div class="img-panel">
+          <canvas id="orig-img" width="120" height="120"></canvas>
+          <p>原图 (32×32)</p>
+        </div>
+        <div class="img-panel">
+          <canvas id="approx-img" width="120" height="120"></canvas>
+          <p>k 秩近似</p>
+        </div>
+        <div class="img-panel">
+          <canvas id="error-img" width="120" height="120"></canvas>
+          <p>误差（×10）</p>
+        </div>
+      </div>
+
+      <!-- 全量矩阵数值展示 -->
+      <div style="margin: 14px 0;">
+        <div style="display:flex; align-items:center; gap:6px; margin-bottom:8px; flex-wrap:wrap;">
+          <button class="mat-tab-btn active" data-mat="orig">原图 A（固定）</button>
+          <button class="mat-tab-btn" data-mat="approx">k 阶近似 Aₖ（随滑块）</button>
+          <button class="mat-tab-btn" data-mat="diff">差值 |A − Aₖ|</button>
+          <span style="font-size:0.75em; color:var(--text-dim); margin-left:4px;">每格 = 像素亮度值（0~1）</span>
+        </div>
+        <div style="overflow-x:auto; background:#080a10; border-radius:10px; border:1px solid var(--border); padding:4px; text-align:center;">
+          <canvas id="matrix-canvas" style="display:inline-block;"></canvas>
+        </div>
+        <div id="matrix-diff-stats" style="margin-top:8px; font-size:0.8em; color:var(--text-dim); padding: 0 2px; text-align:center;"></div>
+      </div>
+
+      <div class="canvas-wrap">
+        <canvas id="singular-chart" height="140"></canvas>
+      </div>
+      <p style="font-size:0.78em; color:var(--text-dim); text-align:center; margin-top:6px;">奇异值大小（条形颜色越亮 = 被保留）</p>
+
+      <!-- 奇异值计算流程 -->
+      <div style="margin-top:14px; background:#080a10; border:1px solid var(--border); border-radius:10px; padding:16px;">
+        <div style="font-size:0.78em; color:var(--accent); font-weight:600; margin-bottom:14px; text-transform:uppercase; letter-spacing:0.5px;">Σ 是怎么从这张 32×32 图算出来的？</div>
+
+        <!-- 流程步骤 -->
+        <div style="display:flex; flex-direction:column; gap:0;">
+
+          <div style="display:flex; gap:12px; align-items:flex-start;">
+            <div style="display:flex; flex-direction:column; align-items:center;">
+              <div style="background:var(--accent); color:#fff; border-radius:50%; width:24px; height:24px; display:flex; align-items:center; justify-content:center; font-size:0.72em; font-weight:700; flex-shrink:0;">1</div>
+              <div style="width:2px; height:28px; background:var(--border); margin-top:4px;"></div>
+            </div>
+            <div style="padding-bottom:16px;">
+              <div style="font-size:0.88em; font-weight:600; margin-bottom:4px;">把图像当作矩阵 A（32×32）</div>
+              <div style="font-size:0.8em; color:var(--text-dim);">每个像素亮度值 = 矩阵的一个元素，第 (i,j) 行列 = 第 i 行 j 列像素。</div>
+            </div>
+          </div>
+
+          <div style="display:flex; gap:12px; align-items:flex-start;">
+            <div style="display:flex; flex-direction:column; align-items:center;">
+              <div style="background:var(--accent); color:#fff; border-radius:50%; width:24px; height:24px; display:flex; align-items:center; justify-content:center; font-size:0.72em; font-weight:700; flex-shrink:0;">2</div>
+              <div style="width:2px; height:28px; background:var(--border); margin-top:4px;"></div>
+            </div>
+            <div style="padding-bottom:16px;">
+              <div style="font-size:0.88em; font-weight:600; margin-bottom:4px;">计算 AᵀA（32×32 对称矩阵）</div>
+              <div style="font-size:0.8em; color:var(--text-dim);">AᵀA 的 (i,j) 元素 = A 的第 i 列和第 j 列的点积，即 <code>∑ₖ A[k][i]·A[k][j]</code>。结果一定是对称半正定矩阵，特征值 ≥ 0。</div>
+            </div>
+          </div>
+
+          <div style="display:flex; gap:12px; align-items:flex-start;">
+            <div style="display:flex; flex-direction:column; align-items:center;">
+              <div style="background:var(--accent); color:#fff; border-radius:50%; width:24px; height:24px; display:flex; align-items:center; justify-content:center; font-size:0.72em; font-weight:700; flex-shrink:0;">3</div>
+              <div style="width:2px; height:28px; background:var(--border); margin-top:4px;"></div>
+            </div>
+            <div style="padding-bottom:16px;">
+              <div style="font-size:0.88em; font-weight:600; margin-bottom:4px;">对 AᵀA 做特征值分解 → 得到 λ₁ ≥ λ₂ ≥ … ≥ λ₃₂ ≥ 0</div>
+              <div style="font-size:0.8em; color:var(--text-dim);">本页代码用 <strong>Jacobi 迭代法</strong>：每轮找最大的非对角元素 a[p][q]，用一个旋转消掉它，反复 20 轮后矩阵趋近对角形式，对角元素就是特征值 λᵢ。</div>
+            </div>
+          </div>
+
+          <div style="display:flex; gap:12px; align-items:flex-start;">
+            <div style="display:flex; flex-direction:column; align-items:center;">
+              <div style="background:var(--accent2); color:#fff; border-radius:50%; width:24px; height:24px; display:flex; align-items:center; justify-content:center; font-size:0.72em; font-weight:700; flex-shrink:0;">4</div>
+            </div>
+            <div>
+              <div style="font-size:0.88em; font-weight:600; margin-bottom:4px;">取平方根 → <span style="color:var(--s-color)">σᵢ = √λᵢ</span></div>
+              <div style="font-size:0.8em; color:var(--text-dim);">λᵢ 是"拉伸量的平方"，σᵢ 是实际拉伸幅度。32 个 σᵢ 填入 Σ 的对角线，其余全为 0。</div>
+            </div>
+          </div>
+
+        </div>
+
+        <div style="margin-top:14px; padding-top:12px; border-top:1px solid var(--border); font-size:0.8em; color:var(--text-dim);">
+          <span style="color:var(--accent3);">为什么要绕道 AᵀA？</span>
+          因为 A 是 32×32 方阵时可以直接求特征值——但如果 A 是 m×n 非方阵（如 100×200 的图），就无法直接特征值分解，而 AᵀA 始终是 n×n 方阵，可以正常求。SVD 本质上是把任意形状矩阵的分解问题，转化成一个方阵的特征值问题。
+        </div>
+      </div>
+
+
+      <div class="note" style="margin-top:16px;">
+        <strong>💡 图像怎么变成矩阵的？</strong><br>
+        灰度图像每个像素 = 一个 0~1 的亮度值（0=黑，1=白）。32×32 图像 = 32×32 矩阵。<br>
+        k 越小，左侧矩阵数值越模糊（接近全图均值）；k=32 时近似 = 原图。<br>
+        存原图需 <strong>1024 个数字</strong>，k 秩近似只需 <strong>k×(32+32+1)</strong> 个数字。
+      </div>
+    </div>
+  </div>
+
+  <!-- Section 6: SVD 与 LoRA -->
+  <div class="section">
+    <h2><span class="step">6</span>SVD 与 LoRA 的关系</h2>
+    <p>LoRA 训练时<strong>不计算 SVD</strong>——SVD 是理论依据，LoRA 是工程实现。</p>
+
+    <div class="card">
+      <div class="demo-title">LoRA：用低秩矩阵近似权重变化 ΔW</div>
+
+      <!-- 公式行 -->
+      <div class="formula-block" style="margin-bottom:16px;">
+        <div style="font-size:1.3em; font-family:'JetBrains Mono',monospace; letter-spacing:2px;">
+          W = W₀ + ΔW &nbsp;≈&nbsp; W₀ + <span class="col-u">B</span><span class="col-v">A</span>
+        </div>
+        <div style="font-size:0.78em; color:var(--text-dim); margin-top:8px;">
+          W₀ 冻结不训练 &nbsp;|&nbsp;
+          <span class="col-u">B</span>: m×r &nbsp;|&nbsp;
+          <span class="col-v">A</span>: r×n &nbsp;|&nbsp;
+          r ≪ min(m,n) &nbsp;|&nbsp;
+          参数量 m×n → r×(m+n)
+        </div>
+      </div>
+
+      <!-- LoRA 矩阵示意图 -->
+      <div class="canvas-wrap" style="margin-bottom:20px;">
+        <canvas id="lora-canvas" height="180"></canvas>
+      </div>
+
+      <!-- 两列：SVD分析 vs LoRA约束 -->
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-bottom:16px;">
+        <div style="background:#12151f; border-radius:10px; padding:16px; border-left:3px solid var(--accent2);">
+          <div style="font-size:0.75em; color:var(--accent2); font-weight:600; margin-bottom:8px;">① SVD 分析（理论来源）</div>
+          <p style="font-size:0.82em; color:var(--text-dim); margin:0;">
+            研究者对微调完的模型取出 ΔW，对它做 SVD，发现<strong>大多数奇异值接近 0</strong>——说明 ΔW 天然低秩，少量方向就能描述微调效果。
+          </p>
+        </div>
+        <div style="background:#12151f; border-radius:10px; padding:16px; border-left:3px solid var(--v-color);">
+          <div style="font-size:0.75em; color:var(--v-color); font-weight:600; margin-bottom:8px;">② LoRA 约束（工程实现）</div>
+          <p style="font-size:0.82em; color:var(--text-dim); margin:0;">
+            既然 ΔW 反正低秩，直接把它写成 B×A，训练时只更新 B 和 A。不显式算 SVD，但 B×A 在充分训练后会自动对齐最重要的 r 个奇异值方向。
+          </p>
+        </div>
+      </div>
+
+      <!-- Eckart-Young -->
+      <div class="note" style="margin:0;">
+        <strong>为什么"前 r 个奇异值方向"是最重要的？</strong>
+        &nbsp;SVD 算完后奇异值按 σ₁ ≥ σ₂ ≥ … 降序排好，σᵢ 越大 = 这个方向携带信息越多。
+        <strong>Eckart–Young 定理</strong>：在所有秩-r 矩阵里，截断前 r 个奇异值得到的 Aᵣ 是最接近原矩阵的（Frobenius 范数最小）。LoRA 的 B×A 在理想训练下收敛到同样的 r 个方向。
+      </div>
+    </div>
+  </div>
+
+  <!-- Section 7: 实际数值演示 -->
+  <div class="section">
+    <h2><span class="step">7</span>数值计算：当前矩阵的完整 SVD</h2>
+
+    <div class="card">
+      <div class="demo-title">A = UΣVᵀ 分解结果（调整左侧矩阵 A 实时更新）</div>
+      <!-- 矩阵等式行 -->
+      <div id="svd-eq-row" style="display:flex; align-items:center; gap:10px; flex-wrap:wrap; justify-content:center; padding:8px 0 16px;"></div>
+      <!-- 验证行 -->
+      <div id="svd-verify" style="display:flex; gap:16px; flex-wrap:wrap; justify-content:center; padding-top:14px; border-top:1px solid var(--border);"></div>
+    </div>
+
+    <!-- 奇异值推导 -->
+    <div class="card" style="margin-top:16px;">
+      <div class="demo-title">奇异值 σᵢ 是怎么算出来的？</div>
+
+      <p style="font-size:0.9em;">关键思路：<strong>把"非方阵无法求特征值"的问题转化成方阵特征值问题。</strong></p>
+
+      <!-- Step 1 -->
+      <div style="margin: 18px 0 10px; display:flex; align-items:baseline; gap:10px;">
+        <span style="background:var(--accent); color:#fff; border-radius:50%; width:22px; height:22px; display:inline-flex; align-items:center; justify-content:center; font-size:0.72em; font-weight:700; flex-shrink:0;">1</span>
+        <span style="font-weight:600;">构造 AᵀA（n×n 对称半正定矩阵）</span>
+      </div>
+      <div class="formula-block" style="margin:0 0 10px;">
+        <div style="font-family:'JetBrains Mono',monospace; font-size:1.05em; letter-spacing:1px;">
+          <span style="color:var(--u-color)">Aᵀ</span><span style="color:var(--text)">A</span>
+          <span style="color:var(--text-dim)"> → 对称矩阵，特征值 λᵢ ≥ 0 永远成立</span>
+        </div>
+        <div class="formula-label">A 是 m×n，AᵀA 是 n×n。无论 A 是什么形状，AᵀA 都是方阵且可以做特征值分解</div>
+      </div>
+      <div class="note" style="margin:0 0 18px;">
+        为什么 λᵢ ≥ 0？对任意向量 x：&nbsp;
+        <code>xᵀ(AᵀA)x = (Ax)ᵀ(Ax) = ‖Ax‖² ≥ 0</code>，所以 AᵀA 是半正定的，特征值不可能为负。
+      </div>
+
+      <!-- Step 2 -->
+      <div style="margin: 0 0 10px; display:flex; align-items:baseline; gap:10px;">
+        <span style="background:var(--accent); color:#fff; border-radius:50%; width:22px; height:22px; display:inline-flex; align-items:center; justify-content:center; font-size:0.72em; font-weight:700; flex-shrink:0;">2</span>
+        <span style="font-weight:600;">对 AᵀA 做特征值分解，取平方根</span>
+      </div>
+      <div class="formula-block" style="margin:0 0 10px;">
+        <div style="font-family:'JetBrains Mono',monospace; font-size:1.2em; letter-spacing:2px;">
+          <span style="color:var(--s-color)">σᵢ</span>
+          <span style="color:var(--text)"> = √</span>
+          <span style="color:var(--accent3)">λᵢ</span>
+          <span style="color:var(--text-dim)">(AᵀA)</span>
+        </div>
+        <div class="formula-label">奇异值 = AᵀA 特征值的平方根，按降序排列 σ₁ ≥ σ₂ ≥ … ≥ 0</div>
+      </div>
+
+      <!-- Step 3 -->
+      <div style="margin: 18px 0 10px; display:flex; align-items:baseline; gap:10px;">
+        <span style="background:var(--accent); color:#fff; border-radius:50%; width:22px; height:22px; display:inline-flex; align-items:center; justify-content:center; font-size:0.72em; font-weight:700; flex-shrink:0;">3</span>
+        <span style="font-weight:600;">奇异向量的来源</span>
+      </div>
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-bottom:16px;">
+        <div style="background:#12151f; border-radius:10px; padding:14px; border:1px solid var(--border);">
+          <div style="font-size:0.75em; color:var(--v-color); font-weight:600; margin-bottom:6px;">右奇异向量 vᵢ（V 的列）</div>
+          <code style="font-size:0.82em;">AᵀA · vᵢ = λᵢ · vᵢ</code>
+          <p style="font-size:0.8em; color:var(--text-dim); margin:6px 0 0;">vᵢ 就是 AᵀA 的特征向量，描述<strong>输入空间</strong>的主方向</p>
+        </div>
+        <div style="background:#12151f; border-radius:10px; padding:14px; border:1px solid var(--border);">
+          <div style="font-size:0.75em; color:var(--u-color); font-weight:600; margin-bottom:6px;">左奇异向量 uᵢ（U 的列）</div>
+          <code style="font-size:0.82em;">uᵢ = A·vᵢ / σᵢ</code>
+          <p style="font-size:0.8em; color:var(--text-dim); margin:6px 0 0;">直接由 vᵢ 推出来，描述<strong>输出空间</strong>的主方向</p>
+        </div>
+      </div>
+
+      <!-- Jacobi 算法 -->
+      <div style="margin: 0 0 10px; display:flex; align-items:baseline; gap:10px;">
+        <span style="background:#374151; color:#9ca3af; border-radius:50%; width:22px; height:22px; display:inline-flex; align-items:center; justify-content:center; font-size:0.72em; font-weight:700; flex-shrink:0;">⚙</span>
+        <span style="font-weight:600; color:var(--text-dim);">代码用的算法：Jacobi 迭代</span>
+      </div>
+      <div class="note" style="margin:0;">
+        Jacobi 法对 AᵀA 反复做旋转消元：每次找最大的非对角元素 aₚq，用一个 2×2 旋转矩阵 G 把它消成 0。<br>
+        迭代若干轮后矩阵趋近于对角形式，对角元素 = λᵢ，旋转矩阵的乘积 = 特征向量矩阵 V。<br><br>
+        <code style="font-size:0.82em;">G(p,q,θ)ᵀ · AᵀA · G(p,q,θ) → 消掉 (p,q) 处的元素</code><br>
+        <span style="font-size:0.82em; color:var(--text-dim);">不断重复，直到所有非对角元素 &lt; ε，本页代码迭代 20 轮。</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section 8: 应用 -->
+  <div class="section">
+    <h2><span class="step">8</span>在深度学习中的应用</h2>
+    <div class="app-grid">
+      <div class="app-card">
+        <h4>LoRA / QLoRA 微调</h4>
+        <p>用低秩矩阵近似权重更新。LoRA 的 r 参数直接对应 SVD 中保留的奇异值数量。</p>
+      </div>
+      <div class="app-card">
+        <h4>权重矩阵压缩</h4>
+        <p>对训练好的权重矩阵做 SVD，只保留前 k 个奇异值，减少模型大小同时保留核心信息。</p>
+      </div>
+      <div class="app-card">
+        <h4>谱范数 (σ₁) 归一化</h4>
+        <p>用最大奇异值 σ₁ 归一化权重矩阵，控制模型 Lipschitz 常数，稳定 GAN 训练。</p>
+      </div>
+      <div class="app-card">
+        <h4>推荐系统矩阵分解</h4>
+        <p>用 SVD 分解用户-物品交互矩阵，发现隐含的"主题"，实现协同过滤推荐。</p>
+      </div>
+      <div class="app-card">
+        <h4>词向量 / 语义分析</h4>
+        <p>LSA（潜在语义分析）对词频矩阵做 SVD，降维提取语义主题。Word2Vec 间接使用类似思想。</p>
+      </div>
+      <div class="app-card">
+        <h4>梯度裁剪 & 初始化</h4>
+        <p>分析权重矩阵的奇异值谱，设计更好的初始化方案（如正交初始化），避免梯度消失。</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+// ======= Math =======
+function matVec(M, v) {
+  return [M[0][0]*v[0]+M[0][1]*v[1], M[1][0]*v[0]+M[1][1]*v[1]];
+}
+function det2(M) { return M[0][0]*M[1][1]-M[0][1]*M[1][0]; }
+function trace2(M) { return M[0][0]+M[1][1]; }
+
+function transpose2(M) {
+  return [[M[0][0],M[1][0]],[M[0][1],M[1][1]]];
+}
+function matMul2(A, B) {
+  return [
+    [A[0][0]*B[0][0]+A[0][1]*B[1][0], A[0][0]*B[0][1]+A[0][1]*B[1][1]],
+    [A[1][0]*B[0][0]+A[1][1]*B[1][0], A[1][0]*B[0][1]+A[1][1]*B[1][1]]
+  ];
+}
+
+function svd2(M) {
+  // Compute singular values via eigenvalues of AᵀA
+  const At = transpose2(M);
+  const AtA = matMul2(At, M);
+  const tr = trace2(AtA);
+  const d = det2(AtA);
+  const disc = Math.max(0, tr*tr/4 - d);
+  const s = Math.sqrt(disc);
+  const l1 = tr/2 + s;
+  const l2 = tr/2 - s;
+  const sv1 = Math.sqrt(Math.max(0, l1));
+  const sv2 = Math.sqrt(Math.max(0, l2));
+
+  // Right singular vectors (eigenvectors of AᵀA)
+  function getEigVec(mat, lam) {
+    const a = mat[0][0]-lam, b = mat[0][1];
+    const c = mat[1][0],   e = mat[1][1]-lam;
+    let vx, vy;
+    if (Math.abs(b) > 1e-9) { vx = -b; vy = a; }
+    else if (Math.abs(c) > 1e-9) { vx = e; vy = -c; }
+    else if (Math.abs(a) < 1e-9) { vx = 1; vy = 0; }
+    else { vx = 0; vy = 1; }
+    const len = Math.hypot(vx, vy);
+    return len < 1e-12 ? [1, 0] : [vx/len, vy/len];
+  }
+
+  const v1 = getEigVec(AtA, l1);
+  const v2 = [-v1[1], v1[0]]; // perpendicular
+
+  // Left singular vectors: uᵢ = A vᵢ / σᵢ
+  function getLeftVec(v, sigma) {
+    if (sigma < 1e-9) return [1, 0];
+    const Av = matVec(M, v);
+    const len = Math.hypot(Av[0], Av[1]);
+    return len < 1e-12 ? [1, 0] : [Av[0]/len, Av[1]/len];
+  }
+
+  const u1 = getLeftVec(v1, sv1);
+  const u2 = [-u1[1], u1[0]];
+
+  // V = [v1 | v2] as column matrix
+  const V = [[v1[0], v2[0]], [v1[1], v2[1]]];
+  // U = [u1 | u2]
+  const U = [[u1[0], u2[0]], [u1[1], u2[1]]];
+  // Sigma = diag(sv1, sv2)
+  const Sigma = [[sv1, 0], [0, sv2]];
+
+  return { U, Sigma, V, sv1, sv2, u1, u2, v1, v2 };
+}
+
+function inv2(M) {
+  const d = det2(M);
+  if (Math.abs(d) < 1e-12) return null;
+  return [[M[1][1]/d, -M[0][1]/d], [-M[1][0]/d, M[0][0]/d]];
+}
+
+function lerpVec(a, b, t) { return [a[0]+(b[0]-a[0])*t, a[1]+(b[1]-a[1])*t]; }
+function lerp(a, b, t) { return a+(b-a)*t; }
+
+function getMatrix() {
+  return [
+    [parseFloat(document.getElementById('a11').value)||0,
+     parseFloat(document.getElementById('a12').value)||0],
+    [parseFloat(document.getElementById('a21').value)||0,
+     parseFloat(document.getElementById('a22').value)||0]
+  ];
+}
+
+// ======= Canvas helpers =======
+function drawArrow(ctx, ox, oy, dx, dy, color, width, alpha) {
+  ctx.save();
+  ctx.globalAlpha = alpha||1;
+  ctx.strokeStyle = color;
+  ctx.fillStyle = color;
+  ctx.lineWidth = width||2;
+  const ex = ox+dx, ey = oy+dy;
+  ctx.beginPath(); ctx.moveTo(ox, oy); ctx.lineTo(ex, ey); ctx.stroke();
+  const angle = Math.atan2(dy, dx);
+  const hl = 10*devicePixelRatio, hw = 5*devicePixelRatio;
+  ctx.beginPath();
+  ctx.moveTo(ex, ey);
+  ctx.lineTo(ex-hl*Math.cos(angle-0.4), ey-hl*Math.sin(angle-0.4));
+  ctx.lineTo(ex-hl*Math.cos(angle+0.4), ey-hl*Math.sin(angle+0.4));
+  ctx.closePath(); ctx.fill();
+  ctx.restore();
+}
+
+function drawGrid(ctx, W, H, cx, cy, scale) {
+  ctx.strokeStyle = '#1e2130'; ctx.lineWidth = 1;
+  for (let i = -6; i <= 6; i++) {
+    ctx.beginPath(); ctx.moveTo(cx+i*scale, 0); ctx.lineTo(cx+i*scale, H); ctx.stroke();
+    ctx.beginPath(); ctx.moveTo(0, cy+i*scale); ctx.lineTo(W, cy+i*scale); ctx.stroke();
+  }
+  ctx.strokeStyle = '#3a3d52'; ctx.lineWidth = 1.5*devicePixelRatio;
+  ctx.beginPath(); ctx.moveTo(0, cy); ctx.lineTo(W, cy); ctx.stroke();
+  ctx.beginPath(); ctx.moveTo(cx, 0); ctx.lineTo(cx, H); ctx.stroke();
+}
+
+// ======= Canvas 1: circle → ellipse =======
+const c1 = document.getElementById('circle-canvas');
+const x1 = c1.getContext('2d');
+let tVal = 0, animRun = false, animRaf = null;
+
+function resizeC1() {
+  c1.width = c1.parentElement.clientWidth * devicePixelRatio;
+  c1.height = 420 * devicePixelRatio;
+  c1.style.height = '420px';
+  drawCircle();
+}
+
+function drawCircle() {
+  const W = c1.width, H = c1.height, dpr = devicePixelRatio;
+  const cx = W/2, cy = H/2;
+  const scale = Math.min(W, H) / 5.8;
+  x1.clearRect(0,0,W,H);
+  x1.fillStyle = '#0a0c12'; x1.fillRect(0,0,W,H);
+  drawGrid(x1, W, H, cx, cy, scale);
+
+  const M = getMatrix();
+  const { u1, u2, v1, v2, sv1, sv2 } = svd2(M);
+  const t = tVal;
+
+  // Draw unit circle (original)
+  x1.save();
+  x1.strokeStyle = '#374151'; x1.lineWidth = 1.5*dpr;
+  x1.beginPath();
+  const N = 200;
+  for (let i = 0; i <= N; i++) {
+    const a = 2*Math.PI*i/N;
+    const px = Math.cos(a), py = Math.sin(a);
+    // interpolate: from (px,py) to M*(px,py)
+    const tv = matVec(M, [px, py]);
+    const ix = lerp(px, tv[0], t);
+    const iy = lerp(py, tv[1], t);
+    if (i === 0) x1.moveTo(cx+ix*scale, cy-iy*scale);
+    else x1.lineTo(cx+ix*scale, cy-iy*scale);
+  }
+  x1.stroke();
+  x1.restore();
+
+  // Draw transformed ellipse outline
+  x1.save();
+  x1.strokeStyle = `rgba(249,115,22,${0.3+0.7*t})`; x1.lineWidth = 2.5*dpr;
+  x1.beginPath();
+  for (let i = 0; i <= N; i++) {
+    const a = 2*Math.PI*i/N;
+    const px = Math.cos(a), py = Math.sin(a);
+    const tv = matVec(M, [px, py]);
+    const ix = lerp(px, tv[0], t);
+    const iy = lerp(py, tv[1], t);
+    if (i === 0) x1.moveTo(cx+ix*scale, cy-iy*scale);
+    else x1.lineTo(cx+ix*scale, cy-iy*scale);
+  }
+  x1.stroke();
+  x1.restore();
+
+  // v vectors (in input space, don't transform)
+  const vAlpha = lerp(1, 0.3, t);
+  drawArrow(x1, cx, cy, v1[0]*scale, -v1[1]*scale, '#a3e635', 2.5*dpr, vAlpha);
+  drawArrow(x1, cx, cy, -v1[0]*scale, v1[1]*scale, '#a3e635', 2.5*dpr, vAlpha*0.5);
+  drawArrow(x1, cx, cy, v2[0]*scale*0.7, -v2[1]*scale*0.7, '#65a30d', 2.5*dpr, vAlpha*0.7);
+
+  // u vectors (output space, scale by sigma)
+  const uAlpha = lerp(0.3, 1, t);
+  const u1sv = [u1[0]*sv1, u1[1]*sv1];
+  const u2sv = [u2[0]*sv2, u2[1]*sv2];
+  const curU1 = lerpVec(v1, u1sv, t);
+  const curU2 = lerpVec(v2, [u2[0]*0.7, u2[1]*0.7], t);
+  drawArrow(x1, cx, cy, curU1[0]*scale, -curU1[1]*scale, '#38bdf8', 3*dpr, uAlpha);
+  drawArrow(x1, cx, cy, curU2[0]*scale, -curU2[1]*scale, '#0ea5e9', 2.5*dpr, uAlpha*0.7);
+
+  // Labels
+  x1.save();
+  x1.font = `${12*dpr}px 'JetBrains Mono'`;
+  x1.fillStyle = '#a3e635';
+  x1.fillText(`v₁`, cx + v1[0]*scale + 6*dpr, cy - v1[1]*scale);
+  x1.fillStyle = '#38bdf8';
+  x1.fillText(`σ₁u₁ (σ₁=${sv1.toFixed(2)})`, cx + curU1[0]*scale + 6*dpr, cy - curU1[1]*scale);
+  if (sv2 > 0.1) {
+    x1.fillStyle = '#0ea5e9';
+    x1.fillText(`σ₂u₂ (σ₂=${sv2.toFixed(2)})`, cx + curU2[0]*scale + 8*dpr, cy - curU2[1]*scale);
+  }
+  x1.fillStyle = '#6b7280';
+  x1.fillText(`t=${t.toFixed(2)} | t=0:单位圆  t=1:椭圆`, 14*dpr, H-14*dpr);
+  x1.restore();
+}
+
+// ======= Canvas 2: steps =======
+const c2 = document.getElementById('steps-canvas');
+const x2 = c2.getContext('2d');
+let stepIdx = 0;
+
+function resizeC2() {
+  c2.width = c2.parentElement.clientWidth * devicePixelRatio;
+  c2.height = 360 * devicePixelRatio;
+  c2.style.height = '360px';
+  drawSteps();
+}
+
+function drawTransGrid(ctx, M, cx, cy, scale, alpha, color, W, H) {
+  ctx.save();
+  ctx.globalAlpha = alpha;
+  ctx.strokeStyle = color;
+  ctx.lineWidth = 1.2*devicePixelRatio;
+  const r = 4;
+  for (let i = -r; i <= r; i++) {
+    const p1 = matVec(M, [i, -r]);
+    const p2 = matVec(M, [i, r]);
+    ctx.beginPath();
+    ctx.moveTo(cx+p1[0]*scale, cy-p1[1]*scale);
+    ctx.lineTo(cx+p2[0]*scale, cy-p2[1]*scale);
+    ctx.stroke();
+    const q1 = matVec(M, [-r, i]);
+    const q2 = matVec(M, [r, i]);
+    ctx.beginPath();
+    ctx.moveTo(cx+q1[0]*scale, cy-q1[1]*scale);
+    ctx.lineTo(cx+q2[0]*scale, cy-q2[1]*scale);
+    ctx.stroke();
+  }
+  ctx.restore();
+}
+
+function drawSteps() {
+  const W = c2.width, H = c2.height, dpr = devicePixelRatio;
+  const cx = W/2, cy = H/2;
+  const scale = Math.min(W, H) / 5.5;
+  x2.clearRect(0,0,W,H);
+  x2.fillStyle = '#0a0c12'; x2.fillRect(0,0,W,H);
+  drawGrid(x2, W, H, cx, cy, scale);
+
+  const M = getMatrix();
+  const { U, Sigma, V } = svd2(M);
+  const Vt = transpose2(V);
+  const I = [[1,0],[0,1]];
+
+  const stepDescs = [
+    '完整变换 A = UΣVᵀ：一步到位，单位圆直接变成椭圆。',
+    '① Vᵀ：把坐标系旋转到右奇异向量方向（对齐输入主轴）',
+    '② ΣVᵀ：沿坐标轴缩放（x 轴缩放σ₁，y 轴缩放σ₂）',
+    '③ UΣVᵀ = A：再旋转回左奇异向量方向（对齐输出主轴）'
+  ];
+
+  let transform;
+  if (stepIdx === 0) transform = M;
+  else if (stepIdx === 1) transform = Vt;
+  else if (stepIdx === 2) transform = matMul2(Sigma, Vt);
+  else transform = M;
+
+  drawTransGrid(x2, I, cx, cy, scale, 0.25, '#3a3d52', W, H);
+  drawTransGrid(x2, transform, cx, cy, scale, 0.7, '#f97316', W, H);
+
+  // basis vectors
+  [[1,0],[0,1]].forEach((v, idx) => {
+    const tv = matVec(transform, v);
+    drawArrow(x2, cx, cy, tv[0]*scale, -tv[1]*scale, idx===0?'#f87171':'#fbbf24', 3*dpr);
+  });
+
+  document.getElementById('step-desc').textContent = stepDescs[stepIdx];
+}
+
+// ======= Low-rank image demo =======
+const SIZE = 32;
+let imgData = null;
+
+function genImage() {
+  // 使用确定性伪随机，保证每次刷新图像一致
+  let seed = 12345;
+  function rand() {
+    seed = (seed * 1664525 + 1013904223) & 0xffffffff;
+    return (seed >>> 0) / 0xffffffff;
+  }
+
+  const data = [];
+  for (let i = 0; i < SIZE; i++) {
+    data.push([]);
+    for (let j = 0; j < SIZE; j++) {
+      // 低频结构（少数奇异值就能恢复）
+      let v = 0.4;
+      v += Math.sin(i / SIZE * Math.PI * 2) * Math.cos(j / SIZE * Math.PI * 2) * 0.15;
+      v += Math.sin(i / SIZE * Math.PI * 4) * 0.08;
+      v += Math.cos(j / SIZE * Math.PI * 4) * 0.08;
+
+      // 高频棋盘格（需要更多奇异值才能还原）
+      v += ((i + j) % 2 === 0 ? 1 : -1) * 0.12;
+      v += ((Math.floor(i/2) + Math.floor(j/2)) % 2 === 0 ? 1 : -1) * 0.06;
+
+      // 随机噪声（全秩，k 小时完全丢失）
+      v += (rand() - 0.5) * 0.28;
+
+      data[i].push(Math.max(0, Math.min(1, v)));
+    }
+  }
+  return data;
+}
+
+// Simple Jacobi SVD for small matrix
+function fullSVD(A, m, n) {
+  // Use power iteration approach for demo
+  // Returns {U, S, Vt} where S is array of singular values
+
+  // Convert to flat array
+  const M = [];
+  for (let i = 0; i < m; i++) {
+    for (let j = 0; j < n; j++) M.push(A[i][j]);
+  }
+
+  // Compute AᵀA
+  const AtA = new Array(n*n).fill(0);
+  for (let i = 0; i < n; i++)
+    for (let j = 0; j < n; j++)
+      for (let k = 0; k < m; k++)
+        AtA[i*n+j] += M[k*n+i] * M[k*n+j];
+
+  // Jacobi eigendecomposition of AᵀA
+  const V = Array.from({length:n}, (_,i) => Array.from({length:n}, (_,j) => i===j?1:0));
+  const Acopy = AtA.map(x=>x);
+
+  for (let sweep = 0; sweep < 20; sweep++) {
+    for (let p = 0; p < n-1; p++) {
+      for (let q = p+1; q < n; q++) {
+        const app = Acopy[p*n+p], aqq = Acopy[q*n+q], apq = Acopy[p*n+q];
+        if (Math.abs(apq) < 1e-12) continue;
+        const tau = (aqq-app)/(2*apq);
+        const t2 = tau >= 0 ? 1/(tau+Math.sqrt(1+tau*tau)) : 1/(tau-Math.sqrt(1+tau*tau));
+        const c = 1/Math.sqrt(1+t2*t2), s2 = t2*c;
+        // Apply rotation to Acopy
+        for (let i = 0; i < n; i++) {
+          const aip = Acopy[i*n+p], aiq = Acopy[i*n+q];
+          Acopy[i*n+p] = c*aip - s2*aiq;
+          Acopy[i*n+q] = s2*aip + c*aiq;
+        }
+        for (let i = 0; i < n; i++) {
+          Acopy[p*n+i] = Acopy[i*n+p];
+          Acopy[q*n+i] = Acopy[i*n+q];
+        }
+        Acopy[p*n+p] = c*c*app + s2*s2*aqq - 2*s2*c*apq;
+        Acopy[q*n+q] = s2*s2*app + c*c*aqq + 2*s2*c*apq;
+        Acopy[p*n+q] = Acopy[q*n+p] = 0;
+        // Apply rotation to V
+        for (let i = 0; i < n; i++) {
+          const vip = V[i][p], viq = V[i][q];
+          V[i][p] = c*vip - s2*viq;
+          V[i][q] = s2*vip + c*viq;
+        }
+      }
+    }
+  }
+
+  // Eigenvalues of AᵀA (should be ≥ 0)
+  const lambda = Array.from({length:n}, (_,i) => Math.max(0, Acopy[i*n+i]));
+  // Sort descending
+  const idx = Array.from({length:n}, (_,i)=>i).sort((a,b)=>lambda[b]-lambda[a]);
+  const S = idx.map(i => Math.sqrt(lambda[i]));
+  const Vsorted = idx.map(i => V.map(row => row[i]));
+  // Vsorted[j][i] = V column idx[j], so Vt[i][j] = Vsorted[i][j]
+  const Vt = Array.from({length:n}, (_,i) => Array.from({length:n}, (_,j) => Vsorted[i][j]));
+
+  // Compute U = A*V / sigma
+  const U = Array.from({length:m}, ()=>new Array(n).fill(0));
+  for (let i = 0; i < n; i++) {
+    if (S[i] < 1e-9) continue;
+    for (let r2 = 0; r2 < m; r2++) {
+      for (let j = 0; j < n; j++) U[r2][i] += M[r2*n+j] * Vt[i][j];
+      U[r2][i] /= S[i];
+    }
+  }
+
+  return { U, S, Vt };
+}
+
+function reconstructRank(U, S, Vt, k, m, n) {
+  const result = Array.from({length:m}, ()=>new Array(n).fill(0));
+  for (let r2 = 0; r2 < k; r2++) {
+    if (S[r2] < 1e-9) continue;
+    for (let i = 0; i < m; i++)
+      for (let j = 0; j < n; j++)
+        result[i][j] += U[i][r2] * S[r2] * Vt[r2][j];
+  }
+  return result;
+}
+
+function drawImageMatrix(canvasEl, data, m, n, scale) {
+  const ctx = canvasEl.getContext('2d');
+  const cw = canvasEl.width, ch = canvasEl.height;
+  ctx.clearRect(0,0,cw,ch);
+  const pw = cw/n, ph = ch/m;
+  for (let i = 0; i < m; i++) {
+    for (let j = 0; j < n; j++) {
+      const v = Math.max(0, Math.min(1, data[i][j] * (scale||1)));
+      const g = Math.round(v*255);
+      ctx.fillStyle = `rgb(${g},${g},${g})`;
+      ctx.fillRect(j*pw, i*ph, pw+1, ph+1);
+    }
+  }
+}
+
+let svdResult = null;
+let currentApproxData = null;
+let currentMatTab = 'orig';
+
+// ======= 32×32 矩阵 canvas 渲染 =======
+const MAT_CW = 22, MAT_CH = 22; // 每格像素宽/高（正方形）
+
+function renderMatrixCanvas() {
+  const canvas = document.getElementById('matrix-canvas');
+  if (!canvas || !imgData) return;
+
+  let data;
+  if (currentMatTab === 'orig') {
+    data = imgData;
+  } else if (currentMatTab === 'approx') {
+    data = currentApproxData || imgData;
+  } else {
+    // diff
+    data = imgData.map((row, i) =>
+      row.map((v, j) => currentApproxData ? Math.abs(v - currentApproxData[i][j]) : 0)
+    );
+  }
+
+  const dpr = window.devicePixelRatio || 1;
+  const W = SIZE * MAT_CW, H = SIZE * MAT_CH;
+  canvas.width = W * dpr;
+  canvas.height = H * dpr;
+  canvas.style.width = W + 'px';
+  canvas.style.height = H + 'px';
+
+  const ctx = canvas.getContext('2d');
+  ctx.scale(dpr, dpr);
+  ctx.font = `8px 'JetBrains Mono', monospace`;
+
+  const isDiff = currentMatTab === 'diff';
+
+  for (let i = 0; i < SIZE; i++) {
+    for (let j = 0; j < SIZE; j++) {
+      const v = data[i][j];
+      const cv = Math.max(0, Math.min(1, v));
+
+      // 背景色
+      if (isDiff) {
+        const d = Math.min(1, v * 5);
+        ctx.fillStyle = `rgb(${Math.round(10+d*160)}, ${Math.round(10+d*20)}, ${Math.round(10+d*20)})`;
+      } else {
+        const b = Math.round(cv * 55 + 8);
+        ctx.fillStyle = `rgb(${b}, ${b}, ${Math.round(b * 1.15)})`;
+      }
+      ctx.fillRect(j * MAT_CW, i * MAT_CH, MAT_CW, MAT_CH);
+
+      // 数值文字
+      ctx.fillStyle = isDiff ? (v > 0.1 ? '#f8d0d0' : '#6b7280')
+                              : (cv > 0.5 ? '#374151' : '#d1d5db');
+      ctx.fillText(v.toFixed(2), j * MAT_CW + 2, (i + 1) * MAT_CH - 2);
+    }
+  }
+
+  // 网格线
+  ctx.strokeStyle = 'rgba(30,33,48,0.7)';
+  ctx.lineWidth = 0.5;
+  for (let i = 0; i <= SIZE; i++) {
+    ctx.beginPath(); ctx.moveTo(0, i*MAT_CH); ctx.lineTo(W, i*MAT_CH); ctx.stroke();
+    ctx.beginPath(); ctx.moveTo(i*MAT_CW, 0); ctx.lineTo(i*MAT_CW, H); ctx.stroke();
+  }
+}
+
+function initImageDemo() {
+  imgData = genImage();
+  svdResult = fullSVD(imgData, SIZE, SIZE);
+  updateImageDemo();
+  drawSingularChart();
+}
+
+function updateImageDemo() {
+  if (!svdResult || !imgData) return;
+  const k = parseInt(document.getElementById('rank-slider').value);
+  document.getElementById('rank-k').textContent = k;
+  document.getElementById('rank-label').textContent = k;
+  const params = k*(SIZE+SIZE);
+  const total = SIZE*SIZE;
+  const ratio = (params/total*100).toFixed(1);
+  document.getElementById('rank-info').textContent = `参数: ${params} / ${total} = ${ratio}%`;
+
+  const origC = document.getElementById('orig-img');
+  const approxC = document.getElementById('approx-img');
+  const errorC = document.getElementById('error-img');
+
+  drawImageMatrix(origC, imgData, SIZE, SIZE, 1);
+
+  currentApproxData = reconstructRank(svdResult.U, svdResult.S, svdResult.Vt, k, SIZE, SIZE);
+  drawImageMatrix(approxC, currentApproxData, SIZE, SIZE, 1);
+
+  const errData = imgData.map((row, i) => row.map((v, j) => Math.abs(v - currentApproxData[i][j])));
+  drawImageMatrix(errorC, errData, SIZE, SIZE, 10);
+
+  // 重新渲染矩阵数值 canvas
+  renderMatrixCanvas();
+
+  // 误差统计
+  const statsEl = document.getElementById('matrix-diff-stats');
+  if (statsEl) {
+    let frobErr = 0, frobOrig = 0;
+    for (let i = 0; i < SIZE; i++)
+      for (let j = 0; j < SIZE; j++) {
+        const d = imgData[i][j] - currentApproxData[i][j];
+        frobErr += d * d;
+        frobOrig += imgData[i][j] * imgData[i][j];
+      }
+    const relErr = (Math.sqrt(frobErr) / Math.sqrt(frobOrig) * 100).toFixed(2);
+    const S = svdResult.S;
+    const totalVar = S.reduce((s, v) => s + v*v, 0);
+    const kVar = S.slice(0, k).reduce((s, v) => s + v*v, 0);
+    const captured = (kVar / totalVar * 100).toFixed(1);
+    statsEl.innerHTML = `‖A−Aₖ‖F / ‖A‖F = <strong style="color:var(--accent)">${relErr}%</strong>
+      &nbsp;|&nbsp; 方差捕获 = <strong style="color:var(--accent3)">${captured}%</strong>
+      &nbsp;|&nbsp; 均方误差 = <strong style="color:var(--accent4)">${Math.sqrt(frobErr/SIZE/SIZE).toFixed(4)}</strong>`;
+  }
+}
+
+function drawSingularChart() {
+  if (!svdResult) return;
+  const chartCanvas = document.getElementById('singular-chart');
+  const W = chartCanvas.width = chartCanvas.parentElement.clientWidth * devicePixelRatio;
+  const H = chartCanvas.height = 140 * devicePixelRatio;
+  chartCanvas.style.height = '140px';
+  const ctx = chartCanvas.getContext('2d');
+  ctx.clearRect(0,0,W,H);
+  ctx.fillStyle = '#0a0c12'; ctx.fillRect(0,0,W,H);
+
+  const S = svdResult.S;
+  const maxS = S[0] || 1;
+  const n = S.length;
+  const k = parseInt(document.getElementById('rank-slider').value);
+  const pad = 20*devicePixelRatio;
+  const bw = (W - 2*pad) / n;
+  const maxH = H - 2*pad;
+
+  S.forEach((s, i) => {
+    const bh = (s/maxS) * maxH;
+    const x = pad + i*bw;
+    const y = H - pad - bh;
+    const kept = i < k;
+    ctx.fillStyle = kept ? `rgba(249,115,22,${0.4+0.6*s/maxS})` : '#2a2d3a';
+    ctx.fillRect(x, y, bw*0.8, bh);
+  });
+
+  // Cutoff line
+  ctx.save();
+  ctx.strokeStyle = '#4b5563'; ctx.lineWidth = devicePixelRatio;
+  ctx.setLineDash([4*devicePixelRatio, 4*devicePixelRatio]);
+  const cutX = pad + k*bw;
+  ctx.beginPath(); ctx.moveTo(cutX, pad); ctx.lineTo(cutX, H-pad); ctx.stroke();
+  ctx.restore();
+
+  // Labels
+  ctx.font = `${9*devicePixelRatio}px 'JetBrains Mono'`;
+  ctx.fillStyle = '#6b7280';
+  ctx.fillText('σ₁', pad+bw*0.1, H-4*devicePixelRatio);
+  ctx.fillText(`σ${n}`, pad+(n-1)*bw, H-4*devicePixelRatio);
+}
+
+// ======= LoRA canvas =======
+const loraC = document.getElementById('lora-canvas');
+
+function drawLoRA() {
+  loraC.width = loraC.parentElement.clientWidth * devicePixelRatio;
+  loraC.height = 200 * devicePixelRatio;
+  loraC.style.height = '200px';
+  const ctx = loraC.getContext('2d');
+  const W = loraC.width, H = loraC.height, dpr = devicePixelRatio;
+  ctx.clearRect(0,0,W,H);
+  ctx.fillStyle = '#0a0c12'; ctx.fillRect(0,0,W,H);
+
+  const m = 8, n = 10, r = 2;
+  const blockSize = Math.min(W/(n+2+r+m+4), H/(Math.max(m,n)+2)) * 0.9;
+  const gap = blockSize * 0.2;
+
+  function drawMatrix(label, rows, cols, x, y, color, desc) {
+    const w = cols*blockSize, h = rows*blockSize;
+    ctx.strokeStyle = color; ctx.lineWidth = 1.5*dpr;
+    ctx.strokeRect(x, y, w, h);
+
+    // Grid
+    ctx.strokeStyle = color+'40'; ctx.lineWidth = 0.5*dpr;
+    for (let i = 1; i < rows; i++) {
+      ctx.beginPath(); ctx.moveTo(x, y+i*blockSize); ctx.lineTo(x+w, y+i*blockSize); ctx.stroke();
+    }
+    for (let j = 1; j < cols; j++) {
+      ctx.beginPath(); ctx.moveTo(x+j*blockSize, y); ctx.lineTo(x+j*blockSize, y+h); ctx.stroke();
+    }
+
+    ctx.fillStyle = color+'15';
+    ctx.fillRect(x, y, w, h);
+
+    ctx.font = `bold ${13*dpr}px 'JetBrains Mono'`;
+    ctx.fillStyle = color;
+    ctx.textAlign = 'center';
+    ctx.fillText(label, x+w/2, y-5*dpr);
+
+    ctx.font = `${9*dpr}px 'JetBrains Mono'`;
+    ctx.fillStyle = '#6b7280';
+    ctx.fillText(desc, x+w/2, y+h+12*dpr);
+    ctx.textAlign = 'left';
+  }
+
+  const totalW = m*blockSize + gap + r*blockSize + gap + r*blockSize + gap + n*blockSize;
+  let startX = (W - totalW) / 2;
+  const startY = (H - n*blockSize) / 2 - 10*dpr;
+
+  drawMatrix('ΔW', m, n, startX, startY, '#a78bfa', `${m}×${n}`);
+  startX += n*blockSize + gap*3;
+  ctx.font = `${16*dpr}px 'JetBrains Mono'`;
+  ctx.fillStyle = '#4b5563'; ctx.textAlign = 'center';
+  ctx.fillText('=', startX - gap, startY + m/2*blockSize + 5*dpr);
+  ctx.textAlign = 'left';
+
+  drawMatrix('B', m, r, startX, startY, '#38bdf8', `${m}×r`);
+  startX += r*blockSize + gap;
+
+  drawMatrix('A', r, n, startX, startY+(m-r)/2*blockSize, '#a3e635', `r×${n}`);
+
+  // r label
+  ctx.font = `bold ${12*dpr}px 'JetBrains Mono'`;
+  ctx.fillStyle = '#f97316'; ctx.textAlign = 'center';
+  ctx.fillText(`r=${r}  (≪ min(m,n)=${Math.min(m,n)})`, W/2, H - 8*dpr);
+  ctx.textAlign = 'left';
+}
+
+// ======= SVD display =======
+function matBoxHTML(label, rows, color, desc) {
+  const td = v => `<td style="padding:4px 10px; text-align:right; font-family:'JetBrains Mono',monospace; font-size:0.88em; color:${color}; white-space:nowrap;">${(+v).toFixed(4)}</td>`;
+  const tableRows = rows.map(row => `<tr>${row.map(td).join('')}</tr>`).join('');
+  return `<div style="display:inline-flex; flex-direction:column; align-items:center; gap:4px;">
+    <div style="font-size:0.75em; color:${color}; font-weight:700; letter-spacing:0.5px;">${label}</div>
+    <div style="display:flex; align-items:stretch; gap:0;">
+      <div style="border-left:2.5px solid ${color}; border-top:2.5px solid ${color}; border-bottom:2.5px solid ${color}; border-radius:3px 0 0 3px; width:7px;"></div>
+      <table style="border-collapse:collapse;">${tableRows}</table>
+      <div style="border-right:2.5px solid ${color}; border-top:2.5px solid ${color}; border-bottom:2.5px solid ${color}; border-radius:0 3px 3px 0; width:7px;"></div>
+    </div>
+    ${desc ? `<div style="font-size:0.68em; color:var(--text-dim); margin-top:1px;">${desc}</div>` : ''}
+  </div>`;
+}
+
+function opHTML(sym) {
+  return `<div style="font-size:1.4em; color:var(--text-dim); padding:0 2px; align-self:center;">${sym}</div>`;
+}
+
+function updateSVDDisplay() {
+  const M = getMatrix();
+  const { U, Sigma, V, sv1, sv2 } = svd2(M);
+  const Vt = transpose2(V);
+
+  // Update badges
+  document.getElementById('sv1').textContent = sv1.toFixed(4);
+  document.getElementById('sv2').textContent = sv2.toFixed(4);
+  const rank = (sv2 > 1e-9 ? 2 : (sv1 > 1e-9 ? 1 : 0));
+  document.getElementById('rank-val').textContent = rank;
+  document.getElementById('cond-val').textContent = sv2 > 1e-9 ? (sv1/sv2).toFixed(3) : '∞';
+  const fnorm = Math.sqrt(sv1*sv1 + sv2*sv2);
+  document.getElementById('fnorm-val').textContent = fnorm.toFixed(4);
+
+  // 矩阵等式行
+  const eqRow = document.getElementById('svd-eq-row');
+  eqRow.innerHTML =
+    matBoxHTML('A', M, '#e8e6e3') +
+    opHTML('=') +
+    matBoxHTML('U', U, 'var(--u-color)', '左奇异向量') +
+    opHTML('×') +
+    matBoxHTML('Σ', [[sv1, 0],[0, sv2]], 'var(--s-color)', '奇异值对角') +
+    opHTML('×') +
+    matBoxHTML('Vᵀ', Vt, 'var(--v-color)', '右奇异向量');
+
+  // 验证行
+  const UtU = matMul2(transpose2(U), U);
+  const VtV = matMul2(transpose2(V), V);
+  const recon = matMul2(matMul2(U, [[sv1,0],[0,sv2]]), Vt);
+  const fmt = n => n.toFixed(4);
+  const verifyRow = document.getElementById('svd-verify');
+  verifyRow.innerHTML =
+    `<div style="font-size:0.78em; color:var(--text-dim); text-align:center;">
+      <div style="color:var(--accent3); font-size:0.8em; margin-bottom:6px; font-weight:600;">验证 U×Σ×Vᵀ = A</div>` +
+      matBoxHTML('', recon, '#6b7280') +
+      `<div style="font-size:0.75em; color:var(--accent3); margin-top:4px;">✓ 还原成功</div>
+    </div>` +
+    `<div style="font-size:0.78em; color:var(--text-dim); text-align:center;">
+      <div style="color:var(--accent3); font-size:0.8em; margin-bottom:6px; font-weight:600;">U 正交性 UᵀU = I</div>` +
+      matBoxHTML('', UtU, '#6b7280') +
+      `<div style="font-size:0.75em; color:var(--accent3); margin-top:4px;">✓ 正交矩阵</div>
+    </div>` +
+    `<div style="font-size:0.78em; color:var(--text-dim); text-align:center;">
+      <div style="color:var(--accent3); font-size:0.8em; margin-bottom:6px; font-weight:600;">V 正交性 VᵀV = I</div>` +
+      matBoxHTML('', VtV, '#6b7280') +
+      `<div style="font-size:0.75em; color:var(--accent3); margin-top:4px;">✓ 正交矩阵</div>
+    </div>`;
+}
+
+// ======= Events =======
+['a11','a12','a21','a22'].forEach(id => {
+  document.getElementById(id).addEventListener('input', () => {
+    updateSVDDisplay();
+    drawCircle();
+    drawSteps();
+  });
+});
+
+document.getElementById('t-slider').addEventListener('input', function() {
+  tVal = parseFloat(this.value);
+  document.getElementById('t-val').textContent = tVal.toFixed(2);
+  document.getElementById('anim-bar-fill').style.width = (tVal*100)+'%';
+  drawCircle();
+});
+
+document.getElementById('animate-btn').addEventListener('click', function() {
+  if (animRun) {
+    animRun = false;
+    cancelAnimationFrame(animRaf);
+    this.textContent = '▶ 播放动画';
+    return;
+  }
+  animRun = true;
+  this.textContent = '⏸ 暂停';
+  let start = null, dur = 2500;
+  function frame(ts) {
+    if (!start) start = ts;
+    let e = (ts - start) % (dur*2);
+    let t = e < dur ? e/dur : 2-e/dur;
+    tVal = t;
+    document.getElementById('t-slider').value = t;
+    document.getElementById('t-val').textContent = t.toFixed(2);
+    document.getElementById('anim-bar-fill').style.width = (t*100)+'%';
+    drawCircle();
+    if (animRun) animRaf = requestAnimationFrame(frame);
+  }
+  animRaf = requestAnimationFrame(frame);
+});
+
+document.getElementById('reset-btn').addEventListener('click', () => {
+  tVal = 0;
+  document.getElementById('t-slider').value = 0;
+  document.getElementById('t-val').textContent = '0.00';
+  document.getElementById('anim-bar-fill').style.width = '0%';
+  drawCircle();
+});
+
+document.querySelectorAll('#step-tabs .tab').forEach(tab => {
+  tab.addEventListener('click', function() {
+    document.querySelectorAll('#step-tabs .tab').forEach(t=>t.classList.remove('active'));
+    this.classList.add('active');
+    stepIdx = parseInt(this.dataset.step);
+    drawSteps();
+  });
+});
+
+document.getElementById('rank-slider').addEventListener('input', () => {
+  updateImageDemo();
+  drawSingularChart();
+});
+
+// 矩阵 tab 切换
+document.querySelectorAll('.mat-tab-btn').forEach(btn => {
+  btn.addEventListener('click', function() {
+    document.querySelectorAll('.mat-tab-btn').forEach(b => b.classList.remove('active'));
+    this.classList.add('active');
+    currentMatTab = this.dataset.mat;
+    renderMatrixCanvas();
+  });
+});
+
+// ======= Init =======
+window.addEventListener('resize', () => {
+  resizeC1(); resizeC2();
+  drawLoRA();
+  drawSingularChart();
+});
+resizeC1();
+resizeC2();
+drawLoRA();
+updateSVDDisplay();
+initImageDemo();
+</script>
+</body>
+</html>

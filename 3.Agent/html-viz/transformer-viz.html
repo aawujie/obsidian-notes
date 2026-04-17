@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Transformer 架构图解</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #0d1117;
+  --card: #161b22;
+  --card2: #1c2333;
+  --accent: #58a6ff;
+  --accent2: #f0883e;
+  --accent3: #7ee787;
+  --accent4: #d2a8ff;
+  --text: #e6edf3;
+  --text-dim: #8b949e;
+  --border: #30363d;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+body {
+  font-family: 'Noto Sans SC', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.8;
+}
+.container { max-width: 960px; margin: 0 auto; padding: 40px 24px; }
+
+h1 {
+  font-size: 2em;
+  background: linear-gradient(135deg, var(--accent), var(--accent3));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 8px;
+}
+.sub { color: var(--text-dim); margin-bottom: 40px; font-size: 0.92em; }
+
+h2 { font-size: 1.35em; margin: 40px 0 16px; color: var(--accent); display: flex; align-items: center; gap: 10px; }
+h2 .step { width: 32px; height: 32px; border-radius: 50%; background: var(--accent); color: #fff; font-size: 0.75em; display: flex; align-items: center; justify-content: center; font-weight: 700; }
+
+p { margin-bottom: 14px; font-size: 0.92em; }
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 20px;
+  margin: 16px 0;
+}
+
+.note {
+  background: var(--card2);
+  border-left: 3px solid var(--accent3);
+  padding: 12px 16px;
+  border-radius: 0 8px 8px 0;
+  margin: 16px 0;
+  font-size: 0.88em;
+  color: var(--text-dim);
+}
+
+/* Section 1: Overall Architecture */
+.arch-container {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  padding: 24px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  margin: 20px 0;
+}
+
+.arch-side {
+  flex: 1;
+  min-width: 280px;
+  max-width: 380px;
+}
+
+.arch-title {
+  font-size: 1em;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 12px;
+  padding: 8px;
+  border-radius: 8px;
+}
+.arch-title.encoder { background: rgba(88, 166, 255, 0.2); color: var(--accent); }
+.arch-title.decoder { background: rgba(126, 231, 135, 0.2); color: var(--accent3); }
+
+.arch-layer {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 12px;
+  margin: 8px 0;
+  cursor: pointer;
+  transition: all 0.25s;
+}
+.arch-layer:hover { border-color: var(--accent2); background: var(--card2); }
+.arch-layer.highlighted { border-color: var(--accent); box-shadow: 0 0 16px rgba(88, 166, 255, 0.3); background: rgba(88, 166, 255, 0.08); }
+
+.arch-layer .layer-label { font-size: 0.75em; color: var(--text-dim); margin-bottom: 6px; }
+.arch-layer .block { font-size: 0.82em; padding: 4px 8px; margin: 4px 0; border-radius: 6px; background: var(--card2); }
+.arch-layer .block.att { border-left: 3px solid var(--accent); }
+.arch-layer .block.cross { border-left: 3px solid var(--accent3); }
+.arch-layer .block.ffn { border-left: 3px solid var(--accent2); }
+.arch-layer .block.norm { border-left: 3px solid var(--accent4); }
+
+.arch-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent);
+  font-size: 1.5em;
+  min-width: 40px;
+}
+
+.explain-box {
+  margin-top: 20px;
+  padding: 16px;
+  background: var(--card2);
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  min-height: 80px;
+  font-size: 0.9em;
+  color: var(--text-dim);
+}
+.explain-box strong { color: var(--accent); }
+
+/* Section 2: Encoder Layer Detail */
+.encoder-flow {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 20px;
+  background: var(--card);
+  border-radius: 12px;
+  border: 1px solid var(--border);
+}
+
+.flow-step {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 14px 18px;
+  background: var(--card2);
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  cursor: pointer;
+  transition: all 0.25s;
+}
+.flow-step:hover { border-color: var(--accent); background: rgba(88, 166, 255, 0.06); }
+.flow-step.active { border-color: var(--accent); box-shadow: 0 0 12px rgba(88, 166, 255, 0.2); }
+
+.flow-step .shape { font-family: 'JetBrains Mono', monospace; font-size: 0.85em; color: var(--accent3); }
+.flow-step .arrow { color: var(--accent2); font-size: 1.2em; }
+.flow-step .desc { font-size: 0.88em; flex: 1; }
+
+.flow-detail { margin-top: 12px; padding: 12px; background: var(--card2); border-radius: 8px; font-size: 0.85em; color: var(--text-dim); display: none; }
+.flow-detail.visible { display: block; }
+
+/* Section 3: Mask Demo */
+.mask-demo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 24px;
+  background: var(--card);
+  border-radius: 12px;
+  border: 1px solid var(--border);
+}
+
+.mask-matrix {
+  display: inline-grid;
+  gap: 2px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.9em;
+}
+.mask-cell {
+  width: 44px; height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.mask-cell.attend { background: rgba(126, 231, 135, 0.4); color: var(--accent3); }
+.mask-cell.masked { background: rgba(248, 81, 73, 0.2); color: var(--text-dim); }
+.mask-cell.selected { box-shadow: 0 0 0 2px var(--accent); }
+.mask-cell.highlight-row { background: rgba(88, 166, 255, 0.3); }
+
+.mask-tokens {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.mask-token {
+  padding: 8px 14px;
+  background: var(--card2);
+  border: 2px solid var(--border);
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9em;
+  transition: all 0.2s;
+}
+.mask-token:hover { border-color: var(--accent); }
+.mask-token.can-attend { border-color: var(--accent3); background: rgba(126, 231, 135, 0.15); }
+.mask-token.masked-out { opacity: 0.4; }
+
+.mask-explain { text-align: center; font-size: 0.88em; color: var(--text-dim); min-height: 48px; }
+
+/* Section 4: Residual & LayerNorm */
+.resnorm-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin: 16px 0;
+}
+@media (max-width: 600px) { .resnorm-grid { grid-template-columns: 1fr; } }
+
+.resnorm-card {
+  background: var(--card2);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 20px;
+}
+.resnorm-card h4 { font-size: 1em; margin-bottom: 12px; color: var(--accent); }
+
+.residual-diag {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 16px;
+}
+.residual-diag .path { display: flex; align-items: center; gap: 8px; }
+.residual-diag .box { padding: 10px 16px; background: var(--card); border-radius: 8px; font-size: 0.85em; border: 1px solid var(--border); }
+.residual-diag .shortcut { color: var(--accent3); font-weight: 600; }
+.residual-diag .line { width: 2px; height: 24px; background: var(--border); }
+
+.norm-compare { font-size: 0.88em; }
+.norm-compare td { padding: 8px 12px; border-bottom: 1px solid var(--border); }
+.norm-compare .bn { color: var(--accent2); }
+.norm-compare .ln { color: var(--accent3); }
+
+/* Section 5: FFN */
+.ffn-diag {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 24px;
+  background: var(--card);
+  border-radius: 12px;
+  border: 1px solid var(--border);
+}
+
+.ffn-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.ffn-box {
+  padding: 12px 20px;
+  background: var(--card2);
+  border-radius: 10px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.9em;
+  border: 1px solid var(--border);
+}
+.ffn-box.input { border-color: var(--accent); }
+.ffn-box.hidden { border-color: var(--accent2); background: rgba(240, 136, 62, 0.1); }
+.ffn-box.output { border-color: var(--accent3); }
+
+.ffn-arrow { color: var(--accent2); font-size: 1.3em; }
+
+/* Section 6: Full Data Flow */
+.dataflow-container {
+  padding: 24px;
+  background: var(--card);
+  border-radius: 12px;
+  border: 1px solid var(--border);
+}
+
+.dataflow-controls {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  align-items: center;
+}
+.dataflow-controls button {
+  padding: 8px 18px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--card2);
+  color: var(--text);
+  cursor: pointer;
+  font-family: 'Noto Sans SC', sans-serif;
+  font-size: 0.9em;
+  transition: all 0.2s;
+}
+.dataflow-controls button:hover { border-color: var(--accent); }
+.dataflow-controls button.playing { background: var(--accent); border-color: var(--accent); color: #fff; }
+
+.dataflow-stage {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  min-height: 120px;
+}
+
+.stage-box {
+  padding: 16px 20px;
+  background: var(--card2);
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  font-size: 0.95em;
+  transition: all 0.4s;
+}
+.stage-box.active { border-color: var(--accent); box-shadow: 0 0 20px rgba(88, 166, 255, 0.2); }
+.stage-box .stage-label { font-size: 0.8em; color: var(--accent); margin-bottom: 8px; }
+.stage-box .stage-content { font-family: 'JetBrains Mono', monospace; }
+
+.token-flow { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+.token-flow .t { padding: 6px 12px; background: var(--card); border-radius: 6px; font-size: 0.9em; }
+.token-flow .t.current { background: var(--accent); color: #fff; }
+.token-flow .t.pending { opacity: 0.5; }
+.token-flow .arrow { color: var(--accent2); }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<h1>Transformer 架构图解</h1>
+<p class="sub">从整体到细节，用交互式图解理解编码器-解码器架构</p>
+
+<!-- Section 1: Overall Architecture -->
+<h2><span class="step">1</span>整体架构图</h2>
+<p>Transformer 由<strong>编码器堆叠</strong>和<strong>解码器堆叠</strong>组成。左侧编码器处理输入序列，右侧解码器自回归生成输出。点击任意组件查看说明。</p>
+
+<div class="arch-container">
+  <div class="arch-side">
+    <div class="arch-title encoder">编码器 (N 层)</div>
+    <div class="arch-layer" data-id="enc-mha" onclick="highlightArch('enc-mha')">
+      <div class="layer-label">每层包含：</div>
+      <div class="block att">Multi-Head Self-Attention</div>
+      <div class="block norm">Add & Norm</div>
+      <div class="block ffn">前馈网络 (FFN)</div>
+      <div class="block norm">Add & Norm</div>
+    </div>
+    <div class="arch-layer" data-id="enc-input" onclick="highlightArch('enc-input')">
+      <div class="layer-label">输入</div>
+      <div class="block">词嵌入 + 位置编码 → n × d</div>
+    </div>
+  </div>
+  <div class="arch-arrow">→</div>
+  <div class="arch-side">
+    <div class="arch-title decoder">解码器 (N 层)</div>
+    <div class="arch-layer" data-id="dec-mask" onclick="highlightArch('dec-mask')">
+      <div class="layer-label">每层包含：</div>
+      <div class="block att">Masked Self-Attention</div>
+      <div class="block norm">Add & Norm</div>
+      <div class="block cross">Cross-Attention</div>
+      <div class="block norm">Add & Norm</div>
+      <div class="block ffn">前馈网络 (FFN)</div>
+      <div class="block norm">Add & Norm</div>
+    </div>
+    <div class="arch-layer" data-id="dec-input" onclick="highlightArch('dec-input')">
+      <div class="layer-label">输入</div>
+      <div class="block">目标序列（右移） + 编码器输出</div>
+    </div>
+  </div>
+</div>
+<div class="explain-box" id="archExplain">
+  点击上方任意组件查看详细说明
+</div>
+
+<!-- Section 2: Encoder Layer Detail -->
+<h2><span class="step">2</span>编码器单层详解</h2>
+<p>数据流经一个编码器层：输入与输出形状相同 (n × d)，便于堆叠。点击每步查看说明。</p>
+
+<div class="card">
+  <div class="encoder-flow">
+    <div class="flow-step" data-step="0" onclick="showFlowStep(0)">
+      <span class="shape">(n × d)</span>
+      <span class="arrow">→</span>
+      <span class="desc">输入：n 个词，每个 d 维向量</span>
+    </div>
+    <div class="flow-step" data-step="1" onclick="showFlowStep(1)">
+      <span class="shape">(n × d)</span>
+      <span class="arrow">→</span>
+      <span class="desc">Multi-Head Self-Attention：每个词关注句中所有词</span>
+    </div>
+    <div class="flow-step" data-step="2" onclick="showFlowStep(2)">
+      <span class="shape">(n × d)</span>
+      <span class="arrow">→</span>
+      <span class="desc">残差连接 + LayerNorm</span>
+    </div>
+    <div class="flow-step" data-step="3" onclick="showFlowStep(3)">
+      <span class="shape">(n × d)</span>
+      <span class="arrow">→</span>
+      <span class="desc">前馈网络 (FFN)：每个位置独立通过 2 层 MLP</span>
+    </div>
+    <div class="flow-step" data-step="4" onclick="showFlowStep(4)">
+      <span class="shape">(n × d)</span>
+      <span class="arrow">→</span>
+      <span class="desc">残差连接 + LayerNorm → 输出</span>
+    </div>
+  </div>
+  <div class="flow-detail" id="flowDetail"></div>
+</div>
+
+<!-- Section 3: Mask Demo -->
+<h2><span class="step">3</span>解码器的掩码</h2>
+<p>解码器生成时不能"偷看"未来词。掩码矩阵是下三角：生成位置 i 时只能关注 0~i。点击输出位置查看可关注的输入。</p>
+
+<div class="mask-demo">
+  <div class="mask-tokens" id="maskTokens">
+    <span class="mask-token" data-pos="0">Le</span>
+    <span class="mask-token" data-pos="1">chat</span>
+    <span class="mask-token" data-pos="2">s'</span>
+    <span class="mask-token" data-pos="3">assoit</span>
+  </div>
+  <div style="font-size:0.85em; color:var(--text-dim);">掩码矩阵（行=输出位置，列=可关注的输入）</div>
+  <div class="mask-matrix" id="maskMatrix"></div>
+  <div class="mask-explain" id="maskExplain">点击上方词或矩阵单元格，查看该位置能关注哪些输入</div>
+</div>
+
+<!-- Section 4: Residual & LayerNorm -->
+<h2><span class="step">4</span>残差连接与 LayerNorm</h2>
+
+<div class="resnorm-grid">
+  <div class="resnorm-card">
+    <h4>残差连接：梯度高速公路</h4>
+    <p style="font-size:0.88em; margin-bottom:12px;">类比：像绕过城镇的高速公路，梯度可以直接"抄近路"流回，避免深层网络梯度消失。</p>
+    <div class="residual-diag">
+      <div class="path">
+        <span class="box">输入 x</span>
+        <span>→</span>
+        <span class="box">子层 F(x)</span>
+        <span>→</span>
+        <span class="box">输出</span>
+      </div>
+      <div class="line"></div>
+      <div class="path">
+        <span class="shortcut">x ──────────────→ + ← 残差：输出 = x + F(x)</span>
+      </div>
+    </div>
+  </div>
+  <div class="resnorm-card">
+    <h4>LayerNorm vs BatchNorm</h4>
+    <table class="norm-compare" style="width:100%;">
+      <tr><td></td><td class="bn">BatchNorm</td><td class="ln">LayerNorm</td></tr>
+      <tr><td>归一化对象</td><td>同一特征，不同样本</td><td>同一样本，不同特征</td></tr>
+      <tr><td>序列模型</td><td>batch 大小影响大</td><td>每个样本独立，更稳定</td></tr>
+      <tr><td>Transformer</td><td>少用</td><td>✓ 标准选择</td></tr>
+    </table>
+  </div>
+</div>
+
+<!-- Section 5: FFN -->
+<h2><span class="step">5</span>前馈网络 (FFN)</h2>
+<p>FFN 是简单的 2 层 MLP，<strong>对每个位置独立</strong>施加相同变换。类比：每个词都经过同样的"思考流程"。</p>
+
+<div class="ffn-diag">
+  <div class="ffn-row">
+    <span class="ffn-box input">输入 (d)</span>
+    <span class="ffn-arrow">→</span>
+    <span class="ffn-box hidden">Dense(4d)</span>
+    <span class="ffn-arrow">→</span>
+    <span class="ffn-box hidden">ReLU</span>
+    <span class="ffn-arrow">→</span>
+    <span class="ffn-box hidden">Dense(d)</span>
+    <span class="ffn-arrow">→</span>
+    <span class="ffn-box output">输出 (d)</span>
+  </div>
+  <p style="font-size:0.85em; color:var(--text-dim); text-align:center;">
+    扩展 4 倍 → 非线性 → 压缩回原维度。参数量大但计算简单（无注意力矩阵）。
+  </p>
+</div>
+
+<!-- Section 6: Full Data Flow -->
+<h2><span class="step">6</span>完整数据流</h2>
+<p>动画演示："The cat sat" 编码后，解码器逐步生成 "Le chat s'assoit"。</p>
+
+<div class="dataflow-container">
+  <div class="dataflow-controls">
+    <button id="playBtn" onclick="togglePlay()">▶ 播放</button>
+    <button onclick="resetFlow()">↺ 重置</button>
+    <span id="flowStepLabel" style="font-size:0.88em; color:var(--text-dim);">步骤 0 / 8</span>
+  </div>
+  <div class="dataflow-stage" id="dataflowStage">
+    <div class="stage-box" id="stage0">
+      <div class="stage-label">输入（源语言）</div>
+      <div class="stage-content token-flow" id="srcFlow">
+        <span class="t">The</span><span class="t">cat</span><span class="t">sat</span>
+      </div>
+    </div>
+    <div class="stage-box" id="stage1">
+      <div class="stage-label">编码器输出</div>
+      <div class="stage-content">编码后的上下文表示 (n × d)</div>
+    </div>
+    <div class="stage-box" id="stage2">
+      <div class="stage-label">解码器生成（目标语言）</div>
+      <div class="stage-content token-flow" id="tgtFlow"></div>
+    </div>
+  </div>
+</div>
+
+<div class="note">
+  <strong>自回归</strong>：解码器每次生成一个词，把已生成的词作为下一轮的输入，直到生成结束符。
+</div>
+
+</div>
+
+<script>
+// ---- Section 1: Architecture ----
+const archExplains = {
+  'enc-mha': '编码器每层：<strong>Multi-Head Self-Attention</strong> 让每个词关注句中所有词，捕获上下文。然后 <strong>Add & Norm</strong>（残差+LayerNorm）稳定训练，再通过 <strong>FFN</strong> 做非线性变换。',
+  'enc-input': '编码器输入：词嵌入（把词变成向量）+ 位置编码（告诉模型词序）。形状 (n × d)：n 个词，每个 d 维。',
+  'dec-mask': '解码器每层：<strong>Masked Self-Attention</strong> 只能看已生成的词；<strong>Cross-Attention</strong> 关注编码器输出（源句信息）；<strong>FFN</strong> 与编码器相同。',
+  'dec-input': '解码器输入：目标序列右移一位（训练时用真实目标，推理时用已生成）。同时接收编码器的最终输出作为 Cross-Attention 的 Key 和 Value。'
+};
+
+function highlightArch(id) {
+  document.querySelectorAll('.arch-layer').forEach(el => el.classList.remove('highlighted'));
+  const el = document.querySelector(`.arch-layer[data-id="${id}"]`);
+  if (el) el.classList.add('highlighted');
+  document.getElementById('archExplain').innerHTML = archExplains[id] || '';
+}
+
+// ---- Section 2: Encoder Flow ----
+const flowDetails = [
+  '输入：n 个词，每个用 d 维向量表示。通常 n 是序列长度，d 是 512 或 768。',
+  'Multi-Head Self-Attention：每个词作为 Query，与所有词的 Key 计算相似度，得到注意力权重，再对 Value 加权求和。多头 = 从多个子空间学习不同关注模式。',
+  '残差连接：output = x + Sublayer(x)。梯度可直接流过，缓解梯度消失。LayerNorm 对每个样本的特征维度归一化，稳定训练。',
+  'FFN：两层全连接，中间维度通常是 4d。ReLU 激活。每个位置独立计算，无位置间交互。',
+  '再次残差+LayerNorm，得到该层输出。输出形状与输入相同，可堆叠多层。'
+];
+
+function showFlowStep(step) {
+  document.querySelectorAll('.flow-step').forEach(el => el.classList.remove('active'));
+  document.querySelector(`.flow-step[data-step="${step}"]`)?.classList.add('active');
+  const detail = document.getElementById('flowDetail');
+  detail.textContent = flowDetails[step];
+  detail.classList.add('visible');
+}
+
+// ---- Section 3: Mask ----
+const N = 4;
+function renderMaskMatrix() {
+  const container = document.getElementById('maskMatrix');
+  let html = '<div style="display:grid; grid-template-columns:repeat(' + (N+1) + ', 1fr); gap:2px; margin-bottom:8px;">';
+  html += '<div></div>';
+  for (let j = 0; j < N; j++) html += `<div style="text-align:center; font-size:0.75em; color:var(--text-dim);">${j}</div>`;
+  html += '</div>';
+  for (let i = 0; i < N; i++) {
+    html += '<div style="display:grid; grid-template-columns:repeat(' + (N+1) + ', 1fr); gap:2px;">';
+    html += `<div style="text-align:right; font-size:0.75em; color:var(--text-dim); padding:4px;">${i}</div>`;
+    for (let j = 0; j < N; j++) {
+      const can = j <= i;
+      html += `<div class="mask-cell ${can ? 'attend' : 'masked'}" data-i="${i}" data-j="${j}" onclick="selectMask(${i},${j})">${can ? '1' : '0'}</div>`;
+    }
+    html += '</div>';
+  }
+  container.innerHTML = html;
+}
+
+let selectedMaskPos = -1;
+function selectMask(i, j) {
+  selectedMaskPos = i;
+  document.querySelectorAll('.mask-cell').forEach(c => {
+    c.classList.remove('selected', 'highlight-row');
+    if (parseInt(c.dataset.i) === i) c.classList.add('highlight-row');
+    if (parseInt(c.dataset.i) === i && parseInt(c.dataset.j) === j) c.classList.add('selected');
+  });
+  document.querySelectorAll('.mask-token').forEach((t, idx) => {
+    t.classList.remove('can-attend', 'masked-out');
+    if (idx <= i) t.classList.add('can-attend');
+    else t.classList.add('masked-out');
+  });
+  const tokens = ['Le', 'chat', "s'", 'assoit'];
+  const explain = document.getElementById('maskExplain');
+  if (j <= i) {
+    explain.textContent = `生成「${tokens[i]}」时，可以关注位置 0~${i}（含「${tokens[j]}」），不能关注位置 ${i+1} 及以后。`;
+  } else {
+    explain.textContent = `生成「${tokens[i]}」时，不能关注位置 ${j}（「${tokens[j]}」是未来词，不能偷看！）`;
+  }
+}
+
+document.querySelectorAll('.mask-token').forEach(t => {
+  t.addEventListener('click', () => {
+    const pos = parseInt(t.dataset.pos);
+    selectMask(pos, pos);
+  });
+});
+
+renderMaskMatrix();
+
+// ---- Section 6: Data Flow ----
+const flowSteps = [
+  { src: 'active', tgt: [], label: '输入 "The cat sat" 进入编码器' },
+  { src: 'done', tgt: [], label: '编码器处理完成，得到上下文表示' },
+  { src: 'done', tgt: ['Le'], label: '解码器生成第 1 个词 "Le"' },
+  { src: 'done', tgt: ['Le', 'chat'], label: '解码器生成第 2 个词 "chat"' },
+  { src: 'done', tgt: ['Le', 'chat', "s'"], label: '解码器生成第 3 个词 "s\'"' },
+  { src: 'done', tgt: ['Le', 'chat', "s'", 'assoit'], label: '解码器生成第 4 个词 "assoit"' },
+  { src: 'done', tgt: ['Le', 'chat', "s'", 'assoit'], label: '生成结束' }
+];
+
+let flowStepIdx = 0;
+let flowInterval = null;
+
+function updateFlowDisplay() {
+  const step = flowSteps[Math.min(flowStepIdx, flowSteps.length - 1)];
+  document.getElementById('stage0').classList.toggle('active', step.src === 'active');
+  document.getElementById('stage1').classList.toggle('active', step.src === 'done' && step.tgt.length === 0);
+  document.getElementById('stage2').classList.toggle('active', step.tgt.length > 0);
+
+  const tgtFlow = document.getElementById('tgtFlow');
+  tgtFlow.innerHTML = step.tgt.map((t, i) =>
+    `<span class="t ${i === step.tgt.length - 1 && flowStepIdx < flowSteps.length - 1 ? 'current' : ''}">${t}</span>`
+  ).join('');
+
+  document.getElementById('flowStepLabel').textContent = `步骤 ${Math.min(flowStepIdx, flowSteps.length - 1) + 1} / ${flowSteps.length}`;
+}
+
+function resetFlow() {
+  flowStepIdx = 0;
+  if (flowInterval) { clearInterval(flowInterval); flowInterval = null; }
+  document.getElementById('playBtn').classList.remove('playing');
+  document.getElementById('playBtn').textContent = '▶ 播放';
+  updateFlowDisplay();
+}
+
+function togglePlay() {
+  if (flowInterval) {
+    clearInterval(flowInterval);
+    flowInterval = null;
+    document.getElementById('playBtn').classList.remove('playing');
+    document.getElementById('playBtn').textContent = '▶ 播放';
+    return;
+  }
+  document.getElementById('playBtn').classList.add('playing');
+  document.getElementById('playBtn').textContent = '⏸ 暂停';
+  flowInterval = setInterval(() => {
+    flowStepIdx = Math.min(flowStepIdx + 1, flowSteps.length);
+    updateFlowDisplay();
+    if (flowStepIdx >= flowSteps.length) {
+      clearInterval(flowInterval);
+      flowInterval = null;
+      document.getElementById('playBtn').classList.remove('playing');
+      document.getElementById('playBtn').textContent = '▶ 播放';
+    }
+  }, 1200);
+}
+
+updateFlowDisplay();
+</script>
+
+</body>
+</html>

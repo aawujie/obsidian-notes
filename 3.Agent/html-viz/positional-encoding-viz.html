@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>位置编码图解</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #0d1117;
+  --card: #161b22;
+  --card2: #1c2333;
+  --accent: #58a6ff;
+  --accent2: #f0883e;
+  --accent3: #7ee787;
+  --text: #e6edf3;
+  --text-dim: #8b949e;
+  --border: #30363d;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+body {
+  font-family: 'Noto Sans SC', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.8;
+}
+.container { max-width: 880px; margin: 0 auto; padding: 40px 24px; }
+
+h1 {
+  font-size: 2em;
+  background: linear-gradient(135deg, var(--accent), var(--accent3));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 8px;
+}
+.sub { color: var(--text-dim); margin-bottom: 40px; font-size: 0.92em; }
+
+h2 { font-size: 1.3em; margin: 36px 0 14px; color: var(--accent); }
+
+p { margin-bottom: 14px; font-size: 0.92em; }
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 20px;
+  margin: 16px 0;
+}
+
+.highlight { color: var(--accent2); font-weight: 600; }
+.highlight2 { color: var(--accent); font-weight: 600; }
+.highlight3 { color: var(--accent3); font-weight: 600; }
+
+/* Binary clock analogy */
+.clock-row {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  margin: 6px 0;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.88em;
+}
+.clock-label {
+  min-width: 65px;
+  color: var(--text-dim);
+}
+.clock-bit {
+  width: 36px;
+  height: 36px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+.clock-bit.on { background: var(--accent); color: #fff; }
+.clock-bit.off { background: var(--border); color: var(--text-dim); }
+
+.bit-header {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 8px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75em;
+  color: var(--text-dim);
+}
+.bit-header span { width: 36px; text-align: center; }
+.bit-header-label { min-width: 65px; }
+
+/* Wave visualization */
+canvas {
+  width: 100%;
+  height: 200px;
+  border-radius: 8px;
+  background: var(--card2);
+  display: block;
+  margin: 12px 0;
+}
+
+.wave-controls {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 12px 0;
+}
+.wave-btn {
+  padding: 6px 14px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--card);
+  color: var(--text);
+  cursor: pointer;
+  font-size: 0.85em;
+  font-family: 'Noto Sans SC', sans-serif;
+  transition: all 0.2s;
+}
+.wave-btn:hover { border-color: var(--accent); }
+.wave-btn.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+
+/* Position table */
+.pos-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.82em;
+  margin: 12px 0;
+}
+.pos-table th, .pos-table td {
+  padding: 8px 6px;
+  text-align: center;
+  border-bottom: 1px solid var(--border);
+}
+.pos-table th {
+  background: var(--card2);
+  color: var(--accent);
+  font-weight: 600;
+}
+.pos-table td { background: var(--card); }
+.pos-table tr:hover td { background: var(--card2); }
+
+.pos-table .pos-col { color: var(--accent2); font-weight: 600; }
+
+.note {
+  background: var(--card2);
+  border-left: 3px solid var(--accent3);
+  padding: 12px 16px;
+  border-radius: 0 8px 8px 0;
+  margin: 16px 0;
+  font-size: 0.88em;
+  color: var(--text-dim);
+}
+
+.analogy-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin: 16px 0;
+}
+.analogy-card {
+  background: var(--card2);
+  border-radius: 10px;
+  padding: 16px;
+  border: 1px solid var(--border);
+}
+.analogy-card h4 { font-size: 0.95em; margin-bottom: 8px; }
+.analogy-card p { font-size: 0.85em; color: var(--text-dim); margin: 0; }
+
+.sim-result {
+  background: var(--card2);
+  border-radius: 10px;
+  padding: 16px;
+  text-align: center;
+  margin: 12px 0;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.slider-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 8px 0;
+}
+.slider-row label {
+  min-width: 70px;
+  font-size: 0.85em;
+}
+.slider-row input[type="range"] {
+  flex: 1;
+  height: 5px;
+  -webkit-appearance: none;
+  background: var(--border);
+  border-radius: 3px;
+}
+.slider-row input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 16px; height: 16px;
+  border-radius: 50%;
+  background: var(--accent);
+  cursor: pointer;
+}
+.slider-row .val {
+  min-width: 40px;
+  text-align: right;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.82em;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<h1>位置编码：怎么用"波"标记位置？</h1>
+<p class="sub">Transformer 不靠顺序处理序列，所以需要"告诉"模型每个词在哪。这就是位置编码。</p>
+
+<!-- Part 1: Binary Clock Analogy -->
+<h2>第一步：从二进制时钟说起</h2>
+
+<p>在解释正弦/余弦之前，先看一个更直观的东西——<span class="highlight">二进制计数器</span>。数 0~7 的二进制表示：</p>
+
+<div class="card">
+  <div class="bit-header">
+    <span class="bit-header-label"></span>
+    <span>快</span>
+    <span>↕</span>
+    <span>慢</span>
+  </div>
+  <div id="binaryDisplay"></div>
+  <p style="font-size:0.85em; color:var(--text-dim); margin-top:12px;">
+    观察规律：<span class="highlight2">最右边的位</span>每个数字翻转一次（最快），<span class="highlight2">中间的位</span>每 2 个数字翻转一次，<span class="highlight2">最左边的位</span>每 4 个数字翻转一次（最慢）。
+  </p>
+</div>
+
+<p>关键发现：<strong>每一位都有不同的"频率"</strong>——低位翻转快，高位翻转慢。组合在一起，<span class="highlight3">每个数字都有唯一的编码</span>。</p>
+
+<p>Transformer 的位置编码<strong>完全相同的思路</strong>，只是把 0/1 的方波换成了平滑的正弦/余弦波：</p>
+
+<div class="analogy-grid">
+  <div class="analogy-card">
+    <h4>🔲 二进制时钟</h4>
+    <p>每一位用 0/1 翻转<br>不同位有不同的翻转频率<br>组合 → 唯一编码<br>但是：不连续（跳跃式）</p>
+  </div>
+  <div class="analogy-card">
+    <h4>🌊 正弦/余弦编码</h4>
+    <p>每一维用 sin/cos 波动<br>不同维有不同的波动频率<br>组合 → 唯一编码<br>而且：<strong>连续且平滑</strong>（可微分）</p>
+  </div>
+</div>
+
+<!-- Part 2: The Waves -->
+<h2>第二步：看看这些"波"长什么样</h2>
+
+<div class="note" style="border-left-color:var(--accent);">
+  <strong>"维度"是什么？</strong><br>
+  在模型里，每个词不是一个数字，而是<strong>一组数字</strong>（比如 512 个）。这组数字叫"向量"，每个数字就是一个"维度"。<br><br>
+  类比 RGB 颜色：红色 = [255, 0, 0]，有 3 个维度。位置编码也类似，只是维度更多。<br><br>
+  <strong>不同维度用不同频率的波</strong>：维度 0-1 用高频波（变化快，区分近距离），维度 4-5 用低频波（变化慢，区分远距离）。组合在一起，每个位置都有唯一的"指纹"。
+</div>
+
+<p>选择不同的维度，看看位置编码的波形如何变化：</p>
+
+<div class="card">
+  <div class="wave-controls">
+    <button class="wave-btn active" onclick="showWave(0)">维度 0-1（高频）</button>
+    <button class="wave-btn" onclick="showWave(1)">维度 2-3（中频）</button>
+    <button class="wave-btn" onclick="showWave(2)">维度 4-5（低频）</button>
+    <button class="wave-btn" onclick="showWave(3)">全部叠加</button>
+  </div>
+  <canvas id="waveCanvas" width="820" height="200"></canvas>
+  <p style="font-size:0.82em; color:var(--text-dim); text-align:center;" id="waveExplain">
+    维度 0-1：频率最高，波长最短。相邻位置之间的差异最大，适合区分近距离位置。
+  </p>
+</div>
+
+<div class="note">
+  <strong>核心直觉</strong>：高频波（维度 0-1）变化快，能区分相邻位置（如位置 3 和位置 4）；低频波（维度 4-5）变化慢，能区分远距离位置（如位置 0 和位置 50）。组合在一起，就像 GPS 用多颗卫星定位——每颗卫星提供一个维度的信息，合在一起就能精确定位。
+</div>
+
+<!-- Part 3: The Table -->
+<h2>第三步：看具体的数值</h2>
+
+<p>假设用 6 维位置编码（实际 Transformer 用 512 维），前几个位置的值：</p>
+
+<div class="card" style="overflow-x:auto;">
+  <table class="pos-table">
+    <thead>
+      <tr>
+        <th>位置</th>
+        <th>sin(ω₀)</th>
+        <th>cos(ω₀)</th>
+        <th>sin(ω₁)</th>
+        <th>cos(ω₁)</th>
+        <th>sin(ω₂)</th>
+        <th>cos(ω₂)</th>
+      </tr>
+      <tr style="font-size:0.75em;">
+        <th></th>
+        <th style="color:var(--accent2);">高频</th>
+        <th style="color:var(--accent2);">高频</th>
+        <th style="color:var(--text-dim);">中频</th>
+        <th style="color:var(--text-dim);">中频</th>
+        <th style="color:var(--accent3);">低频</th>
+        <th style="color:var(--accent3);">低频</th>
+      </tr>
+    </thead>
+    <tbody id="posTableBody">
+    </tbody>
+  </table>
+</div>
+
+<p>每一行就是一个位置的"身份证"。注意看：</p>
+<ul style="font-size:0.9em; margin-left:20px; margin-bottom:16px;">
+  <li>前两列（高频）变化很快——位置 0 和位置 1 的值差很多</li>
+  <li>后两列（低频）变化很慢——位置 0 和位置 1 的值几乎一样</li>
+  <li><strong>每一行的 6 个数组合起来是唯一的</strong>——没有两个位置的"身份证"相同</li>
+</ul>
+
+<!-- Part 4: Why sin/cos? -->
+<h2>第四步：为什么偏偏选 sin 和 cos？</h2>
+
+<p>有一个特别优雅的性质：<span class="highlight">相对位置可以通过线性变换表示</span>。</p>
+
+<div class="card">
+  <p style="font-size:0.9em;">假设位置 3 的编码是 [sin(3ω), cos(3ω)]，位置 5 的编码是 [sin(5ω), cos(5ω)]。</p>
+  <p style="font-size:0.9em;">关键是：<strong>从位置 3 到位置 5 只需要一个固定的旋转</strong>（偏移 δ=2），不管 3 和 5 具体是多少！</p>
+  <p style="font-size:0.9em;">同样的旋转也能把位置 10 变到位置 12，把位置 100 变到位置 102。</p>
+  <div class="sim-result">
+    位置 i 的编码 × <span class="highlight2">旋转矩阵(δ)</span> = 位置 i+δ 的编码<br>
+    <span style="font-size:0.82em; color:var(--text-dim);">旋转矩阵只跟偏移量 δ 有关，跟具体位置 i 无关</span>
+  </div>
+  <p style="font-size:0.85em; color:var(--text-dim);">这意味着模型可以轻松学会"往前看 2 个位置"或"往后看 5 个位置"这样的相对位置关系。</p>
+</div>
+
+<!-- Part 5: Interactive similarity -->
+<h2>第五步：体验位置的"距离"</h2>
+
+<p>拖动两个位置滑块，看看它们的位置编码有多相似（用余弦相似度衡量）：</p>
+
+<div class="card">
+  <div class="slider-row">
+    <label style="color:var(--accent2);">位置 A：</label>
+    <input type="range" min="0" max="99" value="5" oninput="updateSim()" id="posA">
+    <span class="val" id="posAVal">5</span>
+  </div>
+  <div class="slider-row">
+    <label style="color:var(--accent);">位置 B：</label>
+    <input type="range" min="0" max="99" value="10" oninput="updateSim()" id="posB">
+    <span class="val" id="posBVal">10</span>
+  </div>
+
+  <div class="sim-result" id="simResult">
+    余弦相似度：0.95
+  </div>
+
+  <p style="font-size:0.82em; color:var(--text-dim); text-align:center;">
+    位置越近 → 编码越相似（相似度越高）<br>
+    位置越远 → 编码越不同（相似度越低）
+  </p>
+</div>
+
+<!-- Summary -->
+<h2>总结</h2>
+<div class="card" style="border-left:3px solid var(--accent3);">
+  <p style="margin:0; font-size:0.92em;">
+    <strong>1.</strong> 自注意力不知道词的顺序 → 需要位置编码<br>
+    <strong>2.</strong> 位置编码 = 一组不同频率的波（sin/cos）<br>
+    <strong>3.</strong> 高频波区分近距离位置，低频波区分远距离位置<br>
+    <strong>4.</strong> sin/cos 的特殊性质让模型能轻松学习相对位置<br>
+    <strong>5.</strong> 位置编码直接<strong>加到</strong>词嵌入上（不是拼接），不增加维度
+  </p>
+</div>
+
+</div>
+
+<script>
+// Binary display
+function renderBinary() {
+  const container = document.getElementById('binaryDisplay');
+  let html = '';
+  for (let i = 0; i < 8; i++) {
+    html += '<div class="clock-row">';
+    html += `<span class="clock-label">位置 ${i}：</span>`;
+    for (let bit = 2; bit >= 0; bit--) {
+      const val = (i >> bit) & 1;
+      html += `<div class="clock-bit ${val ? 'on' : 'off'}">${val}</div>`;
+    }
+    html += `<span style="margin-left:8px; color:var(--text-dim); font-size:0.8em;">= ${i}</span>`;
+    html += '</div>';
+  }
+  container.innerHTML = html;
+}
+renderBinary();
+
+// Position encoding calculation
+const D = 6;
+function posEncode(pos) {
+  const result = [];
+  for (let j = 0; j < D/2; j++) {
+    const freq = 1 / Math.pow(10000, 2*j/D);
+    result.push(Math.sin(pos * freq));
+    result.push(Math.cos(pos * freq));
+  }
+  return result;
+}
+
+// Position table
+function renderTable() {
+  const tbody = document.getElementById('posTableBody');
+  let html = '';
+  for (let pos = 0; pos < 8; pos++) {
+    const enc = posEncode(pos);
+    html += `<tr><td class="pos-col">${pos}</td>`;
+    enc.forEach((v, i) => {
+      const abs = Math.abs(v);
+      const color = i < 2 ? 'var(--accent2)' : (i < 4 ? 'var(--text)' : 'var(--accent3)');
+      const bg = `rgba(${i < 2 ? '240,136,62' : (i < 4 ? '200,200,200' : '126,231,135')}, ${abs * 0.15})`;
+      html += `<td style="color:${color}; background:${bg}">${v.toFixed(3)}</td>`;
+    });
+    html += '</tr>';
+  }
+  tbody.innerHTML = html;
+}
+renderTable();
+
+// Wave canvas
+const canvas = document.getElementById('waveCanvas');
+const ctx = canvas.getContext('2d');
+let currentWave = 0;
+
+const waveExplains = [
+  '维度 0-1：频率最高，波长最短。相邻位置之间差异大，适合区分近距离。',
+  '维度 2-3：频率中等，波长适中。适合区分中等距离的位置。',
+  '维度 4-5：频率最低，波长最长。变化很慢，适合区分远距离位置。',
+  '全部 6 个维度叠加显示。每个位置有唯一的组合值。'
+];
+
+const waveColors = [
+  ['#f0883e', '#ff6b35'],
+  ['#58a6ff', '#79c0ff'],
+  ['#7ee787', '#56d364'],
+];
+
+function showWave(idx) {
+  currentWave = idx;
+  document.querySelectorAll('.wave-btn').forEach((b, i) => b.classList.toggle('active', i === idx));
+  document.getElementById('waveExplain').textContent = waveExplains[idx];
+  drawWave();
+}
+
+function drawWave() {
+  const w = canvas.width;
+  const h = canvas.height;
+  const dpr = window.devicePixelRatio || 1;
+  canvas.width = w * dpr;
+  canvas.height = h * dpr;
+  ctx.scale(dpr, dpr);
+  canvas.style.width = w + 'px';
+  canvas.style.height = h + 'px';
+
+  ctx.clearRect(0, 0, w, h);
+  ctx.fillStyle = '#1c2333';
+  ctx.fillRect(0, 0, w, h);
+
+  // Grid
+  ctx.strokeStyle = '#30363d';
+  ctx.lineWidth = 0.5;
+  ctx.beginPath();
+  ctx.moveTo(0, h/2);
+  ctx.lineTo(w, h/2);
+  ctx.stroke();
+  for (let x = 0; x < w; x += w/20) {
+    ctx.beginPath();
+    ctx.moveTo(x, 0);
+    ctx.lineTo(x, h);
+    ctx.stroke();
+  }
+
+  // Labels
+  ctx.fillStyle = '#8b949e';
+  ctx.font = '11px JetBrains Mono';
+  ctx.fillText('位置 →', w - 55, h - 8);
+  ctx.fillText('+1', 2, 18);
+  ctx.fillText(' 0', 2, h/2 - 4);
+  ctx.fillText('-1', 2, h - 8);
+
+  const numPositions = 60;
+  const xStep = (w - 40) / numPositions;
+
+  function drawOnePair(j, sinColor, cosColor) {
+    const freq = 1 / Math.pow(10000, 2*j/D);
+
+    // sin
+    ctx.strokeStyle = sinColor;
+    ctx.lineWidth = 2;
+    ctx.beginPath();
+    for (let p = 0; p < numPositions; p++) {
+      const x = 30 + p * xStep;
+      const y = h/2 - Math.sin(p * freq) * (h/2 - 20);
+      p === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
+    }
+    ctx.stroke();
+
+    // cos
+    ctx.strokeStyle = cosColor;
+    ctx.setLineDash([5, 3]);
+    ctx.beginPath();
+    for (let p = 0; p < numPositions; p++) {
+      const x = 30 + p * xStep;
+      const y = h/2 - Math.cos(p * freq) * (h/2 - 20);
+      p === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
+    }
+    ctx.stroke();
+    ctx.setLineDash([]);
+  }
+
+  if (currentWave < 3) {
+    drawOnePair(currentWave, waveColors[currentWave][0], waveColors[currentWave][1]);
+    // Legend
+    ctx.fillStyle = waveColors[currentWave][0];
+    ctx.fillText(`sin (维度${currentWave*2})`, w - 140, 18);
+    ctx.fillStyle = waveColors[currentWave][1];
+    ctx.fillText(`cos (维度${currentWave*2+1})`, w - 140, 34);
+  } else {
+    for (let j = 0; j < 3; j++) {
+      ctx.globalAlpha = 0.7;
+      drawOnePair(j, waveColors[j][0], waveColors[j][1]);
+    }
+    ctx.globalAlpha = 1;
+    waveColors.forEach((c, j) => {
+      ctx.fillStyle = c[0];
+      ctx.fillText(`维度${j*2}-${j*2+1}`, w - 80, 18 + j * 16);
+    });
+  }
+
+  // Position markers
+  ctx.fillStyle = '#58a6ff40';
+  for (let p = 0; p < numPositions; p += 5) {
+    const x = 30 + p * xStep;
+    ctx.fillStyle = '#8b949e';
+    ctx.font = '9px JetBrains Mono';
+    ctx.fillText(p.toString(), x - 3, h - 2);
+  }
+}
+
+setTimeout(drawWave, 100);
+
+// Similarity
+function cosineSim(a, b) {
+  let dot = 0, na = 0, nb = 0;
+  for (let i = 0; i < a.length; i++) {
+    dot += a[i] * b[i];
+    na += a[i] * a[i];
+    nb += b[i] * b[i];
+  }
+  return dot / (Math.sqrt(na) * Math.sqrt(nb));
+}
+
+function updateSim() {
+  const posA = parseInt(document.getElementById('posA').value);
+  const posB = parseInt(document.getElementById('posB').value);
+  document.getElementById('posAVal').textContent = posA;
+  document.getElementById('posBVal').textContent = posB;
+
+  const encA = posEncode(posA);
+  const encB = posEncode(posB);
+  const sim = cosineSim(encA, encB);
+
+  const dist = Math.abs(posA - posB);
+  const resultEl = document.getElementById('simResult');
+  const color = sim > 0.8 ? 'var(--accent3)' : (sim > 0.3 ? 'var(--accent2)' : '#f85149');
+  resultEl.innerHTML =
+    `余弦相似度：<span style="color:${color}; font-size:1.3em; font-weight:700;">${sim.toFixed(4)}</span>` +
+    `<br><span style="font-size:0.82em; color:var(--text-dim);">距离 = ${dist} 个位置 | ` +
+    `${dist < 3 ? '很近 → 很相似' : (dist < 15 ? '中等距离 → 中等相似' : '很远 → 差异大')}</span>`;
+}
+updateSim();
+</script>
+
+</body>
+</html>

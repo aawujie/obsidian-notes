@@ -1,0 +1,1136 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>特征值 vs 奇异值 · 对比可视化</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #0f1117;
+  --card: #1a1d28;
+  --card-hover: #222638;
+  --accent: #a78bfa;
+  --accent2: #34d399;
+  --accent3: #fbbf24;
+  --accent4: #f87171;
+  --accent5: #60a5fa;
+  --text: #e8e6e3;
+  --text-dim: #8b8d93;
+  --border: #2a2d3a;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Noto Sans SC', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.8;
+  overflow-x: hidden;
+}
+
+.container { max-width: 900px; margin: 0 auto; padding: 40px 24px; }
+
+h1 {
+  font-size: 2.2em;
+  font-weight: 700;
+  margin-bottom: 8px;
+  background: linear-gradient(135deg, var(--accent), var(--accent2));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.subtitle { color: var(--text-dim); font-size: 0.95em; margin-bottom: 32px; }
+
+.section { margin-bottom: 56px; animation: fadeUp 0.6s ease-out both; }
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.section:nth-child(2) { animation-delay: 0.1s; }
+.section:nth-child(3) { animation-delay: 0.2s; }
+.section:nth-child(4) { animation-delay: 0.3s; }
+.section:nth-child(5) { animation-delay: 0.4s; }
+.section:nth-child(6) { animation-delay: 0.5s; }
+.section:nth-child(7) { animation-delay: 0.6s; }
+.section:nth-child(8) { animation-delay: 0.7s; }
+
+h2 {
+  font-size: 1.45em;
+  font-weight: 600;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+h2 .step {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px; height: 34px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: #fff;
+  font-size: 0.72em;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+p { color: var(--text); font-size: 0.95em; margin-bottom: 14px; }
+
+.note {
+  background: var(--card);
+  border-left: 3px solid var(--accent2);
+  padding: 14px 18px;
+  border-radius: 0 8px 8px 0;
+  color: var(--text-dim);
+  font-size: 0.88em;
+  margin-bottom: 16px;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 24px;
+  margin: 16px 0;
+}
+
+.demo-title {
+  font-size: 0.82em;
+  color: var(--accent);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 16px;
+}
+
+.formula-block {
+  background: #12151f;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  margin: 16px 0;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.formula-big { font-size: 1.6em; color: var(--text); letter-spacing: 2px; }
+.formula-label { font-size: 0.78em; color: var(--text-dim); margin-top: 8px; }
+
+.col-eigen { color: var(--accent); }
+.col-svd   { color: var(--accent2); }
+.col-val   { color: var(--accent3); }
+.col-warn  { color: var(--accent4); }
+.col-blue  { color: var(--accent5); }
+
+.canvas-wrap {
+  position: relative;
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #0a0c12;
+  border: 1px solid var(--border);
+}
+canvas { display: block; width: 100%; }
+
+.btn {
+  background: linear-gradient(135deg, var(--accent), #7c3aed);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 18px;
+  font-size: 0.85em;
+  cursor: pointer;
+  font-family: 'Noto Sans SC', sans-serif;
+  transition: opacity 0.2s, transform 0.1s;
+}
+.btn:hover { opacity: 0.85; transform: translateY(-1px); }
+.btn-sm { padding: 5px 11px; font-size: 0.78em; }
+.btn-ghost {
+  background: var(--card-hover);
+  border: 1px solid var(--border);
+  color: var(--text-dim);
+}
+
+.matrix-inputs {
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+  background: #12151f;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 12px;
+}
+.matrix-inputs input {
+  width: 64px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  color: var(--text);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1em;
+  padding: 6px 8px;
+  text-align: center;
+  outline: none;
+  transition: border-color 0.2s;
+}
+.matrix-inputs input:focus { border-color: var(--accent); }
+
+.info-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 12px; }
+.info-card {
+  background: #12151f;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 14px;
+}
+.info-card h4 {
+  font-size: 0.8em;
+  color: var(--text-dim);
+  margin-bottom: 8px;
+  font-family: 'JetBrains Mono', monospace;
+}
+.info-card .val-display { font-size: 0.9em; font-family: 'JetBrains Mono', monospace; line-height: 1.7; }
+
+.compare-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 16px 0; }
+.compare-card {
+  background: #12151f;
+  border-radius: 12px;
+  padding: 20px;
+}
+.compare-card.eigen-card {
+  border: 1px solid rgba(167,139,250,0.3);
+  border-top: 3px solid var(--accent);
+}
+.compare-card.svd-card {
+  border: 1px solid rgba(52,211,153,0.3);
+  border-top: 3px solid var(--accent2);
+}
+.compare-card h3 { font-size: 1.05em; font-weight: 600; margin-bottom: 12px; }
+.compare-card .formula {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1.1em;
+  text-align: center;
+  padding: 12px;
+  background: var(--card);
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+.compare-card ul { list-style: none; padding: 0; }
+.compare-card ul li {
+  font-size: 0.87em;
+  color: var(--text-dim);
+  padding: 5px 0;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  gap: 8px;
+}
+.compare-card ul li:last-child { border-bottom: none; }
+.compare-card ul li::before { content: '•'; flex-shrink: 0; }
+.compare-card.eigen-card ul li::before { color: var(--accent); }
+.compare-card.svd-card ul li::before { color: var(--accent2); }
+
+table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 0.88em; }
+th {
+  padding: 10px 14px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 0.82em;
+  background: #12151f;
+  color: var(--text-dim);
+  border-bottom: 1px solid var(--border);
+}
+td { padding: 10px 14px; border-bottom: 1px solid var(--border); }
+tr:last-child td { border-bottom: none; }
+td:first-child { color: var(--text-dim); font-size: 0.85em; font-weight: 500; }
+
+.highlight {
+  background: rgba(167,139,250,0.07);
+  border: 1px solid rgba(167,139,250,0.18);
+  border-radius: 10px;
+  padding: 16px 20px;
+  margin: 12px 0;
+}
+.highlight.green {
+  background: rgba(52,211,153,0.07);
+  border-color: rgba(52,211,153,0.18);
+}
+.highlight.yellow {
+  background: rgba(251,191,36,0.07);
+  border-color: rgba(251,191,36,0.18);
+  text-align: center;
+  font-style: italic;
+  font-size: 1.02em;
+}
+
+.toggle-group { display: flex; gap: 0; margin: 12px 0; }
+.toggle-btn {
+  padding: 7px 16px;
+  font-size: 0.82em;
+  border: 1px solid var(--border);
+  background: var(--card);
+  color: var(--text-dim);
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: 'Noto Sans SC', sans-serif;
+}
+.toggle-btn:first-child { border-radius: 8px 0 0 8px; }
+.toggle-btn:last-child  { border-radius: 0 8px 8px 0; }
+.toggle-btn:not(:first-child) { border-left: none; }
+.toggle-btn.active-eigen { background: rgba(167,139,250,0.14); border-color: var(--accent); color: var(--accent); }
+.toggle-btn.active-svd   { background: rgba(52,211,153,0.14);  border-color: var(--accent2); color: var(--accent2); }
+.toggle-btn.active-both  { background: rgba(251,191,36,0.1);   border-color: var(--accent3); color: var(--accent3); }
+
+.legend { display: flex; flex-wrap: wrap; gap: 12px; margin: 10px 0; }
+.legend-item { display: flex; align-items: center; gap: 6px; font-size: 0.82em; color: var(--text-dim); }
+.legend-dot  { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+.legend-line { width: 22px; height: 2px; flex-shrink: 0; }
+
+.app-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 16px 0; }
+.app-card {
+  background: #12151f;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 14px 16px;
+}
+.app-card h4 { font-size: 0.85em; font-weight: 600; margin-bottom: 6px; }
+.app-card p { font-size: 0.82em; color: var(--text-dim); margin: 0; }
+
+.footer-card {
+  background: linear-gradient(135deg, rgba(167,139,250,0.07), rgba(52,211,153,0.07));
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 24px;
+  text-align: center;
+  margin-top: 48px;
+}
+.poem { font-size: 1.1em; color: var(--text); line-height: 2.8; font-style: italic; margin: 12px 0; }
+
+@media (max-width: 600px) {
+  .compare-grid, .info-grid, .app-grid { grid-template-columns: 1fr; }
+  h1 { font-size: 1.7em; }
+  .toggle-btn { font-size: 0.76em; padding: 6px 10px; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+  <!-- Hero -->
+  <div class="section">
+    <h1>特征值 vs 奇异值</h1>
+    <p class="subtitle">EVD 找"特例"，SVD 量"全体"</p>
+    <div class="highlight">
+      <div style="font-size:1.1em; font-weight:600; margin-bottom:6px;">
+        SVD（奇异值分解）是特征值分解的"通用版"
+      </div>
+      <p style="color:var(--text-dim); font-size:0.9em; margin:0;">
+        当特征值分解做不了——非方阵、无实数解——SVD 依然能工作。
+      </p>
+    </div>
+  </div>
+
+  <!-- Section 1: 核心关系 -->
+  <div class="section">
+    <h2><span class="step">1</span>核心关系：奇异值从哪来？</h2>
+    <p>奇异值是特征值的"推广"，通过 <span class="col-blue">AᵀA</span> 联系：</p>
+
+    <div class="formula-block">
+      <div class="formula-big">
+        <span class="col-svd">σᵢ</span> = √ <span class="col-blue">λᵢ(AᵀA)</span>
+      </div>
+      <div class="formula-label">奇异值 = 矩阵 AᵀA 的特征值开平方根</div>
+    </div>
+
+    <div class="card">
+      <div class="demo-title">为什么必须用 AᵀA？</div>
+      <p style="font-size:0.9em;">A 可能是矩形矩阵，直接求特征值无效。但 <span class="col-blue">AᵀA</span> 是 <strong>n×n 方阵</strong>，且有三条保证：</p>
+      <table>
+        <tr><th>性质</th><th>说明</th><th>作用</th></tr>
+        <tr>
+          <td><strong>总是方阵</strong></td>
+          <td>n×n，无论 A 什么形状</td>
+          <td>可以求特征值</td>
+        </tr>
+        <tr>
+          <td><strong>对称半正定</strong></td>
+          <td>所有特征值 ≥ 0</td>
+          <td style="color:var(--accent2);">可以安全开平方</td>
+        </tr>
+        <tr>
+          <td><strong>实数特征值</strong></td>
+          <td>对称矩阵特征值必是实数</td>
+          <td style="color:var(--accent2);">σᵢ 总有定义</td>
+        </tr>
+      </table>
+      <div class="note" style="margin:0;">
+        所以 σᵢ = √λᵢ(AᵀA) <strong>对任意形状的 A 都成立</strong>，不论方阵、矩形、甚至奇异矩阵。
+      </div>
+    </div>
+  </div>
+
+  <!-- Section 2: 定义对比 -->
+  <div class="section">
+    <h2><span class="step">2</span>定义与本质</h2>
+    <div class="compare-grid">
+      <div class="compare-card eigen-card">
+        <h3><span class="col-eigen">■</span> 特征值 (EVD)</h3>
+        <div class="formula">
+          <span class="col-eigen">A</span>v = <span class="col-val">λ</span>v
+        </div>
+        <ul>
+          <li>v 经过 A 后<strong>方向不变</strong>，只缩放 λ 倍</li>
+          <li>仅适用于<strong>方阵</strong></li>
+          <li>可能无实数解（如旋转矩阵）</li>
+          <li>非对称矩阵特征向量<span class="col-warn">不一定正交</span></li>
+          <li>描述的是"固定方向"——幸运儿</li>
+        </ul>
+      </div>
+      <div class="compare-card svd-card">
+        <h3><span class="col-svd">■</span> 奇异值 (SVD)</h3>
+        <div class="formula" style="font-size:0.95em;">
+          <span class="col-eigen">A</span> = <span class="col-svd">U</span><span class="col-val">Σ</span><span class="col-svd">Vᵀ</span>
+        </div>
+        <ul>
+          <li>V（输入正交基）→ 缩放 σ → U（输出正交基）</li>
+          <li>适用于<strong>任意矩阵</strong>（m×n）</li>
+          <li>总是存在实数奇异值</li>
+          <li>U、V 列向量<span class="col-svd">总是正交</span></li>
+          <li>描述的是"所有方向"——普查员</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section 3: 交互可视化 -->
+  <div class="section">
+    <h2><span class="step">3</span>几何可视化：单位圆的命运</h2>
+    <p>矩阵 A 将单位圆变成椭圆。特征向量是"不动方向"，奇异向量是"主轴方向"——两者描述同一变换的不同侧面。</p>
+
+    <div class="card">
+      <div style="display:flex; flex-wrap:wrap; gap:20px; align-items:flex-start; margin-bottom:16px;">
+
+        <div>
+          <div class="demo-title" style="margin-bottom:8px;">矩阵 A</div>
+          <div class="matrix-inputs">
+            <input type="number" id="ma" value="3"  step="0.5">
+            <input type="number" id="mb" value="1"  step="0.5">
+            <input type="number" id="mc" value="0"  step="0.5">
+            <input type="number" id="md" value="2"  step="0.5">
+          </div>
+          <div style="margin-top:10px; display:flex; flex-wrap:wrap; gap:6px;">
+            <button class="btn btn-ghost btn-sm" onclick="setMat(3,1,0,2)">默认矩阵</button>
+            <button class="btn btn-ghost btn-sm" onclick="setMat(0,-1,1,0)">旋转矩阵</button>
+            <button class="btn btn-ghost btn-sm" onclick="setMat(2,0,0,2)">缩放矩阵</button>
+            <button class="btn btn-ghost btn-sm" onclick="setMat(3,1,1,3)">对称矩阵</button>
+          </div>
+        </div>
+
+        <div style="flex:1; min-width:220px;">
+          <div class="toggle-group">
+            <button class="toggle-btn active-eigen" id="btn-evd"  onclick="setView('evd')">特征值视角</button>
+            <button class="toggle-btn"              id="btn-svd"  onclick="setView('svd')">奇异值视角</button>
+            <button class="toggle-btn"              id="btn-both" onclick="setView('both')">双视角对比</button>
+          </div>
+          <div class="legend">
+            <div class="legend-item">
+              <div class="legend-line" style="background:rgba(100,110,140,0.5); border-top:2px dashed rgba(100,110,140,0.5);"></div>
+              单位圆（输入）
+            </div>
+            <div class="legend-item">
+              <div class="legend-line" style="background:rgba(52,211,153,0.7);"></div>
+              变换椭圆（输出）
+            </div>
+            <div class="legend-item" id="lgd-eigen">
+              <div class="legend-dot" style="background:var(--accent);"></div>
+              特征向量 v
+            </div>
+            <div class="legend-item" id="lgd-rv">
+              <div class="legend-dot" style="background:var(--accent2);"></div>
+              右奇异向量 V
+            </div>
+            <div class="legend-item" id="lgd-lu">
+              <div class="legend-dot" style="background:var(--accent3);"></div>
+              σ·左奇异向量 U
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="canvas-wrap">
+        <canvas id="geo-canvas" height="360"></canvas>
+      </div>
+
+      <div class="info-grid">
+        <div class="info-card">
+          <h4><span class="col-eigen">特征值 (EVD)</span></h4>
+          <div class="val-display" id="evd-info"></div>
+        </div>
+        <div class="info-card">
+          <h4><span class="col-svd">奇异值 (SVD)</span></h4>
+          <div class="val-display" id="svd-info"></div>
+        </div>
+      </div>
+
+      <div id="insight-box" class="note" style="margin-top:12px; margin-bottom:0;"></div>
+    </div>
+  </div>
+
+  <!-- Section 4: 数值示例 -->
+  <div class="section">
+    <h2><span class="step">4</span>数值示例：同一矩阵，两种分解</h2>
+    <p>用 A = [[3, 1], [0, 2]] 分别做特征值分解和奇异值分解：</p>
+
+    <div class="compare-grid">
+      <div style="background:#12151f; border:1px solid rgba(167,139,250,0.3); border-radius:12px; padding:18px;">
+        <div style="font-size:0.78em; color:var(--accent); font-weight:600; text-transform:uppercase; letter-spacing:0.5px; margin-bottom:12px;">特征值分解</div>
+        <div style="font-family:'JetBrains Mono',monospace; font-size:0.88em; line-height:2.2;">
+          <div>λ₁ = <span class="col-eigen">3</span>, λ₂ = <span class="col-eigen">2</span></div>
+          <div style="color:var(--text-dim); font-size:0.85em;">特征向量：</div>
+          <div>v₁ = [<span class="col-eigen">1</span>, 0]</div>
+          <div>v₂ = [−1, <span class="col-eigen">1</span>] / √2</div>
+          <div style="margin-top:4px; color:var(--accent4); font-size:0.82em;">v₁ · v₂ = −1/√2 ≠ 0 &nbsp;⚠ 不正交</div>
+        </div>
+      </div>
+      <div style="background:#12151f; border:1px solid rgba(52,211,153,0.3); border-radius:12px; padding:18px;">
+        <div style="font-size:0.78em; color:var(--accent2); font-weight:600; text-transform:uppercase; letter-spacing:0.5px; margin-bottom:12px;">奇异值分解</div>
+        <div style="font-family:'JetBrains Mono',monospace; font-size:0.88em; line-height:2.2;">
+          <div>σ₁ ≈ <span class="col-svd">3.257</span>, σ₂ ≈ <span class="col-svd">1.842</span></div>
+          <div style="color:var(--text-dim); font-size:0.85em;">右奇异向量（正交）：</div>
+          <div>v₁ ≈ [0.881, 0.471]</div>
+          <div>v₂ ≈ [0.471, −0.881]</div>
+          <div style="margin-top:4px; color:var(--accent2); font-size:0.82em;">v₁ · v₂ = 0 &nbsp;✓ 完全正交</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="demo-title">关键观察</div>
+      <table>
+        <tr>
+          <th>对比项</th>
+          <th><span class="col-eigen">特征值/向量</span></th>
+          <th><span class="col-svd">奇异值/向量</span></th>
+        </tr>
+        <tr>
+          <td><strong>数值含义</strong></td>
+          <td><span class="col-eigen">3, 2</span>（固定方向的缩放）</td>
+          <td><span class="col-svd">3.257, 1.842</span>（主轴伸缩量）</td>
+        </tr>
+        <tr>
+          <td><strong>向量组数</strong></td>
+          <td>1 组 {v₁, v₂}</td>
+          <td>2 组：输入 V + 输出 U</td>
+        </tr>
+        <tr>
+          <td><strong>正交性</strong></td>
+          <td><span class="col-warn">不正交</span>（此矩阵为例）</td>
+          <td><span class="col-svd">V、U 都正交</span>（总是）</td>
+        </tr>
+        <tr>
+          <td><strong>一定存在？</strong></td>
+          <td><span class="col-warn">不保证</span>（旋转矩阵无实数解）</td>
+          <td><span class="col-svd">总是存在</span></td>
+        </tr>
+      </table>
+      <div class="note" style="margin-bottom:0;">
+        <strong>注意</strong>：奇异值 ≠ 特征值绝对值，奇异向量 ≠ 特征向量。即使同一个矩阵，两套分解算出来的数值和方向都不同。
+      </div>
+    </div>
+  </div>
+
+  <!-- Section 5: 信息量对比 -->
+  <div class="section">
+    <h2><span class="step">5</span>信息量：找"特例" vs 量"全体"</h2>
+
+    <div class="compare-grid" style="margin-bottom:16px;">
+      <div class="highlight" style="margin:0;">
+        <div style="font-size:0.78em; color:var(--accent); font-weight:600; margin-bottom:8px;">特征值：找"幸运儿"</div>
+        <p style="font-size:0.88em; color:var(--text-dim); margin:0;">
+          约束极强：<code>Av = λv</code>（方向完全不变）<br>
+          旋转矩阵：一个幸运儿也找不到<br>
+          即使有，向量组也可能不完备
+        </p>
+      </div>
+      <div class="highlight green" style="margin:0;">
+        <div style="font-size:0.78em; color:var(--accent2); font-weight:600; margin-bottom:8px;">奇异值：量"所有人"</div>
+        <p style="font-size:0.88em; color:var(--text-dim); margin:0;">
+          问的是：<strong>每个方向被拉伸多少？</strong><br>
+          每个维度都有答案<br>
+          总是正交完备
+        </p>
+      </div>
+    </div>
+
+    <table>
+      <tr>
+        <th></th>
+        <th><span class="col-eigen">特征值</span></th>
+        <th><span class="col-svd">奇异值</span></th>
+      </tr>
+      <tr>
+        <td><strong>关注范围</strong></td>
+        <td>特殊方向（方向不变的向量）</td>
+        <td>所有方向（每维最大伸缩）</td>
+      </tr>
+      <tr>
+        <td><strong>完备性</strong></td>
+        <td>可能缺失</td>
+        <td>总是完整</td>
+      </tr>
+      <tr>
+        <td><strong>向量组</strong></td>
+        <td>1 组（V）</td>
+        <td>2 组（U 和 V）</td>
+      </tr>
+      <tr>
+        <td><strong>空间描述</strong></td>
+        <td>单一空间</td>
+        <td>输入空间 + 输出空间</td>
+      </tr>
+    </table>
+
+    <div class="highlight yellow">
+      特征值找"特例"，奇异值量"全体"。<br>特例可能不存在，但全体一定有度量。
+    </div>
+  </div>
+
+  <!-- Section 6: 特殊情况 -->
+  <div class="section">
+    <h2><span class="step">6</span>特殊情况：对称矩阵</h2>
+    <p>当 A 是<strong>实对称矩阵</strong>（A = Aᵀ）时，两者直接合一：</p>
+    <div class="card">
+      <table>
+        <tr><th></th><th>关系</th></tr>
+        <tr>
+          <td><strong>奇异值</strong></td>
+          <td><span class="col-svd">σᵢ = |λᵢ|</span>（特征值的绝对值）</td>
+        </tr>
+        <tr>
+          <td><strong>左奇异向量</strong></td>
+          <td>= 右奇异向量 = 特征向量</td>
+        </tr>
+      </table>
+      <div class="note" style="margin-bottom:0;">
+        <strong>结论：对称矩阵的 SVD 本质上就是特征值分解。</strong>
+        试试上方可视化里的"对称矩阵"按钮，切到"双视角对比"——紫色特征向量和绿色奇异向量会完全重合。
+      </div>
+    </div>
+  </div>
+
+  <!-- Section 7: 数值验证 3×3 -->
+  <div class="section">
+    <h2><span class="step">7</span>数值验证：3×3 矩阵中的三类特殊情况</h2>
+    <p>对称矩阵、半正定矩阵、正定矩阵——三者是嵌套关系，切换预设可实时对比 λᵢ 和 σᵢ：</p>
+
+    <div class="card">
+      <div style="display:flex; flex-wrap:wrap; gap:8px; margin-bottom:20px;">
+        <button class="btn btn-sm" id="case-pd"  onclick="setCase('pd')" >正定矩阵</button>
+        <button class="btn btn-sm btn-ghost" id="case-psd" onclick="setCase('psd')">半正定矩阵</button>
+        <button class="btn btn-sm btn-ghost" id="case-snd" onclick="setCase('snd')">对称非正定</button>
+      </div>
+
+      <div style="display:grid; grid-template-columns:auto 1fr; gap:24px; align-items:start; flex-wrap:wrap;">
+
+        <div>
+          <div class="demo-title">矩阵 A（3×3 对称）</div>
+          <div id="mat3-display" style="font-family:'JetBrains Mono',monospace; background:#12151f; border:1px solid var(--border); border-radius:10px; padding:16px 20px; font-size:0.92em; line-height:2.4; min-width:190px;"></div>
+          <div id="mat3-type" style="margin-top:10px; font-size:0.83em;"></div>
+        </div>
+
+        <div>
+          <div class="demo-title">λᵢ vs σᵢ 逐行对比</div>
+          <table id="table3">
+            <tr>
+              <th style="text-align:center;">i</th>
+              <th><span class="col-eigen">λᵢ（特征值）</span></th>
+              <th>|λᵢ|</th>
+              <th><span class="col-svd">σᵢ（奇异值）</span></th>
+              <th>关系</th>
+            </tr>
+          </table>
+          <div id="case-note" class="note" style="margin-top:12px; margin-bottom:0;"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section 8: 应用场景 -->
+  <div class="section">
+    <h2><span class="step">8</span>应用场景</h2>
+    <div class="app-grid">
+      <div class="app-card" style="border-top:2px solid var(--accent);">
+        <h4 class="col-eigen">特征值分解的主场</h4>
+        <p>PCA（协方差矩阵是对称的）、谱聚类、PageRank（方阵迭代）、物理振动/稳定性分析</p>
+      </div>
+      <div class="app-card" style="border-top:2px solid var(--accent2);">
+        <h4 class="col-svd">奇异值分解的主场</h4>
+        <p>图像压缩（低秩近似）、推荐系统（矩阵分解）、降噪、LSA 潜在语义分析、<strong>LoRA 参数压缩</strong></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer-card">
+    <div style="font-size:0.78em; color:var(--text-dim); margin-bottom:8px;">记忆口诀</div>
+    <div class="poem">
+      方阵找特征，任意用奇异；<br>
+      正交选 SVD，复数要避免。
+    </div>
+    <div style="font-size:0.78em; color:var(--text-dim);">创建于 2026-04-08</div>
+  </div>
+
+</div><!-- /container -->
+
+<script>
+// ─────────────────────────────────────────────
+// Matrix Math Utilities
+// ─────────────────────────────────────────────
+function mv(A, v) {
+  return [A[0][0]*v[0]+A[0][1]*v[1], A[1][0]*v[0]+A[1][1]*v[1]];
+}
+function mm(A, B) {
+  return [
+    [A[0][0]*B[0][0]+A[0][1]*B[1][0], A[0][0]*B[0][1]+A[0][1]*B[1][1]],
+    [A[1][0]*B[0][0]+A[1][1]*B[1][0], A[1][0]*B[0][1]+A[1][1]*B[1][1]]
+  ];
+}
+function tr(A) { return [[A[0][0],A[1][0]],[A[0][1],A[1][1]]]; }
+
+function eig2(A) {
+  const [a,b,c,d] = [A[0][0],A[0][1],A[1][0],A[1][1]];
+  const disc = (a+d)*(a+d) - 4*(a*d - b*c);
+  if (disc < -1e-8) return null;
+  const sd = Math.sqrt(Math.max(0, disc));
+  return [(a+d+sd)/2, (a+d-sd)/2];
+}
+
+function evec2(A, lam) {
+  const [a,b,c,d] = [A[0][0],A[0][1],A[1][0],A[1][1]];
+  let v;
+  if (Math.abs(b) > 1e-8)      v = [b, lam-a];
+  else if (Math.abs(c) > 1e-8) v = [lam-d, c];
+  else v = Math.abs(lam-a) < 1e-6 ? [1,0] : [0,1];
+  const n = Math.hypot(v[0], v[1]);
+  return n < 1e-10 ? [1,0] : [v[0]/n, v[1]/n];
+}
+
+function computeEVD(A) {
+  const ls = eig2(A);
+  if (!ls) return null;
+  return { l1:ls[0], l2:ls[1], v1:evec2(A,ls[0]), v2:evec2(A,ls[1]) };
+}
+
+function computeSVD(A) {
+  const ATA = mm(tr(A), A);
+  const ls = eig2(ATA);
+  if (!ls) return null;
+  const l1 = Math.max(0, ls[0]), l2 = Math.max(0, ls[1]);
+  const s1 = Math.sqrt(l1), s2 = Math.sqrt(l2);
+  const v1 = evec2(ATA, l1);
+  const v2 = [-v1[1], v1[0]];
+  const av1 = mv(A, v1), av2 = mv(A, v2);
+  const u1 = s1 > 1e-10 ? [av1[0]/s1, av1[1]/s1] : [1,0];
+  const u2 = s2 > 1e-10 ? [av2[0]/s2, av2[1]/s2] : [-u1[1], u1[0]];
+  return { s1, s2, v1, v2, u1, u2 };
+}
+
+// ─────────────────────────────────────────────
+// Canvas Drawing
+// ─────────────────────────────────────────────
+const canvas = document.getElementById('geo-canvas');
+const ctx    = canvas.getContext('2d');
+const SCALE  = 68;
+let curView  = 'evd';
+let curA     = [[3,1],[0,2]];
+
+function w2c(x, y) {
+  const cx = canvas.width/2, cy = canvas.height/2;
+  return [cx + x*SCALE, cy - y*SCALE];
+}
+
+function drawGrid() {
+  const cx = canvas.width/2, cy = canvas.height/2;
+  const w = canvas.width, h = canvas.height;
+
+  ctx.strokeStyle = '#181b26'; ctx.lineWidth = 1;
+  for (let x = -Math.ceil(cx/SCALE)-1; x <= Math.ceil(cx/SCALE)+1; x++) {
+    const px = cx + x*SCALE;
+    ctx.beginPath(); ctx.moveTo(px,0); ctx.lineTo(px,h); ctx.stroke();
+  }
+  for (let y = -Math.ceil(cy/SCALE)-1; y <= Math.ceil(cy/SCALE)+1; y++) {
+    const py = cy + y*SCALE;
+    ctx.beginPath(); ctx.moveTo(0,py); ctx.lineTo(w,py); ctx.stroke();
+  }
+  ctx.strokeStyle = '#252a3d'; ctx.lineWidth = 1.5;
+  ctx.beginPath(); ctx.moveTo(0,cy); ctx.lineTo(w,cy); ctx.stroke();
+  ctx.beginPath(); ctx.moveTo(cx,0); ctx.lineTo(cx,h); ctx.stroke();
+
+  ctx.fillStyle = '#353c55';
+  ctx.font = '11px JetBrains Mono';
+  ctx.fillText('x', w-14, cy-7);
+  ctx.fillText('y', cx+7, 12);
+}
+
+function drawUnitCircle() {
+  const [cx, cy] = w2c(0,0);
+  ctx.beginPath();
+  ctx.arc(cx, cy, SCALE, 0, Math.PI*2);
+  ctx.strokeStyle = 'rgba(100,110,150,0.3)';
+  ctx.lineWidth = 1.5;
+  ctx.setLineDash([5,5]);
+  ctx.stroke();
+  ctx.setLineDash([]);
+}
+
+function drawEllipse(A) {
+  ctx.beginPath();
+  let first = true;
+  for (let i = 0; i <= 360; i++) {
+    const t = i*Math.PI/180;
+    const [tx, ty] = mv(A, [Math.cos(t), Math.sin(t)]);
+    const [px, py] = w2c(tx, ty);
+    first ? ctx.moveTo(px,py) : ctx.lineTo(px,py);
+    first = false;
+  }
+  ctx.closePath();
+  ctx.strokeStyle = 'rgba(52,211,153,0.65)';
+  ctx.lineWidth = 2;
+  ctx.setLineDash([]);
+  ctx.stroke();
+  ctx.fillStyle = 'rgba(52,211,153,0.04)';
+  ctx.fill();
+}
+
+function arrow(x1,y1, x2,y2, color, lw, label, dashed) {
+  const [px1,py1] = w2c(x1,y1);
+  const [px2,py2] = w2c(x2,y2);
+  const dx = px2-px1, dy = py2-py1;
+  const len = Math.hypot(dx,dy);
+  if (len < 3) return;
+
+  ctx.setLineDash(dashed ? [4,4] : []);
+  ctx.beginPath();
+  ctx.moveTo(px1,py1); ctx.lineTo(px2,py2);
+  ctx.strokeStyle = color; ctx.lineWidth = lw;
+  ctx.stroke();
+  ctx.setLineDash([]);
+
+  if (!dashed) {
+    const ang = Math.atan2(dy,dx);
+    const hl = 11;
+    ctx.beginPath();
+    ctx.moveTo(px2,py2);
+    ctx.lineTo(px2-hl*Math.cos(ang-Math.PI/6), py2-hl*Math.sin(ang-Math.PI/6));
+    ctx.lineTo(px2-hl*Math.cos(ang+Math.PI/6), py2-hl*Math.sin(ang+Math.PI/6));
+    ctx.closePath();
+    ctx.fillStyle = color; ctx.fill();
+  }
+
+  if (label) {
+    ctx.fillStyle = color;
+    ctx.font = 'bold 11.5px JetBrains Mono';
+    const ndx = dx/len, ndy = dy/len;
+    const off = 12;
+    ctx.fillText(label, px2 + ndy*off, py2 - ndx*off);
+  }
+}
+
+function dot(x, y, color, r) {
+  const [px,py] = w2c(x,y);
+  ctx.beginPath(); ctx.arc(px,py,r||4,0,Math.PI*2);
+  ctx.fillStyle = color; ctx.fill();
+}
+
+function draw() {
+  canvas.width = canvas.parentElement.clientWidth;
+  canvas.height = 360;
+  ctx.clearRect(0,0,canvas.width,canvas.height);
+
+  const A = curA;
+  drawGrid();
+  drawUnitCircle();
+  drawEllipse(A);
+
+  const evd = computeEVD(A);
+  const svd = computeSVD(A);
+
+  const showEigen = curView === 'evd' || curView === 'both';
+  const showSVD   = curView === 'svd' || curView === 'both';
+  const dimAlpha  = curView === 'both' ? '0.7' : '1.0';
+
+  // ── Eigenvalue view ──
+  if (showEigen && evd) {
+    const ec = `rgba(167,139,250,${dimAlpha})`;
+    const lbl = curView !== 'both';
+    arrow(0,0, evd.v1[0],evd.v1[1], ec, 2.5, lbl?`v₁(λ=${evd.l1.toFixed(2)})`:null);
+    arrow(0,0, evd.v2[0],evd.v2[1], ec, 2.5, lbl?`v₂(λ=${evd.l2.toFixed(2)})`:null);
+    // Show Av (image of eigenvector), dashed
+    const ae1 = mv(A, evd.v1), ae2 = mv(A, evd.v2);
+    arrow(0,0, ae1[0],ae1[1], 'rgba(167,139,250,0.28)', 1.5, null, true);
+    arrow(0,0, ae2[0],ae2[1], 'rgba(167,139,250,0.28)', 1.5, null, true);
+    dot(evd.v1[0],evd.v1[1], ec);
+    dot(evd.v2[0],evd.v2[1], ec);
+  }
+
+  if (showEigen && !evd) {
+    ctx.fillStyle = 'rgba(248,113,113,0.85)';
+    ctx.font = '13px Noto Sans SC';
+    ctx.textAlign = 'center';
+    ctx.fillText('旋转矩阵：无实数特征值', canvas.width/2, 28);
+    ctx.textAlign = 'left';
+  }
+
+  // ── SVD view ──
+  if (showSVD && svd) {
+    const vc = `rgba(52,211,153,${dimAlpha})`;
+    const uc = `rgba(251,191,36,${dimAlpha})`;
+    const lbl = curView !== 'both';
+    arrow(0,0, svd.v1[0],svd.v1[1], vc, 2.5, lbl?`v₁`:null);
+    arrow(0,0, svd.v2[0],svd.v2[1], vc, 2.5, lbl?`v₂`:null);
+    arrow(0,0, svd.s1*svd.u1[0],svd.s1*svd.u1[1], uc, 2.5, lbl?`σ₁u₁`:null);
+    arrow(0,0, svd.s2*svd.u2[0],svd.s2*svd.u2[1], uc, 2.5, lbl?`σ₂u₂`:null);
+
+    // Right-angle marks for SVD orthogonality
+    if (curView === 'svd') {
+      drawRightAngle(svd.v1, svd.v2, vc, vc);
+      drawRightAngle(svd.u1, svd.u2, uc, uc);
+    }
+    dot(svd.v1[0],svd.v1[1], vc);
+    dot(svd.v2[0],svd.v2[1], vc);
+    dot(svd.s1*svd.u1[0],svd.s1*svd.u1[1], uc);
+    dot(svd.s2*svd.u2[0],svd.s2*svd.u2[1], uc);
+  }
+
+  updateInfo(evd, svd, A);
+}
+
+function drawRightAngle(v1, v2, c1, c2) {
+  const size = 0.12;
+  const p = [v1[0]*size + v2[0]*size, v1[1]*size + v2[1]*size];
+  const [a] = w2c(0,0), [bx,by] = w2c(v1[0]*size, v1[1]*size);
+  const [cx2,cy2] = w2c(p[0], p[1]);
+  const [dx2,dy2] = w2c(v2[0]*size, v2[1]*size);
+  ctx.beginPath();
+  ctx.moveTo(bx,by); ctx.lineTo(cx2,cy2); ctx.lineTo(dx2,dy2);
+  ctx.strokeStyle = 'rgba(255,255,255,0.18)'; ctx.lineWidth = 1;
+  ctx.setLineDash([]);
+  ctx.stroke();
+}
+
+function updateInfo(evd, svd, A) {
+  const el = document.getElementById('evd-info');
+  const sl = document.getElementById('svd-info');
+  const ib = document.getElementById('insight-box');
+
+  if (evd) {
+    const d = evd.v1[0]*evd.v2[0] + evd.v1[1]*evd.v2[1];
+    const orthOk = Math.abs(d) < 0.01;
+    const orthStr = orthOk
+      ? '<span style="color:var(--accent2)">✓ 正交</span>'
+      : `<span style="color:var(--accent4)">✗ 不正交 (v₁·v₂ = ${d.toFixed(3)})</span>`;
+    el.innerHTML = `λ₁ = <span style="color:var(--accent)">${evd.l1.toFixed(4)}</span><br>`
+                 + `λ₂ = <span style="color:var(--accent)">${evd.l2.toFixed(4)}</span><br>`
+                 + `特征向量 ${orthStr}`;
+  } else {
+    el.innerHTML = '<span style="color:var(--accent4)">⚠ 无实数特征值（复数解）</span>';
+  }
+
+  if (svd) {
+    sl.innerHTML = `σ₁ = <span style="color:var(--accent2)">${svd.s1.toFixed(4)}</span><br>`
+                 + `σ₂ = <span style="color:var(--accent2)">${svd.s2.toFixed(4)}</span><br>`
+                 + `<span style="color:var(--accent2)">✓ 奇异向量总是正交</span>`;
+  }
+
+  // Insight message
+  const isSymm = Math.abs(A[0][1] - A[1][0]) < 0.02 && Math.abs(A[0][1]) > 0.01;
+  const isDiag = Math.abs(A[0][1]) < 0.01 && Math.abs(A[1][0]) < 0.01;
+  if (!evd) {
+    ib.innerHTML = '⚡ <strong>旋转矩阵</strong>：没有实数特征值，所有向量都在旋转，没有"幸运儿"。'
+                 + '但 SVD <span style="color:var(--accent2)">依然正常工作</span>，给出奇异值和正交主轴。';
+  } else if (isSymm) {
+    ib.innerHTML = '✨ <strong>对称矩阵</strong>：特征向量天然正交，SVD 的奇异向量 = 特征向量，'
+                 + '奇异值 = 特征值绝对值。切到"双视角对比"可以看到两套向量完全重合。';
+  } else if (isDiag) {
+    ib.innerHTML = '📐 <strong>对角矩阵</strong>：坐标轴即是特征向量，也是奇异向量。特征值就是缩放因子，奇异值等于其绝对值。';
+  } else if (evd) {
+    const d = evd.v1[0]*evd.v2[0] + evd.v1[1]*evd.v2[1];
+    if (Math.abs(d) > 0.01) {
+      ib.innerHTML = `⚠ <strong>非对称矩阵</strong>：特征向量不正交（v₁·v₂ = ${d.toFixed(3)}）。`
+                   + `SVD 的奇异向量总是正交——这是它更强的根本原因。`;
+    } else {
+      ib.innerHTML = '📌 特征向量恰好正交（非对称矩阵也可以发生）。SVD 向量与之不同：'
+                   + '奇异向量描述的是变换的"主轴"，特征向量描述的是"不动方向"。';
+    }
+  }
+}
+
+// ─────────────────────────────────────────────
+// Controls
+// ─────────────────────────────────────────────
+function setView(v) {
+  curView = v;
+  document.getElementById('btn-evd').className  = 'toggle-btn' + (v==='evd'  ? ' active-eigen':'');
+  document.getElementById('btn-svd').className  = 'toggle-btn' + (v==='svd'  ? ' active-svd':'');
+  document.getElementById('btn-both').className = 'toggle-btn' + (v==='both' ? ' active-both':'');
+  draw();
+}
+
+function setMat(a,b,c,d) {
+  document.getElementById('ma').value = a;
+  document.getElementById('mb').value = b;
+  document.getElementById('mc').value = c;
+  document.getElementById('md').value = d;
+  curA = [[a,b],[c,d]];
+  draw();
+}
+
+function readMat() {
+  const a = parseFloat(document.getElementById('ma').value)||0;
+  const b = parseFloat(document.getElementById('mb').value)||0;
+  const c = parseFloat(document.getElementById('mc').value)||0;
+  const d = parseFloat(document.getElementById('md').value)||0;
+  curA = [[a,b],[c,d]];
+  draw();
+}
+
+['ma','mb','mc','md'].forEach(id => {
+  document.getElementById(id).addEventListener('input', readMat);
+});
+
+window.addEventListener('resize', draw);
+draw();
+
+// ─────────────────────────────────────────────
+// 3×3 特殊情况数值验证
+// ─────────────────────────────────────────────
+const CASES3 = {
+  pd: {
+    label: '正定矩阵',
+    A: [[4,2,1],[2,5,2],[1,2,3]],
+    desc: '对称 + 所有 λᵢ > 0 &nbsp;→&nbsp; <strong>σᵢ = λᵢ</strong>（直接相等）'
+  },
+  psd: {
+    label: '半正定矩阵',
+    A: [[1,1,0],[1,1,0],[0,0,2]],
+    desc: '对称 + 所有 λᵢ ≥ 0（含零）&nbsp;→&nbsp; <strong>σᵢ = λᵢ</strong>'
+  },
+  snd: {
+    label: '对称非正定',
+    A: [[1,2,0],[2,1,0],[0,0,3]],
+    desc: '对称 + 存在 λᵢ < 0 &nbsp;→&nbsp; <strong>σᵢ = |λᵢ|</strong>（不直接相等）'
+  }
+};
+
+function copy3(M) { return M.map(r=>[...r]); }
+function eye3()   { return [[1,0,0],[0,1,0],[0,0,1]]; }
+
+function mm3(A, B) {
+  const C = [[0,0,0],[0,0,0],[0,0,0]];
+  for (let i=0;i<3;i++) for (let j=0;j<3;j++) for (let k=0;k<3;k++)
+    C[i][j] += A[i][k]*B[k][j];
+  return C;
+}
+
+function tr3(A) {
+  return [[A[0][0],A[1][0],A[2][0]],
+          [A[0][1],A[1][1],A[2][1]],
+          [A[0][2],A[1][2],A[2][2]]];
+}
+
+function jacobiSym3(M) {
+  let S = copy3(M), V = eye3();
+  for (let iter = 0; iter < 200; iter++) {
+    let maxV = 0, p = 0, q = 1;
+    for (let i=0;i<3;i++) for (let j=i+1;j<3;j++)
+      if (Math.abs(S[i][j]) > maxV) { maxV = Math.abs(S[i][j]); p=i; q=j; }
+    if (maxV < 1e-12) break;
+    const tau = (S[q][q] - S[p][p]) / (2*S[p][q]);
+    const t   = (tau >= 0 ? 1 : -1) / (Math.abs(tau) + Math.sqrt(1 + tau*tau));
+    const c   = 1 / Math.sqrt(1 + t*t), s = t*c;
+    let G = eye3(); G[p][p]=c; G[q][q]=c; G[p][q]=s; G[q][p]=-s;
+    S = mm3(mm3(tr3(G), S), G);
+    V = mm3(V, G);
+  }
+  const evals = [S[0][0], S[1][1], S[2][2]];
+  // sort descending by |λ|
+  const idx = [0,1,2].sort((a,b) => Math.abs(evals[b]) - Math.abs(evals[a]));
+  return { values: idx.map(i => evals[i]) };
+}
+
+function sigmas3(A) {
+  const { values } = jacobiSym3(mm3(tr3(A), A));
+  return values.map(v => Math.sqrt(Math.max(0, v)));
+}
+
+function setCase(key) {
+  // button styles
+  ['pd','psd','snd'].forEach(k => {
+    const btn = document.getElementById('case-' + k);
+    btn.className = 'btn btn-sm' + (k === key ? '' : ' btn-ghost');
+  });
+
+  const cas = CASES3[key];
+  const A   = cas.A;
+
+  // Matrix display
+  document.getElementById('mat3-display').innerHTML =
+    A.map(row => `[ ${row.map(v => String(v).padStart(2)).join(', ')} ]`).join('<br>');
+
+  document.getElementById('mat3-type').innerHTML =
+    `<span style="color:var(--accent3)">▸ ${cas.label}</span><br>`
+    + `<span style="color:var(--text-dim); font-size:0.95em;">${cas.desc}</span>`;
+
+  // Compute
+  const evals  = jacobiSym3(A).values;
+  const sigmas = sigmas3(A);
+
+  // Rebuild table rows
+  const tb = document.getElementById('table3');
+  while (tb.rows.length > 1) tb.deleteRow(1);
+
+  let allDirect = true, allAbs = true;
+  evals.forEach((lam, i) => {
+    const sig    = sigmas[i];
+    const direct = Math.abs(lam - sig) < 0.002;
+    const absEq  = Math.abs(Math.abs(lam) - sig) < 0.002;
+    if (!direct) allDirect = false;
+    if (!absEq)  allAbs    = false;
+
+    const rel = direct
+      ? `<span style="color:var(--accent2)">σ = λ &nbsp;✓</span>`
+      : absEq
+        ? `<span style="color:var(--accent3)">σ = |λ| ✓</span>`
+        : `<span style="color:var(--accent4)">不等 ✗</span>`;
+
+    const row = tb.insertRow();
+    row.innerHTML =
+      `<td style="text-align:center;">${i+1}</td>`
+      + `<td style="font-family:'JetBrains Mono',monospace; color:var(--accent);">${lam.toFixed(4)}</td>`
+      + `<td style="font-family:'JetBrains Mono',monospace;">${Math.abs(lam).toFixed(4)}</td>`
+      + `<td style="font-family:'JetBrains Mono',monospace; color:var(--accent2);">${sig.toFixed(4)}</td>`
+      + `<td>${rel}</td>`;
+  });
+
+  // Conclusion note
+  const note = document.getElementById('case-note');
+  if (allDirect) {
+    note.style.borderLeftColor = 'var(--accent2)';
+    note.innerHTML = `<strong>结论：σᵢ = λᵢ（完全相等）</strong> ——所有特征值为正，取绝对值不改变数值。`;
+  } else if (allAbs) {
+    note.style.borderLeftColor = 'var(--accent3)';
+    note.innerHTML = `<strong>结论：σᵢ = |λᵢ|（绝对值相等）</strong> ——对称矩阵保证了这一点，但负特征值导致直接值不同。`;
+  } else {
+    note.style.borderLeftColor = 'var(--accent4)';
+    note.innerHTML = `<strong>结论：两者不相等</strong>——非对称矩阵，需分别独立计算。`;
+  }
+}
+
+setCase('pd');
+</script>
+</body>
+</html>

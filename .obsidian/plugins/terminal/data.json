@@ -97,14 +97,16 @@
       "type": "external"
     },
     "linuxIntegratedDefault": {
-      "args": [],
-      "executable": "/bin/sh",
+      "args": [
+        "--login"
+      ],
+      "executable": "/bin/bash",
       "followTheme": true,
       "name": "",
       "platforms": {
         "linux": true
       },
-      "pythonExecutable": "python3",
+      "pythonExecutable": "/home/dr/.local/bin/python3.11",
       "restoreHistory": false,
       "rightClickAction": "copyPaste",
       "successExitCodes": [

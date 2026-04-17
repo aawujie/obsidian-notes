@@ -1,0 +1,1091 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>特征值分解可视化</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #0f1117;
+  --card: #1a1d28;
+  --card-hover: #222638;
+  --accent: #a78bfa;
+  --accent2: #34d399;
+  --accent3: #fbbf24;
+  --accent4: #f87171;
+  --text: #e8e6e3;
+  --text-dim: #8b8d93;
+  --border: #2a2d3a;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Noto Sans SC', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.8;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 24px;
+}
+
+h1 {
+  font-size: 2.2em;
+  font-weight: 700;
+  margin-bottom: 8px;
+  background: linear-gradient(135deg, var(--accent), var(--accent2));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.subtitle { color: var(--text-dim); font-size: 0.95em; margin-bottom: 48px; }
+
+.section {
+  margin-bottom: 56px;
+  animation: fadeUp 0.6s ease-out both;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.section:nth-child(2) { animation-delay: 0.1s; }
+.section:nth-child(3) { animation-delay: 0.2s; }
+.section:nth-child(4) { animation-delay: 0.3s; }
+.section:nth-child(5) { animation-delay: 0.4s; }
+.section:nth-child(6) { animation-delay: 0.5s; }
+.section:nth-child(7) { animation-delay: 0.6s; }
+
+h2 {
+  font-size: 1.45em;
+  font-weight: 600;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+h2 .step {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: #fff;
+  font-size: 0.72em;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+p, .note {
+  color: var(--text);
+  font-size: 0.95em;
+  margin-bottom: 14px;
+}
+
+.note {
+  background: var(--card);
+  border-left: 3px solid var(--accent2);
+  padding: 14px 18px;
+  border-radius: 0 8px 8px 0;
+  color: var(--text-dim);
+  font-size: 0.88em;
+  margin-bottom: 16px;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 24px;
+  margin: 16px 0;
+}
+
+.demo-title {
+  font-size: 0.82em;
+  color: var(--accent);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 16px;
+}
+
+/* Formula display */
+.formula-block {
+  background: #12151f;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  margin: 16px 0;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.formula-big {
+  font-size: 1.5em;
+  color: var(--text);
+  letter-spacing: 2px;
+}
+
+.formula-label {
+  font-size: 0.78em;
+  color: var(--text-dim);
+  margin-top: 8px;
+}
+
+/* Color labels */
+.col-eigen { color: var(--accent); }
+.col-vec { color: var(--accent2); }
+.col-scale { color: var(--accent3); }
+.col-inv { color: var(--accent4); }
+
+/* Canvas container */
+.canvas-wrap {
+  position: relative;
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #0a0c12;
+  border: 1px solid var(--border);
+}
+
+canvas { display: block; width: 100%; }
+
+/* Controls */
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 16px 0;
+  align-items: center;
+}
+
+.ctrl-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.ctrl-group label {
+  font-size: 0.78em;
+  color: var(--text-dim);
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.ctrl-group input[type=range] {
+  width: 130px;
+  accent-color: var(--accent);
+}
+
+.ctrl-group .val {
+  font-size: 0.78em;
+  color: var(--accent3);
+  font-family: 'JetBrains Mono', monospace;
+  text-align: right;
+}
+
+.btn {
+  background: linear-gradient(135deg, var(--accent), #7c3aed);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 18px;
+  font-size: 0.88em;
+  cursor: pointer;
+  font-family: 'Noto Sans SC', sans-serif;
+  transition: opacity 0.2s, transform 0.1s;
+}
+
+.btn:hover { opacity: 0.85; transform: translateY(-1px); }
+.btn:active { transform: translateY(0); }
+
+.btn-secondary {
+  background: var(--card-hover);
+  border: 1px solid var(--border);
+  color: var(--text);
+}
+
+/* Matrix input */
+.matrix-inputs {
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+  background: #12151f;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 12px;
+}
+
+.matrix-inputs input {
+  width: 64px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  color: var(--text);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1em;
+  padding: 6px 8px;
+  text-align: center;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.matrix-inputs input:focus { border-color: var(--accent); }
+
+/* Info grid */
+.info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.info-card {
+  background: #12151f;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 14px;
+}
+
+.info-card h4 {
+  font-size: 0.8em;
+  color: var(--text-dim);
+  margin-bottom: 6px;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.info-card .val-display {
+  font-size: 1.05em;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Decomp steps */
+.decomp-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin: 16px 0;
+}
+
+.matrix-box {
+  background: #12151f;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 14px 18px;
+  text-align: center;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.matrix-box .mat-label {
+  font-size: 0.72em;
+  color: var(--text-dim);
+  margin-bottom: 4px;
+}
+
+.matrix-box .mat-name {
+  font-size: 1.2em;
+  font-weight: 700;
+}
+
+.matrix-box .mat-desc {
+  font-size: 0.7em;
+  color: var(--text-dim);
+  margin-top: 4px;
+  max-width: 100px;
+}
+
+.op-sym {
+  font-size: 1.5em;
+  color: var(--text-dim);
+}
+
+/* Legend */
+.legend {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin: 10px 0;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.82em;
+  color: var(--text-dim);
+}
+
+.legend-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 20px;
+  background: var(--card);
+  border-radius: 10px;
+  padding: 4px;
+}
+
+.tab {
+  flex: 1;
+  padding: 8px;
+  text-align: center;
+  border-radius: 7px;
+  font-size: 0.88em;
+  cursor: pointer;
+  transition: all 0.2s;
+  color: var(--text-dim);
+}
+
+.tab.active {
+  background: var(--accent);
+  color: #fff;
+  font-weight: 600;
+}
+
+/* Application cards */
+.app-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.app-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 18px;
+  transition: all 0.2s;
+}
+
+.app-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+
+.app-card h4 {
+  font-size: 0.95em;
+  margin-bottom: 6px;
+  color: var(--accent2);
+}
+
+.app-card p {
+  font-size: 0.82em;
+  color: var(--text-dim);
+  margin: 0;
+}
+
+/* Condition card */
+.cond-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.cond-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 16px;
+}
+
+.cond-card .icon { font-size: 1.4em; margin-bottom: 6px; }
+.cond-card h4 { font-size: 0.88em; margin-bottom: 4px; }
+.cond-card p { font-size: 0.8em; color: var(--text-dim); margin: 0; }
+
+/* Progress bar for anim */
+.anim-bar {
+  height: 3px;
+  background: var(--border);
+  border-radius: 2px;
+  margin-top: 8px;
+  overflow: hidden;
+}
+.anim-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent), var(--accent2));
+  border-radius: 2px;
+  transition: width 0.05s linear;
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+  <h1>特征值分解 (EVD)</h1>
+  <p class="subtitle">Eigenvalue Decomposition — 矩阵的"骨架"分解</p>
+
+  <!-- Section 1: 直觉 -->
+  <div class="section">
+    <h2><span class="step">1</span>直觉：什么是特征向量？</h2>
+    <p>给一个矩阵 <strong>A</strong>，大多数向量经过它变换后，<strong>方向会发生改变</strong>。但有几个"特殊方向"，变换后方向完全不变，只是被拉伸或压缩。</p>
+    <p>这些特殊方向就是 <span class="col-vec">特征向量 (eigenvector)</span>，拉伸的倍数就是 <span class="col-eigen">特征值 (eigenvalue)</span>。</p>
+
+    <div class="formula-block">
+      <div class="formula-big">
+        <span style="color:#e8e6e3">A</span>
+        <span class="col-vec">v</span>
+        <span style="color:#e8e6e3"> = </span>
+        <span class="col-eigen">λ</span>
+        <span class="col-vec">v</span>
+      </div>
+      <div class="formula-label">矩阵 A 作用在特征向量 v 上 = 只是把 v 缩放了 λ 倍</div>
+    </div>
+
+    <div class="note">类比：想象一张橡皮筋网格。拉伸时，大多数点的位置和角度都变了。但有几条特殊的线，只被拉伸，没有旋转——那就是特征方向。</div>
+  </div>
+
+  <!-- Section 2: 交互几何 -->
+  <div class="section">
+    <h2><span class="step">2</span>几何可视化：看变换如何作用</h2>
+    <p>调整矩阵 A 的元素，观察向量场如何变换。<span class="col-vec" style="font-weight:600">绿色箭头</span>是特征向量（变换后方向不变），<span style="color:#94a3b8;font-weight:600">灰色箭头</span>是普通向量。</p>
+
+    <div class="card">
+      <div class="demo-title">交互演示 — 矩阵变换</div>
+
+      <div style="display:flex; gap:20px; flex-wrap:wrap; align-items:flex-start; margin-bottom:16px;">
+        <div>
+          <div style="font-size:0.8em; color:var(--text-dim); margin-bottom:6px;">矩阵 A =</div>
+          <div class="matrix-inputs">
+            <input type="number" id="a11" value="3" step="0.5">
+            <input type="number" id="a12" value="1" step="0.5">
+            <input type="number" id="a21" value="0" step="0.5">
+            <input type="number" id="a22" value="2" step="0.5">
+          </div>
+        </div>
+        <div class="info-grid" style="flex:1; min-width:200px;">
+          <div class="info-card">
+            <h4>特征值 λ₁, λ₂</h4>
+            <div class="val-display" id="eigenvals" style="color:var(--accent)">—</div>
+          </div>
+          <div class="info-card">
+            <h4>行列式 det(A)</h4>
+            <div class="val-display" id="det-val" style="color:var(--accent3)">—</div>
+          </div>
+          <div class="info-card">
+            <h4>迹 tr(A)</h4>
+            <div class="val-display" id="trace-val" style="color:var(--accent2)">—</div>
+          </div>
+          <div class="info-card">
+            <h4>可对角化？</h4>
+            <div class="val-display" id="diag-val" style="color:var(--accent4)">—</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="controls">
+        <div class="ctrl-group">
+          <label>动画进度 t</label>
+          <input type="range" id="t-slider" min="0" max="1" step="0.01" value="0">
+          <div class="val" id="t-val">0.00</div>
+        </div>
+        <button class="btn" id="animate-btn">▶ 播放动画</button>
+        <button class="btn btn-secondary" id="reset-btn">重置</button>
+      </div>
+
+      <div class="legend">
+        <div class="legend-item">
+          <div class="legend-dot" style="background:#34d399"></div>特征向量（变换后方向不变）
+        </div>
+        <div class="legend-item">
+          <div class="legend-dot" style="background:#60a5fa"></div>普通向量（方向会改变）
+        </div>
+        <div class="legend-item">
+          <div class="legend-dot" style="background:#a78bfa; border-radius:0; height:2px; width:16px;"></div>变换后
+        </div>
+      </div>
+
+      <div class="canvas-wrap">
+        <canvas id="eigen-canvas" height="400"></canvas>
+      </div>
+      <div class="anim-bar"><div class="anim-bar-fill" id="anim-bar-fill" style="width:0%"></div></div>
+    </div>
+  </div>
+
+  <!-- Section 3: 特征方程 -->
+  <div class="section">
+    <h2><span class="step">3</span>如何求特征值？特征方程</h2>
+    <p>从定义 <code>Av = λv</code> 出发，变形得到：</p>
+
+    <div class="formula-block">
+      <div class="formula-big" style="font-size:1.1em;">
+        Av = λv
+        &nbsp;⟹&nbsp;
+        (A − λI)v = 0
+        &nbsp;⟹&nbsp;
+        <span class="col-eigen">det(A − λI) = 0</span>
+      </div>
+      <div class="formula-label">特征多项式 = 0，解出 λ，再代回求 v</div>
+    </div>
+
+    <p>对于 2×2 矩阵，特征多项式是二次方程，有两个解（可能相等，可能复数）。</p>
+
+    <div class="card">
+      <div class="demo-title">特征方程求解过程（对当前矩阵）</div>
+      <pre id="solve-steps" style="font-family:'JetBrains Mono',monospace; font-size:0.82em; color:var(--text-dim); line-height:2; overflow-x:auto;"></pre>
+    </div>
+  </div>
+
+  <!-- Section 4: 特征值分解 -->
+  <div class="section">
+    <h2><span class="step">4</span>特征值分解：A = PDP⁻¹</h2>
+    <p>如果 n×n 矩阵 A 有 n 个线性独立的特征向量，可以把它"拆开"：</p>
+
+    <div class="formula-block">
+      <div class="formula-big">
+        <span style="color:#e8e6e3">A</span>
+        <span style="color:#e8e6e3"> = </span>
+        <span class="col-vec">P</span>
+        <span class="col-eigen">D</span>
+        <span class="col-inv">P⁻¹</span>
+      </div>
+      <div class="formula-label" style="margin-top:12px;">
+        <span class="col-vec">P</span> = 特征向量按列排列 &nbsp;|&nbsp;
+        <span class="col-eigen">D</span> = 对角矩阵（对角元素是特征值）&nbsp;|&nbsp;
+        <span class="col-inv">P⁻¹</span> = P 的逆
+      </div>
+    </div>
+
+    <div class="decomp-row">
+      <div class="matrix-box">
+        <div class="mat-label">原矩阵</div>
+        <div class="mat-name" style="color:var(--text)">A</div>
+        <div class="mat-desc">任意可对角化矩阵</div>
+      </div>
+      <div class="op-sym">=</div>
+      <div class="matrix-box">
+        <div class="mat-label">特征向量矩阵</div>
+        <div class="mat-name col-vec">P</div>
+        <div class="mat-desc">将坐标系"旋转"到特征方向</div>
+      </div>
+      <div class="op-sym">×</div>
+      <div class="matrix-box">
+        <div class="mat-label">对角矩阵</div>
+        <div class="mat-name col-eigen">D</div>
+        <div class="mat-desc">沿各特征方向独立缩放</div>
+      </div>
+      <div class="op-sym">×</div>
+      <div class="matrix-box">
+        <div class="mat-label">逆矩阵</div>
+        <div class="mat-name col-inv">P⁻¹</div>
+        <div class="mat-desc">旋转回原始坐标系</div>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:8px;">
+      <div class="demo-title">当前矩阵的 PDP⁻¹ 分解</div>
+      <div id="decomp-display" style="font-family:'JetBrains Mono',monospace; font-size:0.85em; line-height:2; color:var(--text-dim);"></div>
+    </div>
+  </div>
+
+  <!-- Section 5: 三步几何解释 -->
+  <div class="section">
+    <h2><span class="step">5</span>三步几何解释</h2>
+    <p>理解 A = PDP⁻¹ 的几何含义：整个变换可以分解为三步。</p>
+
+    <div class="card">
+      <div class="demo-title">三步变换动画</div>
+      <div class="tabs" id="step-tabs">
+        <div class="tab active" data-step="0">全部 A</div>
+        <div class="tab" data-step="1">① P⁻¹ 旋转</div>
+        <div class="tab" data-step="2">② D 缩放</div>
+        <div class="tab" data-step="3">③ P 旋转回</div>
+      </div>
+      <div class="canvas-wrap">
+        <canvas id="steps-canvas" height="360"></canvas>
+      </div>
+      <div id="step-desc" style="margin-top:12px; font-size:0.88em; color:var(--text-dim); padding:12px; background:#12151f; border-radius:8px;">
+        完整变换 A：直接应用矩阵变换，相当于三步合一。
+      </div>
+    </div>
+  </div>
+
+  <!-- Section 6: 限制条件 -->
+  <div class="section">
+    <h2><span class="step">6</span>EVD 的限制条件</h2>
+    <div class="cond-grid">
+      <div class="cond-card">
+        <div class="icon">⬛</div>
+        <h4>必须是方阵</h4>
+        <p>只有 n×n 矩阵才有特征值。非方阵？用 SVD！</p>
+      </div>
+      <div class="cond-card">
+        <div class="icon">🔗</div>
+        <h4>必须可对角化</h4>
+        <p>需要 n 个线性独立的特征向量。有重复特征值时可能失败。</p>
+      </div>
+      <div class="cond-card">
+        <div class="icon">🔄</div>
+        <h4>对称矩阵最友好</h4>
+        <p>对称矩阵 (A=Aᵀ) 的特征向量一定正交，特征值一定是实数。</p>
+      </div>
+      <div class="cond-card">
+        <div class="icon">⚠️</div>
+        <h4>可能有复数解</h4>
+        <p>非对称矩阵可能产生复数特征值（如旋转矩阵）。</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section 7: 深度学习应用 -->
+  <div class="section">
+    <h2><span class="step">7</span>在深度学习中的应用</h2>
+    <div class="app-grid">
+      <div class="app-card">
+        <h4>PCA 主成分分析</h4>
+        <p>对协方差矩阵做特征值分解，特征向量是主成分方向，特征值是方差大小。用于降维和数据可视化。</p>
+      </div>
+      <div class="app-card">
+        <h4>权重矩阵分析</h4>
+        <p>分析神经网络权重矩阵的特征值谱，判断训练稳定性，检测梯度消失/爆炸的风险。</p>
+      </div>
+      <div class="app-card">
+        <h4>谱归一化</h4>
+        <p>用最大特征值（谱范数）对权重矩阵归一化，控制 Lipschitz 常数，稳定 GAN 训练。</p>
+      </div>
+      <div class="app-card">
+        <h4>LoRA 的理论基础</h4>
+        <p>LoRA 低秩分解的理论基础来自特征值分解。重要的"方向"对应大特征值，可以用少量参数近似。</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+// ======= Math utilities =======
+function matMul(A, B) {
+  return [
+    [A[0][0]*B[0][0] + A[0][1]*B[1][0], A[0][0]*B[0][1] + A[0][1]*B[1][1]],
+    [A[1][0]*B[0][0] + A[1][1]*B[1][0], A[1][0]*B[0][1] + A[1][1]*B[1][1]]
+  ];
+}
+
+function matVec(M, v) {
+  return [M[0][0]*v[0] + M[0][1]*v[1], M[1][0]*v[0] + M[1][1]*v[1]];
+}
+
+function det2(M) { return M[0][0]*M[1][1] - M[0][1]*M[1][0]; }
+function trace2(M) { return M[0][0] + M[1][1]; }
+
+function eigenvalues2(M) {
+  const tr = trace2(M), d = det2(M);
+  const disc = tr*tr/4 - d;
+  if (disc < 0) return null; // complex
+  const s = Math.sqrt(disc);
+  return [tr/2 + s, tr/2 - s];
+}
+
+function eigenvectors2(M, lambdas) {
+  if (!lambdas) return null;
+  return lambdas.map(l => {
+    const a = M[0][0]-l, b = M[0][1];
+    const c = M[1][0],   d = M[1][1]-l;
+    let vx, vy;
+    if (Math.abs(b) > 1e-9) { vx = -b; vy = a; }
+    else if (Math.abs(c) > 1e-9) { vx = d; vy = -c; }
+    else { vx = 1; vy = 0; }
+    const len = Math.hypot(vx, vy);
+    return [vx/len, vy/len];
+  });
+}
+
+function inv2(M) {
+  const d = det2(M);
+  if (Math.abs(d) < 1e-12) return null;
+  return [[M[1][1]/d, -M[0][1]/d], [-M[1][0]/d, M[0][0]/d]];
+}
+
+function lerp(a, b, t) { return a + (b-a)*t; }
+function lerpVec(v0, v1, t) { return [lerp(v0[0],v1[0],t), lerp(v0[1],v1[1],t)]; }
+
+function getMatrix() {
+  return [
+    [parseFloat(document.getElementById('a11').value)||0,
+     parseFloat(document.getElementById('a12').value)||0],
+    [parseFloat(document.getElementById('a21').value)||0,
+     parseFloat(document.getElementById('a22').value)||0]
+  ];
+}
+
+// ======= Canvas 1: eigen-canvas =======
+const canvas1 = document.getElementById('eigen-canvas');
+const ctx1 = canvas1.getContext('2d');
+
+function resizeCanvas1() {
+  const w = canvas1.parentElement.clientWidth;
+  canvas1.width = w * devicePixelRatio;
+  canvas1.height = 400 * devicePixelRatio;
+  canvas1.style.height = '400px';
+  drawEigenCanvas();
+}
+
+function drawArrow(ctx, ox, oy, dx, dy, color, width=2, alpha=1) {
+  ctx.save();
+  ctx.globalAlpha = alpha;
+  ctx.strokeStyle = color;
+  ctx.fillStyle = color;
+  ctx.lineWidth = width;
+  const ex = ox+dx, ey = oy+dy;
+  ctx.beginPath(); ctx.moveTo(ox, oy); ctx.lineTo(ex, ey); ctx.stroke();
+  const angle = Math.atan2(dy, dx);
+  const hl = 10 * devicePixelRatio, hw = 5 * devicePixelRatio;
+  ctx.beginPath();
+  ctx.moveTo(ex, ey);
+  ctx.lineTo(ex - hl*Math.cos(angle-0.4), ey - hl*Math.sin(angle-0.4));
+  ctx.lineTo(ex - hl*Math.cos(angle+0.4), ey - hl*Math.sin(angle+0.4));
+  ctx.closePath(); ctx.fill();
+  ctx.restore();
+}
+
+let tValue = 0;
+let animRunning = false;
+let animRaf = null;
+
+function drawEigenCanvas() {
+  const W = canvas1.width, H = canvas1.height;
+  const dpr = devicePixelRatio;
+  const cx = W/2, cy = H/2;
+  const scale = Math.min(W, H) / 5.5;
+
+  ctx1.clearRect(0,0,W,H);
+  ctx1.fillStyle = '#0a0c12';
+  ctx1.fillRect(0,0,W,H);
+
+  // Grid
+  ctx1.strokeStyle = '#1e2130';
+  ctx1.lineWidth = 1;
+  for (let i = -5; i <= 5; i++) {
+    ctx1.beginPath(); ctx1.moveTo(cx + i*scale, 0); ctx1.lineTo(cx + i*scale, H); ctx1.stroke();
+    ctx1.beginPath(); ctx1.moveTo(0, cy + i*scale); ctx1.lineTo(W, cy + i*scale); ctx1.stroke();
+  }
+
+  // Axes
+  ctx1.strokeStyle = '#3a3d52'; ctx1.lineWidth = 1.5*dpr;
+  ctx1.beginPath(); ctx1.moveTo(0, cy); ctx1.lineTo(W, cy); ctx1.stroke();
+  ctx1.beginPath(); ctx1.moveTo(cx, 0); ctx1.lineTo(cx, H); ctx1.stroke();
+
+  const M = getMatrix();
+  const t = tValue;
+
+  // Sample directions (unit circle)
+  const N = 12;
+  const lambdas = eigenvalues2(M);
+  const evecs = lambdas ? eigenvectors2(M, lambdas) : null;
+
+  for (let i = 0; i < N; i++) {
+    const angle = (2*Math.PI*i)/N;
+    const v = [Math.cos(angle), Math.sin(angle)];
+    const Mv = matVec(M, v);
+
+    // interpolate
+    const vt = lerpVec(v, Mv, t);
+
+    // Is it close to an eigenvector?
+    let isEigen = false;
+    if (evecs) {
+      for (const ev of evecs) {
+        const dot = Math.abs(v[0]*ev[0] + v[1]*ev[1]);
+        if (dot > 0.97) { isEigen = true; break; }
+      }
+    }
+
+    const color = isEigen ? '#34d399' : '#60a5fa';
+    const alpha = isEigen ? 1 : 0.5;
+    drawArrow(ctx1, cx, cy, vt[0]*scale, -vt[1]*scale, color, isEigen ? 3*dpr : 1.5*dpr, alpha);
+  }
+
+  // Draw eigenvectors prominently
+  if (evecs) {
+    evecs.forEach((ev, idx) => {
+      const lambda = lambdas[idx];
+      const v = ev;
+      const Mv = matVec(M, v); // = lambda * v
+      const vt = lerpVec(v, Mv, t);
+
+      // Draw both directions
+      for (const sign of [1, -1]) {
+        drawArrow(ctx1, cx, cy, sign*vt[0]*scale*1.5, -sign*vt[1]*scale*1.5, '#34d399', 3*dpr, 0.9);
+      }
+
+      // Label
+      ctx1.save();
+      ctx1.font = `${13*dpr}px 'JetBrains Mono'`;
+      ctx1.fillStyle = '#34d399';
+      const lx = cx + ev[0]*scale*1.8, ly = cy - ev[1]*scale*1.8;
+      ctx1.fillText(`v${idx+1}(λ=${lambda.toFixed(2)})`, lx+6*dpr, ly);
+      ctx1.restore();
+    });
+  }
+
+  // t label
+  ctx1.save();
+  ctx1.font = `${11*dpr}px 'JetBrains Mono'`;
+  ctx1.fillStyle = '#6b7280';
+  ctx1.fillText(`t = ${t.toFixed(2)}  (t=0:原始, t=1:变换后)`, 14*dpr, H - 14*dpr);
+  ctx1.restore();
+}
+
+// ======= Canvas 2: steps-canvas =======
+const canvas2 = document.getElementById('steps-canvas');
+const ctx2 = canvas2.getContext('2d');
+let currentStep = 0;
+
+function resizeCanvas2() {
+  const w = canvas2.parentElement.clientWidth;
+  canvas2.width = w * devicePixelRatio;
+  canvas2.height = 360 * devicePixelRatio;
+  canvas2.style.height = '360px';
+  drawStepsCanvas();
+}
+
+function drawGrid2(cx, cy, scale) {
+  ctx2.strokeStyle = '#1e2130'; ctx2.lineWidth = 1;
+  for (let i = -4; i <= 4; i++) {
+    ctx2.beginPath(); ctx2.moveTo(cx + i*scale, 0); ctx2.lineTo(cx + i*scale, canvas2.height); ctx2.stroke();
+    ctx2.beginPath(); ctx2.moveTo(0, cy + i*scale); ctx2.lineTo(canvas2.width, cy + i*scale); ctx2.stroke();
+  }
+  ctx2.strokeStyle = '#3a3d52'; ctx2.lineWidth = 1.5*devicePixelRatio;
+  ctx2.beginPath(); ctx2.moveTo(0, cy); ctx2.lineTo(canvas2.width, cy); ctx2.stroke();
+  ctx2.beginPath(); ctx2.moveTo(cx, 0); ctx2.lineTo(cx, canvas2.height); ctx2.stroke();
+}
+
+function drawTransformedGrid(ctx, M, cx, cy, scale, alpha, color) {
+  ctx.save();
+  ctx.globalAlpha = alpha;
+  ctx.strokeStyle = color;
+  ctx.lineWidth = 1.2*devicePixelRatio;
+
+  const steps = 5;
+  for (let i = -steps; i <= steps; i++) {
+    // horizontal lines
+    const p1 = matVec(M, [i, -steps]);
+    const p2 = matVec(M, [i, steps]);
+    ctx.beginPath();
+    ctx.moveTo(cx + p1[0]*scale, cy - p1[1]*scale);
+    ctx.lineTo(cx + p2[0]*scale, cy - p2[1]*scale);
+    ctx.stroke();
+
+    // vertical lines
+    const q1 = matVec(M, [-steps, i]);
+    const q2 = matVec(M, [steps, i]);
+    ctx.beginPath();
+    ctx.moveTo(cx + q1[0]*scale, cy - q1[1]*scale);
+    ctx.lineTo(cx + q2[0]*scale, cy - q2[1]*scale);
+    ctx.stroke();
+  }
+  ctx.restore();
+}
+
+function drawStepsCanvas() {
+  const W = canvas2.width, H = canvas2.height;
+  const dpr = devicePixelRatio;
+  const cx = W/2, cy = H/2;
+  const scale = Math.min(W, H) / 5.5;
+
+  ctx2.clearRect(0,0,W,H);
+  ctx2.fillStyle = '#0a0c12';
+  ctx2.fillRect(0,0,W,H);
+
+  drawGrid2(cx, cy, scale);
+
+  const M = getMatrix();
+  const lambdas = eigenvalues2(M);
+  const evecs = lambdas ? eigenvectors2(M, lambdas) : null;
+
+  const I = [[1,0],[0,1]];
+
+  let transformMatrix = I;
+  let stepDesc = '';
+
+  if (currentStep === 0) {
+    transformMatrix = M;
+    stepDesc = '完整变换 A = PDP⁻¹ 一步完成';
+  } else if (evecs && lambdas) {
+    // Build P, D, P^-1
+    const P = [[evecs[0][0], evecs[1][0]], [evecs[0][1], evecs[1][1]]];
+    const Pinv = inv2(P);
+    const D = [[lambdas[0], 0],[0, lambdas[1]]];
+
+    if (currentStep === 1) {
+      transformMatrix = Pinv || I;
+      stepDesc = `① P⁻¹：旋转到特征向量坐标系（让特征向量对齐坐标轴）`;
+    } else if (currentStep === 2) {
+      const DP = matMul(D, Pinv || I);
+      transformMatrix = DP;
+      stepDesc = `② D × P⁻¹：在特征坐标系中缩放（x轴缩放λ₁=${lambdas[0].toFixed(2)}，y轴缩放λ₂=${lambdas[1].toFixed(2)}）`;
+    } else if (currentStep === 3) {
+      transformMatrix = M;
+      stepDesc = `③ P × D × P⁻¹ = A：旋转回原始坐标系，完成完整变换`;
+    }
+  }
+
+  // Draw original grid
+  drawTransformedGrid(ctx2, I, cx, cy, scale, 0.3, '#3a3d52');
+
+  // Draw transformed grid
+  drawTransformedGrid(ctx2, transformMatrix, cx, cy, scale, 0.75, '#a78bfa');
+
+  // Draw basis vectors transformed
+  const colors = ['#f87171', '#fbbf24'];
+  [[1,0],[0,1]].forEach((v, idx) => {
+    const tv = matVec(transformMatrix, v);
+    drawArrow(ctx2, cx, cy, tv[0]*scale, -tv[1]*scale, colors[idx], 3*dpr);
+  });
+
+  // Label
+  ctx2.save();
+  ctx2.font = `${11*dpr}px 'JetBrains Mono'`;
+  ctx2.fillStyle = '#6b7280';
+  ctx2.fillText(`Step ${currentStep}`, 14*dpr, H - 14*dpr);
+  ctx2.restore();
+
+  document.getElementById('step-desc').textContent = stepDesc;
+}
+
+// ======= Update info =======
+function updateInfo() {
+  const M = getMatrix();
+  const lambdas = eigenvalues2(M);
+  const d = det2(M);
+  const tr = trace2(M);
+  const evecs = lambdas ? eigenvectors2(M, lambdas) : null;
+
+  document.getElementById('eigenvals').textContent =
+    lambdas ? `${lambdas[0].toFixed(3)}, ${lambdas[1].toFixed(3)}` : '复数（无实解）';
+  document.getElementById('det-val').textContent = d.toFixed(4);
+  document.getElementById('trace-val').textContent = tr.toFixed(4);
+  document.getElementById('diag-val').textContent = lambdas ? '✅ 是' : '❌ 否（复特征值）';
+
+  updateSolveSteps(M, lambdas, d, tr);
+  updateDecompDisplay(M, lambdas, evecs);
+}
+
+function updateSolveSteps(M, lambdas, d, tr) {
+  const a = M[0][0], b = M[0][1], c = M[1][0], e = M[1][1];
+  let s = '';
+  s += `A = [[${a}, ${b}], [${c}, ${e}]]\n\n`;
+  s += `特征方程: det(A - λI) = 0\n`;
+  s += `= (${a}-λ)(${e}-λ) - (${b})(${c})\n`;
+  s += `= λ² - ${tr.toFixed(3)}λ + ${d.toFixed(3)} = 0\n\n`;
+  if (lambdas) {
+    s += `判别式 Δ = ${(tr*tr/4 - d).toFixed(4)}\n`;
+    s += `λ₁ = ${lambdas[0].toFixed(5)}\n`;
+    s += `λ₂ = ${lambdas[1].toFixed(5)}\n\n`;
+    s += `注意: λ₁ × λ₂ = det(A) = ${d.toFixed(4)} ✓\n`;
+    s += `      λ₁ + λ₂ = tr(A) = ${tr.toFixed(4)} ✓`;
+  } else {
+    s += `判别式 Δ < 0，特征值为复数\n（该矩阵包含旋转分量）`;
+  }
+  document.getElementById('solve-steps').textContent = s;
+}
+
+function fmt(n) { return n.toFixed(3); }
+
+function updateDecompDisplay(M, lambdas, evecs) {
+  const el = document.getElementById('decomp-display');
+  if (!lambdas || !evecs) {
+    el.textContent = '当前矩阵有复数特征值，无实数特征值分解。';
+    return;
+  }
+  const P = [[evecs[0][0], evecs[1][0]], [evecs[0][1], evecs[1][1]]];
+  const Pinv = inv2(P);
+  if (!Pinv) { el.textContent = '特征向量线性相关，无法对角化。'; return; }
+
+  el.innerHTML = `
+<span style="color:var(--accent2)">P（特征向量列）</span>  = [[${fmt(P[0][0])},  ${fmt(P[0][1])}],
+                    [${fmt(P[1][0])},  ${fmt(P[1][1])}]]
+
+<span style="color:var(--accent)">D（特征值对角）</span>   = [[${fmt(lambdas[0])},  0.000],
+                    [0.000,  ${fmt(lambdas[1])}]]
+
+<span style="color:var(--accent4)">P⁻¹               </span> = [[${fmt(Pinv[0][0])},  ${fmt(Pinv[0][1])}],
+                    [${fmt(Pinv[1][0])},  ${fmt(Pinv[1][1])}]]
+
+<span style="color:#6b7280">验证 P×D×P⁻¹ ≈ A:</span>  [[${fmt(M[0][0])},  ${fmt(M[0][1])}],
+                    [${fmt(M[1][0])},  ${fmt(M[1][1])}]] ✓`;
+}
+
+// ======= Event listeners =======
+['a11','a12','a21','a22'].forEach(id => {
+  document.getElementById(id).addEventListener('input', () => {
+    updateInfo();
+    drawEigenCanvas();
+    drawStepsCanvas();
+  });
+});
+
+const tSlider = document.getElementById('t-slider');
+tSlider.addEventListener('input', function() {
+  tValue = parseFloat(this.value);
+  document.getElementById('t-val').textContent = tValue.toFixed(2);
+  document.getElementById('anim-bar-fill').style.width = (tValue*100)+'%';
+  drawEigenCanvas();
+});
+
+document.getElementById('animate-btn').addEventListener('click', function() {
+  if (animRunning) {
+    animRunning = false;
+    cancelAnimationFrame(animRaf);
+    this.textContent = '▶ 播放动画';
+    return;
+  }
+  animRunning = true;
+  this.textContent = '⏸ 暂停';
+  let start = null;
+  const dur = 2000;
+  function frame(ts) {
+    if (!start) start = ts;
+    let elapsed = (ts - start) % (dur*2);
+    let t = elapsed < dur ? elapsed/dur : 2 - elapsed/dur;
+    tValue = t;
+    tSlider.value = t;
+    document.getElementById('t-val').textContent = t.toFixed(2);
+    document.getElementById('anim-bar-fill').style.width = (t*100)+'%';
+    drawEigenCanvas();
+    if (animRunning) animRaf = requestAnimationFrame(frame);
+  }
+  animRaf = requestAnimationFrame(frame);
+});
+
+document.getElementById('reset-btn').addEventListener('click', () => {
+  tValue = 0;
+  tSlider.value = 0;
+  document.getElementById('t-val').textContent = '0.00';
+  document.getElementById('anim-bar-fill').style.width = '0%';
+  drawEigenCanvas();
+});
+
+document.querySelectorAll('#step-tabs .tab').forEach(tab => {
+  tab.addEventListener('click', function() {
+    document.querySelectorAll('#step-tabs .tab').forEach(t => t.classList.remove('active'));
+    this.classList.add('active');
+    currentStep = parseInt(this.dataset.step);
+    drawStepsCanvas();
+  });
+});
+
+// ======= Init =======
+window.addEventListener('resize', () => { resizeCanvas1(); resizeCanvas2(); });
+resizeCanvas1();
+resizeCanvas2();
+updateInfo();
+</script>
+</body>
+</html>

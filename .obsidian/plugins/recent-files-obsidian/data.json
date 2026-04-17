@@ -1,6 +1,62 @@
 {
   "recentFiles": [
     {
+      "basename": "Positional Embedding 详解 - 李宏毅",
+      "path": "9.Coding/AI 模型/Positional Embedding 详解 - 李宏毅.md"
+    },
+    {
+      "basename": "Daily Routine",
+      "path": "10.WorkOut/Daily Routine.md"
+    },
+    {
+      "basename": "TradingAgents-CN 调研报告",
+      "path": "5.Finance/TradingAgents-CN/TradingAgents-CN 调研报告.md"
+    },
+    {
+      "basename": "LLaMA-Factory 快速上手",
+      "path": "3.Agent/03-微调技术/LLaMA-Factory 快速上手.md"
+    },
+    {
+      "basename": "余弦退火 Cosine Annealing",
+      "path": "3.Agent/03-微调技术/余弦退火 Cosine Annealing.md"
+    },
+    {
+      "basename": "gui 模块",
+      "path": "9.Coding/项目文档/software-in-loop/gui 模块.md"
+    },
+    {
+      "basename": "GPU 内存带宽与推理加速原理",
+      "path": "3.Agent/TurboQuant/GPU 内存带宽与推理加速原理.md"
+    },
+    {
+      "basename": "_导航",
+      "path": "3.Agent/TurboQuant/_导航.md"
+    },
+    {
+      "basename": "卡尔达肖夫尺度-文明分级理论",
+      "path": "3.Agent/卡尔达肖夫尺度-文明分级理论.md"
+    },
+    {
+      "basename": "AI学习路线（8周）",
+      "path": "3.Agent/AI学习路线（8周）.md"
+    },
+    {
+      "basename": "YouDub-webui-视频中文化工具",
+      "path": "3.Agent/YouDub-webui-视频中文化工具.md"
+    },
+    {
+      "basename": "temperature_softmax",
+      "path": "3.Agent/imgs/temperature_softmax.png"
+    },
+    {
+      "basename": "00-项目总览",
+      "path": "3.Agent/04-项目文档/minimind/00-项目总览.md"
+    },
+    {
+      "basename": "Index",
+      "path": "Index.base"
+    },
+    {
       "basename": "睡眠科学 - YouTube 视频笔记",
       "path": "8.AI Summary/健康与科学/睡眠科学 - YouTube 视频笔记.md"
     },
@@ -105,10 +161,6 @@
       "path": "5.Finance/PandaAI大模型提示词/提示词示例-Gemini 3 Pro.txt"
     },
     {
-      "basename": "Index",
-      "path": "Index.base"
-    },
-    {
       "basename": "这世界既残酷也温柔",
       "path": "6.BookNotes/Weread/个人成长/这世界既残酷也温柔.md"
     },
@@ -147,58 +199,6 @@
     {
       "basename": "figure_021",
       "path": "3.Agent/images_toy/figure_021.png"
-    },
-    {
-      "basename": "figure_020",
-      "path": "3.Agent/images_toy/figure_020.png"
-    },
-    {
-      "basename": "figure_019",
-      "path": "3.Agent/images_toy/figure_019.png"
-    },
-    {
-      "basename": "figure_018",
-      "path": "3.Agent/images_toy/figure_018.png"
-    },
-    {
-      "basename": "figure_017",
-      "path": "3.Agent/images_toy/figure_017.png"
-    },
-    {
-      "basename": "figure_016",
-      "path": "3.Agent/images_toy/figure_016.png"
-    },
-    {
-      "basename": "figure_015",
-      "path": "3.Agent/images_toy/figure_015.png"
-    },
-    {
-      "basename": "figure_014",
-      "path": "3.Agent/images_toy/figure_014.png"
-    },
-    {
-      "basename": "figure_013",
-      "path": "3.Agent/images_toy/figure_013.png"
-    },
-    {
-      "basename": "稀疏自编码器 Sparse Autoencoder",
-      "path": "3.Agent/稀疏自编码器 Sparse Autoencoder.md"
-    },
-    {
-      "basename": "figure_046",
-      "path": "3.Agent/monosemantic-features-images/images/figure_046.png"
-    },
-    {
-      "basename": "Towards-Monosemanticity",
-      "path": "3.Agent/Towards-Monosemanticity.md"
-    },
-    {
-      "basename": "figure_002",
-      "path": "3.Agent/monosemantic-features-images/images/figure_002.png"
-    },
-    {
-      "basename": "figure_001",
-      "path": "3.Agent/monosemantic-features-images/images/figure_001.png"
     }
   ],
   "omittedPaths": [],

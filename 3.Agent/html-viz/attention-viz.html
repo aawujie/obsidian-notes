@@ -1,0 +1,1048 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>注意力机制图解</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #0f1117;
+  --card: #1a1d28;
+  --card-hover: #222638;
+  --accent: #ff6b35;
+  --accent2: #4ecdc4;
+  --accent3: #ffe66d;
+  --text: #e8e6e3;
+  --text-dim: #8b8d93;
+  --border: #2a2d3a;
+  --query: #ff6b35;
+  --key: #4ecdc4;
+  --value: #ffe66d;
+  --weight: #c084fc;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Noto Sans SC', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.8;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 24px;
+}
+
+h1 {
+  font-size: 2.2em;
+  font-weight: 700;
+  margin-bottom: 8px;
+  background: linear-gradient(135deg, var(--accent), var(--accent2));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.subtitle {
+  color: var(--text-dim);
+  font-size: 0.95em;
+  margin-bottom: 48px;
+}
+
+/* Sections */
+.section {
+  margin-bottom: 56px;
+  animation: fadeUp 0.6s ease-out both;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.section:nth-child(2) { animation-delay: 0.1s; }
+.section:nth-child(3) { animation-delay: 0.2s; }
+.section:nth-child(4) { animation-delay: 0.3s; }
+.section:nth-child(5) { animation-delay: 0.4s; }
+.section:nth-child(6) { animation-delay: 0.5s; }
+.section:nth-child(7) { animation-delay: 0.6s; }
+.section:nth-child(8) { animation-delay: 0.7s; }
+
+h2 {
+  font-size: 1.5em;
+  font-weight: 600;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+h2 .step {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: #fff;
+  font-size: 0.7em;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+p, .note {
+  color: var(--text);
+  font-size: 0.95em;
+  margin-bottom: 16px;
+}
+
+.note {
+  background: var(--card);
+  border-left: 3px solid var(--accent2);
+  padding: 14px 18px;
+  border-radius: 0 8px 8px 0;
+  color: var(--text-dim);
+  font-size: 0.88em;
+}
+
+.prereq-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin: 16px 0;
+}
+
+.prereq-item {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 16px;
+  transition: all 0.2s;
+}
+
+.prereq-item:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+
+.prereq-item .level {
+  font-size: 0.75em;
+  padding: 2px 8px;
+  border-radius: 4px;
+  display: inline-block;
+  margin-bottom: 6px;
+}
+
+.level.must { background: #ff6b3530; color: var(--accent); }
+.level.nice { background: #4ecdc430; color: var(--accent2); }
+
+.prereq-item h4 { font-size: 0.95em; margin-bottom: 4px; }
+.prereq-item p { font-size: 0.82em; color: var(--text-dim); margin: 0; }
+
+/* Interactive Demo: Restaurant */
+.demo-box {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 24px;
+  margin: 20px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.demo-title {
+  font-size: 0.85em;
+  color: var(--accent);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 16px;
+}
+
+/* Restaurant analogy */
+.restaurant {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.customer-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5em;
+  flex-shrink: 0;
+}
+
+.avatar.query-avatar { background: var(--query); }
+
+.speech {
+  background: var(--card-hover);
+  border-radius: 12px;
+  padding: 12px 16px;
+  position: relative;
+  flex: 1;
+  font-size: 0.9em;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin: 12px 0;
+}
+
+.menu-item {
+  background: var(--card-hover);
+  border: 2px solid var(--border);
+  border-radius: 10px;
+  padding: 12px 8px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s;
+  user-select: none;
+}
+
+.menu-item:hover {
+  border-color: var(--accent2);
+  transform: scale(1.03);
+}
+
+.menu-item.highlighted {
+  border-color: var(--accent);
+  box-shadow: 0 0 16px rgba(255, 107, 53, 0.3);
+}
+
+.menu-item .dish { font-size: 1.6em; display: block; margin-bottom: 4px; }
+.menu-item .name { font-size: 0.78em; color: var(--text-dim); display: block; }
+.menu-item .tags { font-size: 0.7em; color: var(--accent2); margin-top: 4px; display: block; }
+
+.weight-bar {
+  height: 4px;
+  border-radius: 2px;
+  background: var(--border);
+  margin-top: 8px;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+
+.weight-bar .fill {
+  height: 100%;
+  border-radius: 2px;
+  background: var(--accent);
+  transition: width 0.5s ease;
+  width: 0;
+}
+
+.result-box {
+  background: linear-gradient(135deg, #1a2a1a, #1a1d28);
+  border: 1px solid #2a4a2a;
+  border-radius: 10px;
+  padding: 16px;
+  margin-top: 16px;
+  text-align: center;
+  font-size: 0.9em;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Query/Key/Value labels */
+.label {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 0.82em;
+  font-weight: 600;
+  font-family: 'JetBrains Mono', monospace;
+}
+.label.q { background: #ff6b3530; color: var(--query); }
+.label.k { background: #4ecdc430; color: var(--key); }
+.label.v { background: #ffe66d30; color: var(--value); }
+.label.w { background: #c084fc30; color: var(--weight); }
+
+/* Attention calculation viz */
+.calc-flow {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 16px 0;
+}
+
+.calc-step {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 16px;
+  background: var(--card-hover);
+  border-radius: 10px;
+  border-left: 3px solid var(--accent2);
+  font-size: 0.88em;
+  transition: all 0.3s;
+}
+
+.calc-step:hover {
+  border-left-color: var(--accent);
+  background: #262a3a;
+}
+
+.calc-step .num {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--accent2);
+  color: var(--bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8em;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+/* Interactive weight slider */
+.slider-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 16px 0;
+}
+
+.slider-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.slider-row label {
+  min-width: 80px;
+  font-size: 0.85em;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.slider-row input[type="range"] {
+  flex: 1;
+  height: 6px;
+  -webkit-appearance: none;
+  background: var(--border);
+  border-radius: 3px;
+  outline: none;
+}
+
+.slider-row input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--accent);
+  cursor: pointer;
+}
+
+.slider-row .weight-val {
+  min-width: 50px;
+  text-align: right;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.85em;
+  color: var(--weight);
+}
+
+.output-preview {
+  background: var(--card-hover);
+  border-radius: 10px;
+  padding: 16px;
+  text-align: center;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.9em;
+}
+
+/* Multi-head viz */
+.heads-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin: 16px 0;
+}
+
+.head-card {
+  background: var(--card-hover);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 14px;
+  text-align: center;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.head-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.head-card.active {
+  border-color: var(--accent);
+  background: #252840;
+}
+
+.head-card .head-emoji { font-size: 1.8em; margin-bottom: 6px; }
+.head-card .head-name { font-size: 0.82em; font-weight: 600; margin-bottom: 4px; }
+.head-card .head-desc { font-size: 0.72em; color: var(--text-dim); }
+
+.head-detail {
+  background: var(--card-hover);
+  border-radius: 10px;
+  padding: 16px;
+  margin: 12px 0;
+  display: none;
+}
+.head-detail.visible { display: block; }
+
+/* Comparison table */
+.compare-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin: 16px 0;
+  font-size: 0.85em;
+}
+
+.compare-table th, .compare-table td {
+  padding: 10px 14px;
+  text-align: center;
+  border-bottom: 1px solid var(--border);
+}
+
+.compare-table th {
+  background: var(--card);
+  color: var(--accent2);
+  font-weight: 600;
+}
+
+.compare-table td { background: var(--card-hover); }
+
+.compare-table tr:hover td { background: #262a3a; }
+
+.good { color: #4ade80; }
+.bad { color: #f87171; }
+.mid { color: var(--accent3); }
+
+/* sentence attention demo */
+.sentence-demo {
+  margin: 16px 0;
+}
+
+.sentence {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 12px 0;
+  justify-content: center;
+}
+
+.token {
+  padding: 8px 14px;
+  background: var(--card-hover);
+  border: 2px solid var(--border);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-size: 0.95em;
+  user-select: none;
+  position: relative;
+}
+
+.token:hover { border-color: var(--accent2); }
+.token.selected {
+  border-color: var(--query);
+  box-shadow: 0 0 12px rgba(255, 107, 53, 0.3);
+}
+
+.token .att-weight {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: var(--weight);
+  color: var(--bg);
+  font-size: 0.65em;
+  padding: 1px 5px;
+  border-radius: 10px;
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 600;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.token.show-weight .att-weight { opacity: 1; }
+
+.att-explanation {
+  text-align: center;
+  font-size: 0.85em;
+  color: var(--text-dim);
+  margin-top: 8px;
+  min-height: 24px;
+}
+
+.arrow { font-size: 1.2em; color: var(--accent); }
+
+.formula-box {
+  background: #1a1520;
+  border: 1px solid #3a2a4a;
+  border-radius: 10px;
+  padding: 16px 20px;
+  margin: 16px 0;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.88em;
+  text-align: center;
+  line-height: 2;
+}
+
+.formula-box .explain {
+  font-family: 'Noto Sans SC', sans-serif;
+  font-size: 0.85em;
+  color: var(--text-dim);
+  margin-top: 8px;
+}
+
+.highlight { color: var(--accent); font-weight: 600; }
+.highlight2 { color: var(--accent2); font-weight: 600; }
+.highlight3 { color: var(--accent3); font-weight: 600; }
+
+.divider {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 40px 0;
+}
+
+kbd {
+  background: var(--card-hover);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 2px 6px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.85em;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<h1>注意力机制 —— 从零理解</h1>
+<p class="subtitle">不需要复杂公式，用生活类比和交互式演示来理解 Transformer 的核心</p>
+
+<!-- Section 0: Prerequisites -->
+<div class="section">
+<h2><span class="step">0</span>需要什么前置知识？</h2>
+
+<p>好消息：理解注意力的<strong>直觉</strong>几乎不需要数学。但如果想理解代码实现，需要以下基础：</p>
+
+<div class="prereq-grid">
+  <div class="prereq-item">
+    <span class="level must">必须</span>
+    <h4>向量 & 矩阵乘法</h4>
+    <p>知道两个向量"点积"是什么（对应元素相乘再求和），以及矩阵乘法的基本概念</p>
+  </div>
+  <div class="prereq-item">
+    <span class="level must">必须</span>
+    <h4>Softmax 函数</h4>
+    <p>把一组数变成"概率分布"（全部非负且加起来=1）。就是先取 e 的指数，再除以总和</p>
+  </div>
+  <div class="prereq-item">
+    <span class="level nice">推荐</span>
+    <h4>神经网络基础</h4>
+    <p>知道什么是"层"、"权重"、"前向传播"。不需要会推导反向传播</p>
+  </div>
+  <div class="prereq-item">
+    <span class="level nice">推荐</span>
+    <h4>序列模型直觉</h4>
+    <p>大概知道 RNN 是按顺序处理序列的，处理长序列时会"遗忘"前面的信息</p>
+  </div>
+</div>
+
+<div class="note">
+  如果你不熟悉 softmax，可以简单理解为：<strong>把一组打分转换成百分比</strong>。分最高的占大头，分低的占小头，所有百分比加起来刚好 100%。
+</div>
+</div>
+
+<!-- Section 1: The Core Intuition -->
+<div class="section">
+<h2><span class="step">1</span>核心直觉：餐厅点菜</h2>
+
+<p>想象你走进一家餐厅，菜单上有很多菜。<strong>你的口味偏好</strong>就是 <span class="label q">Query</span>（查询），<strong>每道菜的特征</strong>就是 <span class="label k">Key</span>（键），<strong>菜本身</strong>就是 <span class="label v">Value</span>（值）。</p>
+
+<div class="demo-box">
+  <div class="demo-title">交互演示：点菜就是注意力</div>
+  <div class="restaurant">
+    <div class="customer-row">
+      <div class="avatar query-avatar">🧑</div>
+      <div class="speech">
+        点击下面你喜欢的口味标签，看看注意力如何分配：
+        <div style="margin-top:8px; display:flex; gap:8px; flex-wrap:wrap;">
+          <button class="taste-btn" data-taste="spicy" onclick="selectTaste('spicy')">🌶️ 辣</button>
+          <button class="taste-btn" data-taste="sweet" onclick="selectTaste('sweet')">🍬 甜</button>
+          <button class="taste-btn" data-taste="fresh" onclick="selectTaste('fresh')">🥗 清淡</button>
+        </div>
+      </div>
+    </div>
+    <div class="menu-grid" id="menuGrid">
+      <div class="menu-item" data-tags="spicy" id="dish1">
+        <span class="dish">🍜</span>
+        <span class="name">麻辣火锅</span>
+        <span class="tags">#辣 #重口</span>
+        <div class="weight-bar"><div class="fill" id="w1"></div></div>
+      </div>
+      <div class="menu-item" data-tags="sweet" id="dish2">
+        <span class="dish">🍰</span>
+        <span class="name">提拉米苏</span>
+        <span class="tags">#甜 #精致</span>
+        <div class="weight-bar"><div class="fill" id="w2"></div></div>
+      </div>
+      <div class="menu-item" data-tags="fresh" id="dish3">
+        <span class="dish">🥙</span>
+        <span class="name">凯撒沙拉</span>
+        <span class="tags">#清淡 #健康</span>
+        <div class="weight-bar"><div class="fill" id="w3"></div></div>
+      </div>
+      <div class="menu-item" data-tags="spicy" id="dish4">
+        <span class="dish">🌮</span>
+        <span class="name">墨西哥卷</span>
+        <span class="tags">#辣 #异域</span>
+        <div class="weight-bar"><div class="fill" id="w4"></div></div>
+      </div>
+    </div>
+    <div class="result-box" id="resultBox">
+      👆 点击上面的口味标签，看看"注意力"会如何分配到每道菜上
+    </div>
+  </div>
+</div>
+
+<p>这就是注意力机制的全部核心：</p>
+<div class="formula-box">
+  <span class="highlight">你的偏好(Query)</span> 和 <span class="highlight2">每道菜的特征(Key)</span> 做匹配
+  → 得到每道菜的 <span class="label w">权重</span>
+  → 加权混合所有 <span class="highlight3">菜的内容(Value)</span>
+  → 得到最终结果
+  <div class="explain">权重高 = 更关注这道菜 &nbsp;|&nbsp; 权重低 = 几乎忽略</div>
+</div>
+</div>
+
+<!-- Section 2: Step by step -->
+<div class="section">
+<h2><span class="step">2</span>注意力的三步计算</h2>
+
+<div class="calc-flow">
+  <div class="calc-step">
+    <div class="num">1</div>
+    <div><strong>打分</strong>：用 <span class="label q">Query</span> 和每个 <span class="label k">Key</span> 计算相似度（"这道菜匹不匹配我的口味？"）<br>
+    最常见的方法：<strong>点积</strong>（对应元素相乘再求和）</div>
+  </div>
+  <div class="calc-step">
+    <div class="num">2</div>
+    <div><strong>归一化</strong>：把分数通过 <kbd>softmax</kbd> 变成权重（"百分比分配注意力"）<br>
+    分最高的菜分到最多注意力，但不会完全忽略其他菜</div>
+  </div>
+  <div class="calc-step">
+    <div class="num">3</div>
+    <div><strong>加权求和</strong>：用权重去混合所有 <span class="label v">Value</span>（"按比例混合所有菜"）<br>
+    权重高的贡献大，权重低的贡献小，最终得到一个"定制结果"</div>
+  </div>
+</div>
+
+<div class="note">
+  <strong>类比</strong>：就像你在购物网站搜索"运动鞋"，搜索引擎不会只返回一个结果，而是给每个商品一个"相关度分数"，按分数从高到低排列。注意力也是类似——给每个输入一个分数，按分数加权。
+</div>
+</div>
+
+<!-- Section 3: Interactive weight demo -->
+<div class="section">
+<h2><span class="step">3</span>试试手动调权重</h2>
+
+<p>假设有 3 个值（红色、绿色、蓝色），拖动滑块调整每个值的权重，看看混合结果怎么变：</p>
+
+<div class="demo-box">
+  <div class="demo-title">交互演示：加权混合</div>
+
+  <div class="slider-group">
+    <div class="slider-row">
+      <label style="color:#ff6b6b">🔴 红色</label>
+      <input type="range" min="0" max="100" value="33" oninput="updateMix()" id="s1">
+      <span class="weight-val" id="sv1">33%</span>
+    </div>
+    <div class="slider-row">
+      <label style="color:#51cf66">🟢 绿色</label>
+      <input type="range" min="0" max="100" value="33" oninput="updateMix()" id="s2">
+      <span class="weight-val" id="sv2">33%</span>
+    </div>
+    <div class="slider-row">
+      <label style="color:#339af0">🔵 蓝色</label>
+      <input type="range" min="0" max="100" value="33" oninput="updateMix()" id="s3">
+      <span class="weight-val" id="sv3">33%</span>
+    </div>
+  </div>
+
+  <div class="output-preview" id="mixPreview" style="height:60px; border-radius:10px; margin-top:12px;">
+    混合结果
+  </div>
+
+  <div style="text-align:center; margin-top:8px; font-size:0.82em; color:var(--text-dim);">
+    注意力就是这样——根据权重混合信息。权重全部自动学习，不需要人工调。
+  </div>
+</div>
+</div>
+
+<!-- Section 4: Why not just average? -->
+<div class="section">
+<h2><span class="step">4</span>为什么不直接平均？</h2>
+
+<p>你可能会问：为什么不直接取平均值？看这个翻译的例子：</p>
+
+<div class="demo-box">
+  <div class="demo-title">交互演示：翻译中的注意力（点击英文单词看注意力分布）</div>
+
+  <div class="sentence-demo">
+    <p style="text-align:center; font-size:0.85em; color:var(--text-dim);">英文原句（<span class="label k">Key</span> + <span class="label v">Value</span>）：</p>
+    <div class="sentence" id="srcSentence">
+      <div class="token" onclick="showTransAttention(0)">The<span class="att-weight">0%</span></div>
+      <div class="token" onclick="showTransAttention(1)">cat<span class="att-weight">0%</span></div>
+      <div class="token" onclick="showTransAttention(2)">sat<span class="att-weight">0%</span></div>
+      <div class="token" onclick="showTransAttention(3)">on<span class="att-weight">0%</span></div>
+      <div class="token" onclick="showTransAttention(4)">the<span class="att-weight">0%</span></div>
+      <div class="token" onclick="showTransAttention(5)">mat<span class="att-weight">0%</span></div>
+    </div>
+
+    <p style="text-align:center; font-size:0.85em; margin:12px 0;">
+      <span class="arrow">⬇</span> 翻译到中文时 <span class="arrow">⬇</span>
+    </p>
+
+    <p style="text-align:center; font-size:0.85em; color:var(--text-dim);">中文翻译（生成每个字时，<span class="label q">Query</span> 分别关注英文不同部分）：</p>
+    <div class="sentence" id="tgtSentence">
+      <div class="token" onclick="showTransAttention(6)" style="border-color:var(--query);">猫</div>
+      <div class="token" onclick="showTransAttention(7)" style="border-color:var(--query);">坐</div>
+      <div class="token" onclick="showTransAttention(8)" style="border-color:var(--query);">在</div>
+      <div class="token" onclick="showTransAttention(9)" style="border-color:var(--query);">垫子</div>
+      <div class="token" onclick="showTransAttention(10)" style="border-color:var(--query);">上</div>
+    </div>
+
+    <div class="att-explanation" id="transExplanation">
+      👆 点击中文字词，看它在翻译时"注意"了英文的哪些部分
+    </div>
+  </div>
+</div>
+
+<p>如果用<strong>平均</strong>，翻译"猫"的时候会同等关注所有英文单词。但用<strong>注意力</strong>，翻译"猫"时会重点关注"cat"，翻译"垫子"时会重点关注"mat"。这就是注意力的威力——<strong>动态聚焦</strong>。</p>
+</div>
+
+<!-- Section 5: Self-Attention -->
+<div class="section">
+<h2><span class="step">5</span>自注意力：自己看自己</h2>
+
+<p>上面翻译的例子中，Query 来自中文、Key/Value 来自英文——这叫<strong>交叉注意力</strong>。</p>
+<p>如果 Q、K、V <strong>全部来自同一个句子</strong>呢？这就叫<strong>自注意力（Self-Attention）</strong>。每个词都在问："句子里其他哪些词对理解我最重要？"</p>
+
+<div class="demo-box">
+  <div class="demo-title">交互演示：自注意力（点击一个词，看它关注谁）</div>
+
+  <div class="sentence-demo">
+    <div class="sentence" id="selfSentence">
+      <div class="token" onclick="showSelfAttention(0)">小<span class="att-weight">0%</span></div>
+      <div class="token" onclick="showSelfAttention(1)">明<span class="att-weight">0%</span></div>
+      <div class="token" onclick="showSelfAttention(2)">因为<span class="att-weight">0%</span></div>
+      <div class="token" onclick="showSelfAttention(3)">太<span class="att-weight">0%</span></div>
+      <div class="token" onclick="showSelfAttention(4)">累<span class="att-weight">0%</span></div>
+      <div class="token" onclick="showSelfAttention(5)">了<span class="att-weight">0%</span></div>
+      <div class="token" onclick="showSelfAttention(6)">所以<span class="att-weight">0%</span></div>
+      <div class="token" onclick="showSelfAttention(7)">他<span class="att-weight">0%</span></div>
+      <div class="token" onclick="showSelfAttention(8)">睡着<span class="att-weight">0%</span></div>
+      <div class="token" onclick="showSelfAttention(9)">了<span class="att-weight">0%</span></div>
+    </div>
+    <div class="att-explanation" id="selfExplanation">
+      👆 点击任意一个词，看它会"注意"句子中的哪些其他词
+    </div>
+  </div>
+</div>
+
+<p>注意"他"会特别关注"小明"（因为"他"指代"小明"），"睡着"会关注"累"（因果关系）。这种<strong>长距离依赖</strong>正是 RNN 难以捕获而自注意力擅长的。</p>
+</div>
+
+<!-- Section 6: Multi-Head -->
+<div class="section">
+<h2><span class="step">6</span>多头注意力：从不同角度看</h2>
+
+<p>一个注意力头只能学习一种"关注模式"。多头注意力 = <strong>同时从多个角度看</strong>：</p>
+
+<div class="heads-container">
+  <div class="head-card" onclick="showHead(0)">
+    <div class="head-emoji">🔗</div>
+    <div class="head-name">头 1：语法</div>
+    <div class="head-desc">关注主语-谓语-宾语</div>
+  </div>
+  <div class="head-card" onclick="showHead(1)">
+    <div class="head-emoji">📏</div>
+    <div class="head-name">头 2：位置</div>
+    <div class="head-desc">关注相邻的词</div>
+  </div>
+  <div class="head-card" onclick="showHead(2)">
+    <div class="head-emoji">💡</div>
+    <div class="head-name">头 3：语义</div>
+    <div class="head-desc">关注意思相关的词</div>
+  </div>
+</div>
+
+<div class="head-detail" id="headDetail">
+  <p id="headDetailText"></p>
+</div>
+
+<div class="note">
+  每个头把 Q、K、V 分别乘以不同的权重矩阵，投影到不同的"子空间"。最后把所有头的结果拼接起来再做一次线性变换。<br><br>
+  <strong>Transformer 通常用 8 或 12 个头</strong>。参数量不会翻倍——每个头的维度 = 总维度 / 头数。
+</div>
+</div>
+
+<!-- Section 7: Comparison -->
+<div class="section">
+<h2><span class="step">7</span>CNN vs RNN vs Self-Attention</h2>
+
+<p>为什么 Transformer（基于 Self-Attention）能取代 CNN 和 RNN？看对比：</p>
+
+<table class="compare-table">
+  <tr>
+    <th>特性</th>
+    <th>CNN</th>
+    <th>RNN</th>
+    <th>Self-Attention</th>
+  </tr>
+  <tr>
+    <td>能并行计算吗？</td>
+    <td class="good">✅ 能</td>
+    <td class="bad">❌ 不能（必须逐步）</td>
+    <td class="good">✅ 能</td>
+  </tr>
+  <tr>
+    <td>"远方的词"能直接联系吗？</td>
+    <td class="mid">⚠ 需要堆很多层</td>
+    <td class="bad">❌ 信号逐步衰减</td>
+    <td class="good">✅ 一步直达</td>
+  </tr>
+  <tr>
+    <td>长序列代价</td>
+    <td class="good">✅ 线性</td>
+    <td class="good">✅ 线性</td>
+    <td class="bad">⚠ 二次方（n²）</td>
+  </tr>
+  <tr>
+    <td>适合场景</td>
+    <td>局部模式（图像）</td>
+    <td>短序列</td>
+    <td>长距离依赖</td>
+  </tr>
+</table>
+
+<div class="note">
+  Self-Attention 的 n² 代价催生了后续优化：Flash Attention（硬件优化）、Linear Attention（近似）、Sparse Attention（稀疏化）等。
+</div>
+</div>
+
+<!-- Section 8: Position -->
+<div class="section">
+<h2><span class="step">8</span>位置编码：告诉模型"谁在前谁在后"</h2>
+
+<p>Self-Attention 有个致命弱点：<strong>打乱词的顺序，结果不变</strong>。"猫吃鱼"和"鱼吃猫"在它看来一样！</p>
+
+<p>解决方案：<strong>给每个位置一个独特的"身份证"</strong>，加到词的表示上。Transformer 用正弦/余弦函数生成这些身份证——不同位置的波形不同，模型就能区分顺序了。</p>
+
+<div class="demo-box">
+  <div class="demo-title">直觉类比</div>
+  <p style="font-size:0.9em;">想象一排学生站成一行，每人举着不同频率的彩色灯泡在闪烁。</p>
+  <p style="font-size:0.9em;">- 第 1 个灯闪得<strong>最快</strong>（高频），能区分相邻位置</p>
+  <p style="font-size:0.9em;">- 最后一个灯闪得<strong>最慢</strong>（低频），能区分远距离位置</p>
+  <p style="font-size:0.9em;">组合在一起，每个位置都有<strong>唯一的闪烁模式</strong>——这就是位置编码。</p>
+</div>
+</div>
+
+<hr class="divider">
+
+<div class="section" style="text-align:center;">
+  <p style="font-size:1.1em; font-weight:600;">恭喜！你已经理解了注意力机制的核心。</p>
+  <p style="color:var(--text-dim);">
+    Query（我想找什么）× Key（你的标签）→ 权重 → 加权混合 Value → 结果<br>
+    这就是 ChatGPT、BERT 等所有大模型的心脏。
+  </p>
+</div>
+
+</div>
+
+<script>
+/* ---- Restaurant Demo ---- */
+const dishes = {
+  spicy: { 1: 80, 2: 5, 3: 5, 4: 70 },
+  sweet: { 1: 5, 2: 85, 3: 10, 4: 5 },
+  fresh: { 1: 5, 2: 10, 3: 80, 4: 10 }
+};
+
+function selectTaste(taste) {
+  document.querySelectorAll('.taste-btn').forEach(b => b.style.background = 'var(--card-hover)');
+  document.querySelector(`.taste-btn[data-taste="${taste}"]`).style.background = 'var(--accent)';
+
+  const weights = dishes[taste];
+  const total = Object.values(weights).reduce((a,b) => a+b, 0);
+
+  for (let i = 1; i <= 4; i++) {
+    const pct = Math.round(weights[i] / total * 100);
+    document.getElementById('w'+i).style.width = pct + '%';
+    const item = document.getElementById('dish'+i);
+    item.classList.toggle('highlighted', weights[i] > 50);
+  }
+
+  const names = {1:'麻辣火锅', 2:'提拉米苏', 3:'凯撒沙拉', 4:'墨西哥卷'};
+  const best = Object.entries(weights).sort((a,b) => b[1]-a[1])[0][0];
+  const tasteNames = {spicy:'辣', sweet:'甜', fresh:'清淡'};
+  document.getElementById('resultBox').innerHTML =
+    `注意力最集中在 <strong>${names[best]}</strong> 上！<br>` +
+    `<span style="font-size:0.82em; color:var(--text-dim)">因为它的特征(Key)与你的偏好"${tasteNames[taste]}"(Query)最匹配</span>`;
+}
+
+/* Taste buttons style */
+document.querySelectorAll('.taste-btn').forEach(btn => {
+  btn.style.cssText = 'padding:6px 14px; border:1px solid var(--border); border-radius:6px; background:var(--card-hover); color:var(--text); cursor:pointer; font-size:0.85em; transition:all 0.2s;';
+});
+
+/* ---- Color Mix Demo ---- */
+function updateMix() {
+  const v1 = parseInt(document.getElementById('s1').value);
+  const v2 = parseInt(document.getElementById('s2').value);
+  const v3 = parseInt(document.getElementById('s3').value);
+  const total = v1 + v2 + v3 || 1;
+  const p1 = Math.round(v1/total*100);
+  const p2 = Math.round(v2/total*100);
+  const p3 = 100 - p1 - p2;
+
+  document.getElementById('sv1').textContent = p1 + '%';
+  document.getElementById('sv2').textContent = p2 + '%';
+  document.getElementById('sv3').textContent = p3 + '%';
+
+  const r = Math.round(255 * v1/total);
+  const g = Math.round(200 * v2/total);
+  const b = Math.round(240 * v3/total);
+
+  const preview = document.getElementById('mixPreview');
+  preview.style.background = `rgb(${r}, ${g}, ${b})`;
+  preview.style.color = (r+g+b) > 350 ? '#000' : '#fff';
+  preview.textContent = `rgb(${r}, ${g}, ${b}) — 权重: 红${p1}% 绿${p2}% 蓝${p3}%`;
+}
+updateMix();
+
+/* ---- Translation Attention Demo ---- */
+const transWeights = {
+  6:  [5, 70, 5, 5, 5, 10],   // 猫 → cat
+  7:  [5, 10, 65, 5, 5, 10],  // 坐 → sat
+  8:  [5, 5, 10, 60, 10, 10], // 在 → on
+  9:  [5, 5, 5, 5, 15, 65],   // 垫子 → mat
+  10: [5, 5, 10, 55, 15, 10], // 上 → on
+};
+
+const transExplain = {
+  6: '翻译"猫"时，注意力集中在"cat"上（70%）—— 因为它们是对应翻译',
+  7: '翻译"坐"时，注意力集中在"sat"上（65%）—— 动词对动词',
+  8: '翻译"在"时，注意力集中在"on"上（60%）—— 介词对介词',
+  9: '翻译"垫子"时，注意力集中在"mat"上（65%）—— 名词对名词',
+  10: '翻译"上"时，注意力集中在"on"上（55%）—— 补充"on"的语义',
+};
+
+function showTransAttention(idx) {
+  if (idx < 6) return;
+  const weights = transWeights[idx];
+  const tokens = document.querySelectorAll('#srcSentence .token');
+  tokens.forEach((t, i) => {
+    const w = weights[i];
+    t.querySelector('.att-weight').textContent = w + '%';
+    t.classList.add('show-weight');
+    t.style.opacity = 0.3 + 0.7 * (w / 70);
+    t.style.borderColor = w > 30 ? 'var(--accent)' : 'var(--border)';
+    t.style.transform = w > 30 ? 'scale(1.08)' : 'scale(1)';
+  });
+  // highlight selected target
+  document.querySelectorAll('#tgtSentence .token').forEach((t, i) => {
+    t.classList.toggle('selected', i === (idx - 6));
+  });
+  document.getElementById('transExplanation').textContent = transExplain[idx];
+}
+
+/* ---- Self-Attention Demo ---- */
+const selfWeights = {
+  0: [20, 50, 3, 3, 3, 3, 3, 10, 3, 2],   // 小 → 明
+  1: [50, 20, 3, 3, 3, 3, 3, 10, 3, 2],   // 明 → 小
+  2: [5, 5, 15, 5, 10, 5, 40, 5, 5, 5],   // 因为 → 所以
+  3: [3, 3, 5, 15, 55, 10, 3, 3, 3, 3],   // 太 → 累
+  4: [3, 5, 10, 15, 15, 5, 5, 3, 30, 9],  // 累 → 睡着
+  5: [3, 3, 3, 10, 40, 20, 3, 3, 10, 5],  // 了 → 累
+  6: [3, 3, 45, 3, 5, 3, 15, 3, 10, 10],  // 所以 → 因为
+  7: [35, 40, 3, 3, 3, 3, 3, 5, 3, 2],    // 他 → 小明
+  8: [3, 5, 5, 5, 40, 5, 5, 5, 20, 7],    // 睡着 → 累
+  9: [3, 3, 3, 3, 5, 5, 3, 3, 50, 22],    // 了 → 睡着
+};
+
+const selfExplain = {
+  0: '"小"和"明"强关联 —— 它们组成名字"小明"',
+  1: '"明"和"小"强关联 —— 同上，组成名字"小明"',
+  2: '"因为"特别关注"所以" —— 因果关系词对',
+  3: '"太"特别关注"累" —— "太"是"累"的程度副词修饰',
+  4: '"累"关注"睡着" —— 因果关系：累了所以睡着',
+  5: '"了"关注"累" —— 语气助词跟着动词/形容词',
+  6: '"所以"特别关注"因为" —— 因果关系词对',
+  7: '"他"特别关注"小"和"明" —— 代词指代关系！这是自注意力最强的能力',
+  8: '"睡着"特别关注"累" —— 因果关系：因为累所以睡着',
+  9: '"了"关注"睡着" —— 语气助词跟着动词',
+};
+
+function showSelfAttention(idx) {
+  const weights = selfWeights[idx];
+  const tokens = document.querySelectorAll('#selfSentence .token');
+  tokens.forEach((t, i) => {
+    const w = weights[i];
+    t.querySelector('.att-weight').textContent = w + '%';
+    t.classList.add('show-weight');
+    t.classList.toggle('selected', i === idx);
+    if (i !== idx) {
+      t.style.opacity = 0.3 + 0.7 * (w / 55);
+      t.style.borderColor = w > 25 ? 'var(--accent2)' : 'var(--border)';
+      t.style.transform = w > 25 ? 'scale(1.08)' : 'scale(1)';
+    } else {
+      t.style.opacity = 1;
+      t.style.transform = 'scale(1.08)';
+    }
+  });
+  document.getElementById('selfExplanation').textContent = selfExplain[idx];
+}
+
+/* ---- Multi-Head Demo ---- */
+const headDetails = [
+  '🔗 <strong>语法头</strong>：这个头学会了关注语法结构。比如动词会关注它的主语和宾语，形容词会关注它修饰的名词。相当于在做句法分析。',
+  '📏 <strong>位置头</strong>：这个头主要关注相邻的词。它学会了"通常前后挨着的词关系密切"这个模式，类似于 CNN 的局部感受野。',
+  '💡 <strong>语义头</strong>：这个头关注含义相关的词，不管它们离得多远。比如"他"关注"小明"，"睡着"关注"累"。这种长距离语义关联是 Transformer 最强的能力。'
+];
+
+function showHead(idx) {
+  document.querySelectorAll('.head-card').forEach((c, i) => c.classList.toggle('active', i === idx));
+  const detail = document.getElementById('headDetail');
+  detail.classList.add('visible');
+  document.getElementById('headDetailText').innerHTML = headDetails[idx];
+}
+</script>
+
+</body>
+</html>
