@@ -13,14 +13,6 @@
       "path": "2.Math/01-线性代数/傅里叶变换——从坐标系到频谱的完整推导.md"
     },
     {
-      "basename": "多语言模型跨语言对齐机制",
-      "path": "3.Agent/02-模型与架构/多语言模型跨语言对齐机制.md"
-    },
-    {
-      "basename": "Qwen3-8B 模型结构解析",
-      "path": "3.Agent/02-模型与架构/Qwen3-8B 模型结构解析.md"
-    },
-    {
       "basename": "各种积在深度学习中的应用",
       "path": "2.Math/01-线性代数/各种积在深度学习中的应用.md"
     },
@@ -33,44 +25,8 @@
       "path": "5.Finance/TradingAgents-CN/TradingAgents-CN 调研报告.md"
     },
     {
-      "basename": "LLaMA-Factory 快速上手",
-      "path": "3.Agent/03-微调技术/LLaMA-Factory 快速上手.md"
-    },
-    {
-      "basename": "余弦退火 Cosine Annealing",
-      "path": "3.Agent/03-微调技术/余弦退火 Cosine Annealing.md"
-    },
-    {
       "basename": "gui 模块",
       "path": "9.Coding/项目文档/software-in-loop/gui 模块.md"
-    },
-    {
-      "basename": "GPU 内存带宽与推理加速原理",
-      "path": "3.Agent/TurboQuant/GPU 内存带宽与推理加速原理.md"
-    },
-    {
-      "basename": "_导航",
-      "path": "3.Agent/TurboQuant/_导航.md"
-    },
-    {
-      "basename": "卡尔达肖夫尺度-文明分级理论",
-      "path": "3.Agent/卡尔达肖夫尺度-文明分级理论.md"
-    },
-    {
-      "basename": "AI学习路线（8周）",
-      "path": "3.Agent/AI学习路线（8周）.md"
-    },
-    {
-      "basename": "YouDub-webui-视频中文化工具",
-      "path": "3.Agent/YouDub-webui-视频中文化工具.md"
-    },
-    {
-      "basename": "temperature_softmax",
-      "path": "3.Agent/imgs/temperature_softmax.png"
-    },
-    {
-      "basename": "00-项目总览",
-      "path": "3.Agent/04-项目文档/minimind/00-项目总览.md"
     },
     {
       "basename": "Index",
@@ -191,14 +147,6 @@
     {
       "basename": "雅思口语高级课程讲义-亚夏尔",
       "path": "1.English/雅思口语高级课程讲义-亚夏尔.pdf"
-    },
-    {
-      "basename": "toy-model-zh",
-      "path": "3.Agent/toy-model-zh.md"
-    },
-    {
-      "basename": "monosemantic-features-zh",
-      "path": "3.Agent/monosemantic-features-zh.md"
     }
   ],
   "omittedPaths": [],
