@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "index",
+      "path": "wiki/index.md"
+    },
+    {
       "basename": "GSPO-Group-Sequence-Policy-Optimization",
       "path": "3.Agent/08-参考资料/Papers/GSPO-Group-Sequence-Policy-Optimization.pdf"
     },
@@ -137,10 +141,6 @@
       "path": "9.WorkOut/Daily Routine.md"
     },
     {
-      "basename": "Index",
-      "path": "Index.base"
-    },
-    {
       "basename": "睡眠科学 - YouTube 视频笔记",
       "path": "7.AI Summary/健康与科学/睡眠科学 - YouTube 视频笔记.md"
     },
@@ -195,10 +195,6 @@
     {
       "basename": "因子投资",
       "path": "Chaos/Notion/因子投资/因子投资.base"
-    },
-    {
-      "basename": "Pasted image 20260220181052",
-      "path": "7.AI Summary/imgs/Pasted image 20260220181052.png"
     }
   ],
   "omittedPaths": [
