@@ -1,6 +1,30 @@
 {
   "recentFiles": [
     {
+      "basename": "GSPO-Group-Sequence-Policy-Optimization",
+      "path": "3.Agent/08-参考资料/Papers/GSPO-Group-Sequence-Policy-Optimization.pdf"
+    },
+    {
+      "basename": "sentiment_analysis_marimo",
+      "path": "3.Agent/05-项目文档/sentiment-analysis/sentiment_analysis_marimo.py"
+    },
+    {
+      "basename": "Teacher Forcing",
+      "path": "3.Agent/02-训练与微调/Teacher Forcing.md"
+    },
+    {
+      "basename": "transformer_training_marimo",
+      "path": "3.Agent/02-训练与微调/transformer_training_marimo.py"
+    },
+    {
+      "basename": "qwen3_fine_tuning_marimo",
+      "path": "3.Agent/02-训练与微调/qwen3_fine_tuning_marimo.py"
+    },
+    {
+      "basename": "CLAUDE",
+      "path": "CLAUDE.md"
+    },
+    {
       "basename": "五种-Agent-Skill-设计模式",
       "path": "3.Agent/04-Agent架构与模式/五种-Agent-Skill-设计模式.md"
     },
@@ -175,30 +199,6 @@
     {
       "basename": "Pasted image 20260220181052",
       "path": "7.AI Summary/imgs/Pasted image 20260220181052.png"
-    },
-    {
-      "basename": "AI 时代的五大个人机会",
-      "path": "7.AI Summary/AI 与技术/AI 时代的五大个人机会.md"
-    },
-    {
-      "basename": "00-索引",
-      "path": "7.AI Summary/AI 与技术/00-索引.md"
-    },
-    {
-      "basename": "Pasted image 20260217235051",
-      "path": "5.Finance/imgs/Pasted image 20260217235051.png"
-    },
-    {
-      "basename": "Pasted image 20260217234929",
-      "path": "5.Finance/imgs/Pasted image 20260217234929.png"
-    },
-    {
-      "basename": "Pasted image 20260217234820",
-      "path": "5.Finance/imgs/Pasted image 20260217234820.png"
-    },
-    {
-      "basename": "提示词示例-Gemini 3 Pro",
-      "path": "5.Finance/PandaAI大模型提示词/提示词示例-Gemini 3 Pro.txt"
     }
   ],
   "omittedPaths": [
