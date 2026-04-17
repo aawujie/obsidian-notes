@@ -28,7 +28,7 @@
 - [[注意力机制 Attention 核心原理]] — 核心原理
 - [[李宏毅-Self-Attention与Transformer详解]] — 李宏毅课程笔记
 - [[Position-wise FFN]] — FFN 详解
-- [[Feed-Forward Network (FFN)]] — FFN (自 8.Coding 移入)
+- [[Feed-Forward Network (FFN) - 前馈神经网络]] — FFN (自 8.Coding 移入)
 - [[Layer Normalization]] — LayerNorm
 - [[LayerNorm vs Softmax - 本质区别]] — LN vs Softmax
 - [[Batch Normalization]] — BN
@@ -36,7 +36,7 @@
 - [[批量规范化 Batch Normalization 详解]] — BN 详解
 - [[Label Smoothing]] — 标签平滑
 - [[Positional Embedding 详解 - 李宏毅]] — 位置嵌入
-- [[Transformer 位置编码详解]] — 位置编码详解
+- [[Transformer 位置编码（Positional Encoding）详解]] — 位置编码详解
 - [[Entropy_CrossEntropy_KLDivergence]] — 熵与交叉熵
 - [[Math_Becomes_Difficult]] — 数学从加法到傅里叶
 - [[投影矩阵 Projection Matrix]] — 投影矩阵
@@ -173,7 +173,7 @@
 ### 重点书籍
 - [[《因子投资：方法与实践》/Cheatsheet]] — 因子投资速查
 - [[《救猫咪》/救猫咪]] — 编剧方法论
-- [[《故事经济学》/故事经济学]] — 故事与商业
+- [[故事经济学]] — 故事与商业
 - [[《九宫格写作》/九宫格写作]] — 九宫格写作法
 - [[《思考，快与慢》/框架效应 - Framing Effect]] — 认知偏差
 - [[《借势》/借势 - 金枪大叔]] — 营销借势
