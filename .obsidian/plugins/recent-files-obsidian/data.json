@@ -1,154 +1,6 @@
 {
   "recentFiles": [
     {
-      "basename": "20260417",
-      "path": "log/20260417.md"
-    },
-    {
-      "basename": "index",
-      "path": "wiki/index.md"
-    },
-    {
-      "basename": "GSPO-Group-Sequence-Policy-Optimization",
-      "path": "3.Agent/08-参考资料/Papers/GSPO-Group-Sequence-Policy-Optimization.pdf"
-    },
-    {
-      "basename": "sentiment_analysis_marimo",
-      "path": "3.Agent/05-项目文档/sentiment-analysis/sentiment_analysis_marimo.py"
-    },
-    {
-      "basename": "Teacher Forcing",
-      "path": "3.Agent/02-训练与微调/Teacher Forcing.md"
-    },
-    {
-      "basename": "transformer_training_marimo",
-      "path": "3.Agent/02-训练与微调/transformer_training_marimo.py"
-    },
-    {
-      "basename": "qwen3_fine_tuning_marimo",
-      "path": "3.Agent/02-训练与微调/qwen3_fine_tuning_marimo.py"
-    },
-    {
-      "basename": "CLAUDE",
-      "path": "CLAUDE.md"
-    },
-    {
-      "basename": "五种-Agent-Skill-设计模式",
-      "path": "3.Agent/04-Agent架构与模式/五种-Agent-Skill-设计模式.md"
-    },
-    {
-      "basename": "monosemantic-features-zh",
-      "path": "3.Agent/01-模型基础/可解释性/monosemantic-features-zh.md"
-    },
-    {
-      "basename": "稀疏自编码器 Sparse Autoencoder",
-      "path": "3.Agent/01-模型基础/可解释性/稀疏自编码器 Sparse Autoencoder.md"
-    },
-    {
-      "basename": "figure_001",
-      "path": "3.Agent/01-模型基础/可解释性/images_toy/figure_001.png"
-    },
-    {
-      "basename": "2026-02-22",
-      "path": "0.DailyTask/2026/2026-02-22.md"
-    },
-    {
-      "basename": "2026-02-23",
-      "path": "0.DailyTask/2026/2026-02-23.md"
-    },
-    {
-      "basename": "2026-02-27",
-      "path": "0.DailyTask/2026/2026-02-27.md"
-    },
-    {
-      "basename": "提示词示例-松鼠",
-      "path": "5.Finance/PandaAI大模型提示词/提示词示例-松鼠.txt"
-    },
-    {
-      "basename": "提示词示例-豆包",
-      "path": "5.Finance/PandaAI大模型提示词/提示词示例-豆包.txt"
-    },
-    {
-      "basename": "Pasted image 20260217235113",
-      "path": "5.Finance/imgs/Pasted image 20260217235113.png"
-    },
-    {
-      "basename": "Pasted image 20260217235210",
-      "path": "5.Finance/imgs/Pasted image 20260217235210.png"
-    },
-    {
-      "basename": "MM 定理 - Modigliani_Miller Theorem",
-      "path": "5.Finance/MM 定理 - Modigliani_Miller Theorem.md"
-    },
-    {
-      "basename": "有效市场假说 - EMH 详解",
-      "path": "5.Finance/有效市场假说 - EMH 详解.md"
-    },
-    {
-      "basename": "TradingAgents-CN 调研报告",
-      "path": "5.Finance/TradingAgents-CN/TradingAgents-CN 调研报告.md"
-    },
-    {
-      "basename": "龙虎榜分析_20260213",
-      "path": "5.Finance/imgs/龙虎榜分析_20260213.png"
-    },
-    {
-      "basename": "Pasted image 20260217234923",
-      "path": "5.Finance/imgs/Pasted image 20260217234923.png"
-    },
-    {
-      "basename": "Pasted image 20260217234806",
-      "path": "5.Finance/imgs/Pasted image 20260217234806.png"
-    },
-    {
-      "basename": "和平演变",
-      "path": "Chaos/和平演变.md"
-    },
-    {
-      "basename": "彻底搞懂奇异值分解 SVD V1",
-      "path": "2.Math/01-线性代数/彻底搞懂奇异值分解 SVD V1.md"
-    },
-    {
-      "basename": "彻底搞懂奇异值分解（SVD）",
-      "path": "2.Math/01-线性代数/彻底搞懂奇异值分解（SVD）.md"
-    },
-    {
-      "basename": "_Index",
-      "path": "8.Coding/_Index.md"
-    },
-    {
-      "basename": "tenacitOS 项目分析",
-      "path": "8.Coding/04-项目文档/tenacitOS 项目分析.md"
-    },
-    {
-      "basename": "深度学习 - 卷积神经网络局部性",
-      "path": "8.Coding/01-深度学习/CNN与卷积/深度学习 - 卷积神经网络局部性.md"
-    },
-    {
-      "basename": "深度学习需要哪些数学",
-      "path": "2.Math/深度学习需要哪些数学.md"
-    },
-    {
-      "basename": "矩阵迹 tr(A)",
-      "path": "2.Math/01-线性代数/矩阵迹 tr(A).md"
-    },
-    {
-      "basename": "傅里叶变换——从坐标系到频谱的完整推导",
-      "path": "2.Math/01-线性代数/傅里叶变换——从坐标系到频谱的完整推导.md"
-    },
-    {
-      "basename": "各种积在深度学习中的应用",
-      "path": "2.Math/01-线性代数/各种积在深度学习中的应用.md"
-    },
-    {
-      "basename": "Daily Routine",
-      "path": "9.WorkOut/Daily Routine.md"
-    },
-    {
-      "basename": "睡眠科学 - YouTube 视频笔记",
-      "path": "7.AI Summary/健康与科学/睡眠科学 - YouTube 视频笔记.md"
-    },
-    {
       "basename": "救猫咪2：经典电影剧本解析",
       "path": "6.BookNotes/Weread/文学/救猫咪2：经典电影剧本解析.md"
     },
@@ -171,6 +23,10 @@
     {
       "basename": "DeepSeek最新多模态大模型，理解与生成同时遥遥领先!",
       "path": "4.Robot/ML&DL/Arxiv 一周进展报告（大模型方向）/20241018-20241024/DeepSeek最新多模态大模型，理解与生成同时遥遥领先!.md"
+    },
+    {
+      "basename": "和平演变",
+      "path": "Chaos/和平演变.md"
     },
     {
       "basename": "万物皆模型之《孙子兵法》72篇",
@@ -199,15 +55,42 @@
     {
       "basename": "因子投资",
       "path": "Chaos/Notion/因子投资/因子投资.base"
+    },
+    {
+      "basename": "Pasted image 20260217234806",
+      "path": "5.Finance/imgs/Pasted image 20260217234806.png"
+    },
+    {
+      "basename": "Pasted image 20260217235051",
+      "path": "5.Finance/imgs/Pasted image 20260217235051.png"
+    },
+    {
+      "basename": "Pasted image 20260217234929",
+      "path": "5.Finance/imgs/Pasted image 20260217234929.png"
+    },
+    {
+      "basename": "Pasted image 20260217234820",
+      "path": "5.Finance/imgs/Pasted image 20260217234820.png"
+    },
+    {
+      "basename": "提示词示例-Gemini 3 Pro",
+      "path": "5.Finance/PandaAI大模型提示词/提示词示例-Gemini 3 Pro.txt"
+    },
+    {
+      "basename": "这世界既残酷也温柔",
+      "path": "6.BookNotes/Weread/个人成长/这世界既残酷也温柔.md"
+    },
+    {
+      "basename": "因子投资：方法与实践",
+      "path": "6.BookNotes/Weread/经济理财/因子投资：方法与实践.md"
+    },
+    {
+      "basename": "雅思口语高级课程讲义-亚夏尔",
+      "path": "1.English/雅思口语高级课程讲义-亚夏尔.pdf"
     }
   ],
-  "omittedPaths": [
-    ""
-  ],
-  "omittedTags": [
-    ""
-  ],
+  "omittedPaths": [],
+  "omittedTags": [],
   "updateOn": "file-open",
-  "omitBookmarks": false,
-  "maxLength": null
+  "omitBookmarks": false
 }
