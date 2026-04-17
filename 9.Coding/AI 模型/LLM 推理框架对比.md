@@ -1,7 +1,3 @@
----
-share_link: https://share.note.sx/if53w8rz#MvUgf/QIDdjjS+FDwGwUS+0VPZV9cq8PtKVuQ79yJ5c
-share_updated: 2026-04-01T22:58:39+08:00
----
 # LLM 推理框架对比
 
 > **整理时间：** 2026-04-01
@@ -10,18 +6,18 @@ share_updated: 2026-04-01T22:58:39+08:00
 
 ## 1. 主流框架概览
 
-| 框架               | 平台              | 硬件            | 定位    | 核心特点                             |
-| ---------------- | --------------- | ------------- | ----- | -------------------------------- |
-| **vLLM**         | Linux/Win       | Nvidia GPU    | 生产服务  | PagedAttention、高吞吐、OpenAI API 兼容 |
-| **MLX**          | macOS           | Apple Silicon | 本地开发  | 统一内存、Apple 原生优化                  |
-| **llama.cpp**    | 全平台             | CPU/GPU/APU   | 边缘部署  | GGUF 格式、量化、极低资源                  |
-| **TensorRT-LLM** | Linux           | Nvidia GPU    | 生产优化  | Nvidia 官方、极致性能                   |
-| **TGI**          | Linux           | Nvidia GPU    | 生产服务  | HuggingFace 出品、多模型支持             |
-| **DeepSpeed**    | Linux           | Nvidia GPU    | 训练+推理 | 微软出品、大规模分布式                      |
-| **OpenLLM**      | 全平台             | 多硬件           | 快速部署  | BentoML 出品、易用                    |
-| **SGLang**       | Linux           | Nvidia GPU    | 编程框架  | 结构化生成、多轮对话优化                     |
-| **LM Studio**    | macOS/Win       | 多硬件           | 桌面应用  | GUI、一键运行、本地优先                    |
-| **Ollama**       | macOS/Win/Linux | 多硬件           | 本地运行  | 极简命令行、预置模型                       |
+| 框架 | 平台 | 硬件 | 定位 | 核心特点 |
+|------|------|------|------|----------|
+| **vLLM** | Linux/Win | Nvidia GPU | 生产服务 | PagedAttention、高吞吐、OpenAI API 兼容 |
+| **MLX** | macOS | Apple Silicon | 本地开发 | 统一内存、Apple 原生优化 |
+| **llama.cpp** | 全平台 | CPU/GPU/APU | 边缘部署 | GGUF 格式、量化、极低资源 |
+| **TensorRT-LLM** | Linux | Nvidia GPU | 生产优化 | Nvidia 官方、极致性能 |
+| **TGI** | Linux | Nvidia GPU | 生产服务 | HuggingFace 出品、多模型支持 |
+| **DeepSpeed** | Linux | Nvidia GPU | 训练+推理 | 微软出品、大规模分布式 |
+| **OpenLLM** | 全平台 | 多硬件 | 快速部署 | BentoML 出品、易用 |
+| **SGLang** | Linux | Nvidia GPU | 编程框架 | 结构化生成、多轮对话优化 |
+| **LM Studio** | macOS/Win | 多硬件 | 桌面应用 | GUI、一键运行、本地优先 |
+| **Ollama** | macOS/Win/Linux | 多硬件 | 本地运行 | 极简命令行、预置模型 |
 
 ---
 
@@ -44,7 +40,6 @@ output = llm.generate("Hello, my name is")
 ```
 
 **核心特性：**
-
 | 特性 | 说明 |
 |------|------|
 | **PagedAttention** | 优化 KV Cache 内存管理，减少碎片 |
@@ -88,7 +83,6 @@ response = generate(model, tokenizer, "Hello, how are you?")
 ```
 
 **核心特性：**
-
 | 特性 | 说明 |
 |------|------|
 | **Unified Memory** | CPU/GPU 共享内存，无需拷贝 |
@@ -131,7 +125,6 @@ output = llm("Hello, my name is", max_tokens=100)
 ```
 
 **核心特性：**
-
 | 特性 | 说明 |
 |------|------|
 | **GGUF Format** | 专用量化格式，高效存储 |
@@ -171,7 +164,6 @@ output = llm.generate("Hello")
 ```
 
 **核心特性：**
-
 | 特性 | 说明 |
 |------|------|
 | **FP8/INT8** | 极致量化优化 |
@@ -216,7 +208,6 @@ curl http://localhost:8080/generate \
 ```
 
 **核心特性：**
-
 | 特性 | 说明 |
 |------|------|
 | **Multi-Model** | 支持多个模型同时服务 |
@@ -266,7 +257,6 @@ ollama create my-model -f Modelfile
 ```
 
 **核心特性：**
-
 | 特性 | 说明 |
 |------|------|
 | **One-Click** | 一键安装运行 |

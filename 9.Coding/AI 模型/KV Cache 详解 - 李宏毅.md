@@ -1,7 +1,3 @@
----
-share_link: https://share.note.sx/6dhn5ab4#JD4sIcE7dnDeGGcaKp2dLiYqK/FOW4u05EmuQHei6Aw
-share_updated: 2026-04-01T22:50:20+08:00
----
 # KV Cache 详解
 
 > **视频来源：** [李宏毅 - KV Cache 课程](https://youtu.be/fDQaadKysSA?si=p4HKJUZLUN3pfJpK)

@@ -1,8 +1,28 @@
 {
   "recentFiles": [
     {
-      "basename": "Positional Embedding 详解 - 李宏毅",
-      "path": "9.Coding/AI 模型/Positional Embedding 详解 - 李宏毅.md"
+      "basename": "深度学习需要哪些数学",
+      "path": "2.Math/深度学习需要哪些数学.md"
+    },
+    {
+      "basename": "矩阵迹 tr(A)",
+      "path": "2.Math/01-线性代数/矩阵迹 tr(A).md"
+    },
+    {
+      "basename": "傅里叶变换——从坐标系到频谱的完整推导",
+      "path": "2.Math/01-线性代数/傅里叶变换——从坐标系到频谱的完整推导.md"
+    },
+    {
+      "basename": "多语言模型跨语言对齐机制",
+      "path": "3.Agent/02-模型与架构/多语言模型跨语言对齐机制.md"
+    },
+    {
+      "basename": "Qwen3-8B 模型结构解析",
+      "path": "3.Agent/02-模型与架构/Qwen3-8B 模型结构解析.md"
+    },
+    {
+      "basename": "各种积在深度学习中的应用",
+      "path": "2.Math/01-线性代数/各种积在深度学习中的应用.md"
     },
     {
       "basename": "Daily Routine",
@@ -179,26 +199,6 @@
     {
       "basename": "monosemantic-features-zh",
       "path": "3.Agent/monosemantic-features-zh.md"
-    },
-    {
-      "basename": "figure_025",
-      "path": "3.Agent/images_toy/figure_025.png"
-    },
-    {
-      "basename": "figure_024",
-      "path": "3.Agent/images_toy/figure_024.png"
-    },
-    {
-      "basename": "figure_023",
-      "path": "3.Agent/images_toy/figure_023.png"
-    },
-    {
-      "basename": "figure_022",
-      "path": "3.Agent/images_toy/figure_022.png"
-    },
-    {
-      "basename": "figure_021",
-      "path": "3.Agent/images_toy/figure_021.png"
     }
   ],
   "omittedPaths": [],

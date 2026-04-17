@@ -1,7 +1,3 @@
----
-share_link: https://share.note.sx/3bi3xcab#zEe5vSxYtxeZGsv8/FzXeDw659qrJCCsO8Wmf43FWkk
-share_updated: 2026-04-01T22:50:38+08:00
----
 # Transformer 可解释性详解
 
 > **视频来源：** [李宏毅 - Transformer 内部机制课程](https://youtu.be/Xnil63UDW2o?si=3R0Qm3Hrb58J14Ng)

@@ -1,7 +1,3 @@
----
-share_link: https://share.note.sx/xm0ts3wp#MNxP3if0IUMesytfDlTp9aCobfAZO8QRwUz6AO5fOwg
-share_updated: 2026-04-01T22:50:32+08:00
----
 # Positional Embedding 详解
 
 > **视频来源：** [李宏毅 - Positional Embedding 课程](https://youtu.be/Ll-wk8x3G_g?si=uNDuxkEdNo_5QpSj)
