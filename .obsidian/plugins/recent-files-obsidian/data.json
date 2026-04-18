@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "傅里叶变换——从坐标系到频谱的完整推导",
+      "path": "2.Math/01-线性代数/傅里叶变换——从坐标系到频谱的完整推导.md"
+    },
+    {
+      "basename": "SVD 与傅里叶变换 - 两大分解的对比",
+      "path": "2.Math/01-线性代数/SVD 与傅里叶变换 - 两大分解的对比.md"
+    },
+    {
       "basename": "code 项目索引",
       "path": "8.Projects/code 项目索引.md"
     },
@@ -75,10 +83,6 @@
     {
       "basename": "二次型（Quadratic Form）详解",
       "path": "2.Math/01-线性代数/二次型（Quadratic Form）详解.md"
-    },
-    {
-      "basename": "SVD 与傅里叶变换 - 两大分解的对比",
-      "path": "2.Math/01-线性代数/SVD 与傅里叶变换 - 两大分解的对比.md"
     },
     {
       "basename": "RoPE-旋转位置编码详解",
