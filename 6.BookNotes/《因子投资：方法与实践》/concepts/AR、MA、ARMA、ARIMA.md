@@ -1,6 +1,5 @@
 ---
 notion-id: 30478d23-e296-80be-8038-d364ad9656de
-base: "[[因子投资.base]]"
 Last edited time: 2026-02-11T19:42:00
 Tags: []
 Verification: unverified

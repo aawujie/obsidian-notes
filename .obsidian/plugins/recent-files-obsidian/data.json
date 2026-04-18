@@ -1,176 +1,44 @@
 {
   "recentFiles": [
     {
-      "basename": "救猫咪2：经典电影剧本解析",
-      "path": "6.BookNotes/Weread/文学/救猫咪2：经典电影剧本解析.md"
+      "basename": "《因子投资：方法与实践》",
+      "path": "5.Finance/《因子投资：方法与实践》.md"
     },
     {
-      "basename": "LoRA 原理可视化详解",
-      "path": "3.Agent/03-微调技术/LoRA 原理可视化详解.md"
+      "basename": "AIG（美国国际集团）",
+      "path": "5.Finance/AIG（美国国际集团）.md"
     },
     {
-      "basename": "01-核心概念",
-      "path": "3.Agent/EvoMap/01-核心概念.md"
+      "basename": "Behavioral Finance",
+      "path": "5.Finance/Behavioral Finance.md"
     },
     {
-      "basename": "00-概览",
-      "path": "3.Agent/EvoMap/00-概览.md"
+      "basename": "BetaPlus_Behavioral_Finance",
+      "path": "5.Finance/BetaPlus_Behavioral_Finance.pdf"
     },
     {
-      "basename": "网站出海每日分享：月入3千美刀达成，每日分享梳理",
-      "path": "Clippings/网站出海每日分享：月入3千美刀达成，每日分享梳理.md"
+      "basename": "Bootstrapping  自举法",
+      "path": "5.Finance/03-计量经济学/Bootstrapping  自举法.md"
     },
     {
-      "basename": "心智的复制：全脑仿真如何重写文明的生产函数",
-      "path": "Clippings/心智的复制：全脑仿真如何重写文明的生产函数.md"
+      "basename": "Diagonal与Triangle波形的区别与识别",
+      "path": "5.Finance/01-交易与策略/Diagonal与Triangle波形的区别与识别.md"
     },
     {
-      "basename": "工程技术：在智能体优先的世界中利用 Codex",
-      "path": "Clippings/工程技术：在智能体优先的世界中利用 Codex.md"
+      "basename": "ABCD",
+      "path": "5.Finance/01-交易与策略/ABCD.md"
     },
     {
-      "basename": "关系是困住弱者的茧，规则是强者的通天梯",
-      "path": "Clippings/关系是困住弱者的茧，规则是强者的通天梯.md"
+      "basename": "18万美金短线交易系统：胜率、风控与实盘案例",
+      "path": "5.Finance/01-交易与策略/18万美金短线交易系统：胜率、风控与实盘案例.md"
     },
     {
-      "basename": "睡眠科学 - YouTube 视频笔记",
-      "path": "8.AI Summary/健康与科学/睡眠科学 - YouTube 视频笔记.md"
+      "basename": "CLAUDE",
+      "path": "CLAUDE.md"
     },
     {
-      "basename": "Naval - 接受人性的阴暗：没人希望你过得比他好",
-      "path": "6.BookNotes/Naval - 接受人性的阴暗：没人希望你过得比他好.md"
-    },
-    {
-      "basename": "perpendicular & perpend",
-      "path": "1.English/Vocabulary/perpendicular & perpend.md"
-    },
-    {
-      "basename": "SSO：无需人工标注，自动对齐 LLM！",
-      "path": "4.Robot/ML&DL/Arxiv 一周进展报告（大模型方向）/20241018-20241024/SSO：无需人工标注，自动对齐 LLM！.md"
-    },
-    {
-      "basename": "LongRAG：长文本问答的 “超级导航仪”，精准定位答案",
-      "path": "4.Robot/ML&DL/Arxiv 一周进展报告（大模型方向）/20241018-20241024/LongRAG：长文本问答的 “超级导航仪”，精准定位答案.md"
-    },
-    {
-      "basename": "DeepSeek最新多模态大模型，理解与生成同时遥遥领先!",
-      "path": "4.Robot/ML&DL/Arxiv 一周进展报告（大模型方向）/20241018-20241024/DeepSeek最新多模态大模型，理解与生成同时遥遥领先!.md"
-    },
-    {
-      "basename": "和平演变",
-      "path": "Chaos/和平演变.md"
-    },
-    {
-      "basename": "万物皆模型之《孙子兵法》72篇",
-      "path": "Chaos/商业/万物皆模型之《孙子兵法》72篇.pdf"
-    },
-    {
-      "basename": "水滴项链录音器 - 技术方案",
-      "path": "Chaos/Projects/水滴项链录音器 - 技术方案.md"
-    },
-    {
-      "basename": "Pasted image 20260301140825",
-      "path": "Chaos/Projects/Pasted image 20260301140825.png"
-    },
-    {
-      "basename": "Pasted image 20260301141119",
-      "path": "Chaos/Projects/Pasted image 20260301141119.png"
-    },
-    {
-      "basename": "熵的本质-十层理解",
-      "path": "Chaos/Physics/熵的本质-十层理解.md"
-    },
-    {
-      "basename": "Econometrics",
-      "path": "Chaos/Notion/因子投资/Econometrics.md"
-    },
-    {
-      "basename": "因子投资",
-      "path": "Chaos/Notion/因子投资/因子投资.base"
-    },
-    {
-      "basename": "Pasted image 20260217234806",
-      "path": "5.Finance/imgs/Pasted image 20260217234806.png"
-    },
-    {
-      "basename": "Pasted image 20260217235051",
-      "path": "5.Finance/imgs/Pasted image 20260217235051.png"
-    },
-    {
-      "basename": "Pasted image 20260217234929",
-      "path": "5.Finance/imgs/Pasted image 20260217234929.png"
-    },
-    {
-      "basename": "Pasted image 20260217234820",
-      "path": "5.Finance/imgs/Pasted image 20260217234820.png"
-    },
-    {
-      "basename": "提示词示例-Gemini 3 Pro",
-      "path": "5.Finance/PandaAI大模型提示词/提示词示例-Gemini 3 Pro.txt"
-    },
-    {
-      "basename": "这世界既残酷也温柔",
-      "path": "6.BookNotes/Weread/个人成长/这世界既残酷也温柔.md"
-    },
-    {
-      "basename": "因子投资：方法与实践",
-      "path": "6.BookNotes/Weread/经济理财/因子投资：方法与实践.md"
-    },
-    {
-      "basename": "雅思口语高级课程讲义-亚夏尔",
-      "path": "1.English/雅思口语高级课程讲义-亚夏尔.pdf"
-    },
-    {
-      "basename": "toy-model-zh",
-      "path": "3.Agent/toy-model-zh.md"
-    },
-    {
-      "basename": "monosemantic-features-zh",
-      "path": "3.Agent/monosemantic-features-zh.md"
-    },
-    {
-      "basename": "figure_025",
-      "path": "3.Agent/images_toy/figure_025.png"
-    },
-    {
-      "basename": "figure_024",
-      "path": "3.Agent/images_toy/figure_024.png"
-    },
-    {
-      "basename": "figure_023",
-      "path": "3.Agent/images_toy/figure_023.png"
-    },
-    {
-      "basename": "figure_022",
-      "path": "3.Agent/images_toy/figure_022.png"
-    },
-    {
-      "basename": "figure_021",
-      "path": "3.Agent/images_toy/figure_021.png"
-    },
-    {
-      "basename": "figure_020",
-      "path": "3.Agent/images_toy/figure_020.png"
-    },
-    {
-      "basename": "figure_019",
-      "path": "3.Agent/images_toy/figure_019.png"
-    },
-    {
-      "basename": "figure_018",
-      "path": "3.Agent/images_toy/figure_018.png"
-    },
-    {
-      "basename": "figure_017",
-      "path": "3.Agent/images_toy/figure_017.png"
-    },
-    {
-      "basename": "figure_016",
-      "path": "3.Agent/images_toy/figure_016.png"
-    },
-    {
-      "basename": "figure_015",
-      "path": "3.Agent/images_toy/figure_015.png"
+      "basename": "PandAI 知识库",
+      "path": "Clippings/PandAI 知识库.md"
     }
   ],
   "omittedPaths": [],
