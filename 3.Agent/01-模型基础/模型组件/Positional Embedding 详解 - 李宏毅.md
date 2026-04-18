@@ -44,12 +44,7 @@ Transformer 的输入处理流程：
 
 为每个位置设计一个特殊的 Embedding，加到 Token Embedding 上：
 
-```
-位置 0: P0
-位置 1: P1
-位置 2: P2
-...
-```
+$$\text{位置 } 0: \mathbf{P}_0, \quad \text{位置 } 1: \mathbf{P}_1, \quad \text{位置 } 2: \mathbf{P}_2, \ldots$$
 
 **效果：**
 - ABCD: A+P0, B+P1, C+P2, D+P3
@@ -62,17 +57,16 @@ Transformer 的输入处理流程：
 
 **公式：**
 
-对于位置 k 的 Positional Embedding 的第 i 个维度：
+对于位置 $k$ 的 Positional Embedding 的第 $i$ 个维度：
 
-```
-PE(k, 2i)   = sin(k / 10000^(2i/d))
-PE(k, 2i+1) = cos(k / 10000^(2i/d))
-```
+$$\text{PE}(k, 2i) = \sin\left(\frac{k}{10000^{2i/d}}\right)$$
+
+$$\text{PE}(k, 2i+1) = \cos\left(\frac{k}{10000^{2i/d}}\right)$$
 
 其中：
-- d = Embedding 维度（如 128, 256）
-- i = 0, 1, 2, ..., d/2-1
-- k = 位置编号
+- $d$ = Embedding 维度（如 128, 256）
+- $i = 0, 1, 2, \ldots, d/2-1$
+- $k$ = 位置编号
 
 ### 2.3 Sinusoidal 的可视化理解
 
@@ -96,34 +90,25 @@ PE(k, 2i+1) = cos(k / 10000^(2i/d))
 
 **核心性质：相对位置可计算**
 
-```
-P(k+r) = M_r × P(k)
-```
+$$\mathbf{P}(k+r) = \mathbf{M}_r \times \mathbf{P}(k)$$
 
-M_r 只与相对距离 r 有关，与绝对位置 k 无关。
+<span style="color:rgb(255, 77, 77)"><b>$\mathbf{M}_r$ 只与相对距离 $r$ 有关，与绝对位置 $k$ 无关。</b></span>
 
 **数学推导（使用三角函数合角公式）：**
 
-```
-sin(A+B) = sinA·cosB + cosA·sinB
-cos(A+B) = cosA·cosB - sinA·sinB
-```
+$$\sin(A+B) = \sin A \cdot \cos B + \cos A \cdot \sin B$$
+
+$$\cos(A+B) = \cos A \cdot \cos B - \sin A \cdot \sin B$$
 
 因此：
-```
-P(k+r) = [sin((k+r)/Z), cos((k+r)/Z)]
-         = [sin(k/Z)cos(r/Z) + cos(k/Z)sin(r/Z),
-            cos(k/Z)cos(r/Z) - sin(k/Z)sin(r/Z)]
-         = Rotation_Matrix(r) × P(k)
-```
+
+$$\mathbf{P}(k+r) = \begin{bmatrix} \sin\frac{k+r}{Z} \\ \cos\frac{k+r}{Z} \end{bmatrix} = \begin{bmatrix} \sin\frac{k}{Z}\cos\frac{r}{Z} + \cos\frac{k}{Z}\sin\frac{r}{Z} \\ \cos\frac{k}{Z}\cos\frac{r}{Z} - \sin\frac{k}{Z}\sin\frac{r}{Z} \end{bmatrix} = \mathbf{R}(r) \cdot \mathbf{P}(k)$$
 
 **对 Attention 的影响：**
 
 Attention 计算可以分解为：
-```
-A = (XB+PN)^T · WQ^T · WK · (XA+PM)
-  = 内容项 + 位置-内容交叉项 + 位置项
-```
+
+$$A = (\mathbf{x}_B + \mathbf{P}_N)^T \mathbf{W}_Q^T \mathbf{W}_K (\mathbf{x}_A + \mathbf{P}_M) = \text{内容项} + \text{位置-内容交叉项} + \text{位置项}$$
 
 位置项通过 Sinusoidal 的性质，可以转化为只与相对位置有关的项。
 
@@ -138,12 +123,10 @@ A = (XB+PN)^T · WQ^T · WK · (XA+PM)
 **核心思想：**
 > 直接在 Attention Score 上减去一个与距离成正比的偏置
 
-```
-A = Q·K^T - B × |m - n|
-```
+$$A = \mathbf{Q} \cdot \mathbf{K}^T - B \times |m - n|$$
 
-- B：手动设置的常数（如 0.5, 1）
-- |m-n|：两个位置的相对距离
+- $B$：手动设置的常数（如 0.5, 1）
+- $|m-n|$：两个位置的相对距离
 - 效果：距离越远，Attention 越小
 
 **特点：**
@@ -160,9 +143,7 @@ A = Q·K^T - B × |m - n|
 
 **2019年**
 
-```
-A = Q·K^T - Bias(|m-n|)
-```
+$$A = \mathbf{Q} \cdot \mathbf{K}^T - \text{Bias}(|m-n|)$$
 
 - Bias 是通过训练学习得到的
 - 将距离分段（0-5, 5-10, 10-20, >20...）
@@ -180,34 +161,29 @@ A = Q·K^T - Bias(|m-n|)
 
 在 Q 和 K 做 dot product **之前**，先把位置信息通过**旋转**加到 Q 和 K 上：
 
-```
-Q^N = RoPE(Q, N)  # 在位置 N 的 Query
-K^M = RoPE(K, M)  # 在位置 M 的 Key
-A = Q^N · K^M
-```
+$$\mathbf{Q}^N = \text{RoPE}(\mathbf{Q}, N), \quad \mathbf{K}^M = \text{RoPE}(\mathbf{K}, M)$$
+
+$$A = \mathbf{Q}^N \cdot \mathbf{K}^M$$
 
 ### 4.2 具体实现
 
 **每两个维度一组，进行旋转：**
 
-对于第 (2i, 2i+1) 维：
-```
-[x_{2i}  ]   [cos(N·θ_i)  -sin(N·θ_i)]   [x_{2i}  ]
-[x_{2i+1}] = [sin(N·θ_i)   cos(N·θ_i)] × [x_{2i+1}]
-```
+对于第 $(2i, 2i+1)$ 维：
 
-**旋转角度 θ_i 的设置（与 Sinusoidal 类似）：**
-```
-θ_i = 1 / 10000^(2i/d)
-```
+$$\begin{bmatrix} x_{2i}' \\ x_{2i+1}' \end{bmatrix} = \begin{bmatrix} \cos(N \cdot \theta_i) & -\sin(N \cdot \theta_i) \\ \sin(N \cdot \theta_i) & \cos(N \cdot \theta_i) \end{bmatrix} \begin{bmatrix} x_{2i} \\ x_{2i+1} \end{bmatrix}$$
+
+**旋转角度 $\theta_i$ 的设置（与 Sinusoidal 类似）：**
+
+$$\theta_i = \frac{1}{10000^{2i/d}}$$
 
 ### 4.3 RoPE 的关键性质
 
 **性质1：相对位置等价性**
-```
-Q^N · K^M = Q · R(M-N) · K
-```
-其中 R(M-N) 是只与相对距离有关的旋转矩阵。
+
+$$\mathbf{Q}^N \cdot \mathbf{K}^M = \mathbf{Q} \cdot \mathbf{R}(M-N) \cdot \mathbf{K}$$
+
+其中 $\mathbf{R}(M-N)$ 是只与相对距离有关的旋转矩阵。
 
 **性质2：与 Flash Attention、KV Cache 兼容**
 - 计算流程与标准 Attention 完全一致
@@ -279,9 +255,8 @@ Q^N · K^M = Q · R(M-N) · K
 - 低频维度（转得慢）：用 Position Interpolation（scale=1/L）
 
 **公式：**
-```
-scale(i) = L^(-2i/d)
-```
+
+$$\text{scale}(i) = L^{-2i/d}$$
 
 **效果：**
 - 不需要 fine-tune 也有不错效果
