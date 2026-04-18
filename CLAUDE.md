@@ -125,7 +125,7 @@ tags: [相关标签]
 #### 05-基础设施
 - Docker / Prometheus / Grafana
 
-> 完整清单见 [[8.Coding/_Index|8.Coding 索引]]
+> 完整清单见 [[7.Coding/_Index|8.Coding 索引]]
 
 ### 2.Math — 数学基础 (32 篇)
 - 01-线性代数: SVD / 特征值 / 傅里叶变换 / 行列式

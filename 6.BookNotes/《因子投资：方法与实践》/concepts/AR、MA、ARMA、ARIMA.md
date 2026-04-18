@@ -119,7 +119,7 @@ Owner:
 
 - **原理**：通过观察 ACF 和 PACF 图来初步判断 $p$ 和 $q$。
 
-![[image 12.png]]
+![[5.Finance/imgs/image 12.png]]
 
 **情况 A：PACF 截尾 **$→$** 选 AR(p)**
 
@@ -141,7 +141,7 @@ Owner:
 
 ### **第三步：参数选择 (Model Selection)**
 
-![[image 13.png]]
+![[5.Finance/imgs/image 13.png]]
 
 - **准则**：为了防止过拟合，我们追求 “模型越简单越好，误差越小越好”。
 - **指标**：**AIC** (Akaike Information Criterion) 或 **BIC**。值越小，模型越优。
@@ -149,7 +149,7 @@ Owner:
 
 ### **第四步：残差检验 (Residual Diagnosis)**
 
-![[image 14.png]]
+![[5.Finance/imgs/image 14.png]]
 
 - **看模型留下的 “垃圾” 是不是纯粹的随机噪音；****如果垃圾里还有规律（不正态）****，就说明模型还没修好。**
 - **操作**：检查残差的 ACF 图，如果所有滞后项都在置信区间内，说明模型合格。
@@ -163,7 +163,7 @@ Owner:
     - 如果残差不符合正态分布（比如歪了、或者有极端值），说明你的模型**还没学透**，数据里还藏着一些有用的规律（比如非线性特征或异常点）被你当成垃圾给扔了。
 - **如何检验？（三个判官)**
     - **直方图 (Histogram)**
-![[image 15.png]]
+![[5.Finance/imgs/image 15.png]]
         - **理想状态：**像个对称的铃铛（中间高，两边低）。
     - **Q-Q 图 (Quantile-Quantile Plot) **
 ![[image 16.png]]
