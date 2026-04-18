@@ -196,7 +196,7 @@
 
 > 完整清单见 [[9.WorkOut/index|9.WorkOut 索引]]
 
-- [[9.WorkOut/Daily Routine]] — 日常训练
+- [[Daily Routine]] — 日常训练
 - [[身强体壮的10个秘诀]] — 健身要点
 
 ---
