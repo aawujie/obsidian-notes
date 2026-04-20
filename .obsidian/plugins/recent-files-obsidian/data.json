@@ -1,8 +1,84 @@
 {
   "recentFiles": [
     {
-      "basename": "PandasAI 调研报告",
-      "path": "8.Projects/PandasAI 调研报告.md"
+      "basename": "孙宇晨谈财富自由：从精神自由到人生战略与投资选择",
+      "path": "5.Finance/孙宇晨谈财富自由：从精神自由到人生战略与投资选择.md"
+    },
+    {
+      "basename": "如何快速积累第一个100K：GROWTH增长法指南",
+      "path": "5.Finance/如何快速积累第一个100K：GROWTH增长法指南.md"
+    },
+    {
+      "basename": "耶鲁经济学252金融市场课程导言",
+      "path": "5.Finance/耶鲁经济学252金融市场课程导言.md"
+    },
+    {
+      "basename": "因子数值中性化",
+      "path": "5.Finance/因子数值中性化.md"
+    },
+    {
+      "basename": "有效市场假说 - EMH 详解",
+      "path": "5.Finance/有效市场假说 - EMH 详解.md"
+    },
+    {
+      "basename": "最大最小分位数",
+      "path": "5.Finance/最大最小分位数.md"
+    },
+    {
+      "basename": "AIG（美国国际集团）",
+      "path": "5.Finance/AIG（美国国际集团）.md"
+    },
+    {
+      "basename": "Behavioral Finance",
+      "path": "5.Finance/Behavioral Finance.md"
+    },
+    {
+      "basename": "CAPM - Capital Asset Pricing Model",
+      "path": "5.Finance/CAPM - Capital Asset Pricing Model.md"
+    },
+    {
+      "basename": "Econometrics & Statistics Abbr",
+      "path": "5.Finance/Econometrics & Statistics Abbr.md"
+    },
+    {
+      "basename": "Econometrics",
+      "path": "5.Finance/Econometrics.md"
+    },
+    {
+      "basename": "Fama-MacBeth 回归",
+      "path": "5.Finance/Fama-MacBeth 回归.md"
+    },
+    {
+      "basename": "ETF 速成笔记",
+      "path": "5.Finance/ETF 速成笔记.md"
+    },
+    {
+      "basename": "GPlean 因子清洗神器",
+      "path": "5.Finance/GPlean 因子清洗神器.md"
+    },
+    {
+      "basename": "index",
+      "path": "5.Finance/index.md"
+    },
+    {
+      "basename": "MM 定理 - Modigliani_Miller Theorem",
+      "path": "5.Finance/MM 定理 - Modigliani_Miller Theorem.md"
+    },
+    {
+      "basename": "Nisha Shaw的理财与人生决策实用框架全解析",
+      "path": "5.Finance/Nisha Shaw的理财与人生决策实用框架全解析.md"
+    },
+    {
+      "basename": "xVA-Value Adjustment",
+      "path": "5.Finance/xVA-Value Adjustment.md"
+    },
+    {
+      "basename": "《因子投资：方法与实践》",
+      "path": "5.Finance/《因子投资：方法与实践》.md"
+    },
+    {
+      "basename": "二维三维随机游走返回性差异的马尔可夫链解释",
+      "path": "5.Finance/03-计量经济学/二维三维随机游走返回性差异的马尔可夫链解释.md"
     },
     {
       "basename": "20260417",
@@ -119,46 +195,6 @@
     {
       "basename": "《2049，未来一万天》访谈：科技未来展望与应对策略",
       "path": "9.AI Summary/写作与自媒体/imgs/《2049，未来一万天》访谈：科技未来展望与应对策略.jpeg"
-    },
-    {
-      "basename": "《因子投资：方法与实践》",
-      "path": "5.Finance/《因子投资：方法与实践》.md"
-    },
-    {
-      "basename": "AIG（美国国际集团）",
-      "path": "5.Finance/AIG（美国国际集团）.md"
-    },
-    {
-      "basename": "Behavioral Finance",
-      "path": "5.Finance/Behavioral Finance.md"
-    },
-    {
-      "basename": "BetaPlus_Behavioral_Finance",
-      "path": "5.Finance/BetaPlus_Behavioral_Finance.pdf"
-    },
-    {
-      "basename": "Bootstrapping  自举法",
-      "path": "5.Finance/03-计量经济学/Bootstrapping  自举法.md"
-    },
-    {
-      "basename": "Diagonal与Triangle波形的区别与识别",
-      "path": "5.Finance/01-交易与策略/Diagonal与Triangle波形的区别与识别.md"
-    },
-    {
-      "basename": "ABCD",
-      "path": "5.Finance/01-交易与策略/ABCD.md"
-    },
-    {
-      "basename": "18万美金短线交易系统：胜率、风控与实盘案例",
-      "path": "5.Finance/01-交易与策略/18万美金短线交易系统：胜率、风控与实盘案例.md"
-    },
-    {
-      "basename": "CLAUDE",
-      "path": "CLAUDE.md"
-    },
-    {
-      "basename": "PandAI 知识库",
-      "path": "Clippings/PandAI 知识库.md"
     }
   ],
   "omittedPaths": [],
