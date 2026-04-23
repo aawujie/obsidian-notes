@@ -54,7 +54,252 @@
 
 ## 二、分层架构逆向分析
 
-### 2.1 六层架构
+### 2.1 六层架构总览图
+
+```mermaid
+graph TB
+    subgraph L6["Layer 6: 入口层"]
+        SE["SimulatorEntry"]
+        PySim["PySimulator<br/>(pybind11)"]
+        GUI["SimChassisWrapper<br/>(Qt GUI)"]
+    end
+
+    subgraph L5["Layer 5: 车型模拟器层"]
+        BVS["BaseVehicleSimulator"]
+        GWM["GwmVehicleSimulator"]
+        GL["GlVehicleSimulator"]
+        LP["LpVehicleSimulator"]
+        HS["HandshakeProcessor"]
+        WU["WakeUp<br/>(VIN/NM)"]
+        MB["ModelBridgeProcessor"]
+    end
+
+    subgraph L4["Layer 4: 通道管理层"]
+        BCM["BaseChannelManager"]
+        GCM["GwmChannelManager"]
+        GLCM["GlChannelManager"]
+    end
+
+    subgraph L3["Layer 3: 周期通道层 (核心)"]
+        PC["PeriodChannel"]
+        TS["TimerService"]
+        TXP["TxProcessor"]
+        RXP["RxProcessor"]
+        CMP["CanMessagePool"]
+        SC["StrategyChainImpl"]
+    end
+
+    subgraph L2["Layer 2: 抽象接口层"]
+        DI["DeviceInterface"]
+        DBC["DbcCoder"]
+        CSC["ChannelStrategyChain"]
+        BMP["BaseMessagePool"]
+        MD["MessageData"]
+        CF["CanFrame"]
+    end
+
+    subgraph L1["Layer 1: 硬件/OS层"]
+        CC["CanChannel<br/>(SocketCAN)"]
+        PCM["PcieCanManager<br/>(单例)"]
+        KD["zpcicanfd<br/>内核驱动"]
+        HW["ZLG PCIe<br/>CAN卡"]
+    end
+
+    SE --> BVS
+    PySim --> SE
+    GUI --> SE
+    BVS --> BCM
+    GWM --> BVS
+    GL --> BVS
+    LP --> BVS
+    BVS --> HS
+    BVS --> WU
+    BVS --> MB
+    BCM --> PC
+    GCM --> BCM
+    GLCM --> BCM
+    PC --> TS
+    PC --> TXP
+    PC --> RXP
+    PC --> CMP
+    PC --> SC
+    TXP --> DI
+    TXP --> DBC
+    TXP --> CSC
+    RXP --> DI
+    RXP --> DBC
+    CMP --> BMP
+    BMP --> MD
+    SC --> CSC
+    CC --> DI
+    CC --> CF
+    PCM --> CC
+    KD --> PCM
+    HW --> KD
+
+    style L3 fill:#e1f5fe,stroke:#0288d1
+    style L2 fill:#fff3e0,stroke:#f57c00
+    style L1 fill:#fce4ec,stroke:#c62828
+```
+
+### 2.2 TxProcessor 发送流水线
+
+```mermaid
+flowchart LR
+    A["TimerService<br/>定时触发"] --> B["Step 1: PreSend 策略<br/>Rolling Counter++<br/>Timestamp 更新"]
+    B --> C["Step 2: DBC 编码<br/>信号值 → 字节数组"]
+    C --> D["Step 3: PostSend 策略<br/>CRC8 计算<br/>SECOC / VIN"]
+    D --> E["Step 4: 设备发送<br/>DeviceInterface<br/>.SendFrame()"]
+    E --> F["SocketCAN<br/>write()"]
+    F --> G["CAN 总线"]
+
+    style A fill:#c8e6c9
+    style B fill:#fff9c4
+    style C fill:#bbdefb
+    style D fill:#fff9c4
+    style E fill:#ffccbc
+    style G fill:#ef9a9a
+```
+
+### 2.3 完整数据流图
+
+```mermaid
+flowchart TB
+    subgraph 上层接口
+        PY["Python / GUI / HIL Socket"]
+    end
+
+    subgraph 发送路径
+        SS["SetSignalValue()"]
+        MP_W["MessagePool<br/>(写入信号)"]
+        TIMER["TimerService<br/>(周期触发)"]
+        TX["TxProcessor"]
+        PRE["PreSend 策略链<br/>RC / Timestamp"]
+        ENC["DbcCoder.Encode()"]
+        POST["PostSend 策略链<br/>CRC8 / VIN"]
+        DEV_S["CanChannel.Send()"]
+    end
+
+    subgraph 接收路径
+        DEV_R["CanChannel.Receive()"]
+        RX["RxProcessor"]
+        DEC["DbcCoder.Decode()"]
+        MP_R["MessagePool<br/>(更新信号)"]
+    end
+
+    subgraph 动力学桥接
+        MBP["ModelBridge<br/>(20ms周期)"]
+        CMD["ControlCommand"]
+        EGO["DrEgoController<br/>(ROS Topic)"]
+        VEH["动力学模型"]
+    end
+
+    subgraph 物理层
+        CAN["CAN 总线<br/>(ZLG PCIe)"]
+        ECU["域控制器 ECU"]
+    end
+
+    PY --> SS
+    SS --> MP_W
+    TIMER --> TX
+    TX --> PRE
+    PRE --> ENC
+    ENC --> POST
+    POST --> DEV_S
+    DEV_S --> CAN
+
+    CAN --> DEV_R
+    DEV_R --> RX
+    RX --> DEC
+    DEC --> MP_R
+
+    MP_R --> MBP
+    MBP --> CMD
+    CMD --> EGO
+    EGO --> VEH
+
+    CAN <--> ECU
+
+    MP_W -.->|"信号池共享"| PRE
+    MP_W -.->|"信号池共享"| ENC
+
+    style CAN fill:#ef9a9a
+    style ECU fill:#ce93d8
+    style VEH fill:#a5d6a7
+```
+
+### 2.4 策略链处理流程
+
+```mermaid
+flowchart TB
+    subgraph PreSend["编码前策略 (操作信号值)"]
+        direction TB
+        RC["RollingCounterStrategy<br/>递增滚动计数器"]
+        BC["BlockCounterStrategy<br/>块计数器"]
+        TSP["TimestampStrategy<br/>时间戳更新"]
+    end
+
+    subgraph Encode["DBC 编码"]
+        direction TB
+        DBC_E["DbcCoder.EncodeMessage()<br/>信号值 → 字节数组"]
+    end
+
+    subgraph PostSend["编码后策略 (操作字节数组)"]
+        direction TB
+        CRC["Crc8BaseStrategy<br/>├── Crc8PayloadStrategy<br/>├── Crc8A10PayloadStrategy<br/>├── Crc8_9ByteStrategy<br/>└── Crc8_33ByteStrategy"]
+        VIN["GwmVinStrategy<br/>VIN码填充"]
+    end
+
+    RC --> BC --> TSP --> DBC_E
+    DBC_E --> CRC --> VIN
+
+    style PreSend fill:#fff9c4,stroke:#f9a825
+    style Encode fill:#bbdefb,stroke:#1565c0
+    style PostSend fill:#c8e6c9,stroke:#2e7d32
+```
+
+### 2.5 多车型工厂结构
+
+```mermaid
+graph LR
+    SE["SimulatorEntry<br/>.CreateSimulator()"]
+
+    SE -->|"优先级1"| GLF["GlSimulatorFactory"]
+    SE -->|"优先级2"| GWMF["GwmSimulatorFactory"]
+    SE -->|"优先级3"| LPF["LpSimulatorFactory"]
+
+    GLF --> P177["p177"]
+    GWMF --> DE09["de09"]
+    GWMF --> D19["D19"]
+    LPF --> A10["A10"]
+    LPF --> P03["p03"]
+
+    subgraph GL特性
+        GL_WU["NM 网络唤醒"]
+        GL_HS["P177 握手"]
+    end
+
+    subgraph GWM特性
+        GWM_VIN["VIN 码唤醒"]
+        GWM_HS["专用握手"]
+    end
+
+    subgraph LP特性
+        LP_HS["标准握手"]
+    end
+
+    P177 -.-> GL_WU
+    P177 -.-> GL_HS
+    DE09 -.-> GWM_VIN
+    DE09 -.-> GWM_HS
+    A10 -.-> LP_HS
+
+    style GLF fill:#e1bee7
+    style GWMF fill:#bbdefb
+    style LPF fill:#c8e6c9
+```
+
+### 2.6 六层架构（文本版）
 
 ```
 ┌─────────────────────────────────────────────────────┐
@@ -100,6 +345,45 @@
 ---
 
 ## 三、关键模块设计决策推演
+
+### 3.0 设计决策总览图
+
+```mermaid
+mindmap
+  root((Chassis 设计决策))
+    通信层
+      SocketCAN 而非 ZLG 私有 API
+        可移植性
+        标准工具链
+        多进程共享
+      非阻塞 Socket + poll
+        高频轮询兼容
+        避免线程阻塞
+    数据模型
+      CanFrame 构造后不可变
+        防止帧路由篡改
+        安全性优先
+      MessageData 读写锁
+        多读单写
+        信号级并发
+    架构模式
+      PcieCanManager 单例
+        全局唯一资源
+        shared_ptr 分发
+      策略链 Pre/Post 分离
+        信号级 vs 字节级
+        E2E 行业标准
+      工厂链 try-order
+        车型自动发现
+        优先级匹配
+    安全机制
+      锁文件互斥
+        防止总线冲突
+        远程紧急停车
+      共享内存日志
+        零延迟观测
+        环形缓冲区
+```
 
 ### 3.1 为什么用 SocketCAN 而非 ZLG 私有 API？
 
@@ -396,6 +680,48 @@ src/chassis/vehicle/<车型>/
 
 ## 七、Troubleshooting 问题排查手册
 
+### 排查决策树
+
+```mermaid
+flowchart TD
+    START["问题现象"] --> Q1{"CAN 通道<br/>能否打开?"}
+
+    Q1 -->|"不能"| A1["7.1 CAN 通道打不开"]
+    Q1 -->|"能"| Q2{"candump<br/>能看到报文?"}
+
+    Q2 -->|"看不到"| A2["7.2 发送报文但<br/>域控收不到"]
+    Q2 -->|"能看到"| Q3{"域控报<br/>E2E 错误?"}
+
+    Q3 -->|"是"| A3["7.3 RC / CRC<br/>校验失败"]
+    Q3 -->|"否"| Q4{"信号值<br/>是否生效?"}
+
+    Q4 -->|"不生效"| A5["7.5 信号值设置<br/>不生效"]
+    Q4 -->|"生效"| Q5{"动力学模型<br/>有响应?"}
+
+    Q5 -->|"无响应"| A6["7.6 control_command<br/>丢失"]
+    Q5 -->|"有响应但抖"| A9["7.9 发送周期<br/>抖动"]
+
+    START --> Q6{"启动时报<br/>锁冲突?"}
+    Q6 -->|"是"| A4["7.4 模拟器<br/>锁冲突"]
+
+    START --> Q7{"驱动编译<br/>失败?"}
+    Q7 -->|"是"| A7["7.7 内核驱动<br/>编译失败"]
+
+    START --> Q8{"CANFD 帧<br/>格式异常?"}
+    Q8 -->|"是"| A8["7.8 CANFD<br/>模式问题"]
+
+    style START fill:#ffcdd2
+    style A1 fill:#fff9c4
+    style A2 fill:#fff9c4
+    style A3 fill:#fff9c4
+    style A4 fill:#fff9c4
+    style A5 fill:#fff9c4
+    style A6 fill:#fff9c4
+    style A7 fill:#fff9c4
+    style A8 fill:#fff9c4
+    style A9 fill:#fff9c4
+```
+
 ### 7.1 CAN 通道打不开
 
 **症状**：日志出现 `创建socket失败` 或 `获取接口索引失败`
@@ -659,7 +985,129 @@ cansniffer can0 -t a  # 显示绝对时间戳
 
 ---
 
-## 附录：关键文件速查表
+## 附录A：核心类关系图
+
+```mermaid
+classDiagram
+    class DeviceInterface {
+        <<interface>>
+        +SendFrame(message_id, data) bool
+        +ReceiveAllFrames(max_frames) vector
+        +GetDeviceType() string
+    }
+
+    class DbcCoder {
+        <<interface>>
+        +EncodeMessage(name, signals, data) bool
+        +DecodeMessage(name, data, signals) bool
+    }
+
+    class ChannelStrategyChain {
+        <<interface>>
+        +ExecutePreSendStrategies() bool
+        +ExecutePostSendStrategies() bool
+    }
+
+    class CanChannel {
+        -socket_fd_ : int
+        -interface_name_ : string
+        -send_mutex_ : mutex
+        -receive_mutex_ : mutex
+        +Open(config) bool
+        +Close() bool
+        +SendCanFrame(frame) CanError
+        +ReceiveAllCanFrames() vector
+        +EnableShmLogger()
+    }
+
+    class CanFrame {
+        -id_ : uint32_t
+        -dlc_ : uint8_t
+        -is_canfd_ : bool
+        -data_ : vector~uint8_t~
+        +FromSocketCan(frame)$ CanFrame
+        +ToSocketCan() canfd_frame
+        +SetData(data) bool
+        +IsValid() bool
+    }
+
+    class PcieCanManager {
+        -channels_ : map
+        -initialized_ : bool
+        +GetInstance()$ PcieCanManager
+        +Initialize(channels) bool
+        +GetChannel(id) shared_ptr
+        +DetectAvailableChannels()$ vector
+    }
+
+    class MessageData {
+        -message_id_ : uint32_t
+        -signals_ : map
+        -secoc_enabled_ : atomic~bool~
+        -rolling_counter_ : map
+        -checksum_ : map
+        +SetSignalValue(name, value) bool
+        +GetSignalValue(name, value) bool
+    }
+
+    class CanMessagePool {
+        -messages_ : map
+        -signal_to_message_id_ : map
+        +InitializeFromJson(config) bool
+        +SetSignalValue(signal, value) bool
+        +FindMessageBySignal(signal) MessageId
+    }
+
+    class TxProcessor {
+        -message_pool_ : shared_ptr
+        -strategy_chain_ : shared_ptr
+        -dbc_coder_ : shared_ptr
+        -device_interface_ : shared_ptr
+        +ProcessMessage(id, source) TxResult
+    }
+
+    class PeriodChannel {
+        -timer_service_ : shared_ptr
+        -tx_processor_ : shared_ptr
+        -rx_processor_ : shared_ptr
+        -message_pool_ : shared_ptr
+        +Initialize(config, device, dbc) bool
+        +Start() bool
+        +Stop()
+    }
+
+    class Strategy {
+        <<abstract>>
+        +Initialize(config, channel) bool
+        +NeedProcess(message_id) bool
+    }
+
+    class PreSendStrategy {
+        <<abstract>>
+        +Execute(id, pool, source) bool
+    }
+
+    class PostSendStrategy {
+        <<abstract>>
+        +Execute(id, data, pool, source) bool
+    }
+
+    DeviceInterface <|.. CanChannel
+    ChannelStrategyChain <|.. StrategyChainImpl
+    BaseMessagePool <|-- CanMessagePool
+    CanMessagePool *-- MessageData
+    Strategy <|-- PreSendStrategy
+    Strategy <|-- PostSendStrategy
+    PcieCanManager o-- CanChannel
+    CanChannel ..> CanFrame
+    TxProcessor --> DeviceInterface
+    TxProcessor --> DbcCoder
+    TxProcessor --> ChannelStrategyChain
+    PeriodChannel *-- TxProcessor
+    PeriodChannel *-- CanMessagePool
+```
+
+## 附录B：关键文件速查表
 
 | 功能 | 文件路径 |
 |------|----------|
