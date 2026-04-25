@@ -20,8 +20,11 @@
 .obsidian/graph.json
 .obsidian/appearance.json
 
-# 插件缓存（最近文件列表，每次打开自动更新）
+# 插件缓存（每台机器各自维护，同步只会制造冲突）
 .obsidian/plugins/recent-files-obsidian/data.json
+.obsidian/plugins/obsidian-reminder-plugin/data.json
+.obsidian/plugins/obsidian-weread-plugin/data.json
+.obsidian/plugins/obsidian-git/data.json
 
 ############################
 # 系统垃圾
