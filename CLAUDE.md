@@ -30,22 +30,22 @@
 
 现有目录在 llm-wiki 模式中的角色:
 
-| 现有目录 | llm-wiki 角色 | Agent 权限 |
-|----------|-------------|-----------|
-| `3.Agent/` | wiki/concepts (AI/LLM) | 可读可写 |
-| `8.Coding/` | wiki/concepts (编程) | 可读可写 |
-| `2.Math/` | wiki/concepts (数学) | 可读可写 |
-| `4.Robot/` | wiki/concepts (机器人) | 可读可写 |
-| `5.Finance/` | wiki/concepts (金融) | 可读可写 |
-| `7.AI Summary/` | wiki/concepts + summaries | 可读可写 |
-| `9.WorkOut/` | wiki/concepts (健身) | 可读可写 |
-| `6.BookNotes/《书名》/` | wiki/summaries (书籍摘要) | 可读可写 |
-| `6.BookNotes/Weread/` | raw/papers (微信读书剪藏) | **只读，Agent 不可写** |
-| `Clippings/` | raw/articles (网页剪藏) | **只读，Agent 不可写** |
-| `Chaos/` | raw/notes (未归类草稿) | **只读，Agent 不可写** |
-| `audit/` | audit (人类反馈) | 可写 (audit op) |
-| `log/` | log (操作日志) | 可写 (每次操作追加) |
-| `outputs/queries/` | outputs (查询答案) | 可写 (query op) |
+| 现有目录                  | llm-wiki 角色               | Agent 权限         |
+| --------------------- | ------------------------- | ---------------- |
+| `3.Agent/`            | wiki/concepts (AI/LLM)    | 可读可写             |
+| `8.Coding/`           | wiki/concepts (编程)        | 可读可写             |
+| `2.Math/`             | wiki/concepts (数学)        | 可读可写             |
+| `4.Robot/`            | wiki/concepts (机器人)       | 可读可写             |
+| `5.Finance/`          | wiki/concepts (金融)        | 可读可写             |
+| `7.AI Summary/`       | wiki/concepts + summaries | 可读可写             |
+| `9.WorkOut/`          | wiki/concepts (健身)        | 可读可写             |
+| `6.BookNotes/《书名》/`   | wiki/summaries (书籍摘要)     | 可读可写             |
+| `6.BookNotes/Weread/` | raw/papers (微信读书剪藏)       | **只读，Agent 不可写** |
+| `Clippings/`          | raw/articles (网页剪藏)       | **只读，Agent 不可写** |
+| `Chaos/`              | raw/notes (未归类草稿)         | **只读，Agent 不可写** |
+| `audit/`              | audit (人类反馈)              | 可写 (audit op)    |
+| `log/`                | log (操作日志)                | 可写 (每次操作追加)      |
+| `outputs/queries/`    | outputs (查询答案)            | 可写 (query op)    |
 
 **关键规则**: `Clippings/`, `6.BookNotes/Weread/`, `Chaos/` 是 raw 区——Agent 只能读取引用，绝不能修改或覆盖其中的文件。
 

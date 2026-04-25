@@ -1,569 +1,6 @@
 {
   "scanned": true,
   "reminders": {
-    "0.DailyTask/plan/深度强化学习 - 系统学习路线图.md": [
-      {
-        "title": "#task 理解 MDP 基本概念（状态、动作、奖励、状态转移） ⏫",
-        "time": "2026-02-28",
-        "rowNumber": 239
-      },
-      {
-        "title": "#task 掌握贝尔曼方程的推导与应用 ⏫",
-        "time": "2026-02-28",
-        "rowNumber": 240
-      },
-      {
-        "title": "#task 实现 Q-Learning 算法（Python + NumPy） ⏫",
-        "time": "2026-03-07",
-        "rowNumber": 241
-      },
-      {
-        "title": "#task 实现 SARSA 算法并与 Q-Learning 对比 ⏫",
-        "time": "2026-03-07",
-        "rowNumber": 242
-      },
-      {
-        "title": "#task 完成 OpenAI Gym 的 FrozenLake 环境测试 🔼",
-        "time": "2026-03-07",
-        "rowNumber": 243
-      },
-      {
-        "title": "#task 理解异策略 (Off-policy) vs 同策略 (On-policy) 的区别 ⏫",
-        "time": "2026-03-07",
-        "rowNumber": 244
-      },
-      {
-        "title": "#task 复习神经网络基础（前向传播、反向传播、梯度下降） ⏫",
-        "time": "2026-03-14",
-        "rowNumber": 248
-      },
-      {
-        "title": "#task 理解 DQN 的核心思想（用神经网络近似 Q 函数） ⏫",
-        "time": "2026-03-14",
-        "rowNumber": 249
-      },
-      {
-        "title": "#task 掌握经验回放 (Experience Replay) 的原理与实现 ⏫",
-        "time": "2026-03-21",
-        "rowNumber": 250
-      },
-      {
-        "title": "#task 掌握目标网络 (Target Network) 的原理与实现 ⏫",
-        "time": "2026-03-21",
-        "rowNumber": 251
-      },
-      {
-        "title": "#task 实现基础 DQN 算法（PyTorch/TensorFlow） ⏫",
-        "time": "2026-03-28",
-        "rowNumber": 252
-      },
-      {
-        "title": "#task 实现 Double DQN 并理解其解决高估问题的原理 🔼",
-        "time": "2026-03-28",
-        "rowNumber": 253
-      },
-      {
-        "title": "#task 实现 Dueling DQN 网络结构 🔼",
-        "time": "2026-03-28",
-        "rowNumber": 254
-      },
-      {
-        "title": "#task 完成 OpenAI Gym 的 CartPole 环境测试 ⏫",
-        "time": "2026-03-28",
-        "rowNumber": 255
-      },
-      {
-        "title": "#task 理解自举 (Bootstrapping) 带来的偏差及缓解方法 🔼",
-        "time": "2026-03-28",
-        "rowNumber": 256
-      },
-      {
-        "title": "#task 理解策略梯度定理 (Policy Gradient Theorem) 的推导 ⏫",
-        "time": "2026-04-04",
-        "rowNumber": 260
-      },
-      {
-        "title": "#task 实现 REINFORCE 算法 ⏫",
-        "time": "2026-04-04",
-        "rowNumber": 261
-      },
-      {
-        "title": "#task 理解基线 (Baseline) 如何降低梯度估计的方差 ⏫",
-        "time": "2026-04-11",
-        "rowNumber": 262
-      },
-      {
-        "title": "#task 理解 Actor-Critic 架构（演员 + 评委） ⏫",
-        "time": "2026-04-11",
-        "rowNumber": 263
-      },
-      {
-        "title": "#task 实现 A2C (Advantage Actor-Critic) 算法 ⏫",
-        "time": "2026-04-18",
-        "rowNumber": 264
-      },
-      {
-        "title": "#task 理解 PPO 的置信域优化原理 ⏫",
-        "time": "2026-04-18",
-        "rowNumber": 265
-      },
-      {
-        "title": "#task 实现 PPO 算法并调参测试 ⏫",
-        "time": "2026-04-25",
-        "rowNumber": 266
-      },
-      {
-        "title": "#task 完成 OpenAI Gym 的 LunarLander 环境测试 🔼",
-        "time": "2026-04-25",
-        "rowNumber": 267
-      },
-      {
-        "title": "#task 对比 A2C vs PPO 的性能与稳定性 🔼",
-        "time": "2026-04-25",
-        "rowNumber": 268
-      },
-      {
-        "title": "#task 理解连续控制问题与离散控制的区别 ⏫",
-        "time": "2026-05-02",
-        "rowNumber": 272
-      },
-      {
-        "title": "#task 理解 DDPG 算法原理（确定策略梯度） ⏫",
-        "time": "2026-05-02",
-        "rowNumber": 273
-      },
-      {
-        "title": "#task 实现 DDPG 算法 🔼",
-        "time": "2026-05-09",
-        "rowNumber": 274
-      },
-      {
-        "title": "#task 理解 TD3 如何解决 DDPG 的高估问题 🔼",
-        "time": "2026-05-09",
-        "rowNumber": 275
-      },
-      {
-        "title": "#task 了解 SAC (Soft Actor-Critic) 的最大熵原理 🔽",
-        "time": "2026-05-09",
-        "rowNumber": 276
-      },
-      {
-        "title": "#task 完成 PyBullet/MuJoCo 的连续控制环境测试 🔼",
-        "time": "2026-05-16",
-        "rowNumber": 277
-      },
-      {
-        "title": "#task 了解不完全观测 (POMDP) 与 RNN 的结合 🔽",
-        "time": "2026-05-16",
-        "rowNumber": 278
-      },
-      {
-        "title": "#task 了解模仿学习（行为克隆、GAIL） 🔽",
-        "time": "2026-05-16",
-        "rowNumber": 279
-      },
-      {
-        "title": "#task 了解多智能体强化学习 (MARL) 与 MADDPG 🔽",
-        "time": "2026-05-21",
-        "rowNumber": 280
-      },
-      {
-        "title": "#task 【里程碑 1】完成表格 RL 阶段，能在 FrozenLake 上达到 0.8+ 成功率",
-        "time": "2026-03-07",
-        "rowNumber": 291
-      },
-      {
-        "title": "#task 【里程碑 2】完成 DQN 阶段，能在 CartPole 上达到 200+ 回合",
-        "time": "2026-03-28",
-        "rowNumber": 292
-      },
-      {
-        "title": "#task 【里程碑 3】完成 PPO 阶段，能在 LunarLander 上稳定着陆",
-        "time": "2026-04-25",
-        "rowNumber": 293
-      },
-      {
-        "title": "#task 【里程碑 4】完成 DDPG 阶段，能控制机械臂完成抓取任务",
-        "time": "2026-05-09",
-        "rowNumber": 294
-      },
-      {
-        "title": "#task 【最终里程碑】完成全部 4 个阶段，整理学习笔记和代码仓库",
-        "time": "2026-05-21",
-        "rowNumber": 295
-      }
-    ],
-    "0.DailyTask/plan/控制理论 - 系统学习路线图.md": [
-      {
-        "title": "#task 理解微分方程与动态系统建模 ⏫",
-        "time": "2026-02-28",
-        "rowNumber": 255
-      },
-      {
-        "title": "#task 掌握拉普拉斯变换与传递函数 ⏫",
-        "time": "2026-02-28",
-        "rowNumber": 256
-      },
-      {
-        "title": "#task 理解反馈闭环与稳定性分析 ⏫",
-        "time": "2026-03-07",
-        "rowNumber": 257
-      },
-      {
-        "title": "#task 掌握 PID 控制的物理意义与调参方法 ⏫",
-        "time": "2026-03-07",
-        "rowNumber": 258
-      },
-      {
-        "title": "#task 学习根轨迹法并绘制伯德图 ⏫",
-        "time": "2026-03-14",
-        "rowNumber": 259
-      },
-      {
-        "title": "#task 用 MATLAB/Octave 实现 PID 控制器仿真 🔼",
-        "time": "2026-03-14",
-        "rowNumber": 260
-      },
-      {
-        "title": "#task 完成一个简单系统的 PID 调参实验 🔼",
-        "time": "2026-03-14",
-        "rowNumber": 261
-      },
-      {
-        "title": "#task 掌握状态空间表达式及其解法 ⏫",
-        "time": "2026-03-21",
-        "rowNumber": 265
-      },
-      {
-        "title": "#task 理解能控性 (Controllability) 与能观测性 (Observability) ⏫",
-        "time": "2026-03-28",
-        "rowNumber": 266
-      },
-      {
-        "title": "#task 学习极点配置设计方法 ⏫",
-        "time": "2026-03-28",
-        "rowNumber": 267
-      },
-      {
-        "title": "#task 设计 Luenberger 观测器 ⏫",
-        "time": "2026-04-04",
-        "rowNumber": 268
-      },
-      {
-        "title": "#task 将传递函数转换为状态空间形式 🔼",
-        "time": "2026-04-04",
-        "rowNumber": 269
-      },
-      {
-        "title": "#task 实现状态反馈控制器 ⏫",
-        "time": "2026-04-11",
-        "rowNumber": 270
-      },
-      {
-        "title": "#task 对比经典控制与现代控制的设计方法 🔼",
-        "time": "2026-04-11",
-        "rowNumber": 271
-      },
-      {
-        "title": "#task 理解系统离散化方法（零阶保持、双线性变换） ⏫",
-        "time": "2026-04-18",
-        "rowNumber": 275
-      },
-      {
-        "title": "#task 掌握采样周期选择原则（Nyquist 定理） ⏫",
-        "time": "2026-04-18",
-        "rowNumber": 276
-      },
-      {
-        "title": "#task 将连续控制器离散化并测试 🔼",
-        "time": "2026-04-18",
-        "rowNumber": 277
-      },
-      {
-        "title": "#task 比较不同采样周期下的系统性能 🔼",
-        "time": "2026-04-18",
-        "rowNumber": 278
-      },
-      {
-        "title": "#task 理解代价函数 (Cost Function) 的设计 ⏫",
-        "time": "2026-04-25",
-        "rowNumber": 282
-      },
-      {
-        "title": "#task 掌握 LQR 原理与 Riccati 方程 ⏫",
-        "time": "2026-05-02",
-        "rowNumber": 283
-      },
-      {
-        "title": "#task 实现 LQR 控制器并调整 Q、R 矩阵 ⏫",
-        "time": "2026-05-09",
-        "rowNumber": 284
-      },
-      {
-        "title": "#task 了解 LQG 控制简介 🔼",
-        "time": "2026-05-09",
-        "rowNumber": 285
-      },
-      {
-        "title": "#task 对比 LQR vs 极点配置的性能 🔼",
-        "time": "2026-05-09",
-        "rowNumber": 286
-      },
-      {
-        "title": "#task 完成一个倒立摆的 LQR 控制实验 🔼",
-        "time": "2026-05-16",
-        "rowNumber": 287
-      },
-      {
-        "title": "#task 理解 MPC 滚动优化原理 ⏫",
-        "time": "2026-05-23",
-        "rowNumber": 291
-      },
-      {
-        "title": "#task 掌握约束条件处理方法 ⏫",
-        "time": "2026-05-23",
-        "rowNumber": 292
-      },
-      {
-        "title": "#task 实现简单的 MPC 控制器 🔼",
-        "time": "2026-05-30",
-        "rowNumber": 293
-      },
-      {
-        "title": "#task 理解卡尔曼滤波的预测 + 校正循环 ⏫",
-        "time": "2026-05-30",
-        "rowNumber": 294
-      },
-      {
-        "title": "#task 实现卡尔曼滤波进行状态估计 ⏫",
-        "time": "2026-06-06",
-        "rowNumber": 295
-      },
-      {
-        "title": "#task 了解扩展卡尔曼滤波 (EKF) 简介 🔽",
-        "time": "2026-06-06",
-        "rowNumber": 296
-      },
-      {
-        "title": "#task 在噪声环境下测试滤波器性能 🔼",
-        "time": "2026-06-13",
-        "rowNumber": 297
-      },
-      {
-        "title": "#task 【里程碑 1】完成 PID 控制器，能在仿真中稳定系统",
-        "time": "2026-03-14",
-        "rowNumber": 308
-      },
-      {
-        "title": "#task 【里程碑 2】完成状态空间控制器，实现极点配置",
-        "time": "2026-04-11",
-        "rowNumber": 309
-      },
-      {
-        "title": "#task 【里程碑 3】完成离散化，能在数字系统上运行",
-        "time": "2026-04-18",
-        "rowNumber": 310
-      },
-      {
-        "title": "#task 【里程碑 4】完成 LQR 控制器，性能优于 PID",
-        "time": "2026-05-16",
-        "rowNumber": 311
-      },
-      {
-        "title": "#task 【里程碑 5】完成 MPC 或卡尔曼滤波实现",
-        "time": "2026-06-06",
-        "rowNumber": 312
-      },
-      {
-        "title": "#task 【最终里程碑】完成全部 5 个阶段，整理笔记和代码仓库",
-        "time": "2026-06-21",
-        "rowNumber": 313
-      }
-    ],
-    "0.DailyTask/plan/强化学习四轮车训练.md": [
-      {
-        "title": "#task 新建项目搭建 gym 环境实现训练代码 ⏫",
-        "time": "2026-02-22",
-        "rowNumber": 9
-      }
-    ],
-    "0.DailyTask/plan/因子投资 - 系统学习路线图.md": [
-      {
-        "title": "#task 学习多元线性回归（OLS、WLS） ⏫",
-        "time": "2026-03-14",
-        "rowNumber": 374
-      },
-      {
-        "title": "#task 掌握因子正交化方法（Gram-Schmidt） ⏫",
-        "time": "2026-03-14",
-        "rowNumber": 375
-      },
-      {
-        "title": "#task 实现 Fama-MacBeth 回归 ⏫",
-        "time": "2026-03-21",
-        "rowNumber": 376
-      },
-      {
-        "title": "#task 用 Python 复现单因子回测（如规模因子） ⏫",
-        "time": "2026-03-21",
-        "rowNumber": 377
-      },
-      {
-        "title": "#task 计算累计收益、年化收益、夏普比率 🔼",
-        "time": "2026-03-21",
-        "rowNumber": 378
-      },
-      {
-        "title": "#task 复现市场因子（Market）并检验 ⏫",
-        "time": "2026-03-28",
-        "rowNumber": 382
-      },
-      {
-        "title": "#task 复现规模因子（SMB）并检验 ⏫",
-        "time": "2026-03-28",
-        "rowNumber": 383
-      },
-      {
-        "title": "#task 复现价值因子（HML）并检验 ⏫",
-        "time": "2026-04-04",
-        "rowNumber": 384
-      },
-      {
-        "title": "#task 复现盈利因子（RMW）并检验 🔼",
-        "time": "2026-04-04",
-        "rowNumber": 385
-      },
-      {
-        "title": "#task 复现投资因子（CMA）并检验 🔼",
-        "time": "2026-04-11",
-        "rowNumber": 386
-      },
-      {
-        "title": "#task 复现换手率因子并检验 🔼",
-        "time": "2026-04-11",
-        "rowNumber": 387
-      },
-      {
-        "title": "#task 比较 FF3 vs FF5 vs q-因子模型的解释力 ⏫",
-        "time": "2026-04-18",
-        "rowNumber": 388
-      },
-      {
-        "title": "#task 检验六大因子在 A 股的显著性 ⏫",
-        "time": "2026-04-18",
-        "rowNumber": 389
-      },
-      {
-        "title": "#task 分析 A 股因子的特殊性（壳价值、数据时滞） ⏫",
-        "time": "2026-04-25",
-        "rowNumber": 390
-      },
-      {
-        "title": "#task 研究预期差因子（分析师预期修正） 🔼",
-        "time": "2026-05-02",
-        "rowNumber": 394
-      },
-      {
-        "title": "#task 检验 A 股的反转效应（短期 vs 长期） ⏫",
-        "time": "2026-05-02",
-        "rowNumber": 395
-      },
-      {
-        "title": "#task 计算特质性波动率并检验预测能力 🔼",
-        "time": "2026-05-09",
-        "rowNumber": 396
-      },
-      {
-        "title": "#task 检验动量因子在 A 股的表现 🔼",
-        "time": "2026-05-09",
-        "rowNumber": 397
-      },
-      {
-        "title": "#task 理解\"因子动物园\"问题 🔼",
-        "time": "2026-05-16",
-        "rowNumber": 398
-      },
-      {
-        "title": "#task 学习多重假设检验校正方法（Bonferroni、BH） 🔼",
-        "time": "2026-05-16",
-        "rowNumber": 399
-      },
-      {
-        "title": "#task 使用 Bootstrap 方法检验数据挖掘偏误 🔼",
-        "time": "2026-05-16",
-        "rowNumber": 400
-      },
-      {
-        "title": "#task 学习 LASSO/Ridge 回归在因子选择中的应用 🔼",
-        "time": "2026-05-23",
-        "rowNumber": 404
-      },
-      {
-        "title": "#task 使用随机森林/梯度提升树预测股票收益 🔼",
-        "time": "2026-05-30",
-        "rowNumber": 405
-      },
-      {
-        "title": "#task 理解 Barra 结构化风险模型原理 ⏫",
-        "time": "2026-05-30",
-        "rowNumber": 406
-      },
-      {
-        "title": "#task 用 Barra CNE5 模型进行风险归因 🔼",
-        "time": "2026-06-06",
-        "rowNumber": 407
-      },
-      {
-        "title": "#task 设计一个 Smart Beta 策略 ⏫",
-        "time": "2026-06-13",
-        "rowNumber": 408
-      },
-      {
-        "title": "#task 考虑交易成本、换手率、容量分析 ⏫",
-        "time": "2026-06-13",
-        "rowNumber": 409
-      },
-      {
-        "title": "#task 完成最终回测报告并整理代码仓库 ⏫",
-        "time": "2026-06-20",
-        "rowNumber": 410
-      },
-      {
-        "title": "#task 撰写学习总结与心得 🔼",
-        "time": "2026-06-20",
-        "rowNumber": 411
-      },
-      {
-        "title": "#task 【里程碑 1】完成单因子回测框架搭建",
-        "time": "2026-03-21",
-        "rowNumber": 422
-      },
-      {
-        "title": "#task 【里程碑 2】完成六大主流因子的 A 股实证",
-        "time": "2026-04-25",
-        "rowNumber": 423
-      },
-      {
-        "title": "#task 【里程碑 3】完成异象因子检验与分析",
-        "time": "2026-05-16",
-        "rowNumber": 424
-      },
-      {
-        "title": "#task 【里程碑 4】完成机器学习因子预测模型",
-        "time": "2026-05-30",
-        "rowNumber": 425
-      },
-      {
-        "title": "#task 【里程碑 5】完成 Smart Beta 策略设计与回测",
-        "time": "2026-06-13",
-        "rowNumber": 426
-      },
-      {
-        "title": "#task 【最终里程碑】完成全部学习，整理笔记和代码仓库",
-        "time": "2026-06-20",
-        "rowNumber": 427
-      }
-    ],
     "0.DailyTask/plan/ML面试准备 - 系统学习路线图.md": [
       {
         "title": "#task 矩阵运算、SVD、特征值手推",
@@ -964,6 +401,569 @@
         "title": "#task 准备出发",
         "time": "2026-06-21",
         "rowNumber": 124
+      }
+    ],
+    "0.DailyTask/plan/因子投资 - 系统学习路线图.md": [
+      {
+        "title": "#task 学习多元线性回归（OLS、WLS） ⏫",
+        "time": "2026-03-14",
+        "rowNumber": 374
+      },
+      {
+        "title": "#task 掌握因子正交化方法（Gram-Schmidt） ⏫",
+        "time": "2026-03-14",
+        "rowNumber": 375
+      },
+      {
+        "title": "#task 实现 Fama-MacBeth 回归 ⏫",
+        "time": "2026-03-21",
+        "rowNumber": 376
+      },
+      {
+        "title": "#task 用 Python 复现单因子回测（如规模因子） ⏫",
+        "time": "2026-03-21",
+        "rowNumber": 377
+      },
+      {
+        "title": "#task 计算累计收益、年化收益、夏普比率 🔼",
+        "time": "2026-03-21",
+        "rowNumber": 378
+      },
+      {
+        "title": "#task 复现市场因子（Market）并检验 ⏫",
+        "time": "2026-03-28",
+        "rowNumber": 382
+      },
+      {
+        "title": "#task 复现规模因子（SMB）并检验 ⏫",
+        "time": "2026-03-28",
+        "rowNumber": 383
+      },
+      {
+        "title": "#task 复现价值因子（HML）并检验 ⏫",
+        "time": "2026-04-04",
+        "rowNumber": 384
+      },
+      {
+        "title": "#task 复现盈利因子（RMW）并检验 🔼",
+        "time": "2026-04-04",
+        "rowNumber": 385
+      },
+      {
+        "title": "#task 复现投资因子（CMA）并检验 🔼",
+        "time": "2026-04-11",
+        "rowNumber": 386
+      },
+      {
+        "title": "#task 复现换手率因子并检验 🔼",
+        "time": "2026-04-11",
+        "rowNumber": 387
+      },
+      {
+        "title": "#task 比较 FF3 vs FF5 vs q-因子模型的解释力 ⏫",
+        "time": "2026-04-18",
+        "rowNumber": 388
+      },
+      {
+        "title": "#task 检验六大因子在 A 股的显著性 ⏫",
+        "time": "2026-04-18",
+        "rowNumber": 389
+      },
+      {
+        "title": "#task 分析 A 股因子的特殊性（壳价值、数据时滞） ⏫",
+        "time": "2026-04-25",
+        "rowNumber": 390
+      },
+      {
+        "title": "#task 研究预期差因子（分析师预期修正） 🔼",
+        "time": "2026-05-02",
+        "rowNumber": 394
+      },
+      {
+        "title": "#task 检验 A 股的反转效应（短期 vs 长期） ⏫",
+        "time": "2026-05-02",
+        "rowNumber": 395
+      },
+      {
+        "title": "#task 计算特质性波动率并检验预测能力 🔼",
+        "time": "2026-05-09",
+        "rowNumber": 396
+      },
+      {
+        "title": "#task 检验动量因子在 A 股的表现 🔼",
+        "time": "2026-05-09",
+        "rowNumber": 397
+      },
+      {
+        "title": "#task 理解\"因子动物园\"问题 🔼",
+        "time": "2026-05-16",
+        "rowNumber": 398
+      },
+      {
+        "title": "#task 学习多重假设检验校正方法（Bonferroni、BH） 🔼",
+        "time": "2026-05-16",
+        "rowNumber": 399
+      },
+      {
+        "title": "#task 使用 Bootstrap 方法检验数据挖掘偏误 🔼",
+        "time": "2026-05-16",
+        "rowNumber": 400
+      },
+      {
+        "title": "#task 学习 LASSO/Ridge 回归在因子选择中的应用 🔼",
+        "time": "2026-05-23",
+        "rowNumber": 404
+      },
+      {
+        "title": "#task 使用随机森林/梯度提升树预测股票收益 🔼",
+        "time": "2026-05-30",
+        "rowNumber": 405
+      },
+      {
+        "title": "#task 理解 Barra 结构化风险模型原理 ⏫",
+        "time": "2026-05-30",
+        "rowNumber": 406
+      },
+      {
+        "title": "#task 用 Barra CNE5 模型进行风险归因 🔼",
+        "time": "2026-06-06",
+        "rowNumber": 407
+      },
+      {
+        "title": "#task 设计一个 Smart Beta 策略 ⏫",
+        "time": "2026-06-13",
+        "rowNumber": 408
+      },
+      {
+        "title": "#task 考虑交易成本、换手率、容量分析 ⏫",
+        "time": "2026-06-13",
+        "rowNumber": 409
+      },
+      {
+        "title": "#task 完成最终回测报告并整理代码仓库 ⏫",
+        "time": "2026-06-20",
+        "rowNumber": 410
+      },
+      {
+        "title": "#task 撰写学习总结与心得 🔼",
+        "time": "2026-06-20",
+        "rowNumber": 411
+      },
+      {
+        "title": "#task 【里程碑 1】完成单因子回测框架搭建",
+        "time": "2026-03-21",
+        "rowNumber": 422
+      },
+      {
+        "title": "#task 【里程碑 2】完成六大主流因子的 A 股实证",
+        "time": "2026-04-25",
+        "rowNumber": 423
+      },
+      {
+        "title": "#task 【里程碑 3】完成异象因子检验与分析",
+        "time": "2026-05-16",
+        "rowNumber": 424
+      },
+      {
+        "title": "#task 【里程碑 4】完成机器学习因子预测模型",
+        "time": "2026-05-30",
+        "rowNumber": 425
+      },
+      {
+        "title": "#task 【里程碑 5】完成 Smart Beta 策略设计与回测",
+        "time": "2026-06-13",
+        "rowNumber": 426
+      },
+      {
+        "title": "#task 【最终里程碑】完成全部学习，整理笔记和代码仓库",
+        "time": "2026-06-20",
+        "rowNumber": 427
+      }
+    ],
+    "0.DailyTask/plan/深度强化学习 - 系统学习路线图.md": [
+      {
+        "title": "#task 理解 MDP 基本概念（状态、动作、奖励、状态转移） ⏫",
+        "time": "2026-02-28",
+        "rowNumber": 239
+      },
+      {
+        "title": "#task 掌握贝尔曼方程的推导与应用 ⏫",
+        "time": "2026-02-28",
+        "rowNumber": 240
+      },
+      {
+        "title": "#task 实现 Q-Learning 算法（Python + NumPy） ⏫",
+        "time": "2026-03-07",
+        "rowNumber": 241
+      },
+      {
+        "title": "#task 实现 SARSA 算法并与 Q-Learning 对比 ⏫",
+        "time": "2026-03-07",
+        "rowNumber": 242
+      },
+      {
+        "title": "#task 完成 OpenAI Gym 的 FrozenLake 环境测试 🔼",
+        "time": "2026-03-07",
+        "rowNumber": 243
+      },
+      {
+        "title": "#task 理解异策略 (Off-policy) vs 同策略 (On-policy) 的区别 ⏫",
+        "time": "2026-03-07",
+        "rowNumber": 244
+      },
+      {
+        "title": "#task 复习神经网络基础（前向传播、反向传播、梯度下降） ⏫",
+        "time": "2026-03-14",
+        "rowNumber": 248
+      },
+      {
+        "title": "#task 理解 DQN 的核心思想（用神经网络近似 Q 函数） ⏫",
+        "time": "2026-03-14",
+        "rowNumber": 249
+      },
+      {
+        "title": "#task 掌握经验回放 (Experience Replay) 的原理与实现 ⏫",
+        "time": "2026-03-21",
+        "rowNumber": 250
+      },
+      {
+        "title": "#task 掌握目标网络 (Target Network) 的原理与实现 ⏫",
+        "time": "2026-03-21",
+        "rowNumber": 251
+      },
+      {
+        "title": "#task 实现基础 DQN 算法（PyTorch/TensorFlow） ⏫",
+        "time": "2026-03-28",
+        "rowNumber": 252
+      },
+      {
+        "title": "#task 实现 Double DQN 并理解其解决高估问题的原理 🔼",
+        "time": "2026-03-28",
+        "rowNumber": 253
+      },
+      {
+        "title": "#task 实现 Dueling DQN 网络结构 🔼",
+        "time": "2026-03-28",
+        "rowNumber": 254
+      },
+      {
+        "title": "#task 完成 OpenAI Gym 的 CartPole 环境测试 ⏫",
+        "time": "2026-03-28",
+        "rowNumber": 255
+      },
+      {
+        "title": "#task 理解自举 (Bootstrapping) 带来的偏差及缓解方法 🔼",
+        "time": "2026-03-28",
+        "rowNumber": 256
+      },
+      {
+        "title": "#task 理解策略梯度定理 (Policy Gradient Theorem) 的推导 ⏫",
+        "time": "2026-04-04",
+        "rowNumber": 260
+      },
+      {
+        "title": "#task 实现 REINFORCE 算法 ⏫",
+        "time": "2026-04-04",
+        "rowNumber": 261
+      },
+      {
+        "title": "#task 理解基线 (Baseline) 如何降低梯度估计的方差 ⏫",
+        "time": "2026-04-11",
+        "rowNumber": 262
+      },
+      {
+        "title": "#task 理解 Actor-Critic 架构（演员 + 评委） ⏫",
+        "time": "2026-04-11",
+        "rowNumber": 263
+      },
+      {
+        "title": "#task 实现 A2C (Advantage Actor-Critic) 算法 ⏫",
+        "time": "2026-04-18",
+        "rowNumber": 264
+      },
+      {
+        "title": "#task 理解 PPO 的置信域优化原理 ⏫",
+        "time": "2026-04-18",
+        "rowNumber": 265
+      },
+      {
+        "title": "#task 实现 PPO 算法并调参测试 ⏫",
+        "time": "2026-04-25",
+        "rowNumber": 266
+      },
+      {
+        "title": "#task 完成 OpenAI Gym 的 LunarLander 环境测试 🔼",
+        "time": "2026-04-25",
+        "rowNumber": 267
+      },
+      {
+        "title": "#task 对比 A2C vs PPO 的性能与稳定性 🔼",
+        "time": "2026-04-25",
+        "rowNumber": 268
+      },
+      {
+        "title": "#task 理解连续控制问题与离散控制的区别 ⏫",
+        "time": "2026-05-02",
+        "rowNumber": 272
+      },
+      {
+        "title": "#task 理解 DDPG 算法原理（确定策略梯度） ⏫",
+        "time": "2026-05-02",
+        "rowNumber": 273
+      },
+      {
+        "title": "#task 实现 DDPG 算法 🔼",
+        "time": "2026-05-09",
+        "rowNumber": 274
+      },
+      {
+        "title": "#task 理解 TD3 如何解决 DDPG 的高估问题 🔼",
+        "time": "2026-05-09",
+        "rowNumber": 275
+      },
+      {
+        "title": "#task 了解 SAC (Soft Actor-Critic) 的最大熵原理 🔽",
+        "time": "2026-05-09",
+        "rowNumber": 276
+      },
+      {
+        "title": "#task 完成 PyBullet/MuJoCo 的连续控制环境测试 🔼",
+        "time": "2026-05-16",
+        "rowNumber": 277
+      },
+      {
+        "title": "#task 了解不完全观测 (POMDP) 与 RNN 的结合 🔽",
+        "time": "2026-05-16",
+        "rowNumber": 278
+      },
+      {
+        "title": "#task 了解模仿学习（行为克隆、GAIL） 🔽",
+        "time": "2026-05-16",
+        "rowNumber": 279
+      },
+      {
+        "title": "#task 了解多智能体强化学习 (MARL) 与 MADDPG 🔽",
+        "time": "2026-05-21",
+        "rowNumber": 280
+      },
+      {
+        "title": "#task 【里程碑 1】完成表格 RL 阶段，能在 FrozenLake 上达到 0.8+ 成功率",
+        "time": "2026-03-07",
+        "rowNumber": 291
+      },
+      {
+        "title": "#task 【里程碑 2】完成 DQN 阶段，能在 CartPole 上达到 200+ 回合",
+        "time": "2026-03-28",
+        "rowNumber": 292
+      },
+      {
+        "title": "#task 【里程碑 3】完成 PPO 阶段，能在 LunarLander 上稳定着陆",
+        "time": "2026-04-25",
+        "rowNumber": 293
+      },
+      {
+        "title": "#task 【里程碑 4】完成 DDPG 阶段，能控制机械臂完成抓取任务",
+        "time": "2026-05-09",
+        "rowNumber": 294
+      },
+      {
+        "title": "#task 【最终里程碑】完成全部 4 个阶段，整理学习笔记和代码仓库",
+        "time": "2026-05-21",
+        "rowNumber": 295
+      }
+    ],
+    "0.DailyTask/plan/控制理论 - 系统学习路线图.md": [
+      {
+        "title": "#task 理解微分方程与动态系统建模 ⏫",
+        "time": "2026-02-28",
+        "rowNumber": 255
+      },
+      {
+        "title": "#task 掌握拉普拉斯变换与传递函数 ⏫",
+        "time": "2026-02-28",
+        "rowNumber": 256
+      },
+      {
+        "title": "#task 理解反馈闭环与稳定性分析 ⏫",
+        "time": "2026-03-07",
+        "rowNumber": 257
+      },
+      {
+        "title": "#task 掌握 PID 控制的物理意义与调参方法 ⏫",
+        "time": "2026-03-07",
+        "rowNumber": 258
+      },
+      {
+        "title": "#task 学习根轨迹法并绘制伯德图 ⏫",
+        "time": "2026-03-14",
+        "rowNumber": 259
+      },
+      {
+        "title": "#task 用 MATLAB/Octave 实现 PID 控制器仿真 🔼",
+        "time": "2026-03-14",
+        "rowNumber": 260
+      },
+      {
+        "title": "#task 完成一个简单系统的 PID 调参实验 🔼",
+        "time": "2026-03-14",
+        "rowNumber": 261
+      },
+      {
+        "title": "#task 掌握状态空间表达式及其解法 ⏫",
+        "time": "2026-03-21",
+        "rowNumber": 265
+      },
+      {
+        "title": "#task 理解能控性 (Controllability) 与能观测性 (Observability) ⏫",
+        "time": "2026-03-28",
+        "rowNumber": 266
+      },
+      {
+        "title": "#task 学习极点配置设计方法 ⏫",
+        "time": "2026-03-28",
+        "rowNumber": 267
+      },
+      {
+        "title": "#task 设计 Luenberger 观测器 ⏫",
+        "time": "2026-04-04",
+        "rowNumber": 268
+      },
+      {
+        "title": "#task 将传递函数转换为状态空间形式 🔼",
+        "time": "2026-04-04",
+        "rowNumber": 269
+      },
+      {
+        "title": "#task 实现状态反馈控制器 ⏫",
+        "time": "2026-04-11",
+        "rowNumber": 270
+      },
+      {
+        "title": "#task 对比经典控制与现代控制的设计方法 🔼",
+        "time": "2026-04-11",
+        "rowNumber": 271
+      },
+      {
+        "title": "#task 理解系统离散化方法（零阶保持、双线性变换） ⏫",
+        "time": "2026-04-18",
+        "rowNumber": 275
+      },
+      {
+        "title": "#task 掌握采样周期选择原则（Nyquist 定理） ⏫",
+        "time": "2026-04-18",
+        "rowNumber": 276
+      },
+      {
+        "title": "#task 将连续控制器离散化并测试 🔼",
+        "time": "2026-04-18",
+        "rowNumber": 277
+      },
+      {
+        "title": "#task 比较不同采样周期下的系统性能 🔼",
+        "time": "2026-04-18",
+        "rowNumber": 278
+      },
+      {
+        "title": "#task 理解代价函数 (Cost Function) 的设计 ⏫",
+        "time": "2026-04-25",
+        "rowNumber": 282
+      },
+      {
+        "title": "#task 掌握 LQR 原理与 Riccati 方程 ⏫",
+        "time": "2026-05-02",
+        "rowNumber": 283
+      },
+      {
+        "title": "#task 实现 LQR 控制器并调整 Q、R 矩阵 ⏫",
+        "time": "2026-05-09",
+        "rowNumber": 284
+      },
+      {
+        "title": "#task 了解 LQG 控制简介 🔼",
+        "time": "2026-05-09",
+        "rowNumber": 285
+      },
+      {
+        "title": "#task 对比 LQR vs 极点配置的性能 🔼",
+        "time": "2026-05-09",
+        "rowNumber": 286
+      },
+      {
+        "title": "#task 完成一个倒立摆的 LQR 控制实验 🔼",
+        "time": "2026-05-16",
+        "rowNumber": 287
+      },
+      {
+        "title": "#task 理解 MPC 滚动优化原理 ⏫",
+        "time": "2026-05-23",
+        "rowNumber": 291
+      },
+      {
+        "title": "#task 掌握约束条件处理方法 ⏫",
+        "time": "2026-05-23",
+        "rowNumber": 292
+      },
+      {
+        "title": "#task 实现简单的 MPC 控制器 🔼",
+        "time": "2026-05-30",
+        "rowNumber": 293
+      },
+      {
+        "title": "#task 理解卡尔曼滤波的预测 + 校正循环 ⏫",
+        "time": "2026-05-30",
+        "rowNumber": 294
+      },
+      {
+        "title": "#task 实现卡尔曼滤波进行状态估计 ⏫",
+        "time": "2026-06-06",
+        "rowNumber": 295
+      },
+      {
+        "title": "#task 了解扩展卡尔曼滤波 (EKF) 简介 🔽",
+        "time": "2026-06-06",
+        "rowNumber": 296
+      },
+      {
+        "title": "#task 在噪声环境下测试滤波器性能 🔼",
+        "time": "2026-06-13",
+        "rowNumber": 297
+      },
+      {
+        "title": "#task 【里程碑 1】完成 PID 控制器，能在仿真中稳定系统",
+        "time": "2026-03-14",
+        "rowNumber": 308
+      },
+      {
+        "title": "#task 【里程碑 2】完成状态空间控制器，实现极点配置",
+        "time": "2026-04-11",
+        "rowNumber": 309
+      },
+      {
+        "title": "#task 【里程碑 3】完成离散化，能在数字系统上运行",
+        "time": "2026-04-18",
+        "rowNumber": 310
+      },
+      {
+        "title": "#task 【里程碑 4】完成 LQR 控制器，性能优于 PID",
+        "time": "2026-05-16",
+        "rowNumber": 311
+      },
+      {
+        "title": "#task 【里程碑 5】完成 MPC 或卡尔曼滤波实现",
+        "time": "2026-06-06",
+        "rowNumber": 312
+      },
+      {
+        "title": "#task 【最终里程碑】完成全部 5 个阶段，整理笔记和代码仓库",
+        "time": "2026-06-21",
+        "rowNumber": 313
+      }
+    ],
+    "0.DailyTask/plan/强化学习四轮车训练.md": [
+      {
+        "title": "#task 新建项目搭建 gym 环境实现训练代码 ⏫",
+        "time": "2026-02-22",
+        "rowNumber": 9
       }
     ],
     "0.DailyTask/2026/2026-02-23.md": [
