@@ -25,21 +25,21 @@ tags: [量化交易, K线重构, Heikin-Ashi, 期货策略, 趋势跟踪, 动量
 
 ## 缩写表
 
-| 缩写 | 全称 | 含义 |
-|------|------|------|
-| HA | Heikin-Ashi | 日语"平均K线"，Heikin=平均，Ashi=足（K线蜡烛），用均值合成替代真实价格以滤噪音 |
-| PSY | Psychological Line | 心理线指标，最近N根阳线数量占比，反映多空心理偏向 |
-| OHLC | Open, High, Low, Close | 开高低收四价 |
-| ATR | Average True Range | 平均真实波幅，衡量价格波动大小的经典指标 |
-| MA | Moving Average | 均线 |
-| AU | — | 黄金期货 |
-| AG | — | 白银期货 |
-| CU | — | 铜期货 |
-| RB | — | 螺纹钢期货 |
-| M | — | 豆粕期货 |
-| TA | — | PTA（精对苯二甲酸）期货 |
-| Range UP | — | 最近N根多头K线波幅之和（本策略自定义） |
-| Range DN | — | 最近N根空头K线波幅之和（本策略自定义） |
+| 缩写       | 全称                     | 含义                                              |
+| -------- | ---------------------- | ----------------------------------------------- |
+| HA       | Heikin-Ashi            | 日语"平均K线"，Heikin=平均，Ashi=足（K线蜡烛），用均值合成替代真实价格以滤噪音 |
+| PSY      | Psychological Line     | 心理线指标，最近N根阳线数量占比，反映多空心理偏向                       |
+| OHLC     | Open, High, Low, Close | 开高低收四价                                          |
+| ATR      | Average True Range     | 平均真实波幅，衡量价格波动大小的经典指标                            |
+| MA       | Moving Average         | 均线                                              |
+| AU       | —                      | 黄金期货                                            |
+| AG       | —                      | 白银期货                                            |
+| CU       | —                      | 铜期货                                             |
+| RB       | —                      | 螺纹钢期货                                           |
+| M        | —                      | 豆粕期货                                            |
+| TA       | —                      | PTA（精对苯二甲酸）期货                                   |
+| Range UP | —                      | 最近N根多头K线波幅之和（本策略自定义）                            |
+| Range DN | —                      | 最近N根空头K线波幅之和（本策略自定义）                            |
 
 ---
 
