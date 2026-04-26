@@ -1,3 +1,7 @@
+---
+share_link: https://share.note.sx/1unz1ho5#ucvx8iR38ybS4UxtyM32FsHAJzCayWaogFBtZd3yiL0
+share_updated: 2026-04-26T17:00:44+08:00
+---
 # LSTM股价预测项目——数据探索+特征工程+Python实操
 
 > **方法有效性评估（2026-04-26）**
