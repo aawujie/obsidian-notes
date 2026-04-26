@@ -23,6 +23,24 @@ tags: [量化交易, K线重构, Heikin-Ashi, 期货策略, 趋势跟踪, 动量
 
 回测区间：2023-01-01 ~ 2025-12-31，同一资金、无限品种/市场。
 
+## 缩写表
+
+| 缩写 | 全称 | 含义 |
+|------|------|------|
+| HA | Heikin-Ashi | 日语"平均K线"，Heikin=平均，Ashi=足（K线蜡烛），用均值合成替代真实价格以滤噪音 |
+| PSY | Psychological Line | 心理线指标，最近N根阳线数量占比，反映多空心理偏向 |
+| OHLC | Open, High, Low, Close | 开高低收四价 |
+| ATR | Average True Range | 平均真实波幅，衡量价格波动大小的经典指标 |
+| MA | Moving Average | 均线 |
+| AU | — | 黄金期货 |
+| AG | — | 白银期货 |
+| CU | — | 铜期货 |
+| RB | — | 螺纹钢期货 |
+| M | — | 豆粕期货 |
+| TA | — | PTA（精对苯二甲酸）期货 |
+| Range UP | — | 最近N根多头K线波幅之和（本策略自定义） |
+| Range DN | — | 最近N根空头K线波幅之和（本策略自定义） |
+
 ---
 
 ## 核心原理：重构K线
@@ -41,9 +59,7 @@ tags: [量化交易, K线重构, Heikin-Ashi, 期货策略, 趋势跟踪, 动量
 
 ### 第一层 HA
 
-经典 Heikin-Ashi 计算。**Heikin-Ashi 是日语**：Heikin = 平均，Ashi = 足（交易语境中指K线蜡烛），合起来就是"平均K线"——名字本身已经告诉你它的功能就是把K线做平均平滑。
-
-将四价取均值：
+经典 Heikin-Ashi 计算，将四价取均值：
 
 $$\text{HA Close} = \frac{Open + High + Low + Close}{4}$$
 
@@ -83,7 +99,7 @@ $$\text{二次 HA} = \frac{\text{HA Open} + \text{HA Close} + \text{真实 High}
 
 $$\text{Range Ratio} = \frac{\text{Range UP}}{\text{Range DN}}$$
 
-**PSY（Psychological Line，心理线指标）**：最近 $N$ 根中阳线K线数量占比，反映多空心理偏向
+**PSY**：最近 $N$ 根中阳线K线数量占比，反映多空心理偏向
 
 Range Ratio 衡量**多空力量对比**，PSY 衡量**方向一致性**。
 
