@@ -83,7 +83,7 @@ $$\text{二次 HA} = \frac{\text{HA Open} + \text{HA Close} + \text{真实 High}
 
 $$\text{Range Ratio} = \frac{\text{Range UP}}{\text{Range DN}}$$
 
-**PSY（阳性比例）**：最近 $N$ 根中阳线K线数量占比
+**PSY（Psychological Line，心理线指标）**：最近 $N$ 根中阳线K线数量占比，反映多空心理偏向
 
 Range Ratio 衡量**多空力量对比**，PSY 衡量**方向一致性**。
 
