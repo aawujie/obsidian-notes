@@ -1,5 +1,30 @@
 # Dr Skill Market 全量总结
 
+# 行业公共知识 & 通用研发效能 Skills 摘录
+
+> 以下 Skill 与公司具体业务弱相关，偏向行业公共知识，可通用于其他自动驾驶/机器人/互联网研发团队：
+
+**1. 通用性能排查 (Perf & Profiling)**
+- `perf-analyzer`: 通用的 QNX/Linux 性能排查引擎，CPU/GPU/IO 异常与通用内存/调度诊断。
+- `cpu-flamegraph-analysis-skill`: CPU 火焰图数据获取与代码级优化分析。
+- `memory-profile-leak-troubleshooting`: jemalloc (Linux) 和 tcmalloc (QNX) 的通用内存泄漏分析。
+- `compilation-diagnosis`: 专门用于诊断 Bazel (Monorepo) 编译错误的排查工具。
+
+**2. AI Agent 与大模型基建 (Agent & LLM)**
+- `llm-wiki-skill`: 构建 Karpathy 风格的本地 Obsidian LLM 知识库。
+- `agent-learning-system-skill` / `team-shared-learning`: AI Agent 跨会话记忆与团队持续学习体系。
+- `infinite-qa-mode`: 让 Agent 进入持续问答循环的通用模式。
+- `auto-cot-analyzer`: 通用的复杂系统大思维链（Chain-of-Thought）日志分析与补全。
+
+**3. 通用代码开发与代码审查 (DevOps & Git)**
+- `gitlab-cli-skill`: GitLab 原生 CLI (glab) 专家级使用指导。
+- `resolve-conflicts` / `rebase-helper`: 通用的 Git 解决合并/Rebase 冲突辅助。
+- `code-integration`: 跨仓库/跨分支的 Cherry-pick 代码移植与集成。
+- `parallel-review-loop`: 利用多路 Agent 并行进行 Code Review 的通用工作流。
+- `repo-documentation-builder`: 为代码仓库自动建立渐进式的规范文档体系。
+
+---
+
 ## Adas Farm
 
 1. **adas-farm-cli**: 管理 ADAS Farm CI/CD 平台资源的 CLI 工具 farmctl。涵盖 driver/model 发布版本（release）、模型训练（training）、MRSets、变更集（changeset）、里程碑（milestone）的创建与查询，artifact 制品（driver包、fota包、OTA交付版本）的查询与下载，以及 driver 版本性能数据报告导出。
