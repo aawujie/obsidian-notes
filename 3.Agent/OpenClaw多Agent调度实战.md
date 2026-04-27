@@ -1,28 +1,43 @@
 # OpenClaw 多Agent调度实战：量化交易闭环
 
+> ⚠️ 说明：本文使用 OpenClaw 原生子Agent（`sessions_spawn runtime=subagent`），不是 Claude Code。如需真CC多Agent调度，需配合 ACP 插件或 exec 并行 + 文件通信。
+
 ## 一句话
 
-用 OpenClaw 的 `sessions_spawn` + `sessions_send` 调度多个 Claude Code 子Agent，实现"选股→择时→风控→决策"的完整交易闭环。三个Agent独立判断互不串通，主Agent汇总拍板。
+用 OpenClaw 的 `sessions_spawn` + `sessions_send` 调度多个子Agent，实现"选股→择时→风控→决策"的完整交易闭环。三个Agent独立判断互不串通，主Agent汇总拍板。
 
 ---
 
-## 架构
+## 架构（OpenClaw 原生子Agent方案）
 
 ```
 主Agent（OpenClaw会话）
   │
-  ├── sessions_spawn → 选股Agent（Claude Code）
+  ├── sessions_spawn → 选股子Agent（OpenClaw原生）
   │       ← sessions_send "请选出top 10"
   │       → "688506, 688336, ..."
   │
-  ├── sessions_spawn → 择时Agent（Claude Code）
+  ├── sessions_spawn → 择时子Agent（OpenClaw原生）
   │       ← sessions_send "能开仓吗？"
   │       → "能开仓 — 均线多头排列..."
   │
-  └── sessions_spawn → 风控Agent（Claude Code）
+  └── sessions_spawn → 风控子Agent（OpenClaw原生）
           ← sessions_send "风险评估？"
           → "半仓 — 高beta需留现金..."
 ```
+
+## 替代方案（真Claude Code多Agent，文件通信）
+
+由于 ACP 插件未安装，无法通过 sessions_spawn 直接开 CC 会话。替代方案是用 exec 并行启动多个 CC，通过文件互传：
+
+```
+exec bg → CC1: claude --print "选股,结果写到 /tmp/agent_picks.txt"
+exec bg → CC2: claude --print "读 /tmp/agent_picks.txt,择时,写到 /tmp/agent_timing.txt"
+exec bg → CC3: claude --print "读 /tmp/agent_picks.txt,风控,写到 /tmp/agent_risk.txt"
+# 主Agent汇总三个文件做最终决策
+```
+
+文件通信的缺点：只能串行或预定义依赖，不像 sessions_send 可以灵活实时通信。
 
 **核心理念**：三个子Agent各自用不同数据和逻辑判断，不共享上下文、不串通——相当于独立的三个分析师。
 
@@ -139,7 +154,8 @@ exec(command=f"python3.11 execute_order.py --stocks {stocks} --position {仓位}
 
 | 方案 | 多Agent调度 | 上下文隔离 | 二次通信 | 适用 |
 |:---|:---|:---|:---|:---|
-| OpenClaw sessions_spawn | ✅ | ✅ 独立 | ✅ sessions_send | 低频决策 |
+| OpenClaw sessions_spawn（原生子Agent） | ✅ | ✅ 独立 | ✅ sessions_send | 低频决策 |
+| exec 并行 CC --print（真CC方案） | ✅ | ✅ 独立 | ⚠️ 文件通信 | 批处理 |
 | CC --print 批处理 | ❌ 单次 | — | ❌ | 一次性任务 |
 | PandaAI可视化节点 | ✅ | ❌ 串一起 | ✅ | 高频实时 |
 | LangChain/LangGraph | ✅ | 可配置 | ✅ | 复杂生产 |
