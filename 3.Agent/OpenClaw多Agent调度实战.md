@@ -92,10 +92,10 @@ exec(command=f"python3.11 execute_order.py --stocks {stocks} --position {仓位}
 
 ### 1. sessions_spawn 的两种模式
 
-| 模式 | 特点 | 适用 |
-|:---|:---|:---|
-| `run` | 一次性跑完退出，但可以用 sessions_send 二次发送 | 批处理 |
-| `session`（需thread+ACP） | 持久化等消息 | 持续运行 |
+| 模式                     | 特点                              | 适用   |
+| :--------------------- | :------------------------------ | :--- |
+| `run`                  | 一次性跑完退出，但可以用 sessions_send 二次发送 | 批处理  |
+| `session`（需thread+ACP） | 持久化等消息                          | 持续运行 |
 
 **实测**：`run` 模式已完成的子会话，用 `sessions_send` 仍能收到新消息并执行——不限于单次。
 
