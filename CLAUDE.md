@@ -167,6 +167,25 @@ tags: [相关标签]
 
 当前 audit 目录为空。首次 lint 后填写统计。
 
+## Polymarket 预测市场工具
+
+当用户提到 Polymarket、预测市场、押注概率、市场价格等关键词时，使用 polymarket skill。
+
+**脚本位置**: `/home/dr/.openclaw/workspace/skills/polymarket-api/scripts/polymarket.py`
+
+**需要代理**: 调用前确保 `https_proxy=http://127.0.0.1:7890` 已设置（mihomo 运行中）。
+
+**用法**:
+```bash
+export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890
+python3 /home/dr/.openclaw/workspace/skills/polymarket-api/scripts/polymarket.py --top          # 热门市场
+python3 /home/dr/.openclaw/workspace/skills/polymarket-api/scripts/polymarket.py --search "关键词" # 搜索
+python3 /home/dr/.openclaw/workspace/skills/polymarket-api/scripts/polymarket.py --slug "slug"    # 特定市场
+python3 /home/dr/.openclaw/workspace/skills/polymarket-api/scripts/polymarket.py --events        # 事件列表
+```
+
+**价格含义**: outcomePrices 0-1 代表概率，0.65 = 65%概率。
+
 ## Notes for the LLM
 
 - **语言**: 中文为主，技术术语保留英文原词。概念页标题可用中英混合
