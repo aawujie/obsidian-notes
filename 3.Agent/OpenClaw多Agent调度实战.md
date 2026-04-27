@@ -195,4 +195,5 @@ OpenClaw方案的优势是极简——不需要写Agent框架代码，不需要�
 ---
 
 *创建日期：2026-04-27（基于实战验证）*
-*标签： #OpenClaw #多Agent #量化交易 #ClaudeCode #调度 *
+*更新日期：2026-04-27（修正：标注OpenClaw子Agent ≠ Claude Code）*
+*标签： #OpenClaw #多Agent #量化交易 #子Agent调度 *
