@@ -187,4 +187,4 @@ npx acpx claude -s 选股 cancel     # 取消当前运行中的任务
 ---
 
 *创建日期：2026-04-27*
-*标签：#ACP #ClaudeCode #多Agent #acpx #协议 #量化*
+*标签： #ACP #ClaudeCode #多Agent #acpx #协议 #量化 *
