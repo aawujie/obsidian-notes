@@ -113,13 +113,13 @@ npx acpx claude -s 选股 cancel     # 取消当前运行中的任务
 
 ## 与 --print 模式的对比
 
-| 维度 | exec claude --print | acpx claude |
-|:---|:---|:---|
-| 通信方式 | 文本流（一次性输出） | 结构化ACP消息 |
-| 会话持久化 | ❌ 跑完进程死 | ✅ 会话存盘可续聊 |
-| 并行多Agent | 需要文件传结果 | ✅ 独立会话天然隔离 |
-| 错误处理 | 文本中找error | 结构化error事件 |
-| 适配器开销 | 无（直接调CC） | 轻量（适配器中转） |
+| 维度       | exec claude --print | acpx claude |
+| :------- | :------------------ | :---------- |
+| 通信方式     | 文本流（一次性输出）          | 结构化ACP消息    |
+| 会话持久化    | ❌ 跑完进程死             | ✅ 会话存盘可续聊   |
+| 并行多Agent | 需要文件传结果             | ✅ 独立会话天然隔离  |
+| 错误处理     | 文本中找error           | 结构化error事件  |
+| 适配器开销    | 无（直接调CC）            | 轻量（适配器中转）   |
 
 ---
 
@@ -174,15 +174,15 @@ npx acpx claude -s 选股 cancel     # 取消当前运行中的任务
 
 ## 支持的Agent全表
 
-| Agent | 接入方式 | 备注 |
-|:---|:---|:---|
-| Claude Code | claude-agent-acp 适配器 | 已实战验证 ✅ |
-| Codex | codex-acp 适配器 | |
-| Gemini CLI | 原生 `--acp` | |
-| Copilot | 原生 `--acp --stdio` | |
-| Cursor | 原生 `cursor-agent acp` | |
-| Pi | pi-acp 适配器 | |
-| OpenClaw | 原生 `openclaw acp` | 自身也是ACP Server |
+| Agent       | 接入方式                  | 备注             |
+| :---------- | :-------------------- | :------------- |
+| Claude Code | claude-agent-acp 适配器  | 已实战验证 ✅        |
+| Codex       | codex-acp 适配器         |                |
+| Gemini CLI  | 原生 `--acp`            |                |
+| Copilot     | 原生 `--acp --stdio`    |                |
+| Cursor      | 原生 `cursor-agent acp` |                |
+| Pi          | pi-acp 适配器            |                |
+| OpenClaw    | 原生 `openclaw acp`     | 自身也是ACP Server |
 
 ---
 
