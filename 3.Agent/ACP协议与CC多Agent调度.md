@@ -1,3 +1,7 @@
+---
+share_link: https://share.note.sx/gn01y644#uDzThrt+GNTpLWnWDv7ghSSKQyL3xQJ5kvewbVZdFS0
+share_updated: 2026-04-28T18:00:07+08:00
+---
 # ACP 协议与 CC 多Agent 调度
 
 ## 什么是ACP
