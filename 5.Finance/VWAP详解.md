@@ -133,7 +133,7 @@ $$\text{Lower Band} = \text{VWAP} - n \times \sigma_{\text{VWAP}}$$
 
 ---
 
-## Anchored VWAP（AVWAP）
+## <span style="color:rgb(195, 117, 255)">Anchored VWAP</span>（AVWAP）
 
 标准 VWAP 每天从开盘重算。**AVWAP** 从你指定的"锚点"开始累计——可以是某个关键日期、事件、反转点。
 
@@ -142,9 +142,8 @@ $$\text{Lower Band} = \text{VWAP} - n \times \sigma_{\text{VWAP}}$$
 | 标准 VWAP | 每日开盘 | 日内执行基准 |
 | AVWAP | 任意指定日期 | 长期成本追踪 |
 
-AVWAP 的核心用途：
-
-1. **追踪大钱的成本线**：从财报发布日/关键反转日起算 AVWAP，价格回到 AVWAP = 大钱回到成本位
+AVWAP 的核心用途：<span style="color:rgb(195, 117, 255)"><br></span>
+1. **追踪大钱的成本线**：<span style="color:rgb(195, 117, 255)">从财报发布日/关键反转日起算 AVWAP，价格回到 AVWAP = 大钱回到成本位</span>
 2. **判断趋势强弱**：价格持续在 AVWAP 上方 → 买入力量强；下方 → 卖出力量强
 3. **跨日锚点**：不像标准 VWAP 每天重算，AVWAP 可以跨越多天，更适合波段交易
 
