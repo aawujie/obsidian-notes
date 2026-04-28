@@ -171,4 +171,4 @@ HMM求解用**EM算法（Baum-Welch）**：
 
 *创建日期：2026-04-28*
 *代码：evaluation/regime_hmm/regime_hmm.py*
-*标签：#量化 #HMM #Regime #市场状态 #择时 #隐马尔可夫*
+*标签： #量化 #HMM #Regime #市场状态 #择时 #隐马尔可夫 *
