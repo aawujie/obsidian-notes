@@ -31,7 +31,7 @@ $$\text{VWAP} = \frac{\sum_{i} P_i \times V_i}{\sum_{i} V_i}$$
 
 机构交易员（基金、券商自营）的绩效考核标准就是 VWAP：
 
-- **买在 VWAP 以下** → 执行好，省了钱
+- **买在<span style="color:rgb(195, 117, 255)"> </span>VWAP 以下** → 执行好，省了钱
 - **卖在 VWAP 以上** → 执行好，多赚了
 - **偏离 VWAP** → 执行差，说明买卖时机不对或滑点过大
 
