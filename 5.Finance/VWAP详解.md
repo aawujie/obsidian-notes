@@ -101,20 +101,19 @@ flowchart LR
 - **向上突破**：价格放量突破 VWAP → VWAP 从阻力变支撑 → 多头入场
 - **向下突破**：价格放量跌破 VWAP → VWAP 从支撑变阻力 → 空头入场
 
-确认条件：突破后至少停留 2~3根 K 线，且伴随放量。
-
+<span style="color:rgb(195, 117, 255)">确认条件：突破后至少停留 2~3根 K 线，且伴随放量。<br></span>
 ### 3. VWAP Reject（拒绝策略）
 
 价格接近 VWAP 但无法触及就转向——说明 VWAP 一侧的力量更强：
 
-- 价格从下方接近 VWAP，还没碰到就掉下去 → 空头极强
-- 价格从上方接近 VWAP，还没碰到就弹上去 → 多头极强
+- 价格从下方接近 VWAP，还没碰到就掉下去 →<span style="color:rgb(195, 117, 255)"> 空头极强</span>
+- 价格从上方接近 VWAP，还没碰到就弹上去 → <span style="color:rgb(195, 117, 255)">多头极强</span>
 
 ---
 
 ## VWAP 偏离带（Deviation Bands）
 
-在 VWAP 基础上加减若干标准差，形成"轨道"：
+<span style="color:rgb(195, 117, 255)">在 VWAP 基础上加减若干标准差，形成"轨道"：</span>
 
 $$\text{Upper Band} = \text{VWAP} + n \times \sigma_{\text{VWAP}}$$
 $$\text{Lower Band} = \text{VWAP} - n \times \sigma_{\text{VWAP}}$$
