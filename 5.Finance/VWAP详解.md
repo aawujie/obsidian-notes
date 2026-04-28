@@ -9,13 +9,13 @@ tags: [量化, VWAP, 交易执行, 技术分析, 机构算法, AVWAP]
 
 # VWAP 详解
 
-> 核心：VWAP 是机构执行基准 + 动态支撑阻力，理解它就理解了"大钱怎么进出"
+> 核心：VWAP 是机构执行基准 + <span style="color:rgb(255, 77, 77)">动态支撑阻力</span>，理解它就理解了"大钱怎么进出"
 
 ---
 
 ## 定义与公式
 
-**VWAP**（Volume Weighted Average Price，成交量加权平均价）= 用成交量做权重的平均成交价。
+**VWAP**（<span style="color:rgb(255, 77, 77)">Volume Weighted Average Price，成交量加权平均价</span>）= 用成交量做权重的平均成交价。
 
 $$\text{VWAP} = \frac{\sum_{i} P_i \times V_i}{\sum_{i} V_i}$$
 
