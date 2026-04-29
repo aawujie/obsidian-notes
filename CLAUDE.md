@@ -104,6 +104,14 @@ tags: [相关标签]
 
 **引用方式**: Obsidian wikilink 按文件名跨 vault 解析，推荐使用 `![[filename.ext]]` 或 `[[filename.ext]]`，无需写完整路径。
 
+### Python 环境
+
+项目使用 uv 管理 Python 环境：
+- **虚拟环境**: `.venv/`（git 忽略）
+- **依赖配置**: `pyproject.toml`
+- **激活**: `source .venv/bin/activate` 或 `uv run <command>`
+- **marimo 启动**: `uv run marimo edit Resources/marimo/<file> --host 0.0.0.0 -p 8002`
+
 ## 现有文章清单
 
 ### 3.Agent — AI/LLM 知识库 (414 篇)
