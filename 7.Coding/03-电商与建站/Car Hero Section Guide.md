@@ -54,7 +54,7 @@ If you’re serious about building, **join us now**:
 
 ## 🧠 Step 1: MidJourney Video Generation Prompt
 
-![[7.Coding/03-电商与建站/imgs/image.png]]
+![[Resources/images/7.Coding/03-电商与建站/imgs/image.png]]
 
 Usually, i create my own images inside midjourney
 but this time, i found a solid inspiration from @santu_design on X

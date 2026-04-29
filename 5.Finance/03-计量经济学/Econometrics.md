@@ -6,7 +6,7 @@ Verification: unverified
 Owner:
   - 杰 吴
 ---
-![[5.Finance/imgs/image.png]]
+![[Resources/images/5.Finance/imgs/image.png]]
 
 ![[image 1.png]]
 

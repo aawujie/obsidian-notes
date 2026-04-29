@@ -6,14 +6,14 @@ Verification: unverified
 Owner:
   - 杰 吴
 ---
-![[7.Coding/01-深度学习/imgs/image 10.png]]
+![[Resources/images/7.Coding/01-深度学习/imgs/image 10.png]]
 
-![[7.Coding/01-深度学习/imgs/image 11.png]]
+![[Resources/images/7.Coding/01-深度学习/imgs/image 11.png]]
 
-![[7.Coding/01-深度学习/imgs/image 12.png]]
+![[Resources/images/7.Coding/01-深度学习/imgs/image 12.png]]
 
-![[7.Coding/01-深度学习/imgs/image 13.png]]
+![[Resources/images/7.Coding/01-深度学习/imgs/image 13.png]]
 
-![[7.Coding/01-深度学习/imgs/image 14.png]]
+![[Resources/images/7.Coding/01-深度学习/imgs/image 14.png]]
 
-![[7.Coding/01-深度学习/imgs/image 15.png]]
+![[Resources/images/7.Coding/01-深度学习/imgs/image 15.png]]

@@ -29,10 +29,10 @@ $$
 ![[image 9.png]]
 
 <!-- Column 2 -->
-![[5.Finance/imgs/image 10.png]]
+![[Resources/images/5.Finance/imgs/image 10.png]]
 
 <!-- Column 3 -->
-![[5.Finance/imgs/image 11.png]]
+![[Resources/images/5.Finance/imgs/image 11.png]]
 
 1. **非负性**：因为是平方和，所以取值永远 $\ge 0$。
 2. **不对称性**：图像通常是 “右偏” 的（有一条长长的右尾巴）。

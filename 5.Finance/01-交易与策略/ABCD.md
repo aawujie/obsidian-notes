@@ -7,7 +7,7 @@ Owner:
   - 杰 吴
 ---
 
-![[5.Finance/imgs/image.png]]
+![[Resources/images/5.Finance/imgs/image.png]]
 
 **AB=CD 图形本质上反映的是市场的“对称性”和“节奏感”**，它是谐波交易法里最基础的形态。我们来拆解它的意义：
 
