@@ -94,7 +94,7 @@ tags: [相关标签]
 | `Resources/images/` | png, jpg, jpeg | 所有配图，保留原始目录结构 |
 | `Resources/marimo/` | .py | Python notebook (marimo) |
 
-**marimo 启动**: `marimo edit <file> --host 0.0.0.0 -p 8002`
+**marimo 启动**: `marimo edit <file> --host 0.0.0.0 -p 8002 --headless`
 | `Resources/notebooks/` | .ipynb | Jupyter notebook |
 | `Resources/html/` | .html | 交互式可视化 |
 | `Resources/papers/` | .pdf | 论文 PDF |
