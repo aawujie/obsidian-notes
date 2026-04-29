@@ -109,14 +109,14 @@ def _(dt, np, q_accel, r_measure, z):
 
     for idx in range(n_1d):
         # Predict
-        x_pred = F @ x_hat
-        P_pred = F @ P @ F.T + Q
+        x_pred1 = F @ x_hat
+        P_pred1 = F @ P @ F.T + Q
         # Update
-        y = z[idx] - H @ x_pred
-        S = H @ P_pred @ H.T + R
-        K = P_pred @ H.T @ np.linalg.inv(S)
-        x_hat = x_pred + K @ y
-        P = (np.eye(2) - K @ H) @ P_pred
+        y = z[idx] - H @ x_pred1
+        S = H @ P_pred1 @ H.T + R
+        K = P_pred1 @ H.T @ np.linalg.inv(S)
+        x_hat = x_pred1 + K @ y
+        P = (np.eye(2) - K @ H) @ P_pred1
         x_est[idx] = x_hat
         P_hist[idx] = [P[0, 0], P[1, 1]]
         K_hist[idx] = K.flatten()
@@ -257,14 +257,14 @@ def _(DT, N_2D, np, r2, z_x, z_y):
 
     x_est_2d = np.zeros((N_2D, 4))
     for t2_idx in range(N_2D):
-        x_pred = F2 @ x_hat_2d
-        P_pred = F2 @ P2 @ F2.T + Q2
+        x_pred2 = F2 @ x_hat_2d
+        P_pred2 = F2 @ P2 @ F2.T + Q2
         z_k = np.array([z_x[t2_idx], z_y[t2_idx]])
-        y_k = z_k - H2 @ x_pred
-        S_k = H2 @ P_pred @ H2.T + R2
-        K_k = P_pred @ H2.T @ np.linalg.inv(S_k)
-        x_hat_2d = x_pred + K_k @ y_k
-        P2 = (np.eye(4) - K_k @ H2) @ P_pred
+        y_k = z_k - H2 @ x_pred2
+        S_k = H2 @ P_pred2 @ H2.T + R2
+        K_k = P_pred2 @ H2.T @ np.linalg.inv(S_k)
+        x_hat_2d = x_pred2 + K_k @ y_k
+        P2 = (np.eye(4) - K_k @ H2) @ P_pred2
         x_est_2d[t2_idx] = x_hat_2d
     return (x_est_2d,)
 
@@ -342,42 +342,42 @@ def _(Q_slider, R_slider, dt, mo, np, plt, x_true, z):
     _q = Q_slider.value
     _r = R_slider.value
 
-    F = np.array([[1, dt], [0, 1]])
-    H = np.array([[1, 0]])
-    G = np.array([[0.5*dt**2], [dt]])
-    Q_int = G @ G.T * _q
-    R_int = np.array([[_r]])
+    iF = np.array([[1, dt], [0, 1]])
+    iH = np.array([[1, 0]])
+    iG = np.array([[0.5*dt**2], [dt]])
+    iQ = iG @ iG.T * _q
+    iR = np.array([[_r]])
 
     n_int = len(z)
-    x_hat_int = np.array([z[0], 0.0])
-    P_int = np.array([[500, 0], [0, 500]])
+    ix_hat = np.array([z[0], 0.0])
+    iP = np.array([[500, 0], [0, 500]])
 
-    x_est_int = np.zeros((n_int, 2))
+    ix_est = np.zeros((n_int, 2))
     for ti in range(n_int):
-        x_pred = F @ x_hat_int
-        P_pred = F @ P_int @ F.T + Q_int
-        y_k = z[ti] - H @ x_pred
-        S_k = H @ P_pred @ H.T + R_int
-        K_k = P_pred @ H.T @ np.linalg.inv(S_k)
-        x_hat_int = x_pred + K_k @ y_k
-        P_int = (np.eye(2) - K_k @ H) @ P_pred
-        x_est_int[ti] = x_hat_int
+        ix_pred = iF @ ix_hat
+        iP_pred = iF @ iP @ iF.T + iQ
+        iy = z[ti] - iH @ ix_pred
+        iS = iH @ iP_pred @ iH.T + iR
+        iK = iP_pred @ iH.T @ np.linalg.inv(iS)
+        ix_hat = ix_pred + iK @ iy
+        iP = (np.eye(2) - iK @ iH) @ iP_pred
+        ix_est[ti] = ix_hat
 
     fig3, ax3 = plt.subplots(figsize=(12, 4))
     t_arr = np.arange(n_int)
     ax3.plot(t_arr, x_true[:, 0], 'k-', linewidth=1.5, label='真实', alpha=0.6)
     ax3.plot(t_arr, z, 'r.', markersize=2, alpha=0.3, label='测量')
-    ax3.plot(t_arr, x_est_int[:, 0], 'b-', linewidth=2, label=f'Kalman (Q={_q}, R={_r})')
+    ax3.plot(t_arr, ix_est[:, 0], 'b-', linewidth=2, label=f'Kalman (Q={_q}, R={_r})')
     ax3.set_xlabel('时间步')
     ax3.set_ylabel('位置 (m)')
     ax3.set_title(f'Q={_q}, R={_r}')
     ax3.legend()
     ax3.grid(True, alpha=0.3)
 
-    rmse_measure = np.sqrt(np.mean((z - x_true[:, 0])**2))
-    rmse_kf = np.sqrt(np.mean((x_est_int[:, 0] - x_true[:, 0])**2))
+    irmse_meas = np.sqrt(np.mean((z - x_true[:, 0])**2))
+    irmse_kf = np.sqrt(np.mean((ix_est[:, 0] - x_true[:, 0])**2))
     ax3.text(0.98, 0.05,
-             f'RMSE: 测量={rmse_measure:.2f}m  Kalman={rmse_kf:.2f}m',
+             f'RMSE: 测量={irmse_meas:.2f}m  Kalman={irmse_kf:.2f}m',
              transform=ax3.transAxes, ha='right', fontsize=10,
              bbox=dict(boxstyle='round', facecolor='wheat', alpha=0.5))
 
