@@ -72,7 +72,7 @@ $$
 
 ### 4.3 判定标准：卡方分布 ($χ2$)
 
-[[卡方分布（Chi-Square Distribution）]] 
+[[5.Finance/03-计量经济学/卡方分布（Chi-Square Distribution）]] 
 
 在原假设（白噪声）成立的情况下，$Q$ 统计量服从**卡方分布**：
 
