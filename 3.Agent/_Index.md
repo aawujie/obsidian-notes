@@ -169,6 +169,8 @@
 - DeepSeek-R1-GRPO / GSPO / Length-Extrapolatable-Transformer
 - Roformer-RoPE / SAPO-GSPO-Qwen / YaRN-Context-Extension
 
+> PDF 文件统一在 `Resources/papers/` 下。
+
 ### 可视化
 - [[attention-viz.html]] / [[eigenvalue-viz.html]] / [[evd-vs-svd.html]]
 - [[positional-encoding-viz.html]] / [[svd-viz.html]] / [[transformer-viz.html]]

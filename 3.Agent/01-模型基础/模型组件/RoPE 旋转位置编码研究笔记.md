@@ -294,4 +294,4 @@ def rotate_half(x):
 ---
 
 *创建时间：2026-04-15*  
-*论文下载：`Roformer-RoPE.pdf`（同目录）*
+*论文下载：`Roformer-RoPE.pdf`（`Resources/papers/`）*
