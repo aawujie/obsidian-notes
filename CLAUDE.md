@@ -20,6 +20,7 @@
 - 日常任务与计划 (`0.DailyTask/`) — 日志性质，非知识库
 - Chaos/ — 未归类的草稿和实验性内容
 - `.obsidian/` — Obsidian 配置，不属于知识库
+- `Resources/` — 非 md 资源文件集中存放，不在知识库范围内
 
 ## Operations
 
@@ -46,8 +47,9 @@
 | `audit/`              | audit (人类反馈)              | 可写 (audit op)    |
 | `log/`                | log (操作日志)                | 可写 (每次操作追加)      |
 | `outputs/queries/`    | outputs (查询答案)            | 可写 (query op)    |
+| `Resources/`          | resources (非md资源)          | **只读，Agent 不可写** |
 
-**关键规则**: `Clippings/`, `6.BookNotes/Weread/`, `Chaos/` 是 raw 区——Agent 只能读取引用，绝不能修改或覆盖其中的文件。
+**关键规则**: `Clippings/`, `6.BookNotes/Weread/`, `Chaos/`, `Resources/` 是 raw/资源区——Agent 只能读取引用，绝不能修改或覆盖其中的文件。
 
 ## 命名约定
 
@@ -82,6 +84,23 @@ tags: [相关标签]
 ### Raw 文件策略
 - 小文本源 (md, txt, 小 PDF) → 直接放入 `Clippings/` 或 `6.BookNotes/Weread/`
 - 大文件 (>10MB) → 在 `Clippings/` 中创建指针 `.md` 文件，注明 `external_path`
+
+### 资源文件规则
+
+**所有非 md 文件统一放在 `Resources/` 下**，md 笔记中只做引用，不内嵌二进制资源。
+
+| 目录 | 文件类型 | 说明 |
+|------|---------|------|
+| `Resources/images/` | png, jpg, jpeg | 所有配图，保留原始目录结构 |
+| `Resources/marimo/` | .py | Python notebook (marimo) |
+| `Resources/notebooks/` | .ipynb | Jupyter notebook |
+| `Resources/html/` | .html | 交互式可视化 |
+| `Resources/papers/` | .pdf | 论文 PDF |
+| `Resources/slides/` | .pptx | PPT 课件 |
+| `Resources/documents/` | .doc, .docx, .xlsx | Office 文档 |
+| `Resources/text/` | .txt | 文本文件 |
+
+**引用方式**: Obsidian wikilink 按文件名跨 vault 解析，推荐使用 `![[filename.ext]]` 或 `[[filename.ext]]`，无需写完整路径。
 
 ## 现有文章清单
 
@@ -193,4 +212,3 @@ python3 /home/dr/.openclaw/workspace/skills/polymarket-api/scripts/polymarket.py
 - **矛盾处理**: 当不同来源说法矛盾时，在页面中标注矛盾点，链接到各来源，不要只选一方
 - **现有 _Index.md**: 3.Agent 和 8.Coding 已有 `_Index.md`，目前保留原名不改 `index.md`，后续可考虑统一
 - **Notion 导入文件**: 部分文件来自 Notion 导入，带有 `notion-id` frontmatter，保留不动
-- **图片目录**: 各子目录中的 `imgs/` 是配图，不属于 raw 区，Agent 不应修改
