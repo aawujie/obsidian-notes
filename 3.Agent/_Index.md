@@ -170,7 +170,10 @@
 - Roformer-RoPE / SAPO-GSPO-Qwen / YaRN-Context-Extension
 
 ### 可视化
-- html-viz/ (attention/eigenvalue/evd-svd/positional-encoding/svd/transformer)
+- [[attention-viz.html]] / [[eigenvalue-viz.html]] / [[evd-vs-svd.html]]
+- [[positional-encoding-viz.html]] / [[svd-viz.html]] / [[transformer-viz.html]]
+
+> 可视化文件统一在 `Resources/html/` 下。
 
 ### 学习路线与杂项
 - AI学习路线（8周） / TypeScript vs Python 对比
