@@ -5,19 +5,21 @@
 
 import marimo
 
-__generated_with = "0.15.9"
+__generated_with = "0.22.4"
 app = marimo.App(width="medium", app_title="卡尔曼滤波入门")
 
 
 @app.cell
-def __():
+def _():
     import marimo as mo
+
     return (mo,)
 
 
 @app.cell(hide_code=True)
-def __(mo):
-    mo.md(r"""# 卡尔曼滤波入门 — 交互示例
+def _(mo):
+    mo.md(r"""
+    # 卡尔曼滤波入门 — 交互示例
 
     配合笔记 [[卡尔曼滤波入门]]，用代码直观感受 Kalman Filter 的每一步。
 
@@ -33,25 +35,29 @@ def __(mo):
 
     🎯 看 Kalman 怎么把噪声传感器读数"拉"回真实位置。
     """)
+    return
 
 
 @app.cell
-def __():
+def _():
     import numpy as np
     import matplotlib.pyplot as plt
     from matplotlib.patches import Ellipse
     import matplotlib.transforms as transforms
     np.random.seed(42)
-    return Ellipse, np, plt, transforms
+    return np, plt
 
 
-@app.cell(hide_code=True)
-def __(mo):
-    mo.md(r"""## 1. 一维位置跟踪"""
+app._unparsable_cell(
+    """
+    mo.md(r\"\"\"## 1. 一维位置跟踪\"\"\"
+    """,
+    name="_"
+)
 
 
 @app.cell
-def __(np):
+def _(np):
     # ============================================
     # 仿真参数
     # ============================================
@@ -74,11 +80,11 @@ def __(np):
     # 传感器测量 (只测位置，有噪声)
     r_measure = 5.0  # 测量噪声方差 (传感器标准差 ≈ 2.24m)
     z = x_true[:, 0] + np.sqrt(r_measure) * np.random.randn(n_steps)
-    return accel_noise, dt, k, n_steps, q_accel, r_measure, true_velocity, x_true, z
+    return dt, q_accel, r_measure, x_true, z
 
 
 @app.cell
-def __(dt, np, q_accel, r_measure, x_true, z):
+def _(dt, np, q_accel, r_measure, z):
     # ============================================
     # 卡尔曼滤波
     # ============================================
@@ -124,15 +130,11 @@ def __(dt, np, q_accel, r_measure, x_true, z):
         x_est[k] = x_hat
         P_hist[k] = [P[0,0], P[1,1]]
         K_hist[k] = K.flatten()
-
-    return (
-        F, G, H, K, K_hist, P, P_hist, P_pred, Q, R, S,
-        n, n_steps, x_est, x_hat, x_pred, y,
-    )
+    return K_hist, P_hist, x_est
 
 
 @app.cell(hide_code=True)
-def __(K_hist, P_hist, mo, np, plt, x_est, x_true, z):
+def _(K_hist, P_hist, mo, np, plt, x_est, x_true, z):
     # ============================================
     # 可视化
     # ============================================
@@ -210,16 +212,19 @@ def __(K_hist, P_hist, mo, np, plt, x_est, x_true, z):
     """)
 
     mo.mpl.interactive(plt.gcf())
-    return ax, axes, fig, k, rmse_kalman, rmse_measure, sigma, sigma_v, t
+    return
 
 
 @app.cell(hide_code=True)
-def __(mo):
-    mo.md(r"""## 2. 二维目标跟踪 (位置 + 速度)""")
+def _(mo):
+    mo.md(r"""
+    ## 2. 二维目标跟踪 (位置 + 速度)
+    """)
+    return
 
 
 @app.cell
-def __(np):
+def _(np):
     # ============================================
     # 二维仿真
     # ============================================
@@ -240,15 +245,11 @@ def __(np):
     r2 = 2.0  # 测量噪声
     z_x = true_x + np.sqrt(r2) * np.random.randn(n2)
     z_y = true_y + np.sqrt(r2) * np.random.randn(n2)
-
-    return (
-        dt2, n2, r2, t_arr, true_2d, true_vx, true_vy,
-        true_x, true_y, z_x, z_y,
-    )
+    return dt2, r2, true_2d, z_x, z_y
 
 
 @app.cell
-def __(dt2, np, r2, z_x, z_y):
+def _(dt2, np, r2, z_x, z_y):
     # ============================================
     # 二维 Kalman (位置+速度)
     # ============================================
@@ -285,15 +286,11 @@ def __(dt2, np, r2, z_x, z_y):
         x_hat_2d = x_pred + K_k @ y_k
         P2 = (np.eye(4) - K_k @ H2) @ P_pred
         x_est_2d[k] = x_hat_2d
-
-    return (
-        F2, H2, K_k, P2, P_pred, Q2, R2, S_k, k,
-        n_steps, q2, x_est_2d, x_hat_2d, x_pred, y_k, z_k,
-    )
+    return (x_est_2d,)
 
 
 @app.cell(hide_code=True)
-def __(mo, np, plt, true_2d, x_est_2d, z_x, z_y):
+def _(mo, np, plt, true_2d, x_est_2d, z_x, z_y):
     # ============================================
     # 二维可视化
     # ============================================
@@ -340,15 +337,13 @@ def __(mo, np, plt, true_2d, x_est_2d, z_x, z_y):
     plt.savefig('kalman_2d_demo.png', dpi=150, bbox_inches='tight')
 
     mo.mpl.interactive(plt.gcf())
-    return (
-        ax, axes2, err_kalman_x, err_measure_x, fig2,
-        rmse_x_kalman, rmse_x_measure, t,
-    )
+    return
 
 
 @app.cell(hide_code=True)
-def __(mo):
-    mo.md(r"""## 3. 手动调试：改变 Q 和 R 看效果
+def _(mo):
+    mo.md(r"""
+    ## 3. 手动调试：改变 Q 和 R 看效果
 
     下面的 cell 让你修改 **Q (过程噪声)** 和 **R (测量噪声)**，重跑滤波看变化。
 
@@ -356,18 +351,20 @@ def __(mo):
     - **R 调大** → Kalman 更不信任传感器，估计曲线更平滑但可能滞后
     - **Q 调大** → Kalman 更信任传感器，更快响应但噪声更多
     """)
+    return
 
 
 @app.cell
-def __(mo):
+def _(mo):
     # 交互滑块
     Q_slider = mo.ui.slider(start=0.01, stop=10.0, step=0.1, value=0.5, label="过程噪声 Q")
     R_slider = mo.ui.slider(start=0.1, stop=30.0, step=0.1, value=5.0, label="测量噪声 R")
     mo.hstack([Q_slider, R_slider], gap=2)
+    return Q_slider, R_slider
 
 
 @app.cell
-def __(Q_slider, R_slider, dt, mo, np, plt, x_true, z):
+def _(Q_slider, R_slider, dt, mo, np, plt, x_true, z):
     # 用用户选的 Q, R 重跑
     _q = Q_slider.value
     _r = R_slider.value
@@ -412,15 +409,13 @@ def __(Q_slider, R_slider, dt, mo, np, plt, x_true, z):
              bbox=dict(boxstyle='round', facecolor='wheat', alpha=0.5))
 
     mo.mpl.interactive(fig3)
-    return (
-        F, G, H, K_k, P, P_pred, Q, R, S_k, ax3, fig3,
-        k, n, rmse_kf, rmse_measure, t_arr, x_est, x_hat, x_pred, y_k,
-    )
+    return (x_est,)
 
 
 @app.cell(hide_code=True)
-def __(mo):
-    mo.md(r"""## 4. 核心直觉总结
+def _(mo):
+    mo.md(r"""
+    ## 4. 核心直觉总结
 
     | 卡尔曼做的 | 相当于 |
     |:-----------|:-------|
@@ -431,6 +426,7 @@ def __(mo):
 
     > **一句话：Kalman = 自动加权平均的递归状态估计器。Q 大信传感器，R 大信模型。**
     """)
+    return
 
 
 if __name__ == "__main__":
