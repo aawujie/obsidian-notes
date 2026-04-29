@@ -95,6 +95,8 @@ tags: [相关标签]
 | `Resources/marimo/` | .py | Python notebook (marimo) |
 
 **marimo 启动**: `marimo edit <file> --host 0.0.0.0 -p 8002 --headless`
+
+**marimo 规则**: 每个 cell 是独立函数，**同一变量名不能在多个 cell 中定义**（含循环变量）。各 cell 用前缀区分，如 `F`/`F2`/`iF`。
 | `Resources/notebooks/` | .ipynb | Jupyter notebook |
 | `Resources/html/` | .html | 交互式可视化 |
 | `Resources/papers/` | .pdf | 论文 PDF |
