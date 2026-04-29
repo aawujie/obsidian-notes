@@ -76,9 +76,11 @@
 - 大模型训练系统优化（自 9.Coding 移入）
 
 ### 工具与实验代码
-- huggingface_intro_marimo.py
-- qwen3_fine_tuning (.py / .ipynb / marimo.py)
-- transformer_training_marimo.py / transformer_tutorial_marimo.py / transformer_inference_marimo.py
+- [[huggingface_intro_marimo]] — HuggingFace 入门
+- [[qwen3_fine_tuning]] / [[qwen3_fine_tuning_marimo]] — Qwen3 微调
+- [[transformer_training_marimo]] / [[transformer_tutorial_marimo]] / [[transformer_inference_marimo]] — Transformer 教程
+
+> 代码文件统一在 `Resources/marimo/` 下。
 
 ---
 
