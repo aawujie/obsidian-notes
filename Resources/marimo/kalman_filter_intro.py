@@ -48,12 +48,12 @@ def _():
     return np, plt
 
 
-app._unparsable_cell(
-    """
-    mo.md(r\"\"\"## 1. 一维位置跟踪\"\"\"
-    """,
-    name="_"
-)
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md("""
+    ## 1. 一维位置跟踪
+    """)
+    return
 
 
 @app.cell
