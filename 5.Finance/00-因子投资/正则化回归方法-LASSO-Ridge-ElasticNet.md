@@ -75,7 +75,7 @@ $$
 
 ### 图解速查：怎么看这张图
 
-![L1 vs L2 Geometry](assets/l1_l2_geometry.png)
+![[l1_l2_geometry.png]]
 
 | 元素 | 含义 |
 |:---|:---|
