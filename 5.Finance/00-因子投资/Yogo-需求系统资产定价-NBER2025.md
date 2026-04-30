@@ -53,32 +53,32 @@
 ### 4.1 微观基础：资产定价模型
 
 **资产市场：**
-- N 种资产，价格 Pn,t，支付 Dn,t+1 = φn,t + ψn,t Ft+1 + νn,t+1
-- 期望支付和因子载荷依赖于可观测资产特征 Xn,t
+- N 种资产，价格 $P_{n,t}$，支付 $D_{n,t+1} = \phi_{n,t} + \psi_{n,t} F_{t+1} + \nu_{n,t+1}$
+- 期望支付和因子载荷依赖于可观测资产特征 $X_{n,t}$
 
 **投资者：**
-- I 位投资者，风险厌恶系数 γi，对期望支付存在意见分歧
-- 求解 max E[-exp(-γi Ai,t+1)]，满足欧拉方程
+- I 位投资者，风险厌恶系数 $\gamma_i$，对期望支付存在意见分歧
+- 求解 $\max \mathbb{E}_t[-\exp(-\gamma_i A_{i,t+1})]$，满足欧拉方程
 
 **最优组合：**
-```
-Qi,n,t = −πi,t Pn,t + β'i,t Xn,t + ϵi,n,t
-         ↑需求弹性     ↑需求变动因素
-```
+$$
+Q_{i,n,t} = -\pi_{i,t} P_{n,t} + \beta'_{i,t} X_{n,t} + \epsilon_{i,n,t}
+$$
+其中 $-\pi_{i,t}$ 为需求弹性，$\beta'_{i,t} X_{n,t}$ 为需求变动因素。
 
 **均衡：**
-- 市场出清 Sn,t = Σ Qi,n,t
-- 均衡价格 Pn,t = (1/πt)(β't Xn,t + ϵn,t − Sn,t)
-- πt = 总需求弹性，1/πt = 价格冲击
+- 市场出清 $S_{n,t} = \sum_i Q_{i,n,t}$
+- 均衡价格 $P_{n,t} = \frac{1}{\pi_t}(\beta'_t X_{n,t} + \epsilon_{n,t} - S_{n,t})$
+- $\pi_t$ = 总需求弹性，$1/\pi_t$ = 价格冲击
 
 ### 4.2 预测：资产与投资者嵌入
 
 **简化形式需求：**
-```
-Qi,n,t = λ'i,t xn,t + εi,n,t
-```
-- λi,t：投资者嵌入（Investor Embeddings）
-- xn,t：资产嵌入（Asset Embeddings）
+$$
+Q_{i,n,t} = \lambda'_{i,t} x_{n,t} + \varepsilon_{i,n,t}
+$$
+- $\lambda_{i,t}$：投资者嵌入（Investor Embeddings）
+- $x_{n,t}$：资产嵌入（Asset Embeddings）
 - 可通过 PCA 估计为因子模型
 
 **AI 方法应用于经济学：**
@@ -106,7 +106,7 @@ Qi,n,t = λ'i,t xn,t + εi,n,t
 
 **核心思想：**
 
-市场出清 → Qi,n = Sn − Σ Qj,n（剩余供给）。要估计投资者 i 的需求弹性，需要其他投资者需求的**外生变动**。
+市场出清 → $Q_{i,n} = S_n - \sum_{j \neq i} Q_{j,n}$（剩余供给）。要估计投资者 $i$ 的需求弹性，需要其他投资者需求的**外生变动**。
 
 **识别策略五类：**
 
@@ -126,7 +126,7 @@ Qi,n,t = λ'i,t xn,t + εi,n,t
 
 ### 4.4 反事实分析
 
-均衡价格 pt = p(xt, At, βt, ϵt)：
+均衡价格 $p_t = p(x_t, A_t, \beta_t, \epsilon_t)$：
 
 | 应用 | 方法 |
 |:---|:---|
