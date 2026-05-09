@@ -7,8 +7,6 @@ A股 / 中国市场监控脚本
 
 输出: 5.Finance/DailyData/a-stock/ → YYYY-MM-DD.md + .json
 """
-  - YYYY-MM-DD.json    结构化数据
-"""
 
 import json
 import sys

@@ -1,13 +1,11 @@
 #!/usr/bin/env python3
+# 数据源: yfinance (Yahoo Finance, 免费, 无 API Key)
+# 运行:   cd obsidian-notes && source .venv/bin/activate && python Resources/scripts/metals-monitor/metals_monitor.py
 """
 金属市场监控脚本
-用途：盘后扫描工业金属（铜铝锌镍）+ 贵金属（金银铂钯）+ 锂钴稀土 + 相关矿业股
-运行：python Resources/scripts/metals-monitor/metals_monitor.py
-数据源：yfinance (Yahoo Finance, 免费, 无 API Key)
+盘后扫描工业金属(铜铝) + 贵金属(金银铂钯) + 锂稀土 + 矿业股/ETF
 
-输出到 5.Finance/DailyData/metals/：
-  - YYYY-MM-DD.md     Markdown 日报
-  - YYYY-MM-DD.json    结构化数据
+输出: 5.Finance/DailyData/metals/ → YYYY-MM-DD.md + .json
 """
 
 import json
