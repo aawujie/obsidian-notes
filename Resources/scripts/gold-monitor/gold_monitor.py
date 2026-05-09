@@ -29,7 +29,7 @@ GOLD_ETF = ["GLD", "IAU", "SGOL"]           # 黄金ETF
 GOLD_MINERS = ["NEM", "GOLD", "AU", "GFI", "KGC", "AEM", "FNV", "WPM", "RGLD", "AGI"]  # 金矿股
 GOLD_JUNIORS = ["GDX", "GDXJ"]              # 金矿ETF
 GOLD_FUTURES = ["GC=F"]                     # 黄金期货
-SILVER = ["SLV", "AG=F"]                    # 白银ETF+期货
+SILVER = ["SLV"]                              # 白银ETF (AG=F 符号在 yfinance 已失效)
 
 ALL_TICKERS = GOLD_ETF + GOLD_MINERS + GOLD_JUNIORS + GOLD_FUTURES + SILVER
 
