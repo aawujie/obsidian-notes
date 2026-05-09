@@ -1,0 +1,10 @@
+{
+  "folderSorting": [
+    {
+      "path": "5.Finance/DailyData",
+      "sortMethod": "alphabeticReverse",
+      "applyToSubfolders": true
+    }
+  ],
+  "defaultSortMethod": "alphabetic"
+}
