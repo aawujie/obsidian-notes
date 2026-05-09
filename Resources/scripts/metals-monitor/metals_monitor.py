@@ -139,32 +139,47 @@ def generate_report(df, date_str):
     # 贵金属
     lines += [
         "", "## 贵金属期货", "",
-        "| 品种 | 名称 | 价格 | 涨跌幅 |",
-        "|------|------|:---:|:---:|",
+        "| 品种 | 名称 | 价格 | 日涨幅 | 周涨幅 | 月涨幅 |",
+        "|------|------|:---:|:---:|:---:|:---:|",
     ]
     for _, row in df[df["ticker"].isin(PRECIOUS_METALS)].iterrows():
-        lines.append(f"| **{row['ticker']}** | {full_name(row)} | ${row['close']:.2f} | {row['change_daily']:+.2f}% |")
+        w = f"{row['change_weekly']:+.2f}%" if row["change_weekly"] is not None else "—"
+        m = f"{row['change_monthly']:+.2f}%" if row["change_monthly"] is not None else "—"
+        lines.append(
+            f"| **{row['ticker']}** | {full_name(row)} | ${row['close']:.2f} | "
+            f"{row['change_daily']:+.2f}% | {w} | {m} |"
+        )
 
     # 工业金属
     base = df[df["ticker"].isin(BASE_METALS)]
     if not base.empty:
         lines += [
             "", "## 工业金属期货", "",
-            "| 品种 | 名称 | 价格 | 涨跌幅 |",
-            "|------|------|:---:|:---:|",
+            "| 品种 | 名称 | 价格 | 日涨幅 | 周涨幅 | 月涨幅 |",
+            "|------|------|:---:|:---:|:---:|:---:|",
         ]
         for _, row in base.iterrows():
-            lines.append(f"| **{row['ticker']}** | {full_name(row)} | ${row['close']:.2f} | {row['change_daily']:+.2f}% |")
+            w = f"{row['change_weekly']:+.2f}%" if row["change_weekly"] is not None else "—"
+            m = f"{row['change_monthly']:+.2f}%" if row["change_monthly"] is not None else "—"
+            lines.append(
+                f"| **{row['ticker']}** | {full_name(row)} | ${row['close']:.2f} | "
+                f"{row['change_daily']:+.2f}% | {w} | {m} |"
+            )
 
     # ETF
     lines += [
         "", "## 矿业 ETF", "",
-        "| 代码 | 名称 | 价格 | 涨跌幅 | 52周新高 |",
-        "|------|------|:---:|:---:|:---:|",
+        "| 代码 | 名称 | 价格 | 日涨幅 | 周涨幅 | 月涨幅 | 52周新高 |",
+        "|------|------|:---:|:---:|:---:|:---:|:---:|",
     ]
     for _, row in df[df["ticker"].isin(MINING_ETF)].iterrows():
         high = "⭐" if row["is_new_high"] else ""
-        lines.append(f"| **{row['ticker']}** | {full_name(row)} | ${row['close']:.2f} | {row['change_daily']:+.2f}% | {high} |")
+        w = f"{row['change_weekly']:+.2f}%" if row["change_weekly"] is not None else "—"
+        m = f"{row['change_monthly']:+.2f}%" if row["change_monthly"] is not None else "—"
+        lines.append(
+            f"| **{row['ticker']}** | {full_name(row)} | ${row['close']:.2f} | "
+            f"{row['change_daily']:+.2f}% | {w} | {m} | {high} |"
+        )
 
     # 大矿企
     miners = df[df["ticker"].isin(MAJOR_MINERS)].nlargest(14, "change_daily")

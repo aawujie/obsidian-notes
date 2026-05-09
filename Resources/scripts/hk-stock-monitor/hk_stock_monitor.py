@@ -170,27 +170,40 @@ def generate_report(df, date_str):
         "", f"# 港股市场日报 {date_str}",
         "", f"> 自动生成于 {datetime.now().strftime('%Y-%m-%d %H:%M')} · 数据源 Yahoo Finance",
         "", "## 主要指数",
-        "", "| 指数 | 名称 | 点位 | 涨跌幅 |",
-        "|------|------|:---:|:---:|",
+        "", "| 指数 | 名称 | 点位 | 日涨幅 | 周涨幅 | 月涨幅 |",
+        "|------|------|:---:|:---:|:---:|:---:|",
     ]
     for _, row in df[df["ticker"].isin(HK_INDICES)].iterrows():
-        lines.append(f"| **{row['ticker']}** | {full_name(row)} | {row['close']:.2f} | {row['change_daily']:+.2f}% |")
+        w = f"{row['change_weekly']:+.2f}%" if row["change_weekly"] is not None else "—"
+        m = f"{row['change_monthly']:+.2f}%" if row["change_monthly"] is not None else "—"
+        lines.append(
+            f"| **{row['ticker']}** | {full_name(row)} | {row['close']:.2f} | "
+            f"{row['change_daily']:+.2f}% | {w} | {m} |"
+        )
 
     lines += ["", "## 港股 ETF", "",
-              "| 代码 | 名称 | 价格 | 涨跌幅 |",
-              "|------|------|:---:|:---:|"]
+              "| 代码 | 名称 | 价格 | 日涨幅 | 周涨幅 | 月涨幅 |",
+              "|------|------|:---:|:---:|:---:|:---:|"]
     for _, row in df[df["ticker"].isin(HK_ETF)].iterrows():
-        lines.append(f"| **{row['ticker']}** | {full_name(row)} | {row['close']:.2f} | {row['change_daily']:+.2f}% |")
+        w = f"{row['change_weekly']:+.2f}%" if row["change_weekly"] is not None else "—"
+        m = f"{row['change_monthly']:+.2f}%" if row["change_monthly"] is not None else "—"
+        lines.append(
+            f"| **{row['ticker']}** | {full_name(row)} | {row['close']:.2f} | "
+            f"{row['change_daily']:+.2f}% | {w} | {m} |"
+        )
 
     top_n = df[df["ticker"].isin(HK_BIG_CAP)].nlargest(15, "change_daily")
     lines += ["", "## 成分股涨幅 TOP 15", "",
-              "| 代码 | 名称 | 涨幅 | 收盘价 | 成交量/均值 | 52周新高 |",
-              "|------|------|:---:|:---:|:---:|:---:|"]
+              "| 代码 | 名称 | 日涨幅 | 周涨幅 | 月涨幅 | 收盘价 | 成交量/均值 | 52周新高 |",
+              "|------|------|:---:|:---:|:---:|:---:|:---:|:---:|"]
     for _, row in top_n.iterrows():
         high = "⭐" if row["is_new_high"] else ""
+        w = f"{row['change_weekly']:+.2f}%" if row["change_weekly"] is not None else "—"
+        m = f"{row['change_monthly']:+.2f}%" if row["change_monthly"] is not None else "—"
         lines.append(
             f"| **{row['ticker']}** | {full_name(row)} | "
-            f"{row['change_daily']:+.2f}% | {row['close']:.2f} | "
+            f"{row['change_daily']:+.2f}% | {w} | {m} | "
+            f"{row['close']:.2f} | "
             f"{row['vol_ratio']:.1f}x{' 🔥' if row['vol_ratio'] > 2 else ''} | {high} |"
         )
 
