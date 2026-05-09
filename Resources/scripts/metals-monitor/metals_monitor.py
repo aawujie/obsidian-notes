@@ -185,12 +185,18 @@ def generate_report(df, date_str):
     miners = df[df["ticker"].isin(MAJOR_MINERS)].nlargest(14, "change_daily")
     lines += [
         "", "## 大型矿企", "",
-        "| 代码 | 名称 | 涨幅 | 收盘价 | 52周新高 |",
-        "|------|------|:---:|:---:|:---:|",
+        "| 代码 | 名称 | 日涨幅 | 周涨幅 | 月涨幅 | 收盘价 | 52周新高 |",
+        "|------|------|:---:|:---:|:---:|:---:|:---:|",
     ]
     for _, row in miners.iterrows():
         high = "⭐" if row["is_new_high"] else ""
-        lines.append(f"| **{row['ticker']}** | {full_name(row)} | {row['change_daily']:+.2f}% | ${row['close']:.2f} | {high} |")
+        w = f"{row['change_weekly']:+.2f}%" if row["change_weekly"] is not None else "—"
+        m = f"{row['change_monthly']:+.2f}%" if row["change_monthly"] is not None else "—"
+        lines.append(
+            f"| **{row['ticker']}** | {full_name(row)} | "
+            f"{row['change_daily']:+.2f}% | {w} | {m} | "
+            f"${row['close']:.2f} | {high} |"
+        )
 
     return "\n".join(lines)
 
