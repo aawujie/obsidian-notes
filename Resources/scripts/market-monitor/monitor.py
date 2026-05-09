@@ -80,6 +80,61 @@ def _fallback_nasdaq100():
     ]
 
 
+# --- 中英文名称对照 ---
+CHINESE_NAMES = {
+    "A": "安捷伦科技", "AAPL": "苹果", "ABBV": "艾伯维", "ABNB": "爱彼迎",
+    "ABT": "雅培", "ACN": "埃森哲", "ADBE": "奥多比", "ADI": "亚德诺半导体",
+    "ADP": "自动数据处理", "ADSK": "欧特克", "AEP": "美国电力",
+    "AMAT": "应用材料", "AMD": "AMD超威半导体", "AMGN": "安进", "AMT": "美国铁塔",
+    "AMZN": "亚马逊", "ANET": "Arista网络", "APA": "阿帕奇石油",
+    "ARM": "Arm安谋", "ASML": "阿斯麦", "AVGO": "博通", "AXP": "美国运通",
+    "AZN": "阿斯利康", "BA": "波音", "BAC": "美国银行", "BIIB": "渤健",
+    "BKNG": "缤客Booking", "BKR": "贝克休斯", "BLK": "贝莱德", "BSX": "波士顿科学",
+    "BX": "黑石", "C": "花旗银行", "CAT": "卡特彼勒", "CB": "安达保险",
+    "CCEP": "可口可乐欧洲", "CDNS": "Cadence", "CDW": "CDW", "CEG": "Constellation能源",
+    "CHTR": "特许通讯", "CI": "信诺", "CMCSA": "康卡斯特", "COP": "康菲石油",
+    "COST": "好市多", "CRM": "赛富时Salesforce", "CRWD": "CrowdStrike",
+    "CSCO": "思科", "CSX": "CSX铁路", "CTAS": "Cintas", "CTSH": "高知特",
+    "CVX": "雪佛龙", "DASH": "DoorDash", "DE": "迪尔", "DELL": "戴尔科技",
+    "DHR": "丹纳赫", "DIS": "迪士尼", "DLTR": "美元树", "DXCM": "德康医疗",
+    "EA": "艺电", "ELV": "Elevance健康", "ETN": "伊顿", "EXC": "艾克斯龙",
+    "FANG": "钻石背能源", "FAST": "快扣", "FTNT": "飞塔Fortinet",
+    "GD": "通用动力", "GE": "通用电气", "GEHC": "GE医疗", "GFS": "格芯",
+    "GILD": "吉利德科学", "GLW": "康宁", "GOOG": "谷歌-C", "GOOGL": "谷歌-A",
+    "GS": "高盛", "HD": "家得宝", "HON": "霍尼韦尔", "IBM": "IBM",
+    "IDXX": "IDEXX", "ILMN": "Illumina", "INTC": "英特尔",
+    "INTU": "财捷Intuit", "ISRG": "直觉外科", "JNJ": "强生",
+    "JPM": "摩根大通", "KDP": "Keurig Dr Pepper", "KHC": "卡夫亨氏",
+    "KLAC": "科磊KLA", "KO": "可口可乐", "LIN": "林德气体", "LLY": "礼来",
+    "LMT": "洛克希德马丁", "LOW": "劳氏", "LRCX": "泛林半导体Lam Research",
+    "LULU": "露露乐檬", "MA": "万事达", "MAR": "万豪", "MCD": "麦当劳",
+    "MCHP": "微芯科技", "MDLZ": "亿滋", "MDT": "美敦力", "MELI": "美客多",
+    "META": "Meta脸书", "MMC": "威达信", "MNST": "怪物饮料Monster",
+    "MRK": "默沙东", "MRVL": "迈威尔Marvell", "MS": "摩根士丹利",
+    "MSFT": "微软", "MU": "美光科技", "NEE": "新纪元能源NextEra",
+    "NFLX": "奈飞Netflix", "NOW": "ServiceNow", "NVDA": "英伟达Nvidia",
+    "NXPI": "恩智浦半导体", "ODFL": "Old Dominion", "ON": "安森美半导体",
+    "ORCL": "甲骨文", "ORLY": "奥莱利O'Reilly",
+    "PAYX": "沛齐Paychex", "PCAR": "帕卡PACCAR", "PDD": "拼多多",
+    "PEP": "百事可乐", "PFE": "辉瑞", "PG": "宝洁", "PGR": "前进保险",
+    "PLD": "普洛斯", "PM": "菲利普莫里斯",
+    "PWR": "广达服务Quanta", "PYPL": "贝宝PayPal", "QCOM": "高通",
+    "REGN": "再生元制药", "ROP": "罗珀技术", "ROST": "罗斯百货",
+    "RTX": "雷神技术", "SBUX": "星巴克", "SCHW": "嘉信理财",
+    "SIRI": "天狼星XM", "SMCI": "超微电脑SMCI", "SNPS": "新思科技Synopsys",
+    "SO": "南方电力", "SPGI": "标普全球", "STX": "希捷科技",
+    "SYK": "史赛克", "TEAM": "Atlassian", "TJX": "TJX",
+    "TMO": "赛默飞", "TMUS": "T-Mobile", "TSLA": "特斯拉",
+    "TTD": "The Trade Desk", "TTWO": "Take-Two", "TXN": "德州仪器",
+    "UBER": "优步Uber", "UNH": "联合健康", "UNP": "联合太平洋",
+    "UPS": "UPS快递", "V": "维萨Visa", "VRSK": "Verisk",
+    "VRTX": "福泰制药", "VZ": "威瑞森", "WBD": "华纳兄弟探索",
+    "WDAY": "Workday", "WDC": "西部数据", "WFC": "富国银行",
+    "WMT": "沃尔玛", "XEL": "Xcel能源", "XOM": "埃克森美孚",
+    "ZS": "Zscaler",
+}
+
+
 def fetch_stock_data(tickers, period="5d"):
     """
     批量拉取股票数据
