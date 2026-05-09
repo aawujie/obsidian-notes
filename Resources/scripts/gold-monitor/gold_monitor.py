@@ -61,21 +61,42 @@ def fetch_data(tickers):
         for t in tickers:
             try:
                 info = stocks.tickers[t].info
-                hist = stocks.tickers[t].history(period="5d")
+                hist = stocks.tickers[t].history(period="1mo")
                 if hist.empty or len(hist) < 2:
                     continue
+
+                closes = hist["Close"]
+                today_close = closes.iloc[-1]
+                prev_close = closes.iloc[-2]
+
+                # 日涨跌幅
+                change_daily = ((today_close - prev_close) / prev_close) * 100
+
+                # 周涨跌幅（约 5 个交易日）
+                if len(closes) >= 6:
+                    change_weekly = ((today_close - closes.iloc[-6]) / closes.iloc[-6]) * 100
+                else:
+                    change_weekly = None
+
+                # 月涨跌幅（约 21 个交易日）
+                if len(closes) >= 22:
+                    change_monthly = ((today_close - closes.iloc[-22]) / closes.iloc[-22]) * 100
+                else:
+                    change_monthly = None
+
                 today = hist.iloc[-1]
-                prev = hist.iloc[-2]
                 avg_vol = hist["Volume"].tail(5).mean() if len(hist) >= 5 else hist["Volume"].mean()
-                close = today["Close"]
-                change_pct = ((close - prev["Close"]) / prev["Close"]) * 100
+                close = today_close
                 volume = today["Volume"]
                 vol_ratio = volume / avg_vol if avg_vol > 0 else 1.0
                 high52 = info.get("fiftyTwoWeekHigh")
                 is_new_high = high52 and close >= high52 * 0.995
                 all_data.append({
                     "ticker": t, "name": info.get("shortName", info.get("longName", t)),
-                    "close": close, "change_pct": round(change_pct, 2),
+                    "close": close,
+                    "change_daily": round(change_daily, 2),
+                    "change_weekly": round(change_weekly, 2) if change_weekly is not None else None,
+                    "change_monthly": round(change_monthly, 2) if change_monthly is not None else None,
                     "volume": volume, "vol_ratio": round(vol_ratio, 2),
                     "high52": high52, "is_new_high": is_new_high,
                 })
@@ -98,34 +119,43 @@ def generate_report(df, date_str):
         "",
         "## 金价与期货",
         "",
-        "| 标的 | 名称 | 价格 | 涨跌幅 | 52周新高 |",
-        "|------|------|:---:|:---:|:---:|",
+        "| 标的 | 名称 | 价格 | 日涨幅 | 周涨幅 | 月涨幅 | 52周新高 |",
+        "|------|------|:---:|:---:|:---:|:---:|:---:|",
     ]
     for _, row in df[df["ticker"].isin(GOLD_ETF + GOLD_FUTURES + SILVER)].iterrows():
         high = "⭐" if row["is_new_high"] else ""
+        w = f"{row['change_weekly']:+.2f}%" if row["change_weekly"] is not None else "—"
+        m = f"{row['change_monthly']:+.2f}%" if row["change_monthly"] is not None else "—"
         lines.append(
             f"| **{row['ticker']}** | {full_name(row)} | ${row['close']:.2f} | "
-            f"{row['change_pct']:+.2f}% | {high} |"
+            f"{row['change_daily']:+.2f}% | {w} | {m} | {high} |"
         )
 
-    gold_n = df[df["ticker"].isin(GOLD_MINERS)].nlargest(10, "change_pct")
+    gold_n = df[df["ticker"].isin(GOLD_MINERS)].nlargest(10, "change_daily")
     lines += [
         "", "## 金矿股 TOP 10", "",
-        "| 代码 | 名称 | 涨幅 | 收盘价 | 成交量/均值 |",
-        "|------|------|:---:|:---:|:---:|",
+        "| 代码 | 名称 | 日涨幅 | 周涨幅 | 月涨幅 | 收盘价 | 成交量/均值 |",
+        "|------|------|:---:|:---:|:---:|:---:|:---:|",
     ]
     for _, row in gold_n.iterrows():
+        w = f"{row['change_weekly']:+.2f}%" if row["change_weekly"] is not None else "—"
+        m = f"{row['change_monthly']:+.2f}%" if row["change_monthly"] is not None else "—"
         lines.append(
             f"| **{row['ticker']}** | {full_name(row)} | "
-            f"{row['change_pct']:+.2f}% | ${row['close']:.2f} | {row['vol_ratio']:.1f}x |"
+            f"{row['change_daily']:+.2f}% | {w} | {m} | ${row['close']:.2f} | {row['vol_ratio']:.1f}x |"
         )
 
     new_highs = df[df["is_new_high"]]
     if not new_highs.empty:
-        lines += ["", "## 创 52 周新高", "", "| 代码 | 名称 | 涨幅 |",
-                  "|------|------|:---:|"]
+        lines += ["", "## 创 52 周新高", "", "| 代码 | 名称 | 日涨幅 | 周涨幅 | 月涨幅 |",
+                  "|------|------|:---:|:---:|:---:|"]
         for _, row in new_highs.iterrows():
-            lines.append(f"| **{row['ticker']}** | {full_name(row)} | {row['change_pct']:+.2f}% |")
+            w = f"{row['change_weekly']:+.2f}%" if row["change_weekly"] is not None else "—"
+            m = f"{row['change_monthly']:+.2f}%" if row["change_monthly"] is not None else "—"
+            lines.append(
+                f"| **{row['ticker']}** | {full_name(row)} | "
+                f"{row['change_daily']:+.2f}% | {w} | {m} |"
+            )
 
     return "\n".join(lines)
 
@@ -155,10 +185,10 @@ def main():
     json_path.write_text(json.dumps({"date": date_str, "data": records}, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"  → {json_path}")
 
-    top3 = df.nlargest(3, "change_pct")
+    top3 = df.nlargest(3, "change_daily")
     print("\n涨幅前三：")
     for _, row in top3.iterrows():
-        print(f"  {row['ticker']:6s} {row['change_pct']:+.2f}%  {full_name(row)}")
+        print(f"  {row['ticker']:6s} {row['change_daily']:+.2f}%  {full_name(row)}")
 
 
 if __name__ == "__main__":

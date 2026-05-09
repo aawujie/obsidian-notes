@@ -91,20 +91,39 @@ def fetch_data(tickers):
             for t in batch:
                 try:
                     info = stocks.tickers[t].info
-                    hist = stocks.tickers[t].history(period="5d")
+                    hist = stocks.tickers[t].history(period="1mo")
                     if hist.empty or len(hist) < 2:
                         continue
-                    today = hist.iloc[-1]
-                    prev = hist.iloc[-2]
-                    close = today["Close"]
-                    change_pct = ((close - prev["Close"]) / prev["Close"]) * 100
+
+                    closes = hist["Close"]
+                    today_close = closes.iloc[-1]
+                    prev_close = closes.iloc[-2]
+
+                    # 日涨跌幅
+                    change_daily = ((today_close - prev_close) / prev_close) * 100
+
+                    # 周涨跌幅（约 5 个交易日）
+                    if len(closes) >= 6:
+                        change_weekly = ((today_close - closes.iloc[-6]) / closes.iloc[-6]) * 100
+                    else:
+                        change_weekly = None
+
+                    # 月涨跌幅（约 21 个交易日）
+                    if len(closes) >= 22:
+                        change_monthly = ((today_close - closes.iloc[-22]) / closes.iloc[-22]) * 100
+                    else:
+                        change_monthly = None
+
                     high52 = info.get("fiftyTwoWeekHigh")
                     all_data.append({
                         "ticker": t,
                         "name": info.get("shortName", info.get("longName", t)),
-                        "close": close, "change_pct": round(change_pct, 2),
+                        "close": today_close,
+                        "change_daily": round(change_daily, 2),
+                        "change_weekly": round(change_weekly, 2) if change_weekly is not None else None,
+                        "change_monthly": round(change_monthly, 2) if change_monthly is not None else None,
                         "high52": high52,
-                        "is_new_high": high52 and close >= high52 * 0.995,
+                        "is_new_high": high52 and today_close >= high52 * 0.995,
                     })
                 except Exception:
                     continue
