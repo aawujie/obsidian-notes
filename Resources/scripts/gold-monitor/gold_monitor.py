@@ -45,6 +45,30 @@ def get_cn(ticker):
     return CHINESE_NAMES.get(ticker, "")
 
 
+def safe_pct(val):
+    """将 None 或 NaN 转为 '—'，否则格式化为 +x.xx%"""
+    if val is None:
+        return "—"
+    try:
+        if np.isnan(float(val)):
+            return "—"
+    except (TypeError, ValueError):
+        pass
+    return f"{float(val):+.2f}%"
+
+
+def safe_price(val):
+    """将 None 或 NaN 转为 '—'，否则保留两位小数"""
+    if val is None:
+        return "—"
+    try:
+        if np.isnan(float(val)):
+            return "—"
+    except (TypeError, ValueError):
+        pass
+    return f"{float(val):.2f}"
+
+
 def full_name(row):
     en = row.get("name", row.get("ticker", ""))
     cn = get_cn(row["ticker"])
@@ -124,11 +148,11 @@ def generate_report(df, date_str):
     ]
     for _, row in df[df["ticker"].isin(GOLD_ETF + GOLD_FUTURES + SILVER)].iterrows():
         high = "⭐" if row["is_new_high"] else ""
-        w = f"{row['change_weekly']:+.2f}%" if row["change_weekly"] is not None else "—"
-        m = f"{row['change_monthly']:+.2f}%" if row["change_monthly"] is not None else "—"
+        w = safe_pct(row["change_weekly"])
+        m = safe_pct(row["change_monthly"])
         lines.append(
-            f"| **{row['ticker']}** | {full_name(row)} | ${row['close']:.2f} | "
-            f"{row['change_daily']:+.2f}% | {w} | {m} | {high} |"
+            f"| **{row['ticker']}** | {full_name(row)} | ${safe_price(row['close'])} | "
+            f"{safe_pct(row['change_daily'])} | {w} | {m} | {high} |"
         )
 
     gold_n = df[df["ticker"].isin(GOLD_MINERS)].nlargest(10, "change_daily")
@@ -138,11 +162,11 @@ def generate_report(df, date_str):
         "|------|------|:---:|:---:|:---:|:---:|:---:|",
     ]
     for _, row in gold_n.iterrows():
-        w = f"{row['change_weekly']:+.2f}%" if row["change_weekly"] is not None else "—"
-        m = f"{row['change_monthly']:+.2f}%" if row["change_monthly"] is not None else "—"
+        w = safe_pct(row["change_weekly"])
+        m = safe_pct(row["change_monthly"])
         lines.append(
             f"| **{row['ticker']}** | {full_name(row)} | "
-            f"{row['change_daily']:+.2f}% | {w} | {m} | ${row['close']:.2f} | {row['vol_ratio']:.1f}x |"
+            f"{safe_pct(row['change_daily'])} | {w} | {m} | ${safe_price(row['close'])} | {row['vol_ratio']:.1f}x |"
         )
 
     new_highs = df[df["is_new_high"]]
@@ -150,11 +174,11 @@ def generate_report(df, date_str):
         lines += ["", "## 创 52 周新高", "", "| 代码 | 名称 | 日涨幅 | 周涨幅 | 月涨幅 |",
                   "|------|------|:---:|:---:|:---:|"]
         for _, row in new_highs.iterrows():
-            w = f"{row['change_weekly']:+.2f}%" if row["change_weekly"] is not None else "—"
-            m = f"{row['change_monthly']:+.2f}%" if row["change_monthly"] is not None else "—"
+            w = safe_pct(row["change_weekly"])
+            m = safe_pct(row["change_monthly"])
             lines.append(
                 f"| **{row['ticker']}** | {full_name(row)} | "
-                f"{row['change_daily']:+.2f}% | {w} | {m} |"
+                f"{safe_pct(row['change_daily'])} | {w} | {m} |"
             )
 
     return "\n".join(lines)
@@ -188,7 +212,7 @@ def main():
     top3 = df.nlargest(3, "change_daily")
     print("\n涨幅前三：")
     for _, row in top3.iterrows():
-        print(f"  {row['ticker']:6s} {row['change_daily']:+.2f}%  {full_name(row)}")
+        print(f"  {row['ticker']:6s} {safe_pct(row['change_daily'])}  {full_name(row)}")
 
 
 if __name__ == "__main__":

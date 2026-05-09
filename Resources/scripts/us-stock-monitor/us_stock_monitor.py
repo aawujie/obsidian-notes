@@ -138,6 +138,30 @@ def get_cn(ticker):
     return CHINESE_NAMES.get(ticker, "")
 
 
+def safe_pct(val):
+    """将 None 或 NaN 转为 '—'，否则格式化为 +x.xx%"""
+    if val is None:
+        return "—"
+    try:
+        if np.isnan(float(val)):
+            return "—"
+    except (TypeError, ValueError):
+        pass
+    return f"{float(val):+.2f}%"
+
+
+def safe_price(val):
+    """将 None 或 NaN 转为 '—'，否则保留两位小数"""
+    if val is None:
+        return "—"
+    try:
+        if np.isnan(float(val)):
+            return "—"
+    except (TypeError, ValueError):
+        pass
+    return f"{float(val):.2f}"
+
+
 def full_name(row):
     """拼装显示名称：英文名 + 中文名"""
     en = row.get("name", row.get("ticker", ""))
@@ -267,9 +291,9 @@ def generate_report(df, date_str):
         f"| 上涨 | {up} ({up/total*100:.0f}%) |",
         f"| 下跌 | {down} ({down/total*100:.0f}%) |",
         f"| 持平 | {flat} |",
-        f"| 平均日涨幅 | {avg_daily:+.2f}% |",
-        f"| 平均周涨幅 | {avg_weekly:+.2f}% |",
-        f"| 平均月涨幅 | {avg_monthly:+.2f}% |",
+        f"| 平均日涨幅 | {safe_pct(avg_daily)} |",
+        f"| 平均周涨幅 | {safe_pct(avg_weekly)} |",
+        f"| 平均月涨幅 | {safe_pct(avg_monthly)} |",
         f"| 创 52 周新高 | {new_highs} 只 |",
         "",
     ]
@@ -284,13 +308,13 @@ def generate_report(df, date_str):
     ]
     for rank, (_, row) in enumerate(gainers.iterrows(), 1):
         high_flag = "⭐" if row["is_new_high"] else ""
-        w = f"{row['change_weekly']:+.2f}%" if row["change_weekly"] is not None else "—"
-        m = f"{row['change_monthly']:+.2f}%" if row["change_monthly"] is not None else "—"
+        w = safe_pct(row["change_weekly"])
+        m = safe_pct(row["change_monthly"])
         lines.append(
             f"| {rank} | **{row['ticker']}** | {full_name(row)} | "
-            f"**{row['change_daily']:+.2f}%** | "
+            f"**{safe_pct(row['change_daily'])}** | "
             f"{w} | {m} | "
-            f"${row['close']:.2f} | "
+            f"${safe_price(row['close'])} | "
             f"{row['vol_ratio']:.1f}x"
             f"{' 🔥' if row['vol_ratio'] > 2 else ''} | "
             f"{high_flag} |"
@@ -306,13 +330,13 @@ def generate_report(df, date_str):
         "|:---:|------|------|:---:|:---:|:---:|:---:|:---:|",
     ]
     for rank, (_, row) in enumerate(losers.iterrows(), 1):
-        w = f"{row['change_weekly']:+.2f}%" if row["change_weekly"] is not None else "—"
-        m = f"{row['change_monthly']:+.2f}%" if row["change_monthly"] is not None else "—"
+        w = safe_pct(row["change_weekly"])
+        m = safe_pct(row["change_monthly"])
         lines.append(
             f"| {rank} | **{row['ticker']}** | {full_name(row)} | "
-            f"**{row['change_daily']:+.2f}%** | "
+            f"**{safe_pct(row['change_daily'])}** | "
             f"{w} | {m} | "
-            f"${row['close']:.2f} | "
+            f"${safe_price(row['close'])} | "
             f"{row['vol_ratio']:.1f}x |"
         )
     lines.append("")
@@ -327,11 +351,11 @@ def generate_report(df, date_str):
             "|------|------|:---:|:---:|:---:|:---:|",
         ]
         for _, row in unusual_vol.iterrows():
-            w = f"{row['change_weekly']:+.2f}%" if row["change_weekly"] is not None else "—"
-            m = f"{row['change_monthly']:+.2f}%" if row["change_monthly"] is not None else "—"
+            w = safe_pct(row["change_weekly"])
+            m = safe_pct(row["change_monthly"])
             lines.append(
                 f"| **{row['ticker']}** | {full_name(row)} | "
-                f"{row['change_daily']:+.2f}% | "
+                f"{safe_pct(row['change_daily'])} | "
                 f"{w} | {m} | "
                 f"**{row['vol_ratio']:.1f}x** |"
             )
@@ -347,13 +371,13 @@ def generate_report(df, date_str):
             "|------|------|:---:|:---:|:---:|:---:|",
         ]
         for _, row in new_high_stocks.iterrows():
-            w = f"{row['change_weekly']:+.2f}%" if row["change_weekly"] is not None else "—"
-            m = f"{row['change_monthly']:+.2f}%" if row["change_monthly"] is not None else "—"
+            w = safe_pct(row["change_weekly"])
+            m = safe_pct(row["change_monthly"])
             lines.append(
                 f"| **{row['ticker']}** | {full_name(row)} | "
-                f"{row['change_daily']:+.2f}% | "
+                f"{safe_pct(row['change_daily'])} | "
                 f"{w} | {m} | "
-                f"${row['close']:.2f} |"
+                f"${safe_price(row['close'])} |"
             )
         lines.append("")
 
@@ -377,8 +401,8 @@ def generate_report(df, date_str):
             if sector == "":
                 continue
             lines.append(
-                f"| {sector} | {srow['日涨幅']:+.2f}% | "
-                f"{srow['周涨幅']:+.2f}% | {srow['月涨幅']:+.2f}% | "
+                f"| {sector} | {safe_pct(srow['日涨幅'])} | "
+                f"{safe_pct(srow['周涨幅'])} | {safe_pct(srow['月涨幅'])} | "
                 f"{int(srow['股票数'])} | {int(srow['新高数'])} |"
             )
         lines.append("")
@@ -455,7 +479,7 @@ def main():
     top3 = df.nlargest(3, "change_daily")
     print("当日涨幅前三：")
     for _, row in top3.iterrows():
-        print(f"  {row['ticker']:6s} {row['change_daily']:+.2f}%  {full_name(row)}")
+        print(f"  {row['ticker']:6s} {safe_pct(row['change_daily'])}  {full_name(row)}")
     new_high_count = df["is_new_high"].sum()
     unusual_count = len(df[df["vol_ratio"] > 3])
     print(f"创 52 周新高: {new_high_count} 只  |  异常放量: {unusual_count} 只")

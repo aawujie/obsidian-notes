@@ -69,6 +69,30 @@ def get_cn(ticker):
     return CHINESE_NAMES.get(ticker, "")
 
 
+def safe_pct(val):
+    """将 None 或 NaN 转为 '—'，否则格式化为 +x.xx%"""
+    if val is None:
+        return "—"
+    try:
+        if np.isnan(float(val)):
+            return "—"
+    except (TypeError, ValueError):
+        pass
+    return f"{float(val):+.2f}%"
+
+
+def safe_price(val):
+    """将 None 或 NaN 转为 '—'，否则保留两位小数"""
+    if val is None:
+        return "—"
+    try:
+        if np.isnan(float(val)):
+            return "—"
+    except (TypeError, ValueError):
+        pass
+    return f"{float(val):.2f}"
+
+
 def full_name(row):
     en = row.get("name", row.get("ticker", ""))
     cn = get_cn(row["ticker"])
@@ -143,11 +167,11 @@ def generate_report(df, date_str):
         "|------|------|:---:|:---:|:---:|:---:|",
     ]
     for _, row in df[df["ticker"].isin(PRECIOUS_METALS)].iterrows():
-        w = f"{row['change_weekly']:+.2f}%" if row["change_weekly"] is not None else "—"
-        m = f"{row['change_monthly']:+.2f}%" if row["change_monthly"] is not None else "—"
+        w = safe_pct(row["change_weekly"])
+        m = safe_pct(row["change_monthly"])
         lines.append(
-            f"| **{row['ticker']}** | {full_name(row)} | ${row['close']:.2f} | "
-            f"{row['change_daily']:+.2f}% | {w} | {m} |"
+            f"| **{row['ticker']}** | {full_name(row)} | ${safe_price(row['close'])} | "
+            f"{safe_pct(row['change_daily'])} | {w} | {m} |"
         )
 
     # 工业金属
@@ -159,11 +183,11 @@ def generate_report(df, date_str):
             "|------|------|:---:|:---:|:---:|:---:|",
         ]
         for _, row in base.iterrows():
-            w = f"{row['change_weekly']:+.2f}%" if row["change_weekly"] is not None else "—"
-            m = f"{row['change_monthly']:+.2f}%" if row["change_monthly"] is not None else "—"
+            w = safe_pct(row["change_weekly"])
+            m = safe_pct(row["change_monthly"])
             lines.append(
-                f"| **{row['ticker']}** | {full_name(row)} | ${row['close']:.2f} | "
-                f"{row['change_daily']:+.2f}% | {w} | {m} |"
+                f"| **{row['ticker']}** | {full_name(row)} | ${safe_price(row['close'])} | "
+                f"{safe_pct(row['change_daily'])} | {w} | {m} |"
             )
 
     # ETF
@@ -174,11 +198,11 @@ def generate_report(df, date_str):
     ]
     for _, row in df[df["ticker"].isin(MINING_ETF)].iterrows():
         high = "⭐" if row["is_new_high"] else ""
-        w = f"{row['change_weekly']:+.2f}%" if row["change_weekly"] is not None else "—"
-        m = f"{row['change_monthly']:+.2f}%" if row["change_monthly"] is not None else "—"
+        w = safe_pct(row["change_weekly"])
+        m = safe_pct(row["change_monthly"])
         lines.append(
-            f"| **{row['ticker']}** | {full_name(row)} | ${row['close']:.2f} | "
-            f"{row['change_daily']:+.2f}% | {w} | {m} | {high} |"
+            f"| **{row['ticker']}** | {full_name(row)} | ${safe_price(row['close'])} | "
+            f"{safe_pct(row['change_daily'])} | {w} | {m} | {high} |"
         )
 
     # 大矿企
@@ -190,12 +214,12 @@ def generate_report(df, date_str):
     ]
     for _, row in miners.iterrows():
         high = "⭐" if row["is_new_high"] else ""
-        w = f"{row['change_weekly']:+.2f}%" if row["change_weekly"] is not None else "—"
-        m = f"{row['change_monthly']:+.2f}%" if row["change_monthly"] is not None else "—"
+        w = safe_pct(row["change_weekly"])
+        m = safe_pct(row["change_monthly"])
         lines.append(
             f"| **{row['ticker']}** | {full_name(row)} | "
-            f"{row['change_daily']:+.2f}% | {w} | {m} | "
-            f"${row['close']:.2f} | {high} |"
+            f"{safe_pct(row['change_daily'])} | {w} | {m} | "
+            f"${safe_price(row['close'])} | {high} |"
         )
 
     return "\n".join(lines)
@@ -226,7 +250,7 @@ def main():
     top3 = df.nlargest(3, "change_daily")
     print("\n涨幅前三：")
     for _, row in top3.iterrows():
-        print(f"  {row['ticker']:6s} {row['change_daily']:+.2f}%  {full_name(row)}")
+        print(f"  {row['ticker']:6s} {safe_pct(row['change_daily'])}  {full_name(row)}")
 
 
 if __name__ == "__main__":
