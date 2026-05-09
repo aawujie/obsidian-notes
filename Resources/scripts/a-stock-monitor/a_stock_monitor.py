@@ -142,25 +142,40 @@ def generate_report(df, date_str):
         "", f"# A股市场日报 {date_str}",
         "", f"> 自动生成于 {datetime.now().strftime('%Y-%m-%d %H:%M')} · 数据源 Yahoo Finance",
         "", "## 主要指数",
-        "", "| 指数 | 名称 | 点位 | 涨跌幅 |",
-        "|------|------|:---:|:---:|",
+        "", "| 指数 | 名称 | 点位 | 日涨幅 | 周涨幅 | 月涨幅 |",
+        "|------|------|:---:|:---:|:---:|:---:|",
     ]
     for _, row in df[df["ticker"].isin(INDICES)].iterrows():
-        lines.append(f"| **{row['ticker']}** | {full_name(row)} | {row['close']:.2f} | {row['change_pct']:+.2f}% |")
+        w = f"{row['change_weekly']:+.2f}%" if row["change_weekly"] is not None else "—"
+        m = f"{row['change_monthly']:+.2f}%" if row["change_monthly"] is not None else "—"
+        lines.append(
+            f"| **{row['ticker']}** | {full_name(row)} | {row['close']:.2f} | "
+            f"{row['change_daily']:+.2f}% | {w} | {m} |"
+        )
 
     lines += ["", "## 美市中国ETF（外资情绪）", "",
-              "| 代码 | 名称 | 价格 | 涨跌幅 | 52周新高 |",
-              "|------|------|:---:|:---:|:---:|"]
+              "| 代码 | 名称 | 价格 | 日涨幅 | 周涨幅 | 月涨幅 | 52周新高 |",
+              "|------|------|:---:|:---:|:---:|:---:|:---:|"]
     for _, row in df[df["ticker"].isin(US_CHINA_ETF)].iterrows():
         high = "⭐" if row["is_new_high"] else ""
-        lines.append(f"| **{row['ticker']}** | {full_name(row)} | ${row['close']:.2f} | {row['change_pct']:+.2f}% | {high} |")
+        w = f"{row['change_weekly']:+.2f}%" if row["change_weekly"] is not None else "—"
+        m = f"{row['change_monthly']:+.2f}%" if row["change_monthly"] is not None else "—"
+        lines.append(
+            f"| **{row['ticker']}** | {full_name(row)} | ${row['close']:.2f} | "
+            f"{row['change_daily']:+.2f}% | {w} | {m} | {high} |"
+        )
 
     lines += ["", "## 大市值中概 / 港股", "",
-              "| 代码 | 名称 | 价格 | 涨跌幅 | 52周新高 |",
-              "|------|------|:---:|:---:|:---:|"]
+              "| 代码 | 名称 | 价格 | 日涨幅 | 周涨幅 | 月涨幅 | 52周新高 |",
+              "|------|------|:---:|:---:|:---:|:---:|:---:|"]
     for _, row in df[df["ticker"].isin(BIG_CAP)].iterrows():
         high = "⭐" if row["is_new_high"] else ""
-        lines.append(f"| **{row['ticker']}** | {full_name(row)} | {row['close']:.2f} | {row['change_pct']:+.2f}% | {high} |")
+        w = f"{row['change_weekly']:+.2f}%" if row["change_weekly"] is not None else "—"
+        m = f"{row['change_monthly']:+.2f}%" if row["change_monthly"] is not None else "—"
+        lines.append(
+            f"| **{row['ticker']}** | {full_name(row)} | {row['close']:.2f} | "
+            f"{row['change_daily']:+.2f}% | {w} | {m} | {high} |"
+        )
 
     return "\n".join(lines)
 
@@ -187,10 +202,10 @@ def main():
     (DATA_DIR / f"{date_str}.json").write_text(
         json.dumps({"date": date_str, "data": records}, ensure_ascii=False, indent=2), encoding="utf-8")
 
-    top3 = df.nlargest(3, "change_pct")
+    top3 = df.nlargest(3, "change_daily")
     print("\n涨幅前三：")
     for _, row in top3.iterrows():
-        print(f"  {row['ticker']:10s} {row['change_pct']:+.2f}%  {full_name(row)}")
+        print(f"  {row['ticker']:10s} {row['change_daily']:+.2f}%  {full_name(row)}")
 
 
 if __name__ == "__main__":
