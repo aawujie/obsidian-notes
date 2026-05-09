@@ -1,0 +1,167 @@
+#!/usr/bin/env python3
+"""
+黄金市场监控脚本
+用途：盘后扫描黄金相关资产，含金价ETF、金矿股、黄金期货
+运行：python Resources/scripts/gold-monitor/gold_monitor.py
+数据源：yfinance (Yahoo Finance, 免费, 无 API Key)
+
+输出到 5.Finance/DailyData/gold/：
+  - YYYY-MM-DD.md     Markdown 日报
+  - YYYY-MM-DD.json    结构化数据
+"""
+
+import json
+import sys
+from datetime import datetime
+from pathlib import Path
+
+import numpy as np
+import pandas as pd
+import yfinance as yf
+
+SCRIPT_DIR = Path(__file__).resolve().parent
+VAULT_ROOT = SCRIPT_DIR.parent.parent.parent
+DATA_DIR = VAULT_ROOT / "5.Finance" / "DailyData" / "gold"
+DATA_DIR.mkdir(parents=True, exist_ok=True)
+
+# --- 监控标的 ---
+GOLD_ETF = ["GLD", "IAU", "SGOL"]           # 黄金ETF
+GOLD_MINERS = ["NEM", "GOLD", "AU", "GFI", "KGC", "AEM", "FNV", "WPM", "RGLD", "AGI"]  # 金矿股
+GOLD_JUNIORS = ["GDX", "GDXJ"]              # 金矿ETF
+GOLD_FUTURES = ["GC=F"]                     # 黄金期货
+SILVER = ["SLV", "AG=F"]                    # 白银ETF+期货
+
+ALL_TICKERS = GOLD_ETF + GOLD_MINERS + GOLD_JUNIORS + GOLD_FUTURES + SILVER
+
+CHINESE_NAMES = {
+    "GLD": "SPDR黄金ETF", "IAU": "iShares黄金ETF", "SGOL": "abrdn黄金ETF",
+    "NEM": "纽蒙特矿业", "GOLD": "巴里克黄金", "AU": "盎格鲁黄金",
+    "GFI": "金田公司", "KGC": "金罗斯黄金", "AEM": "Agnico Eagle矿业",
+    "FNV": "Franco-Nevada权利金", "WPM": "惠顿贵金属", "RGLD": "皇家黄金",
+    "AGI": "阿拉莫斯黄金", "GDX": "金矿ETF-VanEck", "GDXJ": "小盘金矿ETF",
+    "GC=F": "黄金期货", "SLV": "iShares白银ETF", "AG=F": "白银期货",
+}
+
+
+def get_cn(ticker):
+    return CHINESE_NAMES.get(ticker, "")
+
+
+def full_name(row):
+    en = row.get("name", row.get("ticker", ""))
+    cn = get_cn(row["ticker"])
+    if cn:
+        return f"{en} / {cn}"
+    return en
+
+
+def fetch_data(tickers):
+    """拉取行情数据"""
+    all_data = []
+    try:
+        stocks = yf.Tickers(" ".join(tickers))
+        for t in tickers:
+            try:
+                info = stocks.tickers[t].info
+                hist = stocks.tickers[t].history(period="5d")
+                if hist.empty or len(hist) < 2:
+                    continue
+                today = hist.iloc[-1]
+                prev = hist.iloc[-2]
+                avg_vol = hist["Volume"].tail(5).mean() if len(hist) >= 5 else hist["Volume"].mean()
+                close = today["Close"]
+                change_pct = ((close - prev["Close"]) / prev["Close"]) * 100
+                volume = today["Volume"]
+                vol_ratio = volume / avg_vol if avg_vol > 0 else 1.0
+                high52 = info.get("fiftyTwoWeekHigh")
+                is_new_high = high52 and close >= high52 * 0.995
+                all_data.append({
+                    "ticker": t, "name": info.get("shortName", info.get("longName", t)),
+                    "close": close, "change_pct": round(change_pct, 2),
+                    "volume": volume, "vol_ratio": round(vol_ratio, 2),
+                    "high52": high52, "is_new_high": is_new_high,
+                })
+            except Exception:
+                continue
+    except Exception as e:
+        print(f"  [ERROR] {e}")
+    return pd.DataFrame(all_data)
+
+
+def generate_report(df, date_str):
+    if df.empty:
+        return f"# 黄金市场日报 {date_str}\n\n> 当日无数据\n"
+
+    lines = [
+        f"---", f"title: 黄金市场日报 {date_str}", f"type: summary",
+        f"created: {date_str}", f"tags: [黄金, 贵金属, 市场监控, 日报]", f"---",
+        f"", f"# 黄金市场日报 {date_str}",
+        f"", f"> 自动生成于 {datetime.now().strftime('%Y-%m-%d %H:%M')} · 数据源 Yahoo Finance",
+        f"",
+        f"## 金价与期货",
+        f"",
+        f"| 标的 | 名称 | 价格 | 涨跌幅 | 52周新高 |",
+        f"|------|------|:---:|:---:|:---:|",
+    ]
+    for _, row in df[df["ticker"].isin(GOLD_ETF + GOLD_FUTURES + SILVER)].iterrows():
+        high = "⭐" if row["is_new_high"] else ""
+        lines.append(
+            f"| **{row['ticker']}** | {full_name(row)} | ${row['close']:.2f} | "
+            f"{row['change_pct']:+.2f}% | {high} |"
+        )
+
+    gold_n = df[df["ticker"].isin(GOLD_MINERS)].nlargest(10, "change_pct")
+    lines += [
+        f"", f"## 金矿股 TOP 10", f"",
+        f"| 代码 | 名称 | 涨幅 | 收盘价 | 成交量/均值 |",
+        f"|------|------|:---:|:---:|:---:|",
+    ]
+    for _, row in gold_n.iterrows():
+        lines.append(
+            f"| **{row['ticker']}** | {full_name(row)} | "
+            f"{row['change_pct']:+.2f}% | ${row['close']:.2f} | {row['vol_ratio']:.1f}x |"
+        )
+
+    new_highs = df[df["is_new_high"]]
+    if not new_highs.empty:
+        lines += [f"", f"## 创 52 周新高", f"", f"| 代码 | 名称 | 涨幅 |",
+                  f"|------|------|:---:|"]
+        for _, row in new_highs.iterrows():
+            lines.append(f"| **{row['ticker']}** | {full_name(row)} | {row['change_pct']:+.2f}% |")
+
+    return "\n".join(lines)
+
+
+def main():
+    date_str = datetime.now().strftime("%Y-%m-%d")
+    print(f"黄金市场监控 · {date_str}")
+    print(f"  拉取 {len(ALL_TICKERS)} 个标的...")
+    df = fetch_data(ALL_TICKERS)
+    if df.empty:
+        print("[ERROR] 无数据"), sys.exit(1)
+    print(f"  成功拉取 {len(df)} 个")
+
+    md = generate_report(df, date_str)
+    (DATA_DIR / f"{date_str}.md").write_text(md, encoding="utf-8")
+    print(f"  → {DATA_DIR / f'{date_str}.md'}")
+
+    # JSON
+    records = []
+    for _, row in df.iterrows():
+        r = row.to_dict()
+        for k, v in r.items():
+            if isinstance(v, (pd.Timestamp,)): r[k] = str(v)
+            elif isinstance(v, float) and np.isnan(v): r[k] = None
+        records.append(r)
+    json_path = DATA_DIR / f"{date_str}.json"
+    json_path.write_text(json.dumps({"date": date_str, "data": records}, ensure_ascii=False, indent=2), encoding="utf-8")
+    print(f"  → {json_path}")
+
+    top3 = df.nlargest(3, "change_pct")
+    print("\n涨幅前三：")
+    for _, row in top3.iterrows():
+        print(f"  {row['ticker']:6s} {row['change_pct']:+.2f}%  {full_name(row)}")
+
+
+if __name__ == "__main__":
+    main()
