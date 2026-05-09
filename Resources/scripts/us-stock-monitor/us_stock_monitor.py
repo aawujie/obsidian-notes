@@ -147,12 +147,11 @@ def full_name(row):
     return en
 
 
-def fetch_stock_data(tickers, period="5d"):
+def fetch_stock_data(tickers, period="1mo"):
     """
-    批量拉取股票数据
+    批量拉取股票数据（默认 1 个月历史，用于计算日/周/月涨跌幅）
     返回 DataFrame: 每行一只股票，含价格、涨跌幅、成交量等
     """
-    # 分批拉，避免单次请求过大
     batch_size = 200
     all_data = []
 
@@ -170,26 +169,36 @@ def fetch_stock_data(tickers, period="5d"):
                     if hist.empty or len(hist) < 2:
                         continue
 
-                    # 当天数据（最新一个交易日）
-                    today = hist.iloc[-1]
-                    prev = hist.iloc[-2]
+                    closes = hist["Close"]
+                    today_close = closes.iloc[-1]
+                    prev_close = closes.iloc[-2]
+
+                    # 日涨跌幅
+                    change_daily = ((today_close - prev_close) / prev_close) * 100
+
+                    # 周涨跌幅（约 5 个交易日）
+                    if len(closes) >= 6:
+                        week_ago = closes.iloc[-6]
+                        change_weekly = ((today_close - week_ago) / week_ago) * 100
+                    else:
+                        change_weekly = None
+
+                    # 月涨跌幅（约 21 个交易日）
+                    if len(closes) >= 22:
+                        month_ago = closes.iloc[-22]
+                        change_monthly = ((today_close - month_ago) / month_ago) * 100
+                    else:
+                        change_monthly = None
+
                     # 5日均量
                     avg_vol_5d = hist["Volume"].tail(5).mean() if len(hist) >= 5 else hist["Volume"].mean()
-
-                    close = today["Close"]
-                    prev_close = prev["Close"]
-                    change_pct = ((close - prev_close) / prev_close) * 100
-                    volume = today["Volume"]
+                    volume = today = hist.iloc[-1]["Volume"]
                     vol_ratio = volume / avg_vol_5d if avg_vol_5d > 0 else 1.0
 
                     # 52 周高低
-                    high52 = info.get("fiftyTwoWeekHigh", None)
-                    low52 = info.get("fiftyTwoWeekLow", None)
-
-                    # 距 52 周高点的距离
-                    dist_from_high = ((close - high52) / high52 * 100) if high52 and high52 > 0 else None
-
-                    # 判断是否接近 52 周新高 (< 1% = 创了)
+                    high52 = info.get("fiftyTwoWeekHigh")
+                    low52 = info.get("fiftyTwoWeekLow")
+                    dist_from_high = ((today_close - high52) / high52 * 100) if high52 and high52 > 0 else None
                     is_new_high = dist_from_high is not None and dist_from_high >= -0.5
 
                     all_data.append({
@@ -198,9 +207,11 @@ def fetch_stock_data(tickers, period="5d"):
                         "sector": info.get("sector", ""),
                         "industry": info.get("industry", ""),
                         "market_cap": info.get("marketCap"),
-                        "close": close,
+                        "close": today_close,
                         "prev_close": prev_close,
-                        "change_pct": round(change_pct, 2),
+                        "change_daily": round(change_daily, 2),
+                        "change_weekly": round(change_weekly, 2) if change_weekly is not None else None,
+                        "change_monthly": round(change_monthly, 2) if change_monthly is not None else None,
                         "volume": volume,
                         "avg_vol_5d": round(avg_vol_5d, 0),
                         "vol_ratio": round(vol_ratio, 2),
@@ -210,7 +221,7 @@ def fetch_stock_data(tickers, period="5d"):
                         "is_new_high": is_new_high,
                     })
                 except Exception:
-                    continue  # 单只失败不中断整批
+                    continue
         except Exception as e:
             print(f"  [ERROR] 批次拉取失败: {e}")
             continue
@@ -239,10 +250,12 @@ def generate_report(df, date_str):
 
     # --- 概览 ---
     total = len(df)
-    up = len(df[df["change_pct"] > 0])
-    down = len(df[df["change_pct"] < 0])
+    up = len(df[df["change_daily"] > 0])
+    down = len(df[df["change_daily"] < 0])
     flat = total - up - down
-    avg_change = df["change_pct"].mean()
+    avg_daily = df["change_daily"].mean()
+    avg_weekly = df["change_weekly"].dropna().mean()
+    avg_monthly = df["change_monthly"].dropna().mean()
     new_highs = df["is_new_high"].sum()
 
     lines += [
@@ -254,24 +267,29 @@ def generate_report(df, date_str):
         f"| 上涨 | {up} ({up/total*100:.0f}%) |",
         f"| 下跌 | {down} ({down/total*100:.0f}%) |",
         f"| 持平 | {flat} |",
-        f"| 平均涨跌幅 | {avg_change:+.2f}% |",
+        f"| 平均日涨幅 | {avg_daily:+.2f}% |",
+        f"| 平均周涨幅 | {avg_weekly:+.2f}% |",
+        f"| 平均月涨幅 | {avg_monthly:+.2f}% |",
         f"| 创 52 周新高 | {new_highs} 只 |",
         "",
     ]
 
     # --- 涨幅 TOP 15 ---
-    gainers = df.nlargest(15, "change_pct")
+    gainers = df.nlargest(15, "change_daily")
     lines += [
         "## 涨幅 TOP 15",
         "",
-        "| 排名 | 代码 | 名称 | 涨幅 | 收盘价 | 成交量/均值 | 52周新高 |",
-        "|:---:|------|------|:---:|:---:|:---:|:---:|",
+        "| 排名 | 代码 | 名称 | 日涨幅 | 周涨幅 | 月涨幅 | 收盘价 | 成交量/均值 | 52周新高 |",
+        "|:---:|------|------|:---:|:---:|:---:|:---:|:---:|:---:|",
     ]
     for rank, (_, row) in enumerate(gainers.iterrows(), 1):
         high_flag = "⭐" if row["is_new_high"] else ""
+        w = f"{row['change_weekly']:+.2f}%" if row["change_weekly"] is not None else "—"
+        m = f"{row['change_monthly']:+.2f}%" if row["change_monthly"] is not None else "—"
         lines.append(
             f"| {rank} | **{row['ticker']}** | {full_name(row)} | "
-            f"**{row['change_pct']:+.2f}%** | "
+            f"**{row['change_daily']:+.2f}%** | "
+            f"{w} | {m} | "
             f"${row['close']:.2f} | "
             f"{row['vol_ratio']:.1f}x"
             f"{' 🔥' if row['vol_ratio'] > 2 else ''} | "
@@ -280,7 +298,7 @@ def generate_report(df, date_str):
     lines.append("")
 
     # --- 跌幅 TOP 10 ---
-    losers = df.nsmallest(10, "change_pct")
+    losers = df.nsmallest(10, "change_daily")
     lines += [
         "## 跌幅 TOP 10",
         "",
@@ -290,7 +308,7 @@ def generate_report(df, date_str):
     for rank, (_, row) in enumerate(losers.iterrows(), 1):
         lines.append(
             f"| {rank} | **{row['ticker']}** | {full_name(row)} | "
-            f"**{row['change_pct']:+.2f}%** | "
+            f"**{row['change_daily']:+.2f}%** | "
             f"${row['close']:.2f} | "
             f"{row['vol_ratio']:.1f}x |"
         )
@@ -308,13 +326,13 @@ def generate_report(df, date_str):
         for _, row in unusual_vol.iterrows():
             lines.append(
                 f"| **{row['ticker']}** | {full_name(row)} | "
-                f"{row['change_pct']:+.2f}% | "
+                f"{row['change_daily']:+.2f}% | "
                 f"**{row['vol_ratio']:.1f}x** |"
             )
         lines.append("")
 
     # --- 52 周新高 ---
-    new_high_stocks = df[df["is_new_high"]].nlargest(15, "change_pct")
+    new_high_stocks = df[df["is_new_high"]].nlargest(15, "change_daily")
     if not new_high_stocks.empty:
         lines += [
             f"## 创 52 周新高 ({len(df[df['is_new_high']])} 只)",
@@ -325,7 +343,7 @@ def generate_report(df, date_str):
         for _, row in new_high_stocks.iterrows():
             lines.append(
                 f"| **{row['ticker']}** | {full_name(row)} | "
-                f"{row['change_pct']:+.2f}% | "
+                f"{row['change_daily']:+.2f}% | "
                 f"${row['close']:.2f} |"
             )
         lines.append("")
@@ -333,7 +351,7 @@ def generate_report(df, date_str):
     # --- 板块表现 ---
     if df["sector"].notna().any() and (df["sector"] != "").any():
         sector_stats = df.groupby("sector").agg(
-            平均涨幅=("change_pct", "mean"),
+            平均涨幅=("change_daily", "mean"),
             股票数=("ticker", "count"),
             新高数=("is_new_high", "sum"),
         ).round(2).sort_values("平均涨幅", ascending=False)
@@ -422,10 +440,10 @@ def main():
 
     # 摘要
     print("\n" + "=" * 60)
-    top3 = df.nlargest(3, "change_pct")
+    top3 = df.nlargest(3, "change_daily")
     print("当日涨幅前三：")
     for _, row in top3.iterrows():
-        print(f"  {row['ticker']:6s} {row['change_pct']:+.2f}%  {full_name(row)}")
+        print(f"  {row['ticker']:6s} {row['change_daily']:+.2f}%  {full_name(row)}")
     new_high_count = df["is_new_high"].sum()
     unusual_count = len(df[df["vol_ratio"] > 3])
     print(f"创 52 周新高: {new_high_count} 只  |  异常放量: {unusual_count} 只")
