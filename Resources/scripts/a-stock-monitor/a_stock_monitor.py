@@ -115,7 +115,7 @@ def fetch_data(tickers):
             for t in batch:
                 try:
                     info = stocks.tickers[t].info
-                    hist = stocks.tickers[t].history(period="1mo")
+                    hist = stocks.tickers[t].history(period="2mo")
                     if hist.empty or len(hist) < 2:
                         continue
 
@@ -133,8 +133,8 @@ def fetch_data(tickers):
                         change_weekly = None
 
                     # 月涨跌幅（约 21 个交易日）
-                    if len(closes) >= 22:
-                        change_monthly = ((today_close - closes.iloc[-22]) / closes.iloc[-22]) * 100
+                    if len(closes) >= 15:
+                        change_monthly = ((today_close - closes.iloc[-15]) / closes.iloc[-22]) * 100
                     else:
                         change_monthly = None
 

@@ -193,6 +193,14 @@ def fetch_stock_data(tickers, period="1mo"):
                     if hist.empty or len(hist) < 2:
                         continue
 
+                    # 兜底：如果最新 Close 是 NaN（如尚未收盘），用前一天数据
+                    closes_raw = hist["Close"]
+                    if pd.isna(closes_raw.iloc[-1]):
+                        if len(closes_raw) >= 2 and not pd.isna(closes_raw.iloc[-2]):
+                            hist = hist.iloc[:-1]  # 去掉最后一行 NaN
+                        else:
+                            continue
+
                     closes = hist["Close"]
                     today_close = closes.iloc[-1]
                     prev_close = closes.iloc[-2]
@@ -208,7 +216,7 @@ def fetch_stock_data(tickers, period="1mo"):
                         change_weekly = None
 
                     # 月涨跌幅（约 21 个交易日）
-                    if len(closes) >= 22:
+                    if len(closes) >= 15:
                         month_ago = closes.iloc[-22]
                         change_monthly = ((today_close - month_ago) / month_ago) * 100
                     else:
