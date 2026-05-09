@@ -302,13 +302,16 @@ def generate_report(df, date_str):
     lines += [
         "## 跌幅 TOP 10",
         "",
-        "| 排名 | 代码 | 名称 | 跌幅 | 收盘价 | 成交量/均值 |",
-        "|:---:|------|------|:---:|:---:|:---:|",
+        "| 排名 | 代码 | 名称 | 日跌幅 | 周跌幅 | 月跌幅 | 收盘价 | 成交量/均值 |",
+        "|:---:|------|------|:---:|:---:|:---:|:---:|:---:|",
     ]
     for rank, (_, row) in enumerate(losers.iterrows(), 1):
+        w = f"{row['change_weekly']:+.2f}%" if row["change_weekly"] is not None else "—"
+        m = f"{row['change_monthly']:+.2f}%" if row["change_monthly"] is not None else "—"
         lines.append(
             f"| {rank} | **{row['ticker']}** | {full_name(row)} | "
             f"**{row['change_daily']:+.2f}%** | "
+            f"{w} | {m} | "
             f"${row['close']:.2f} | "
             f"{row['vol_ratio']:.1f}x |"
         )
@@ -320,13 +323,16 @@ def generate_report(df, date_str):
         lines += [
             "## 异常放量（成交量 > 3 倍均值）",
             "",
-            "| 代码 | 名称 | 涨幅 | 成交量/均值 |",
-            "|------|------|:---:|:---:|",
+            "| 代码 | 名称 | 日涨幅 | 周涨幅 | 月涨幅 | 成交量/均值 |",
+            "|------|------|:---:|:---:|:---:|:---:|",
         ]
         for _, row in unusual_vol.iterrows():
+            w = f"{row['change_weekly']:+.2f}%" if row["change_weekly"] is not None else "—"
+            m = f"{row['change_monthly']:+.2f}%" if row["change_monthly"] is not None else "—"
             lines.append(
                 f"| **{row['ticker']}** | {full_name(row)} | "
                 f"{row['change_daily']:+.2f}% | "
+                f"{w} | {m} | "
                 f"**{row['vol_ratio']:.1f}x** |"
             )
         lines.append("")
@@ -337,13 +343,16 @@ def generate_report(df, date_str):
         lines += [
             f"## 创 52 周新高 ({len(df[df['is_new_high']])} 只)",
             "",
-            "| 代码 | 名称 | 涨幅 | 收盘价 |",
-            "|------|------|:---:|:---:|",
+            "| 代码 | 名称 | 日涨幅 | 周涨幅 | 月涨幅 | 收盘价 |",
+            "|------|------|:---:|:---:|:---:|:---:|",
         ]
         for _, row in new_high_stocks.iterrows():
+            w = f"{row['change_weekly']:+.2f}%" if row["change_weekly"] is not None else "—"
+            m = f"{row['change_monthly']:+.2f}%" if row["change_monthly"] is not None else "—"
             lines.append(
                 f"| **{row['ticker']}** | {full_name(row)} | "
                 f"{row['change_daily']:+.2f}% | "
+                f"{w} | {m} | "
                 f"${row['close']:.2f} |"
             )
         lines.append("")
@@ -351,23 +360,26 @@ def generate_report(df, date_str):
     # --- 板块表现 ---
     if df["sector"].notna().any() and (df["sector"] != "").any():
         sector_stats = df.groupby("sector").agg(
-            平均涨幅=("change_daily", "mean"),
+            日涨幅=("change_daily", "mean"),
+            周涨幅=("change_weekly", "mean"),
+            月涨幅=("change_monthly", "mean"),
             股票数=("ticker", "count"),
             新高数=("is_new_high", "sum"),
-        ).round(2).sort_values("平均涨幅", ascending=False)
+        ).round(2).sort_values("日涨幅", ascending=False)
 
         lines += [
             "## 板块表现",
             "",
-            "| 板块 | 平均涨幅 | 股票数 | 新高数 |",
-            "|------|:---:|:---:|:---:|",
+            "| 板块 | 日涨幅 | 周涨幅 | 月涨幅 | 股票数 | 新高数 |",
+            "|------|:---:|:---:|:---:|:---:|:---:|",
         ]
-        for sector, row in sector_stats.iterrows():
+        for sector, srow in sector_stats.iterrows():
             if sector == "":
                 continue
             lines.append(
-                f"| {sector} | {row['平均涨幅']:+.2f}% | "
-                f"{int(row['股票数'])} | {int(row['新高数'])} |"
+                f"| {sector} | {srow['日涨幅']:+.2f}% | "
+                f"{srow['周涨幅']:+.2f}% | {srow['月涨幅']:+.2f}% | "
+                f"{int(srow['股票数'])} | {int(srow['新高数'])} |"
             )
         lines.append("")
 
