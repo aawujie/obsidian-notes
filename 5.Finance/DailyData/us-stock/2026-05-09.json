@@ -1,6 +1,6 @@
 {
   "date": "2026-05-09",
-  "generated_at": "2026-05-09T12:06:51.776041",
+  "generated_at": "2026-05-09T12:55:36.915906",
   "total_stocks": 158,
   "data": [
     {
@@ -2936,10 +2936,10 @@
       "industry": "Discount Stores",
       "market_cap": 1039656222720,
       "close": 130.42999267578125,
-      "prev_close": 130.1999969482422,
-      "change_daily": 0.18,
-      "change_weekly": -0.89,
-      "change_monthly": 1.01,
+      "prev_close": 129.95199584960938,
+      "change_daily": 0.37,
+      "change_weekly": -0.7,
+      "change_monthly": 1.2,
       "volume": 15181600.0,
       "avg_vol_5d": 13493300.0,
       "vol_ratio": 1.13,
