@@ -1,13 +1,11 @@
 #!/usr/bin/env python3
+# 数据源: yfinance (Yahoo Finance, 免费, 无 API Key)
+# 运行:   cd obsidian-notes && source .venv/bin/activate && python Resources/scripts/hk-stock-monitor/hk_stock_monitor.py
 """
 港股市场监控脚本
-用途：盘后扫描恒生指数成分股 + 热门港股 + 港股ETF
-运行：python Resources/scripts/hk-stock-monitor/hk_stock_monitor.py
-数据源：yfinance (Yahoo Finance, 免费, 无 API Key)
+盘后扫描恒生指数 + 成分股 + 港股ETF + 热门港股
 
-输出到 5.Finance/DailyData/hk-stock/：
-  - YYYY-MM-DD.md     Markdown 日报
-  - YYYY-MM-DD.json    结构化数据
+输出: 5.Finance/DailyData/hk-stock/ → YYYY-MM-DD.md + .json
 """
 
 import json

@@ -1,13 +1,11 @@
 #!/usr/bin/env python3
+# 数据源: yfinance (Yahoo Finance, 免费, 无 API Key)
+# 运行:   cd obsidian-notes && source .venv/bin/activate && python Resources/scripts/gold-monitor/gold_monitor.py
 """
 黄金市场监控脚本
-用途：盘后扫描黄金相关资产，含金价ETF、金矿股、黄金期货
-运行：python Resources/scripts/gold-monitor/gold_monitor.py
-数据源：yfinance (Yahoo Finance, 免费, 无 API Key)
+盘后扫描金价ETF、金矿股、黄金期货、白银ETF
 
-输出到 5.Finance/DailyData/gold/：
-  - YYYY-MM-DD.md     Markdown 日报
-  - YYYY-MM-DD.json    结构化数据
+输出: 5.Finance/DailyData/gold/ → YYYY-MM-DD.md + .json
 """
 
 import json

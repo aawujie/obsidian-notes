@@ -1,15 +1,12 @@
 #!/usr/bin/env python3
+# 数据源: yfinance (Yahoo Finance, 免费, 无 API Key) — A股个股覆盖不全，升级用 akshare
+# 运行:   cd obsidian-notes && source .venv/bin/activate && python Resources/scripts/a-stock-monitor/a_stock_monitor.py
 """
 A股 / 中国市场监控脚本
-用途：盘后扫描上证、深证、创业板指数 + 主要行业ETF + US上市中概股
-运行：python Resources/scripts/a-stock-monitor/a_stock_monitor.py
-数据源：yfinance (Yahoo Finance, 免费, 无 API Key)
+盘后扫描上证、深证、创业板指数 + 美市中国ETF + 港市中概股
 
-注意：A股个股在 yfinance 覆盖不全（需 .SS/.SZ 后缀）。
-      如需完整个股数据，可安装 akshare: uv pip install akshare
-
-输出到 5.Finance/DailyData/a-stock/：
-  - YYYY-MM-DD.md     Markdown 日报
+输出: 5.Finance/DailyData/a-stock/ → YYYY-MM-DD.md + .json
+"""
   - YYYY-MM-DD.json    结构化数据
 """
 

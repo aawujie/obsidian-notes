@@ -1,13 +1,11 @@
 #!/usr/bin/env python3
+# 数据源: yfinance (Yahoo Finance, 免费, 无 API Key)
+# 运行:   cd obsidian-notes && source .venv/bin/activate && python Resources/scripts/us-stock-monitor/us_stock_monitor.py
 """
 美股市场监控脚本
-用途：盘后扫描 S&P 500 + 纳斯达克100，输出涨幅排名、异常放量、52周新高
-运行：python Resources/scripts/us-stock-monitor/us_stock_monitor.py
-数据源：yfinance (Yahoo Finance, 免费, 无 API Key)
+盘后扫描 S&P 500 + 纳斯达克100，输出涨幅排名、异常放量、52周新高
 
-输出到 5.Finance/DailyData/us-stock/：
-  - YYYY-MM-DD.md     Markdown 日报（可在 Obsidian 中查看）
-  - YYYY-MM-DD.json    结构化数据（供后续分析）
+输出: 5.Finance/DailyData/us-stock/ → YYYY-MM-DD.md + .json
 """
 
 import json
