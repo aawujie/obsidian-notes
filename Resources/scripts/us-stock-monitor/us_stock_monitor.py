@@ -12,7 +12,7 @@
 
 import json
 import sys
-from datetime import datetime, timedelta
+from datetime import datetime
 from pathlib import Path
 
 import numpy as np
@@ -226,17 +226,17 @@ def generate_report(df, date_str):
         return f"# 美股市场日报 {date_str}\n\n> 当日无数据（可能为非交易日或数据拉取失败）\n"
 
     lines = [
-        f"---",
+        "---",
         f"title: 美股市场日报 {date_str}",
-        f"type: summary",
+        "type: summary",
         f"created: {date_str}",
-        f"tags: [美股, 市场监控, 日报]",
-        f"---",
-        f"",
+        "tags: [美股, 市场监控, 日报]",
+        "---",
+        "",
         f"# 美股市场日报 {date_str}",
-        f"",
+        "",
         f"> 自动生成于 {datetime.now().strftime('%Y-%m-%d %H:%M')} · 覆盖 S&P 500 + Nasdaq 100 · 数据源 Yahoo Finance",
-        f"",
+        "",
     ]
 
     # --- 概览 ---
@@ -248,26 +248,26 @@ def generate_report(df, date_str):
     new_highs = df["is_new_high"].sum()
 
     lines += [
-        f"## 市场概览",
-        f"",
-        f"| 指标 | 数值 |",
-        f"|------|------|",
+        "## 市场概览",
+        "",
+        "| 指标 | 数值 |",
+        "|------|------|",
         f"| 覆盖股票数 | {total} |",
         f"| 上涨 | {up} ({up/total*100:.0f}%) |",
         f"| 下跌 | {down} ({down/total*100:.0f}%) |",
         f"| 持平 | {flat} |",
         f"| 平均涨跌幅 | {avg_change:+.2f}% |",
         f"| 创 52 周新高 | {new_highs} 只 |",
-        f"",
+        "",
     ]
 
     # --- 涨幅 TOP 15 ---
     gainers = df.nlargest(15, "change_pct")
     lines += [
-        f"## 涨幅 TOP 15",
-        f"",
-        f"| 排名 | 代码 | 名称 | 涨幅 | 收盘价 | 成交量/均值 | 52周新高 |",
-        f"|:---:|------|------|:---:|:---:|:---:|:---:|",
+        "## 涨幅 TOP 15",
+        "",
+        "| 排名 | 代码 | 名称 | 涨幅 | 收盘价 | 成交量/均值 | 52周新高 |",
+        "|:---:|------|------|:---:|:---:|:---:|:---:|",
     ]
     for rank, (_, row) in enumerate(gainers.iterrows(), 1):
         high_flag = "⭐" if row["is_new_high"] else ""
@@ -284,10 +284,10 @@ def generate_report(df, date_str):
     # --- 跌幅 TOP 10 ---
     losers = df.nsmallest(10, "change_pct")
     lines += [
-        f"## 跌幅 TOP 10",
-        f"",
-        f"| 排名 | 代码 | 名称 | 跌幅 | 收盘价 | 成交量/均值 |",
-        f"|:---:|------|------|:---:|:---:|:---:|",
+        "## 跌幅 TOP 10",
+        "",
+        "| 排名 | 代码 | 名称 | 跌幅 | 收盘价 | 成交量/均值 |",
+        "|:---:|------|------|:---:|:---:|:---:|",
     ]
     for rank, (_, row) in enumerate(losers.iterrows(), 1):
         lines.append(
@@ -302,10 +302,10 @@ def generate_report(df, date_str):
     unusual_vol = df[df["vol_ratio"] > 3].nlargest(10, "vol_ratio")
     if not unusual_vol.empty:
         lines += [
-            f"## 异常放量（成交量 > 3 倍均值）",
-            f"",
-            f"| 代码 | 名称 | 涨幅 | 成交量/均值 |",
-            f"|------|------|:---:|:---:|",
+            "## 异常放量（成交量 > 3 倍均值）",
+            "",
+            "| 代码 | 名称 | 涨幅 | 成交量/均值 |",
+            "|------|------|:---:|:---:|",
         ]
         for _, row in unusual_vol.iterrows():
             lines.append(
@@ -320,9 +320,9 @@ def generate_report(df, date_str):
     if not new_high_stocks.empty:
         lines += [
             f"## 创 52 周新高 ({len(df[df['is_new_high']])} 只)",
-            f"",
-            f"| 代码 | 名称 | 涨幅 | 收盘价 |",
-            f"|------|------|:---:|:---:|",
+            "",
+            "| 代码 | 名称 | 涨幅 | 收盘价 |",
+            "|------|------|:---:|:---:|",
         ]
         for _, row in new_high_stocks.iterrows():
             lines.append(
@@ -341,10 +341,10 @@ def generate_report(df, date_str):
         ).round(2).sort_values("平均涨幅", ascending=False)
 
         lines += [
-            f"## 板块表现",
-            f"",
-            f"| 板块 | 平均涨幅 | 股票数 | 新高数 |",
-            f"|------|:---:|:---:|:---:|",
+            "## 板块表现",
+            "",
+            "| 板块 | 平均涨幅 | 股票数 | 新高数 |",
+            "|------|:---:|:---:|:---:|",
         ]
         for sector, row in sector_stats.iterrows():
             if sector == "":

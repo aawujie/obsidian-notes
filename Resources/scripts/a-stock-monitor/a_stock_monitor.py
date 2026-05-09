@@ -123,27 +123,27 @@ def generate_report(df, date_str):
         return f"# A股市场日报 {date_str}\n\n> 当日无数据\n"
 
     lines = [
-        f"---", f"title: A股市场日报 {date_str}", f"type: summary",
-        f"created: {date_str}", f"tags: [A股, 中国市场, 中概股, 市场监控, 日报]", f"---",
-        f"", f"# A股市场日报 {date_str}",
-        f"", f"> 自动生成于 {datetime.now().strftime('%Y-%m-%d %H:%M')} · 数据源 Yahoo Finance",
-        f"", f"## 主要指数",
-        f"", f"| 指数 | 名称 | 点位 | 涨跌幅 |",
-        f"|------|------|:---:|:---:|",
+        "---", f"title: A股市场日报 {date_str}", "type: summary",
+        f"created: {date_str}", "tags: [A股, 中国市场, 中概股, 市场监控, 日报]", "---",
+        "", f"# A股市场日报 {date_str}",
+        "", f"> 自动生成于 {datetime.now().strftime('%Y-%m-%d %H:%M')} · 数据源 Yahoo Finance",
+        "", "## 主要指数",
+        "", "| 指数 | 名称 | 点位 | 涨跌幅 |",
+        "|------|------|:---:|:---:|",
     ]
     for _, row in df[df["ticker"].isin(INDICES)].iterrows():
         lines.append(f"| **{row['ticker']}** | {full_name(row)} | {row['close']:.2f} | {row['change_pct']:+.2f}% |")
 
-    lines += [f"", f"## 美市中国ETF（外资情绪）", f"",
-              f"| 代码 | 名称 | 价格 | 涨跌幅 | 52周新高 |",
-              f"|------|------|:---:|:---:|:---:|"]
+    lines += ["", "## 美市中国ETF（外资情绪）", "",
+              "| 代码 | 名称 | 价格 | 涨跌幅 | 52周新高 |",
+              "|------|------|:---:|:---:|:---:|"]
     for _, row in df[df["ticker"].isin(US_CHINA_ETF)].iterrows():
         high = "⭐" if row["is_new_high"] else ""
         lines.append(f"| **{row['ticker']}** | {full_name(row)} | ${row['close']:.2f} | {row['change_pct']:+.2f}% | {high} |")
 
-    lines += [f"", f"## 大市值中概 / 港股", f"",
-              f"| 代码 | 名称 | 价格 | 涨跌幅 | 52周新高 |",
-              f"|------|------|:---:|:---:|:---:|"]
+    lines += ["", "## 大市值中概 / 港股", "",
+              "| 代码 | 名称 | 价格 | 涨跌幅 | 52周新高 |",
+              "|------|------|:---:|:---:|:---:|"]
     for _, row in df[df["ticker"].isin(BIG_CAP)].iterrows():
         high = "⭐" if row["is_new_high"] else ""
         lines.append(f"| **{row['ticker']}** | {full_name(row)} | {row['close']:.2f} | {row['change_pct']:+.2f}% | {high} |")

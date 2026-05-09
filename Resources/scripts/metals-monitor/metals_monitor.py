@@ -115,17 +115,17 @@ def generate_report(df, date_str):
         return f"# 金属市场日报 {date_str}\n\n> 当日无数据\n"
 
     lines = [
-        f"---", f"title: 金属市场日报 {date_str}", f"type: summary",
-        f"created: {date_str}", f"tags: [金属, 大宗商品, 铜, 锂, 稀土, 市场监控, 日报]", f"---",
-        f"", f"# 金属市场日报 {date_str}",
-        f"", f"> 自动生成于 {datetime.now().strftime('%Y-%m-%d %H:%M')} · 数据源 Yahoo Finance",
+        "---", f"title: 金属市场日报 {date_str}", "type: summary",
+        f"created: {date_str}", "tags: [金属, 大宗商品, 铜, 锂, 稀土, 市场监控, 日报]", "---",
+        "", f"# 金属市场日报 {date_str}",
+        "", f"> 自动生成于 {datetime.now().strftime('%Y-%m-%d %H:%M')} · 数据源 Yahoo Finance",
     ]
 
     # 贵金属
     lines += [
-        f"", f"## 贵金属期货", f"",
-        f"| 品种 | 名称 | 价格 | 涨跌幅 |",
-        f"|------|------|:---:|:---:|",
+        "", "## 贵金属期货", "",
+        "| 品种 | 名称 | 价格 | 涨跌幅 |",
+        "|------|------|:---:|:---:|",
     ]
     for _, row in df[df["ticker"].isin(PRECIOUS_METALS)].iterrows():
         lines.append(f"| **{row['ticker']}** | {full_name(row)} | ${row['close']:.2f} | {row['change_pct']:+.2f}% |")
@@ -134,18 +134,18 @@ def generate_report(df, date_str):
     base = df[df["ticker"].isin(BASE_METALS)]
     if not base.empty:
         lines += [
-            f"", f"## 工业金属期货", f"",
-            f"| 品种 | 名称 | 价格 | 涨跌幅 |",
-            f"|------|------|:---:|:---:|",
+            "", "## 工业金属期货", "",
+            "| 品种 | 名称 | 价格 | 涨跌幅 |",
+            "|------|------|:---:|:---:|",
         ]
         for _, row in base.iterrows():
             lines.append(f"| **{row['ticker']}** | {full_name(row)} | ${row['close']:.2f} | {row['change_pct']:+.2f}% |")
 
     # ETF
     lines += [
-        f"", f"## 矿业 ETF", f"",
-        f"| 代码 | 名称 | 价格 | 涨跌幅 | 52周新高 |",
-        f"|------|------|:---:|:---:|:---:|",
+        "", "## 矿业 ETF", "",
+        "| 代码 | 名称 | 价格 | 涨跌幅 | 52周新高 |",
+        "|------|------|:---:|:---:|:---:|",
     ]
     for _, row in df[df["ticker"].isin(MINING_ETF)].iterrows():
         high = "⭐" if row["is_new_high"] else ""
@@ -154,9 +154,9 @@ def generate_report(df, date_str):
     # 大矿企
     miners = df[df["ticker"].isin(MAJOR_MINERS)].nlargest(14, "change_pct")
     lines += [
-        f"", f"## 大型矿企", f"",
-        f"| 代码 | 名称 | 涨幅 | 收盘价 | 52周新高 |",
-        f"|------|------|:---:|:---:|:---:|",
+        "", "## 大型矿企", "",
+        "| 代码 | 名称 | 涨幅 | 收盘价 | 52周新高 |",
+        "|------|------|:---:|:---:|:---:|",
     ]
     for _, row in miners.iterrows():
         high = "⭐" if row["is_new_high"] else ""

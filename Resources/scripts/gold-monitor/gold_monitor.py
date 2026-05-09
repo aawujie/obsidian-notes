@@ -93,15 +93,15 @@ def generate_report(df, date_str):
         return f"# 黄金市场日报 {date_str}\n\n> 当日无数据\n"
 
     lines = [
-        f"---", f"title: 黄金市场日报 {date_str}", f"type: summary",
-        f"created: {date_str}", f"tags: [黄金, 贵金属, 市场监控, 日报]", f"---",
-        f"", f"# 黄金市场日报 {date_str}",
-        f"", f"> 自动生成于 {datetime.now().strftime('%Y-%m-%d %H:%M')} · 数据源 Yahoo Finance",
-        f"",
-        f"## 金价与期货",
-        f"",
-        f"| 标的 | 名称 | 价格 | 涨跌幅 | 52周新高 |",
-        f"|------|------|:---:|:---:|:---:|",
+        "---", f"title: 黄金市场日报 {date_str}", "type: summary",
+        f"created: {date_str}", "tags: [黄金, 贵金属, 市场监控, 日报]", "---",
+        "", f"# 黄金市场日报 {date_str}",
+        "", f"> 自动生成于 {datetime.now().strftime('%Y-%m-%d %H:%M')} · 数据源 Yahoo Finance",
+        "",
+        "## 金价与期货",
+        "",
+        "| 标的 | 名称 | 价格 | 涨跌幅 | 52周新高 |",
+        "|------|------|:---:|:---:|:---:|",
     ]
     for _, row in df[df["ticker"].isin(GOLD_ETF + GOLD_FUTURES + SILVER)].iterrows():
         high = "⭐" if row["is_new_high"] else ""
@@ -112,9 +112,9 @@ def generate_report(df, date_str):
 
     gold_n = df[df["ticker"].isin(GOLD_MINERS)].nlargest(10, "change_pct")
     lines += [
-        f"", f"## 金矿股 TOP 10", f"",
-        f"| 代码 | 名称 | 涨幅 | 收盘价 | 成交量/均值 |",
-        f"|------|------|:---:|:---:|:---:|",
+        "", "## 金矿股 TOP 10", "",
+        "| 代码 | 名称 | 涨幅 | 收盘价 | 成交量/均值 |",
+        "|------|------|:---:|:---:|:---:|",
     ]
     for _, row in gold_n.iterrows():
         lines.append(
@@ -124,8 +124,8 @@ def generate_report(df, date_str):
 
     new_highs = df[df["is_new_high"]]
     if not new_highs.empty:
-        lines += [f"", f"## 创 52 周新高", f"", f"| 代码 | 名称 | 涨幅 |",
-                  f"|------|------|:---:|"]
+        lines += ["", "## 创 52 周新高", "", "| 代码 | 名称 | 涨幅 |",
+                  "|------|------|:---:|"]
         for _, row in new_highs.iterrows():
             lines.append(f"| **{row['ticker']}** | {full_name(row)} | {row['change_pct']:+.2f}% |")
 

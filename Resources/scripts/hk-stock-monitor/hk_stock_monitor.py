@@ -149,27 +149,27 @@ def generate_report(df, date_str):
         return f"# 港股市场日报 {date_str}\n\n> 当日无数据\n"
 
     lines = [
-        f"---", f"title: 港股市场日报 {date_str}", f"type: summary",
-        f"created: {date_str}", f"tags: [港股, 恒生, 市场监控, 日报]", f"---",
-        f"", f"# 港股市场日报 {date_str}",
-        f"", f"> 自动生成于 {datetime.now().strftime('%Y-%m-%d %H:%M')} · 数据源 Yahoo Finance",
-        f"", f"## 主要指数",
-        f"", f"| 指数 | 名称 | 点位 | 涨跌幅 |",
-        f"|------|------|:---:|:---:|",
+        "---", f"title: 港股市场日报 {date_str}", "type: summary",
+        f"created: {date_str}", "tags: [港股, 恒生, 市场监控, 日报]", "---",
+        "", f"# 港股市场日报 {date_str}",
+        "", f"> 自动生成于 {datetime.now().strftime('%Y-%m-%d %H:%M')} · 数据源 Yahoo Finance",
+        "", "## 主要指数",
+        "", "| 指数 | 名称 | 点位 | 涨跌幅 |",
+        "|------|------|:---:|:---:|",
     ]
     for _, row in df[df["ticker"].isin(HK_INDICES)].iterrows():
         lines.append(f"| **{row['ticker']}** | {full_name(row)} | {row['close']:.2f} | {row['change_pct']:+.2f}% |")
 
-    lines += [f"", f"## 港股 ETF", f"",
-              f"| 代码 | 名称 | 价格 | 涨跌幅 |",
-              f"|------|------|:---:|:---:|"]
+    lines += ["", "## 港股 ETF", "",
+              "| 代码 | 名称 | 价格 | 涨跌幅 |",
+              "|------|------|:---:|:---:|"]
     for _, row in df[df["ticker"].isin(HK_ETF)].iterrows():
         lines.append(f"| **{row['ticker']}** | {full_name(row)} | {row['close']:.2f} | {row['change_pct']:+.2f}% |")
 
     top_n = df[df["ticker"].isin(HK_BIG_CAP)].nlargest(15, "change_pct")
-    lines += [f"", f"## 成分股涨幅 TOP 15", f"",
-              f"| 代码 | 名称 | 涨幅 | 收盘价 | 成交量/均值 | 52周新高 |",
-              f"|------|------|:---:|:---:|:---:|:---:|"]
+    lines += ["", "## 成分股涨幅 TOP 15", "",
+              "| 代码 | 名称 | 涨幅 | 收盘价 | 成交量/均值 | 52周新高 |",
+              "|------|------|:---:|:---:|:---:|:---:|"]
     for _, row in top_n.iterrows():
         high = "⭐" if row["is_new_high"] else ""
         lines.append(
