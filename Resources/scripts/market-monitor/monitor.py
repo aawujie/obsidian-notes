@@ -135,6 +135,20 @@ CHINESE_NAMES = {
 }
 
 
+def get_cn(ticker):
+    """返回中文名称，无映射时返回空"""
+    return CHINESE_NAMES.get(ticker, "")
+
+
+def row["name"]:
+    """拼装显示名称：英文名 + 中文名"""
+    en = row.get("name", row.get("ticker", ""))
+    cn = get_cn(row["ticker"])
+    if cn:
+        return f"{en} / {cn}"
+    return en
+
+
 def fetch_stock_data(tickers, period="5d"):
     """
     批量拉取股票数据
@@ -258,7 +272,7 @@ def generate_report(df, date_str):
     for rank, (_, row) in enumerate(gainers.iterrows(), 1):
         high_flag = "⭐" if row["is_new_high"] else ""
         lines.append(
-            f"| {rank} | **{row['ticker']}** | {row['name']} | "
+            f"| {rank} | **{row['ticker']}** | {row["name"]} | "
             f"**{row['change_pct']:+.2f}%** | "
             f"${row['close']:.2f} | "
             f"{row['vol_ratio']:.1f}x"
@@ -277,7 +291,7 @@ def generate_report(df, date_str):
     ]
     for rank, (_, row) in enumerate(losers.iterrows(), 1):
         lines.append(
-            f"| {rank} | **{row['ticker']}** | {row['name']} | "
+            f"| {rank} | **{row['ticker']}** | {row["name"]} | "
             f"**{row['change_pct']:+.2f}%** | "
             f"${row['close']:.2f} | "
             f"{row['vol_ratio']:.1f}x |"
@@ -295,7 +309,7 @@ def generate_report(df, date_str):
         ]
         for _, row in unusual_vol.iterrows():
             lines.append(
-                f"| **{row['ticker']}** | {row['name']} | "
+                f"| **{row['ticker']}** | {row["name"]} | "
                 f"{row['change_pct']:+.2f}% | "
                 f"**{row['vol_ratio']:.1f}x** |"
             )
@@ -312,7 +326,7 @@ def generate_report(df, date_str):
         ]
         for _, row in new_high_stocks.iterrows():
             lines.append(
-                f"| **{row['ticker']}** | {row['name']} | "
+                f"| **{row['ticker']}** | {row["name"]} | "
                 f"{row['change_pct']:+.2f}% | "
                 f"${row['close']:.2f} |"
             )
@@ -413,7 +427,7 @@ def main():
     top3 = df.nlargest(3, "change_pct")
     print("当日涨幅前三：")
     for _, row in top3.iterrows():
-        print(f"  {row['ticker']:6s} {row['change_pct']:+.2f}%  {row['name']}")
+        print(f"  {row['ticker']:6s} {row['change_pct']:+.2f}%  {row["name"]}")
     new_high_count = df["is_new_high"].sum()
     unusual_count = len(df[df["vol_ratio"] > 3])
     print(f"创 52 周新高: {new_high_count} 只  |  异常放量: {unusual_count} 只")
