@@ -119,6 +119,14 @@ def fetch_data(tickers):
                     if hist.empty or len(hist) < 2:
                         continue
 
+                    # 兜底：如果最新 Close 是 NaN，用前一天数据
+                    closes_raw = hist["Close"]
+                    if pd.isna(closes_raw.iloc[-1]):
+                        if len(closes_raw) >= 2 and not pd.isna(closes_raw.iloc[-2]):
+                            hist = hist.iloc[:-1]
+                        else:
+                            continue
+
                     closes = hist["Close"]
                     today_close = closes.iloc[-1]
                     prev_close = closes.iloc[-2]
