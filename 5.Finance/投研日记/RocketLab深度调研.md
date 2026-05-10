@@ -3,7 +3,15 @@ title: RocketLab深度调研
 type: research
 created: 2026-05-10
 updated: 2026-05-10
-tags: [航天, 火箭发射, RocketLab, RKLB, 商业航天, SpaceX, Neutron, Electron]
+tags:
+  - 航天
+  - 火箭发射
+  - RocketLab
+  - RKLB
+  - 商业航天
+  - SpaceX
+  - Neutron
+  - Electron
 sources:
   - https://investors.rocketlabcorp.com/news-releases/news-release-details/rocket-lab-announces-fourth-quarter-and-full-year-2025-financial
   - https://stockanalysis.com/stocks/rklb/ratings/
@@ -11,6 +19,8 @@ sources:
   - https://spacenews.com/rocket-lab-on-green-light-schedule-to-make-first-neutron-launch-in-2025/
   - https://arstechnica.com/space/2025/11/neutron-rockets-debut-slips-into-mid-2026-as-company-seeks-success-from-the-start/
   - https://rocketlabcorp.com/updates/rocket-lab-neutron-test-update/
+share_link: https://share.note.sx/e8l81t12#B1i9IyHiooTF/6Emc79HHoZ0yo9sPv4jV6Dq1Gdz6bE
+share_updated: 2026-05-10T13:47:33+08:00
 ---
 
 # Rocket Lab (RKLB) 深度调研
