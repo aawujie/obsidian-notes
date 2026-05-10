@@ -39,15 +39,6 @@ REGION_QUERIES = {
     "全球制裁": "G7 sanctions OR SWIFT sanctions OR OFAC sanctions OR EU sanctions OR global trade restrictions",
 }
 
-REGION_CN = {
-    "美伊冲突": "美伊冲突/霍尔木兹",
-    "俄乌战争": "俄乌战争/能源粮食",
-    "中美博弈": "中美关税/科技博弈",
-    "中东/红海": "中东/红海航运",
-    "台海/南海/朝鲜": "台海/南海/朝鲜",
-    "全球制裁": "全球制裁/贸易管制",
-}
-
 # ─── 事件类型 → 关键词匹配 ──────────────────────────────────
 EVENT_TYPE_KEYWORDS = [
     ("原油供应风险", [
@@ -260,7 +251,7 @@ def search_tavily(query: str, max_results: int = 8) -> list[dict]:
         resp.raise_for_status()
         data = resp.json()
         return data.get("results", [])
-    except Exception as e:
+    except (requests.RequestException, ValueError, KeyError) as e:
         print(f"    [WARN] Tavily 搜索失败: {e}")
         return []
 
@@ -287,7 +278,7 @@ def search_google_news(query: str, max_results: int = 8) -> list[dict]:
                 "content": clean_html(desc),
                 "published_date": pub_date,
             })
-    except Exception as e:
+    except (requests.RequestException, ET.ParseError) as e:
         print(f"    [WARN] Google News 搜索失败: {e}")
 
     return results
@@ -308,7 +299,7 @@ def fetch_article_content(url: str) -> str | None:
         text = re.sub(r"<[^>]+>", " ", text)
         text = re.sub(r"\s+", " ", text).strip()
         return text[:2000]
-    except Exception:
+    except (requests.RequestException, OSError):
         return None
 
 
@@ -408,12 +399,9 @@ def generate_report(articles: list[dict], date_str: str) -> str:
     # ── 统计数据 ──
     sev_counter = Counter(a["severity"] for a in articles)
     region_counter = Counter()
-    type_counter = Counter()
     for a in articles:
         for r in a["classified_regions"]:
             region_counter[r] += 1
-        for t in a["event_types"]:
-            type_counter[t] += 1
 
     lines = [
         "---",
