@@ -17,7 +17,7 @@ from datetime import datetime
 from pathlib import Path
 from collections import Counter
 
-import httpx
+import requests
 
 SCRIPT_DIR = Path(__file__).resolve().parent
 VAULT_ROOT = SCRIPT_DIR.parent.parent.parent
@@ -230,7 +230,7 @@ def classify_region(text: str) -> list[str]:
         "全球制裁": ["sanctions", "swift", "ofac", "g7", "eu sanctions"],
     }.items():
         score = sum(1 for kw in keywords if kw in text_lower)
-        if score >= 2:
+        if score >= 1:
             matched.append(region)
     return matched if matched else ["其他重大事件"]
 
@@ -241,7 +241,7 @@ def search_tavily(query: str, max_results: int = 8) -> list[dict]:
         return []
 
     try:
-        resp = httpx.post(
+        resp = requests.post(
             TAVILY_URL,
             json={
                 "api_key": TAVILY_API_KEY,
@@ -255,7 +255,7 @@ def search_tavily(query: str, max_results: int = 8) -> list[dict]:
                 "include_images": False,
             },
             timeout=30,
-            proxy=PROXY,
+            proxies={"http": PROXY, "https": PROXY},
         )
         resp.raise_for_status()
         data = resp.json()
@@ -271,7 +271,7 @@ def search_google_news(query: str, max_results: int = 8) -> list[dict]:
     url = f"https://news.google.com/rss/search?q={encoded}&hl=en-US&gl=US&ceid=US:en"
     results = []
     try:
-        resp = httpx.get(url, timeout=15, proxy=PROXY, follow_redirects=True)
+        resp = requests.get(url, timeout=15, proxies={"http": PROXY, "https": PROXY})
         if resp.status_code != 200:
             return []
         root = ET.fromstring(resp.text)
@@ -296,8 +296,8 @@ def search_google_news(query: str, max_results: int = 8) -> list[dict]:
 def fetch_article_content(url: str) -> str | None:
     """web_fetch: 抓取关键新闻详情"""
     try:
-        resp = httpx.get(
-            url, timeout=15, proxy=PROXY, follow_redirects=True,
+        resp = requests.get(
+            url, timeout=15, proxies={"http": PROXY, "https": PROXY},
             headers={"User-Agent": "Mozilla/5.0 (compatible; GeopoliticsMonitor/1.0)"},
         )
         if resp.status_code != 200:
@@ -489,7 +489,7 @@ def generate_report(articles: list[dict], date_str: str) -> str:
     ]
 
     all_types = set()
-    for a in sorted_articles[:20]:
+    for a in sorted_articles:
         for t in a["event_types"]:
             all_types.add(t)
 
