@@ -224,6 +224,26 @@ hk-stock)
     SUMMARY=$(generate_summary "港股" "$VAULT/5.Finance/DailyData/hk-stock/${DATE}.json" "🇭🇰")
     send_wx "$SUMMARY"
     ;;
+fund)
+    run_monitor "基金" "$SCRIPTS/fund-monitor/fund_monitor.py" || true
+    JSON="$VAULT/5.Finance/DailyData/funds/${DATE}.json"
+    if [ -f "$JSON" ]; then
+        SUMMARY=$(python3 -c "
+import json
+with open('$JSON') as f:
+    d = json.load(f)
+lines = ['💰 基金日报 ' + d['date'], '']
+for cat, top in d.get('top_funds', {}).items():
+    if top:
+        f0 = top[0]
+        lines.append(f'{cat}: {f0.get(\"name\",\"?\")[:18]} {f0.get(\"change_daily\",\"?\")}')
+lines.append('')
+lines.append('📁 DailyData/funds/' + d['date'] + '.md')
+print('\n'.join(lines))
+")
+        send_wx "$SUMMARY"
+    fi
+    ;;
 gold)
     run_monitor "黄金" "$SCRIPTS/gold-monitor/gold_monitor.py" || true
     SUMMARY=$(generate_summary "黄金" "$VAULT/5.Finance/DailyData/gold/${DATE}.json" "🥇")
