@@ -1,6 +1,6 @@
 {
   "date": "2026-05-10",
-  "generated_at": "2026-05-10T12:56:17.045937",
+  "generated_at": "2026-05-10T12:57:25.918651",
   "total_events": 48,
   "severity_distribution": {
     "medium": 45,
@@ -42,7 +42,7 @@
       "published_date": "Sat, 09 May 2026 20:07:45 GMT",
       "search_region": "美伊冲突",
       "classified_regions": [
-        "其他重大事件"
+        "美伊冲突"
       ],
       "event_types": [
         "原油供应风险",
@@ -75,7 +75,7 @@
       "published_date": "Wed, 06 May 2026 11:51:23 GMT",
       "search_region": "美伊冲突",
       "classified_regions": [
-        "其他重大事件"
+        "美伊冲突"
       ],
       "event_types": [
         "军事冲突升级"
@@ -187,7 +187,7 @@
       "published_date": "Sat, 09 May 2026 12:49:50 GMT",
       "search_region": "美伊冲突",
       "classified_regions": [
-        "其他重大事件"
+        "美伊冲突"
       ],
       "event_types": [
         "原油供应风险",
@@ -220,7 +220,7 @@
       "published_date": "Fri, 08 May 2026 00:12:16 GMT",
       "search_region": "美伊冲突",
       "classified_regions": [
-        "其他重大事件"
+        "美伊冲突"
       ],
       "event_types": [
         "避险需求"
@@ -245,7 +245,8 @@
       "published_date": "Tue, 28 Apr 2026 07:00:00 GMT",
       "search_region": "俄乌战争",
       "classified_regions": [
-        "其他重大事件"
+        "美伊冲突",
+        "俄乌战争"
       ],
       "event_types": [
         "粮食供应"
@@ -268,6 +269,7 @@
       "published_date": "Wed, 29 Apr 2026 07:00:00 GMT",
       "search_region": "俄乌战争",
       "classified_regions": [
+        "美伊冲突",
         "俄乌战争"
       ],
       "event_types": [
@@ -291,7 +293,9 @@
       "published_date": "Tue, 28 Apr 2026 07:00:00 GMT",
       "search_region": "俄乌战争",
       "classified_regions": [
-        "俄乌战争"
+        "美伊冲突",
+        "俄乌战争",
+        "全球制裁"
       ],
       "event_types": [
         "粮食供应"
@@ -314,7 +318,8 @@
       "published_date": "Mon, 04 May 2026 15:49:14 GMT",
       "search_region": "俄乌战争",
       "classified_regions": [
-        "其他重大事件"
+        "美伊冲突",
+        "俄乌战争"
       ],
       "event_types": [
         "粮食供应"
@@ -337,6 +342,7 @@
       "published_date": "Tue, 28 Apr 2026 07:00:00 GMT",
       "search_region": "俄乌战争",
       "classified_regions": [
+        "美伊冲突",
         "俄乌战争"
       ],
       "event_types": [
@@ -360,7 +366,8 @@
       "published_date": "Mon, 13 Apr 2026 14:28:32 GMT",
       "search_region": "俄乌战争",
       "classified_regions": [
-        "其他重大事件"
+        "美伊冲突",
+        "俄乌战争"
       ],
       "event_types": [
         "军事冲突升级"
@@ -412,7 +419,7 @@
       "published_date": "Mon, 23 Mar 2026 07:00:00 GMT",
       "search_region": "俄乌战争",
       "classified_regions": [
-        "其他重大事件"
+        "俄乌战争"
       ],
       "event_types": [
         "军事冲突升级"
@@ -439,7 +446,7 @@
       "published_date": "Thu, 30 Apr 2026 07:00:00 GMT",
       "search_region": "中美博弈",
       "classified_regions": [
-        "其他重大事件"
+        "中美博弈"
       ],
       "event_types": [
         "避险需求"
@@ -464,7 +471,7 @@
       "published_date": "Thu, 16 Apr 2026 07:00:00 GMT",
       "search_region": "中美博弈",
       "classified_regions": [
-        "其他重大事件"
+        "中美博弈"
       ],
       "event_types": [
         "避险需求"
@@ -489,7 +496,7 @@
       "published_date": "Wed, 11 Feb 2026 08:00:00 GMT",
       "search_region": "中美博弈",
       "classified_regions": [
-        "其他重大事件"
+        "中美博弈"
       ],
       "event_types": [
         "避险需求"
@@ -514,7 +521,7 @@
       "published_date": "Thu, 18 Dec 2025 08:00:00 GMT",
       "search_region": "中美博弈",
       "classified_regions": [
-        "其他重大事件"
+        "中美博弈"
       ],
       "event_types": [
         "避险需求"
@@ -539,7 +546,7 @@
       "published_date": "Mon, 27 Oct 2025 07:00:00 GMT",
       "search_region": "中美博弈",
       "classified_regions": [
-        "其他重大事件"
+        "中美博弈"
       ],
       "event_types": [
         "避险需求"
@@ -564,7 +571,7 @@
       "published_date": "Thu, 30 Oct 2025 07:00:00 GMT",
       "search_region": "中美博弈",
       "classified_regions": [
-        "其他重大事件"
+        "中美博弈"
       ],
       "event_types": [
         "避险需求"
@@ -614,7 +621,8 @@
       "published_date": "Sun, 19 Oct 2025 07:00:00 GMT",
       "search_region": "中美博弈",
       "classified_regions": [
-        "中美博弈"
+        "中美博弈",
+        "台海/南海/朝鲜"
       ],
       "event_types": [
         "军事冲突升级",
@@ -650,7 +658,8 @@
       "published_date": "Sat, 28 Mar 2026 07:00:00 GMT",
       "search_region": "中东/红海",
       "classified_regions": [
-        "美伊冲突"
+        "美伊冲突",
+        "中东/红海"
       ],
       "event_types": [
         "军事冲突升级",
@@ -683,7 +692,8 @@
       "search_region": "中东/红海",
       "classified_regions": [
         "美伊冲突",
-        "中东/红海"
+        "中东/红海",
+        "台海/南海/朝鲜"
       ],
       "event_types": [
         "航运中断"
@@ -704,7 +714,7 @@
       "published_date": "Thu, 23 Apr 2026 07:00:00 GMT",
       "search_region": "中东/红海",
       "classified_regions": [
-        "其他重大事件"
+        "美伊冲突"
       ],
       "event_types": [
         "原油供应风险"
@@ -726,6 +736,7 @@
       "published_date": "Sun, 29 Mar 2026 07:00:00 GMT",
       "search_region": "中东/红海",
       "classified_regions": [
+        "美伊冲突",
         "中东/红海"
       ],
       "event_types": [
@@ -758,6 +769,7 @@
       "published_date": "Tue, 31 Mar 2026 07:00:00 GMT",
       "search_region": "中东/红海",
       "classified_regions": [
+        "美伊冲突",
         "中东/红海"
       ],
       "event_types": [
@@ -800,6 +812,7 @@
       "published_date": "Fri, 27 Mar 2026 07:00:00 GMT",
       "search_region": "中东/红海",
       "classified_regions": [
+        "美伊冲突",
         "中东/红海"
       ],
       "event_types": [
@@ -832,6 +845,7 @@
       "published_date": "Fri, 27 Mar 2026 07:00:00 GMT",
       "search_region": "中东/红海",
       "classified_regions": [
+        "美伊冲突",
         "中东/红海"
       ],
       "event_types": [
@@ -864,7 +878,8 @@
       "published_date": "Fri, 01 May 2026 07:00:00 GMT",
       "search_region": "台海/南海/朝鲜",
       "classified_regions": [
-        "其他重大事件"
+        "中美博弈",
+        "台海/南海/朝鲜"
       ],
       "event_types": [
         "军事冲突升级"
@@ -891,7 +906,7 @@
       "published_date": "Wed, 18 Feb 2026 08:00:00 GMT",
       "search_region": "台海/南海/朝鲜",
       "classified_regions": [
-        "其他重大事件"
+        "台海/南海/朝鲜"
       ],
       "event_types": [
         "避险需求"
@@ -916,7 +931,7 @@
       "published_date": "Sat, 03 Jan 2026 08:00:00 GMT",
       "search_region": "台海/南海/朝鲜",
       "classified_regions": [
-        "其他重大事件"
+        "中美博弈"
       ],
       "event_types": [
         "避险需求"
@@ -941,7 +956,7 @@
       "published_date": "Tue, 06 Jan 2026 08:00:00 GMT",
       "search_region": "台海/南海/朝鲜",
       "classified_regions": [
-        "其他重大事件"
+        "台海/南海/朝鲜"
       ],
       "event_types": [
         "避险需求"
@@ -966,7 +981,8 @@
       "published_date": "Mon, 16 Mar 2026 07:00:00 GMT",
       "search_region": "台海/南海/朝鲜",
       "classified_regions": [
-        "其他重大事件"
+        "美伊冲突",
+        "台海/南海/朝鲜"
       ],
       "event_types": [
         "避险需求"
@@ -991,6 +1007,7 @@
       "published_date": "Sun, 04 Jan 2026 08:00:00 GMT",
       "search_region": "台海/南海/朝鲜",
       "classified_regions": [
+        "中美博弈",
         "台海/南海/朝鲜"
       ],
       "event_types": [
@@ -1043,6 +1060,7 @@
       "published_date": "Sun, 04 Jan 2026 08:00:00 GMT",
       "search_region": "台海/南海/朝鲜",
       "classified_regions": [
+        "中美博弈",
         "台海/南海/朝鲜"
       ],
       "event_types": [
@@ -1068,7 +1086,8 @@
       "published_date": "Tue, 28 Apr 2026 07:00:00 GMT",
       "search_region": "全球制裁",
       "classified_regions": [
-        "其他重大事件"
+        "俄乌战争",
+        "全球制裁"
       ],
       "event_types": [
         "避险需求"
@@ -1093,6 +1112,8 @@
       "published_date": "Thu, 23 Apr 2026 07:00:00 GMT",
       "search_region": "全球制裁",
       "classified_regions": [
+        "俄乌战争",
+        "中美博弈",
         "全球制裁"
       ],
       "event_types": [
@@ -1118,7 +1139,7 @@
       "published_date": "Sat, 09 May 2026 18:18:58 GMT",
       "search_region": "全球制裁",
       "classified_regions": [
-        "其他重大事件"
+        "全球制裁"
       ],
       "event_types": [
         "军事冲突升级"
@@ -1145,7 +1166,8 @@
       "published_date": "Fri, 20 Feb 2026 08:00:00 GMT",
       "search_region": "全球制裁",
       "classified_regions": [
-        "其他重大事件"
+        "俄乌战争",
+        "全球制裁"
       ],
       "event_types": [
         "避险需求"
@@ -1170,7 +1192,9 @@
       "published_date": "Thu, 23 Apr 2026 07:00:00 GMT",
       "search_region": "全球制裁",
       "classified_regions": [
-        "其他重大事件"
+        "俄乌战争",
+        "中美博弈",
+        "全球制裁"
       ],
       "event_types": [
         "中美关税"
@@ -1195,7 +1219,8 @@
       "published_date": "Tue, 03 Feb 2026 08:00:00 GMT",
       "search_region": "全球制裁",
       "classified_regions": [
-        "其他重大事件"
+        "俄乌战争",
+        "全球制裁"
       ],
       "event_types": [
         "避险需求"
@@ -1220,7 +1245,8 @@
       "published_date": "Mon, 27 Apr 2026 11:51:00 GMT",
       "search_region": "全球制裁",
       "classified_regions": [
-        "其他重大事件"
+        "俄乌战争",
+        "全球制裁"
       ],
       "event_types": [
         "军事冲突升级"
@@ -1247,7 +1273,8 @@
       "published_date": "Mon, 09 Mar 2026 07:00:00 GMT",
       "search_region": "全球制裁",
       "classified_regions": [
-        "其他重大事件"
+        "俄乌战争",
+        "全球制裁"
       ],
       "event_types": [
         "原油供应风险"

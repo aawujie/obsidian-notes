@@ -6,6 +6,7 @@
 #   30 15 * * 1-5  → a-stock
 #   30 16 * * 1-5  → hk-stock
 #    0  6 * * 1-5  → all-overnight
+#    0  8 * * *    → geopolitics
 
 set -euo pipefail
 
@@ -238,6 +239,46 @@ us-stock)
     SUMMARY=$(generate_summary "美股" "$VAULT/5.Finance/DailyData/us-stock/${DATE}.json" "🇺🇸")
     send_wx "$SUMMARY"
     ;;
+geopolitics)
+	    run_monitor "地缘政治" "$SCRIPTS/geopolitics-monitor/geopolitics_monitor.py" || true
+	    # Custom summary for geopolitics (event-based, not price data)
+	    JSON="$VAULT/5.Finance/DailyData/geopolitics/${DATE}.json"
+	    SUMMARY=$(python3 << PYEOF
+import json
+with open("$JSON") as f:
+    data = json.load(f)
+events = data.get("events", [])
+sev = data.get("severity_distribution", {})
+critical = sev.get("critical", 0)
+high = sev.get("high", 0)
+print(f"🌍 地缘政治日报 $DATE")
+print(f"")
+print(f"共 {len(events)} 条事件")
+if critical > 0:
+    print(f"🔴 CRITICAL: {critical}")
+if high > 0:
+    print(f"🟠 HIGH: {high}")
+print(f"🟡 MEDIUM: {sev.get('medium', 0)}")
+print(f"🟢 LOW: {sev.get('low', 0)}")
+print(f"")
+top = [e for e in events if e['severity'] in ('critical', 'high')][:5]
+if not top:
+    top = events[:5]
+for e in top:
+    sev_icon = {"critical": "🔴", "high": "🟠", "medium": "🟡", "low": "🟢"}.get(e['severity'], "")
+    regions = ", ".join(e.get('classified_regions', []))
+    types = ", ".join(e.get('event_types', []))
+    tickers = ", ".join(e.get('affected_tickers', [])[:5])
+    print(f"  {sev_icon} {e['title'][:60]}")
+    print(f"    → 区域: {regions} | 类型: {types}")
+    if tickers:
+        print(f"    → 关注: {tickers}")
+    print(f"")
+print(f"📁 完整报告 DailyData/geopolitics/$DATE.md")
+PYEOF
+)
+	    send_wx "$SUMMARY"
+	    ;;
 all-overnight)
     for mkt in gold metals us-stock; do
         bash "$0" "$mkt"
