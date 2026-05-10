@@ -1,6 +1,6 @@
 {
   "date": "2026-05-10",
-  "generated_at": "2026-05-10T12:59:41.005524",
+  "generated_at": "2026-05-10T13:24:54.874784",
   "total_events": 48,
   "severity_distribution": {
     "medium": 45,
@@ -180,6 +180,31 @@
       ]
     },
     {
+      "title": "U.S. and Iran Exchange Fire Amid a Declared Truce - The New York Times",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFB1RWdobm1aLVIwaTlTTzFoMmhVMzIzdDdiX0FJRy1Ud1ZLQmpBTmNidzBOUnlCQzdORFRUTjBDRzl3eWE2dDhfOWFybEZJUGRlcXh5N3ZUMnV0dVpYVDNqRzdzV0REem9CckpYUTZkRjFWQkZmaF96UGZaVEZ6UGc?oc=5",
+      "content": "U.S. and Iran Exchange Fire Amid a Declared Truce&nbsp;&nbsp;The New York Times",
+      "content_detail": "",
+      "published_date": "Fri, 08 May 2026 00:12:16 GMT",
+      "search_region": "美伊冲突",
+      "classified_regions": [
+        "美伊冲突"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
       "title": "Iran war latest: Ceasefire appears to hold after US strikes Iranian oil tankers - LiveNOW from FOX",
       "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5qYXZwX1cydGV4WnlVWXF6bndmVFZiaGNaUmlxQ1ljUW9wVlU0YzJfVmRvOVUyV3hXZFhvMHY4aWdGQ2RvZW0weFhUQzJnTFFYeEN5cmdGd2FvajY4UUk1ZUJUONIBaEFVX3lxTE13VzNVWEZ0NlNSb3hZb3lNdWtNUVNoSno3QXdrNEZhUVVMZDdUeFlRd0xJZGo0V1gtMlU5aHRyMHQydms4Z2RXeVoxRm1fS0VDQTFpUVVJejRFcEJmZUhPOV85RnNMajJ2?oc=5",
       "content": "Iran war latest: Ceasefire appears to hold after US strikes Iranian oil tankers&nbsp;&nbsp;LiveNOW from FOX",
@@ -210,31 +235,6 @@
         "SLV",
         "ITA",
         "PPA"
-      ]
-    },
-    {
-      "title": "U.S. and Iran Exchange Fire Amid a Declared Truce - The New York Times",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFB1RWdobm1aLVIwaTlTTzFoMmhVMzIzdDdiX0FJRy1Ud1ZLQmpBTmNidzBOUnlCQzdORFRUTjBDRzl3eWE2dDhfOWFybEZJUGRlcXh5N3ZUMnV0dVpYVDNqRzdzV0REem9CckpYUTZkRjFWQkZmaF96UGZaVEZ6UGc?oc=5",
-      "content": "U.S. and Iran Exchange Fire Amid a Declared Truce&nbsp;&nbsp;The New York Times",
-      "content_detail": "",
-      "published_date": "Fri, 08 May 2026 00:12:16 GMT",
-      "search_region": "美伊冲突",
-      "classified_regions": [
-        "美伊冲突"
-      ],
-      "event_types": [
-        "避险需求"
-      ],
-      "severity": "medium",
-      "affected_tickers": [
-        "GC=F",
-        "GLD",
-        "SI=F",
-        "^VIX",
-        "DX-Y.NYB",
-        "IAU",
-        "TLT",
-        "UVXY"
       ]
     },
     {
