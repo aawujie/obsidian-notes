@@ -454,20 +454,18 @@ def enrich_articles(articles: list[dict], top_n: int = MAX_ENRICH_ARTICLES) -> N
     content_map = extract_urls_batch(url_list)
 
     # Enrich each article
-    enriched = 0
+    content_done = 0
     for a in target:
         url = a.get("url", "")
         content = content_map.get(url, "")
         if content:
             a["content_detail"] = content
-            enriched += 1
+            content_done += 1
         # Generate summary from available text
         text_for_summary = content or a.get("content", "")
         a["summary"] = generate_summary(text_for_summary, a.get("title", ""))
-        if text_for_summary:
-            enriched += 1
 
-    print(f"    正文提取: {enriched} 条 / 摘要生成完成")
+    print(f"    正文提取: {content_done} 条, 摘要已生成")
 
     # Fetch individual fallback for URLs that Tavily extract missed
     missed = [a for a in target if not a.get("content_detail") and a.get("url")]
@@ -481,6 +479,44 @@ def enrich_articles(articles: list[dict], top_n: int = MAX_ENRICH_ARTICLES) -> N
                 a["content_detail"] = raw
                 if not a.get("summary") or a["summary"] == a["title"][:SUMMARY_MAX_CHARS_CN]:
                     a["summary"] = generate_summary(raw, a.get("title", ""))
+
+
+def fetch_all_articles() -> list[dict]:
+    """抓取所有区域新闻"""
+    all_articles = []
+
+    for region, query in REGION_QUERIES.items():
+        print(f"  搜索: {region}...")
+
+        # 优先 Tavily, 回退 Google News
+        results = search_tavily(query)
+        if not results:
+            results = search_google_news(query)
+
+        for r in results:
+            title = r.get("title", "")
+            content = r.get("content", "")
+            url = r.get("url", "")
+            full_text = f"{title} {content}"
+
+            severity = classify_severity(full_text)
+            event_types = classify_event_types(full_text)
+            matched_regions = classify_region(full_text)
+
+            all_articles.append({
+                "title": title,
+                "url": url,
+                "content": content[:500] if content else "",
+                "published_date": r.get("published_date", ""),
+                "search_region": region,
+                "classified_regions": matched_regions,
+                "event_types": event_types,
+                "severity": severity,
+            })
+
+        print(f"    获取 {len(results)} 条")
+
+    return all_articles
 
 
 def deduplicate_articles(articles: list[dict]) -> list[dict]:
