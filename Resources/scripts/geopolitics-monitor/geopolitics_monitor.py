@@ -8,6 +8,7 @@
 输出: 5.Finance/DailyData/geopolitics/ → YYYY-MM-DD.md + .json
 """
 
+import html
 import json
 import os
 import re
@@ -196,7 +197,8 @@ SEVERITY_EMOJI = {"critical": "🔴", "high": "🟠", "medium": "🟡", "low": "
 
 
 def clean_html(text: str) -> str:
-    """移除 HTML 标签"""
+    """移除 HTML 标签和实体"""
+    text = html.unescape(text)
     return re.sub(r"<[^>]+>", "", text)
 
 
@@ -389,6 +391,7 @@ def summarize_with_llm(text: str, title: str) -> str | None:
 
 def _trim_summary(text: str) -> str:
     """Ensure summary stays within length limits."""
+    text = html.unescape(text)  # safety net
     has_cjk = bool(re.search(r'[一-鿿]', text))
     if has_cjk:
         return text[:SUMMARY_MAX_CHARS_CN]
