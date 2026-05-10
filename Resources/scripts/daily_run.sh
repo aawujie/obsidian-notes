@@ -2,10 +2,10 @@
 # 每日市场数据拉取 + 微信通知
 # 用法: ./daily_run.sh {a-stock|hk-stock|gold|metals|us-stock|all-overnight}
 #
-# Crontab 已安装 (crontab -l 查看):
-#   30 15 * * 1-5  → a-stock (收盘 15:00)
-#   30 16 * * 1-5  → hk-stock (收盘 16:00)
-#    0  6 * * 1-5  → all-overnight (黄金+金属+美股)
+# Crontab:
+#   30 15 * * 1-5  → a-stock
+#   30 16 * * 1-5  → hk-stock
+#    0  6 * * 1-5  → all-overnight
 
 set -euo pipefail
 
@@ -19,12 +19,10 @@ mkdir -p "$LOGDIR"
 DATE=$(date +%Y-%m-%d)
 LOG="$LOGDIR/${MARKET}-${DATE}.log"
 
-# 代理 (Yahoo Finance 需要)
 export https_proxy=http://127.0.0.1:7890
 export http_proxy=http://127.0.0.1:7890
 export all_proxy=socks5://127.0.0.1:7890
 
-# 微信通知参数
 WX_CHANNEL="openclaw-weixin"
 WX_TARGET="o9cq803b6DrCh5LqQr85vojqnbJI@im.wechat"
 WX_ACCOUNT="268e571b45b7-im-bot"
@@ -42,155 +40,210 @@ send_wx() {
 run_monitor() {
     local MARKET_NAME="$1"
     local SCRIPT="$2"
-    local REPORT="$3"
-
     log "开始拉取 $MARKET_NAME 数据..."
     cd "$VAULT"
     source "$VENV/bin/activate"
     if python "$SCRIPT" >> "$LOG" 2>&1; then
-        log "$MARKET_NAME ✓ 数据已保存 → $REPORT"
+        log "$MARKET_NAME ✓ 完成"
     else
-        log "$MARKET_NAME ✗ 失败，详情见日志"
+        log "$MARKET_NAME ✗ 失败"
         return 1
     fi
 }
 
-# ─── 微信摘要生成 ──────────────────────────────────────────
+# ─── 微信摘要生成 (Python 渲染表格 + 中文名) ───────────────
 generate_summary() {
     local MARKET_NAME="$1"
     local JSON="$2"
+    local EMOJI="$3"
 
     if [ ! -f "$JSON" ]; then
-        echo "📊 ${MARKET_NAME}日报 ${DATE}
+        echo "${EMOJI} ${MARKET_NAME}日报 ${DATE}
+
 ⚠️ 今日无数据"
         return
     fi
 
-    python3 - "$JSON" "$MARKET_NAME" "$DATE" << 'PYEOF'
-import json, sys, os
+    python3 << PYEOF
+import json, sys
 
-json_path, mkt_name, date_str = sys.argv[1], sys.argv[2], sys.argv[3]
+json_path = "$JSON"
+mkt = "$MARKET_NAME"
+date_str = "$DATE"
+emoji = "$EMOJI"
 
 with open(json_path) as f:
     wrapped = json.load(f)
     data = wrapped.get("data", wrapped if isinstance(wrapped, list) else [])
 
 if not data:
-    print(f"📊 {mkt_name}日报 {date_str}\n⚠️ 今日无数据")
+    print(f"{emoji} {mkt}日报 {date_str}\\n\\n⚠️ 今日无数据")
     sys.exit(0)
 
-sorted_up = sorted(data, key=lambda x: x.get("change_daily") or -999, reverse=True)
-top3 = sorted_up[:3]
-bottom3 = sorted_up[-3:]
+# ═══════════════════════════════════════════════════════════
+#  中文名称总表 (来自各 monitor 脚本的 CHINESE_NAMES)
+# ═══════════════════════════════════════════════════════════
+CN = {
+    # ── 黄金 ──
+    "GLD": "SPDR黄金ETF", "IAU": "iShares黄金ETF", "SGOL": "abrdn黄金ETF",
+    "NEM": "纽蒙特矿业", "GOLD": "巴里克黄金", "AU": "盎格鲁黄金",
+    "GFI": "金田公司", "KGC": "金罗斯黄金", "AEM": "Agnico Eagle",
+    "FNV": "Franco-Nevada", "WPM": "惠顿贵金属", "RGLD": "皇家黄金",
+    "AGI": "阿拉莫斯黄金", "GDX": "金矿ETF", "GDXJ": "小盘金矿ETF",
+    "GC=F": "黄金期货", "SLV": "白银ETF",
+    # ── 金属 ──
+    "HG=F": "铜期货", "ALI=F": "铝期货",
+    "SI=F": "白银期货", "PL=F": "铂金期货", "PA=F": "钯金期货",
+    "XME": "矿业ETF-SPDR", "PICK": "全球矿业ETF", "COPX": "铜矿ETF",
+    "REMX": "稀土ETF", "LIT": "锂矿ETF", "SIL": "白银矿业ETF",
+    "BHP": "必和必拓", "RIO": "力拓", "VALE": "淡水河谷",
+    "FCX": "自由港麦克莫兰", "SCCO": "南方铜业", "TECK": "泰克资源",
+    "AA": "美国铝业", "CENX": "世纪铝业",
+    "MP": "MP稀土", "SGML": "西格玛锂业", "ALB": "雅保锂业", "SQM": "智利矿业化工",
+    # ── A股 ──
+    "000001.SS": "上证指数", "399001.SZ": "深证成指", "399006.SZ": "创业板指",
+    "000688.SS": "科创50", "000300.SS": "沪深300",
+    "FXI": "富时中国50", "ASHR": "沪深300ETF", "KWEB": "中国互联网ETF",
+    "MCHI": "MSCI中国ETF", "CQQQ": "中国科技ETF", "YINN": "中国3倍做多",
+    "0700.HK": "腾讯", "9988.HK": "阿里巴巴", "3690.HK": "美团",
+    "9618.HK": "京东", "1810.HK": "小米", "9999.HK": "网易",
+    "9888.HK": "百度", "2015.HK": "理想汽车", "9868.HK": "小鹏汽车",
+    "9961.HK": "携程", "1024.HK": "快手", "9626.HK": "B站",
+    # ── 港股 ──
+    "^HSI": "恒生指数", "^HSCE": "国企指数", "^HSCCI": "红筹指数", "^HSTECH": "恒生科技",
+    "2800.HK": "盈富基金", "2828.HK": "恒生国企ETF", "3067.HK": "恒生科技ETF",
+    "3033.HK": "南方科创板50", "0005.HK": "汇丰控股", "0011.HK": "恒生银行",
+    "0388.HK": "港交所", "0941.HK": "中国移动", "1299.HK": "友邦保险",
+    "1398.HK": "工商银行", "2318.HK": "中国平安", "2388.HK": "中银香港",
+    "2628.HK": "中国人寿", "3968.HK": "招商银行", "3988.HK": "中国银行",
+    "2269.HK": "药明生物", "0883.HK": "中海油", "0857.HK": "中石油",
+    "1088.HK": "中国神华", "1177.HK": "中国生物制药",
+    "1929.HK": "周大福", "2007.HK": "碧桂园", "2057.HK": "中通快递",
+    "2382.HK": "舜宇光学", "6618.HK": "京东健康",
+    "1755.HK": "碧桂园服务", "1833.HK": "平安好医生", "2013.HK": "微盟集团", "2018.HK": "瑞声科技",
+    # ── 美股 ──
+    "AAPL": "苹果", "MSFT": "微软", "GOOGL": "谷歌", "AMZN": "亚马逊", "NVDA": "英伟达",
+    "META": "Meta", "TSLA": "特斯拉", "AVGO": "博通", "AMD": "AMD", "NFLX": "奈飞",
+    "ADBE": "Adobe", "CRM": "Salesforce", "INTC": "英特尔", "QCOM": "高通",
+    "TXN": "德州仪器", "AMAT": "应用材料", "ASML": "阿斯麦", "MU": "美光",
+    "JPM": "摩根大通", "BAC": "美国银行", "WFC": "富国银行", "C": "花旗",
+    "GS": "高盛", "MS": "摩根士丹利", "V": "Visa", "MA": "万事达",
+    "JNJ": "强生", "UNH": "联合健康", "PFE": "辉瑞", "ABBV": "艾伯维",
+    "MRK": "默克", "LLY": "礼来", "TMO": "赛默飞", "ABT": "雅培",
+    "XOM": "埃克森美孚", "CVX": "雪佛龙", "COP": "康菲石油", "SLB": "斯伦贝谢",
+    "WMT": "沃尔玛", "COST": "好市多", "HD": "家得宝", "MCD": "麦当劳",
+    "NKE": "耐克", "SBUX": "星巴克", "DIS": "迪士尼", "TMUS": "T-Mobile",
+    "BA": "波音", "CAT": "卡特彼勒", "GE": "通用电气", "RTX": "雷神",
+    "PLTR": "Palantir", "UBER": "优步", "ABNB": "爱彼迎", "SNAP": "Snapchat",
+    "DASH": "DoorDash", "RBLX": "Roblox", "COIN": "Coinbase", "SQ": "Block",
+    "ARM": "Arm安谋", "CEG": "Constellation能源", "VST": "Vistra能源",
+    "GEV": "GE Vernova", "KKR": "KKR", "APO": "阿波罗全球",
+}
 
-# 分类
-futures = [d for d in data if "=F" in d["ticker"]]
-stocks = [d for d in data if "=F" not in d["ticker"]]
-new_highs = [d for d in data if d.get("is_new_high")]
+def cn(ticker):
+    return CN.get(ticker, "")
 
 def pct(v):
     if v is None: return "—"
     return f"{v:+.2f}%"
 
-def price(v):
+def pr(v):
     if v is None: return "—"
     return f"{v:.2f}"
 
-# emoji by market
-emoji = {"黄金": "🥇", "金属": "⛏️", "A股": "🇨🇳", "港股": "🇭🇰", "美股": "🇺🇸"}.get(mkt_name, "📊")
+# 排序
+up = sorted(data, key=lambda x: x.get("change_daily") or -999, reverse=True)
+down = sorted(data, key=lambda x: x.get("change_daily") or 999)
 
-lines = [f"{emoji} {mkt_name}日报 {date_str}", ""]
+# 关键指数/期货 (前 6)
+futs = [d for d in data if "=F" in d["ticker"] or d["ticker"].startswith("^") or ".SS" in d["ticker"] or ".SZ" in d["ticker"]]
 
-# 期货/指数
-if futures:
-    lines.append("▸ 期货/指数")
-    for f in futures[:8]:
-        lines.append(f"{f['ticker']}: ${price(f['close'])} {pct(f['change_daily'])}")
+lines = [f"{emoji} {mkt}日报 {date_str}"]
+
+if futs:
+    lines.append("")
+    lines.append("**核心指标**")
+    lines.append("")
+    lines.append("| 名称 | 收盘价 | 涨跌幅 |")
+    lines.append("|:---|:---:|:---:|")
+    for d in futs[:6]:
+        name = cn(d["ticker"]) or d["ticker"]
+        lines.append(f"| {name} | {pr(d['close'])} | {pct(d['change_daily'])} |")
     lines.append("")
 
-# 涨幅前三
-lines.append("▸ 涨幅前三")
-for d in top3:
-    nm = d.get("name", d["ticker"])
-    if len(nm) > 25:
-        nm = nm[:25]
-    lines.append(f"{d['ticker']} {pct(d['change_daily'])}  {nm}")
-lines.append("")
+# 涨幅 TOP 5
+top5 = up[:5]
+if top5:
+    lines.append("**涨幅 TOP 5**")
+    lines.append("")
+    lines.append("| 名称 | 价格 | 涨幅 | 周涨幅 |")
+    lines.append("|:---|:---:|:---:|:---:|")
+    for d in top5:
+        name = cn(d["ticker"]) or d["ticker"]
+        lines.append(f"| {name} | {pr(d['close'])} | {pct(d['change_daily'])} | {pct(d.get('change_weekly'))} |")
+    lines.append("")
 
-# 跌幅前三
-lines.append("▸ 跌幅前三")
-for d in bottom3:
-    nm = d.get("name", d["ticker"])
-    if len(nm) > 25:
-        nm = nm[:25]
-    lines.append(f"{d['ticker']} {pct(d['change_daily'])}  {nm}")
-lines.append("")
+# 跌幅 TOP 5
+# 对于 HK/US 成分股太多的市场，跌的更有参考价值
+bot5 = down[:5]
+if bot5:
+    lines.append("**跌幅 TOP 5**")
+    lines.append("")
+    lines.append("| 名称 | 价格 | 跌幅 | 周跌幅 |")
+    lines.append("|:---|:---:|:---:|:---:|")
+    for d in bot5:
+        name = cn(d["ticker"]) or d["ticker"]
+        lines.append(f"| {name} | {pr(d['close'])} | {pct(d['change_daily'])} | {pct(d.get('change_weekly'))} |")
+    lines.append("")
 
 # 52周新高
+new_highs = [d for d in data if d.get("is_new_high")]
 if new_highs:
-    lines.append(f"▸ 52周新高 ({len(new_highs)}只)")
-    for d in new_highs[:5]:
-        lines.append(f"{d['ticker']}: ${price(d['close'])}  {d.get('name', '')[:20]}")
+    names = [cn(d["ticker"]) or d["ticker"] for d in new_highs[:10]]
+    lines.append(f"**52周新高**: {', '.join(names)}")
+    lines.append("")
+
+lines.append(f"📁 完整报告 DailyData/{mkt.lower()}/{date_str}.md")
 
 print("\n".join(lines))
 PYEOF
 }
 
 # ─── 主逻辑 ────────────────────────────────────────────────
-
 log "=== daily_run.sh $MARKET ==="
 
 case "$MARKET" in
 a-stock)
-    run_monitor "A股" \
-        "$SCRIPTS/a-stock-monitor/a_stock_monitor.py" \
-        "$VAULT/5.Finance/DailyData/a-stock/${DATE}.md" || true
-    SUMMARY=$(generate_summary "A股" "$VAULT/5.Finance/DailyData/a-stock/${DATE}.json")
+    run_monitor "A股" "$SCRIPTS/a-stock-monitor/a_stock_monitor.py" || true
+    SUMMARY=$(generate_summary "A股" "$VAULT/5.Finance/DailyData/a-stock/${DATE}.json" "🇨🇳")
     send_wx "$SUMMARY"
     ;;
-
 hk-stock)
-    run_monitor "港股" \
-        "$SCRIPTS/hk-stock-monitor/hk_stock_monitor.py" \
-        "$VAULT/5.Finance/DailyData/hk-stock/${DATE}.md" || true
-    SUMMARY=$(generate_summary "港股" "$VAULT/5.Finance/DailyData/hk-stock/${DATE}.json")
+    run_monitor "港股" "$SCRIPTS/hk-stock-monitor/hk_stock_monitor.py" || true
+    SUMMARY=$(generate_summary "港股" "$VAULT/5.Finance/DailyData/hk-stock/${DATE}.json" "🇭🇰")
     send_wx "$SUMMARY"
     ;;
-
 gold)
-    run_monitor "黄金" \
-        "$SCRIPTS/gold-monitor/gold_monitor.py" \
-        "$VAULT/5.Finance/DailyData/gold/${DATE}.md" || true
-    SUMMARY=$(generate_summary "黄金" "$VAULT/5.Finance/DailyData/gold/${DATE}.json")
+    run_monitor "黄金" "$SCRIPTS/gold-monitor/gold_monitor.py" || true
+    SUMMARY=$(generate_summary "黄金" "$VAULT/5.Finance/DailyData/gold/${DATE}.json" "🥇")
     send_wx "$SUMMARY"
     ;;
-
 metals)
-    run_monitor "金属" \
-        "$SCRIPTS/metals-monitor/metals_monitor.py" \
-        "$VAULT/5.Finance/DailyData/metals/${DATE}.md" || true
-    SUMMARY=$(generate_summary "金属" "$VAULT/5.Finance/DailyData/metals/${DATE}.json")
+    run_monitor "金属" "$SCRIPTS/metals-monitor/metals_monitor.py" || true
+    SUMMARY=$(generate_summary "金属" "$VAULT/5.Finance/DailyData/metals/${DATE}.json" "⛏️")
     send_wx "$SUMMARY"
     ;;
-
 us-stock)
-    run_monitor "美股" \
-        "$SCRIPTS/us-stock-monitor/us_stock_monitor.py" \
-        "$VAULT/5.Finance/DailyData/us-stock/${DATE}.md" || true
-    SUMMARY=$(generate_summary "美股" "$VAULT/5.Finance/DailyData/us-stock/${DATE}.json")
+    run_monitor "美股" "$SCRIPTS/us-stock-monitor/us_stock_monitor.py" || true
+    SUMMARY=$(generate_summary "美股" "$VAULT/5.Finance/DailyData/us-stock/${DATE}.json" "🇺🇸")
     send_wx "$SUMMARY"
     ;;
-
 all-overnight)
     for mkt in gold metals us-stock; do
         bash "$0" "$mkt"
     done
     ;;
-
-*)
-    echo "用法: $0 {a-stock|hk-stock|gold|metals|us-stock|all-overnight}"
-    exit 1
-    ;;
+*)  echo "用法: $0 {a-stock|hk-stock|gold|metals|us-stock|all-overnight}"; exit 1 ;;
 esac
 
 log "=== 完成 ==="
