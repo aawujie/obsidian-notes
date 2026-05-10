@@ -618,7 +618,7 @@ def generate_report(articles: list[dict], date_str: str) -> str:
             f"| {etype} | {impact['impact']} | {impact['chinese']} |"
         )
 
-    # ── 严重事件详情 ──
+    # ── 严重事件速报 ──
     critical_articles = [a for a in sorted_articles if a["severity"] in ("critical", "high")][:5]
     if critical_articles:
         lines += [
@@ -628,12 +628,41 @@ def generate_report(articles: list[dict], date_str: str) -> str:
         ]
         for a in critical_articles:
             sev_emoji = SEVERITY_EMOJI.get(a["severity"], "")
+            summary = a.get("summary", "")
             lines += [f"### {sev_emoji} {a['title']}", ""]
+            if summary:
+                lines.append(f"> **摘要**: {summary}")
+                lines.append("")
             if a.get("content_detail"):
                 lines.append(f"> {a['content_detail'][:400]}")
             elif a.get("content"):
                 lines.append(f"> {a['content'][:400]}")
-            lines.append(f"📎 [{a.get('url', '#')}]({a.get('url', '#')})")
+            lines.append(f"[{a.get('url', '#')}]({a.get('url', '#')})")
+            lines.append("")
+
+    # ── 关键新闻详情 ──
+    top_with_detail = [a for a in sorted_articles[:15] if a.get("content_detail") or a.get("content")][:10]
+    if top_with_detail:
+        lines += [
+            "",
+            "## 关键新闻详情",
+            "",
+        ]
+        for idx, a in enumerate(top_with_detail, 1):
+            sev_emoji = SEVERITY_EMOJI.get(a["severity"], "")
+            summary = a.get("summary", "")
+            regions = ", ".join(a["classified_regions"][:2])
+            lines += [
+                f"### {idx}. {sev_emoji} {a['title']}",
+                "",
+                f"- **区域**: {regions}",
+                f"- **事件类型**: {', '.join(a['event_types'][:3])}",
+            ]
+            if summary:
+                lines.append(f"- **摘要**: {summary}")
+            if a.get("content_detail"):
+                lines.extend(["", f"> {a['content_detail'][:600]}", ""])
+            lines.append(f"[阅读原文]({a.get('url', '#')})")
             lines.append("")
 
     # ── 投资启示 ──
@@ -684,6 +713,7 @@ def build_json(articles: list[dict], date_str: str) -> dict:
             "classified_regions": a["classified_regions"],
             "event_types": a["event_types"],
             "severity": a["severity"],
+            "summary": a.get("summary", ""),
             "affected_tickers": [t["ticker"] for t in assets],
         })
 
@@ -721,11 +751,9 @@ def main():
     unique = deduplicate_articles(articles)
     print(f"  去重: {len(articles)} → {len(unique)} 条")
 
-    # 2. 抓取严重事件详情
-    critical_count = sum(1 for a in unique if a["severity"] in ("critical", "high"))
-    if critical_count > 0:
-        print(f"  抓取 {critical_count} 条严重事件详情...")
-        fetch_critical_details(unique)
+    # 2. 抓取正文 + 生成摘要 (top 20 或 MEDIUM+)
+    print(f"  抓取正文与摘要...")
+    enrich_articles(unique)
 
     # 3. 生成报告
     md = generate_report(unique, date_str)
