@@ -32,10 +32,9 @@ WX_ACCOUNT="268e571b45b7-im-bot"
 log() { echo "[$(date '+%H:%M:%S')] $*" | tee -a "$LOG"; }
 
 send_wx() {
-    # openclaw message send: -c channel, -a account, -t target, -m message
     openclaw message send \
-        -c "$WX_CHANNEL" \
-        -a "$WX_ACCOUNT" \
+        --channel "$WX_CHANNEL" \
+        --account "$WX_ACCOUNT" \
         -t "$WX_TARGET" \
         -m "$1" >> "$LOG" 2>&1 || log "[WARN] 微信发送失败"
 }
