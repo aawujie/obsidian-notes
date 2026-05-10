@@ -28,6 +28,19 @@ DATA_DIR.mkdir(parents=True, exist_ok=True)
 TAVILY_API_KEY = os.environ.get("TAVILY_API_KEY", "")
 TAVILY_URL = "https://api.tavily.com/search"
 PROXY = os.environ.get("https_proxy", "http://127.0.0.1:7890")
+PROXIES = {"http": PROXY, "https": PROXY}
+
+# LLM summarization (optional — falls back to rule-based)
+OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY", "")
+ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY", "")
+LLM_MODEL = os.environ.get("LLM_MODEL", "gpt-4o-mini")  # OpenAI-compatible
+
+# Tavily Extract API
+TAVILY_EXTRACT_URL = "https://api.tavily.com/extract"
+MAX_ENRICH_ARTICLES = 20  # enrich top N articles with full content + summary
+CONTENT_MAX_CHARS = 1500
+SUMMARY_MAX_CHARS_CN = 50
+SUMMARY_MAX_WORDS_EN = 30
 
 # ─── 监控区域 ────────────────────────────────────────────────
 REGION_QUERIES = {
