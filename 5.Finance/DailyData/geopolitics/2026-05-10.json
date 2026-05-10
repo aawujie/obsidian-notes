@@ -1,34 +1,113 @@
 {
   "date": "2026-05-10",
-  "generated_at": "2026-05-10T14:53:51.519494",
-  "total_events": 48,
+  "generated_at": "2026-05-10T15:08:13.810131",
+  "total_events": 38,
   "severity_distribution": {
-    "medium": 46,
-    "low": 2
+    "critical": 12,
+    "medium": 18,
+    "low": 8
   },
   "events": [
     {
-      "title": "U.S. intelligence says Iran can outlast Trump’s Hormuz blockade for months - The Washington Post",
-      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNVF8zSEtHU09vYVhyWnFpR3VUdVBtOVRRLXFrUEtFR3ROM1VaQnp6V25kMFFIdjl1dmhPcFVXQnpRZ1VCQ3pNS1dwRWp4LVdiZkRQWEpwbkRZNVpNQ29jRU16WHVjUnFhd1dGZE5QSjQtQVVlcWZUem0xUjZnbjlJOU8wQWpNaFc3bmZHWDF3Wmc1OUg4QXF5Rm05bVR6amZEZ2lQaV9ueHBZdw?oc=5",
-      "content": "U.S. intelligence says Iran can outlast Trump’s Hormuz blockade for months  The Washington Post",
-      "content_detail": "Google News",
-      "published_date": "Thu, 07 May 2026 22:19:08 GMT",
+      "title": "Israel doubts US optimism in Iran talks as critical issues on nuclear concessions remain unsolved - The Jerusalem Post",
+      "url": "https://www.jpost.com/middle-east/iran-news/article-895606",
+      "content": "This pressure isn’t just political. In the US, there are growing concerns about regional instability, particularly around the Strait of Hormuz. Any further escalation could send oil and fuel prices skyrocketing again, hurt the US economy, and drag the administration into a broader military conflict,",
+      "content_detail": "![The Jerusalem Post - Israel News](/assets/jp-logo.png \"The Jerusalem Post - Israel News\")\n\n# Israel doubts US optimism in Iran talks as critical issues on nuclear concessions remain unsolved\n\n## While US officials express optimism over a potential deal, Israel remains cautious, stressing that significant differences between the US and Iran still persist.\n\n![US President Donald Trump and Israeli Prime Minister Benjamin Netanyahu hold a joint press conference in the State Dining Room at the White House in Washington, DC, US, September 29, 2025.](https://images.jpost.com/image/upload/f_auto,fl_lossy/q_auto/c_fill,g_faces:center,h_720,w_1280/683099 \"US President Donald Trump and Israeli Prime Minister Benjamin Netanyahu hold a joint press conference in the State Dining Room at the White House in Washington, DC, US, September 29, 2025.\")\n\nSenior Israeli officials state that significant gaps still exist between the [US](https://www.jpost.com/middle-east/iran-news/article-895598) and Iran, with the key question for Israel not just being what the Iranians are willing to offer to reach a deal and end the conflict, but how much US President Donald Trump is prepared to concede in order to achieve a diplomatic success.\n\n“While there is some movement, it isn't necessarily leading to a breakthrough,” Israeli sources noted in private discussions. “This progress is largely driven by pressure. Each passing day puts more strain on the Iranian economy, but it also impacts Trump. Gas prices in",
+      "published_date": "Sat, 09 May 2026 07:46:03 GMT",
       "search_region": "美伊冲突",
       "classified_regions": [
-        "美伊冲突"
+        "美伊冲突",
+        "全球制裁"
+      ],
+      "event_types": [
+        "原油供应风险"
+      ],
+      "severity": "critical",
+      "summary": "[The Jerusalem Post - Israel News](/assets/jp-logo.",
+      "affected_tickers": [
+        "CL=F",
+        "BZ=F",
+        "USO",
+        "XLE",
+        "BNO"
+      ]
+    },
+    {
+      "title": "Any Iran deal without proxy restrictions is strategic surrender - opinion - The Jerusalem Post",
+      "url": "https://www.jpost.com/opinion/article-895424",
+      "content": "# Any Iran deal without proxy restrictions is strategic surrender - opinion\n\n## A new nuclear deal may calm markets, but it could embolden Iran’s regime and its regional proxies.\n\nIran's Defense Minister Brigadier General Mohammad-Reza Ashtiani walks near an Iranian missile during an unveiling cerem",
+      "content_detail": "![The Jerusalem Post - Israel News](/assets/jp-logo.png \"The Jerusalem Post - Israel News\")\n\n# Any Iran deal without proxy restrictions is strategic surrender - opinion\n\n## A new nuclear deal may calm markets, but it could embolden Iran’s regime and its regional proxies.\n\n![ Iran's Defense Minister Brigadier General Mohammad-Reza Ashtiani walks near an Iranian missile during an unveiling ceremony in Tehran, Iran, in this picture obtained on February 17, 2024.](https://images.jpost.com/image/upload/f_auto,fl_lossy/q_auto/c_fill,g_faces:center,h_720,w_1280/614266 \" Iran's Defense Minister Brigadier General Mohammad-Reza Ashtiani walks near an Iranian missile during an unveiling ceremony in Tehran, Iran, in this picture obtained on February 17, 2024.\")\n\nThe United States and [Iran](https://www.jpost.com/middle-east/iran-news/article-895234) are reportedly inching toward an understanding that would trade billions in sanctions relief for limits on uranium enrichment and an end to the mutual blockades around the [Strait of Hormuz](https://www.jpost.com/middle-east/iran-news/article-895384). Such a deal would be a mistake.\n\nIf this happens, after the envisioned month of talks, it would be a reprisal of the Obama-era Joint Comprehensive Plan of Action (JCPOA) that Trump walked away from in 2018. It would give the despicable Iranian regime new life and more runway months after it is believed to have massacred tens of thousands of protesters – which was the ostensible reason for Americ",
+      "published_date": "Sat, 09 May 2026 11:40:33 GMT",
+      "search_region": "美伊冲突",
+      "classified_regions": [
+        "美伊冲突",
+        "台海/南海/朝鲜",
+        "全球制裁"
       ],
       "event_types": [
         "原油供应风险",
+        "军事冲突升级",
         "航运中断"
       ],
-      "severity": "medium",
-      "summary": "intelligence says Iran can outlast Trump’s Hormuz blockade for months  The Washington Post",
+      "severity": "critical",
+      "summary": "[The Jerusalem Post - Israel News](/assets/jp-logo.",
       "affected_tickers": [
         "CL=F",
         "BZ=F",
         "USO",
         "XLE",
         "BNO",
+        "GC=F",
+        "SI=F",
+        "LMT",
+        "NOC",
+        "RTX",
+        "GD",
+        "GLD",
+        "SLV",
+        "ITA",
+        "PPA",
+        "ZIM",
+        "MATX",
+        "BOAT",
+        "SEA"
+      ]
+    },
+    {
+      "title": "US sanctions firms accused of aiding Iran’s missile program - The Hill",
+      "url": "https://thehill.com/homenews/administration/5870934-us-imposes-sanctions-iran/",
+      "content": "The one-page memorandum would see Iran commit to a 10- to 20-year moratorium on nuclear enrichment in exchange for the U.S. lifting its sanctions and releasing billions of frozen Iranian funds, according to Axios.\n\nBoth sides would also agree to gradually lift their blockades in the Strait of Hormuz",
+      "content_detail": "",
+      "published_date": "Sat, 09 May 2026 20:48:56 GMT",
+      "search_region": "美伊冲突",
+      "classified_regions": [
+        "美伊冲突",
+        "台海/南海/朝鲜",
+        "全球制裁"
+      ],
+      "event_types": [
+        "原油供应风险",
+        "军事冲突升级",
+        "航运中断"
+      ],
+      "severity": "critical",
+      "summary": "The one-page memorandum would see Iran commit to a 10- to 20-year moratorium on nuclear enrichment in exchange for the U.",
+      "affected_tickers": [
+        "CL=F",
+        "BZ=F",
+        "USO",
+        "XLE",
+        "BNO",
+        "GC=F",
+        "SI=F",
+        "LMT",
+        "NOC",
+        "RTX",
+        "GD",
+        "GLD",
+        "SLV",
+        "ITA",
+        "PPA",
         "ZIM",
         "MATX",
         "BOAT",
@@ -37,36 +116,233 @@
     },
     {
       "title": "‘On level of atomic bomb’: Iran highlights Hormuz importance amid US talks - Al Jazeera",
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOUjBkQzRiS01pUG5OWWdIWjBsdjhXekhVNXBpRDVQc0VoTTdta0MxV1Y1NGFCZTRFdVhwd2Q0REF2OGJHVGZLZHh1bVNLQjVzUWRQaDNDSUpUVnBhVDFkbnYtVHMzb0FyYjhMNmZ3ZjZKLUlXT2lKSDVLbnpsT2VSWDVaTThBWlI0R1g0am9lR1lCeXRWUnQ3ZlJaaDdTUVpnWUZ4RF9ESV9jenFjalB5T9IBtgFBVV95cUxOd3lyeFZ5enhNRldLbUd5Rm1VaWIyS2NxcmtvaGdSckhhT0dIZFp5OU5tZ19JVFFOcUpmR2wwSU53SmM3M29wVzZlaGxYa3cyU042aG1iV0hLcm9Nb3phV3BxcWxmUlg4WUY2cmVQQ2RmMUprRFg4emlab29CZlJpN19SZldJcmpzMXlubXFvWE5tTHRlVzBIcC1vdGdQeG82bE0xX0sxNEtMYW5iMlZkRWNaLU1nUQ?oc=5",
-      "content": "‘On level of atomic bomb’: Iran highlights Hormuz importance amid US talks  Al Jazeera",
-      "content_detail": "Google News",
+      "url": "https://www.aljazeera.com/news/2026/5/9/on-level-of-atomic-bomb-iran-highlights-hormuz-importance-amid-us-talks",
+      "content": "Multiple text messages attributed to Mojtaba Khamenei since he succeeded his father as supreme leader shortly after the start of the war have also emphasised the necessity of maintaining control over the waterway.\n\nBut the authorities wish to convey that they have pondered and discussed the implicat",
+      "content_detail": "# ‘On level of atomic bomb’: Iran highlights Hormuz importance amid US talks\n\n*The strategic strait represents ‘a capability that can affect the entire global economy with a single decision’, politician says.*\n\nSave\n\nShare\n\n![TOPSHOT - A photo illustration taken in Nicosia on May 4, 2026, shows a person in front of a large screen displaying vessel movements in the Strait of Hormuz on a ship-tracking website.](/wp-content/uploads/2026/05/afp_69fa572f0ca4-1778013999.jpg?resize=770%2C513&quality=80)\n![](/wp-content/uploads/2019/05/83990b95560343dd90352efbb62bb090_6.jpeg?resize=96%2C96&quality=80)\n\n**Tehran, Iran –** As the United States awaits Tehran’s latest response to [texts for an agreement](/news/2026/5/7/what-are-us-proposals-to-end-war-and-will-iran-agree-to-them) being exchanged through intermediaries, Iranian authorities and state-linked media are emphasising that they consider control over the Strait of Hormuz more important than ever.\n\nForeign Ministry spokesperson Esmaeil Baghaei told reporters on Saturday that Iran was still reviewing Washington’s proposal.\n\n## Recommended Stories\n\n“We do our own work, we don’t pay attention to deadlines or timing,” he said, in reference to US President Donald Trump’s expected timelines for an Iranian response.\n\nWith no breakthrough in sight, Iranian authorities continue to signal an elevated status in their doctrine for the strategic strait, perhaps rivalling the contentious nuclear programme for which the country has been sanction",
       "published_date": "Sat, 09 May 2026 16:40:25 GMT",
       "search_region": "美伊冲突",
       "classified_regions": [
-        "美伊冲突"
+        "美伊冲突",
+        "全球制裁"
       ],
       "event_types": [
-        "原油供应风险"
+        "原油供应风险",
+        "军事冲突升级"
       ],
       "severity": "medium",
-      "summary": "‘On level of atomic bomb’: Iran highlights Hormuz importance amid US talks  Al Jazeera",
+      "summary": "# ‘On level of atomic bomb’: Iran highlights Hormuz importance amid US talks",
       "affected_tickers": [
         "CL=F",
         "BZ=F",
         "USO",
         "XLE",
-        "BNO"
+        "BNO",
+        "GC=F",
+        "SI=F",
+        "LMT",
+        "NOC",
+        "RTX",
+        "GD",
+        "GLD",
+        "SLV",
+        "ITA",
+        "PPA"
       ]
     },
     {
-      "title": "Fragile Iran ceasefire appears to hold as Iran warns the U.S. against attacks on its oil tankers and other ships - PBS",
-      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQTEJ4TXJQWVhvR1BDcTlveEE1Z0JuQTNsNmRtdEtfczFtLWNwOWlTUTFlQkpNdkE2c2NjS1BqajdWN243UnhHUFppTF9MX2RQRzlkZ2gyRTM3b1h5RVpwMTVraklUOUVZYk1qU2QxU0FaLUU4UVB6UUh2S3ZYODU1U1hNMjFINkZ6Ym5uVlFaQVhaSkl4ZzA2cDdyMGpfVU1Pd1JuZjZXNHdtSmNmbFRFOWo0aHVoSnJ4Tm90VDZBdEVRUjNheEVwX1BOeWRmeDg3eWJMbjFWZ0l1NHYtQTF30gHkAUFVX3lxTE41Y2h1MG8yUDR5Y3JvLTY5bVBObkVneXp1VDdUbW43T05BM3JNTy1YSVRtQVhzOHUwZHJnS09MNU1iSUFIVTlVLWlyNlU5VU9pZnZpWkU0enhGbnZUaDgzMU12bzlWSWZuUjlwMnQ0MG1fVUd6VUJlcEJnVW1CTFVMMnRCZEJ4QkZhQXdRRlgwU011TmlWRnJCdUFIUXlPWm9ONmdWOVRoS3VHR09pNG1vSV85elRTdGVqSmpZMGFtVEpLT01ZU2JiTzhnMEI4U1FuaFJmQzVzNFFoa3VhajBfMlhDNA?oc=5",
-      "content": "Fragile Iran ceasefire appears to hold as Iran warns the U.S. against attacks on its oil tankers and other ships  PBS",
-      "content_detail": "",
-      "published_date": "Sat, 09 May 2026 20:07:45 GMT",
+      "title": "Are there any winners in unfinished Iran war? - analysis - The Jerusalem Post",
+      "url": "https://www.jpost.com/middle-east/article-895627",
+      "content": "# Are there any winners in unfinished Iran war? - analysis\n\n## Explosions, US self-defense strikes, and renewed clashes near the Strait of Hormuz show how unresolved maritime leverage, Gulf vulnerability, and political deadlock could push the conflict further.\n\nAn illustrative image of the silhouett",
+      "content_detail": "![The Jerusalem Post - Israel News](/assets/jp-logo.png \"The Jerusalem Post - Israel News\")\n\n# Are there any winners in unfinished Iran war? - analysis\n\n## Explosions, US self-defense strikes, and renewed clashes near the Strait of Hormuz show how unresolved maritime leverage, Gulf vulnerability, and political deadlock could push the conflict further.\n\n![ An illustrative image of the silhouettes of Iranian Supreme Leader Ali Khamenei and Israeli Prime Minister Benjamin Netanyahu set to a backdrop of their respective countries' flags.](https://images.jpost.com/image/upload/f_auto,fl_lossy/q_auto/c_fill,g_faces:center,h_720,w_1280/670010 \" An illustrative image of the silhouettes of Iranian Supreme Leader Ali Khamenei and Israeli Prime Minister Benjamin Netanyahu set to a backdrop of their respective countries' flags.\")\n\nNew reports of explosions late Thursday and early Friday near Iran’s Bandar Abbas, Qeshm Island, and other parts of Hormozgan province put new pressure on a fragile US-Iran diplomatic track that had yet to produce even a temporary settlement.\n\nFor more stories from The Media Line go to [themedialine.org](https://themedialine.org/)\n\nAs of May 8, 2026, Washington and Tehran were reportedly still working toward a short-term memorandum rather than a full peace agreement, mediated by Pakistan, with Iran still reviewing the latest proposal. The framework under discussion would aim to halt the fighting, stabilize shipping through the [Strait of Hormuz](https://www.jpo",
+      "published_date": "Sat, 09 May 2026 21:53:50 GMT",
+      "search_region": "美伊冲突",
+      "classified_regions": [
+        "美伊冲突",
+        "俄乌战争",
+        "中美博弈",
+        "台海/南海/朝鲜",
+        "全球制裁"
+      ],
+      "event_types": [
+        "原油供应风险",
+        "军事冲突升级",
+        "中美关税"
+      ],
+      "severity": "critical",
+      "summary": "[The Jerusalem Post - Israel News](/assets/jp-logo.",
+      "affected_tickers": [
+        "CL=F",
+        "BZ=F",
+        "USO",
+        "XLE",
+        "BNO",
+        "GC=F",
+        "SI=F",
+        "LMT",
+        "NOC",
+        "RTX",
+        "GD",
+        "GLD",
+        "SLV",
+        "ITA",
+        "PPA",
+        "FXI",
+        "ASHR",
+        "KWEB",
+        "YINN",
+        "MCHI",
+        "0700.HK",
+        "9988.HK",
+        "CQQQ"
+      ]
+    },
+    {
+      "title": "A Fragile Cease-fire Holds as U.S. Awaits Iran Response to Truce Proposal - Haaretz",
+      "url": "https://www.haaretz.com/middle-east-news/iran/2026-05-09/ty-article/a-fragile-cease-fire-holds-as-u-s-awaits-iran-response-to-truce-proposal/0000019e-0d01-db10-a3bf-fd03d3110000",
+      "content": "Iran nuclear\n\nIran\n\nU.K.\n\nStrait of Hormuz\n\n## Comments\n\nLoading...\n\n## In the News\n\n### In the News:\n\nIsrael-Iran Live UpdatesTrump-IranIsraeli DefenseBritish JewsWest BankHamasIsrael's 2026 ElectionsHaQuizHaaretz Podcast\n\n### A Fragile Cease-fire Holds as U.S. Awaits Iran Response to Truce Proposa",
+      "content_detail": "Current section\n\n# A Fragile Cease-fire Holds as U.S. Awaits Iran Response to Truce Proposal\n\nThe U.S. military said Friday its forces disabled two Iranian tankers trying to breach a blockade of Iran's ports. Meanwhile, Bahrain said Saturday it arrested 41 people it alleges are linked to Iran's Revolutionary Guard\n\n![](https://img.haarets.co.il/bs/00000198-5b81-d013-af9f-5b85dde40001/69/f1/aacb904d42569cf0050aba3c8f47/starasset-3x.png?&width=512&height=512&cmsprod)\n\n## Article printing is available to subscribers only\n\nPrint in a simple, ad-free format\n\n![](https://img.haarets.co.il/bs/00000198-5b81-d013-af9f-5b85dde40001/69/f1/aacb904d42569cf0050aba3c8f47/starasset-3x.png?&width=512&height=512&cmsprod)\n\n## Zen reading is available to subscribers only\n\nAd-free and in a comfortable reading format\n\n![The Associated Press ](https://img.haarets.co.il/bs/0000017f-da24-d432-a77f-df3fd8840000/2d/4b/3c14c42545d39775df94e057360b/1018316866.jpg?&width=48&height=48&cmsprod \"Credit: AP\")\n\nA tenuous cease-fire appeared to be holding Saturday after the U.S. struck two Iranian oil tankers, while the country that hosts the U.S. Navy's regional headquarters said it arrested dozens of people it alleged were linked to Iran's Revolutionary Guard.\n\n### Click the alert icon to follow topics:\n\n## \n\n## Comments\n\n## In the News\n\n### In the News:\n\n![Girls sing a song as they show the movement of missiles with their hands next to the portraits of the Iranian revolutionary leaders, April 29](https://img",
+      "published_date": "Sat, 09 May 2026 15:11:00 GMT",
+      "search_region": "美伊冲突",
+      "classified_regions": [
+        "美伊冲突",
+        "中东/红海"
+      ],
+      "event_types": [
+        "原油供应风险",
+        "航运中断"
+      ],
+      "severity": "critical",
+      "summary": "Current section",
+      "affected_tickers": [
+        "CL=F",
+        "BZ=F",
+        "USO",
+        "XLE",
+        "BNO",
+        "ZIM",
+        "MATX",
+        "BOAT",
+        "SEA"
+      ]
+    },
+    {
+      "title": "Bahrain detains dozens over suspected links to Iran’s Revolutionary Guard - Los Angeles Times",
+      "url": "https://www.latimes.com/world-nation/story/2026-05-09/bahrain-detains-dozens-over-suspected-links-to-irans-revolutionary-guard",
+      "content": "Iran issued a warning to Bahrain. “Siding with the U.S.-backed resolution will bring severe consequences. The Strait of Hormuz is a vital lifeline; do not risk closing it on yourselves FOREVER,” said Ebrahim Azizi, head of the national security commission of Iran’s parliament, on social media.\n\nAdve",
+      "content_detail": "# Bahrain detains dozens over suspected links to Iran’s Revolutionary Guard\n\n![Demonstrators on a city street at night, including a man talking on a phone and holding a flag](https://ca-times.brightspotcdn.com/dims4/default/c97bb6a/2147483647/strip/true/crop/7156x4770+0+0/resize/1200x800!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2Fb9%2F60%2Fac4bbd724fdb86337c7bddbe6615%2F3d71c07ef39048198d723944a973fe55.jpg)\n\nThis is read by an automated voice. Please report any issues or inconsistencies [here](https://www.latimes.com/about/audio-stories).\n\nDUBAI — A tenuous ceasefire appeared to be holding Saturday after the United States struck two Iranian oil tankers. Meanwhile, the country that hosts the U.S. Navy’s regional headquarters said it arrested dozens of people it alleged were linked to Iran’s Islamic Revolutionary Guard Corps.\n\nFriday’s attacks cast doubt on the month-old ceasefire that the United States has insisted is still in effect. Washington awaits Iran’s response to its latest proposal for a deal to end the war, reopen the Strait of Hormuz to shipping and roll back Tehran’s disputed nuclear program.\n\nThe U.S. military said Friday that its forces disabled two Iranian tankers that were trying to breach the American blockade of Iran’s ports. Hours earlier, the military said it had thwarted attacks on three Navy ships and struck Iranian military facilities in the strait.\n\nOn Saturday, the small Persian Gulf island nation of Bahrain said it h",
+      "published_date": "Sat, 09 May 2026 17:02:47 GMT",
       "search_region": "美伊冲突",
       "classified_regions": [
         "美伊冲突"
+      ],
+      "event_types": [
+        "原油供应风险",
+        "军事冲突升级",
+        "航运中断"
+      ],
+      "severity": "critical",
+      "summary": "# Bahrain detains dozens over suspected links to Iran’s Revolutionary Guard",
+      "affected_tickers": [
+        "CL=F",
+        "BZ=F",
+        "USO",
+        "XLE",
+        "BNO",
+        "GC=F",
+        "SI=F",
+        "LMT",
+        "NOC",
+        "RTX",
+        "GD",
+        "GLD",
+        "SLV",
+        "ITA",
+        "PPA",
+        "ZIM",
+        "MATX",
+        "BOAT",
+        "SEA"
+      ]
+    },
+    {
+      "title": "A fragile ceasefire holds as US awaits Iran response, Bahrain detains dozens - AP News",
+      "url": "https://apnews.com/article/iran-us-war-0c25b2ca53ee90bc19bfbf6c44a66e6e",
+      "content": "5 MIN READ\n\nTrump says Russia and Ukraine have agreed to his request for a 3-day ceasefire and a prisoner swap\n\n3 MIN READ\n\n 83\n\nIsraeli airstrikes kill 5 in southern Lebanon as Hezbollah rockets hit open areas in Israel\n\n2 MIN READ\n\n## US says it responded to an attack in the Strait of Hormuz\n\nIran",
+      "content_detail": "![AP Logo](https://assets.apnews.com/19/66/bc546486408c8595f01753a9fbeb/ap-logo-176-by-208.svg)\n![](https://dims.apnews.com/dims4/default/94c503b/2147483647/strip/true/crop/640x236+0+0/resize/320x118!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2Fc3%2F4c%2F65482a7b452db66043542c093eaf%2Fpromo-2x.png)\n![](https://assets.apnews.com/54/95/4fab11fc4f1bb6e1c6d486086a02/getitongoogleplay-badge-web-color-english.png)\n![](https://assets.apnews.com/9f/14/e730153245ddbefdf1f69031adea/download-on-the-app-store-badge-us-uk-rgb-blk-01.png)\n\nCopyright 2026 The Associated Press. All Rights Reserved.\n\n![AP Logo](https://assets.apnews.com/19/66/bc546486408c8595f01753a9fbeb/ap-logo-176-by-208.svg)\n![](https://dims.apnews.com/dims4/default/94c503b/2147483647/strip/true/crop/640x236+0+0/resize/320x118!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2Fc3%2F4c%2F65482a7b452db66043542c093eaf%2Fpromo-2x.png)\n![](https://assets.apnews.com/54/95/4fab11fc4f1bb6e1c6d486086a02/getitongoogleplay-badge-web-color-english.png)\n![](https://assets.apnews.com/9f/14/e730153245ddbefdf1f69031adea/download-on-the-app-store-badge-us-uk-rgb-blk-01.png)\n\nCopyright 2026 The Associated Press. All Rights Reserved.\n\n# A fragile ceasefire holds as US awaits Iran response, Bahrain detains dozens\n\n## A fragile ceasefire holds as US awaits Iran response, Bahrain detains dozens\n\nPresident Donald Trump told reporters in Washington that the ceasefire with Iran was holding. Trump also said Iran “trifled with us,” after the U",
+      "published_date": "Sat, 09 May 2026 11:24:13 GMT",
+      "search_region": "美伊冲突",
+      "classified_regions": [
+        "美伊冲突",
+        "俄乌战争",
+        "中东/红海"
+      ],
+      "event_types": [
+        "原油供应风险",
+        "军事冲突升级",
+        "航运中断"
+      ],
+      "severity": "critical",
+      "summary": "[AP Logo](https://assets.",
+      "affected_tickers": [
+        "CL=F",
+        "BZ=F",
+        "USO",
+        "XLE",
+        "BNO",
+        "GC=F",
+        "SI=F",
+        "LMT",
+        "NOC",
+        "RTX",
+        "GD",
+        "GLD",
+        "SLV",
+        "ITA",
+        "PPA",
+        "ZIM",
+        "MATX",
+        "BOAT",
+        "SEA"
+      ]
+    },
+    {
+      "title": "Russia-Ukraine war 'coming to an end,' Putin says amid ceasefire, scaled-back parade - USA Today",
+      "url": "https://www.usatoday.com/story/news/world/2026/05/09/putin-says-russia-ukraine-war-coming-to-an-end-amid-3-day-ceasefire/90015800007/",
+      "content": "Russian troops have been fighting in Ukraine for well over four years. That is longer than Soviet forces fought in World War II, known in Russia as the Great Patriotic War of 1941-45.\n\n## War in Europe\n\nPutin, who has ruled Russia as president or prime minister since the last day of 1999, faces a wa",
+      "content_detail": "![USA TODAY]()\n![USA TODAY]()\n\n# Russia-Ukraine war 'coming to an end,' Putin says amid ceasefire, scaled-back parade\n\n## \n\n![](https://www.gannett-cdn.com/authoring/authoring-images/2026/05/08/USAT/90002163007-20260508-vpc-ukraine-russia-ceasefire-thumb-00-00-00-00-still-003.jpg?crop=1919,1079,x0,y0)\n![play](https://www.gannett-cdn.com/appservices/universal-web/universal/icons/icon-play-alt-white.svg)\n\nMOSCOW - Russian President [Vladimir Putin](https://www.usatoday.com/news/world/vladimir-putin/) said on May 9 that he thought the Ukraine war was coming to an end, remarks that came just hours after he had vowed victory in Ukraine at Moscow's [most scaled-back Victory Day parade in years](https://www.reutersconnect.com/all?search=all%3AL1N41L17H&linkedFromStory=true).\n\n\"I think that the matter is coming to an end,\" Putin told reporters of the Russia-Ukraine war, Europe's deadliest conflict since World War II. Putin also said he would be willing to negotiate new security arrangements for Europe, and that his preferred negotiating partner would be Germany's former Chancellor Gerhard Schroeder.\n\nRussia's 2022 invasion of Ukraine triggered the most serious crisis in relations between Russia and the West since the 1962 Cuban Missile Crisis, when many people feared the world was on the brink of nuclear war.\n\nThe Kremlin has said peace talks brokered by President [Donald Trump](https://www.usatoday.com/news/politics/donald-trump/)'s administration were on pause. Putin has repeatedly",
+      "published_date": "Sun, 10 May 2026 00:37:00 GMT",
+      "search_region": "俄乌战争",
+      "classified_regions": [
+        "俄乌战争",
+        "台海/南海/朝鲜"
+      ],
+      "event_types": [
+        "军事冲突升级"
+      ],
+      "severity": "critical",
+      "summary": "# Russia-Ukraine war 'coming to an end,' Putin says amid ceasefire, scaled-back parade",
+      "affected_tickers": [
+        "GC=F",
+        "SI=F",
+        "LMT",
+        "NOC",
+        "RTX",
+        "GD",
+        "GLD",
+        "SLV",
+        "ITA",
+        "PPA"
+      ]
+    },
+    {
+      "title": "Russia's war comes home - The Kyiv Independent",
+      "url": "https://kyivindependent.com/russias-war-comes-home/",
+      "content": "The war the Kremlin unleashed on Ukraine is ricocheting back on the aggressor. Ukraine has figured out what comes next. Some in the West understand it. Some are catching up. Some are still oblivious.\n\n### read also\n\nRussiaWarVictory DayRussian economyop-edUkraine\n\nAndrew Chakhoyan\n\nAndrew Chakhoyan ",
+      "content_detail": "",
+      "published_date": "Sat, 09 May 2026 16:56:09 GMT",
+      "search_region": "俄乌战争",
+      "classified_regions": [
+        "俄乌战争"
       ],
       "event_types": [
         "原油供应风险",
@@ -93,20 +369,20 @@
       ]
     },
     {
-      "title": "Exclusive: U.S. and Iran closing in on one-page memo to end war, officials say - Axios",
-      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFA5bXZodlZYbWpyX2NiSTdnNjZqV0ZCd2dXaDQtRWM3VGFvd3R4VG9CNTJZc0t4NTdocjFEcC1XWHNsLVNTVjNQQkZHUHcyRWNNdmMyemZ0LUJROU0weWpRbVk3MmZ5VTFvZ1o0?oc=5",
-      "content": "Exclusive: U.S. and Iran closing in on one-page memo to end war, officials say  Axios",
-      "content_detail": "Google News",
-      "published_date": "Wed, 06 May 2026 11:51:23 GMT",
-      "search_region": "美伊冲突",
+      "title": "Putin says he believes war in Ukraine almost over - The Kyiv Independent",
+      "url": "https://kyivindependent.com/putin-believes-war-in-ukraine-is-almost-over/",
+      "content": "Read more\n\n## Most Popular\n\n### Ukraine war latest: Dozens of Ukrainian drones reportedly target Moscow ahead of Victory Day parade### Why Russia can’t protect its oil refineries from Ukrainian strikes### Zelensky 'allows' Putin to hold Victory Day parade as Trump declares 3-day Ukraine, Russia ceas",
+      "content_detail": "Got 5 minutes?We would love to hear from you\n\n[Take our survey](/yearly-survey/)\n\n[Sign up for our Newsletters→](/newsletters/)\n\n* [About](/about/)\n* [Team](/team/)\n* [Jobs](/jobs/)\n* [Advertising](/commercial-services/)\n* [Store](https://store.kyivindependent.com/?utm_source=store-homepage&utm_medium=homepage)\n\n[![KI logo](/assets/images/logo.svg)](/)\n\n\n\n[Russia](/tag/russia/)\n\n# Putin says he believes war in Ukraine almost over\n\n• 2 min read\n\n[Prefer![Kyiv Independent Logo](/assets/images/kiv3/ki-short-logo.svg)on Google](https://www.google.com/preferences/source?q=kyivindependent.com)\n\n![Avatar](/_next/image?url=https%3A%2F%2Fassets.kyivindependent.com%2Fcontent%2Fimages%2F2023%2F12%2FAbbey-Fenbert.webp&w=256&q=90)\n\nby [Abbey Fenbert](/author/abbey/)\n\n![Putin says he believes war in Ukraine almost over](/_next/image?url=https%3A%2F%2Fassets.kyivindependent.com%2Fcontent%2Fimages%2F2026%2F05%2FGettyImages-2274784816_20260509-190323.jpg&w=1536&q=75)\n\nRussian President Vladimir Putin speaks to the media following his meetings with foreign delegations at the Kremlin in Moscow on May 9, 2026. (Maxim Shipenkov / Pool / AFP via Getty Images)\n\nRussian President Vladimir Putin said on May 9 that he believes the full-scale war in Ukraine will be over soon.\n\n\"I think the (war in Ukraine) is coming to an end,\" he told journalists at a Kremlin press conference following his [muted Victory Day](https://kyivindependent.com/victory-will-be-ours-putin-tells-victory-day-parade-without-any-t",
+      "published_date": "Sat, 09 May 2026 19:42:26 GMT",
+      "search_region": "俄乌战争",
       "classified_regions": [
-        "美伊冲突"
+        "俄乌战争"
       ],
       "event_types": [
         "军事冲突升级"
       ],
-      "severity": "medium",
-      "summary": "and Iran closing in on one-page memo to end war, officials say  Axios",
+      "severity": "critical",
+      "summary": "We would love to hear from you",
       "affected_tickers": [
         "GC=F",
         "SI=F",
@@ -121,20 +397,21 @@
       ]
     },
     {
-      "title": "US-Israel War On Iran: What Price For A Lasting Peace? – Analysis - Eurasia Review",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNS3JWNXMtZVlIamx1eWJSTEJfUWFyZEt5ODF6ZGtEZmpBTEU0ZzdnV01RcEtmM0sxaldHaDN3YkxkMmJMckt5NUFvSDk5MmtlMEpMeDR5emZTZ0NadEdMdV9NcjI2eVcxWnBWVFAza2Y0TzVsM2xCYmVLNlNYVUdqT1k2aEZkcFBDN21HQzFTRGtPM0VtajNGTjRKUHB2X3NKOEpj?oc=5",
-      "content": "US-Israel War On Iran: What Price For A Lasting Peace? – Analysis  Eurasia Review",
-      "content_detail": "Google News",
-      "published_date": "Sun, 10 May 2026 01:10:15 GMT",
-      "search_region": "美伊冲突",
+      "title": "\"Coming To An End\": Vladimir Putin On Russia's War With Ukraine - NDTV",
+      "url": "https://www.ndtv.com/world-news/coming-to-an-end-vladimir-putin-on-russias-war-with-ukraine-11473038",
+      "content": "Russian President Vladimir Putin said on Saturday that he thought the Ukraine conflict was coming to an end\n \"I think that the matter is coming to an end,\" Putin told reporters of the Ukraine war\n Russia's invasion of Ukraine triggered the worst crisis in relations between Russia and the West since ",
+      "content_detail": "[home](https://www.ndtv.com/world \"NDTV\")     [World News](https://www.ndtv.com/world-news \"World News\")     [\"Coming To An End\": Vladimir Putin On Russia's War With Ukraine](https://www.ndtv.com/world-news/coming-to-an-end-vladimir-putin-on-russias-war-with-ukraine-11473038)\n\n# \"Coming To An End\": Vladimir Putin On Russia's War With Ukraine\n\n## Russia's 2022 invasion of Ukraine triggered the most serious crisis in relations between Russia and the West since the 1962 Cuban Missile Crisis, when many people feared the world was on the brink of nuclear war.\n\n* [Reuters](https://www.ndtv.com/agencies/reuters-83)\n* [World News](https://www.ndtv.com/world-news)\n* May 10, 2026 00:36 am IST\n\n  + Published On May 10, 2026 00:36 am IST\n  + Last Updated On May 10, 2026 00:36 am IST\n\nRead Time: 2 mins\n\nShare\n\n* Twitter\n* WhatsApp\n* Facebook\n* Reddit\n* [Email](mailto:?subject=)\n\n![](https://c.ndtvimg.com/2023-12/ef7e3qq_vladimir-putin-afp-_625x300_08_December_23.jpeg?im=FeatureCrop,algorithm=dnn,width=773,height=435)\n\nThe Kremlin said last week that it was for European governments to make the first move.\n\n* Russian President Vladimir Putin said on Saturday that he thought the Ukraine conflict was coming to an end\n* \"I think that the matter is coming to an end,\" Putin told reporters of the Ukraine war\n* Russia's invasion of Ukraine triggered the worst crisis in relations between Russia and the West since 1962\n\nDid our AI summary help?\n\n[Let us know.](https://www.ndtv.com/convergence/ndtv/n",
+      "published_date": "Sat, 09 May 2026 19:06:48 GMT",
+      "search_region": "俄乌战争",
       "classified_regions": [
-        "美伊冲突"
+        "俄乌战争",
+        "台海/南海/朝鲜"
       ],
       "event_types": [
         "军事冲突升级"
       ],
-      "severity": "medium",
-      "summary": "US-Israel War On Iran: What Price For A Lasting Peace?",
+      "severity": "critical",
+      "summary": "[home](https://www.",
       "affected_tickers": [
         "GC=F",
         "SI=F",
@@ -149,21 +426,150 @@
       ]
     },
     {
-      "title": "US, Iran no closer to ending war as Qatari tanker sails toward Strait of Hormuz - The Detroit News",
-      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNaEQ3Q0ctWDdNcE1wNkIxVUhNRmZKVVpYT2lRUjhJMHBxTDNTMUl6dko5TzZ2XzFnQ0I5RXlwTHE0Y0wxMFJ0aXh0ZVFUOTVMbERQNGhRV1JGTTZCVnJHaFNDdVpqWjZCam9Bd2NYT2x5V0lOaXBiSU1EbHpiUWJVNGhwOHA1dE1BYVI5LXBhQjB2dUVmSUlPV00xTUplaGVjM3ZFVm9DeUtoNDh5QkdDNEEtUGdwTGpjYmNyLUl2b09aZUVsNVVfelNVdF9xWUk3OHliVWFvSlNjckdJaFR2MA?oc=5",
-      "content": "US, Iran no closer to ending war as Qatari tanker sails toward Strait of Hormuz  The Detroit News",
-      "content_detail": "Google News",
-      "published_date": "Sat, 09 May 2026 22:04:00 GMT",
-      "search_region": "美伊冲突",
+      "title": "Vladimir Putin suggests war in Ukraine is 'coming to an end' --- hours after dismal Victory Day parade - New York Post",
+      "url": "https://nypost.com/2026/05/09/world-news/vladimir-putin-suggests-war-in-ukraine-is-coming-to-an-end-hours-after-dismal-victory-day-parade/",
+      "content": "Email\n\nNew York Post\n\nSwitch between CA and NY editions here.\n\nEdition\n\n US News\n Metro\n Long Island\n Politics\n World News\n\n US News\n Metro\n Long Island\n Politics\n World News\n\nWorld News \n\nbreaking\n\n# Vladimir Putin suggests war in Ukraine is ‘coming to an end’ — hours after dismal Victory Day parad",
+      "content_detail": "![](https://sb.scorecardresearch.com/p?c1=2&c2=6390601&c3=NYPOST&cj=1&cv=3.6)\n![Read the Latest on Page Six](https://nypost.com/wp-content/uploads/sites/2/2023/02/button_3_bg-2.png?w=206)\n\nSwitch between CA and NY editions here.\n\n# Vladimir Putin suggests war in Ukraine is ‘coming to an end’ — hours after dismal Victory Day parade\n\nRussian President Vladimir Putin suggested the war in Ukraine was drawing to a close — just hours after he vowed to triumph at Moscow’s puniest Victory Day parade in years.\n\n“I think that the matter is coming to an end,” Putin told reporters inside the Kremlin Saturday about the four-year-long war.\n\nPutin said the United States — which he referred to as a “partner” and “friend” during his remarks, alongside the likes of China and India — was eager to help broker a deal.\n\n![Russian President Vladimir Putin speaking to the media at the Kremlin.](https://nypost.com/wp-content/uploads/sites/2/2026/05/russian-president-vladimir-putin-talks-127337806.jpg?w=1024)\n\n“Clearly, they have no need for this conflict, as they have many other priorities,” he said.\n\n“But this is, first and foremost, a matter for Russia and Ukraine.”\n\n## Explore More\n\n![leo](https://nypost.com/wp-content/uploads/sites/2/2026/05/127284743.jpg?quality=75&strip=all&w=171&h=114&crop=1)\n\n### ['Patient Zero' in deadly hantavirus cruise ship outbreak was Dutch ornithologist](https://nypost.com/2026/05/09/world-news/hantavirus-patient-zero-was-dutch-ornithologist-leo-schilperoord/)\n\n![An im",
+      "published_date": "Sat, 09 May 2026 21:21:22 GMT",
+      "search_region": "俄乌战争",
       "classified_regions": [
-        "美伊冲突"
+        "美伊冲突",
+        "俄乌战争"
+      ],
+      "event_types": [
+        "军事冲突升级"
+      ],
+      "severity": "medium",
+      "summary": "scorecardresearch.",
+      "affected_tickers": [
+        "GC=F",
+        "SI=F",
+        "LMT",
+        "NOC",
+        "RTX",
+        "GD",
+        "GLD",
+        "SLV",
+        "ITA",
+        "PPA"
+      ]
+    },
+    {
+      "title": "352,000 deaths in four years. Mediazona and Meduza’s new estimate of Russian losses in Ukraine - Mediazona",
+      "url": "https://en.zona.media/article/2026/05/09/losses",
+      "content": "217,800 deaths confirmed by May 9\n\n  Article 9 May 2026, 9:00\n Suspected serial killer from Kurgan died in the war with Ukraine. Oleg Fominykh was accused of three murders commited in 1980s and 1990s\n\n  Article 7 May 2026, 12:07\n “Tortured for my own money”. Sergei Dudchenko’s fiery closing statemen",
+      "content_detail": "9 May 2026, 10:57\n\n[Data Department](/authors/352)\n\n# 352,000 deaths in four years. Mediazona and Meduza’s new estimate of Russian losses in Ukraine\n\n![](https://s3.zona.media/i/e/606ded44797c0d8d8d9886021891f038_1400x850)\n\nPhoto: Maxim Shipenkov/TASS\n\nFor the first time this year, *Mediazona* and *Meduza* have updated the overall estimate of the actual number of Russia’s losses in its war against Ukraine. It is based on the Probate Registry and reflects the number of male Russian citizens aged 18 to 59 who died since the start of the full-scale invastion to the end of 2025: **352,000.**\n\nOur estimation methodology is based on data from the Probate Registry and the [recorded names count](https://en.zona.media/article/2026/05/09/casualties_eng-trl) we are maintaining together with *BBC News Russian* and a group of volunteers. We’ve described it in [previous](https://en.zona.media/article/2023/07/10/stats-trl) [articles](https://en.zona.media/article/2024/02/24/75k-trl), but here’s a brief overview.\n\nRussia has a publicly accessible Probate Registry, which includes all deceased citizens who left any significant assets as inheritance. By comparing it to the named list of losses, we can calculate the probability of inclusion in the registry for each age and social group. Using this coefficient, we can then “convert” the inheritance cases into an actual number of losses—that is, answer the question, “How many actual deaths correspond to the known number of inheritance cases?”\n\nThe",
+      "published_date": "Sat, 09 May 2026 11:23:54 GMT",
+      "search_region": "俄乌战争",
+      "classified_regions": [
+        "俄乌战争",
+        "台海/南海/朝鲜"
+      ],
+      "event_types": [
+        "军事冲突升级"
+      ],
+      "severity": "medium",
+      "summary": "9 May 2026, 10:57",
+      "affected_tickers": [
+        "GC=F",
+        "SI=F",
+        "LMT",
+        "NOC",
+        "RTX",
+        "GD",
+        "GLD",
+        "SLV",
+        "ITA",
+        "PPA"
+      ]
+    },
+    {
+      "title": "From import dependence to self-reliance: India’s fertilizer crisis as a ‘Make in India’ turning point - BusinessLine",
+      "url": "https://www.thehindubusinessline.com/economy/agri-business/from-import-dependence-to-self-reliance-indias-fertilizer-crisis-as-a-make-in-india-turning-point/article70954135.ece",
+      "content": "Historically, India has diversified its sourcing across regions — Russia and Belarus for potash, West Asia and North Africa for phosphates, and China for specialty fertilizers and intermediates. However, recent geopolitical developments have disrupted this balance. The Russia-Ukraine conflict has st",
+      "content_detail": "##### SENSEX   77,328.19\n\n##### NIFTY   24,176.15\n\n##### CRUDEOIL   9,020.00\n\n##### GOLD   152,525.00\n\n+ 264.00\n\n##### SILVER   261,800.00\n\n+ 3,260.00\n\n##### SENSEX   77,328.19\n\n -516.33\n\n##### NIFTY   24,176.15\n\n -150.50\n\n##### NIFTY   24,176.15\n\n -150.50\n\n##### CRUDEOIL   9,020.00\n\n -45.00\n\n##### CRUDEOIL   9,020.00\n\n -45.00\n\n##### GOLD   152,525.00\n\n+ 264.00\n\n[![Businessline Logo](https://assetsbl.thehindubusinessline.com/theme/images/bl-online/logo.svg)![Businessline Logo](https://assetsbl.thehindubusinessline.com/theme/images/bl-online/mobile-logo.svg)](https://www.thehindubusinessline.com/)\n\n[Companies](https://www.thehindubusinessline.com/companies/)   [Markets](https://www.thehindubusinessline.com/markets/)   [Portfolio](https://www.thehindubusinessline.com/portfolio/)   [Opinion](https://www.thehindubusinessline.com/opinion/)   [Elections 2026](https://www.thehindubusinessline.com/news/elections/)   [Premium](https://www.thehindubusinessline.com/premium/)\n\nMENU\n\n* [MSME](https://www.thehindubusinessline.com/companies/msme/)\n\n* [IPO Dashboard](https://www.thehindubusinessline.com/markets/ipo-dashboard/)\n* [Commodities](https://www.thehindubusinessline.com/markets/commodities/)\n* [Forex](https://www.thehindubusinessline.com/markets/forex/)\n* [Gold & Silver](https://www.thehindubusinessline.com/markets/gold/)\n* [Stocks](https://www.thehindubusinessline.com/markets/stock-markets/)\n* [Gold rate today](https://www.thehindubusinessline.com/gold-rate-today/)\n* [Silver rate t",
+      "published_date": "Sun, 10 May 2026 03:30:00 GMT",
+      "search_region": "俄乌战争",
+      "classified_regions": [
+        "俄乌战争",
+        "中美博弈",
+        "台海/南海/朝鲜",
+        "全球制裁"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "##### SENSEX   77,328.",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Trump ready to ship US delegation to Moscow to negotiate end to deadly war in Ukraine: ‘It’s madness’ - New York Post",
+      "url": "https://nypost.com/2026/05/09/world-news/trump-ready-to-ship-us-delegation-to-mosco-to-negotiate-end-to-deadly-war-in-ukraine/",
+      "content": "Email\n\nNew York Post\n\nSwitch between CA and NY editions here.\n\nEdition\n\n US News\n Metro\n Long Island\n Politics\n World News\n\n US News\n Metro\n Long Island\n Politics\n World News\n\nWorld News\n\n# Trump ready to ship US delegation to Moscow to negotiate end to deadly war in Ukraine: ‘It’s madness’\n\nBy\n\nGab",
+      "content_detail": "",
+      "published_date": "Sat, 09 May 2026 20:03:22 GMT",
+      "search_region": "俄乌战争",
+      "classified_regions": [
+        "俄乌战争",
+        "中美博弈",
+        "台海/南海/朝鲜"
+      ],
+      "event_types": [
+        "军事冲突升级",
+        "中美关税"
+      ],
+      "severity": "low",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "SI=F",
+        "LMT",
+        "NOC",
+        "RTX",
+        "GD",
+        "GLD",
+        "SLV",
+        "ITA",
+        "PPA",
+        "FXI",
+        "ASHR",
+        "KWEB",
+        "YINN",
+        "MCHI",
+        "0700.HK",
+        "9988.HK",
+        "CQQQ"
+      ]
+    },
+    {
+      "title": "State escalates trade row with China over Iran war ahead of Trump-Xi summit - Politico",
+      "url": "https://www.politico.com/news/2026/05/09/state-escalates-trade-row-with-china-over-iran-war-ahead-of-trump-xi-summit-00913421",
+      "content": "The administration also issued sanctions Friday against 10 other entities and individuals in countries including Belarus, Iran and the United Arab Emirates that it said are “enabling efforts by Iran’s military to secure weapons.”\n\nThe Chinese Embassy in Washington, D.C., did not immediately respond ",
+      "content_detail": "",
+      "published_date": "Sat, 09 May 2026 17:10:00 GMT",
+      "search_region": "中美博弈",
+      "classified_regions": [
+        "美伊冲突",
+        "中美博弈",
+        "全球制裁"
       ],
       "event_types": [
         "原油供应风险",
-        "军事冲突升级"
+        "军事冲突升级",
+        "中美关税"
       ],
-      "severity": "medium",
-      "summary": "US, Iran no closer to ending war as Qatari tanker sails toward Strait of Hormuz  The Detroit News",
+      "severity": "low",
+      "summary": "",
       "affected_tickers": [
         "CL=F",
         "BZ=F",
@@ -179,470 +585,7 @@
         "GLD",
         "SLV",
         "ITA",
-        "PPA"
-      ]
-    },
-    {
-      "title": "U.S. and Iran Exchange Fire Amid a Declared Truce - The New York Times",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFB1RWdobm1aLVIwaTlTTzFoMmhVMzIzdDdiX0FJRy1Ud1ZLQmpBTmNidzBOUnlCQzdORFRUTjBDRzl3eWE2dDhfOWFybEZJUGRlcXh5N3ZUMnV0dVpYVDNqRzdzV0REem9CckpYUTZkRjFWQkZmaF96UGZaVEZ6UGc?oc=5",
-      "content": "U.S. and Iran Exchange Fire Amid a Declared Truce  The New York Times",
-      "content_detail": "Google News",
-      "published_date": "Fri, 08 May 2026 00:12:16 GMT",
-      "search_region": "美伊冲突",
-      "classified_regions": [
-        "美伊冲突"
-      ],
-      "event_types": [
-        "避险需求"
-      ],
-      "severity": "medium",
-      "summary": "and Iran Exchange Fire Amid a Declared Truce  The New York Times",
-      "affected_tickers": [
-        "GC=F",
-        "GLD",
-        "SI=F",
-        "^VIX",
-        "DX-Y.NYB",
-        "IAU",
-        "TLT",
-        "UVXY"
-      ]
-    },
-    {
-      "title": "Live Updates: Latest from Israel, Iran, and Middle East - The Jerusalem Post",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBKSnVTU1V5V2paUkdLZzJTMEdTaGVhTVlnMzBLb09FQThKeWlueG5PMlNDdHFwamphVU4tdEh3TWpZOElfOUZNd3AwWnlPTlAta2V1U0JSUzIxWDljdVF3NF9KQTZaS05Ga1pzaldZS1pLd1RfVkp0d0pZTkpGb0U?oc=5",
-      "content": "Live Updates: Latest from Israel, Iran, and Middle East  The Jerusalem Post",
-      "content_detail": "Google News",
-      "published_date": "Sun, 10 May 2026 01:47:12 GMT",
-      "search_region": "美伊冲突",
-      "classified_regions": [
-        "美伊冲突"
-      ],
-      "event_types": [
-        "避险需求"
-      ],
-      "severity": "medium",
-      "summary": "Live Updates: Latest from Israel, Iran, and Middle East  The Jerusalem Post",
-      "affected_tickers": [
-        "GC=F",
-        "GLD",
-        "SI=F",
-        "^VIX",
-        "DX-Y.NYB",
-        "IAU",
-        "TLT",
-        "UVXY"
-      ]
-    },
-    {
-      "title": "Ukraine summons Israeli ambassador over ‘stolen’ grain shipments - Al Jazeera",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQMWtfby1MUnNXUk9Wck16N1ZmZ0VaU0s4QmZyMm8tSG1mMlhGSF9zbHJzTG1vd1U3MzNSTDVEZjBpWC1XczJYY0lSMnIwZXBQVkhSem56Vm1rX19BYTBpTHoyZVM0S3NzYlFwdUJRVG5MXy04aERqYkJvcjVTZmhyOS1TSm8wbzVzMDFSalhGMXV0cUJHcU50WmdLLUxtQzFUYXV0MXNn0gGrAUFVX3lxTE5GcU1FVmc3dkZqUUg3azVKTGI1bkRwWHpoRFQ3ZEFrbUExUEZxZmk3dm9EZU5OZFkwb21GY3ZJMWNYZDhsODZqUHBaNUNzeGxRWUhYNWZWdk05enZnY1VpRFhfZ3ZpNHBaYUFpSTUwWEw3anFrWFd4V3M4ZnpheWxyYWo5RFNGNVlENnpfZkRacFZIa2NwRjA2Zmt0UXQ0U05XVG5NbTZjQjRfMA?oc=5",
-      "content": "Ukraine summons Israeli ambassador over ‘stolen’ grain shipments  Al Jazeera",
-      "content_detail": "Google News",
-      "published_date": "Tue, 28 Apr 2026 07:00:00 GMT",
-      "search_region": "俄乌战争",
-      "classified_regions": [
-        "美伊冲突",
-        "俄乌战争"
-      ],
-      "event_types": [
-        "粮食供应"
-      ],
-      "severity": "medium",
-      "summary": "Ukraine summons Israeli ambassador over ‘stolen’ grain shipments  Al Jazeera",
-      "affected_tickers": [
-        "ZW=F",
-        "ZC=F",
-        "ZS=F",
-        "DBA",
-        "WEAT",
-        "CORN"
-      ]
-    },
-    {
-      "title": "Ukraine accuses Israel of importing grain 'stolen' by Russia - Oregon Public Broadcasting - OPB",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQRm92ODhMM2dsWkhHVGQ3d1NZTC1hc1N3R3F4Q3RXcG9Kc0FUVWtrMmRIN1d4R2t4c3VuVHhwLU5WT1BZd0NrSUxjRk1IVGl2WEZodkZUdENHOXVJbGFjVmstcGZvRXhtczVBWkljVmFMRHpsS3hyU3owZF9LN1VyRGlqNEZoYzI5Y0hGd18yMWstWnZuc003VUNxWnZQSmM?oc=5",
-      "content": "Ukraine accuses Israel of importing grain 'stolen' by Russia  Oregon Public Broadcasting - OPB",
-      "content_detail": "Google News",
-      "published_date": "Wed, 29 Apr 2026 07:00:00 GMT",
-      "search_region": "俄乌战争",
-      "classified_regions": [
-        "美伊冲突",
-        "俄乌战争"
-      ],
-      "event_types": [
-        "粮食供应"
-      ],
-      "severity": "medium",
-      "summary": "Ukraine accuses Israel of importing grain 'stolen' by Russia  Oregon Public Broadcasting - OPB",
-      "affected_tickers": [
-        "ZW=F",
-        "ZC=F",
-        "ZS=F",
-        "DBA",
-        "WEAT",
-        "CORN"
-      ]
-    },
-    {
-      "title": "Ukraine threatens sanctions against Israel for buying ‘stolen’ grain from Russia - Jewish Telegraphic Agency",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxORmFFVmwzck11cjVXTmJzZjdMN044SGZxMHRfdFNVZGxST3IwdDMzTlF0ZGhvV1lZSG5OOTQ5aS1rR0JEOUZBNEIwSU5vRlJjeEpZby02dG8tVHhnZU9QNTlVb3JoU01pa2dpeE5KVU9zY2RsRE1ZYkJxbmdsdVdRN3l4NnlMc3h4c0xtaTFXd1d3NVM2b1ZMVGpoVDcxY2JSTGVDa0pITXBpOTIyc2NMMW44S0swS1E?oc=5",
-      "content": "Ukraine threatens sanctions against Israel for buying ‘stolen’ grain from Russia  Jewish Telegraphic Agency",
-      "content_detail": "Google News",
-      "published_date": "Tue, 28 Apr 2026 07:00:00 GMT",
-      "search_region": "俄乌战争",
-      "classified_regions": [
-        "美伊冲突",
-        "俄乌战争",
-        "全球制裁"
-      ],
-      "event_types": [
-        "粮食供应"
-      ],
-      "severity": "medium",
-      "summary": "Ukraine threatens sanctions against Israel for buying ‘stolen’ grain from Russia  Jewish Telegraphic Agency",
-      "affected_tickers": [
-        "ZW=F",
-        "ZC=F",
-        "ZS=F",
-        "DBA",
-        "WEAT",
-        "CORN"
-      ]
-    },
-    {
-      "title": "Israeli Firm Accused of Importing Stolen Ukrainian Grain Halts Future Russian Wheat Orders - UNITED24 Media",
-      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQeDgzNGZFMklkdE5NeHk3R3BGNkRDSWdRSlFma1JXa24tRUZwMkcyWnlDMkJJdmVYckJaZ2hNZzdsc0RhZGFlMDY2RVJNbjFEbWR1eVA5aTZsV21KeE9RbzVmUlRLWUl5N1RfcFFhSW13aFMwZDl0c0JFRDgtUGJxTHpISFBINzJ4b2hjWGF6ekw4azBPbWw0bFVvZFI1elBqbkdmWG9TaVJpOWpQRFU4cklxaWtwd0RNcmdyRFBzMVVNcHRPUUNR?oc=5",
-      "content": "Israeli Firm Accused of Importing Stolen Ukrainian Grain Halts Future Russian Wheat Orders  UNITED24 Media",
-      "content_detail": "Google News",
-      "published_date": "Mon, 04 May 2026 15:49:14 GMT",
-      "search_region": "俄乌战争",
-      "classified_regions": [
-        "美伊冲突",
-        "俄乌战争"
-      ],
-      "event_types": [
-        "粮食供应"
-      ],
-      "severity": "medium",
-      "summary": "Israeli Firm Accused of Importing Stolen Ukrainian Grain Halts Future Russian Wheat Orders  UNITED24 Media",
-      "affected_tickers": [
-        "ZW=F",
-        "ZC=F",
-        "ZS=F",
-        "DBA",
-        "WEAT",
-        "CORN"
-      ]
-    },
-    {
-      "title": "Zelensky slams Israel over imports of Ukrainian grain 'stolen' by Russia - Le Monde.fr",
-      "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQVWR4bmNEeXFleFNyWWZWYnpzQ3A5X2VuSzRPeGxXdVYycWRFLVlDTFlwUS1DaVVkaWFfSC04a080bXk3NmJRd0l6YjBQX3VLZWUxZ0dMOVkzRGZpNENTaFpRQWE5alJhaFE4cWZuUGJVNUtMdGZZUE9aX2pkZkxiUVpvSUhXMUZ0cV9xLS1CUmdvZEI4WGNaSzNUcnBPcGl5TXVYRU9rN1czQlpWTVJqbjd2VkJva25ScnVMSUlKbUpMeHYtek1YSVlpc185SlVMWlNzT2luRGRmUUlQVV91TnRMbjk3dw?oc=5",
-      "content": "Zelensky slams Israel over imports of Ukrainian grain 'stolen' by Russia  Le Monde.fr",
-      "content_detail": "Google News",
-      "published_date": "Tue, 28 Apr 2026 07:00:00 GMT",
-      "search_region": "俄乌战争",
-      "classified_regions": [
-        "美伊冲突",
-        "俄乌战争"
-      ],
-      "event_types": [
-        "粮食供应"
-      ],
-      "severity": "medium",
-      "summary": "Zelensky slams Israel over imports of Ukrainian grain 'stolen' by Russia  Le Monde.",
-      "affected_tickers": [
-        "ZW=F",
-        "ZC=F",
-        "ZS=F",
-        "DBA",
-        "WEAT",
-        "CORN"
-      ]
-    },
-    {
-      "title": "Russia capitalises on chaos: fertilisers in the context of the war in Iran - Real Instituto Elcano",
-      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxObFpLNzZScnlMakl4eFFOVktQU0N4YVFyZG1zSmpjZzdUQWJfWXB6MVczVEx4SGw3WEVFYS10eGxFMnFkdTNDYlVLOGJTQkdONGN0UWRqemIwVmwxR1NuTENxclpLdEdjZnJONERWSEZuWlJ5TFhJaDlpWERNQnFlQk1EcENLTFM0aWZOY0lMRE9TZGt2NHlrbWVpTHM2cFphdEoyc3dSUE03VEhxZXoya1Y1VzZyN0ZuWmxyODZDM1M0SkRJ?oc=5",
-      "content": "Russia capitalises on chaos: fertilisers in the context of the war in Iran  Real Instituto Elcano",
-      "content_detail": "Google News",
-      "published_date": "Mon, 13 Apr 2026 14:28:32 GMT",
-      "search_region": "俄乌战争",
-      "classified_regions": [
-        "美伊冲突",
-        "俄乌战争"
-      ],
-      "event_types": [
-        "军事冲突升级"
-      ],
-      "severity": "medium",
-      "summary": "Russia capitalises on chaos: fertilisers in the context of the war in Iran  Real Instituto Elcano",
-      "affected_tickers": [
-        "GC=F",
-        "SI=F",
-        "LMT",
-        "NOC",
-        "RTX",
-        "GD",
-        "GLD",
-        "SLV",
-        "ITA",
-        "PPA"
-      ]
-    },
-    {
-      "title": "NATO ally Romania reports increased rate of Russian drone incursions, fighter alerts - ABC News - Breaking News, Latest News and Videos",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOS1FkREFFYnFZUHN0RVRCMHJLbWZsSjlmb3BZcGZCS0hGZmZlRW95aXJEeUYxV1JORHFTdEJNaU9kdmVXWHV2dm1WdFJvLTlGZldUSVcxTURYQXlmSEliSWFWMllISk5aRENaU0tSR3FlcGFGOG1Xc3FTU2xER2lBOWUzdDladVdqQ1hWZk5RZUdpbW03NGRFaVc4WlN0SkVKQ1hJTWZxaHhXbEnSAbABQVVfeXFMTUtpelRVWkk5REphRjJ0NDFOTTRjRVVZb3hBM1o4SWI3a0RUUUtvUGRIZkVxemVveE5seVYxdk5xQnlCMXFTUDdXd2tXdzI2ajFyaHhSbThfTnltMEkyOEwzbTZ3d3JJSi1jVFBkRm93WVNxU2FRWHBteHBJOTRFYl90QVFuLVFkaXE0UGRoS1llVXY1cFE4d0xFWl9RLW5tcExhYXE4M0ZpTXFnZkgwcUw?oc=5",
-      "content": "NATO ally Romania reports increased rate of Russian drone incursions, fighter alerts  ABC News - Breaking News, Latest News and Videos",
-      "content_detail": "Google News",
-      "published_date": "Sat, 02 May 2026 09:39:35 GMT",
-      "search_region": "俄乌战争",
-      "classified_regions": [
-        "俄乌战争"
-      ],
-      "event_types": [
-        "避险需求"
-      ],
-      "severity": "medium",
-      "summary": "NATO ally Romania reports increased rate of Russian drone incursions, fighter alerts  ABC News - Breaking News, Latest News and Videos",
-      "affected_tickers": [
-        "GC=F",
-        "GLD",
-        "SI=F",
-        "^VIX",
-        "DX-Y.NYB",
-        "IAU",
-        "TLT",
-        "UVXY"
-      ]
-    },
-    {
-      "title": "Black Sea Shockwaves: Ukraine War Still Impacts Global South - The Cairo Review of Global Affairs",
-      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9zZ2ZWdHo4RFU0bjN3N29OOTZmT200dFVGeU42Y0xGa0lmWExWQVV5b2dTUFBsbHFJZ3Z5QllGWEt0SDByMmYtTGRkS0RweWFmT0g2czctdXoyUmVpMTI0Yk1aSTFOX2dXdU84?oc=5",
-      "content": "Black Sea Shockwaves: Ukraine War Still Impacts Global South  The Cairo Review of Global Affairs",
-      "content_detail": "Google News",
-      "published_date": "Mon, 23 Mar 2026 07:00:00 GMT",
-      "search_region": "俄乌战争",
-      "classified_regions": [
-        "俄乌战争"
-      ],
-      "event_types": [
-        "军事冲突升级"
-      ],
-      "severity": "medium",
-      "summary": "Black Sea Shockwaves: Ukraine War Still Impacts Global South  The Cairo Review of Global Affairs",
-      "affected_tickers": [
-        "GC=F",
-        "SI=F",
-        "LMT",
-        "NOC",
-        "RTX",
-        "GD",
-        "GLD",
-        "SLV",
-        "ITA",
-        "PPA"
-      ]
-    },
-    {
-      "title": "US-China Relations in the Trump 2.0 Era: A Timeline - China Briefing",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQVl9rOHkwQl9VYldidlJVajgtZzY4VE5TQmt6eEQ2czIxaTk5N3Ywd3diVXdCT3dKVmhUNmxMRjJ0UnJKdGE2TUtuNklrdWx4UTVGZG5kY1pvWnNEWUhkdmZ5WkV3R0plREV6aTlGc1JEUHVQeG02VzRsVE82OERteXhsMGNfTEVPMllnN0p3?oc=5",
-      "content": "US-China Relations in the Trump 2.0 Era: A Timeline  China Briefing",
-      "content_detail": "Google News",
-      "published_date": "Thu, 30 Apr 2026 07:00:00 GMT",
-      "search_region": "中美博弈",
-      "classified_regions": [
-        "中美博弈"
-      ],
-      "event_types": [
-        "避险需求"
-      ],
-      "severity": "medium",
-      "summary": "US-China Relations in the Trump 2.",
-      "affected_tickers": [
-        "GC=F",
-        "GLD",
-        "SI=F",
-        "^VIX",
-        "DX-Y.NYB",
-        "IAU",
-        "TLT",
-        "UVXY"
-      ]
-    },
-    {
-      "title": "The U.S.-China Trade Relationship: What’s Behind the Competition? - Council on Foreign Relations",
-      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE85R1Rxa096czZxUGpuWjB0T0RCeWtvNzUwM2kxcHRhVXp4MjBJUXVIbC1vU2EtRGZ6c2MxQnVNamVJUHhpZU4yMVBqRUZ3YUgxNGVRT0pRSWYteGpFeW1mRlBuazdselRXZDdpaVY1NW0xS2hzSlUtb1p1VWhwdw?oc=5",
-      "content": "The U.S.-China Trade Relationship: What’s Behind the Competition?  Council on Foreign Relations",
-      "content_detail": "Google News",
-      "published_date": "Thu, 16 Apr 2026 07:00:00 GMT",
-      "search_region": "中美博弈",
-      "classified_regions": [
-        "中美博弈"
-      ],
-      "event_types": [
-        "避险需求"
-      ],
-      "severity": "medium",
-      "summary": "-China Trade Relationship: What’s Behind the Competition?",
-      "affected_tickers": [
-        "GC=F",
-        "GLD",
-        "SI=F",
-        "^VIX",
-        "DX-Y.NYB",
-        "IAU",
-        "TLT",
-        "UVXY"
-      ]
-    },
-    {
-      "title": "Transatlantic Action: Sanctioning Third-Country Enablers of Russia’s War Economy - Center for European Policy Analysis (CEPA)",
-      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQM0xraVNkbGF2ZV8yS2xLQ0xrOG1YWmVlUWFLZkRwOWN1bk01OC1Pc1JWV0VDVEdDalpBdV8zdzlOaU5jajk3YldZTkl4N2NuUWh6am9FOG45R2J3Q3Q3bjBfMmxyNkhkT2ZrTEEyNlZZZ2FvWWVZdkVjUnZSTzVFSnBZTmVxWnl0Z3dVa01BSjNRdTRuWXJtd2hLQmJzQ1F0MTI0SHJfV2U1UjBaUm50SUprOTczaldjc0E?oc=5",
-      "content": "Transatlantic Action: Sanctioning Third-Country Enablers of Russia’s War Economy  Center for European Policy Analysis (CEPA)",
-      "content_detail": "Google News",
-      "published_date": "Thu, 23 Apr 2026 07:00:00 GMT",
-      "search_region": "中美博弈",
-      "classified_regions": [
-        "俄乌战争"
-      ],
-      "event_types": [
-        "军事冲突升级"
-      ],
-      "severity": "medium",
-      "summary": "Transatlantic Action: Sanctioning Third-Country Enablers of Russia’s War Economy  Center for European Policy Analysis (CEPA)",
-      "affected_tickers": [
-        "GC=F",
-        "SI=F",
-        "LMT",
-        "NOC",
-        "RTX",
-        "GD",
-        "GLD",
-        "SLV",
-        "ITA",
-        "PPA"
-      ]
-    },
-    {
-      "title": "Asia’s Administrative Arms Race: How U.S.-China Strategic Competition is Reshaping Economic Statecraft - Just Security",
-      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE51WVRYN3QxeXJOaFN4YVdoNnlPQ0luTDFyaDR3bk9reDN4bmV4Q0RJY3VYamc4M2RYeG93RWhIaHl1Y2o1VFhaTDA4NnBZOGs2cFd3LTlYZ3loUmZoYnhaUDFWWS1ETjJEb0FYN3N1Z3l4T3RkaFNXWURn?oc=5",
-      "content": "Asia’s Administrative Arms Race: How U.S.-China Strategic Competition is Reshaping Economic Statecraft  Just Security",
-      "content_detail": "Google News",
-      "published_date": "Wed, 11 Feb 2026 08:00:00 GMT",
-      "search_region": "中美博弈",
-      "classified_regions": [
-        "中美博弈"
-      ],
-      "event_types": [
-        "避险需求"
-      ],
-      "severity": "medium",
-      "summary": "Asia’s Administrative Arms Race: How U.",
-      "affected_tickers": [
-        "GC=F",
-        "GLD",
-        "SI=F",
-        "^VIX",
-        "DX-Y.NYB",
-        "IAU",
-        "TLT",
-        "UVXY"
-      ]
-    },
-    {
-      "title": "Steady State Reached in China-U.S. Relations? - China-US Focus",
-      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPUW1BVkxFZHVHVmZqUk9wQ3F4V2R4NDcwT2x0ZmdtRzBsZDNMR3lmVUlDRm5mOFJycHpjbWV4Q0NCQUdPOXFRalhuWmgxQXFXeHEwMXRla3dCc3k1ZTdYVlhZQkI3eXpoMHJtUGYyMTdiUmw2cE82MDRMb01CRUdfaVBmSjVuWV9nVDNzU1JuQQ?oc=5",
-      "content": "Steady State Reached in China-U.S. Relations?  China-US Focus",
-      "content_detail": "Google News",
-      "published_date": "Thu, 18 Dec 2025 08:00:00 GMT",
-      "search_region": "中美博弈",
-      "classified_regions": [
-        "中美博弈"
-      ],
-      "event_types": [
-        "避险需求"
-      ],
-      "severity": "medium",
-      "summary": "Steady State Reached in China-U.",
-      "affected_tickers": [
-        "GC=F",
-        "GLD",
-        "SI=F",
-        "^VIX",
-        "DX-Y.NYB",
-        "IAU",
-        "TLT",
-        "UVXY"
-      ]
-    },
-    {
-      "title": "A new export rule escalates US-China tensions - Peterson Institute for International Economics",
-      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQUGxzWUMwSmE1ODdDSkh2cjF3VVM3b0NNSVlWbnF0NVUxQW9nYW83dm1fWmdFUVJabFVoc1laVUZnOHdCOHAxYi1ubk9Ucko1WGZnUHlvRTAyTTJNTFNXcHRaNTl1aEhVMjFVZVRYTy1sVFpjUG9Eb3RqM2tiZU5DdHZLT1kwSU1CX0NXMW84d0pJUlRXUTNGM3RR?oc=5",
-      "content": "A new export rule escalates US-China tensions  Peterson Institute for International Economics",
-      "content_detail": "",
-      "published_date": "Mon, 27 Oct 2025 07:00:00 GMT",
-      "search_region": "中美博弈",
-      "classified_regions": [
-        "中美博弈"
-      ],
-      "event_types": [
-        "避险需求"
-      ],
-      "severity": "medium",
-      "summary": "",
-      "affected_tickers": [
-        "GC=F",
-        "GLD",
-        "SI=F",
-        "^VIX",
-        "DX-Y.NYB",
-        "IAU",
-        "TLT",
-        "UVXY"
-      ]
-    },
-    {
-      "title": "US Is ‘Suspending’ BIS 50% Rule for a Year, Bessent Says, After China Trade Talks - Kharon",
-      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPZWplRzFMTHZUY3d4VE50UXpvMjF4Z2JfZzF3a2pxNDNYV0ROSnRzdkpXOVJCdFFxVDNEUlFEa0hpWDgyNEpsUmpvdU8ySGNuYzZ4MTNwYk42TXZrN2V4ZXA5TmVxc2NnQ0oydV9USjJFLWQyWVpqd1lxRjhWel9feUxPdEk3cDUwa0E?oc=5",
-      "content": "US Is ‘Suspending’ BIS 50% Rule for a Year, Bessent Says, After China Trade Talks  Kharon",
-      "content_detail": "",
-      "published_date": "Thu, 30 Oct 2025 07:00:00 GMT",
-      "search_region": "中美博弈",
-      "classified_regions": [
-        "中美博弈"
-      ],
-      "event_types": [
-        "避险需求"
-      ],
-      "severity": "medium",
-      "summary": "",
-      "affected_tickers": [
-        "GC=F",
-        "GLD",
-        "SI=F",
-        "^VIX",
-        "DX-Y.NYB",
-        "IAU",
-        "TLT",
-        "UVXY"
-      ]
-    },
-    {
-      "title": "China pauses export controls after talks - Sourceability",
-      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5BVnR5OGN0QUVsYS10eTF1VmpxZGRhWmU0czE2NVBKZkdsSkxfZkJqdHp3cHhjWThncGxJX3FyOVl6dmJzeUh6aDdDU0UtdWRFSWNXdjNkUkhtUUcwckFrbW9ud1FVQnVaRWJfQmhEMWpMalJ4V2hXakY3WQ?oc=5",
-      "content": "China pauses export controls after talks  Sourceability",
-      "content_detail": "",
-      "published_date": "Fri, 14 Nov 2025 08:00:00 GMT",
-      "search_region": "中美博弈",
-      "classified_regions": [
-        "中美博弈"
-      ],
-      "event_types": [
-        "中美关税"
-      ],
-      "severity": "medium",
-      "summary": "",
-      "affected_tickers": [
+        "PPA",
         "FXI",
         "ASHR",
         "KWEB",
@@ -654,21 +597,56 @@
       ]
     },
     {
-      "title": "Iran-backed Houthis join war with attack against Israel - BBC",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5oY1N1ME83RElJVUc5OFZSaXJFMms5a1Z4MDdxR2VrN3JPam9RVUZMQlpqdzZsYUVBNko1RWtRM2s4ckpiR0FxdDlXS1RuYXBlOElaZU1uYThidw?oc=5",
-      "content": "Iran-backed Houthis join war with attack against Israel  BBC",
+      "title": "Expert Reveals China's Rare Earth Chokehold: 'Within 6 Weeks, American Industry Was Struggling' - 24/7 Wall St.",
+      "url": "https://247wallst.com/investing/2026/05/09/expert-reveals-chinas-rare-earth-chokehold-within-6-weeks-american-industry-was-struggling/",
+      "content": "Follow 24/7 Wall St. on Google\n\nThis post may contain links from our sponsors and affiliates, and Flywheel Publishing may receive compensation for actions taken through them.\n\n​\n\n### How to Add Us to Google News\n\nSending You to Google News in 3\n\nA guest on the TechSurge Deep Tech Podcast reframed th",
+      "content_detail": "[Skip to content](#content)\n\n[![24/7 Wall Street Logo](https://247wallst.com/wp-content/themes/247wallst-theme-2025/assets/images/logo.svg)](https://247wallst.com)\n\n[AI Investor Podcast](https://podcast.247wallst.com/?utm_source=247wallst&utm_campaign=site_topnav)\n\n[![](https://247wallst.com/wp-content/themes/247wallst-theme-2025/assets/images/icon-circle-up.svg)\n\nS&P 500](https://247wallst.com/indices/sp-500/)  [![](https://247wallst.com/wp-content/themes/247wallst-theme-2025/assets/images/icon-circle-up.svg)\n\nDow Jones](https://247wallst.com/indices/dow-jones/)  [![](https://247wallst.com/wp-content/themes/247wallst-theme-2025/assets/images/icon-circle-up.svg)\n\nNasdaq 100](https://247wallst.com/indices/nasdaq-100/)  [![](https://247wallst.com/wp-content/themes/247wallst-theme-2025/assets/images/icon-circle-up.svg)\n\nRussell 2000](https://247wallst.com/indices/russell-2000/)  [![](https://247wallst.com/wp-content/themes/247wallst-theme-2025/assets/images/icon-circle-up.svg)\n\nFTSE 100\n\n10,263.70\n\n+0.48%](https://247wallst.com/indices/ftse-100/)  [![](https://247wallst.com/wp-content/themes/247wallst-theme-2025/assets/images/icon-circle-up.svg)\n\nNikkei 225\n\n63,767.70\n\n+2.68%](https://247wallst.com/indices/nikkei-225/)\n\n![](https://247wallst.com/wp-content/themes/247wallst-theme-2025/assets/images/icon-category-tag.svg)\n\n[Investing](https://247wallst.com/./investing/)\n\n# Expert Reveals China’s Rare Earth Chokehold: ‘Within 6 Weeks, American Industry Was Struggling’\n\n![Photo of J",
+      "published_date": "Sat, 09 May 2026 11:30:21 GMT",
+      "search_region": "中美博弈",
+      "classified_regions": [
+        "中美博弈"
+      ],
+      "event_types": [
+        "中美关税",
+        "供应链中断"
+      ],
+      "severity": "medium",
+      "summary": "[Skip to content](#content)",
+      "affected_tickers": [
+        "FXI",
+        "ASHR",
+        "KWEB",
+        "YINN",
+        "MCHI",
+        "0700.HK",
+        "9988.HK",
+        "CQQQ",
+        "NVDA",
+        "TSM",
+        "INTC",
+        "AMD",
+        "ASML",
+        "SMH",
+        "SOXX"
+      ]
+    },
+    {
+      "title": "China April exports rebound strongly, trade surplus widens ahead of Trump visit - Reuters",
+      "url": "https://www.reuters.com/world/china/china-april-exports-rebound-strongly-trade-surplus-widens-ahead-trump-visit-2026-05-09/",
+      "content": "### Follow Us\n\n   [](\n   [](\n   [](\n   [](\n   [](\n   [](\n\n### LSEG Products\n\n   #### Workspace, opens new tab\nAccess unmatched financial data, news and content in a highly-customised workflow experience on desktop, web and mobile.\n\n   #### Data Catalogue, opens new tab\nBrowse an unrivalled portfolio",
       "content_detail": "",
-      "published_date": "Sat, 28 Mar 2026 07:00:00 GMT",
-      "search_region": "中东/红海",
+      "published_date": "Sat, 09 May 2026 07:28:16 GMT",
+      "search_region": "中美博弈",
       "classified_regions": [
         "美伊冲突",
-        "中东/红海"
+        "中美博弈"
       ],
       "event_types": [
         "军事冲突升级",
-        "航运中断"
+        "中美关税",
+        "供应链中断"
       ],
-      "severity": "medium",
+      "severity": "low",
       "summary": "",
       "affected_tickers": [
         "GC=F",
@@ -681,18 +659,122 @@
         "SLV",
         "ITA",
         "PPA",
-        "ZIM",
-        "MATX",
-        "BOAT",
-        "SEA"
+        "FXI",
+        "ASHR",
+        "KWEB",
+        "YINN",
+        "MCHI",
+        "0700.HK",
+        "9988.HK",
+        "CQQQ",
+        "NVDA",
+        "TSM",
+        "INTC",
+        "AMD",
+        "ASML",
+        "SMH",
+        "SOXX"
       ]
     },
     {
-      "title": "Iran-backed Houthis fire missile at Israel from Yemen, risking further escalation - NBC News",
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOdVZ2Z3d1MjduMVAwTkphREg2TDRfQk1KaUxTaTVWaC1jYnd0VUl2RFlGLUhUYTUyT0pFX3VQdGxnVWktQTVDM0thSmtlWkducmpKSnBnMnp0OEthSTliOEtyM2RUYk5ZUVBDLVE5dFFTQVNKMFowN0FBSjF4OXd5SzRLQjJndlpXeE9odkVBMGx4MmtMNXl5SUhuM0Z2c0JJWm1UUG4wWkJZTjJtY2s4?oc=5",
-      "content": "Iran-backed Houthis fire missile at Israel from Yemen, risking further escalation  NBC News",
-      "content_detail": "",
-      "published_date": "Sat, 28 Mar 2026 07:00:00 GMT",
+      "title": "China April exports rebound strongly after sluggish March, trade surplus widens - Forex Factory",
+      "url": "https://www.forexfactory.com/news/1397608-china-april-exports-rebound-strongly-after-sluggish-march/amp",
+      "content": "‹\n\n Forums\n Trades\n News\n Calendar\n Market\n Brokers\n\nSister Sites\n\n Crypto Craft\n Energy EXCH\n Metals Mine\n\nView full page at forexfactory.com \n\n### \n\n## China April exports rebound strongly after sluggish March, trade surplus widens\n\n From cnbc.com [...] ### Story Stats\n\n Posted:  {{ monthNameShort",
+      "content_detail": "   ‹\n\n[![](resources/svg/images/header/dv/ff.svg?b88780ab)](https://www.forexfactory.com) \n\n* [**Forums**](https://www.forexfactory.com/forums)\n* [**Trades**](https://www.forexfactory.com/trades)\n* [**News**](https://www.forexfactory.com/news)\n* [**Calendar**](https://www.forexfactory.com/calendar)\n* [**Market**](https://www.forexfactory.com/market)\n* [**Brokers**](https://www.forexfactory.com/brokers)\n\nSister Sites\n\n* [**Crypto Craft**](https://www.cryptocraft.com)\n* [**Energy EXCH**](https://www.energyexch.com)\n* [**Metals Mine**](https://www.metalsmine.com)\n\n![](resources/svg/images/header/mv/ff.svg?a57c67b7) \n\n[View full page at forexfactory.com](https://www.forexfactory.com/news/1397608-china-april-exports-rebound-strongly-after-sluggish-march) \n\n### \n\n## China April exports rebound strongly after sluggish March, trade surplus widens\n\n [From cnbc.com](https://www.cnbc.com/2026/05/09/china-april-exports-rebound-strongly-after-sluggish-march.html) \n\nChinas export growth gathered pace in April as factories raced to meet a wave of overseas orders from buyers seeking to stockpile components amid fears the Iran war could push global input costs even higher. Exports expanded 14.1% from a year earlier in U.S. dollar value terms, customs data showed on Saturday, outpacing the 2.5% gain in March and a 7.9% rise tipped by economists. Chinese exporters have so far weathered the fallout from the Middle East conflict, buoyed by overseas buyers scrambling to secure supplies, but econom",
+      "published_date": "Sat, 09 May 2026 14:22:48 GMT",
+      "search_region": "中美博弈",
+      "classified_regions": [
+        "美伊冲突",
+        "中美博弈"
+      ],
+      "event_types": [
+        "军事冲突升级"
+      ],
+      "severity": "medium",
+      "summary": "[](resources/svg/images/header/dv/ff.",
+      "affected_tickers": [
+        "GC=F",
+        "SI=F",
+        "LMT",
+        "NOC",
+        "RTX",
+        "GD",
+        "GLD",
+        "SLV",
+        "ITA",
+        "PPA"
+      ]
+    },
+    {
+      "title": "Applied Aerospace & Defense reveals 25% revenue jump in US IPO filing - ET Manufacturing",
+      "url": "https://manufacturing.economictimes.indiatimes.com/amp/news/aerospace-defence/applied-aerospace-defense-reveals-25-revenue-jump-in-us-ipo-filing/130975416",
+      "content": "Advt\n\nApplied Aerospace & Defense plans to sell new shares in the offering. Roughly 83 per cent of the firm's revenue came from US government contracts in the twelve months ended December 31.  \n  \n Morgan Stanley and Jefferies are among the underwriters on the offering. Applied Aerospace & Defense w",
+      "content_detail": "## ET Aerospace & Defence Manufacturing Summit 2026\n\n### The Government of India has focused on investing in railway infrastructure by making investor-friendly policies. It has moved quickly to enable Foreign Direct Investment (FDI) in railways to improve infrastructure for freight and high-speed trains. A\n\n## ET Supply Chain Leadership Summit 2026\n\n### Reimagining India’s Supply Chains for Global Leadership\n\n## WhatsApp Channel\n\n### Tune in to know the latest updates on the manufacturing industry\n\n## Your Privacy is Important to us\n\nWe encourage you to review our\n[Terms of\nService](/terms_conditions.php \"Terms of Service\"), and [Privacy Policy](/privacy_policy.php \"Privacy Policy\").\n  \n  \nBy continuing, you agree to the Terms listed here. In case you want to opt out, please click \"Do Not Sell or\nShare My Personal Information\" link in the footer of this page.\n\n## Opt out of the sale or sharing of personal information\n\nWe won't sell or share your personal information to inform the ads you see. You may still see\ninterest-based ads if your information is sold or shared by other companies or was sold or shared previously.\n\n# Applied Aerospace & Defense reveals 25% revenue jump in US IPO filing\n\nThe company, which supplies hardware to space and defense firms, is preparing for a US IPO on the NYSE under the symbol \"AADX\" amidst a wave of defense tech listings.\n\n### Event\n\n#### [ET Aerospace & Defence Manufacturing Summit 2026](https://manufacturing.economictimes.indiatimes.com/aero",
+      "published_date": "Sat, 09 May 2026 10:20:29 GMT",
+      "search_region": "中美博弈",
+      "classified_regions": [
+        "台海/南海/朝鲜"
+      ],
+      "event_types": [
+        "军事冲突升级"
+      ],
+      "severity": "medium",
+      "summary": "## ET Aerospace & Defence Manufacturing Summit 2026",
+      "affected_tickers": [
+        "GC=F",
+        "SI=F",
+        "LMT",
+        "NOC",
+        "RTX",
+        "GD",
+        "GLD",
+        "SLV",
+        "ITA",
+        "PPA"
+      ]
+    },
+    {
+      "title": "Apple, Intel reach INITIAL chip-MAKING deal - The Manila Times",
+      "url": "https://www.manilatimes.net/2026/05/10/business/top-business/apple-intel-reach-initial-chip-making-deal/2339958",
+      "content": "By Reuters\n\nMay 10, 2026\n\nResize\n\n Small\n Medium\n Large\n\nINTEL has reached a preliminary deal to make some chips for Apple devices, the Wall Street Journal reported on Friday, in a potential boost to Intel’s contract manufacturing business and Washington’s push to shore up US chip production.\n\nThe c",
+      "content_detail": "![The Manila Times](https://cdnx.premiumread.com/?url=https://www.manilatimes.net/theme_manilatimes/images/TMT_1920x1008.jpg&w=1920&q=100&f=webp&v=1)\n![The Manila Times](https://www.manilatimes.net//theme_manilatimes/images/manila-logo-main.png)\n![User](/theme_manilatimes/images/user-icon.png)\n![youtube](/theme_manilatimes/images/header-icons/yt.png)\n![tiktok](/theme_manilatimes/images/header-icons/tiktok.png)\n![messenger](/theme_manilatimes/images/header-icons/messenger.png)\n![threads](/theme_manilatimes/images/header-icons/threads.png)\n![x](/theme_manilatimes/images/header-icons/x.png)\n![facebook](/theme_manilatimes/images/header-icons/facebook.png)\n![User](/theme_manilatimes/images/user-icon.png)\n![The Manila Times](https://www.manilatimes.net//theme_manilatimes/images/The_Manila_Times_529x70.png)\n![The Manila Times](https://www.manilatimes.net//theme_manilatimes/images/The_Manila_Times_400x53.png)\n![Scroll Up](https://www.manilatimes.net//theme_manilatimes/images/scroll-up.jpg)\n![right arrow](/theme_manilatimes/images/grey-right-arrow.svg)\n\n# Apple, Intel reach INITIAL chip-MAKING deal\n\n## \n\n![Reuters](https://www.manilatimes.net/uploads/authors/3738_1716910034.jpg)\n![](https://www.manilatimes.net/uploads/authors/3738_1716910034.jpg)\n![font icon small](/theme_manilatimes/images/font-small.svg)\n![font icon medium](/theme_manilatimes/images/font-medium.svg)\n![font icon large](/theme_manilatimes/images/font-large.svg)\n\nINTEL has reached a preliminary deal to make some chips ",
+      "published_date": "Sat, 09 May 2026 16:09:00 GMT",
+      "search_region": "中美博弈",
+      "classified_regions": [
+        "其他重大事件"
+      ],
+      "event_types": [
+        "军事冲突升级",
+        "供应链中断"
+      ],
+      "severity": "medium",
+      "summary": "[The Manila Times](https://cdnx.",
+      "affected_tickers": [
+        "GC=F",
+        "SI=F",
+        "LMT",
+        "NOC",
+        "RTX",
+        "GD",
+        "GLD",
+        "SLV",
+        "ITA",
+        "PPA",
+        "NVDA",
+        "TSM",
+        "INTC",
+        "AMD",
+        "ASML",
+        "SMH",
+        "SOXX"
+      ]
+    },
+    {
+      "title": "Iran warns the US against attacks on its oil tankers and other ships but ceasefire appears to hold - The Sun Chronicle",
+      "url": "https://www.thesunchronicle.com/news/nation_world/iran-warns-the-us-against-attacks-on-its-oil-tankers-and-other-ships-but-ceasefire/article_0f21e804-ca88-58a2-9419-e8060d182be2.html",
+      "content": "The U.S. has imposed its own blockade of Iran’s ports. U.S. Central Command said on Saturday its forces had turned back 58 commercial ships and “disabled” four since the blockade began April 13.\n\n## Britain deploys warship to the Middle East\n\nBritain’s defense ministry said it was deploying a warshi",
+      "content_detail": "![site-logo](https://bloximages.chicago2.vip.townnews.com/thesunchronicle.com/content/tncms/custom/image/16dc232e-6d97-11ec-a31e-c7c2daaef957.png?resize=200%2C34)\n![site-logo](https://bloximages.chicago2.vip.townnews.com/thesunchronicle.com/content/tncms/custom/image/bb175360-6d96-11ec-a31e-a78bde7037e6.png?resize=200%2C36)\n\n#### Latest E-Edition\n\n![The Sun Chronicle](https://bloximages.chicago2.vip.townnews.com/thesunchronicle.com/content/tncms/assets/v3/eedition/b/22/b22773eb-60b6-5c44-9db2-72e308174086/69fe5017277d9.preview-300.jpg?resize=104%2C200)\n![](https://bloximages.chicago2.vip.townnews.com/thesunchronicle.com/content/tncms/assets/v3/eedition/b/22/b22773eb-60b6-5c44-9db2-72e308174086/69fe5017277d9.preview-300.jpg)\n\n#### [The Sun Chronicle](/eedition/tsc/the-sun-chronicle/edition_fc777eb3-d31c-5b17-948d-81d2ff14defa.html)\n\n![site-logo](https://bloximages.chicago2.vip.townnews.com/thesunchronicle.com/content/tncms/custom/image/9c7ec4aa-6d97-11ec-a31e-37c9c23e6876.png?resize=200%2C36)\n![Support local journalism. Subscribe today.](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAJCAQAAACRI2S5AAAAEklEQVR42mM8U8+AFzCOKgADAHdUC60wg0dkAAAAAElFTkSuQmCC)\n![](https://bloximages.chicago2.vip.townnews.com/thesunchronicle.com/content/tncms/assets/v3/editorial/b/e3/be329875-a296-5b1f-adf2-0c258f8277f3/6297feaf3d5d0.image.jpg?resize=200%2C159)\n\n### [Support local journalism. Subscribe today.](https://www.thesunchronicle.com/subscribe/)\n\n![Want to advertise with us? Get in touch",
+      "published_date": "Sat, 09 May 2026 20:27:54 GMT",
       "search_region": "中东/红海",
       "classified_regions": [
         "美伊冲突",
@@ -700,11 +782,28 @@
         "台海/南海/朝鲜"
       ],
       "event_types": [
+        "原油供应风险",
+        "军事冲突升级",
         "航运中断"
       ],
-      "severity": "medium",
-      "summary": "",
+      "severity": "critical",
+      "summary": "[site-logo](https://bloximages.",
       "affected_tickers": [
+        "CL=F",
+        "BZ=F",
+        "USO",
+        "XLE",
+        "BNO",
+        "GC=F",
+        "SI=F",
+        "LMT",
+        "NOC",
+        "RTX",
+        "GD",
+        "GLD",
+        "SLV",
+        "ITA",
+        "PPA",
         "ZIM",
         "MATX",
         "BOAT",
@@ -712,17 +811,108 @@
       ]
     },
     {
-      "title": "Double Chokepoint: Impact of a Hormuz and Bab al-Mandeb Closure - ORF Middle East",
-      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQRHhFcnJHdjZfMGY3SjRrQUxKaHh4a2FEZHFEQ2swUG1SbzNLU2FlWGlKNkp4WGhNVUp0aV9VU1lRek12MjNrYjdMd1ZnNHFLZUcxdW1JQ1piZDFhREVnUGRvcDZQRU5YbDdldXVDb1pxaEhwcDU2ZDJvSU4zaGludnluYkxYWHNJN2F1c2NiZGxEQXEwNTIzeTVn?oc=5",
-      "content": "Double Chokepoint: Impact of a Hormuz and Bab al-Mandeb Closure  ORF Middle East",
+      "title": "Israel kills 13 in Lebanon pounding Hezbollah targets as US brokered peace talks are set to resume - New York Post",
+      "url": "https://nypost.com/2026/05/09/world-news/israel-kills-13-in-lebanon-pounding-hezbollah-targets-as-us-brokered-peace-talks-are-set-to-resume/",
+      "content": "Email\n\nNew York Post\n\nSwitch between CA and NY editions here.\n\nEdition\n\n US News\n Metro\n Long Island\n Politics\n World News\n\n US News\n Metro\n Long Island\n Politics\n World News\n\nWorld News\n\n# Israel kills 13 in Lebanon pounding Hezbollah targets as US brokered peace talks are set to resume\n\nBy\n\nDavid ",
       "content_detail": "",
-      "published_date": "Thu, 23 Apr 2026 07:00:00 GMT",
+      "published_date": "Sat, 09 May 2026 20:19:59 GMT",
       "search_region": "中东/红海",
       "classified_regions": [
-        "美伊冲突"
+        "美伊冲突",
+        "中东/红海"
       ],
       "event_types": [
-        "原油供应风险"
+        "军事冲突升级"
+      ],
+      "severity": "low",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "SI=F",
+        "LMT",
+        "NOC",
+        "RTX",
+        "GD",
+        "GLD",
+        "SLV",
+        "ITA",
+        "PPA"
+      ]
+    },
+    {
+      "title": "Reporters Notebook: Israel’s northern border amid peace and war - The Jerusalem Post",
+      "url": "https://www.jpost.com/israel-news/article-895612",
+      "content": "On May 9, the northern border was on alert for possible escalation amid clashes with Hezbollah. Even though there is a ceasefire between Israel and Lebanon, there are daily clashes with Hezbollah. The IDF now controls a buffer zone inside Lebanon, where villages have been evacuated. Hezbollah has in",
+      "content_detail": "",
+      "published_date": "Sat, 09 May 2026 12:00:27 GMT",
+      "search_region": "中东/红海",
+      "classified_regions": [
+        "美伊冲突",
+        "中东/红海"
+      ],
+      "event_types": [
+        "军事冲突升级"
+      ],
+      "severity": "low",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "SI=F",
+        "LMT",
+        "NOC",
+        "RTX",
+        "GD",
+        "GLD",
+        "SLV",
+        "ITA",
+        "PPA"
+      ]
+    },
+    {
+      "title": "Deadly Israeli Strikes Erode Cease-Fire in Lebanon - The New York Times",
+      "url": "https://www.nytimes.com/2026/05/09/world/middleeast/israel-strikes-lebanon-ceasefire.html",
+      "content": "Israel carried out a deadly wave of strikes in Lebanon on Saturday, as clashes with Hezbollah, the Iran-backed militant group, continued to intensify despite a U.S.-mediated cease-fire reached last month.\n\nAt least seven people, including a child, were killed in one strike on the southern coastal to",
+      "content_detail": "",
+      "published_date": "Sat, 09 May 2026 17:37:45 GMT",
+      "search_region": "中东/红海",
+      "classified_regions": [
+        "美伊冲突",
+        "中东/红海",
+        "台海/南海/朝鲜"
+      ],
+      "event_types": [
+        "军事冲突升级"
+      ],
+      "severity": "medium",
+      "summary": "Israel carried out a deadly wave of strikes in Lebanon on Saturday, as clashes with Hezbollah, the Iran-backed militant group, continued to intensify despite a U.",
+      "affected_tickers": [
+        "GC=F",
+        "SI=F",
+        "LMT",
+        "NOC",
+        "RTX",
+        "GD",
+        "GLD",
+        "SLV",
+        "ITA",
+        "PPA"
+      ]
+    },
+    {
+      "title": "IRGC navy threatens ‘heavy attack’ on US assets if oil tankers come under fire - The Times of Israel",
+      "url": "https://www.timesofisrael.com/liveblog-may-10-2026/amp/",
+      "content": "Advertisement\n\nLive Now\n\n# IRGC navy threatens ‘heavy attack’ on US assets if oil tankers come under fire\n\n## Warning comes a day after US attacks against two Iranian tankers \\ Foreign Ministry says Gaza flotilla activists have been deported \\ Suspects in Yemanu Zelka murder set to be indicted\n\nBy T",
+      "content_detail": "",
+      "published_date": "Sun, 10 May 2026 05:19:01 GMT",
+      "search_region": "中东/红海",
+      "classified_regions": [
+        "美伊冲突",
+        "中东/红海"
+      ],
+      "event_types": [
+        "原油供应风险",
+        "军事冲突升级",
+        "航运中断"
       ],
       "severity": "medium",
       "summary": "",
@@ -731,27 +921,7 @@
         "BZ=F",
         "USO",
         "XLE",
-        "BNO"
-      ]
-    },
-    {
-      "title": "Houthis open new front in Iran war: Will Yemeni group block Bab al-Mandeb? - Al Jazeera",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPUHhaeEQwR2kxRDVUWk82Z09YWmprc3JfN19VX0JVbkVmZWtxQm1zdlVBcmVQT21IOEsweGR0MkdXd3YtZDV4bkNraXZXQ3I2cVRYYTZLOWwxZWlyNHpKX09uc3hYejRBbmdzSXdTOThTekE1YlhzS01WSEhVbUFQa2ZBdXZJWmhjem1ESnA5cnpSVGM2LXM4OTB6VFE2clBaUHhra3JYSXdhcEtwYU1TdmxwRdIBuAFBVV95cUxNMFpYWFl0aS1MajBUSWNIWTgtTzYwVnpIQTZLMDMxN3JUd3BldGNpYlEyTGJwQWlPaWxlMWE1bjVCT0c3c1VVQURMdXJ2S0NsOGVUT0tQOUpCNllYdDNfbTIxTHFuN0lBcU00XzBVUjJXV0xfYXR2dUZFZS1fUDlMdUhKLUR6T3VzbVpSTzU1Y0Y0elhWMVprUENLUEduckZQOFhTaGJWRy1VMkd3cnRlQnU1SjBNUmxq?oc=5",
-      "content": "Houthis open new front in Iran war: Will Yemeni group block Bab al-Mandeb?  Al Jazeera",
-      "content_detail": "",
-      "published_date": "Sun, 29 Mar 2026 07:00:00 GMT",
-      "search_region": "中东/红海",
-      "classified_regions": [
-        "美伊冲突",
-        "中东/红海"
-      ],
-      "event_types": [
-        "军事冲突升级",
-        "航运中断"
-      ],
-      "severity": "medium",
-      "summary": "",
-      "affected_tickers": [
+        "BNO",
         "GC=F",
         "SI=F",
         "LMT",
@@ -769,156 +939,15 @@
       ]
     },
     {
-      "title": "Iran Looks to Houthis to Tip Scales in Red Sea - Bloomberg.com",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPcVZWN2ZzX05lbUpkcjllenhhV1dmWGJfVEsxY1FuVHBRcEd1TWlpR1JoMG1iVnNESlFNSDR3ZmdKZHp2WXVKSDdDZlc5VnBzbFpqSW94SnZmVV9heGhkSXNIYkN0ZnJ5RjdqbWctZHNpRkJFWEZxWHpUVWJiQ0UxWUNieHV1Y2JRd0JWOVFYME9ubWdoOUJDOXZYUUo0NXN1RUY3ekFrVjZVbEVtdjI2X2pPTGtna1Nj?oc=5",
-      "content": "Iran Looks to Houthis to Tip Scales in Red Sea  Bloomberg.com",
+      "title": "Hundreds Protest Against Netanyahu Government Across Israel - Haaretz",
+      "url": "https://www.haaretz.com/israel-news/israel-politics/2026-05-09/ty-article/.premium/hundreds-protest-against-netanyahu-government-across-israel/0000019e-0d69-d80c-af9e-7f7de6ce0000",
+      "content": "### Iranian Influence Campaign Targeting Arab Society in Israel Ahead of Elections\n\n### A Fragile Cease-fire Holds as U.S. Awaits Iran Response to Truce Proposal\n\n### Two Gaza Flotilla Activists to Be Released From Israeli Detention and Deported\n\n### 2,000 U.K. Jews Sign Petition Against Nigel Farag",
       "content_detail": "",
-      "published_date": "Tue, 31 Mar 2026 07:00:00 GMT",
+      "published_date": "Sat, 09 May 2026 16:16:00 GMT",
       "search_region": "中东/红海",
       "classified_regions": [
         "美伊冲突",
         "中东/红海"
-      ],
-      "event_types": [
-        "航运中断"
-      ],
-      "severity": "medium",
-      "summary": "",
-      "affected_tickers": [
-        "ZIM",
-        "MATX",
-        "BOAT",
-        "SEA"
-      ]
-    },
-    {
-      "title": "Maersk tests Red Sea route as Gaza ceasefire offers hope - Reuters",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOemc0NHJra0o4ajBqZU05dGZMbW1XUV90QlF6NkRDMHdJNks2S0VSbV9Ya284TWxuNjZYUElVYUxDc2xBNGdQZHQ4QkVqTjJiR3B4cDhiMkh5VGlMckVrTVl1Wk5RaE80UWlMR3Y0OS0xVUhXYm85WFJONWNzZjdmLUlFLW1xeVNCWjhEVFdMMjVNdXl5Qks1VS1jQ2lBTEljN2ZkZ1NYUDluYXZ6?oc=5",
-      "content": "Maersk tests Red Sea route as Gaza ceasefire offers hope  Reuters",
-      "content_detail": "",
-      "published_date": "Fri, 19 Dec 2025 08:00:00 GMT",
-      "search_region": "中东/红海",
-      "classified_regions": [
-        "中东/红海"
-      ],
-      "event_types": [
-        "航运中断"
-      ],
-      "severity": "low",
-      "summary": "",
-      "affected_tickers": [
-        "ZIM",
-        "MATX",
-        "BOAT",
-        "SEA"
-      ]
-    },
-    {
-      "title": "Yemen's Houthis ready to join Iran war if needed, raising new shipping risk - The Jerusalem Post",
-      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5LSi1hclpMb0FCY0htSW5KN2RsV1pUbzdxRktvY3VweVBtMGg5QUN6U3B5V3hmbmlWVzZzblNtMWlwSWdSMmFPcURLSFlWdkdEV3dpVHRuOHItZkdN?oc=5",
-      "content": "Yemen's Houthis ready to join Iran war if needed, raising new shipping risk  The Jerusalem Post",
-      "content_detail": "",
-      "published_date": "Fri, 27 Mar 2026 07:00:00 GMT",
-      "search_region": "中东/红海",
-      "classified_regions": [
-        "美伊冲突",
-        "中东/红海"
-      ],
-      "event_types": [
-        "军事冲突升级",
-        "航运中断"
-      ],
-      "severity": "medium",
-      "summary": "",
-      "affected_tickers": [
-        "GC=F",
-        "SI=F",
-        "LMT",
-        "NOC",
-        "RTX",
-        "GD",
-        "GLD",
-        "SLV",
-        "ITA",
-        "PPA",
-        "ZIM",
-        "MATX",
-        "BOAT",
-        "SEA"
-      ]
-    },
-    {
-      "title": "Houthis Threaten Red Sea Escalation as Iran War Risks Spreading to Second Shipping Chokepoint - gCaptain",
-      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNemRoVFdYcE1HYWpIODRLdEhqemg0Vmd6MHpkakZ0LUE0MEdkd0lCSkRoQURMVGxpRlRqeTJRSWNxRmpGNG9IN0FnczVza1RmVVF3c0lBVUtXYkNoTHQ2TUNSV196Mk1oczBQNE8wZXpyVmtOVnc1ZHloVUxoZjVEc01FOGtVUE1MME1BekpGRC1pWkh4elozWXotZENiUVIySTFDU2tKOE5ab0JTSzFlNUtyc0JzZw?oc=5",
-      "content": "Houthis Threaten Red Sea Escalation as Iran War Risks Spreading to Second Shipping Chokepoint  gCaptain",
-      "content_detail": "",
-      "published_date": "Fri, 27 Mar 2026 07:00:00 GMT",
-      "search_region": "中东/红海",
-      "classified_regions": [
-        "美伊冲突",
-        "中东/红海"
-      ],
-      "event_types": [
-        "军事冲突升级",
-        "航运中断"
-      ],
-      "severity": "medium",
-      "summary": "",
-      "affected_tickers": [
-        "GC=F",
-        "SI=F",
-        "LMT",
-        "NOC",
-        "RTX",
-        "GD",
-        "GLD",
-        "SLV",
-        "ITA",
-        "PPA",
-        "ZIM",
-        "MATX",
-        "BOAT",
-        "SEA"
-      ]
-    },
-    {
-      "title": "China & Taiwan Update, May 1, 2026 - Institute for the Study of War",
-      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNMWZtanZ6RlNoenh6UmtGV19EdzlHTG52MlVkRXpfRExiMUhReVJtXzJMVllFaV9memV2VEVJc0FUcEY0YkpKZDhUcHllSGtUOGVmOE5qTHYyNkl1X1lNNUhJTy15WGZIWmRFRGViZ2RSNmd6MjMwMnI4ZFM1QjBvQk5nTUtuTnlhd2c?oc=5",
-      "content": "China & Taiwan Update, May 1, 2026  Institute for the Study of War",
-      "content_detail": "",
-      "published_date": "Fri, 01 May 2026 07:00:00 GMT",
-      "search_region": "台海/南海/朝鲜",
-      "classified_regions": [
-        "中美博弈",
-        "台海/南海/朝鲜"
-      ],
-      "event_types": [
-        "军事冲突升级"
-      ],
-      "severity": "medium",
-      "summary": "",
-      "affected_tickers": [
-        "GC=F",
-        "SI=F",
-        "LMT",
-        "NOC",
-        "RTX",
-        "GD",
-        "GLD",
-        "SLV",
-        "ITA",
-        "PPA"
-      ]
-    },
-    {
-      "title": "Confrontation Over Taiwan | Global Conflict Tracker - Council on Foreign Relations",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPYmVHTzV6d0dDRzBvQWZ1eDJvM2swZUlaZXhrelkyWXJDX1ZIQUw1N003b2pMWFI1dWpodHRtMXJ0QkxUaTVzaHN5eVN1SFJlaHc3M0VuYkRCamdmN0pvMnBwRjdWb1FIRWJDblpZczYzVklQMFJVTUgycmUyZTFPQjBtVDA?oc=5",
-      "content": "Confrontation Over Taiwan | Global Conflict Tracker  Council on Foreign Relations",
-      "content_detail": "",
-      "published_date": "Wed, 18 Feb 2026 08:00:00 GMT",
-      "search_region": "台海/南海/朝鲜",
-      "classified_regions": [
-        "台海/南海/朝鲜"
       ],
       "event_types": [
         "避险需求"
@@ -937,96 +966,270 @@
       ]
     },
     {
-      "title": "China Is Turning the Indo-Pacific Into a Pressure Cooker - RealClearWorld",
-      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQbTg2bjNRbXlmMHpjLU1naXl1VXkzUW5oaDZoVGhEaVdqRWVjeVRobzR0RkNEMkxRZjJIM2NIc0NrVHItQ1YxdGVDNnB5NjlFYTRWNEt1WjBYbW1fVzJtOWZCbUZxZ2tiaGVuQjlEZmthMXVzdG5VV1hYNU1LNTh2ZXRzQVZBQ0pseFZLRlhqSF8zMjhaWUpMaTdGcTRSWU9HU3NZMmVSTUxycl9VLXczR19USjVqZlhPbTJBSA?oc=5",
-      "content": "China Is Turning the Indo-Pacific Into a Pressure Cooker  RealClearWorld",
+      "title": "US experience fighting Iran offers lessons for China, experts say - CNN",
+      "url": "https://www.cnn.com/2026/05/09/china/us-experience-fighting-iran-lessons-china-intl-hnk-ml",
+      "content": "Pedro Pardo/AFP/Getty Images\n\nChina’s military display shows it has the might to back up Xi’s vision of a new world order\n\n6 min read\n\nIf there were a fight over Taiwan, the island or the US could use drones to target Chinese ships or aircraft carrying possibly hundreds of thousands of PLA troops ac",
       "content_detail": "",
-      "published_date": "Sat, 03 Jan 2026 08:00:00 GMT",
+      "published_date": "Sun, 10 May 2026 02:16:01 GMT",
+      "search_region": "台海/南海/朝鲜",
+      "classified_regions": [
+        "美伊冲突",
+        "中美博弈",
+        "台海/南海/朝鲜"
+      ],
+      "event_types": [
+        "原油供应风险",
+        "军事冲突升级"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "CL=F",
+        "BZ=F",
+        "USO",
+        "XLE",
+        "BNO",
+        "GC=F",
+        "SI=F",
+        "LMT",
+        "NOC",
+        "RTX",
+        "GD",
+        "GLD",
+        "SLV",
+        "ITA",
+        "PPA"
+      ]
+    },
+    {
+      "title": "Ahead of US-China summit, Taiwan’s opposition leader says island can embrace both powers - CNN",
+      "url": "https://www.cnn.com/2026/05/09/asia/taiwan-us-china-kmt-intl-hnk",
+      "content": "I-Hwa Cheng/AFP/Getty Images\n\nChina’s Xi touts peace - and points to global conflicts - in rare meeting with Taiwan opposition leader\n\n4 min read\n\nTaiwanese security officials have privately warned that Beijing is using Cheng’s outreach to portray Taiwan as politically divided and less aligned with ",
+      "content_detail": "",
+      "published_date": "Sun, 10 May 2026 04:22:39 GMT",
+      "search_region": "台海/南海/朝鲜",
+      "classified_regions": [
+        "俄乌战争",
+        "中美博弈",
+        "台海/南海/朝鲜"
+      ],
+      "event_types": [
+        "军事冲突升级",
+        "中美关税"
+      ],
+      "severity": "low",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "SI=F",
+        "LMT",
+        "NOC",
+        "RTX",
+        "GD",
+        "GLD",
+        "SLV",
+        "ITA",
+        "PPA",
+        "FXI",
+        "ASHR",
+        "KWEB",
+        "YINN",
+        "MCHI",
+        "0700.HK",
+        "9988.HK",
+        "CQQQ"
+      ]
+    },
+    {
+      "title": "Opinion | China Is Becoming Dangerously Overconfident - The New York Times",
+      "url": "https://www.nytimes.com/2026/05/10/opinion/china-trump-us-power.html",
+      "content": "Share full article  \n     \n\n## Related Content\n\n         \n         \n         \n         \n         \n         \n\n         \n         \n         \n\n         \n         \n         \n         \n         \n         \n         \n         \n         \n         \n\nAdvertisement\n\nSKIP ADVERTISEMENT\n\n## Site Index\n\n## Site I",
+      "content_detail": "",
+      "published_date": "Sun, 10 May 2026 05:00:04 GMT",
       "search_region": "台海/南海/朝鲜",
       "classified_regions": [
         "中美博弈"
       ],
       "event_types": [
-        "避险需求"
+        "中美关税"
       ],
       "severity": "medium",
       "summary": "",
       "affected_tickers": [
-        "GC=F",
-        "GLD",
-        "SI=F",
-        "^VIX",
-        "DX-Y.NYB",
-        "IAU",
-        "TLT",
-        "UVXY"
+        "FXI",
+        "ASHR",
+        "KWEB",
+        "YINN",
+        "MCHI",
+        "0700.HK",
+        "9988.HK",
+        "CQQQ"
       ]
     },
     {
-      "title": "U.S. Sees Korea as Potential Key To Supporting Taiwan - Foundation for Defense of Democracies",
-      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPWFpXaHRvU3BCTHVobnFsLU5ZM2xpTWFWclI5LUpnTzl6UlhrczBOVXh3YkZ3UlZmZ3hHZVM0M3JVTS14SDNzYVNaRTV3OEpnYU1xSXpYUldRTk41Vmc2TFlKaEw2YUhWMWh6Mng1blpORk9YZjI5cmgySENOMnRMejdCanQ5cFc5TlUwbER1WmFaMFk5cWQ3UQ?oc=5",
-      "content": "U.S. Sees Korea as Potential Key To Supporting Taiwan  Foundation for Defense of Democracies",
+      "title": "USD/JPY Weekly Outlook: BOJ Intervention Suppresses Bullish Fundamentals - Forex Factory",
+      "url": "https://www.forexfactory.com/news/1397593-usdjpy-weekly-outlook-boj-intervention-suppresses-bullish-fundamentals",
+      "content": "From ctvnews.ca|7 hr ago|1 comment\n\n  Higher energy prices and rising food costs have been driving forces in increasing inflation so far this year, but a new survey shows the higher prices of goods is impacting young ...\n\n + Newer Stories\n\n More;)\n\n Story Stats\n\n May 9, 5:01pm | 2 hr 42 min ago;) \n\n",
       "content_detail": "",
-      "published_date": "Tue, 06 Jan 2026 08:00:00 GMT",
+      "published_date": "Sat, 09 May 2026 15:01:00 GMT",
       "search_region": "台海/南海/朝鲜",
       "classified_regions": [
+        "美伊冲突",
+        "俄乌战争",
+        "中美博弈"
+      ],
+      "event_types": [
+        "军事冲突升级",
+        "中美关税"
+      ],
+      "severity": "low",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "SI=F",
+        "LMT",
+        "NOC",
+        "RTX",
+        "GD",
+        "GLD",
+        "SLV",
+        "ITA",
+        "PPA",
+        "FXI",
+        "ASHR",
+        "KWEB",
+        "YINN",
+        "MCHI",
+        "0700.HK",
+        "9988.HK",
+        "CQQQ"
+      ]
+    },
+    {
+      "title": "Taiwan’s Plastic Habit Collides With Shortages Caused by a Faraway War - The New York Times",
+      "url": "https://www.nytimes.com/2026/05/09/business/taiwan-plastic-bag-shortage.html",
+      "content": "Share full article  \n     \n\n## Related Content\n\n         \n         \n         \n         \n         \n         \n\n         \n         \n         \n\n         \n         \n         \n         \n         \n         \n         \n         \n         \n         \n\nAdvertisement\n\nSKIP ADVERTISEMENT\n\n## Site Index\n\n## Site I",
+      "content_detail": "",
+      "published_date": "Sat, 09 May 2026 09:00:39 GMT",
+      "search_region": "台海/南海/朝鲜",
+      "classified_regions": [
+        "美伊冲突",
+        "俄乌战争",
+        "中美博弈",
         "台海/南海/朝鲜"
       ],
       "event_types": [
-        "避险需求"
+        "原油供应风险",
+        "军事冲突升级"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "CL=F",
+        "BZ=F",
+        "USO",
+        "XLE",
+        "BNO",
+        "GC=F",
+        "SI=F",
+        "LMT",
+        "NOC",
+        "RTX",
+        "GD",
+        "GLD",
+        "SLV",
+        "ITA",
+        "PPA"
+      ]
+    },
+    {
+      "title": "India must speed up domestic resource production amid global supply risks: Vedanta - India's News.Net",
+      "url": "https://www.indiasnews.net/news/279040722/india-must-speed-up-domestic-resource-production-amid-global-supply-risks-vedanta",
+      "content": "India's News.Net\n\nAccess More\n\n### News Releases\n\nIndia's News.Net's News Release Publishing Service provides a medium for circulating your organization's news.\n\n### International News\n\n###### China’s anti-corruption body indicts China Eastern Airlines' ex-chief\n\nIndia's News.Net\n\n###### UAE reports",
+      "content_detail": "",
+      "published_date": "Sat, 09 May 2026 14:13:03 GMT",
+      "search_region": "台海/南海/朝鲜",
+      "classified_regions": [
+        "美伊冲突",
+        "俄乌战争",
+        "中美博弈",
+        "台海/南海/朝鲜"
+      ],
+      "event_types": [
+        "中美关税"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "FXI",
+        "ASHR",
+        "KWEB",
+        "YINN",
+        "MCHI",
+        "0700.HK",
+        "9988.HK",
+        "CQQQ"
+      ]
+    },
+    {
+      "title": "U.S. sanctions companies and individuals in the Middle East and China for helping Iran - CNBC",
+      "url": "https://www.cnbc.com/2026/05/09/us-sanctions-entities-in-the-middle-east-and-china-for-helping-iran.html",
+      "content": "Choose CNBC as your preferred source on Google and never miss a moment from the most trusted name in business news. [...] Skip Navigation\n\nMarkets\n\n Pre-Markets\n U.S. Markets\n Europe Markets\n China Markets\n Asia Markets\n World Markets\n Currencies\n Prediction Markets\n Cryptocurrency\n Futures & Commod",
+      "content_detail": "",
+      "published_date": "Sat, 09 May 2026 10:10:24 GMT",
+      "search_region": "全球制裁",
+      "classified_regions": [
+        "美伊冲突",
+        "中美博弈",
+        "台海/南海/朝鲜",
+        "全球制裁"
+      ],
+      "event_types": [
+        "军事冲突升级",
+        "中美关税",
+        "粮食供应"
       ],
       "severity": "medium",
       "summary": "",
       "affected_tickers": [
         "GC=F",
-        "GLD",
         "SI=F",
-        "^VIX",
-        "DX-Y.NYB",
-        "IAU",
-        "TLT",
-        "UVXY"
+        "LMT",
+        "NOC",
+        "RTX",
+        "GD",
+        "GLD",
+        "SLV",
+        "ITA",
+        "PPA",
+        "FXI",
+        "ASHR",
+        "KWEB",
+        "YINN",
+        "MCHI",
+        "0700.HK",
+        "9988.HK",
+        "CQQQ",
+        "ZW=F",
+        "ZC=F",
+        "ZS=F",
+        "DBA",
+        "WEAT",
+        "CORN"
       ]
     },
     {
-      "title": "Richard D. Fisher, Jr. On Taiwan: Iran-Venezuela Lessons For Taiwan - Taipei Times",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5UTzdXa3phdmNRRUpnbUtwSUVGOVdac05QNnQyLTZ1dmhrY1JzalliQ2Z6SlFIemdUYkxBUERzTEFzRWtUV25JSmt4VVhIZ0pmTE1IX0dmdzJseXpUWl9MV0NsVkluaHVMUnpnYUhBMGdOa3dwY1ZLZ0U5MUpheUU?oc=5",
-      "content": "Richard D. Fisher, Jr. On Taiwan: Iran-Venezuela Lessons For Taiwan  Taipei Times",
+      "title": "V Stock Quote Price and Forecast - CNN",
+      "url": "https://www.cnn.com/markets/stocks/V",
+      "content": "Thank You!\n\nYour effort and contribution in providing this feedback is much appreciated.\n\nAd Feedback\n\nV\n\nVisa Inc. Class A\n\nQuote\n\nAbout\n\nNews\n\nFinancials\n\nForecasts\n\nCompetitors\n\n# Visa Inc. Class A\n\nV\n\n Price Momentum\n\n  V is trading near the bottom of its 52-week range and below its 200-day simp",
       "content_detail": "",
-      "published_date": "Mon, 16 Mar 2026 07:00:00 GMT",
-      "search_region": "台海/南海/朝鲜",
+      "published_date": "Sat, 09 May 2026 10:18:30 GMT",
+      "search_region": "全球制裁",
       "classified_regions": [
         "美伊冲突",
         "台海/南海/朝鲜"
       ],
       "event_types": [
-        "避险需求"
-      ],
-      "severity": "medium",
-      "summary": "",
-      "affected_tickers": [
-        "GC=F",
-        "GLD",
-        "SI=F",
-        "^VIX",
-        "DX-Y.NYB",
-        "IAU",
-        "TLT",
-        "UVXY"
-      ]
-    },
-    {
-      "title": "North Korea fires missiles towards sea as South Korean leader visits China - Al Jazeera",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPRmgzRFNQeVc0bkZZc2dzYmxRaE9mb3c4RUFuQzYzUjJpd1RGV1BWS2owejVLMG1ER3NHc0l3M0tubURBWTdwQkp1WkI0VzRfME1RM1VYQkJNMUpiTTRfdnZJeGhibzE1aWJfanVJZlkwUGpfcC1Yamp2d0RnNk9UdlktX0UwNDR5NFE2ODRFaVkxVmtCRVNvOWI4dllhV280ZzNJQUNnU185bUp3ZGVUR2NGMFjSAboBQVVfeXFMTWtZWmUzZ0pUSk5VRlZiUG41YWZTZWdoU3RIVVR0MkJoaVh6Uzd3X1ZZb0RLUjZGVmxMcGpacllSXy1HWTZaZ21WbFpqRWc4S2VHQzBqTU9MdW90Wk1nc2xIa205aTBLckJnVnhDN3FmcEV6SEthWGpydWU2NlJqeWdtNlhaUFRLeHU1R0ZOdUFRZ2hPSkRZczg5emRnT0lsZjd0NV9PMWlKWUpfYzlLVGhSR1djcVRxeEhn?oc=5",
-      "content": "North Korea fires missiles towards sea as South Korean leader visits China  Al Jazeera",
-      "content_detail": "",
-      "published_date": "Sun, 04 Jan 2026 08:00:00 GMT",
-      "search_region": "台海/南海/朝鲜",
-      "classified_regions": [
-        "中美博弈",
-        "台海/南海/朝鲜"
-      ],
-      "event_types": [
         "军事冲突升级"
       ],
       "severity": "medium",
@@ -1045,129 +1248,54 @@
       ]
     },
     {
-      "title": "North Korea Launches Massive Ballistic Missile Barrage Amid South Korea-US Drills - The Diplomat – Asia-Pacific",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPbVd4bjhpd2FERTd2RzVFdzVTZ0d6VzQzZGJCd2ZEaV9fUEFkaThCUzBIYjZiaWJTeVlCbWdObTJYTUIwRFRmWEt6RmlGWTdfTFdVajhiMHljWDhmU1h1OUYycUlvR3ZsS0hOVG9jUGlsbVZDdTFlWjM0OWlsZkJaQTNLa3NsM1NnMjZGMlVDbi1ZSU9MS3V2UGFtNmxsU3h4emRsRW04eG5OY3FNbU10YkFPUmo?oc=5",
-      "content": "North Korea Launches Massive Ballistic Missile Barrage Amid South Korea-US Drills  The Diplomat – Asia-Pacific",
+      "title": "Germany is driving its energy transition with Peruvian copper, which has been linked to 189 environmental violations - Ojo-Público",
+      "url": "https://ojo-publico.com/6301/copper-germany-mining-firms-record-189-environmental-violations",
+      "content": "Ambiente \n\n## Minería ilegal se afianza en el Parque Nacional Huascarán\n\nVer todos los especiales\n\nSala del Poder\n\nCrimen organizado Dueños de la noticia\n\nDerechos Humanos\n\nMemoria Género Salud Emergencia en Perú\n\nAmbiente\n\nTerritorio Amazonas COP27 COP28 COP29\n\nOpinión\n\nOjoPúblico Pregunta Cartas y",
       "content_detail": "",
-      "published_date": "Mon, 16 Mar 2026 07:00:00 GMT",
-      "search_region": "台海/南海/朝鲜",
+      "published_date": "Sun, 10 May 2026 05:05:39 GMT",
+      "search_region": "全球制裁",
       "classified_regions": [
+        "其他重大事件"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Aramco, Adnoc sneak oil through Hormuz as Iran menaces strait - Los Angeles Times",
+      "url": "https://www.latimes.com/environment/story/2026-05-09/aramco-adnoc-sneak-oil-through-hormuz-as-iran-menaces-strait",
+      "content": "### Antarctica’s tourism boom raises concerns about contamination and disease\n World & Nation\n\n  ### Tornadoes cut across Mississippi as severe storms damage 500 homes\n\n### Podcasts\n\n ### Rebuilding L.A.: The Political Firefight To Be LA’s Mayor\n\n  There’s more than a dozen candidates currently on t",
+      "content_detail": "",
+      "published_date": "Sat, 09 May 2026 10:00:00 GMT",
+      "search_region": "全球制裁",
+      "classified_regions": [
+        "美伊冲突",
         "台海/南海/朝鲜"
       ],
       "event_types": [
-        "避险需求"
-      ],
-      "severity": "medium",
-      "summary": "",
-      "affected_tickers": [
-        "GC=F",
-        "GLD",
-        "SI=F",
-        "^VIX",
-        "DX-Y.NYB",
-        "IAU",
-        "TLT",
-        "UVXY"
-      ]
-    },
-    {
-      "title": "North Korea fires ballistic missiles as South Korean president visits China - Straight Arrow News - SAN",
-      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNRVg5NElNdjY5dVNvcUppZWRDc1BLb2RlVFlYV1NaQk9ROFhyb1FTQVY5RTdVN3ZuLWJWWGZMMk5MRGE4M0hDQkxtcHAyb21FeDJ0UENMUngzUXd5TVFvTjVkWVBCc3ZEVnFLaVNyM2FyUnFYcUZXWFFXaTdfRTZ3djIyR2RNenNybVFjVzh1SEZmUjZRZnVGUG5mZw?oc=5",
-      "content": "North Korea fires ballistic missiles as South Korean president visits China  Straight Arrow News - SAN",
-      "content_detail": "",
-      "published_date": "Sun, 04 Jan 2026 08:00:00 GMT",
-      "search_region": "台海/南海/朝鲜",
-      "classified_regions": [
-        "中美博弈",
-        "台海/南海/朝鲜"
-      ],
-      "event_types": [
-        "避险需求"
-      ],
-      "severity": "medium",
-      "summary": "",
-      "affected_tickers": [
-        "GC=F",
-        "GLD",
-        "SI=F",
-        "^VIX",
-        "DX-Y.NYB",
-        "IAU",
-        "TLT",
-        "UVXY"
-      ]
-    },
-    {
-      "title": "UK, EU and US sanctions on Russia - Fieldfisher",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQRkR0OE4zakg3ajgzTUI1UTg0cnk5LUlWU3VfcmdYb3VwSWJYVE43U3lXWHBGb0Vza0huN2xZN1BOM1dtZFg5YWFSYUU4T3p2TlRuUUl4RlB2cDV1QjdNVGJ3SDRTOWZkUUFpMVByc1F5TV9GWHFNV2REempsczhtRlFzNUJKZ093WTJVX0I2bDlDRl9IbGJ2NjhPbXZHV3JZRWQ5cXpJakpWYlRSVnpOSGlJbw?oc=5",
-      "content": "UK, EU and US sanctions on Russia  Fieldfisher",
-      "content_detail": "",
-      "published_date": "Tue, 28 Apr 2026 07:00:00 GMT",
-      "search_region": "全球制裁",
-      "classified_regions": [
-        "俄乌战争",
-        "全球制裁"
-      ],
-      "event_types": [
-        "避险需求"
-      ],
-      "severity": "medium",
-      "summary": "",
-      "affected_tickers": [
-        "GC=F",
-        "GLD",
-        "SI=F",
-        "^VIX",
-        "DX-Y.NYB",
-        "IAU",
-        "TLT",
-        "UVXY"
-      ]
-    },
-    {
-      "title": "Russian energy revenues, trade, crypto and military industries targeted in 20th round of EU sanctions - EEAS",
-      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPa0NWUFJGa29RZ0FGdnA1WENDcEdZd21qaTZ2ODNsMjJsVHJtelNBblh6RTNKTTZCNUUzSHoxbk1QZXUzTHFwU0xZdy1OSkJhQmlFTFdQNVRLVko0cmdGb281WjNLeXNGb3RlU0t6QVpoRGlkcFBTRnNZdWFWM1NDNHhaTUhaUGFUOGh6QkZHaUprRGM0anhrWUVtb1FjYnAtMDVsU2w2cTBoY3RKXzRxS01xTGoyX2hCdVFFdEt5bXc2Qk1rVXdF?oc=5",
-      "content": "Russian energy revenues, trade, crypto and military industries targeted in 20th round of EU sanctions  EEAS",
-      "content_detail": "",
-      "published_date": "Thu, 23 Apr 2026 07:00:00 GMT",
-      "search_region": "全球制裁",
-      "classified_regions": [
-        "俄乌战争",
-        "中美博弈",
-        "全球制裁"
-      ],
-      "event_types": [
-        "中美关税"
-      ],
-      "severity": "medium",
-      "summary": "",
-      "affected_tickers": [
-        "FXI",
-        "ASHR",
-        "KWEB",
-        "YINN",
-        "MCHI",
-        "0700.HK",
-        "9988.HK",
-        "CQQQ"
-      ]
-    },
-    {
-      "title": "Cuba Accuses US Of Escalating Economic War With Fresh Sanctions - Arise News",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNdWVXcTUtREhBUEJBN0k5QU9ocVBnRXhkRzBOaEV2SlBWRTMySUxkZm1CTEdHWjlMRmgtRTlwMTZqTnpwWEtIcmFxMkMtVTY3TlFSRmtYYXZOWlFvaE9YRzdKd0lVLWVoV2VrNko4THRTMkNwbjJpWnJ1WkRIYWpBMS01VTZfekFtWWxkTUNB?oc=5",
-      "content": "Cuba Accuses US Of Escalating Economic War With Fresh Sanctions  Arise News",
-      "content_detail": "",
-      "published_date": "Sat, 09 May 2026 18:18:58 GMT",
-      "search_region": "全球制裁",
-      "classified_regions": [
-        "全球制裁"
-      ],
-      "event_types": [
+        "原油供应风险",
         "军事冲突升级"
       ],
-      "severity": "medium",
+      "severity": "critical",
       "summary": "",
       "affected_tickers": [
+        "CL=F",
+        "BZ=F",
+        "USO",
+        "XLE",
+        "BNO",
         "GC=F",
         "SI=F",
         "LMT",
@@ -1178,143 +1306,6 @@
         "SLV",
         "ITA",
         "PPA"
-      ]
-    },
-    {
-      "title": "Russia Sanctions Database - Atlantic Council",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQWGF6TjVnTDNNZ2FwbGh5cmtnV3dtS2RZYXh2X0h4VW9aUjNkd0pzYTRHOVE5aVVxQXc1R1drakpWT0JxV2tIbmlPa1JTYmZ4WWdJc3NKNjR2RjBqdXFZSE5qTzFMLTBkWWdPMS1WZEdxNHpudGx3dGt4b3Z3VEhNRnZvT0c?oc=5",
-      "content": "Russia Sanctions Database  Atlantic Council",
-      "content_detail": "",
-      "published_date": "Fri, 20 Feb 2026 08:00:00 GMT",
-      "search_region": "全球制裁",
-      "classified_regions": [
-        "俄乌战争",
-        "全球制裁"
-      ],
-      "event_types": [
-        "避险需求"
-      ],
-      "severity": "medium",
-      "summary": "",
-      "affected_tickers": [
-        "GC=F",
-        "GLD",
-        "SI=F",
-        "^VIX",
-        "DX-Y.NYB",
-        "IAU",
-        "TLT",
-        "UVXY"
-      ]
-    },
-    {
-      "title": "EU tightens sanctions against Russia: maritime oil services ban, military industries, crypto assets - INSIGHT EU MONITORING",
-      "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxQOWpNTGI2R21YNmQwU3cxSVlOeXFDR1BqRkw2cV9VQkYySWhNNXBSTFRwa0VTV2hwUFNIY29HdWt0c2lPMkh6V0x6WWU5QXJ6anZQNG5UYV82bDhUU1k5bUNFOFJlbVpocFFBYjNYVXZkYjRxOFZkbnpfdUJCQTZ1bDBOc25VUEtjVzUwVWVIU20tVkZaWTFLdVFhUmp6ZWhqSzhqS09XMlRlVTdNUkxNMjdHQ2l0b2ZwRTNILW43SzMxNDNqWWJMenBVbzVkTFhSR29ZTTNOOTZWcmRLeXdUclhnY2VWeUtyZ254MFdXMVQ0N2gta3c?oc=5",
-      "content": "EU tightens sanctions against Russia: maritime oil services ban, military industries, crypto assets  INSIGHT EU MONITORING",
-      "content_detail": "",
-      "published_date": "Thu, 23 Apr 2026 07:00:00 GMT",
-      "search_region": "全球制裁",
-      "classified_regions": [
-        "俄乌战争",
-        "中美博弈",
-        "全球制裁"
-      ],
-      "event_types": [
-        "中美关税"
-      ],
-      "severity": "medium",
-      "summary": "",
-      "affected_tickers": [
-        "FXI",
-        "ASHR",
-        "KWEB",
-        "YINN",
-        "MCHI",
-        "0700.HK",
-        "9988.HK",
-        "CQQQ"
-      ]
-    },
-    {
-      "title": "Stiffening European sanctions against the Russian oil trade - Brookings",
-      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQWlNPcHQ3bkY1alBCeDF6V2FKTzgyZlY5dVNiZjdja2Fnb0RoZThSUHpDaDRKRVQxaTY1U0pKbWU2UHBCU2NnQXd1NVFWRHpmQ1JpWTdhb0w5RVJLN0VPMGFJRU5xclhVaEt3OUNuY1hzRk50bDlXMmVIZ0VTWHAwM2I0Z1ZwM2hIaGl3OEJsUlJVLUVoekhuNl8wYw?oc=5",
-      "content": "Stiffening European sanctions against the Russian oil trade  Brookings",
-      "content_detail": "",
-      "published_date": "Tue, 03 Feb 2026 08:00:00 GMT",
-      "search_region": "全球制裁",
-      "classified_regions": [
-        "俄乌战争",
-        "全球制裁"
-      ],
-      "event_types": [
-        "避险需求"
-      ],
-      "severity": "medium",
-      "summary": "",
-      "affected_tickers": [
-        "GC=F",
-        "GLD",
-        "SI=F",
-        "^VIX",
-        "DX-Y.NYB",
-        "IAU",
-        "TLT",
-        "UVXY"
-      ]
-    },
-    {
-      "title": "EU 20th sanctions package: how Europe is constraining russia’s capacity to wage war - Міністерство оборони України",
-      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPNWRVLWJ4bnU1by1LNlprTWdkalFMUGt4OEhWeDhvaWtNQkp6TllXOUJfTHg5cHJDQmh1bVpSa19FNEhPbThGTEJIQ1AydVdtRXY0NHg1V01YLTZNdzRaS3cwNm4xOUV1YkZiS3BGYWhvT2ozQTJRcmZ4NWk0LVA0SWhULWpFWDQxVGJzclRnR1RtMGs0d2ExWmFDRnpGVDc3aGp5dFk2SjdOYVg3V1E?oc=5",
-      "content": "EU 20th sanctions package: how Europe is constraining russia’s capacity to wage war  Міністерство оборони України",
-      "content_detail": "",
-      "published_date": "Mon, 27 Apr 2026 11:51:00 GMT",
-      "search_region": "全球制裁",
-      "classified_regions": [
-        "俄乌战争",
-        "全球制裁"
-      ],
-      "event_types": [
-        "军事冲突升级"
-      ],
-      "severity": "medium",
-      "summary": "",
-      "affected_tickers": [
-        "GC=F",
-        "SI=F",
-        "LMT",
-        "NOC",
-        "RTX",
-        "GD",
-        "GLD",
-        "SLV",
-        "ITA",
-        "PPA"
-      ]
-    },
-    {
-      "title": "Maritime Sanctions: Legal, Commercial, and Contractual Implications - UCL | University College London",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPeWgtUk9XOGJyLTB4YzBpdVVtTGxhMXlBeGtYN1lJX1MtM3F4LTFpdjZWUkNmOTkzT1BEdlZzZlBHN1hYT2U1TXNVUjRzQTR0WFpRR0R6aTJLTXh0VUhybk1GdmlNa0RJbEhGU2xHRVBjVk1VWEZNU25HNkN3M1FxdWpXZl95dE5nVjFhZUJ3TUlvbU53RE9EZlRycVdFRkZQS1hlZkJWRmhDbXc?oc=5",
-      "content": "Maritime Sanctions: Legal, Commercial, and Contractual Implications  UCL | University College London",
-      "content_detail": "",
-      "published_date": "Thu, 30 Apr 2026 07:00:00 GMT",
-      "search_region": "全球制裁",
-      "classified_regions": [
-        "全球制裁"
-      ],
-      "event_types": [
-        "避险需求"
-      ],
-      "severity": "medium",
-      "summary": "",
-      "affected_tickers": [
-        "GC=F",
-        "GLD",
-        "SI=F",
-        "^VIX",
-        "DX-Y.NYB",
-        "IAU",
-        "TLT",
-        "UVXY"
       ]
     }
   ]
