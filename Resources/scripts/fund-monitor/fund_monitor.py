@@ -132,13 +132,16 @@ def fetch_rankings(fund_type_code, top_n=10):
         print(f"  [WARN] {fund_type_code} 请求失败: {e}")
         return []
 
-    # 解析 JS 变量: var rankData = {...};
-    m = re.search(r"var rankData\s*=\s*(\{.*?\});?\s*$", resp.text, re.DOTALL)
+    # 解析 JS 对象 → JSON: 东方财富返回的是 JS 对象 (key 不带引号)
+    m = re.search(r"\{.*\}", resp.text, re.DOTALL)
     if not m:
         return []
 
+    # 为 unquoted keys 加引号: {key: → {"key":
+    js_text = m.group(0)
+    json_text = re.sub(r'([\{,])\s*(\w+)\s*:', r'\1"\2":', js_text)
     try:
-        data = json.loads(m.group(1))
+        data = json.loads(json_text)
     except json.JSONDecodeError:
         return []
 
