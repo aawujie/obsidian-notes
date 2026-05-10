@@ -259,7 +259,7 @@ def search_tavily(query: str, max_results: int = 8) -> list[dict]:
                 "include_images": False,
             },
             timeout=30,
-            proxies={"http": PROXY, "https": PROXY},
+            proxies=PROXIES,
         )
         resp.raise_for_status()
         data = resp.json()
@@ -275,7 +275,7 @@ def search_google_news(query: str, max_results: int = 8) -> list[dict]:
     url = f"https://news.google.com/rss/search?q={encoded}&hl=en-US&gl=US&ceid=US:en"
     results = []
     try:
-        resp = requests.get(url, timeout=15, proxies={"http": PROXY, "https": PROXY})
+        resp = requests.get(url, timeout=15, proxies=PROXIES)
         if resp.status_code != 200:
             return []
         root = ET.fromstring(resp.text)
@@ -297,75 +297,190 @@ def search_google_news(query: str, max_results: int = 8) -> list[dict]:
     return results
 
 
-def fetch_article_content(url: str) -> str | None:
-    """web_fetch: 抓取关键新闻详情"""
+def extract_urls_batch(urls: list[str]) -> dict[str, str]:
+    """Tavily Extract API — batch fetch clean article content. Returns {url: raw_content}."""
+    if not TAVILY_API_KEY or not urls:
+        return {}
+
+    content_map = {}
+    # Tavily extract supports up to 20 URLs per call
+    batch_size = 20
+    for i in range(0, len(urls), batch_size):
+        batch = urls[i : i + batch_size]
+        try:
+            resp = requests.post(
+                TAVILY_EXTRACT_URL,
+                json={
+                    "api_key": TAVILY_API_KEY,
+                    "urls": batch,
+                    "include_images": False,
+                    "extract_depth": "basic",
+                },
+                timeout=15,
+                proxies=PROXIES,
+            )
+            resp.raise_for_status()
+            data = resp.json()
+            for r in data.get("results", []):
+                content_map[r["url"]] = r.get("raw_content", "")[:CONTENT_MAX_CHARS]
+            # Log failed URLs
+            for f in data.get("failed_results", []):
+                print(f"    [WARN] Tavily extract failed: {f['url'][:60]} — {f.get('error', 'unknown')}")
+        except (requests.RequestException, ValueError, KeyError) as e:
+            print(f"    [WARN] Tavily Extract API 失败: {e}")
+            # Fallback: try individual URLs with raw requests
+            for url in batch:
+                raw = _extract_single_fallback(url)
+                if raw:
+                    content_map[url] = raw
+    return content_map
+
+
+def _extract_single_fallback(url: str) -> str | None:
+    """Fallback: raw HTTP fetch + simple regex extraction."""
     try:
         resp = requests.get(
-            url, timeout=15, proxies={"http": PROXY, "https": PROXY},
-            headers={"User-Agent": "Mozilla/5.0 (compatible; GeopoliticsMonitor/1.0)"},
+            url, timeout=15, proxies=PROXIES,
+            headers={"User-Agent": "Mozilla/5.0 (compatible; GeopoliticsMonitor/2.0)"},
         )
         if resp.status_code != 200:
             return None
-        # 简单提取文本 (取前 2000 字)
         text = re.sub(r"<script[^>]*>.*?</script>", "", resp.text, flags=re.DOTALL)
         text = re.sub(r"<style[^>]*>.*?</style>", "", text, flags=re.DOTALL)
         text = re.sub(r"<[^>]+>", " ", text)
         text = re.sub(r"\s+", " ", text).strip()
-        return text[:2000]
+        return text[:CONTENT_MAX_CHARS] if text else None
     except (requests.RequestException, OSError):
         return None
 
 
-def fetch_all_articles() -> list[dict]:
-    """抓取所有区域新闻"""
-    all_articles = []
+def summarize_with_llm(text: str, title: str) -> str | None:
+    """LLM summarization via OpenAI-compatible API. Returns None if unavailable/fails."""
+    if not OPENAI_API_KEY:
+        return None
 
-    for region, query in REGION_QUERIES.items():
-        print(f"  搜索: {region}...")
-
-        # 优先 Tavily, 回退 Google News
-        results = search_tavily(query)
-        if not results:
-            results = search_google_news(query)
-
-        for r in results:
-            title = r.get("title", "")
-            content = r.get("content", "")
-            url = r.get("url", "")
-            full_text = f"{title} {content}"
-
-            severity = classify_severity(full_text)
-            event_types = classify_event_types(full_text)
-            matched_regions = classify_region(full_text)
-
-            all_articles.append({
-                "title": title,
-                "url": url,
-                "content": content[:500] if content else "",
-                "published_date": r.get("published_date", ""),
-                "search_region": region,
-                "classified_regions": matched_regions,
-                "event_types": event_types,
-                "severity": severity,
-            })
-
-        print(f"    获取 {len(results)} 条")
-
-    return all_articles
+    prompt = (
+        f"Summarize this news in ONE sentence.\n"
+        f"- For Chinese: under {SUMMARY_MAX_CHARS_CN} characters\n"
+        f"- For English: under {SUMMARY_MAX_WORDS_EN} words\n"
+        f"- Only return the summary, no quotes, no extra text\n\n"
+        f"Title: {title}\nContent: {text[:CONTENT_MAX_CHARS]}"
+    )
+    try:
+        resp = requests.post(
+            "https://api.openai.com/v1/chat/completions",
+            json={
+                "model": LLM_MODEL,
+                "messages": [{"role": "user", "content": prompt}],
+                "max_tokens": 80,
+                "temperature": 0.3,
+            },
+            headers={"Authorization": f"Bearer {OPENAI_API_KEY}"},
+            timeout=15,
+            proxies=PROXIES,
+        )
+        if resp.status_code == 200:
+            result = resp.json()["choices"][0]["message"]["content"].strip().strip('"')
+            return _trim_summary(result)
+    except Exception:
+        pass
+    return None
 
 
-def fetch_critical_details(articles: list[dict]) -> None:
-    """抓取 CRITICAL / HIGH 级别事件的详细内容"""
+def _trim_summary(text: str) -> str:
+    """Ensure summary stays within length limits."""
+    has_cjk = bool(re.search(r'[一-鿿]', text))
+    if has_cjk:
+        return text[:SUMMARY_MAX_CHARS_CN]
+    else:
+        words = text.split()
+        if len(words) <= SUMMARY_MAX_WORDS_EN:
+            return text
+        return ' '.join(words[:SUMMARY_MAX_WORDS_EN])
+
+
+def generate_summary(text: str, title: str) -> str:
+    """Generate a one-sentence summary. LLM first, fallback to rule-based."""
+    if not text:
+        return title[:SUMMARY_MAX_CHARS_CN]
+
+    # Try LLM first
+    llm_result = summarize_with_llm(text, title)
+    if llm_result:
+        return llm_result
+
+    # Rule-based: extract first meaningful sentence
+    sentences = re.split(r'(?<=[.!?。！？\n])\s*', text.strip())
+    for s in sentences:
+        s = s.strip()
+        # Skip boilerplate, short fragments, navigation text
+        if len(s) < 15:
+            continue
+        skip_prefixes = (
+            "Share", "Cookie", "Subscribe", "©", "Skip to",
+            "Please enable", "This website", "We use",
+            "Advertisement", "Ad", "Sign in", "Log in",
+            "By clicking", "You can also", "Read more",
+        )
+        if s.startswith(skip_prefixes):
+            continue
+        return _trim_summary(s)
+
+    return title[:SUMMARY_MAX_CHARS_CN]
+
+
+def enrich_articles(articles: list[dict], top_n: int = MAX_ENRICH_ARTICLES) -> None:
+    """Enrich articles: fetch full content + generate summary for top N or MEDIUM+ articles."""
+    # Select articles to enrich: MEDIUM+ first, then by position, capped at top_n
+    target = []
+    rest = []
     for a in articles:
-        if a.get("severity") not in ("critical", "high"):
-            continue
+        if a.get("severity") in ("critical", "high", "medium"):
+            target.append(a)
+        else:
+            rest.append(a)
+    # Fill up to top_n with remaining articles
+    target.extend(rest[: max(0, top_n - len(target))])
+    target = target[:top_n]
+
+    if not target:
+        return
+
+    # Collect URLs
+    url_list = [a.get("url", "") for a in target if a.get("url")]
+    print(f"    提取 {len(url_list)} 条新闻正文 (Tavily Extract)...")
+
+    # Batch extract
+    content_map = extract_urls_batch(url_list)
+
+    # Enrich each article
+    enriched = 0
+    for a in target:
         url = a.get("url", "")
-        if not url:
-            continue
-        print(f"    抓取详情: {a['title'][:60]}...")
-        detail = fetch_article_content(url)
-        if detail:
-            a["content_detail"] = detail
+        content = content_map.get(url, "")
+        if content:
+            a["content_detail"] = content
+            enriched += 1
+        # Generate summary from available text
+        text_for_summary = content or a.get("content", "")
+        a["summary"] = generate_summary(text_for_summary, a.get("title", ""))
+        if text_for_summary:
+            enriched += 1
+
+    print(f"    正文提取: {enriched} 条 / 摘要生成完成")
+
+    # Fetch individual fallback for URLs that Tavily extract missed
+    missed = [a for a in target if not a.get("content_detail") and a.get("url")]
+    if missed:
+        print(f"    回退抓取 {len(missed)} 条缺失正文...")
+        for a in missed:
+            url = a.get("url", "")
+            print(f"      → {a['title'][:60]}...")
+            raw = _extract_single_fallback(url)
+            if raw:
+                a["content_detail"] = raw
+                if not a.get("summary") or a["summary"] == a["title"][:SUMMARY_MAX_CHARS_CN]:
+                    a["summary"] = generate_summary(raw, a.get("title", ""))
 
 
 def deduplicate_articles(articles: list[dict]) -> list[dict]:
@@ -461,8 +576,8 @@ def generate_report(articles: list[dict], date_str: str) -> str:
         "",
         "## 重点事件与市场影响",
         "",
-        "| # | 事件 | 区域 | 严重程度 | 事件类型 | 关注标的 |",
-        "|:---:|:---|:---|:---:|:---|:---|",
+        "| # | 事件 | 区域 | 严重程度 | 事件类型 | 关键信息 | 关注标的 |",
+        "|:---:|:---|:---|:---:|:---|:---|:---|",
     ]
 
     for i, a in enumerate(sorted_articles[:25], 1):
@@ -476,8 +591,9 @@ def generate_report(articles: list[dict], date_str: str) -> str:
         ticker_str = " ".join(f"`{t['ticker']}`" for t in assets[:4]) if assets else "—"
 
         title_md = f"[{title}]({url})" if url else title
+        summary = a.get("summary", "") or ""
         lines.append(
-            f"| {i} | {title_md} | {regions} | {sev_emoji} {sev} | {types_str} | {ticker_str} |"
+            f"| {i} | {title_md} | {regions} | {sev_emoji} {sev} | {types_str} | {summary} | {ticker_str} |"
         )
 
     # ── 影响标的汇总表 ──
