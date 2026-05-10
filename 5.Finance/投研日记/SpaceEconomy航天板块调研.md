@@ -15,6 +15,8 @@ sources:
 
 > 数据来源：@speculator_io "The Space Economy" dashboard (2026-05-08)，板块平均 P/S 23.37，P/E 63.19。
 
+![[SpaceEconomy-dashboard.jpg]]
+
 ---
 
 ## 0. 板块总览
