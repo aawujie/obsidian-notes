@@ -584,27 +584,52 @@ def translate_titles_batch(articles: list[dict]) -> None:
 def _call_llm_for_translation(prompt: str) -> str | None:
     """调用 LLM API 翻译.
 
-    优先级: ANTHROPIC_API_KEY → QNAIGC_API_KEY(代理) → OPENAI_API_KEY.
-    通过 ANTHROPIC_API_URL 可配置代理地址（默认官方 API）。
+    优先级: 内部 AI 平台(ANTHROPIC_AUTH_TOKEN) → ANTHROPIC_API_KEY → OPENAI_API_KEY.
     """
-    qnaigc_key = os.environ.get("QNAIGC_API_KEY", "")
-    anthropic_key = ANTHROPIC_API_KEY or qnaigc_key
-    anthropic_url = os.environ.get(
-        "ANTHROPIC_API_URL",
-        "https://api.anthropic.com/v1/messages",
-    )
+    # 内部平台（Anthropic Messages 协议）
+    internal_token = os.environ.get("ANTHROPIC_AUTH_TOKEN", "")
+    internal_url = os.environ.get("ANTHROPIC_BASE_URL", "")
+    internal_model = os.environ.get("ANTHROPIC_MODEL", CLAUDE_MODEL)
+    # 清理模型名中的上下文窗口标记（如 deepseek-v4-pro[1m] → deepseek-v4-pro）
+    internal_model = re.sub(r"\[.*?\]", "", internal_model).strip()
 
-    if anthropic_key:
+    if internal_token and internal_url:
+        api_url = f"{internal_url.rstrip('/')}/v1/messages"
         try:
             resp = requests.post(
-                anthropic_url,
+                api_url,
+                json={
+                    "model": internal_model,
+                    "max_tokens": 2000,
+                    "messages": [{"role": "user", "content": prompt}],
+                },
+                headers={
+                    "Authorization": f"Bearer {internal_token}",
+                    "anthropic-version": "2023-06-01",
+                    "content-type": "application/json",
+                },
+                timeout=60,
+            )
+            if resp.status_code == 200:
+                data = resp.json()
+                return data["content"][0]["text"]
+            else:
+                print(f"    [WARN] 内部 AI 平台 {resp.status_code}: {resp.text[:200]}")
+        except Exception as e:
+            print(f"    [WARN] 内部 AI 平台翻译失败: {e}")
+
+    # Anthropic 官方 API
+    if ANTHROPIC_API_KEY:
+        try:
+            resp = requests.post(
+                "https://api.anthropic.com/v1/messages",
                 json={
                     "model": CLAUDE_MODEL,
                     "max_tokens": 2000,
                     "messages": [{"role": "user", "content": prompt}],
                 },
                 headers={
-                    "x-api-key": anthropic_key,
+                    "x-api-key": ANTHROPIC_API_KEY,
                     "anthropic-version": "2023-06-01",
                     "content-type": "application/json",
                 },
@@ -619,6 +644,7 @@ def _call_llm_for_translation(prompt: str) -> str | None:
         except Exception as e:
             print(f"    [WARN] Anthropic 翻译失败: {e}")
 
+    # OpenAI 兼容 API
     if OPENAI_API_KEY:
         try:
             resp = requests.post(
