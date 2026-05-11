@@ -17,6 +17,7 @@ import xml.etree.ElementTree as ET
 from datetime import datetime
 from pathlib import Path
 from collections import Counter
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
 import requests
 
@@ -407,45 +408,52 @@ def generate_summary(text: str, title: str) -> str:
 
 
 
+LLM_TIMEOUT = 180
+LLM_MAX_RETRIES = 2
+
+
 def _call_llm(prompt: str) -> str | None:
-    """调用 LLM API.
+    """调用 LLM API（带重试）.
 
     优先级: 内部 AI 平台(ANTHROPIC_AUTH_TOKEN) → ANTHROPIC_API_KEY → OPENAI_API_KEY.
     """
-    # 内部平台（Anthropic Messages 协议）
     internal_token = os.environ.get("ANTHROPIC_AUTH_TOKEN", "")
     internal_url = os.environ.get("ANTHROPIC_BASE_URL", "")
     internal_model = os.environ.get("ANTHROPIC_MODEL", CLAUDE_MODEL)
-    # 清理模型名中的上下文窗口标记（如 deepseek-v4-pro[1m] → deepseek-v4-pro）
     internal_model = re.sub(r"\[.*?\]", "", internal_model).strip()
 
     if internal_token and internal_url:
         api_url = f"{internal_url.rstrip('/')}/v1/messages"
-        try:
-            resp = requests.post(
-                api_url,
-                json={
-                    "model": internal_model,
-                    "max_tokens": 2000,
-                    "messages": [{"role": "user", "content": prompt}],
-                },
-                headers={
-                    "Authorization": f"Bearer {internal_token}",
-                    "anthropic-version": "2023-06-01",
-                    "content-type": "application/json",
-                },
-                timeout=120,
-            )
-            if resp.status_code == 200:
-                data = resp.json()
-                for block in data.get("content", []):
-                    if block.get("type") == "text":
-                        return block["text"]
-                return data["content"][0].get("text", "")
-            else:
-                print(f"    [WARN] 内部 AI 平台 {resp.status_code}: {resp.text[:200]}")
-        except Exception as e:
-            print(f"    [WARN] 内部 AI 平台翻译失败: {e}")
+        for attempt in range(1, LLM_MAX_RETRIES + 1):
+            try:
+                resp = requests.post(
+                    api_url,
+                    json={
+                        "model": internal_model,
+                        "max_tokens": 2000,
+                        "messages": [{"role": "user", "content": prompt}],
+                    },
+                    headers={
+                        "Authorization": f"Bearer {internal_token}",
+                        "anthropic-version": "2023-06-01",
+                        "content-type": "application/json",
+                    },
+                    timeout=LLM_TIMEOUT,
+                )
+                if resp.status_code == 200:
+                    data = resp.json()
+                    for block in data.get("content", []):
+                        if block.get("type") == "text":
+                            return block["text"]
+                    return data["content"][0].get("text", "")
+                else:
+                    print(f"    [WARN] 内部平台 {resp.status_code} (attempt {attempt})")
+                    break
+            except requests.exceptions.Timeout:
+                print(f"    [WARN] 内部平台超时 (attempt {attempt}/{LLM_MAX_RETRIES})")
+            except Exception as e:
+                print(f"    [WARN] 内部平台失败: {e}")
+                break
 
     # Anthropic 官方 API
     if ANTHROPIC_API_KEY:
