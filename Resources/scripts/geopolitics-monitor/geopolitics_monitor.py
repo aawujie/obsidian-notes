@@ -480,18 +480,29 @@ def translate_titles_batch(articles: list[dict]) -> None:
 
 
 def _call_llm_for_translation(prompt: str) -> str | None:
-    """调用 LLM API 翻译，优先 Anthropic，回退 OpenAI."""
-    if ANTHROPIC_API_KEY:
+    """调用 LLM API 翻译.
+
+    优先级: ANTHROPIC_API_KEY → QNAIGC_API_KEY(代理) → OPENAI_API_KEY.
+    通过 ANTHROPIC_API_URL 可配置代理地址（默认官方 API）。
+    """
+    qnaigc_key = os.environ.get("QNAIGC_API_KEY", "")
+    anthropic_key = ANTHROPIC_API_KEY or qnaigc_key
+    anthropic_url = os.environ.get(
+        "ANTHROPIC_API_URL",
+        "https://api.anthropic.com/v1/messages",
+    )
+
+    if anthropic_key:
         try:
             resp = requests.post(
-                "https://api.anthropic.com/v1/messages",
+                anthropic_url,
                 json={
                     "model": "claude-sonnet-4-20250514",
                     "max_tokens": 2000,
                     "messages": [{"role": "user", "content": prompt}],
                 },
                 headers={
-                    "x-api-key": ANTHROPIC_API_KEY,
+                    "x-api-key": anthropic_key,
                     "anthropic-version": "2023-06-01",
                     "content-type": "application/json",
                 },
@@ -501,6 +512,8 @@ def _call_llm_for_translation(prompt: str) -> str | None:
             if resp.status_code == 200:
                 data = resp.json()
                 return data["content"][0]["text"]
+            else:
+                print(f"    [WARN] Anthropic API {resp.status_code}: {resp.text[:200]}")
         except Exception as e:
             print(f"    [WARN] Anthropic 翻译失败: {e}")
 
