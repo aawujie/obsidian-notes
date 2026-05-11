@@ -54,63 +54,13 @@ REGION_QUERIES = {
     "全球制裁": "G7 sanctions OR SWIFT sanctions OR OFAC sanctions OR EU sanctions OR global trade restrictions",
 }
 
-# ─── 事件类型 → 关键词匹配 ──────────────────────────────────
-EVENT_TYPE_KEYWORDS = [
-    ("原油供应风险", [
-        "oil supply", "crude oil", "OPEC", "oil price", "oil production",
-        "supply disruption", "refinery", "oil field", "pipeline",
-        "Hormuz", "Persian Gulf", "oil tanker", "oil embargo",
-        "石油供应", "原油", "油田", "炼厂", "霍尔木兹", "波斯湾",
-    ]),
-    ("军事冲突升级", [
-        "missile strike", "airstrike", "bombing", "invasion", "offensive",
-        "ground forces", "drone attack", "fighter jet", "warship",
-        "war", "military operation", "troops", "artillery",
-        "导弹袭击", "空袭", "地面进攻", "入侵", "坦克", "无人机攻击",
-        "军演", "军事行动", "舰队", "战机",
-    ]),
-    ("避险需求", [
-        "safe haven", "flight to safety", "risk aversion", "market panic",
-        "sell-off", "capital flight", "gold surge", "yen strengthen",
-        "investor fear", "uncertainty spikes",
-        "避险", "恐慌", "资本外逃", "黄金上涨", "市场暴跌",
-    ]),
-    ("航运中断", [
-        "Red Sea", "Houthi", "shipping attack", "cargo vessel",
-        "container ship", "freight rate surge", "Suez Canal",
-        "blockade", "naval route", "Bab el-Mandeb", "reroute",
-        "红海", "胡塞", "货船遇袭", "苏伊士", "绕行",
-        "运费飙升", "航运中断", "封锁",
-    ]),
-    ("中美关税", [
-        "tariff", "trade war", "US China trade", "export control",
-        "chip ban", "entity list", "Section 301", "USTR",
-        "semiconductor restriction", "decouple", "de-risk",
-        "关税", "贸易战", "芯片禁令", "实体清单", "断链",
-        "出口管制", "301条款",
-    ]),
-    ("粮食供应", [
-        "grain", "wheat", "corn", "soybean", "food crisis",
-        "Black Sea grain deal", "food export ban", "famine",
-        "粮食", "小麦", "玉米", "大豆", "粮食协议", "粮食危机",
-    ]),
-    ("汇率波动", [
-        "exchange rate", "dollar surge", "yen depreciation",
-        "yuan devaluation", "forex shock", "currency crisis",
-        "central bank intervention",
-        "汇率", "美元走强", "日元贬值", "人民币贬值", "卢布",
-    ]),
-    ("供应链中断", [
-        "supply chain", "chip shortage", "semiconductor",
-        "TSMC", "NVIDIA", "wafer", "rare earth",
-        "供应链", "芯片短缺", "半导体", "稀土", "台积电",
-    ]),
-    ("军工受益", [
-        "defense spending", "military aid", "arms deal", "weapons package",
-        "defense budget", "military procurement", "NATO spending",
-        "军援", "军费", "武器采购", "国防预算", "军售",
-    ]),
+# ─── LLM 分类可用的事件类型和区域 ─────────────────────────────
+VALID_EVENT_TYPES = [
+    "原油供应风险", "军事冲突升级", "避险需求", "航运中断",
+    "中美关税", "粮食供应", "汇率波动", "供应链中断", "军工受益",
 ]
+VALID_REGIONS = list(REGION_QUERIES.keys())
+VALID_SEVERITIES = ["critical", "high", "medium", "low"]
 
 # ─── 事件 → 市场标的映射 ─────────────────────────────────────
 IMPACT_ASSET_MAP = {
@@ -168,31 +118,6 @@ IMPACT_ASSET_MAP = {
         "chinese": "军工ETF(ITA) / 洛克希德(LMT) / 诺斯罗普(NOC)",
     },
 }
-
-# ─── 严重程度判定 ───────────────────────────────────────────
-SEVERITY_LEVELS = [
-    ("critical", [
-        "declare war", "nuclear", "full-scale invasion", "regime collapse",
-        "strait blockade", "oil embargo", "decapitation strike",
-        "宣战", "核", "全面入侵", "政权崩溃", "海峡封锁", "石油禁运",
-    ]),
-    ("high", [
-        "missile launch", "military drill near border", "sanctions escalation",
-        "tariff hike", "shot down", "ground offensive", "naval standoff",
-        "terrorist attack", "coup attempt",
-        "导弹发射", "军演", "制裁升级", "关税大幅上调", "边境冲突", "政变",
-    ]),
-    ("medium", [
-        "talks collapse", "diplomatic expulsion", "sanctions warning",
-        "tariff threat", "reconnaissance", "incursion",
-        "谈判破裂", "外交驱逐", "制裁警告", "关税威胁",
-    ]),
-    ("low", [
-        "dialogue", "negotiations", "ceasefire", "de-escalation",
-        "peace talks", "diplomatic visit", "summit",
-        "对话", "谈判", "停火", "缓和", "和平", "外交访问", "峰会",
-    ]),
-]
 
 SEVERITY_EMOJI = {"critical": "🔴", "high": "🟠", "medium": "🟡", "low": "🟢"}
 
