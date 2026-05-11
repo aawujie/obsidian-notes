@@ -389,34 +389,58 @@ def _trim_summary(text: str) -> str:
         return ' '.join(words[:SUMMARY_MAX_WORDS_EN])
 
 
+_JUNK_PATTERNS = re.compile(
+    r"(?i)"
+    r"(skip.?navigation|cookie|subscribe|sign.?in|log.?in|advertisement|"
+    r"please enable|read more|share this|follow us|privacy|terms of|"
+    r"©|copyright|all rights|newsletter|notifications|close this|"
+    r"menu|search|logo|header|footer|sidebar|widget|popup|overlay|"
+    r"comscore|tracker|analytics|pixel|beacon|javascript|stylesheet|"
+    r"img/|\.png|\.jpg|\.svg|\.gif|\.css|\.js|favicon|icon|thumbnail|"
+    r"\[.*logo.*\]|\[.*skip.*\]|\[.*search.*\]|#\w+Content)"
+)
+
+
+def _is_junk(text: str) -> bool:
+    """判断文本是否为 HTML 垃圾/导航/广告."""
+    if not text or len(text.strip()) < 10:
+        return True
+    if _JUNK_PATTERNS.search(text):
+        return True
+    special = sum(1 for c in text if c in "[]()#<>{}|")
+    if special > len(text) * 0.15:
+        return True
+    return False
+
+
+def _clean_text(text: str) -> str:
+    """深度清理从网页提取的文本."""
+    text = html.unescape(text)
+    text = re.sub(r"https?://\S+", "", text)
+    text = re.sub(r"\[.*?\]\(.*?\)", "", text)
+    text = re.sub(r"[#*_|>]+", " ", text)
+    text = re.sub(r"\s+", " ", text).strip()
+    return text
+
+
 def generate_summary(text: str, title: str) -> str:
     """Generate a one-sentence summary. LLM first, fallback to rule-based."""
     if not text:
-        return title[:SUMMARY_MAX_CHARS_CN]
+        return ""
 
-    # Try LLM first
     llm_result = summarize_with_llm(text, title)
-    if llm_result:
+    if llm_result and not _is_junk(llm_result):
         return llm_result
 
-    # Rule-based: extract first meaningful sentence
-    sentences = re.split(r'(?<=[.!?。！？\n])\s*', text.strip())
+    cleaned = _clean_text(text)
+    sentences = re.split(r'(?<=[.!?。！？])\s+', cleaned)
     for s in sentences:
         s = s.strip()
-        # Skip boilerplate, short fragments, navigation text
-        if len(s) < 15:
-            continue
-        skip_prefixes = (
-            "Share", "Cookie", "Subscribe", "©", "Skip to",
-            "Please enable", "This website", "We use",
-            "Advertisement", "Ad", "Sign in", "Log in",
-            "By clicking", "You can also", "Read more",
-        )
-        if s.startswith(skip_prefixes):
+        if len(s) < 20 or _is_junk(s):
             continue
         return _trim_summary(s)
 
-    return title[:SUMMARY_MAX_CHARS_CN]
+    return ""
 
 
 
@@ -710,7 +734,11 @@ def generate_report(articles: list[dict], date_str: str) -> str:
         ticker_str = " ".join(f"`{t['ticker']}`" for t in assets[:4]) if assets else "—"
 
         title_md = f"[{title_display}]({url})" if url else title_display
-        summary = a.get("summary", "") or ""
+        raw_summary = a.get("summary", "") or ""
+        summary = _clean_text(raw_summary) if raw_summary else ""
+        if not summary or _is_junk(summary):
+            summary = ""
+        summary = summary.replace("|", "/")[:80]
         lines.append(
             f"| {i} | {title_md} | {regions} | {sev_emoji} {sev} | {types_str} | {summary} | {ticker_str} |"
         )
@@ -747,7 +775,10 @@ def generate_report(articles: list[dict], date_str: str) -> str:
         ]
         for a in critical_articles:
             sev_emoji = SEVERITY_EMOJI.get(a["severity"], "")
-            summary = a.get("summary", "")
+            raw_sum = a.get("summary", "")
+            summary = _clean_text(raw_sum) if raw_sum else ""
+            if _is_junk(summary):
+                summary = ""
             headline = a.get("title_cn") or a["title"]
             lines += [f"### {sev_emoji} {headline}", ""]
             if a.get("title_cn"):
@@ -756,11 +787,10 @@ def generate_report(articles: list[dict], date_str: str) -> str:
             if summary:
                 lines.append(f"> **摘要**: {summary}")
                 lines.append("")
-            if a.get("content_detail"):
-                lines.append(f"> {a['content_detail'][:400]}")
-            elif a.get("content"):
-                lines.append(f"> {a['content'][:400]}")
-            lines.append(f"[{a.get('url', '#')}]({a.get('url', '#')})")
+            detail = _clean_text(a.get("content_detail") or a.get("content", ""))
+            if detail and not _is_junk(detail):
+                lines.append(f"> {detail[:400]}")
+            lines.append(f"[阅读原文]({a.get('url', '#')})")
             lines.append("")
 
     # ── 关键新闻详情 ──
@@ -773,7 +803,10 @@ def generate_report(articles: list[dict], date_str: str) -> str:
         ]
         for idx, a in enumerate(top_with_detail, 1):
             sev_emoji = SEVERITY_EMOJI.get(a["severity"], "")
-            summary = a.get("summary", "")
+            raw_sum = a.get("summary", "")
+            summary = _clean_text(raw_sum) if raw_sum else ""
+            if _is_junk(summary):
+                summary = ""
             regions = ", ".join(a["classified_regions"][:2])
             headline = a.get("title_cn") or a["title"]
             lines += [
@@ -789,8 +822,9 @@ def generate_report(articles: list[dict], date_str: str) -> str:
             ]
             if summary:
                 lines.append(f"- **摘要**: {summary}")
-            if a.get("content_detail"):
-                lines.extend(["", f"> {a['content_detail'][:600]}", ""])
+            detail = _clean_text(a.get("content_detail", ""))
+            if detail and not _is_junk(detail) and len(detail) > 30:
+                lines.extend(["", f"> {detail[:600]}", ""])
             lines.append(f"[阅读原文]({a.get('url', '#')})")
             lines.append("")
 
