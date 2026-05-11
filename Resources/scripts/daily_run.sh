@@ -5,7 +5,8 @@
 # Crontab:
 #   30 15 * * 1-5  → a-stock
 #   30 16 * * 1-5  → hk-stock
-#    0  6 * * 1-5  → all-overnight
+#    0  0 * * 1-5  → fund
+#    0  6 * * 1-5  → all-overnight  (gold, metals, us-stock, macro)
 #    0  8 * * *    → geopolitics
 
 set -euo pipefail
@@ -139,6 +140,17 @@ CN = {
     "DASH": "DoorDash", "RBLX": "Roblox", "COIN": "Coinbase", "SQ": "Block",
     "ARM": "Arm安谋", "CEG": "Constellation能源", "VST": "Vistra能源",
     "GEV": "GE Vernova", "KKR": "KKR", "APO": "阿波罗全球",
+    # ── 宏观 ──
+    "^IRX": "3月期美债", "^FVX": "5年期美债",
+    "^TNX": "10年期美债", "^TYX": "30年期美债",
+    "TLT": "20+年美债ETF", "SHY": "短债ETF", "IEF": "中期美债ETF",
+    "HYG": "高收益债ETF", "LQD": "投资级企业债ETF",
+    "DX-Y.NYB": "美元指数", "EURUSD=X": "欧元/美元",
+    "CNY=X": "美元/人民币", "JPY=X": "美元/日元", "GBPUSD=X": "英镑/美元",
+    "^VIX": "VIX恐慌指数",
+    "CL=F": "WTI原油", "BZ=F": "布伦特原油", "NG=F": "天然气",
+    "USO": "原油ETF", "UNG": "天然气ETF",
+    "BTC-USD": "比特币", "ETH-USD": "以太坊", "SOL-USD": "Solana",
 }
 
 def cn(ticker):
@@ -300,12 +312,56 @@ PYEOF
 )
 	    send_wx "$SUMMARY"
 	    ;;
+macro)
+    run_monitor "宏观" "$SCRIPTS/macro-monitor/macro_monitor.py" || true
+    JSON="$VAULT/5.Finance/DailyData/macro/${DATE}.json"
+    SUMMARY=$(python3 << PYEOF
+import json, sys
+json_path = "$JSON"
+date_str = "$DATE"
+try:
+    with open(json_path) as f:
+        wrapped = json.load(f)
+    data = wrapped.get("data", [])
+except Exception:
+    print(f"📊 宏观指标日报 {date_str}\n\n⚠️ 今日无数据")
+    sys.exit(0)
+if not data:
+    print(f"📊 宏观指标日报 {date_str}\n\n⚠️ 今日无数据")
+    sys.exit(0)
+CN = {
+    "^TNX": "10Y美债", "^TYX": "30Y美债", "^IRX": "3M美债",
+    "DX-Y.NYB": "美元指数", "^VIX": "VIX",
+    "CL=F": "WTI原油", "BZ=F": "布油", "NG=F": "天然气",
+    "BTC-USD": "BTC", "ETH-USD": "ETH", "SOL-USD": "SOL",
+    "EURUSD=X": "EUR/USD", "CNY=X": "USD/CNY", "JPY=X": "USD/JPY",
+}
+def pct(v):
+    if v is None: return "—"
+    return f"{v:+.2f}%"
+def pr(v):
+    if v is None: return "—"
+    return f"{v:.2f}"
+key_order = ["^TNX", "DX-Y.NYB", "^VIX", "CL=F", "BTC-USD"]
+lines = [f"📊 宏观指标日报 {date_str}", ""]
+by_ticker = {d["ticker"]: d for d in data}
+for t in key_order:
+    d = by_ticker.get(t)
+    if d:
+        lines.append(f"  {CN.get(t, t)}: {pr(d['close'])} ({pct(d['change_daily'])})")
+lines.append("")
+lines.append(f"📁 完整报告 DailyData/macro/{date_str}.md")
+print("\n".join(lines))
+PYEOF
+)
+    send_wx "$SUMMARY"
+    ;;
 all-overnight)
-    for mkt in gold metals us-stock; do
+    for mkt in gold metals us-stock macro; do
         bash "$0" "$mkt"
     done
     ;;
-*)  echo "用法: $0 {a-stock|hk-stock|gold|metals|us-stock|all-overnight}"; exit 1 ;;
+*)  echo "用法: $0 {a-stock|hk-stock|gold|metals|us-stock|macro|all-overnight}"; exit 1 ;;
 esac
 
 log "=== 完成 ==="
