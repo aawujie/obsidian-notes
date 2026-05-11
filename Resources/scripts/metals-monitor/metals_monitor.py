@@ -26,8 +26,6 @@ DATA_DIR.mkdir(parents=True, exist_ok=True)
 BASE_METALS = [  # 工业金属期货
     "HG=F",   # 铜
     "ALI=F",  # 铝
-    "ZNC=F",  # 锌 (可能不可用，用镍代替)
-    "ALI=F",  # 铝
 ]
 
 PRECIOUS_METALS = [  # 贵金属

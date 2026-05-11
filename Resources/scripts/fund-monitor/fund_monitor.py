@@ -243,7 +243,7 @@ def fetch_top_fund_holdings(fund_codes: list[str]) -> dict[str, list[dict]]:
     result = {}
     for code in fund_codes:
         try:
-            df = ak.fund_portfolio_hold_em(symbol=code, date="2025")
+            df = ak.fund_portfolio_hold_em(symbol=code, date=str(datetime.now().year))
             if df is not None and not df.empty:
                 latest_q = df["季度"].iloc[0]
                 qdf = df[df["季度"] == latest_q].head(5)

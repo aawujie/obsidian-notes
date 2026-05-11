@@ -25,23 +25,41 @@ DATA_DIR.mkdir(parents=True, exist_ok=True)
 
 
 def get_sp500_tickers():
-    """从 Wikipedia 获取 S&P 500 成分股"""
+    """从 Wikipedia 获取 S&P 500 成分股，自动匹配正确的表格."""
     try:
-        table = pd.read_html("https://en.wikipedia.org/wiki/List_of_S%26P_500_companies")[0]
-        return table["Symbol"].str.replace(".", "-", regex=False).tolist()
+        tables = pd.read_html(
+            "https://en.wikipedia.org/wiki/List_of_S%26P_500_companies",
+            attrs={"id": "constituents"},
+        )
+        if tables:
+            return tables[0]["Symbol"].str.replace(".", "-", regex=False).tolist()
     except Exception:
-        print("[WARN] 无法获取 S&P 500 成分股列表，使用内置缓存")
-        return _fallback_sp500()
+        pass
+
+    try:
+        tables = pd.read_html("https://en.wikipedia.org/wiki/List_of_S%26P_500_companies")
+        for t in tables:
+            if "Symbol" in t.columns and len(t) > 400:
+                return t["Symbol"].str.replace(".", "-", regex=False).tolist()
+    except Exception:
+        pass
+
+    print("[WARN] 无法获取 S&P 500 成分股列表，使用内置缓存")
+    return _fallback_sp500()
 
 
 def get_nasdaq100_tickers():
-    """从 Wikipedia 获取纳斯达克100成分股"""
+    """从 Wikipedia 获取纳斯达克100成分股，自动匹配正确的表格."""
     try:
-        table = pd.read_html("https://en.wikipedia.org/wiki/Nasdaq-100")[4]
-        return table["Ticker"].str.replace(".", "-", regex=False).tolist()
+        tables = pd.read_html("https://en.wikipedia.org/wiki/Nasdaq-100")
+        for t in tables:
+            if "Ticker" in t.columns and len(t) > 80:
+                return t["Ticker"].str.replace(".", "-", regex=False).tolist()
     except Exception:
-        print("[WARN] 无法获取 Nasdaq 100 成分股列表，使用内置缓存")
-        return _fallback_nasdaq100()
+        pass
+
+    print("[WARN] 无法获取 Nasdaq 100 成分股列表，使用内置缓存")
+    return _fallback_nasdaq100()
 
 
 def _fallback_sp500():

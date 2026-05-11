@@ -141,8 +141,10 @@ def fetch_data(tickers):
                         change_weekly = None
 
                     # 月涨跌幅（约 21 个交易日）
-                    if len(closes) >= 15:
-                        change_monthly = ((today_close - closes.iloc[-15]) / closes.iloc[-22]) * 100
+                    if len(closes) >= 22:
+                        change_monthly = ((today_close - closes.iloc[-22]) / closes.iloc[-22]) * 100
+                    elif len(closes) >= 15:
+                        change_monthly = ((today_close - closes.iloc[-15]) / closes.iloc[-15]) * 100
                     else:
                         change_monthly = None
 
