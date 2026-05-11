@@ -184,12 +184,12 @@
     {
       "ticker": "GC=F",
       "name": "Gold Jun 26",
-      "close": 4730.7001953125,
-      "change_daily": 0.66,
-      "change_weekly": 2.18,
-      "change_monthly": -1.58,
-      "volume": 114845.0,
-      "vol_ratio": 4.96,
+      "close": 4682.89990234375,
+      "change_daily": -0.79,
+      "change_weekly": 3.62,
+      "change_monthly": -0.33,
+      "volume": 38103.0,
+      "vol_ratio": 4.85,
       "high52": 5586.2,
       "is_new_high": false
     },
