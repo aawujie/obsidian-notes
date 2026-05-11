@@ -185,7 +185,8 @@ def fetch_data(tickers):
                         "high52": high52,
                         "is_new_high": high52 and close >= high52 * 0.995,
                     })
-                except Exception:
+                except Exception as e:
+                    print(f"  [WARN] {t} 数据拉取失败: {e}")
                     continue
         except Exception as e:
             print(f"  [WARN] 批次失败: {e}")

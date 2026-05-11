@@ -132,7 +132,8 @@ def fetch_data(tickers):
                     "volume": volume, "vol_ratio": round(vol_ratio, 2),
                     "high52": high52, "is_new_high": is_new_high,
                 })
-            except Exception:
+            except Exception as e:
+                print(f"  [WARN] {t} 数据拉取失败: {e}")
                 continue
     except Exception as e:
         print(f"  [ERROR] {e}")

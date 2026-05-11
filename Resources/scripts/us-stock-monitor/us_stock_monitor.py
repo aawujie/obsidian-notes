@@ -63,7 +63,7 @@ def get_nasdaq100_tickers():
 
 
 def _fallback_sp500():
-    """S&P 500 前 100 大权重股 (按市值)"""
+    """S&P 500 前 200 大权重股 (按市值)."""
     return [
         "AAPL", "MSFT", "NVDA", "AMZN", "GOOGL", "META", "TSLA", "BRK-B",
         "AVGO", "LLY", "JPM", "V", "UNH", "XOM", "MA", "COST", "WMT", "HD",
@@ -73,8 +73,21 @@ def _fallback_sp500():
         "NOW", "AXP", "DHR", "AMGN", "GS", "BKNG", "UBER", "SPGI", "PFE",
         "MS", "RTX", "BLK", "UNP", "HON", "LOW", "NEE", "SYK", "TJX", "PGR",
         "CMCSA", "BSX", "ETN", "COP", "LMT", "ANET", "ELV", "ADI", "C",
-        "MDT", "FI", "MU", "DE", "PLD", "CB", "ADP", "KLAC", "AMT", "UPS",
-        "INTC", "MMC", "LRCX", "BA", "BX", "SO", "SCHW", "GILD", "CI",
+        "MDT", "MU", "DE", "PLD", "CB", "ADP", "KLAC", "AMT", "UPS",
+        "INTC", "LRCX", "BA", "BX", "SO", "SCHW", "GILD", "CI",
+        "CEG", "VST", "GEV", "KKR", "APO", "PLTR", "DELL", "PANW", "CRWD",
+        "COIN", "SQ", "ABNB", "SNAP", "DASH", "RBLX", "ARM",
+        "SNPS", "CDNS", "MRVL", "ON", "NXPI", "MCHP", "STX", "WDC",
+        "GD", "NOC", "LHX", "HII", "TDG", "CME", "ICE", "MCO",
+        "MSI", "PSX", "VLO", "MPC", "SLB", "OXY", "EOG", "FANG",
+        "WM", "RSG", "WAB", "PWR", "FAST", "EMR", "ROK", "DOV",
+        "SHW", "APD", "ECL", "FCX", "NUE", "STLD", "CMG", "YUM",
+        "SBUX", "NKE", "TGT", "ROST", "DLTR", "DG", "EL", "CL",
+        "KMB", "HSY", "GIS", "K", "CPB", "CAG", "SJM",
+        "ALL", "TRV", "AIG", "MET", "PRU", "AFL",
+        "PSA", "O", "EQIX", "DLR", "SPG", "AVB", "EQR",
+        "ZTS", "IDXX", "DXCM", "A", "IQV", "VEEV", "ALGN",
+        "CARR", "JCI", "TRANE", "OC", "MLM", "VMC",
     ]
 
 
@@ -270,7 +283,8 @@ def fetch_stock_data(tickers, period="1mo"):
                         "dist_from_high": round(dist_from_high, 2) if dist_from_high else None,
                         "is_new_high": is_new_high,
                     })
-                except Exception:
+                except Exception as e:
+                    print(f"  [WARN] {t} 数据拉取失败: {e}")
                     continue
         except Exception as e:
             print(f"  [ERROR] 批次拉取失败: {e}")
