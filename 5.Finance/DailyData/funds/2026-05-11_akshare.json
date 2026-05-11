@@ -1,6 +1,6 @@
 {
   "date": "2026-05-11",
-  "generated_at": "2026-05-11T00:15:40.047656",
+  "generated_at": "2026-05-11T09:21:58.629760",
   "source": "akshare",
   "rankings": {
     "股票型": [
@@ -1050,49 +1050,49 @@
       {
         "code": "008281",
         "name": "国泰CES半导体芯片行业ETF联接A",
-        "nav": 2.4386,
-        "est_nav": 2.372,
-        "est_change": -2.73,
-        "nav_date": "2026-05-07",
-        "est_time": "2026-05-08 15:00"
+        "nav": 2.3756,
+        "est_nav": 2.3754,
+        "est_change": -0.01,
+        "nav_date": "2026-05-08",
+        "est_time": "2026-05-11 09:19"
       },
       {
         "code": "008282",
         "name": "国泰CES半导体芯片行业ETF联接C",
-        "nav": 2.3879,
-        "est_nav": 2.3227,
-        "est_change": -2.73,
-        "nav_date": "2026-05-07",
-        "est_time": "2026-05-08 15:00"
+        "nav": 2.3262,
+        "est_nav": 2.326,
+        "est_change": -0.01,
+        "nav_date": "2026-05-08",
+        "est_time": "2026-05-11 09:19"
       },
       {
         "code": "008887",
         "name": "华夏国证半导体芯片ETF联接A",
-        "nav": 1.9426,
-        "est_nav": 1.8861,
-        "est_change": -2.91,
-        "nav_date": "2026-05-07",
-        "est_time": "2026-05-08 15:00"
+        "nav": 1.8879,
+        "est_nav": 1.8878,
+        "est_change": -0.01,
+        "nav_date": "2026-05-08",
+        "est_time": "2026-05-11 09:19"
       },
       {
         "code": "007301",
         "name": "国联安中证半导体ETF联接C",
-        "nav": 3.7055,
-        "est_nav": 3.6118,
-        "est_change": -2.53,
-        "nav_date": "2026-05-07",
-        "est_time": "2026-05-08 15:00"
+        "nav": 3.6168,
+        "est_nav": 3.6165,
+        "est_change": -0.01,
+        "nav_date": "2026-05-08",
+        "est_time": "2026-05-11 09:20"
       }
     ],
     "新能源/光伏": [
       {
         "code": "001156",
         "name": "申万菱信新能源汽车主题灵活配置混合A",
-        "nav": 3.603,
-        "est_nav": 3.4997,
-        "est_change": -2.87,
-        "nav_date": "2026-05-07",
-        "est_time": "2026-05-08 15:00"
+        "nav": 3.483,
+        "est_nav": 3.4596,
+        "est_change": -0.67,
+        "nav_date": "2026-05-08",
+        "est_time": "2026-05-11 09:19"
       },
       {
         "code": "161028",
@@ -1106,11 +1106,11 @@
       {
         "code": "009067",
         "name": "国泰中证新能源汽车ETF联接A",
-        "nav": 2.7014,
-        "est_nav": 2.6428,
-        "est_change": -2.17,
-        "nav_date": "2026-05-07",
-        "est_time": "2026-05-08 15:00"
+        "nav": 2.6468,
+        "est_nav": 2.6468,
+        "est_change": 0.0,
+        "nav_date": "2026-05-08",
+        "est_time": "2026-05-11 09:19"
       },
       {
         "code": "400015",
@@ -1135,11 +1135,11 @@
       {
         "code": "000083",
         "name": "汇添富消费行业混合",
-        "nav": 4.72,
-        "est_nav": 4.7052,
-        "est_change": -0.31,
-        "nav_date": "2026-05-07",
-        "est_time": "2026-05-08 15:00"
+        "nav": 4.706,
+        "est_nav": 4.7051,
+        "est_change": -0.02,
+        "nav_date": "2026-05-08",
+        "est_time": "2026-05-11 09:19"
       },
       {
         "code": "160222",
@@ -1164,11 +1164,11 @@
       {
         "code": "000220",
         "name": "富国医疗保健行业混合A",
-        "nav": 3.159,
-        "est_nav": 3.1284,
-        "est_change": -0.97,
-        "nav_date": "2026-05-07",
-        "est_time": "2026-05-08 15:00"
+        "nav": 3.106,
+        "est_nav": 3.1025,
+        "est_change": -0.11,
+        "nav_date": "2026-05-08",
+        "est_time": "2026-05-11 09:19"
       },
       {
         "code": "161726",
@@ -1182,40 +1182,40 @@
       {
         "code": "000913",
         "name": "农银医疗保健股票",
-        "nav": 1.6369,
-        "est_nav": 1.6281,
-        "est_change": -0.53,
-        "nav_date": "2026-05-07",
-        "est_time": "2026-05-08 15:00"
+        "nav": 1.6172,
+        "est_nav": 1.6178,
+        "est_change": 0.03,
+        "nav_date": "2026-05-08",
+        "est_time": "2026-05-11 09:19"
       },
       {
         "code": "001344",
         "name": "易方达医药ETF联接A",
-        "nav": 0.9071,
-        "est_nav": 0.8968,
-        "est_change": -1.13,
-        "nav_date": "2026-05-07",
-        "est_time": "2026-05-08 15:00"
+        "nav": 0.8973,
+        "est_nav": 0.8969,
+        "est_change": -0.05,
+        "nav_date": "2026-05-08",
+        "est_time": "2026-05-11 09:19"
       }
     ],
     "军工/国防": [
       {
         "code": "002251",
         "name": "华夏军工安全混合A",
-        "nav": 2.453,
-        "est_nav": 2.464,
-        "est_change": 0.45,
-        "nav_date": "2026-05-07",
-        "est_time": "2026-05-08 15:00"
+        "nav": 2.456,
+        "est_nav": 2.4736,
+        "est_change": 0.72,
+        "nav_date": "2026-05-08",
+        "est_time": "2026-05-11 09:19"
       },
       {
         "code": "004224",
         "name": "南方军工改革灵活配置混合A",
-        "nav": 1.5303,
-        "est_nav": 1.5467,
-        "est_change": 1.07,
-        "nav_date": "2026-05-07",
-        "est_time": "2026-05-08 15:00"
+        "nav": 1.5442,
+        "est_nav": 1.5474,
+        "est_change": 0.21,
+        "nav_date": "2026-05-08",
+        "est_time": "2026-05-11 09:19"
       },
       {
         "code": "005609",
@@ -1249,11 +1249,11 @@
       {
         "code": "008586",
         "name": "华夏人工智能ETF联接C",
-        "nav": 1.7038,
-        "est_nav": 1.6929,
-        "est_change": -0.64,
-        "nav_date": "2026-05-07",
-        "est_time": "2026-05-08 15:00"
+        "nav": 1.6935,
+        "est_nav": 1.6933,
+        "est_change": -0.01,
+        "nav_date": "2026-05-08",
+        "est_time": "2026-05-11 09:19"
       },
       {
         "code": "161631",
@@ -1267,11 +1267,11 @@
       {
         "code": "002803",
         "name": "东方红沪港深混合",
-        "nav": 2.753,
-        "est_nav": 2.7192,
-        "est_change": -1.23,
-        "nav_date": "2026-05-07",
-        "est_time": "2026-05-08 15:00"
+        "nav": 2.716,
+        "est_nav": 2.7159,
+        "est_change": 0.0,
+        "nav_date": "2026-05-08",
+        "est_time": "2026-05-11 09:19"
       }
     ],
     "红利/高股息": [
@@ -1537,31 +1537,31 @@
     {
       "name": "朱少醒",
       "company": "富国基金",
-      "experience_days": 7480,
+      "experience_days": 7481,
       "best_return": 1909.06
     },
     {
       "name": "杨谷",
       "company": "诺安基金",
-      "experience_days": 7382,
+      "experience_days": 7383,
       "best_return": 1318.37
     },
     {
       "name": "杜猛",
       "company": "摩根基金(中国)",
-      "experience_days": 5415,
+      "experience_days": 5416,
       "best_return": 1173.39
     },
     {
       "name": "金梓才",
       "company": "财通基金",
-      "experience_days": 4190,
+      "experience_days": 4191,
       "best_return": 1054.44
     },
     {
       "name": "陈皓",
       "company": "易方达基金",
-      "experience_days": 4972,
+      "experience_days": 4973,
       "best_return": 887.26
     }
   ]
