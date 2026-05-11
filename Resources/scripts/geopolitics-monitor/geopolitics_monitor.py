@@ -422,8 +422,9 @@ def _clean_text(text: str) -> str:
     """深度清理从网页提取的文本."""
     text = html.unescape(text)
     text = re.sub(r"https?://\S+", "", text)
-    text = re.sub(r"!\[.*?\]\(.*?\)", "", text)
-    text = re.sub(r"\[([^\]]*)\]\([^\)]*\)", r"\1", text)
+    text = re.sub(r"!\[[^\]]*\]\([^)]*\)?", "", text)
+    text = re.sub(r"!\[[^\]]*\]\([^)]*$", "", text, flags=re.MULTILINE)
+    text = re.sub(r"\[[^\]]*\]\([^)]*\)?", "", text)
     text = re.sub(r"Image\s+\d+:\s*", "", text)
     text = re.sub(r"[#*_>]+", " ", text)
     text = re.sub(r"\|", " ", text)
