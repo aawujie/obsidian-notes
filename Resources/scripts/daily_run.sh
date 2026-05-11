@@ -233,10 +233,11 @@ import json
 with open('$JSON') as f:
     d = json.load(f)
 lines = ['💰 基金日报 ' + d['date'], '']
-for cat, top in d.get('top_funds', {}).items():
+for cat, top in d.get('rankings', {}).items():
     if top:
         f0 = top[0]
-        lines.append(f'{cat}: {f0.get(\"name\",\"?\")[:18]} {f0.get(\"change_daily\",\"?\")}')
+        v = f0.get('change_daily')
+        lines.append(f'{cat}: {f0.get(\"name\",\"?\")[:18]} {v:+.2f}%' if v is not None else f'{cat}: {f0.get(\"name\",\"?\")[:18]} —')
 lines.append('')
 lines.append('📁 DailyData/funds/' + d['date'] + '.md')
 print('\n'.join(lines))
