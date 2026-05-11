@@ -539,14 +539,14 @@ def translate_titles_batch(articles: list[dict]) -> None:
     llm_translated = 0
 
     # LLM batch translation
-    batch_size = 30
+    batch_size = 15
     for start in range(0, len(titles_to_translate), batch_size):
         batch = titles_to_translate[start : start + batch_size]
         numbered = "\n".join(f"{idx}. {title}" for idx, title in batch)
         prompt = (
             "将以下英文新闻标题翻译成简洁的中文，每行一条，保留编号。\n"
-            "要求：简洁、专业、保留关键实体名（人名/地名用通用译名）。\n"
-            "只输出翻译结果，不要解释。\n\n"
+            "要求：简洁、专业、保留关键实体（人名/地名用通用译名）。\n"
+            "只输出翻译结果，不要解释，不要思考过程。\n\n"
             f"{numbered}"
         )
 
@@ -608,7 +608,7 @@ def _call_llm_for_translation(prompt: str) -> str | None:
                     "anthropic-version": "2023-06-01",
                     "content-type": "application/json",
                 },
-                timeout=60,
+                timeout=120,
             )
             if resp.status_code == 200:
                 data = resp.json()
