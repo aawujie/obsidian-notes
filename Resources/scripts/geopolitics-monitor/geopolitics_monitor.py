@@ -432,6 +432,100 @@ def generate_summary(text: str, title: str) -> str:
     return title[:SUMMARY_MAX_CHARS_CN]
 
 
+def translate_titles_batch(articles: list[dict]) -> None:
+    """批量翻译标题为中文，结果写入 article['title_cn'].
+
+    优先 Anthropic Claude API，回退 OpenAI 兼容 API。
+    """
+    titles_to_translate = [
+        (i, a["title"]) for i, a in enumerate(articles)
+        if a.get("title") and not a.get("title_cn")
+    ]
+    if not titles_to_translate:
+        return
+
+    batch_size = 30
+    translated = 0
+
+    for start in range(0, len(titles_to_translate), batch_size):
+        batch = titles_to_translate[start : start + batch_size]
+        numbered = "\n".join(f"{idx}. {title}" for idx, title in batch)
+        prompt = (
+            "将以下英文新闻标题翻译成简洁的中文，每行一条，保留编号。\n"
+            "要求：简洁、专业、保留关键实体名（人名/地名用通用译名）。\n"
+            "只输出翻译结果，不要解释。\n\n"
+            f"{numbered}"
+        )
+
+        result_text = _call_llm_for_translation(prompt)
+        if not result_text:
+            continue
+
+        for line in result_text.strip().split("\n"):
+            line = line.strip()
+            if not line:
+                continue
+            match = re.match(r"(\d+)\.\s*(.+)", line)
+            if match:
+                idx = int(match.group(1))
+                cn_title = match.group(2).strip()
+                for orig_idx, _ in batch:
+                    if orig_idx == idx:
+                        articles[idx]["title_cn"] = cn_title
+                        translated += 1
+                        break
+
+    if translated:
+        print(f"    标题翻译: {translated}/{len(titles_to_translate)} 条")
+
+
+def _call_llm_for_translation(prompt: str) -> str | None:
+    """调用 LLM API 翻译，优先 Anthropic，回退 OpenAI."""
+    if ANTHROPIC_API_KEY:
+        try:
+            resp = requests.post(
+                "https://api.anthropic.com/v1/messages",
+                json={
+                    "model": "claude-sonnet-4-20250514",
+                    "max_tokens": 2000,
+                    "messages": [{"role": "user", "content": prompt}],
+                },
+                headers={
+                    "x-api-key": ANTHROPIC_API_KEY,
+                    "anthropic-version": "2023-06-01",
+                    "content-type": "application/json",
+                },
+                timeout=30,
+                proxies=PROXIES,
+            )
+            if resp.status_code == 200:
+                data = resp.json()
+                return data["content"][0]["text"]
+        except Exception as e:
+            print(f"    [WARN] Anthropic 翻译失败: {e}")
+
+    if OPENAI_API_KEY:
+        try:
+            resp = requests.post(
+                "https://api.openai.com/v1/chat/completions",
+                json={
+                    "model": LLM_MODEL,
+                    "messages": [{"role": "user", "content": prompt}],
+                    "max_tokens": 2000,
+                    "temperature": 0.3,
+                },
+                headers={"Authorization": f"Bearer {OPENAI_API_KEY}"},
+                timeout=30,
+                proxies=PROXIES,
+            )
+            if resp.status_code == 200:
+                return resp.json()["choices"][0]["message"]["content"]
+        except Exception as e:
+            print(f"    [WARN] OpenAI 翻译失败: {e}")
+
+    return None
+
+
 def enrich_articles(articles: list[dict], top_n: int = MAX_ENRICH_ARTICLES) -> None:
     """Enrich articles: fetch full content + generate summary for top N or MEDIUM+ articles."""
     # Select articles to enrich: MEDIUM+ first, then by position, capped at top_n
@@ -482,6 +576,10 @@ def enrich_articles(articles: list[dict], top_n: int = MAX_ENRICH_ARTICLES) -> N
                 a["content_detail"] = raw
                 if not a.get("summary") or a["summary"] == a["title"][:SUMMARY_MAX_CHARS_CN]:
                     a["summary"] = generate_summary(raw, a.get("title", ""))
+
+    # 批量翻译标题为中文
+    print(f"    翻译标题...")
+    translate_titles_batch(articles)
 
 
 def fetch_all_articles() -> list[dict]:
@@ -620,7 +718,9 @@ def generate_report(articles: list[dict], date_str: str) -> str:
     ]
 
     for i, a in enumerate(sorted_articles[:25], 1):
-        title = a["title"][:80]
+        title_cn = a.get("title_cn", "")
+        title_en = a["title"][:80]
+        title_display = title_cn or title_en
         url = a.get("url", "")
         regions = ", ".join(a["classified_regions"][:2])
         sev = a["severity"]
@@ -629,7 +729,7 @@ def generate_report(articles: list[dict], date_str: str) -> str:
         assets = get_impact_assets(a["event_types"])
         ticker_str = " ".join(f"`{t['ticker']}`" for t in assets[:4]) if assets else "—"
 
-        title_md = f"[{title}]({url})" if url else title
+        title_md = f"[{title_display}]({url})" if url else title_display
         summary = a.get("summary", "") or ""
         lines.append(
             f"| {i} | {title_md} | {regions} | {sev_emoji} {sev} | {types_str} | {summary} | {ticker_str} |"

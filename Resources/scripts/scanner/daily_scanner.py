@@ -33,47 +33,48 @@ def load_data(subdir):
     return records, f.stem
 
 
-def is_trend_up(r):
-    """日/周/月三列全正 → 趋势向上确认"""
+def is_trend_accelerating(r):
+    """趋势在加速：日/周/月全绿 且 月 > 周 > 日"""
     d = r.get("change_daily")
     w = r.get("change_weekly")
     m = r.get("change_monthly")
     if d is None or w is None or m is None:
         return False
-    return d > 0 and w > 0 and m > 0
-
-
-def is_volume_spike(r):
-    """成交量 > 2 倍均值"""
-    return r.get("vol_ratio", 0) > 2
+    if not (d > 0 and w > 0 and m > 0):
+        return False
+    return m > w > d
 
 
 def flag_stocks(records, label):
-    """从一批记录中筛选值得关注的"""
+    """筛选值得关注的标的。阈值：日涨跌 ≥5% 或 趋势加速 或 异常放量 或 新高"""
     alerts = []
     for r in records:
         d = r.get("change_daily") or 0
         w = r.get("change_weekly")
         m = r.get("change_monthly")
-        name = r.get("name", r.get("ticker", "?"))
         ticker = r.get("ticker", "?")
+        name = r.get("name", ticker)
         vol = r.get("vol_ratio", 0)
         new_high = r.get("is_new_high", False)
 
         reasons = []
-        if d >= 5:
-            reasons.append(f"单日涨 {d:+.1f}%")
-        elif d <= -5:
-            reasons.append(f"单日跌 {d:+.1f}%")
 
-        if is_trend_up(r):
-            reasons.append("日/周/月全绿(趋势确认)")
+        # 1. 单日巨震
+        if abs(d) >= 5:
+            direction = "涨" if d > 0 else "跌"
+            reasons.append(f"单日{direction} {d:+.1f}%")
 
-        if is_volume_spike(r):
-            reasons.append(f"异常放量 {vol:.1f}x")
+        # 2. 趋势加速（方向一致 + 动量增强）
+        if is_trend_accelerating(r):
+            reasons.append(f"日/周/月加速({m:+.1f}%>{w:+.1f}%>{d:+.1f}%)")
 
+        # 3. 异常放量
+        if vol > 2:
+            reasons.append(f"放量 {vol:.1f}x")
+
+        # 4. 创 52 周新高
         if new_high:
-            reasons.append("创52周新高")
+            reasons.append("52周新高")
 
         if reasons:
             alerts.append({
