@@ -40,9 +40,6 @@ HEADERS = {
 
 FUND_TYPES = ["股票型", "混合型", "指数型", "QDII", "债券型", "FOF"]
 
-# QDII 基金代码前缀，用于从指数型排行中过滤混入的 QDII 基金
-QDII_CODE_PREFIXES = ("0", "1", "5")  # QDII 基金代码通常以这些数字开头
-
 SECTOR_FUNDS = {
     "半导体/芯片": [
         ("320007", "诺安成长混合"),
@@ -133,11 +130,6 @@ def fetch_rankings(fund_type: str, top_n: int = 10) -> list[dict]:
 
     # 按日增长率降序重排 (默认按"自定义"综合排序, 不是日涨幅)
     df = df.sort_values("日增长率", ascending=False, na_position="last")
-
-    # 指数型: 过滤掉混入的 QDII 基金 (名称含 QDII)
-    if fund_type == "指数型":
-        df = df[~df["基金简称"].str.contains("QDII|qdii", na=False)]
-
     df = df.head(top_n)
     funds = []
     for _, row in df.iterrows():
