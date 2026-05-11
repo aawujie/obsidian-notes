@@ -1,21 +1,23 @@
 #!/usr/bin/env python3
 # 数据源: akshare (封装东方财富+天天基金 API)
-# 运行:   cd obsidian-notes && source .venv/bin/activate && python Resources/scripts/fund-monitor/fund_monitor_akshare.py
+# 运行:   cd obsidian-notes && source .venv/bin/activate && python Resources/scripts/fund-monitor/fund_monitor.py
 """
-中国公募基金每日监控脚本 (akshare 版)
+中国公募基金每日监控脚本
 盘后拉取各类型基金涨幅排行 + 热门板块基金表现 + 基金经理/持仓信息
 
-对比原版优势:
-- 更多时间维度 (近6月/近1年/近2年/近3年/今年来/成立来, 原版仅4个)
-- 基金经理/重仓股信息, 五星经理榜单
-- DataFrame API 无需手写 JSON/JS 解析, 代码更健壮
+数据维度:
+- 6 类基金 (股票/混合/指数/QDII/债券/FOF) × 日涨幅 TOP 10
+- 10 个时间维度 (日/周/月/季/半年/1年/2年/3年/今年来/成立来)
+- 7 大热门板块基金实时估值
+- 涨幅第一基金经理信息 + 重仓股
+- 五星基金经理榜单
+- 跌幅 TOP 5
 
-输出: 5.Finance/DailyData/funds/ → YYYY-MM-DD_akshare.md + YYYY-MM-DD_akshare.json
+输出: 5.Finance/DailyData/funds/ → YYYY-MM-DD.md + YYYY-MM-DD.json
 """
 
 import json
 import re
-import sys
 import time
 from datetime import datetime
 from pathlib import Path
@@ -37,6 +39,9 @@ HEADERS = {
 }
 
 FUND_TYPES = ["股票型", "混合型", "指数型", "QDII", "债券型", "FOF"]
+
+# QDII 基金代码前缀，用于从指数型排行中过滤混入的 QDII 基金
+QDII_CODE_PREFIXES = ("0", "1", "5")  # QDII 基金代码通常以这些数字开头
 
 SECTOR_FUNDS = {
     "半导体/芯片": [
@@ -104,23 +109,23 @@ def price(v):
         return "—"
 
 
-def num(v):
-    if v is None or (isinstance(v, float) and pd.isna(v)):
-        return "—"
+def _to_float(val) -> float | None:
+    if val is None or (isinstance(val, float) and pd.isna(val)):
+        return None
     try:
-        return f"{float(v):.2f}"
+        return float(val)
     except (TypeError, ValueError):
-        return "—"
+        return None
 
 
 # --- 数据拉取 ---
 
-def fetch_rankings_ak(fund_type: str, top_n: int = 10) -> list[dict]:
-    """用 akshare 拉取基金排行, 返回标准化 list[dict]"""
+def fetch_rankings(fund_type: str, top_n: int = 10) -> list[dict]:
+    """拉取基金排行, 按日涨幅降序, 返回标准化 list[dict]"""
     try:
         df = ak.fund_open_fund_rank_em(symbol=fund_type)
     except Exception as e:
-        print(f"  [WARN] akshare {fund_type} 排行请求失败: {e}")
+        print(f"  [WARN] {fund_type} 排行请求失败: {e}")
         return []
 
     if df is None or df.empty:
@@ -128,6 +133,11 @@ def fetch_rankings_ak(fund_type: str, top_n: int = 10) -> list[dict]:
 
     # 按日增长率降序重排 (默认按"自定义"综合排序, 不是日涨幅)
     df = df.sort_values("日增长率", ascending=False, na_position="last")
+
+    # 指数型: 过滤掉混入的 QDII 基金 (名称含 QDII)
+    if fund_type == "指数型":
+        df = df[~df["基金简称"].str.contains("QDII|qdii", na=False)]
+
     df = df.head(top_n)
     funds = []
     for _, row in df.iterrows():
@@ -151,17 +161,8 @@ def fetch_rankings_ak(fund_type: str, top_n: int = 10) -> list[dict]:
     return funds
 
 
-def _to_float(val) -> float | None:
-    if val is None or (isinstance(val, float) and pd.isna(val)):
-        return None
-    try:
-        return float(val)
-    except (TypeError, ValueError):
-        return None
-
-
 def fetch_valuation(fund_code: str) -> dict | None:
-    """从天天基金拉取单只基金实时估值 (akshare 无逐只估值API, 保留原方案)"""
+    """从天天基金拉取单只基金实时估值"""
     url = f"https://fundgz.1234567.com.cn/js/{fund_code}.js"
     try:
         resp = requests.get(url, headers=HEADERS, proxies=PROXIES, timeout=10)
@@ -223,10 +224,8 @@ def fetch_sector_data() -> dict[str, list[dict]]:
     return sector_data
 
 
-# --- akshare 独有: 基金经理/持仓 ---
-
 def fetch_fund_manager_info(fund_codes: list[str]) -> dict[str, dict]:
-    """通过雪球 API 获取基金详情 (含基金经理/规模/类型/公司)"""
+    """通过雪球 API 获取基金详情 (基金经理/规模/类型/公司)"""
     result = {}
     for code in fund_codes:
         try:
@@ -248,13 +247,12 @@ def fetch_fund_manager_info(fund_codes: list[str]) -> dict[str, dict]:
 
 
 def fetch_top_fund_holdings(fund_codes: list[str]) -> dict[str, list[dict]]:
-    """获取基金前十大重仓股 (最新季度)"""
+    """获取基金前5大重仓股 (最新季度)"""
     result = {}
     for code in fund_codes:
         try:
             df = ak.fund_portfolio_hold_em(symbol=code, date="2025")
             if df is not None and not df.empty:
-                # 取最新季度
                 latest_q = df["季度"].iloc[0]
                 qdf = df[df["季度"] == latest_q].head(5)
                 holdings = []
@@ -277,7 +275,6 @@ def fetch_star_managers(top_n: int = 5) -> list[dict]:
         df = ak.fund_manager_em()
         if df is None or df.empty:
             return []
-        # 按从业时间+最佳回报筛选
         df = df.drop_duplicates(subset=["姓名"])
         df = df[df["现任基金最佳回报"].apply(lambda x: _to_float(x) or 0) > 50]
         df = df.sort_values("现任基金最佳回报", ascending=False)
@@ -301,13 +298,13 @@ def build_report(date_str: str, rankings: dict, sector_data: dict,
                   holdings: dict, star_managers: list[dict]) -> str:
     lines = [
         "---",
-        f"title: 公募基金日报 {date_str} (akshare版)",
+        f"title: 公募基金日报 {date_str}",
         "type: summary",
         f"created: {date_str}",
-        "tags: [基金, 公募基金, 市场监控, 日报, akshare]",
+        "tags: [基金, 公募基金, 市场监控, 日报]",
         "---",
         "",
-        f"# 公募基金日报 {date_str} (akshare版)",
+        f"# 公募基金日报 {date_str}",
         "",
         f"> 自动生成于 {datetime.now().strftime('%Y-%m-%d %H:%M')} · 数据源: akshare/东方财富",
         "",
@@ -349,7 +346,7 @@ def build_report(date_str: str, rankings: dict, sector_data: dict,
             )
         lines.append("")
 
-    # --- 各类型涨幅第一的基金经理信息 (akshare 独有) ---
+    # --- 涨幅第一基金经理信息 ---
     if manager_info:
         lines += ["## 涨幅第一基金经理信息", ""]
         lines += ["| 基金代码 | 基金名称 | 基金经理 | 基金公司 | 最新规模 | 成立时间 |"]
@@ -362,7 +359,7 @@ def build_report(date_str: str, rankings: dict, sector_data: dict,
             )
         lines.append("")
 
-    # --- 涨幅第一重仓股 (akshare 独有) ---
+    # --- 涨幅第一重仓股 ---
     if holdings:
         lines += ["## 涨幅第一基金前5大重仓股", ""]
         for code, stocks in holdings.items():
@@ -374,7 +371,7 @@ def build_report(date_str: str, rankings: dict, sector_data: dict,
                 lines.append(f"| {s['stock_code']} | {s['stock_name']} | {s['weight']} |")
             lines.append("")
 
-    # --- 五星基金经理 (akshare 独有) ---
+    # --- 五星基金经理 ---
     if star_managers:
         lines += ["## 五星基金经理 TOP 5", ""]
         lines += ["| 姓名 | 所属公司 | 从业天数 | 最佳回报 |"]
@@ -407,14 +404,14 @@ def build_report(date_str: str, rankings: dict, sector_data: dict,
 def main():
     start = time.time()
     date_str = datetime.now().strftime("%Y-%m-%d")
-    print(f"公募基金监控 (akshare版) · {date_str}")
+    print(f"公募基金监控 · {date_str}")
 
     # 1. 排名数据 + 收集中涨幅第一代码
     rankings = {}
     top_codes = []
     for type_name in FUND_TYPES:
         print(f"  拉取{type_name}基金排行...")
-        funds = fetch_rankings_ak(type_name, top_n=10)
+        funds = fetch_rankings(type_name, top_n=10)
         rankings[type_name] = funds
         if funds:
             print(f"    → {len(funds)} 条 (涨幅第1: {funds[0]['name']} {pct(funds[0]['change_daily'])})")
@@ -424,35 +421,34 @@ def main():
     sector_data = fetch_sector_data()
 
     # 3. 跌幅 TOP 5
-    losers_gp = fetch_rankings_ak("股票型", top_n=50)
-    losers_hh = fetch_rankings_ak("混合型", top_n=50)
+    losers_gp = fetch_rankings("股票型", top_n=50)
+    losers_hh = fetch_rankings("混合型", top_n=50)
     all_losers = losers_gp + losers_hh
     all_losers.sort(key=lambda x: x.get("change_daily") or -999)
     top_losers = all_losers[:5]
 
-    # 4. akshare 独有: 基金经理信息 (各类型涨幅第1)
+    # 4. 基金经理信息 (各类型涨幅第1)
     uniq_top = list(dict.fromkeys(top_codes))[:6]  # 去重, 最多6只
     print(f"\n  拉取 {len(uniq_top)} 只涨幅第一基金的经理信息...")
     manager_info = fetch_fund_manager_info(uniq_top)
 
-    # 5. akshare 独有: 重仓股 (前3只涨幅第一基金)
+    # 5. 重仓股 (前3只涨幅第一基金)
     top3 = uniq_top[:3]
     print(f"  拉取前3只基金的持仓...")
     holdings = fetch_top_fund_holdings(top3)
 
-    # 6. akshare 独有: 五星基金经理
+    # 6. 五星基金经理
     print("  拉取五星基金经理...")
     star_managers = fetch_star_managers()
 
     # 7. 生成报告
     md = build_report(date_str, rankings, sector_data, top_losers,
                       manager_info, holdings, star_managers)
-    md_path = DATA_DIR / f"{date_str}_akshare.md"
+    md_path = DATA_DIR / f"{date_str}.md"
     md_path.write_text(md, encoding="utf-8")
     print(f"\n  → {md_path}")
 
-    # JSON
-    json_path = DATA_DIR / f"{date_str}_akshare.json"
+    json_path = DATA_DIR / f"{date_str}.json"
     json_path.write_text(
         json.dumps({
             "date": date_str,
