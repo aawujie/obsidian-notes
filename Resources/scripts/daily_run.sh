@@ -1,13 +1,14 @@
 #!/bin/bash
 # 每日市场数据拉取 + 微信通知
-# 用法: ./daily_run.sh {a-stock|hk-stock|gold|metals|us-stock|all-overnight}
+# 用法: ./daily_run.sh {a-stock|hk-stock|gold|metals|us-stock|macro|macro-calendar|cross-market|all-overnight}
 #
 # Crontab:
 #   30 15 * * 1-5  → a-stock
 #   30 16 * * 1-5  → hk-stock
 #    0  0 * * 1-5  → fund
-#    0  6 * * 1-5  → all-overnight  (gold, metals, us-stock, macro)
-#    0  8 * * *    → geopolitics
+#    0  6 * * 1-5  → all-overnight  (gold, metals, us-stock, macro, macro-calendar)
+#   30  6 * * *    → geopolitics
+#    5 17 * * 1-5  → cross-market   (聚合所有数据源生成综合日报)
 
 set -euo pipefail
 
