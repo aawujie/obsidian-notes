@@ -768,7 +768,11 @@ def generate_report(articles: list[dict], date_str: str) -> str:
         for a in critical_articles:
             sev_emoji = SEVERITY_EMOJI.get(a["severity"], "")
             summary = a.get("summary", "")
-            lines += [f"### {sev_emoji} {a['title']}", ""]
+            headline = a.get("title_cn") or a["title"]
+            lines += [f"### {sev_emoji} {headline}", ""]
+            if a.get("title_cn"):
+                lines.append(f"*{a['title'][:100]}*")
+                lines.append("")
             if summary:
                 lines.append(f"> **摘要**: {summary}")
                 lines.append("")
@@ -791,9 +795,15 @@ def generate_report(articles: list[dict], date_str: str) -> str:
             sev_emoji = SEVERITY_EMOJI.get(a["severity"], "")
             summary = a.get("summary", "")
             regions = ", ".join(a["classified_regions"][:2])
+            headline = a.get("title_cn") or a["title"]
             lines += [
-                f"### {idx}. {sev_emoji} {a['title']}",
+                f"### {idx}. {sev_emoji} {headline}",
                 "",
+            ]
+            if a.get("title_cn"):
+                lines.append(f"*{a['title'][:100]}*")
+                lines.append("")
+            lines += [
                 f"- **区域**: {regions}",
                 f"- **事件类型**: {', '.join(a['event_types'][:3])}",
             ]
@@ -844,6 +854,7 @@ def build_json(articles: list[dict], date_str: str) -> dict:
         assets = get_impact_assets(a["event_types"])
         events.append({
             "title": a["title"],
+            "title_cn": a.get("title_cn", ""),
             "url": a.get("url", ""),
             "content": a.get("content", "")[:300],
             "content_detail": a.get("content_detail", ""),

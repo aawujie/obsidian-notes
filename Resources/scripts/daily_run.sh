@@ -303,7 +303,8 @@ for e in top:
     regions = ", ".join(e.get('classified_regions', []))
     types = ", ".join(e.get('event_types', []))
     tickers = ", ".join(e.get('affected_tickers', [])[:5])
-    print(f"  {sev_icon} {e['title'][:60]}")
+    title = e.get('title_cn') or e['title'][:60]
+    print(f"  {sev_icon} {title}")
     print(f"    → 区域: {regions} | 类型: {types}")
     if tickers:
         print(f"    → 关注: {tickers}")

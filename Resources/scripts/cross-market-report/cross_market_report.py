@@ -377,7 +377,7 @@ def section_geopolitics(geo_data: dict | None) -> list[str]:
         sev_icon = {
             "critical": "🔴", "high": "🟠", "medium": "🟡", "low": "🟢"
         }.get(e.get("severity", ""), "")
-        title = e.get("title", "")[:60]
+        title = e.get("title_cn") or e.get("title", "")[:60]
         regions = ", ".join(e.get("classified_regions", []))
         tickers = ", ".join(e.get("affected_tickers", [])[:5])
         lines.append(f"- {sev_icon} **{title}**")
