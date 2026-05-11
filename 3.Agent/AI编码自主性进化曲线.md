@@ -179,4 +179,27 @@ GPT-5 → GPT-5.1-Codex-Max:        20 分钟 → 30 分钟    (~1.5x)
 
 ---
 
+## 附录：术语表
+
+| 术语 | 全称 / 释义 |
+|:---|:---|
+| **METR** | Model Evaluation & Threat Research。独立的 AI 评估机构，专注于前沿模型能力的系统性测试和安全评估。本图表的数据源 |
+| **gpt-3.5-turbo-instruct** | OpenAI 2022 年发布的指令微调模型，基于 GPT-3.5 架构。"instruct" 表示经过了指令跟随训练，而非纯续写 |
+| **GPT-4 0314** | GPT-4 的初始版本快照（2023 年 3 月 14 日），研究中常用此固定版本以保证可复现性 |
+| **o1** | OpenAI 2024 年发布的推理模型，核心创新是 Chain-of-Thought（思维链）——在回答前先做内部推理，显著提升多步骤问题的正确率 |
+| **GPT-5** | OpenAI 2025 年发布的旗舰模型，扩展了上下文窗口和工具调用能力 |
+| **GPT-5.1-Codex-Max** | GPT-5.1 的编码增强版本，"Codex" 指 OpenAI 的代码生成产品线，"Max" 为最高配置 |
+| **Claude 3.5 Sonnet (Old / New)** | Anthropic 2024 年发布的中端模型。"Sonnet" 是 Claude 产品线中平衡速度与质量的层级（Haiku < Sonnet < Opus）。同名但有新旧两版，新版性能大幅提升 |
+| **Claude 3.7 Sonnet** | Anthropic 2025 年初发布的混合推理模型，可在普通模式和扩展思考模式之间切换 |
+| **Mythos-Preview** | 图中出现的一个模型数据点，实测能力达到 ~45 分钟级任务，具体厂商和架构信息未详述 |
+| **Agent-0 / 1 / 2** | 图中标注的三个 Agent 成熟度里程碑（预测值，非实测）。不是具体模型名，而是能力等级：Agent-0 = 工具使用 + 多步执行；Agent-1 = 子任务拆分 + 跨会话；Agent-2 = 长期自主规划 |
+| **Scaling Law** | 缩放定律。Kaplan et al. (2020) 提出的经验规律：模型能力随参数量、数据量、计算量的增加呈幂律提升。图中趋势线分歧的核心：Scaling Law 是否会触顶 |
+| **Superhuman Coder** | 超人编码者。图中各趋势线的终极目标——AI 在编码任务上全面超越人类中位水平。不同预测对其到达时间有 3 年分歧（2027–2030） |
+| **AI 2027 Timelines Forecast** | Daniel Kokotajlo 和 Eli Lifland 的 AI 能力预测模型，用于估算各能力里程碑的达到时间。图中红/橙/紫色趋势线来源于此 |
+| **80% 成功率** | 图中纵轴的度量标准。不是"AI 偶尔能做到"，而是"在同类任务上 80% 的情况下能自主完成"，是一个较严格的可靠性门槛 |
+| **对数尺度** | 纵轴的刻度方式。相邻刻度之间不是等差而是等比（如 8 秒 → 30 秒 → 2 分钟 → 8 分钟），用于展示跨越多个数量级的数据 |
+| **倍增周期（Doubling Time）** | 指能力翻倍所需的时间。METR 拟合出约 7 个月——每 7 个月，AI 能自主完成的任务复杂度翻一番 |
+
+---
+
 *图表来源：METR — Length Of Coding Tasks AI Agents Can Complete Autonomously（2025 年 12 月发布，基于 AI 2027 Timelines Forecast 模型）*
