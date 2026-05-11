@@ -433,10 +433,44 @@ def generate_summary(text: str, title: str) -> str:
     return title[:SUMMARY_MAX_CHARS_CN]
 
 
+TITLE_KEYWORDS_CN = {
+    "Iran": "伊朗", "Israel": "以色列", "Russia": "俄罗斯", "Ukraine": "乌克兰",
+    "China": "中国", "Taiwan": "台湾", "North Korea": "朝鲜", "South Korea": "韩国",
+    "US": "美国", "U.S.": "美国", "United States": "美国", "Trump": "特朗普",
+    "Biden": "拜登", "Putin": "普京", "Zelensky": "泽连斯基", "Xi": "习近平",
+    "NATO": "北约", "EU": "欧盟", "OPEC": "欧佩克", "UN": "联合国",
+    "Gaza": "加沙", "Hamas": "哈马斯", "Hezbollah": "真主党", "Houthi": "胡塞",
+    "Yemen": "也门", "Lebanon": "黎巴嫩", "Syria": "叙利亚", "Iraq": "伊拉克",
+    "nuclear": "核", "missile": "导弹", "drone": "无人机", "airstrike": "空袭",
+    "ceasefire": "停火", "sanctions": "制裁", "tariff": "关税", "trade war": "贸易战",
+    "oil": "石油", "crude": "原油", "energy": "能源", "gas": "天然气",
+    "Red Sea": "红海", "Suez": "苏伊士", "Strait of Hormuz": "霍尔木兹海峡",
+    "South China Sea": "南海", "Taiwan Strait": "台湾海峡",
+    "war": "战争", "conflict": "冲突", "attack": "攻击", "strike": "打击",
+    "peace": "和平", "talks": "谈判", "deal": "协议", "summit": "峰会",
+    "military": "军事", "troops": "部队", "invasion": "入侵", "offensive": "攻势",
+    "shipping": "航运", "cargo": "货物", "vessel": "船只", "tanker": "油轮",
+    "semiconductor": "半导体", "chip": "芯片", "export controls": "出口管制",
+    "latest": "最新", "live updates": "实时更新", "breaking": "突发",
+    "fire": "起火", "explosion": "爆炸", "blockade": "封锁",
+    "refuses": "拒绝", "responds": "回应", "launches": "发动",
+    "threatens": "威胁", "warns": "警告", "says": "称", "confirms": "确认",
+    "condemns": "谴责", "imposes": "实施", "escalates": "升级",
+}
+
+
+def _rule_based_translate(title: str) -> str:
+    """基于关键词的规则翻译，作为 LLM 翻译的兜底方案."""
+    result = title
+    for en, cn in sorted(TITLE_KEYWORDS_CN.items(), key=lambda x: -len(x[0])):
+        result = re.sub(re.escape(en), cn, result, flags=re.IGNORECASE)
+    return result
+
+
 def translate_titles_batch(articles: list[dict]) -> None:
     """批量翻译标题为中文，结果写入 article['title_cn'].
 
-    优先 Anthropic Claude API，回退 OpenAI 兼容 API。
+    优先 LLM API（Anthropic/OpenAI），回退规则翻译。
     """
     titles_to_translate = [
         (i, a["title"]) for i, a in enumerate(articles)
@@ -445,9 +479,10 @@ def translate_titles_batch(articles: list[dict]) -> None:
     if not titles_to_translate:
         return
 
-    batch_size = 30
-    translated = 0
+    llm_translated = 0
 
+    # LLM batch translation
+    batch_size = 30
     for start in range(0, len(titles_to_translate), batch_size):
         batch = titles_to_translate[start : start + batch_size]
         numbered = "\n".join(f"{idx}. {title}" for idx, title in batch)
@@ -473,11 +508,20 @@ def translate_titles_batch(articles: list[dict]) -> None:
                 for orig_idx, _ in batch:
                     if orig_idx == idx:
                         articles[idx]["title_cn"] = cn_title
-                        translated += 1
+                        llm_translated += 1
                         break
 
-    if translated:
-        print(f"    标题翻译: {translated}/{len(titles_to_translate)} 条")
+    # 规则翻译兜底：对未翻译的标题做关键词替换
+    rule_translated = 0
+    for a in articles:
+        if not a.get("title_cn") and a.get("title"):
+            a["title_cn"] = _rule_based_translate(a["title"])
+            rule_translated += 1
+
+    if llm_translated:
+        print(f"    标题翻译: LLM {llm_translated} 条")
+    if rule_translated:
+        print(f"    标题翻译: 规则兜底 {rule_translated} 条")
 
 
 def _call_llm_for_translation(prompt: str) -> str | None:
@@ -498,7 +542,7 @@ def _call_llm_for_translation(prompt: str) -> str | None:
             resp = requests.post(
                 anthropic_url,
                 json={
-                    "model": "claude-sonnet-4-20250514",
+                    "model": CLAUDE_MODEL,
                     "max_tokens": 2000,
                     "messages": [{"role": "user", "content": prompt}],
                 },
