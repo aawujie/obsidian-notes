@@ -727,8 +727,8 @@ def generate_report(articles: list[dict], date_str: str) -> str:
         "",
         "## 重点事件与市场影响",
         "",
-        "| # | 事件 | 区域 | 严重程度 | 事件类型 | 关键信息 | 关注标的 |",
-        "|:---:|:---|:---|:---:|:---|:---|:---|",
+        "| # | 事件 | 区域 | 严重程度 | 事件类型 | 关注标的 |",
+        "|:---:|:---|:---|:---:|:---|:---|",
     ]
 
     for i, a in enumerate(sorted_articles[:25], 1):
@@ -744,13 +744,8 @@ def generate_report(articles: list[dict], date_str: str) -> str:
         ticker_str = " ".join(f"`{t['ticker']}`" for t in assets[:4]) if assets else "—"
 
         title_md = f"[{title_display}]({url})" if url else title_display
-        raw_summary = a.get("summary", "") or ""
-        summary = _clean_text(raw_summary) if raw_summary else ""
-        if not summary or _is_junk(summary):
-            summary = ""
-        summary = summary.replace("|", "/")[:80]
         lines.append(
-            f"| {i} | {title_md} | {regions} | {sev_emoji} {sev} | {types_str} | {summary} | {ticker_str} |"
+            f"| {i} | {title_md} | {regions} | {sev_emoji} {sev} | {types_str} | {ticker_str} |"
         )
 
     # ── 影响标的汇总表 ──
