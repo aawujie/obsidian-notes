@@ -612,7 +612,10 @@ def _call_llm_for_translation(prompt: str) -> str | None:
             )
             if resp.status_code == 200:
                 data = resp.json()
-                return data["content"][0]["text"]
+                for block in data.get("content", []):
+                    if block.get("type") == "text":
+                        return block["text"]
+                return data["content"][0].get("text", "")
             else:
                 print(f"    [WARN] 内部 AI 平台 {resp.status_code}: {resp.text[:200]}")
         except Exception as e:

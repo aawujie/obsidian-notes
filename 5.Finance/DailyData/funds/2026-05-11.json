@@ -1,6 +1,6 @@
 {
   "date": "2026-05-11",
-  "generated_at": "2026-05-11T10:38:08.677681",
+  "generated_at": "2026-05-11T15:35:36.012435",
   "source": "akshare",
   "rankings": {
     "股票型": [
@@ -177,23 +177,6 @@
     ],
     "混合型": [
       {
-        "code": "002067",
-        "name": "诺安精选回报混合A",
-        "nav_date": "2026-05-08",
-        "nav": 3.263,
-        "change_daily": 5.5,
-        "change_weekly": 10.61,
-        "change_monthly": 18.91,
-        "change_3month": 9.61,
-        "change_6month": 28.72,
-        "change_1year": 73.93,
-        "change_2year": 94.23,
-        "change_3year": 75.62,
-        "change_ytd": 24.54,
-        "change_inception": 275.41,
-        "fee": "0.15%"
-      },
-      {
         "code": "026834",
         "name": "诺安精选回报混合C",
         "nav_date": "2026-05-08",
@@ -209,6 +192,23 @@
         "change_ytd": null,
         "change_inception": 8.63,
         "fee": "0.00%"
+      },
+      {
+        "code": "002067",
+        "name": "诺安精选回报混合A",
+        "nav_date": "2026-05-08",
+        "nav": 3.263,
+        "change_daily": 5.5,
+        "change_weekly": 10.61,
+        "change_monthly": 18.91,
+        "change_3month": 9.61,
+        "change_6month": 28.72,
+        "change_1year": 73.93,
+        "change_2year": 94.23,
+        "change_3year": 75.62,
+        "change_ytd": 24.54,
+        "change_inception": 275.41,
+        "fee": "0.15%"
       },
       {
         "code": "004044",
@@ -228,23 +228,6 @@
         "fee": "0.15%"
       },
       {
-        "code": "005164",
-        "name": "富荣福锦混合A",
-        "nav_date": "2026-05-08",
-        "nav": 2.4856,
-        "change_daily": 4.59,
-        "change_weekly": 12.42,
-        "change_monthly": 13.3,
-        "change_3month": -6.87,
-        "change_6month": 8.08,
-        "change_1year": 8.06,
-        "change_2year": 36.89,
-        "change_3year": 29.74,
-        "change_ytd": -5.94,
-        "change_inception": 148.56,
-        "fee": "0.15%"
-      },
-      {
         "code": "005165",
         "name": "富荣福锦混合C",
         "nav_date": "2026-05-08",
@@ -260,6 +243,23 @@
         "change_ytd": -5.98,
         "change_inception": 144.16,
         "fee": "0.00%"
+      },
+      {
+        "code": "005164",
+        "name": "富荣福锦混合A",
+        "nav_date": "2026-05-08",
+        "nav": 2.4856,
+        "change_daily": 4.59,
+        "change_weekly": 12.42,
+        "change_monthly": 13.3,
+        "change_3month": -6.87,
+        "change_6month": 8.08,
+        "change_1year": 8.06,
+        "change_2year": 36.89,
+        "change_3year": 29.74,
+        "change_ytd": -5.94,
+        "change_inception": 148.56,
+        "fee": "0.15%"
       },
       {
         "code": "026385",
@@ -521,6 +521,40 @@
     ],
     "QDII": [
       {
+        "code": "008253",
+        "name": "华宝致远混合(QDII)A",
+        "nav_date": "2026-05-08",
+        "nav": 1.9362,
+        "change_daily": 4.88,
+        "change_weekly": 12.27,
+        "change_monthly": 27.89,
+        "change_3month": 32.09,
+        "change_6month": 43.89,
+        "change_1year": 102.51,
+        "change_2year": 103.79,
+        "change_3year": 126.96,
+        "change_ytd": 45.46,
+        "change_inception": 93.62,
+        "fee": "0.15%"
+      },
+      {
+        "code": "008254",
+        "name": "华宝致远混合(QDII)C",
+        "nav_date": "2026-05-08",
+        "nav": 1.8871,
+        "change_daily": 4.88,
+        "change_weekly": 12.26,
+        "change_monthly": 27.85,
+        "change_3month": 31.97,
+        "change_6month": 43.6,
+        "change_1year": 101.7,
+        "change_2year": 102.17,
+        "change_3year": 124.25,
+        "change_ytd": 45.26,
+        "change_inception": 88.71,
+        "fee": "0.00%"
+      },
+      {
         "code": "019266",
         "name": "南方港股数字经济混合发起(QDII)C",
         "nav_date": "2026-05-07",
@@ -606,40 +640,6 @@
         "fee": "0.15%"
       },
       {
-        "code": "012380",
-        "name": "创金合信港股互联网3个月持有期混合(QDII)C",
-        "nav_date": "2026-05-07",
-        "nav": 0.6458,
-        "change_daily": 2.57,
-        "change_weekly": 4.38,
-        "change_monthly": 8.3,
-        "change_3month": -5.43,
-        "change_6month": -14.0,
-        "change_1year": -6.99,
-        "change_2year": 17.63,
-        "change_3year": 13.4,
-        "change_ytd": -8.54,
-        "change_inception": -35.42,
-        "fee": "0.00%"
-      },
-      {
-        "code": "012379",
-        "name": "创金合信港股互联网3个月持有期混合(QDII)A",
-        "nav_date": "2026-05-07",
-        "nav": 0.6616,
-        "change_daily": 2.56,
-        "change_weekly": 4.39,
-        "change_monthly": 8.33,
-        "change_3month": -5.32,
-        "change_6month": -13.79,
-        "change_1year": -6.53,
-        "change_2year": 18.8,
-        "change_3year": 15.1,
-        "change_ytd": -8.38,
-        "change_inception": -33.84,
-        "fee": "0.15%"
-      },
-      {
         "code": "160125",
         "name": "南方香港优选股票",
         "nav_date": "2026-05-07",
@@ -693,23 +693,6 @@
     ],
     "债券型": [
       {
-        "code": "013615",
-        "name": "泰信鑫瑞债券发起式C",
-        "nav_date": "2026-05-08",
-        "nav": 1.0263,
-        "change_daily": 0.9,
-        "change_weekly": 3.01,
-        "change_monthly": 6.56,
-        "change_3month": 8.72,
-        "change_6month": 8.19,
-        "change_1year": 10.41,
-        "change_2year": 12.77,
-        "change_3year": 9.87,
-        "change_ytd": 8.49,
-        "change_inception": 2.63,
-        "fee": "0.00%"
-      },
-      {
         "code": "013614",
         "name": "泰信鑫瑞债券发起式A",
         "nav_date": "2026-05-08",
@@ -725,6 +708,23 @@
         "change_ytd": 8.53,
         "change_inception": 3.18,
         "fee": "0.04%"
+      },
+      {
+        "code": "013615",
+        "name": "泰信鑫瑞债券发起式C",
+        "nav_date": "2026-05-08",
+        "nav": 1.0263,
+        "change_daily": 0.9,
+        "change_weekly": 3.01,
+        "change_monthly": 6.56,
+        "change_3month": 8.72,
+        "change_6month": 8.19,
+        "change_1year": 10.41,
+        "change_2year": 12.77,
+        "change_3year": 9.87,
+        "change_ytd": 8.49,
+        "change_inception": 2.63,
+        "fee": "0.00%"
       },
       {
         "code": "025464",
@@ -778,23 +778,6 @@
         "fee": "0.08%"
       },
       {
-        "code": "012818",
-        "name": "招商享诚增强债券A",
-        "nav_date": "2026-05-08",
-        "nav": 1.2359,
-        "change_daily": 0.44,
-        "change_weekly": 0.72,
-        "change_monthly": 1.45,
-        "change_3month": 2.03,
-        "change_6month": 5.02,
-        "change_1year": 10.91,
-        "change_2year": 13.2,
-        "change_3year": 19.01,
-        "change_ytd": 4.74,
-        "change_inception": 23.59,
-        "fee": "0.08%"
-      },
-      {
         "code": "012819",
         "name": "招商享诚增强债券C",
         "nav_date": "2026-05-08",
@@ -810,6 +793,23 @@
         "change_ytd": 4.59,
         "change_inception": 21.38,
         "fee": "0.00%"
+      },
+      {
+        "code": "012818",
+        "name": "招商享诚增强债券A",
+        "nav_date": "2026-05-08",
+        "nav": 1.2359,
+        "change_daily": 0.44,
+        "change_weekly": 0.72,
+        "change_monthly": 1.45,
+        "change_3month": 2.03,
+        "change_6month": 5.02,
+        "change_1year": 10.91,
+        "change_2year": 13.2,
+        "change_3year": 19.01,
+        "change_ytd": 4.74,
+        "change_inception": 23.59,
+        "fee": "0.08%"
       },
       {
         "code": "015583",
@@ -829,6 +829,23 @@
         "fee": "0.08%"
       },
       {
+        "code": "008791",
+        "name": "招商安华债券A",
+        "nav_date": "2026-05-08",
+        "nav": 1.2898,
+        "change_daily": 0.4,
+        "change_weekly": 0.66,
+        "change_monthly": 1.4,
+        "change_3month": 0.53,
+        "change_6month": 2.58,
+        "change_1year": 5.92,
+        "change_2year": 10.32,
+        "change_3year": 13.12,
+        "change_ytd": 2.37,
+        "change_inception": 32.95,
+        "fee": "0.08%"
+      },
+      {
         "code": "015584",
         "name": "招商安悦1年持有期债券C",
         "nav_date": "2026-05-08",
@@ -844,23 +861,6 @@
         "change_ytd": 3.6,
         "change_inception": 16.92,
         "fee": "0.00%"
-      },
-      {
-        "code": "008897",
-        "name": "上银可转债精选债券A",
-        "nav_date": "2026-05-08",
-        "nav": 1.0025,
-        "change_daily": 0.4,
-        "change_weekly": 3.25,
-        "change_monthly": 7.78,
-        "change_3month": 6.85,
-        "change_6month": 8.16,
-        "change_1year": 22.39,
-        "change_2year": 33.67,
-        "change_3year": 28.18,
-        "change_ytd": 9.1,
-        "change_inception": 0.25,
-        "fee": "0.08%"
       }
     ],
     "FOF": [
@@ -1042,46 +1042,46 @@
         "code": "320007",
         "name": "诺安成长混合A",
         "nav": 2.147,
-        "est_nav": 2.2164,
-        "est_change": 3.23,
+        "est_nav": 2.2301,
+        "est_change": 3.87,
         "nav_date": "2026-05-08",
-        "est_time": "2026-05-11 10:32"
+        "est_time": "2026-05-11 15:00"
       },
       {
         "code": "008281",
         "name": "国泰CES半导体芯片行业ETF联接A",
         "nav": 2.3756,
-        "est_nav": 2.501,
-        "est_change": 5.28,
+        "est_nav": 2.5246,
+        "est_change": 6.27,
         "nav_date": "2026-05-08",
-        "est_time": "2026-05-11 10:34"
+        "est_time": "2026-05-11 15:00"
       },
       {
         "code": "008282",
         "name": "国泰CES半导体芯片行业ETF联接C",
         "nav": 2.3262,
-        "est_nav": 2.449,
-        "est_change": 5.28,
+        "est_nav": 2.4721,
+        "est_change": 6.27,
         "nav_date": "2026-05-08",
-        "est_time": "2026-05-11 10:34"
+        "est_time": "2026-05-11 15:00"
       },
       {
         "code": "008887",
         "name": "华夏国证半导体芯片ETF联接A",
         "nav": 1.8879,
-        "est_nav": 1.9904,
-        "est_change": 5.43,
+        "est_nav": 2.0072,
+        "est_change": 6.32,
         "nav_date": "2026-05-08",
-        "est_time": "2026-05-11 10:34"
+        "est_time": "2026-05-11 15:00"
       },
       {
         "code": "007301",
         "name": "国联安中证半导体ETF联接C",
         "nav": 3.6168,
-        "est_nav": 3.8013,
-        "est_change": 5.1,
+        "est_nav": 3.8378,
+        "est_change": 6.11,
         "nav_date": "2026-05-08",
-        "est_time": "2026-05-11 10:34"
+        "est_time": "2026-05-11 15:00"
       }
     ],
     "新能源/光伏": [
@@ -1089,37 +1089,37 @@
         "code": "001156",
         "name": "申万菱信新能源汽车主题灵活配置混合A",
         "nav": 3.483,
-        "est_nav": 3.4774,
-        "est_change": -0.16,
+        "est_nav": 3.4919,
+        "est_change": 0.26,
         "nav_date": "2026-05-08",
-        "est_time": "2026-05-11 10:32"
+        "est_time": "2026-05-11 15:00"
       },
       {
         "code": "161028",
         "name": "富国中证新能源汽车指数(LOF)A",
         "nav": 1.333,
-        "est_nav": 1.3325,
-        "est_change": -0.04,
+        "est_nav": 1.3375,
+        "est_change": 0.34,
         "nav_date": "2026-05-08",
-        "est_time": "2026-05-11 10:34"
+        "est_time": "2026-05-11 15:00"
       },
       {
         "code": "009067",
         "name": "国泰中证新能源汽车ETF联接A",
         "nav": 2.6468,
-        "est_nav": 2.6457,
-        "est_change": -0.04,
+        "est_nav": 2.6558,
+        "est_change": 0.34,
         "nav_date": "2026-05-08",
-        "est_time": "2026-05-11 10:34"
+        "est_time": "2026-05-11 15:00"
       },
       {
         "code": "400015",
         "name": "东方新能源汽车混合",
         "nav": 3.6139,
-        "est_nav": 3.6176,
-        "est_change": 0.1,
+        "est_nav": 3.6267,
+        "est_change": 0.35,
         "nav_date": "2026-05-08",
-        "est_time": "2026-05-11 10:32"
+        "est_time": "2026-05-11 15:00"
       }
     ],
     "消费/白酒": [
@@ -1127,37 +1127,37 @@
         "code": "110022",
         "name": "易方达消费行业股票",
         "nav": 3.094,
-        "est_nav": 3.0893,
+        "est_nav": 3.0892,
         "est_change": -0.15,
         "nav_date": "2026-05-08",
-        "est_time": "2026-05-11 10:34"
+        "est_time": "2026-05-11 15:00"
       },
       {
         "code": "000083",
         "name": "汇添富消费行业混合",
         "nav": 4.706,
-        "est_nav": 4.7044,
-        "est_change": -0.03,
+        "est_nav": 4.7146,
+        "est_change": 0.18,
         "nav_date": "2026-05-08",
-        "est_time": "2026-05-11 10:34"
+        "est_time": "2026-05-11 15:00"
       },
       {
         "code": "160222",
         "name": "国泰国证食品饮料行业(LOF)A",
         "nav": 0.7227,
-        "est_nav": 0.7202,
-        "est_change": -0.34,
+        "est_nav": 0.7229,
+        "est_change": 0.03,
         "nav_date": "2026-05-08",
-        "est_time": "2026-05-11 10:34"
+        "est_time": "2026-05-11 15:00"
       },
       {
         "code": "519915",
         "name": "富国消费主题混合A",
         "nav": 2.005,
-        "est_nav": 1.9858,
-        "est_change": -0.96,
+        "est_nav": 2.0024,
+        "est_change": -0.13,
         "nav_date": "2026-05-08",
-        "est_time": "2026-05-11 10:32"
+        "est_time": "2026-05-11 15:00"
       }
     ],
     "医药/医疗": [
@@ -1165,37 +1165,37 @@
         "code": "000220",
         "name": "富国医疗保健行业混合A",
         "nav": 3.106,
-        "est_nav": 3.0956,
-        "est_change": -0.33,
+        "est_nav": 3.1498,
+        "est_change": 1.41,
         "nav_date": "2026-05-08",
-        "est_time": "2026-05-11 10:35"
+        "est_time": "2026-05-11 15:00"
       },
       {
         "code": "161726",
         "name": "招商国证生物医药指数(LOF)A",
         "nav": 0.3911,
-        "est_nav": 0.3914,
-        "est_change": 0.08,
+        "est_nav": 0.405,
+        "est_change": 3.55,
         "nav_date": "2026-05-08",
-        "est_time": "2026-05-11 10:32"
+        "est_time": "2026-05-11 15:00"
       },
       {
         "code": "000913",
         "name": "农银医疗保健股票",
         "nav": 1.6172,
-        "est_nav": 1.6068,
-        "est_change": -0.65,
+        "est_nav": 1.6323,
+        "est_change": 0.93,
         "nav_date": "2026-05-08",
-        "est_time": "2026-05-11 10:34"
+        "est_time": "2026-05-11 15:00"
       },
       {
         "code": "001344",
         "name": "易方达医药ETF联接A",
         "nav": 0.8973,
-        "est_nav": 0.8928,
-        "est_change": -0.5,
+        "est_nav": 0.9091,
+        "est_change": 1.32,
         "nav_date": "2026-05-08",
-        "est_time": "2026-05-11 10:35"
+        "est_time": "2026-05-11 15:00"
       }
     ],
     "军工/国防": [
@@ -1203,37 +1203,37 @@
         "code": "002251",
         "name": "华夏军工安全混合A",
         "nav": 2.456,
-        "est_nav": 2.4894,
-        "est_change": 1.36,
+        "est_nav": 2.481,
+        "est_change": 1.02,
         "nav_date": "2026-05-08",
-        "est_time": "2026-05-11 10:34"
+        "est_time": "2026-05-11 15:00"
       },
       {
         "code": "004224",
         "name": "南方军工改革灵活配置混合A",
         "nav": 1.5442,
-        "est_nav": 1.5663,
-        "est_change": 1.43,
+        "est_nav": 1.5642,
+        "est_change": 1.3,
         "nav_date": "2026-05-08",
-        "est_time": "2026-05-11 10:35"
+        "est_time": "2026-05-11 15:00"
       },
       {
         "code": "005609",
         "name": "富国军工主题混合A",
         "nav": 2.0762,
-        "est_nav": 2.0833,
-        "est_change": 0.34,
+        "est_nav": 2.0782,
+        "est_change": 0.1,
         "nav_date": "2026-05-08",
-        "est_time": "2026-05-11 10:34"
+        "est_time": "2026-05-11 15:00"
       },
       {
         "code": "161024",
         "name": "富国中证军工指数(LOF)A",
         "nav": 1.421,
-        "est_nav": 1.4356,
-        "est_change": 1.03,
+        "est_nav": 1.4315,
+        "est_change": 0.74,
         "nav_date": "2026-05-08",
-        "est_time": "2026-05-11 10:34"
+        "est_time": "2026-05-11 15:00"
       }
     ],
     "AI/人工智能": [
@@ -1241,37 +1241,37 @@
         "code": "001986",
         "name": "前海开源人工智能主题混合A",
         "nav": 1.8599,
-        "est_nav": 1.8849,
-        "est_change": 1.34,
+        "est_nav": 1.8919,
+        "est_change": 1.72,
         "nav_date": "2026-05-08",
-        "est_time": "2026-05-11 10:34"
+        "est_time": "2026-05-11 15:00"
       },
       {
         "code": "008586",
         "name": "华夏人工智能ETF联接C",
         "nav": 1.6935,
-        "est_nav": 1.7313,
-        "est_change": 2.23,
+        "est_nav": 1.7477,
+        "est_change": 3.2,
         "nav_date": "2026-05-08",
-        "est_time": "2026-05-11 10:34"
+        "est_time": "2026-05-11 15:00"
       },
       {
         "code": "161631",
         "name": "融通人工智能指数(LOF)A",
         "nav": 2.9565,
-        "est_nav": 3.0224,
-        "est_change": 2.23,
+        "est_nav": 3.0511,
+        "est_change": 3.2,
         "nav_date": "2026-05-08",
-        "est_time": "2026-05-11 10:34"
+        "est_time": "2026-05-11 15:00"
       },
       {
         "code": "002803",
         "name": "东方红沪港深混合",
         "nav": 2.716,
-        "est_nav": 2.7446,
-        "est_change": 1.05,
+        "est_nav": 2.7598,
+        "est_change": 1.61,
         "nav_date": "2026-05-08",
-        "est_time": "2026-05-11 10:35"
+        "est_time": "2026-05-11 15:00"
       }
     ],
     "红利/高股息": [
@@ -1279,10 +1279,10 @@
         "code": "090010",
         "name": "大成中证红利指数A",
         "nav": 2.7458,
-        "est_nav": 2.7513,
-        "est_change": 0.2,
+        "est_nav": 2.7532,
+        "est_change": 0.27,
         "nav_date": "2026-05-08",
-        "est_time": "2026-05-11 10:32"
+        "est_time": "2026-05-11 15:00"
       },
       {
         "code": "501029",
@@ -1297,19 +1297,19 @@
         "code": "512890",
         "name": "红利低波ETF华泰柏瑞",
         "nav": 1.1768,
-        "est_nav": 1.1742,
-        "est_change": -0.22,
+        "est_nav": 1.1768,
+        "est_change": 0.0,
         "nav_date": "2026-05-08",
-        "est_time": "2026-05-11 10:34"
+        "est_time": "2026-05-11 15:00"
       },
       {
         "code": "161907",
         "name": "红利ETF联接",
         "nav": 1.5789,
-        "est_nav": 1.5824,
-        "est_change": 0.22,
+        "est_nav": 1.5832,
+        "est_change": 0.27,
         "nav_date": "2026-05-08",
-        "est_time": "2026-05-11 10:34"
+        "est_time": "2026-05-11 15:00"
       }
     ]
   },
@@ -1409,13 +1409,13 @@
       "type": "股票型-普通",
       "inception": "2012-12-10"
     },
-    "002067": {
-      "name": "诺安精选回报混合A",
+    "026834": {
+      "name": "诺安精选回报混合C",
       "manager": "周靖翔",
       "company": "诺安基金管理有限公司",
-      "scale": "1.45亿",
+      "scale": "1.79亿",
       "type": "混合型-灵活配置",
-      "inception": "2016-03-28"
+      "inception": "2026-02-10"
     },
     "021189": {
       "name": "南方亚太精选ETF联接(QDII)A",
@@ -1425,19 +1425,19 @@
       "type": "QDII-股票",
       "inception": "2024-05-21"
     },
-    "019266": {
-      "name": "南方港股数字经济混合发起(QDII)C",
-      "manager": "张其思 赵铁",
-      "company": "南方基金管理股份有限公司",
-      "scale": "2756.71万",
+    "008253": {
+      "name": "华宝致远混合A",
+      "manager": "周晶 杨洋",
+      "company": "华宝基金管理有限公司",
+      "scale": "2.26亿",
       "type": "QDII-混合",
-      "inception": "2023-10-24"
+      "inception": "2019-11-27"
     },
-    "013615": {
-      "name": "泰信鑫瑞债券发起式C",
+    "013614": {
+      "name": "泰信鑫瑞债券发起式A",
       "manager": "张海涛 周庆",
       "company": "泰信基金管理有限公司",
-      "scale": "3151.70万",
+      "scale": "1262.27万",
       "type": "债券型-普通债券",
       "inception": "2022-03-17"
     },
@@ -1453,56 +1453,56 @@
   "holdings": {
     "320022": [
       {
-        "stock_code": "300475",
-        "stock_name": "香农芯创",
-        "weight": "4.69"
+        "stock_code": "600893",
+        "stock_name": "航发动力",
+        "weight": "3.65"
       },
       {
-        "stock_code": "002475",
-        "stock_name": "立讯精密",
-        "weight": "3.52"
+        "stock_code": "600498",
+        "stock_name": "烽火通信",
+        "weight": "3.62"
       },
       {
-        "stock_code": "688522",
-        "stock_name": "纳睿雷达",
-        "weight": "3.12"
+        "stock_code": "688387",
+        "stock_name": "信科移动",
+        "weight": "3.41"
       },
       {
-        "stock_code": "689009",
-        "stock_name": "九号公司",
-        "weight": "3.04"
+        "stock_code": "002025",
+        "stock_name": "航天电器",
+        "weight": "3.33"
       },
       {
-        "stock_code": "601595",
-        "stock_name": "上海电影",
-        "weight": "2.7"
+        "stock_code": "688818",
+        "stock_name": "电科蓝天",
+        "weight": "3.3"
       }
     ],
-    "002067": [
+    "026834": [
       {
-        "stock_code": "603181",
-        "stock_name": "皇马科技",
-        "weight": "8.3"
+        "stock_code": "002025",
+        "stock_name": "航天电器",
+        "weight": "6.04"
       },
       {
-        "stock_code": "688377",
-        "stock_name": "迪威尔",
-        "weight": "8.23"
+        "stock_code": "600879",
+        "stock_name": "航天电子",
+        "weight": "5.4"
       },
       {
-        "stock_code": "601137",
-        "stock_name": "博威合金",
-        "weight": "7.89"
+        "stock_code": "688270",
+        "stock_name": "ST臻镭",
+        "weight": "4.44"
       },
       {
-        "stock_code": "300203",
-        "stock_name": "聚光科技",
-        "weight": "7.89"
+        "stock_code": "301005",
+        "stock_name": "超捷股份",
+        "weight": "4.44"
       },
       {
-        "stock_code": "689009",
-        "stock_name": "九号公司",
-        "weight": "4.55"
+        "stock_code": "600498",
+        "stock_name": "烽火通信",
+        "weight": "4.34"
       }
     ]
   },
