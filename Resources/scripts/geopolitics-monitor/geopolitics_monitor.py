@@ -17,7 +17,6 @@ import xml.etree.ElementTree as ET
 from datetime import datetime
 from pathlib import Path
 from collections import Counter
-from concurrent.futures import ThreadPoolExecutor, as_completed
 
 import requests
 
@@ -129,11 +128,8 @@ def clean_html(text: str) -> str:
     return re.sub(r"<[^>]+>", "", text)
 
 
-LLM_CONCURRENCY = 2
-
-
 def analyze_articles_batch(articles: list[dict]) -> None:
-    """用 LLM 并发批量分析文章：分类(事件类型/严重程度/区域) + 翻译标题."""
+    """用 LLM 批量分析文章：分类(事件类型/严重程度/区域) + 翻译标题."""
     to_analyze = [
         (i, a) for i, a in enumerate(articles)
         if not a.get("_analyzed")
@@ -144,15 +140,15 @@ def analyze_articles_batch(articles: list[dict]) -> None:
     event_types_str = "/".join(VALID_EVENT_TYPES)
     regions_str = "/".join(VALID_REGIONS)
     batch_size = 5
+    analyzed = 0
 
     batches = []
     for start in range(0, len(to_analyze), batch_size):
         batches.append(to_analyze[start : start + batch_size])
 
-    print(f"    {len(batches)} 批 × {batch_size} 条，并发={LLM_CONCURRENCY}")
-    analyzed = 0
+    print(f"    {len(batches)} 批 × ≤{batch_size} 条")
 
-    def _process_batch(batch):
+    for batch_idx, batch in enumerate(batches, 1):
         items = "\n".join(f"{idx}. {a['title'][:80]}" for idx, a in batch)
         prompt = (
             "对以下英文新闻标题：1)分类 2)翻译成中文。返回JSON数组。\n"
@@ -164,45 +160,46 @@ def analyze_articles_batch(articles: list[dict]) -> None:
             f'"r":["俄乌战争"],"cn":"中文标题"}}]\n\n'
             f"{items}"
         )
-        return _call_llm(prompt), batch
 
-    with ThreadPoolExecutor(max_workers=LLM_CONCURRENCY) as executor:
-        futures = {executor.submit(_process_batch, b): b for b in batches}
-        for future in as_completed(futures):
-            result, batch = future.result()
-            if not result:
-                _fallback_batch(batch)
-                continue
-            try:
-                json_match = re.search(r"\[.*\]", result, re.DOTALL)
-                if not json_match:
-                    raise ValueError("no JSON array")
-                items_data = json.loads(json_match.group())
-                for item in items_data:
-                    idx = item.get("id")
-                    if idx is None:
-                        continue
-                    for orig_idx, a in batch:
-                        if orig_idx == idx:
-                            a["event_types"] = [
-                                t for t in item.get("t", item.get("event_types", []))
-                                if t in VALID_EVENT_TYPES
-                            ] or ["避险需求"]
-                            sev = item.get("s", item.get("severity", "medium"))
-                            a["severity"] = sev if sev in VALID_SEVERITIES else "medium"
-                            a["classified_regions"] = [
-                                r for r in item.get("r", item.get("regions", []))
-                                if r in VALID_REGIONS
-                            ] or [a.get("search_region", "其他")]
-                            cn = item.get("cn", item.get("title_cn", ""))
-                            if cn:
-                                a["title_cn"] = cn
-                            a["_analyzed"] = True
-                            analyzed += 1
-                            break
-            except (json.JSONDecodeError, ValueError) as e:
-                print(f"    [WARN] LLM 分析解析失败: {e}")
-                _fallback_batch(batch)
+        result = _call_llm(prompt)
+        if not result:
+            print(f"    批次 {batch_idx}/{len(batches)} 失败，使用兜底")
+            _fallback_batch(batch)
+            continue
+
+        try:
+            json_match = re.search(r"\[.*\]", result, re.DOTALL)
+            if not json_match:
+                raise ValueError("no JSON array")
+            items_data = json.loads(json_match.group())
+            batch_ok = 0
+            for item in items_data:
+                idx = item.get("id")
+                if idx is None:
+                    continue
+                for orig_idx, a in batch:
+                    if orig_idx == idx:
+                        a["event_types"] = [
+                            t for t in item.get("t", item.get("event_types", []))
+                            if t in VALID_EVENT_TYPES
+                        ] or ["避险需求"]
+                        sev = item.get("s", item.get("severity", "medium"))
+                        a["severity"] = sev if sev in VALID_SEVERITIES else "medium"
+                        a["classified_regions"] = [
+                            r for r in item.get("r", item.get("regions", []))
+                            if r in VALID_REGIONS
+                        ] or [a.get("search_region", "其他")]
+                        cn = item.get("cn", item.get("title_cn", ""))
+                        if cn:
+                            a["title_cn"] = cn
+                        a["_analyzed"] = True
+                        analyzed += 1
+                        batch_ok += 1
+                        break
+            print(f"    批次 {batch_idx}/{len(batches)} 完成: {batch_ok} 条")
+        except (json.JSONDecodeError, ValueError) as e:
+            print(f"    [WARN] 批次 {batch_idx} 解析失败: {e}")
+            _fallback_batch(batch)
 
     for a in articles:
         if not a.get("_analyzed"):
