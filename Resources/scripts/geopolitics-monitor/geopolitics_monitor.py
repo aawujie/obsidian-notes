@@ -35,6 +35,7 @@ PROXIES = {"http": PROXY, "https": PROXY}
 OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY", "")
 ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY", "")
 LLM_MODEL = os.environ.get("LLM_MODEL", "gpt-4o-mini")  # OpenAI-compatible
+CLAUDE_MODEL = os.environ.get("CLAUDE_MODEL", "claude-3-5-haiku-20241022")
 
 # Tavily Extract API
 TAVILY_EXTRACT_URL = "https://api.tavily.com/extract"
