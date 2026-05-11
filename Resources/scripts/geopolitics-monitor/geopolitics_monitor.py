@@ -434,28 +434,70 @@ def generate_summary(text: str, title: str) -> str:
 
 
 TITLE_KEYWORDS_CN = {
+    # 多词短语优先匹配
+    "South China Sea": "南海", "Taiwan Strait": "台湾海峡",
+    "Red Sea": "红海", "Strait of Hormuz": "霍尔木兹海峡",
+    "North Korea": "朝鲜", "South Korea": "韩国",
+    "United States": "美国", "trade war": "贸易战",
+    "export controls": "出口管制", "live updates": "实时更新",
+    "peace deal": "和平协议", "peace talks": "和平谈判",
+    "nuclear program": "核计划", "nuclear weapons": "核武器",
+    "cargo ship": "货船", "oil tanker": "油轮",
+    "shipping route": "航运通道", "supply chain": "供应链",
+    "drone attack": "无人机袭击", "drone strike": "无人机打击",
+    "missile strike": "导弹打击", "missile launch": "导弹发射",
+    "air strike": "空袭", "airstrike": "空袭",
+    "ground offensive": "地面攻势", "military buildup": "军事集结",
+    "military drill": "军事演习", "military exercise": "军事演习",
+    "agricultural products": "农产品", "catches fire": "起火",
+    "Suez Canal": "苏伊士运河", "Persian Gulf": "波斯湾",
+    # 国家/组织
     "Iran": "伊朗", "Israel": "以色列", "Russia": "俄罗斯", "Ukraine": "乌克兰",
-    "China": "中国", "Taiwan": "台湾", "North Korea": "朝鲜", "South Korea": "韩国",
-    "US": "美国", "U.S.": "美国", "United States": "美国", "Trump": "特朗普",
-    "Biden": "拜登", "Putin": "普京", "Zelensky": "泽连斯基", "Xi": "习近平",
+    "China": "中国", "Taiwan": "台湾", "Japan": "日本", "India": "印度",
+    "U.S.": "美国", "US": "美国", "Trump": "特朗普", "Biden": "拜登",
+    "Putin": "普京", "Zelensky": "泽连斯基", "Xi": "习近平",
     "NATO": "北约", "EU": "欧盟", "OPEC": "欧佩克", "UN": "联合国",
     "Gaza": "加沙", "Hamas": "哈马斯", "Hezbollah": "真主党", "Houthi": "胡塞",
     "Yemen": "也门", "Lebanon": "黎巴嫩", "Syria": "叙利亚", "Iraq": "伊拉克",
-    "nuclear": "核", "missile": "导弹", "drone": "无人机", "airstrike": "空袭",
-    "ceasefire": "停火", "sanctions": "制裁", "tariff": "关税", "trade war": "贸易战",
+    "Afghanistan": "阿富汗", "Pakistan": "巴基斯坦", "Egypt": "埃及",
+    "Saudi Arabia": "沙特", "Turkey": "土耳其", "Germany": "德国",
+    "France": "法国", "Britain": "英国", "UK": "英国",
+    # 军事/冲突
+    "nuclear": "核", "missile": "导弹", "drone": "无人机",
+    "ceasefire": "停火", "sanctions": "制裁", "tariffs": "关税", "tariff": "关税",
     "oil": "石油", "crude": "原油", "energy": "能源", "gas": "天然气",
-    "Red Sea": "红海", "Suez": "苏伊士", "Strait of Hormuz": "霍尔木兹海峡",
-    "South China Sea": "南海", "Taiwan Strait": "台湾海峡",
-    "war": "战争", "conflict": "冲突", "attack": "攻击", "strike": "打击",
+    "war": "战争", "conflict": "冲突", "attack": "袭击", "strike": "打击",
     "peace": "和平", "talks": "谈判", "deal": "协议", "summit": "峰会",
     "military": "军事", "troops": "部队", "invasion": "入侵", "offensive": "攻势",
-    "shipping": "航运", "cargo": "货物", "vessel": "船只", "tanker": "油轮",
-    "semiconductor": "半导体", "chip": "芯片", "export controls": "出口管制",
-    "latest": "最新", "live updates": "实时更新", "breaking": "突发",
-    "fire": "起火", "explosion": "爆炸", "blockade": "封锁",
-    "refuses": "拒绝", "responds": "回应", "launches": "发动",
-    "threatens": "威胁", "warns": "警告", "says": "称", "confirms": "确认",
-    "condemns": "谴责", "imposes": "实施", "escalates": "升级",
+    "shipping": "航运", "cargo": "货运", "vessel": "船只",
+    "semiconductor": "半导体", "chip": "芯片",
+    "explosion": "爆炸", "blockade": "封锁", "siege": "围困",
+    "weapons": "武器", "arms": "武器", "artillery": "炮击", "bomb": "炸弹",
+    "hostage": "人质", "prisoner": "囚犯", "refugee": "难民",
+    "crisis": "危机", "tension": "紧张", "threat": "威胁", "risk": "风险",
+    "defense": "国防", "security": "安全", "intelligence": "情报",
+    # 动词
+    "refuses": "拒绝", "rejected": "拒绝", "responded": "回应",
+    "responds": "回应", "launches": "发动", "launched": "发动",
+    "threatens": "威胁", "threatened": "威胁",
+    "warns": "警告", "warned": "警告",
+    "says": "称", "said": "称", "told": "告知",
+    "confirms": "确认", "confirmed": "确认",
+    "condemns": "谴责", "condemned": "谴责",
+    "imposes": "实施", "imposed": "实施",
+    "escalates": "升级", "escalated": "升级",
+    "disrupts": "中断", "disrupted": "中断",
+    "deploys": "部署", "deployed": "部署",
+    "tested": "考验", "tests": "考验",
+    "struck": "打击", "hits": "命中", "hit": "命中",
+    "killed": "造成死亡", "injured": "受伤",
+    "seized": "扣押", "captured": "俘获",
+    "discusses": "讨论", "discussed": "讨论",
+    "proposal": "提案", "address": "处理", "program": "计划",
+    # 修饰词
+    "latest": "最新", "breaking": "突发", "urgent": "紧急",
+    "major": "重大", "largest": "最大规模",
+    "new": "新", "more": "更多",
 }
 
 
@@ -463,7 +505,22 @@ def _rule_based_translate(title: str) -> str:
     """基于关键词的规则翻译，作为 LLM 翻译的兜底方案."""
     result = title
     for en, cn in sorted(TITLE_KEYWORDS_CN.items(), key=lambda x: -len(x[0])):
-        result = re.sub(re.escape(en), cn, result, flags=re.IGNORECASE)
+        pattern = r"\b" + re.escape(en) + r"\b"
+        result = re.sub(pattern, cn, result, flags=re.IGNORECASE)
+    # 清理遗留的英文连接词和冠词
+    fillers = [
+        " the ", " a ", " an ", " of ", " in ", " on ", " to ",
+        " for ", " as ", " by ", " at ", " it ", " its ", " into ",
+        " has ", " have ", " is ", " are ", " was ", " were ",
+        " this ", " that ", " with ", " from ", " after ", " before ",
+        " over ", " near ", " between ", " about ", " during ",
+        " could ", " would ", " may ", " will ", " can ",
+        " year ", " years ", " today ", " yesterday ",
+        " being ", " been ", " not ",
+    ]
+    for filler in fillers:
+        result = result.replace(filler, " ")
+    result = re.sub(r"\s+", " ", result).strip()
     return result
 
 
