@@ -128,46 +128,43 @@ def clean_html(text: str) -> str:
     return re.sub(r"<[^>]+>", "", text)
 
 
-def classify_articles_batch(articles: list[dict]) -> None:
-    """用 LLM 批量分类文章的事件类型、严重程度和区域归属."""
-    to_classify = [
+def analyze_articles_batch(articles: list[dict]) -> None:
+    """用 LLM 批量分析文章：分类(事件类型/严重程度/区域) + 翻译标题."""
+    to_analyze = [
         (i, a) for i, a in enumerate(articles)
-        if not a.get("_classified")
+        if not a.get("_analyzed")
     ]
-    if not to_classify:
+    if not to_analyze:
         return
 
     event_types_str = "/".join(VALID_EVENT_TYPES)
     regions_str = "/".join(VALID_REGIONS)
-    batch_size = 8
-    classified = 0
+    batch_size = 5
+    analyzed = 0
 
-    for start in range(0, len(to_classify), batch_size):
-        batch = to_classify[start : start + batch_size]
+    for start in range(0, len(to_analyze), batch_size):
+        batch = to_analyze[start : start + batch_size]
         items = "\n".join(f"{idx}. {a['title'][:80]}" for idx, a in batch)
         prompt = (
-            "对以下新闻标题分类，返回JSON数组，不要其他文字。\n"
-            f"event_types(1-2个): {event_types_str}\n"
-            f"regions(1-2个): {regions_str}\n"
+            "对以下英文新闻标题：1)分类 2)翻译成中文。返回JSON数组。\n"
+            f"event_types(1-2): {event_types_str}\n"
+            f"regions(1-2): {regions_str}\n"
             "severity: critical/high/medium/low\n"
-            f'格式: [{{"id":0,"event_types":["军事冲突升级"],"severity":"high","regions":["俄乌战争"]}}]\n\n'
+            "只输出JSON，不要思考过程：\n"
+            f'[{{"id":0,"t":["军事冲突升级"],"s":"high",'
+            f'"r":["俄乌战争"],"cn":"中文标题"}}]\n\n'
             f"{items}"
         )
 
         result = _call_llm(prompt)
         if not result:
-            for idx, a in batch:
-                a["event_types"] = a.get("event_types", ["避险需求"])
-                a["severity"] = a.get("severity", "medium")
-                a["classified_regions"] = a.get("classified_regions",
-                                                 [a.get("search_region", "其他")])
-                a["_classified"] = True
+            _fallback_batch(batch)
             continue
 
         try:
             json_match = re.search(r"\[.*\]", result, re.DOTALL)
             if not json_match:
-                raise ValueError("no JSON array found")
+                raise ValueError("no JSON array")
             items_data = json.loads(json_match.group())
             for item in items_data:
                 idx = item.get("id")
@@ -176,36 +173,45 @@ def classify_articles_batch(articles: list[dict]) -> None:
                 for orig_idx, a in batch:
                     if orig_idx == idx:
                         a["event_types"] = [
-                            t for t in item.get("event_types", [])
+                            t for t in item.get("t", item.get("event_types", []))
                             if t in VALID_EVENT_TYPES
                         ] or ["避险需求"]
-                        sev = item.get("severity", "medium")
+                        sev = item.get("s", item.get("severity", "medium"))
                         a["severity"] = sev if sev in VALID_SEVERITIES else "medium"
                         a["classified_regions"] = [
-                            r for r in item.get("regions", [])
+                            r for r in item.get("r", item.get("regions", []))
                             if r in VALID_REGIONS
                         ] or [a.get("search_region", "其他")]
-                        a["_classified"] = True
-                        classified += 1
+                        cn = item.get("cn", item.get("title_cn", ""))
+                        if cn:
+                            a["title_cn"] = cn
+                        a["_analyzed"] = True
+                        analyzed += 1
                         break
         except (json.JSONDecodeError, ValueError) as e:
-            print(f"    [WARN] LLM 分类解析失败: {e}")
-            for idx, a in batch:
-                if not a.get("_classified"):
-                    a["event_types"] = ["避险需求"]
-                    a["severity"] = "medium"
-                    a["classified_regions"] = [a.get("search_region", "其他")]
-                    a["_classified"] = True
+            print(f"    [WARN] LLM 分析解析失败: {e}")
+            _fallback_batch(batch)
 
-    # 未被 LLM 处理到的条目兜底
     for a in articles:
-        if not a.get("_classified"):
-            a.setdefault("event_types", ["避险需求"])
-            a.setdefault("severity", "medium")
-            a.setdefault("classified_regions", [a.get("search_region", "其他")])
-            a["_classified"] = True
+        if not a.get("_analyzed"):
+            _fallback_single(a)
+            a["_analyzed"] = True
 
-    print(f"    LLM 分类: {classified}/{len(articles)} 条")
+    print(f"    LLM 分析: {analyzed}/{len(articles)} 条")
+
+
+def _fallback_batch(batch: list[tuple[int, dict]]) -> None:
+    """LLM 失败时的兜底分类."""
+    for _, a in batch:
+        _fallback_single(a)
+        a["_analyzed"] = True
+
+
+def _fallback_single(a: dict) -> None:
+    """单条兜底分类."""
+    a.setdefault("event_types", ["避险需求"])
+    a.setdefault("severity", "medium")
+    a.setdefault("classified_regions", [a.get("search_region", "其他")])
 
 
 def search_tavily(query: str, max_results: int = 8) -> list[dict]:
@@ -399,54 +405,6 @@ def generate_summary(text: str, title: str) -> str:
     return title[:SUMMARY_MAX_CHARS_CN]
 
 
-def translate_titles_batch(articles: list[dict]) -> None:
-    """批量翻译标题为中文，结果写入 article['title_cn'].
-
-    使用 LLM API 翻译，失败则保留英文原文。
-    """
-    titles_to_translate = [
-        (i, a["title"]) for i, a in enumerate(articles)
-        if a.get("title") and not a.get("title_cn")
-    ]
-    if not titles_to_translate:
-        return
-
-    llm_translated = 0
-
-    batch_size = 15
-    for start in range(0, len(titles_to_translate), batch_size):
-        batch = titles_to_translate[start : start + batch_size]
-        numbered = "\n".join(f"{idx}. {title}" for idx, title in batch)
-        prompt = (
-            "将以下英文新闻标题翻译成简洁的中文，每行一条，保留编号。\n"
-            "要求：简洁、专业、保留关键实体（人名/地名用通用译名）。\n"
-            "只输出翻译结果，不要解释，不要思考过程。\n\n"
-            f"{numbered}"
-        )
-
-        result_text = _call_llm(prompt)
-        if not result_text:
-            continue
-
-        for line in result_text.strip().split("\n"):
-            line = line.strip()
-            if not line:
-                continue
-            match = re.match(r"(\d+)\.\s*(.+)", line)
-            if match:
-                idx = int(match.group(1))
-                cn_title = match.group(2).strip()
-                for orig_idx, _ in batch:
-                    if orig_idx == idx:
-                        articles[idx]["title_cn"] = cn_title
-                        llm_translated += 1
-                        break
-
-    if llm_translated:
-        print(f"    标题翻译: LLM {llm_translated} 条")
-    untranslated = sum(1 for a in articles if not a.get("title_cn") and a.get("title"))
-    if untranslated:
-        print(f"    标题翻译: {untranslated} 条保留英文原文")
 
 
 def _call_llm(prompt: str) -> str | None:
@@ -589,9 +547,6 @@ def enrich_articles(articles: list[dict], top_n: int = MAX_ENRICH_ARTICLES) -> N
                 if not a.get("summary") or a["summary"] == a["title"][:SUMMARY_MAX_CHARS_CN]:
                     a["summary"] = generate_summary(raw, a.get("title", ""))
 
-    # 批量翻译标题为中文
-    print(f"    翻译标题...")
-    translate_titles_batch(articles)
 
 
 def fetch_all_articles() -> list[dict]:
@@ -906,8 +861,8 @@ def main():
     print(f"  去重: {len(articles)} → {len(unique)} 条")
 
     # 2. LLM 分类（事件类型、严重程度、区域归属）
-    print("  LLM 分类...")
-    classify_articles_batch(unique)
+    print("  LLM 分析（分类+翻译）...")
+    analyze_articles_batch(unique)
 
     # 3. 抓取正文 + 生成摘要 (top 20 或 MEDIUM+)
     print("  抓取正文与摘要...")
