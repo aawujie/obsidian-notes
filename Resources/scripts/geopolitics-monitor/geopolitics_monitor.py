@@ -128,43 +128,90 @@ def clean_html(text: str) -> str:
     return re.sub(r"<[^>]+>", "", text)
 
 
-def classify_severity(text: str) -> str:
-    """判定事件严重程度"""
-    text_lower = text.lower()
-    for level, keywords in SEVERITY_LEVELS:
-        for kw in keywords:
-            if kw.lower() in text_lower:
-                return level
-    return "medium"
+def classify_articles_batch(articles: list[dict]) -> None:
+    """用 LLM 批量分类文章的事件类型、严重程度和区域归属."""
+    to_classify = [
+        (i, a) for i, a in enumerate(articles)
+        if not a.get("_classified")
+    ]
+    if not to_classify:
+        return
 
+    event_types_str = ", ".join(VALID_EVENT_TYPES)
+    regions_str = ", ".join(VALID_REGIONS)
+    batch_size = 10
+    classified = 0
 
-def classify_event_types(text: str) -> list[str]:
-    """根据文本内容识别事件类型"""
-    matched = []
-    text_lower = text.lower()
-    for etype, keywords in EVENT_TYPE_KEYWORDS:
-        score = sum(1 for kw in keywords if kw.lower() in text_lower)
-        if score >= 1:
-            matched.append(etype)
-    return matched[:3] if matched else ["避险需求"]
+    for start in range(0, len(to_classify), batch_size):
+        batch = to_classify[start : start + batch_size]
+        items = "\n".join(
+            f'{idx}. [{a["title"][:100]}] {a.get("content", "")[:200]}'
+            for idx, a in batch
+        )
+        prompt = (
+            "你是地缘政治分析师。对以下新闻逐条分类，返回 JSON 数组。\n\n"
+            f"可用事件类型(1-3个): {event_types_str}\n"
+            f"可用区域(1-3个): {regions_str}\n"
+            "严重程度: critical(战争/核/封锁), high(军事行动/制裁升级), "
+            "medium(外交摩擦/威胁), low(谈判/缓和)\n\n"
+            "输出格式(只输出 JSON 数组，不要其他文字):\n"
+            '[{"id":0,"event_types":["军事冲突升级"],'
+            '"severity":"high","regions":["俄乌战争"]}]\n\n'
+            f"新闻列表:\n{items}"
+        )
 
+        result = _call_llm(prompt)
+        if not result:
+            for idx, a in batch:
+                a["event_types"] = a.get("event_types", ["避险需求"])
+                a["severity"] = a.get("severity", "medium")
+                a["classified_regions"] = a.get("classified_regions",
+                                                 [a.get("search_region", "其他")])
+                a["_classified"] = True
+            continue
 
-def classify_region(text: str) -> list[str]:
-    """根据文本匹配区域"""
-    matched = []
-    text_lower = text.lower()
-    for region, keywords in {
-        "美伊冲突": ["iran", "israel", "hormuz", "persian gulf", "nuclear deal", "irgc"],
-        "俄乌战争": ["ukraine", "russia", "putin", "zelensky", "crimea", "donbas", "nato"],
-        "中美博弈": ["tariff", "trade war", "export control", "chip ban", "entity list", "semiconductor", "ustr", "china", "beijing"],
-        "中东/红海": ["red sea", "houthi", "gaza", "hezbollah", "suez", "hamas", "yemen", "lebanon"],
-        "台海/南海/朝鲜": ["taiwan", "south china sea", "north korea", "pla", "missile", "kim jong", "philippines"],
-        "全球制裁": ["sanctions", "swift", "ofac", "g7", "eu sanctions"],
-    }.items():
-        score = sum(1 for kw in keywords if kw in text_lower)
-        if score >= 1:
-            matched.append(region)
-    return matched if matched else ["其他重大事件"]
+        try:
+            json_match = re.search(r"\[.*\]", result, re.DOTALL)
+            if not json_match:
+                raise ValueError("no JSON array found")
+            items_data = json.loads(json_match.group())
+            for item in items_data:
+                idx = item.get("id")
+                if idx is None:
+                    continue
+                for orig_idx, a in batch:
+                    if orig_idx == idx:
+                        a["event_types"] = [
+                            t for t in item.get("event_types", [])
+                            if t in VALID_EVENT_TYPES
+                        ] or ["避险需求"]
+                        sev = item.get("severity", "medium")
+                        a["severity"] = sev if sev in VALID_SEVERITIES else "medium"
+                        a["classified_regions"] = [
+                            r for r in item.get("regions", [])
+                            if r in VALID_REGIONS
+                        ] or [a.get("search_region", "其他")]
+                        a["_classified"] = True
+                        classified += 1
+                        break
+        except (json.JSONDecodeError, ValueError) as e:
+            print(f"    [WARN] LLM 分类解析失败: {e}")
+            for idx, a in batch:
+                if not a.get("_classified"):
+                    a["event_types"] = ["避险需求"]
+                    a["severity"] = "medium"
+                    a["classified_regions"] = [a.get("search_region", "其他")]
+                    a["_classified"] = True
+
+    # 未被 LLM 处理到的条目兜底
+    for a in articles:
+        if not a.get("_classified"):
+            a.setdefault("event_types", ["避险需求"])
+            a.setdefault("severity", "medium")
+            a.setdefault("classified_regions", [a.get("search_region", "其他")])
+            a["_classified"] = True
+
+    print(f"    LLM 分类: {classified}/{len(articles)} 条")
 
 
 def search_tavily(query: str, max_results: int = 8) -> list[dict]:
@@ -383,7 +430,7 @@ def translate_titles_batch(articles: list[dict]) -> None:
             f"{numbered}"
         )
 
-        result_text = _call_llm_for_translation(prompt)
+        result_text = _call_llm(prompt)
         if not result_text:
             continue
 
@@ -408,8 +455,8 @@ def translate_titles_batch(articles: list[dict]) -> None:
         print(f"    标题翻译: {untranslated} 条保留英文原文")
 
 
-def _call_llm_for_translation(prompt: str) -> str | None:
-    """调用 LLM API 翻译.
+def _call_llm(prompt: str) -> str | None:
+    """调用 LLM API.
 
     优先级: 内部 AI 平台(ANTHROPIC_AUTH_TOKEN) → ANTHROPIC_API_KEY → OPENAI_API_KEY.
     """
@@ -569,11 +616,6 @@ def fetch_all_articles() -> list[dict]:
             title = r.get("title", "")
             content = r.get("content", "")
             url = r.get("url", "")
-            full_text = f"{title} {content}"
-
-            severity = classify_severity(full_text)
-            event_types = classify_event_types(full_text)
-            matched_regions = classify_region(full_text)
 
             all_articles.append({
                 "title": title,
@@ -581,9 +623,6 @@ def fetch_all_articles() -> list[dict]:
                 "content": content[:500] if content else "",
                 "published_date": r.get("published_date", ""),
                 "search_region": region,
-                "classified_regions": matched_regions,
-                "event_types": event_types,
-                "severity": severity,
             })
 
         print(f"    获取 {len(results)} 条")
@@ -872,23 +911,27 @@ def main():
     unique = deduplicate_articles(articles)
     print(f"  去重: {len(articles)} → {len(unique)} 条")
 
-    # 2. 抓取正文 + 生成摘要 (top 20 或 MEDIUM+)
-    print(f"  抓取正文与摘要...")
+    # 2. LLM 分类（事件类型、严重程度、区域归属）
+    print("  LLM 分类...")
+    classify_articles_batch(unique)
+
+    # 3. 抓取正文 + 生成摘要 (top 20 或 MEDIUM+)
+    print("  抓取正文与摘要...")
     enrich_articles(unique)
 
-    # 3. 生成报告
+    # 4. 生成报告
     md = generate_report(unique, date_str)
     md_path = DATA_DIR / f"{date_str}.md"
     md_path.write_text(md, encoding="utf-8")
     print(f"  → {md_path}")
 
-    # 4. 生成 JSON
+    # 5. 生成 JSON
     json_data = build_json(unique, date_str)
     json_path = DATA_DIR / f"{date_str}.json"
     json_path.write_text(json.dumps(json_data, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"  → {json_path}")
 
-    # 5. 控制台摘要
+    # 6. 控制台摘要
     sev_counter = Counter(a["severity"] for a in unique)
     print("\n  严重程度分布:")
     for level in ["critical", "high", "medium", "low"]:
