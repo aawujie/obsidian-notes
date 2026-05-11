@@ -1,17 +1,17 @@
 {
   "date": "2026-05-11",
-  "generated_at": "2026-05-11T16:56:22.402573",
+  "generated_at": "2026-05-11T17:21:39.563039",
   "total_events": 41,
   "severity_distribution": {
+    "high": 12,
     "medium": 19,
-    "high": 15,
-    "low": 6,
-    "critical": 1
+    "low": 7,
+    "critical": 3
   },
   "events": [
     {
       "title": "Iran refuses to address nuclear program in latest peace deal response to US - New York Post",
-      "title_cn": "伊朗在最新对美和平协议回应中拒绝解决核问题",
+      "title_cn": "伊朗在最新对美和平协议回应中拒绝讨论核问题",
       "url": "https://nypost.com/2026/05/10/world-news/iran-refuses-to-address-nuclear-program-in-latest-peace-deal-response-to-us/",
       "content": "He threatened Saturday that he may resume Project Freedom, which would have Navy warships guide commercial vessels through the strait, if the talks derail.\n\nUS ambassador to the United Nations, Mike Waltz, told the ABC on Sunday that Trump was giving diplomacy “every chance we possibly can before go",
       "content_detail": "![](https://sb.scorecardresearch.com/p?c1=2&c2=6390601&c3=NYPOST&cj=1&cv=3.6)\n![Read the Latest on Page Six](https://nypost.com/wp-content/uploads/sites/2/2023/02/button_3_bg-2.png?w=206)\n\nSwitch between CA and NY editions here.\n\n# Iran refuses to address nuclear program in latest peace deal response to US\n\nIran’s response to the latest [US peace proposal refuses](https://nypost.com/2026/05/09/world-news/trump-waits-for-answer-from-iran-on-peace-proposal-says-ball-is-in-tehrans-court/) to address its nuclear program — focusing instead on ending the fighting across the region, Iranian state media said Sunday.\n\nThe regime’s counter-offer, which was fired off to Pakistani mediators, seeks to ensure the security of shipping through the Strait of Hormuz before starting talks on more contentious issues — including Iran’s nuclear program, according to the IRNA news agency.\n\nWashington’s [latest proposal](https://nypost.com/2026/05/06/us-news/trump-tells-post-too-soon-to-prep-for-iran-peace-signing-after-reports-deal-near/) had addressed a deal to end the war, reopen the strait and roll back the regime’s nuclear program.\n\n![Boats in a bay with mountains in the background.](https://nypost.com/wp-content/uploads/sites/2/2026/05/127395909.jpg?w=1024)\n\nThe White House hasn’t yet commented on news of Iran’s reply.\n\nPresident Trump previously said that eliminating Iran’s nuclear program is one of the key objectives of the war.\n\n“We will never bow our heads before the enemy, and if talk of ",
@@ -23,8 +23,8 @@
       "event_types": [
         "军事冲突升级"
       ],
-      "severity": "medium",
-      "summary": "scorecardresearch.",
+      "severity": "high",
+      "summary": "![]( ![Read the Latest on Page Six]( Switch between CA and NY editions here.",
       "affected_tickers": [
         "GC=F",
         "SI=F",
@@ -43,7 +43,7 @@
       "title_cn": "美伊对峙加深：特朗普可能采取的下一步行动",
       "url": "https://www.ynetnews.com/article/skyefekjge",
       "content": "### What does the Iranian proposal include?\n\nThe full details of Iran’s response have not yet been disclosed. However, Lebanon’s Al-Mayadeen network, which is affiliated with Hezbollah, cited diplomatic sources as saying the proposal includes several Iranian demands:\n\n1. An end to the U.S. blockade ",
-      "content_detail": "[Updates](https://www.ynetnews.com/category/3089) [Red Mail](https://www.ynetnews.com/category/43972)\n\n[Tel Aviv-Jaffa](https://www.ynetnews.com/weather/tel-aviv-yafo)\n\n[Israel News](https://www.ynetnews.com/category/3082)\n\n[Mideast & World News](https://www.ynetnews.com/category/9733)\n\n[Tech & Digital](https://www.ynetnews.com/tech-and-digital)\n\n[Real Estate](https://www.ynetnews.com/real-estate)\n\n[Finance](https://www.ynetnews.com/business)\n\n[Lifestyle](https://www.ynetnews.com/culture)\n\n[Health & Science](https://www.ynetnews.com/health_science)\n\n[Jewish World](https://www.ynetnews.com/jewish-world)\n\n[Travel](https://www.ynetnews.com/travel)\n\nMore\n\nChannels\n\n* [Opinions](https://www.ynetnews.com/opinions-analysis)\n* [Magazine](https://www.ynetnews.com/magazine)\n* [Sports](https://www.ynetnews.com/sport)\n* [Food](https://www.ynetnews.com/food)\n* [Weather](https://www.ynetnews.com/weather)\n* [Podcasts](https://www.ynetnews.com/podcasts)\n\nSites & Sources\n\n* [Ynet](https://www.ynet.co.il/home/0,7340,L-8,00.html)\n* [Calcalist](https://www.calcalist.co.il/home/0,7340,L-8,00.html)\n* [yad2](https://www.yad2.co.il/?utm_source=ynet&utm_medium=link_footer)\n* [ynetespanol](https://www.ynetespanol.com/)\n* [Вести](https://www.vesty.co.il/main)\n* [mynet](https://www.mynet.co.il/)\n\nContact\n\n* [Contact us](https://www.ynetnews.com/article/syyer0fo0)\n* [Privacy Policy](https://www.ynetnews.com/article/syrcqnwmt)\n* [Terms of Use](https://www.ynetnews.com/article/bkh7s3p7t)\n* [Accessibility S",
+      "content_detail": "[Updates](https://www.ynetnews.com/category/3089) [Red Mail](https://www.ynetnews.com/category/43972)\n\n[![](https://www.ynetnews.com/Cnt/Images/Weather/1250.png)](https://www.ynetnews.com/weather/tel-aviv-yafo)\n\n[Tel Aviv-Jaffa](https://www.ynetnews.com/weather/tel-aviv-yafo)\n\n[![](https://ynet-pic1.yit.co.il/picserver6/wcm_upload/2025/08/28/BkLy3jaKlg/global_header_logo.png)](https://www.ynetnews.com/category/3083)\n\n[Israel News](https://www.ynetnews.com/category/3082)\n\n[Mideast & World News](https://www.ynetnews.com/category/9733)\n\n[Tech & Digital](https://www.ynetnews.com/tech-and-digital)\n\n[Real Estate](https://www.ynetnews.com/real-estate)\n\n[Finance](https://www.ynetnews.com/business)\n\n[Lifestyle](https://www.ynetnews.com/culture)\n\n[Health & Science](https://www.ynetnews.com/health_science)\n\n[Jewish World](https://www.ynetnews.com/jewish-world)\n\n[Travel](https://www.ynetnews.com/travel)\n\nMore\n\nChannels\n\n* [Opinions](https://www.ynetnews.com/opinions-analysis)\n* [Magazine](https://www.ynetnews.com/magazine)\n* [Sports](https://www.ynetnews.com/sport)\n* [Food](https://www.ynetnews.com/food)\n* [Weather](https://www.ynetnews.com/weather)\n* [Podcasts](https://www.ynetnews.com/podcasts)\n\nSites & Sources\n\n* [Ynet](https://www.ynet.co.il/home/0,7340,L-8,00.html)\n* [Calcalist](https://www.calcalist.co.il/home/0,7340,L-8,00.html)\n* [yad2](https://www.yad2.co.il/?utm_source=ynet&utm_medium=link_footer)\n* [ynetespanol](https://www.ynetespanol.com/)\n* [Вести](https://www.vesty.co.il/m",
       "published_date": "Mon, 11 May 2026 07:27:55 GMT",
       "search_region": "美伊冲突",
       "classified_regions": [
@@ -53,7 +53,7 @@
         "军事冲突升级"
       ],
       "severity": "high",
-      "summary": "[Updates](https://www.",
+      "summary": "",
       "affected_tickers": [
         "GC=F",
         "SI=F",
@@ -69,7 +69,7 @@
     },
     {
       "title": "War damage compensation, Hormuz sovereignty: Inside Iran's response to US proposal that Trump called ‘unacceptable’ | World News - Hindustan Times",
-      "title_cn": "战争损害赔偿与霍尔木兹主权：伊朗回应美国提议的内幕",
+      "title_cn": "战争损害赔偿与霍尔木兹主权：伊朗对美提议的回应内幕",
       "url": "https://www.hindustantimes.com/world-news/lifting-of-sanctions-30-day-negotiation-period-inside-iran-response-to-us-peace-proposal-trump-called-unacceptable-101778444106418.html",
       "content": "Iran’s demands also include “Iranian management of the Strait of Hormuz if certain commitments are undertaken by the US”, the source told the news agency. However, they did not specify what those commitments would involve.\n The news agencyalso cited the source as saying that Iran’s proposal calls fo",
       "content_detail": "![Comscore tracker]()\n![](https://sb.scorecardresearch.com/p?c1=2&c2=6035286&cv=3.6.0&cj=1)\n![Hindustan Times News](https://www.hindustantimes.com/static-content/1y/ht/ht_100_logoblack@2x.png)\n![epaper](https://www.hindustantimes.com/static-content/1y/ht/e-paper@2x.png \"epaper\")\n![Sign In](https://www.hindustantimes.com/static-content/1y/ht/profile@2x.png \"Sign In\")\n\nSubscribe Now! Get features like\n\n![Ad lite experience](https://www.hindustantimes.com/static-content/1y/ht/1x1-white.png)\n![Premium articles](https://www.hindustantimes.com/static-content/1y/ht/1x1-white.png)\n![Quick read](https://www.hindustantimes.com/static-content/1y/ht/1x1-white.png)\n![E-paper](https://www.hindustantimes.com/static-content/1y/ht/1x1-white.png)\n![Subscription features](https://www.hindustantimes.com/static-content/1y/ht/1x1-white.png)\n![crown](https://www.hindustantimes.com/static-content/1y/ht/1x1-white.png)\n![Facebook](https://www.hindustantimes.com/static-content/1y/ht/1x1-white.png \"Facebook\")\n![Twitter](https://www.hindustantimes.com/static-content/1y/ht/1x1-white.png \"Twitter\")\n![WhatsApp](https://www.hindustantimes.com/static-content/1y/ht/1x1-white.png \"WhatsApp\")\n![LinkedIn](https://www.hindustantimes.com/static-content/1y/ht/1x1-white.png \"LinkedIn\")\n![Cricket in L1](https://www.hindustantimes.com/static-content/1y/ht/crickit_l1.gif \"Cricket\")\n\n# War damage compensation, Hormuz sovereignty: Inside Iran's response to US proposal that Trump called ‘unacceptable’\n\n## Trump described I",
@@ -83,7 +83,7 @@
         "原油供应风险"
       ],
       "severity": "high",
-      "summary": "[Comscore tracker]()",
+      "summary": "Get features like ![Ad lite experience]( ![Premium articles]( ![Quick read]( ![E-paper]( ![Subscription features]( ![crown]( !",
       "affected_tickers": [
         "GC=F",
         "SI=F",
@@ -104,7 +104,7 @@
     },
     {
       "title": "Large tanker left Strait of Hormuz on Iran’s designated route — Iranian report - The Times of Israel",
-      "title_cn": "大型油轮沿伊朗指定航线驶离霍尔木兹海峡——伊朗报道",
+      "title_cn": "大型油轮沿伊朗指定路线离开霍尔木兹海峡——伊朗报告",
       "url": "https://www.timesofisrael.com/liveblog_entry/large-tanker-left-strait-of-hormuz-on-irans-designated-route-iranian-report/",
       "content": "Image 12: A woman holds the Iranian flag as she stands in front of an anti-US billboard in Tehran, Iran, on May 10, 2026. (ATTA KENARE / AFP)1  ‘Unacceptable’: Trump rejects Iran response to US peace offer, as Netanyahu insists war ‘not over’   \n   Image 13: An Islamic Revolutionary Guard Corps (IRG",
       "content_detail": "",
@@ -114,16 +114,11 @@
         "美伊冲突"
       ],
       "event_types": [
-        "航运中断",
         "原油供应风险"
       ],
       "severity": "medium",
       "summary": "Image 12: A woman holds the Iranian flag as she stands in front of an anti-US billboard in Tehran, Iran, on May 10, 2026.",
       "affected_tickers": [
-        "ZIM",
-        "MATX",
-        "BOAT",
-        "SEA",
         "CL=F",
         "BZ=F",
         "USO",
@@ -133,7 +128,7 @@
     },
     {
       "title": "Two Tankers Exit Strait Of Hormuz - Marine News Magazine",
-      "title_cn": "两艘油轮驶离霍尔木兹海峡——《海洋新闻杂志》",
+      "title_cn": "两艘油轮离开霍尔木兹海峡",
       "url": "https://www.marinelink.com/news/two-tankers-exit-strait-hormuz-538998",
       "content": "\"I don’t like it — TOTALLY UNACCEPTABLE,\" Trump wrote on Truth Social, without giving further detail. Oil prices rose $3 a barrel after the United States and Iran failed to reach agreement.\n\nIran's proposal includes a demand for compensation for war damages and an emphasis on Iranian sovereignty ove",
       "content_detail": "",
@@ -143,16 +138,11 @@
         "美伊冲突"
       ],
       "event_types": [
-        "航运中断",
         "原油供应风险"
       ],
       "severity": "low",
       "summary": "",
       "affected_tickers": [
-        "ZIM",
-        "MATX",
-        "BOAT",
-        "SEA",
         "CL=F",
         "BZ=F",
         "USO",
@@ -162,7 +152,7 @@
     },
     {
       "title": "Bulker attacked off Qatar causing fire - Seatrade Maritime News",
-      "title_cn": "卡塔尔附近散货船遇袭起火",
+      "title_cn": "",
       "url": "https://www.seatrade-maritime.com/security/bulker-attacked-off-qatar-causing-fire",
       "content": "Sponsored By\n\n Security\n Tankers\n Dry Bulk\n News\n\nStrait of Hormuz\n\nThe latest news and commentary on how the US/Israel-Iran conflict is affecting the global maritime industry and shipping markets.\n\n# Bulker attacked off Qatar causing fire\n\nFirst Qatar LNG carrier crosses Strait of Hormuz since war ",
       "content_detail": "Cargo ship attacked off Qatar causing fire Seatrade Maritime is part of the Informa Markets Division of Informa PLC Informa PLC | ABOUT US | INVESTOR RELATIONS | TALENT This site is operated by a business or businesses owned by Informa PLC and all copyright resides with them. Informa PLC&#x27;s registered office is 5 Howick Place, London SW1P 1WG. Registered in England and Wales. Number 8860726. Podcasts Events Advertise Subscribe Subscribe Strait of Hormuz Containers Tankers Dry Bulk Ports Related Topics Bunkering Maritime Logistics Terminals Focus on Panama Recent in Ports MORE IN PORTS &amp; LOGISTICS Ports &amp; Logistics China Multimodal Transport Development Alliance debuts in Beijing China Multimodal Transport Development Alliance debuts in Beijing by Katherine Si May 8, 2026 1 Min Read Containers Maersk’s container business in the red in Q1 Maersk’s container business in the red in Q1 by Marcus Hand May 7, 2026 3 Min Read Accidents &amp; Security Related Topics Security Accidents Piracy Regulations Red Sea Crisis Strait of Hormuz Conflict Recent in Accidents &amp; Security MORE IN SAFETY Security Video on board CMA CGM San Antonio after Hormuz attack Video on board CMA CGM San Antonio after Hormuz attack by Marcus Hand May 11, 2026 Crewing Protecting seafarers lives IMO’s top priority in Middle East conflict Protecting seafarers lives IMO’s top priority in Middle East conflict by Michele Labrut May 11, 2026 3 Min Read More Topics Related Topics Crewing Offshore Sustai",
@@ -172,20 +162,24 @@
         "美伊冲突"
       ],
       "event_types": [
-        "航运中断"
+        "避险需求"
       ],
-      "severity": "high",
-      "summary": "Strait of Hormuz",
+      "severity": "medium",
+      "summary": "Sponsored By Security Tankers Dry Bulk News Strait of Hormuz The latest news and commentary on how the US/Israel-Iran conflict is affecting the global maritime industry and shipping markets.",
       "affected_tickers": [
-        "ZIM",
-        "MATX",
-        "BOAT",
-        "SEA"
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
       ]
     },
     {
       "title": "Iran responds to U.S. peace deal, and hantavirus ship passengers disembark: Weekend Rundown - NBC News",
-      "title_cn": "伊朗回应美国和平协议，汉坦病毒船乘客下船：一周要闻",
+      "title_cn": "",
       "url": "https://www.nbcnews.com/news/us-news/weekend-rundown-may-10-rcna344141",
       "content": "The response “was given through mediator Pakistan,” state news agency IRNA said, without specifying what the response was. “According to the proposed plan, negotiations at this stage will focus on the issue of ending the war in the region.”\n\nIn a post on Truth Social, President Donald Trump called t",
       "content_detail": "### Sections\n\n### Local\n\n### tv\n\n### Featured\n\n### More From NBC\n\n### Follow NBC News\n\nnews Alerts\n\nThere are no new alerts at this time\n\n# Iran responds to U.S. peace deal, and hantavirus ship passengers disembark: Weekend Rundown\n\n![](https://media-cldnry.s-nbcnews.com/image/upload/t_focal-760x428,f_auto,q_auto:best/mpx/2704722219/2026_05/1778415640874_tdy_sun_hunter_us_iran_proposal_260510_S3_1920x1080-ngwxf7.jpg)\n\nIran [**responded to a U.S. proposal**](https://www.nbcnews.com/world/iran/iran-responded-us-proposal-peace-talks-state-media-reports-rcna344404) to bring an end to the war in the Middle East, Tehran’s state media reported Sunday.\n\n![NBC News Icon](data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMTQiIHZpZXdCb3g9IjAgMCAyNCAxNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAwXzM3M18yNjg3KSI+CjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMTUuMTAwNiAwLjA2ODU1NTdDMTMuNTEwNiAtMC4zMDg5ODUgMTIuMDM5IDAuOTI3ODg0IDEyLjIwMjQgMi42MjQ5NEgxMi4yMDQzSDEzLjIzNDVDMTMuMjM0NSAyLjYyNDk0IDEzLjcxNTQgMi42MTkzIDEzLjg1NTMgMi45NDMzMUMxMy44NTUzIDIuOTQzMzEgMTIuMzMwMSAzLjUyMDg5IDEyLjQ1MTMgNC40NTkxMUwxMy40MDA4IDExLjM2MUwxNi43MjM1IDMuNDE3NTlDMTcuMjMwNiAyLjIxMTcxIDE2LjY2NDMgMC40MzI5NDggMTUuMTAwNiAwLjA2ODU1NTdaIiBmaWxsPSIjNjc1RUE5Ii8+CjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMTAuNTUyMyAxMy45MzA1TDQuMDc2OCA5LjQxMzE1QzIuNDI4NTggOC4yNjA4MSAwLjc5ODIwNCA5LjQzNDc1IDAuNDUyNTk1IDEwLjY0OTFDLTAuMDU2NDI",
@@ -198,7 +192,7 @@
         "避险需求"
       ],
       "severity": "medium",
-      "summary": "### More From NBC",
+      "summary": "Sections Local tv Featured More From NBC Follow NBC News news Alerts There are no new alerts at this time Iran responds to U.S.",
       "affected_tickers": [
         "GC=F",
         "GLD",
@@ -212,7 +206,7 @@
     },
     {
       "title": "Live Updates: Latest from Israel, Iran, and Middle East - The Jerusalem Post",
-      "title_cn": "实时更新：以色列、伊朗和中东最新消息",
+      "title_cn": "",
       "url": "https://www.jpost.com/middle-east/iran-news/2026-05-10/live-updates-895630",
       "content": "# Live Updates: UAE, Kuwait defend against Iranian drones, Qatari tanker struck by drone near Strait of Hormuz\n\n## Qatari ship breaks Hormuz blockade • IDF, US ran covert rescue ops. from Iraq during Iran war • Russia reportedly smuggling drone parts to Iran through Caspian Sea\n\nTHE ‘USS Abraham Lin",
       "content_detail": "# Live Updates: Latest from Israel, Iran, and Middle East | The Jerusalem Post\n![Image 1](https://ib.adnxs.com/getuid?https%3A%2F%2Fids.api.gcprivacy.id%2Fv4%2Fid%2Fxandr%3Fpid%3D6CP1D%26id%3D%24UID%26gcid%3Deccc67fa-6067-4d15-8148-12a1cac28f09)\n\nAdvertisement\n\n[![Image 2: The Jerusalem Post - Israel News](https://www.jpost.com/assets/jp-logo.png)](https://www.jpost.com/ \"Jerusalem Post\")\n*   [CONFERENCES](https://www.jpost.com/conferences \"CONFERENCES\")\n*   [ISRAEL NEWS](https://www.jpost.com/israel-news \"ISRAEL NEWS\")\n*   [WORLD NEWS](https://www.jpost.com/international \"WORLD NEWS\")\n*   [MIDDLE EAST](https://www.jpost.com/middle-east \"MIDDLE EAST\")\n*   [BUSINESS & INNOVATION](https://www.jpost.com/business-and-innovation \"BUSINESS & INNOVATION\")\n*   [DEFENSE & TECH](https://defense-and-tech.jpost.com/ \"DEFENSE & TECH\")\n*   [OPINION](https://www.jpost.com/opinion \"OPINION\")\n*   [JP STORE](https://store.jpost.com/ \"JP STORE\")\n\n[Login](https://www.jpost.com/PayWalllogin)[Login](https://www.jpost.com/PayWalllogin)[Subscribe](https://payments.jpost.com/paywall/paywallpersonaldetails)\n*   [JPOST DIGITAL LIBRARY](https://www.jpost.com/magazineprint/digitallibrary)\n*   [HOME PAGE](https://www.jpost.com/)\n*   [THE JERUSALEM REPORT](https://www.jpost.com/jerusalem-report)\n*   [DEFENSE & TECH](https://defense-and-tech.jpost.com/)\n*   [OPINION](https://www.jpost.com/opinion)\n*   BUSINESS & INNOVATION \n*   JERUSALEM POST EN ESPANOL \n*   [REAL ESTATE LISTINGS](https://realestate.jpost.c",
@@ -222,26 +216,24 @@
         "美伊冲突"
       ],
       "event_types": [
-        "军事冲突升级"
+        "避险需求"
       ],
-      "severity": "high",
-      "summary": "# Live Updates: Latest from Israel, Iran, and Middle East | The Jerusalem Post",
+      "severity": "medium",
+      "summary": "",
       "affected_tickers": [
         "GC=F",
-        "SI=F",
-        "LMT",
-        "NOC",
-        "RTX",
-        "GD",
         "GLD",
-        "SLV",
-        "ITA",
-        "PPA"
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
       ]
     },
     {
       "title": "Putin hints at ending Russia’s war in Ukraine, but why now? - Al Jazeera",
-      "title_cn": "普京暗示结束乌克兰战争，但为何现在？",
+      "title_cn": "",
       "url": "https://www.aljazeera.com/news/2026/5/10/putin-hints-at-ending-russias-war-in-ukraine-but-why-now",
       "content": "The war has killed tens of thousands of people on both sides, left swathes of eastern Ukraine ⁠⁠in ruins, and drained Russia’s $3 trillion economy. Western-led sanctions have also impacted Russia’s economy.\n\nMoscow’s relations with Europe are worse than at any time since the depths of the Cold War. ",
       "content_detail": "# Putin hints at ending Russia’s war in Ukraine, but why now?\n\n*Russian President Vladimir Putin says he thinks the Ukraine war is coming to an end despite broader negotiations remaining stalled.*\n\nSave\n\nShare\n\n![Russian President Vladimir Putin talks to the media following his meetings with foreign delegations at the Kremlin in Moscow on May 9, 2026. (Photo by MAXIM SHIPENKOV / POOL / AFP)](/wp-content/uploads/2026/05/afp_6a0065ba5cf4-1778410938.jpg?resize=770%2C513&quality=80)\n![](/wp-content/uploads/2024/05/2017-06-08T131939Z_1189275883_RC11B0FE7F20_RTRMADP_3_GULF-QATAR-JAZEERA-1714943623.jpg?resize=96%2C96&quality=80)\n\nVladimir Putin has signalled that his country’s war with Ukraine [may be ‘coming to an end’](/news/2026/5/10/putin-suggests-russias-war-on-ukraine-coming-to-an-end), as the Russian president again blamed the West for prolonging the fighting through military support to Kyiv.\n\nSpeaking after Victory Day events in Moscow, Putin said on Sunday that he was ready to hold direct talks with his Ukrainian counterpart Volodymyr Zelenskyy in Moscow or a neutral country.\n\n## Recommended Stories\n\nHis comments come as Russia and Ukraine observe a short three-day United States-backed ceasefire and continue prisoner-swap discussions. However, broader peace talks remain stalled, and the two sides continue to carry out attacks against each other.\n\nUkrainian officials said on Sunday that Russian attacks left at least three people dead, and that close to 150 combat engagements",
@@ -251,26 +243,24 @@
         "俄乌战争"
       ],
       "event_types": [
-        "军事冲突升级"
+        "避险需求"
       ],
       "severity": "medium",
-      "summary": "# Putin hints at ending Russia’s war in Ukraine, but why now?",
+      "summary": "Putin hints at ending Russia’s war in Ukraine, but why now?",
       "affected_tickers": [
         "GC=F",
-        "SI=F",
-        "LMT",
-        "NOC",
-        "RTX",
-        "GD",
         "GLD",
-        "SLV",
-        "ITA",
-        "PPA"
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
       ]
     },
     {
       "title": "Ukraine-Russia war latest: Putin claims conflict ‘coming to an end’ after scaled-back Victory Day parade - The Independent",
-      "title_cn": "俄乌战争最新：普京声称冲突在缩减后“即将结束”",
+      "title_cn": "",
       "url": "https://www.independent.co.uk/news/world/europe/ukraine-russia-war-live-putin-zelensky-trump-victory-day-parade-b2973716.html",
       "content": "Adam Withnall10 May 2026 14:00\n\n## Ukraine and Russia accuse each other of ceasefire violations\n\nRussia and Ukraine both accused each other of violating the ceasefire agreement on Sunday.\n\nEarlier this morning, Kyiv reported Russian drone strikes and nearly 150 battlefield clashes over the past 24 h",
       "content_detail": "## Stay up to date with notifications from The Independent\n\nNotifications can be managed in browser preferences.\n\n### Thank you for registering\n\nPlease refresh the page or navigate to another page on the site to be automatically logged inPlease refresh your browser to be logged in\n\nSwipe for next article\n\n# Ukraine-Russia war latest: Putin claims conflict ‘coming to an end’ after scaled-back Victory Day parade\n\n## Putin also said he would be willing to negotiate new security arrangements for Europe\n\nPutin also said he would be willing to negotiate new security arrangements for Europe\n\n## Bookmark popover\n\nRemoved from bookmarks\n\n![On The Ground](https://static.independent.co.uk/static-assets/images/newsletters/onTheGround1_1.png)\n\n### On The Ground newsletter: Get a weekly dispatch from our international correspondents\n\n### Get a weekly dispatch from our international correspondents\n\n### Get a weekly international news dispatch\n\n![On The Ground](https://static.independent.co.uk/static-assets/images/newsletters/onTheGround1_1.png)\n\nI would like to be emailed about offers, events and updates from The Independent. Read our [Privacy notice](/service/privacy-policy-a6184181.html)\n\nVladimir Putin has said the war in Ukraine was “coming to an end” - just hours after vowing victory in the conflict at a dramatically scaled-back parade in Moscow on Saturday.\n\n\"I think that the matter is coming to an end,\" Putin told reporters of the war, which started more than four years ago. He also ",
@@ -280,26 +270,24 @@
         "俄乌战争"
       ],
       "event_types": [
-        "军事冲突升级"
+        "避险需求"
       ],
       "severity": "medium",
-      "summary": "## Stay up to date with notifications from The Independent",
+      "summary": "Read our Vladimir Putin has said the war in Ukraine was “coming to an end” - just hours after vowing victory in the conflict at a dramatically scaled-back parade in",
       "affected_tickers": [
         "GC=F",
-        "SI=F",
-        "LMT",
-        "NOC",
-        "RTX",
-        "GD",
         "GLD",
-        "SLV",
-        "ITA",
-        "PPA"
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
       ]
     },
     {
       "title": "Putin Sets Conditions for Meeting with Zelensky as He Claims War in Ukraine is Nearing End - Kyiv Post",
-      "title_cn": "普京为与泽连斯基会面设条件 称乌克兰战争未按计划进行",
+      "title_cn": "普京为与泽连斯基会面设定条件，并声称乌克兰战争是必要的",
       "url": "https://www.kyivpost.com/post/75798",
       "content": "### \n\n North America\n Latin America\n Europe\n Eastern Europe\n Middle East\n Africa\n Asia\n\n### \n\n Business\n Technology\n Finance\n Energy\n Agriculture\n\n###\n\n###\n\nEN\n\n UK\n\nEN\n\n UK\n\nPutin   War in Ukraine   Russia\n\n# Putin Claims War ‘Coming to an End’ and Offers to Meet Zelensky in Moscow\n\nFollowing the M",
       "content_detail": "![Search](/icons/search.svg)\n\n### War\n\n### Ukraine\n\n### [World](https://www.kyivpost.com/category/world)\n\n### [Economy](https://www.kyivpost.com/category/economics)\n\n### Videos\n\n### Podcasts\n\n### Analysis\n\n### Corruption Watch\n\n### Opinions\n\n### [Culture](https://www.kyivpost.com/category/culture)\n\n### History\n\n### Sports\n\n### Classifieds\n\n### Spotlight\n\n### Cartoons\n\n![Search](/icons/header-search.svg)\n![Kyiv Post](/icons/header-desktop-logo.svg)\n![Kyiv Post](/icons/kp_logo_white.svg)\n\nEN\n\n![arrow](/icons/select-arrow.svg)\n![Kyiv Post](/assets/images/Kyivpost_logo_Black.svg)\n![Kador Group](/assets/images/kador_logo.jpg)\n\nEN\n\n![arrow](/icons/select-arrow.svg)\n\n# Putin Claims War ‘Coming to an End’ and Offers to Meet Zelensky in Moscow\n\nFollowing the May 9 parade, Vladimir Putin asserted that the “conflict in Ukraine is moving toward its end” while repeating several controversial claims regarding the war’s history and potential resolution. Putin stated he is willing to meet President Volodymyr Zelensky in Moscow or a third country, though he specified that a meeting in a neutral location would only occur to sign a final agreement.\n\n![Putin Claims War ‘Coming to an End’ and Offers to Meet Zelensky in Moscow](https://static.kyivpost.com/storage/2026/05/10/8b24f1915d37865baf40f1a42b3fba75.jpg?w=2560&f=webp)\n\nIn a series of statements following the [Victory Day parade on Saturday](https://www.kyivpost.com/post/75765), May 9, Russian President Vladimir [Putin](https://www.kyivpost.",
@@ -312,7 +300,7 @@
         "军事冲突升级"
       ],
       "severity": "medium",
-      "summary": "[Search](/icons/search.",
+      "summary": "War Ukraine [World]( [Economy]( Videos Podcasts Analysis Corruption Watch Opinions [Culture]( History Sports Classifieds Spotlight Cartoons !",
       "affected_tickers": [
         "GC=F",
         "SI=F",
@@ -328,7 +316,7 @@
     },
     {
       "title": "Putin’s Forces Are Barely Inching Along on the Battlefield - The New York Times",
-      "title_cn": "俄军在战场上寸步难行 - 纽约时报",
+      "title_cn": "普京的部队在战场上举步维艰 - 纽约时报",
       "url": "https://www.nytimes.com/2026/05/10/world/europe/russia-ukraine-putin-war.html",
       "content": "# Putin’s Forces Are Barely Inching Along on the Battlefield - The New York Times\n\nSkip to contentSkip to site indexSearch & Section Navigation Section Navigation\n\nSearch\n\n[](\n\nSubscribe for $1/weekLog in[](\n\n[](\nRussia-Ukraine War\n\n   Russia’s Victory Day Parade\n   Deadly Strikes in Ukraine\n   ‘The",
       "content_detail": "# Putin’s Forces Are Barely Inching Along on the Battlefield - The New York Times\n\n[Skip to content](https://www.nytimes.com/2026/05/10/world/europe/russia-ukraine-putin-war.html#site-content)[Skip to site index](https://www.nytimes.com/2026/05/10/world/europe/russia-ukraine-putin-war.html#site-index)Search & Section Navigation Section Navigation\n\nSearch\n\n[](https://www.nytimes.com/)\n\n[Subscribe for $1/week](https://www.nytimes.com/subscription?campaignId=79FKF&source=bar1)[Log in](https://myaccount.nytimes.com/auth/login?response_type=cookie&client_id=vi&redirect_uri=https%3A%2F%2Fwww.nytimes.com%2Fsubscription%2Fonboarding-offer%3FcampaignId%3D7JFJX%26EXIT_URI%3Dhttps%253A%252F%252Fwww.nytimes.com%252F2026%252F05%252F10%252Fworld%252Feurope%252Frussia-ukraine-putin-war.html&asset=masthead)[](https://myaccount.nytimes.com/auth/login?response_type=cookie&client_id=vi&redirect_uri=https%3A%2F%2Fwww.nytimes.com%2Fsubscription%2Fonboarding-offer%3FcampaignId%3D7JFJX%26EXIT_URI%3Dhttps%253A%252F%252Fwww.nytimes.com%252F2026%252F05%252F10%252Fworld%252Feurope%252Frussia-ukraine-putin-war.html&asset=masthead)\n\n[](https://www.nytimes.com/)\n[Russia-Ukraine War](https://www.nytimes.com/news-event/ukraine-russia)\n\n*   [Russia’s Victory Day Parade](https://www.nytimes.com/2026/05/07/world/europe/ukraine-russia-victory-day.html)\n*   [Deadly Strikes in Ukraine](https://www.nytimes.com/2026/05/05/world/europe/russia-ukraine-zaporizhzhia-attacks.html)\n*   [‘The Death Zone’](https://www.nyti",
@@ -341,7 +329,7 @@
         "军事冲突升级"
       ],
       "severity": "medium",
-      "summary": "# Putin’s Forces Are Barely Inching Along on the Battlefield - The New York Times",
+      "summary": "",
       "affected_tickers": [
         "GC=F",
         "SI=F",
@@ -357,7 +345,7 @@
     },
     {
       "title": "Ukraine Strikes Russian Corvette in the Caspian Sea - The Maritime Executive",
-      "title_cn": "乌克兰在里海袭击俄军轻型护卫舰 - 海事执行",
+      "title_cn": "乌克兰在里海袭击俄罗斯轻型护卫舰 - 海事执行",
       "url": "https://maritime-executive.com/article/ukraine-strikes-russian-corvette-in-the-caspian-sea",
       "content": "Prior to the strike on May 7, the Caspian Flotilla was believed to have at least two Karakurt Class corvettes on strength: RFS Tucha (804) and RFS Taifun (805), and possibly also RFS Okhotsk (255) and RFS Vikhr (256).\n\nThe Ukrainian attack follows earlier strikes in the Caspian Sea on November 6 las",
       "content_detail": "![Maritime Executive Logo](https://maritime-executive.com/img/marexlogo2019.jpg)\n![Maritime Executive Logo](https://maritime-executive.com/img/marexlogo2019.jpg)\n![Russian corvette](https://maritime-executive.com/media/images/article/Russian-Navy-Karakurt-Class-corvette.8dd218.jpg)\n\n## [Ukraine Strikes Russian Corvette in the Caspian Sea](https://maritime-executive.com/article/ukraine-strikes-russian-corvette-in-the-caspian-sea)\n\nPublished\nby\n**[The Maritime Executive](https://maritime-executive.com/author/marex)**\n\n![methanol-fueled containership at shipyard](https://maritime-executive.com/media/images/article/OOCL-Wisdom-methanol-fueled-containership.8ee4ef.9587cc.jpg)\n\n## [China Names Largest Methanol Dual-Fuel Boxship Expanding Green Shipping](https://maritime-executive.com/article/china-names-largest-methanol-dual-fuel-boxship-expanding-green-shipping)\n\nPublished\nby\n**[The Maritime Executive](https://maritime-executive.com/author/marex)**\n\n![Japan Ground Self-Defense Force Type 88 Surface-to-Ship Missile System](https://maritime-executive.com/media/images/article/Photos/Navy_Govt_CoastGuard/Philippine-anti-ship-missle-test.jpg)\n\n## [Video: Philippines and Japan Conduct Anti-Ship Missile Sinking Corvette](https://maritime-executive.com/article/video-philippines-and-japan-conduct-anti-ship-missile-sinking-corvette)\n\nPublished\nby\n**[The Maritime Executive](https://maritime-executive.com/author/marex)**\n\n![dhow off Somalia](https://maritime-executive.com/media/images/article",
@@ -370,7 +358,7 @@
         "军事冲突升级"
       ],
       "severity": "high",
-      "summary": "[Maritime Executive Logo](https://maritime-executive.",
+      "summary": "",
       "affected_tickers": [
         "GC=F",
         "SI=F",
@@ -386,7 +374,7 @@
     },
     {
       "title": "Russia is stumbling on the battlefield - The Economist",
-      "title_cn": "俄罗斯在战场上受挫 - 经济学人",
+      "title_cn": "俄罗斯在战场上步履蹒跚 - 经济学人",
       "url": "https://www.economist.com/europe/2026/05/10/russia-is-stumbling-on-the-battlefield",
       "content": "Europe | Turning the tide of war\n\n# Russia is stumbling on the battlefield\n\n## As casualties soar in Ukraine, Vladimir Putin looks ever more beleaguered at home\n\n|6 min read [...] ## Continue with a free trial\n\n### Get full access to our independent journalism for free\n\nFree trial\n\nOr create a free ",
       "content_detail": "",
@@ -399,7 +387,7 @@
         "军事冲突升级"
       ],
       "severity": "medium",
-      "summary": "Europe | Turning the tide of war",
+      "summary": "Europe Turning the tide of war Russia is stumbling on the battlefield As casualties soar in Ukraine, Vladimir Putin looks ever more beleaguered at home 6 min read [...] Continue",
       "affected_tickers": [
         "GC=F",
         "SI=F",
@@ -415,7 +403,7 @@
     },
     {
       "title": "Second suspected oil slick near Iran raises fears of major disaster in vital global oil corridor - Fox News",
-      "title_cn": "伊朗附近发现第二处疑似油膜 引发对重要全球航道重大灾难的担忧",
+      "title_cn": "伊朗附近第二次疑似浮油带引发对重要全球航道重大灾难的担忧",
       "url": "https://www.foxnews.com/world/second-suspected-oil-slick-near-iran-raises-fears-major-disaster-vital-global-oil-corridor",
       "content": "#### China’s undersea cable threat raises $10T fears as Trump-Xi talks loom\n #### From London synagogues to New York preschools — antisemitic attacks escalating on both sides of the Atlantic\n #### Woman who spent 7 years in Chinese prison describes torture, surveillance and loss of her husband\n ####",
       "content_detail": "[Fox News](https://www.foxnews.com/ \"Breaking News Today Fox News\")\n\n[Expand / Collapse search](#)\n\n[Log In](#)\n\n[Watch TV](https://www.foxnews.com/video/5614615980001)\n\n* #### [Games](//www.foxnews.com/games)\n\n  + [Scattergories Daily](//www.foxnews.com/games/scattergories-daily)\n  + [5 Across the Letter Word Game](//www.foxnews.com/games/5-across-word-game)\n  + [DownWords](//www.foxnews.com/games/lil-snack-downwords)\n  + [Sudoku](//www.foxnews.com/games/sudoku)\n  + [Swap Words](//www.foxnews.com/games/lil-snack-word-swap)\n  + [Word Search](//www.foxnews.com/games/word-search)\n  + [Icon Match](//www.foxnews.com/games/icon-match-puzzle)\n  + [Daily Crossword Puzzle](//www.foxnews.com/games/daily-crossword-puzzle)\n  + [Mini Crossword Puzzle](//www.foxnews.com/games/mini-crossword-puzzle)\n* #### [Deals](//www.foxnews.com/deals)\n\n  + [Trending Deals](//www.foxnews.com/category/deals/trending)\n  + [Gift Guides](//www.foxnews.com/category/deals/gift)\n  + [Home Deals](//www.foxnews.com/category/deals/home)\n  + [Kitchen Deals](//www.foxnews.com/category/deals/kitchen)\n  + [Tech and Electronic Deals](//www.foxnews.com/category/deals/tech-and-electronic)\n  + [Health and Fitness Deals](//www.foxnews.com/category/deals/health-and-fitness)\n  + [Beauty and Fashion Deals](//www.foxnews.com/category/deals/beauty-and-fashion)\n* #### [FOX Business](https://www.foxbusiness.com/)\n\n  + [Economy](https://www.foxbusiness.com/economy)\n  + [Personal Finance](https://www.foxbusiness.com/personal-finan",
@@ -429,7 +417,7 @@
         "航运中断"
       ],
       "severity": "high",
-      "summary": "[Fox News](https://www.",
+      "summary": "[Watch TV]( + + + + + + + + + + + + + + + + [FOX Business]( + [Economy]( + [Personal Finance](",
       "affected_tickers": [
         "CL=F",
         "BZ=F",
@@ -444,7 +432,7 @@
     },
     {
       "title": "Latvian defence minister resigns after Ukrainian drones hit oil tanks - Reuters",
-      "title_cn": "乌克兰无人机击中油罐后拉脱维亚国防部长辞职",
+      "title_cn": "乌克兰无人机袭油罐，拉脱维亚防长辞职",
       "url": "https://www.reuters.com/world/latvian-defence-minister-resigns-after-ukrainian-drones-hit-oil-tanks-2026-05-10/",
       "content": "5 hours agoWorld categoryGermany sceptical on Putin's suggestion of Schroeder role in Ukraine peace talks , opens new tab [...] 4 mins agoBusiness categoryModi urges India to conserve fuel as global price surges Image 3: India's Prime Minister Narendra Modi greets his supporters as he arrives at the",
       "content_detail": "# Latvian defence minister resigns after Ukrainian drones hit oil tanks | Reuters\n\n[Skip to main content](https://www.reuters.com/world/latvian-defence-minister-resigns-after-ukrainian-drones-hit-oil-tanks-2026-05-10/#main-content)\n\nReport Ad![Image 1](blob:http://localhost/a2f9abce2c7bd7e72f7c1065e8e25533)\n\n[Exclusive news, data and analytics for financial market professionals Learn more about Refinitiv](https://www.reuters.com/differentiator/)\n\n[](https://www.reuters.com/)\n\n*   [World](https://www.reuters.com/world/) \n\n## [Browse World](https://www.reuters.com/world/)\n\n    *   [Africa](https://www.reuters.com/world/africa/)\n    *   [Americas](https://www.reuters.com/world/americas/)\n    *   [Asia Pacific](https://www.reuters.com/world/asia-pacific/)\n    *   [China](https://www.reuters.com/world/china/)\n    *   [Europe](https://www.reuters.com/world/europe/)\n    *   [India](https://www.reuters.com/world/india/)\n    *   [Iran War](https://www.reuters.com/world/iran/)\n\n    *   [Israel and Hamas at War](https://www.reuters.com/world/israel-hamas/)\n    *   [Japan](https://www.reuters.com/world/japan/)\n    *   [Middle East](https://www.reuters.com/world/middle-east/)\n    *   [Ukraine and Russia at War](https://www.reuters.com/world/ukraine-russia-war/)\n    *   [United Kingdom](https://www.reuters.com/world/uk/)\n    *   [United States](https://www.reuters.com/world/us/)\n    *   [Reuters NEXT New York](https://www.reuters.com/world/reuters-next/)\n\n*   [Business](https://www.reuters",
@@ -458,7 +446,7 @@
         "原油供应风险"
       ],
       "severity": "high",
-      "summary": "# Latvian defence minister resigns after Ukrainian drones hit oil tanks | Reuters",
+      "summary": "",
       "affected_tickers": [
         "GC=F",
         "SI=F",
@@ -479,9 +467,9 @@
     },
     {
       "title": "China is 'spoiling for a fight' on trade and regulations ahead of the Trump-Xi summit: Eswar Prasad - CNBC",
-      "title_cn": "特朗普-习峰会前夕中国在贸易和监管上“蓄势待战”",
+      "title_cn": "特习峰会前中国在贸易和法规上寻衅",
       "url": "https://www.cnbc.com/video/2026/05/11/china-is-spoiling-for-a-fight-ahead-of-trump-xi-summit-eswar-prasad.html",
-      "content": "Skip Navigation\n\nMarkets\n\n Pre-Markets\n U.S. Markets\n Europe Markets\n China Markets\n Asia Markets\n World Markets\n Currencies\n Prediction Markets\n Cryptocurrency\n Futures & Commodities\n Bonds\n Funds & ETFs\n\nBusiness\n\n Economy\n Finance\n Health & Science\n Media\n Real Estate\n Energy\n Climate\n Transporta",
+      "content": "watch now\n\nwatch now\n\nVIDEO01:02\n\nIntel shares surge 15% on report of preliminary Apple chip deal\n\nwatch now\n\nwatch now\n\nVIDEO01:17\n\nLime files for IPO after years-long road to public markets\n\nwatch now\n\nwatch now\n\nVIDEO02:27\n\nThe American consumer is unbelievably resilient, says Affirm CEO\n\nwatch n",
       "content_detail": "[Skip Navigation](#MainContent)\n\n[![CNBC](https://static-redesign.cnbcfm.com/dist/d6085c9e81f4d7365c8d.svg)](//www.cnbc.com/world/)\n\n[Markets](/markets/)\n\n\n\n* [Pre-Markets](/pre-markets/)\n* [U.S. Markets](/us-markets/)\n* [Europe Markets](/markets-europe/)\n* [China Markets](/china-markets/)\n* [Asia Markets](/markets-asia-pacific/)\n* [World Markets](/world-markets/)\n* [Currencies](/currencies/)\n* [Prediction Markets](/prediction-markets/)\n* [Cryptocurrency](/cryptocurrency/)\n* [Futures & Commodities](/futures-and-commodities/)\n* [Bonds](/bonds/)\n* [Funds & ETFs](/funds-and-etfs/)\n\n[Business](/business/)\n\n\n\n* [Economy](/economy/)\n* [Finance](/finance/)\n* [Health & Science](/health-and-science/)\n* [Media](/media/)\n* [Real Estate](/real-estate/)\n* [Energy](/energy/)\n* [Climate](/climate/)\n* [Transportation](/transportation/)\n* [Investigations](/cnbc-investigations/)\n* [Industrials](/industrials/)\n* [Retail](/retail/)\n* [Wealth](/wealth/)\n* [Sports](/sports/)\n* [Life](/life/)\n* [Small Business](/small-business/)\n\n[Investing](/investing/)\n\n\n\n* [Personal Finance](/personal-finance/)\n* [Fintech](/fintech/)\n* [Financial Advisors](/financial-advisors/)\n* [Options Action](/options-action/)\n* [ETF Street](/etf-street/)\n* [Buffett Archive](https://buffett.cnbc.com)\n* [Earnings](/earnings/)\n* [Trader Talk](/trader-talk/)\n\n[Tech](/technology/)\n\n\n\n* [Cybersecurity](/cybersecurity/)\n* [AI](/ai-artificial-intelligence/)\n* [Enterprise](/enterprise/)\n* [Internet](/internet/)\n* [Media](/media/)\n* ",
       "published_date": "Mon, 11 May 2026 05:39:28 GMT",
       "search_region": "中美博弈",
@@ -489,54 +477,11 @@
         "中美博弈"
       ],
       "event_types": [
-        "中美关税",
-        "供应链中断"
-      ],
-      "severity": "high",
-      "summary": "[Skip Navigation](#MainContent)",
-      "affected_tickers": [
-        "FXI",
-        "ASHR",
-        "KWEB",
-        "YINN",
-        "MCHI",
-        "0700.HK",
-        "9988.HK",
-        "CQQQ",
-        "NVDA",
-        "TSM",
-        "INTC",
-        "AMD",
-        "ASML",
-        "SMH",
-        "SOXX"
-      ]
-    },
-    {
-      "title": "Mizuho warns Trump- Xi summit may yield little but tech tensions remain the real risk - CNBC",
-      "title_cn": "瑞穗银行警告特习峰会或成果寥寥但科技紧张仍是真正难题",
-      "url": "https://www.cnbc.com/video/2026/05/11/much-more-difficult-horzion-for-markets-as-growth-will-be-impacted-from-higher-oil-prices-set-to-feed-in-from-summer.html",
-      "content": "Mizuho Securities' Sean Darby says Chinese restrictions on rare earth access remain a key pressure point for U.S. tech sector, potentially eroding the strong margins many have recently enjoyed. He also expects the yuan to strengthen modestly after a Trump-Xi summit, helped by improving export qualit",
-      "content_detail": "# Trump- Xi summit may yield little but tech tensions remain a real risk\n\n[Skip Navigation](https://www.cnbc.com/video/2026/05/11/much-more-difficult-horzion-for-markets-as-growth-will-be-impacted-from-higher-oil-prices-set-to-feed-in-from-summer.html#MainContent)\n\nNEWSLETTER[CNBC Daily Open: Political pressure cooker week](https://www.cnbc.com/2026/05/11/cnbc-daily-open-political-pressure-cooker-week.html)\n\n[![Image 1: CNBC logo](https://static-redesign.cnbcfm.com/dist/d6085c9e81f4d7365c8d.svg)](https://www.cnbc.com/)\n\n[Markets](https://www.cnbc.com/markets/)\n\n*   [Pre-Markets](https://www.cnbc.com/pre-markets/)\n*   [U.S. Markets](https://www.cnbc.com/us-markets/)\n*   [Currencies](https://www.cnbc.com/currencies/)\n*   [Prediction Markets](https://www.cnbc.com/prediction-markets/)\n*   [Cryptocurrency](https://www.cnbc.com/cryptocurrency/)\n*   [Futures & Commodities](https://www.cnbc.com/futures-and-commodities/)\n*   [Bonds](https://www.cnbc.com/bonds/)\n*   [Funds & ETFs](https://www.cnbc.com/funds-and-etfs/)\n\n[Business](https://www.cnbc.com/business/)\n\n*   [Economy](https://www.cnbc.com/economy/)\n*   [Finance](https://www.cnbc.com/finance/)\n*   [Health & Science](https://www.cnbc.com/health-and-science/)\n*   [Media](https://www.cnbc.com/media/)\n*   [Real Estate](https://www.cnbc.com/real-estate/)\n*   [Energy](https://www.cnbc.com/energy/)\n*   [Climate](https://www.cnbc.com/climate/)\n*   [Transportation](https://www.cnbc.com/transportation/)\n*   [Investigations](https://www.cn",
-      "published_date": "Mon, 11 May 2026 06:19:54 GMT",
-      "search_region": "中美博弈",
-      "classified_regions": [
-        "中美博弈"
-      ],
-      "event_types": [
-        "供应链中断",
         "中美关税"
       ],
-      "severity": "high",
-      "summary": "# Trump- Xi summit may yield little but tech tensions remain a real risk",
+      "severity": "medium",
+      "summary": "",
       "affected_tickers": [
-        "NVDA",
-        "TSM",
-        "INTC",
-        "AMD",
-        "ASML",
-        "SMH",
-        "SOXX",
         "FXI",
         "ASHR",
         "KWEB",
@@ -548,70 +493,10 @@
       ]
     },
     {
-      "title": "U.S. and China in talks on aircraft and agriculture deals, Walter Bloomberg notes - Traders Union",
-      "title_cn": "美中就飞机和农业交易展开谈判",
-      "url": "https://tradersunion.com/news/market-voices/show/2027310-us-china-purchase-talks/",
-      "content": "Afghanistan\n Albania\n Algeria\n Angola\n Argentina\n Armenia\n Australia\n Austria\n Azerbaijan\n Bahamas\n Bahrain\n Bangladesh\n Belarus\n Belgium\n Bolivia\n Botswana\n Brazil\n Brunei\n Bulgaria\n Cambodia\n Cameroon\n Canada\n Chile\n China\n Colombia\n Congo\n Costa Rica\n Cote d'Ivoire\n Croatia\n Cuba\n Cyprus\n Czechia",
-      "content_detail": "[![logo](/assets/dist/main/img/tunews-logo.svg)](/news/)\n\nOnline Trading Starts Here\n\nSign in with\n\n[Login](/user/register/)   [Registration](/user/register/)\n\nEN /\n\nAR Arabic\n\nAZ Azerbaijan\n\nCS Czech\n\nDA Danish\n\nDE Deutsche\n\nEL Greek\n\nEN English\n\nES Spanish\n\nET Estonian\n\nFI Finnish\n\nFR French\n\nHE Hebrew\n\nHI Hindi\n\nHU Hungarian\n\nHY Armenian\n\nIND Indonesian\n\nIT Italian\n\nJA Japan\n\nKK Kazakh\n\nKM Khmer\n\nKO Korean\n\nMS Melayu\n\nNB Norwegian\n\nNL Dutch\n\nPL Polish\n\nPT Portuguese\n\nRO Romanian\n\n... Русский\n\nSQ Albanian\n\nSV Swedish\n\nTG Tajik\n\nTH Thai\n\nTL Tagalog\n\nTR Turkish\n\nUA Ukrainian\n\nUR Urdu\n\nUZ Uzbek\n\nVI Vietnamese\n\nZH Chinese\n\nMenu\n\n\n\n* [Traders Union](/)\n* [All News](/news/)\n* [Market Voices](/news/market-voices/)\n* U.S. and China discuss purchase deals\n\n[All news](/news/)\n\n[Editors' Picks](/news/editors-picks/)\n\n[Crypto News](/news/cryptocurrency-news/)\n\n[Financial News](/news/financial-news/)\n\n[Market Voices](/news/market-voices/)\n\n[Billionaires](/news/billionaires/)\n\n[Companies](/news/companies/)\n\n[Broker News](/news/brokers-news/)\n\n![Yulia Slavina](https://tradersunion.com/uploads/images/authors/yulia-slavina.jpeg)\n\n[Yulia Slavina](/about-us/yulia-slavina/)\n\n# U.S. and China in talks on aircraft and agriculture deals, Walter Bloomberg notes\n\n ![U.S. and China in talks on aircraft and agriculture deals, Walter Bloomberg notes](https://files.tradersunion.com/images/twitter-news/deitaone/deitaone_01.jpg \"U.S. and China in talks on aircraft and agriculture deals, Walter Bloomberg ",
-      "published_date": "Sun, 10 May 2026 18:30:09 GMT",
-      "search_region": "中美博弈",
-      "classified_regions": [
-        "中美博弈"
-      ],
-      "event_types": [
-        "中美关税",
-        "粮食供应"
-      ],
-      "severity": "medium",
-      "summary": "[logo](/assets/dist/main/img/tunews-logo.",
-      "affected_tickers": [
-        "FXI",
-        "ASHR",
-        "KWEB",
-        "YINN",
-        "MCHI",
-        "0700.HK",
-        "9988.HK",
-        "CQQQ",
-        "ZW=F",
-        "ZC=F",
-        "ZS=F",
-        "DBA",
-        "WEAT",
-        "CORN"
-      ]
-    },
-    {
-      "title": "Rare earths deal between US and China is still in effect, US official says - Reuters",
-      "title_cn": "美国官员称美中稀土交易依然有效",
-      "url": "https://www.reuters.com/world/china/rare-earths-deal-between-us-china-is-still-effect-us-official-says-2026-05-10/",
-      "content": "# Rare earths deal between US and China is still in effect, US official says | Reuters\n\nSkip to main content\n\nReport AdImage 1\n\nExclusive news, data and analytics for financial market professionals Learn more about Refinitiv\n\n summit, in Busan, South Korea, October 30, 2025. REUTERS/Evelyn Hockstein",
-      "content_detail": "",
-      "published_date": "Sun, 10 May 2026 18:26:54 GMT",
-      "search_region": "中美博弈",
-      "classified_regions": [
-        "中美博弈"
-      ],
-      "event_types": [
-        "供应链中断"
-      ],
-      "severity": "low",
-      "summary": "",
-      "affected_tickers": [
-        "NVDA",
-        "TSM",
-        "INTC",
-        "AMD",
-        "ASML",
-        "SMH",
-        "SOXX"
-      ]
-    },
-    {
       "title": "Aubrey Capital Management Ltd Purchases New Shares in Taiwan Semiconductor Manufacturing Company Ltd. $TSM - MarketBeat",
-      "title_cn": "奥布里资本管理公司购入台积电新股份",
+      "title_cn": "Aubrey资本管理公司购入台积电新股",
       "url": "https://www.marketbeat.com/instant-alerts/filing-aubrey-capital-management-ltd-purchases-new-shares-in-taiwan-semiconductor-manufacturing-company-ltd-tsm-2026-05-11/",
-      "content": "News\n           All Headlines\n           Instant News Alerts\n           Premium Articles\n           Research Surveys\n           Real-Time News Feed [...] ## Analyst Upgrades and Downgrades\n\n   AMD’s Breakout Isn’t the Story—This Catalyst Is [...] ### Boeing Wins More Than $7 Billion in Pentagon Cont",
+      "content": "A number of other large investors have also added to or reduced their stakes in the company. Shannon River Fund Management LLC bought a new stake in Taiwan Semiconductor Manufacturing in the 3rd quarter valued at about $2,430,000. Vanguard Personalized Indexing Management LLC lifted its position in ",
       "content_detail": "",
       "published_date": "Mon, 11 May 2026 07:31:42 GMT",
       "search_region": "中美博弈",
@@ -634,12 +519,81 @@
       ]
     },
     {
-      "title": "China's April car sales drop for seventh month - Reuters",
-      "title_cn": "中国4月汽车销量连续第七个月下滑",
-      "url": "https://www.reuters.com/business/autos-transportation/chinas-april-car-sales-drop-seventh-month-2026-05-11/",
-      "content": "### Follow Us\n\n   [](\n   [](\n   [](\n   [](\n   [](\n   [](\n\n### LSEG Products\n\n   #### Workspace, opens new tab\nAccess unmatched financial data, news and content in a highly-customised workflow experience on desktop, web and mobile.\n\n   #### Data Catalogue, opens new tab\nBrowse an unrivalled portfolio",
-      "content_detail": "# China's domestic car demand stays weak but exports strengthen | Reuters\n\n[Skip to main content](https://www.reuters.com/business/autos-transportation/chinas-april-car-sales-drop-seventh-month-2026-05-11/#main-content)\n\nReport Ad![Image 1](blob:http://localhost/a2f9abce2c7bd7e72f7c1065e8e25533)\n\n[Exclusive news, data and analytics for financial market professionals Learn more about Refinitiv](https://www.reuters.com/differentiator/)\n\n[](https://www.reuters.com/)\n\n*   [World](https://www.reuters.com/world/) \n\n## [Browse World](https://www.reuters.com/world/)\n\n    *   [Africa](https://www.reuters.com/world/africa/)\n    *   [Americas](https://www.reuters.com/world/americas/)\n    *   [Asia Pacific](https://www.reuters.com/world/asia-pacific/)\n    *   [China](https://www.reuters.com/world/china/)\n    *   [Europe](https://www.reuters.com/world/europe/)\n    *   [India](https://www.reuters.com/world/india/)\n    *   [Iran War](https://www.reuters.com/world/iran/)\n\n    *   [Israel and Hamas at War](https://www.reuters.com/world/israel-hamas/)\n    *   [Japan](https://www.reuters.com/world/japan/)\n    *   [Middle East](https://www.reuters.com/world/middle-east/)\n    *   [Ukraine and Russia at War](https://www.reuters.com/world/ukraine-russia-war/)\n    *   [United Kingdom](https://www.reuters.com/world/uk/)\n    *   [United States](https://www.reuters.com/world/us/)\n    *   [Reuters NEXT New York](https://www.reuters.com/world/reuters-next/)\n\n*   [Business](https://www.reuters.com/busines",
-      "published_date": "Mon, 11 May 2026 02:45:59 GMT",
+      "title": "U.S. and China in talks on aircraft and agriculture deals, Walter Bloomberg notes - Traders Union",
+      "title_cn": "美中正谈判飞机和农业协议",
+      "url": "https://tradersunion.com/news/market-voices/show/2027310-us-china-purchase-talks/",
+      "content": "Montenegro\n Morocco\n Mozambique\n Myanmar\n Namibia\n Nepal\n Netherlands\n New Zealand\n Nigeria\n North Macedonia\n Norway\n Oman\n Pakistan\n Palestine\n Panama\n Papua New Guinea\n Paraguay\n Peru\n Philippines\n Poland\n Portugal\n Puerto Rico\n Qatar\n Reunion\n Romania\n Rwanda\n Saudi Arabia\n Serbia\n Singapore\n Slo",
+      "content_detail": "[![logo](/assets/dist/main/img/tunews-logo.svg)](/news/)\n\nOnline Trading Starts Here\n\nSign in with\n\n[Login](/user/register/)   [Registration](/user/register/)\n\nEN /\n\nAR Arabic\n\nAZ Azerbaijan\n\nCS Czech\n\nDA Danish\n\nDE Deutsche\n\nEL Greek\n\nEN English\n\nES Spanish\n\nET Estonian\n\nFI Finnish\n\nFR French\n\nHE Hebrew\n\nHI Hindi\n\nHU Hungarian\n\nHY Armenian\n\nIND Indonesian\n\nIT Italian\n\nJA Japan\n\nKK Kazakh\n\nKM Khmer\n\nKO Korean\n\nMS Melayu\n\nNB Norwegian\n\nNL Dutch\n\nPL Polish\n\nPT Portuguese\n\nRO Romanian\n\n... Русский\n\nSQ Albanian\n\nSV Swedish\n\nTG Tajik\n\nTH Thai\n\nTL Tagalog\n\nTR Turkish\n\nUA Ukrainian\n\nUR Urdu\n\nUZ Uzbek\n\nVI Vietnamese\n\nZH Chinese\n\nMenu\n\n\n\n* [Traders Union](/)\n* [All News](/news/)\n* [Market Voices](/news/market-voices/)\n* U.S. and China discuss purchase deals\n\n[All news](/news/)\n\n[Editors' Picks](/news/editors-picks/)\n\n[Crypto News](/news/cryptocurrency-news/)\n\n[Financial News](/news/financial-news/)\n\n[Market Voices](/news/market-voices/)\n\n[Billionaires](/news/billionaires/)\n\n[Companies](/news/companies/)\n\n[Broker News](/news/brokers-news/)\n\n![Yulia Slavina](https://tradersunion.com/uploads/images/authors/yulia-slavina.jpeg)\n\n[Yulia Slavina](/about-us/yulia-slavina/)\n\n# U.S. and China in talks on aircraft and agriculture deals, Walter Bloomberg notes\n\n ![U.S. and China in talks on aircraft and agriculture deals, Walter Bloomberg notes](https://files.tradersunion.com/images/twitter-news/deitaone/deitaone_01.jpg \"U.S. and China in talks on aircraft and agriculture deals, Walter Bloomberg ",
+      "published_date": "Sun, 10 May 2026 18:30:09 GMT",
+      "search_region": "中美博弈",
+      "classified_regions": [
+        "中美博弈"
+      ],
+      "event_types": [
+        "中美关税",
+        "粮食供应"
+      ],
+      "severity": "medium",
+      "summary": "and China discuss purchase deals ![Yulia Slavina]( U.S.",
+      "affected_tickers": [
+        "FXI",
+        "ASHR",
+        "KWEB",
+        "YINN",
+        "MCHI",
+        "0700.HK",
+        "9988.HK",
+        "CQQQ",
+        "ZW=F",
+        "ZC=F",
+        "ZS=F",
+        "DBA",
+        "WEAT",
+        "CORN"
+      ]
+    },
+    {
+      "title": "Mizuho warns Trump- Xi summit may yield little but tech tensions remain the real risk - CNBC",
+      "title_cn": "瑞穗警告特习峰会或成果寥寥，科技紧张仍是实质",
+      "url": "https://www.cnbc.com/video/2026/05/11/much-more-difficult-horzion-for-markets-as-growth-will-be-impacted-from-higher-oil-prices-set-to-feed-in-from-summer.html",
+      "content": "Mizuho Securities' Sean Darby says Chinese restrictions on rare earth access remain a key pressure point for U.S. tech sector, potentially eroding the strong margins many have recently enjoyed. He also expects the yuan to strengthen modestly after a Trump-Xi summit, helped by improving export qualit",
+      "content_detail": "# Trump- Xi summit may yield little but tech tensions remain a real risk\n\n[Skip Navigation](https://www.cnbc.com/video/2026/05/11/much-more-difficult-horzion-for-markets-as-growth-will-be-impacted-from-higher-oil-prices-set-to-feed-in-from-summer.html#MainContent)\n\nNEWSLETTER[CNBC Daily Open: Political pressure cooker week](https://www.cnbc.com/2026/05/11/cnbc-daily-open-political-pressure-cooker-week.html)\n\n[![Image 1: CNBC logo](https://static-redesign.cnbcfm.com/dist/d6085c9e81f4d7365c8d.svg)](https://www.cnbc.com/)\n\n[Markets](https://www.cnbc.com/markets/)\n\n*   [Pre-Markets](https://www.cnbc.com/pre-markets/)\n*   [U.S. Markets](https://www.cnbc.com/us-markets/)\n*   [Currencies](https://www.cnbc.com/currencies/)\n*   [Prediction Markets](https://www.cnbc.com/prediction-markets/)\n*   [Cryptocurrency](https://www.cnbc.com/cryptocurrency/)\n*   [Futures & Commodities](https://www.cnbc.com/futures-and-commodities/)\n*   [Bonds](https://www.cnbc.com/bonds/)\n*   [Funds & ETFs](https://www.cnbc.com/funds-and-etfs/)\n\n[Business](https://www.cnbc.com/business/)\n\n*   [Economy](https://www.cnbc.com/economy/)\n*   [Finance](https://www.cnbc.com/finance/)\n*   [Health & Science](https://www.cnbc.com/health-and-science/)\n*   [Media](https://www.cnbc.com/media/)\n*   [Real Estate](https://www.cnbc.com/real-estate/)\n*   [Energy](https://www.cnbc.com/energy/)\n*   [Climate](https://www.cnbc.com/climate/)\n*   [Transportation](https://www.cnbc.com/transportation/)\n*   [Investigations](https://www.cn",
+      "published_date": "Mon, 11 May 2026 06:19:54 GMT",
+      "search_region": "中美博弈",
+      "classified_regions": [
+        "中美博弈"
+      ],
+      "event_types": [
+        "中美关税",
+        "供应链中断"
+      ],
+      "severity": "high",
+      "summary": "",
+      "affected_tickers": [
+        "FXI",
+        "ASHR",
+        "KWEB",
+        "YINN",
+        "MCHI",
+        "0700.HK",
+        "9988.HK",
+        "CQQQ",
+        "NVDA",
+        "TSM",
+        "INTC",
+        "AMD",
+        "ASML",
+        "SMH",
+        "SOXX"
+      ]
+    },
+    {
+      "title": "Rare earths deal between US and China is still in effect, US official says - Reuters",
+      "title_cn": "美国官员称美中稀土交易仍有效",
+      "url": "https://www.reuters.com/world/china/rare-earths-deal-between-us-china-is-still-effect-us-official-says-2026-05-10/",
+      "content": "12 hours agoSustainability categoryHow China's evolving consumer habits may protect the Amazon rainforest Image 3: Cattle walk on a tract of Amazon rainforest that has been cleared by loggers and farmers near Virola-Jatoba PDS in Anapu \n   2 hours agoChina categoryChina's He to hold trade talks with",
+      "content_detail": "",
+      "published_date": "Sun, 10 May 2026 18:26:54 GMT",
       "search_region": "中美博弈",
       "classified_regions": [
         "中美博弈"
@@ -647,8 +601,8 @@
       "event_types": [
         "供应链中断"
       ],
-      "severity": "medium",
-      "summary": "# China's domestic car demand stays weak but exports strengthen | Reuters",
+      "severity": "low",
+      "summary": "",
       "affected_tickers": [
         "NVDA",
         "TSM",
@@ -660,42 +614,68 @@
       ]
     },
     {
-      "title": "China Exports More EVs Than Traditional Cars for First Time in April - WSJ",
-      "title_cn": "中国4月电动车出口首次超过传统汽车",
-      "url": "https://www.wsj.com/business/autos/china-exports-more-evs-than-traditional-cars-for-first-time-in-april-e43cccbb",
-      "content": "Image 8: Ben Sasse: Habits for Humanity in the Age of AI\n\n#### Ben Sasse: Habits for Humanity in the Age of AI\n\nImage 9: Is Ukraine Turning the Russian Tide?\n\n#### Is Ukraine Turning the Russian Tide?\n\nImage 10: Iran Tests Trump’s Will to Fight\n\n#### Iran Tests Trump’s Will to Fight\n\nImage 11: Virgi",
-      "content_detail": "",
-      "published_date": "Mon, 11 May 2026 03:47:00 GMT",
+      "title": "US investors warm to Ukrainian defense startups—but export laws slow cooperation - Defense One",
+      "title_cn": "美国投资者对乌克兰国防初创企业兴趣升温 但出口法律减缓合作",
+      "url": "https://www.defenseone.com/technology/2026/05/us-investors-warm-ukrainian-defense-startups-export-laws-slow-cooperation/413446/?oref=d1-featured-river-top",
+      "content": "But Ukrainian companies say U.S. export-control laws make it all but impossible to build cutting-edge defense products in the United States. Take Airlogix, which has a joint venture with Auterion, a U.S.-German company, to develop and build drones in the United States. The company has found it can t",
+      "content_detail": "![](https://www.facebook.com/tr?id=10155007044873614&ev=PageView&noscript=1)\n![Defense One](/static/defenseone/img/defense-one-logo.svg)\n![](https://pubads.g.doubleclick.net/gampad/ad?sz=interstitial&c=963189025&iu=%2F617%2Fdefenseone.com%2Fwelcome&t=noscript%3Dtrue%26referring_domain%3DTyped%252FBookmarked%26level%3D0)\n![](https://pubads.g.doubleclick.net/gampad/ad?tile=1&sz=interstitial&c=570261812&iu=%2F617%2Fdefenseone.com%2Fwelcome&t=noscript%3Dtrue%26referring_domain%3DTyped%252FBookmarked%26level%3D1)\n![](https://pubads.g.doubleclick.net/gampad/ad?tile=2&sz=300x250&c=661448311&iu=%2F617%2Fdefenseone.com%2Fwelcome&t=noscript%3Dtrue%26referring_domain%3DTyped%252FBookmarked%26level%3D2)\n![An artist's conception depicts an MV-75 with a notional aerial refueling port operating from a notional unmanned tanker.](https://cdn.defenseone.com/media/img/cd/2026/04/17/Screenshot_2026_04_17_at_2.18.00PM/261x157.png?1776450605)\n![Defense Secretary Pete Hegseth speaks alongside Chairman of the Joint Chiefs of Staff General Dan Caine during a press briefing at the Pentagon in Washington, D.C., on April 16, 2026.](https://cdn.defenseone.com/media/img/cd/2026/04/16/GettyImages_2271031615/261x157.jpg?1776349277)\n![The ground vehicle ULTRA from Overland Al allows operators to deploy multiple drones with no human present.](https://cdn.defenseone.com/media/img/cd/2026/04/15/screenshot_2026_04_15_at_8.53.00pm/261x157.png?1776357039)\n![The guided missile frigate Samuel B. Roberts, down at the",
+      "published_date": "Mon, 11 May 2026 08:31:38 GMT",
+      "search_region": "中美博弈",
+      "classified_regions": [
+        "俄乌战争"
+      ],
+      "event_types": [
+        "军工受益"
+      ],
+      "severity": "medium",
+      "summary": "![]( ![]( ![]( ![An artist's conception depicts an MV-75 with a notional aerial refueling port operating from a notional unmanned tanker.]( ![Defense Secretary Pete Hegseth speaks alongside Chairman of the",
+      "affected_tickers": [
+        "LMT",
+        "NOC",
+        "RTX",
+        "GD",
+        "LHX",
+        "ITA",
+        "PPA",
+        "XAR"
+      ]
+    },
+    {
+      "title": "China's April car sales drop for seventh month - Reuters",
+      "title_cn": "中国4月汽车销量连续第七个月下滑",
+      "url": "https://www.reuters.com/business/autos-transportation/chinas-april-car-sales-drop-seventh-month-2026-05-11/",
+      "content": "Suggested Topics:\n   Asian Markets\n   ADAS, AV & Safety\n   EV Battery\n   Sustainable & EV Supply Chain\n\n    \n    \n    \n    \n    \n\nPurchase Licensing Rights\n\n## Read Next\n\n   57 mins agoChina's April producer inflation at 45-month peak on energy price shock , opens new tab\n\n### Stay Informed\n\n   Down",
+      "content_detail": "# China's domestic car demand stays weak but exports strengthen | Reuters\n\n[Skip to main content](https://www.reuters.com/business/autos-transportation/chinas-april-car-sales-drop-seventh-month-2026-05-11/#main-content)\n\nReport Ad![Image 1](blob:http://localhost/a2f9abce2c7bd7e72f7c1065e8e25533)\n\n[Exclusive news, data and analytics for financial market professionals Learn more about Refinitiv](https://www.reuters.com/differentiator/)\n\n[](https://www.reuters.com/)\n\n*   [World](https://www.reuters.com/world/) \n\n## [Browse World](https://www.reuters.com/world/)\n\n    *   [Africa](https://www.reuters.com/world/africa/)\n    *   [Americas](https://www.reuters.com/world/americas/)\n    *   [Asia Pacific](https://www.reuters.com/world/asia-pacific/)\n    *   [China](https://www.reuters.com/world/china/)\n    *   [Europe](https://www.reuters.com/world/europe/)\n    *   [India](https://www.reuters.com/world/india/)\n    *   [Iran War](https://www.reuters.com/world/iran/)\n\n    *   [Israel and Hamas at War](https://www.reuters.com/world/israel-hamas/)\n    *   [Japan](https://www.reuters.com/world/japan/)\n    *   [Middle East](https://www.reuters.com/world/middle-east/)\n    *   [Ukraine and Russia at War](https://www.reuters.com/world/ukraine-russia-war/)\n    *   [United Kingdom](https://www.reuters.com/world/uk/)\n    *   [United States](https://www.reuters.com/world/us/)\n    *   [Reuters NEXT New York](https://www.reuters.com/world/reuters-next/)\n\n*   [Business](https://www.reuters.com/busines",
+      "published_date": "Mon, 11 May 2026 02:45:59 GMT",
       "search_region": "中美博弈",
       "classified_regions": [
         "中美博弈"
       ],
       "event_types": [
-        "中美关税"
+        "供应链中断"
       ],
       "severity": "medium",
-      "summary": "Image 8: Ben Sasse: Habits for Humanity in the Age of AI",
+      "summary": "",
       "affected_tickers": [
-        "FXI",
-        "ASHR",
-        "KWEB",
-        "YINN",
-        "MCHI",
-        "0700.HK",
-        "9988.HK",
-        "CQQQ"
+        "NVDA",
+        "TSM",
+        "INTC",
+        "AMD",
+        "ASML",
+        "SMH",
+        "SOXX"
       ]
     },
     {
       "title": "BBC News Continues to Sideline Hezbollah Attacks On Israel - camera.org",
-      "title_cn": "BBC新闻继续边缘化真主党对以色列的袭击",
+      "title_cn": "BBC新闻继续淡化真主党对以色列的袭击",
       "url": "https://www.camera.org/article/bbc-news-continues-to-sideline-hezbollah-attacks-on-israel/",
-      "content": "> Israel says its actions are in response to what it describes as violations of the deal by Hezbollah, the Iran-backed militia and political party. Hezbollah was not involved in the ceasefire agreement but had indicated it would abide by its terms if it was also respected by Israel. …\n>\n> The US-med",
+      "content": "> A chronological analysis of attacks since the beginning of the ceasefire indicates a clear upward trend in Hezbollah’s daily operational rate. While the initial phase was characterized by relatively limited activity, the later stage shows a more consistent and elevated rate of attacks.\n\nThe analys",
       "content_detail": "",
       "published_date": "Sun, 10 May 2026 12:15:43 GMT",
       "search_region": "中东/红海",
       "classified_regions": [
-        "美伊冲突"
+        "中东/红海"
       ],
       "event_types": [
         "军事冲突升级"
@@ -716,10 +696,44 @@
       ]
     },
     {
+      "title": "Iran tests cease-fire yet again with drone strikes on Gulf states, cargo ship as Trump awaits peace proposal response - New York Post",
+      "title_cn": "伊朗以无人机袭击海湾国家和货船再次测试停火",
+      "url": "https://nypost.com/2026/05/10/world-news/iran-continues-to-test-cease-fire-with-drone-strikes-on-gulf-states-and-cargo-ship/",
+      "content": "Meanwhile, Qatar’s defense ministry said that a drone targeted a commercial ship coming from Abu Dhabi into a southern port, setting a small fire that was extinguished. The United Kingdom Maritime Trade Operations Centre said that the attack happened 23 nautical miles northeast of Qatar’s capital, D",
+      "content_detail": "",
+      "published_date": "Sun, 10 May 2026 13:12:05 GMT",
+      "search_region": "中东/红海",
+      "classified_regions": [
+        "中东/红海"
+      ],
+      "event_types": [
+        "军事冲突升级",
+        "航运中断"
+      ],
+      "severity": "critical",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "SI=F",
+        "LMT",
+        "NOC",
+        "RTX",
+        "GD",
+        "GLD",
+        "SLV",
+        "ITA",
+        "PPA",
+        "ZIM",
+        "MATX",
+        "BOAT",
+        "SEA"
+      ]
+    },
+    {
       "title": "With Little Leverage, Lebanon Turns to Saudis in Pursuit of a Cease-fire - Haaretz",
-      "title_cn": "缺乏筹码，黎巴嫩转向沙特寻求停火",
+      "title_cn": "黎巴嫩缺乏筹码，转向沙特寻求停火",
       "url": "https://www.haaretz.com/middle-east-news/2026-05-11/ty-article/.premium/with-little-leverage-lebanon-turns-to-saudis-in-pursuit-of-a-cease-fire/0000019e-1323-d790-a3ff-fff70e3e0000",
-      "content": "## Comments\n\nLoading...\n\n## In the News\n\n### In the News:\n\nIsrael-Iran Live UpdatesMojtaba KhameneiGaza TalksBritish JewsJonny GreenwoodIsrael's 2026 ElectionsHaQuizHaaretz Podcast\n\n### With Little Leverage, Lebanon Turns to Saudis in Pursuit of a Cease-fire\n\n### Netanyahu: Iran War 'Not Over,' No C",
+      "content": "Haaretz - back to home page\n\nSearch\n\n# With Little Leverage, Lebanon Turns to Saudis in Pursuit of a Cease-fire\n\nIsrael is looking for a quick solution, but Beirut says Hezbollah cannot be defanged without risking collapse and renewed civil war; Saudi Arabia is now trying to persuade Trump to push f",
       "content_detail": "",
       "published_date": "Mon, 11 May 2026 00:59:00 GMT",
       "search_region": "中东/红海",
@@ -746,7 +760,7 @@
     },
     {
       "title": "Netanyahu: Iran war 'not over,' no clear end to fighting with Hezbollah - Haaretz",
-      "title_cn": "内塔尼亚胡：与伊朗战争“尚未结束”，与真主党战斗无明确结束时间",
+      "title_cn": "内塔尼亚胡：伊朗战争'尚未结束'，与真主党的战斗未有明确终结",
       "url": "https://www.haaretz.com/middle-east-news/2026-05-11/ty-article/.premium/netanyahu-iran-war-not-over-no-clear-end-to-fighting-with-hezbollah/0000019e-13ad-d969-adff-17ede3600000",
       "content": "Iran nuclear\n\nIran\n\nIsrael - U.S.\n\nBenjamin Netanyahu\n\nIsrael-Gaza War\n\n2026 Israel-Iran War\n\n## Comments\n\nLoading...\n\n## In the News\n\n### In the News:\n\nIsrael-Iran Live UpdatesTrump-IranIsraeli DefenseBritish JewsWest BankHamasIsrael's 2026 ElectionsHaQuizHaaretz Podcast\n\n### Trump Says Iranian Res",
       "content_detail": "",
@@ -775,7 +789,7 @@
     },
     {
       "title": "Israel's High Court debates comptroller probe into Oct. 7 accountability - Haaretz",
-      "title_cn": "以色列高等法院就国家审计长对10月7日事件问责调查进行辩论",
+      "title_cn": "以色列高等法院就审计长对10月7日事件的问责调查进行辩论",
       "url": "https://www.haaretz.com/israel-news/israel-security/2026-05-11/ty-article/.premium/israels-high-court-debates-comptroller-probe-into-oct-7-accountability/0000019e-1240-db97-adbf-366748660000",
       "content": "Israel High Court\n\nIsrael-Gaza War\n\nOctober 7\n\nHamas hostages\n\nIDF\n\n## Comments\n\nLoading...\n\n## In the News\n\n### In the News:\n\nIsrael-Iran Live UpdatesIraq-IsraelNetanyahu-Oct. 7AntisemitismHezbollah DronesJonny GreenwoodHaQuizHaaretz Podcast\n\n### Sixteen Teens Indicted in Independence Day Killing o",
       "content_detail": "",
@@ -803,42 +817,8 @@
       ]
     },
     {
-      "title": "Iran tests cease-fire yet again with drone strikes on Gulf states, cargo ship as Trump awaits peace proposal response - New York Post",
-      "title_cn": "伊朗再次以无人机袭击海湾国家和货船试探停火",
-      "url": "https://nypost.com/2026/05/10/world-news/iran-continues-to-test-cease-fire-with-drone-strikes-on-gulf-states-and-cargo-ship/",
-      "content": "Washington has been awaiting Iran’s response to a new proposal for a deal to end the war, reopen the strait to shipping and roll back Iran’s nuclear program. President Trump has reiterated threats to resume full-scale bombing if Iran doesn’t accept an agreement to reopen the strait and roll back its",
-      "content_detail": "",
-      "published_date": "Sun, 10 May 2026 13:12:05 GMT",
-      "search_region": "中东/红海",
-      "classified_regions": [
-        "美伊冲突"
-      ],
-      "event_types": [
-        "军事冲突升级",
-        "航运中断"
-      ],
-      "severity": "high",
-      "summary": "",
-      "affected_tickers": [
-        "GC=F",
-        "SI=F",
-        "LMT",
-        "NOC",
-        "RTX",
-        "GD",
-        "GLD",
-        "SLV",
-        "ITA",
-        "PPA",
-        "ZIM",
-        "MATX",
-        "BOAT",
-        "SEA"
-      ]
-    },
-    {
       "title": "Taiwan to be key issue at Trump's high-stakes summit with Chinese president Xi Jinping - CBS News",
-      "title_cn": "台湾将成为特朗普与习近平高风险峰会关键议题",
+      "title_cn": "台湾将成为特朗普与习近平高风险峰会的关键议题",
       "url": "https://www.cbsnews.com/news/taiwan-trump-summit-china-xi-jinping/",
       "content": "Chen noted that China has become aggressive in the South China Sea and East China Sea, highlighting the country's escalating military buildup and daily military exercises. Xi previously to his military to be prepared to take action in Taiwan in 2027, but a March U.S. intelligence report on global th",
       "content_detail": "",
@@ -867,7 +847,7 @@
     },
     {
       "title": "Taiwan watches Trump-Xi summit amid China tensions - The Jerusalem Post",
-      "title_cn": "中美关系紧张之际 台湾关注特朗普-习近平峰会",
+      "title_cn": "台湾在紧张局势中关注特朗普-习近平峰会",
       "url": "https://www.jpost.com/international/article-895746",
       "content": "Speaking at a separate event in Taipei, Premier Cho Jung-tai said the government would \"certainly take action\" to restore the trust of the international community in Taiwan's defence policy.\n\n\"Having it fragmented in this way is a serious blow to defence and security,\" he said.\n\nChina has continued ",
       "content_detail": "",
@@ -896,7 +876,7 @@
     },
     {
       "title": "Taiwan 'confident' in US ties ahead of Trump visit to China - Reuters",
-      "title_cn": "台湾对特朗普访华前的美台关系“有信心” - 路透社",
+      "title_cn": "台湾在特朗普访华前对美台关系有信心 - 路透社",
       "url": "https://www.reuters.com/world/china/taiwan-confident-us-ties-ahead-trump-visit-china-2026-05-11/",
       "content": "Lin said he hoped parliament could take \"remedial\" action ​so ⁠that the defence budget can support Taiwan's security policy, as maintaining peace and stability in the Taiwan Strait is a common goal shared by Taiwan and like-minded ⁠nations.\n\n\"However, peace ​depends on strength - it requires demonst",
       "content_detail": "",
@@ -906,43 +886,7 @@
         "中美博弈"
       ],
       "event_types": [
-        "军事冲突升级",
-        "避险需求"
-      ],
-      "severity": "low",
-      "summary": "",
-      "affected_tickers": [
-        "GC=F",
-        "SI=F",
-        "LMT",
-        "NOC",
-        "RTX",
-        "GD",
-        "GLD",
-        "SLV",
-        "ITA",
-        "PPA",
-        "^VIX",
-        "DX-Y.NYB",
-        "IAU",
-        "TLT",
-        "UVXY"
-      ]
-    },
-    {
-      "title": "Taiwan fears Trump will speak off-script on its fate in Beijing - Los Angeles Times",
-      "title_cn": "台湾担心特朗普在北京即兴发言影响其命运 - 洛杉矶时报",
-      "url": "https://www.latimes.com/politics/story/2026-05-10/taiwan-fears-trump-will-speak-off-script-on-its-fate-in-beijing",
-      "content": "Chinese defense analysts have seen the war as a sign of U.S. weakness. But Taiwanese defense experts have taken away a different lesson: cheap equipment from a lesser military, such as dumb mines thrown in a strait, may just be enough to paralyze a superpower.\n\nThe latest U.S. National Security Stra",
-      "content_detail": "",
-      "published_date": "Sun, 10 May 2026 10:00:00 GMT",
-      "search_region": "台海/南海/朝鲜",
-      "classified_regions": [
-        "中美博弈"
-      ],
-      "event_types": [
-        "军事冲突升级",
-        "避险需求"
+        "军事冲突升级"
       ],
       "severity": "medium",
       "summary": "",
@@ -956,17 +900,41 @@
         "GLD",
         "SLV",
         "ITA",
-        "PPA",
-        "^VIX",
-        "DX-Y.NYB",
-        "IAU",
-        "TLT",
-        "UVXY"
+        "PPA"
+      ]
+    },
+    {
+      "title": "Taiwan fears Trump will speak off-script on its fate in Beijing - Los Angeles Times",
+      "title_cn": "台湾担心特朗普在北京就台湾命运脱稿发言 - 洛杉矶时报",
+      "url": "https://www.latimes.com/politics/story/2026-05-10/taiwan-fears-trump-will-speak-off-script-on-its-fate-in-beijing",
+      "content": "Chinese defense analysts have seen the war as a sign of U.S. weakness. But Taiwanese defense experts have taken away a different lesson: cheap equipment from a lesser military, such as dumb mines thrown in a strait, may just be enough to paralyze a superpower.\n\nThe latest U.S. National Security Stra",
+      "content_detail": "",
+      "published_date": "Sun, 10 May 2026 10:00:00 GMT",
+      "search_region": "台海/南海/朝鲜",
+      "classified_regions": [
+        "中美博弈"
+      ],
+      "event_types": [
+        "军事冲突升级"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "SI=F",
+        "LMT",
+        "NOC",
+        "RTX",
+        "GD",
+        "GLD",
+        "SLV",
+        "ITA",
+        "PPA"
       ]
     },
     {
       "title": "Taiwan claims to have driven away a Chinese research vessel - Marine News Magazine",
-      "title_cn": "台湾声称驱离一艘中国科考船 - 海洋新闻杂志",
+      "title_cn": "台湾声称驱离了一艘中国科考船 - 海洋新闻杂志",
       "url": "https://www.marinelink.com/blogs/blog/taiwan-claims-to-have-driven-away-a-chinese-research-vessel-104744",
       "content": "It said that Chinese research vessels had violated international law by conducting illegal surveys in our waters.\n\nChinese state media claims that the \"Tongji\", which is a remote-controlled vehicle, can carry unmanned systems and laboratories.\n\nChinese media reported that it can be used to conduct r",
       "content_detail": "",
@@ -978,7 +946,7 @@
       "event_types": [
         "军事冲突升级"
       ],
-      "severity": "high",
+      "severity": "low",
       "summary": "",
       "affected_tickers": [
         "GC=F",
@@ -995,7 +963,7 @@
     },
     {
       "title": "US disappointed in Taiwan's smaller defense budget, official says - Reuters",
-      "title_cn": "美国官员称对台湾较小的防卫预算感到失望 - 路透社",
+      "title_cn": "美国对台湾缩减国防预算表示失望 - 路透社",
       "url": "https://www.reuters.com/business/finance/us-disappointed-taiwans-smaller-defense-budget-official-says-2026-05-10/",
       "content": "Advertisement · Scroll to continue\n\nImage 2\n\nReport AdImage 3\n\n\"We'd ‌like ⁠to see the rest of the original proposed package funded.\"\n\nTaiwan's parliament approved extra defense ​spending of $25 ​billion ⁠on Friday, about two-thirds of the amount sought ​by the government to ​bolster ⁠the armed forc",
       "content_detail": "",
@@ -1005,92 +973,85 @@
         "中美博弈"
       ],
       "event_types": [
-        "军事冲突升级",
         "军工受益"
       ],
       "severity": "low",
       "summary": "",
       "affected_tickers": [
-        "GC=F",
-        "SI=F",
         "LMT",
         "NOC",
         "RTX",
         "GD",
-        "GLD",
-        "SLV",
+        "LHX",
         "ITA",
         "PPA",
-        "LHX",
         "XAR"
       ]
     },
     {
-      "title": "East Turkistan Minister Urges UN, Western Leaders to Support Region’s Self-Determination as CCP Genocide Set to Enter 13th Year - NTD News",
-      "title_cn": "东突部长敦促联合国和西方领导人支持该地区自决",
-      "url": "https://www.ntd.com/ntdplus/east-turkistan-minister-urges-un-western-leaders-to-support-regions-self-determination-as-ccp-genocide-set-to-enter-13th-year_1143587.html",
-      "content": "### Popular\n\n01:43\n\n### China Sends Warships to Pacific Drill as Tensions With Japan Rise\n\n0:51\n\n### 2 US Embassy Personnel Assigned to Cartel Case Killed in Car Accident\n\n02:40\n\n### Gunman Kills 8 Children, Including 7 of His Own, in Louisiana Mass Shooting\n\n02:52\n\n### Trump: Seized Iranian Ship Ma",
+      "title": "Japan launches national push to train AI, chip workforce - upi.com",
+      "title_cn": "日本启动全国计划培养AI和芯片人才 - upi.com",
+      "url": "https://www.upi.com/Top_News/World-News/2026/05/10/japan-cross-ministerial-task-force-train-workders/8941778457833/",
+      "content": "World News // 6 hours ago\n\nSony, TSMC to jointly develop image sensors for AI era\n\nMay 9 (Asia Today) -- Japanese electronics company Sony Group and Taiwanese chipmaker TSMC are moving to deepen cooperation in next-generation image sensor development.\n\nWorld News // 12 hours ago\n\nTrump says Iran's r",
       "content_detail": "",
-      "published_date": "Sun, 10 May 2026 08:51:13 GMT",
+      "published_date": "Mon, 11 May 2026 00:16:19 GMT",
       "search_region": "台海/南海/朝鲜",
       "classified_regions": [
-        "中美博弈",
-        "全球制裁"
+        "中美博弈"
       ],
       "event_types": [
-        "军事冲突升级",
-        "避险需求"
+        "供应链中断"
       ],
-      "severity": "medium",
+      "severity": "low",
       "summary": "",
       "affected_tickers": [
-        "GC=F",
-        "SI=F",
-        "LMT",
-        "NOC",
-        "RTX",
-        "GD",
-        "GLD",
-        "SLV",
-        "ITA",
-        "PPA",
-        "^VIX",
-        "DX-Y.NYB",
-        "IAU",
-        "TLT",
-        "UVXY"
+        "NVDA",
+        "TSM",
+        "INTC",
+        "AMD",
+        "ASML",
+        "SMH",
+        "SOXX"
       ]
     },
     {
       "title": "What Middle Powers Fear About the Trump-Xi Summit - The New York Times",
-      "title_cn": "",
+      "title_cn": "中等强国对特朗普-习近平峰会的担忧",
       "url": "https://www.nytimes.com/2026/05/11/world/asia/trump-xi-china-summit-iran.html",
       "content": "# What Middle Powers Fear from the Trump-Xi Summit - The New York Times\n\nSkip to contentSkip to site indexSearch & Section Navigation Section Navigation\n\nSearch\n\nAsia Pacific\n\n[](\n\nSubscribe for $1/weekLog in[](\n\nMonday, May 11, 2026\n\nToday’s Paper\n\nSubscribe for $1/week\n\n[](\nWar in the Middle East\n",
       "content_detail": "",
       "published_date": "Mon, 11 May 2026 04:01:08 GMT",
       "search_region": "台海/南海/朝鲜",
       "classified_regions": [
-        "台海/南海/朝鲜"
+        "中美博弈"
       ],
       "event_types": [
-        "避险需求"
+        "中美关税",
+        "供应链中断"
       ],
       "severity": "medium",
       "summary": "",
       "affected_tickers": [
-        "GC=F",
-        "GLD",
-        "SI=F",
-        "^VIX",
-        "DX-Y.NYB",
-        "IAU",
-        "TLT",
-        "UVXY"
+        "FXI",
+        "ASHR",
+        "KWEB",
+        "YINN",
+        "MCHI",
+        "0700.HK",
+        "9988.HK",
+        "CQQQ",
+        "NVDA",
+        "TSM",
+        "INTC",
+        "AMD",
+        "ASML",
+        "SMH",
+        "SOXX"
       ]
     },
     {
       "title": "Japan bets on Washington, BOJ for extra punch in yen battle - Forex Factory",
-      "title_cn": "",
+      "title_cn": "日本在日元战役中押注华盛顿与日本央行寻求额外助力",
       "url": "https://www.forexfactory.com/news/1397704-japan-bets-on-washington-boj-for-extra-punch",
       "content": "Japan bets on Washington, BOJ for extra punch in yen battle | Forex Factory\n\n Forums\n Trades\n News\n Calendar\n Market\n Brokers\n\n Login\n Create Account\n 3:20am\n\n \n\n|\n|  |\n|  |\n\n Story Log\n\n| User | Time | Action Performed |\n --- \n|\n\n # Japan bets on Washington, BOJ for extra punch in yen battle\n\n  Fro",
       "content_detail": "",
@@ -1100,41 +1061,44 @@
         "全球制裁"
       ],
       "event_types": [
-        "避险需求"
+        "汇率波动"
       ],
       "severity": "medium",
       "summary": "",
       "affected_tickers": [
-        "GC=F",
-        "GLD",
-        "SI=F",
-        "^VIX",
         "DX-Y.NYB",
-        "IAU",
-        "TLT",
-        "UVXY"
+        "FXY",
+        "FXE"
       ]
     },
     {
       "title": "Iran May Have Found a New Way to Threaten Trump’s Economy — And It’s Not Oil - 24/7 Wall St.",
-      "title_cn": "",
+      "title_cn": "伊朗可能已找到新方式威胁特朗普经济——且并非石油",
       "url": "https://247wallst.com/investing/2026/05/10/iran-may-have-found-a-new-way-to-threaten-trumps-economy-and-its-not-oil/",
       "content": "Sam Daodu |\n\n## XRP Price: The Iran Ceasefire Sent XRP Above $1.35 Overnight — Can It Hold?\n\nEvery time the war between the U.S. and Iran seems to be heading towards a resolution, the market has always…\n\n## Top Gaining Stocks\n\nAkamai\n\nAKAM  • Vol: 21,556,944\n\n+$31.02\n\n+26.58%\n\n$147.71\n\nMicron Techno",
       "content_detail": "",
       "published_date": "Sun, 10 May 2026 22:35:36 GMT",
       "search_region": "全球制裁",
       "classified_regions": [
-        "全球制裁"
+        "美伊冲突"
       ],
       "event_types": [
+        "军事冲突升级",
         "避险需求"
       ],
-      "severity": "medium",
+      "severity": "high",
       "summary": "",
       "affected_tickers": [
         "GC=F",
-        "GLD",
         "SI=F",
+        "LMT",
+        "NOC",
+        "RTX",
+        "GD",
+        "GLD",
+        "SLV",
+        "ITA",
+        "PPA",
         "^VIX",
         "DX-Y.NYB",
         "IAU",
@@ -1144,7 +1108,7 @@
     },
     {
       "title": "Offshore oil dispute drives Venezuela-Guyana case at International Court - World Oil",
-      "title_cn": "",
+      "title_cn": "离岸石油争端推动委内瑞拉与圭亚那在国际法院对簿公堂",
       "url": "https://www.worldoil.com/news/2026/5/10/offshore-oil-dispute-drives-venezuela-guyana-case-at-international-court/",
       "content": "Advertise | Subscribe | Contact WO\n\n Topics\n\n  Onshore\n\n  Exploration Drilling Completion Production Shale Hydraulic Fracturing Conventional\n\n  Digital Transformation\n\n  Automation & Control Data Storage Artificial Intelligence\n\n  Offshore\n\n  Exploration Drilling Production Deepwater Subsea Decommis",
       "content_detail": "",
@@ -1154,51 +1118,56 @@
         "全球制裁"
       ],
       "event_types": [
-        "避险需求"
+        "原油供应风险"
       ],
       "severity": "medium",
       "summary": "",
       "affected_tickers": [
-        "GC=F",
-        "GLD",
-        "SI=F",
-        "^VIX",
-        "DX-Y.NYB",
-        "IAU",
-        "TLT",
-        "UVXY"
+        "CL=F",
+        "BZ=F",
+        "USO",
+        "XLE",
+        "BNO"
       ]
     },
     {
       "title": "The \"No\" Heard Around the World: Trump’s Tehran Ultimatum and the 2026 Economic Fallout (Video) - South Florida Reporter",
-      "title_cn": "",
+      "title_cn": "世界听到的“不”：特朗普的德黑兰最后通牒与2026年经济",
       "url": "https://southfloridareporter.com/the-no-heard-around-the-world-trumps-tehran-ultimatum-and-the-2026-economic-fallout-video/",
       "content": "South Florida Reporter\n\nJoin Our Newsletter\n\nSign up to receive news right to your inbox every day [...] With that one phrase, months of back-channel diplomacy mediated by Pakistani officials evaporated. The “No” heard around the world has immediately recalibrated every major asset class, from the c",
       "content_detail": "",
       "published_date": "Mon, 11 May 2026 05:05:33 GMT",
       "search_region": "全球制裁",
       "classified_regions": [
-        "全球制裁"
+        "美伊冲突"
       ],
       "event_types": [
-        "避险需求"
+        "军事冲突升级",
+        "原油供应风险"
       ],
-      "severity": "medium",
+      "severity": "critical",
       "summary": "",
       "affected_tickers": [
         "GC=F",
-        "GLD",
         "SI=F",
-        "^VIX",
-        "DX-Y.NYB",
-        "IAU",
-        "TLT",
-        "UVXY"
+        "LMT",
+        "NOC",
+        "RTX",
+        "GD",
+        "GLD",
+        "SLV",
+        "ITA",
+        "PPA",
+        "CL=F",
+        "BZ=F",
+        "USO",
+        "XLE",
+        "BNO"
       ]
     },
     {
       "title": "British climate finance largess in Brazil - The Ecologist",
-      "title_cn": "英国在巴西大手笔气候融资——《生态学家》",
+      "title_cn": "英国在巴西的气候融资慷慨赠予——《生态学家》",
       "url": "https://theecologist.org/2026/may/11/british-climate-finance-largess-brazil",
       "content": "## A reckoning in the Amazon\n\n    Monica Piccinini\n\n     |\n\n    Indigenous leaders, traditional communities and researchers are resisting development in the Amazon rainforest that could push its ecosystems past irreversible tipping points.\n\n     ## Brazil’s growing water crisis\n\n      Monica Piccini",
       "content_detail": "",
@@ -1208,17 +1177,19 @@
         "中美博弈"
       ],
       "event_types": [
-        "粮食供应"
+        "避险需求"
       ],
       "severity": "low",
       "summary": "",
       "affected_tickers": [
-        "ZW=F",
-        "ZC=F",
-        "ZS=F",
-        "DBA",
-        "WEAT",
-        "CORN"
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
       ]
     }
   ]

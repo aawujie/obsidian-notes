@@ -397,6 +397,8 @@ _JUNK_PATTERNS = re.compile(
     r"menu|search|logo|header|footer|sidebar|widget|popup|overlay|"
     r"comscore|tracker|analytics|pixel|beacon|javascript|stylesheet|"
     r"img/|\.png|\.jpg|\.svg|\.gif|\.css|\.js|favicon|icon|thumbnail|"
+    r"watch\s*tv|ad\s*lite|premium\s*articles|quick\s*read|sponsored|"
+    r"sections\s+local|more\s+from\s+\w+|featured|get\s+features|"
     r"\[.*logo.*\]|\[.*skip.*\]|\[.*search.*\]|#\w+Content)"
 )
 
@@ -407,8 +409,11 @@ def _is_junk(text: str) -> bool:
         return True
     if _JUNK_PATTERNS.search(text):
         return True
-    special = sum(1 for c in text if c in "[]()#<>{}|")
-    if special > len(text) * 0.15:
+    special = sum(1 for c in text if c in "[]()#<>{}|!+")
+    if len(text) > 0 and special > len(text) * 0.12:
+        return True
+    word_count = len(text.split())
+    if word_count < 5:
         return True
     return False
 
@@ -417,8 +422,12 @@ def _clean_text(text: str) -> str:
     """深度清理从网页提取的文本."""
     text = html.unescape(text)
     text = re.sub(r"https?://\S+", "", text)
-    text = re.sub(r"\[.*?\]\(.*?\)", "", text)
-    text = re.sub(r"[#*_|>]+", " ", text)
+    text = re.sub(r"!\[.*?\]\(.*?\)", "", text)
+    text = re.sub(r"\[([^\]]*)\]\([^\)]*\)", r"\1", text)
+    text = re.sub(r"Image\s+\d+:\s*", "", text)
+    text = re.sub(r"[#*_>]+", " ", text)
+    text = re.sub(r"\|", " ", text)
+    text = re.sub(r"\s*\+\s*", " ", text)
     text = re.sub(r"\s+", " ", text).strip()
     return text
 
