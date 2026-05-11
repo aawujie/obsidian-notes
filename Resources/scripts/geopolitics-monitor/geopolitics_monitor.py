@@ -149,7 +149,13 @@ def analyze_articles_batch(articles: list[dict]) -> None:
     print(f"    {len(batches)} 批 × ≤{batch_size} 条")
 
     for batch_idx, batch in enumerate(batches, 1):
-        items = "\n".join(f"{idx}. {a['title'][:80]}" for idx, a in batch)
+        # prompt 中用 0-based 局部编号，映射回原始 index
+        local_to_orig = {}
+        lines = []
+        for local_id, (orig_idx, a) in enumerate(batch):
+            local_to_orig[local_id] = orig_idx
+            lines.append(f"{local_id}. {a['title'][:80]}")
+        items = "\n".join(lines)
         prompt = (
             "对以下英文新闻标题：1)分类 2)翻译成中文。返回JSON数组。\n"
             f"event_types(1-2): {event_types_str}\n"
@@ -174,28 +180,27 @@ def analyze_articles_batch(articles: list[dict]) -> None:
             items_data = json.loads(json_match.group())
             batch_ok = 0
             for item in items_data:
-                idx = item.get("id")
-                if idx is None:
+                local_id = item.get("id")
+                if local_id is None or local_id not in local_to_orig:
                     continue
-                for orig_idx, a in batch:
-                    if orig_idx == idx:
-                        a["event_types"] = [
-                            t for t in item.get("t", item.get("event_types", []))
-                            if t in VALID_EVENT_TYPES
-                        ] or ["避险需求"]
-                        sev = item.get("s", item.get("severity", "medium"))
-                        a["severity"] = sev if sev in VALID_SEVERITIES else "medium"
-                        a["classified_regions"] = [
-                            r for r in item.get("r", item.get("regions", []))
-                            if r in VALID_REGIONS
-                        ] or [a.get("search_region", "其他")]
-                        cn = item.get("cn", item.get("title_cn", ""))
-                        if cn:
-                            a["title_cn"] = cn
-                        a["_analyzed"] = True
-                        analyzed += 1
-                        batch_ok += 1
-                        break
+                orig_idx = local_to_orig[local_id]
+                a = articles[orig_idx]
+                a["event_types"] = [
+                    t for t in item.get("t", item.get("event_types", []))
+                    if t in VALID_EVENT_TYPES
+                ] or ["避险需求"]
+                sev = item.get("s", item.get("severity", "medium"))
+                a["severity"] = sev if sev in VALID_SEVERITIES else "medium"
+                a["classified_regions"] = [
+                    r for r in item.get("r", item.get("regions", []))
+                    if r in VALID_REGIONS
+                ] or [a.get("search_region", "其他")]
+                cn = item.get("cn", item.get("title_cn", ""))
+                if cn:
+                    a["title_cn"] = cn
+                a["_analyzed"] = True
+                analyzed += 1
+                batch_ok += 1
             print(f"    批次 {batch_idx}/{len(batches)} 完成: {batch_ok} 条")
         except (json.JSONDecodeError, ValueError) as e:
             print(f"    [WARN] 批次 {batch_idx} 解析失败: {e}")
