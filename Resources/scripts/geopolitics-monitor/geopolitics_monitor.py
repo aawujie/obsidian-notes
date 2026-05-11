@@ -129,7 +129,7 @@ def clean_html(text: str) -> str:
     return re.sub(r"<[^>]+>", "", text)
 
 
-LLM_CONCURRENCY = 3
+LLM_CONCURRENCY = 2
 
 
 def analyze_articles_batch(articles: list[dict]) -> None:
