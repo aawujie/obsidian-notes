@@ -137,27 +137,21 @@ def classify_articles_batch(articles: list[dict]) -> None:
     if not to_classify:
         return
 
-    event_types_str = ", ".join(VALID_EVENT_TYPES)
-    regions_str = ", ".join(VALID_REGIONS)
-    batch_size = 10
+    event_types_str = "/".join(VALID_EVENT_TYPES)
+    regions_str = "/".join(VALID_REGIONS)
+    batch_size = 8
     classified = 0
 
     for start in range(0, len(to_classify), batch_size):
         batch = to_classify[start : start + batch_size]
-        items = "\n".join(
-            f'{idx}. [{a["title"][:100]}] {a.get("content", "")[:200]}'
-            for idx, a in batch
-        )
+        items = "\n".join(f"{idx}. {a['title'][:80]}" for idx, a in batch)
         prompt = (
-            "你是地缘政治分析师。对以下新闻逐条分类，返回 JSON 数组。\n\n"
-            f"可用事件类型(1-3个): {event_types_str}\n"
-            f"可用区域(1-3个): {regions_str}\n"
-            "严重程度: critical(战争/核/封锁), high(军事行动/制裁升级), "
-            "medium(外交摩擦/威胁), low(谈判/缓和)\n\n"
-            "输出格式(只输出 JSON 数组，不要其他文字):\n"
-            '[{"id":0,"event_types":["军事冲突升级"],'
-            '"severity":"high","regions":["俄乌战争"]}]\n\n'
-            f"新闻列表:\n{items}"
+            "对以下新闻标题分类，返回JSON数组，不要其他文字。\n"
+            f"event_types(1-2个): {event_types_str}\n"
+            f"regions(1-2个): {regions_str}\n"
+            "severity: critical/high/medium/low\n"
+            f'格式: [{{"id":0,"event_types":["军事冲突升级"],"severity":"high","regions":["俄乌战争"]}}]\n\n'
+            f"{items}"
         )
 
         result = _call_llm(prompt)
