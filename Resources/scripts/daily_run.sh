@@ -383,12 +383,49 @@ PYEOF
 )
     send_wx "$SUMMARY"
     ;;
+cross-market)
+    run_monitor "综合日报" "$SCRIPTS/cross-market-report/cross_market_report.py" || true
+    JSON="$VAULT/5.Finance/DailyData/cross-market/${DATE}.json"
+    MD="$VAULT/5.Finance/DailyData/cross-market/${DATE}.md"
+    if [ -f "$MD" ]; then
+        SUMMARY=$(python3 << PYEOF
+import json, sys
+date_str = "$DATE"
+md_path = "$MD"
+json_path = "$JSON"
+try:
+    with open(json_path) as f:
+        meta = json.load(f)
+    avail = meta.get("modules_available", "?")
+    total = meta.get("modules_total", "?")
+except Exception:
+    avail, total = "?", "?"
+with open(md_path) as f:
+    lines = f.readlines()
+heatmap = ""
+for line in lines:
+    if "上证" in line and "恒指" in line:
+        heatmap = line.strip()
+        break
+print(f"📋 跨市场综合日报 {date_str}")
+print(f"")
+print(f"数据源: {avail}/{total}")
+if heatmap:
+    print(f"")
+    print(heatmap)
+print(f"")
+print(f"📁 完整报告 DailyData/cross-market/{date_str}.md")
+PYEOF
+)
+        send_wx "$SUMMARY"
+    fi
+    ;;
 all-overnight)
     for mkt in gold metals us-stock macro macro-calendar; do
         bash "$0" "$mkt"
     done
     ;;
-*)  echo "用法: $0 {a-stock|hk-stock|gold|metals|us-stock|macro|macro-calendar|all-overnight}"; exit 1 ;;
+*)  echo "用法: $0 {a-stock|hk-stock|gold|metals|us-stock|macro|macro-calendar|cross-market|all-overnight}"; exit 1 ;;
 esac
 
 log "=== 完成 ==="
