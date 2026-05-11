@@ -312,6 +312,32 @@ PYEOF
 )
 	    send_wx "$SUMMARY"
 	    ;;
+macro-calendar)
+    run_monitor "经济日历" "$SCRIPTS/macro-monitor/macro_calendar.py" || true
+    JSON="$VAULT/5.Finance/DailyData/macro-calendar/${DATE}.json"
+    if [ -f "$JSON" ]; then
+        SUMMARY=$(python3 -c "
+import json
+with open('$JSON') as f:
+    d = json.load(f)
+upcoming = d.get('upcoming_events', [])
+emoji_map = {'critical': '🔴', 'high': '🟠', 'medium': '🟡', 'low': '🟢'}
+lines = ['📅 宏观经济日历 $DATE', '']
+if upcoming:
+    for e in upcoming[:5]:
+        em = emoji_map.get(e['importance'], '')
+        dt = e['days_until']
+        when = '今天' if dt == 0 else ('明天' if dt == 1 else f'{dt}天后')
+        lines.append(f'  {em} {e[\"date\"]}  {e[\"event\"]}  ({when})')
+else:
+    lines.append('  未来14天无重大已知事件')
+lines.append('')
+lines.append(f'📁 DailyData/macro-calendar/$DATE.md')
+print('\n'.join(lines))
+")
+        send_wx "$SUMMARY"
+    fi
+    ;;
 macro)
     run_monitor "宏观" "$SCRIPTS/macro-monitor/macro_monitor.py" || true
     JSON="$VAULT/5.Finance/DailyData/macro/${DATE}.json"
@@ -357,11 +383,11 @@ PYEOF
     send_wx "$SUMMARY"
     ;;
 all-overnight)
-    for mkt in gold metals us-stock macro; do
+    for mkt in gold metals us-stock macro macro-calendar; do
         bash "$0" "$mkt"
     done
     ;;
-*)  echo "用法: $0 {a-stock|hk-stock|gold|metals|us-stock|macro|all-overnight}"; exit 1 ;;
+*)  echo "用法: $0 {a-stock|hk-stock|gold|metals|us-stock|macro|macro-calendar|all-overnight}"; exit 1 ;;
 esac
 
 log "=== 完成 ==="
