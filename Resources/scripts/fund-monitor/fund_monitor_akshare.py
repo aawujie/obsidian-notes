@@ -126,6 +126,8 @@ def fetch_rankings_ak(fund_type: str, top_n: int = 10) -> list[dict]:
     if df is None or df.empty:
         return []
 
+    # 按日增长率降序重排 (默认按"自定义"综合排序, 不是日涨幅)
+    df = df.sort_values("日增长率", ascending=False, na_position="last")
     df = df.head(top_n)
     funds = []
     for _, row in df.iterrows():
