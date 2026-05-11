@@ -2,7 +2,14 @@
 title: FSI-Anthropic 金融缩写速查表
 type: reference
 created: 2026-05-12
-tags: [金融, 缩写, 速查, FSI, Anthropic]
+tags:
+  - 金融
+  - 缩写
+  - 速查
+  - FSI
+  - Anthropic
+share_link: https://share.note.sx/t4l76fi5#Rl1eU04EL9xU1ual6aXDzp/tLDeiPRe5a6FD5TGrGh0
+share_updated: 2026-05-11T15:02:41+08:00
 ---
 
 # FSI-Anthropic 金融缩写速查表
