@@ -919,5 +919,179 @@ npx ruflo@latest init upgrade --add-missing
 
 ---
 
-*调研完成时间: 2026-05-09 · 实际使用指南更新: 2026-05-13*
-*数据来源: GitHub API, README.md, USERGUIDE.md, STATUS.md, verification.md, .agents/config.toml, hooks.json, SKILL.md, Issue #1196, Issue #1251*
+## 11. 实机测试记录 (2026-05-13)
+
+### 11.1 安装过程
+
+| 步骤 | 命令 | 结果 |
+|---|---|---|
+| npm 镜像 | `npm config set registry https://registry.npmmirror.com` | ✓ |
+| 全局安装 | `npm install -g ruflo@latest --omit=optional` | ✓ v3.7.0-alpha.27 |
+| 初始化 (minimal) | `ruflo init wizard` → minimal preset | ✓ 但只生成配置，无 hooks 脚本 |
+| 重新初始化 (force) | `npx ruflo@latest init --force` | ✓ 85 文件, 98 agents, 7 hook types |
+| MCP 注册 | `claude mcp add ruflo -- npx -y ruflo@latest mcp start` | ✓ 写入 .claude.json |
+| 诊断 | `ruflo doctor` | ✓ 11 passed, 6 warnings |
+
+**关键发现**: `init wizard` 的 minimal preset 不安装实际 hooks 脚本，必须用 `init --force` 才能获得完整功能。
+
+### 11.2 记忆系统测试
+
+```bash
+ruflo memory init                                    # ✓ 15 controllers activated, 885ms
+ruflo memory store -k "key" --value "..." --namespace "patterns"  # ✓ 384-dim vector
+ruflo memory search -q "query"                       # ✓ 0-1ms 检索
+ruflo memory stats                                   # ✓ sql.js + HNSW backend
+```
+
+**注意**: Transformers.js 初始化失败 (fetch failed)，使用了 mock embeddings。真实语义搜索需要先下载模型 (~90MB)：
+```bash
+npx agentdb install-embeddings
+```
+
+### 11.3 智能路由测试
+
+```bash
+ruflo hooks route --task "Fix a bug in login auth"
+# → security-architect (90% confidence), coder (80%), tester (70%)
+# 路由延迟: 0.733ms, 方法: keyword matching
+
+ruflo hooks route --task "Refactor test framework for parallel execution"  
+# → architect (44%), coder (34%), tester (24%)
+# 复杂度: MEDIUM, 预估: 30-60 min
+
+ruflo hooks route --task "rename variable from x to count"
+# → performance-engineer (58%) ← mock embedding 导致不准确
+# 复杂度: LOW
+```
+
+### 11.4 Swarm & Agent 测试
+
+```bash
+ruflo swarm init --topology hierarchical    # ✓ ID: swarm-xxx, max 15 agents
+ruflo agent spawn -t coder --name c1        # ✓ registered, capabilities: code-generation, refactoring, debugging
+ruflo agent spawn -t tester --name t1       # ✓ registered, capabilities: unit-testing, integration-testing
+ruflo agent spawn -t reviewer --name r1     # ✓ registered, capabilities: code-review, security-audit
+ruflo agent list                            # ✓ 3 agents, all idle
+ruflo swarm status                          # ✓ 5% progress, 0 tasks
+```
+
+### 11.5 Neural Training 测试
+
+```bash
+ruflo neural train -p coordination
+# ✓ 50 epochs in 0.9s
+# Backend: WASM (native)
+# MicroLoRA: 256-dim, <1μs adaptation
+# ReasoningBank: 7 patterns
+# Persisted to: .claude-flow/neural/patterns.json
+
+ruflo neural status
+# SONA Coordinator: Active (1.12μs avg)
+# ReasoningBank: 7 patterns
+# Flash Attention: Available
+# Int8 Quantization: Available
+```
+
+### 11.6 与 Claude CLI 集成测试
+
+```bash
+claude --permission-mode bypassPermissions
+# → RuFlo V3.6 状态栏正常显示
+# → 16/16 hooks 已启用
+# → AgentDB MCP 1/1 连接正常
+```
+
+**核心发现**: 使用 DeepSeek 模型时，hooks/Swarm/AgentDB 不会被自动调用。Ruflo 的自动化体系 (CLAUDE.md 指导 + MCP tools 调用) 是为 Claude 模型设计的。使用其他模型需要手动调用 CLI 命令。
+
+### 11.7 生成的文件结构
+
+```
+/tmp/hil_auto_test/
+├── CLAUDE.md                          # Claude Code 指导文件 (Ruflo 重写)
+├── .mcp.json                          # MCP server 配置
+├── .claude/
+│   ├── settings.json                  # hooks + env + permissions
+│   ├── helpers/                       # 43 个脚本文件
+│   │   ├── statusline.cjs             # 状态栏
+│   │   ├── hook-handler.cjs           # hook 处理器
+│   │   ├── intelligence.cjs           # 智能路由
+│   │   ├── learning-service.mjs       # 学习服务
+│   │   ├── swarm-hooks.sh             # Swarm hooks
+│   │   └── ...
+│   ├── commands/                      # 10 个命令目录
+│   │   ├── analysis/
+│   │   ├── automation/
+│   │   ├── github/
+│   │   ├── hooks/
+│   │   ├── sparc/
+│   │   └── ...
+│   └── agents/                        # 98 个 agent 定义
+│       ├── core/
+│       ├── development/
+│       ├── architecture/
+│       ├── consensus/
+│       ├── sparc/
+│       └── ...
+├── .claude-flow/
+│   ├── config.yaml                    # Ruflo 配置
+│   ├── data/                          # 运行时数据
+│   ├── logs/                          # 日志
+│   ├── sessions/                      # 会话数据
+│   ├── neural/                        # 神经学习数据
+│   │   └── patterns.json              # 训练后的模式
+│   └── embeddings.json                # 嵌入配置
+└── .swarm/
+    └── memory.db                      # SQLite 记忆数据库
+```
+
+---
+
+## 12. 最佳实践总结
+
+### 12.1 安装建议
+
+1. **始终用 `init --force`**，不要用 `init wizard` 的 minimal preset（缺少 hooks 脚本）
+2. **先设 npm 镜像**（国内环境）：`npm config set registry https://registry.npmmirror.com`
+3. **在隔离目录试用**，避免污染现有项目的 CLAUDE.md 和 hooks
+4. **安装 ONNX 嵌入模型**以获得真实语义搜索：`npx agentdb install-embeddings`
+
+### 12.2 日常使用建议
+
+1. **不需要记命令**——init 后正常用 Claude Code，hooks 自动工作（前提是用 Claude 模型）
+2. **非 Claude 模型用户**需要手动调用 CLI 命令来使用 Ruflo 功能
+3. **先用路由测试**验证 Ruflo 的分析是否合理：`ruflo hooks route --task "你的任务"`
+4. **定期训练**以保持学习效果：`ruflo neural train -p coordination`
+
+### 12.3 适合的场景
+
+| 场景 | 推荐用法 | 理由 |
+|---|---|---|
+| 大规模代码生成 | Hive-Mind + hierarchical | Queen 协调防漂移 |
+| Bug 修复 | hooks 自动路由 | 自动选最合适的 Agent |
+| 简单重构 | 自动 WASM Booster | 零 token 消耗 |
+| 跨项目知识复用 | memory store/search | 向量检索历史模式 |
+| 安全审计 | security scan | 自动 CVE 检测 |
+
+### 12.4 不适合的场景
+
+1. 使用非 Claude 模型（DeepSeek 等）——自动化体系不生效
+2. 小型简单任务——Ruflo 的开销（状态栏、hooks、MCP）大于收益
+3. 需要精确控制 prompt 的场景——Ruflo 的 CLAUDE.md 会注入大量指导
+4. 对 context window 敏感的场景——300+ MCP tools 定义占用大量 token
+
+### 12.5 我们环境的最终结论
+
+**当前不建议在生产项目中使用 Ruflo**。原因：
+1. 我们主要用 DeepSeek 模型，Ruflo 的自动化体系不生效
+2. 现有 ECC + Engram 体系已满足需求
+3. Ruflo 仍在 alpha 阶段，API 不稳定
+
+**值得借鉴并自行实现的能力**：
+1. **hooks 自动路由**——可以在我们的 rules 中实现类似的任务复杂度分析
+2. **向量记忆自动学习**——Engram 已有语义搜索，但缺少 SONA 式的自动学习闭环
+3. **状态栏**——Ruflo 的 statusline 设计很好，可以参考
+
+---
+
+*调研完成时间: 2026-05-09 · 实际使用指南更新: 2026-05-13 · 实机测试: 2026-05-13*
+*数据来源: GitHub API, README.md, USERGUIDE.md, STATUS.md, verification.md, .agents/config.toml, hooks.json, SKILL.md, Issue #1196, Issue #1251, 本地安装实测*
