@@ -533,4 +533,260 @@ Ruflo 是目前 **Claude Code 生态中最全面、最激进的多 Agent 编排�
 
 ---
 
-*调研完成时间: 2026-05-09 · 数据来源: GitHub API, README.md, USERGUIDE.md, STATUS.md, verification.md, .agents/config.toml, hooks.json, SKILL.md 文件*
+## 9. 实际使用指南（How-To）
+
+### 9.1 快速上手（只需 2 步）
+
+官方在 Issue #1196 中明确回复：**你不需要学 300+ MCP 工具或 26 个 CLI 命令**。init 之后正常使用 Claude Code 即可，hooks 系统会自动在后台路由任务、学习模式、协调多 Agent。
+
+```bash
+# Step 1: 在项目目录初始化
+npx ruflo@latest init wizard
+# 交互式向导，选择 preset（minimal / full），
+# 自动生成 .claude/settings.json, hooks, CLAUDE.md 等
+
+# Step 2: 注册 MCP Server 到 Claude Code（或 Cursor）
+claude mcp add ruflo -- npx ruflo@latest mcp start
+
+# Step 3: 正常使用 Claude Code / Cursor
+# hooks 系统会自动：
+#   - 路由任务到最合适的 Agent
+#   - 学习成功模式并复用
+#   - 在需要时协调多 Agent 协作
+```
+
+### 9.2 两种安装路径选择
+
+| | **Path A: Plugin（轻量试用）** | **Path B: CLI Full（生产使用）** |
+|---|---|---|
+| **安装** | `/plugin marketplace add ruvnet/ruflo` | `npx ruflo@latest init wizard` |
+| **侵入性** | 零文件写入 | 写入 .claude/, CLAUDE.md, helpers |
+| **功能** | 斜杠命令 + 少量 skill | 98 agents, 60+ commands, MCP, hooks |
+| **MCP** | 不注册 | 注册 300+ tools |
+| **适合** | 试单个 plugin 功能 | 需要完整编排能力 |
+
+#### Path A: Plugin 安装（推荐先试这个）
+
+```bash
+# 在 Claude Code 中执行
+/plugin marketplace add ruvnet/ruflo
+
+# 安装你需要的 plugin
+/plugin install ruflo-core@ruflo       # 基础核心
+/plugin install ruflo-swarm@ruflo      # Swarm 编排
+/plugin install ruflo-autopilot@ruflo  # 自动循环
+/plugin install ruflo-rag-memory@ruflo # HNSW 记忆
+```
+
+#### Path B: 完整 CLI 安装
+
+```bash
+# 方式一：一行安装脚本
+curl -fsSL https://cdn.jsdelivr.net/gh/ruvnet/ruflo@main/scripts/install.sh | bash
+
+# 方式二：全套安装（global + MCP + 诊断）
+curl -fsSL https://cdn.jsdelivr.net/gh/ruvnet/ruflo@main/scripts/install.sh | bash -s -- --full
+
+# 方式三：npx 交互式
+npx ruflo@latest init wizard
+
+# 方式四：全局安装
+npm install -g ruflo@latest
+ruflo init
+```
+
+### 9.3 Cursor IDE 集成
+
+在 `.cursor/mcp.json` 中添加：
+
+```json
+{
+  "mcpServers": {
+    "ruflo": {
+      "command": "npx",
+      "args": ["ruflo@latest", "mcp", "start"],
+      "env": {
+        "ANTHROPIC_API_KEY": "sk-ant-..."
+      }
+    }
+  }
+}
+```
+
+> **注意**：Cursor 必须在 Agent Mode 下才能访问 MCP tools。Cursor 最多支持 40 个 MCP tools，而 Ruflo 有 300+，需要通过环境变量筛选 tool group。
+
+```bash
+# 控制加载哪些 tool group（减少 token 消耗）
+export CLAUDE_FLOW_TOOL_GROUPS=implement,test,fix,memory
+
+# 或使用预设模式
+export CLAUDE_FLOW_TOOL_MODE=develop  # develop / pr-review / devops / triage
+```
+
+### 9.4 常用操作场景
+
+#### 场景一：正常开发（最简单）
+
+init 之后直接使用 Claude Code / Cursor，hooks 自动工作：
+
+- **简单任务**（变量重命名等）→ WASM Agent Booster 处理，<1ms，不消耗 token
+- **中等任务**（bug 修复）→ 路由到 Haiku/Sonnet
+- **复杂任务**（新功能开发）→ Opus + Swarm 协调
+
+#### 场景二：启动 Hive-Mind 完成大任务
+
+```bash
+# 初始化 hive-mind
+npx ruflo@latest hive-mind init
+
+# 启动 swarm 并给出目标
+npx ruflo@latest hive-mind spawn "Implement user authentication with JWT"
+
+# 查看状态
+npx ruflo@latest hive-mind status
+
+# 查看性能指标
+npx ruflo@latest hive-mind metrics
+```
+
+#### 场景三：手动生成和管理 Agent
+
+```bash
+# 查看可用 agent 类型
+npx ruflo@latest agent list
+
+# 生成特定类型的 agent
+npx ruflo@latest agent spawn -t coder --name my-coder
+npx ruflo@latest agent spawn -t tester --name my-tester
+npx ruflo@latest agent spawn -t reviewer --name my-reviewer
+
+# 查看 agent 状态
+npx ruflo@latest agent status
+```
+
+#### 场景四：使用向量记忆
+
+```bash
+# 存储模式
+# (通过 MCP tool) memory_store(key="auth-pattern", value="JWT refresh flow", namespace="patterns")
+
+# 搜索相似模式
+npx ruflo@latest memory search --query "authentication patterns"
+
+# 查看记忆统计
+npx ruflo@latest memory stats
+```
+
+#### 场景五：初始化 Swarm 进行多 Agent 协作
+
+```bash
+# 初始化 hierarchical swarm（推荐，防漂移）
+npx ruflo@latest swarm init --topology hierarchical --maxAgents 8
+
+# 或通过 MCP tool（在 Claude Code/Cursor 中）
+# swarm_init({ topology: "hierarchical", maxAgents: 8, strategy: "specialized" })
+```
+
+#### 场景六：安全审计
+
+```bash
+npx ruflo@latest security scan
+npx ruflo@latest security audit
+npx ruflo@latest security cve
+```
+
+### 9.5 初始化后的诊断
+
+```bash
+# 检查安装是否正确
+npx ruflo@latest doctor
+
+# 查看系统状态
+npx ruflo@latest status
+
+# 查看 MCP 工具列表
+npx ruflo@latest mcp tools
+
+# 查看 hooks 状态
+npx ruflo@latest hooks intelligence --status
+```
+
+### 9.6 关键 MCP Tools（Claude Code / Cursor 中可用）
+
+| MCP Tool | 用途 | 何时使用 |
+|---|---|---|
+| `memory_search` | 语义向量搜索已存模式 | **任务开始前**搜索相似模式 |
+| `memory_store` | 存储成功模式 | **任务完成后**保存经验 |
+| `swarm_init` | 初始化 Swarm 协调 | 复杂多文件任务开始时 |
+| `agent_spawn` | 注册 Agent 角色 | 多 Agent 工作流 |
+| `neural_train` | 训练模式 | 周期性改进 |
+| `hooks_route` | 智能任务路由 | 不确定用哪个 agent 时 |
+
+### 9.7 配置环境变量
+
+```bash
+# 必需（使用 Claude 模型时）
+export ANTHROPIC_API_KEY="sk-ant-..."
+
+# 可选：其他 LLM 提供商
+export OPENAI_API_KEY="sk-..."
+export GOOGLE_API_KEY="..."
+
+# 可选：日志级别
+export CLAUDE_FLOW_LOG_LEVEL=info  # debug / info / warn / error
+
+# 可选：加密（生产环境推荐）
+export CLAUDE_FLOW_ENCRYPT_AT_REST=1
+```
+
+### 9.8 社区反馈的关键注意点
+
+来自 Issue #1196 和 #1251，实际用户踩过的坑：
+
+1. **不需要手动启动什么** — `init` 之后正常用 Claude Code，hooks 自动工作
+2. **ruflo = claude-flow** — 只是改了个名字，底层完全一样
+3. **状态栏数字** — 显示 Agent 数量、内存用量、Swarm 拓扑、学习进度，可以在 settings.json 中关闭
+4. **冷启动慢** — 完整版首次 npx 约 35s，使用 `--omit=optional` 可缩小到 45MB / ~15s
+5. **不要一开始就用 hive-mind** — 先用 hooks 自动模式体验，再按需使用高级功能
+
+### 9.9 升级
+
+```bash
+# 更新 helpers 和 statusline（保留数据）
+npx ruflo@latest init upgrade
+
+# 更新并添加新版本的 skills/agents/commands
+npx ruflo@latest init upgrade --add-missing
+```
+
+---
+
+## 10. 我们环境的适用性评估
+
+### 10.1 当前环境
+
+- **Claude Code**: 通过 Cursor IDE 使用
+- **已有体系**: ECC skills + Agent Learning System + Engram 语义搜索
+- **工作区类型**: 本地 + SSHFS 远程
+
+### 10.2 可以尝试的路径
+
+**最低成本试用**：使用 Path A（Plugin 方式）安装 `ruflo-core` + `ruflo-rag-memory`，不影响现有配置，体验向量记忆和基础编排能力。
+
+**中等投入试用**：在一个隔离的测试项目中执行 `npx ruflo@latest init wizard`，完整体验 hooks 自动路由 + Swarm 编排 + 自学习闭环。
+
+**生产集成**（不推荐当前阶段）：Ruflo 仍在 alpha 阶段（3.7.0-alpha），与现有 ECC 体系有 hooks 冲突风险，且 CLAUDE.md 覆写问题未完全解决。
+
+### 10.3 与当前体系的冲突点
+
+| 冲突点 | 说明 | 规避方案 |
+|---|---|---|
+| CLAUDE.md 覆写 | `ruflo init` 会修改 CLAUDE.md | 备份后 init，或用 Plugin 路径 |
+| Hooks 冲突 | 27 hooks vs 现有 hooks | 在测试项目中隔离试用 |
+| MCP tool 过多 | 300+ tools 占 context window | 用 CLAUDE_FLOW_TOOL_MODE 过滤 |
+| 记忆系统冲突 | AgentDB vs Engram/MEMORY.md | 可共存，但需明确分工 |
+
+---
+
+*调研完成时间: 2026-05-09 · 实际使用指南更新: 2026-05-13*
+*数据来源: GitHub API, README.md, USERGUIDE.md, STATUS.md, verification.md, .agents/config.toml, hooks.json, SKILL.md, Issue #1196, Issue #1251*
