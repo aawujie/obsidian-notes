@@ -296,24 +296,98 @@ claude mcp add ruflo -- npx ruflo@latest mcp start
 └── Federation (跨机器协作)
 ```
 
-### 4.3 Hooks 系统（27 个钩子）
+### 4.3 Hooks 系统：两层架构
+
+#### 第 1 层：Claude Code 暴露的 hook 事件（平台能力）
+
+Claude Code CLI 提供 10 种 hook 事件，这是原生的平台 API，任何人都可以注册脚本：
+
+| Hook 事件 | 触发时机 | 参数 |
+|---|---|---|
+| `PreToolUse` | Claude 调用工具之前 | matcher 匹配工具名（Bash/Write/Edit 等） |
+| `PostToolUse` | Claude 调用工具之后 | 同上 |
+| `UserPromptSubmit` | 用户提交 prompt 时 | 无 matcher |
+| `SessionStart` | 会话开始 | 无 |
+| `SessionEnd` | 会话结束 | 无 |
+| `Stop` | 会话停止 | 无 |
+| `PreCompact` | context 压缩前 | matcher: manual / auto |
+| `SubagentStart` | 子 Agent 启动 | 无 |
+| `SubagentStop` | 子 Agent 停止 | 无 |
+| `Notification` | 通知事件 | 无 |
+
+配置在 `.claude/settings.json` 的 `hooks` 字段中，格式：
+```json
+{
+  "hooks": {
+    "PreToolUse": [{
+      "matcher": "Bash",
+      "hooks": [{
+        "type": "command",
+        "command": "node .claude/helpers/my-hook.cjs pre-bash",
+        "timeout": 5000
+      }]
+    }]
+  }
+}
+```
+
+#### 第 2 层：Ruflo 注册的 hook 脚本（应用逻辑）
+
+Ruflo 在 10 种事件上注册了自己的脚本，核心入口是 `.claude/helpers/hook-handler.cjs`：
 
 ```
-PreToolUse:
-  └── Bash → 命令审查、安全检查
-  └── Write|Edit|MultiEdit → 文件变更拦截
-
-PostToolUse:
-  └── Bash → 指标追踪、结果存储
-  └── Write|Edit|MultiEdit → 自动格式化、memory 更新
-
-PreCompact:
-  └── manual → 提示 agent 使用指南
-  └── auto → 上下文压缩指导
-
-Stop:
-  └── 会话结束：状态持久化、摘要生成、指标导出
+Claude Code 事件           →  Ruflo 脚本                      →  功能
+─────────────────────────────────────────────────────────────────────────
+PreToolUse[Bash]           →  hook-handler.cjs pre-bash       →  命令安全检查、复杂度分析
+PreToolUse[Write|Edit]     →  hook-handler.cjs pre-edit       →  文件变更拦截、Agent Booster 判断
+PostToolUse[Write|Edit]    →  hook-handler.cjs post-edit      →  格式化、memory 更新、学习
+PostToolUse[Bash]          →  hook-handler.cjs post-bash      →  结果追踪、指标记录
+UserPromptSubmit           →  hook-handler.cjs route          →  ★核心：任务路由（分析→推荐 Agent/模型）
+SessionStart               →  hook-handler.cjs session-restore →  恢复记忆 + AgentDB 导入
+                              auto-memory-hook.mjs import
+SessionEnd                 →  hook-handler.cjs session-end    →  保存状态、持久化学习
+Stop                       →  auto-memory-hook.mjs sync       →  同步记忆到 AgentDB
+PreCompact[manual]         →  hook-handler.cjs compact-manual →  压缩前保存关键上下文
+PreCompact[auto]           →  hook-handler.cjs compact-auto   →  自动压缩指导
+SubagentStart              →  hook-handler.cjs status         →  更新状态栏
+SubagentStop               →  hook-handler.cjs post-task      →  任务完成学习
+Notification               →  hook-handler.cjs notify         →  处理通知
 ```
+
+#### hook-handler.cjs 核心分发逻辑
+
+```javascript
+// 简化的架构（实际 10,002 行）
+switch(action) {
+  case 'pre-bash':
+    // 分析命令安全性
+    // 输出 [AGENT_BOOSTER_AVAILABLE] 信号（简单命令跳过 LLM）
+    break;
+  case 'route':
+    // ★ 最核心的 hook
+    // 1. 分析用户 prompt 复杂度
+    // 2. HNSW 搜索相似历史模式
+    // 3. 输出 [TASK_MODEL_RECOMMENDATION] 信号
+    // 4. Claude 根据信号选择模型和 Agent
+    break;
+  case 'post-task':
+    // SONA 学习：提取成功模式
+    // EWC++ 巩固：防止覆盖旧知识
+    // 更新路由权重
+    break;
+}
+```
+
+#### 关键理解
+
+**hooks 机制是 Claude Code 提供的平台能力**，Ruflo 只是在上面注册了自己的脚本。类比：
+- Claude Code hooks = 操作系统的 inotify（文件系统通知）
+- Ruflo hook 脚本 = 你写的文件同步程序
+
+**这意味着我们也可以自己写 hooks**，不需要 Ruflo。可以在 ECC 体系中实现类似的：
+- 任务路由 hook（UserPromptSubmit → 分析复杂度 → 输出建议）
+- 会话记忆 hook（SessionStart → 从 Engram 加载 / SessionEnd → 保存）
+- 学习 hook（SubagentStop → 记录成功模式到 memory/）
 
 ### 4.4 Plugin 生态系统（32 个插件）
 
