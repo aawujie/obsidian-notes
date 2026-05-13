@@ -237,6 +237,16 @@ npx claude-flow@alpha hooks post-task --task-id "$ID" --success true
 | **Int8 量化** | 内存高效存储 | ~4x 内存减少 |
 | **Thompson Sampling** | 多臂老虎机模型选择 | ~50 次反馈后自动调优 |
 
+#### 核心技术原理速查
+
+| 技术 | 解决的问题 | 原理 |
+|---|---|---|
+| **SONA** | 怎么从历史中学习 | RETRIEVE→JUDGE→DISTILL→CONSOLIDATE→ROUTE 五步闭环，每次任务后自动提取成功模式并存储复用 |
+| **EWC++** | 学新忘旧（灾难性遗忘） | 用 Fisher 信息矩阵评估参数重要性，给重要参数加弹性约束，学新任务时不覆盖旧知识。++ 版用滚动平均合并多任务矩阵，内存恒定 |
+| **MicroLoRA** | 微调成本太高 | Low-Rank Adaptation：只更新权重矩阵的低秩分解部分（~1% 参数），99% 参数冻结不动 |
+| **Thompson Sampling** | 该用哪个模型 | 多臂老虎机：每个模型维护 Beta(α,β) 分布，每次采样 θ~Beta 取最大值对应的模型。~50 次反馈后分布收敛到最优 |
+| **HNSW** | 向量检索太慢 | 分层可导航小世界图：多层跳表式结构，高层粗定位+低层精搜索，从 O(n) 降到 O(log n)，子毫秒级 |
+
 ### 3.4 ReasoningBank
 
 - 存储任务执行轨迹 (trajectory learning)
