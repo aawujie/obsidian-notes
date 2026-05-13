@@ -623,7 +623,128 @@ export CLAUDE_FLOW_TOOL_GROUPS=implement,test,fix,memory
 export CLAUDE_FLOW_TOOL_MODE=develop  # develop / pr-review / devops / triage
 ```
 
-### 9.4 常用操作场景
+### 9.4 Ruflo 工作流程图解
+
+#### 9.4.1 复杂任务流程（以 JWT 认证为例）
+
+```
+用户输入: "实现 JWT 用户认证"
+         │
+         ▼
+┌─────────────────────────┐
+│  Pre-task Hook 分析      │
+│  复杂度: 高              │
+│  推荐: Opus + Swarm     │
+└──────────┬──────────────┘
+           │
+           ▼
+┌─────────────────────────┐
+│  memory_search (HNSW)   │
+│  检索: "JWT auth"        │
+│  命中 3 个历史模式:       │
+│   • Express JWT (0.89)  │
+│   • bcrypt hash (0.82)  │
+│   • Role guard (0.78)   │
+│  → 注入 Agent 上下文      │
+└──────────┬──────────────┘
+           │
+           ▼
+┌─────────────────────────────────────────────┐
+│  Swarm 初始化 (hierarchical topology)        │
+│                                              │
+│  Queen (strategic)                           │
+│    ├── architect → 设计架构      (Opus, 3s)  │
+│    ├── coder     → User model   (Sonnet, 1.5s) ← 简单,便宜模型│
+│    ├── coder     → controller   (Opus, 2.8s)   ← 复杂,强模型  │
+│    ├── coder     → middleware   (Sonnet, 1.2s) ← 模式化       │
+│    └── tester    → 测试用例     (Haiku, 0.8s)  ← 最便宜       │
+│                                              │
+│  Queen checkpoint 验证:                       │
+│    ✓ 文件结构符合设计                           │
+│    ✓ 覆盖 register/login/refresh             │
+│    ✗ 缺少 rate limiting → 自动分配补充         │
+└──────────┬──────────────────────────────────┘
+           │
+           ▼
+┌─────────────────────────┐
+│  Post-task Hook 学习     │
+│  存储成功模式到 AgentDB  │
+│  更新路由权重             │
+│  下次复用此流水线         │
+└─────────────────────────┘
+```
+
+**对比效果**:
+
+| 维度 | 纯 Claude Code | 有 Ruflo |
+|---|---|---|
+| 耗时 | ~45s（串行） | ~8s（并行 Agent） |
+| Token | 全程 Opus | 混合模型，省 ~60% |
+| 遗漏检查 | 依赖人工 review | Queen 自动检测 |
+| 复用性 | 每次从头 | 检索历史模式 |
+
+#### 9.4.2 简单任务流程（var → const 替换）
+
+```
+用户输入: "把 var 全换成 const"
+         │
+         ▼
+┌─────────────────────────┐
+│  Pre-task Hook 分析      │
+│  复杂度: 极低             │
+│  Intent: var-to-const   │
+│  路由: WASM Booster     │
+└──────────┬──────────────┘
+           │
+           ▼
+┌─────────────────────────┐
+│  Agent Booster (WASM)    │
+│  regex 替换: var → const │
+│  耗时: 0.3ms             │
+│  Token: 0                │
+│  → 完全跳过 LLM          │
+└─────────────────────────┘
+```
+
+#### 9.4.3 智能路由决策树
+
+```
+任务进入
+  │
+  ├── 简单 (var→const, remove-console, add-types)
+  │     └── WASM Agent Booster: <1ms, $0
+  │
+  ├── 中等 (bug fix, 单文件重构, 测试生成)
+  │     └── Haiku/Sonnet: ~500ms, $0.0002-0.003
+  │
+  └── 复杂 (新功能, 多文件架构, 安全设计)
+        └── Opus + Swarm: 2-5s, $0.015
+              │
+              ├── hierarchical (防漂移,推荐)
+              ├── mesh (独立并行)
+              └── adaptive (动态切换)
+```
+
+#### 9.4.4 自学习闭环
+
+```
+RETRIEVE                    ROUTE
+  检索 k=3 相似模式            应用到未来路由
+  (HNSW, 0.87ms)              │
+       │                      │
+       ▼                      ▲
+    JUDGE                 CONSOLIDATE
+  评估当前策略效果          整合到 ReasoningBank
+       │                      │
+       ▼                      ▲
+    DISTILL ──────────────────┘
+  提取成功模式为可复用知识
+
+每次任务完成后:
+  memory_store() → SONA 提取模式 → EWC++ 防遗忘 → 更新路由权重
+```
+
+### 9.5 常用操作场景
 
 #### 场景一：正常开发（最简单）
 
