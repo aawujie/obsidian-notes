@@ -1077,7 +1077,68 @@ claude --permission-mode bypassPermissions
 
 **核心发现**: 使用 DeepSeek 模型时，hooks/Swarm/AgentDB 不会被自动调用。Ruflo 的自动化体系 (CLAUDE.md 指导 + MCP tools 调用) 是为 Claude 模型设计的。使用其他模型需要手动调用 CLI 命令。
 
-### 11.7 生成的文件结构
+### 11.7 二次验证：交互模式 Swarm 实测（2026-05-13）
+
+**目的**: 验证 Ruflo Swarm 在交互模式下是否真正触发多 Agent 编排。
+
+**环境**: Claude CLI v2.1.139 + Ruflo V3.6，模型 deepseek-v4-pro[1m]，16/16 hooks，MCP 1/1。
+
+#### 测试 A：`-p` 管道模式（fibonacci 任务）
+
+```bash
+echo "Create fibonacci function..." | claude -p --verbose --output-format stream-json
+```
+
+结果：
+- SessionStart hooks **✅ 触发**（session-restore, auto-memory, route, status）
+- UserPromptSubmit hook **❌ 未触发** — `-p` 模式跳过
+- PreToolUse/PostToolUse hooks **❌ 未触发**
+- Swarm **❌** 0/15
+
+**发现**: 管道模式只触发 SessionStart hooks，核心路由 hook 完全跳过。不能用 `-p` 模式验证 Ruflo。
+
+#### 测试 B：tmux 交互模式（config validator 任务）
+
+```bash
+# 通过 tmux send-keys 模拟交互
+claude --permission-mode bypassPermissions
+# 发送: "Create utils/config_validator.py that validates YAML files..."
+```
+
+全程监控结果：
+
+| 时间点 | Swarm | AgentDB | Learning | 发生了什么 |
+|---|---|---|---|---|
+| 0s | ○ [0/15] | ●0 | 🧠 1% | 提交 prompt |
+| 1m55s | ○ [0/15] | ●0 | 🧠 1% | Explore 子 agent 启动（CC 原生，非 Ruflo） |
+| 2m46s | ○ [0/15] | ●0 | 🧠 1% | 读取文件、加载 Python rules |
+| 3m10s | ○ [0/15] | ●0 | 🧠 1% | 运行 pytest (96 tests passed) |
+| 3m55s | ○ [0/15] | ●0 | 🧠 1% | 任务完成，$1.43 |
+
+**结论**:
+- 🤖 Swarm **从未激活** — 始终 ○ [0/15] 👥 0
+- 📊 AgentDB **无向量存储** — 始终 Vectors ●0
+- 🧠 Learning **无进展** — 始终 1%
+- 模型**未调用任何 Ruflo MCP 工具**（swarm_coordinate / agentdb_store 等）
+- 模型使用了 CC 原生的 Explore agent，而非 Ruflo 的 Agent
+
+#### 根因分析
+
+1. **模型不兼容**: CLI 使用自定义 API 代理（ANTHROPIC_AUTH_TOKEN），路由到 DeepSeek，无法使用 Claude 模型
+2. **Ruflo 自动化依赖 Claude 生态**: CLAUDE.md 指令 + MCP tool 调用，DeepSeek 不会响应
+3. **hooks 基础设施正常但无效**: 状态栏、hook 脚本都在运行，但模型不理解也不执行它们的输出信号
+
+#### 与上次测试对比
+
+| 维度 | 第一次（CLI 命令） | 第二次（交互模式） |
+|---|---|---|
+| 方法 | `ruflo swarm init` 等 CLI | tmux 中实际任务 |
+| hooks 触发 | N/A | ✅ SessionStart 正常 |
+| Swarm 触发 | 注册了 agent 但没干活 | 从未激活 |
+| MCP 调用 | 未验证 | 确认模型未调用 |
+| 结论 | "只是注册了元数据" | **验证了：确实只是摆设** |
+
+### 11.8 生成的文件结构
 
 ```
 /tmp/hil_auto_test/
