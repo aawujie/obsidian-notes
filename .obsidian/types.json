@@ -29,6 +29,7 @@
     "TQ_show_urgency": "checkbox",
     "Date": "date",
     "Link": "text",
-    "pic": "text"
+    "pic": "text",
+    "TQ_show_toolbar": "checkbox"
   }
 }
