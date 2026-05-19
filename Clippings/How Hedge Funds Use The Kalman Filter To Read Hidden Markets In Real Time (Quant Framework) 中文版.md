@@ -1,0 +1,491 @@
+---
+title: "对冲基金如何用卡尔曼滤波器实时读取隐藏市场（量化框架）"
+source: "https://x.com/phosphenq/status/2056438562451513660?s=46"
+author:
+  - "[[@phosphenq]]"
+published: 2026-05-19
+created: 2026-05-19
+description: "我将详细拆解对冲基金如何用卡尔曼滤波器实时估计隐藏的市场状态，并分享你可以立刻上手的完整框架。"
+tags:
+  - "clippings"
+  - "kalman-filter"
+  - "quant"
+  - "finance"
+lang: zh
+translation_of: "Clippings/How Hedge Funds Use The Kalman Filter To Read Hidden Markets In Real Time (Quant Framework).md"
+---
+
+我将详细拆解对冲基金如何用卡尔曼滤波器实时估计隐藏的市场状态，并分享你可以立刻开始构建的完整框架。直接进入正题。
+
+> **关于我** 我是 Phosphen。我撰写对冲基金实际在每笔交易中运行的数学原理长文分析。关注 X 上的 [@phosphenq](https://x.com/@phosphenq)。私信开放。现在进入数学部分。
+
+大多数交易者看到价格就以为看到了市场。
+
+量化分析师看到同一个价格，却从中看到一个他们无法直接观测的东西的噪声测量值。波动率状态。对冲比率。均值回归强度。流动性状况。这些都不写在图表上。它们必须从图表留下的可见痕迹中估计出来，而这痕迹本身就是被噪声污染的真值。
+
+解决这个问题的框架叫做**卡尔曼滤波器**。它解决了交易中最被低估的问题：**如何实时将信号从噪声中分离出来。**
+
+注意：本文刻意写得很长。每个部分都建立在前一部分之上。如果你认真想在交易中增加真正的量化优势，把每个字都读完。如果你在找捷径，这篇文章不适合你。
+
+## 第一部分：为什么你看到的价格不是你想交易的状态
+
+**图表上的价格不是市场。** 它是市场的一个测量值。而每个测量值都带有噪声。
+
+今天 SPY 的收盘价是拍卖结束前最后一笔成交价。那笔交易反映了两个对手方在特定微秒时刻的边际偏好。市场的底层状态无法直接观测。它是隐藏的。你看到的只是那个隐藏状态在一个数字上的噪声投影。
+
+每一个系统性基金都把价格当作观测值，而不是真值。这门学科叫做**状态空间建模**。其中最重要的工具就是卡尔曼滤波器。
+
+举两个不同领域的例子。
+
+第一个是订单簿不平衡。任何时刻的买卖深度只是流动性停放位置的快照。但挂出那些报价的柜台背后的真实库存压力是无法直接观测的。不平衡是那个压力的噪声代理变量。把快照当作真实值的做市商会遭遇逆向选择。把快照当作缓慢演变的库存状态的噪声观测值来过滤的做市商，才能正确地为下一笔报价定价。
+
+第二个是滚动 Beta。用 AAPL 回报对 SPY 回报做过去 60 天的回归，你得到的那个数字本应代表 AAPL 对市场的敏感度。但真正的敏感度每天都在变化——随着苹果的产品组合、资本结构和宏观敞口不断演变。回归给你的是一个 60 天平均值，而它代表的东西早已移动了。当前值藏在残差里面。
+
+这就是卡尔曼滤波器解决的问题。**它解决的不是预测，而是估计。** 它从一系列噪声观测值中，以最小均方误差，实时估计一个不可观测的、时变的状态。
+
+朴素的移动平均是对噪声最简单粗暴的回应，但它在每一个重要的维度上都是错的。它假设噪声方差等于信号方差，假设窗口内的底层状态是恒定的，假设每个观测值应该被同等加权。这些没有一条是对的。卡尔曼滤波器用两个方程和一个递归循环修正了这三个错误。
+
+> 你永远无法直接观测市场。你只能观测它的噪声测量值。修正这个问题的数学，和把阿波罗送上月球的数学是同一个。
+
+## 第二部分：状态空间模型与预测-更新循环
+
+卡尔曼滤波器建立在一个状态空间模型之上。两个方程。
+
+第一个描述了隐藏状态如何随时间演变——过程模型：
+
+**x_t = F · x_{t-1} + w_t,  w_t ~ N(0, Q)**
+
+F 是状态转移矩阵。Q 是过程噪声协方差，表示状态在两次观测之间可以漂移多少。
+
+第二个描述了测量值如何从隐藏状态生成——测量模型：
+
+**z_t = H · x_t + v_t,  v_t ~ N(0, R)**
+
+H 是测量矩阵。R 是测量噪声协方差，表示观测值有多嘈杂。
+
+这就是整个模型。总共六个矩阵（F, Q, H, R，加上 x₀ 和 P₀）。其余一切都由此推导出来。
+
+当两个噪声项都是高斯分布时，后验永远保持高斯分布。滤波器只需要跟踪一个均值和一个协方差。这就是它计算上可行的原因。
+
+递归循环有两个部分。
+
+**预测** 使用过程模型将先验向前推进：
+
+**x̂_t|t-1 = F · x̂_{t-1|t-1}**
+**P_t|t-1 = F · P_{t-1|t-1} · Fᵀ + Q**
+
+不确定性增加，因为状态已经漂移了，而还没有新信息到达。
+
+**更新** 将先验与新观测值 z_t 合并。增益的数学推导在第三部分。最终形式：
+
+**x̂_t|t = x̂_t|t-1 + K_t · (z_t - H · x̂_t|t-1)**
+**P_t|t = (I - K_t · H) · P_t|t-1**
+
+不确定性缩小，因为新信息已经到达。
+
+用 30 行 NumPy 代码实现的极简版本。标量、单一隐藏状态。完整滤波器的每个概念都已经在这里了。
+
+```python
+import numpy as np
+
+class KalmanFilter1D:
+    def __init__(self, x0, P0, F, Q, H, R):
+        self.x = x0       # 状态估计（标量）
+        self.P = P0       # 状态方差（标量）
+        self.F = F        # 状态转移
+        self.Q = Q        # 过程噪声方差
+        self.H = H        # 测量矩阵
+        self.R = R        # 测量噪声方差
+        self.history = []
+
+    def predict(self):
+        self.x = self.F * self.x
+        self.P = self.F * self.P * self.F + self.Q
+        return self.x
+
+    def update(self, z):
+        y = z - self.H * self.x                  # 新息（残差）
+        S = self.H * self.P * self.H + self.R    # 新息方差
+        K = self.P * self.H / S                  # 卡尔曼增益
+        self.x = self.x + K * y                  # 状态更新
+        self.P = (1 - K * self.H) * self.P       # 协方差更新
+        self.history.append((self.x, self.P, K))
+        return self.x
+
+    def step(self, z):
+        self.predict()
+        return self.update(z)
+```
+
+这就是整个滤波器，30 行代码。你一次喂一个观测值进去。它维护对隐藏状态 x 的最佳估计，以及对估计的不确定性 P。下一部分是它变得数学上最优的地方。
+
+## 第三部分：卡尔曼增益——滤波器成为最优的地方
+
+增益是滤波器中唯一最重要的量。是这个算法在工程和金融领域主导状态估计六十年的原因。
+
+滤波器关于当前状态有两个信息源。一个带有不确定性 P_t|t-1 的先验估计 x̂_t|t-1，和一个带有测量噪声 R 的新观测值 z_t。它们应该如何合并？
+
+朴素平均是错的。两个量承载着不同的不确定性，把它们当作信息量等同会丢弃信号。正确的答案是加权组合，权重取决于相对不确定性。
+
+三个关键量。
+
+**新息（innovation）** 是观测值与滤波器预测值之间的残差：
+
+**y_t = z_t - H · x̂_t|t-1**
+
+**新息协方差** 同时考虑先验不确定性和测量噪声：
+
+**S_t = H · P_t|t-1 · Hᵀ + R**
+
+**卡尔曼增益** 将新息转化为状态修正：
+
+**K_t = P_t|t-1 · Hᵀ · S_t⁻¹**
+
+在标量形式下，结构变得一目了然：
+
+**K = P_prior / (P_prior + R)**
+
+先验不确定性除以总不确定性。当先验比观测值可靠得多时，K 趋近于零，滤波器忽略新数据。当观测值精确得多时，K 趋近于一，滤波器直接跳到观测值。在两者之间，K 进行插值。
+
+这就是最优插值。它在所有线性无偏组合中最小化后验的均方误差。**卡尔曼增益就是告诉你究竟应该在多大程度上相信新证据而非先验信念的数学。**
+
+有了增益，更新步骤自然写出：
+
+**x̂_t|t = x̂_t|t-1 + K_t · y_t**
+**P_t|t = (I - K_t · H) · P_t|t-1**
+
+以下是多维版本。结构完全相同，只是将标量运算替换为矩阵运算。这是你会部署的生产级形式。
+
+```python
+import numpy as np
+
+class KalmanFilter:
+    def __init__(self, F, H, Q, R, x0, P0):
+        self.F, self.H, self.Q, self.R = F, H, Q, R
+        self.x = x0          # 状态向量 (n x 1)
+        self.P = P0          # 状态协方差 (n x n)
+        self.I = np.eye(F.shape[0])
+
+    def predict(self):
+        self.x = self.F @ self.x
+        self.P = self.F @ self.P @ self.F.T + self.Q
+        return self.x
+
+    def update(self, z):
+        y = z - self.H @ self.x                          # 新息
+        S = self.H @ self.P @ self.H.T + self.R          # 新息协方差
+        K = self.P @ self.H.T @ np.linalg.inv(S)         # 卡尔曼增益
+        self.x = self.x + K @ y                          # 状态更新
+        self.P = (self.I - K @ self.H) @ self.P          # 协方差更新
+        return self.x.copy()
+
+    def step(self, z):
+        self.predict()
+        return self.update(z)
+```
+
+隐藏状态的每个分量都被跟踪，带有各自的方差和协方差，这意味着滤波器可以对相关的隐藏量进行建模。回归的斜率和截距同时进行。波动率的水平和趋势。多个状态条件均值同时估计。
+
+## 第四部分：动态 Beta——每个量化交易台都认得的实战应用
+
+卡尔曼滤波器在系统化交易中最干净的应用是动态 Beta。每个量化交易台都运行着某个版本的它。大多数散户交易者没有意识到它的必要性。
+
+设定：两个回报序列，市场 r_m 和资产 r_a。经典 CAPM：
+
+**r_a,t = α + β · r_m,t + ε_t**
+
+跑 OLS，得到 Beta，用它来做对冲、仓位规模、因子分解。一个问题：**Beta 不是常数。** 它随着公司的收入结构、资本结构、宏观敞口演变而变动。把它当作一个用固定窗口估计的单一数字，就丢弃了量化交易者所拥有的最重要的事实：它在变化。
+
+修正方法：把 Beta 当作隐藏状态，让卡尔曼滤波器实时估计它。
+
+状态空间模型。隐藏状态以随机游走方式演变：
+
+**β_t = β_{t-1} + w_t,  w_t ~ N(0, Q)**
+
+Q 控制平滑度。更小的 Q → 更平滑的估计。更大的 Q → 更灵敏的响应。
+
+测量方程来自回归本身：
+
+**r_a,t = β_t · r_m,t + v_t,  v_t ~ N(0, R)**
+
+这是一个具有时变 H_t = r_m,t 的卡尔曼滤波器。其他部分都是标准的。
+
+```python
+import numpy as np
+import pandas as pd
+import yfinance as yf
+
+def kalman_beta(market_returns, asset_returns, q=1e-5, r=1e-3, beta0=1.0, P0=1.0):
+    n = len(market_returns)
+    betas = np.zeros(n)
+    variances = np.zeros(n)
+
+    beta = beta0
+    P = P0
+
+    for t in range(n):
+        # 预测
+        P = P + q
+
+        # 用本期的观测值更新
+        H = market_returns.iloc[t]
+        y = asset_returns.iloc[t] - H * beta            # 新息
+        S = H * P * H + r                               # 新息方差
+        K = P * H / S                                   # 卡尔曼增益
+        beta = beta + K * y                             # 更新 beta
+        P = (1 - K * H) * P                             # 更新方差
+
+        betas[t] = beta
+        variances[t] = P
+
+    return pd.Series(betas, index=market_returns.index), pd.Series(variances, index=market_returns.index)
+
+# 真实示例：QQQ 对 SPY 的 Beta，10 年期
+spy = yf.Ticker("SPY").history(period="10y", interval="1d")['Close'].pct_change().dropna()
+qqq = yf.Ticker("QQQ").history(period="10y", interval="1d")['Close'].pct_change().dropna()
+returns = pd.concat([spy, qqq], axis=1).dropna()
+returns.columns = ['SPY', 'QQQ']
+
+beta_series, var_series = kalman_beta(returns['SPY'], returns['QQQ'], q=1e-5, r=1e-3)
+
+print(f"最新 Beta 估计: {beta_series.iloc[-1]:.4f}")
+print(f"最新不确定性 (1σ): {np.sqrt(var_series.iloc[-1]):.4f}")
+print(f"10 年 Beta 范围: [{beta_series.min():.3f}, {beta_series.max():.3f}]")
+```
+
+在 SPY 和 QQQ 十年的数据上跑这段代码。Beta 不会停在一个恒定值上。它在一个狭窄的区间内振荡，在 1.006 到 1.240 之间。2020 年初 COVID 迫使一切同步波动时被压缩到 1.137，在 2024 年 AI 牛市中重新扩展向 1.181。当前读数：**1.1994，±0.0982 一西格玛。**
+
+OLS 完全看不到这些。卡尔曼估计给你当前状态加上不确定性区间。静态估计给你的只是过去 60 天的平均值。
+
+这对**对冲**（用当前 Beta 而非历史均值来定空头仓位规模）、对**因子分解**（残差才是与因子不相关的唯一回报）、对**信号生成**（偏离长期均值本身就是可交易的均值回归优势）都很重要。
+
+基于卡尔曼 Beta 的简单仓位规模规则：
+
+```python
+def beta_signal(beta_series, lookback=252):
+    # 计算当前 beta 相对于过去一年分布的 z-score
+    rolling_mean = beta_series.rolling(lookback).mean()
+    rolling_std = beta_series.rolling(lookback).std()
+    z = (beta_series - rolling_mean) / rolling_std
+
+    # 仓位：beta 偏高时做空 QQQ，压缩时做多
+    # 用 tanh 限制在 [-1, 1] 区间
+    position = -np.tanh(z / 1.5)
+    return position.dropna()
+
+position = beta_signal(beta_series)
+print(f"当前仓位: {position.iloc[-1]:.3f}")
+print(f"平均绝对仓位: {position.abs().mean():.3f}")
+```
+
+当前读数：QQQ 相对于 SPY 的强烈做空信号，-0.892，因为动态 Beta 接近其一年滚动分布的顶部。平均绝对仓位是 0.672，所以信号始终保持有意义的仓位，而不是归零。没有信号在每个状态下都有效，但卡尔曼 Beta 是几乎所有 Beta 感知策略的正确输入。
+
+> OLS 给你平均值。卡尔曼给你当前状态。在当前状态已经移动时还用平均值来交易，就是那些回测看起来很美、实盘却死亡的策略的根源。
+
+## 第五部分：波动率追踪——卡尔曼作为 GARCH 的替代方案
+
+第二个经典的卡尔曼应用是波动率追踪。
+
+EWMA、GARCH 和已实现方差都把波动率当作可以直接观测的量来处理。它们不完全是错的，但共享一个概念缺陷：它们把近期回报的方差与底层波动率的当前状态混为一谈。任何一天的对数回报平方本身就是真实潜在方差的一个噪声估计值。把每个平方回报当作真值，就把所有这些噪声都折叠回了你的波动率估计中。
+
+状态空间公式化。隐藏状态是当前方差的**对数**：
+
+**log(σ²_t) = log(σ²_{t-1}) + w_t,  w_t ~ N(0, Q)**
+
+对数空间保持方差为正，并稳定动态过程。Q 控制滤波器对状态转换的响应速度。
+
+测量方程将观测到的平方回报与潜在方差联系起来：
+
+**log(r_t²) = log(σ²_t) + η_t**
+
+对于高斯回报，平方回报是卡方分布，噪声并不完全符合高斯分布，但高斯近似在实践中效果很好。Two Sigma 和 AQR 都在他们的 vol-of-vol 模型中部署了变体。
+
+```python
+import numpy as np
+import pandas as pd
+import yfinance as yf
+
+def kalman_volatility(returns, q=0.1, r=1.0, log_var0=None, P0=1.0):
+    n = len(returns)
+    # 观测值：对数平方回报。设下限以避免 log(0)。
+    log_sq_returns = np.log(np.maximum(returns ** 2, 1e-12))
+
+    if log_var0 is None:
+        log_var0 = log_sq_returns[:60].mean()
+
+    log_var = log_var0
+    P = P0
+    estimates = np.zeros(n)
+
+    for t in range(n):
+        # 预测
+        P = P + q
+
+        # 更新
+        y = log_sq_returns.iloc[t] - log_var
+        S = P + r
+        K = P / S
+        log_var = log_var + K * y
+        P = (1 - K) * P
+
+        estimates[t] = np.exp(log_var)
+
+    annual_vol = np.sqrt(estimates * 252)
+    return pd.Series(annual_vol, index=returns.index)
+
+# 真实示例：SPY 波动率追踪
+spy_returns = yf.Ticker("SPY").history(period="5y", interval="1d")['Close'].pct_change().dropna()
+kalman_vol = kalman_volatility(spy_returns, q=0.1, r=1.0)
+ewma_vol = spy_returns.ewm(span=20).std() * np.sqrt(252)
+realized_60d = spy_returns.rolling(60).std() * np.sqrt(252)
+
+print(f"当前 Kalman 波动率估计: {kalman_vol.iloc[-1]:.2%}")
+print(f"当前 EWMA 波动率: {ewma_vol.iloc[-1]:.2%}")
+print(f"当前 60 日已实现波动率: {realized_60d.iloc[-1]:.2%}")
+```
+
+将三条曲线与 VIX 对比绘制。卡尔曼估计追踪更广泛的趋势，而 EWMA 和滚动已实现波动率对近期冲击反应更剧烈。**响应速度由 q 控制。** 更高的 q → 更快的响应，更多的噪声。更低的 q → 更平滑，更滞后。不存在普遍最优值。五分钟周期的目标波动率策略和六个月的风险覆盖层策略想要不同的 q。
+
+```python
+def vol_target_position(returns, target_vol=0.15, max_leverage=2.0):
+    kvol = kalman_volatility(returns, q=0.1, r=1.0)
+    raw_leverage = target_vol / kvol
+    return np.clip(raw_leverage, 0, max_leverage)
+
+leverage = vol_target_position(spy_returns, target_vol=0.15)
+print(f"当前目标杠杆: {leverage.iloc[-1]:.3f}")
+print(f"过去一年杠杆范围: [{leverage.iloc[-252:].min():.2f}, {leverage.iloc[-252:].max():.2f}]")
+```
+
+仓位规模与当前波动率成反比。最新读数给出的目标杠杆接近上限，因为滤波器读到的波动率低于 15%。在过去 252 个交易日中，杠杆在 **0.89 到 2.00** 之间摆动——这正是目标波动率策略应该实现的自动风险调节。Bridgewater 围绕这一逻辑构建了 All Weather，横跨各类资产。AQR 的管理期货基金运行在它上面。Citadel 的风险目标覆盖层在使用它。共同成分是对当前波动率状态的实时估计，通过一个参数可调。
+
+> GARCH 告诉你波动率曾经是多少。卡尔曼告诉你波动率**现在**是多少，以及下一刻它会是多少。
+
+## 第六部分：完整实现流水线和关键局限性
+
+到目前为止，一切都是单一用途的。一个生产系统并行运行多个滤波器，与执行系统集成，并在假设被破坏时优雅降级。
+
+完整流水线收集到一个单独的类中。代码为可读性而写，不是为最大聪明而写。
+
+```python
+import numpy as np
+import pandas as pd
+import yfinance as yf
+
+class MarketKalmanFilter:
+    """
+    金融时间序列单变量状态估计的通用卡尔曼滤波器。
+
+    参数
+    ----------
+    q : float
+        过程噪声方差。更小 = 更平滑的状态。更大 = 更灵敏。
+    r : float
+        测量噪声方差。更小 = 更信任观测值。
+    x0 : float
+        初始状态估计。
+    P0 : float
+        初始状态方差。
+    """
+    def __init__(self, q=1e-5, r=1e-3, x0=0.0, P0=1.0):
+        self.q = q
+        self.r = r
+        self.x = x0
+        self.P = P0
+        self.history = []
+
+    def step(self, observation, H=1.0):
+        # 预测
+        self.P = self.P + self.q
+        # 更新
+        y = observation - H * self.x
+        S = H * self.P * H + self.r
+        K = self.P * H / S
+        self.x = self.x + K * y
+        self.P = (1 - K * H) * self.P
+        self.history.append({'x': self.x, 'P': self.P, 'K': K, 'y': y, 'H': H})
+        return self.x
+
+    def state_series(self, observations, H_series=None):
+        results = np.zeros(len(observations))
+        if H_series is None:
+            H_series = np.ones(len(observations))
+        for t, (z, H) in enumerate(zip(observations, H_series)):
+            results[t] = self.step(z, H=H)
+        return pd.Series(results, index=observations.index)
+
+def walk_forward_kalman_backtest(ticker_asset, ticker_market, target_vol=0.15, q_beta=1e-5, r_beta=1e-3, q_vol=0.1, r_vol=1.0):
+    """
+    动态 Beta + 目标波动率策略的滚动回测。
+    交易资产，对冲对市场的 Beta 敞口，按卡尔曼波动率定仓位规模。
+    """
+    asset = yf.Ticker(ticker_asset).history(period="10y", interval="1d")['Close'].pct_change().dropna()
+    market = yf.Ticker(ticker_market).history(period="10y", interval="1d")['Close'].pct_change().dropna()
+    df = pd.concat([asset, market], axis=1).dropna()
+    df.columns = ['asset', 'market']
+
+    # 数据流 1：通过卡尔曼滤波器的动态 beta
+    beta_filter = MarketKalmanFilter(q=q_beta, r=r_beta, x0=1.0, P0=1.0)
+    betas = beta_filter.state_series(df['asset'], H_series=df['market'].values)
+
+    # 数据流 2：资产的卡尔曼波动率
+    vol_filter_input = df['asset']
+    log_sq = np.log(np.maximum(vol_filter_input ** 2, 1e-12))
+    vol_filter = MarketKalmanFilter(q=q_vol, r=r_vol, x0=log_sq.iloc[:60].mean(), P0=1.0)
+    log_var_series = vol_filter.state_series(log_sq)
+    annual_vol = np.sqrt(np.exp(log_var_series) * 252)
+
+    # 仓位：目标波动率、Beta 中性化
+    leverage = np.clip(target_vol / annual_vol, 0, 2.0)
+    hedge_ratio = betas
+    strategy_returns = leverage.shift(1) * (df['asset'] - hedge_ratio.shift(1) * df['market'])
+
+    # 业绩指标
+    sharpe = strategy_returns.mean() / strategy_returns.std() * np.sqrt(252)
+    cum = (1 + strategy_returns).cumprod()
+    max_dd = ((cum - cum.cummax()) / cum.cummax()).min()
+    annual_return = strategy_returns.mean() * 252
+
+    print(f"\n滚动卡尔曼回测结果 — {ticker_asset} / {ticker_market}")
+    print(f"  年化 Sharpe:  {sharpe:.4f}")
+    print(f"  最大回撤:     {max_dd:.4f}")
+    print(f"  年化收益:     {annual_return:.4f}")
+    print(f"  平均杠杆:     {leverage.mean():.3f}")
+    print(f"  Beta 范围:    [{betas.min():.3f}, {betas.max():.3f}]")
+    print(f"  最终状态 — Beta: {betas.iloc[-1]:.3f}, 波动率: {annual_vol.iloc[-1]:.3%}")
+
+    return strategy_returns, betas, annual_vol
+
+# 运行
+strat_returns, betas, vols = walk_forward_kalman_backtest("QQQ", "SPY")
+```
+
+在 QQQ 和 SPY 十年的数据上运行。策略产生年化 **Sharpe 0.44，年化收益约 4.9%，最大回撤 -23%。** 窗口期平均杠杆 1.53。最终 Beta 状态 1.199，最终波动率状态 13.29%。
+
+这个流水线没有未来信息泄露。时刻 t 的每个状态估计仅使用到时刻 t 为止的观测值，策略回报在应用前向前移动了一个周期。卡尔曼滤波器自然产生顺序的、因果的估计。
+
+**三个假设**决定了你的滤波器是否能在实盘市场中存活下来。
+
+**线性假设：** 标准滤波器假设 F 和 H 是线性的。隐含波动率曲面演化、期权价格响应、状态切换信用利差——这些都违反此假设。缓解方案：扩展卡尔曼滤波器（EKF）在每一步围绕当前估计进行线性化。无迹卡尔曼滤波器（UKF）对强非线性系统使用 sigma 点，不需要导数。现代基金的生产环境在大多数状态空间问题上运行 UKF。
+
+**高斯噪声假设：** 真实回报的新息是肥尾的。高斯近似在许多情况下仍可存活，因为滤波器只使用前两阶矩，且中心极限定理在多个步骤上可以清理很多问题。但在极端观测值上，标准滤波器反应过于激进。缓解方案：**鲁棒卡尔曼滤波**，使用 Huber 型增益对极端新息进行降权。正常状态下效率损失很小，尾部事件期间改善显著。
+
+**Q 和 R 的平稳性假设：** 两者通常被当作常数处理。它们不是常数。新息方差随状态变化，流动性驱动的测量噪声随市场条件扩张和收缩。缓解方案：使用新息序列本身进行自适应估计。如果你的新息系统性地大于模型的 S，模型就在低估 Q 或 R。重新调参。
+
+> **生产准则：** 如果新息方差偏离了 S_t，你的模型就是错的。交易前先调参。这是研究滤波器和生产滤波器之间的唯一区别。
+
+## 总结
+
+卡尔曼滤波器不预测未来。它在合理假设下，从噪声观测中实时估计不可观测的状态，具有数学上最优的准确性。
+
+1960 年发明用于引导航天器。现在被每一个主要的系统化基金用于估计没有任何图表能直接显示给你的量。动态 Beta。动态波动率。库存压力。均值回归强度。Alpha 衰减。状态概率。潜在流动性。这些都是从可观测测量值中提取的不可观测变量，使用的正是你刚刚学到的预测-更新-增益循环。
+
+**马尔可夫模型告诉你处于哪个状态。卡尔曼滤波器告诉你在这个状态内部你到底在哪里，此刻。两者互补。** 一个严肃的系统化系统两者都要运行。
+
+我想留给你的问题是：
+
+如果你在你最常交易的市场中，把卡尔曼滤波器放在一个最重要的隐藏状态上，你会选什么？波动率状态？流动性状况？某个只有你的优势才能接触到的领域特定变量？
+
+在回复中留下你的答案。
+
+如果你想要关于非线性动态的扩展卡尔曼滤波器的第二部分，请告诉我。这可能是我今年写的最有用的后续文章 :)
