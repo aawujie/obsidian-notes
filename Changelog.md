@@ -1,3 +1,5 @@
+- 2026-05-19T1705 · [[2026-05-19]]
+- 2026-05-19T1704 · [[How Hedge Funds Use The Kalman Filter To Read Hidden Markets In Real Time (Quant Framework)]]
 - 2026-05-19T1547 · [[AI编码自主性进化曲线]]
 - 2026-05-19T1547 · [[ruflo项目调研]]
 - 2026-05-19T1535 · [[2026-05-19]]
@@ -21,5 +23,3 @@
 - 2026-05-19T1453 · [[Love-Death-Robots-S03E03-The-Very-Pulse-of-the-Machine]]
 - 2026-05-19T1453 · [[Love-Death-Robots-S03E02-Bad-Travelling]]
 - 2026-05-19T1453 · [[Love-Death-Robots-S03E01-Three-Robots-Exit-Strategies]]
-- 2026-05-19T1453 · [[Love-Death-Robots-S02E08-The-Drowned-Giant]]
-- 2026-05-19T1453 · [[Love-Death-Robots-S02E07-Life-Hutch]]
