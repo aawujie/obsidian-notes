@@ -1,0 +1,1237 @@
+{
+  "date": "2026-05-21",
+  "generated_at": "2026-05-21T06:41:36.925209",
+  "total_events": 41,
+  "severity_distribution": {
+    "medium": 20,
+    "high": 18,
+    "low": 3
+  },
+  "events": [
+    {
+      "title": "Tankers exit Hormuz as Trump, Vance talk up Iran deal prospects - Reuters",
+      "title_cn": "油轮驶离霍尔木兹海峡，特朗普与万斯讨论伊朗协议前景",
+      "url": "https://www.reuters.com/world/asia-pacific/tankers-exit-hormuz-trump-vance-talk-up-iran-deal-prospects-2026-05-20/",
+      "content": "# Tankers exit Hormuz as Trump, Vance talk up Iran deal prospects | Reuters\n\nSkip to main content\n\nVideo 1\n\nImage 1\n\nReport AdImage 2\n\nExclusive news, data and analytics for financial market professionals Learn more about Refinitiv\n\n - Two Chinese tankers laden with oil exited the Strait of Hormuz o",
+      "content_detail": "# Trump says negotiations with Iran in final stages, warns of attacks if deal fails | Reuters\n\n[Skip to main content](https://www.reuters.com/world/asia-pacific/tankers-exit-hormuz-trump-vance-talk-up-iran-deal-prospects-2026-05-20/#main-content)\n\nReport Ad![Image 1](blob:http://localhost/a2f9abce2c7bd7e72f7c1065e8e25533)\n\n[Exclusive news, data and analytics for financial market professionals Learn more about Refinitiv](https://www.reuters.com/differentiator/)\n\n[](https://www.reuters.com/)\n\n*   [World](https://www.reuters.com/world/) \n\n## [Browse World](https://www.reuters.com/world/)\n\n    *   [Africa](https://www.reuters.com/world/africa/)\n    *   [Americas](https://www.reuters.com/world/americas/)\n    *   [Asia Pacific](https://www.reuters.com/world/asia-pacific/)\n    *   [China](https://www.reuters.com/world/china/)\n    *   [Europe](https://www.reuters.com/world/europe/)\n    *   [India](https://www.reuters.com/world/india/)\n    *   [Iran War](https://www.reuters.com/world/iran/)\n\n    *   [Israel and Hamas at War](https://www.reuters.com/world/israel-hamas/)\n    *   [Japan](https://www.reuters.com/world/japan/)\n    *   [Middle East](https://www.reuters.com/world/middle-east/)\n    *   [Ukraine and Russia at War](https://www.reuters.com/world/ukraine-russia-war/)\n    *   [United Kingdom](https://www.reuters.com/world/uk/)\n    *   [United States](https://www.reuters.com/world/us/)\n    *   [Reuters NEXT New York](https://www.reuters.com/world/reuters-next/)\n\n*   [Business](http",
+      "published_date": "Wed, 20 May 2026 03:44:18 GMT",
+      "search_region": "美伊冲突",
+      "classified_regions": [
+        "美伊冲突"
+      ],
+      "event_types": [
+        "原油供应风险",
+        "航运中断"
+      ],
+      "severity": "medium",
+      "summary": "Trump says negotiations with Iran in final stages, warns of attacks if deal fails Reuters",
+      "affected_tickers": [
+        "CL=F",
+        "BZ=F",
+        "USO",
+        "XLE",
+        "BNO",
+        "ZIM",
+        "MATX",
+        "BOAT",
+        "SEA"
+      ]
+    },
+    {
+      "title": "Strait to the point: how Iran turned Hormuz into its US-Israel strike insurance - ynetnews",
+      "title_cn": "直击要点：伊朗如何将霍尔木兹海峡变成对美以打击的保险",
+      "url": "https://www.ynetnews.com/article/hyzz2kskgx",
+      "content": "Since mid-March, Iran has maintained effective control over the Strait of Hormuz, one of the world’s most important shipping lanes, through which a significant share of global oil and gas trade passes. That control has allowed Tehran not only to disrupt maritime traffic and raise the price of escala",
+      "content_detail": "[Updates](https://www.ynetnews.com/category/3089) [Red Mail](https://www.ynetnews.com/category/43972)\n\n[![](https://www.ynetnews.com/Cnt/Images/Weather/1230.png)](https://www.ynetnews.com/weather/tel-aviv-yafo)\n\n[Tel Aviv-Jaffa](https://www.ynetnews.com/weather/tel-aviv-yafo)\n\n[![](https://ynet-pic1.yit.co.il/picserver6/wcm_upload/2025/08/28/BkLy3jaKlg/global_header_logo.png)](https://www.ynetnews.com/category/3083)\n\n[Israel News](https://www.ynetnews.com/category/3082)\n\n[Mideast & World News](https://www.ynetnews.com/category/9733)\n\n[Tech & Digital](https://www.ynetnews.com/tech-and-digital)\n\n[Real Estate](https://www.ynetnews.com/real-estate)\n\n[Finance](https://www.ynetnews.com/business)\n\n[Lifestyle](https://www.ynetnews.com/culture)\n\n[Health & Science](https://www.ynetnews.com/health_science)\n\n[Jewish World](https://www.ynetnews.com/jewish-world)\n\n[Travel](https://www.ynetnews.com/travel)\n\nMore\n\nChannels\n\n* [Opinions](https://www.ynetnews.com/opinions-analysis)\n* [Magazine](https://www.ynetnews.com/magazine)\n* [Sports](https://www.ynetnews.com/sport)\n* [Food](https://www.ynetnews.com/food)\n* [Weather](https://www.ynetnews.com/weather)\n* [Podcasts](https://www.ynetnews.com/podcasts)\n\nSites & Sources\n\n* [Ynet](https://www.ynet.co.il/home/0,7340,L-8,00.html)\n* [Calcalist](https://www.calcalist.co.il/home/0,7340,L-8,00.html)\n* [yad2](https://www.yad2.co.il/?utm_source=ynet&utm_medium=link_footer)\n* [ynetespanol](https://www.ynetespanol.com/)\n* [Вести](https://www.vesty.co.il/m",
+      "published_date": "Wed, 20 May 2026 08:19:43 GMT",
+      "search_region": "美伊冲突",
+      "classified_regions": [
+        "美伊冲突"
+      ],
+      "event_types": [
+        "军事冲突升级",
+        "原油供应风险"
+      ],
+      "severity": "high",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "SI=F",
+        "LMT",
+        "NOC",
+        "RTX",
+        "GD",
+        "GLD",
+        "SLV",
+        "ITA",
+        "PPA",
+        "CL=F",
+        "BZ=F",
+        "USO",
+        "XLE",
+        "BNO"
+      ]
+    },
+    {
+      "title": "US Treasury Secretary pushes for more sanctions on Tehran - The Jerusalem Post",
+      "title_cn": "美国财政部长推动对德黑兰实施更多制裁",
+      "url": "https://www.jpost.com/middle-east/iran-news/article-896766",
+      "content": "### US Treasury steps up sanctions\n\nAs the Trump administration tries to pressure Tehran to reopen the Strait of Hormuz to unlock vital oil flows disrupted by the US-Israeli attacks on Iran, the US Treasury has stepped up its sanctions efforts through a program dubbed \"Economic Fury.\" It aims to dis",
+      "content_detail": "# US Treasury Secretary pushes for more sanctions on Tehran | The Jerusalem Post\n![Image 1](https://ib.adnxs.com/getuid?https%3A%2F%2Fids.api.gcprivacy.id%2Fv4%2Fid%2Fxandr%3Fpid%3D6CP1D%26id%3D%24UID%26gcid%3Dc28b5637-d3b0-414c-967f-302a217c36fc)\n\nAdvertisement\n\n[![Image 2: The Jerusalem Post - Israel News](https://www.jpost.com/assets/jp-logo.png)](https://www.jpost.com/ \"Jerusalem Post\")\n*   [CONFERENCES](https://www.jpost.com/conferences \"CONFERENCES\")\n*   [ISRAEL NEWS](https://www.jpost.com/israel-news \"ISRAEL NEWS\")\n*   [WORLD NEWS](https://www.jpost.com/international \"WORLD NEWS\")\n*   [MIDDLE EAST](https://www.jpost.com/middle-east \"MIDDLE EAST\")\n*   [BUSINESS & INNOVATION](https://www.jpost.com/business-and-innovation \"BUSINESS & INNOVATION\")\n*   [DEFENSE & TECH](https://defense-and-tech.jpost.com/ \"DEFENSE & TECH\")\n*   [OPINION](https://www.jpost.com/opinion \"OPINION\")\n*   [JP STORE](https://store.jpost.com/ \"JP STORE\")\n\n[Login](https://www.jpost.com/PayWalllogin)[Login](https://www.jpost.com/PayWalllogin)[Subscribe](https://payments.jpost.com/paywall/paywallpersonaldetails)\n*   [JPOST DIGITAL LIBRARY](https://www.jpost.com/magazineprint/digitallibrary)\n*   [HOME PAGE](https://www.jpost.com/)\n*   [THE JERUSALEM REPORT](https://www.jpost.com/jerusalem-report)\n*   [DEFENSE & TECH](https://defense-and-tech.jpost.com/)\n*   [OPINION](https://www.jpost.com/opinion)\n*   BUSINESS & INNOVATION \n*   JERUSALEM POST EN ESPANOL \n*   [REAL ESTATE LISTINGS](https://realestate.jpost",
+      "published_date": "Wed, 20 May 2026 01:09:14 GMT",
+      "search_region": "美伊冲突",
+      "classified_regions": [
+        "美伊冲突",
+        "全球制裁"
+      ],
+      "event_types": [
+        "原油供应风险"
+      ],
+      "severity": "medium",
+      "summary": "US Treasury Secretary pushes for more sanctions on Tehran The Jerusalem Post",
+      "affected_tickers": [
+        "CL=F",
+        "BZ=F",
+        "USO",
+        "XLE",
+        "BNO"
+      ]
+    },
+    {
+      "title": "Two Chinese VLCCs cross the Strait of Hormuz - Seatrade Maritime News",
+      "title_cn": "两艘中国巨型油轮穿越霍尔木兹海峡",
+      "url": "https://www.seatrade-maritime.com/tankers/two-chinese-vlccs-cross-the-strait-of-hormuz",
+      "content": "US\n blockade at the edge of the Gulf of Oman and the Arabian Sea, however neither vessel appears to have called at Iranian ports which would make them subject to the blockade.\n\nAccording to data from Pole Star Global’s PurpleTrac database both vessels entered the Gulf shortly before the conflict bet",
+      "content_detail": "",
+      "published_date": "Wed, 20 May 2026 07:26:40 GMT",
+      "search_region": "美伊冲突",
+      "classified_regions": [
+        "中美博弈"
+      ],
+      "event_types": [
+        "原油供应风险",
+        "航运中断"
+      ],
+      "severity": "low",
+      "summary": "",
+      "affected_tickers": [
+        "CL=F",
+        "BZ=F",
+        "USO",
+        "XLE",
+        "BNO",
+        "ZIM",
+        "MATX",
+        "BOAT",
+        "SEA"
+      ]
+    },
+    {
+      "title": "How the U.S. Sanctions Iranian Oil Export Vessels in 2026 - Discovery Alert",
+      "title_cn": "美国如何在2026年制裁伊朗石油出口船只",
+      "url": "https://discoveryalert.com.au/iran-oil-export-vessels-sanctions-shadow-fleet-ofac-2026/",
+      "content": "Sanctions enforcement against Iranian oil infrastructure is not occurring in a vacuum. The announcement of the May 2026 designations coincided with continued disruption tied to the Strait of Hormuz crisis, a chokepoint through which approximately 20% of global oil supply transits. Regional conflict ",
+      "content_detail": "![Discovery Alert](https://discoveryalert.com.au/wp-content/uploads/2023/02/discovery-alert-logo.svg)\n\n# How the U.S. Sanctions Iranian Oil Export Vessels in 2026\n\nBY [MUFLIH HIDAYAT](https://discoveryalert.com.au/author/muflih-hidayat/)\nON MAY 20, 2026\n\n![U.S. sanctions Iranian oil export vessels graphic](https://discoveryalert.com.au/wp-content/uploads/2026/05/8c5e2405-30b7-4290-b405-6c65404c4d44-1024x572.jpg)\n\n## The Machinery of Modern Economic Statecraft: How the U.S. Targets Iran's Oil Revenues\n\nFor decades, broad trade embargoes were the dominant weapon in the sanctions arsenal. A country would be cut off from global commerce in sweeping, often blunt terms. The effectiveness of this approach was always limited by the same problem: where there is commercial demand, traders find supply. What has changed fundamentally in recent years is not the political will to apply pressure, but the precision of the tools used to do so. The evolution of how the U.S. sanctions Iranian oil export vessels illustrates this shift in vivid detail, moving from economy-wide restrictions toward the surgical dismantling of specific vessels, exchange networks, and corporate structures that keep sanctioned oil flowing.\n\n### When big ASX news breaks, our subscribers know first\n\n## From Sector-Wide Restrictions to Vessel-Level Designations\n\nThe transformation in how Washington applies financial pressure on Tehran represents one of the most significant doctrinal shifts in U.S. foreign economic policy",
+      "published_date": "Wed, 20 May 2026 05:07:48 GMT",
+      "search_region": "美伊冲突",
+      "classified_regions": [
+        "美伊冲突",
+        "全球制裁"
+      ],
+      "event_types": [
+        "原油供应风险",
+        "航运中断"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "CL=F",
+        "BZ=F",
+        "USO",
+        "XLE",
+        "BNO",
+        "ZIM",
+        "MATX",
+        "BOAT",
+        "SEA"
+      ]
+    },
+    {
+      "title": "U.S. sanctions 19 vessels in expanded crackdown on Iranian oil exports - World Oil",
+      "title_cn": "美国扩大对伊朗石油出口打压 制裁19艘船只",
+      "url": "https://worldoil.com/news/2026/5/19/u-s-sanctions-19-vessels-in-expanded-crackdown-on-iranian-oil-exports/",
+      "content": "Treasury Secretary Scott Bessent said the sanctions are part of the administration’s broader “Economic Fury” campaign aimed at disrupting Iran’s ability to generate and transfer revenue through global energy markets.\n\n“Iran’s shadow banking system facilitates the illicit transfer of funding for terr",
+      "content_detail": "[Advertise](/advertise) | [Subscribe](/subscribe) | [Contact WO](/contact-us)\n\n* [Topics](#)\n\n  [Onshore](/topics/onshore)\n\n  [Exploration](/topics/onshore/exploration) [Drilling](/topics/onshore/drilling) [Completion](/topics/onshore/completion) [Production](/topics/onshore/production) [Shale](/topics/onshore/shale) [Hydraulic Fracturing](/topics/onshore/hydraulic-fracturing) [Conventional](/topics/onshore/conventional)\n\n  [Digital Transformation](/topics/digital-transformation)\n\n  [Automation & Control](/topics/digital-transformation/automation-control) [Data Storage](/topics/digital-transformation/data-storage) [Artificial Intelligence](/topics/digital-transformation/artificial-intelligence)\n\n  [Offshore](/topics/offshore)\n\n  [Exploration](/topics/offshore/exploration) [Drilling](/topics/offshore/drilling) [Production](/topics/offshore/production) [Deepwater](/topics/offshore/deepwater) [Subsea](/topics/subsea) [Decommissioning](/topics/offshore/decommissioning)\n\n  [Energy Transition](/topics/energy-transition)\n\n  [LNG](/topics/energy-transition/lng) [Sustainability](/topics/energy-transition/sustainability) [Offshore Wind](/topics/energy-transition/offshore-wind) [Hydrogen](/topics/energy-transition/hydrogen) [Carbon Capture](/topics/energy-transition/carbon-capture)\n\n  [Industry & Analysis](/topics/industry-analysis)\n\n  [Economics/statistics](/topics/industry-analysis/economics-statistics) [Regulatory](/topics/industry-analysis/regulatory) [ESG/Investment](/topics/indust",
+      "published_date": "Wed, 20 May 2026 04:31:46 GMT",
+      "search_region": "美伊冲突",
+      "classified_regions": [
+        "美伊冲突",
+        "全球制裁"
+      ],
+      "event_types": [
+        "原油供应风险"
+      ],
+      "severity": "high",
+      "summary": "",
+      "affected_tickers": [
+        "CL=F",
+        "BZ=F",
+        "USO",
+        "XLE",
+        "BNO"
+      ]
+    },
+    {
+      "title": "U.S. military boards Iranian-flagged oil tanker suspected of trying to breach blockade - Los Angeles Times",
+      "title_cn": "美国军方登上疑似试图违反封锁的伊朗油轮",
+      "url": "https://www.latimes.com/world-nation/story/2026-05-20/u-s-military-boards-iranian-flagged-oil-tanker-suspected-of-trying-to-breach-blockade",
+      "content": "Iran has a chokehold on the Strait of Hormuz, the vital shipping lane for global oil supplies, and the U.S. military has enforced its own blockade on Iranian ports and coastline as well as seizing ships linked to Tehran further afield.\n\nAdvertisement\n\nThe U.S. military began the blockade in mid-Apri",
+      "content_detail": " \n\nTap to enable a layout that focuses on the article.\n\n  \n\n\nAdvertisement\n\n[World & Nation](https://www.latimes.com/world-nation)\n\n# U.S. military boards Iranian-flagged oil tanker suspected of trying to breach blockade\n\n![Cargo ships are seen in the Gulf of Oman near the Strait of Hormuz](https://ca-times.brightspotcdn.com/dims4/default/48b89ef/2147483647/strip/true/crop/6000x4000+0+0/resize/1200x800!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F27%2F91%2F9c793f7044bcbf3faae545bdb223%2F3e4e06c8c3f64477b7e064a6c17758bf.jpg) \n\nCargo ships are seen in the Gulf of Oman near the Strait of Hormuz, as viewed from a rocky shoreline near Khor Fakkan, United Arab Emirates.\n\n(Fatima Shbair / Associated Press)\n\nBy Ben Finley\n\n* Click here to listen to this article\n* Share via\n\n  + [Email](mailto:?body=U.S.%20military%20boards%20Iranian-flagged%20oil%20tanker%20suspected%20of%20trying%20to%20breach%20blockade%0A%0Ahttps%3A%2F%2Fwww.latimes.com%2Fworld-nation%2Fstory%2F2026-05-20%2Fu-s-military-boards-iranian-flagged-oil-tanker-suspected-of-trying-to-breach-blockade%0A%0AU.S.%20Central%20Command%20said%20on%20social%20media%20that%20the%20M%2FT%20Celestial%20Sea%20was%20searched%20and%20redirected%20after%20being%20suspected%20of%20trying%20to%20head%20to%20an%20Iranian%20port.)\n  + [Facebook](https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.latimes.com%2Fworld-nation%2Fstory%2F2026-05-20%2Fu-s-military-boards-iranian-flagged-oil-tanker-suspe",
+      "published_date": "Wed, 20 May 2026 20:29:40 GMT",
+      "search_region": "美伊冲突",
+      "classified_regions": [
+        "美伊冲突"
+      ],
+      "event_types": [
+        "军事冲突升级",
+        "原油供应风险"
+      ],
+      "severity": "high",
+      "summary": "Tap to enable a layout that focuses on the article.",
+      "affected_tickers": [
+        "GC=F",
+        "SI=F",
+        "LMT",
+        "NOC",
+        "RTX",
+        "GD",
+        "GLD",
+        "SLV",
+        "ITA",
+        "PPA",
+        "CL=F",
+        "BZ=F",
+        "USO",
+        "XLE",
+        "BNO"
+      ]
+    },
+    {
+      "title": "ENFORCEMENT ACTIONS: OFAC reaches $275M settlement with Adani over apparent Iran sanction violations - VitalLaw.com",
+      "title_cn": "OFAC与阿达尼就明显涉伊交易达成2.75亿美元和解",
+      "url": "https://www.vitallaw.com/news/enforcement-actions-ofac-reaches-275m-settlement-with-adani-over-apparent-iran-sanction-violations/blw01af76a2a9e21c4580931d146687663dd6",
+      "content": "Iran’s energy imports has been a “core objective” of U.S. sanctions targeting Iran across successive administrations. The purpose of the sanctions is to thwart the financing of terrorism and proliferation of nuclear weapons. Deals that are facially “too good to be true” probably are, OFAC said. [...",
+      "content_detail": "Wolters Kluwer Note: Since your browser does not support JavaScript, you must press the Resume button once to proceed.",
+      "published_date": "Wed, 20 May 2026 00:00:00 GMT",
+      "search_region": "美伊冲突",
+      "classified_regions": [
+        "美伊冲突",
+        "全球制裁"
+      ],
+      "event_types": [
+        "原油供应风险"
+      ],
+      "severity": "medium",
+      "summary": "Iran’s energy imports has been a “core objective” of U.S.",
+      "affected_tickers": [
+        "CL=F",
+        "BZ=F",
+        "USO",
+        "XLE",
+        "BNO"
+      ]
+    },
+    {
+      "title": "Ukraine war briefing: Britain to buy diesel and jet fuel made from Russian crude oil - The Guardian",
+      "title_cn": "乌克兰战争简报：英国将购买由俄罗斯原油制成的柴油和航空燃料",
+      "url": "https://www.theguardian.com/world/2026/may/20/ukraine-war-briefing-britain-to-buy-diesel-and-jet-fuel-made-from-russian-crude-oil",
+      "content": "A breach widened in the oil and gas sanctions cordon around Russia on Tuesday, as Britain exempted imports of diesel and jet fuel made from Russia crude, but refined in third-party countries. It comes after the US extended a waiver that critics say allows the Kremlin to earn more money and fund the ",
+      "content_detail": "[Skip to navigation](#navigation)[Skip to navigation](#navigation)\n\n[Print subscriptions](https://support.theguardian.com/subscribe/weekly?REFPVID=undefined&INTCMP=undefined&acquisitionData=%7B%22source%22%3A%22GUARDIAN_WEB%22%2C%22componentId%22%3A%22PrintSubscriptionsHeaderLink%22%2C%22componentType%22%3A%22ACQUISITIONS_HEADER%22%2C%22referrerUrl%22%3A%22%22%7D)\n\n[Search jobs](https://jobs.theguardian.com)\n\n[Sign in](https://profile.theguardian.com/signin?INTCMP=DOTCOM_NEWHEADER_SIGNIN&ABCMP=ab-sign-in&componentEventParams=componentType%3Didentityauthentication%26componentId%3Dguardian_signin_header)\n\nThe MT Desert Kite oil tanker carrying Russian oil off Gujarat. India is one of the countries that buys Russian crude oil and refines it into fuel that is sold as its own product on the international market. Photograph: Amit Dave/Reuters\n\nThe MT Desert Kite oil tanker carrying Russian oil off Gujarat. India is one of the countries that buys Russian crude oil and refines it into fuel that is sold as its own product on the international market. Photograph: Amit Dave/Reuters\n\n[Explainer](/tone/explainers)\n\n# Ukraine war briefing: Britain to buy diesel and jet fuel made from Russian crude oil\n\nExemption for Russian oil refined elsewhere then sold on; funeral in Kyiv for two of Russian bombing’s young victims. What we know on day 1,547\n\n* A **breach widened in the oil and gas sanctions cordon around Russia** on Tuesday, as Britain **exempted imports of diesel and jet fuel made from",
+      "published_date": "Wed, 20 May 2026 00:44:34 GMT",
+      "search_region": "俄乌战争",
+      "classified_regions": [
+        "俄乌战争"
+      ],
+      "event_types": [
+        "原油供应风险"
+      ],
+      "severity": "medium",
+      "summary": "Ukraine war briefing: Britain to buy diesel and jet fuel made from Russian crude oil Exemption for Russian oil refined elsewhere then sold on; funeral in Kyiv for two of",
+      "affected_tickers": [
+        "CL=F",
+        "BZ=F",
+        "USO",
+        "XLE",
+        "BNO"
+      ]
+    },
+    {
+      "title": "UK Eases Russian Fuel Sanctions to Safeguard Diesel and Jet Supply - Marine News Magazine",
+      "title_cn": "英国放宽对俄燃料制裁以保障柴油和航空燃料供应",
+      "url": "http://www.marinelink.com/news/uk-eases-russian-fuel-sanctions-safeguard-539403",
+      "content": "Thousands of Sanctions Remain\n\nSince Russia launched a full-scale invasion of Ukraine in 2022, Britain has sanctioned more than 3,200 individuals, businesses and ships under its Russia sanctions regime, to try to disrupt Russia's actions and help Kyiv.\n\nUnder the carve-out, sanctions will be eased o",
+      "content_detail": "[![Marine Link](/Content/MarineLinkLogo.png)](/) \n\nWednesday, May 20, 2026\n\n[![marine link image](/Content/MarineLinkLogo-small-oneline.png)](/) \n\n* [Home](/ \"Maritime News, Maritime Magazine\")\n* [Magazines](/magazines \" Maritime Reporter Magazine and Marine News Magazine\")\n* [Advertising](/advertising \" Maritime Advertising\")\n* [Events](/events \"Maritime Events\")\n* [Videos](/videos \"Maritime Reporter TV\")\n* [Contact us](/contactus \" Contacts\")\n* [Podcast](/podcast \"Maritime Matters: The MarineLink podcast\")\n* [Subscribe](https://subscribe.marinelink.com/magazine/MaritimeReporter/)\n\n* [Shipbuilding](/news/maritime/shipbuilding \" Shipbuilding News\")\n* [Offshore](/news/maritime/offshore \" Offshore News\")\n* [Coastal/Inland](/news/maritime/coastal-inland \" Coastal and Inland News\")\n* [Government](/news/maritime/government-military \"Government & Military News\")\n* [Equipment](/news/maritime/marine-equipment \"Marine Equipment News\")\n* [Training](/news/maritime/training \"Maritime Training News\")\n* [Law & Regulations](/news/maritime/law-regulations \" Maritime Law & Regulations News\")\n\n# UK Eases Russian Fuel Sanctions to Safeguard Diesel and Jet Supply\n\nMaritime Activity Reports, Inc.\n\n ![LOGO](https://www.marinelink.com/Content/MarineLinkLogo.png)\n\nMay 20, 2026\n\n[![© V. Yakobchuk / Adobe Stock](https://images.marinelink.com/images/maritime/w400/yakobchuk-adobe-170747.jpeg)](https://images.marinelink.com/images/maritime/yakobchuk-adobe-170747.jpeg)\n\n© V. Yakobchuk / Adobe Stock\n\nBrita",
+      "published_date": "Wed, 20 May 2026 04:27:43 GMT",
+      "search_region": "俄乌战争",
+      "classified_regions": [
+        "俄乌战争"
+      ],
+      "event_types": [
+        "原油供应风险",
+        "供应链中断"
+      ],
+      "severity": "medium",
+      "summary": "Wednesday, May 20, 2026 UK Eases Russian Fuel Sanctions to Safeguard Diesel and Jet Supply Maritime Activity Reports, Inc.",
+      "affected_tickers": [
+        "CL=F",
+        "BZ=F",
+        "USO",
+        "XLE",
+        "BNO",
+        "NVDA",
+        "TSM",
+        "INTC",
+        "AMD",
+        "ASML",
+        "SMH",
+        "SOXX"
+      ]
+    },
+    {
+      "title": "Russia fuel allowed back to UK amid conflict price crunch - Energy Voice",
+      "title_cn": "俄罗斯燃料获准返英，冲突引发价格紧缩",
+      "url": "https://www.energyvoice.com/markets/597820/uk-caves-to-energy-crunch-relaxes-russia-fuel-ban/",
+      "content": "The Conservatives gave the move short shrift. “We are now importing from Russia instead of drilling in the North Sea. Insane,” said leader of the opposition Kemi Badenoch.\n\nThe decision by the government is a notable shift in policy.\n\nThe UK imposed sanctions on Russia in response to its aggression ",
+      "content_detail": "",
+      "published_date": "Wed, 20 May 2026 11:42:48 GMT",
+      "search_region": "俄乌战争",
+      "classified_regions": [
+        "俄乌战争",
+        "全球制裁"
+      ],
+      "event_types": [
+        "原油供应风险"
+      ],
+      "severity": "high",
+      "summary": "The Conservatives gave the move short shrift.",
+      "affected_tickers": [
+        "CL=F",
+        "BZ=F",
+        "USO",
+        "XLE",
+        "BNO"
+      ]
+    },
+    {
+      "title": "Ukraine ally Britain eases sanctions on Russian oil as fuel prices surge over Iran conflict - AP News",
+      "title_cn": "乌克兰盟友英国因燃油价格飙升放宽对俄石油制裁",
+      "url": "https://apnews.com/article/uk-russia-oil-sanctions-hormuz-b44c42c1e172302d7d09bc07ee49b49c",
+      "content": "4 MIN READ\n\nThe U.S. has also eased Russian sanctions. Earlier this week, Treasury Secretary Scott Bessent extended a 30-day sanctions waiver allowing the purchase of Russian oil shipments already at sea.\n\nOn Tuesday, finance ministers from the U.S., Britain and the other Group of Seven wealthy nati",
+      "content_detail": "![AP Logo](https://assets.apnews.com/19/66/bc546486408c8595f01753a9fbeb/ap-logo-176-by-208.svg)\n![](https://dims.apnews.com/dims4/default/94c503b/2147483647/strip/true/crop/640x236+0+0/resize/320x118!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2Fc3%2F4c%2F65482a7b452db66043542c093eaf%2Fpromo-2x.png)\n![](https://assets.apnews.com/54/95/4fab11fc4f1bb6e1c6d486086a02/getitongoogleplay-badge-web-color-english.png)\n![](https://assets.apnews.com/9f/14/e730153245ddbefdf1f69031adea/download-on-the-app-store-badge-us-uk-rgb-blk-01.png)\n\nCopyright 2026 The Associated Press. All Rights Reserved.\n\n![AP Logo](https://assets.apnews.com/19/66/bc546486408c8595f01753a9fbeb/ap-logo-176-by-208.svg)\n![](https://dims.apnews.com/dims4/default/94c503b/2147483647/strip/true/crop/640x236+0+0/resize/320x118!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2Fc3%2F4c%2F65482a7b452db66043542c093eaf%2Fpromo-2x.png)\n![](https://assets.apnews.com/54/95/4fab11fc4f1bb6e1c6d486086a02/getitongoogleplay-badge-web-color-english.png)\n![](https://assets.apnews.com/9f/14/e730153245ddbefdf1f69031adea/download-on-the-app-store-badge-us-uk-rgb-blk-01.png)\n\nCopyright 2026 The Associated Press. All Rights Reserved.\n\n# Ukraine ally Britain eases sanctions on Russian oil as fuel prices surge over Iran conflict\n\n![A seized suspected Russian oil taker by the French navy is photographed in the Mediterranean Sea in Fos-sur-Mer, southern France, on Jan. 26, 2026. (AP Photo/Philippe Magoni, File)](https://dims.apnews.com/dim",
+      "published_date": "Wed, 20 May 2026 09:06:41 GMT",
+      "search_region": "俄乌战争",
+      "classified_regions": [
+        "俄乌战争",
+        "全球制裁"
+      ],
+      "event_types": [
+        "原油供应风险"
+      ],
+      "severity": "high",
+      "summary": "",
+      "affected_tickers": [
+        "CL=F",
+        "BZ=F",
+        "USO",
+        "XLE",
+        "BNO"
+      ]
+    },
+    {
+      "title": "1547 Days of russia-Ukraine War – russian Casualties in Ukraine - Defense Express",
+      "title_cn": "俄乌战争第1547天：俄军在乌克兰的伤亡情况",
+      "url": "https://en.defence-ua.com/news/1547_days_of_russia_ukraine_war_russian_casualties_in_ukraine-18548.html",
+      "content": "The General Staff of the Armed Forces of Ukraine has published a new summary of total combat losses of the enemy from 24.02.22 to 20.05.26. Find them in the infographics by the Ministry of Defense of Ukraine:\n\nSo far, the enemy’s combat losses are the following:\n\n> Read more: Ukraine's Black Sea Dro",
+      "content_detail": "![Ukr](/images/Ukraine.svg)\n![#](/images/USA.svg)\n![#](/images/logo.svg)\n![](/images/Ukraine.svg)\n![#](/images/Ukraine.svg)\n![#](/images/USA.svg)\n\n# 1547 Days of russia-Ukraine War – russian Casualties in Ukraine\n\n![Defense Express](/media/userpic/7e45e445211b9159.jpg)\n![Armed Forces of Ukraine continue to destroy russians on land, in the air, and at sea / Photo credit: the Air Forces of Ukraine](/media/illustration/articles/3a56a0d50df0e2f6.jpg)\n\n\n*Armed Forces of Ukraine continue to destroy russians on land, in the air, and at sea / Photo credit: the Air Forces of Ukraine*\n\n### The russians are facing non-stop military losses on Ukrainian soil. About 1,352,070 aggressor's troops were eliminated, 306,493 air targets of invaders were shot down, thousands of tanks, armored vehicles and trucks were destroyed by the defenders of Ukraine\n\nThe General Staff of the Armed Forces of Ukraine has published a new summary of total combat losses of the enemy from 24.02.22 to 20.05.26. Find them in the infographics by the Ministry of Defense of Ukraine:\n\n![](/media/contentimages/3446a0d50fdce7ce.jpeg)\n\nSo far, the enemy’s combat losses are the following:\n\nData are being updated.\n\nRead more on the situation in Ukraine here:\n\n### [Ukrainian UB82D Drones with a 25-km Range Give 82-mm Mortar Rounds a New Lease on Life](https://en.defence-ua.com/news/ukrainian_ub82d_drones_with_a_25_km_range_give_82_mm_mortar_rounds_a_new_lease_on_life-18542.html)\n\n![The UB82D FPV drone from Ukrainian Armor / P",
+      "published_date": "Wed, 20 May 2026 06:26:08 GMT",
+      "search_region": "俄乌战争",
+      "classified_regions": [
+        "俄乌战争"
+      ],
+      "event_types": [
+        "军事冲突升级"
+      ],
+      "severity": "medium",
+      "summary": "1547 Days of russia-Ukraine War – russian Casualties in Ukraine Armed Forces of Ukraine continue to destroy russians on land, in the air, and at sea / Photo credit: the",
+      "affected_tickers": [
+        "GC=F",
+        "SI=F",
+        "LMT",
+        "NOC",
+        "RTX",
+        "GD",
+        "GLD",
+        "SLV",
+        "ITA",
+        "PPA"
+      ]
+    },
+    {
+      "title": "EU ties billions in Ukraine aid to unpopular tax reforms - The Kyiv Independent",
+      "title_cn": "欧盟将数十亿对乌援助与不受欢迎的税改挂钩",
+      "url": "https://kyivindependent.com/eu-ties-billions-in-ukraine-aid-to-unpopular-tax-reforms/",
+      "content": "Read more\n\n## Most Popular\n\n### First known Russian recruited from university dies in Ukraine, exposing Russia’s student recruitment campaign### Russia 'ripping off' Ukraine's drone forces success, Unmanned Systems Forces commander says### Ukraine war latest: Ukrainian positions in northern Pokrovsk",
+      "content_detail": "[Sign up for our Newsletters→](/newsletters/)\n\n* [About](/about/)\n* [Team](/team/)\n* [Jobs](/jobs/)\n* [Advertising](/commercial-services/)\n* [Store](https://store.kyivindependent.com/?utm_source=store-homepage&utm_medium=homepage)\n\n[![KI logo](/assets/images/logo.svg)](/)\n\n\n\n[Business](/tag/business/)\n\n# EU ties billions in Ukraine aid to unpopular tax reforms\n\n• 3 min read\n\n[Prefer![Kyiv Independent Logo](/assets/images/kiv3/ki-short-logo.svg)on Google](https://www.google.com/preferences/source?q=kyivindependent.com)\n\n![Avatar](/_next/image?url=https%3A%2F%2Fassets.kyivindependent.com%2Fcontent%2Fimages%2F2025%2F10%2FDSC05926.jpg&w=256&q=90)\n\nby [Luca Léry Moffat](/author/luca-lry-moffat/)\n\n![EU ties billions in Ukraine aid to unpopular tax reforms](/_next/image?url=https%3A%2F%2Fassets.kyivindependent.com%2Fcontent%2Fimages%2F2025%2F03%2FGettyImages-2202961666.jpg&w=1536&q=75)\n\nAntonio Costa (L), president of the European Council, President Volodymyr Zelensky (C), and Ursula von der Leyen, president of the European Commission (R), in Brussels, Belgium, on March 6, 2025. (Simon Wohlfahrt/Bloomberg via Getty Images)\n\nThe EU will make part of a 90-billion-euro loan to Kyiv conditional on Ukraine improving its finances, increasing the pressure on the country to move forward with a series of politically sensitive reforms it has so far resisted.\n\nKyiv will have to improve its revenue collection and how efficiently it spends money, the European Commission said in a press release o",
+      "published_date": "Wed, 20 May 2026 14:52:22 GMT",
+      "search_region": "俄乌战争",
+      "classified_regions": [
+        "俄乌战争"
+      ],
+      "event_types": [
+        "军事冲突升级"
+      ],
+      "severity": "medium",
+      "summary": "EU ties billions in Ukraine aid to unpopular tax reforms • 3 min read Antonio Costa (L), president of the European Council, President Volodymyr Zelensky (C), and Ursula von der",
+      "affected_tickers": [
+        "GC=F",
+        "SI=F",
+        "LMT",
+        "NOC",
+        "RTX",
+        "GD",
+        "GLD",
+        "SLV",
+        "ITA",
+        "PPA"
+      ]
+    },
+    {
+      "title": "US wants Ukraine to help ease restrictions on Belarus potash - Mining.com",
+      "title_cn": "美国希望乌克兰协助放宽对白俄罗斯钾肥的限制",
+      "url": "https://www.mining.com/web/us-wants-ukraine-to-help-ease-restrictions-on-belarus-potash/",
+      "content": "The US also made it clear to Lukashenko that this sanctions relief can’t be abused including to support Russia’s war in Ukraine, according to the spokesperson. The Belarusian president will have to demonstrate sustained improvement in his behavior and fulfil his pledges to end all politically-motiva",
+      "content_detail": "Copper $ 5.6358 / lb  2.72%\n\nBrent Crude Oil $ 104.4 / bbl  -4.21%\n\nPalladium $ 1496.5 / ozt  5.39%\n\nCrude Oil $ 101.85 / bbl  -3.06%\n\nNatural Gas $ 2.89 / Btu  0.10%\n\nSilver Futures $ 75.495 / ozt  7.47%\n\nAluminum Futures $ 3314.25 / ton  -1.21%\n\nMicro Gold Futures $ 4713.1 / ozt  3.80%\n\nMicro Silver Futures $ 75.48 / ozt  7.54%\n\nPlatinum $ 1973.85 / ozt  4.22%\n\nGold Futures $ 4713.3 / ozt  3.84%\n\n[Go to MDC Markets](/markets)\n\n* [Watch](https://www.youtube.com/@miningdotcom)\n* [Company Spotlight](#company-spotlight-section)\n* [Copper](https://www.mining.com/commodity/copper/)\n* [Gold](https://www.mining.com/commodity/gold/)\n* [Critical Minerals](https://www.mining.com/category/critical-minerals/)\n* [Commodities](#)\n* [Lithium](https://www.mining.com/commodity/lithium/)\n* [Nickel](https://www.mining.com/commodity/nickel/)\n* [Iron Ore](https://www.mining.com/commodity/iron-ore/)\n* [Rare Earth](https://www.mining.com/commodity/rare-earth/)\n* [Coal](https://www.mining.com/commodity/coal/)\n* [Uranium](https://www.mining.com/commodity/uranium/)\n* [Cobalt](https://www.mining.com/commodity/cobalt/)\n* [Diamond](https://www.mining.com/commodity/diamond/)\n* [Zinc](https://www.mining.com/commodity/zinc/)\n* [Platinum](https://www.mining.com/commodity/platinum/)\n* [Palladium](https://www.mining.com/commodity/palladium/)\n* [Silver](https://www.mining.com/commodity/silver/)\n* [Potash](https://www.mining.com/commodity/potash/)\n* [Suppliers Equipment](/category/suppliers-equipment/)\n\n- [TOP ",
+      "published_date": "Wed, 20 May 2026 18:52:45 GMT",
+      "search_region": "俄乌战争",
+      "classified_regions": [
+        "俄乌战争",
+        "全球制裁"
+      ],
+      "event_types": [
+        "粮食供应",
+        "供应链中断"
+      ],
+      "severity": "medium",
+      "summary": "Copper $ 5.6358 / lb 2.72% Brent Crude Oil $ 104.4 / bbl -4.21% Palladium $ 1496.5 / ozt 5.39% Crude Oil $ 101.85 / bbl -3.06% Natural Gas $",
+      "affected_tickers": [
+        "ZW=F",
+        "ZC=F",
+        "ZS=F",
+        "DBA",
+        "WEAT",
+        "CORN",
+        "NVDA",
+        "TSM",
+        "INTC",
+        "AMD",
+        "ASML",
+        "SMH",
+        "SOXX"
+      ]
+    },
+    {
+      "title": "Russia is losing in Ukraine. Xi has noticed — Trump should too - CNN",
+      "title_cn": "俄罗斯在乌克兰节节败退，习近平已察觉——特朗普也该注意到了",
+      "url": "https://www.cnn.com/2026/05/20/politics/russia-losing-ukraine-mcgurk-analysis",
+      "content": "Ukrainian drones now routinely strike deep into Russia, targeting military airfields, factories, energy infrastructure, ammunition depots, and logistical hubs. The ability of Ukrainian drones to reach Moscow reportedly contributed to Putin’s interest in a temporary ceasefire during “Victory Day” com",
+      "content_detail": "### CNN values your feedback\n\n# Russia is losing in Ukraine. Xi has noticed — Trump should too\n\n![A house on fire after a Ukrainian drone attack in the village of Subbotino, Naro-Fominsk District, in the Moscow region, Russia, on Monday, May 17.](https://media.cnn.com/api/v1/images/stellar/prod/2026-05-17t060927z-1453956728-rc2tala4o5o5-rtrmadp-3-ukraine-crisis-russia-drones-moscow.JPG?c=original&q=w_1041,c_fill)\n\n*Brett McGurk is a CNN global affairs analyst who served in senior national security positions under Presidents George W. Bush, Barack Obama, Donald Trump and Joe Biden.*\n\nDuring talks last week with President Donald Trump in Beijing, Chinese President Xi Jinping reportedly [remarked](https://www.ft.com/content/567c57b0-6346-43e6-9d14-840a793b4d1d?syn-25a6b1a6=1) that Vladimir Putin might one day regret invading Ukraine.\n\nThe new trends on the battlefield suggest he’s right. That offers a new chance for Trump’s diplomacy to end the war—but with a different approach than what he’s tried before.\n\n## Trends now favor Ukraine\n\n![Russian Chief of General Staff Gen. Valery Gerasimov, center, speaks to officers while inspecting the troops involved in the fighting in Ukraine.](https://media.cnn.com/api/v1/images/stellar/prod/ap26136342688934.jpg?c=original&q=w_860,c_fill)\n\nPutin had hoped that 2026 would be the year his forces — enabled by his advantage in mass and manpower — would break through the frontlines and seize the contested regions in eastern Ukraine. That has not",
+      "published_date": "Wed, 20 May 2026 04:00:51 GMT",
+      "search_region": "俄乌战争",
+      "classified_regions": [
+        "俄乌战争",
+        "中美博弈"
+      ],
+      "event_types": [
+        "军事冲突升级"
+      ],
+      "severity": "high",
+      "summary": "CNN values your feedback Russia is losing in Ukraine.",
+      "affected_tickers": [
+        "GC=F",
+        "SI=F",
+        "LMT",
+        "NOC",
+        "RTX",
+        "GD",
+        "GLD",
+        "SLV",
+        "ITA",
+        "PPA"
+      ]
+    },
+    {
+      "title": "China sets new mining controls, to fast-track strategic reserve buildout - Bitget",
+      "title_cn": "中国实施新的采矿控制，快速推进战略储备建设",
+      "url": "https://www.bitget.com/amp/news/detail/12560605420821",
+      "content": "The new rules come just days after the long-anticipated summit between Chinese leaders and US President Donald Trump. The issue of rare earth export controls and whether they would be eased became a hot topic, as shipments of minerals to America were still shown to be lagging, according to customs d",
+      "content_detail": "Bitget App\n\nTrade smarter\n\n[Homepage](/)\n[Sign up](/register?channelCode=SSSS&vipCode=s1pz)\n\n[Bitget](https://www.bitget.com/)\n>\n\n[News](https://www.bitget.com/news)\n>\n\n[China sets new mining controls, to fast-track strategic reserve buildout](https://www.bitget.com/en/amp/news/detail/12560605420821)\n\n# China sets new mining controls, to fast-track strategic reserve buildout\n\n![Mining.com](https://img.bgstatic.com/spider-data/58c710530e57d867c7fb4e565264b8071779291042039.png)\n[Mining.com](https://www.mining.com/china-sets-new-mining-controls-to-fast-track-strategic-reserve-buildout/)\n2026/05/20 15:30\n\nBy: Mining.com\n\nThe Chinese government plans to impose mining controls on certain minerals to ensure its security of supply, in a move that could further enhance Beijing’s chokehold on the global flow of key resources.\n\nStricter rules including security reviews on foreign investments in the Chinese mining sector are set to take effect on June 15, according to a published by the official *Xinhua* news agency on Wednesday. It did not specify which minerals will be covered under these new measures.\n\nThe regulations are designed to “promote the rational development and utilization of mineral resources, strengthen the protection of its environment, advance the high-quality development of the mining industry, and safeguard China’s mineral resource security,” the government bulletin stated.\n\nIn addition to tighter mining controls, Beijing also intends to speed up its construction of st",
+      "published_date": "Wed, 20 May 2026 15:30:41 GMT",
+      "search_region": "中美博弈",
+      "classified_regions": [
+        "全球制裁"
+      ],
+      "event_types": [
+        "供应链中断",
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "NVDA",
+        "TSM",
+        "INTC",
+        "AMD",
+        "ASML",
+        "SMH",
+        "SOXX",
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "China Again Flags Tariff Cuts for U.S. Agricultural Trade After Trump-Xi Meeting, but Still No Details - Successful Farming",
+      "title_cn": "习特会后中国再次暗示削减美国农业贸易关税",
+      "url": "https://www.agriculture.com/partners-china-again-flags-tariff-cuts-for-u-s-agricultural-trade-after-trump-xi-meeting-but-still-no-details-11979173",
+      "content": "By Ella Cao, Daphne Zhang and Lewis Jackson\n\nBEIJING, May 20 (Reuters) - China and the U.S. have agreed to cut tariffs on agricultural trade as part of a broader trade deal, the Ministry of Commerce said on Wednesday in a statement that left several questions about implementation unanswered.\n\nU.S. P",
+      "content_detail": "# China Again Flags Tariff Cuts for U.S. Agricultural Trade After Trump-Xi Meeting, but Still No Details\n[Skip to content](https://www.agriculture.com/partners-china-again-flags-tariff-cuts-for-u-s-agricultural-trade-after-trump-xi-meeting-but-still-no-details-11979173#main)\n\n[Successful Farming](https://www.agriculture.com/)\n\n*   Search   Please fill out this field.    \n*   Magazine\n\n    *   [Subscribe](https://w1.buysub.com/pubs/MR/SFG/Qualification-Page-7.jsp?cds_page_id=166174&cds_mag_code=SFG&id=1518545414171&lsid=80441202089035428&vid=4&cds_response_key=I47GOON62)\n    *   [Manage Your Subscription](https://w1.buysub.com/servlet/CSGateway?cds_mag_code=SFG)\n    *   [Get Help](https://w1.buysub.com/servlet/CSGateway?cds_mag_code=SFG)\n\n*   [Newsletters](https://www.agriculture.com/partners-china-again-flags-tariff-cuts-for-u-s-agricultural-trade-after-trump-xi-meeting-but-still-no-details-11979173#)\n*   [Subscribe](https://w1.buysub.com/pubs/MR/SFG/Qualification-Page-7.jsp?cds_page_id=166174&cds_mag_code=SFG&id=1518545414171&lsid=80441202089035428&vid=4&cds_response_key=I47GOON62)\n\nSearch \n\n Please fill out this field. \n\n*   [News](https://www.agriculture.com/news)\n\nNews \n    *   [Business News](https://www.agriculture.com/news/business)\n    *   [Crop News](https://www.agriculture.com/news/crops)\n    *   [Livestock News](https://www.agriculture.com/news/livestock)\n    *   [Machinery News](https://www.agriculture.com/news/machinery)\n    *   [Profiles](https://www.agriculture",
+      "published_date": "Wed, 20 May 2026 10:49:26 GMT",
+      "search_region": "中美博弈",
+      "classified_regions": [
+        "中美博弈"
+      ],
+      "event_types": [
+        "中美关税",
+        "粮食供应"
+      ],
+      "severity": "medium",
+      "summary": "China Again Flags Tariff Cuts for U.S.",
+      "affected_tickers": [
+        "FXI",
+        "ASHR",
+        "KWEB",
+        "YINN",
+        "MCHI",
+        "0700.HK",
+        "9988.HK",
+        "CQQQ",
+        "ZW=F",
+        "ZC=F",
+        "ZS=F",
+        "DBA",
+        "WEAT",
+        "CORN"
+      ]
+    },
+    {
+      "title": "UBS says China tech trade ‘makes a lot of sense’ as AI ecosystem grows - CNBC",
+      "title_cn": "瑞银称随着AI生态发展，中国科技贸易“非常有意义”",
+      "url": "https://www.cnbc.com/2026/05/20/china-tech-stocks-ai-ubs-.html",
+      "content": "Skip Navigation\n\nMarkets\n\n Pre-Markets\n U.S. Markets\n Currencies\n Prediction Markets\n Cryptocurrency\n Futures & Commodities\n Bonds\n Funds & ETFs\n\nBusiness\n\n Economy\n Finance\n Health & Science\n Media\n Real Estate\n Energy\n Climate\n Transportation\n Investigations\n Industrials\n Retail\n Wealth\n Sports\n L",
+      "content_detail": "",
+      "published_date": "Tue, 19 May 2026 22:51:44 GMT",
+      "search_region": "中美博弈",
+      "classified_regions": [
+        "中美博弈"
+      ],
+      "event_types": [
+        "供应链中断"
+      ],
+      "severity": "low",
+      "summary": "",
+      "affected_tickers": [
+        "NVDA",
+        "TSM",
+        "INTC",
+        "AMD",
+        "ASML",
+        "SMH",
+        "SOXX"
+      ]
+    },
+    {
+      "title": "China confirms Boeing purchase and other trade terms from Trump’s visit - CNN",
+      "title_cn": "中国确认特朗普访问期间的波音采购及其他贸易条款",
+      "url": "https://www.cnn.com/2026/05/20/china/china-confirms-boeing-purchases-deals-intl-hnk",
+      "content": "It also said the US and China are negotiating an extension of a trade truce set to expire in November, and will discuss a framework for reciprocal tariff reduction on about $30 billion worth of goods.\n\nThe Commerce Ministry’s statement echoed the expectations given by Trump administration officials ",
+      "content_detail": "Ad Feedback\n\nThank You!\n\nYour effort and contribution in providing this feedback is much appreciated.\n\nClose\n\n[World](https://www.cnn.com/world) [China](https://www.cnn.com/world/china) 1 min read\n\n# China confirms Boeing purchase and other trade terms from Trump’s visit\n\nBy\n\nStephanie Yang\n\n, John Liu and\n\n[![Chris Isidore byline](https://media.cnn.com/api/v1/images/stellar/prod/190117152549-chris-isidore-byline.jpg?c=16x9&q=h_270,w_480,c_fill/c_thumb,g_face,w_50,h_50)](https://www.cnn.com/profiles/chris-isidore)[Chris Isidore](https://www.cnn.com/profiles/chris-isidore)\n\nPUBLISHED\n\nCNN\n\n[See all topics](/follow)\n\n[Email](mailto:?subject=CNN%20content%20share&body=Check%20out%20this%20article%3A%0Ahttps%3A%2F%2Fwww.cnn.com%2F2026%2F05%2F20%2Fchina%2Fchina-confirms-boeing-purchases-deals-intl-hnk \"Share with email\") \n\nLink Copied!\n\nChina said Wednesday it will buy 200 Boeing aircraft and work with the US to reduce tariffs, confirming some details from the outcome of President Donald Trump’s visit to Beijing last week.\n\nThe deal, which would end a virtual sales freeze on Boeing aircraft to China of nearly a decade, was announced by the Chinese Commerce Ministry on Wednesday.\n\nIt also said the US and China are negotiating an extension of a trade truce set to expire in November, and will discuss a framework for reciprocal tariff reduction on about $30 billion worth of goods.\n\nThe Commerce Ministry’s statement echoed the expectations given by Trump administration officials last F",
+      "published_date": "Wed, 20 May 2026 04:22:55 GMT",
+      "search_region": "中美博弈",
+      "classified_regions": [
+        "中美博弈"
+      ],
+      "event_types": [
+        "中美关税"
+      ],
+      "severity": "medium",
+      "summary": "Your effort and contribution in providing this feedback is much appreciated.",
+      "affected_tickers": [
+        "FXI",
+        "ASHR",
+        "KWEB",
+        "YINN",
+        "MCHI",
+        "0700.HK",
+        "9988.HK",
+        "CQQQ"
+      ]
+    },
+    {
+      "title": "EU shortlists tungsten, rare earths for first stockpile to curb China reliance - Reuters",
+      "title_cn": "欧盟将钨和稀土列入首批储备清单以减少对华依赖",
+      "url": "https://www.reuters.com/world/china/eu-shortlists-tungsten-rare-earths-first-stockpile-curb-china-reliance-2026-05-20/",
+      "content": "### LSEG Products\n\n   #### Workspace, opens new tab\nAccess unmatched financial data, news and content in a highly-customised workflow experience on desktop, web and mobile.\n\n   #### Data Catalogue, opens new tab\nBrowse an unrivalled portfolio of real-time and historical market data and insights from",
+      "content_detail": "",
+      "published_date": "Wed, 20 May 2026 08:34:44 GMT",
+      "search_region": "中美博弈",
+      "classified_regions": [
+        "中美博弈",
+        "全球制裁"
+      ],
+      "event_types": [
+        "供应链中断"
+      ],
+      "severity": "medium",
+      "summary": "LSEG Products Workspace, opens new tab Access unmatched financial data, news and content in a highly-customised workflow experience on desktop, web and mobile.",
+      "affected_tickers": [
+        "NVDA",
+        "TSM",
+        "INTC",
+        "AMD",
+        "ASML",
+        "SMH",
+        "SOXX"
+      ]
+    },
+    {
+      "title": "Sberbank seeks Chinese chips to power Russia's GigaChat AI model - Reuters",
+      "title_cn": "俄罗斯联邦储蓄银行寻求中国芯片以驱动GigaChat AI模型",
+      "url": "https://www.reuters.com/business/finance/sberbank-seeks-chinese-chips-power-russias-gigachat-ai-model-2026-05-20/",
+      "content": "# Sberbank seeks Chinese chips to power Russia's GigaChat AI model | Reuters\n\nSkip to main content\n\nReport AdImage 1\n\nExclusive news, data and analytics for financial market professionals Learn more about Refinitiv\n\n - Russia hopes to power its flagship GigaChat AI model with Chinese-made ​chips, Sb",
+      "content_detail": "# Sberbank seeks Chinese chips to power Russia's GigaChat AI model | Reuters\n\n[Skip to main content](https://www.reuters.com/business/finance/sberbank-seeks-chinese-chips-power-russias-gigachat-ai-model-2026-05-20/#main-content)\n\nReport Ad![Image 1](blob:http://localhost/a2f9abce2c7bd7e72f7c1065e8e25533)\n\n[Exclusive news, data and analytics for financial market professionals Learn more about Refinitiv](https://www.reuters.com/differentiator/)\n\n[](https://www.reuters.com/)\n\n*   [World](https://www.reuters.com/world/) \n\n## [Browse World](https://www.reuters.com/world/)\n\n    *   [Africa](https://www.reuters.com/world/africa/)\n    *   [Americas](https://www.reuters.com/world/americas/)\n    *   [Asia Pacific](https://www.reuters.com/world/asia-pacific/)\n    *   [China](https://www.reuters.com/world/china/)\n    *   [Europe](https://www.reuters.com/world/europe/)\n    *   [India](https://www.reuters.com/world/india/)\n    *   [Iran War](https://www.reuters.com/world/iran/)\n\n    *   [Israel and Hamas at War](https://www.reuters.com/world/israel-hamas/)\n    *   [Japan](https://www.reuters.com/world/japan/)\n    *   [Middle East](https://www.reuters.com/world/middle-east/)\n    *   [Ukraine and Russia at War](https://www.reuters.com/world/ukraine-russia-war/)\n    *   [United Kingdom](https://www.reuters.com/world/uk/)\n    *   [United States](https://www.reuters.com/world/us/)\n    *   [Reuters NEXT New York](https://www.reuters.com/world/reuters-next/)\n\n*   [Business](https://www.reuters.co",
+      "published_date": "Wed, 20 May 2026 07:37:20 GMT",
+      "search_region": "中美博弈",
+      "classified_regions": [
+        "俄乌战争",
+        "中美博弈"
+      ],
+      "event_types": [
+        "供应链中断"
+      ],
+      "severity": "high",
+      "summary": "Sberbank seeks Chinese chips to power Russia's GigaChat AI model Reuters",
+      "affected_tickers": [
+        "NVDA",
+        "TSM",
+        "INTC",
+        "AMD",
+        "ASML",
+        "SMH",
+        "SOXX"
+      ]
+    },
+    {
+      "title": "Nvidia's post-earnings gains may hinge on sales to China. Here's why - CNBC",
+      "title_cn": "英伟达财报后股价表现或取决于在华销售，原因在此",
+      "url": "https://www.cnbc.com/2026/05/20/nvidias-post-earnings-gains-may-hinge-on-sales-to-china-heres-why.html",
+      "content": "Nvidia's quarterly report after the bell Wednesday is the most anticipated of the earnings season. Yet, what the chipmaker says regarding graphic processing unit sales in China could have a bigger impact on how the stock trades. U.S. trade authorities approved about 10 Chinese companies as customers",
+      "content_detail": "",
+      "published_date": "Wed, 20 May 2026 15:30:01 GMT",
+      "search_region": "中美博弈",
+      "classified_regions": [
+        "中美博弈"
+      ],
+      "event_types": [
+        "中美关税",
+        "供应链中断"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "FXI",
+        "ASHR",
+        "KWEB",
+        "YINN",
+        "MCHI",
+        "0700.HK",
+        "9988.HK",
+        "CQQQ",
+        "NVDA",
+        "TSM",
+        "INTC",
+        "AMD",
+        "ASML",
+        "SMH",
+        "SOXX"
+      ]
+    },
+    {
+      "title": "China added Nvidia’s gaming chip to banned list during Jensen Huang’s visit - Financial Times",
+      "title_cn": "黄仁勋访问期间中国将英伟达游戏芯片列入禁售名单",
+      "url": "https://www.ft.com/content/a30c3dd5-9383-4606-a649-fdf19c41c308?syn-25a6b1a6=1",
+      "content": "Accessibility help\nSkip to navigation\nSkip to main content\nSkip to footer\n\n# China banned Nvidia’s gaming chip during Jensen Huang’s visit\n\nSubscribe to unlock this article\n\n## Try unlimited access\n\nOnly \nAU$1\n for 4 weeks\n\nThen \nAU$99\n per month. Complete digital access to quality FT journalism on ",
+      "content_detail": "",
+      "published_date": "Wed, 20 May 2026 08:08:34 GMT",
+      "search_region": "中美博弈",
+      "classified_regions": [
+        "中美博弈"
+      ],
+      "event_types": [
+        "供应链中断",
+        "中美关税"
+      ],
+      "severity": "high",
+      "summary": "",
+      "affected_tickers": [
+        "NVDA",
+        "TSM",
+        "INTC",
+        "AMD",
+        "ASML",
+        "SMH",
+        "SOXX",
+        "FXI",
+        "ASHR",
+        "KWEB",
+        "YINN",
+        "MCHI",
+        "0700.HK",
+        "9988.HK",
+        "CQQQ"
+      ]
+    },
+    {
+      "title": "Iran's Drone Attacks Against Gulf Countries are Political Messaging - The Maritime Executive",
+      "title_cn": "伊朗无人机袭击海湾国家意在传递政治信号",
+      "url": "https://maritime-executive.com/article/iran-s-drone-attacks-against-gulf-countries-are-political-messaging",
+      "content": "Saudi Arabia and the UAE have responded in kind, warning Iran in advance of what they are going to do, and why – so as to deter further Iranian attacks. This is a very different type of targeting regime than that employed by Israel and the United States, where the attack plan is shaped by strategic ",
+      "content_detail": "",
+      "published_date": "Tue, 19 May 2026 22:48:48 GMT",
+      "search_region": "中东/红海",
+      "classified_regions": [
+        "美伊冲突"
+      ],
+      "event_types": [
+        "军事冲突升级",
+        "原油供应风险"
+      ],
+      "severity": "high",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "SI=F",
+        "LMT",
+        "NOC",
+        "RTX",
+        "GD",
+        "GLD",
+        "SLV",
+        "ITA",
+        "PPA",
+        "CL=F",
+        "BZ=F",
+        "USO",
+        "XLE",
+        "BNO"
+      ]
+    },
+    {
+      "title": "Trump says no rush to end Iran war; anger grows over video of Gaza flotilla activists – Middle East crisis live - The Guardian",
+      "title_cn": "特朗普称不急于结束伊朗战争；加沙船队行动视频引发愤怒",
+      "url": "https://www.theguardian.com/world/live/2026/may/20/us-iran-israel-lebanon-gaza-trump-oil-hormuz-latest-news-updates",
+      "content": "While there is little doubt that waves of US and Israeli airstrikes heavily degraded Iran’s military capabilities, many of Trump’s core objectives remain unfulfilled and he is now essentially trying to get back to the status quo of the strait of Hormuz being freely open to international vessels.\n\nA ",
+      "content_detail": "",
+      "published_date": "Wed, 20 May 2026 15:36:14 GMT",
+      "search_region": "中东/红海",
+      "classified_regions": [
+        "美伊冲突"
+      ],
+      "event_types": [
+        "军事冲突升级",
+        "航运中断"
+      ],
+      "severity": "high",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "SI=F",
+        "LMT",
+        "NOC",
+        "RTX",
+        "GD",
+        "GLD",
+        "SLV",
+        "ITA",
+        "PPA",
+        "ZIM",
+        "MATX",
+        "BOAT",
+        "SEA"
+      ]
+    },
+    {
+      "title": "Gaza, West Bank aid groups will be forced to cease work after top court ruling - Haaretz",
+      "title_cn": "加沙、约旦河西岸援助组织在最高法院裁决后将被迫停止工作",
+      "url": "https://www.haaretz.com/gaza/2026-05-20/ty-article/.premium/gaza-west-bank-aid-groups-will-be-forced-to-cease-work-after-top-court-ruling/0000019e-45a6-d222-a1be-65b648e30000",
+      "content": "### Click the alert icon to follow topics:\n\nGaza aid\n\nIsrael-Gaza War\n\nIsrael High Court\n\n## Comments\n\nLoading...\n\n## In the News\n\n### In the News:\n\nIsrael-Iran Live UpdatesTrump-IranIsrael ElectionsWest BankThomas MassieNakba DaySomalilandHaQuizHaaretz Podcast\n\n### Jewish Democratic Council Endorse",
+      "content_detail": "",
+      "published_date": "Wed, 20 May 2026 16:06:00 GMT",
+      "search_region": "中东/红海",
+      "classified_regions": [
+        "中东/红海"
+      ],
+      "event_types": [
+        "供应链中断"
+      ],
+      "severity": "high",
+      "summary": "",
+      "affected_tickers": [
+        "NVDA",
+        "TSM",
+        "INTC",
+        "AMD",
+        "ASML",
+        "SMH",
+        "SOXX"
+      ]
+    },
+    {
+      "title": "Israel Demands to Disarm Its Regional Enemies, but Refuses to Pay the Price - Haaretz",
+      "title_cn": "以色列要求解除地区敌人武装但拒绝付出代价",
+      "url": "https://www.haaretz.com/israel-news/israel-security/2026-05-20/ty-article/.premium/israel-demands-to-disarm-its-regional-enemies-but-refuses-to-pay-the-price/0000019e-4489-db94-ad9f-cd9b7cc70000",
+      "content": "## Comments\n\nLoading...\n\n## In the News\n\n### In the News:\n\nIsrael-Iran Live UpdatesTrumpIsrael ElectionsIDF-LebanonSan Diego MosqueChannel 14HaQuizHaaretz Podcast\n\n### Israel Demands to Disarm Its Regional Enemies, but Refuses to Pay the Price\n\n### Ben-Gvir Posts Video of Police Dragging Detained Ga",
+      "content_detail": "",
+      "published_date": "Wed, 20 May 2026 12:46:00 GMT",
+      "search_region": "中东/红海",
+      "classified_regions": [
+        "中东/红海"
+      ],
+      "event_types": [
+        "军事冲突升级"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "SI=F",
+        "LMT",
+        "NOC",
+        "RTX",
+        "GD",
+        "GLD",
+        "SLV",
+        "ITA",
+        "PPA"
+      ]
+    },
+    {
+      "title": "IDF intercepts all ships in Gaza-bound flotilla, over 400 activists being transferred to Israel - The Times of Israel",
+      "title_cn": "以军拦截所有驶往加沙船队，转移超400名活动人士",
+      "url": "https://www.timesofisrael.com/idf-intercepts-all-ships-in-gaza-bound-flotilla-over-400-activists-being-transferred-to-israel/",
+      "content": "Most Popular\n\n Iran says its new proposal demands reparations, US troop withdrawal, end to Lebanon war\n Teen gunmen kill 3 in apparent hate crime at California Islamic Center\n Uproar after Channel 14 anchor talks about Iran strategy without censor approval\n Israeli envoy to US calls J Street a ‘canc",
+      "content_detail": "",
+      "published_date": "Wed, 20 May 2026 01:23:21 GMT",
+      "search_region": "中东/红海",
+      "classified_regions": [
+        "中东/红海"
+      ],
+      "event_types": [
+        "军事冲突升级",
+        "航运中断"
+      ],
+      "severity": "high",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "SI=F",
+        "LMT",
+        "NOC",
+        "RTX",
+        "GD",
+        "GLD",
+        "SLV",
+        "ITA",
+        "PPA",
+        "ZIM",
+        "MATX",
+        "BOAT",
+        "SEA"
+      ]
+    },
+    {
+      "title": "'Living in trauma': in Israel's north, children fear the sky as Hezbollah drones loom - ynetnews",
+      "title_cn": "生活在创伤中：以色列北部儿童因真主党无人机恐惧天空",
+      "url": "https://www.ynetnews.com/article/r115hujjgx",
+      "content": "Anger over the term “ceasefire,” commonly heard in central Israel, is also being voiced by northern regional leaders.\n\nAsaf Langelben, head of the Upper Galilee Regional Council, said the gap between government declarations and the reality on the ground requires a military solution at its root.\n\n“We",
+      "content_detail": "",
+      "published_date": "Wed, 20 May 2026 18:31:42 GMT",
+      "search_region": "中东/红海",
+      "classified_regions": [
+        "中东/红海"
+      ],
+      "event_types": [
+        "军事冲突升级"
+      ],
+      "severity": "high",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "SI=F",
+        "LMT",
+        "NOC",
+        "RTX",
+        "GD",
+        "GLD",
+        "SLV",
+        "ITA",
+        "PPA"
+      ]
+    },
+    {
+      "title": "Court orders 2025 Gaza flotilla boat ownership transferred to state - The Jerusalem Post",
+      "title_cn": "法院命令将2025年加沙船队所有权移交国家",
+      "url": "https://www.jpost.com/israel-news/article-896796",
+      "content": "BySARAH BEN-NUN\n\nThe Haifa District Court, sitting as an admiralty court, accepted the state’s request and ordered 11 vessels seized during the October 2025 Sumud flotilla transferred to state ownership, according to a partial judgment issued Monday.\n\nThe ruling comes as Israel again faces an intern",
+      "content_detail": "",
+      "published_date": "Wed, 20 May 2026 07:20:33 GMT",
+      "search_region": "中东/红海",
+      "classified_regions": [
+        "中东/红海"
+      ],
+      "event_types": [
+        "军事冲突升级"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "SI=F",
+        "LMT",
+        "NOC",
+        "RTX",
+        "GD",
+        "GLD",
+        "SLV",
+        "ITA",
+        "PPA"
+      ]
+    },
+    {
+      "title": "U.S. test fires mobile rocket system near Mt. Fuji in rapid ‘shoot and scoot’ drill - Los Angeles Times",
+      "title_cn": "美国在富士山附近测试移动火箭系统进行快速“射击与转移”演练",
+      "url": "https://www.latimes.com/world-nation/story/2026-05-20/u-s-test-fires-mobile-rocket-system-near-mt-fuji-in-rapid-shoot-scoot-drill",
+      "content": "Advertisement\n\nThat is particularly meaningful in the Pacific, where the U.S. hopes to deter a possible Chinese invasion of the island of Taiwan, which China claims as its own and has not ruled out taking by force. HIMARS systems with the latest missiles could easily reach targets in the Taiwan Stra",
+      "content_detail": "",
+      "published_date": "Wed, 20 May 2026 16:33:12 GMT",
+      "search_region": "台海/南海/朝鲜",
+      "classified_regions": [
+        "台海/南海/朝鲜"
+      ],
+      "event_types": [
+        "军事冲突升级"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "SI=F",
+        "LMT",
+        "NOC",
+        "RTX",
+        "GD",
+        "GLD",
+        "SLV",
+        "ITA",
+        "PPA"
+      ]
+    },
+    {
+      "title": "If they spoke, Taiwan President would tell Trump China is undermining stability - Marine News Magazine",
+      "title_cn": "如果对话，台湾总统将告诉特朗普中国正在破坏稳定",
+      "url": "https://www.marinelink.com/blogs/blog/if-they-spoke-taiwan-president-would-tell-trump-china-is-104810",
+      "content": "Lai continued, \"Secondly, China is undermining the peace and stability in the Taiwan Strait,\" pointing out China's growing military presence, as well as its exercises, which have already reached the western Pacific. This has caused tensions to increase in the Indo-Pacific.\n\nHe reiterated his positio",
+      "content_detail": "",
+      "published_date": "Wed, 20 May 2026 01:04:31 GMT",
+      "search_region": "台海/南海/朝鲜",
+      "classified_regions": [
+        "中美博弈"
+      ],
+      "event_types": [
+        "军事冲突升级"
+      ],
+      "severity": "high",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "SI=F",
+        "LMT",
+        "NOC",
+        "RTX",
+        "GD",
+        "GLD",
+        "SLV",
+        "ITA",
+        "PPA"
+      ]
+    },
+    {
+      "title": "Taiwan's Lai says he would tell Trump he hopes to continue arm purchases, if given a chance - AP News",
+      "title_cn": "台湾赖清德表示将告诉特朗普希望继续购买武器",
+      "url": "https://apnews.com/article/taiwan-lai-ching-te-address-second-annivesary-d52867fbbb34e66f414fb4a45929f7fc",
+      "content": "Last week, Chinese President Xi Jinping issued a strong warning to the U.S., telling Trump during their Beijing summit that the “Taiwan question” is the most important issue in ties between China and the U.S. and both nations will “have clashes and even conflicts” if the issue is not handled properl",
+      "content_detail": "",
+      "published_date": "Wed, 20 May 2026 04:47:55 GMT",
+      "search_region": "台海/南海/朝鲜",
+      "classified_regions": [
+        "中美博弈"
+      ],
+      "event_types": [
+        "军事冲突升级",
+        "军工受益"
+      ],
+      "severity": "high",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "SI=F",
+        "LMT",
+        "NOC",
+        "RTX",
+        "GD",
+        "GLD",
+        "SLV",
+        "ITA",
+        "PPA",
+        "LHX",
+        "XAR"
+      ]
+    },
+    {
+      "title": "Taiwan Presses Its Case After Trump Puts Arms Sales in Question - WSJ",
+      "title_cn": "台湾在特朗普质疑军售后为其立场辩护",
+      "url": "https://www.wsj.com/world/asia/taiwan-presses-its-case-after-trump-puts-arms-sales-in-question-aca88429",
+      "content": "Video 1\n\nVideo 2\n\nVideo 3\n\n0:00Image 6\n\n# Pause\n\nPlaying\n\n0:02 / 11:45\n\nClick for Sound\n\nWSJ’s Joyu Wang joined a Taiwanese Coast Guard patrol in the Taiwan Strait, revealing how “gray-zone” pressure from Beijing is transforming the law enforcement agency into a front-line security force.Photo: Javi",
+      "content_detail": "",
+      "published_date": "Wed, 20 May 2026 06:07:00 GMT",
+      "search_region": "台海/南海/朝鲜",
+      "classified_regions": [
+        "中美博弈"
+      ],
+      "event_types": [
+        "军事冲突升级",
+        "军工受益"
+      ],
+      "severity": "high",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "SI=F",
+        "LMT",
+        "NOC",
+        "RTX",
+        "GD",
+        "GLD",
+        "SLV",
+        "ITA",
+        "PPA",
+        "LHX",
+        "XAR"
+      ]
+    },
+    {
+      "title": "Russian Offensive Campaign Assessment, May 19, 2026 - Institute for the Study of War",
+      "title_cn": "俄罗斯进攻战役评估，2026年5月19日",
+      "url": "https://understandingwar.org/research/russia-ukraine/russian-offensive-campaign-assessment-may-19-2026/",
+      "content": "The Chinese People’s Liberation Army (PLA) reportedly trained Russian military personnel in the People’s Republic of China (PRC) in 2025, underscoring how Russia and its allies are using the war in Ukraine for military learning and testing. Reuters reported on May 19, citing three European intellige",
+      "content_detail": "",
+      "published_date": "Tue, 19 May 2026 23:40:40 GMT",
+      "search_region": "台海/南海/朝鲜",
+      "classified_regions": [
+        "俄乌战争"
+      ],
+      "event_types": [
+        "军事冲突升级"
+      ],
+      "severity": "high",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "SI=F",
+        "LMT",
+        "NOC",
+        "RTX",
+        "GD",
+        "GLD",
+        "SLV",
+        "ITA",
+        "PPA"
+      ]
+    },
+    {
+      "title": "Nuclear energy, Taiwan and Trump's 'Golden Dome': key points from the Xi-Putin talks - Reuters",
+      "title_cn": "核能、台湾与特朗普的“金穹”：习普会谈要点",
+      "url": "https://www.reuters.com/business/finance/nuclear-energy-taiwan-trumps-golden-dome-key-points-xi-putin-talks-2026-05-20/",
+      "content": "Our Standards: The Thomson Reuters Trust Principles., opens new tab\n\n   Suggested Topics:\n   Artificial Intelligence\n\n    \n    \n    \n    \n    \n\nPurchase Licensing Rights\n\n. On the night of Brexit, his team delivered one of Reuters historic wins - reporting news of Brexit first to the world and the f",
+      "content_detail": "",
+      "published_date": "Wed, 20 May 2026 10:40:38 GMT",
+      "search_region": "台海/南海/朝鲜",
+      "classified_regions": [
+        "中美博弈"
+      ],
+      "event_types": [
+        "军事冲突升级",
+        "军工受益"
+      ],
+      "severity": "high",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "SI=F",
+        "LMT",
+        "NOC",
+        "RTX",
+        "GD",
+        "GLD",
+        "SLV",
+        "ITA",
+        "PPA",
+        "LHX",
+        "XAR"
+      ]
+    },
+    {
+      "title": "'Massive outperformance': Goldman Sachs on why North Asian stocks are beating those in the south - CNBC",
+      "title_cn": "高盛解释北亚股票为何“大幅超常表现”",
+      "url": "https://www.cnbc.com/2026/05/20/goldman-sachs-on-north-versus-south-asian-stocks.html",
+      "content": "Skip Navigation\n\nMarkets\n\n Pre-Markets\n U.S. Markets\n Currencies\n Prediction Markets\n Cryptocurrency\n Futures & Commodities\n Bonds\n Funds & ETFs\n\nBusiness\n\n Economy\n Finance\n Health & Science\n Media\n Real Estate\n Energy\n Climate\n Transportation\n Investigations\n Industrials\n Retail\n Wealth\n Sports\n L",
+      "content_detail": "",
+      "published_date": "Wed, 20 May 2026 00:36:48 GMT",
+      "search_region": "台海/南海/朝鲜",
+      "classified_regions": [
+        "中美博弈"
+      ],
+      "event_types": [
+        "供应链中断"
+      ],
+      "severity": "low",
+      "summary": "",
+      "affected_tickers": [
+        "NVDA",
+        "TSM",
+        "INTC",
+        "AMD",
+        "ASML",
+        "SMH",
+        "SOXX"
+      ]
+    },
+    {
+      "title": "Gaza flotilla leader tied to Hamas sanctioned - The Jerusalem Post",
+      "title_cn": "加沙船队领袖因与哈马斯关联被制裁",
+      "url": "https://www.jpost.com/international/islamic-terrorism/article-896737",
+      "content": "ByMICHAEL STARR\n\nUpdated:\n\nA Gaza flotilla leader tied to an alleged Hamas front group, as well as leaders of a Popular Front for the Liberation of Palestine-linked network, were sanctioned by the Department of the US Treasury’s Office of Foreign Assets Control (OFAC) on Tuesday.\n\nGlobal Sumud Floti",
+      "content_detail": "",
+      "published_date": "Wed, 20 May 2026 15:45:55 GMT",
+      "search_region": "全球制裁",
+      "classified_regions": [
+        "全球制裁"
+      ],
+      "event_types": [
+        "军事冲突升级"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "SI=F",
+        "LMT",
+        "NOC",
+        "RTX",
+        "GD",
+        "GLD",
+        "SLV",
+        "ITA",
+        "PPA"
+      ]
+    },
+    {
+      "title": "US sanctions hit alleged Sinaloa cartel fentanyl network, including a Chihuahua restaurant - Greenwich Time",
+      "title_cn": "美国制裁打击涉嫌锡纳罗亚贩毒集团芬太尼网络，包括奇瓦瓦...",
+      "url": "https://www.greenwichtime.com/business/article/us-sanctions-hit-alleged-sinaloa-cartel-fentanyl-22268411.php",
+      "content": "United Airlines' and Breeze Airways' new routes at Bradley International will contribute to a busy summer at Connecticut's largest airport.\n\nPartners buy Ansonia center for $8.4 million, promise 'high-quality retail'\n\n\"Ansonia market is underserved, and we have a tremendous opportunity to introduce ",
+      "content_detail": "",
+      "published_date": "Wed, 20 May 2026 14:27:46 GMT",
+      "search_region": "全球制裁",
+      "classified_regions": [
+        "全球制裁"
+      ],
+      "event_types": [
+        "供应链中断"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "NVDA",
+        "TSM",
+        "INTC",
+        "AMD",
+        "ASML",
+        "SMH",
+        "SOXX"
+      ]
+    },
+    {
+      "title": "Russia is concerned by US, EU rare earth activity in Central Asia, media reports - Bitget",
+      "title_cn": "俄罗斯对美欧在中亚稀土活动表示关切",
+      "url": "https://www.bitget.com/amp/news/detail/12560605420547",
+      "content": "BeInCrypto\n•\n2026/05/20 14:37\n\nAI’s Next Moat Won’t Be Models. It Will Be Execution Data\n\nBeInCrypto\n•\n2026/05/20 14:37\n\nThe US-Iran Agreement Text Enters Final Polish Stage, US Stocks Rally, Spot Gold and Silver Prices Increase\n\nBlockBeats\n•\n2026/05/20 14:28\n\nBollinger Bands Squeezing HBAR Hard: Ex",
+      "content_detail": "",
+      "published_date": "Wed, 20 May 2026 12:57:32 GMT",
+      "search_region": "全球制裁",
+      "classified_regions": [
+        "俄乌战争",
+        "全球制裁"
+      ],
+      "event_types": [
+        "供应链中断",
+        "军事冲突升级"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "NVDA",
+        "TSM",
+        "INTC",
+        "AMD",
+        "ASML",
+        "SMH",
+        "SOXX",
+        "GC=F",
+        "SI=F",
+        "LMT",
+        "NOC",
+        "RTX",
+        "GD",
+        "GLD",
+        "SLV",
+        "ITA",
+        "PPA"
+      ]
+    }
+  ]
+}
