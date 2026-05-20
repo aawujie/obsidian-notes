@@ -1,3 +1,4 @@
+- 2026-05-20T1356 · [[人类为何渴望被统治-演化与心理机制分析]]
 - 2026-05-20T1233 · [[大人物破局者]]
 - 2026-05-20T1156 · [[MIT-Lecture24-Stochastic-Calculus]]
 - 2026-05-20T0835 · [[20-Claude-Skills]]
@@ -22,4 +23,3 @@
 - 2026-05-19T1725 · [[TPR-Probes-Report-2605.09967]]
 - 2026-05-19T1720 · [[卡尔曼滤波器——对冲基金如何实时读取隐藏市场]]
 - 2026-05-19T1705 · [[2026-05-19]]
-- 2026-05-19T1704 · [[How Hedge Funds Use The Kalman Filter To Read Hidden Markets In Real Time (Quant Framework)]]
