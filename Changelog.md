@@ -1,3 +1,4 @@
+- 2026-05-20T1233 · [[大人物破局者]]
 - 2026-05-20T1156 · [[MIT-Lecture24-Stochastic-Calculus]]
 - 2026-05-20T0835 · [[20-Claude-Skills]]
 - 2026-05-20T0830 · [[TradingView-Claude-AI-Indicator]]
@@ -22,4 +23,3 @@
 - 2026-05-19T1720 · [[卡尔曼滤波器——对冲基金如何实时读取隐藏市场]]
 - 2026-05-19T1705 · [[2026-05-19]]
 - 2026-05-19T1704 · [[How Hedge Funds Use The Kalman Filter To Read Hidden Markets In Real Time (Quant Framework)]]
-- 2026-05-19T1547 · [[AI编码自主性进化曲线]]
