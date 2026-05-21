@@ -133,7 +133,204 @@ skills/
 | 9 | 螺旋楼梯 + 扶手 | 复杂 |
 | 10 | 行星齿轮减速级 | 复杂装配 |
 
-## 与类似项目的关系
+## 使用指南：Skill 如何与 Agent 协作
+
+### Skill 机制原理
+
+这套系统的核心设计是 **"Skill 即操作手册"**。每个 `SKILL.md` 文件本质上是写给 AI Agent 的指令文档，包含：
+
+- **触发条件**（什么时候该用这个 Skill）
+- **工作流步骤**（怎么做、按什么顺序做）
+- **非协商规则**（绝对不能做的事）
+- **Progressive references**（什么情况下加载哪些补充文档）
+
+Agent 安装 Skill 后，当用户说"帮我画个法兰盘"，Agent 会：
+1. 识别触发词 → 匹配到 `cad` skill
+2. 加载 `skills/cad/SKILL.md` → 获取完整工作流
+3. 按需加载 `references/build123d-modeling.md` 等参考文档
+4. 写 build123d Python 代码 → 通过 CLI 工具生成 STEP
+5. 自动渲染预览链接
+
+### 当前环境配置
+
+本机已安装完成，环境变量参考：
+
+```bash
+# Skill 定义目录
+SKILL_DIR="$HOME/Documents/MyBrain/.agents/skills"
+
+# Python CAD 环境（独立 venv，Python 3.13）
+CAD_PYTHON="$HOME/Documents/MyBrain/.agents/cad-venv/bin/python"
+
+# CAD Explorer 查看器
+CAD_EXPLORER="$SKILL_DIR/render/scripts/viewer"
+```
+
+> Python 3.14 不兼容（OpenCascade 无 cp314 wheel），因此 CAD 环境使用 uv 下载的独立 Python 3.13.7。
+
+### 完整工作流实操
+
+以"生成一个 L 型支架"为例：
+
+#### Step 1: 写 build123d Python 源码
+
+```python
+# l_bracket.py
+from build123d import *
+
+def gen_step():
+    length, width = 80.0, 50.0
+    base_thick, back_thick = 8.0, 8.0
+    back_height = 50.0
+    hole_dia = 6.0
+
+    with BuildPart() as bracket:
+        # 底板
+        Box(length, width, base_thick)
+        # 背板
+        with Locations((0, width / 2 - back_thick / 2, back_height / 2)):
+            Box(length, back_thick, back_height)
+        # 底板安装孔 x2
+        with Locations((-25, -10, 0), (25, -10, 0)):
+            Cylinder(radius=hole_dia / 2, height=base_thick, mode=Mode.SUBTRACT)
+        # 背板安装孔 x2
+        with Locations((-25, width / 2, 30), (25, width / 2, 30)):
+            Cylinder(radius=hole_dia / 2, height=back_thick,
+                     rotation=(0, 90, 0), mode=Mode.SUBTRACT)
+
+    return bracket.part
+
+if __name__ == "__main__":
+    export_step(gen_step(), "l_bracket.step")
+```
+
+#### Step 2: 用 Skill 工具生成 STEP
+
+```bash
+# 使用 cad skill 的 step CLI
+$CAD_PYTHON $SKILL_DIR/cad/scripts/step/__main__.py l_bracket.py -o l_bracket.step
+
+# 同时导出 STL 和 3MF（可选）
+$CAD_PYTHON $SKILL_DIR/cad/scripts/step/__main__.py l_bracket.py \
+    --stl l_bracket.stl --3mf l_bracket.3mf
+```
+
+输出：
+- `l_bracket.step` — 主产物，BREP 精确几何
+- `l_bracket.stl` / `l_bracket.3mf` — 3D 打印格式
+- `.l_bracket.step.glb` — 隐藏 GLB 供 Explorer 使用
+- `.l_bracket.step/` — 拓扑数据目录（topology.bin + topology.json）
+
+#### Step 3: 启动 CAD Explorer 预览
+
+```bash
+# 自动检测并复用已有实例，没有则启动新的
+npm --prefix $CAD_EXPLORER run dev:ensure -- \
+    --workspace-root "$PWD" \
+    --root-dir . \
+    --file l_bracket.step
+```
+
+浏览器打开输出的 URL，可旋转/缩放/剖切三维模型。支持 `.step .stp .glb .stl .3mf .dxf .urdf .srdf .sdf`。
+
+#### Step 4: 几何检测与 @cad 引用
+
+```bash
+# 获取模型的 @cad 引用（面/边 ID）
+$CAD_PYTHON $SKILL_DIR/cad/scripts/inspect/__main__.py refs l_bracket.step \
+    --facts --planes --positioning
+
+# 精确测量
+$CAD_PYTHON $SKILL_DIR/cad/scripts/inspect/__main__.py measure l_bracket.step \
+    --from-face <face_id> --to-face <face_id>
+
+# 两颗零件的配合检查
+$CAD_PYTHON $SKILL_DIR/cad/scripts/inspect/__main__.py mate \
+    part_a.step part_b.step --face-a <id> --face-b <id>
+
+# 对比两次生成的差异
+$CAD_PYTHON $SKILL_DIR/cad/scripts/inspect/__main__.py diff \
+    old.step new.step
+```
+
+`@cad[...]` 引用是 Agent 实现精确迭代的关键——从 inspect 输出中复制引用 ID，下次修改可以直接定位到特定面/边。
+
+#### Step 5: 渲染快照（自动化视觉验证）
+
+```bash
+$CAD_PYTHON $SKILL_DIR/render/scripts/snapshot \
+    --input l_bracket.step \
+    --output /tmp/bracket_review.png \
+    --mode view \
+    --theme technical \
+    --camera iso \
+    --view-labels
+```
+
+适合批量自动化：生成 → 快照 → 视觉 review → 修改源码 → 重新生成。
+
+### 机器人相关工作流
+
+#### URDF：生成机器人运动学描述
+
+```bash
+$CAD_PYTHON $SKILL_DIR/urdf/scripts/urdf robot.py -o robot.urdf
+```
+
+其中 `robot.py` 定义 `gen_urdf()` → 返回 URDF XML 字符串。自动做 XML 验证、关节树检查、inertial 合理性验证。
+
+#### SRDF：MoveIt2 语义配置
+
+```bash
+$CAD_PYTHON $SKILL_DIR/srdf/scripts/srdf robot.py --urdf robot.urdf -o robot.srdf
+```
+
+可选启动 MoveIt2 服务器获得交互式 IK：
+```bash
+$SKILL_DIR/render/scripts/moveit2_server/run-moveit2-server.sh
+```
+
+#### step.parts：下载标准件
+
+```bash
+$CAD_PYTHON $SKILL_DIR/step-parts/scripts/download_step_part.py \
+    "M3 socket head 12" --download --out-dir ./parts
+```
+
+直接输出标准 STEP 文件，可被装配体脚本 import 使用。
+
+### Agent 视角：一次完整交互示例
+
+当用户对 Claude Code 说"帮我生成一个 80mm 法兰盘，中心 30mm 孔，6 个 M6 螺栓孔"：
+
+1. Agent 加载 `cad` skill → 识别为 STEP 生成任务
+2. 读取 `natural-language-specs.md` → 从自然语言提取 CAD 参数
+3. 读取 `build123d-modeling.md` → 获取 build123d API 参考
+4. 写出 Python 源码 → 调用 Cylinder、Hole、fillet、polar array
+5. 执行 `scripts/step flange.py -o flange.step`
+6. 执行 `scripts/inspect refs flange.step --facts` → 验证尺寸和孔数
+7. 调用 render skill → 返回 CAD Explorer 预览链接
+8. 用户查看 3D 模型 → Agent 根据反馈调整
+
+整个过程 Agent 自主完成，用户只需自然语言描述 + 浏览器确认。
+
+### DXF 导出（SendCutSend 钣金加工）
+
+```bash
+$CAD_PYTHON $SKILL_DIR/cad/scripts/dxf/__main__.py part.step -o part.dxf \
+    --projection top
+```
+
+结合 `sendcutsend` skill 可做预检报告，直接对接在线钣金加工。
+
+### 故障排查
+
+| 问题 | 解决 |
+|------|------|
+| Python 版本不匹配 | 确认使用 `.agents/cad-venv/bin/python`（3.13），不要用系统 python3（3.14） |
+| Explorer 打不开 | 先运行 `npm --prefix ... run dev:ensure`，不要手动指定端口 |
+| 生成 STEP 为空/无效 | 用 `scripts/inspect refs --facts` 检查；通常是 build123d 源码的布尔运算或选择器出错 |
+| STL/3MF 导出失败 | 部分几何需要先 mesh 化，使用 `trimesh` 做二次处理 |
 
 | 项目 | 定位 | 对比 |
 |------|------|------|
