@@ -76,3 +76,6 @@ __pycache__/
 *.pyo
 .ruff_cache/
 uv.lock
+
+# 自动生成的 Changelog（vault backup 产物，多设备必冲突）
+Changelog.md
