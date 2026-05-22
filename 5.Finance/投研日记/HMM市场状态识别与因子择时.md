@@ -531,3 +531,29 @@ panda_factor 已有的 Regime Rotation 实验证明了 regime-aware 方法能大
 - **Phase 3**: 接入每日流水线，与 Kalman 动态权重联动
 
 > **核心洞察**: "Don't predict the market — predict which strategy works in the current market." HMM 不是预测市场涨跌，而是识别当前环境，然后匹配最优策略。
+
+---
+
+## 9. 视频教程推荐
+
+### StatQuest 系列（英语，入门首选）
+
+Josh Starmer 用动画演示，每集 10-15 分钟，从零讲清楚：
+
+| 集数 | 内容 | 链接 |
+|------|------|------|
+| Part 1 | 马尔可夫链基础 | https://www.youtube.com/watch?v=kqSzLo9fenk |
+| Part 2 | 转移概率 & 发射概率 | https://www.youtube.com/watch?v=TPRoLreU9lA |
+| Part 3 | 前向算法 | https://www.youtube.com/watch?v=RWkHJnFj5rY |
+| Part 4 | Viterbi 算法 | https://www.youtube.com/watch?v=MPeedE6Odj0 |
+| Part 5 | 完整数值例子（CpG 岛） | https://www.youtube.com/watch?v=HbL_3FdAyDc |
+
+**特点**：颜色标注概率流动、一步步算具体数字。看完后再读本文公式，直觉和符号就能对上。
+
+### 中文教程（B站）
+
+搜索"隐马尔可夫模型 HMM"，按播放量排序。推荐方向：
+- 梗直哥等 UP 主的机器学习系列中的 HMM 章节
+- NLP 中文分词/词性标注实战教程 —— 结合应用场景讲 HMM，更直观
+
+**学习建议**：先 StatQuest 建立直觉 → 回看本文公式 → B 站中文教程巩固
