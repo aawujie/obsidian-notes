@@ -13,6 +13,8 @@ tags:
   - 量化金融
   - Baum-Welch
   - Viterbi
+share_link: https://share.note.sx/ta4d98ux#XN+BCnoWEyuTCW7rE12bG0gYvBk6DGS2RFG4W4efbtM
+share_updated: 2026-05-22T16:14:02+08:00
 ---
 
 # HMM市场状态识别与因子择时
