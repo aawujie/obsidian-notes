@@ -74,7 +74,7 @@ $$
 $$A = \begin{bmatrix} a_{11} & a_{12} & a_{13} \\ a_{21} & a_{22} & a_{23} \\ a_{31} & a_{32} & a_{33} \end{bmatrix}, \quad a_{ij} = P(q_{t+1} = s_j \mid q_t = s_i)$$
 
 - **对角线元素** $a_{ii}$ 高 → 该状态持续性强（persistent regime）
-- 在金融市场中，趋势状态通常比震荡状态更持久
+- <span style="color:rgb(255, 77, 77)">在金融市场中，趋势状态通常比震荡状态更持久</span>
 
 #### 发射概率（高斯 HMM）
 
