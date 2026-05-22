@@ -1,0 +1,1306 @@
+{
+  "date": "2026-05-22",
+  "generated_at": "2026-05-22T18:23:03.004797",
+  "total_events": 48,
+  "severity_distribution": {
+    "medium": 48
+  },
+  "events": [
+    {
+      "title": "Exclusive: Supreme Leader says enriched uranium must stay in Iran, Iranian sources say - Reuters",
+      "title_cn": "",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOR2FnRzlWa0JneHMzSWNSa2NPeFh6UTdEMnpDbFpLOGNubnRNaWZWOFhKOTBrd0Y0ZkRHYUVIVjcyMmVVZHhBYzFPaXhxa0NaUWZXUzBzVWhybWZXbVlITjB5Z1dQRGZiQ011ZzlIVy1pRHZYTGdoSlFvS0pKVEtjc29LZHYySkstYlprRGxDUTlhaXFncEVmWkJCc0YzMTRoWDM4S1EwN1gwTll2RXZ0akhNYzlSWWc2MzQ5S0dwa2s2bFE4?oc=5",
+      "content": "Exclusive: Supreme Leader says enriched uranium must stay in Iran, Iranian sources say  Reuters",
+      "content_detail": "Google News",
+      "published_date": "Thu, 21 May 2026 10:27:00 GMT",
+      "search_region": "美伊冲突",
+      "classified_regions": [
+        "美伊冲突"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "Exclusive: Supreme Leader says enriched uranium must stay in Iran, Iranian sources say Reuters",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Iran Update Special Report, May 21, 2026 - Institute for the Study of War",
+      "title_cn": "",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQczFMZkZLMkpSSEdKemVhY0NpU0kzeXZsM1JRZ1UtQlMyTkZNb1VNeWxmSTZ3QkdncWpDVGdWVlRVQkdoZmpTR0IwOXg5ZzZ3cGhpWUQ0MTJMdWoyT0ExZnZ1bW4ySGQ3MzhiWWZsZXhMVm5YeE9vSktvNWlhMnpjZTNMOUdaWGJkbEFzVC1HSXBVdTg?oc=5",
+      "content": "Iran Update Special Report, May 21, 2026  Institute for the Study of War",
+      "content_detail": "Google News",
+      "published_date": "Thu, 21 May 2026 22:08:38 GMT",
+      "search_region": "美伊冲突",
+      "classified_regions": [
+        "美伊冲突"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "Iran Update Special Report, May 21, 2026 Institute for the Study of War",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Oil prices fall as investors hope for U.S.-Iran deal - CNBC",
+      "title_cn": "",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPa2pJT0hEZHJweHJBTWl6cEY3UXNvVVZtRWxscERzNXpiZTM0a2x3M2wxbTAwb1RsY0h3QTFQZnJwaTJZa0tZQzBqbTl5M29Yd1pNN2V2c29WOHNTR2NIMFhUeGxDV2RnaGF6cVVna0xHRXhWUEZmaTdpR1VtS0dUMzJMUXVDWGRp0gGOAUFVX3lxTFBILWJrMTNKMlM0dEl6WDFVLWI4VXpGTGtBdGppTVpSQkVmekRMRkEwa2c5T0pWXzVzVFZpWWxFOGItaUdhRmdjdXZwT1l1NU9kcmxvLVgtRnFpVDg2MVZCWEExcGdJclVMVzd3cURpLV84R1hKV2dwMi0tbEtiRG9SVHV0M3ZQeG5LZE45akE?oc=5",
+      "content": "Oil prices fall as investors hope for U.S.-Iran deal  CNBC",
+      "content_detail": "Google News",
+      "published_date": "Thu, 21 May 2026 12:45:38 GMT",
+      "search_region": "美伊冲突",
+      "classified_regions": [
+        "美伊冲突"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "Oil prices fall as investors hope for U.S.-Iran deal CNBC",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Iran-U.S. diplomacy intensifies as Trump seeks ‘right answers,’ Tehran signals gaps ‘reduced’ - NBC News",
+      "title_cn": "",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPVklEa2VfY1ZwM3dfVjhkTmYzallHRm5KQXlhbGk0TTc0TUtSeWhfaE96ZEtYOXlTUThmVU92X3k0dnFXRVlSVjNnOURYaUFUdW0yRE1oSU5XUENwTVBCTXFwSVdvLTVBMnRsLXRIZno1aEVMRWJyX3JnRDhpckJjZUh2Y1JKQW9pNWM4WTE0MnJEbHlVdk9oYm1DWFNMdjd0ZmxYeFFn?oc=5",
+      "content": "Iran-U.S. diplomacy intensifies as Trump seeks ‘right answers,’ Tehran signals gaps ‘reduced’  NBC News",
+      "content_detail": "Google News",
+      "published_date": "Thu, 21 May 2026 10:45:21 GMT",
+      "search_region": "美伊冲突",
+      "classified_regions": [
+        "美伊冲突"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "diplomacy intensifies as Trump seeks ‘right answers,’ Tehran signals gaps ‘reduced’ NBC News",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Iraq Warns It Will Take Action Over Drone Attacks From Its Territory - Radio Free Europe/Radio Liberty",
+      "title_cn": "",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQWnhyaS1tS3NVV19VeVRlS1RUeUhFblVCTkRCWmg2Z2YwTW1uR051ZFctc3F2eEcyN29hbkJkLUY3THpPVzVaYVRlcTRybGlrTGVsX3ZvTFJyQmRELVNHckg3Nk9uOUw3V2RyN2lZY0dIMW1jLWVQSUVTdXBTZGpuVE55cDBQcG01?oc=5",
+      "content": "Iraq Warns It Will Take Action Over Drone Attacks From Its Territory  Radio Free Europe/Radio Liberty",
+      "content_detail": "Google News",
+      "published_date": "Thu, 21 May 2026 05:10:00 GMT",
+      "search_region": "美伊冲突",
+      "classified_regions": [
+        "美伊冲突"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "Iraq Warns It Will Take Action Over Drone Attacks From Its Territory Radio Free Europe/Radio Liberty",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "How can Europe shape the Iran war’s aftermath? - Brookings",
+      "title_cn": "",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQYWJVZFU2djRHdFlTZnhVb21JRW1ELWVfcTY5N3dxVHptRHRRSXNrajJOTHYzUHVfNFhBdnpjaF82OE91Y19ja0NWRmZWV0tFTWlFMnFxZy12QXh1Q3M3UWF4dUhRM0Q3UG5UelR5X05PZ0pGLU4zTERoMm4yeGdMMjBKN3pMNzQ?oc=5",
+      "content": "How can Europe shape the Iran war’s aftermath?  Brookings",
+      "content_detail": "Google News",
+      "published_date": "Wed, 20 May 2026 20:50:57 GMT",
+      "search_region": "美伊冲突",
+      "classified_regions": [
+        "美伊冲突"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "How can Europe shape the Iran war’s aftermath?",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Contributor: Trump has left himself only bad options on Iran - Los Angeles Times",
+      "title_cn": "",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQZEh5TFF1Ymc2YmJ4OWhFOUlwNkQtSFM5SjVfb3lQQ2RfYmE5b3R1TV9EeTFUWlRlel84TkRUU25kOENkVV9iUFBTY2lWaVN3cU5uMDVrbUc5b09kQWFlTFR1UjdpaUxqNXQtcnBTUDBRRGZONGk4ZVdSMlE3MnI5MW5kT3hjbWowVkRoV2hGcEpNNkgtRlFlOQ?oc=5",
+      "content": "Contributor: Trump has left himself only bad options on Iran  Los Angeles Times",
+      "content_detail": "Google News",
+      "published_date": "Wed, 20 May 2026 10:10:00 GMT",
+      "search_region": "美伊冲突",
+      "classified_regions": [
+        "美伊冲突"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "Contributor: Trump has left himself only bad options on Iran Los Angeles Times",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Live updates: Trump says US doesn’t want tolls on strait - NewsNation",
+      "title_cn": "",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOUERpUjRLaDBEckItVjMyQ1FCZFZNanN6eHlmQWZwbWxDLVA2WEV3MDA4ZndkSTU4MUxpV0lDSzNmRHFHcXlsYkVSeUxidENCZ3BCMkViZzlpZUQwaFRkWGFFWXlwaHFJRDJ6YmhacEdKdUExc1ZEWXNxeEwzZHZXM25lMGzSAYoBQVVfeXFMT1ZNYXJHdXpRd3ZzQnZuUS0taURrZHlHTjY4STMyb18tUnk4WDREd1ZiakhMb0JnUUR6N09GemxuYXNaS0cwT0VJeThzUDQtWjVpUUE4bUFiUXBKVllBOHdTVm94WGQtS1lGY1NQbmk0bW5ueElBVWJ6eTU3VEFRNmdKTkp6emZUNkZ3?oc=5",
+      "content": "Live updates: Trump says US doesn’t want tolls on strait  NewsNation",
+      "content_detail": "Google News",
+      "published_date": "Thu, 21 May 2026 20:07:46 GMT",
+      "search_region": "美伊冲突",
+      "classified_regions": [
+        "美伊冲突"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "Live updates: Trump says US doesn’t want tolls on strait NewsNation",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Zelenskyy claims Ukraine's 'long-range sanctions' have reduced Russian oil output, refining - Yeni Safak English",
+      "title_cn": "",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNeW1URkstYWhabzNkcnI3ZHVJYzQ0bFZZRDV6LUE3ZkN1Q3ljTVRROWwzRUZGLUJBODJRQ3BfaGtqRUU4UjNuSWNsWU11MmI5a2JlOVR1WmVjaUw2SnBkNWdNS1pvMWM5a3pGMUd6WTJ3TThHYVhHcDZhQlRILTRDSEl4eGg1a2VPVEFLTkQzTjJMZl9DWUYtZ3NZYkMzTTdPeWZ2Qkl0QXYyNTBWLVU1UkdUWlJwQU5zN2FqcU1oQWNBNFVC?oc=5",
+      "content": "Zelenskyy claims Ukraine's 'long-range sanctions' have reduced Russian oil output, refining  Yeni Safak English",
+      "content_detail": "Google News",
+      "published_date": "Tue, 19 May 2026 07:26:40 GMT",
+      "search_region": "俄乌战争",
+      "classified_regions": [
+        "俄乌战争"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "Zelenskyy claims Ukraine's 'long-range sanctions' have reduced Russian oil output, refining Yeni Safak English",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Ukraine threatens sanctions against Israel for buying ‘stolen’ grain from Russia - Jewish Telegraphic Agency",
+      "title_cn": "",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxORmFFVmwzck11cjVXTmJzZjdMN044SGZxMHRfdFNVZGxST3IwdDMzTlF0ZGhvV1lZSG5OOTQ5aS1rR0JEOUZBNEIwSU5vRlJjeEpZby02dG8tVHhnZU9QNTlVb3JoU01pa2dpeE5KVU9zY2RsRE1ZYkJxbmdsdVdRN3l4NnlMc3h4c0xtaTFXd1d3NVM2b1ZMVGpoVDcxY2JSTGVDa0pITXBpOTIyc2NMMW44S0swS1E?oc=5",
+      "content": "Ukraine threatens sanctions against Israel for buying ‘stolen’ grain from Russia  Jewish Telegraphic Agency",
+      "content_detail": "Google News",
+      "published_date": "Tue, 28 Apr 2026 07:00:00 GMT",
+      "search_region": "俄乌战争",
+      "classified_regions": [
+        "俄乌战争"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "Ukraine threatens sanctions against Israel for buying ‘stolen’ grain from Russia Jewish Telegraphic Agency",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Ukraine accuses Israel of importing grain 'stolen' by Russia - Oregon Public Broadcasting - OPB",
+      "title_cn": "",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQRm92ODhMM2dsWkhHVGQ3d1NZTC1hc1N3R3F4Q3RXcG9Kc0FUVWtrMmRIN1d4R2t4c3VuVHhwLU5WT1BZd0NrSUxjRk1IVGl2WEZodkZUdENHOXVJbGFjVmstcGZvRXhtczVBWkljVmFMRHpsS3hyU3owZF9LN1VyRGlqNEZoYzI5Y0hGd18yMWstWnZuc003VUNxWnZQSmM?oc=5",
+      "content": "Ukraine accuses Israel of importing grain 'stolen' by Russia  Oregon Public Broadcasting - OPB",
+      "content_detail": "Google News",
+      "published_date": "Wed, 29 Apr 2026 07:00:00 GMT",
+      "search_region": "俄乌战争",
+      "classified_regions": [
+        "俄乌战争"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "Ukraine accuses Israel of importing grain 'stolen' by Russia Oregon Public Broadcasting - OPB",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Zelensky slams Israel over imports of Ukrainian grain 'stolen' by Russia - Le Monde.fr",
+      "title_cn": "",
+      "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQVWR4bmNEeXFleFNyWWZWYnpzQ3A5X2VuSzRPeGxXdVYycWRFLVlDTFlwUS1DaVVkaWFfSC04a080bXk3NmJRd0l6YjBQX3VLZWUxZ0dMOVkzRGZpNENTaFpRQWE5alJhaFE4cWZuUGJVNUtMdGZZUE9aX2pkZkxiUVpvSUhXMUZ0cV9xLS1CUmdvZEI4WGNaSzNUcnBPcGl5TXVYRU9rN1czQlpWTVJqbjd2VkJva25ScnVMSUlKbUpMeHYtek1YSVlpc185SlVMWlNzT2luRGRmUUlQVV91TnRMbjk3dw?oc=5",
+      "content": "Zelensky slams Israel over imports of Ukrainian grain 'stolen' by Russia  Le Monde.fr",
+      "content_detail": "Google News",
+      "published_date": "Tue, 28 Apr 2026 07:00:00 GMT",
+      "search_region": "俄乌战争",
+      "classified_regions": [
+        "俄乌战争"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "Zelensky slams Israel over imports of Ukrainian grain 'stolen' by Russia Le Monde.fr",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Ukraine summons Israeli ambassador over ‘stolen’ grain shipments - Al Jazeera",
+      "title_cn": "",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQMWtfby1MUnNXUk9Wck16N1ZmZ0VaU0s4QmZyMm8tSG1mMlhGSF9zbHJzTG1vd1U3MzNSTDVEZjBpWC1XczJYY0lSMnIwZXBQVkhSem56Vm1rX19BYTBpTHoyZVM0S3NzYlFwdUJRVG5MXy04aERqYkJvcjVTZmhyOS1TSm8wbzVzMDFSalhGMXV0cUJHcU50WmdLLUxtQzFUYXV0MXNn0gGrAUFVX3lxTE5GcU1FVmc3dkZqUUg3azVKTGI1bkRwWHpoRFQ3ZEFrbUExUEZxZmk3dm9EZU5OZFkwb21GY3ZJMWNYZDhsODZqUHBaNUNzeGxRWUhYNWZWdk05enZnY1VpRFhfZ3ZpNHBaYUFpSTUwWEw3anFrWFd4V3M4ZnpheWxyYWo5RFNGNVlENnpfZkRacFZIa2NwRjA2Zmt0UXQ0U05XVG5NbTZjQjRfMA?oc=5",
+      "content": "Ukraine summons Israeli ambassador over ‘stolen’ grain shipments  Al Jazeera",
+      "content_detail": "Google News",
+      "published_date": "Tue, 28 Apr 2026 07:00:00 GMT",
+      "search_region": "俄乌战争",
+      "classified_regions": [
+        "俄乌战争"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "Ukraine summons Israeli ambassador over ‘stolen’ grain shipments Al Jazeera",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Black Sea Shockwaves: Ukraine War Still Impacts Global South - The Cairo Review of Global Affairs",
+      "title_cn": "",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9zZ2ZWdHo4RFU0bjN3N29OOTZmT200dFVGeU42Y0xGa0lmWExWQVV5b2dTUFBsbHFJZ3Z5QllGWEt0SDByMmYtTGRkS0RweWFmT0g2czctdXoyUmVpMTI0Yk1aSTFOX2dXdU84?oc=5",
+      "content": "Black Sea Shockwaves: Ukraine War Still Impacts Global South  The Cairo Review of Global Affairs",
+      "content_detail": "Google News",
+      "published_date": "Mon, 23 Mar 2026 07:00:00 GMT",
+      "search_region": "俄乌战争",
+      "classified_regions": [
+        "俄乌战争"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "Black Sea Shockwaves: Ukraine War Still Impacts Global South The Cairo Review of Global Affairs",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Ukraine War, Day 1,525: Russia Ships Stolen Ukrainian Grain to Israel - EA WorldView",
+      "title_cn": "",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOWXBVV3dGbWZINVhzS0ptTGg1clN3LVd3U1Etc1B2LTdZbE5ETmxnanVCckVuTFlYN2l1QXFSdVNBeUh4TW90eTNabU9kcE5HbXM3c2dNLTA4QWxXS1Q3NVNlTXRFM1dFRTEydzU2ZVFwMjRBYm9MYkpjdTM0a3BVRFExQktocVE?oc=5",
+      "content": "Ukraine War, Day 1,525: Russia Ships Stolen Ukrainian Grain to Israel  EA WorldView",
+      "content_detail": "Google News",
+      "published_date": "Tue, 28 Apr 2026 07:00:00 GMT",
+      "search_region": "俄乌战争",
+      "classified_regions": [
+        "俄乌战争"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "Ukraine War, Day 1,525: Russia Ships Stolen Ukrainian Grain to Israel EA WorldView",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Russia capitalises on chaos: fertilisers in the context of the war in Iran - Real Instituto Elcano",
+      "title_cn": "",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxObFpLNzZScnlMakl4eFFOVktQU0N4YVFyZG1zSmpjZzdUQWJfWXB6MVczVEx4SGw3WEVFYS10eGxFMnFkdTNDYlVLOGJTQkdONGN0UWRqemIwVmwxR1NuTENxclpLdEdjZnJONERWSEZuWlJ5TFhJaDlpWERNQnFlQk1EcENLTFM0aWZOY0lMRE9TZGt2NHlrbWVpTHM2cFphdEoyc3dSUE03VEhxZXoya1Y1VzZyN0ZuWmxyODZDM1M0SkRJ?oc=5",
+      "content": "Russia capitalises on chaos: fertilisers in the context of the war in Iran  Real Instituto Elcano",
+      "content_detail": "Google News",
+      "published_date": "Mon, 13 Apr 2026 14:28:32 GMT",
+      "search_region": "俄乌战争",
+      "classified_regions": [
+        "俄乌战争"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "Russia capitalises on chaos: fertilisers in the context of the war in Iran Real Instituto Elcano",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "US-China Relations in the Trump 2.0 Era: A Timeline - China Briefing",
+      "title_cn": "",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQVl9rOHkwQl9VYldidlJVajgtZzY4VE5TQmt6eEQ2czIxaTk5N3Ywd3diVXdCT3dKVmhUNmxMRjJ0UnJKdGE2TUtuNklrdWx4UTVGZG5kY1pvWnNEWUhkdmZ5WkV3R0plREV6aTlGc1JEUHVQeG02VzRsVE82OERteXhsMGNfTEVPMllnN0p3?oc=5",
+      "content": "US-China Relations in the Trump 2.0 Era: A Timeline  China Briefing",
+      "content_detail": "Google News",
+      "published_date": "Fri, 15 May 2026 01:00:32 GMT",
+      "search_region": "中美博弈",
+      "classified_regions": [
+        "中美博弈"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "US-China Relations in the Trump 2.0 Era: A Timeline China Briefing",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Indian companies sourcing from Chinese suppliers are the latest victims of US-China trade war - ThePrint",
+      "title_cn": "",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPUGNYeGxfdEt0WklxY3o3d2Etcnd6ZzBfT3pYV0VDM1FDSzRKRXd2XzZOdTNFc3ZUUVhoOTBrV0lkb0NZcFJQX3hxLWZXWmdxaEFDLTZ6WmdKVXFBVDgzTHphNjlHM2lIeHhlWUN2c3hObm5tZTFVZi1GZjdqOGpMeFU1MDBEeHF4U2o4c2Z2ZVktOUtYYU1BcjVPN19aUC1XX3ZCellQZ3FzUDZDaW9SeTBPX0wxeTBBaVNnS2VxajVBdTlMcG45NTVR0gHPAUFVX3lxTFAtTFJYaWhhZjZQaC1qbXU5dVpodFgtanoyWnZTcXZXVC1BNkFaVlNvLWQwdDg5elgyU3drVnpoRnBVMjEzZG5KdDV1SU83RXA3bXF2RUkwZzFBU0VCV2RLZnVac0ZmRnVJQm5qR3lGaV9SVnJNV1d4WHBtT19SLWJXYWNyYnRvWEpzS1ZnU3NGeTZJVDVZbUdZVnRNeE16bTREeDFFUUNSM2dDRjRyaGttbDZOc3lZT3BZUUJTRm9OLUllSmZLUE45ZVNOa0hscw?oc=5",
+      "content": "Indian companies sourcing from Chinese suppliers are the latest victims of US-China trade war  ThePrint",
+      "content_detail": "Google News",
+      "published_date": "Fri, 01 May 2026 07:00:00 GMT",
+      "search_region": "中美博弈",
+      "classified_regions": [
+        "中美博弈"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "Indian companies sourcing from Chinese suppliers are the latest victims of US-China trade war ThePrint",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Mobilizing for Techno-Economic War, Part 2: Slowing China’s Advance | Reports & Briefings | Mar 30, 2026 - Information Technology and Innovation Foundation (ITIF)",
+      "title_cn": "",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNTWd4bV83ZXhMYVQ1TFlXOXFsVVRaYWdmRzVZbmF5dzIxYkpiN3ByNkZtSHNHRmlhQmVZWmF4Q3NXUU1ISk9yNzNqZFlOT2Ztd0tXWTFRS1NUWG5MYmJkdG5MWVQwUjVaVHFNS2x4WFR3cVJhZXc3R3ZVV19Wb1FrN0xDOEp0cFVyb3FWMm1LLUJIbXMtNGFUb3VzYnV3Y2pSN2M5clRld3Y3Zw?oc=5",
+      "content": "Mobilizing for Techno-Economic War, Part 2: Slowing China’s Advance | Reports & Briefings | Mar 30, 2026  Information Technology and Innovation Foundation (ITIF)",
+      "content_detail": "Google News",
+      "published_date": "Mon, 30 Mar 2026 07:00:00 GMT",
+      "search_region": "中美博弈",
+      "classified_regions": [
+        "中美博弈"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "Mobilizing for Techno-Economic War, Part 2: Slowing China’s Advance Reports & Briefings Mar 30, 2026 Information Technology and Innovation Foundation (ITIF)",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Asia’s Administrative Arms Race: How U.S.-China Strategic Competition is Reshaping Economic Statecraft - Just Security",
+      "title_cn": "",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE51WVRYN3QxeXJOaFN4YVdoNnlPQ0luTDFyaDR3bk9reDN4bmV4Q0RJY3VYamc4M2RYeG93RWhIaHl1Y2o1VFhaTDA4NnBZOGs2cFd3LTlYZ3loUmZoYnhaUDFWWS1ETjJEb0FYN3N1Z3l4T3RkaFNXWURn?oc=5",
+      "content": "Asia’s Administrative Arms Race: How U.S.-China Strategic Competition is Reshaping Economic Statecraft  Just Security",
+      "content_detail": "Google News",
+      "published_date": "Wed, 11 Feb 2026 08:00:00 GMT",
+      "search_region": "中美博弈",
+      "classified_regions": [
+        "中美博弈"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "Asia’s Administrative Arms Race: How U.S.-China Strategic Competition is Reshaping Economic Statecraft Just Security",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Steady State Reached in China-U.S. Relations? - China-US Focus",
+      "title_cn": "",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPUW1BVkxFZHVHVmZqUk9wQ3F4V2R4NDcwT2x0ZmdtRzBsZDNMR3lmVUlDRm5mOFJycHpjbWV4Q0NCQUdPOXFRalhuWmgxQXFXeHEwMXRla3dCc3k1ZTdYVlhZQkI3eXpoMHJtUGYyMTdiUmw2cE82MDRMb01CRUdfaVBmSjVuWV9nVDNzU1JuQQ?oc=5",
+      "content": "Steady State Reached in China-U.S. Relations?  China-US Focus",
+      "content_detail": "",
+      "published_date": "Thu, 18 Dec 2025 08:00:00 GMT",
+      "search_region": "中美博弈",
+      "classified_regions": [
+        "中美博弈"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Chip industry hit by Nexperia export ban - Sourceability",
+      "title_cn": "",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNV2pFTmhLSTlpVG50WU9wSHJaU3V6aUUwbGdjZE9BSzJKYUlRSVRZVGpoSjFuZ2doa0RtNUg0Unhqd2VHX3VxTTh6VlJTNmFkRTl0SjJDSGo1bHRHWHRhS3ZGQl9EX1ZXOVJaaG5JRWdoSHAtUVFkb2JoNXBEMW5pWjBDZG1VRzh2YTJHUjVfVFROS2J5aVFEbkhBcw?oc=5",
+      "content": "Chip industry hit by Nexperia export ban  Sourceability",
+      "content_detail": "",
+      "published_date": "Mon, 09 Mar 2026 07:00:00 GMT",
+      "search_region": "中美博弈",
+      "classified_regions": [
+        "中美博弈"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "A new export rule escalates US-China tensions - Peterson Institute for International Economics",
+      "title_cn": "",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQUGxzWUMwSmE1ODdDSkh2cjF3VVM3b0NNSVlWbnF0NVUxQW9nYW83dm1fWmdFUVJabFVoc1laVUZnOHdCOHAxYi1ubk9Ucko1WGZnUHlvRTAyTTJNTFNXcHRaNTl1aEhVMjFVZVRYTy1sVFpjUG9Eb3RqM2tiZU5DdHZLT1kwSU1CX0NXMW84d0pJUlRXUTNGM3RR?oc=5",
+      "content": "A new export rule escalates US-China tensions  Peterson Institute for International Economics",
+      "content_detail": "",
+      "published_date": "Mon, 27 Oct 2025 07:00:00 GMT",
+      "search_region": "中美博弈",
+      "classified_regions": [
+        "中美博弈"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "The US-China Trade War Is Far From Over - Jacobin",
+      "title_cn": "",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE05d29qRGF4eWhCM2VJSHRMYXJjUWZCUkJKc1RRY19YRHdreG8ydmNfTmdVYlZMajh5bVNSckVGUVd4bnZKclluVzQ2Z1B0eXNCYURnS0J3SGxJR21sbGdBUmJEMmNaMnN2YXpCcldrM0toM0RKa2tV?oc=5",
+      "content": "The US-China Trade War Is Far From Over  Jacobin",
+      "content_detail": "",
+      "published_date": "Fri, 31 Oct 2025 07:00:00 GMT",
+      "search_region": "中美博弈",
+      "classified_regions": [
+        "中美博弈"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Conflict in Yemen and the Red Sea | Global Conflict Tracker - Council on Foreign Relations",
+      "title_cn": "",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1wLVlLT0hRb1JoS2NYWXdlLWtBdlJHVjBfUFMzLW04cU9ENTE3VVlwUW5IdHRqdDhfTmFqZ1FiRnBRcDU3a3NUajF4Ny1Wb1UxN2lqR091Q1BETVNSZm5maTVEeGhLM3VySUZuRVc5Yw?oc=5",
+      "content": "Conflict in Yemen and the Red Sea | Global Conflict Tracker  Council on Foreign Relations",
+      "content_detail": "",
+      "published_date": "Tue, 14 Apr 2026 07:00:00 GMT",
+      "search_region": "中东/红海",
+      "classified_regions": [
+        "中东/红海"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "How The Red Sea Shipping Crisis Affects Global Trade - WorldAtlas",
+      "title_cn": "",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQdGxIdEEwcl9Qc0Y1czcyM0lXY0hpLXdLc0NKZnMyVXJ1QTN1SU5QR2xna25jUjhXOUxhRWFRck1fUWw2elZPS2Q0Q3FXYUxqOFp2bkhMdUVSY0gwaDM1emI1VTlGTG9fOGdxVGRYNkJPN3VNbHBibEVfYVMyakJjYjJTV0hwY2xESE9HWE1OdHlfN1lWRUhDaXRR?oc=5",
+      "content": "How The Red Sea Shipping Crisis Affects Global Trade  WorldAtlas",
+      "content_detail": "",
+      "published_date": "Sat, 02 May 2026 07:00:00 GMT",
+      "search_region": "中东/红海",
+      "classified_regions": [
+        "中东/红海"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "The Houthis Enter the Middle East War: What Comes Next? - International Crisis Group",
+      "title_cn": "",
+      "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxOaDkyS2htMEtnQ2stVTVJb2tMNUJjTzZwakszXzRxM2sydGNjR1J2bzlFSldXcVhFam5FR1dwdmM4dk1JaDRSWWo1bmlKNTVTM0pBRFZGVXhGem5kUTdHVmJZXzFHZVk3V0lydHdSRUhfa3pVU0cwc0drdlV1Z19iSVN4U3FSWTVlNzBERWZrQWg3dy1abFhobFBVLXFwUFhDTENTeFZXSGY1Q08xZnRseE52d1pfc244OFNiaWJ0aGI5d29KSURqbGg4YkJGVW5DSUlSZnJCalZYeDhWaVdIdUE4aS1rSHphdDFCcg?oc=5",
+      "content": "The Houthis Enter the Middle East War: What Comes Next?  International Crisis Group",
+      "content_detail": "",
+      "published_date": "Mon, 30 Mar 2026 07:00:00 GMT",
+      "search_region": "中东/红海",
+      "classified_regions": [
+        "中东/红海"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Iran-backed Houthis join war with attack against Israel - BBC",
+      "title_cn": "",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5oY1N1ME83RElJVUc5OFZSaXJFMms5a1Z4MDdxR2VrN3JPam9RVUZMQlpqdzZsYUVBNko1RWtRM2s4ckpiR0FxdDlXS1RuYXBlOElaZU1uYThidw?oc=5",
+      "content": "Iran-backed Houthis join war with attack against Israel  BBC",
+      "content_detail": "",
+      "published_date": "Sat, 28 Mar 2026 07:00:00 GMT",
+      "search_region": "中东/红海",
+      "classified_regions": [
+        "中东/红海"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Iran-backed Houthis fire missile at Israel from Yemen, risking further escalation - NBC News",
+      "title_cn": "",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOdVZ2Z3d1MjduMVAwTkphREg2TDRfQk1KaUxTaTVWaC1jYnd0VUl2RFlGLUhUYTUyT0pFX3VQdGxnVWktQTVDM0thSmtlWkducmpKSnBnMnp0OEthSTliOEtyM2RUYk5ZUVBDLVE5dFFTQVNKMFowN0FBSjF4OXd5SzRLQjJndlpXeE9odkVBMGx4MmtMNXl5SUhuM0Z2c0JJWm1UUG4wWkJZTjJtY2s4?oc=5",
+      "content": "Iran-backed Houthis fire missile at Israel from Yemen, risking further escalation  NBC News",
+      "content_detail": "",
+      "published_date": "Sat, 28 Mar 2026 07:00:00 GMT",
+      "search_region": "中东/红海",
+      "classified_regions": [
+        "中东/红海"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Yemen's Houthis ready to join Iran war if needed, raising new shipping risk - The Jerusalem Post",
+      "title_cn": "",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5LSi1hclpMb0FCY0htSW5KN2RsV1pUbzdxRktvY3VweVBtMGg5QUN6U3B5V3hmbmlWVzZzblNtMWlwSWdSMmFPcURLSFlWdkdEV3dpVHRuOHItZkdN?oc=5",
+      "content": "Yemen's Houthis ready to join Iran war if needed, raising new shipping risk  The Jerusalem Post",
+      "content_detail": "",
+      "published_date": "Fri, 27 Mar 2026 07:00:00 GMT",
+      "search_region": "中东/红海",
+      "classified_regions": [
+        "中东/红海"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Maersk tests Red Sea route as Gaza ceasefire offers hope - Reuters",
+      "title_cn": "",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOemc0NHJra0o4ajBqZU05dGZMbW1XUV90QlF6NkRDMHdJNks2S0VSbV9Ya284TWxuNjZYUElVYUxDc2xBNGdQZHQ4QkVqTjJiR3B4cDhiMkh5VGlMckVrTVl1Wk5RaE80UWlMR3Y0OS0xVUhXYm85WFJONWNzZjdmLUlFLW1xeVNCWjhEVFdMMjVNdXl5Qks1VS1jQ2lBTEljN2ZkZ1NYUDluYXZ6?oc=5",
+      "content": "Maersk tests Red Sea route as Gaza ceasefire offers hope  Reuters",
+      "content_detail": "",
+      "published_date": "Fri, 19 Dec 2025 08:00:00 GMT",
+      "search_region": "中东/红海",
+      "classified_regions": [
+        "中东/红海"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Red Sea Corridor Slips Back Into Crisis as Houthi Threats Resurface - gCaptain",
+      "title_cn": "",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOeEl6aXpwQ3NZYkdoSE1UWkJPOEI4ZTdlR0lYSjA5QTBKTkxQTEwzLXdyeVpLSmdtZkMzYkZsS2tacElsZ2MyZ2JWSW82ZHdGcW5NYTVWazdjbnZvbDFOODNpeEUxeE5hY21XZmhHQ2hGa1V2bGxrLTZrRW9pb1UyMHdXdExSRkMxb0ZYdldyelZRZGM?oc=5",
+      "content": "Red Sea Corridor Slips Back Into Crisis as Houthi Threats Resurface  gCaptain",
+      "content_detail": "",
+      "published_date": "Mon, 02 Mar 2026 08:00:00 GMT",
+      "search_region": "中东/红海",
+      "classified_regions": [
+        "中东/红海"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Is the United States Prepared for a War with China? - CSIS | Center for Strategic and International Studies",
+      "title_cn": "",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1FTTZxcFFuWUhkajFVODFvWEVQd051WG9VT0FpVkQ4MXlFRkQwdS1xN3ZRUE00c3B3SzdQNVIzSEZTV2trTUVKWTY2dDltaXdPSTJvMGdxd0JsTUVTOUhFbGFlSHpIVFpvTEtKcmdwWQ?oc=5",
+      "content": "Is the United States Prepared for a War with China?  CSIS | Center for Strategic and International Studies",
+      "content_detail": "",
+      "published_date": "Tue, 12 May 2026 07:00:00 GMT",
+      "search_region": "台海/南海/朝鲜",
+      "classified_regions": [
+        "台海/南海/朝鲜"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "China & Taiwan Update, May 1, 2026 - Institute for the Study of War",
+      "title_cn": "",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNMWZtanZ6RlNoenh6UmtGV19EdzlHTG52MlVkRXpfRExiMUhReVJtXzJMVllFaV9memV2VEVJc0FUcEY0YkpKZDhUcHllSGtUOGVmOE5qTHYyNkl1X1lNNUhJTy15WGZIWmRFRGViZ2RSNmd6MjMwMnI4ZFM1QjBvQk5nTUtuTnlhd2c?oc=5",
+      "content": "China & Taiwan Update, May 1, 2026  Institute for the Study of War",
+      "content_detail": "",
+      "published_date": "Fri, 01 May 2026 07:00:00 GMT",
+      "search_region": "台海/南海/朝鲜",
+      "classified_regions": [
+        "台海/南海/朝鲜"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Confrontation Over Taiwan | Global Conflict Tracker - Council on Foreign Relations",
+      "title_cn": "",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPYmVHTzV6d0dDRzBvQWZ1eDJvM2swZUlaZXhrelkyWXJDX1ZIQUw1N003b2pMWFI1dWpodHRtMXJ0QkxUaTVzaHN5eVN1SFJlaHc3M0VuYkRCamdmN0pvMnBwRjdWb1FIRWJDblpZczYzVklQMFJVTUgycmUyZTFPQjBtVDA?oc=5",
+      "content": "Confrontation Over Taiwan | Global Conflict Tracker  Council on Foreign Relations",
+      "content_detail": "",
+      "published_date": "Wed, 18 Feb 2026 08:00:00 GMT",
+      "search_region": "台海/南海/朝鲜",
+      "classified_regions": [
+        "台海/南海/朝鲜"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "China Is Turning the Indo-Pacific Into a Pressure Cooker - RealClearWorld",
+      "title_cn": "",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQbTg2bjNRbXlmMHpjLU1naXl1VXkzUW5oaDZoVGhEaVdqRWVjeVRobzR0RkNEMkxRZjJIM2NIc0NrVHItQ1YxdGVDNnB5NjlFYTRWNEt1WjBYbW1fVzJtOWZCbUZxZ2tiaGVuQjlEZmthMXVzdG5VV1hYNU1LNTh2ZXRzQVZBQ0pseFZLRlhqSF8zMjhaWUpMaTdGcTRSWU9HU3NZMmVSTUxycl9VLXczR19USjVqZlhPbTJBSA?oc=5",
+      "content": "China Is Turning the Indo-Pacific Into a Pressure Cooker  RealClearWorld",
+      "content_detail": "",
+      "published_date": "Sat, 03 Jan 2026 08:00:00 GMT",
+      "search_region": "台海/南海/朝鲜",
+      "classified_regions": [
+        "台海/南海/朝鲜"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "How the War in Iran Could Help China and Change Asia - The New York Times",
+      "title_cn": "",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE51WFZ3aGJZZzlubWFocXpzOG5nLWhWNE9qa1NLT0QxcVRCZWg2c29Xd292MndxeDVEdDloT0MtYW02X3hIbUhldGoydS1jUDMwN0VYTUl2UURCUGdQblNQaUJvMEVUWFB5bGtXQzF0bFNNUXpmODE2dzhB?oc=5",
+      "content": "How the War in Iran Could Help China and Change Asia  The New York Times",
+      "content_detail": "",
+      "published_date": "Fri, 13 Mar 2026 07:00:00 GMT",
+      "search_region": "台海/南海/朝鲜",
+      "classified_regions": [
+        "台海/南海/朝鲜"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "US begins 'biggest ever' Philippines war games in thick of Mideast war - France 24",
+      "title_cn": "",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNcXB5TlJyTXNubUQ2ZEJNaDdLdjhxTlJ6cFZWckdDU0hjZ0hyeTRmQVNLdTd6RlBRZjlqWHJGR2lVWWhwQ1FEZFE3NHFMZ2lfbm41RDFCcVV3eHZpUkZENmFvMmVlY2NnaWlfZlZaTjBCUGt2TlJLd1pkRHdXRkxqc0JId2xpUVB0VXZId29aUVU1MW9rUm5GUXJsMkZ5c3QzZzJsVHVSOE1BODRFeThvdg?oc=5",
+      "content": "US begins 'biggest ever' Philippines war games in thick of Mideast war  France 24",
+      "content_detail": "",
+      "published_date": "Mon, 20 Apr 2026 07:00:00 GMT",
+      "search_region": "台海/南海/朝鲜",
+      "classified_regions": [
+        "台海/南海/朝鲜"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "U.S. Sees Korea as Potential Key To Supporting Taiwan - Foundation for Defense of Democracies",
+      "title_cn": "",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPWFpXaHRvU3BCTHVobnFsLU5ZM2xpTWFWclI5LUpnTzl6UlhrczBOVXh3YkZ3UlZmZ3hHZVM0M3JVTS14SDNzYVNaRTV3OEpnYU1xSXpYUldRTk41Vmc2TFlKaEw2YUhWMWh6Mng1blpORk9YZjI5cmgySENOMnRMejdCanQ5cFc5TlUwbER1WmFaMFk5cWQ3UQ?oc=5",
+      "content": "U.S. Sees Korea as Potential Key To Supporting Taiwan  Foundation for Defense of Democracies",
+      "content_detail": "",
+      "published_date": "Tue, 06 Jan 2026 08:00:00 GMT",
+      "search_region": "台海/南海/朝鲜",
+      "classified_regions": [
+        "台海/南海/朝鲜"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Richard D. Fisher, Jr. On Taiwan: Iran-Venezuela Lessons For Taiwan - Taipei Times",
+      "title_cn": "",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5UTzdXa3phdmNRRUpnbUtwSUVGOVdac05QNnQyLTZ1dmhrY1JzalliQ2Z6SlFIemdUYkxBUERzTEFzRWtUV25JSmt4VVhIZ0pmTE1IX0dmdzJseXpUWl9MV0NsVkluaHVMUnpnYUhBMGdOa3dwY1ZLZ0U5MUpheUU?oc=5",
+      "content": "Richard D. Fisher, Jr. On Taiwan: Iran-Venezuela Lessons For Taiwan  Taipei Times",
+      "content_detail": "",
+      "published_date": "Mon, 16 Mar 2026 07:00:00 GMT",
+      "search_region": "台海/南海/朝鲜",
+      "classified_regions": [
+        "台海/南海/朝鲜"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "UK, EU and US sanctions on Russia - Fieldfisher",
+      "title_cn": "",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQRkR0OE4zakg3ajgzTUI1UTg0cnk5LUlWU3VfcmdYb3VwSWJYVE43U3lXWHBGb0Vza0huN2xZN1BOM1dtZFg5YWFSYUU4T3p2TlRuUUl4RlB2cDV1QjdNVGJ3SDRTOWZkUUFpMVByc1F5TV9GWHFNV2REempsczhtRlFzNUJKZ093WTJVX0I2bDlDRl9IbGJ2NjhPbXZHV3JZRWQ5cXpJakpWYlRSVnpOSGlJbw?oc=5",
+      "content": "UK, EU and US sanctions on Russia  Fieldfisher",
+      "content_detail": "",
+      "published_date": "Wed, 13 May 2026 07:00:00 GMT",
+      "search_region": "全球制裁",
+      "classified_regions": [
+        "全球制裁"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "EU Adopts 20th Sanctions Package Against Russia, Expands Anti-Circumvention Efforts - Morgan Lewis",
+      "title_cn": "",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOMVpnVDZNUWNZNVBvXzg1bzdDcmMxNHhzYURZYlNHYnh1MlZCNXRydGlLMTdJMEd2YmhiSk5hR0RYM1BIdjg2RzV0RDNuOEdjaTUtRjZtM25SVU9FakV6RjBGVkVteWplVFAtSTBMTzhWM050b09fVUpaZ19SdHlDZ1FaNlFVX2dsNmE2RnF0MThYMHhVYm92c0JGRWE1Z0hETlVvbDgwQjZQajVyQWM5NGVMNE9OaDBBQXZaMHJTUWQ?oc=5",
+      "content": "EU Adopts 20th Sanctions Package Against Russia, Expands Anti-Circumvention Efforts  Morgan Lewis",
+      "content_detail": "",
+      "published_date": "Tue, 05 May 2026 07:00:00 GMT",
+      "search_region": "全球制裁",
+      "classified_regions": [
+        "全球制裁"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "G7 Finance Ministers Look to Contain Iran Economic Fallout - The New York Times",
+      "title_cn": "",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNcFp0aGRFeTV6NFJWTlhLb1Nxa1R6X0Z1ejd2a2I1anR5YTNzSzNsSVVFMjN1Q3hGYVFGYkpzc1JHUXgwTldvUkJUYnVyV1FaTmVSRE5QaEx4emFkb01ycGx3cE1vNmNCMXpvX1N3TVIxNktWV3JzYi1CWUVQRzhZczBkS19pODlTMkN5dG9RbHd3YXpx?oc=5",
+      "content": "G7 Finance Ministers Look to Contain Iran Economic Fallout  The New York Times",
+      "content_detail": "",
+      "published_date": "Mon, 18 May 2026 09:03:30 GMT",
+      "search_region": "全球制裁",
+      "classified_regions": [
+        "全球制裁"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Sanctions Update: April 27, 2026 - Steptoe",
+      "title_cn": "",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPN2hPZDI3WVpnMUpicEZiNEVRSGV3UHRxcjJIQTlqN2Nvc0h6NWxrNmNYUjktQXZkem9fTTZydlJ1azRMVnE4RHZUQVlUby1FYWZfbjJMUjlPOG5venZZMXRGVXViR2kyWUY3dW9kUlg5b3RGd2FxYjY5MFc3NkE1Smc0c0hlZ3EzTDgwWHRoOVRMTzV1a3diT1REUEdOTDBoeTFtRA?oc=5",
+      "content": "Sanctions Update: April 27, 2026  Steptoe",
+      "content_detail": "",
+      "published_date": "Mon, 27 Apr 2026 17:33:09 GMT",
+      "search_region": "全球制裁",
+      "classified_regions": [
+        "全球制裁"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "US intercepts Iranian tanker as G7 weighs tougher sanctions - MSN",
+      "title_cn": "",
+      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPbjJ6ZHhDRzJYZW5QbG1uTVNTODFMYThJblRyd21UV3Z4WGhUV0hULWRJdGZ0TTlWNjFjRlJjTXFBc3hOaFE1OW5lam1iQ24xeDkzVnV4a3k3NGNlckc1RFdFOUo0b0hQYl92bzVLZ3ZRNTlmMXVzSm1Za2tHVVNDd0llNzFsckJvTFVWNWZCb3JOWnAxaFUwenhlRFhJWTN1d0Z6VFphMlNrbDh2QnlxNXhBQm4tYVJDOE1DeFVtZWVURjFEUTc4SEZOaHNzWWJBRE5WOXhrd1p2RkNHOE5TY25pcw?oc=5",
+      "content": "US intercepts Iranian tanker as G7 weighs tougher sanctions  MSN",
+      "content_detail": "",
+      "published_date": "Wed, 20 May 2026 21:23:33 GMT",
+      "search_region": "全球制裁",
+      "classified_regions": [
+        "全球制裁"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Russian energy revenues, trade, crypto and military industries targeted in 20th round of EU sanctions - EEAS",
+      "title_cn": "",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPa0NWUFJGa29RZ0FGdnA1WENDcEdZd21qaTZ2ODNsMjJsVHJtelNBblh6RTNKTTZCNUUzSHoxbk1QZXUzTHFwU0xZdy1OSkJhQmlFTFdQNVRLVko0cmdGb281WjNLeXNGb3RlU0t6QVpoRGlkcFBTRnNZdWFWM1NDNHhaTUhaUGFUOGh6QkZHaUprRGM0anhrWUVtb1FjYnAtMDVsU2w2cTBoY3RKXzRxS01xTGoyX2hCdVFFdEt5bXc2Qk1rVXdF?oc=5",
+      "content": "Russian energy revenues, trade, crypto and military industries targeted in 20th round of EU sanctions  EEAS",
+      "content_detail": "",
+      "published_date": "Thu, 23 Apr 2026 07:00:00 GMT",
+      "search_region": "全球制裁",
+      "classified_regions": [
+        "全球制裁"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Russia Sanctions Database - Atlantic Council",
+      "title_cn": "",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQWGF6TjVnTDNNZ2FwbGh5cmtnV3dtS2RZYXh2X0h4VW9aUjNkd0pzYTRHOVE5aVVxQXc1R1drakpWT0JxV2tIbmlPa1JTYmZ4WWdJc3NKNjR2RjBqdXFZSE5qTzFMLTBkWWdPMS1WZEdxNHpudGx3dGt4b3Z3VEhNRnZvT0c?oc=5",
+      "content": "Russia Sanctions Database  Atlantic Council",
+      "content_detail": "",
+      "published_date": "Fri, 20 Feb 2026 08:00:00 GMT",
+      "search_region": "全球制裁",
+      "classified_regions": [
+        "全球制裁"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "What's in the EU's 20th package of sanctions against Russia? - Reuters",
+      "title_cn": "",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPN3plRGlfM1YyQ2dnVE5MNV9UeHJ1ZnBCbjV1cmVfOEhtUEZuankwMGJSZWZiaG9ZSUJILWJHeDdmX19mdGU1bEVsY3AxUmFGYjA1b3NPWklIWU03blpjVkV6b2I3cTUwYkN1VDJyUGZLQnk4b09wTWJnSEEyR0ZqZVJBQU9VVFQ3eVdRQVJ1WWpPVGxaTGZKdXQwX3N6TTJw?oc=5",
+      "content": "What's in the EU's 20th package of sanctions against Russia?  Reuters",
+      "content_detail": "",
+      "published_date": "Thu, 23 Apr 2026 07:00:00 GMT",
+      "search_region": "全球制裁",
+      "classified_regions": [
+        "全球制裁"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    }
+  ]
+}
