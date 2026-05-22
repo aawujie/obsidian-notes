@@ -17,6 +17,8 @@ tags:
 
 # HMM市场状态识别与因子择时
 
+> **术语备注**: **Regime（市场体制/状态）** — 指市场运行在一段时期内的底层模式。同一组价格数据，不同 regime 下生成规律完全不同。比如涨 2%，在趋势市里是顺势信号，在震荡市里第二天大概率跌回去。Regime detection 的目的就是自动判断"现在到底是什么模式在运行"，从而切换策略。文中 regime / 状态 / 体制 / 市场环境混用，均指同一概念。
+
 > **Motivation**: "We don't just pick stocks — we pick the right strategy for the right regime." — 源自 Citadel GQS (Global Quantitative Strategies) 的核心理念。市场在不同状态下，同一因子的表现天差地别：动量因子在趋势市中 IC 显著，在震荡市中失效；低波动因子在熊市中抗跌，在牛市中跑输。**识别当前市场状态 → 选择该状态下最优因子**，是实现因子择时（Factor Timing）的核心路径。
 
 ---
