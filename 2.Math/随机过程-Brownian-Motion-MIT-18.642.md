@@ -3,7 +3,15 @@ title: "Lecture 14: Stochastic Processes II - YouTube文案"
 type: summary
 created: 2026-05-23
 source: https://www.youtube.com/watch?v=VM29JyI1sio
-tags: [YouTube, MIT, 随机过程, 金融数学, stochastic-processes, Brownian-motion]
+tags:
+  - YouTube
+  - MIT
+  - 随机过程
+  - 金融数学
+  - stochastic-processes
+  - Brownian-motion
+share_link: https://share.note.sx/0d3om3kg#JZCzYCyuCjpySyrsRwxA03OvgNEhf680PTWywLmqF60
+share_updated: 2026-05-23T15:07:54+08:00
 ---
 
 # Lecture 14: Stochastic Processes II
