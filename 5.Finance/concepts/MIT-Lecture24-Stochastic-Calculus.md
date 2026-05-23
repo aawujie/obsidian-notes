@@ -1,18 +1,20 @@
 ---
-title: "第24讲：随机微积分"
+title: 第24讲：随机微积分
 type: lecture-note
 created: 2026-05-19
 updated: 2026-05-23
-source: "MIT 18.642 数学在金融中的应用 (Fall 2024)"
-source_url: "https://www.youtube.com/watch?v=5cruqmIF6l0"
-bilibili: "BV15KoXBEE9E"
-author: "MIT OpenCourseWare"
+source: MIT 18.642 数学在金融中的应用 (Fall 2024)
+source_url: https://www.youtube.com/watch?v=5cruqmIF6l0
+bilibili: BV15KoXBEE9E
+author: MIT OpenCourseWare
 tags:
   - stochastic-calculus
   - ito-integral
   - brownian-motion
   - quantitative-finance
   - MIT-OCW
+share_link: https://share.note.sx/1vycz6el#o71nmHpiOKMHr6rm32XP21GGWUXTIN4X5lM+bxGo7Ts
+share_updated: 2026-05-23T15:12:26+08:00
 ---
 
 # 第24讲：随机微积分
