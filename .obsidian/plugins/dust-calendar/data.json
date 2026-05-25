@@ -1,5 +1,5 @@
 {
-  "shouldDisplayLunarInfo": false,
+  "shouldDisplayLunarInfo": true,
   "shouldDisplayHolidayInfo": true,
   "fontSizeChangeMode": 3,
   "immutableFontSizeFactor": 1,
