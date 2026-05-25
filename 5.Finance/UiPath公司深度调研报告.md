@@ -383,54 +383,53 @@ IPO 以来从未回到 $56 发行价。当前市值约 $6-8B。
 
 | 风险类别 | 具体风险 | 严重程度 |
 |----------|----------|----------|
-| **竞争压力** | Microsoft Power Automate 利用 M365 生态零成本获客，长期侵蚀份额 | 🔴 高 |
-| **技术路线** | 超导路线（Google/IBM）若先实现容错量子计算，可能颠覆离子阱优势 | 🟡 中 |
-| **盈利路径** | Adjusted EBITDA 仍深度亏损，需在增长与利润间平衡 | 🔴 高 |
-| **整合风险** | 多起大额收购（Oxford Ionics、Capella、Qubitekk 等）整合挑战 | 🟡 中 |
-| **定价压力** | 行业整体价格承压，可能影响利润率 | 🟡 中 |
-| **AI 替代** | GenAI 可能使部分传统 RPA 需求被 AI Agent 直接替代 | 🟡 中 |
-| **网络安全** | Q-Day（RSA 加密被量子攻破）将至（公司自估 2028-2029），量子安全需求既是机遇也是焦虑源 | 🟡 中 |
+| **竞争压力** | Microsoft Power Automate 利用 M365 生态零成本获客，长期侵蚀市场份额 | 🔴 高 |
+| **增长放缓** | ARR 增速从 24% → 18%，经济下行周期企业削减自动化预算 | 🔴 高 |
+| **AI 替代风险** | GenAI Agent 可直接执行任务，绕过传统 RPA 层，使 RPA 工具价值缩水 | 🔴 高 |
+| **定价压力** | Power Automate 捆绑 M365 的策略迫使全行业降价 | 🟡 中 |
+| **Zoominfo/竞品数据风险** | 人才流失、核心工程师被挖角至 AA/Microsoft | 🟡 中 |
+| **CEO 变动** | Daniel Dines 2024 年回归 CEO，领导层频繁变动影响战略连续性 | 🟡 中 |
+| **整合风险** | 过往多起收购（ProcessGold、Re:infer 等）的整合与变现 | 🟡 中 |
+| **宏观经济** | 企业 IT 预算收紧，大单销售周期拉长 | 🟡 中 |
 
 ### 8.2 乐观因素
 
-1. **先发优势**：最完整的平台矩阵 + 最大的纯 RPA 市场份额
-2. **技术壁垒**：99.99% 双量子门保真度世界纪录，短期难以逾越
-3. **AI 布局**：Autopilot + AI Agents + Clipboard AI，从 RPA 工具向 AI 自动化平台转型
-4. **财务缓冲**：$3.1B 现金储备，可在 2-3 年内继续投入 R&D
-5. **垂直深耕**：金融、医疗、政府等监管密集行业的高信任度
+1. **市场领导者**：最大的纯 RPA 平台，最完整的端到端产品矩阵
+2. **AI 布局**：Autopilot + AI Agents + Document Understanding 构成 AI 驱动的自动化生态
+3. **盈利拐点**：FY2025 首年 GAAP 盈利，现金流健康（+$353M FCF）
+4. **客户粘性高**：112% 净留存率，大型企业客户迁移成本高
+5. **生态壁垒**：800+ 连接器、1500+ 市场组件、培训认证体系形成护城河
+6. **Agentic Automation 浪潮**：企业在从传统 RPA 升级到 AI Agent 时，首选在同一平台内升级，对 UiPath 有利
 
 ---
 
 ## 九、投资视角总结
 
-### 9.1 估值对比（2026.05 近似值）
+### 9.1 估值对比（2025 年末近似值）
 
-| 指标 | UiPath (PATH) | AA (未上市) | Blue Prism (SS&C) | Microsoft |
-|------|--------------|-------------|-------------------|-----------|
-| 市值 | ~$16-17B | ~$7B（上一轮估值） | 已收购 | $2,900B+ |
-| P/S (TTM) | ~128x | N/A | N/A | ~11x |
-| 收入增速 | ~755% (Q1 FY26) | ~30-50% | 低单位数 | ~15% |
-| 盈利状态 | 亏损（Adj EBITDA） | 亏损 | 盈利 | 高盈利 |
+| 指标 | UiPath (PATH) | Automation Anywhere | SS&C Blue Prism | Microsoft |
+|------|--------------|---------------------|-----------------|-----------|
+| 估值/市值 | ~$7-8B | ~$7B（最后一轮私募） | 被 SS&C 收购 | $2,900B+ |
+| P/S (TTM) | ~5-6x | N/A（未上市） | N/A | ~11x |
+| 收入增速 | ~19% | ~30-50% | 低单位数 | ~15% |
+| 盈利状态 | GAAP 盈利 | 亏损 | 盈利 | 高盈利 |
 
 ### 9.2 核心判断
 
-- **短期 (6-12月)**：高增长叙事 + AI 主题催化，但估值昂贵（P/S >100x）。Q-Day 倒计时（2028-2029）是独特催化剂。
-- **中期 (1-3年)**：若有机增长能维持 50%+ 且 EBITDA 亏损逐步收窄，有望进入估值消化期。关键观察点：SkyWater 整合进展、10,000-qubit 芯片交付、AI Agents 商业化。
-- **长期 (3-5年)**：量子计算从 RPA 向通用 Quantum 计算演进的大趋势中，离子阱路线的胜率取决于：能否率先实现实用级容错量子计算（vs Google/IBM 的超导路线）。
+- **短期 (6-12月)**：盈利拐点确立 + AI Agent 叙事，但增长放缓（18% ARR 增速）是主要矛盾。FY2025 财报后股价下跌 16% 反映市场对 Q1 指引的担忧。
+- **中期 (1-3年)**：关键观察点：AI Agents/Autopilot 的商业化速度、Cloud ARR 占比能否超过 50%、能否在 Power Automate 扩张下守住大企业市场份额。
+- **长期 (3-5年)**：RPA 市场正从"机器人流程自动化"向 "AI 驱动的智能自动化平台"演进。UiPath 的护城河取决于：能否把客户从 Robot 许可稳稳迁移到平台订阅，以及 AI Agent 产品能否有效对抗 Microsoft Copilot 生态。
 
-> **关键投资论题**：UiPath 不是纯 RPA 公司，而是 AI 驱动的企业自动化平台。其故事正从"机器人流程自动化"向"AI Agent + 量子安全" 转型，若成功，将重新定义估值框架。
+> **关键投资论题**：UiPath 不是高速增长的 SaaS 故事（增速 ~19%），而是一个**盈利转型 + AI 升级**的价值故事。如果 Agentic Automation 能在现有 2,153 家大客户中成功 upsell，收入增速可能重新加速到 25%+。否则，在 Microsoft 的低成本碾压下，增长可能继续降速。
 
 ---
 
 ## 参考资料
 
 - UiPath Investor Relations: https://ir.uipath.com
-- UiPath Annual Report FY2024 (10-K)
-- UiPath Q4 FY2025 Earnings Release (Feb 2026)
-- UiPath Q1 FY2026 Earnings Release (May 2026)
+- UiPath Annual Report FY2024 (10-K), filed March 2024
+- UiPath Q4 FY2025 Earnings Release, March 2025
 - Gartner Magic Quadrant for Robotic Process Automation, 2024
-- McKinsey Quantum Technology Monitor, 2024
-- SEC Filings (Form 10-K, 10-Q, 425): https://www.sec.gov
+- Forrester Wave: Robotic Process Automation, 2024
+- SEC Filings (Form 10-K, 10-Q): https://www.sec.gov
 - Macrotrends - UiPath Revenue: https://www.macrotrends.net/stocks/charts/PATH/uipath/revenue
-- MarketBeat - IONQ Stock Analysis, May 2026
-- Seeking Alpha - PATH Earnings & Estimates
