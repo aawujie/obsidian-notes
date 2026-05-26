@@ -1,0 +1,22 @@
+{
+  "date": "2026-05-27",
+  "generated_at": "2026-05-27T06:15:26.335848",
+  "upcoming_events": [
+    {
+      "date": "2026-06-05",
+      "event": "非农就业报告 (5月)",
+      "importance": "high",
+      "category": "就业",
+      "days_until": 9
+    },
+    {
+      "date": "2026-06-10",
+      "event": "美国 CPI (5月)",
+      "importance": "high",
+      "category": "通胀",
+      "days_until": 14
+    }
+  ],
+  "recent_events": [],
+  "web_events": []
+}
