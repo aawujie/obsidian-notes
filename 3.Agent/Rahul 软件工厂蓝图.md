@@ -31,13 +31,13 @@ tags:
 Issue Queue → Scout Agent → Builder Agent → QA Gate → Ship Agent
 ```
 
-| 站 | 角色 | 干什么 |
-|:---|:---|:---|
-| **1. Issue Queue** | 任务队列 | 把需求写成 agent 可消费的结构化 prompt |
-| **2. Scout Agent** | 侦察兵 | 读 issue → grep 代码库 → 写实现方案 spec |
-| **3. Builder Agent** | 施工队 | 拿 spec → 建 worktree → 写代码 + 跑单元测试 |
-| **4. QA Gate** | 质检 | 独立 agent 审查 diff → 核对验收标准 → 打 pass/fail |
-| **5. Ship Agent** | 发版 | 提 PR → 部署 staging → 发晨报总结 |
+| 站                    | 角色   | 干什么                                     |
+| :------------------- | :--- | :-------------------------------------- |
+| **1. Issue Queue**   | 任务队列 | 把需求写成 agent 可消费的结构化 prompt              |
+| **2. Scout Agent**   | 侦察兵  | 读 issue → grep 代码库 → 写实现方案 spec         |
+| **3. Builder Agent** | 施工队  | 拿 spec → 建 worktree → 写代码 + 跑单元测试       |
+| **4. QA Gate**       | 质检   | 独立 agent 审查 diff → 核对验收标准 → 打 pass/fail |
+| **5. Ship Agent**    | 发版   | 提 PR → 部署 staging → 发晨报总结               |
 
 ## 更精细的 7 Agent 架构（推文版本）
 
@@ -45,15 +45,15 @@ Issue Queue → Scout Agent → Builder Agent → QA Gate → Ship Agent
 
 **链路**：research → story → brief → build → verify → validate
 
-| Agent | 职责 | 权限 |
-|:---|:---|:---|
-| **Researcher** | 先扫代码库，理解现状 | 只读 |
-| **Story Writer** | 需求转用户故事 + 验收标准 | 只读 |
-| **Spec Writer** | 用户故事转技术方案 | 只读 |
-| **Backend Builder** | 写 API/Service/Job/单测 | 仅后端目录 |
-| **Frontend Builder** | 写组件/页面/Hook/UI 测试 | 仅前端目录 |
-| **Test Verifier** | 对用户故事写验收测试 | 仅测试文件 |
-| **Validator** | 对比实现 vs 故事 vs 技术方案，报告缺口 | 只读 |
+| Agent                | 职责                      | 权限    |
+| :------------------- | :---------------------- | :---- |
+| **Researcher**       | 先扫代码库，理解现状              | 只读    |
+| **Story Writer**     | 需求转用户故事 + 验收标准          | 只读    |
+| **Spec Writer**      | 用户故事转技术方案               | 只读    |
+| **Backend Builder**  | 写 API/Service/Job/单测    | 仅后端目录 |
+| **Frontend Builder** | 写组件/页面/Hook/UI 测试       | 仅前端目录 |
+| **Test Verifier**    | 对用户故事写验收测试              | 仅测试文件 |
+| **Validator**        | 对比实现 vs 故事 vs 技术方案，报告缺口 | 只读    |
 
 ## 核心原则
 
