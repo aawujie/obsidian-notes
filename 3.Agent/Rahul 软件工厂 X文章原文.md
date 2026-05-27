@@ -1,3 +1,19 @@
+---
+title: "How to Build a Software Factory with Claude Code — Rahul X 文章原文"
+type: 技术笔记
+created: 2026-05-27
+updated: 2026-05-27
+source: "https://x.com/sairahul1/status/2058832033628241931"
+author: Rahul (@sairahul1)
+stats: "2.4M views | 1291 likes | 6387 bookmarks | 181 retweets"
+tags:
+  - Claude Code
+  - Agent
+  - 自动化开发
+  - 软件工程
+  - vibe coding
+---
+
 # How to Build a Software Factory with Claude Code That Ships Features While You Sleep
 
 > I thought I was using AI to code.
