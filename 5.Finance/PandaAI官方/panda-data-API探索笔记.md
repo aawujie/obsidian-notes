@@ -6,9 +6,41 @@ tags:
   - panda-data
 created: 2026-05-30
 updated: 2026-05-30
+share_link: https://share.note.sx/c15r4ajq#tXCf9mjv10A4nxewVG7seZaCgzT8cpW1+YszpvA1794
+share_updated: 2026-05-30T15:47:45+08:00
 ---
 
 # panda-data SDK 深度探索 (v0.0.7)
+
+## 快速开始
+
+```bash
+uv add panda-data requests
+```
+
+```python
+import panda_data
+
+# 初始化token
+panda_data.init_token(username="xxxxxx", password="xxxxxx")
+
+# 获取股票日线数据
+result = panda_data.get_market_data(
+    symbol=["000001.SZ"],
+    start_date="20250101",
+    end_date="20250131",
+    type="stock",
+    fields=[],
+    indicator="000300",
+    st=True
+)
+
+print(result)
+```
+
+核心三步：`init_token` 登录 → `get_market_data` 拉数据 → 完事。更多数据字段和使用方式见下文各 API 实测记录。
+
+---
 
 ## 概述
 
