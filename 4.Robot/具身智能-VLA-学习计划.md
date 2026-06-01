@@ -6,7 +6,13 @@ updated: 2026-06-01
 sources:
   - "[[具身智能&VLA面试50题：一份够用的技术 cheat sheet]]"
   - "[[具身智能-VLA-学习清单]]"
-tags: [embodied-ai, vla, learning-plan, robotics]
+tags:
+  - embodied-ai
+  - vla
+  - learning-plan
+  - robotics
+share_link: https://share.note.sx/7b41yjvb#/dX9vjfCNnI2XqpuHYmEPPFdiFuCt3jIpee2iP+43js
+share_updated: 2026-06-01T17:17:28+08:00
 ---
 
 ## 总览
