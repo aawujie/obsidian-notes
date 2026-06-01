@@ -94,7 +94,8 @@ tags: [embodied-ai, vla, learning-roadmap, robotics]
 |--------|------|---------|
 | MDP / 价值函数 / Bellman 方程 | ✅ | [[强化学习基础：MDP、价值函数与迭代算法 - L5]]、[[Bellman 贝尔曼最优性原理]] |
 | PPO | ✅ | [[策略梯度方法与PPO优化详解 - L12]]、[[从零实现PPO：11个关键工程化细节与实践指南]] |
-| SAC / TD3 | ✅ | [[DDPG与TD3深度强化学习算法详解 - L13]] |
+| SAC | ❌ | 知识库无 SAC 专门笔记，仅在 RL_学习笔记中一笔带过，需补充 |
+| TD3 | ✅ | [[DDPG与TD3深度强化学习算法详解 - L13]] |
 | On-policy vs Off-policy | ✅ | 上述笔记已覆盖 |
 | MPC / PID / 经典控制 | ✅ | [[MPC与强化学习的差异、互补及结合路径 - L16]]、[[模型预测控制（MPC）的工作原理详解]] 等 |
 | IL vs RL 对比 | ⚠️ | 部分覆盖，缺少 IL 专项 |
