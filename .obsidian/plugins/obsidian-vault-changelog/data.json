@@ -1,7 +1,7 @@
 {
   "autoUpdate": true,
   "changelogPath": "Changelog.md",
-  "datetimeFormat": "YYYY-MM-DD[T]HHmm",
+  "datetimeFormat": "YYYY-MM-DD",
   "maxRecentFiles": 25,
   "excludedFolders": [],
   "useWikiLinks": true,
