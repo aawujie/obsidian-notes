@@ -188,26 +188,81 @@ def is_limit_up_reason(reason: str) -> bool:
     return any(kw in reason for kw in keywords)
 
 
-def fetch_daily_detail(date_str: str) -> list[StockDayData]:
-    """获取某日的龙虎榜详情（含席位级数据）"""
+def _merge_stock_day(existing: StockDayData, new: StockDayData) -> StockDayData:
+    """合并同一股票同一日的多条记录（不同上榜原因导致多行）"""
+    # 合并席位数据（去重）
+    all_seats = {s.name: s for s in existing.seats}
+    for s in new.seats:
+        if s.name not in all_seats:
+            all_seats[s.name] = s
+        else:
+            # 同名席位累加金额
+            old = all_seats[s.name]
+            all_seats[s.name] = SeatData(
+                name=s.name,
+                buy_amount=old.buy_amount + s.buy_amount,
+                sell_amount=old.sell_amount + s.sell_amount,
+                net_amount=old.net_amount + s.net_amount,
+                seat_type=old.seat_type,
+            )
+
+    merged_seats = list(all_seats.values())
+    inst_net = sum(s.net_amount for s in merged_seats if s.seat_type == "institution")
+    north_net = sum(s.net_amount for s in merged_seats if s.seat_type == "north_bound")
+    foreign_net = sum(s.net_amount for s in merged_seats if s.seat_type == "foreign_broker")
+
+    # 涨停净买入：合并原因
+    combined_reason = f"{existing.reason}; {new.reason}"
+    is_limit = is_limit_up_reason(existing.reason) or is_limit_up_reason(new.reason)
+    limit_up_net = (existing.limit_up_net + new.limit_up_net) if is_limit else 0.0
+
+    return StockDayData(
+        code=existing.code,
+        name=existing.name,
+        date=existing.date,
+        close_price=new.close_price,  # 用最新的
+        change_pct=new.change_pct,
+        total_net_buy=existing.total_net_buy + new.total_net_buy,
+        total_buy=existing.total_buy + new.total_buy,
+        total_sell=existing.total_sell + new.total_sell,
+        turnover_rate=max(existing.turnover_rate, new.turnover_rate),
+        market_cap=new.market_cap,
+        reason=combined_reason,
+        seats=merged_seats,
+        inst_net=inst_net,
+        north_net=north_net,
+        foreign_net=foreign_net,
+        limit_up_net=limit_up_net,
+    )
+
+
+def fetch_daily_detail(date_str: str) -> dict[str, StockDayData]:
+    """获取某日的龙虎榜详情（含席位级数据），返回 {code: StockDayData} 已去重"""
     cache_file = DATA_DIR / f"{date_str}.json"
     if cache_file.exists():
         with open(cache_file) as f:
             data = json.load(f)
-        return [_dict_to_stock_day(d) for d in data]
+        result = {}
+        for d in data:
+            sd = _dict_to_stock_day(d)
+            if sd.code in result:
+                result[sd.code] = _merge_stock_day(result[sd.code], sd)
+            else:
+                result[sd.code] = sd
+        return result
 
     print(f"  获取 {date_str} 龙虎榜概览...")
     try:
         overview = ak.stock_lhb_detail_em(start_date=date_str, end_date=date_str)
     except Exception as e:
         print(f"  ⚠ 获取概览失败: {e}")
-        return []
+        return {}
 
-    if overview.empty:
-        print(f"  {date_str} 无龙虎榜数据")
-        return []
+    if overview is None or overview.empty:
+        print(f"  {date_str} 无龙虎榜数据（非交易日或数据未发布）")
+        return {}
 
-    results = []
+    results: dict[str, StockDayData] = {}
     total = len(overview)
     for i, row in overview.iterrows():
         code = str(row["代码"]).zfill(6)
@@ -224,45 +279,31 @@ def fetch_daily_detail(date_str: str) -> list[StockDayData]:
         seats = []
         try:
             buy_detail = ak.stock_lhb_stock_detail_em(symbol=code, date=date_str, flag="买入")
-            time.sleep(0.1)
+            time.sleep(0.08)
             sell_detail = ak.stock_lhb_stock_detail_em(symbol=code, date=date_str, flag="卖出")
-            time.sleep(0.1)
+            time.sleep(0.08)
 
             # 合并买卖席位（去重）
             seen_names = set()
-            for _, srow in buy_detail.iterrows():
-                sname = str(srow.get("交易营业部名称", ""))
-                if not sname or sname == "nan":
+            for detail_df in [buy_detail, sell_detail]:
+                if detail_df is None or detail_df.empty:
                     continue
-                if sname in seen_names:
-                    continue
-                seen_names.add(sname)
-                buy_amt = float(srow.get("买入金额", 0) or 0) / 1e8
-                sell_amt = float(srow.get("卖出金额", 0) or 0) / 1e8
-                net_amt = float(srow.get("净额", 0) or 0) / 1e8
-                seats.append(SeatData(
-                    name=sname, buy_amount=buy_amt,
-                    sell_amount=sell_amt, net_amount=net_amt,
-                    seat_type=classify_seat(sname),
-                ))
-
-            for _, srow in sell_detail.iterrows():
-                sname = str(srow.get("交易营业部名称", ""))
-                if not sname or sname == "nan":
-                    continue
-                if sname in seen_names:
-                    continue
-                seen_names.add(sname)
-                buy_amt = float(srow.get("买入金额", 0) or 0) / 1e8
-                sell_amt = float(srow.get("卖出金额", 0) or 0) / 1e8
-                net_amt = float(srow.get("净额", 0) or 0) / 1e8
-                seats.append(SeatData(
-                    name=sname, buy_amount=buy_amt,
-                    sell_amount=sell_amt, net_amount=net_amt,
-                    seat_type=classify_seat(sname),
-                ))
-        except Exception as e:
-            # 席位数据获取失败，跳过
+                for _, srow in detail_df.iterrows():
+                    sname = str(srow.get("交易营业部名称", ""))
+                    if not sname or sname == "nan":
+                        continue
+                    if sname in seen_names:
+                        continue
+                    seen_names.add(sname)
+                    buy_amt = float(srow.get("买入金额", 0) or 0) / 1e8
+                    sell_amt = float(srow.get("卖出金额", 0) or 0) / 1e8
+                    net_amt = float(srow.get("净额", 0) or 0) / 1e8
+                    seats.append(SeatData(
+                        name=sname, buy_amount=buy_amt,
+                        sell_amount=sell_amt, net_amount=net_amt,
+                        seat_type=classify_seat(sname),
+                    ))
+        except Exception:
             pass
 
         # 聚合席位数据
@@ -270,7 +311,7 @@ def fetch_daily_detail(date_str: str) -> list[StockDayData]:
         north_net = sum(s.net_amount for s in seats if s.seat_type == "north_bound")
         foreign_net = sum(s.net_amount for s in seats if s.seat_type == "foreign_broker")
 
-        # 涨停净买入（上榜原因含"涨幅"的条目）
+        # 涨停净买入
         reason = str(row.get("上榜原因", ""))
         limit_up_net = sum(s.net_amount for s in seats) if is_limit_up_reason(reason) else 0.0
 
@@ -292,10 +333,14 @@ def fetch_daily_detail(date_str: str) -> list[StockDayData]:
             foreign_net=foreign_net,
             limit_up_net=limit_up_net,
         )
-        results.append(sd)
+
+        if code in results:
+            results[code] = _merge_stock_day(results[code], sd)
+        else:
+            results[code] = sd
 
     # 缓存
-    cache_data = [_stock_day_to_dict(sd) for sd in results]
+    cache_data = [_stock_day_to_dict(sd) for sd in results.values()]
     with open(cache_file, "w") as f:
         json.dump(cache_data, f, ensure_ascii=False, indent=2)
 
