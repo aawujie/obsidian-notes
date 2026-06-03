@@ -13,17 +13,13 @@ V4 模型: V3 + 改进A(反转检测) + 改进B(内外资一致性) + 改进C(�
 
 import json
 import os
-import sys
 import time
-from collections import defaultdict
 from dataclasses import dataclass, field
 from datetime import datetime, timedelta
 from pathlib import Path
 from typing import Optional
 
 import akshare as ak
-import pandas as pd
-import numpy as np
 
 # --- 配置 ---
 VAULT = Path("/home/dr/Documents/obsidian-notes")
@@ -396,9 +392,10 @@ def fetch_window_data(end_date: str, window_days: int = WINDOW_DAYS) -> dict[str
             if not agg.first_date:
                 agg.first_date = sd.date
             agg.last_date = sd.date
-        # 按日期排序
-        for agg in all_data.values():
-            agg.days.sort(key=lambda d: d.date)
+
+    # 按日期排序
+    for agg in all_data.values():
+        agg.days.sort(key=lambda d: d.date)
 
     print(f"共 {len(all_data)} 只股票上榜")
     return all_data
