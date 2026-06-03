@@ -14,7 +14,7 @@
     "inst_net": 0.1825362,
     "north_net": -0.013950242199999999,
     "foreign_net": 0,
-    "limit_up_net": 0.8553464102
+    "limit_up_net": 1.0779086352
   },
   {
     "code": "000151",
@@ -28,10 +28,10 @@
     "turnover_rate": 10.4549,
     "market_cap": 40.986107904499995,
     "reason": "连续三个交易日内，涨幅偏离值累计达到20%的证券",
-    "inst_net": 0.12060606859999999,
+    "inst_net": 0.49456984299999995,
     "north_net": 0,
     "foreign_net": 0,
-    "limit_up_net": 0.011052308599999991
+    "limit_up_net": 0.38501608299999995
   },
   {
     "code": "000509",
@@ -45,7 +45,7 @@
     "turnover_rate": 26.1581,
     "market_cap": 55.373240092799996,
     "reason": "日振幅值达到15%的前5只证券",
-    "inst_net": 0.1378540686,
+    "inst_net": 0.2530466486,
     "north_net": 0,
     "foreign_net": 0,
     "limit_up_net": 0.0
@@ -62,10 +62,10 @@
     "turnover_rate": 4.5575,
     "market_cap": 244.9623774312,
     "reason": "日涨幅偏离值达到7%的前5只证券",
-    "inst_net": 0.24648732,
+    "inst_net": 0.45817155600000004,
     "north_net": 1.0607061143,
     "foreign_net": 0,
-    "limit_up_net": 0.21844475410000008
+    "limit_up_net": 0.4301289901000001
   },
   {
     "code": "000600",
@@ -79,10 +79,10 @@
     "turnover_rate": 15.4829,
     "market_cap": 136.80138493799998,
     "reason": "连续三个交易日内，涨幅偏离值累计达到20%的证券",
-    "inst_net": 0.2175567997,
-    "north_net": 0.5751674152,
+    "inst_net": 0.7916573871999999,
+    "north_net": 1.1503348304,
     "foreign_net": 0,
-    "limit_up_net": 0.7927242149
+    "limit_up_net": 1.9419922176
   },
   {
     "code": "000608",
@@ -96,10 +96,10 @@
     "turnover_rate": 3.1595,
     "market_cap": 34.1405822022,
     "reason": "连续三个交易日内，涨幅偏离值累计达到20%的证券",
-    "inst_net": 0.15827957,
+    "inst_net": 0.5288408,
     "north_net": 0,
     "foreign_net": 0,
-    "limit_up_net": -0.21104504799999999
+    "limit_up_net": 0.159516182
   },
   {
     "code": "000636",
@@ -113,10 +113,10 @@
     "turnover_rate": 19.8393,
     "market_cap": 613.5640527633,
     "reason": "连续三个交易日内，涨幅偏离值累计达到20%的证券",
-    "inst_net": -5.09616755,
-    "north_net": 1.5101475816,
+    "inst_net": -14.329679897999998,
+    "north_net": 3.0202951632,
     "foreign_net": 0,
-    "limit_up_net": 0.06426072300000008
+    "limit_up_net": -5.986653709599999
   },
   {
     "code": "000725",
@@ -130,8 +130,8 @@
     "turnover_rate": 9.9758,
     "market_cap": 1886.3680132333,
     "reason": "日跌幅偏离值达到7%的前5只证券",
-    "inst_net": 4.4719393966,
-    "north_net": 1.5912970928999999,
+    "inst_net": 3.1818217639999995,
+    "north_net": 3.1825941857999998,
     "foreign_net": 0,
     "limit_up_net": 0.0
   },
@@ -147,10 +147,10 @@
     "turnover_rate": 12.7475,
     "market_cap": 162.5033511288,
     "reason": "日涨幅偏离值达到7%的前5只证券",
-    "inst_net": 0.3478227961,
-    "north_net": 0.6342005674,
+    "inst_net": 0.5198269561,
+    "north_net": 1.2684011348,
     "foreign_net": 0,
-    "limit_up_net": 3.3867356652
+    "limit_up_net": 4.1929403926
   },
   {
     "code": "000799",
@@ -164,10 +164,10 @@
     "turnover_rate": 8.8583,
     "market_cap": 148.60845040200002,
     "reason": "日涨幅偏离值达到7%的前5只证券",
-    "inst_net": 0.3244051094,
-    "north_net": 0.3138574475,
+    "inst_net": 0.3495430982,
+    "north_net": 0.627714895,
     "foreign_net": 0,
-    "limit_up_net": 0.6959710149
+    "limit_up_net": 1.0398182712
   },
   {
     "code": "001225",
@@ -181,10 +181,10 @@
     "turnover_rate": 23.8708,
     "market_cap": 9.7072898622,
     "reason": "连续三个交易日内，跌幅偏离值累计达到20%的证券",
-    "inst_net": 0.03943189,
+    "inst_net": 0.10358532,
     "north_net": 0,
     "foreign_net": 0,
-    "limit_up_net": 0.027837450000000007
+    "limit_up_net": 0.16140289
   },
   {
     "code": "001257",
@@ -198,8 +198,8 @@
     "turnover_rate": 31.192,
     "market_cap": 34.510892976,
     "reason": "日换手率达到20%的前5只证券",
-    "inst_net": 0.0186485306,
-    "north_net": -0.2071976784,
+    "inst_net": 0.17842002869999996,
+    "north_net": -0.4143953568,
     "foreign_net": 0,
     "limit_up_net": 0.0
   },
@@ -215,8 +215,8 @@
     "turnover_rate": 11.8089,
     "market_cap": 97.2085820775,
     "reason": "日振幅值达到15%的前5只证券",
-    "inst_net": -0.4293029,
-    "north_net": -0.4937064786,
+    "inst_net": -1.1853362025,
+    "north_net": -0.9874129572,
     "foreign_net": 0,
     "limit_up_net": 0.0
   },
@@ -232,10 +232,10 @@
     "turnover_rate": 13.7499,
     "market_cap": 162.8853912224,
     "reason": "日涨幅偏离值达到7%的前5只证券",
-    "inst_net": -0.14806932,
-    "north_net": 0.1273756507,
+    "inst_net": -0.4219084149,
+    "north_net": 0.2547513014,
     "foreign_net": 0,
-    "limit_up_net": 0.9717400152
+    "limit_up_net": 0.8252765710000001
   },
   {
     "code": "002185",
@@ -249,8 +249,8 @@
     "turnover_rate": 24.5485,
     "market_cap": 631.6795641814,
     "reason": "日跌幅偏离值达到7%的前5只证券",
-    "inst_net": 1.5692491696000002,
-    "north_net": 8.518156964,
+    "inst_net": -0.01017433120000022,
+    "north_net": 17.036313928,
     "foreign_net": 0,
     "limit_up_net": 0.0
   },
@@ -266,10 +266,10 @@
     "turnover_rate": 15.6299,
     "market_cap": 105.04063940719999,
     "reason": "日涨幅偏离值达到7%的前5只证券",
-    "inst_net": -0.20256625,
-    "north_net": -0.19210020940000003,
+    "inst_net": -0.19465918000000001,
+    "north_net": -0.38420041880000005,
     "foreign_net": 0,
-    "limit_up_net": 2.016898982
+    "limit_up_net": 1.8327058425999998
   },
   {
     "code": "002273",
@@ -283,8 +283,8 @@
     "turnover_rate": 7.7811,
     "market_cap": 536.1140499744,
     "reason": "日跌幅偏离值达到7%的前5只证券",
-    "inst_net": -0.6701637482,
-    "north_net": -1.6294548328,
+    "inst_net": -3.5762303510999995,
+    "north_net": -3.2589096656,
     "foreign_net": 0,
     "limit_up_net": 0.0
   },
@@ -300,10 +300,10 @@
     "turnover_rate": 7.1317,
     "market_cap": 138.87302194629999,
     "reason": "连续三个交易日内，涨幅偏离值累计达到20%的证券",
-    "inst_net": 0.33368445760000004,
+    "inst_net": 1.4978946176,
     "north_net": 0,
     "foreign_net": 0,
-    "limit_up_net": 0.18932406760000003
+    "limit_up_net": 1.3535342276
   },
   {
     "code": "002421",
@@ -317,8 +317,8 @@
     "turnover_rate": 29.8182,
     "market_cap": 82.3388023446,
     "reason": "日换手率达到20%的前5只证券",
-    "inst_net": 0.1872889771,
-    "north_net": -0.7646452267,
+    "inst_net": -0.2719387044,
+    "north_net": -1.5292904534,
     "foreign_net": 0,
     "limit_up_net": 0.0
   },
@@ -334,8 +334,8 @@
     "turnover_rate": 7.5464,
     "market_cap": 392.4973180656,
     "reason": "日跌幅偏离值达到7%的前5只证券",
-    "inst_net": -0.6042897925,
-    "north_net": -0.970942448,
+    "inst_net": -2.8328109382,
+    "north_net": -1.941884896,
     "foreign_net": 0,
     "limit_up_net": 0.0
   },
@@ -351,10 +351,10 @@
     "turnover_rate": 11.7708,
     "market_cap": 212.626397753,
     "reason": "连续三个交易日内，涨幅偏离值累计达到20%的证券",
-    "inst_net": -0.5492874319,
-    "north_net": -1.5798395963,
+    "inst_net": -1.1128058547,
+    "north_net": -3.1596791926,
     "foreign_net": 0,
-    "limit_up_net": -1.9229799382
+    "limit_up_net": -4.0663379573
   },
   {
     "code": "002579",
@@ -368,8 +368,8 @@
     "turnover_rate": 37.2572,
     "market_cap": 100.055139821,
     "reason": "日换手率达到20%的前5只证券",
-    "inst_net": 0.39249797280000004,
-    "north_net": -0.5576712175999999,
+    "inst_net": 1.2584385931,
+    "north_net": -1.1153424351999999,
     "foreign_net": 0,
     "limit_up_net": 0.0
   },
@@ -385,7 +385,7 @@
     "turnover_rate": 22.9753,
     "market_cap": 34.2736658788,
     "reason": "日振幅值达到15%的前5只证券",
-    "inst_net": -0.18395976,
+    "inst_net": -0.9254118592,
     "north_net": 0,
     "foreign_net": 0,
     "limit_up_net": 0.0
@@ -402,8 +402,8 @@
     "turnover_rate": 16.4486,
     "market_cap": 173.3044932476,
     "reason": "日跌幅偏离值达到7%的前5只证券",
-    "inst_net": 0.5272674261,
-    "north_net": 1.058993412,
+    "inst_net": 1.0134113489999999,
+    "north_net": 2.117986824,
     "foreign_net": 0,
     "limit_up_net": 0.0
   },
@@ -419,7 +419,7 @@
     "turnover_rate": 29.2531,
     "market_cap": 47.58723816,
     "reason": "日振幅值达到15%的前5只证券; 日换手率达到20%的前5只证券",
-    "inst_net": -0.77264982,
+    "inst_net": -2.57009996,
     "north_net": 0,
     "foreign_net": 0,
     "limit_up_net": 0.0
@@ -436,10 +436,10 @@
     "turnover_rate": 8.5109,
     "market_cap": 29.9821894146,
     "reason": "连续三个交易日内，跌幅偏离值累计达到20%的证券",
-    "inst_net": 0.0638506224,
+    "inst_net": 0.5026708997,
     "north_net": 0,
     "foreign_net": 0,
-    "limit_up_net": -0.14469144089999997
+    "limit_up_net": 0.29412883640000004
   },
   {
     "code": "002806",
@@ -453,10 +453,10 @@
     "turnover_rate": 31.4142,
     "market_cap": 32.1920302165,
     "reason": "日换手率达到20%的前5只证券; 连续三个交易日内，涨幅偏离值累计达到20%的证券",
-    "inst_net": 0.143247558,
+    "inst_net": 0.8689587628,
     "north_net": 0,
     "foreign_net": 0,
-    "limit_up_net": 0.4079880819
+    "limit_up_net": 0.6687459676
   },
   {
     "code": "002943",
@@ -470,8 +470,8 @@
     "turnover_rate": 15.1941,
     "market_cap": 120.6270549066,
     "reason": "日振幅值达到15%的前5只证券",
-    "inst_net": 0.42504829990000004,
-    "north_net": -0.5575382803,
+    "inst_net": -2.07992256,
+    "north_net": -1.1150765606,
     "foreign_net": 0,
     "limit_up_net": 0.0
   },
@@ -487,10 +487,10 @@
     "turnover_rate": 16.6417,
     "market_cap": 25.664848586399998,
     "reason": "连续三个交易日内，涨幅偏离值累计达到20%的证券",
-    "inst_net": 0.026009802000000002,
+    "inst_net": 0.005044025200000007,
     "north_net": 0,
     "foreign_net": 0,
-    "limit_up_net": 0.32888889200000004
+    "limit_up_net": 0.3682593752
   },
   {
     "code": "200468",
@@ -522,7 +522,7 @@
     "market_cap": 57.799565594499995,
     "reason": "日跌幅达到15%的前5只证券",
     "inst_net": 0,
-    "north_net": 0.09370005,
+    "north_net": 0.1874001,
     "foreign_net": 0,
     "limit_up_net": 0.0
   },
@@ -538,8 +538,8 @@
     "turnover_rate": 34.2144,
     "market_cap": 169.226799795,
     "reason": "日换手率达到30%的前5只证券",
-    "inst_net": 1.0852011546,
-    "north_net": 3.8390881555000003,
+    "inst_net": -0.2194249534,
+    "north_net": 7.6781763110000005,
     "foreign_net": 0,
     "limit_up_net": 0.0
   },
@@ -555,10 +555,10 @@
     "turnover_rate": 11.6372,
     "market_cap": 118.96517843379999,
     "reason": "日涨幅达到15%的前5只证券",
-    "inst_net": 0.3421357975,
-    "north_net": 0.47837583850000004,
+    "inst_net": 0.6045649875,
+    "north_net": 0.9567516770000001,
     "foreign_net": 0,
-    "limit_up_net": 0.929196886
+    "limit_up_net": 1.6700019145
   },
   {
     "code": "301205",
@@ -572,10 +572,10 @@
     "turnover_rate": 26.9886,
     "market_cap": 263.575564542,
     "reason": "连续三个交易日内，涨幅偏离值累计达到30%的证券",
-    "inst_net": 1.3675653385,
-    "north_net": 2.5755451056,
+    "inst_net": 7.3122075859999995,
+    "north_net": 5.1510902112,
     "foreign_net": 0,
-    "limit_up_net": 7.457012110999999
+    "limit_up_net": 15.977199464099998
   },
   {
     "code": "301222",
@@ -589,10 +589,10 @@
     "turnover_rate": 8.2843,
     "market_cap": 38.2481331024,
     "reason": "日涨幅达到15%的前5只证券",
-    "inst_net": 0.0683920636,
+    "inst_net": 0.39913932320000006,
     "north_net": 0,
     "foreign_net": 0,
-    "limit_up_net": 0.042283947599999996
+    "limit_up_net": 0.37303120720000005
   },
   {
     "code": "301360",
@@ -606,10 +606,10 @@
     "turnover_rate": 11.4325,
     "market_cap": 29.482957936,
     "reason": "日涨幅达到15%的前5只证券; 连续三个交易日内，涨幅偏离值累计达到30%的证券",
-    "inst_net": 0.4276252,
+    "inst_net": 0.6217362535999997,
     "north_net": 0,
     "foreign_net": 0,
-    "limit_up_net": 1.2738455400000002
+    "limit_up_net": 2.1735078716
   },
   {
     "code": "301373",
@@ -623,10 +623,10 @@
     "turnover_rate": 34.568,
     "market_cap": 56.525373828,
     "reason": "日涨幅达到15%的前5只证券; 日换手率达到30%的前5只证券",
-    "inst_net": 0.8072990314,
+    "inst_net": 5.853792563200001,
     "north_net": 0,
     "foreign_net": 0,
-    "limit_up_net": 0.4579786206000001
+    "limit_up_net": 3.0355544914000006
   },
   {
     "code": "301439",
@@ -657,8 +657,8 @@
     "turnover_rate": 48.8236,
     "market_cap": 33.3095042865,
     "reason": "日换手率达到30%的前5只证券",
-    "inst_net": 0.434958115,
-    "north_net": -0.0948841982,
+    "inst_net": -1.2292836131,
+    "north_net": -0.1897683964,
     "foreign_net": 0,
     "limit_up_net": 0.0
   },
@@ -674,7 +674,7 @@
     "turnover_rate": 42.1473,
     "market_cap": 21.2121274008,
     "reason": "日换手率达到30%的前5只证券",
-    "inst_net": 0.134073114,
+    "inst_net": 0.3007919279,
     "north_net": 0,
     "foreign_net": 0,
     "limit_up_net": 0.0
@@ -691,8 +691,8 @@
     "turnover_rate": 33.2489,
     "market_cap": 19.61526875,
     "reason": "日换手率达到30%的前5只证券",
-    "inst_net": 0.23698245350000002,
-    "north_net": -0.0791853525,
+    "inst_net": 0.4859828709,
+    "north_net": -0.158370705,
     "foreign_net": 0,
     "limit_up_net": 0.0
   },
@@ -709,9 +709,9 @@
     "market_cap": 975.4968698153,
     "reason": "有价格涨跌幅限制的日收盘价格涨幅偏离值达到7%的前五只证券",
     "inst_net": -0.64222821,
-    "north_net": 2.0532726376,
-    "foreign_net": 0.9358089019,
-    "limit_up_net": 4.8480510771
+    "north_net": -0.7886629171000004,
+    "foreign_net": 0.04483105279999999,
+    "limit_up_net": 0.6333544286999997
   },
   {
     "code": "600110",
@@ -726,9 +726,9 @@
     "market_cap": 219.6739059912,
     "reason": "非ST、*ST和S证券连续三个交易日内收盘价格涨幅偏离值累计达到20%的证券",
     "inst_net": 0,
-    "north_net": 3.6441978098,
+    "north_net": 0.8306414418000001,
     "foreign_net": 0.35848279920000004,
-    "limit_up_net": 5.9791086738
+    "limit_up_net": 1.4318840458000002
   },
   {
     "code": "600162",
@@ -760,8 +760,8 @@
     "market_cap": 179.6968096,
     "reason": "有价格涨跌幅限制的日价格振幅达到15%的前五只证券; 有价格涨跌幅限制的日换手率达到20%的前五只证券",
     "inst_net": 0,
-    "north_net": 11.459962991800001,
-    "foreign_net": 4.6853855764,
+    "north_net": 9.4188264848,
+    "foreign_net": 4.1633600884,
     "limit_up_net": 0.0
   },
   {
@@ -777,9 +777,9 @@
     "market_cap": 181.5975365365,
     "reason": "非ST、*ST和S证券连续三个交易日内收盘价格跌幅偏离值累计达到20%的证券",
     "inst_net": 0,
-    "north_net": 6.4025481006,
-    "foreign_net": -0.1835635483,
-    "limit_up_net": 8.4363452443
+    "north_net": 2.4575993912999996,
+    "foreign_net": -2.5060153154,
+    "limit_up_net": -0.6253194121000001
   },
   {
     "code": "600693",
@@ -811,7 +811,7 @@
     "market_cap": 350.5153328164,
     "reason": "有价格涨跌幅限制的日收盘价格跌幅偏离值达到7%的前五只证券",
     "inst_net": 0,
-    "north_net": 1.6993664295,
+    "north_net": 1.0254296307000001,
     "foreign_net": 0.9201865706,
     "limit_up_net": 0.0
   },
@@ -847,7 +847,7 @@
     "inst_net": 0,
     "north_net": 0.15894327,
     "foreign_net": 0,
-    "limit_up_net": 0.48538579679999994
+    "limit_up_net": 0.23912800499999998
   },
   {
     "code": "601991",
@@ -862,9 +862,9 @@
     "market_cap": 1069.7824898478,
     "reason": "非ST、*ST和S证券连续三个交易日内收盘价格涨幅偏离值累计达到20%的证券",
     "inst_net": 0,
-    "north_net": 4.830305323399999,
+    "north_net": -0.060470034700000674,
     "foreign_net": 0,
-    "limit_up_net": 15.948956102399999
+    "limit_up_net": -0.3788428882000008
   },
   {
     "code": "603067",
@@ -879,7 +879,7 @@
     "market_cap": 264.88720664240003,
     "reason": "有价格涨跌幅限制的日收盘价格跌幅偏离值达到7%的前五只证券",
     "inst_net": -0.7348572195,
-    "north_net": 1.3485563462,
+    "north_net": 0.6780746562000001,
     "foreign_net": 0.254140535,
     "limit_up_net": 0.0
   },
@@ -914,7 +914,7 @@
     "reason": "有价格涨跌幅限制的日换手率达到20%的前五只证券",
     "inst_net": 0,
     "north_net": 0,
-    "foreign_net": -0.42173540000000004,
+    "foreign_net": -1.03232141,
     "limit_up_net": 0.0
   },
   {
@@ -931,8 +931,8 @@
     "reason": "非ST、*ST和S证券连续三个交易日内收盘价格涨幅偏离值累计达到20%的证券",
     "inst_net": 0,
     "north_net": 0,
-    "foreign_net": 0.410276136,
-    "limit_up_net": 1.2359975639999998
+    "foreign_net": -0.10823966799999998,
+    "limit_up_net": 0.295691498
   },
   {
     "code": "603435",
@@ -965,7 +965,7 @@
     "reason": "有价格涨跌幅限制的日换手率达到20%的前五只证券",
     "inst_net": 0,
     "north_net": 0,
-    "foreign_net": -0.4579943759999999,
+    "foreign_net": -0.9781165395999999,
     "limit_up_net": 0.0
   },
   {
@@ -998,9 +998,9 @@
     "market_cap": 295.2865255936,
     "reason": "非ST、*ST和S证券连续三个交易日内收盘价格涨幅偏离值累计达到20%的证券; 有价格涨跌幅限制的日价格振幅达到15%的前五只证券",
     "inst_net": -3.5730230414,
-    "north_net": 5.420275965,
-    "foreign_net": 4.8038114806,
-    "limit_up_net": 7.3438445069
+    "north_net": 5.952805400199999,
+    "foreign_net": 6.883797282000001,
+    "limit_up_net": 1.7933052111999999
   },
   {
     "code": "603629",
@@ -1015,9 +1015,9 @@
     "market_cap": 621.1580263,
     "reason": "有价格涨跌幅限制的连续30个交易日内收盘价格涨幅偏离值累计达到200%的证券",
     "inst_net": 0,
-    "north_net": 63.422469,
+    "north_net": -0.7377549999999999,
     "foreign_net": 0,
-    "limit_up_net": 2730.3226019999997
+    "limit_up_net": 39.99589699999995
   },
   {
     "code": "603690",
@@ -1032,7 +1032,7 @@
     "market_cap": 95.4346911,
     "reason": "有价格涨跌幅限制的日收盘价格跌幅偏离值达到7%的前五只证券",
     "inst_net": -0.0998375812,
-    "north_net": 0.49595640399999996,
+    "north_net": 0.043253972999999946,
     "foreign_net": 0.1425387483,
     "limit_up_net": 0.0
   },
@@ -1049,8 +1049,8 @@
     "market_cap": 167.55234902639998,
     "reason": "有价格涨跌幅限制的日价格振幅达到15%的前五只证券",
     "inst_net": 0,
-    "north_net": 1.6844979213,
-    "foreign_net": 0.22815568800000008,
+    "north_net": 0.35193762410000007,
+    "foreign_net": -0.20562388199999992,
     "limit_up_net": 0.0
   },
   {
@@ -1066,9 +1066,9 @@
     "market_cap": 55.3067648,
     "reason": "非ST、*ST和S证券连续三个交易日内收盘价格跌幅偏离值累计达到20%的证券",
     "inst_net": 0,
-    "north_net": 0.44718758,
+    "north_net": 0.27604096999999994,
     "foreign_net": 0.11628421,
-    "limit_up_net": 0.8260089839
+    "limit_up_net": 0.27384289189999994
   },
   {
     "code": "603773",
@@ -1083,7 +1083,7 @@
     "market_cap": 233.8247052264,
     "reason": "有价格涨跌幅限制的日价格振幅达到15%的前五只证券",
     "inst_net": 0,
-    "north_net": 3.0260140876,
+    "north_net": 0.4575270993,
     "foreign_net": 0,
     "limit_up_net": 0.0
   },
@@ -1101,8 +1101,8 @@
     "reason": "非ST、*ST和S证券连续三个交易日内收盘价格跌幅偏离值累计达到20%的证券",
     "inst_net": 0,
     "north_net": 0,
-    "foreign_net": 0.882595681,
-    "limit_up_net": 1.3172296815
+    "foreign_net": 0.469530709,
+    "limit_up_net": -0.23966604650000017
   },
   {
     "code": "605069",
@@ -1136,7 +1136,7 @@
     "inst_net": 0,
     "north_net": 0,
     "foreign_net": 0,
-    "limit_up_net": 0.20342954759999998
+    "limit_up_net": -0.053956643400000004
   },
   {
     "code": "605580",
@@ -1151,7 +1151,7 @@
     "market_cap": 84.812,
     "reason": "有价格涨跌幅限制的日价格振幅达到15%的前五只证券",
     "inst_net": 0,
-    "north_net": 0.13453795,
+    "north_net": -0.11178705,
     "foreign_net": 0,
     "limit_up_net": 0.0
   },
@@ -1168,8 +1168,8 @@
     "market_cap": 59.648626227,
     "reason": "有价格涨跌幅限制的日收盘价格跌幅达到15%的前五只证券",
     "inst_net": -0.27111141920000004,
-    "north_net": 0.6916894666,
-    "foreign_net": 0.1875338621,
+    "north_net": 0.2904618451,
+    "foreign_net": -0.3041546625,
     "limit_up_net": 0.0
   },
   {
@@ -1185,9 +1185,9 @@
     "market_cap": 93.203296,
     "reason": "有价格涨跌幅限制的日收盘价格涨幅达到15%的前五只证券",
     "inst_net": 0,
-    "north_net": 0.832801558,
+    "north_net": 0.6306395017,
     "foreign_net": 0.28122995149999996,
-    "limit_up_net": 1.4757603528
+    "limit_up_net": 1.2735982965000001
   },
   {
     "code": "688170",
@@ -1252,7 +1252,7 @@
     "turnover_rate": 9.9894,
     "market_cap": 43.621776619399995,
     "reason": "当日价格振幅达到30%的前5只股票; 当日收盘价跌幅达到-20%的前5只股票",
-    "inst_net": 0.1327291442,
+    "inst_net": 0.3252207716,
     "north_net": 0,
     "foreign_net": 0,
     "limit_up_net": 0.0
@@ -1286,7 +1286,7 @@
     "turnover_rate": 27.7652,
     "market_cap": 10.3923,
     "reason": "当日换手率达到20%的前5只股票",
-    "inst_net": -0.0191449118,
+    "inst_net": -0.0382898236,
     "north_net": 0,
     "foreign_net": 0,
     "limit_up_net": 0.0
@@ -1303,7 +1303,7 @@
     "turnover_rate": 64.4368,
     "market_cap": 16.89966872,
     "reason": "当日换手率达到20%的前5只股票",
-    "inst_net": 0.0110797221,
+    "inst_net": 0.0221594442,
     "north_net": 0,
     "foreign_net": 0,
     "limit_up_net": 0.0
@@ -1337,7 +1337,7 @@
     "turnover_rate": 33.2754,
     "market_cap": 21.74104724,
     "reason": "北交所股票最近3个有成交的交易日以内收盘价涨跌幅偏离值累计达到+40%(-40%); 当日换手率达到20%的前5只股票",
-    "inst_net": 0.22775986280000002,
+    "inst_net": 0.8175343926,
     "north_net": 0,
     "foreign_net": 0,
     "limit_up_net": 0.0

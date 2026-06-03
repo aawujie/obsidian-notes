@@ -190,23 +190,22 @@ def is_limit_up_reason(reason: str) -> bool:
 
 def _merge_stock_day(existing: StockDayData, new: StockDayData) -> StockDayData:
     """合并同一股票同一日的多条记录（不同上榜原因导致多行）"""
-    # 合并席位数据（去重）
-    all_seats = {s.name: s for s in existing.seats}
-    for s in new.seats:
-        if s.name not in all_seats:
-            all_seats[s.name] = s
-        else:
-            # 同名席位累加金额
-            old = all_seats[s.name]
-            all_seats[s.name] = SeatData(
+    # 按名称聚合席位数据
+    seat_map: dict[str, SeatData] = {}
+    for s in existing.seats + new.seats:
+        if s.name in seat_map:
+            old = seat_map[s.name]
+            seat_map[s.name] = SeatData(
                 name=s.name,
                 buy_amount=old.buy_amount + s.buy_amount,
                 sell_amount=old.sell_amount + s.sell_amount,
                 net_amount=old.net_amount + s.net_amount,
                 seat_type=old.seat_type,
             )
+        else:
+            seat_map[s.name] = s
 
-    merged_seats = list(all_seats.values())
+    merged_seats = list(seat_map.values())
     inst_net = sum(s.net_amount for s in merged_seats if s.seat_type == "institution")
     north_net = sum(s.net_amount for s in merged_seats if s.seat_type == "north_bound")
     foreign_net = sum(s.net_amount for s in merged_seats if s.seat_type == "foreign_broker")
@@ -220,7 +219,7 @@ def _merge_stock_day(existing: StockDayData, new: StockDayData) -> StockDayData:
         code=existing.code,
         name=existing.name,
         date=existing.date,
-        close_price=new.close_price,  # 用最新的
+        close_price=new.close_price,
         change_pct=new.change_pct,
         total_net_buy=existing.total_net_buy + new.total_net_buy,
         total_buy=existing.total_buy + new.total_buy,
@@ -283,8 +282,8 @@ def fetch_daily_detail(date_str: str) -> dict[str, StockDayData]:
             sell_detail = ak.stock_lhb_stock_detail_em(symbol=code, date=date_str, flag="卖出")
             time.sleep(0.08)
 
-            # 合并买卖席位（去重）
-            seen_names = set()
+            # 按席位名称聚合（同一席位可能在买卖两侧都出现，或多行）
+            seat_map: dict[str, dict] = {}
             for detail_df in [buy_detail, sell_detail]:
                 if detail_df is None or detail_df.empty:
                     continue
@@ -292,17 +291,24 @@ def fetch_daily_detail(date_str: str) -> dict[str, StockDayData]:
                     sname = str(srow.get("交易营业部名称", ""))
                     if not sname or sname == "nan":
                         continue
-                    if sname in seen_names:
-                        continue
-                    seen_names.add(sname)
                     buy_amt = float(srow.get("买入金额", 0) or 0) / 1e8
                     sell_amt = float(srow.get("卖出金额", 0) or 0) / 1e8
                     net_amt = float(srow.get("净额", 0) or 0) / 1e8
-                    seats.append(SeatData(
-                        name=sname, buy_amount=buy_amt,
-                        sell_amount=sell_amt, net_amount=net_amt,
-                        seat_type=classify_seat(sname),
-                    ))
+                    if sname in seat_map:
+                        seat_map[sname]["buy"] += buy_amt
+                        seat_map[sname]["sell"] += sell_amt
+                        seat_map[sname]["net"] += net_amt
+                    else:
+                        seat_map[sname] = {"buy": buy_amt, "sell": sell_amt, "net": net_amt}
+
+            for sname, vals in seat_map.items():
+                seats.append(SeatData(
+                    name=sname,
+                    buy_amount=vals["buy"],
+                    sell_amount=vals["sell"],
+                    net_amount=vals["net"],
+                    seat_type=classify_seat(sname),
+                ))
         except Exception:
             pass
 
