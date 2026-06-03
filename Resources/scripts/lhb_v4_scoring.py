@@ -382,14 +382,17 @@ def fetch_window_data(end_date: str, window_days: int = WINDOW_DAYS) -> dict[str
     all_data: dict[str, StockAgg] = {}
     for date_str in dates:
         daily = fetch_daily_detail(date_str)
-        for sd in daily:
-            if sd.code not in all_data:
-                all_data[sd.code] = StockAgg(code=sd.code, name=sd.name)
-            agg = all_data[sd.code]
+        for code, sd in daily.items():
+            if code not in all_data:
+                all_data[code] = StockAgg(code=sd.code, name=sd.name)
+            agg = all_data[code]
             agg.days.append(sd)
             if not agg.first_date:
                 agg.first_date = sd.date
             agg.last_date = sd.date
+        # 按日期排序
+        for agg in all_data.values():
+            agg.days.sort(key=lambda d: d.date)
 
     print(f"共 {len(all_data)} 只股票上榜")
     return all_data
