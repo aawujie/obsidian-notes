@@ -892,7 +892,7 @@ def main():
     setup_proxy()
 
     # 数据窗口: 截至最新交易日的 6 天
-    end_date = "20260602"
+    end_date = "20260603"
     print(f"龙虎榜 V4 评分模型")
     print(f"数据窗口: 6天 (截至 {end_date})")
     print()
