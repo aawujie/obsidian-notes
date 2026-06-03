@@ -1,0 +1,30 @@
+{
+  "date": "2026-06-04",
+  "generated_at": "2026-06-04T06:15:27.473554",
+  "upcoming_events": [
+    {
+      "date": "2026-06-05",
+      "event": "非农就业报告 (5月)",
+      "importance": "high",
+      "category": "就业",
+      "days_until": 1
+    },
+    {
+      "date": "2026-06-10",
+      "event": "美国 CPI (5月)",
+      "importance": "high",
+      "category": "通胀",
+      "days_until": 6
+    },
+    {
+      "date": "2026-06-17",
+      "event": "FOMC 利率决议",
+      "importance": "critical",
+      "category": "央行",
+      "note": "附 SEP 经济预测 + 点阵图",
+      "days_until": 13
+    }
+  ],
+  "recent_events": [],
+  "web_events": []
+}
