@@ -10,6 +10,8 @@ tags:
   - Claude Code
   - AI Agent
   - 工程方法论
+share_link: https://share.note.sx/knurrutr#DrNOU2RaRLaXfkkj2Od0Fdc4yplbbM57LnHqUf++5t8
+share_updated: 2026-06-04T10:58:28+08:00
 ---
 
 > 来源：sysls (@systematicls)，2026-03-03
@@ -195,19 +197,19 @@ Skills 像规则，但更适合编码"配方"——做某件事的具体方法�
 
 > 如果你不知道 agent 会怎么解决一个问题，让它先研究，然后**写成 skill**。你可以在它真正遇到那个问题之前审查和修正。
 
-### Rules 和 Skills 的维护
+### <span style="color:rgb(255, 77, 77)">Rules 和 Skills 的维护</span>
 
-你会不断添加 rules 和 skills。这是给 agent 注入个性、记忆和偏好的方式。**除此之外几乎都是过度设计。**
+<span style="color:rgb(255, 77, 77)">你会不断添加 rules 和 skills。这是给 agent 注入个性、记忆和偏好的方式。<b>除此之外几乎都是过度设计。</b></span>
 
 然后 agent 会感觉像魔法——"按你的方式做事"。
 
 然后性能又下降了。
 
-**为什么？** rules 和 skills 越来越多，开始互相矛盾，或者上下文膨胀。
+**为什么？**<span style="color:rgb(255, 77, 77)"> rules 和 skills 越来越多，开始互相矛盾，或者上下文膨胀。</span>
 
-**解决方案：** 清理。让 agent 去做一次"spa day"，合并 rules 和 skills，消除矛盾，询问你更新后的偏好。
+**解决方案：** <span style="color:rgb(255, 77, 77)">清理。</span>让 agent 去做一次"<span style="color:rgb(255, 77, 77)">spa day</span>"，<span style="color:rgb(255, 77, 77)">合并 rules 和 skills，消除矛盾，询问你更新后的偏好。</span>
 
-> 就这么简单。保持简单，用 rules 和 skills，把 CLAUDE.md 当作目录，**对上下文和设计限制保持宗教般的警惕**。
+> 就这么简单。保持简单，用 rules 和 skills，把 CLAUDE.md 当作目录，<span style="color:rgb(255, 77, 77)"><b>对上下文和设计限制保持宗教般的警惕</b>。</span>
 
 ---
 
@@ -215,6 +217,6 @@ Skills 像规则，但更适合编码"配方"——做某件事的具体方法�
 
 > 今天没有完美的 agent。你可以把大部分设计和实现交给 agent，但**你必须对结果负责**。
 
-从裸 CLI 开始，忘记复杂的结构和 harness。不断迭代，用 rules 和 skills 编码偏好，保持上下文干净。
+从裸 CLI 开始，<span style="color:rgb(255, 77, 77)">忘记复杂的结构和 harness。</span>不断迭代，用 rules 和 skills 编码偏好，保持上下文干净。
 
 **然后享受和未来的玩具玩耍（同时用它们做正经事）。**
