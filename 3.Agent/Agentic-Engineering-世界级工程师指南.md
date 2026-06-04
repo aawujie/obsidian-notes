@@ -174,15 +174,15 @@ agent 有时像世界上最聪明的东西，有时又蠢得令人发指。区�
 
 ---
 
-## 核心原则 9：迭代，迭代，迭代
+## 核心原则 9：<span style="color:rgb(255, 77, 77)">迭代，迭代，迭代</span>
 
 ### Rules
 
-如果不想让 agent 做某件事，写成规则。在 CLAUDE.md 里告诉 agent 读规则。
+如果不想让 agent 做某件事，写成规则。<span style="color:rgb(255, 77, 77)">在 CLAUDE.md 里告诉 agent 读规则。</span>
 
 ```
 CLAUDE.md 应该是逻辑嵌套的目录，只包含 IF-ELSE：
-- 如果编程 → 读 coding-rules.M<span style="color:rgb(255, 77, 77)">D</span>
+- 如果编程 → 读 coding-rules.MD
 - 如果写测试 → 读 coding-test-rules.MD
 - 如果测试失败 → 读 coding-test-failing-rules.MD
 ```
