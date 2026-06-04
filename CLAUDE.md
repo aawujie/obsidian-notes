@@ -46,15 +46,15 @@
 | `8.Projects/`         | wiki/concepts (项目)        | 可读可写             |
 | `6.BookNotes/《书名》/`   | wiki/summaries (书籍摘要)     | 可读可写             |
 | `6.BookNotes/Weread/` | raw/papers (微信读书剪藏)       | **只读，Agent 不可写** |
-| `Clippings/`          | raw/articles (网页剪藏)       | **只读，Agent 不可写** |
+| `Clippings/`          | raw/articles (网页剪藏)       | 可读可写             |
 | `Chaos/`              | raw/notes (未归类草稿)         | **只读，Agent 不可写** |
 | `wiki/`               | wiki/compile (编译产物)       | **只读，Agent 不可写** |
 | `audit/`              | audit (人类反馈)              | 可写 (audit op)    |
 | `log/`                | log (操作日志)                | 可写 (每次操作追加)      |
 | `outputs/queries/`    | outputs (查询答案)            | 可写 (query op)    |
-| `Resources/`          | resources (非md资源)          | **只读，Agent 不可写** |
+| `Resources/`          | resources (非md资源)         | **只读，Agent 不可写** |
 
-**关键规则**: `Clippings/`, `6.BookNotes/Weread/`, `Chaos/`, `wiki/`, `Resources/` 是 raw/资源/编译区——Agent 只能读取引用，绝不能修改或覆盖其中的文件。
+**关键规则**: `6.BookNotes/Weread/`, `Chaos/`, `wiki/`, `Resources/` 是 raw/资源/编译区——Agent 只能读取引用，绝不能修改或覆盖其中的文件。
 
 ## 命名约定
 
