@@ -182,7 +182,7 @@ agent 有时像世界上最聪明的东西，有时又蠢得令人发指。区�
 
 ```
 CLAUDE.md 应该是逻辑嵌套的目录，只包含 IF-ELSE：
-- 如果编程 → 读 coding-rules.MD
+- 如果编程 → 读 coding-rules.M<span style="color:rgb(255, 77, 77)">D</span>
 - 如果写测试 → 读 coding-test-rules.MD
 - 如果测试失败 → 读 coding-test-failing-rules.MD
 ```
