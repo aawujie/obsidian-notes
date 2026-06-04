@@ -1,0 +1,100 @@
+{
+  "date": "2026-06-05",
+  "generated_at": "2026-06-05T06:06:58.739592",
+  "upcoming_events": [
+    {
+      "date": "2026-06-05",
+      "event": "非农就业报告 (5月)",
+      "importance": "high",
+      "category": "就业",
+      "days_until": 0
+    },
+    {
+      "date": "2026-06-10",
+      "event": "美国 CPI (5月)",
+      "importance": "high",
+      "category": "通胀",
+      "days_until": 5
+    },
+    {
+      "date": "2026-06-17",
+      "event": "FOMC 利率决议",
+      "importance": "critical",
+      "category": "央行",
+      "note": "附 SEP 经济预测 + 点阵图",
+      "days_until": 12
+    }
+  ],
+  "recent_events": [],
+  "web_events": [
+    {
+      "source": "tavily_answer",
+      "query": "US economic data release this week CPI GDP jobs",
+      "answer": "Based on the latest data, U.S. economic activity has shown some increase, with inflation rising and energy prices impacted by geopolitical tensions. The Federal Reserve's \"Beige Book\" report indicates a slight uptick in economic activity and persistent inflation concerns. Initial jobless claims rose to 225,000 in the week ending May 30, the highest since February, potentially due to holiday-related volatility. Factory orders surged by 4.8% in April, and private payrolls grew by 122,000 in May, e"
+    },
+    {
+      "source": "tavily_result",
+      "title": "US economic activity and inflation both up in recent weeks, Fed survey shows - KITCO",
+      "url": "https://www.kitco.com/news/off-the-wire/2026-06-03/us-economic-activity-and-inflation-both-recent-weeks-fed-survey-shows",
+      "content": "June 3 (Reuters) - U.S. economic activity increased a bit in recent weeks, employment was little changed, and the fallout from higher energy prices due to the war in the Middle East was pervasive, ​the Federal Reserve said on Wednesday, two weeks before Kevin Warsh convenes his first ‌policy meeting"
+    },
+    {
+      "source": "tavily_result",
+      "title": "US Jobless Claims Rose in Holiday Week to Most Since February - Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-04/us-jobless-claims-rose-to-225-000-in-holiday-week",
+      "content": "Labor’s Share of GDP. # US Jobless Claims Rose in Holiday Week to Most Since February. Provide news feedback or report an error. Send a tip to our reporters. ## **Takeaways** by Bloomberg AI. Applications for US unemployment benefits rose last week to the highest level since February, potentially re"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Five Signs Americans Are Getting Squeezed This Summer - Newsweek",
+      "url": "https://www.newsweek.com/5-signs-americans-getting-squeezed-summer-12017809",
+      "content": "Rising prices, mounting debt and broad-based pessimism that threatens to slow the country’s consumption-driven economy can be counted among the pressures that are facing Americans going into the summer of 2026. There remain signs of resilience in the wider economy, with unemployment stable despite s"
+    },
+    {
+      "source": "tavily_answer",
+      "query": "Federal Reserve speech this week monetary policy",
+      "answer": "Based on the most recent data, Federal Reserve Bank of New York President John Williams stated that the current monetary policy is in the right place despite inflation risks tied to the Middle East war and other factors. He emphasized that there is no need to change the setting of short-term interest rates. Conversely, Federal Reserve Bank of Cleveland President Beth Hammack expressed concern about persistently elevated inflation and suggested that the Fed may need to act soon to combat these pr"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Fed's Williams tells Yahoo monetary policy is in 'right place' amid inflation risks - KITCO",
+      "url": "https://www.kitco.com/news/off-the-wire/2026-06-03/feds-williams-tells-yahoo-monetary-policy-right-place-amid-inflation",
+      "content": "# Fed's Williams tells Yahoo monetary policy is in 'right place' amid inflation risks. NEW YORK, June 3 (Reuters) - Federal Reserve Bank ​of New York President ‌John Williams reiterated on Wednesday that he does not ​believe the U.S. central ​bank needs to change the ⁠setting of short-term interest "
+    },
+    {
+      "source": "tavily_result",
+      "title": "Fed's Williams tells Yahoo monetary policy is in 'right place' amid inflation risks - Reuters",
+      "url": "https://www.reuters.com/business/feds-williams-tells-yahoo-monetary-policy-is-right-place-amid-inflation-risks-2026-06-03/",
+      "content": "# Fed policy is in 'right place' amid inflation risks, Williams tells Yahoo Finance. NEW YORK, June 3 (Reuters) - New York Federal Reserve President John ‌Williams said on Wednesday he does not expect upside risks to inflation caused by the war in the Middle East to be long-lasting and reiterated th"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Fed's Hammack eyes tighter policy if inflation doesn't abate - KITCO",
+      "url": "https://www.kitco.com/news/off-the-wire/2026-06-02/feds-hammack-eyes-tighter-policy-if-inflation-doesnt-abate",
+      "content": "June 2 (Reuters) - Federal Reserve Bank of ​Cleveland President Beth Hammack said Tuesday that the U.S. central bank may need to act “soon” to ‌combat inflation pressures that are already too high and are on a worrisome trend. “Based on the data, I’m more concerned about the growing risks of persist"
+    },
+    {
+      "source": "tavily_answer",
+      "query": "China PMI economic data this week",
+      "answer": "China's services activity expanded at the fastest pace in three months in May, with the RatingDog China General Services Purchasing Managers' Index rising to 54.4 from 52.6 in April, driven by stronger growth in new business and a rebound in export demand. This growth, however, was tempered by rising cost pressures that weighed on firms."
+    },
+    {
+      "source": "tavily_result",
+      "title": "China services activity grows at fastest pace in three months, private PMI shows - Reuters",
+      "url": "https://www.reuters.com/business/finance/china-services-activity-grows-fastest-pace-three-months-private-pmi-shows-2026-06-03/",
+      "content": "# China services activity grows at fastest pace in three months, private PMI shows. * New business and export demand drive fastest services growth in three months. BEIJING, June 3 (Reuters) - China's services activity expanded at the fastest pace in three months in May, helped by stronger growth in "
+    },
+    {
+      "source": "tavily_result",
+      "title": "US service sector growth picks up in May; businesses face higher prices for inputs - Reuters",
+      "url": "https://www.reuters.com/business/us-service-sector-growth-picks-up-may-businesses-face-higher-prices-inputs-2026-06-03/",
+      "content": "WASHINGTON, June 3 (Reuters) - U.S. services sector activity picked up in May as businesses preemptively placed orders and rebuilt inventories in anticipation of shortages and higher prices because of the war ​with Iran. Economists polled by Reuters had forecast the services PMI rising to 53.8. Get "
+    },
+    {
+      "source": "tavily_result",
+      "title": "Gold off session lows after ISM Services PMI rises to 54.5 in May - KITCO",
+      "url": "https://www.kitco.com/news/article/2026-06-03/gold-session-lows-after-ism-services-pmi-rises-545-may",
+      "content": "Kitco NEWS has a diverse team of journalists reporting on the economy, stock markets, commodities, cryptocurrencies, mining and metals with accuracy and objectivity. The ISM announced on Wednesday morning that its Services Purchasing Managers Index came in at 54.5 in May, up from 53.6 in April. “May"
+    }
+  ]
+}
