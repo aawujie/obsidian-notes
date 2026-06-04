@@ -264,18 +264,22 @@ git commit -m "fix: 修复 Cheatsheet.md Math 部分公式格式
 
 ---
 
-### Task 3: 删除 Jie TradingNote 中的 7 个重复文件
+### Task 3: 合并 Jie TradingNote 中 7 个同名但不同版本的文件
+
+**背景:** 这 7 个文件在 `01-交易与策略/`（上层）和 `Jie TradingNote/`（下层）各有一份，**但不是简单重复**——它们是同一主题的两个版本：
+- 上层版本：已迁移为标准 frontmatter（`title/type/created/updated`），内容可能经过整理
+- 下层版本：保留 Notion 导入原始 frontmatter（`notion-id/Last edited time`），内容与上层有差异
 
 **Files:**
-- Delete: `5.Finance/01-交易与策略/Jie TradingNote/斐波那契.md`
-- Delete: `5.Finance/01-交易与策略/Jie TradingNote/期权 VS 期货.md`
-- Delete: `5.Finance/01-交易与策略/Jie TradingNote/庄家是如何操纵现货合约价格最终收割散户.md`
-- Delete: `5.Finance/01-交易与策略/Jie TradingNote/卓野-活下来.md`
-- Delete: `5.Finance/01-交易与策略/Jie TradingNote/卓野-基本面研究.md`
-- Delete: `5.Finance/01-交易与策略/Jie TradingNote/卓野-入场时机：支撑&阻力.md`
-- Delete: `5.Finance/01-交易与策略/Jie TradingNote/K线形态.md`
+- Merge (manual): `5.Finance/01-交易与策略/Jie TradingNote/斐波那契.md` → `5.Finance/01-交易与策略/斐波那契.md`
+- Merge (manual): `5.Finance/01-交易与策略/Jie TradingNote/期权 VS 期货.md` → `5.Finance/01-交易与策略/期权 VS 期货.md`
+- Merge (manual): `5.Finance/01-交易与策略/Jie TradingNote/庄家是如何操纵现货合约价格最终收割散户.md` → `5.Finance/01-交易与策略/庄家是如何操纵现货合约价格最终收割散户.md`
+- Merge (manual): `5.Finance/01-交易与策略/Jie TradingNote/卓野-活下来.md` → `5.Finance/01-交易与策略/卓野-活下来.md`
+- Merge (manual): `5.Finance/01-交易与策略/Jie TradingNote/卓野-基本面研究.md` → `5.Finance/01-交易与策略/卓野-基本面研究.md`
+- Merge (manual): `5.Finance/01-交易与策略/Jie TradingNote/卓野-入场时机：支撑&阻力.md` → `5.Finance/01-交易与策略/卓野-入场时机：支撑&阻力.md`
+- Merge (manual): `5.Finance/01-交易与策略/Jie TradingNote/K线形态.md` → `5.Finance/01-交易与策略/K线形态.md`
 
-**Step 1: 确认重复文件内容一致**
+**Step 1: 逐文件 diff 查看差异**
 
 ```bash
 for f in \
@@ -286,12 +290,21 @@ for f in \
   "卓野-基本面研究.md" \
   "卓野-入场时机：支撑&阻力.md" \
   "K线形态.md"; do
-  diff <(cat "5.Finance/01-交易与策略/$f") <(cat "5.Finance/01-交易与策略/Jie TradingNote/$f") > /dev/null && echo "IDENTICAL: $f" || echo "DIFFER: $f"
+  echo "====== $f ======"
+  diff "5.Finance/01-交易与策略/$f" "5.Finance/01-交易与策略/Jie TradingNote/$f" | head -40
+  echo ""
 done
-# Expected: all IDENTICAL
 ```
 
-**Step 2: 删除重复文件**
+**Step 2: 人工判断合并方向**
+
+每个文件二选一策略：
+- **策略 A（保留上层）**: 上层已经是标准 frontmatter，内容可能更精简。如果有缺失的重要内容，从下层版本补入
+- **策略 B（保留下层 + 迁移 frontmatter）**: 下层版本内容更完整，但 frontmatter 需要迁移为标准格式
+
+优先策略 A（保留已迁移的上层版本），只有当 diff 显示下层有实质性额外内容时才考虑策略 B。
+
+**Step 3: 合并后删除下层版本，更新 Wikilinks**
 
 ```bash
 cd 5.Finance/01-交易与策略/Jie\ TradingNote/
@@ -302,22 +315,18 @@ git rm "卓野-活下来.md"
 git rm "卓野-基本面研究.md"
 git rm "卓野-入场时机：支撑&阻力.md"
 git rm "K线形态.md"
-```
 
-**Step 3: 更新 Jie TradingNote 中的 Wikilinks（如有）**
-
-```bash
-grep -r "\[\[斐波那契\]\]" 5.Finance/01-交易与策略/Jie\ TradingNote/ || echo "No wikilinks to update"
-grep -r "\[\[K线形态\]\]" 5.Finance/01-交易与策略/Jie\ TradingNote/ || echo "No wikilinks to update"
-# 如果有内部链接指向这些已删除文件，改为 [[../斐波那契]] 跨目录引用
+# 检查是否有内部链接指向这些已删除文件
+grep -rn "斐波那契\|期权 VS 期货\|庄家.*操纵\|卓野.*活下来\|卓野.*基本面\|卓野.*入场\|K线形态" . --include="*.md" 2>/dev/null || echo "No internal links to update"
 ```
 
 **Step 4: Commit**
 
 ```bash
-git commit -m "refactor: 删除 Jie TradingNote 中 7 个与上层重复的文件
+git commit -m "refactor: 合并 Jie TradingNote 中 7 个同名文件到上层
 
-重复文件已存在于 01-交易与策略/ 根目录：
+两个版本为同一主题不同阶段：上层是已迁移的标准格式，
+下层是原始 Notion 导入格式。合并后保留下层删除。
 斐波那契、期权VS期货、庄家操纵、卓野×3、K线形态"
 ```
 
