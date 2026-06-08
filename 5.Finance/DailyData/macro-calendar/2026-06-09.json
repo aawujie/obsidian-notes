@@ -1,0 +1,93 @@
+{
+  "date": "2026-06-09",
+  "generated_at": "2026-06-09T06:07:22.339063",
+  "upcoming_events": [
+    {
+      "date": "2026-06-10",
+      "event": "美国 CPI (5月)",
+      "importance": "high",
+      "category": "通胀",
+      "days_until": 1
+    },
+    {
+      "date": "2026-06-17",
+      "event": "FOMC 利率决议",
+      "importance": "critical",
+      "category": "央行",
+      "note": "附 SEP 经济预测 + 点阵图",
+      "days_until": 8
+    }
+  ],
+  "recent_events": [],
+  "web_events": [
+    {
+      "source": "tavily_answer",
+      "query": "US economic data release this week CPI GDP jobs",
+      "answer": "The US job market showed resilience in May with employers adding 172,000 jobs, slightly down from April's revised 179,000 but still robust. The unemployment rate remained at a low 4.3%. The Consumer Price Index (CPI) for May is expected to show a significant surge in inflation, potentially impacting the Federal Reserve's decision on interest rates. Inflation in April was the largest annual rise in nearly three years, with core inflation suggesting that energy and gas price increases are spreadin"
+    },
+    {
+      "source": "tavily_result",
+      "title": "America In Focus: US job market is rebounding, but economic frustration persists - Greenwich Time",
+      "url": "https://www.greenwichtime.com/business/article/america-in-focus-us-job-market-is-rebounding-22294012.php",
+      "content": "Trips to the grocery store or gas station are more painful than they were last year, and rising costs are impacting the decisions of both households and businesses. Here’s a snapshot of prominent economic data and news that occurred over the past week and what it potentially means for you. ## US Lab"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Bond Traders Bet on a CPI Surge That Bolsters Case for Fed Pivot - Bloomberg.com",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-07/bond-traders-bet-on-a-cpi-surge-that-bolsters-case-for-fed-pivot",
+      "content": "# Bond Traders Bet on a CPI Surge That Bolsters Case for Fed Pivot. ## **Takeaways** by Bloomberg AISubscribe. Bond traders are wagering that inflation figures this week will show the biggest surge in consumer prices in several years, adding to pressure on the Federal Reserve to raise interest rates"
+    },
+    {
+      "source": "tavily_result",
+      "title": "What to Expect in Markets This Week: a New Consumer Price Index Reading and Updates from Tech Giants - Investopedia",
+      "url": "https://www.investopedia.com/what-to-expect-in-markets-this-week-a-new-consumer-price-index-reading-and-updates-from-tech-giants-11991100",
+      "content": "* Is a Tech Bubble About to Pop? # What to Expect in Markets This Week: May CPI Report, Updates from Tech Giants. Inflation could be the story of the week—if it's not a big IPO. Investors will get another look at how the conflict with Iran is hitting prices when the Consumer Price Index report for M"
+    },
+    {
+      "source": "tavily_answer",
+      "query": "Federal Reserve speech this week monetary policy",
+      "answer": "Recent data indicates that the Federal Reserve's monetary policy is under scrutiny due to rising inflation concerns. The bond market is pressuring new Fed Chair Kevin Warsh to address potential rate hikes, especially as inflation is expected to reach 4.2%, surpassing the Fed's 2% target. This comes amid fears that the Fed's regulatory changes may weaken oversight of banks and threaten financial stability. Former Fed Chair Jerome Powell, now on the Board of Governors, has indirectly acknowledged "
+    },
+    {
+      "source": "tavily_result",
+      "title": "Speech by Governor Barr on supervision and regulation - Federal Reserve (.gov)",
+      "url": "https://www.federalreserve.gov/newsevents/speech/barr20260606a.htm",
+      "content": "At American University, Washington, D.C. Thank you for the opportunity to speak to you.1 The U.S. economy relies on a strong and stable banking system that extends credit to households and businesses. Today I want to share with you a few thoughts on the Federal Reserve's role in overseeing the banki"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Inflation could top 4% this week. The bond market wants Fed Chair Warsh to prove he’ll fight it. - MarketWatch",
+      "url": "https://www.marketwatch.com/story/inflation-could-top-4-this-week-the-bond-market-wants-fed-chair-warsh-to-prove-hell-fight-it-fbb6b04b",
+      "content": "## Kevin Warsh, the new chair of the Federal Reserve, may need to defy President Trump and talk about rate hikes next week. That anxiety can be seen in the reaction to Friday’s strong jobs report for May, which sent highflying tech stocks sharply lower and bond yields higher. It’s expected to reach "
+    },
+    {
+      "source": "tavily_result",
+      "title": "Global stocks extend retreat as rate hike fears, Middle East tensions rattle markets - Seeking Alpha",
+      "url": "https://seekingalpha.com/news/4601261-global-stocks-extend-retreat-as-rate-hike-fears-middle-east-tensions-rattle-markets",
+      "content": "Jun 07, 2026, 6:34 PM ETS&P 500 Futures (SPX), US100:IND, DXY, CO1:COM, CL1:COMBy: Rob Williams, SA News Editor. Stock futures pointed lower on Monday after a sharp selloff in technology shares and stronger-than-expected U.S. employment data fueled expectations that the Federal Reserve may raise int"
+    },
+    {
+      "source": "tavily_answer",
+      "query": "China PMI economic data this week",
+      "answer": "China's export growth likely strengthened in May, underpinned by a backlog of overseas orders and sustained global demand for semiconductors and AI-related components. The Caixin Manufacturing PMI is expected to provide insights into the trajectory of global manufacturing activity, which is crucial for the copper market and related investments."
+    },
+    {
+      "source": "tavily_result",
+      "title": "Here are the 6 big things we're watching in the stock market this week - CNBC",
+      "url": "https://www.cnbc.com/2026/06/07/the-6-big-things-were-watching-in-the-stock-market-this-week.html",
+      "content": "# Here are the 6 big things we're watching in the stock market this week. This coming week is packed with market-moving inflation data and two key corporate events. The confab comes as the iPhone maker's stock is on a roll, up more than 20% since the end of March. Since soaring more than 3% after ne"
+    },
+    {
+      "source": "tavily_result",
+      "title": "If Global Manufacturing Weakens, Here’s What Happens to This Copper ETF - 24/7 Wall St.",
+      "url": "https://247wallst.com/investing/2026/06/08/if-global-manufacturing-weakens-heres-what-happens-to-this-copper-etf/",
+      "content": "Stock Market Live June 8, 2026: S&P 500 (SPY) Rebounds with Chip Stocks. # If Global Manufacturing Weakens, Here’s What Happens to This Copper ETF. The **United States Copper Index Fund** (NYSEARCA:CPER) has quietly become one of the better-performing commodity vehicles of the cycle, trading near $3"
+    },
+    {
+      "source": "tavily_result",
+      "title": "China exports set for strong May on front-loaded orders, chip demand: Reuters poll - Reuters",
+      "url": "https://www.reuters.com/world/china/china-exports-set-strong-may-front-loaded-orders-chip-demand-2026-06-08/",
+      "content": "# China exports set for strong May on front-loaded orders, chip demand: Reuters poll. BEIJING, June 8 (Reuters) - China's export growth likely strengthened in May, underpinned by a backlog of overseas orders brought forward to pre-empt energy price pressures tied to the Gulf war, alongside sustained"
+    }
+  ]
+}
