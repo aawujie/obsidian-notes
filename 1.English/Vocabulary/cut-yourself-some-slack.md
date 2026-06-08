@@ -36,6 +36,14 @@ slack 本意是绳子/缆绳的**松弛部分**。如果绳子绷得太紧，一
 - You didn't finish everything on your to-do list today — so what? Cut yourself some slack. It's Sunday.
   （你今天没把待办全做完——那又怎样？放自己一马，周日诶。）
 
+**怎么理解？**
+
+slack 是绳子松掉的那一段。绳子绷太紧会断——人也一样。你对自己要求太高、节奏太紧、自责太多，就是在把自己这根绳子往死里拉。
+
+cut yourself some slack = 把绳子松一松，给自己留点弹性空间。
+
+跟中文「放自己一马」的区别：中文偏结果导向（放过这一次），英文偏状态导向（一直绷着不好，要持续保持松一点）。
+
 **类似表达**：
 - go easy on yourself（对自己温柔点）
 - don't be so hard on yourself（别对自己太苛刻）
