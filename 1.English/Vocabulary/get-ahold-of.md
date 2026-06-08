@@ -16,9 +16,14 @@ tags:
 1. **get ahold of sb** = 联系上某人（打电话、发消息）
 2. **get ahold of sth** = 搞到/弄到某物
 
+**词性：** ahold 是名词（口语），但**只能用在 get ahold of 这个固定短语里**，不能单独使用。
+
+❌ 不能说 "I have ahold of the situation."（应说 I have a hold of）
+✅ 只能说 "I can't get ahold of him."
+
 **为什么这么用？**
 
-ahold 是 a hold 的连写，hold 就是"抓住"。get ahold of = 抓住某人/某物。
+ahold = a + hold（动词 hold 变名词 hold，再加口语化的 a）。get ahold of = 抓住某人/某物。
 
 想象你伸手去够一个人——打了好几个电话终于接通了，就是"抓住了"。跟中文"逮到你"一个画面感。
 
