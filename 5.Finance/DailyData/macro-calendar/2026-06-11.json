@@ -1,0 +1,94 @@
+{
+  "date": "2026-06-11",
+  "generated_at": "2026-06-11T06:07:08.202759",
+  "upcoming_events": [
+    {
+      "date": "2026-06-17",
+      "event": "FOMC 利率决议",
+      "importance": "critical",
+      "category": "央行",
+      "note": "附 SEP 经济预测 + 点阵图",
+      "days_until": 6
+    }
+  ],
+  "recent_events": [
+    {
+      "date": "2026-06-10",
+      "event": "美国 CPI (5月)",
+      "importance": "high",
+      "category": "通胀",
+      "days_ago": 1
+    }
+  ],
+  "web_events": [
+    {
+      "source": "tavily_answer",
+      "query": "US economic data release this week CPI GDP jobs",
+      "answer": "This week, the U.S. economic data releases are expected to show that the Consumer Price Index (CPI) likely increased at its fastest pace in three years in May, with economists forecasting an annual rate of 4.2% and a monthly gain of 0.5%. This would mark the first time the CPI has surpassed 4% since May 2023, driven primarily by higher energy prices. The Bureau of Labor Statistics will release the CPI data on Wednesday at 8:30 a.m. ET. Additionally, Treasury yields have held steady as traders aw"
+    },
+    {
+      "source": "tavily_result",
+      "title": "The May inflation numbers are due out Wednesday morning. Here's what to expect - CNBC",
+      "url": "https://www.cnbc.com/2026/06/09/the-may-inflation-numbers-are-due-out-wednesday-morning-heres-what-to-expect.html",
+      "content": "* If the Wall Street consensus is correct, the consumer price index is expected to show inflation running at a 4.2% annual rate off an expected 0.5% monthly gain in May. * Worries are growing that the burst of inflation is broadening, as the jump in oil prices starts to spread through the economy an"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Treasury yields hold steady as traders await more economic data - CNBC",
+      "url": "https://www.cnbc.com/2026/06/09/treasury-yields-hold-steady-as-traders-await-more-economic-data.html",
+      "content": "# Treasury yields hold steady as traders await more economic data. Treasury yields were largely unchanged on Tuesday as bond markets took a breather ahead of more economic data releases later this week. The 10-year U.S. Treasury note yield — the key benchmark for mortgages, auto loans and credit car"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Inflation surpassed 4% for the first time since 2023 - Business Insider",
+      "url": "https://www.businessinsider.com/cpi-inflation-may-consumer-price-index-2026-6",
+      "content": "# Inflation surpassed 4% for the first time since 2023. Real earnings fell 0.7% over the year and 0.1% over the month. CPI rose 0.5% from April, matching the forecast and just below the previous month-over-month rise of 0.6%. Core CPI, which excludes volatile food and energy prices, rose 0.2% over t"
+    },
+    {
+      "source": "tavily_answer",
+      "query": "Federal Reserve speech this week monetary policy",
+      "answer": "Inflation is expected to reach 4.2% this week, significantly above the Federal Reserve's 2% target, raising concerns about potential rate hikes. The bond market is anxious about this, especially as it could lead Fed Chair Kevin Warsh to discuss rate increases at his first policy meeting. Despite President Trump's preference for lower rates, Warsh's likely hawkish stance may prompt necessary but contentious policy adjustments. This situation is further complicated by global central banks, includi"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Inflation could top 4% this week. The bond market wants Fed Chair Warsh to prove he’ll fight it. - MarketWatch",
+      "url": "https://www.marketwatch.com/story/inflation-could-top-4-this-week-the-bond-market-wants-fed-chair-warsh-to-prove-hell-fight-it-fbb6b04b",
+      "content": "## Kevin Warsh, the new chair of the Federal Reserve, may need to defy President Trump and talk about rate hikes next week. That anxiety can be seen in the reaction to Friday’s strong jobs report for May, which sent highflying tech stocks sharply lower and bond yields higher. It’s expected to reach "
+    },
+    {
+      "source": "tavily_result",
+      "title": "Prediction: Fed Chair Kevin Warsh and the FOMC Will Draw President Donald Trump's Ire by Making a Necessary Policy Adjustment Next Week - Yahoo Finance",
+      "url": "https://finance.yahoo.com/economy/policy/articles/prediction-fed-chair-kevin-warsh-082600532.html",
+      "content": "# Prediction: Fed Chair Kevin Warsh and the FOMC Will Draw President Donald Trump's Ire by Making a Necessary Policy Adjustment Next Week. But while Trump noted at Warsh's White House swearing-in ceremony that he wants \"Kevin to be totally independent,\" this independence could quickly draw the ire o"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Opinion | Inflation gets even worse - The Washington Post",
+      "url": "https://www.washingtonpost.com/opinions/2026/06/10/americans-do-not-love-these-inflation-numbers/",
+      "content": "# Inflation gets even worse. The problem is solvable with the right fiscal and monetary policy. Make us preferred on Google. President Donald Trump in the Oval Office on Wednesday. (Julia Demaree Nikhinson/AP Photo/Julia Demaree Nikhinson). Wednesday’s announcement of 4.2 percent inflation in May, u"
+    },
+    {
+      "source": "tavily_answer",
+      "query": "China PMI economic data this week",
+      "answer": "China's producer price index (PPI) in May surged 3.9% year-on-year, marking the fastest growth in nearly four years, driven by rising raw material costs from the Iran war and an AI investment boom. Meanwhile, consumer price index (CPI) rose 1.2% year-on-year, missing economists' estimates of 1.3% growth. Core CPI, excluding food and energy prices, grew 1.1%, slightly down from the previous month's 1.2% rise. Exports and imports also showed robust growth, with exports rising 19.4% and imports exp"
+    },
+    {
+      "source": "tavily_result",
+      "title": "China May wholesale inflation hits near 4-year high on Iran war, AI costs; CPI misses - CNBC",
+      "url": "https://www.cnbc.com/2026/06/10/china-cpi-ppi-inflation-may-consumer-prices-producer-oil-iran-war-ai-tech-.html",
+      "content": "* Consumer prices rose 1.2% in May from a year earlier, missing economists' estimates of 1.3% growth. * Core CPI, excluding volatile food and energy prices, grew 1.1%, edging down from the 1.2% rise in the prior month. China's wholesale prices rose at the fastest pace in nearly four years in May, dr"
+    },
+    {
+      "source": "tavily_result",
+      "title": "China May wholesale prices hit near 4-year highs on Iran war, AI costs; consumer inflation misses - CNBC",
+      "url": "https://www.cnbc.com/amp/2026/06/10/china-cpi-ppi-inflation-may-consumer-prices-producer-oil-iran-war-ai-tech-.html",
+      "content": "* Consumer prices rose 1.2% in May from a year earlier, missing economists' estimates of 1.3% growth. * Core CPI, excluding volatile food and energy prices, grew 1.1%, edging down from the 1.2% rise in the prior month. China's wholesale prices rose at the fastest pace in nearly four years in May, dr"
+    },
+    {
+      "source": "tavily_result",
+      "title": "China trade defies Iran war drag as exports, imports beat estimates in May - CNBC",
+      "url": "https://www.cnbc.com/amp/2026/06/09/china-trade-exports-imports-iran-war.html",
+      "content": "* Exports rose 19.4% from a year earlier in U.S. dollar value terms, accelerating from the 14.1% gain in April. * Imports growth momentum continued to build, expanding 27.4% in May, the outpacing from 25.3% in April. China's trade growth held up better than expected in May, as surging AI-related exp"
+    }
+  ]
+}
