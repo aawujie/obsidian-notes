@@ -1,0 +1,1385 @@
+{
+  "date": "2026-06-12",
+  "generated_at": "2026-06-12T06:49:12.821737",
+  "total_events": 45,
+  "severity_distribution": {
+    "medium": 18,
+    "high": 19,
+    "low": 6,
+    "critical": 2
+  },
+  "events": [
+    {
+      "title": "Trump says he has called off latest threats to strike Iran, citing progress in talks - PBS",
+      "title_cn": "特朗普称已取消对伊朗的最新打击威胁，称谈判取得进展",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOck9HeF9ESHU4UkFvUXQ3YUg2dVZ1TEhwcTExOGFzcmJDeXVhNUFLVE1pYlg1SnM0aEN6NlNnZkJQaGVvaHF2TDA4X2VvaGFtQ3hpQlZXMnZvTVcwcS1BNGc4dUpjMHAtTkhCNTlnLWZCLTR3ZUZpTC0yX3Z2RmpScENlVHFiOG9RaTI2ZU5YUDFpRkN6MlJ0T9IBngFBVV95cUxQZFRNaHFzYzVCRENBdmJZM1BZd2xpVVBTYlhQdms0VDNLQkFtaU1YQ2F4YWt6eGVCdjl3Xzdoc29hQW1fYUwwTkdzTWwwSWkxX3RfTDRBU3ZqTC10Zm5kRkJzMDRKTlVfZDBETkhEZ1M1ZnQtVVpHNWpSSWVJOEVTUTFlZ2U2cWplUnJDenJjdndoQi1kNW5aT3lVRmgyUQ?oc=5",
+      "content": "Trump says he has called off latest threats to strike Iran, citing progress in talks  PBS",
+      "content_detail": "Google News",
+      "published_date": "Thu, 11 Jun 2026 17:57:33 GMT",
+      "search_region": "美伊冲突",
+      "classified_regions": [
+        "美伊冲突"
+      ],
+      "event_types": [
+        "军事冲突升级"
+      ],
+      "severity": "medium",
+      "summary": "Trump says he has called off latest threats to strike Iran, citing progress in talks PBS",
+      "affected_tickers": [
+        "GC=F",
+        "SI=F",
+        "LMT",
+        "NOC",
+        "RTX",
+        "GD",
+        "GLD",
+        "SLV",
+        "ITA",
+        "PPA"
+      ]
+    },
+    {
+      "title": "Trump Announces ‘Great Settlement’ Reached With Iran, Says To Be Signed 'Quickly' - Radio Free Europe/Radio Liberty",
+      "title_cn": "特朗普宣布与伊朗达成“伟大协议”，称将很快签署",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQWnhyaS1tS3NVV19VeVRlS1RUeUhFblVCTkRCWmg2Z2YwTW1uR051ZFctc3F2eEcyN29hbkJkLUY3THpPVzVaYVRlcTRybGlrTGVsX3ZvTFJyQmRELVNHckg3Nk9uOUw3V2RyN2lZY0dIMW1jLWVQSUVTdXBTZGpuVE55cDBQcG01?oc=5",
+      "content": "Trump Announces ‘Great Settlement’ Reached With Iran, Says To Be Signed 'Quickly'  Radio Free Europe/Radio Liberty",
+      "content_detail": "Google News",
+      "published_date": "Thu, 11 Jun 2026 05:00:00 GMT",
+      "search_region": "美伊冲突",
+      "classified_regions": [
+        "美伊冲突"
+      ],
+      "event_types": [
+        "军事冲突升级"
+      ],
+      "severity": "medium",
+      "summary": "Trump Announces ‘Great Settlement’ Reached With Iran, Says To Be Signed 'Quickly' Radio Free Europe/Radio Liberty",
+      "affected_tickers": [
+        "GC=F",
+        "SI=F",
+        "LMT",
+        "NOC",
+        "RTX",
+        "GD",
+        "GLD",
+        "SLV",
+        "ITA",
+        "PPA"
+      ]
+    },
+    {
+      "title": "Can Iran Negotiations Survive Israel-Iran Escalation? - CSIS | Center for Strategic and International Studies",
+      "title_cn": "伊朗谈判能否在以伊升级中幸存？- CSIS",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOYkVkb3NybUZBQVB0SVZtYzFWM2MyOENabzFQWFdpWnRPZEx3VHhvaEkwUXZSNXI0M2ZMQ3ZNb3NFRGZMNExqMC1sUThkZGMzUTVydVBWMUtYY3ZlR3RQTWpzamhNNGotUzdmQXZ4VW9UeF9faDd6UElicmE0V2s3NTBFeWtKYjZ2TGc?oc=5",
+      "content": "Can Iran Negotiations Survive Israel-Iran Escalation?  CSIS | Center for Strategic and International Studies",
+      "content_detail": "Google News",
+      "published_date": "Mon, 08 Jun 2026 13:23:01 GMT",
+      "search_region": "美伊冲突",
+      "classified_regions": [
+        "美伊冲突"
+      ],
+      "event_types": [
+        "军事冲突升级"
+      ],
+      "severity": "high",
+      "summary": "Can Iran Negotiations Survive Israel-Iran Escalation?",
+      "affected_tickers": [
+        "GC=F",
+        "SI=F",
+        "LMT",
+        "NOC",
+        "RTX",
+        "GD",
+        "GLD",
+        "SLV",
+        "ITA",
+        "PPA"
+      ]
+    },
+    {
+      "title": "Iran war updates: Trump says he has called off latest threats to strike Iran hours after threatening to escalate war - ABC7 Los Angeles",
+      "title_cn": "伊朗战争更新：特朗普称已取消对伊朗打击威胁，就在数小时前",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNUjR2YVQ0ZnFSSHpMb1FKQjNZTXZqRktTazBTMzJGTkVxWHFpTWZPQVdhOHgtYjVWck12bmVoNmo4bndnQUF1ZWh2Y0VmMGZ3TXY0eTVieHNJNUR4aC1lMklZVXZmdUhzU2gwUG5BNE10cmxEVlJFaTlnckVNVG1pN0MzZEFZSVlrVjhsWVA1Y3Zkb0EzM1FvVNIBngFBVV95cUxPWjc2M0k4X3lkNGhVaHdVeG9nSXRxUjZjbnR2V3o1YnNMdTNzZXotWElFdGJucFptOHhuWHBEZ1JCWVlCX3RMTjY2S0wzcENqRWUtOVJsWE8zdmM3ODc5ZDFsaGx2ajNSeWxqTlR4cDVDU2t4Nmk5NlRFcnFHWkM0NllEN1hCVFl0QmZzaHVvdjR2NWVhdU9UbTlhV3Jndw?oc=5",
+      "content": "Iran war updates: Trump says he has called off latest threats to strike Iran hours after threatening to escalate war  ABC7 Los Angeles",
+      "content_detail": "Google News",
+      "published_date": "Thu, 11 Jun 2026 12:55:30 GMT",
+      "search_region": "美伊冲突",
+      "classified_regions": [
+        "美伊冲突"
+      ],
+      "event_types": [
+        "军事冲突升级"
+      ],
+      "severity": "medium",
+      "summary": "Iran war updates: Trump says he has called off latest threats to strike Iran hours after threatening to escalate war ABC7 Los Angeles",
+      "affected_tickers": [
+        "GC=F",
+        "SI=F",
+        "LMT",
+        "NOC",
+        "RTX",
+        "GD",
+        "GLD",
+        "SLV",
+        "ITA",
+        "PPA"
+      ]
+    },
+    {
+      "title": "Trump Cancels Iran Strikes, Says Peace Deal Could Be Signed in ‘Coming Days’ - WSJ",
+      "title_cn": "特朗普取消对伊朗打击，称和平协议可能在“未来几天”签署",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNbFUzZ2RMVU1OZWluOWdyOG9SbUlrT3dIMHlIUEZJWW8ydUhRMlBTeTEtVVpRVEhCbVlEQUtiYWg4VDk2cW5kV29HN3RwNFVqVUM4LWZhaFY1bDhhWG41WnBEd21MZi1icnkwWDZuM2tRbzJJbzRZRWU4dXdzWHlpenZYWQ?oc=5",
+      "content": "Trump Cancels Iran Strikes, Says Peace Deal Could Be Signed in ‘Coming Days’  WSJ",
+      "content_detail": "Google News",
+      "published_date": "Thu, 11 Jun 2026 20:57:00 GMT",
+      "search_region": "美伊冲突",
+      "classified_regions": [
+        "美伊冲突"
+      ],
+      "event_types": [
+        "军事冲突升级"
+      ],
+      "severity": "medium",
+      "summary": "Trump Cancels Iran Strikes, Says Peace Deal Could Be Signed in ‘Coming Days’ WSJ",
+      "affected_tickers": [
+        "GC=F",
+        "SI=F",
+        "LMT",
+        "NOC",
+        "RTX",
+        "GD",
+        "GLD",
+        "SLV",
+        "ITA",
+        "PPA"
+      ]
+    },
+    {
+      "title": "Trump calls off latest threats to strike Iran, citing progress in negotiations - Spectrum News",
+      "title_cn": "特朗普取消对伊朗的最新打击威胁，称谈判取得进展",
+      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNd3V1bUt3SVNKQnRwVDBkV2FnWlBqcmgtOXYtVHRDVzZhaHQ1dWNPclFWZGROUjRPYXlxSWM0UFRmdFZyUHZfZ0MtRXRaclMybUszMy1lTGFtd0FXMG9TdHAtd1BlSFhLUExfdTNfZ1BxcjE1dF84UEFtNkRRdno2a3BEYmFrLVItV1VLcnd5Um43ZXBWYjVTcVNTeGVGRVR2RnRna0dNQ0R6NlVjMGFTOWlnaTBabXVleV9uaEtOLWZ6bUdQRXZkLVhVMzlIZ1ZMQ0k0WlZaRQ?oc=5",
+      "content": "Trump calls off latest threats to strike Iran, citing progress in negotiations  Spectrum News",
+      "content_detail": "",
+      "published_date": "Thu, 11 Jun 2026 11:03:00 GMT",
+      "search_region": "美伊冲突",
+      "classified_regions": [
+        "美伊冲突"
+      ],
+      "event_types": [
+        "军事冲突升级",
+        "原油供应风险"
+      ],
+      "severity": "low",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "SI=F",
+        "LMT",
+        "NOC",
+        "RTX",
+        "GD",
+        "GLD",
+        "SLV",
+        "ITA",
+        "PPA",
+        "CL=F",
+        "BZ=F",
+        "USO",
+        "XLE",
+        "BNO"
+      ]
+    },
+    {
+      "title": "Trump's missile diplomacy fizzles - Politico",
+      "title_cn": "特朗普的导弹外交虎头蛇尾 - Politico",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5kM2gtM29qMElpdVhPVTRHNWQ3OXh6Z1pSazRyNHZMNlEwSnE2clhwRTItdGoxSEdFdnZPNDhOZ2l4RXJnNlZvTktoTEM0VGhURktQOWVnS01mRWRHT2wyckVTNFI3SzlGMlZOaDZaaVFZYzd4VnFDMDBIOA?oc=5",
+      "content": "Trump's missile diplomacy fizzles  Politico",
+      "content_detail": "",
+      "published_date": "Thu, 11 Jun 2026 21:30:57 GMT",
+      "search_region": "美伊冲突",
+      "classified_regions": [
+        "美伊冲突"
+      ],
+      "event_types": [
+        "军事冲突升级",
+        "原油供应风险"
+      ],
+      "severity": "low",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "SI=F",
+        "LMT",
+        "NOC",
+        "RTX",
+        "GD",
+        "GLD",
+        "SLV",
+        "ITA",
+        "PPA",
+        "CL=F",
+        "BZ=F",
+        "USO",
+        "XLE",
+        "BNO"
+      ]
+    },
+    {
+      "title": "New overnight: US and Iran trade strikes as Trump predicts deal by Friday - KCRA",
+      "title_cn": "最新夜间消息：美伊互相打击，特朗普预测周五前达成协议 - KCRA",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPR0pMYzJ4T1pYbFJPX3BraW5EWFBuWkJtSWxXYXJRQXZUMEFiMUszYU50YXBaQkZBV0hUMnAteWhSbDFDUTQ1VVpvWnVUQk1jZG9yWGhlSTlOa2pWTWYyOWY0OXZUWmlNenh6TFZ1Q3RzeDJrbzZnZGs1SW1ibmpBaUZVYjRMMWZPdkFz?oc=5",
+      "content": "New overnight: US and Iran trade strikes as Trump predicts deal by Friday  KCRA",
+      "content_detail": "Google News",
+      "published_date": "Thu, 11 Jun 2026 10:59:00 GMT",
+      "search_region": "美伊冲突",
+      "classified_regions": [
+        "美伊冲突"
+      ],
+      "event_types": [
+        "军事冲突升级",
+        "原油供应风险"
+      ],
+      "severity": "high",
+      "summary": "New overnight: US and Iran trade strikes as Trump predicts deal by Friday KCRA",
+      "affected_tickers": [
+        "GC=F",
+        "SI=F",
+        "LMT",
+        "NOC",
+        "RTX",
+        "GD",
+        "GLD",
+        "SLV",
+        "ITA",
+        "PPA",
+        "CL=F",
+        "BZ=F",
+        "USO",
+        "XLE",
+        "BNO"
+      ]
+    },
+    {
+      "title": "Fuel Rationing Disrupted in Sevastopol After Drone Strikes Hit Crimea Supply Routes - Kyiv Post",
+      "title_cn": "无人机袭击克里米亚供应路线后，塞瓦斯托波尔燃料配给中断",
+      "url": "https://www.kyivpost.com/post/77939",
+      "content": "By Kyiv Post\n\n1d ago\n\n### Ukraine’s Unmanned Systems Forces Hit 26 Russian Logistics and Energy Targets\n\nBy Kyiv Post\n\nJune 7, 2026\n\nMore on Crimea\n\nRussia\n\n## Fire Erupts at Major Russian Oil Refinery as Drones Strike Krasnodar, Crimea\n\nBy Julia Struck-Feshchenko\n\nUpdated: 4h ago\n\nRussia\n\n## EU App",
+      "content_detail": "### \n\n* [North America](https://www.kyivpost.com/category/north-america)\n* [Latin America](https://www.kyivpost.com/category/latin-america)\n* [Europe](https://www.kyivpost.com/category/europe)\n* [Eastern Europe](https://www.kyivpost.com/category/eastern-europe)\n* [Middle East](https://www.kyivpost.com/category/middle-east)\n* [Africa](https://www.kyivpost.com/category/africa)\n* [Asia](https://www.kyivpost.com/category/asia)\n\n### \n\n* [Business](https://www.kyivpost.com/category/business)\n* [Technology](https://www.kyivpost.com/category/technology)\n* [Finance](https://www.kyivpost.com/category/finance)\n* [Energy](https://www.kyivpost.com/category/energy)\n* [Agriculture](https://www.kyivpost.com/category/agriculture)\n\n[###](https://www.kyivpost.com/category/corruption-watch)\n\n###\n\n![Search](/icons/header-search.svg) [![Kyiv Post](/icons/header-desktop-logo.svg)](https://www.kyivpost.com) [![Kyiv Post](/icons/kp_logo_white.svg)](https://www.kyivpost.com)\n\nEN\n\n![arrow](/icons/select-arrow.svg)\n\n* [UK](/language/uk)\n\n[![Kyiv Post](/assets/images/Kyivpost_logo_Black.svg)](https://www.kyivpost.com)\n\n[![Kador Group](/assets/images/kador_logo.jpg)](https://kadorrgroup.com/en/)\n\nEN\n\n![arrow](/icons/select-arrow.svg)\n\n* [UK](/language/uk)\n\n[Crimea](https://www.kyivpost.com/topic/crimea)   [Oil](https://www.kyivpost.com/topic/oil)   [Drones](https://www.kyivpost.com/topic/drones)\n\n# Russian-Held Sevastopol Suspends Fuel Distribution as Ukraine Strikes Supply Routes\n\nSevastopol authorities ",
+      "published_date": "Thu, 11 Jun 2026 09:14:03 GMT",
+      "search_region": "俄乌战争",
+      "classified_regions": [
+        "俄乌战争"
+      ],
+      "event_types": [
+        "军事冲突升级",
+        "供应链中断"
+      ],
+      "severity": "high",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "SI=F",
+        "LMT",
+        "NOC",
+        "RTX",
+        "GD",
+        "GLD",
+        "SLV",
+        "ITA",
+        "PPA",
+        "NVDA",
+        "TSM",
+        "INTC",
+        "AMD",
+        "ASML",
+        "SMH",
+        "SOXX"
+      ]
+    },
+    {
+      "title": "Russian-held Sevastopol suspends fuel distribution as Zelenskiy praises attacks on energy assets - Reuters",
+      "title_cn": "俄占塞瓦斯托波尔暂停燃料分配，泽连斯基称赞袭击",
+      "url": "https://www.reuters.com/world/russian-held-sevastopol-suspends-fuel-distribution-zelenskiy-praises-attacks-2026-06-11/",
+      "content": "Over two dozen Ukrainian drones were downed in the early hours of Thursday in a fresh attack on Sevastopol, the peninsula's second-largest city and home to Russia's Black ​Sea fleet, Razvozhayev later said on Telegram.\n\nThe city's fuel shortages come as Ukraine intensifies its campaign of medium and",
+      "content_detail": "# Russian-held Sevastopol suspends fuel distribution as Zelenskiy praises attacks on energy assets | Reuters\n\n[Skip to main content](https://www.reuters.com/world/russian-held-sevastopol-suspends-fuel-distribution-zelenskiy-praises-attacks-2026-06-11#main-content)\n\n[Exclusive news, data and analytics for financial market professionals Learn more about Refinitiv](https://www.reuters.com/differentiator/)\n\n[](https://www.reuters.com/)\n\n*   [World](https://www.reuters.com/world/) \n\n## [Browse World](https://www.reuters.com/world/)\n\n    *   [Africa](https://www.reuters.com/world/africa/)\n    *   [Americas](https://www.reuters.com/world/americas/)\n    *   [Asia Pacific](https://www.reuters.com/world/asia-pacific/)\n    *   [China](https://www.reuters.com/world/china/)\n    *   [Europe](https://www.reuters.com/world/europe/)\n    *   [India](https://www.reuters.com/world/india/)\n    *   [Iran War](https://www.reuters.com/world/iran/)\n\n    *   [Israel and Hamas at War](https://www.reuters.com/world/israel-hamas/)\n    *   [Japan](https://www.reuters.com/world/japan/)\n    *   [Middle East](https://www.reuters.com/world/middle-east/)\n    *   [Ukraine and Russia at War](https://www.reuters.com/world/ukraine-russia-war/)\n    *   [United Kingdom](https://www.reuters.com/world/uk/)\n    *   [United States](https://www.reuters.com/world/us/)\n    *   [Reuters NEXT New York](https://www.reuters.com/world/reuters-next/)\n\n*   [Business](https://www.reuters.com/business/) \n\n## [Browse Business](https",
+      "published_date": "Thu, 11 Jun 2026 00:47:55 GMT",
+      "search_region": "俄乌战争",
+      "classified_regions": [
+        "俄乌战争"
+      ],
+      "event_types": [
+        "军事冲突升级",
+        "供应链中断"
+      ],
+      "severity": "high",
+      "summary": "Russian-held Sevastopol suspends fuel distribution as Zelenskiy praises attacks on energy assets Reuters",
+      "affected_tickers": [
+        "GC=F",
+        "SI=F",
+        "LMT",
+        "NOC",
+        "RTX",
+        "GD",
+        "GLD",
+        "SLV",
+        "ITA",
+        "PPA",
+        "NVDA",
+        "TSM",
+        "INTC",
+        "AMD",
+        "ASML",
+        "SMH",
+        "SOXX"
+      ]
+    },
+    {
+      "title": "Russia's war on Ukraine: the new, the old, and the immutable - The Kyiv Independent",
+      "title_cn": "俄罗斯对乌克兰的战争：新、旧与不变 - 基辅独立报",
+      "url": "https://kyivindependent.com/russias-war-on-ukraine-the-new-the-old-and-the-immutable/",
+      "content": "Sanctions are old news, too. They are working and full of loopholes, two things that are true at the same time. The Russian economy is undermounting strain, but Moscow continues to cushion the blow with Chinese support and is benefiting from higher crude revenues amid the closure of the Hormuz Strai",
+      "content_detail": "![KI short logo](/assets/images/kiv3/ki-short-logo-white.svg)\n\n# Russia's war on Ukraine: the new, the old, and the immutable\n\n![](/_next/image?url=https%3A%2F%2Fassets.kyivindependent.com%2Fcontent%2Fimages%2F2026%2F06%2FGettyImages-2276690805_20260611-145623.jpg&w=1536&q=75)\n\nRussian President Vladimir Putin speaks during a signing ceremony in Beijing, China, on May 20, 2026. (Contributor / Getty Images)\n\n![Kyiv Independent Logo](/assets/images/kiv3/ki-short-logo.svg)\n![Avatar](/_next/image?url=https%3A%2F%2Fassets.kyivindependent.com%2Fcontent%2Fimages%2F2024%2F08%2FIMG_9930.JPG&w=128&q=90)\n\nAndrew Chakhoyan\n\nAcademic director at the University of Amsterdam\n\nAt the Trump-Xi summit in May 2026 in Beijing, China's President [allegedly told](https://www.ft.com/content/567c57b0-6346-43e6-9d14-840a793b4d1d?syn-25a6b1a6=1) his American counterpart that Vladimir Putin \"might end up regretting\" his invasion of Ukraine. This revelation is both encouraging and disheartening.\n\nChina's backing of [Russia](https://kyivindependent.com/tag/russia/) has been a major factor in sustaining the war, and a change of tune in Beijing, if it actually materializes, will have wide-ranging implications. The daunting part is that this is not the stated policy of [Europe](https://kyivindependent.com/tag/europe/), where \"might\" should've been substituted with \"will\" and acted upon back in 2022, if not 2014, when Russia first invaded Ukraine.\n\nEvery informed and honest observer of the [war](https://kyiv",
+      "published_date": "Thu, 11 Jun 2026 15:35:31 GMT",
+      "search_region": "俄乌战争",
+      "classified_regions": [
+        "俄乌战争"
+      ],
+      "event_types": [
+        "军事冲突升级"
+      ],
+      "severity": "high",
+      "summary": "(Contributor / Getty Images) Andrew Chakhoyan Academic director at the University of Amsterdam At the Trump-Xi summit in May 2026 in Beijing, China's President",
+      "affected_tickers": [
+        "GC=F",
+        "SI=F",
+        "LMT",
+        "NOC",
+        "RTX",
+        "GD",
+        "GLD",
+        "SLV",
+        "ITA",
+        "PPA"
+      ]
+    },
+    {
+      "title": "Putin plans all out offensive against Ukraine as Russian economy tanks: experts - Sky News Australia",
+      "title_cn": "专家称普京计划对乌克兰发动全面进攻，俄经济下滑",
+      "url": "https://www.skynews.com.au/world-news/global-affairs/desperate-putin-planning-hail-mary-winter-offensive-against-ukraine-as-russian-economy-in-death-spiral-experts-say/news-story/b541a6021e617de1c464333a074a094f",
+      "content": "Sky News Defence Analyst Peter Jennings warns China, Russia and North Korea are becoming a formidable strategic bloc, sharing...\n\nmoreless\n\nToggle full description view\n\nRussian dictator Vladimir Putin is hoping for a Hail Mary winter offensive against Ukraine, experts said — as Russia’s economy is ",
+      "content_detail": "![Sky News Australia](https://www.skynews.com.au/wp-content/themes/newscorpau-news-dna/dist/images/logos/skynews.svg)\n\n# Desperate Putin planning Hail Mary winter offensive against Ukraine - as Russian economy in death spiral, experts say\n\nRussian dictator Vladimir Putin is mulling over a Hail Mary winter offensive against Ukraine, experts said - as Russia’s economy plummets, with the war-mongering leader growing increasingly desperate.\n\n![‘Very dangerous’: China, Russia and North Korea’s nightmare alliance](https://content.api.news/v3/images/bin/6e737820eff68475b8282f0b6adaa425)\n\nRussian dictator Vladimir Putin is hoping for a Hail Mary winter offensive against Ukraine, experts said — as Russia’s economy is in a death spiral and the war-mongering leader is growing increasingly desperate.\n\nAfter a lackluster spring offensive left Russia losing more territory than it conquered for the first time in three years, the Kremlin is now likely eyeing a large-scale assault come winter to inflict maximum damage on Ukraine, Maria Snegovaya, a senior fellow with the CSIS think tank’s Europe, Russia, and Eurasia Program, told The Post.\n\n“Putin will wait for the winter again to resume the large-scale strikes and create a humanitarian crisis to get concessions in the Donbas issue,” Snegovaya said, referencing the region Russia has failed to completely conquer for more than four years.\n\n![China pursuing Taiwan aggressively given Trump’s position on Ukraine-Russia conflict](https://content.ap",
+      "published_date": "Thu, 11 Jun 2026 02:29:19 GMT",
+      "search_region": "俄乌战争",
+      "classified_regions": [
+        "俄乌战争"
+      ],
+      "event_types": [
+        "军事冲突升级"
+      ],
+      "severity": "critical",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "SI=F",
+        "LMT",
+        "NOC",
+        "RTX",
+        "GD",
+        "GLD",
+        "SLV",
+        "ITA",
+        "PPA"
+      ]
+    },
+    {
+      "title": "5 Grim Warning Signs for Putin in Ukraine - Newsweek",
+      "title_cn": "普京在乌克兰面临的五个严峻警告信号 - 新闻周刊",
+      "url": "https://www.newsweek.com/putin-russia-ukraine-war-winning-12059045",
+      "content": "Ukraine's commander in chief, Oleksandr Syrskyi, separately claimed Ukrainian forces had recaptured nearly 100 square kilometers more than they lost in May and had gained more than 600 square kilometers since the start of 2026.\n\nTaken carefully, the picture is damaging for Moscow. Putin can still ki",
+      "content_detail": "# 5 Grim Warning Signs for Putin in Ukraine\n\nPublished\n\nJun 11, 2026 at 07:39 AM EDT\n\n![Russian President Vladimir Putin thought his full-scale invasion of Ukraine would be over in days. More than four years later, the conflict is now longer than the First World War.\n](https://assets.newsweek.com/wp-content/uploads/2026/06/06-10-26-06-11-26-5-Grim-Warning-Signs-for-Putin-in-Ukraine.jpg?w=1600&quality=80&webp=1)\n![Newsweek Editors](https://assets.newsweek.com/wp-content/uploads/2025/11/cropped-NW-Icon-2.jpg?w=1600&quality=80&webp=1)\n\nThe full-scale Russian war in Ukraine has now crossed a bleak milestone: 1,569 days.\n\nAs of June 11, the full invasion has run longer than the First World War, a conflict with which the brutal muddy trenches of the Ukrainian front line have already drawn comparisons.\n\nWhen Russian President Vladimir Putin sent troops into Ukraine in February 2022, he did so believing the country would fall within days.\n\n#### Read More on Analysis\n\nBut Ukraine, with heavy Western backing, resisted fiercely and has mounted [a stunning defense ever since](https://www.newsweek.com/ukraine-upper-hand-over-russia-12007941).\n\nIt's tempting to believe that duration favors Russia, the larger power with a higher tolerance for punishment and losses, and a deeper, more powerful domestic arsenal.\n\nBut that's false comfort for Moscow. The clock is, in fact, turning against Putin. Ukraine has not won.\n\nRussia has not collapsed—yet. But there are five warning signs for Putin in h",
+      "published_date": "Thu, 11 Jun 2026 11:39:00 GMT",
+      "search_region": "俄乌战争",
+      "classified_regions": [
+        "俄乌战争"
+      ],
+      "event_types": [
+        "军事冲突升级"
+      ],
+      "severity": "high",
+      "summary": "5 Grim Warning Signs for Putin in Ukraine Published Jun 11, 2026 at 07:39 AM EDT",
+      "affected_tickers": [
+        "GC=F",
+        "SI=F",
+        "LMT",
+        "NOC",
+        "RTX",
+        "GD",
+        "GLD",
+        "SLV",
+        "ITA",
+        "PPA"
+      ]
+    },
+    {
+      "title": "Major Russian Refinery Burns After Drone Strike as Explosions Reported Across Crimea - Kyiv Post",
+      "title_cn": "无人机袭击后俄罗斯大型炼油厂起火，多地爆炸报道",
+      "url": "https://www.kyivpost.com/post/77937",
+      "content": "By Kyiv Post\n\n1d ago\n\nDrones\n\n## Ukraine Strikes Occupied Mariupol Port, Knocking Out Russian Logistics Hub\n\nBy Kyiv Post\n\n1d ago\n\nRead Next\n\nUkraine\n\n## One Year Later: How Ukraine’s Third Army Corps Is Reshaping the Army While Fighting Russia\n\nBy Kateryna Zakharchenko\n\n2h ago\n\nRussia\n\n## Konotop L",
+      "content_detail": "### \n\n* [North America](https://www.kyivpost.com/category/north-america)\n* [Latin America](https://www.kyivpost.com/category/latin-america)\n* [Europe](https://www.kyivpost.com/category/europe)\n* [Eastern Europe](https://www.kyivpost.com/category/eastern-europe)\n* [Middle East](https://www.kyivpost.com/category/middle-east)\n* [Africa](https://www.kyivpost.com/category/africa)\n* [Asia](https://www.kyivpost.com/category/asia)\n\n### \n\n* [Business](https://www.kyivpost.com/category/business)\n* [Technology](https://www.kyivpost.com/category/technology)\n* [Finance](https://www.kyivpost.com/category/finance)\n* [Energy](https://www.kyivpost.com/category/energy)\n* [Agriculture](https://www.kyivpost.com/category/agriculture)\n\n[###](https://www.kyivpost.com/category/corruption-watch)\n\n###\n\n![Search](/icons/header-search.svg) [![Kyiv Post](/icons/header-desktop-logo.svg)](https://www.kyivpost.com) [![Kyiv Post](/icons/kp_logo_white.svg)](https://www.kyivpost.com)\n\n* [UK](/language/uk)\n\n[![Kyiv Post](/assets/images/Kyivpost_logo_Black.svg)](https://www.kyivpost.com)\n\n[![Kador Group](/assets/images/kador_logo.jpg)](https://kadorrgroup.com/en/)\n\nEN\n\n![arrow](/icons/select-arrow.svg)\n\n* [UK](/language/uk)\n\n[Drones](https://www.kyivpost.com/topic/drones)   [Russia](https://www.kyivpost.com/topic/russia)   [Oil](https://www.kyivpost.com/topic/oil)\n\n# Fire Erupts at Major Russian Oil Refinery as Drones Strike Krasnodar, Crimea\n\nRussian authorities said a drone attack triggered a fire at the Afips",
+      "published_date": "Thu, 11 Jun 2026 08:40:57 GMT",
+      "search_region": "俄乌战争",
+      "classified_regions": [
+        "俄乌战争"
+      ],
+      "event_types": [
+        "原油供应风险",
+        "军事冲突升级"
+      ],
+      "severity": "critical",
+      "summary": "",
+      "affected_tickers": [
+        "CL=F",
+        "BZ=F",
+        "USO",
+        "XLE",
+        "BNO",
+        "GC=F",
+        "SI=F",
+        "LMT",
+        "NOC",
+        "RTX",
+        "GD",
+        "GLD",
+        "SLV",
+        "ITA",
+        "PPA"
+      ]
+    },
+    {
+      "title": "Rescuing a Losing War - Futura Doctrina | Mick Ryan",
+      "title_cn": "挽救一场失败的战争 - Futura Doctrina | 米克·瑞安",
+      "url": "https://mickryan.substack.com/p/rescuing-a-losing-war",
+      "content": "There is, though, a check on that relief that did not exist in earlier years. A higher world price is worth far less to the Kremlin if it cannot move the oil. Ukraine’s campaign of long-range sanctions is now systematically degrading the export terminals and refining capacity that convert price into",
+      "content_detail": "![Futura Doctrina](https://substackcdn.com/image/fetch/$s_!qoOD!,w_40,h_40,c_fill,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F9181d5fd-2315-48fa-97f8-e6ed2cc2d399_1280x1280.png)\n\n# [Futura Doctrina](/)\n\n# Rescuing a Losing War\n\n### What could still save Putin's war, the nuclear issue, and the shape of Russian defeat. Part Two of my assessment of Russia's current trajectory in its war against Ukraine.\n\n![Mick Ryan's avatar](https://substackcdn.com/image/fetch/$s_!IUuB!,w_36,h_36,c_fill,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fa577e0a3-b09f-4858-9305-86e56f6e7b9f_2048x1365.jpeg)\n![](https://substackcdn.com/image/fetch/$s_!WWGC!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ffd4a01e4-eb8d-4b18-9693-ed4ecb963f84_1200x759.jpeg)\n\n***The political struggle within each country affects everything that matters in ending a war. It intrudes into the formulation of the war aims, it colours and even distorts military estimates, and it inhibits negotiation with the enemy. The views people hold on these matters are interdependent. Those who want their country to pursue ambitious war aims will seek out the favourable military estimates and find reason why negotiations ought to be avoided***. [Fred Iklé,](https://archive.org/details/everywarmustend0000ikl",
+      "published_date": "Thu, 11 Jun 2026 02:08:20 GMT",
+      "search_region": "俄乌战争",
+      "classified_regions": [
+        "俄乌战争"
+      ],
+      "event_types": [
+        "军事冲突升级"
+      ],
+      "severity": "high",
+      "summary": "Rescuing a Losing War What could still save Putin's war, the nuclear issue, and the shape of Russian defeat.",
+      "affected_tickers": [
+        "GC=F",
+        "SI=F",
+        "LMT",
+        "NOC",
+        "RTX",
+        "GD",
+        "GLD",
+        "SLV",
+        "ITA",
+        "PPA"
+      ]
+    },
+    {
+      "title": "Ukraine's drone advantage over Russia grows as nearly 180,000 military targets struck in May, Syrskyi says - The Kyiv Independent",
+      "title_cn": "乌克兰对俄无人机优势扩大，近18万军事目标遭打击",
+      "url": "https://kyivindependent.com/ukraines-drone-advantage-over-russia-grows-as-nearly-180-000-military-targets-struck-in-may-syrskyi-says/",
+      "content": "Reporter\n\nTania Myronyshena\n\nReporter\n\n## Most Popular\n\n### Ukrainian Flamingo missiles strike military plant in large-scale attack on Russia, Zelensky confirms### Russian military official killed in car bombing outside Moscow, media reports### France, Germany end joint fighter jet development proje",
+      "content_detail": "[Sign up for our Newsletters→](/newsletters/)\n\n* [About](/about/)\n* [Team](/team/)\n* [Jobs](/jobs/)\n* [Advertising](/commercial-services/)\n* [Store](https://store.kyivindependent.com/?utm_source=store-homepage&utm_medium=homepage)\n\n[![KI logo](/assets/images/logo.svg)](/)\n\n\n\n[War](/tag/war/)\n\n# Ukraine's drone advantage over Russia grows as nearly 180,000 military targets struck in May, Syrskyi says\n\n• 3 min read\n\n[Prefer![Kyiv Independent Logo](/assets/images/kiv3/ki-short-logo.svg)on Google](https://www.google.com/preferences/source?q=kyivindependent.com)\n\n![Avatar](/_next/image?url=https%3A%2F%2Fassets.kyivindependent.com%2Fcontent%2Fimages%2F2025%2F10%2FDSC02598.jpg&w=256&q=90)\n\n![Avatar](/_next/image?url=https%3A%2F%2Fassets.kyivindependent.com%2Fcontent%2Fimages%2F2025%2F10%2FDSC05515.jpg&w=256&q=90)\n\nby [Yuliia Taradiuk,](/author/yuliia/) [Tania Myronyshena](/author/tania-myronyshena/)\n\n![Ukraine's drone advantage over Russia grows as nearly 180,000 military targets struck in May, Syrskyi says](/_next/image?url=https%3A%2F%2Fassets.kyivindependent.com%2Fcontent%2Fimages%2F2026%2F03%2F626089393_1259952692966880_1616060521537530493_n.jpg&w=1536&q=75)\n\nCommander-in-Chief of the Ukrainain Armed Forces Oleksandr Syrskyi photographed at a base in an unknown location on Feb. 4, 2026. (Oleksandr Syrskyi / Facebook)\n\nUkrainian drone units struck nearly 180,000 Russian military targets in May, marking a 12.7% increase compared with April, Commander-in-Chief Oleksandr Syrskyi sai",
+      "published_date": "Thu, 11 Jun 2026 14:57:17 GMT",
+      "search_region": "俄乌战争",
+      "classified_regions": [
+        "俄乌战争"
+      ],
+      "event_types": [
+        "军事冲突升级",
+        "军工受益"
+      ],
+      "severity": "high",
+      "summary": "Ukraine's drone advantage over Russia grows as nearly 180,000 military targets struck in May, Syrskyi says • 3 min read Commander-in-Chief of the Ukrainain Armed Forces Oleksandr Syrskyi photographed at",
+      "affected_tickers": [
+        "GC=F",
+        "SI=F",
+        "LMT",
+        "NOC",
+        "RTX",
+        "GD",
+        "GLD",
+        "SLV",
+        "ITA",
+        "PPA",
+        "LHX",
+        "XAR"
+      ]
+    },
+    {
+      "title": "China’s control over indium phosphide exports threatens AI data centre rollout - KITCO",
+      "title_cn": "中国管制磷化铟出口威胁AI数据中心部署",
+      "url": "https://www.kitco.com/news/off-the-wire/2026-06-11/chinas-control-over-indium-phosphide-exports-threatens-ai-data-centre",
+      "content": "China’s commerce ministry did not respond to a faxed request for comment.\n\nIts control over InP highlights Beijing is prepared to expand on its well-proven export curbs on rare earths, which have disrupted global automotive, semiconductor and aviation supply chains since last year amid its tariff di",
+      "content_detail": "# China’s control over indium phosphide exports threatens AI data centre rollout\n\n[![Kitco Media](/default-avatar.svg)](/author/reuters)\n\n###### By [Reuters](/author/reuters)\n\nPublished:\n\nUpdated:\n\n##### Reuters\n\n![China’s control over indium phosphide exports threatens AI data centre rollout teaser image](https://images.kitco.com/img/height_691,width_1224,format_webp,quality_75/icms/2018731c-120e-475b-a47a-7e14466cda4b.png)\n\nBarely a week after Nvidia-backed chipmaker Coherent warned of a shortage of indium phosphide in an earnings call in early May, its CEO Jim Anderson was on a plane with a US business delegation accompanying President Donald Trump on his trip to China.\n\nAnderson’s visit was partly to raise the issue of delays in China’s export licenses involving the highly strategic material, essential in manufacturing high-speed optical chips for AI data centres, said three sources familiar with the matter.\n\nThe issue was also discussed during talks in Seoul between top trade negotiators of the two countries ahead of Trump’s May 14-15 summit with China’s President Xi Jinping, according to two US government officials and a person briefed on the talks.\n\nThe US urgency to resolve China’s export controls on the compound highlights how indium phosphide (InP) has emerged as a powerful trade weapon for Beijing that experts and executives say could disrupt the global rollout of AI data centres.\n\n“InP is one of several supply chain bottlenecks collectively gating AI data centre b",
+      "published_date": "Thu, 11 Jun 2026 15:41:00 GMT",
+      "search_region": "中美博弈",
+      "classified_regions": [
+        "中美博弈",
+        "全球制裁"
+      ],
+      "event_types": [
+        "供应链中断"
+      ],
+      "severity": "high",
+      "summary": "China’s control over indium phosphide exports threatens AI data centre rollout By Published: Updated: Reuters has emerged as a powerful trade weapon for Beijing that experts and executives say could",
+      "affected_tickers": [
+        "NVDA",
+        "TSM",
+        "INTC",
+        "AMD",
+        "ASML",
+        "SMH",
+        "SOXX"
+      ]
+    },
+    {
+      "title": "Focus: China's control over indium phosphide exports threatens AI data centre rollout - Reuters",
+      "title_cn": "焦点：中国管制磷化铟出口威胁AI数据中心部署",
+      "url": "https://www.reuters.com/world/china/chinas-control-over-indium-phosphide-exports-threatens-ai-data-centre-rollout-2026-06-11/",
+      "content": "Nvidia (NVDA.O), opens new tab announced $2 billion investments each into U.S. photonic product makers Coherent (COHR.N), opens new tab and Lumentum (LITE.O), opens new tab in March, while custom-chip maker Marvell Technology (MRVL.O), opens new tab announced the acquisition of semiconductor startup",
+      "content_detail": "# China's control over indium phosphide exports threatens AI data centre rollout | Reuters\n\n[Skip to main content](https://www.reuters.com/world/china/chinas-control-over-indium-phosphide-exports-threatens-ai-data-centre-rollout-2026-06-11#main-content)\n\n[Exclusive news, data and analytics for financial market professionals Learn more about Refinitiv](https://www.reuters.com/differentiator/)\n\n[](https://www.reuters.com/)\n\n*   [World](https://www.reuters.com/world/) \n\n## [Browse World](https://www.reuters.com/world/)\n\n    *   [Africa](https://www.reuters.com/world/africa/)\n    *   [Americas](https://www.reuters.com/world/americas/)\n    *   [Asia Pacific](https://www.reuters.com/world/asia-pacific/)\n    *   [China](https://www.reuters.com/world/china/)\n    *   [Europe](https://www.reuters.com/world/europe/)\n    *   [India](https://www.reuters.com/world/india/)\n    *   [Iran War](https://www.reuters.com/world/iran/)\n\n    *   [Israel and Hamas at War](https://www.reuters.com/world/israel-hamas/)\n    *   [Japan](https://www.reuters.com/world/japan/)\n    *   [Middle East](https://www.reuters.com/world/middle-east/)\n    *   [Ukraine and Russia at War](https://www.reuters.com/world/ukraine-russia-war/)\n    *   [United Kingdom](https://www.reuters.com/world/uk/)\n    *   [United States](https://www.reuters.com/world/us/)\n    *   [Reuters NEXT New York](https://www.reuters.com/world/reuters-next/)\n\n*   [Business](https://www.reuters.com/business/) \n\n## [Browse Business](https://www.reut",
+      "published_date": "Thu, 11 Jun 2026 01:05:04 GMT",
+      "search_region": "中美博弈",
+      "classified_regions": [
+        "中美博弈",
+        "全球制裁"
+      ],
+      "event_types": [
+        "供应链中断"
+      ],
+      "severity": "high",
+      "summary": "China's control over indium phosphide exports threatens AI data centre rollout Reuters",
+      "affected_tickers": [
+        "NVDA",
+        "TSM",
+        "INTC",
+        "AMD",
+        "ASML",
+        "SMH",
+        "SOXX"
+      ]
+    },
+    {
+      "title": "Scoop: Republican lawmakers challenge TSMC's Washington clout - Axios",
+      "title_cn": "独家：共和党议员挑战台积电在华盛顿的影响力",
+      "url": "https://www.axios.com/2026/06/10/republicans-patents-semiconductors-chips-tsmc",
+      "content": "What we're watching: The administrative law judge's initial determination is expected this month, with a full Commission decision around October.\n\nAdd Axios on Google\n\n##### What to read next [...] Driving the news: In a May 22 letter, Rep. Ryan Zinke (R-Mont.) and Sens. Tim Sheehy (R-Mont.), Roger ",
+      "content_detail": "# Republican lawmakers challenge Taiwan semiconductor firm's D.C. clout\n\nManage your tracker preferences\n\nWe use cookies and similar tracking technologies to remember preferences, analyze traffic, and deliver ads. Using some kinds of trackers (like cross-site or behavioral advertising cookies) may be considered a “sale” or “sharing” of personal data under certain state laws. You can opt in or out of these trackers below.\n\nTargeted advertising cookies and similar trackers\n\n- [x] On\n\nSetting this to “off” disables targeted advertising and related trackers in your current browser. To fully opt out, you must disable tracking on each browser and device you use. Clearing cookies may reset your preferences. Because we can't link your Axios subscriber account (email) to browser cookies, you may also want to update your settings in the Privacy Center to ensure your account is fully opted out. See our Privacy Policy for more on how we use personal data and your rights. Review our Privacy Policy at axios.com/legal for more on how we use personal data and your rights.\n\nSave\n\n[Privacy Center](https://privacy.axios.com/)\n\n[Consent powered by Ethyca](https://www.ethyca.com/janus?utm_source=fides_consent&utm_medium=referral&utm_campaign=cmp_backlinks&utm_term=janus)\n\n[Skip to main content](https://www.axios.com/2026/06/10/republicans-patents-semiconductors-chips-tsmc#main-content)\n\n*   [](https://www.axios.com/)\n*   [Newsletters](https://www.axios.com/newsletters)\n*   Axios Local Show \n*   [",
+      "published_date": "Wed, 10 Jun 2026 23:36:56 GMT",
+      "search_region": "中美博弈",
+      "classified_regions": [
+        "中美博弈"
+      ],
+      "event_types": [
+        "供应链中断"
+      ],
+      "severity": "medium",
+      "summary": "To fully opt out, you must disable tracking on each browser and device you use.",
+      "affected_tickers": [
+        "NVDA",
+        "TSM",
+        "INTC",
+        "AMD",
+        "ASML",
+        "SMH",
+        "SOXX"
+      ]
+    },
+    {
+      "title": "New White House executive order targets customs loopholes, tightens import enforcement - Logistics Management",
+      "title_cn": "白宫新行政令瞄准海关漏洞，加强进口执法",
+      "url": "https://www.logisticsmgmt.com/article/new_white_house_executive_order_targets_customs_loopholes_tightens_import_enforcement/",
+      "content": "“All parties need to know who is responsible for what, specific details of products, country of origin, valuation, and ultimately how all of this is documented and ready to withstand deep scrutiny from CBP,” he said. “Customs compliance is playing an expanded role in economic security architecture. ",
+      "content_detail": "* [Resources](/topic/category/resources)\n* [Archives](/archive)\n* [Subscribe Today](/site/subscribe)\n\n[![](/images/site/lm-logo-white.svg)](/)\n\n[LM](/)    [Topics](/topic/all)     [Logistics](/topic/category/logistics)    [Global Trade](/topic/category/global_trade)\n\n# New White House executive order targets customs loopholes, tightens import enforcement\n\nBy   [Jeff Berman](/author/jberman) · June 11, 2026\n\n![New White House executive order targets customs loopholes, tightens import enforcement](https://www.logisticsmgmt.com/images/2026_article/6-26-WH.jpg)\n\nAn executive order (EO) recently issued by the White House, entitled “Strengthening Customs Enforcement,” addresses what it called long overdue U.S. customs reform.\n\nThe EO explained that customs enforcement is viewed as essential to U.S. national security, foreign policy, and economy, adding that effective customs enforcement prevents the importation of unlawful and dangerous goods, ensures importers of record (IORs) are correctly identified and accountable for duties owed; and guarantees compliance with numerous federal laws, including laws that govern forced labor, rules of origin, origin marking, intellectual property, revenue collection, and product safety.\n\n“Customs reform is long overdue,” the EO stated. “Systemic inefficiencies, loopholes, insufficient enforcement mechanisms, and outdated processes have created opportunities for malign actors to evade Federal law.  Examples of noncompliance include undervaluing im",
+      "published_date": "Thu, 11 Jun 2026 15:49:38 GMT",
+      "search_region": "中美博弈",
+      "classified_regions": [
+        "中美博弈"
+      ],
+      "event_types": [
+        "中美关税"
+      ],
+      "severity": "medium",
+      "summary": "New White House executive order targets customs loopholes, tightens import enforcement By · June 11, 2026 recently issued by the White House, entitled “Strengthening Customs Enforcement,” addresses what it called",
+      "affected_tickers": [
+        "FXI",
+        "ASHR",
+        "KWEB",
+        "YINN",
+        "MCHI",
+        "0700.HK",
+        "9988.HK",
+        "CQQQ"
+      ]
+    },
+    {
+      "title": "Trump’s Iran war has propelled China’s cleantech industry - Financial Times",
+      "title_cn": "特朗普对伊朗的战争推动了中国清洁能源产业",
+      "url": "https://www.ft.com/content/12d0d1e4-d08c-4014-8a8a-b4b4f7044fcf",
+      "content": "Select\n\n Global news & analysis\n Expert opinion\n FT App on Android & iOS\n FT Edit: Access on iOS and web\n FirstFT: the day's biggest stories\n 20+ curated newsletters\n Follow topics & set alerts with myFT\n FT Videos & Podcasts\n 20 monthly gift articles to share\n Lex: FT's flagship investment column\n ",
+      "content_detail": "",
+      "published_date": "Thu, 11 Jun 2026 00:35:43 GMT",
+      "search_region": "中美博弈",
+      "classified_regions": [
+        "美伊冲突"
+      ],
+      "event_types": [
+        "军事冲突升级",
+        "原油供应风险"
+      ],
+      "severity": "high",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "SI=F",
+        "LMT",
+        "NOC",
+        "RTX",
+        "GD",
+        "GLD",
+        "SLV",
+        "ITA",
+        "PPA",
+        "CL=F",
+        "BZ=F",
+        "USO",
+        "XLE",
+        "BNO"
+      ]
+    },
+    {
+      "title": "EU curbs on Chinese inverters risk slowing solar rollout over security fears - Reuters",
+      "title_cn": "欧盟因安全担忧限制中国逆变器或减缓太阳能推广",
+      "url": "https://www.reuters.com/business/energy/eu-curbs-chinese-inverters-risk-slowing-solar-rollout-over-security-fears-2026-06-11/",
+      "content": "EU agrees stronger price controls for new carbon market\n Worldcategory\n\n  Albania protests swell as opposition to Kushner resort persists\n Businesscategory\n\n  Bayer hopes to speed up biofuel feedstock plan amid Iran war energy crunch\n\n## Business\n\n ### Grok's AI image generation tool violated Canadi",
+      "content_detail": "# EU curbs on Chinese inverters risk slowing solar rollout over security fears | Reuters\n\n[Skip to main content](https://www.reuters.com/business/energy/eu-curbs-chinese-inverters-risk-slowing-solar-rollout-over-security-fears-2026-06-11#main-content)\n\n[Exclusive news, data and analytics for financial market professionals Learn more about Refinitiv](https://www.reuters.com/differentiator/)\n\n[](https://www.reuters.com/)\n\n*   [World](https://www.reuters.com/world/) \n\n## [Browse World](https://www.reuters.com/world/)\n\n    *   [Africa](https://www.reuters.com/world/africa/)\n    *   [Americas](https://www.reuters.com/world/americas/)\n    *   [Asia Pacific](https://www.reuters.com/world/asia-pacific/)\n    *   [China](https://www.reuters.com/world/china/)\n    *   [Europe](https://www.reuters.com/world/europe/)\n    *   [India](https://www.reuters.com/world/india/)\n    *   [Iran War](https://www.reuters.com/world/iran/)\n\n    *   [Israel and Hamas at War](https://www.reuters.com/world/israel-hamas/)\n    *   [Japan](https://www.reuters.com/world/japan/)\n    *   [Middle East](https://www.reuters.com/world/middle-east/)\n    *   [Ukraine and Russia at War](https://www.reuters.com/world/ukraine-russia-war/)\n    *   [United Kingdom](https://www.reuters.com/world/uk/)\n    *   [United States](https://www.reuters.com/world/us/)\n    *   [Reuters NEXT New York](https://www.reuters.com/world/reuters-next/)\n\n*   [Business](https://www.reuters.com/business/) \n\n## [Browse Business](https://www.reuter",
+      "published_date": "Thu, 11 Jun 2026 12:44:35 GMT",
+      "search_region": "中美博弈",
+      "classified_regions": [
+        "全球制裁"
+      ],
+      "event_types": [
+        "供应链中断"
+      ],
+      "severity": "medium",
+      "summary": "EU curbs on Chinese inverters risk slowing solar rollout over security fears Reuters",
+      "affected_tickers": [
+        "NVDA",
+        "TSM",
+        "INTC",
+        "AMD",
+        "ASML",
+        "SMH",
+        "SOXX"
+      ]
+    },
+    {
+      "title": "China isn’t building as many foreign clean tech plants as it promised - E&E News by POLITICO",
+      "title_cn": "中国未按承诺建造海外清洁技术工厂",
+      "url": "https://www.eenews.net/articles/china-isnt-building-as-many-foreign-clean-tech-plants-as-it-promised/",
+      "content": "Advertisement\n\nThe analysis comes as more countries consider erecting trade barriers or local content requirements in order to force Chinese companies to build foreign manufacturing plants.\n\nGET FULL ACCESS\n\n###### \n\nThe transformation of the energy sector.\n\n###### \n\nPolicy. Science. Business.\n\n####",
+      "content_detail": "",
+      "published_date": "Thu, 11 Jun 2026 10:23:07 GMT",
+      "search_region": "中美博弈",
+      "classified_regions": [
+        "中美博弈"
+      ],
+      "event_types": [
+        "供应链中断"
+      ],
+      "severity": "low",
+      "summary": "",
+      "affected_tickers": [
+        "NVDA",
+        "TSM",
+        "INTC",
+        "AMD",
+        "ASML",
+        "SMH",
+        "SOXX"
+      ]
+    },
+    {
+      "title": "TELF AG on Critical Mineral Diplomacy and the Challenge of Delivering Real Results - vocal.media",
+      "title_cn": "TELF AG谈关键矿物外交与实现实际成果的挑战",
+      "url": "https://vocal.media/trader/telf-ag-on-critical-mineral-diplomacy-and-the-challenge-of-delivering-real-results",
+      "content": "However, what was once viewed as a simple aquatic organism is rapidly becoming one of the most valuable resources in the global sustainability movement. Across industries ranging from food and beverages to pharmaceuticals, cosmetics, renewable energy, and environmental management, algae-based produc",
+      "content_detail": "",
+      "published_date": "Thu, 11 Jun 2026 07:48:52 GMT",
+      "search_region": "中美博弈",
+      "classified_regions": [
+        "中美博弈"
+      ],
+      "event_types": [
+        "供应链中断"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "NVDA",
+        "TSM",
+        "INTC",
+        "AMD",
+        "ASML",
+        "SMH",
+        "SOXX"
+      ]
+    },
+    {
+      "title": "Depleted but dangerous, Hamas is holding its fire against Israel. The quiet may not last - The Times of Israel",
+      "title_cn": "哈马斯虽受重创但仍危险，对以色列暂未开火",
+      "url": "https://www.timesofisrael.com/depleted-but-dangerous-hamas-is-holding-its-fire-against-israel-the-quiet-may-not-last/amp/",
+      "content": "The war that Hamas ignited on October 7, 2023, has since expanded far beyond Gaza, drawing in Iran, Hezbollah in Lebanon and the Houthis in Yemen. But as Israel found itself under attack from multiple fronts in recent months, the group that started the conflict has been strikingly absent from the ba",
+      "content_detail": "",
+      "published_date": "Thu, 11 Jun 2026 06:10:21 GMT",
+      "search_region": "中东/红海",
+      "classified_regions": [
+        "中东/红海"
+      ],
+      "event_types": [
+        "军事冲突升级"
+      ],
+      "severity": "high",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "SI=F",
+        "LMT",
+        "NOC",
+        "RTX",
+        "GD",
+        "GLD",
+        "SLV",
+        "ITA",
+        "PPA"
+      ]
+    },
+    {
+      "title": "Three civilian seafarers dead in US attack on merchant vessel - Seatrade Maritime News",
+      "title_cn": "",
+      "url": "https://www.seatrade-maritime.com/security/three-civilian-seafarers-dead-in-us-attack-on-settebello",
+      "content": "Sponsored By\n\n Security\n News\n\nStrait of Hormuz\n\nThe latest news and commentary on how the US/Israel-Iran conflict is affecting the global maritime industry and shipping markets.\n\n# Three civilian seafarers dead in US attack on Settebello\n\nAs fresh attacks on commercial shipping continue, India conf",
+      "content_detail": "",
+      "published_date": "Thu, 11 Jun 2026 11:24:51 GMT",
+      "search_region": "中东/红海",
+      "classified_regions": [
+        "中东/红海"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Police Repeatedly Mistreat Anti-gov't Protesters, State Attorneys Privately Warn - Haaretz",
+      "title_cn": "",
+      "url": "https://www.haaretz.com/israel-news/israel-crime/2026-06-11/ty-article/.premium/police-repeatedly-mistreat-anti-govt-protesters-state-attorneys-privately-warn/0000019e-b5dc-d7a4-a9bf-f5dc6d6d0000",
+      "content": "Israel protest\n\nIsraeli judiciary\n\nHuman rights\n\n## Comments\n\nLoading...\n\n## In the News\n\n### In the News:\n\nIsrael-Iran Live UpdatesLebanonU.S.-IranErdoganIsrael ElectionsNew York KnicksGwyneth PaltrowHaQuizHaaretz Podcast\n\n### Netanyahu Aide Indicted for Severe Espionage Allegations, Faces Barring ",
+      "content_detail": "",
+      "published_date": "Thu, 11 Jun 2026 12:12:00 GMT",
+      "search_region": "中东/红海",
+      "classified_regions": [
+        "中东/红海"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Iran claims it hit two ships, declares Strait of Hormuz closed - Seatrade Maritime News",
+      "title_cn": "",
+      "url": "https://www.seatrade-maritime.com/security/iran-claims-it-hit-two-ships-declares-strait-of-hormuz-closed",
+      "content": "Sponsored By\n\n Security\n News\n\nStrait of Hormuz\n\nThe latest news and commentary on how the US/Israel-Iran conflict is affecting the global maritime industry and shipping markets.\n\n# Iran claims it hit two ships, declares Strait of Hormuz closed\n\nIRGC declares the waterway closed to all ships, includ",
+      "content_detail": "",
+      "published_date": "Thu, 11 Jun 2026 00:01:45 GMT",
+      "search_region": "中东/红海",
+      "classified_regions": [
+        "中东/红海"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "‘I am working to be prime minister, Netanyahu is worried,’ Eisenkot tells ynet - Ynetnews",
+      "title_cn": "",
+      "url": "https://www.ynetnews.com/article/skjoa0w11gx",
+      "content": "Do you understand the objective in capturing Beaufort Castle? “Yes, because Beaufort is a high ridge overlooking northern Israeli communities. But if the goal is to remove the threat, demilitarize southern Lebanon and dismantle Hezbollah, then we are very far from that. As in Gaza, Netanyahu did not",
+      "content_detail": "",
+      "published_date": "Thu, 11 Jun 2026 08:11:53 GMT",
+      "search_region": "中东/红海",
+      "classified_regions": [
+        "中东/红海"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Debris from intercepted Iranian drone injures child, damages homes in Bahrain - The Jerusalem Post",
+      "title_cn": "",
+      "url": "https://www.jpost.com/international/article-899057",
+      "content": "# Debris from intercepted Iranian drone injures child, damages homes in Bahrain\n\n## Vehicles caught fire, and homes were damaged in Hamad Town and the capital, Manama, after debris fell from Iranian drones that were intercepted and destroyed.\n\nFollow us on Google\n\nA drone is seen flying above the sk",
+      "content_detail": "",
+      "published_date": "Thu, 11 Jun 2026 14:28:52 GMT",
+      "search_region": "中东/红海",
+      "classified_regions": [
+        "中东/红海"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Danon: UN fails to condemn Hezbollah for UNIFIL soldier's death in Lebanon - The Jerusalem Post",
+      "title_cn": "丹农：联合国未能就联黎部队士兵在黎巴嫩死亡事件谴责真主党",
+      "url": "https://www.jpost.com/middle-east/article-899047",
+      "content": "# UN fails to condemn Hezbollah in statement on peacekeeper's death, Israeli ambassador says\n\n## \"When a UN peacekeeper dies in southern Lebanon and the Security Council still fails to explicitly condemn Hezbollah for violating Resolution 1701, it reflects a profound failure,\" Danon stated.\n\nFollow ",
+      "content_detail": "",
+      "published_date": "Thu, 11 Jun 2026 06:04:57 GMT",
+      "search_region": "中东/红海",
+      "classified_regions": [
+        "中东/红海"
+      ],
+      "event_types": [
+        "军事冲突升级"
+      ],
+      "severity": "high",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "SI=F",
+        "LMT",
+        "NOC",
+        "RTX",
+        "GD",
+        "GLD",
+        "SLV",
+        "ITA",
+        "PPA"
+      ]
+    },
+    {
+      "title": "India and the IMO condemn attack on tanker Settebello - Seatrade Maritime News",
+      "title_cn": "印度与国际海事组织谴责对油轮“塞特贝洛”号的袭击",
+      "url": "https://www.seatrade-maritime.com/security/india-and-the-imo-condemn-attack-on-tanker-settebello",
+      "content": "Sponsored By\n\n Security\n Tankers\n Crewing\n News\n\nStrait of Hormuz\n\nThe latest news and commentary on how the US/Israel-Iran conflict is affecting the global maritime industry and shipping markets.\n\n# India and the IMO condemn attack on tanker Settebello\n\nThree Indian seafarers are missing after US f",
+      "content_detail": "",
+      "published_date": "Thu, 11 Jun 2026 01:56:59 GMT",
+      "search_region": "中东/红海",
+      "classified_regions": [
+        "中东/红海"
+      ],
+      "event_types": [
+        "航运中断",
+        "原油供应风险"
+      ],
+      "severity": "high",
+      "summary": "",
+      "affected_tickers": [
+        "ZIM",
+        "MATX",
+        "BOAT",
+        "SEA",
+        "CL=F",
+        "BZ=F",
+        "USO",
+        "XLE",
+        "BNO"
+      ]
+    },
+    {
+      "title": "Taiwan says its sovereignty cannot be 'violated', as China ends coast guard patrol - Reuters",
+      "title_cn": "台湾宣称其主权不容“侵犯”，因中国结束海警巡逻",
+      "url": "https://www.reuters.com/world/china/taiwan-says-its-sovereignty-cannot-be-violated-china-ends-coast-guard-patrol-2026-06-11/",
+      "content": "Taiwan's government says only the island's people can decide their future, and President Lai Ching-te has repeatedly offered ​talks with China. Beijing has rebuffed Lai, saying he is a \"separatist\".\n\nReporting by Ben Blanchard; Editing by Tom Hogue and Sonali Paul\n\nOur Standards: The Thomson Reuters",
+      "content_detail": "",
+      "published_date": "Thu, 11 Jun 2026 05:32:46 GMT",
+      "search_region": "台海/南海/朝鲜",
+      "classified_regions": [
+        "中美博弈"
+      ],
+      "event_types": [
+        "军事冲突升级"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "SI=F",
+        "LMT",
+        "NOC",
+        "RTX",
+        "GD",
+        "GLD",
+        "SLV",
+        "ITA",
+        "PPA"
+      ]
+    },
+    {
+      "title": "U.S. monitoring Chinese activity in South China Sea around disputed shoal - CBS News",
+      "title_cn": "美国监视中国在南海争议浅滩周边的活动",
+      "url": "https://www.cbsnews.com/news/u-s-monitoring-chinese-activity-in-south-china-sea-around-disputed-shoal/",
+      "content": "The U.S. engaged the Chinese government over the structure. The People's Liberation Army, the military wing of the Chinese Communist Party, claimed the structure was not military, but Chinese officials also did not fully disavow that some element within the structure could be used by the PLA, accord",
+      "content_detail": "",
+      "published_date": "Thu, 11 Jun 2026 17:49:26 GMT",
+      "search_region": "台海/南海/朝鲜",
+      "classified_regions": [
+        "中美博弈"
+      ],
+      "event_types": [
+        "军事冲突升级"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "SI=F",
+        "LMT",
+        "NOC",
+        "RTX",
+        "GD",
+        "GLD",
+        "SLV",
+        "ITA",
+        "PPA"
+      ]
+    },
+    {
+      "title": "China hits Philippine defense chief with entry ban over South China Sea remarks - AP News",
+      "title_cn": "中国因南海言论对菲律宾国防部长实施入境禁令",
+      "url": "https://apnews.com/article/china-bans-philippines-defense-minister-entry-7a8a6f515acdf7b1f6b3d688d9bcc6f8",
+      "content": "TOP STORIES\n\n  + Honda retira más de 880.000 autos por problema en componentes de suspensión trasera\n  + Keiko Fujimori retoma su liderazgo sobre Roberto Sánchez en el balotaje presidencial de Perú\n  + EEUU lanza nuevos ataques hacia Irán, que responde con contraataques\n Most watched videos\n Standar",
+      "content_detail": "",
+      "published_date": "Thu, 11 Jun 2026 13:06:01 GMT",
+      "search_region": "台海/南海/朝鲜",
+      "classified_regions": [
+        "台海/南海/朝鲜"
+      ],
+      "event_types": [
+        "军事冲突升级"
+      ],
+      "severity": "low",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "SI=F",
+        "LMT",
+        "NOC",
+        "RTX",
+        "GD",
+        "GLD",
+        "SLV",
+        "ITA",
+        "PPA"
+      ]
+    },
+    {
+      "title": "The Malacca Chessboard: And Shaping a Way Ahead for Deterrence - Defense.info",
+      "title_cn": "马六甲棋局：为威慑塑造前路",
+      "url": "https://defense.info/featured-story/2026/06/the-malacca-chessboard-and-shaping-a-way-ahead-for-deterrence/",
+      "content": "Politically, Jakarta faces a dilemma of its own. On the one hand, the MDCP offers modernization, training, and access to advanced technologies that can strengthen Indonesia’s ability to police its own waters and raise its profile as a regional power. On the other, Indonesian officials have publicly ",
+      "content_detail": "",
+      "published_date": "Thu, 11 Jun 2026 12:15:04 GMT",
+      "search_region": "台海/南海/朝鲜",
+      "classified_regions": [
+        "中美博弈"
+      ],
+      "event_types": [
+        "军事冲突升级",
+        "航运中断"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "SI=F",
+        "LMT",
+        "NOC",
+        "RTX",
+        "GD",
+        "GLD",
+        "SLV",
+        "ITA",
+        "PPA",
+        "ZIM",
+        "MATX",
+        "BOAT",
+        "SEA"
+      ]
+    },
+    {
+      "title": "Taiwan's opposition leader tours U.S. to defend her engagement approach to China - KUNR Public Radio",
+      "title_cn": "台湾在野党领袖访美为其对华接触路线辩护",
+      "url": "https://www.kunr.org/npr-news/2026-06-11/taiwans-opposition-leader-tours-u-s-to-defend-her-engagement-approach-to-china",
+      "content": "In an interview with Here & Now‘s Scott Tong, she stressed the importance of dialogue with Beijing, but said that the issue of “reunification” was never discussed in their April meeting. Her comments come as Taiwan looks to buy $14 billion in arms from the U.S. and as tensions linger over the island",
+      "content_detail": "",
+      "published_date": "Thu, 11 Jun 2026 16:02:17 GMT",
+      "search_region": "台海/南海/朝鲜",
+      "classified_regions": [
+        "中美博弈"
+      ],
+      "event_types": [
+        "军事冲突升级",
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "SI=F",
+        "LMT",
+        "NOC",
+        "RTX",
+        "GD",
+        "GLD",
+        "SLV",
+        "ITA",
+        "PPA",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Iran Adds Elon Musk Companies To List Of Military Targets, State Media Reports - Yahoo",
+      "title_cn": "伊朗将马斯克旗下公司列入军事目标清单，官方媒体报道",
+      "url": "https://www.yahoo.com/news/world/articles/iran-adds-elon-musk-companies-144332063.html",
+      "content": "Skip to main\n\nNews\n\nFinance\n\nSports\n\nMail\n\nAdvertisement\n\nAdvertisement\n\nReturn to Homepage\n\n## Top Stories:\n\n Iran war updates\n Walmart drone delivery\n Starbucks 'Bearista' cup is back\n Inflation report\n Tuesday primary takeaways\n Most popular name in America\n '60 Minutes' turmoil\n NASA's Artemis I",
+      "content_detail": "",
+      "published_date": "Thu, 11 Jun 2026 14:43:32 GMT",
+      "search_region": "台海/南海/朝鲜",
+      "classified_regions": [
+        "美伊冲突"
+      ],
+      "event_types": [
+        "军事冲突升级",
+        "原油供应风险"
+      ],
+      "severity": "high",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "SI=F",
+        "LMT",
+        "NOC",
+        "RTX",
+        "GD",
+        "GLD",
+        "SLV",
+        "ITA",
+        "PPA",
+        "CL=F",
+        "BZ=F",
+        "USO",
+        "XLE",
+        "BNO"
+      ]
+    },
+    {
+      "title": "Missile defense in the age of saturation warfare - SpaceNews",
+      "title_cn": "饱和攻击时代的导弹防御",
+      "url": "https://spacenews.com/missile-defense-in-the-age-of-saturation-warfare/",
+      "content": "With the evolution of new military technologies, the trajectory of war has undergone a massive change. Historically, wars were fought through direct confrontation on the battlefield, while contemporary warfare is characterized by stand-off operations, including missile strikes or drone attacks launc",
+      "content_detail": "",
+      "published_date": "Thu, 11 Jun 2026 11:00:00 GMT",
+      "search_region": "台海/南海/朝鲜",
+      "classified_regions": [
+        "俄乌战争",
+        "中美博弈"
+      ],
+      "event_types": [
+        "军工受益",
+        "军事冲突升级"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "LMT",
+        "NOC",
+        "RTX",
+        "GD",
+        "LHX",
+        "ITA",
+        "PPA",
+        "XAR",
+        "GC=F",
+        "SI=F",
+        "GLD",
+        "SLV"
+      ]
+    },
+    {
+      "title": "Why G7 Leaders Are Worried About Global Economic Imbalances - Global Banking & Finance Review",
+      "title_cn": "G7领导人为何担忧全球经济失衡",
+      "url": "https://www.globalbankingandfinance.com/explainer-why-g7-worried-about-global-economic-imbalances/",
+      "content": "Russian seaborne oil product exports fell slightly in May, data from industry sources showsChina joins Macron-led video call in rare economic talks ahead of G7 summit in FranceCommission appeal in COVID vaccine contract case should be dismissed, EU court adviser saysWall Street buckles up for SpaceX",
+      "content_detail": "",
+      "published_date": "Thu, 11 Jun 2026 10:47:42 GMT",
+      "search_region": "全球制裁",
+      "classified_regions": [
+        "中美博弈"
+      ],
+      "event_types": [
+        "汇率波动",
+        "避险需求"
+      ],
+      "severity": "low",
+      "summary": "",
+      "affected_tickers": [
+        "DX-Y.NYB",
+        "FXY",
+        "FXE",
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "G7 Summit 2025: Iran, Ukraine & Global Finance Dominate Agenda - Global Banking & Finance Review",
+      "title_cn": "2025年G7峰会：伊朗、乌克兰和全球金融主导议程 - 全球银行业",
+      "url": "https://www.globalbankingandfinance.com/iran-ukraine-loom-over-g7-france-accommodates-trump/",
+      "content": "Zelenskiy frets that the conflict in Iran has diverted U.S. attention. Meanwhile, dynamics on the battlefield have shifted, with Ukrainian drones striking deeper into Russian territory to cut battlefield supply lines and hobble energy infrastructure.\n\nEuropean diplomats see the summit as an opportun",
+      "content_detail": "",
+      "published_date": "Thu, 11 Jun 2026 08:03:03 GMT",
+      "search_region": "全球制裁",
+      "classified_regions": [
+        "美伊冲突",
+        "俄乌战争"
+      ],
+      "event_types": [
+        "避险需求",
+        "军事冲突升级"
+      ],
+      "severity": "high",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY",
+        "LMT",
+        "NOC",
+        "RTX",
+        "GD",
+        "SLV",
+        "ITA",
+        "PPA"
+      ]
+    },
+    {
+      "title": "US imposes sanctions on networks buying anti-aircraft missiles for Iran - The Jerusalem Post",
+      "title_cn": "美国制裁为伊朗购买防空导弹的网络 - The Je",
+      "url": "https://www.jpost.com/international/article-899106",
+      "content": "### US pushes forward with Operation Economic Fury\n\nThe sanction designations follow the US implementation of Operation Economic Fury, a Treasury Department initiative to create a chokehold on Iran during the conflict and to sanction entities with connections to the regime in order to degrade Iran's",
+      "content_detail": "",
+      "published_date": "Thu, 11 Jun 2026 13:48:29 GMT",
+      "search_region": "全球制裁",
+      "classified_regions": [
+        "美伊冲突"
+      ],
+      "event_types": [
+        "军事冲突升级",
+        "避险需求"
+      ],
+      "severity": "high",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "SI=F",
+        "LMT",
+        "NOC",
+        "RTX",
+        "GD",
+        "GLD",
+        "SLV",
+        "ITA",
+        "PPA",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Chronicle of sanctions foretold: how did Israel reach its worst diplomatic crisis ever? - Ynetnews",
+      "title_cn": "遭预言的制裁编年史：以色列如何陷入最严重的外交危机",
+      "url": "https://www.ynetnews.com/article/rynvt3pzzg",
+      "content": "Updates Red Mail\n\nTel Aviv-Jaffa\n\nMain\n\nIsrael News\n\nMideast & World News\n\nTech & Digital\n\nReal Estate\n\nFinance\n\nLifestyle\n\nHealth & Science\n\nJewish World\n\nTravel\n\nMore\n\nChannels\n\n Opinions\n Magazine\n Sports\n Food\n Weather\n Podcasts\n\nSites & Sources\n\n Ynet\n Calcalist\n yad2\n ynetespanol\n Вести\n mynet",
+      "content_detail": "",
+      "published_date": "Thu, 11 Jun 2026 04:38:05 GMT",
+      "search_region": "全球制裁",
+      "classified_regions": [
+        "全球制裁"
+      ],
+      "event_types": [
+        "军事冲突升级",
+        "避险需求"
+      ],
+      "severity": "high",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "SI=F",
+        "LMT",
+        "NOC",
+        "RTX",
+        "GD",
+        "GLD",
+        "SLV",
+        "ITA",
+        "PPA",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "US slaps sanctions against Cuban oil and gas company as tensions rise - Greenwich Time",
+      "title_cn": "美国制裁古巴石油天然气公司，紧张局势升级 - Greenwic",
+      "url": "https://www.greenwichtime.com/news/world/article/us-slaps-sanctions-against-cuban-oil-and-gas-22301404.php",
+      "content": "Add Preferred Source\n\nThe Cuban government did not immediately respond to a message seeking comment. It has previously said that sanctions punish all Cubans and are aimed at strangling the economy to destabilize both the government and its people.\n\nAdvertisement\n\nArticle continues below this ad\n\nMor",
+      "content_detail": "",
+      "published_date": "Thu, 11 Jun 2026 18:30:31 GMT",
+      "search_region": "全球制裁",
+      "classified_regions": [
+        "全球制裁"
+      ],
+      "event_types": [
+        "原油供应风险",
+        "避险需求"
+      ],
+      "severity": "high",
+      "summary": "",
+      "affected_tickers": [
+        "CL=F",
+        "BZ=F",
+        "USO",
+        "XLE",
+        "BNO",
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "EXCHANGES AND MARKET... - VitalLaw.com",
+      "title_cn": "交易所和市场... - VitalLaw.com",
+      "url": "https://www.vitallaw.com/news/exchanges-and-market-regulation-cftc-seeks-comments-on-proposed-amendments-governing-event-contracts-about-war-terrorism-gaming/sld01b5d0a2c875b7436ea1b59f0cbaa416fb",
+      "content": "“Involving” a prohibited activity means that the settlement is determined by the occurrence or extent of same tied to that activity. Involvement would not apply to a nebulous connection. For example, “[a]n event contract that settles on whether a particular foreign head of state is killed during a s",
+      "content_detail": "",
+      "published_date": "Thu, 11 Jun 2026 00:00:00 GMT",
+      "search_region": "全球制裁",
+      "classified_regions": [
+        "全球制裁"
+      ],
+      "event_types": [
+        "汇率波动",
+        "避险需求"
+      ],
+      "severity": "low",
+      "summary": "",
+      "affected_tickers": [
+        "DX-Y.NYB",
+        "FXY",
+        "FXE",
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    }
+  ]
+}
