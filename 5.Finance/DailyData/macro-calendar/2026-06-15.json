@@ -1,0 +1,86 @@
+{
+  "date": "2026-06-15",
+  "generated_at": "2026-06-15T06:06:51.740111",
+  "upcoming_events": [
+    {
+      "date": "2026-06-17",
+      "event": "FOMC 利率决议",
+      "importance": "critical",
+      "category": "央行",
+      "note": "附 SEP 经济预测 + 点阵图",
+      "days_until": 2
+    }
+  ],
+  "recent_events": [],
+  "web_events": [
+    {
+      "source": "tavily_answer",
+      "query": "US economic data release this week CPI GDP jobs",
+      "answer": "The Consumer Price Index (CPI) rose to 4.2% in May from a year earlier, marking a 3-year high and up from 3.8% in April. The U.S. economy added 172,000 jobs in May, with unemployment steady at 4.3%. Elon Musk’s SpaceX began trading with a price set at $135 per share, giving the company a valuation of $1.77 trillion."
+    },
+    {
+      "source": "tavily_result",
+      "title": "America In Focus: Inflation hits 3-year high, Wall Street rallies and Musk becomes a trillionaire - Greenwich Time",
+      "url": "https://www.greenwichtime.com/business/article/america-in-focus-inflation-hits-3-year-high-22303894.php",
+      "content": "# America In Focus: Inflation hits 3-year high, Wall Street rallies and Musk becomes a trillionaire. Trips to the grocery store or gas station are more painful than they were last year, and rising costs are impacting the decisions of both households and businesses. Here’s a snapshot of prominent eco"
+    },
+    {
+      "source": "tavily_result",
+      "title": "SpaceX sets IPO price at $135 - NBC News",
+      "url": "https://www.nbcnews.com/video/spacex-sets-ipo-price-at-135-264971845656",
+      "content": "IE 11 is not supported. * ## Trump Says 'I Love the Inflation' as Consumer Price Index Rises. * ## CPI report: Inflation rises to 4.2%, the highest levels in three years. * ## U.S. economy adds 172,000 jobs in May, unemployment steady at 4.3%. * ## How the All-Inclusive Travel Trend is Heating Up fo"
+    },
+    {
+      "source": "tavily_result",
+      "title": "More Confusing News On The Future Economy - Forbes",
+      "url": "https://www.forbes.com/sites/eriksherman/2026/06/12/more-confusing-news-on-the-future-economy/",
+      "content": "The May CPI report showed a 0.5% month-over-month increase, the same as in April. The so-called core index for all items other than food and energy, because those are subject to high volatility and make it difficult to see the ongoing effect of inflation, was up 0.2%. CPI was up 4.2% for the 12-mont"
+    },
+    {
+      "source": "tavily_answer",
+      "query": "Federal Reserve speech this week monetary policy",
+      "answer": "The Federal Reserve, under the leadership of Chair Kevin Warsh, is expected to hold its benchmark interest rate steady during its upcoming meeting. However, the market is increasingly pricing in the possibility of future rate hikes due to persistently high inflation. Despite President Donald Trump's call for lower rates, the bond market is betting on rate increases by December. Analysts are closely watching how Warsh navigates the potential conflict between inflationary pressures and economic gr"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Be careful what you Warsh for - Reuters",
+      "url": "https://www.reuters.com/business/take-five/global-markets-themes-graphic-2026-06-12/",
+      "content": "# Be careful what you Warsh for | Reuters. ## Browse World. ## Browse Business. ## Browse Markets. Item 1 of 2 The new Federal Reserve Chair Kevin Warsh delivers a speech on the day of his swearing in ceremony, in the East Room of the White House in Washington, D.C., U.S., May 22, 2026. **[1/2]**The"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Wall St Week Ahead Newly led Fed poses markets wildcard for rockier US indexes - KITCO",
+      "url": "https://www.kitco.com/news/off-the-wire/2026-06-12/wall-st-week-ahead-newly-led-fed-poses-markets-wildcard-rockier-us",
+      "content": "NEW YORK, June 12 (Reuters) - A suddenly rocky U.S. stock market confronts a potential wildcard next week: A newly led Federal Reserve at a time investors are worried that interest rate hikes to ​fight inflation could dampen enthusiasm for equities. Investors are eager to see how Fed Chair Kevin War"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Between Trump and a hard place: Fed chair Warsh to lead first rate meeting - Yahoo Finance",
+      "url": "https://finance.yahoo.com/economy/policy/articles/between-trump-hard-place-fed-013553668.html",
+      "content": "# Between Trump and a hard place: Fed chair Warsh to lead first rate meeting. US Federal Reserve chief Kevin Warsh will chair his first meeting of the central bank's rate-setting committee next week caught between a rock and a hard place. The bank's 12-member Federal Open Market Committee (FOMC) wil"
+    },
+    {
+      "source": "tavily_answer",
+      "query": "China PMI economic data this week",
+      "answer": "China's PMI economic data for this week indicates a forecasted growth of 4.2% for the year, down from the previously expected 5% and the 4.4% forecast in January, according to the World Bank. This revision is attributed to the economic fallout from the Iran war, which has led to higher energy prices and increased global economic uncertainty."
+    },
+    {
+      "source": "tavily_result",
+      "title": "America In Focus: Inflation hits 3-year high, Wall Street rallies and Musk becomes a trillionaire - Greenwich Time",
+      "url": "https://www.greenwichtime.com/business/article/america-in-focus-inflation-hits-3-year-high-22303894.php",
+      "content": "# America In Focus: Inflation hits 3-year high, Wall Street rallies and Musk becomes a trillionaire. Trips to the grocery store or gas station are more painful than they were last year, and rising costs are impacting the decisions of both households and businesses. Here’s a snapshot of prominent eco"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Citing fallout from Iran war, World Bank cuts forecast for global economic growth - Los Angeles Times",
+      "url": "https://www.latimes.com/business/story/2026-06-13/citing-fallout-from-iran-war-world-bank-cuts-forecast-for-global-economic-growth",
+      "content": "# Citing fallout from Iran war, World Bank cuts forecast for global economic growth. WASHINGTON — The economic fallout from the Iran war — higher energy prices and increased uncertainty — will drag down global growth this year, the World Bank said Thursday. The bank downgraded its forecast for growt"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Naphtha, gasoline markets firmer week-on-week - TradingView",
+      "url": "https://www.tradingview.com/news/reuters.com,2026:newsml_L4N42K0IS:0-naphtha-gasoline-markets-firmer-week-on-week/",
+      "content": "# Naphtha, gasoline markets firmer week-on-week — TradingView News. *   /Naphtha, gasoline markets firmer week-on-week. Image 2: ReutersImage 3: Reuters. * Image 5 Reuters Refinitiv Samaiden Group Says Unit Announces Termination Of MoU With RGC, MVA, PANNA. * Image 9 Reuters Refinitiv Aena's Spanish"
+    }
+  ]
+}
