@@ -1,0 +1,86 @@
+{
+  "date": "2026-06-16",
+  "generated_at": "2026-06-16T06:07:46.610794",
+  "upcoming_events": [
+    {
+      "date": "2026-06-17",
+      "event": "FOMC 利率决议",
+      "importance": "critical",
+      "category": "央行",
+      "note": "附 SEP 经济预测 + 点阵图",
+      "days_until": 1
+    }
+  ],
+  "recent_events": [],
+  "web_events": [
+    {
+      "source": "tavily_answer",
+      "query": "US economic data release this week CPI GDP jobs",
+      "answer": "This week's US economic data highlights rising inflation, with consumer prices increasing 4.2% in May from the previous year, marking a three-year high. The Federal Reserve's meeting, led by new Chair Kevin Warsh, is expected to maintain current interest rates due to inflation exceeding the Fed's 2% target and ongoing negotiations between the U.S. and Iran. The labor market remains robust, although specific job data for this week was not detailed in the sources."
+    },
+    {
+      "source": "tavily_result",
+      "title": "America In Focus: Inflation hits 3-year high, Wall Street rallies and Musk becomes a trillionaire - Greenwich Time",
+      "url": "https://www.greenwichtime.com/business/article/america-in-focus-inflation-hits-3-year-high-22303894.php",
+      "content": "# America In Focus: Inflation hits 3-year high, Wall Street rallies and Musk becomes a trillionaire. Trips to the grocery store or gas station are more painful than they were last year, and rising costs are impacting the decisions of both households and businesses. Here’s a snapshot of prominent eco"
+    },
+    {
+      "source": "tavily_result",
+      "title": "America In Focus: Inflation hits 3-year high, Wall Street rallies and Musk becomes a trillionaire - The Washington Post",
+      "url": "https://www.washingtonpost.com/business/2026/06/13/inflation-economy-trump-iran-unemployment-social-security/b9190b0a-6731-11f1-bdd4-805ebb99a693_story.html",
+      "content": "# America In Focus: Inflation hits 3-year high, Wall Street rallies and Musk becomes a trillionaire. Rising gas prices pushed inflation to its highest level in three years, new data showed this week, a headache for the Federal Reserve and a potential political challenge for the Trump administration "
+    },
+    {
+      "source": "tavily_result",
+      "title": "What to Expect in Markets This Week: Kevin Warsh Leads His First Fed Meeting - Investopedia",
+      "url": "https://www.investopedia.com/what-to-expect-in-markets-this-week-kevin-warsh-leads-his-first-fed-meeting-11995270",
+      "content": "# What to Expect in Markets This Week: Kevin Warsh Leads His First Fed Meeting. New Fed chair Kevin Warsh will oversee his first meeting this week, giving investors a chance to see a fresh face and a new perspective. The Federal Open Market Committee, including Warsh, is slated to convene Tuesday, a"
+    },
+    {
+      "source": "tavily_answer",
+      "query": "Federal Reserve speech this week monetary policy",
+      "answer": "Based on the data, the Federal Reserve, led by new Chair Kevin Warsh, is expected to hold interest rates steady at its policy meeting on June 17. While the consensus expectation is that the FOMC will leave the federal funds target rate unchanged, Warsh and other FOMC members are likely to make a subtle yet powerful change to monetary policy by shifting from an easing bias to a neutral one. This shift comes amid concerns about inflation driven by President Trump's Iran-war-related policies, commo"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Fed Chair Kevin Warsh and the FOMC Will Likely Take the First Step Toward Dropping the Hammer on Trumpflation This Week - The Motley Fool",
+      "url": "https://www.fool.com/investing/2026/06/15/fed-kevin-warsh-fomc-drop-hammer-on-trumpflation/",
+      "content": "The **Dow Jones Industrial Average** (^DJI +0.92%), **S&P 500** (^GSPC +1.65%), and **Nasdaq Composite** (^IXIC +3.07%) jumped to fresh highs, while a changing of the guard was made official at the Federal Reserve. Jerome Powell served his final day as Fed chair on May 15, while Trump's handpicked s"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Fed Chair Kevin Warsh and the FOMC Will Likely Take the First Step Toward Dropping the Hammer on Trumpflation This Week - Yahoo Finance",
+      "url": "https://finance.yahoo.com/economy/policy/articles/fed-chair-kevin-warsh-fomc-082600160.html",
+      "content": "# Fed Chair Kevin Warsh and the FOMC Will Likely Take the First Step Toward Dropping the Hammer on Trumpflation This Week. This coming Wednesday, June 17, Fed Chair Kevin Warsh and the other 11 voting members of the Federal Open Market Committee (FOMC), who determine our nation's monetary policy, ar"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Warsh's Fed is likely to hold rates steady — what the leadership change could mean for your money - CNBC",
+      "url": "https://www.cnbc.com/2026/06/15/warsh-fed-interest-rates.html",
+      "content": "# Warsh's Fed is likely to hold rates steady — what the leadership change could mean for your money. * That meeting will be the first helmed by new Fed Chair Kevin Warsh, President Donald Trump’s pick to lead the central bank. * The Fed’s actions impact many of the borrowing and savings rates consum"
+    },
+    {
+      "source": "tavily_answer",
+      "query": "China PMI economic data this week",
+      "answer": "Based on the most recent data, China's economic growth forecast for this year has been revised down to 4.2% by the World Bank, reflecting the global economic impact of the Iran war. This is a decrease from the previously forecasted 5% growth and the earlier January projection of 4.4%."
+    },
+    {
+      "source": "tavily_result",
+      "title": "America In Focus: Inflation hits 3-year high, Wall Street rallies and Musk becomes a trillionaire - Greenwich Time",
+      "url": "https://www.greenwichtime.com/business/article/america-in-focus-inflation-hits-3-year-high-22303894.php",
+      "content": "# America In Focus: Inflation hits 3-year high, Wall Street rallies and Musk becomes a trillionaire. Trips to the grocery store or gas station are more painful than they were last year, and rising costs are impacting the decisions of both households and businesses. Here’s a snapshot of prominent eco"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Citing fallout from Iran war, World Bank cuts forecast for global economic growth - Los Angeles Times",
+      "url": "https://www.latimes.com/business/story/2026-06-13/citing-fallout-from-iran-war-world-bank-cuts-forecast-for-global-economic-growth",
+      "content": "# Citing fallout from Iran war, World Bank cuts forecast for global economic growth. WASHINGTON — The economic fallout from the Iran war — higher energy prices and increased uncertainty — will drag down global growth this year, the World Bank said Thursday. The bank downgraded its forecast for growt"
+    },
+    {
+      "source": "tavily_result",
+      "title": "What to Expect in Markets This Week: Kevin Warsh Leads His First Fed Meeting - Investopedia",
+      "url": "https://www.investopedia.com/what-to-expect-in-markets-this-week-kevin-warsh-leads-his-first-fed-meeting-11995270",
+      "content": "# What to Expect in Markets This Week: Kevin Warsh Leads His First Fed Meeting. New Fed chair Kevin Warsh will oversee his first meeting this week, giving investors a chance to see a fresh face and a new perspective. The Federal Open Market Committee, including Warsh, is slated to convene Tuesday, a"
+    }
+  ]
+}
