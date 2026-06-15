@@ -11,6 +11,8 @@ tags:
   - SelfCorrection
   - Reasoning
   - 李宏毅
+share_link: https://share.note.sx/9a6i8fa6#gbHVghZOAIDx3Ui19A+N36zIokC7of2Jh9Eb0lHUA9Q
+share_updated: 2026-06-15T17:01:38+08:00
 ---
 
 # 李宏毅 — AI 能自我修正嗎？從 Decoding、Workflow 到 Reasoning
@@ -116,6 +118,7 @@ tags:
 - 插入的反思指令会影响模型行为（即使指令是程序自动插入的）
 
 **三种指令的效果**：
+
 | 指令类型 | 内容 | 效果 |
 |:---|:---|:---|
 | 中性 | 「再做一次」 | 默认行为 |
