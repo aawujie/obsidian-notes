@@ -1,0 +1,86 @@
+{
+  "date": "2026-06-17",
+  "generated_at": "2026-06-17T06:06:46.630179",
+  "upcoming_events": [
+    {
+      "date": "2026-06-17",
+      "event": "FOMC 利率决议",
+      "importance": "critical",
+      "category": "央行",
+      "note": "附 SEP 经济预测 + 点阵图",
+      "days_until": 0
+    }
+  ],
+  "recent_events": [],
+  "web_events": [
+    {
+      "source": "tavily_answer",
+      "query": "US economic data release this week CPI GDP jobs",
+      "answer": "This week's US economic data releases include the May Consumer Price Index (CPI) which showed headline prices rising 4.2% year over year and 0.5% on the month, marking a three-year high. The Federal Open Market Committee (FOMC) is expected to leave interest rates unchanged at 3.50%-3.75% during their meeting on June 16-17. Additionally, May retail sales data is due on Wednesday, providing insight into consumer behavior amid rising prices."
+    },
+    {
+      "source": "tavily_result",
+      "title": "What to Expect in Markets This Week: Kevin Warsh Leads His First Fed Meeting - Investopedia",
+      "url": "https://www.investopedia.com/what-to-expect-in-markets-this-week-kevin-warsh-leads-his-first-fed-meeting-11995270",
+      "content": "# What to Expect in Markets This Week: Kevin Warsh Leads His First Fed Meeting. New Fed chair Kevin Warsh will oversee his first meeting this week, giving investors a chance to see a fresh face and a new perspective. The Federal Open Market Committee, including Warsh, is slated to convene Tuesday, a"
+    },
+    {
+      "source": "tavily_result",
+      "title": "CNBC's The China Connection newsletter: Waiting for AI to lift the whole market - CNBC",
+      "url": "https://www.cnbc.com/2026/06/15/cnbcs-the-china-connection-newsletter-hoping-ai-lifts-all-boats.html",
+      "content": "# CNBC's The China Connection newsletter: Waiting for AI to lift the whole market. * Similar to other countries, China's economy is increasingly relying on tech industries for growth. * KKR said the property slump is the main reason the firm isn't more optimistic on China. * China is set to release "
+    },
+    {
+      "source": "tavily_result",
+      "title": "A US-Iran deal, SpaceX IPO afterglow, Kevin Warsh's first Fed meeting: What to watch this week - Yahoo Finance",
+      "url": "https://finance.yahoo.com/markets/article/a-us-iran-deal-spacex-ipo-afterglow-kevin-warshs-first-fed-meeting-what-to-watch-this-week-142500300.html",
+      "content": "# A US-Iran deal, SpaceX IPO afterglow, Kevin Warsh's first Fed meeting: What to watch this week. Investors step into the week with the US and Iran set to sign an interim peace deal that would reopen the Strait of Hormuz, after SpaceX's (SPCX) debut on Friday marked the largest public offering in hi"
+    },
+    {
+      "source": "tavily_answer",
+      "query": "Federal Reserve speech this week monetary policy",
+      "answer": "The Federal Reserve is expected to hold interest rates steady following its monetary policy meeting this week due to rising inflation, with newly appointed Chairman Kevin Warsh likely to signal a shift from an easing bias to a neutral stance. Warsh's first press conference post-meeting will be closely watched for insights into the central bank's future direction. Market expectations have shifted towards a more hawkish policy path due to stronger-than-expected labor data and persistent inflation "
+    },
+    {
+      "source": "tavily_result",
+      "title": "Kevin Warsh's first Fed press conference looms as inflation surge makes rate cuts increasingly unlikely - Fox Business",
+      "url": "https://www.foxbusiness.com/economy/kevin-warshs-first-fed-press-conference-looms-inflation-surge-makes-rate-cuts-increasingly-unlikely",
+      "content": "The Federal Reserve is expected to hold rates steady following its monetary policy meeting this week amid the rise in inflation, while newly minted Chairman Kevin Warsh is set to hold his first post-meeting press conference. That inflationary trend has prompted the market to effectively rule out an "
+    },
+    {
+      "source": "tavily_result",
+      "title": "Warsh takes Fed pulpit with immediate challenges, longer-term agenda - KITCO",
+      "url": "https://www.kitco.com/news/off-the-wire/2026-06-16/warsh-takes-fed-pulpit-immediate-challenges-longer-term-agenda",
+      "content": "WASHINGTON, June 16 (Reuters) - Federal Reserve Chairman Kevin Warsh will convene his first meeting as U.S. central bank chief on Tuesday and hold a press conference the following day, as he begins what he has promised will be an agenda of broad change at the monetary policy authority. The ​Fed is w"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Fed Chair Kevin Warsh and the FOMC Will Likely Take the First Step Toward Dropping the Hammer on Trumpflation This Week - The Motley Fool",
+      "url": "https://www.fool.com/investing/2026/06/15/fed-kevin-warsh-fomc-drop-hammer-on-trumpflation/",
+      "content": "The **Dow Jones Industrial Average** (^DJI +0.92%), **S&P 500** (^GSPC +1.65%), and **Nasdaq Composite** (^IXIC +3.07%) jumped to fresh highs, while a changing of the guard was made official at the Federal Reserve. Jerome Powell served his final day as Fed chair on May 15, while Trump's handpicked s"
+    },
+    {
+      "source": "tavily_answer",
+      "query": "China PMI economic data this week",
+      "answer": "China's May economic data reveals a weakening consumer market with retail sales falling 0.6% from the previous year, marking the first decline in over three years. This downturn is attributed to a slump in the property market and base effects from the 618 shopping festival in 2025. Additionally, urban fixed-asset investment contracted 4.1% year-over-year, driven by declines in real estate and manufacturing sectors. Despite these weak consumer data, experts suggest that Chinese policymakers are u"
+    },
+    {
+      "source": "tavily_result",
+      "title": "China's economic imbalance deepens as retail sales fall for first time in over three years - Reuters",
+      "url": "https://www.reuters.com/world/china/chinas-may-retail-sales-fall-first-time-over-three-years-2026-06-16/",
+      "content": "# China's economic imbalance deepens as retail sales fall for first time in over three years. BEIJING, June 16 (Reuters) - China's economy showed increasing unevenness in May, with retail sales falling for the first time in over three years and investment slumping, while industrial output ‌picked up"
+    },
+    {
+      "source": "tavily_result",
+      "title": "China’s Consumer Spending Falls for First Time Since Covid - WSJ",
+      "url": "https://www.wsj.com/economy/china-data-shows-unbalanced-economic-growth-f642e0cc",
+      "content": "# China’s Consumer Spending Falls for First Time Since Covid - WSJ. S&P 500 Futures 7620.50 -0.08%. # China’s Consumer Spending Falls for First Time Since Covid. Image 1: Consumers are exhibiting weak spending and household demand as inflation squeezes the marketplace. Consumer spending in China dec"
+    },
+    {
+      "source": "tavily_result",
+      "title": "China economy weakens further in May as retail sales post first drop in over three years - CNBC",
+      "url": "https://www.cnbc.com/2026/06/16/china-economy-may-retail-sales-industrial-output-fixed-asset-investment-.html",
+      "content": "* Retail sales declined for the first time since December 2022, dropping 0.6% from a year earlier. * China's urban fixed-asset investment contracted 4.1% as of end-May, dragged by real estate and manufacturing. * Manufacturing fixed-asset investment contracted for the first time since December 2020."
+    }
+  ]
+}
