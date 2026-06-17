@@ -1,5 +1,5 @@
 ---
-title: Biohacker vs 精神黑客
+title: Biohacker vs Mind Hacker
 type: note
 created: 2026-06-17
 updated: 2026-06-17
@@ -7,7 +7,7 @@ sources: []
 tags: [心理学, 黑客, 自我优化, 社会工程学, 操控]
 ---
 
-# Biohacker vs 精神黑客
+# Biohacker vs Mind Hacker
 
 ## Biohacker（生物黑客）
 
@@ -25,11 +25,19 @@ tags: [心理学, 黑客, 自我优化, 社会工程学, 操控]
 
 ---
 
-## "精神黑客"（Psychological Manipulation）
+## Mind Hacker（认知黑客）
 
-**通过语言、行为、情境设计影响他人心理。**
+**不依赖权威机构，自己动手优化自己的心理/认知。**
 
-英文里没有一个像 Biohacker 那样简洁正面的词来对应，因为操控他人这件事本身就不正面。以下是对应的概念层次：
+英文里没有像 Biohacker 那样简洁正面的词来对应操控他人，因为操控他人这件事本身就不正面。但 **Mind Hacker** 在英文里已有实际使用群体（Reddit r/Biohackers 的姊妹分支），指的是**对自己大脑进行优化**——冥想、促智药、认知训练，和 Biohacker 的核心精神一致：DIY 自我赋权。
+
+### 为什么叫 Mind Hacker
+
+- 跟 Biohacker 对仗工整——Body ↔ Mind
+- 对象是自己，不是别人，符合 hacker 文化的 DIY 精神
+- 中文叫"认知黑客"，比"精神黑客"准确，不会误解为操控他人
+
+### 对他人：Psychological Manipulation（心理操控）
 
 ### 1. Social Engineering（社会工程学）
 
@@ -67,19 +75,22 @@ tags: [心理学, 黑客, 自我优化, 社会工程学, 操控]
 
 ## 对比
 
-| | Biohacker | 精神黑客 |
-|:---|:---|:---|
-| 对象 | 自己的身体 | 他人的心理 |
-| 手段 | 数据、植入、补剂 | 语言、行为、情境设计 |
-| 伦理 | 自我实验，灰色但可控 | 操控他人，伦理风险高 |
-| 英文 | biohacking | social engineering / persuasion / dark psychology |
+| | Biohacker | Mind Hacker | 操控他人 |
+|:---|:---|:---|:---|
+| 对象 | 自己的身体 | 自己的心理 | 他人的心理 |
+| 手段 | 数据、植入、补剂 | 冥想、认知训练、促智药 | 语言、行为、情境设计 |
+| 伦理 | 自我实验，灰色但可控 | 自我优化，无伦理问题 | 操控他人，伦理风险高 |
+| 英文 | biohacking | mind hacking | social engineering / dark psychology |
 
 ---
 
 ## 关键区分
 
-Biohacker 对自己下手，精神黑客对别人下手。
+| | 对自己 | 对他人 |
+|:---|:---|:---|
+| 身体 | **Biohacker** | 医生 / 教练 |
+| 心理 | **Mind Hacker** | persuasion / social engineering |
 
-前者是自我优化，后者如果没对方知情同意，就是操控。
+Biohacker 和 Mind Hacker 共享同一个精神内核：**自己动手，不依赖权威，把系统拆开、理解、优化。**
 
-英文里没有一个像 biohacker 那样简洁正面的词来对应"精神黑客"，因为**操控他人这件事本身就不正面**。最接近的中性词是 persuasion（说服）和 influence（影响力），但这两个词的前提是尊重对方自主权——一旦越界，就变成了 manipulation。
+区别在于对象——但一旦对象从"自己"变成"他人"，就不再是 hacking，而是 manipulation。
