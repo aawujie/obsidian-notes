@@ -1,0 +1,89 @@
+{
+  "date": "2026-06-18",
+  "generated_at": "2026-06-18T06:06:40.687865",
+  "upcoming_events": [
+    {
+      "date": "2026-07-02",
+      "event": "非农就业报告 (6月)",
+      "importance": "high",
+      "category": "就业",
+      "days_until": 14
+    }
+  ],
+  "recent_events": [
+    {
+      "date": "2026-06-17",
+      "event": "FOMC 利率决议",
+      "importance": "critical",
+      "category": "央行",
+      "note": "附 SEP 经济预测 + 点阵图",
+      "days_ago": 1
+    }
+  ],
+  "web_events": [
+    {
+      "source": "tavily_answer",
+      "query": "US economic data release this week CPI GDP jobs",
+      "answer": "This week's US economic data release includes the latest U.S. initial jobless claims report, which is expected to provide fresh insight into labor market conditions. Retail sales for May beat expectations, rising 0.9% after a downwardly revised 0.4% gain in April, indicating a resilient consumer spending trend. The Federal Reserve is expected to maintain the benchmark overnight interest rate in the 3.50% to 3.75% range, with no immediate impact from the retail sales data on monetary policy."
+    },
+    {
+      "source": "tavily_result",
+      "title": "3 things to look out for on Thursday - Seeking Alpha",
+      "url": "https://seekingalpha.com/news/4604589-3-things-to-look-out-for-on-thursday",
+      "content": "# 3 things to look out for on Thursday | Seeking Alpha. Home page Seeking Alpha - Power to Investors. ## Market News. ## Market Data. *   Traders will be watching earnings from Accenture (ACN), as investors look for fresh details on enterprise technology spending, demand for consulting and outsourci"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Retail sales up 0.9% in May, more than expected - CNBC",
+      "url": "https://www.cnbc.com/video/2026/06/17/retail-sales-up-0-point-9-percent-in-may-more-than-expected.html",
+      "content": "# Retail sales up 0.9% in May, more than expected. CNBC's Rick Santelli breaks down the latest economic data to cross the tape. Expect to see oil exports from the Mideast back to normal by the end of July, says Daan Struyven. Trump: MoU is not final, if I don't like agreement we will go back to drop"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Dow tumbles 500 points as possible rate hike under new Fed chief rattles Wall Street - New York Post",
+      "url": "https://nypost.com/2026/06/17/business/dow-tumbles-500-points-after-fed-officials-hint-at-possible-rate-hike/",
+      "content": "US stocks slumped Wednesday on speculation the Federal Reserve may hike interest rates this year to keep a lid on inflation. The S&P 500 dropped 1.2% and erased an earlier, modest gain after the Fed released projections showing that nine of 18 policymakers foresee at least one increase to its main i"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Kevin Warsh's first Fed press conference looms as inflation surge makes rate cuts increasingly unlikely - Fox Business",
+      "url": "https://www.foxbusiness.com/economy/kevin-warshs-first-fed-press-conference-looms-inflation-surge-makes-rate-cuts-increasingly-unlikely",
+      "content": "The Federal Reserve is expected to hold rates steady following its monetary policy meeting this week amid the rise in inflation, while newly minted Chairman Kevin Warsh is set to hold his first post-meeting press conference. That inflationary trend has prompted the market to effectively rule out an "
+    },
+    {
+      "source": "tavily_result",
+      "title": "Warsh takes Fed pulpit with immediate challenges, longer-term agenda - KITCO",
+      "url": "https://www.kitco.com/news/off-the-wire/2026-06-16/warsh-takes-fed-pulpit-immediate-challenges-longer-term-agenda",
+      "content": "WASHINGTON, June 16 (Reuters) - Federal Reserve Chairman Kevin Warsh will convene his first meeting as U.S. central bank chief on Tuesday and hold a press conference the following day, as he begins what he has promised will be an agenda of broad change at the monetary policy authority. The ​Fed is w"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Fed Chair Kevin Warsh and the FOMC Will Likely Take the First Step Toward Dropping the Hammer on Trumpflation This Week - The Motley Fool",
+      "url": "https://www.fool.com/investing/2026/06/15/fed-kevin-warsh-fomc-drop-hammer-on-trumpflation/",
+      "content": "The **Dow Jones Industrial Average** (^DJI +0.92%), **S&P 500** (^GSPC +1.65%), and **Nasdaq Composite** (^IXIC +3.07%) jumped to fresh highs, while a changing of the guard was made official at the Federal Reserve. Jerome Powell served his final day as Fed chair on May 15, while Trump's handpicked s"
+    },
+    {
+      "source": "tavily_answer",
+      "query": "China PMI economic data this week",
+      "answer": "China's May economic data reveals a weakening retail sector, with retail sales falling 0.6% from the previous year, marking the first decline in over three years. This downturn is attributed to a slump in the property market and weak consumer demand. Meanwhile, industrial output showed resilience, and urban fixed-asset investment contracted 4.1% year-on-year, primarily due to the real estate sector. Despite these challenges, services consumption continued to grow, albeit at a slower pace than ea"
+    },
+    {
+      "source": "tavily_result",
+      "title": "China's economic imbalance deepens as retail sales fall for first time in over three years - Reuters",
+      "url": "https://www.reuters.com/world/china/chinas-may-retail-sales-fall-first-time-over-three-years-2026-06-16/",
+      "content": "# China's economic imbalance deepens as retail sales fall for first time in over three years. BEIJING, June 16 (Reuters) - China's economy showed increasing unevenness in May, with retail sales falling for the first time in over three years and investment slumping, while industrial output ‌picked up"
+    },
+    {
+      "source": "tavily_result",
+      "title": "China’s Consumer Spending Falls for First Time Since Covid - WSJ",
+      "url": "https://www.wsj.com/economy/china-data-shows-unbalanced-economic-growth-f642e0cc",
+      "content": "# China’s Consumer Spending Falls for First Time Since Covid - WSJ. S&P 500 Futures 7620.50 -0.08%. # China’s Consumer Spending Falls for First Time Since Covid. Image 1: Consumers are exhibiting weak spending and household demand as inflation squeezes the marketplace. Consumer spending in China dec"
+    },
+    {
+      "source": "tavily_result",
+      "title": "China economy weakens further in May as retail sales post first drop in over three years - CNBC",
+      "url": "https://www.cnbc.com/2026/06/16/china-economy-may-retail-sales-industrial-output-fixed-asset-investment-.html",
+      "content": "* Retail sales declined for the first time since December 2022, dropping 0.6% from a year earlier. * China's urban fixed-asset investment contracted 4.1% as of end-May, dragged by real estate and manufacturing. * Manufacturing fixed-asset investment contracted for the first time since December 2020."
+    }
+  ]
+}
