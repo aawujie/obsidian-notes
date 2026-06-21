@@ -1,0 +1,85 @@
+{
+  "date": "2026-06-22",
+  "generated_at": "2026-06-22T06:06:40.831942",
+  "upcoming_events": [
+    {
+      "date": "2026-07-02",
+      "event": "非农就业报告 (6月)",
+      "importance": "high",
+      "category": "就业",
+      "days_until": 10
+    }
+  ],
+  "recent_events": [],
+  "web_events": [
+    {
+      "source": "tavily_answer",
+      "query": "US economic data release this week CPI GDP jobs",
+      "answer": "This week's key US economic data releases include the May Personal Consumption Expenditures (PCE) inflation data, which is the Federal Reserve's preferred measure of inflation, expected to show signs of inflation easing due to recent declines in oil prices. The May Consumer Price Index (CPI) data, released earlier, indicated a three-year high of 4.2% with energy prices rising due to the Iran conflict. Additionally, the May ISM US Services PMI rose to 54.5, reflecting strength in the US economy. "
+    },
+    {
+      "source": "tavily_result",
+      "title": "America In Focus: US gas prices dip below $4 and more evidence Americans keep spending - The Washington Post",
+      "url": "https://www.washingtonpost.com/business/2026/06/20/inflation-economy-trump-iran-mortgage-unemployment-fed/dea7b8e6-6cb1-11f1-830e-133d20cadd28_story.html",
+      "content": "# America In Focus: US gas prices dip below $4 and more evidence Americans keep spending. U.S. gas prices fell below $4 a gallon on average this past week, but just barely. The economy, inflation and how those forces could impact the lives of Americans were front and center over the past week. Trips"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Jim Cramer says next week's economic data will drive the markets - CNBC",
+      "url": "https://www.cnbc.com/2026/06/18/jim-cramer-economic-data-drive-markets.html",
+      "content": "Monday - Friday, 6:00 - 7:00 PM ET. # Jim Cramer says next week's economic data will drive the markets. * CNBC’s Jim Cramer said next week’s lighter earnings calendar will put the focus on key economic data. CNBC's Jim Cramer on Thursday said a light earnings calendar next week will concentrate inve"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Here are 3 big things to watch in the stock market this coming week - CNBC",
+      "url": "https://www.cnbc.com/2026/06/21/here-are-3-big-things-to-watch-in-the-stock-market-this-coming-week.html",
+      "content": "# Here are 3 big things to watch in the stock market this coming week. Club name FedEx will soon step into the earnings spotlight after a holiday-shortened week of trading brought good news on the Iran war and oil prices. Also on our radar in the week ahead is May inflation data — though caveats are"
+    },
+    {
+      "source": "tavily_answer",
+      "query": "Federal Reserve speech this week monetary policy",
+      "answer": "Federal Reserve Chair Kevin Warsh emphasized the institution's commitment to bringing inflation under control during his first major speech, stating it's a long journey but they will fix the five-year miss. Warsh ended the practice of publishing forward guidance about future rate decisions, arguing that market prices should be set based on real-time economic data interpretation rather than Fed plans. Despite initial market concerns, the S&P 500 and Nasdaq showed gains, and the U.S.-Iran ceasefir"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Fedspeak vs. war deal: Here are the things that drove this week's stock market - CNBC",
+      "url": "https://www.cnbc.com/2026/06/19/fedspeak-vs-war-deal-here-are-the-things-that-drove-this-weeks-stock-market.html",
+      "content": "war deal: Here are the things that drove this week's stock market. The Federal Reserve gave Wall Street a reality check this week, but the S & P 500 refused to let go of its back-to-back weekly wins. The S & P 500 jumped 1.1% on Thursday as investors brushed off monetary policy concerns from the ses"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Warsh's gamble: A quieter Federal Reserve could mean volatile markets, higher rates - The Washington Post",
+      "url": "https://www.washingtonpost.com/politics/2026/06/20/warsh-federal-reserve-rates-wall-street/fe7c5b38-6ca5-11f1-830e-133d20cadd28_story.html",
+      "content": "# Warsh's gamble: A quieter Federal Reserve could mean volatile markets, higher rates. The Federal Reserve has for decades moved steadily from a remote, opaque government agency that shared little about what it did or why to a more transparent institution willing to explain how it makes decisions an"
+    },
+    {
+      "source": "tavily_result",
+      "title": "'Regime change but in a velvet glove': How Kevin Warsh has set out to remake the Fed - CNBC",
+      "url": "https://www.cnbc.com/2026/06/21/how-kevin-warsh-has-set-out-to-remake-the-fed.html",
+      "content": "# 'Regime change but in a velvet glove': How Kevin Warsh has set out to remake the Fed. Jeff Cox@jeff.cox.7528@JeffCoxCNBCcom. * Fed Chairman Kevin Warsh's first big announced changes point toward a quiet revolution, with task forces set up to rethink virtually everything done to set policy and the "
+    },
+    {
+      "source": "tavily_answer",
+      "query": "China PMI economic data this week",
+      "answer": "The latest economic data for China's Purchasing Managers' Index (PMI) for June 2026 is not directly available in the provided sources. However, it is noted that in the broader context, the recent decline in oil prices has eased inflation concerns globally, and investors are focusing on central bank commentary and price data, including China's loan prime rate announcement. For the most accurate and up-to-date information on China's PMI, it is recommended to refer to official economic reports or f"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Here are 3 big things to watch in the stock market this coming week - CNBC",
+      "url": "https://www.cnbc.com/2026/06/21/here-are-3-big-things-to-watch-in-the-stock-market-this-coming-week.html",
+      "content": "# Here are 3 big things to watch in the stock market this coming week. Club name FedEx will soon step into the earnings spotlight after a holiday-shortened week of trading brought good news on the Iran war and oil prices. Also on our radar in the week ahead is May inflation data — though caveats are"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Week Ahead for FX, Bonds: U.S. Inflation Data in Focus as Prospects of Fed Rate Hike Increase - WSJ",
+      "url": "https://www.wsj.com/economy/week-ahead-for-fx-bonds-u-s-inflation-data-in-focus-as-prospects-of-fed-rate-hike-increase-e2600d57",
+      "content": "# Week Ahead for FX, Bonds: U.S. Inflation Data in Focus as Prospects of Fed Rate Hike Increase - WSJ. https://www.wsj.com/economy/week-ahead-for-fx-bonds-u-s-inflation-data-in-focus-as-prospects-of-fed-rate-hike-increase-e2600d57. # Week Ahead for FX, Bonds: U.S. Inflation Data in Focus as Prospect"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Jim Cramer says next week's economic data will drive the markets - CNBC",
+      "url": "https://www.cnbc.com/2026/06/18/jim-cramer-economic-data-drive-markets.html",
+      "content": "Monday - Friday, 6:00 - 7:00 PM ET. # Jim Cramer says next week's economic data will drive the markets. * CNBC’s Jim Cramer said next week’s lighter earnings calendar will put the focus on key economic data. CNBC's Jim Cramer on Thursday said a light earnings calendar next week will concentrate inve"
+    }
+  ]
+}
