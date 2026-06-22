@@ -1,0 +1,85 @@
+{
+  "date": "2026-06-23",
+  "generated_at": "2026-06-23T06:09:56.208310",
+  "upcoming_events": [
+    {
+      "date": "2026-07-02",
+      "event": "非农就业报告 (6月)",
+      "importance": "high",
+      "category": "就业",
+      "days_until": 9
+    }
+  ],
+  "recent_events": [],
+  "web_events": [
+    {
+      "source": "tavily_answer",
+      "query": "US economic data release this week CPI GDP jobs",
+      "answer": "This week's key US economic data releases include the May reading on the personal consumption expenditures (PCE) price index, the Federal Reserve's preferred inflation gauge, expected on Thursday. The May Consumer Price Index (CPI) reached a three-year high of 4.2%, driven largely by the Iran war-related rise in energy prices. The stock market is also closely watching FedEx's fiscal 2026 fourth-quarter results and earnings from Micron Technology, a major player in the artificial intelligence tra"
+    },
+    {
+      "source": "tavily_result",
+      "title": "America In Focus: US gas prices dip below $4 and more evidence Americans keep spending - The Washington Post",
+      "url": "https://www.washingtonpost.com/business/2026/06/20/inflation-economy-trump-iran-mortgage-unemployment-fed/dea7b8e6-6cb1-11f1-830e-133d20cadd28_story.html",
+      "content": "# America In Focus: US gas prices dip below $4 and more evidence Americans keep spending. U.S. gas prices fell below $4 a gallon on average this past week, but just barely. The economy, inflation and how those forces could impact the lives of Americans were front and center over the past week. Trips"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Here are 3 big things to watch in the stock market this coming week - CNBC",
+      "url": "https://www.cnbc.com/2026/06/21/here-are-3-big-things-to-watch-in-the-stock-market-this-coming-week.html",
+      "content": "# Here are 3 big things to watch in the stock market this coming week. Club name FedEx will soon step into the earnings spotlight after a holiday-shortened week of trading brought good news on the Iran war and oil prices. Also on our radar in the week ahead is May inflation data — though caveats are"
+    },
+    {
+      "source": "tavily_result",
+      "title": "What to Expect in Markets This Week: A Post-Fed Inflation Reading and Earnings From a Hot Memory Maker - Investopedia",
+      "url": "https://www.investopedia.com/what-to-expect-in-markets-this-week-a-post-fed-inflation-reading-and-earnings-from-a-hot-memory-maker-stock-12001591",
+      "content": "# What to Expect in Markets This Week: A Post-Fed Inflation Reading and Earnings From a Hot Memory Maker. Economists will update the Fed's preferred inflation index this week, giving investors a chance to see how the latest reading squares with the newly hawkish central bank.1. It'll be the first ma"
+    },
+    {
+      "source": "tavily_answer",
+      "query": "Federal Reserve speech this week monetary policy",
+      "answer": "Federal Reserve Chair Kevin Warsh's recent press conference indicated a more hawkish bias towards interest rates, suggesting possible future rate hikes as early as October. Warsh's approach to monetary policy has been characterized by a quieter, more circumspect communication style reminiscent of former chair Alan Greenspan. This shift includes cutting the central bank’s post-meeting statements and removing guidance on future interest-rate moves. Warsh also announced the formation of five task f"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Warsh's gamble: A quieter Federal Reserve could mean volatile markets, higher rates - The Washington Post",
+      "url": "https://www.washingtonpost.com/politics/2026/06/20/warsh-federal-reserve-rates-wall-street/fe7c5b38-6ca5-11f1-830e-133d20cadd28_story.html",
+      "content": "# Warsh's gamble: A quieter Federal Reserve could mean volatile markets, higher rates. The Federal Reserve has for decades moved steadily from a remote, opaque government agency that shared little about what it did or why to a more transparent institution willing to explain how it makes decisions an"
+    },
+    {
+      "source": "tavily_result",
+      "title": "'Regime change but in a velvet glove': How Kevin Warsh has set out to remake the Fed - CNBC",
+      "url": "https://www.cnbc.com/2026/06/21/how-kevin-warsh-has-set-out-to-remake-the-fed.html",
+      "content": "# 'Regime change but in a velvet glove': How Kevin Warsh has set out to remake the Fed. Jeff Cox@jeff.cox.7528@JeffCoxCNBCcom. * Fed Chairman Kevin Warsh's first big announced changes point toward a quiet revolution, with task forces set up to rethink virtually everything done to set policy and the "
+    },
+    {
+      "source": "tavily_result",
+      "title": "Warsh’s gamble: A quieter Federal Reserve could mean volatile markets, higher rates - AP News",
+      "url": "https://apnews.com/article/warsh-federal-reserve-greenspan-inflation-economy-448828f7cc01932cc234ff47dd80be27",
+      "content": "Test Your News I.Q. 2026 Elections Election Results Election calendar White House Congress Supreme Court The latest AP-NORC polls Ground Game. Federal Reserve Chair Kevin Warsh’s press conference appears on screens on the floor of the New York Stock Exchange, Wednesday, June 17, 2026. Warsh’s change"
+    },
+    {
+      "source": "tavily_answer",
+      "query": "China PMI economic data this week",
+      "answer": "China's Purchasing Managers' Index (PMI) for June 2026 is expected to show signs of stabilization as the country's manufacturing sector continues to recover from the impacts of the pandemic. Recent data indicates a slight improvement in both the manufacturing and services sectors, with the Dragon Boat holiday spending rising by 4%, contributing to the overall economic activity. The May inflation data in China reached a three-year high of 4.2%, driven by the Iran war-related rise in energy prices"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Here are 3 big things to watch in the stock market this coming week - CNBC",
+      "url": "https://www.cnbc.com/2026/06/21/here-are-3-big-things-to-watch-in-the-stock-market-this-coming-week.html",
+      "content": "# Here are 3 big things to watch in the stock market this coming week. Club name FedEx will soon step into the earnings spotlight after a holiday-shortened week of trading brought good news on the Iran war and oil prices. Also on our radar in the week ahead is May inflation data — though caveats are"
+    },
+    {
+      "source": "tavily_result",
+      "title": "China's January-May fiscal revenue up 4.0% Y/Y - TradingView",
+      "url": "https://www.tradingview.com/news/reuters.com,2026:newsml_AZN4T3FV4:0-china-s-january-may-fiscal-revenue-up-4-0-y-y/",
+      "content": "# China's January-May fiscal revenue up 4.0% Y/Y — TradingView News. *   /China's January-May fiscal revenue up 4.0% Y/Y. Image 2: ReutersImage 3: Reuters. Sign in or create a free account to read this news. * Image 5 London Stock Exchange Refinitiv REG - VinaCapital Vietnam - Holding(s) in Company."
+    },
+    {
+      "source": "tavily_result",
+      "title": "Here's what to watch for in the markets this week - CNBC",
+      "url": "https://www.cnbc.com/video/2026/06/22/heres-what-to-watch-for-in-the-markets-this-week.html",
+      "content": "# Here's what to watch for in the markets this week. Jay Woods, chief market strategist at Freedom Capital Markets, breaks down what he's watching in the week ahead, including economic data, earnings results, and more. Watch CNBC's full interview with Apollo Global Management President Jim Zelter. W"
+    }
+  ]
+}
