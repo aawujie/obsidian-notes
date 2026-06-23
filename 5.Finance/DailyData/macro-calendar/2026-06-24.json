@@ -1,0 +1,85 @@
+{
+  "date": "2026-06-24",
+  "generated_at": "2026-06-24T06:06:43.414742",
+  "upcoming_events": [
+    {
+      "date": "2026-07-02",
+      "event": "非农就业报告 (6月)",
+      "importance": "high",
+      "category": "就业",
+      "days_until": 8
+    }
+  ],
+  "recent_events": [],
+  "web_events": [
+    {
+      "source": "tavily_answer",
+      "query": "US economic data release this week CPI GDP jobs",
+      "answer": "The US economy is facing significant challenges due to a rise in household debt and a decline in savings, with total liabilities among US households reaching a record $19.9 trillion at the end of the first quarter. The credit intensity of GDP, which measures the amount of debt needed to boost GDP growth, rose to 3.73 last year, the highest in at least the last 70 years. The personal savings rate is hovering near a record low of 2.6% in April. Meanwhile, the life science industry in California ge"
+    },
+    {
+      "source": "tavily_result",
+      "title": "'Running off the cliff': An explosion of household debt has put the US economy in a tough spot - Business Insider",
+      "url": "https://www.businessinsider.com/us-economy-warning-sign-household-debt-consumer-spending-savings-stocks-2026-6",
+      "content": "# 'Running off the cliff': An explosion of household debt has put the US economy in a tough spot. In a recent note to clients, the European Bank flagged a concerning trend that's taken hold in the US in recent years: the rise in household debt and the concurrent decline in household savings. Total l"
+    },
+    {
+      "source": "tavily_result",
+      "title": "'Running off the cliff': An explosion of household debt has put the US economy in a tough spot - Yahoo Finance",
+      "url": "https://finance.yahoo.com/economy/articles/running-off-cliff-explosion-household-094501561.html",
+      "content": "3. Best money market accounts. In a recent note to clients, the European Bank flagged a concerning trend that's taken hold in the US in recent years: the rise in household debt and the concurrent decline in household savings. Yet, the personal savings rate is hovering near a record low, shrinking to"
+    },
+    {
+      "source": "tavily_result",
+      "title": "New Study In Texas May Have Shown How To Better Measure College ROI - Forbes",
+      "url": "https://www.forbes.com/sites/michaelhorn/2026/06/22/new-study-in-texas-may-have-shown-how-to-better-measure-college-roi/",
+      "content": "# New Study In Texas May Have Shown How To Better Measure College ROI. A landmark Texas study, by the Postsecondary Commission and Mathematica, analyzed economic outcomes for nearly a million students across 86 public institutions from 2008-2019. This sophisticated research measures all program entr"
+    },
+    {
+      "source": "tavily_answer",
+      "query": "Federal Reserve speech this week monetary policy",
+      "answer": "The Federal Reserve's recent monetary policy speech emphasized a cautious approach to interest rates, reflecting ongoing geopolitical tensions and market dynamics. The speech highlighted the importance of adapting monetary policy to evolving economic conditions, particularly in light of recent global events. The Federal Reserve remains vigilant about inflation and is prepared to adjust its policy stance as necessary to maintain economic stability."
+    },
+    {
+      "source": "tavily_result",
+      "title": "Federal Reserve notes with deep sadness the passing of Alan Greenspan - Federal Reserve (.gov)",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/other20260622a.htm",
+      "content": "An official website of the United States Government. A **.gov** website belongs to an official government organization in the United States. A **lock** () or **https://** means you've safely connected to the .gov website. Back to Home Board of Governors of the Federal Reserve System. # Board of Gove"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Alan Greenspan, economist and longtime head of the Federal reserve, dies at 100 - NBC News",
+      "url": "https://www.nbcnews.com/news/obituaries/alan-greenspan-economist-longtime-head-federal-reserve-dies-100-rcna42286",
+      "content": "BREAKING: Alan Greenspan, chairman of the Federal Reserve under four presidents, dies at 100. # Alan Greenspan, economist and longtime head of the Federal Reserve, dies at 100. The influential economist died Monday from complications of Parkinson’s Disease, said his wife of 29 years, Andrea Mitchell"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Greenspan’s Fed legacy was tarnished when millions lost homes during financial crisis - NPR",
+      "url": "https://www.npr.org/2026/06/22/nx-s1-5866488/greenspans-fed-legacy-was-tarnished-when-millions-lost-homes-during-financial-crisis",
+      "content": "* Keyboard shortcuts for audio player. **Greenspan’s Fed legacy was tarnished when millions lost homes during financial crisis** **Longtime Federal Reserve chairman Alan Greenspan died Monday at age 100. He's remembered as a master of monetary policy, but his light touch on regulation also set the s"
+    },
+    {
+      "source": "tavily_answer",
+      "query": "China PMI economic data this week",
+      "answer": "China's PMI Composite Flash for June 2026 is expected to show a slight improvement as technology shares pressure continues, with investors awaiting fresh economic data for further insights into the health of the U.S. economy and the outlook for interest rates."
+    },
+    {
+      "source": "tavily_result",
+      "title": "Stock index futures plunge amid broader tech selloff (SPX:) - Seeking Alpha",
+      "url": "https://seekingalpha.com/news/4605892-stock-index-futures-plunge-amid-broader-tech-selloff",
+      "content": "Jun 23, 2026, 4:16 AM ETS&P 500 Futures (SPX), INDU, US100:INDPNW, IBM, BBY, GRMN, SMCI, DD, US10Y, US2Y, US30YBy: Sinchita Mitra, SA News Editor. Stock index futures were sharply down on Tuesday as technology shares came under pressure, extending weakness seen earlier this week. Nasdaq 100 futures "
+    },
+    {
+      "source": "tavily_result",
+      "title": "Here's what to watch for in the markets this week - CNBC",
+      "url": "https://www.cnbc.com/video/2026/06/22/heres-what-to-watch-for-in-the-markets-this-week.html",
+      "content": "# Here's what to watch for in the markets this week. Jay Woods, chief market strategist at Freedom Capital Markets, breaks down what he's watching in the week ahead, including economic data, earnings results, and more. Watch CNBC's full interview with Apollo Global Management President Jim Zelter. W"
+    },
+    {
+      "source": "tavily_result",
+      "title": "US manufacturing activity rose in June, factory hiring fell to six-year low - mezha.net",
+      "url": "https://mezha.net/eng/bukvy/655e70e9_us_manufacturing_activity/",
+      "content": "### Russian MiG-31K took off, Ukraine declared a nationwide air alert. Washington, June 23 – activity in the U.S. manufacturing sector rose again in June: companies front-loaded new orders in response to anticipated shortages and rising prices, but factory employment fell to a six-year low due to ri"
+    }
+  ]
+}
