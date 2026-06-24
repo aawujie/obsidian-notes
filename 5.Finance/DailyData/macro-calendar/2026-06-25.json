@@ -1,0 +1,85 @@
+{
+  "date": "2026-06-25",
+  "generated_at": "2026-06-25T06:06:57.500285",
+  "upcoming_events": [
+    {
+      "date": "2026-07-02",
+      "event": "非农就业报告 (6月)",
+      "importance": "high",
+      "category": "就业",
+      "days_until": 7
+    }
+  ],
+  "recent_events": [],
+  "web_events": [
+    {
+      "source": "tavily_answer",
+      "query": "US economic data release this week CPI GDP jobs",
+      "answer": "This week's US economic data highlights significant developments in manufacturing, inflation, and GDP. Factory job cuts reached near-crisis levels in June, with the S&P Global Flash US Manufacturing PMI rising to 55.7, indicating robust manufacturing activity. The composite flash PMI also increased to 52.2, signaling economic struggles to grow faster than a 1% annualized rate. Treasury yields rose as investors anticipated key inflation data, particularly the May personal consumption expenditures"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Factory job cuts hit near-crisis levels in June, putting workforce leaders on notice - hcamag.com",
+      "url": "https://www.hcamag.com/ca/specialization/transformation/factory-job-cuts-hit-near-crisis-levels-in-june-putting-workforce-leaders-on-notice/580036",
+      "content": "American factories shed workers in June at a pace not seen since the 2009 financial crisis, according to flash survey data released Tuesday by S&P Global, a finding that landed on the same morning HR professionals across the sector are fielding growing pressure to cut costs. The S&P Global Flash US "
+    },
+    {
+      "source": "tavily_result",
+      "title": "Here's what to watch for in the markets this week - CNBC",
+      "url": "https://www.cnbc.com/video/2026/06/22/heres-what-to-watch-for-in-the-markets-this-week.html",
+      "content": "# Here's what to watch for in the markets this week. Jay Woods, chief market strategist at Freedom Capital Markets, breaks down what he's watching in the week ahead, including economic data, earnings results, and more. Watch CNBC's full interview with Apollo Global Management President Jim Zelter. W"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Treasury yields rise ahead of key inflation data; markets resume trading after public holiday - CNBC",
+      "url": "https://www.cnbc.com/2026/06/22/treasury-yields-investors-look-ahead-to-key-inflation-data.html",
+      "content": "U.S. Treasury yields were higher on Tuesday as investors look ahead to key inflation data released on Thursday. The yield on the 10-year U.S. Treasury note — the key benchmark for U.S. government borrowing — rose over 3 basis points to 4.483%. The 2-year Treasury note yield, which more closely track"
+    },
+    {
+      "source": "tavily_answer",
+      "query": "Federal Reserve speech this week monetary policy",
+      "answer": "The Federal Reserve's recent monetary policy discussions, led by Chairman Kevin Warsh, have indicated a more hawkish stance on interest rates. Warsh's approach has been characterized by a reduction in the central bank's post-meeting statements and a removal of guidance on future interest-rate moves. This has led to market volatility and speculation about potential rate hikes. Market indicators, such as rising Treasury yields, suggest anticipation of higher rates, particularly following the relea"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Warsh’s gamble: A quieter Federal Reserve could mean volatile markets, higher rates - AP News",
+      "url": "https://apnews.com/article/warsh-federal-reserve-greenspan-inflation-economy-448828f7cc01932cc234ff47dd80be27",
+      "content": "Test Your News I.Q. 2026 Elections Election Results Election calendar White House Congress Supreme Court The latest AP-NORC polls Ground Game. Federal Reserve Chair Kevin Warsh’s press conference appears on screens on the floor of the New York Stock Exchange, Wednesday, June 17, 2026. Warsh’s change"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Treasury yields rise ahead of key inflation data; markets resume trading after public holiday - CNBC",
+      "url": "https://www.cnbc.com/2026/06/22/treasury-yields-investors-look-ahead-to-key-inflation-data.html",
+      "content": "U.S. Treasury yields were higher on Tuesday as investors look ahead to key inflation data released on Thursday. The yield on the 10-year U.S. Treasury note — the key benchmark for U.S. government borrowing — rose over 3 basis points to 4.483%. The 2-year Treasury note yield, which more closely track"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Bank of America expects three Fed hikes this year, says inflation is getting 'unambiguously worse' - CNBC",
+      "url": "https://www.cnbc.com/2026/06/22/bank-of-america-sees-3-fed-hikes-in-2026-inflation-unambiguously-worse.html",
+      "content": "# Bank of America expects three Fed hikes this year, says inflation is getting 'unambiguously worse'. Stubbornly high inflation and an aggressive tone from new Chairman Kevin Warsh will lead the Federal Reserve to raise interest rates three times this year, according to Bank of America. that the cen"
+    },
+    {
+      "source": "tavily_answer",
+      "query": "China PMI economic data this week",
+      "answer": "China's PMI Composite Flash for June 2026 is not directly mentioned in the provided data. However, the US June S&P Global Manufacturing PMI rising to 55.7, beating the forecast of 54.6, indicates a robust manufacturing sector in the US, which might indirectly suggest a positive outlook for China's manufacturing sector as well. Additionally, China's January-May fiscal revenue up 4.0% Y/Y and the slowdown in China's 618 shopping festival growth by 4% from the previous year suggest mixed economic s"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Stock index futures plunge amid broader tech selloff (SPX:) - Seeking Alpha",
+      "url": "https://seekingalpha.com/news/4605892-stock-index-futures-plunge-amid-broader-tech-selloff",
+      "content": "Jun 23, 2026, 4:16 AM ETS&P 500 Futures (SPX), INDU, US100:INDPNW, IBM, BBY, GRMN, SMCI, DD, US10Y, US2Y, US30YBy: Sinchita Mitra, SA News Editor. Stock index futures were sharply down on Tuesday as technology shares came under pressure, extending weakness seen earlier this week. Nasdaq 100 futures "
+    },
+    {
+      "source": "tavily_result",
+      "title": "China's January-May fiscal revenue up 4.0% Y/Y - TradingView",
+      "url": "https://www.tradingview.com/news/reuters.com,2026:newsml_AZN4T3FV4:0-china-s-january-may-fiscal-revenue-up-4-0-y-y/",
+      "content": "# China's January-May fiscal revenue up 4.0% Y/Y — TradingView News. *   /China's January-May fiscal revenue up 4.0% Y/Y. Image 2: ReutersImage 3: Reuters. Sign in or create a free account to read this news. * Image 5 London Stock Exchange Refinitiv REG - VinaCapital Vietnam - Holding(s) in Company."
+    },
+    {
+      "source": "tavily_result",
+      "title": "China's 618 shopping festival growth slows sharply as consumer spending malaise persists - CNBC",
+      "url": "https://www.cnbc.com/2026/06/23/china-618-shopping-festival-sales-growth-consumer-spending-slowdown-syntun.html",
+      "content": "# China's 618 shopping festival growth slows sharply as consumer spending malaise persists. * Growth during China's 618 shopping festival slowed sharply from last year's pace, according to Syntun. BEIJING — China's consumer spending slowdown persisted in June, with growth during one of the country's"
+    }
+  ]
+}
