@@ -1,0 +1,85 @@
+{
+  "date": "2026-06-26",
+  "generated_at": "2026-06-26T06:06:51.948685",
+  "upcoming_events": [
+    {
+      "date": "2026-07-02",
+      "event": "非农就业报告 (6月)",
+      "importance": "high",
+      "category": "就业",
+      "days_until": 6
+    }
+  ],
+  "recent_events": [],
+  "web_events": [
+    {
+      "source": "tavily_answer",
+      "query": "US economic data release this week CPI GDP jobs",
+      "answer": "The U.S. economy grew at a 2.1% annualized rate in the first quarter of 2026, according to the final estimate from the Commerce Department's Bureau of Economic Analysis, marking an improvement from the 0.5% growth in the fourth quarter of 2025. This growth was seen across 46 states and Washington, D.C., with Washington state experiencing the highest annualized growth at 4.5%. Jobless aid filings fell to 215,000 last week, indicating low layoffs despite economic headwinds. However, factory job cu"
+    },
+    {
+      "source": "tavily_result",
+      "title": "New Economic Data Shows GDP Has Grown in 46 States - Newsweek",
+      "url": "https://www.newsweek.com/new-economic-data-shows-gdp-has-grown-in-46-states-12119293",
+      "content": "Nearly every state saw its economy grow at the start of the year, according to newly released data from the Commerce Department. Figures released Thursday by the department's Bureau of Economic Analysis (BEA) show gross domestic product (GDP) increased in 46 states as well as Washington, D.C., in th"
+    },
+    {
+      "source": "tavily_result",
+      "title": "US economy grew at 2.1% in first quarter - Fox Business",
+      "url": "https://www.foxbusiness.com/economy/us-economy-q1-2026-final",
+      "content": "* #### Byron Donalds rips 'lazy' Senate for stalling Trump's agenda. * #### Congressman Donalds slams 'lazy' US Senate for stalling legislation. # US economy grew at 2.1% in first quarter. ## Commerce Department releases final GDP estimate for first quarter of 2026. *This is a developing story about"
+    },
+    {
+      "source": "tavily_result",
+      "title": "US economy expanded at solid 2.1% pace in January-March, government says, upgrading last estimate - Greenwich Time",
+      "url": "https://www.greenwichtime.com/business/article/us-economy-expanded-at-solid-2-1-pace-in-22320253.php",
+      "content": "# US economy expanded at solid 2.1% pace in January-March, government says, upgrading last estimate. WASHINGTON (AP) — The U.S. economy expanded at a solid and unexpected 2.1% annual pace from January through March, the Commerce Department reported Thursday in its final estimate of first-quarter gro"
+    },
+    {
+      "source": "tavily_answer",
+      "query": "Federal Reserve speech this week monetary policy",
+      "answer": "Based on the latest data, the Federal Reserve is expected to hold interest rates steady in July, with a potential hike in September. Chicago Fed President Austan Goolsbee noted a \"glimmer of hope\" in the latest inflation report but emphasized that underlying inflation pressures remain too high. The International Monetary Fund (IMF) supported the Fed's decision to hold rates steady, citing solid momentum in the U.S. economy. Meanwhile, financial markets are pricing in a 30% chance of a rate hike "
+    },
+    {
+      "source": "tavily_result",
+      "title": "Fed's Goolsbee sees glimmer of hope in latest inflation data - Reuters",
+      "url": "https://www.reuters.com/business/feds-goolsbee-core-inflation-still-too-high-trending-wrong-way-2026-06-25/",
+      "content": "June 25 (Reuters) - Chicago Federal Reserve President Austan Goolsbee on Thursday said there was a \"glimmer of hope\" on services ​inflation in the latest U.S. inflation report, but underlying inflation pressures are ‌still too high and trending the wrong way. Warsh said no one at the Fed's June 16-1"
+    },
+    {
+      "source": "tavily_result",
+      "title": "IMF sees solid momentum in US economy; says Fed right to hold interest rate steady - Reuters",
+      "url": "https://www.reuters.com/business/imf-sees-solid-momentum-us-economy-says-fed-right-hold-interest-rate-steady-2026-06-25/",
+      "content": "Item 1 of 2 Renovations continue at the Federal Reserve Board building in Washington, D.C., U.S., November 14, 2025. **[1/2]**Renovations continue at the Federal Reserve Board building in Washington, D.C., U.S., November 14, 2025. WASHINGTON, June 25 (Reuters) - The U.S. economy has seen solid growt"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Fed expected to hold rates steady in July, hike in September - KITCO",
+      "url": "https://www.kitco.com/news/off-the-wire/2026-06-25/fed-expected-hold-rates-steady-july-hike-september",
+      "content": "June 25 (Reuters) - The Federal Reserve won't raise interest rates next month even after a government report showed ​inflation based on the U.S. central bank's targeted measure was the highest ‌it has been in three years, traders bet on Thursday, though they continue to see a rate hike in September "
+    },
+    {
+      "source": "tavily_answer",
+      "query": "China PMI economic data this week",
+      "answer": "China's latest PMI economic data for this week indicates a mixed economic outlook. The US manufacturing PMI rose to 55.7, beating forecasts and signaling continued expansion, while China's consumer spending remains sluggish, as evidenced by the slowdown in growth during the 618 shopping festival. Additionally, Premier Li Qiang emphasized that China's technological advancements are opportunities for the global economy, not threats."
+    },
+    {
+      "source": "tavily_result",
+      "title": "Premier says China’s tech advancements an ‘opportunity’ for the world, not a threat - AP News",
+      "url": "https://apnews.com/article/china-economy-subsidies-ai-tech-li-wef-497753eb03fbe61ccd192782d72d59be",
+      "content": "Test Your News I.Q. 2026 Elections Election Results Election calendar White House Congress Supreme Court The latest AP-NORC polls Ground Game. # Premier says China’s tech advancements an ‘opportunity’ for the world, not a threat. In this photo released by Xinhua News Agency, a participant passes by "
+    },
+    {
+      "source": "tavily_result",
+      "title": "Stock index futures plunge amid broader tech selloff (SPX:) - Seeking Alpha",
+      "url": "https://seekingalpha.com/news/4605892-stock-index-futures-plunge-amid-broader-tech-selloff",
+      "content": "Jun 23, 2026, 4:16 AM ETS&P 500 Futures (SPX), INDU, US100:INDPNW, IBM, BBY, GRMN, SMCI, DD, US10Y, US2Y, US30YBy: Sinchita Mitra, SA News Editor. Stock index futures were sharply down on Tuesday as technology shares came under pressure, extending weakness seen earlier this week. Nasdaq 100 futures "
+    },
+    {
+      "source": "tavily_result",
+      "title": "China's 618 shopping festival growth slows sharply as consumer spending malaise persists - CNBC",
+      "url": "https://www.cnbc.com/2026/06/23/china-618-shopping-festival-sales-growth-consumer-spending-slowdown-syntun.html",
+      "content": "# China's 618 shopping festival growth slows sharply as consumer spending malaise persists. * Growth during China's 618 shopping festival slowed sharply from last year's pace, according to Syntun. BEIJING — China's consumer spending slowdown persisted in June, with growth during one of the country's"
+    }
+  ]
+}
