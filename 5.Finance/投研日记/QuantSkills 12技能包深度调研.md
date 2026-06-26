@@ -3,8 +3,21 @@ title: QuantSkills 12技能包深度调研
 type: summary
 created: 2026-06-25
 updated: 2026-06-25
-sources: [/tmp/quantskills_12/quantskills_12技能包/skills/]
-tags: [quant, ai-agent, skill, factor-mining, backtest, a-share, stock-screening, data-engineering, pandadata, quant-skills]
+sources:
+  - /tmp/quantskills_12/quantskills_12技能包/skills/
+tags:
+  - quant
+  - ai-agent
+  - skill
+  - factor-mining
+  - backtest
+  - a-share
+  - stock-screening
+  - data-engineering
+  - pandadata
+  - quant-skills
+share_link: https://share.note.sx/c3z1j4rt#6wDHyDqG4hQ4okdwa9YAVG4oSuFBEdRju6Tcw6BYGVA
+share_updated: 2026-06-26T10:11:02+08:00
 ---
 
 # QuantSkills 12技能包深度调研
