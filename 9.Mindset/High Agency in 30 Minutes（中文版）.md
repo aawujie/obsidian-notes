@@ -447,11 +447,11 @@ share_updated: 2026-06-26T11:58:33+08:00
 
 ![联系威尔伯](https://cdn.prod.website-files.com/67891452634f936deafd719a/67db5a637f8bdfb93642d01a_67d00d5b94816bfdd9352277_https%25253A%25252F%25252Fsubstack-post-media.s3.amazonaws.com%25252Fpublic%25252Fimages%25252F09fba6c0-da04-4643-8c2a-05cf8531b23f_480x852.avif)
 
-我们如何让世界上出现更多威尔伯·莱特，而不是更多愤世嫉俗的《纽约时报》头条？
+<span style="color:rgb(255, 77, 77)">我们如何让世界上出现更多威尔伯·莱特，而不是更多愤世嫉俗的《纽约时报》头条？</span>
 
 通过逃离低能动性陷阱……
 
-## 第三部分 — 逃离低能动性陷阱
+## 第三部分 — <span style="color:rgb(255, 77, 77)">逃离低能动性陷阱</span>
 
 低能动性的根本原因可以通过翻转高能动性三轮车来找到：
 
@@ -465,7 +465,7 @@ share_updated: 2026-06-26T11:58:33+08:00
 
 ![低能动性](https://cdn.prod.website-files.com/67891452634f936deafd719a/67c55d3feac2f6eb7a572a34_https%253A%252F%252Fsubstack-post-media.s3.amazonaws.com%252Fpublic%252Fimages%252F1d201783-5405-45a1-b802-551370a1a9d1_1080x738.avif)
 
-低能动性是：在社交场合中，把自我意识外包给房间里的平均意见。
+<span style="color:rgb(255, 77, 77)"><b>低能动性是：在社交场合中，把自我意识外包给房间里的平均意见。</b></span>
 
 ![低能动性](https://cdn.prod.website-files.com/67891452634f936deafd719a/67db5a634fb9f58932eb0148_67d7f07dd2513ba38e985f23_AD_4nXfasQJ0wCj91SgFXRbx5TlPcxc2N09gO7ABXS4NULNQC4EBUoKoY93eW0TIc4qypFh3gYTPcTaQGWqhx_huCrEusq8SnsabBfZs3I0glZ2XoynFCWvK9bKRMjQk_t_i_knMVXVrVQ.avif)
 
