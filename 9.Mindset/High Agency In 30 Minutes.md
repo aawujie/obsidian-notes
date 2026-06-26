@@ -1,7 +1,7 @@
 ---
 notion-id: 24378d23-e296-8131-bdab-ffdb21486ff6
 Last edited time: 2025-08-03T01:51:00
-Tags: []
+Tags: [mindset, high-agency, 行动力, 决策]
 Verification: unverified
 Owner:
   - Coze-Plugin
