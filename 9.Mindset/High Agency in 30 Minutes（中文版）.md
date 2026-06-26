@@ -252,7 +252,7 @@ share_updated: 2026-06-26T11:58:33+08:00
 
 拿破仑·波拿巴：传记，军事将领，法国皇帝
 
-弗里德里希·尼采（Friedrich Nietzsche）向一个他痴迷的女孩求婚，被拒绝，余生都在苦涩和孤独中度过。他一生中只看到自己的作品卖出了三百本。
+<span style="color:rgb(195, 117, 255)">弗里德里希·尼采（Friedrich Nietzsche）向一个他痴迷的女孩求婚，被拒绝，余生都在苦涩和孤独中度过。他一生中只看到自己的作品卖出了三百本。</span>
 
 ![弗里德里希·尼采 - 维基百科](https://cdn.prod.website-files.com/67891452634f936deafd719a/67dd565a5078df736608fe15_67db9c5b8f83e96ec3731218_Nietzsche187a.avif)
 
