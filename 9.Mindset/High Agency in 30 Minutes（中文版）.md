@@ -1,16 +1,18 @@
 ---
-title: "High Agency in 30 Minutes（中文版）"
-source: "https://www.highagency.com/"
+title: High Agency in 30 Minutes（中文版）
+source: https://www.highagency.com/
 author:
 published:
 created: 2026-06-26
-description: "高能动性（High Agency）可能是21世纪最重要的思想。这篇文章是我希望18岁时读到的东西，而不是30岁时才写出来。跟我一起走进高能动性的兔子洞。"
+description: 高能动性（High Agency）可能是21世纪最重要的思想。这篇文章是我希望18岁时读到的东西，而不是30岁时才写出来。跟我一起走进高能动性的兔子洞。
 tags:
   - high-agency
   - mindset
   - 行动力
   - 决策
   - 翻译
+share_link: https://share.note.sx/6umugqm8#Z+WL3R+sPSWMhXD4EQgZKeKnRGAxIhDG0sxQk2PBYF4
+share_updated: 2026-06-26T11:58:33+08:00
 ---
 
 **警告：这不是无脑刷屏。** 这是一个极其简单却有效、可能改变你看待现实方式的思想。
@@ -99,13 +101,13 @@ tags:
 
 <span style="color:rgb(255, 77, 77)"><i>"当有人告诉你某件事不可能时，那是对话的结束，还是在你脑海中开启了第二个对话：如何绕过那个刚刚告诉你不能做某事的人？"</i> —— 埃里克·温斯坦（Eric Weinstein）谈高能动性。</span>
 
-高能动性之所以如此重要，是因为一个人或一个社会拥有的能动性越多——他们能解决的问题就越多。
+高能动性之所以如此重要，是因为<span style="color:rgb(255, 77, 77)">一个人或一个社会拥有的能动性越多——他们能解决的问题就越多。</span>
 
-高能动性可能是一个难以理解的概念，因为它不仅是一个想法。它是三种截然不同、很少同时出现的技能的组合：
+高能动性可能是一个难以理解的概念，因为它不仅是一个想法。它是<span style="color:rgb(255, 77, 77)">三种截然不同、很少同时出现的技能的组合：</span>
 
-1. 清晰思考
-2. 行动偏好
-3. 不随和性
+1. <span style="color:rgb(255, 77, 77)">清晰思考</span>
+2. <span style="color:rgb(255, 77, 77)">行动偏好</span>
+3. <span style="color:rgb(255, 77, 77)">不随和性</span>
 
 高能动性就像一辆三轮车。如果你去掉任何一个轮子，它就无法运转。
 
