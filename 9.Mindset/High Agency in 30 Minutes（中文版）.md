@@ -416,7 +416,9 @@ tags:
 
 威尔伯正在高能动性光谱上疾驰，解决着不可解决的问题。
 
-![威尔伯在疾驰](https://cdn.prod.website-files.com/67891452634f936deafd719a/67c55d3fb0665da9a07573e2_https%253A%252F%252Fsubstack-post-media.s3.amazonaws.com%252Fpublic%252Fimages%252Ff592877e-e184-4f00-ba91-68af86a24d49_1080x1080.avif)这四年的历程极其残酷：实验滑翔机坠毁。计算失败。材料断裂。天气常常不配合。当地人在远处观望，摇着头看着这些假装自己是鸟、试图自杀的怪人。
+![威尔伯在疾驰](https://cdn.prod.website-files.com/67891452634f936deafd719a/67c55d3fb0665da9a07573e2_https%253A%252F%252Fsubstack-post-media.s3.amazonaws.com%252Fpublic%252Fimages%252Ff592877e-e184-4f00-ba91-68af86a24d49_1080x1080.avif)
+
+这四年的历程极其残酷：实验滑翔机坠毁。计算失败。材料断裂。天气常常不配合。当地人在远处观望，摇着头看着这些假装自己是鸟、试图自杀的怪人。
 
 威尔伯有一天跌到了谷底。他看向奥维尔，说：**"再过一千年，人类也飞不起来。"**
 
