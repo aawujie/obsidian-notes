@@ -368,7 +368,7 @@ share_updated: 2026-06-26T11:58:33+08:00
 
 试着删除你作为历史学家的心态，进入威尔伯的当下时刻。<span style="color:rgb(255, 77, 77)"><b>在那个时代，飞行被视为精神错乱、有死亡愿望的人才会做的事。</b></span>
 
-《纽约时报》甚至发表了一篇文章："人类一百万年都飞不起来。"
+<span style="color:rgb(195, 117, 255)">《纽约时报》1903 年甚至发表了一篇文章："人类一百万年都飞不起来。"</span>
 
 ![纽约时报：人类一百万年都飞不起来](https://cdn.prod.website-files.com/67891452634f936deafd719a/67c55d3fe973fe8d7d5f092e_https%253A%252F%252Fsubstack-post-media.s3.amazonaws.com%252Fpublic%252Fimages%252F28fc2f87-48e3-45b3-a202-407e271be692_1456x1480.avif)
 
