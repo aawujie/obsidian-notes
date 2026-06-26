@@ -578,11 +578,11 @@ share_updated: 2026-06-26T11:58:33+08:00
 
 ![反刍陷阱](https://cdn.prod.website-files.com/67891452634f936deafd719a/67db5a63595f66059be25503_67d7f16a1ae94b21c219a062_AD_4nXfYzZUdf2PvxDy2XIHQ0cJhgro5NnHjQfUn3JQfq8LqcjrvYDVk9zjKmM0vc-8CDiEStVKzdI0znthYvRVv6sr6UfJe8nIRwi4lLJqf1aEA-wOschvzV7dpbO5ZlL5vPrVmHqEDsA.avif)
 
-托马斯·勒罗伊（Thomas Leroy）——《思想的重量》。反刍陷阱的感觉。
+托马斯·勒罗伊（Thomas Leroy）——<span style="color:rgb(255, 77, 77)"><b>《思想的重量》</b></span>。反刍陷阱的感觉。
 
-反刍陷阱冻结了能动性。它被困在永无止境的*"如果出错了怎么办？"*循环中。
+<span style="color:rgb(255, 77, 77)"><b>反刍陷阱冻结了能动性。它被困在永无止境的 <i>"如果出错了怎么办？"</i> 循环中。</b></span>
 
-它就像花一辈子在隐喻的Netflix首页上滚动，却找不到完美的电影。反刍的完美主义者不断把罐头踢到路上，因为他们找不到一个零感知风险的完美选项——最终只剩下很多罐头，却没有路可以踢了。
+它就像花一辈子在隐喻的 Netflix 首页上滚动，却找不到完美的电影。反刍的完美主义者不断把罐头踢到路上，因为他们找不到一个零感知风险的完美选项——最终只剩下很多罐头，却没有路可以踢了。
 
 ![反刍陷阱](https://cdn.prod.website-files.com/67891452634f936deafd719a/67de4240f1204e0c43900609_AD_4nXfH2eLpwcL6owoq6H3soQSDKWRiw1YWzwR17LFJEqWyGt4lnTrYwfSbIa494Gnn0qwTq0rJ6sCWw53RPcQP4vgwbI_JWUUjMTCaiQ5ob2sePFvSPGvcdJKQx4_wbDcdHA8xsqZThA.avif)
 
