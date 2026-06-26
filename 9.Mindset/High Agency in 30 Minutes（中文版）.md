@@ -608,15 +608,15 @@ share_updated: 2026-06-26T11:58:33+08:00
 
 ![压倒陷阱](https://cdn.prod.website-files.com/67891452634f936deafd719a/67db5a63c12ef868a98c68cd_67d7f16ad7cfaf80b64369e1_AD_4nXfGD867HMBeKdTzpI2B3L_d4bDP8-lhzSibJbpMnpuowVRhNx9-dQAO8RkbI7ICbZzedXfpOevbiS_bUQc89a0xbJzzrtKsJ-xudXVnHxtG5R82s9uXqG3OYRmppaCgSXVqjtCCkw.avif)
 
-压倒陷阱让能动性瘫痪。任务如此艰巨，你不知道从哪里开始。你被面前潜在的行动数量淹没。
+<span style="color:rgb(255, 77, 77)"><b>压倒陷阱让能动性瘫痪。任务如此艰巨，你不知道从哪里开始。</b></span>你被面前潜在的行动数量淹没。
 
 学量子力学？*我从哪里开始？！*
 巴西柔术黑带？*我从哪里开始？！*
 造一架飞机？*我从哪里开始？！*
 
-压倒陷阱把问题变成一个设计糟糕的电子游戏。它看着你现在的位置——第0级——然后与理想——第100级——对比，感到压倒性的恐惧，然后逃跑。
+<span style="color:rgb(195, 117, 255)"><b>压倒陷阱把问题变成一个设计糟糕的电子游戏。它看着你现在的位置——第0级——然后与理想——第100级——对比，感到压倒性的恐惧，然后逃跑。</b></span>
 
-一个好的经验法则：电子游戏设计师比99%的心理学家更了解人类心理。
+<span style="color:rgb(255, 77, 77)"><b>一个好的经验法则：电子游戏设计师比99%的心理学家更了解人类心理。</b></span>
 
 ![电子游戏产业规模](https://cdn.prod.website-files.com/67891452634f936deafd719a/67c55d3faf82966ad93d9081_https%253A%252F%252Fsubstack-post-media.s3.amazonaws.com%252Fpublic%252Fimages%252F27f574c1-feb7-4f48-9af2-1f9759a06a52_1200x1200.avif)
 
