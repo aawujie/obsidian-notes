@@ -1,6 +1,7 @@
 ---
 title: DuckDB vs SQLite 量化数据仓库技术选型
 type: note
+category: 技术选型
 created: 2026-06-26
 updated: 2026-06-26
 sources: []
