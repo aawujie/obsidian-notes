@@ -505,7 +505,7 @@ share_updated: 2026-06-26T11:58:33+08:00
 
 具体问题：<span style="color:rgb(255, 77, 77)"><i>我梦想中的一周，每小时在做什么？我噩梦般的一周，每小时在做什么？我当前一周与梦想/噩梦周之间的差距是什么？</i></span>
 
-沃尔特·迪士尼（Walt Disney）将他的想法从头脑中转化出来——绘制迪士尼帝国地图：
+<span style="color:rgb(255, 77, 77)"><b>沃尔特·迪士尼（Walt Disney）将他的想法从头脑中转化出来——绘制迪士尼帝国地图：</b></span>
 
 ![沃尔特·迪士尼1957年的战略图 - 商业内幕](https://cdn.prod.website-files.com/67891452634f936deafd719a/6839aef6d93a7d08ca49628f_5dc97530e94e8676c200a255.jpeg)
 
@@ -519,7 +519,7 @@ share_updated: 2026-06-26T11:58:33+08:00
 
 ![中智陷阱](https://cdn.prod.website-files.com/67891452634f936deafd719a/67c55d3f17dc36a702f8f3dd_https%253A%252F%252Fsubstack-post-media.s3.amazonaws.com%252Fpublic%252Fimages%252F0a175c97-cb4b-4e63-9c50-06c3b5fbc8ff_960x1391.avif)
 
-中智陷阱将能动性过度复杂化。它源自中智梗图（midwit meme）：那个可怕的中间位置的中智。
+<span style="color:rgb(255, 77, 77)"><b>中智陷阱将能动性过度复杂化。它源自中智梗图（midwit meme）</b></span>：那个可怕的中间位置的中智。
 
 ![中智梗图](https://cdn.prod.website-files.com/67891452634f936deafd719a/67c55d3f5cf0a3641c5cb494_https%253A%252F%252Fsubstack-post-media.s3.amazonaws.com%252Fpublic%252Fimages%252Fb6ad71f0-bd1b-48b7-9853-e80dba357065_675x499.avif)
 
