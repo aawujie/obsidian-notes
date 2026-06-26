@@ -858,3 +858,11 @@ youtube link here
 以下令人难以置信的朋友们提供了宝贵的反馈，帮助塑造了这篇文章，使其值得一读：瓦莱丽（Valerie / Vals Pals）、斯凯·金（Sky King）、尤瑟夫·史密斯（Yusef Smith）、贾卡莫（Giacamo）、阿莱西奥·埃斯波西托（Alessio Esposito）、比利·奥本海默（Billy Oppenheimer）、保罗·米勒德（Paul Millerd）、克里斯蒂安·迪恩（Christian Dean）、里斯·贝斯特（Reece Best）、菲尔·达内什雅尔（Phil Daneshyar）和我爸爸！
 
 特别感谢克里斯·威廉姆森（Chris Williamson）、吉姆·奥肖内西（Jim O'Shaughnessy）、沙恩·普里（Shaan Puri）、吉米·卡尔（Jimmy Carr）和大卫·森拉（David Senra），多年来在这些想法上一直是我的陪练伙伴。
+
+
+
+# 附录
+
+- Straw man：稻草人谬误（歪曲对手观点）
+- Steel man：钢铁人论证（完整强化对手观点再辩论）
+- Overton Window：奥弗顿之窗，指社会舆论可接受的观点区间
