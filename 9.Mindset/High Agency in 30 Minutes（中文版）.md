@@ -550,11 +550,11 @@ share_updated: 2026-06-26T11:58:33+08:00
 
 ![依附陷阱](https://cdn.prod.website-files.com/67891452634f936deafd719a/67db5a6204a5434870b973a2_67d7f07dc8944395c6cab70a_AD_4nXcquziFQSLCzaOrFyftVzl7Rjn1bKrO3Gui9sGChVvY4L1rDOck9SMBk6OnXtWXLabyckRQ9za4pnGvA8-6gucWYjSHYFKnJ5E1HiG7vCpMPIkoXQfoyEqAs_oz4YcpRpYoXtMu7A.avif)
 
-依附陷阱是过度依附于过去的假设，以至于看不到新的高能动性选项。你变成了那个手里拿着锤子、只能看到钉子的人。
+<span style="color:rgb(255, 77, 77)"><b>依附陷阱是过度依附于过去的假设，以至于看不到新的高能动性选项。</b></span><span style="color:rgb(195, 117, 255)"><b>你变成了那个手里拿着锤子、只能看到钉子的人。</b></span>
 
-三种最强效的致幻药物：DMT、冰毒和惯性（momentum）。
+<span style="color:rgb(255, 77, 77)"><b>三种最强效的致幻药物：DMT、冰毒和惯性（momentum）。</b></span>
 
-依附监狱的根本原因是"末位原理思维"（last principles thinking）——与第一性原理思维相反。这是你的头脑对现实有假设，将这些假设视为不容置疑的事实——然后开始寻找支持它的证据，却从未质疑过这些假设本身。
+依附监狱的根本原因是<span style="color:rgb(255, 77, 77)"><b> "末位原理思维"（last principles thinking）——与第一性原理思维相反</b></span>。这是你的头脑对现实有假设，将这些假设视为不容置疑的事实——然后开始寻找支持它的证据，却从未质疑过这些假设本身。
 
 ![末位原理思维](https://cdn.prod.website-files.com/67891452634f936deafd719a/67de40a5c01feb0fa8684e0f_AD_4nXejx9OUtRcvx9xGHS_xBU85Boy9bEalLCVxjI8VLqhbGppqOkyaTTul6pdZIwAz4CtFAfAp2MAeIqJe96wDnk2daBRM7ern_IEJ9eVEvWeUEKIYJV2w1MtKgvZnGH2nXaVbupcn8Q.avif)
 
