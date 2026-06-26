@@ -416,4 +416,4 @@ tags:
 
 威尔伯正在高能动性光谱上疾驰，解决着不可解决的问题。
 
-![威尔伯在疾驰](https://cdn.prod.website-files.com/67891452634f936deafd719a/67c55d3fb0665da9a07573e2_https%253A%252F%252F
+![威尔伯在疾驰](https://cdn.prod.website-files.com/67891452634f936deafd719a/67c55d3fb0665da9a07573e2_https%253A%252F%252Fsubstack-post-media.s3.amazonaws.com%252Fpublic%252Fimages%252Ff592877e-e184-4f00-ba91-68af86a24d49_1080x1080.avif)
