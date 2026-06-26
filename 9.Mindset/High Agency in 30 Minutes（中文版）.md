@@ -457,6 +457,10 @@ share_updated: 2026-06-26T11:58:33+08:00
 
 ![低能动性三轮车](https://cdn.prod.website-files.com/67891452634f936deafd719a/67de3d75d0d30f0945e737b3_AD_4nXfcYjhJ5WcGUArYa89GrkUL0t4upuT8ktd89XINXeOgcxs9rB7vkkO6ua7wEacWICGey6CRNf6qnQmNPsIPVJj9gc9kvoapG8q2y-xzJw_QrGj7Nt-f5dtx4jB0NblxmaBuRVOSaw.avif)
 
+1. Bias to inaction（不作为偏倚） <span style="color:rgb(255, 77, 77)">遇事本能选择观望拖延，惧怕主动行动出错带来的愧疚，宁可放任问题搁置，拒绝主动推进改变。</span>
+2. Agreeability（过度高宜人性） 极度回避冲突，习惯性顺从他人意见，为维持表面和气放弃自身判断，不敢提出不同方案、推动关键变革。
+3. Muddy thinking（混沌模糊思维） 思考缺乏清晰逻辑，分不清主次优先级，反复纠结细碎无关细节，无法梳理出可落地的明确行动路径。
+
 而且它无处不在。
 
 低能动性是：在一个问题上卡了多年，却没有意识到花一小时搜YouTube就能解决。
