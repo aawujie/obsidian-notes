@@ -431,7 +431,7 @@ share_updated: 2026-06-26T11:58:33+08:00
 
 威尔伯那天飞得最久：59秒，飞行了582英尺。
 
-**威尔伯的能动性如此之强——他飞出了"被生活发生"的象限。**
+<span style="color:rgb(255, 77, 77)"><b>威尔伯的能动性如此之强——他飞出了"被生活发生"的象限。</b></span>
 
 ![威尔伯飞行](https://cdn.prod.website-files.com/67891452634f936deafd719a/67c55d3f82aba6829dece6bb_https%253A%252F%252Fsubstack-post-media.s3.amazonaws.com%252Fpublic%252Fimages%252Ff152145e-3f9e-4d69-b404-f88e2ca2bc19_1080x1080.avif)
 
