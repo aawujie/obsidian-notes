@@ -1,0 +1,1101 @@
+{
+  "date": "2026-06-28",
+  "generated_at": "2026-06-28T06:36:09.064289",
+  "total_events": 40,
+  "severity_distribution": {
+    "medium": 36,
+    "high": 4
+  },
+  "events": [
+    {
+      "title": "Iranian drones attack Bahrain and a ship is struck in the strait after U.S. airstrikes - PBS",
+      "title_cn": "",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNR2d4NEt1UGpsN001TjhtTThkbzJ0MjdBc3FkRlNQc1p2MEVPbTExNmNGcUpTY0Z1RUl0N1h0Vk9pTHdEU2hSWVJsdmZLcnVBamVYajB5TDRicDFLZ281Ul9zOFROUFdGRWdtcV9vcnl1ZGVMcGcwalZKMHc4UXl0ZWRlcDBhc244TDhScTgzaDlvTnFvV3JVM1lFa2pQTWlvQlV1SFhabHFIMTc3LWRsWHRjcXppMk9pQTEzX9IBwgFBVV95cUxNMlZWbnU0Wm82eHc5X0RZTEFqaXlrb0V2WTZBeGFzdDJ1M1ViTjd0bDlrX0ZZQ0doaEZMV0YyM3AzNTV2NmFEYk5yU1YyQW9HdnNrRE5mMVZ3U1lyRWc3MFhhS2dtUGVUa2EwSEw4UENNSzZ3eldqQ3Rac0xMRDlsZjFvZFBiUkRsbndsVVVlREJCZkhOeFBrdWtZcWs3MEFCV0FIYjRhTDZVOWFTSzFOV0d4a25ULXVRMjR3MmtQZkZmQQ?oc=5",
+      "content": "Iranian drones attack Bahrain and a ship is struck in the strait after U.S. airstrikes  PBS",
+      "content_detail": "Google News",
+      "published_date": "Sat, 27 Jun 2026 18:25:55 GMT",
+      "search_region": "美伊冲突",
+      "classified_regions": [
+        "美伊冲突"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Deal with Trump hands Iran economic lifeline as leaders eye postwar gains - The Washington Post",
+      "title_cn": "",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNV3h6dlVoOHlxRnRCS016eUdCY05hTkFjTWNydC1zSEl6b0o2RUZtOWJTN0xJTS1YNjgtb0F2YTlacE5ZRnJDTnNva0NUT1NNSGVRUXVtNEJVSU1LdGI0VjBDWHk1cy1MYnkzMUlZZUxnTlI3bTYtMUJjSGM5dFRMSVR6bnlvWUtsTDUtTjBoN1drbGdGbmV5Z1ZWSWs2aEd6dE5tbF9WWWNlaVdBaUNqZjBEc05qbXpwcUNv?oc=5",
+      "content": "Deal with Trump hands Iran economic lifeline as leaders eye postwar gains  The Washington Post",
+      "content_detail": "Google News",
+      "published_date": "Sat, 27 Jun 2026 16:00:00 GMT",
+      "search_region": "美伊冲突",
+      "classified_regions": [
+        "美伊冲突"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Iran and US trade blame for attacks, threatening fragile ceasefire - Al Jazeera",
+      "title_cn": "",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQal9VbGppMXU1bjJGWW5Ra3hqWVA5dy1LTzRlMjV3SE9jcktmc2t1MkxGbF9JV0VKUlp0Y1FiczlVZ1ZlNkVIU2p3V0hCc1p6Tlk2bWFOX2Fwdjh4cVJ6Sk1GUFFfSGE2cWNOdGh3cGRpa0xoQ29YSEJ1VUxZREV0VVpXWnprMXJBWWdlLURXZDNwdE82MXZtQWt2eW15MHRKZjJac3hGbldvd9IBrwFBVV95cUxNTDVXSGI2X1NlY3JZbFE2Z2phR0Z2R3gxUnhmcDZDcE1SMkNmZUhHZXM4VkZTSkFrOG5jcWVQM05rYV80clhSNGczQkYxSjJVSzk2NndLak93X3hRZnFFOGN0ejc1N3RoQWpJT0VEWGNXNTNZRV82REpiNm42T1FsMWgtWkZYS3ZWTG9yZ2c5RTZqNVpyQ1JFbFpORXpBVkluOWItUlF2dFB1TzlsWEg4?oc=5",
+      "content": "Iran and US trade blame for attacks, threatening fragile ceasefire  Al Jazeera",
+      "content_detail": "Google News",
+      "published_date": "Sat, 27 Jun 2026 12:16:17 GMT",
+      "search_region": "美伊冲突",
+      "classified_regions": [
+        "美伊冲突"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Trump says Iran \"completely agreed\" to nuclear inspections, but Tehran denies any such plans - CBS News",
+      "title_cn": "",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNN0dINFdQeTZ4QmpjV3I3UVB4ejlkdHRvNVdSeGZFNHRjNEhMYURFdi11dFhtLU1PbDk0M2lTeWxBdjE2MnY3b09Kd2tnR1dZZTJaZlNJOWRRLWN5RDZTdWlvb2ZzR2xGZHBXblgtQmtqN0doYzBsRWo3UzF2dWZQX2N4dkRCbzVTX2VDRkNkQQ?oc=5",
+      "content": "Trump says Iran \"completely agreed\" to nuclear inspections, but Tehran denies any such plans  CBS News",
+      "content_detail": "Google News",
+      "published_date": "Tue, 23 Jun 2026 10:25:00 GMT",
+      "search_region": "美伊冲突",
+      "classified_regions": [
+        "美伊冲突"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "The US and Iran exchange new attacks over Strait of Hormuz as Tehran tries to close competing route - Fortune",
+      "title_cn": "",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOVXhxOG1veHhlMUZSYkN3amF6UjBGS3BEdEx6aWwtcFphS2I1MTdFQzlZZkdtS01nTDB1UzUzelVOTjZMWUdsX1hDTjJmdUl1MjJqSzFXdzJ5UDNUV3JkY3Y2eHY0LUlHa2Q0cm1QQ2lSblB3WTNqY0tTNG90N0poUVhsd29IbGpoemY2MFRaYkhMRzg?oc=5",
+      "content": "The US and Iran exchange new attacks over Strait of Hormuz as Tehran tries to close competing route  Fortune",
+      "content_detail": "Google News",
+      "published_date": "Sat, 27 Jun 2026 16:43:00 GMT",
+      "search_region": "美伊冲突",
+      "classified_regions": [
+        "美伊冲突"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Vance defends Iran strategy amid peace negotiations: ‘America wins either way’ - The Hill",
+      "title_cn": "",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxObk9EcjFGMVNvRVBLcnBQdU5qYWlPRk1LSFNoQ1laUFFUOFNUc25KSnpNZDRybmtISDVYOEE4YnkzVHA2MEx6aF9oenNXdXRMYUNoWkdxME5LMEhsTDZrdGdwYUZIbDZCemxhQWFiQzF5NW1nZGxUR240T2tPTUgyWDlDYWZINUphYkF2RmZKMzN2aG0wS245NGw0eFM2bkZIdTVzQdIBqgFBVV95cUxQVGVYYl80ajF3a0ZDbC1ESmh3WlVzUnlQWVI3QlJ4TkYyVTQ0S0ZUNlV1c1ZCVG1Dc1hqU1ZSZnZuR3lqTGExaElLeEpwQWlyOVhwNk9qWGlZNzduaHUzRjlUa1htcS0zRVdEMVR0alV3cnRXNE5iM2J4QldBcDA2X1ZJVGY2TUFvQ1RKeHBHRGphUS00akdXZjk4WkMyeDAzRHZ0aFBaTHBKUQ?oc=5",
+      "content": "Vance defends Iran strategy amid peace negotiations: ‘America wins either way’  The Hill",
+      "content_detail": "Google News",
+      "published_date": "Sat, 27 Jun 2026 15:55:00 GMT",
+      "search_region": "美伊冲突",
+      "classified_regions": [
+        "美伊冲突"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "US strikes Iran after attack on cargo ship - BBC",
+      "title_cn": "",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9tQjhhNDhhLTVYMWZLTFhVa3Y5and2bVJrZ3YwcHlkUjlMWWNpSVlMVTV3RXdFanE5b2JSWEVLN2Z5RDFKNzhTTFczRjNHYUkxUnNTdm1OcTROZw?oc=5",
+      "content": "US strikes Iran after attack on cargo ship  BBC",
+      "content_detail": "Google News",
+      "published_date": "Sat, 27 Jun 2026 10:40:38 GMT",
+      "search_region": "美伊冲突",
+      "classified_regions": [
+        "美伊冲突"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Mideast Fighting Widens With Attacks on Bahrain, Hormuz Tanker - WSJ",
+      "title_cn": "",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOX2s5U3BFejctZlBscnJCVTFZdm9fc3dsbTBKalVGd3ZTVl9JWkVZR1pwcWxBaWs0X2NEcDJHb1hmMGo4R2RxZFVyQm12cFpRWVNwOGdkemxGN0VlU3RwOXBWOXVIVmtQb21JanQybFBsTWgtNmZWWWE0MTRwWnJzblRySFVLMkU1NTdZbmJUZU9SU09zUzJ3V3hrZEVpUmg5el9TSEF6b2NsZHVZ?oc=5",
+      "content": "Mideast Fighting Widens With Attacks on Bahrain, Hormuz Tanker  WSJ",
+      "content_detail": "Google News",
+      "published_date": "Sat, 27 Jun 2026 14:19:00 GMT",
+      "search_region": "美伊冲突",
+      "classified_regions": [
+        "美伊冲突"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "Mideast Fighting Widens With Attacks on Bahrain, Hormuz Tanker WSJ",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Ukraine-Russia war latest: Zelensky tells Putin to ‘take a step towards peace’ after ordering 40-day offensive - The Independent",
+      "title_cn": "",
+      "url": "https://www.independent.co.uk/news/world/europe/ukraine-russia-war-live-putin-trump-zelensky-offensive-b3003430.html",
+      "content": "“Ukrainian warriors prove the strength of Ukrainian precision every day. Ukraine’s long-range sanctions and medium-range sanctions are being fully implemented. These are our fair responses to Russia for this war — the war that Russia started and that Russia must end,\" he said.\n\n“Russia must take thi",
+      "content_detail": "Ukraine-Russia war latest: Kyiv strikes Russian defence plant as Zelensky tells Putin to ‘take a step towards peace’ | The Independent Stay up to date with notifications from The Independent Notifications can be managed in browser preferences. Not now Yes please Jump to content US Edition Change UK Edition Asia Edition Edición en Español Sign up to our newsletters Support Now Log in / Register Independent Podcasts Newsletters Support Now Menu News News Bulletin US News Politics Crime Money Health Science Space UK News Europe News World News Global Aid World Cup World Cup Sports Sports US Sports Soccer Formula 1 UFC Rugby Union Cricket Tennis Boxing Cycling Golf Sports Videos Culture Culture Movies TV & Radio Music Games Books Art Photography Theatre & Dance Culture Videos Lifestyle Lifestyle Tech Food & Drink Fashion Love & Sex Women Health & Families Royal Family Motoring Electric Vehicles Lifestyle Videos Money Money Travel Travel News & Advice Simon Calder USA UK Europe Asia Inspiration City Guides Sustainable Travel Premium Premium Editorials Voices Long Reads Politics Explained News Analysis More Climate News Climate 100 Voices Sustainable Living Explained Climate Videos Electric Vehicles SGI Voices Editorials Letters Best Home & Garden Tech Fashion & Beauty Food & Drink Kids Books Travel & Outdoors Sports & Fitness Deals TV Documentaries ACFC Well Enough World of Trouble Travel Smart Drive Smart Money Smart Decomplicated On The Ground Indy100 Crosswords & Puzzles Most C",
+      "published_date": "Sat, 27 Jun 2026 07:30:33 GMT",
+      "search_region": "俄乌战争",
+      "classified_regions": [
+        "俄乌战争"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Ukraine hits defence plant in Russia’s Volgograd region, Zelenskyy says - NBC News",
+      "title_cn": "",
+      "url": "https://www.nbcnews.com/world/ukraine/ukraine-hits-defence-plant-russias-volgograd-region-zelenskyy-rcna352030",
+      "content": "Ukraine ​has intensified mid- and long-range drone attacks on Russian oil facilities and weapon ⁠production in recent months in response to Russia’s devastating strikes on the capital Kyiv and other cities.\n\nWith the war now in its fifth year, fighting rages along more than 745 miles of the ​frontli",
+      "content_detail": "Ukraine hits defence plant in Russia’s Volgograd region, Zelenskyy says BREAKING: U.S. launches additional Iran strikes as tensions flare up over Hormuz IE 11 is not supported. For an optimal experience visit our site on another browser. Skip to Content NBC News Logo World Cup Politics U.S. News World Culture Local New York Los Angeles Chicago Dallas-Fort Worth Philadelphia Washington, D.C. Boston Bay Area South Florida San Diego Connecticut Ongoing Prime Day Deals Tipline Business Sports Science Health Subscribe Share & Save&nbsp;&mdash; Subscriber Hub Saved Newsletters Profile Subscription Preferences Search Search Sections U.S. News Politics World Business Sports Investigations Culture &amp; Trends Health Science Tech Weather VIDEO Photos Sudoku NBC Select NBC Asian America NBC BLK NBC Latino NBC OUT Local New York Los Angeles Chicago Dallas-Fort Worth Philadelphia Washington, D.C. Boston Bay Area South Florida San Diego Connecticut tv Today Nightly News Meet the Press Dateline Featured NBC News Now Nightly Films Stay Tuned Special Features Newsletters Podcasts Listen Now Business in America More From NBC NBC.COM NBCU Academy Peacock NEXT STEPS FOR VETS NBC News Site Map Help Follow NBC News news Alerts There are no new alerts at this time Search Search Facebook Twitter Email SMS Blue Sky Whatsapp Print Reddit Flipboard Pinterest Linkedin Latest Stories World Cup Politics U.S. News World Culture Ongoing Prime Day Deals Tipline Business Sports Science Health Ukraine Ukraine",
+      "published_date": "Sat, 27 Jun 2026 09:49:40 GMT",
+      "search_region": "俄乌战争",
+      "classified_regions": [
+        "俄乌战争"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "Ukraine hits defence plant in Russia’s Volgograd region, Zelenskyy says BREAKING: U.S.",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Unease deepens in Russia as Ukraine steps up long-range strikes - The Washington Post",
+      "title_cn": "随着乌克兰加强远程打击，俄罗斯国内不安加剧",
+      "url": "https://www.washingtonpost.com/world/2026/06/27/unease-deepens-russia-ukraine-steps-up-long-range-strikes/",
+      "content": "Democracy Dies in Darkness\n\n# Unease deepens in Russia as Ukraine steps up long-range strikes\n\nExperts said Vladimir Putin was unlikely to change course despite worsening fuel shortages and a sharp decline in the stock market.\n\n10 min\n\nMake us preferred on Google\n\nRussian servicemen patrol Red Squar",
+      "content_detail": "",
+      "published_date": "Sat, 27 Jun 2026 09:00:00 GMT",
+      "search_region": "俄乌战争",
+      "classified_regions": [
+        "俄乌战争"
+      ],
+      "event_types": [
+        "军事冲突升级"
+      ],
+      "severity": "high",
+      "summary": "Democracy Dies in Darkness Unease deepens in Russia as Ukraine steps up long-range strikes Experts said Vladimir Putin was unlikely to change course despite worsening fuel shortages and a sharp",
+      "affected_tickers": [
+        "GC=F",
+        "SI=F",
+        "LMT",
+        "NOC",
+        "RTX",
+        "GD",
+        "GLD",
+        "SLV",
+        "ITA",
+        "PPA"
+      ]
+    },
+    {
+      "title": "Ukraine reportedly strikes Russian military plant in Volgograd - The Kyiv Independent",
+      "title_cn": "据报道，乌克兰袭击了俄罗斯伏尔加格勒的军事工厂",
+      "url": "https://kyivindependent.com/ukraine-reportedly-strikes-russian-military-plant-in-volgograd/",
+      "content": "Ukraine says it struck Russian military supply vessels, air defense systems in occupied Crimea.\n\nThe strikes, which hit Project 15310 cable-laying ships Volga and Vyatka and caused \"a massive fire on board,\" were part of President Volodymyr Zelensky's 40-day operation to \"exert pressure on Russia,\" ",
+      "content_detail": "Ukraine&#x27;s Flamingo missiles &#x27;successfully struck&#x27; key Russian military plant in Volgograd, Zelensky says Sign up for our Newsletters → About Team Jobs Advertising Store War Politics Business Russia Europe Opinion Video Culture Investigations War Crimes Explaining Ukraine War Ukraine&#x27;s Flamingo missiles &#x27;successfully struck&#x27; key Russian military plant in Volgograd, Zelensky says June 27, 2026 6:28 am (Updated: June 27, 2026 11:18 am ) • 2 min read Prefer on Google by Lucy Pakhnyuk, The Kyiv Independent news desk Ukrainian-made long-range Flamingo FP-5 missiles struck Russia's Federal Research and Production Center Titan-Barrikady in Volgograd on June 27, 2026. (Volodymyr Zelensky/X) Ukrainian-made long-range Flamingo FP-5 missiles &quot;successfully struck&quot; a key Russian military-industrial facility in the city of Volgograd overnight on June 27, President Volodymyr Zelensky said. The strike targeted Russia&#x27;s Federal Research and Production Center Titan-Barrikady, a major defense enterprise that manufactures launchers for the Yars and Topol-M strategic missile systems, as well as launchers for the Iskander-M ballistic missile system. &quot;Confirmed strikes were followed by a fire on the plant&#x27;s premises,&quot; Zelensky said . &quot;It is a major industrial complex where (Russia) produces artillery systems and specialized military equipment, including components for missile launch systems used in attacks against our people.&quot; Tit",
+      "published_date": "Sat, 27 Jun 2026 03:28:47 GMT",
+      "search_region": "俄乌战争",
+      "classified_regions": [
+        "俄乌战争"
+      ],
+      "event_types": [
+        "军事冲突升级"
+      ],
+      "severity": "high",
+      "summary": "(Volodymyr Zelensky/X) Ukrainian-made long-range Flamingo FP-5 missiles \"successfully struck\" a key Russian military-industrial facility in the city of Volgograd overnight on June 27, President Volodymyr Zelensky said.",
+      "affected_tickers": [
+        "GC=F",
+        "SI=F",
+        "LMT",
+        "NOC",
+        "RTX",
+        "GD",
+        "GLD",
+        "SLV",
+        "ITA",
+        "PPA"
+      ]
+    },
+    {
+      "title": "ADAPTIVE INDOMITABLE UKRAINE: Zelenskyy’s Order To His Army … “Go For The Jugular Now” - Daily Kos",
+      "title_cn": "适应力强的乌克兰：泽连斯基命令军队“直击要害”",
+      "url": "https://www.dailykos.com/stories/2026/6/26/800061740/community/adaptive-indomitable-ukraine-zelenskyys-order-to-his-army-go-for-the-jugular-now/",
+      "content": "Fast forward to June 24 2026 and the president of Ukraine now embroiled in a most sanguinary war of liberation from the next door “super power” Russia, and having by dint of perseverance and ingenuity turned the tide of the war, directed his army to ‘strike preemptively at Russian facilities used to",
+      "content_detail": "ADAPTIVE INDOMITABLE UKRAINE: Zelenskyy’s Order To His Army … “Go For The Jugular Now” - Daily Kos Search Sign Up Log In Write Story News All News National White House Congress Justice Elections From Markos Community Site Announcements All Stories Community Spotlight All Community Stories Subscribe to Daily Kos Manage Newsletters Groups Tags Old Home Page Help Cartoons Support us Search News All News National White House Congress Justice Elections From Markos Community Site Announcements All Stories Community Spotlight All Community Stories Subscribe to Daily Kos Manage Newsletters Groups Tags Old Home Page Help Cartoons Support us Write Story Sign Up | Login Daily Kos Community ADAPTIVE INDOMITABLE UKRAINE: Zelenskyy’s Order To His Army &#8230; “Go For The Jugular Now” by Decimus Community This content is not subject to review by Daily Kos staff prior to publication. June 26, 2026 at 11:31 PM Recommend Story Share: Share on Facebook (Opens in new window) Facebook Share on Bluesky (Opens in new window) Bluesky Share on X (Opens in new window) X Share using Native tools Share Copied to clipboard 118 Comments Ukrainian President Zelenskyy reviews intercepted internal Russian documents during a briefing with Foreign Intelligence Service chief Oleh Luhovskyi. Photo credit: Zelenskyy via United24Media History has a way of if not exactly repeating itself then perhaps recurring with eerie similarity. Please kindly permit me a detour into our own American Civil War history as a prefa",
+      "published_date": "Sat, 27 Jun 2026 06:31:02 GMT",
+      "search_region": "俄乌战争",
+      "classified_regions": [
+        "俄乌战争"
+      ],
+      "event_types": [
+        "军事冲突升级"
+      ],
+      "severity": "high",
+      "summary": "June 26, 2026 at 11:31 PM Recommend Story Share: Share on Facebook (Opens in new window) Facebook Share on Bluesky (Opens in new window) Bluesky Share on X (Opens in",
+      "affected_tickers": [
+        "GC=F",
+        "SI=F",
+        "LMT",
+        "NOC",
+        "RTX",
+        "GD",
+        "GLD",
+        "SLV",
+        "ITA",
+        "PPA"
+      ]
+    },
+    {
+      "title": "Ukraine's drones take the war to Russia - Axios",
+      "title_cn": "乌克兰无人机将战火带到俄罗斯境内",
+      "url": "https://www.axios.com/2026/06/27/ukraine-drone-strikes-russia-refineries",
+      "content": "The intrigue: President Trump, who met Zelensky at the G7 last week and spoke to Putin beforehand, remarked that Ukraine was now \"doing pretty well\" in the war.\n\n Two officials who attended the summit said Trump expressed frustration with Putin and even signaled he could walk back the \"Anchorage und",
+      "content_detail": "",
+      "published_date": "Sat, 27 Jun 2026 11:00:04 GMT",
+      "search_region": "俄乌战争",
+      "classified_regions": [
+        "俄乌战争"
+      ],
+      "event_types": [
+        "军事冲突升级"
+      ],
+      "severity": "high",
+      "summary": "The intrigue: President Trump, who met Zelensky at the G7 last week and spoke to Putin beforehand, remarked that Ukraine was now \"doing pretty well\" in the war.",
+      "affected_tickers": [
+        "GC=F",
+        "SI=F",
+        "LMT",
+        "NOC",
+        "RTX",
+        "GD",
+        "GLD",
+        "SLV",
+        "ITA",
+        "PPA"
+      ]
+    },
+    {
+      "title": "Ukrainian MiG-29 crashes during combat mission, Air Force says, pilot ejects safely - The Kyiv Independent",
+      "title_cn": "乌克兰空军称一架米格-29在作战任务中坠毁，飞行员安全弹射",
+      "url": "https://kyivindependent.com/ukrainian-mig-29-crashes-during-combat-mission-air-force-says/",
+      "content": "The strike is part of a 40-day campaign approved by President Volodymyr Zelensky, which he said is aimed at \"compelling\" Russia to end the war.\n\nUkrainian MiG-29 crashes during combat mission, Air Force says, pilot ejects safely.\n\nThe pilot was located by a search-and-rescue team, which evacuated hi",
+      "content_detail": "Ukrainian MiG-29 crashes during combat mission, Air Force says, pilot ejects safely Sign up for our Newsletters → About Team Jobs Advertising Store War Politics Business Russia Europe Opinion Video Culture Investigations War Crimes Explaining Ukraine War Ukrainian MiG-29 crashes during combat mission, Air Force says, pilot ejects safely June 27, 2026 2:06 pm • 1 min read Prefer on Google by Tim Zadorozhnyy A Ukrainian MIG-29 performs a combat mission in Eastern Ukraine on Aug. 1, 2023. (Photo by Libkos/Getty Images) A Ukrainian MiG-29 fighter jet crashed overnight on June 27 while carrying out a combat mission in Poltava Oblast after communication with the aircraft was lost, Ukraine&#x27;s Air Force reported. The pilot successfully ejected and was located by a search-and-rescue team, which evacuated him to a medical facility for examination and treatment. &quot;The causes and circumstances are being investigated,&quot; the Air Force said . The military did not provide details about the mission or specify what led to the loss of communication. The MiG-29 is a Soviet-designed twin-engine multirole fighter developed in the 1970s and introduced into service in the early 1980s. Ukraine continues to operate the aircraft in upgraded configurations for air defense and strike missions as part of its combat aviation fleet. The incident comes less than two weeks after a fatal accident involving Ukraine&#x27;s military aviation. A Ukrainian Su-24 front-line bomber crashed in Khmelnytskyi",
+      "published_date": "Sat, 27 Jun 2026 11:06:30 GMT",
+      "search_region": "俄乌战争",
+      "classified_regions": [
+        "俄乌战争"
+      ],
+      "event_types": [
+        "军事冲突升级"
+      ],
+      "severity": "medium",
+      "summary": "(Photo by Libkos/Getty Images) A Ukrainian MiG-29 fighter jet crashed overnight on June 27 while carrying out a combat mission in Poltava Oblast after communication with the aircraft was lost,",
+      "affected_tickers": [
+        "GC=F",
+        "SI=F",
+        "LMT",
+        "NOC",
+        "RTX",
+        "GD",
+        "GLD",
+        "SLV",
+        "ITA",
+        "PPA"
+      ]
+    },
+    {
+      "title": "Report: Apple presses Trump to approve chip purchases from China - Ynetnews",
+      "title_cn": "",
+      "url": "https://www.ynetnews.com/tech-and-digital/article/b1xenr6fmg",
+      "content": "The list usually has no direct legal effect, but it sends a clear signal from the U.S. government to American companies and investors that the entities involved are sensitive from a security standpoint. According to sources who spoke with the Financial Times, Apple is now seeking assurances from the",
+      "content_detail": "Report: Apple presses Trump to approve chip purchases from China Updates Red Mail 26° Tel Aviv-Jaffa Search Main Israel News Mideast &amp; World News Tech & Digital Real Estate Finance Lifestyle Health &amp; Science Jewish World Travel More Channels Opinions Magazine Sports Food Weather Podcasts Sites & Sources Ynet Calcalist yad2 ynetespanol Вести mynet Contact Contact us Privacy Policy Terms of Use Accessibility Statement Tech &amp; Digital Report: Apple presses Trump to approve chip purchases from China A week after raising product prices amid soaring memory chip costs, Apple is reportedly pressing the Trump administration to approve purchases from China’s CXMT, a chipmaker blacklisted by the Pentagon Daniela Ginzburg | Add a comment Print Find an error? Report us Related Topics MacBook Apple Donald Trump China Apple’s predicament: About a week after outgoing Apple CEO Tim Cook announced price increases for most of the company’s products and blamed the surge in memory chip prices, it turns out Apple is already looking for a solution — and it runs through China. According to a Financial Times investigation published Saturday, the tech giant has been applying heavy pressure on the Trump administration in recent weeks to secure approval to buy chips from Chinese manufacturer CXMT, short for ChangXin Memory Technologies, which the Pentagon placed on a blacklist because of its alleged ties to the Chinese military. Gallery Apple CEO Tim Cook and President Trump at the White Hous",
+      "published_date": "Sat, 27 Jun 2026 12:49:10 GMT",
+      "search_region": "中美博弈",
+      "classified_regions": [
+        "中美博弈"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "Report us Related Topics MacBook Apple Donald Trump China Apple’s predicament: About a week after outgoing Apple CEO Tim Cook announced price increases for most of the company’s products and",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Apple seeks approval to buy chips from blacklisted Chinese company, FT reports - Reuters",
+      "title_cn": "",
+      "url": "https://www.reuters.com/world/asia-pacific/apple-seeks-approval-buy-chips-blacklisted-chinese-company-ft-reports-2026-06-27/",
+      "content": "The lobbying push underscores the bind facing major U.S. technology companies as soaring memory ​chip costs collide with Washington's national security restrictions on ​Chinese chipmakers.\n\nApple approached the Commerce Department more than a month ago and also ‌engaged ⁠other administration officia",
+      "content_detail": "",
+      "published_date": "Sat, 27 Jun 2026 03:26:32 GMT",
+      "search_region": "中美博弈",
+      "classified_regions": [
+        "中美博弈"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "The lobbying push underscores the bind facing major U.S.",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Asian Tech Giants Respond to US AI Export Restrictions - Zamin.uz",
+      "title_cn": "",
+      "url": "https://zamin.uz/en/technology/209443-asian-tech-giants-respond-to-us-ai-export-restrictions.html",
+      "content": "## Comments0\n\n…\n\n## Related news\n\nSwatch seeks $170 million in damages from SamsungToday, 17:27OnePlus Aims to Revolutionize Budget Segment: New Smartphone with 8000 mAh BatteryToday, 16:51Is the Silicon Era Ending: ASML Enters Mass Production of Photonic ChipsToday, 16:20Revolution in the World of ",
+      "content_detail": "Asian Tech Giants Respond to US AI Export Restrictions – Zamin.uz, 27.06.2026 Asosiy kontentga oʻtish ≡ Uzbekistan World Society Tech Sport Auto Culture Economy English ▾ Ўзбекча O&#x27;zbek Русский Türkçe Қазақша Français Español Deutsch Sign in Asian Tech Giants Respond to US AI Export Restrictions 17:29 / 27.06.2026 · 54 · Technology Global competition in the field of AI has reached a new stage. Following the US government's ban on the export of Anthropic 's most powerful Mythos and Fable 5 models, Asian startups have begun moving to fill this gap. Companies from China and Japan have introduced their own alternatives to reduce dependence on American technologies. This was reported by Techcrunch.com reports that. Specifically, China's leading cybersecurity representative, 360, announced a new AI tool called Tulongfeng. Developers claim that this model can easily compete with Anthropic's Mythos system in terms of capabilities. Mythos is currently considered so powerful and strategically important that the Donald Trump administration has strictly prohibited its export from the US. New developments from Japan and China Japan's Sakana AI startup has also launched its model called Fugu (meaning \"pufferfish\" in Japanese). Company representatives told TechCrunch that this model not only rivals Fable 5 but also has the ability to coordinate other models via various API interfaces. This makes it highly convenient for complex agentic systems. While Sakana AI representatives call the ",
+      "published_date": "Sat, 27 Jun 2026 12:29:36 GMT",
+      "search_region": "中美博弈",
+      "classified_regions": [
+        "中美博弈"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "Following the US government's ban on the export of Anthropic 's most powerful Mythos and Fable 5 models, Asian startups have begun moving to fill this gap.",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Apple asks Trump admin to approve Chinese RAM after product price increases - 9to5Mac",
+      "title_cn": "",
+      "url": "https://9to5mac.com/2026/06/26/apple-asks-trump-admin-to-approve-chinese-ram-after-product-price-increases/",
+      "content": "> Apple is not barred from buying chips from CXMT, or YMTC, another Chinese memory chipmaker. But the Pentagon has put both companies on its Chinese Military Company blacklist. The so-called 1260H list contains dozens of Chinese groups with alleged ties to the PLA that undermine US national security",
+      "content_detail": "Apple asks Trump admin to approve Chinese RAM after product price increases - 9to5Mac Skip to main content Toggle main menu 9to5Mac Logo Go to the 9to5Mac home page Switch site 9to5Toys 9to5Google Logo 9to5Google Electrek Drone DJ Logo DroneDJ Space Explored About Privacy Toggle social menu Toggle dark mode Search for: Submit Toggle search form Forums Store Podcasts Apple@Work Happy Hour 9to5Mac Daily Overtime iPhone iPhone Mac Mac MacBook Pro MacBook Air iMac Mac mini Mac Studio Mac Pro iPad iPad Pro iPad Air iPad mini iPad iPadOS Watch Apple Watch Apple Watch Ultra Apple Health Apple Watch SE Vision Vision Pro visionOS Music and TV Apple Music AirPods HomePod Apple TV Guides Reviews How Tos AAPL Apple Store Apple Arcade Apple Card Apple Silicon Apple One Apple Fitness+ CarPlay Siri HomeKit Toggle dark mode Apple asks Trump admin to approve Chinese RAM after product price increases Zac Hall &nbsp;|&nbsp;Jun 26 2026 - 8:04 pm PT 16 Comments The Financial Times reports that Apple is seeking clearance from the Trump administration to purchase memory chips from a blacklisted Chinese company. The move would help it meet demand for product manufacturing during the ongoing global memory supply shortage. Demetri Sevastopulo and Michael Acton, reporting for The Financial Times : Apple is lobbying the Trump administration for clearance to buy memory chips from CXMT, a Chinese company that the Pentagon has put on a blacklist because of alleged connections to the People’s Liberation Arm",
+      "published_date": "Sat, 27 Jun 2026 03:04:56 GMT",
+      "search_region": "中美博弈",
+      "classified_regions": [
+        "中美博弈"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "The move would help it meet demand for product manufacturing during the ongoing global memory supply shortage.",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Anthropic moves toward deal with U.S. to lift curbs on AI models - Los Angeles Times",
+      "title_cn": "",
+      "url": "https://www.latimes.com/business/story/2026-06-26/anthropic-moves-toward-deal-with-u-s-to-lift-curbs-on-ai-models",
+      "content": "Commerce Secretary Howard Lutnick is making progress toward alleviating security concerns that would allow for the removal of the export controls he imposed on Anthropic’s Fable 5 and Mythos 5 systems, according to the people. The restrictions could be lifted once officials across the administration",
+      "content_detail": "Anthropic moves toward deal with U.S. to lift curbs on AI models - Los Angeles Times News Home Page California Election 2024 Housing &amp; Homelessness Politics Science &amp; Medicine World &amp; Nation Business Artificial Intelligence Autos Jobs, Labor &amp; Workplace Real Estate Technology and the Internet California California Politics Earthquakes Education Housing &amp; Homelessness L.A. Influential L.A. Politics Mental Health Climate &amp; Environment Climate Change Water &amp; Drought Entertainment &amp; Arts Arts Books Stand-Up Comedy Hollywood Inc. The Envelope (Awards) Movies Music Television Things to Do De Los En Español Food 101 Best Restaurants in L.A. Recipes Image Art &amp; Culture Conversations Drip Index: Event Guides Fashion Shopping Guides Styling Myself Lifestyle Health &amp; Wellness Home Design L.A. Affairs Plants Travel &amp; Experiences Weekend Things to Do in L.A. Obituaries Voices Editorials Letters to the Editor Contributors Short Docs Sports Angels Angel City FC Chargers Clippers Dodgers Ducks Galaxy High School Sports Kings Lakers Olympics USC UCLA Rams Sparks World &amp; Nation Immigration &amp; the Border Mexico &amp; the Americas Middle East Ukraine Times Everywhere 404 by L.A. Times Facebook Instagram LA Times Today Newsletters Photography Podcasts Short Docs TikTok Threads Video YouTube X (Twitter) For Subscribers eNewspaper All Sections _________________ LA Times Studios BUSINESS • AI &amp; Tech • Automotive • Banking &amp; Finance • Commerc",
+      "published_date": "Sat, 27 Jun 2026 02:31:58 GMT",
+      "search_region": "中美博弈",
+      "classified_regions": [
+        "中美博弈"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "Anthropic moves toward deal with U.S.",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Renewed Strikes Threaten Setback to Shipping Recovery in Persian Gulf - The New York Times",
+      "title_cn": "",
+      "url": "https://www.nytimes.com/2026/06/27/business/strait-of-hormuz-shipping-iran.html",
+      "content": "Skip to contentSkip to site indexSearch & Section Navigation Section Navigation\n\nSearch\n\nBusiness\n\n[](\n\nSubscribe for $1/weekLog in[](\n\nSaturday, June 27, 2026\n\nToday’s Paper\n\nSubscribe for $1/week\n\n[](\nWar in the Middle East\n\n   liveUpdates\n   U.S.-Iran Negotiation Issues\n   Israel-Lebanon Agreemen",
+      "content_detail": "",
+      "published_date": "Sat, 27 Jun 2026 11:26:14 GMT",
+      "search_region": "中东/红海",
+      "classified_regions": [
+        "中东/红海"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Iran Says It Hits U.S.-linked Targets as Bahrain Reports Drone Attack - Haaretz",
+      "title_cn": "",
+      "url": "https://www.haaretz.com/middle-east-news/iran/2026-06-27/ty-article/iran-says-it-hits-u-s-linked-targets-as-bahrain-reports-drone-attack/0000019f-0881-d589-a3bf-5cc7ee720000",
+      "content": "Iran\n\nCease-fire/hostage release talks\n\nStrait of Hormuz\n\n## Comments\n\nLoading...\n\n## In the News\n\n### In the News:\n\nLive UpdatesIsrael-Lebanon DealGazaWest BankEntebbe RaidHezbollahHaQuizHaaretz Podcast\n\n### Iran Says It Hits U.S.-linked Targets as Bahrain Reports Drone Attack\n\n### Israel to Withdr",
+      "content_detail": "",
+      "published_date": "Sat, 27 Jun 2026 10:08:00 GMT",
+      "search_region": "中东/红海",
+      "classified_regions": [
+        "中东/红海"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Hezbollah rejects framework agreement signed by Lebanon and Israel - Sky News Australia",
+      "title_cn": "",
+      "url": "https://www.skynews.com.au/world-news/global-affairs/hezbollah-rejects-framework-agreement-signed-by-lebanon-and-israel/video/383df675ada5337c9040c9d8b984f958",
+      "content": "World News\n Global Affairs\n\nNow Playing\n\nHezbollah rejects framework agreement signed by Lebanon and Israel\n\nHezbollah has rejected the framework for a ceasefire agreement between Lebanon and Israel, which was recently signed.\n\nVideo Player is loading.\n\nThis is a modal window.\n\n## This video is eith",
+      "content_detail": "",
+      "published_date": "Fri, 26 Jun 2026 23:03:43 GMT",
+      "search_region": "中东/红海",
+      "classified_regions": [
+        "中东/红海"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Live Updates: Latest from Israel, Iran, and Middle East - The Jerusalem Post",
+      "title_cn": "",
+      "url": "https://www.jpost.com/middle-east/iran-news/2026-06-26/live-updates-900594",
+      "content": "# Live Updates: US strikes Iran as Israel, Lebanon sign framework agreement\n\n## Trump says frozen Iranian funds will buy American goods • Iran reportedly plans to charge ships passing through Strait of Hormuz • IDF braces for Gaza riots along ‘yellow line’ on Friday\n\nFollow us on Google\n\nMeeting bet",
+      "content_detail": "",
+      "published_date": "Sat, 27 Jun 2026 00:00:05 GMT",
+      "search_region": "中东/红海",
+      "classified_regions": [
+        "中东/红海"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "A look at the past week, as captured by Haaretz photographers - Haaretz",
+      "title_cn": "",
+      "url": "https://www.haaretz.com/photo-blog/2026-06-27/ty-article-magazine/.premium/a-look-at-the-past-week-as-captured-by-haaretz-photographers/0000019f-09f5-d589-a3bf-5df701c90000",
+      "content": "Haaretz - back to home page\n\nSearch\n\n# Photos of the Week by Haaretz Photographers\n\nShare to FacebookShare to XComments:\n\nA march to raise awareness for Haymanot Kasau, an Ethiopian Israeli girl who went missing more than two years ago. She was 9 years old at the time. Credit: Hadas Parush\n\nRami Shl",
+      "content_detail": "",
+      "published_date": "Sat, 27 Jun 2026 18:42:00 GMT",
+      "search_region": "中东/红海",
+      "classified_regions": [
+        "中东/红海"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Hezbollah rejects US-brokered Israel-Lebanon security deal as 'surrender' - Reuters",
+      "title_cn": "",
+      "url": "https://www.reuters.com/world/middle-east/israeli-drone-strike-hits-southern-lebanon-day-after-security-deal-2026-06-27/",
+      "content": "Video 2\n\nVideo 3\n\nVideo 4\n\nVideo 5\n\nVideo 6\n\nVideo 7\n\nVideo 8\n\nReporting by Jana ​Choukeir, Eman Abouhassira in Dubai and Pesha Magid in Jerusalem; Editing by Peter Graff\n\nOur Standards: The Thomson Reuters Trust Principles., opens new tab\n\n   Suggested Topics:\n   Middle East\n\n    \n    \n    \n    \n  ",
+      "content_detail": "",
+      "published_date": "Sat, 27 Jun 2026 12:48:43 GMT",
+      "search_region": "中东/红海",
+      "classified_regions": [
+        "中东/红海"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Hamas blocks planned anti-regime protests in Gaza - The Jerusalem Post",
+      "title_cn": "",
+      "url": "https://www.jpost.com/middle-east/article-900645",
+      "content": "Israel|\n\nGaza|\n\nHamas|\n\nIDF|\n\nTerrorism|\n\nprotests|\n\nGaza war\n\nFollow us on Google\n\n--- [...] A Gaza social activist indicated that this was not coincidental but rather intended to prevent the protests from occurring. “Hamas is attempting to intimidate opponents on social media. They publish photos ",
+      "content_detail": "",
+      "published_date": "Sat, 27 Jun 2026 15:16:20 GMT",
+      "search_region": "中东/红海",
+      "classified_regions": [
+        "中东/红海"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Ships slowly trickle through Strait of Hormuz as US allies slam Iranian counter attack - New York Post",
+      "title_cn": "",
+      "url": "https://nypost.com/2026/06/27/us-news/ships-slowly-trickle-through-strait-of-hormuz-as-us-allies-slam-iranian-counter-attack/",
+      "content": "The body called the current threat level “substantial.”\n\nOn Friday ,the US executed a “powerful response” to Iran’s attack on the M/V Ever Lovely as the ship transited the strait a day earlier, attacking Iranian missile and drone storage locations as well as coastal radar, Central Command said Frida",
+      "content_detail": "",
+      "published_date": "Sat, 27 Jun 2026 17:57:22 GMT",
+      "search_region": "中东/红海",
+      "classified_regions": [
+        "中东/红海"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Why Japan's strategic awakening matters for Israel - The Jerusalem Post",
+      "title_cn": "",
+      "url": "https://www.jpost.com/opinion/article-900133",
+      "content": "For nearly eight decades after World War II, Japan prioritized economic growth while relying heavily on the United States for security. That strategy worked remarkably well. Japan became an economic and technological powerhouse while maintaining limited military capabilities. But the world that made",
+      "content_detail": "",
+      "published_date": "Sat, 27 Jun 2026 10:58:28 GMT",
+      "search_region": "台海/南海/朝鲜",
+      "classified_regions": [
+        "台海/南海/朝鲜"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Today’s News Headlines: Third earthquake hits Venezuela in days - Sky News Australia",
+      "title_cn": "",
+      "url": "https://www.skynews.com.au/australia-news/todays-news-headlines-third-earthquake-hits-venezuela-in-days/video/8f18e8a65ea3927edbf8bfa681eacfa0",
+      "content": "Australia\n\n### Today's News Headlines: Israel and Lebanon agree on peace framework\n\nAustralia\n\n### Today's News Headlines: ISIS bride granted bail\n\nRecommended\n\nDubai’s Art and Architecture Scene Is Having a MomentSAVOIRFLAIR.COM | \n\n[SponsoredSponsored]( \"Dubai’s Art and Architecture Scene Is Havin",
+      "content_detail": "",
+      "published_date": "Sat, 27 Jun 2026 03:21:22 GMT",
+      "search_region": "台海/南海/朝鲜",
+      "classified_regions": [
+        "台海/南海/朝鲜"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Rent freeze approved for some New York apartments - NBC News",
+      "title_cn": "",
+      "url": "https://www.nbcnews.com/video/shorts/rent-freeze-approved-for-some-new-york-apartments-265794629843",
+      "content": "00:20\n\nU.S. strikes Iran after attack on ship in Strait of Hormuz\n\n00:53\n\nIllegal fireworks explosion destroys homes in Washington\n\n01:17\n\nTrump says Reflecting Pool will be fixed soon\n\n00:30\n\nTrump says he could be 'the greatest communist in history'\n\n00:33\n\n4 year old rescued from Venezuela earthq",
+      "content_detail": "",
+      "published_date": "Sat, 27 Jun 2026 12:16:22 GMT",
+      "search_region": "台海/南海/朝鲜",
+      "classified_regions": [
+        "台海/南海/朝鲜"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "China strips generals, ex-financial regulator, politburo member of lawmaker posts - Yahoo",
+      "title_cn": "",
+      "url": "https://www.yahoo.com/news/world/articles/china-strips-generals-ex-financial-034206564.html",
+      "content": "Among ​the removed ​military lawmakers in the notice ​was General Xu Xueqiang, ‌who has been the head of the Equipment Development Department of the Central Military Commission, a top military body tasked with overseeing the development, acquisition and testing of equipment for the People's Liberati",
+      "content_detail": "",
+      "published_date": "Sat, 27 Jun 2026 03:42:00 GMT",
+      "search_region": "台海/南海/朝鲜",
+      "classified_regions": [
+        "台海/南海/朝鲜"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "US-Iran MOU under threat as countries trade strikes - Sky News Australia",
+      "title_cn": "",
+      "url": "https://www.skynews.com.au/world-news/global-affairs/usiran-mou-under-threat-as-countries-trade-strikes/video/606f556fbaeffecf33dd69b5b6d694c8",
+      "content": "Image 19: The US isn’t demanding the IDF withdraw from Lebanon: Israel’s Defence MinisterGlobal Affairs\n### The US isn’t demanding the IDF withdraw from Lebanon: Israel’s Defence Minister\n\nImage 20: Extreme heat to impact FIFA World Cup matchesGlobal Affairs\n### Extreme heat to impact FIFA World Cup",
+      "content_detail": "",
+      "published_date": "Sat, 27 Jun 2026 12:12:08 GMT",
+      "search_region": "台海/南海/朝鲜",
+      "classified_regions": [
+        "台海/南海/朝鲜"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Self-reform: CPC's answer to challenges of long-term governance - news.cgtn.com",
+      "title_cn": "",
+      "url": "https://news.cgtn.com/news/2026-06-27/Self-reform-CPC-s-answer-to-challenges-of-long-term-governance-1OjIvvlHdwQ/p.html",
+      "content": "Kiswahili Tamil\n\nதமிழ் Thai\n\nไทย Turkish\n\nTürkçe Ukrainian\n\nУкраїнська Urdu\n\nاردو Vietnamese\n\nTiếng Việt\n\nHome   China \n\nWorld\n\nWorld\n\nWorld   Asia-Pacific   Middle East   Europe   Americas   Africa\n\n Politics   Business   Sci-Tech   Health   Culture   Nature   Travel   Sports   Live   Opinions   Do",
+      "content_detail": "",
+      "published_date": "Sat, 27 Jun 2026 08:43:14 GMT",
+      "search_region": "台海/南海/朝鲜",
+      "classified_regions": [
+        "台海/南海/朝鲜"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Europe’s Growing PFAS Reckoning Tests Industry and Regulators Alike - EU Today",
+      "title_cn": "",
+      "url": "https://eutoday.net/europes-growing-pfas-reckoning/",
+      "content": "The political dimension is becoming harder to ignore. Voters across Europe have shown strong support for measures that protect public health and environmental quality. At the same time, governments are under pressure to safeguard jobs and maintain economic competitiveness. The result is a delicate b",
+      "content_detail": "",
+      "published_date": "Sat, 27 Jun 2026 10:09:43 GMT",
+      "search_region": "全球制裁",
+      "classified_regions": [
+        "全球制裁"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "India Must Aim Beyond Incremental Growth, Piyush Goyal Tells Business Leaders In London - The CSR Journal",
+      "title_cn": "",
+      "url": "https://thecsrjournal.in/india-must-aim-beyond-incremental-growth-piyush-goyal-tells-business-leaders-in-london/",
+      "content": "#### According to Goyal, India’s resilience, competitiveness and expanding role in the global economy warrant greater recognition from international institutions.\n\n#### His remarks come as India and the United Kingdom prepare for the rollout of CETA, which is expected to further strengthen trade, in",
+      "content_detail": "",
+      "published_date": "Sat, 27 Jun 2026 02:23:02 GMT",
+      "search_region": "全球制裁",
+      "classified_regions": [
+        "全球制裁"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Strait of Hormuz toll dispute raises US-Iran tensions - The Jerusalem Post",
+      "title_cn": "",
+      "url": "https://www.jpost.com/middle-east/iran-news/article-900648",
+      "content": "# US, Iran, and Oman butt heads over fine print of Strait of Hormuz deal - analysis\n\n## The dispute over the Strait of Hormuz now centers on diplomatic wording, as the US, Iran, and Oman argue over whether future “services” and “costs” could become tolls under a different name.\n\nFollow us on Google\n",
+      "content_detail": "",
+      "published_date": "Sat, 27 Jun 2026 17:07:20 GMT",
+      "search_region": "全球制裁",
+      "classified_regions": [
+        "全球制裁"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Silver Could Sink Lower Before the Bull Run Resumes | James Anderson - Guanajuato Silver - thedeepdive.ca",
+      "title_cn": "",
+      "url": "https://thedeepdive.ca/silver-could-sink-lower-before-the-bull-run-resumes-james-anderson-guanajuato-silver/",
+      "content": "Skip to content\n\nSaturday, June 27, 2026\n\nSilver Could Sink Lower Before the Bull Run Resumes | James Anderson – Guanajuato Silver\n\nWhy the West Still Doesn’t Have an Antimony Plan | Jim Atkinson – Antimony Resources\n\nConservative Pundit On Poilievre: “Right Now, Who He Is Will Not Be Prime Minister",
+      "content_detail": "",
+      "published_date": "Sat, 27 Jun 2026 13:40:00 GMT",
+      "search_region": "全球制裁",
+      "classified_regions": [
+        "全球制裁"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Tanker hit in Hormuz, threat level raised - Seatrade Maritime News",
+      "title_cn": "",
+      "url": "https://www.seatrade-maritime.com/security/tanker-hit-in-hormuz-threat-level-raised",
+      "content": "The Singapore-flagged container ship \n\nEver Lovely\n was struck by an Iranian drone while transiting southern corridor in the Strait on 25 June. Iran doesn’t recognise the southern corridor and started threatening vessel again transiting the route after an evacuation plan was launched by the Internat",
+      "content_detail": "",
+      "published_date": "Sat, 27 Jun 2026 11:18:11 GMT",
+      "search_region": "全球制裁",
+      "classified_regions": [
+        "全球制裁"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Barroso - Mining.com",
+      "title_cn": "",
+      "url": "https://www.mining.com/web/savannah-resources-eyes-secondary-listing-as-interest-grows/barroso-5/",
+      "content": "Savannah Resources Plc | X\" /> Savannah Resources Plc | X\" /> Barroso - MINING.COM\n\nCopper $ 5.6358 / lb  2.72%\n\nBrent Crude Oil $ 104.4 / bbl  -4.21%\n\nPalladium $ 1496.5 / ozt  5.39%\n\nCrude Oil $ 101.85 / bbl  -3.06%\n\nNatural Gas $ 2.89 / Btu  0.10%\n\nSilver Futures $ 75.495 / ozt  7.47%\n\nAluminum F",
+      "content_detail": "",
+      "published_date": "Sat, 27 Jun 2026 07:53:10 GMT",
+      "search_region": "全球制裁",
+      "classified_regions": [
+        "全球制裁"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    }
+  ]
+}
