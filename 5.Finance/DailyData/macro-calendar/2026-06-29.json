@@ -1,0 +1,85 @@
+{
+  "date": "2026-06-29",
+  "generated_at": "2026-06-29T06:06:45.723034",
+  "upcoming_events": [
+    {
+      "date": "2026-07-02",
+      "event": "非农就业报告 (6月)",
+      "importance": "high",
+      "category": "就业",
+      "days_until": 3
+    }
+  ],
+  "recent_events": [],
+  "web_events": [
+    {
+      "source": "tavily_answer",
+      "query": "US economic data release this week CPI GDP jobs",
+      "answer": "This week's key US economic data releases include the June jobs report, which will provide insights into the labor market's strength and influence expectations for near-term interest rate hikes. The report, expected to show net additions in private sector and government jobs, along with wage growth and unemployment rates, is anticipated to shed light on the economy's health. Additionally, the Federal Reserve’s preferred inflation gauge surged to a three-year high in May, driven by rising gas pri"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Wall St Week Ahead Jobs data, rate bets in focus as US stocks close solid first half - KITCO",
+      "url": "https://www.kitco.com/news/off-the-wire/2026-06-26/wall-st-week-ahead-jobs-data-rate-bets-focus-us-stocks-close-solid",
+      "content": "NEW YORK, June 26 (Reuters) - Jobs data in the coming week will shed light on the U.S. economy's strength, which could raise prospects for near-term interest rate hikes, adding potential volatility to ​a stock market already on edge from swings in technology shares. Major U.S. equity indexes next we"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Here are 3 big things we're watching in the stock market in the week ahead - CNBC",
+      "url": "https://www.cnbc.com/2026/06/28/here-are-3-big-things-were-watching-in-the-stock-market-in-the-week-ahead-.html",
+      "content": "# Here are 3 big things we're watching in the stock market in the week ahead. For investors, the question heading into the trading week is whether the fallout from the attacks — first by Iran on Thursday, followed by retaliatory U..S. actions — impacts traffic through the Strait of Hormuz and oil pr"
+    },
+    {
+      "source": "tavily_result",
+      "title": "AI jitters meet a jobs report and falling oil prices: What to watch this week - Yahoo Finance",
+      "url": "https://finance.yahoo.com/markets/article/ai-jitters-meet-a-jobs-report-and-falling-oil-prices-what-to-watch-this-week-100000636.html",
+      "content": "After a roller-coaster week in the markets, thanks to flip-flopping sentiment about AI spending, investors will get plenty more action on the calendar as we enter jobs week. On Friday, the S&P 500 (^GSPC) and the Dow (^DJI) finished 0.1% down, as the Nasdaq (^IXIC) fell 0.2%. The June jobs report on"
+    },
+    {
+      "source": "tavily_answer",
+      "query": "Federal Reserve speech this week monetary policy",
+      "answer": "Federal Reserve Chairman Kevin Warsh's leadership is being shaped by several key developments. This week, he is set to appear at a high-profile economic conference in Portugal, and the U.S. Supreme Court is expected to rule on the legality of President Trump's attempt to fire a Fed policymaker. Meanwhile, the International Monetary Fund's chief economist supports Warsh's plan to reduce forward rate guidance on monetary policy, deeming it \"entirely appropriate.\" Additionally, Minneapolis Fed Pres"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Supreme Court ruling, ECB conference likely to further frame Fed chief Warsh's early tenure - Reuters",
+      "url": "https://www.reuters.com/world/us/supreme-court-ruling-ecb-conference-likely-further-frame-fed-chief-warshs-early-2026-06-27/",
+      "content": "Item 1 of 2 New U.S. Federal Reserve Chairman Kevin Warsh holds a press conference following a two-day meeting of the Federal Open Market Committee (FOMC), at the U.S. Federal Reserve in Washington, D.C., U.S. June 17, 2026. **[1/2]**New U.S. Federal Reserve Chairman Kevin Warsh holds a press confer"
+    },
+    {
+      "source": "tavily_result",
+      "title": "IMF chief economist says Fed reduction in rate guidance is 'entirely appropriate' - KITCO",
+      "url": "https://www.kitco.com/news/off-the-wire/2026-06-26/imf-chief-economist-says-fed-reduction-rate-guidance-entirely",
+      "content": "# IMF chief economist says Fed reduction in rate guidance is 'entirely appropriate'. WASHINGTON, June 26 (Reuters) - The International Monetary Fund's chief economist on ​Friday said Federal Reserve Chair Kevin Warsh's plan to reduce forward rate guidance on monetary policy was \"entirely ‌appropriat"
+    },
+    {
+      "source": "tavily_result",
+      "title": "IMF chief economist says Fed reduction in rate guidance is 'entirely appropriate' - Forex Factory",
+      "url": "https://www.forexfactory.com/news/1405991-imf-chief-economist-says-fed-reduction-in-rate",
+      "content": "IMF chief economist says Fed reduction in rate guidance is 'entirely appropriate' | Forex Factory. * # IMF chief economist says Fed reduction in rate guidance is 'entirely appropriate'. The International Monetary Fund's chief economist on Friday said Federal Reserve Chair Kevin Warsh's plan to reduc"
+    },
+    {
+      "source": "tavily_answer",
+      "query": "China PMI economic data this week",
+      "answer": "China's industrial profits grew by 21.1% in May compared to the previous year, easing from April's 24.7% increase, according to data from the National Bureau of Statistics. This slowdown still indicates a double-digit growth rate, highlighting the economy's reliance on factory output and exports to offset weak domestic demand. Notably, manufacturers of computers, communication, and electronic equipment saw a significant surge of 103.9% in profits from January to May, driven by a global AI invest"
+    },
+    {
+      "source": "tavily_result",
+      "title": "China industrial profits stay resilient as economy leans on factories, exports - The Manila Times",
+      "url": "https://www.manilatimes.net/2026/06/29/business/foreign-business/china-industrial-profits-stay-resilient-as-economy-leans-on-factories-exports/2374356",
+      "content": "**BEIJING** — Profits at China's industrial firms grew more slowly though still at a double-digit pace in May, highlighting a widening divide in an economy leaning on factory output and overseas shipments to counter soft domestic demand. Profit growth at the country's industrial firms in May was 21."
+    },
+    {
+      "source": "tavily_result",
+      "title": "China industrial profits stay resilient as economy leans on factories, exports - CNBC",
+      "url": "https://www.cnbc.com/2026/06/27/china-industrial-profits-stay-resilient-as-economy-leans-on-factories.html",
+      "content": "* China's industrial profits rose 21.1% in May compared to April's +24.7% increase. Profits at China's industrial firms grew more slowly though still at a double-digit pace in May, highlighting a widening divide in an economy leaning on factory output and overseas shipments to counter soft domestic "
+    },
+    {
+      "source": "tavily_result",
+      "title": "Here are 3 big things we're watching in the stock market in the week ahead - CNBC",
+      "url": "https://www.cnbc.com/2026/06/28/here-are-3-big-things-were-watching-in-the-stock-market-in-the-week-ahead-.html",
+      "content": "# Here are 3 big things we're watching in the stock market in the week ahead. For investors, the question heading into the trading week is whether the fallout from the attacks — first by Iran on Thursday, followed by retaliatory U..S. actions — impacts traffic through the Strait of Hormuz and oil pr"
+    }
+  ]
+}
