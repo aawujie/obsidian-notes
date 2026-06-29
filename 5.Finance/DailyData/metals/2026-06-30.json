@@ -1,0 +1,245 @@
+{
+  "date": "2026-06-30",
+  "data": [
+    {
+      "ticker": "HG=F",
+      "name": "Copper Sep 26",
+      "close": 6.173500061035156,
+      "change_daily": 0.52,
+      "change_weekly": -2.88,
+      "change_monthly": -2.46,
+      "high52": 6.6525,
+      "is_new_high": false
+    },
+    {
+      "ticker": "ALI=F",
+      "name": "Aluminum Futures,Sep-2026",
+      "close": 3265.5,
+      "change_daily": -11.68,
+      "change_weekly": -15.42,
+      "change_monthly": -17.4,
+      "high52": 4195.0,
+      "is_new_high": false
+    },
+    {
+      "ticker": "GC=F",
+      "name": "Gold Aug 26",
+      "close": 4030.5,
+      "change_daily": -1.18,
+      "change_weekly": -3.62,
+      "change_monthly": -7.04,
+      "high52": 5586.2,
+      "is_new_high": false
+    },
+    {
+      "ticker": "SI=F",
+      "name": "Silver Sep 26",
+      "close": 58.755001068115234,
+      "change_daily": -0.78,
+      "change_weekly": -10.33,
+      "change_monthly": -14.13,
+      "high52": 121.3,
+      "is_new_high": false
+    },
+    {
+      "ticker": "PL=F",
+      "name": "Platinum Oct 26",
+      "close": 1592.9000244140625,
+      "change_daily": -2.33,
+      "change_weekly": -4.63,
+      "change_monthly": -8.95,
+      "high52": 2852.4,
+      "is_new_high": false
+    },
+    {
+      "ticker": "PA=F",
+      "name": "Palladium Sep 26",
+      "close": 1226.5,
+      "change_daily": 1.45,
+      "change_weekly": -2.43,
+      "change_monthly": 2.13,
+      "high52": 2169.9,
+      "is_new_high": false
+    },
+    {
+      "ticker": "XME",
+      "name": "State Street SPDR S&P Metals & ",
+      "close": 106.5199966430664,
+      "change_daily": -1.38,
+      "change_weekly": -7.55,
+      "change_monthly": -10.12,
+      "high52": 135.68,
+      "is_new_high": false
+    },
+    {
+      "ticker": "PICK",
+      "name": "iShares MSCI Global Select Meta",
+      "close": 57.880001068115234,
+      "change_daily": -0.14,
+      "change_weekly": -7.38,
+      "change_monthly": -5.91,
+      "high52": 69.02,
+      "is_new_high": false
+    },
+    {
+      "ticker": "COPX",
+      "name": "Global X Copper Miners ETF",
+      "close": 75.73999786376953,
+      "change_daily": -0.58,
+      "change_weekly": -10.78,
+      "change_monthly": -6.83,
+      "high52": 99.99,
+      "is_new_high": false
+    },
+    {
+      "ticker": "REMX",
+      "name": "VanEck Rare Earth and Strategic",
+      "close": 86.37999725341797,
+      "change_daily": -0.17,
+      "change_weekly": -11.21,
+      "change_monthly": -1.19,
+      "high52": 111.55,
+      "is_new_high": false
+    },
+    {
+      "ticker": "LIT",
+      "name": "Global X Lithium & Battery Tech",
+      "close": 77.30999755859375,
+      "change_daily": 1.82,
+      "change_weekly": -6.37,
+      "change_monthly": 0.29,
+      "high52": 91.98,
+      "is_new_high": false
+    },
+    {
+      "ticker": "SIL",
+      "name": "Global X Silver Miners ETF",
+      "close": 77.41000366210938,
+      "change_daily": -1.29,
+      "change_weekly": -6.81,
+      "change_monthly": -2.73,
+      "high52": 119.24,
+      "is_new_high": false
+    },
+    {
+      "ticker": "BHP",
+      "name": "BHP Group Limited",
+      "close": 81.73999786376953,
+      "change_daily": 0.89,
+      "change_weekly": -4.71,
+      "change_monthly": -2.34,
+      "high52": 93.83,
+      "is_new_high": false
+    },
+    {
+      "ticker": "RIO",
+      "name": "Rio Tinto Plc",
+      "close": 94.29000091552734,
+      "change_daily": 0.59,
+      "change_weekly": -5.1,
+      "change_monthly": -6.58,
+      "high52": 112.58,
+      "is_new_high": false
+    },
+    {
+      "ticker": "VALE",
+      "name": "VALE S.A.",
+      "close": 15.029999732971191,
+      "change_daily": -0.27,
+      "change_weekly": -4.33,
+      "change_monthly": 0.27,
+      "high52": 17.94,
+      "is_new_high": false
+    },
+    {
+      "ticker": "FCX",
+      "name": "Freeport-McMoRan, Inc.",
+      "close": 61.619998931884766,
+      "change_daily": -1.33,
+      "change_weekly": -10.97,
+      "change_monthly": -3.58,
+      "high52": 72.28,
+      "is_new_high": false
+    },
+    {
+      "ticker": "SCCO",
+      "name": "Southern Copper Corporation",
+      "close": 168.4499969482422,
+      "change_daily": -1.64,
+      "change_weekly": -11.3,
+      "change_monthly": -1.19,
+      "high52": 221.67326,
+      "is_new_high": false
+    },
+    {
+      "ticker": "TECK",
+      "name": "Teck Resources Ltd",
+      "close": 58.189998626708984,
+      "change_daily": -0.05,
+      "change_weekly": -8.42,
+      "change_monthly": -6.15,
+      "high52": 71.25,
+      "is_new_high": false
+    },
+    {
+      "ticker": "AA",
+      "name": "Alcoa Corporation",
+      "close": 53.470001220703125,
+      "change_daily": -1.16,
+      "change_weekly": -8.36,
+      "change_monthly": -27.19,
+      "high52": 84.38,
+      "is_new_high": false
+    },
+    {
+      "ticker": "CENX",
+      "name": "Century Aluminum Company",
+      "close": 46.54999923706055,
+      "change_daily": 0.47,
+      "change_weekly": -6.02,
+      "change_monthly": -26.46,
+      "high52": 70.43,
+      "is_new_high": false
+    },
+    {
+      "ticker": "MP",
+      "name": "MP Materials Corp.",
+      "close": 54.7400016784668,
+      "change_daily": 1.56,
+      "change_weekly": -9.21,
+      "change_monthly": -4.93,
+      "high52": 100.251,
+      "is_new_high": false
+    },
+    {
+      "ticker": "SGML",
+      "name": "Sigma Lithium Corporation",
+      "close": 11.890000343322754,
+      "change_daily": 1.54,
+      "change_weekly": -10.6,
+      "change_monthly": -10.26,
+      "high52": 24.48,
+      "is_new_high": false
+    },
+    {
+      "ticker": "ALB",
+      "name": "Albemarle Corporation",
+      "close": 129.72000122070312,
+      "change_daily": -2.98,
+      "change_weekly": -17.21,
+      "change_monthly": -13.21,
+      "high52": 221.0,
+      "is_new_high": false
+    },
+    {
+      "ticker": "SQM",
+      "name": "Sociedad Quimica y Minera S.A.",
+      "close": 69.86000061035156,
+      "change_daily": -2.42,
+      "change_weekly": -11.18,
+      "change_monthly": -3.99,
+      "high52": 98.0,
+      "is_new_high": false
+    }
+  ]
+}
