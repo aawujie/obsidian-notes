@@ -1,0 +1,85 @@
+{
+  "date": "2026-06-30",
+  "generated_at": "2026-06-30T06:07:01.430440",
+  "upcoming_events": [
+    {
+      "date": "2026-07-02",
+      "event": "非农就业报告 (6月)",
+      "importance": "high",
+      "category": "就业",
+      "days_until": 2
+    }
+  ],
+  "recent_events": [],
+  "web_events": [
+    {
+      "source": "tavily_answer",
+      "query": "US economic data release this week CPI GDP jobs",
+      "answer": "This week's key US economic data releases include the June nonfarm payrolls report, which is expected to provide insights into the labor market's strength and influence the Federal Reserve's policy decisions. The report, due on Thursday, will detail the number of jobs added in the U.S. and include data on wage growth, workforce participation, and unemployment rates. Additionally, the June jobs report, along with other labor market data such as job openings and ADP private payrolls, will offer a "
+    },
+    {
+      "source": "tavily_result",
+      "title": "Here are 3 big things we're watching in the stock market in the week ahead - CNBC",
+      "url": "https://www.cnbc.com/2026/06/28/here-are-3-big-things-were-watching-in-the-stock-market-in-the-week-ahead-.html",
+      "content": "# Here are 3 big things we're watching in the stock market in the week ahead. For investors, the question heading into the trading week is whether the fallout from the attacks — first by Iran on Thursday, followed by retaliatory U..S. actions — impacts traffic through the Strait of Hormuz and oil pr"
+    },
+    {
+      "source": "tavily_result",
+      "title": "AI jitters meet a jobs report and falling oil prices: What to watch this week - Yahoo Finance",
+      "url": "https://finance.yahoo.com/markets/article/ai-jitters-meet-a-jobs-report-and-falling-oil-prices-what-to-watch-this-week-100000636.html",
+      "content": "After a roller-coaster week in the markets, thanks to flip-flopping sentiment about AI spending, investors will get plenty more action on the calendar as we enter jobs week. On Friday, the S&P 500 (^GSPC) and the Dow (^DJI) finished 0.1% down, as the Nasdaq (^IXIC) fell 0.2%. The June jobs report on"
+    },
+    {
+      "source": "tavily_result",
+      "title": "America In Focus: key inflation gauge surges to 3-year high, mortgage rate climbs - Greenwich Time",
+      "url": "https://www.greenwichtime.com/business/article/america-in-focus-key-inflation-gauge-surges-to-22323399.php",
+      "content": "# America In Focus: key inflation gauge surges to 3-year high, mortgage rate climbs. Trips to the grocery store or gas station are more painful than they were last year, and rising costs are impacting the decisions of both households and businesses. Here’s a snapshot of prominent economic data and n"
+    },
+    {
+      "source": "tavily_answer",
+      "query": "Federal Reserve speech this week monetary policy",
+      "answer": "Federal Reserve Chairman Kevin Warsh's leadership is under scrutiny as he faces a Supreme Court ruling on President Trump's attempt to fire a Fed policymaker. Warsh's approach to monetary policy, including reducing forward rate guidance, has been deemed \"entirely appropriate\" by the IMF chief economist. Despite market expectations of rate hikes, Warsh anticipates rate cuts due to weakening payrolls and declining inflation. Warsh's distinct handling of the Fed's role has led to increased market v"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Supreme Court ruling, ECB conference likely to further frame Fed chief Warsh's early tenure - Reuters",
+      "url": "https://www.reuters.com/world/us/supreme-court-ruling-ecb-conference-likely-further-frame-fed-chief-warshs-early-2026-06-27/",
+      "content": "Item 1 of 2 New U.S. Federal Reserve Chairman Kevin Warsh holds a press conference following a two-day meeting of the Federal Open Market Committee (FOMC), at the U.S. Federal Reserve in Washington, D.C., U.S. June 17, 2026. **[1/2]**New U.S. Federal Reserve Chairman Kevin Warsh holds a press confer"
+    },
+    {
+      "source": "tavily_result",
+      "title": "IMF chief economist says Fed reduction in rate guidance is 'entirely appropriate' - Forex Factory",
+      "url": "https://www.forexfactory.com/news/1405991-imf-chief-economist-says-fed-reduction-in-rate",
+      "content": "IMF chief economist says Fed reduction in rate guidance is 'entirely appropriate' | Forex Factory. * # IMF chief economist says Fed reduction in rate guidance is 'entirely appropriate'. The International Monetary Fund's chief economist on Friday said Federal Reserve Chair Kevin Warsh's plan to reduc"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Fed rate cuts: Payrolls will weaken, inflation will plunge, and Warsh was 'largely performative' - Fortune",
+      "url": "https://fortune.com/2026/06/27/fed-rate-cuts-payrolls-unemployment-inflation-gdp-oil-prices-kevin-warsh/",
+      "content": "June 27, 2026, 6:28 PM ET. Federal Reserve Chairman Kevin Warsh after a meeting of the Federal Open Market Committee on Wednesday, June 17, 2026. According to CME’s FedWatch tool, investors have priced in 77% odds that the central bank will lift the benchmark rate by a quarter-point or more by the e"
+    },
+    {
+      "source": "tavily_answer",
+      "query": "China PMI economic data this week",
+      "answer": "China's economy showed signs of recovery in June, with manufacturing and retail sales rebounding from the previous month according to the China Beige Book survey. Industrial profits grew 21.1% in May, slowing from April's 24.7% increase but still maintaining a double-digit pace, as reported by the National Bureau of Statistics. The surge in profits for manufacturers of computers, communication, and electronic equipment, driven by a global AI investment boom, contributed significantly to the over"
+    },
+    {
+      "source": "tavily_result",
+      "title": "China's economy picks up in June on rebounding U.S. exports, analysts say - CNBC",
+      "url": "https://www.cnbc.com/2026/06/29/china-economy-june-trade-exports-manufacturing-tariffs-iran-war-consumption-ai-technology-.html",
+      "content": "# China's economy picks up in June on rebounding U.S. exports, analysts say. * Manufacturing and retail sales recovered in June from the previous month: China Beige Book survey. China's economy is showing signs of picking up, thanks in part to a rebound in shipments to the U.S. In May, China's retai"
+    },
+    {
+      "source": "tavily_result",
+      "title": "China industrial profits stay resilient as economy leans on factories, exports - The Manila Times",
+      "url": "https://www.manilatimes.net/2026/06/29/business/foreign-business/china-industrial-profits-stay-resilient-as-economy-leans-on-factories-exports/2374356",
+      "content": "**BEIJING** — Profits at China's industrial firms grew more slowly though still at a double-digit pace in May, highlighting a widening divide in an economy leaning on factory output and overseas shipments to counter soft domestic demand. Profit growth at the country's industrial firms in May was 21."
+    },
+    {
+      "source": "tavily_result",
+      "title": "China industrial profits stay resilient as economy leans on factories, exports - CNBC",
+      "url": "https://www.cnbc.com/2026/06/27/china-industrial-profits-stay-resilient-as-economy-leans-on-factories.html",
+      "content": "* China's industrial profits rose 21.1% in May compared to April's +24.7% increase. Profits at China's industrial firms grew more slowly though still at a double-digit pace in May, highlighting a widening divide in an economy leaning on factory output and overseas shipments to counter soft domestic "
+    }
+  ]
+}
