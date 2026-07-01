@@ -11,6 +11,8 @@ sources:
 
 # John Boyd OODA Loop（OODA循环）完整解读
 
+![OODA Loop 原图](../Resources/images/OODA-Loop-diagram.jpg)
+
 ## 一、基础背景
 
 该模型由美国空军上校、空战理论家**约翰·博伊德（John Boyd）** 提出，最初用于解释空战对抗决策逻辑，如今广泛应用于商业竞争、产品迭代、AI研发、危机管理等所有动态博弈场景。
