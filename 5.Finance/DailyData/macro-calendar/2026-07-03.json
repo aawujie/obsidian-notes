@@ -1,0 +1,93 @@
+{
+  "date": "2026-07-03",
+  "generated_at": "2026-07-03T06:06:54.874220",
+  "upcoming_events": [
+    {
+      "date": "2026-07-15",
+      "event": "美国 CPI (6月)",
+      "importance": "high",
+      "category": "通胀",
+      "days_until": 12
+    }
+  ],
+  "recent_events": [
+    {
+      "date": "2026-07-02",
+      "event": "非农就业报告 (6月)",
+      "importance": "high",
+      "category": "就业",
+      "days_ago": 1
+    }
+  ],
+  "web_events": [
+    {
+      "source": "tavily_answer",
+      "query": "US economic data release this week CPI GDP jobs",
+      "answer": "The latest US economic data for this week includes the release of the June jobs report, which showed a dip in the unemployment rate to 4.2% with only 57,000 jobs added in June, significantly lower than the 172,000 jobs added in May. Economists had expected the economy to add around 115,000 jobs for June. The labor market appears to be cooling, with wage growth lagging behind inflation. The GDP and CPI data for this period have not yet been released."
+    },
+    {
+      "source": "tavily_result",
+      "title": "What to expect from today’s jobs report - CNN",
+      "url": "https://www.cnn.com/2026/07/02/economy/us-jobs-report-june-final",
+      "content": "It’s a stark turnaround from last year, when monthly gains averaged fewer than 10,000 jobs (or, roughly one-twentieth of what we’re seeing now); and it comes across all the more impressive considering the backdrop of a volatile war in the Middle East and a massive oil shock that heated up inflation."
+    },
+    {
+      "source": "tavily_result",
+      "title": "Jobs report: Labor market may be picking up, but the picture is complicated - Yahoo Finance",
+      "url": "https://finance.yahoo.com/economy/article/jobs-report-labor-market-may-be-picking-up-but-the-picture-is-complicated-190000748.html",
+      "content": "2. Best 0% APR cards. 3. Best balance transfer cards. 2. Best high-yield savings accounts. 3. Best money market accounts. # Jobs report: Labor market may be picking up, but the picture is complicated. There might be a little bit of warmth in the labor market. Economists surveyed by Bloomberg expect "
+    },
+    {
+      "source": "tavily_result",
+      "title": "Diversified mining company South32 announced that the fourth grinding - SMM Metal",
+      "url": "https://news.metal.com/en/newscontent/103982731-south32-gets-final-approval-for-sierra-gorda-copper-mine-expansion-project",
+      "content": "Diversified mining company South32 announced that the fourth grinding line project at the Sierra Gorda open-pit copper mine has received final investment approval following completion of a feasibility study. Read MoreEurozone Inflation Slows to 2.8% in June, Below Expectations, Easing ECB Tightening"
+    },
+    {
+      "source": "tavily_answer",
+      "query": "Federal Reserve speech this week monetary policy",
+      "answer": "San Francisco Federal Reserve President Mary Daly stated that U.S. monetary policy is \"slightly restrictive,\" but the next step remains uncertain due to strong investment growth in AI-related technology and a stable labor market. Daly noted the potential need to combat more persistent inflation. Meanwhile, Fed Chairman Kevin Warsh indicated that inflation risks have eased but remained tight-lipped about interest-rate hikes, emphasizing that the Fed will not be comfortable with an inflation objec"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Fed's Daly says US policy 'slightly restrictive,' next step uncertain - KITCO",
+      "url": "https://www.kitco.com/news/off-the-wire/2026-07-02/feds-daly-says-us-policy-slightly-restrictive-next-step-uncertain",
+      "content": "July 2 (Reuters) - San Francisco ‌Federal Reserve President Mary Daly said on Thursday that U.S. monetary policy is \"slightly restrictive\" but that with \"exceedingly strong\" investment growth in AI-related technology and a stable labor market it's unclear what ​the Fed's next step should be. \"I thin"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Fed's Daly says US policy 'slightly restrictive,' next step uncertain - Reuters",
+      "url": "https://www.reuters.com/business/feds-daly-says-us-policy-slightly-restrictive-next-step-uncertain-2026-07-02/",
+      "content": "Exclusive news, data and analytics for financial market professionals Learn more about Refinitiv. ## Browse World. ## Browse Business. San Francisco Federal Reserve Bank President Mary Daly speaks during an interview with Reuters at the Federal Reserve Bank building in San Francisco, California, U.S"
+    },
+    {
+      "source": "tavily_result",
+      "title": "U.S. Treasury yields edge higher as investors await Fed Chair Warsh’s talks in Europe - CNBC",
+      "url": "https://www.cnbc.com/2026/07/01/treasury-yields-us10y-kevin-warsh-fed.html",
+      "content": "# U.S. Treasury yields edge higher as investors await Fed Chair Warsh’s talks in Europe. Federal Reserve Chairman Kevin Warsh conducts a news conference after a meeting of the Federal Open Market Committee on Wednesday, June 17, 2026. Tom Williams | CQ-Roll Call, Inc. U.S. Treasury yields rose on We"
+    },
+    {
+      "source": "tavily_answer",
+      "query": "China PMI economic data this week",
+      "answer": "China's official manufacturing Purchasing Managers' Index (PMI) rose to 50.3 in June 2026, indicating an expansion in the manufacturing sector. The non-manufacturing PMI also improved to 50.2, reflecting growth in sectors such as services and construction. The increase in the PMI was driven by robust export orders, particularly for high-tech products, and a slight recovery in new orders. Despite these positive indicators, there were still noted challenges in areas like plastic products and ferro"
+    },
+    {
+      "source": "tavily_result",
+      "title": "China's factory activity tops forecasts in June - Bangladesh Sangbad Sangstha (BSS)",
+      "url": "https://www.bssnews.net/business/401114",
+      "content": "BEIJING, June 30, 2026 (BSS/AFP) - China's factory activity picked up this month, official data showed Tuesday, providing a much-needed boost to authorities as Beijing battles to kickstart the domestic economy. The manufacturing sector has faced uncertainty this year from the war in the Middle East,"
+    },
+    {
+      "source": "tavily_result",
+      "title": "China factory activity returns to expansion riding AI global boom - Reuters",
+      "url": "https://www.reuters.com/world/asia-pacific/chinas-factory-activity-expands-june-high-tech-exports-2026-06-30/",
+      "content": "Exclusive news, data and analytics for financial market professionals Learn more about Refinitiv. ## Browse World. Image 1: Worker wearing a face mask works on a production line manufacturing bicycle steel rim at a factory in Hangzhou, Zhejiang. *   Non-manufacturing PMI improves to 50.2 from 50.1 i"
+    },
+    {
+      "source": "tavily_result",
+      "title": "China factory activity grows faster than expected in June on tech export demand - CNBC",
+      "url": "https://www.cnbc.com/2026/06/30/china-factory-activity-june-tech-export-demand-pmi-nbs.html",
+      "content": "# China factory activity grows faster than expected in June on tech export demand. * The official purchasing managers' index edged up to 50.3 in June, returning to the expansionary territory. * Non-manufacturing PMI, which covers construction and services activity, edged up to 50.2 in June. China's "
+    }
+  ]
+}

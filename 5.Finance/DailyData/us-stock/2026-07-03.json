@@ -1,0 +1,45 @@
+{
+  "date": "2026-07-03",
+  "generated_at": "2026-07-03T06:06:12.079715",
+  "total_stocks": 2,
+  "data": [
+    {
+      "ticker": "ADI",
+      "name": "Analog Devices, Inc.",
+      "sector": "Technology",
+      "industry": "Semiconductors",
+      "market_cap": 183709745152,
+      "close": 377.1600036621094,
+      "prev_close": 388.9800109863281,
+      "change_daily": -3.04,
+      "change_weekly": -9.76,
+      "change_monthly": null,
+      "volume": 6079249.0,
+      "avg_vol_5d": 7191790.0,
+      "vol_ratio": 0.85,
+      "high52": 445.91,
+      "low52": 218.37,
+      "dist_from_high": -15.42,
+      "is_new_high": false
+    },
+    {
+      "ticker": "MCD",
+      "name": "McDonald's Corporation",
+      "sector": "Consumer Cyclical",
+      "industry": "Restaurants",
+      "market_cap": 199389265920,
+      "close": 280.6300048828125,
+      "prev_close": 269.42999267578125,
+      "change_daily": 4.16,
+      "change_weekly": 6.08,
+      "change_monthly": null,
+      "volume": 6774189.0,
+      "avg_vol_5d": 5474738.0,
+      "vol_ratio": 1.24,
+      "high52": 341.75,
+      "low52": 264.53,
+      "dist_from_high": -17.88,
+      "is_new_high": false
+    }
+  ]
+}
