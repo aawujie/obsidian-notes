@@ -1,0 +1,85 @@
+{
+  "date": "2026-07-07",
+  "generated_at": "2026-07-07T06:07:26.840009",
+  "upcoming_events": [
+    {
+      "date": "2026-07-15",
+      "event": "美国 CPI (6月)",
+      "importance": "high",
+      "category": "通胀",
+      "days_until": 8
+    }
+  ],
+  "recent_events": [],
+  "web_events": [
+    {
+      "source": "tavily_answer",
+      "query": "US economic data release this week CPI GDP jobs",
+      "answer": "This week's US economic data releases include key indicators on the state of the economy. On Monday, investors are expected to focus on a host of index readings from S&P Global and the Institute of Supply Management to gauge the US service economy. The unemployment rate declined to 4.2% in June, though the decrease was largely due to people out of work giving up their job search. US job openings remained strong at 7.6 million in May, indicating resilience in the labor market. Additionally, the t"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Rate hike readjustment and AI hardware momentum: What to watch this week - Yahoo Finance",
+      "url": "https://finance.yahoo.com/economy/article/rate-hike-readjustment-and-ai-hardware-momentum-what-to-watch-this-week-160059243.html",
+      "content": "Coming off a holiday-shortened week filled with tons of labor market data and a surprising jobs report, investors are greeted with a relatively quiet stretch in the week ahead. Monday is likely to be the biggest day to watch on the economic calendar, with a host of index readings from S&P Global and"
+    },
+    {
+      "source": "tavily_result",
+      "title": "America In Focus: consumers still gloomy about economy; US hiring falls in June - AP News",
+      "url": "https://apnews.com/article/inflation-economy-iran-trump-unemployment-da2fcb94594a598d10155ad0c93fc47c",
+      "content": "Test Your News I.Q. 2026 Elections Election Results Election calendar White House Congress Supreme Court The latest AP-NORC polls Ground Game. Your home base for in-depth reporting from the world of sports. Here’s a snapshot of prominent economic data and news that occurred over the past week and wh"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Stock market today: Nasdaq leads S&P 500, Dow higher as tech jitters ease - Yahoo Finance",
+      "url": "https://finance.yahoo.com/markets/stocks/live/stock-market-today-monday-july-6-225645420.html",
+      "content": "2. Best 0% APR cards. 3. Best balance transfer cards. 2. Best high-yield savings accounts. 3. Best money market accounts. US stocks drifted higher on Monday as pressure on the tech sector eased, oil prices fell, and investors waited for data releases for clues to the economy and rate-hike odds. The "
+    },
+    {
+      "source": "tavily_answer",
+      "query": "Federal Reserve speech this week monetary policy",
+      "answer": "Federal Reserve Governor Christopher Waller emphasized that forward guidance can be a valuable tool for monetary policy under the right circumstances, though he noted it can be problematic when used inflexibly. He highlighted the debate within the central bank about how monetary policy should be discussed. Meanwhile, investors are looking ahead to the Federal Open Market Committee (FOMC) meeting minutes for further insight into the Federal Reserve's latest monetary policy decisions. The market's"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Fed's Waller: Forward guidance 'valuable,' though not at all moments - KITCO",
+      "url": "https://www.kitco.com/news/off-the-wire/2026-07-06/feds-waller-forward-guidance-valuable-though-not-all-moments",
+      "content": "# Fed's Waller: Forward guidance 'valuable,' though not at all moments. WASHINGTON, July 6 (Reuters) - Forward guidance can be a \"valuable tool\" that ‌speeds the impact of monetary policy under the right circumstances, though can be a problem when used inflexibly, Federal Reserve Governor Christophe"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Waller says risks in US tilted towards high inflation - KITCO",
+      "url": "https://www.kitco.com/news/off-the-wire/2026-07-06/waller-says-risks-us-tilted-towards-high-inflation",
+      "content": "WASHINGTON, July 6 (Reuters) - U.S. Federal Reserve Governor Christopher Waller said on Monday that high inflation is the chief risk facing the Fed given ​a labor market that remains stable. \"A year ago I was advocating for ‌rate cuts because the labor market was not looking good, so I was willing t"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Treasury yields edge lower as investors look ahead to FOMC meeting minutes - CNBC",
+      "url": "https://www.cnbc.com/2026/07/06/us-treasury-yields-investors-look-ahead-to-fomc-meeting-minutesu.html",
+      "content": "# Treasury yields edge lower as investors look ahead to FOMC meeting minutes. A television broadcasts the Federal Reserve's decision to leave rates unchanged after a Federal Open Market Committee (FOMC) meeting on the floor of the New York Stock Exchange (NYSE) in New York, US, on Wednesday, June 17"
+    },
+    {
+      "source": "tavily_answer",
+      "query": "China PMI economic data this week",
+      "answer": "China's latest PMI economic data for June indicates a continued expansion in the services economy, with the Services PMI reading at 54, slightly down from May but still reflecting growth for the 24th consecutive month. New orders also expanded, although at a slower rate for the 13th consecutive month. Despite this, the overall economy has been growing for the 73rd consecutive month."
+    },
+    {
+      "source": "tavily_result",
+      "title": "Services economy grows for the 24th consecutive month in June, reports ISM - Logistics Management",
+      "url": "https://www.logisticsmgmt.com/article/services_economy_grows_for_the_24th_consecutive_month_in_june_reports_ism/",
+      "content": "June brought another month of services economy growth, according to the new edition of the ISM Services PMI Report, which was released today by the Institute for Supply Management (ISM). The June Services PMI reading, at 54 (a reading above 50 represents expansion and below 50 indicates contraction)"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Shares edge higher in Asia as oil dips, earnings loom - Reuters",
+      "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-07-06/",
+      "content": "Exclusive news, data and analytics for financial market professionals Learn more about Refinitiv. ## Browse World. ## Browse Business. ## Browse Markets. Image 2: Bull statues near screens showing the Hang Seng stock index and stock prices outside Exchange Square, in Hong Kong. The cooling ​in energ"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Here are the 3 big things we're watching in the stock market this week - CNBC",
+      "url": "https://www.cnbc.com/2026/07/05/here-are-the-3-big-things-were-watching-in-the-stock-market-this-week.html",
+      "content": "# Here are the 3 big things we're watching in the stock market this week. But as far as the actual calendar is concerned, the first full week of July is light on both earnings and market-moving economic reports. The trading week of July 13 to July 17 marks the official start of second-quarter earnin"
+    }
+  ]
+}
