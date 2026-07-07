@@ -391,7 +391,7 @@ void wrapper(T&& arg) {
 
 **forward 的本质：模板推导 + 引用折叠**
 
-`forward` 底层就是 `static_cast`，关键是模板参数 T 携带了"原始值是左值还是右值"的信息：
+`forward` 底层就是 `static_cast`，关键是模板参数 T 携带了 "原始值是左值还是右值" 的信息：
 
 ```cpp
 // forward 简化实现
@@ -401,10 +401,10 @@ T&& forward(remove_reference_t<T>& arg) noexcept {
 }
 ```
 
-| 调用 | T 推导为 | `T&&` 折叠后 | forward 返回 |
-|---|---|---|---|
-| `wrapper(a)` (a 是左值) | `int&` | `int& && → int&` | 左值 |
-| `wrapper(10)` (10 是右值) | `int` | `int&&` | 右值 |
+| 调用                     | T 推导为  | `T&&` 折叠后        | forward 返回 |
+| ---------------------- | ------ | ---------------- | ---------- |
+| `wrapper(a)` (a 是左值)   | `int&` | `int& && → int&` | 左值         |
+| `wrapper(10)` (10 是右值) | `int`  | `int&&`          | 右值         |
 
 **一句话对比：** move 和 forward 底层都是 `static_cast`，区别在于 move 无条件转右值，forward 通过模板推导决定是否转右值。
 
