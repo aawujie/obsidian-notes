@@ -302,11 +302,35 @@ Derived 对象                         vtables
 
 **虚继承（virtual inheritance）下的 vtable：**
 
-```cpp
-class Derived : public virtual Base { ... };
+菱形继承问题——不用虚继承，`Base` 会重复两份：
+
+```
+  A（基类）
+ / \
+B   C
+ \ /
+  D（最终派生类）
+
+不用虚继承 → D 里有两份 A，调用 A::foo() 有歧义
+用了虚继承 → D 里只有一份 A
 ```
 
-虚继承引入**虚基类表**（vbtable），**存虚基类子对象的偏移量**。目的是**解决菱形继承问题**——**`Base` 在最终派生类中只存在一份。**
+虚继承引入**虚基类表**（vbtable），存虚基类子对象的偏移量：
+
+```
+                                vbtable_for_Derived
+Derived 对象                    ┌──────────────────┐
+┌──────────────┐               │ offset_to_Base    │ ← 存偏移量，不存函数指针
+│  vptr_Derived┼──────→        └──────────────────┘
+│  Derived 成员 │
+│  vptr_Base   ┼──────→ vtable_for_Base（共享的）
+│  Base 成员   │        ┌────────────┐
+└──────────────┘        │ Base::f1   │
+                        │ Base::~B   │
+                        └────────────┘
+```
+
+**关键：** vbtable 和 vtable 是不同的东西。vtable 存函数指针（调哪个函数），vbtable 存偏移量（虚基类在哪）。调用虚基类成员时，先查 vbtable 找到偏移量，再跳过去。多了一次间接寻址，比普通继承慢一点，但解决了菱形继承的重复问题。
 
 **性能开销：**
 
