@@ -843,6 +843,34 @@ SafeClass(SafeClass&& other) noexcept
 3. 不确定的成员用 **`std::move_if_noexcept` 自动回退到拷贝**
 4. **noexcept 不加 = 白写移动构造，乱加 = 异常来时直接 `std::terminate` 崩掉**
 
+**什么是"乱加"？标了 noexcept 但实际可能抛异常：**
+
+```cpp
+// ❌ 乱加：push_back 可能抛 std::bad_alloc
+BadMove(BadMove&& other) noexcept
+    : data_(std::move(other.data_))
+{
+    data_.push_back(42);  // ❌ 内存不足 → terminate，不给你 catch 机会
+}
+
+// ❌ 乱加：new 可能抛 std::bad_alloc
+BadMove2(BadMove2&& other) noexcept {
+    data_ = new int(42);  // ❌ 内存不足 → terminate
+}
+
+// ✅ 正确：只做指针赋值和基础类型赋值
+GoodMove(GoodMove&& other) noexcept
+    : data_(other.data_), size_(other.size_)
+{
+    other.data_ = nullptr;
+    other.size_ = 0;
+}
+```
+
+**能抛异常的操作（不能放 noexcept 里）：** `new`/`malloc`、`push_back`、调非 noexcept 函数、IO 操作。
+
+**安全操作（可以放 noexcept 里）：** 指针赋值、`int`/`size_t` 赋值、`swap`、标准库 noexcept 函数。
+
 ---
 
 ## 三、设计模式（JD 明确要求，结合你的项目讲）
