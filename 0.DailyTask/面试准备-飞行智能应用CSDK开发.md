@@ -271,15 +271,13 @@ public:
 
 **C++ 的设计：** 在 `Base()` 执行期间，vptr 指向 `Base` 的 vtable，保证调不到派生类成员。`Base()` 结束 → 派生类成员初始化完成 → vptr 更新为 `Derived` 的 vtable → 进入 `Derived()` 构造函数 → 此时所有成员已初始化，安全。
 
-执行顺序：进入 `Base()` 构造函数 → vptr 先设为 `Base` 的 vtable → 调 `foo()` 找到 `Base::foo` → `Base()` 结束 → **vptr 更新为 `Derived` 的 vtable** → 进入 `Derived()` → 调 `foo()` 找到 `Derived::foo`。
-
 **多继承下的 vtable：**
 
 ```cpp
 class Derived : public Base1, public Base2 { ... };
 ```
 
-对象有**多个 vptr**——每个基类一个。内存布局：
+对象有**多个 vptr**——每个基类一个。**内存布局：**
 
 ```
 ┌──────────────┐
