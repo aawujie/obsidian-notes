@@ -110,10 +110,105 @@ public:
 
 **Q5: 虚函数表怎么工作的？**
 
-- 每个有虚函数的类有一张 vtable，存在**只读数据段**
-- 每个对象有一个 vptr 指向所在类的 vtable
-- 构造函数中逐级设置 vptr：先基类构造→基类 vptr，再派生类构造→派生类 vptr
-- 所以构造函数中调虚函数不会多态
+**基本机制：**
+
+- 每个有虚函数的类有**一张** vtable，存在**只读数据段**（`.rodata`），编译期生成
+- 每个对象有**一个** vptr（8 字节，64 位系统），指向所在类的 vtable
+- 调用虚函数时：`obj->vptr[vtable_index]()` → 查表 → 跳转，比直接调用多一次间接寻址
+
+**内存布局（以单继承为例）：**
+
+```
+对象内存布局：                vtable (Base):
+┌──────────────┐            ┌─────────────────┐
+│  vptr ──────┐│            │ &Base::func1()   │
+│  成员变量1   ││            │ &Base::func2()   │
+│  成员变量2   ││            │ &Base::~Base()   │
+└──────────────┘│            └─────────────────┘
+                │
+                └──────→  vtable (Derived):
+                          ┌─────────────────────┐
+                          │ &Derived::func1()    │  ← 覆盖了
+                          │ &Base::func2()       │  ← 没覆盖，保留基类
+                          │ &Derived::~Derived() │  ← 覆盖了
+                          └─────────────────────┘
+```
+
+**构造函数中 vptr 的逐级设置：**
+
+```cpp
+class Base {
+public:
+    Base() { foo(); }        // 构造时调虚函数
+    virtual void foo() { cout << "Base::foo" << endl; }
+};
+class Derived : public Base {
+public:
+    Derived() { foo(); }
+    virtual void foo() override { cout << "Derived::foo" << endl; }
+};
+
+Derived d;  // 输出：Base::foo  然后  Derived::foo
+// 不是两个 Derived::foo！
+```
+
+执行顺序：进入 `Base()` 构造函数 → vptr 先设为 `Base` 的 vtable → 调 `foo()` 找到 `Base::foo` → `Base()` 结束 → vptr 更新为 `Derived` 的 vtable → 进入 `Derived()` → 调 `foo()` 找到 `Derived::foo`。
+
+**多继承下的 vtable：**
+
+```cpp
+class Derived : public Base1, public Base2 { ... };
+```
+
+对象有**多个 vptr**——每个基类一个。内存布局：
+
+```
+┌──────────────┐
+│  vptr_Base1  │ → vtable_Derived_for_Base1
+│  Base1 成员   │
+│  vptr_Base2  │ → vtable_Derived_for_Base2
+│  Base2 成员   │
+│  Derived 成员 │
+└──────────────┘
+```
+
+调用 `Base2*` 指针的虚函数时，需要先调整 this 指针（偏移到 Base2 子对象），再查 vtable。这就是为什么 `static_cast` 和 `dynamic_cast` 在多继承下开销不同。
+
+**虚继承（virtual inheritance）下的 vtable：**
+
+```cpp
+class Derived : public virtual Base { ... };
+```
+
+虚继承引入**虚基类表**（vbtable），存虚基类子对象的偏移量。目的是解决菱形继承问题——`Base` 在最终派生类中只存在一份。
+
+**性能开销：**
+
+| 开销类型 | 来源 | 代价 |
+|---------|------|------|
+| 空间 | 每个对象多 8 字节 vptr，每类多一张 vtable | 小 |
+| 时间 | 虚函数调用多一次间接寻址（查 vptr → 查 vtable → 跳转） | 微小 |
+| 内联损失 | 编译器无法内联虚函数（除非能确定静态类型） | 可能大 |
+| 分支预测 | 虚函数调用是间接跳转，CPU 难以预测 | 可能大 |
+
+**什么情况下不用虚函数：** 热点循环中频繁调用的函数、确定不需要多态的函数、模板可以替代的场景（CRTP——奇异递归模板模式，编译期多态零开销）。
+
+**纯虚函数与抽象类：**
+
+```cpp
+class Abstract {
+public:
+    virtual void func() = 0;  // 纯虚函数，vtable 里对应槽位填 NULL
+};
+// Abstract a;  // ❌ 不能实例化，因为 vtable 不完整
+```
+
+纯虚函数在 vtable 中对应 `__cxa_pure_virtual`（GCC）或 `_purecall`（MSVC），如果意外调用会触发运行时错误。
+
+**构造函数/析构函数中为什么不能调虚函数？**
+
+构造函数：vptr 还没设置完，此时调虚函数不会多态，调的是当前构造阶段的版本。
+析构函数：vptr 已退化到当前析构阶段，派生类对象已被销毁，调虚函数也不会多态。
 
 **Q6: 虚析构函数为什么需要？**
 
