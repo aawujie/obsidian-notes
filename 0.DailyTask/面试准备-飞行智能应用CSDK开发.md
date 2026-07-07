@@ -246,7 +246,7 @@ Derived d;  // 输出：Base::foo  然后  Derived::foo
 // 不是两个 Derived::foo！
 ```
 
-执行顺序：进入 `Base()` 构造函数 → vptr 先设为 `Base` 的 vtable → 调 `foo()` 找到 `Base::foo` → `Base()` 结束 → vptr 更新为 `Derived` 的 vtable → 进入 `Derived()` → 调 `foo()` 找到 `Derived::foo`。
+执行顺序：进入 `Base()` 构造函数 → vptr 先设为 `Base` 的 vtable → 调 `foo()` 找到 `Base::foo` → `Base()` 结束 → **vptr 更新为 `Derived` 的 vtable** → 进入 `Derived()` → 调 `foo()` 找到 `Derived::foo`。
 
 **多继承下的 vtable：**
 
@@ -266,7 +266,7 @@ class Derived : public Base1, public Base2 { ... };
 └──────────────┘
 ```
 
-调用 `Base2*` 指针的虚函数时，需要先调整 this 指针（偏移到 Base2 子对象），再查 vtable。这就是为什么 `static_cast` 和 `dynamic_cast` 在多继承下开销不同。
+**调用 `Base2*` 指针的虚函数时，需要先调整 this 指针（偏移到 Base2 子对象），再查 vtable**。这就是为什么 `static_cast` 和 `dynamic_cast` 在多继承下开销不同。
 
 **虚继承（virtual inheritance）下的 vtable：**
 
