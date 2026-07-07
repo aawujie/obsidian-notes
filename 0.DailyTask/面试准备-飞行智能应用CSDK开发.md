@@ -376,7 +376,7 @@ delete p;  // 如果 Base 析构函数不是 virtual，只调了 Base::~Base()
 
 **Q8: move 和 forward 区别？**
 
-- **std::move 只是类型转换，真正转移资源的是移动构造函数**
+**std::move 的本质：只是类型转换，真正转移资源的是移动构造函数**
 
 ```cpp
 // move: 无条件转右值
