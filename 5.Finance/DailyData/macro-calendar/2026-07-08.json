@@ -1,0 +1,85 @@
+{
+  "date": "2026-07-08",
+  "generated_at": "2026-07-08T06:06:41.291443",
+  "upcoming_events": [
+    {
+      "date": "2026-07-15",
+      "event": "美国 CPI (6月)",
+      "importance": "high",
+      "category": "通胀",
+      "days_until": 7
+    }
+  ],
+  "recent_events": [],
+  "web_events": [
+    {
+      "source": "tavily_answer",
+      "query": "US economic data release this week CPI GDP jobs",
+      "answer": "This week's US economic data releases include key indicators such as the June inflation data, which will provide insights into the state of the economy and potential interest rate hikes. The services data from Monday will be closely watched to gauge the health of the US service economy following a disappointing June jobs report. Additionally, the market will be attentive to corporate earnings reports from major companies like PepsiCo and Delta Air Lines, which will offer further perspectives on "
+    },
+    {
+      "source": "tavily_result",
+      "title": "Rate hike readjustment and AI hardware momentum: What to watch this week - Yahoo Finance",
+      "url": "https://finance.yahoo.com/economy/article/rate-hike-readjustment-and-ai-hardware-momentum-what-to-watch-this-week-160059243.html",
+      "content": "Coming off a holiday-shortened week filled with tons of labor market data and a surprising jobs report, investors are greeted with a relatively quiet stretch in the week ahead. Monday is likely to be the biggest day to watch on the economic calendar, with a host of index readings from S&P Global and"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Stock market today: Nasdaq leads S&P 500, Dow higher as tech jitters ease - Yahoo Finance",
+      "url": "https://finance.yahoo.com/markets/stocks/live/stock-market-today-monday-july-6-225645420.html",
+      "content": "2. Best 0% APR cards. 3. Best balance transfer cards. 2. Best high-yield savings accounts. 3. Best money market accounts. US stocks drifted higher on Monday as pressure on the tech sector eased, oil prices fell, and investors waited for data releases for clues to the economy and rate-hike odds. The "
+    },
+    {
+      "source": "tavily_result",
+      "title": "Here are the 3 big things we're watching in the stock market this week - CNBC",
+      "url": "https://www.cnbc.com/2026/07/05/here-are-the-3-big-things-were-watching-in-the-stock-market-this-week.html",
+      "content": "# Here are the 3 big things we're watching in the stock market this week. But as far as the actual calendar is concerned, the first full week of July is light on both earnings and market-moving economic reports. The trading week of July 13 to July 17 marks the official start of second-quarter earnin"
+    },
+    {
+      "source": "tavily_answer",
+      "query": "Federal Reserve speech this week monetary policy",
+      "answer": "Based on the latest data, Federal Reserve Governor Christopher Waller emphasized that forward guidance can be valuable but should not be used inflexibly. He highlighted the debate within the central bank about how monetary policy should be discussed. Meanwhile, Federal Reserve Bank of New York President John Williams expressed a more positive outlook on inflation due to energy price declines but did not provide specific guidance on future rate moves. Additionally, Waller noted that the chief ris"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Fed's Waller: Forward guidance 'valuable,' though not at all moments - KITCO",
+      "url": "https://www.kitco.com/news/off-the-wire/2026-07-06/feds-waller-forward-guidance-valuable-though-not-all-moments",
+      "content": "# Fed's Waller: Forward guidance 'valuable,' though not at all moments. WASHINGTON, July 6 (Reuters) - Forward guidance can be a \"valuable tool\" that ‌speeds the impact of monetary policy under the right circumstances, though can be a problem when used inflexibly, Federal Reserve Governor Christophe"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Fed's Williams tells Fox Business he's more sanguine on inflation due to energy price retreat - KITCO",
+      "url": "https://www.kitco.com/news/off-the-wire/2026-07-07/feds-williams-tells-fox-business-hes-more-sanguine-inflation-due",
+      "content": "# Fed's Williams tells Fox Business he's more sanguine on inflation due to energy price retreat. July 7 (Reuters) - Federal Reserve Bank of New York President John Williams ​said in a television interview on Tuesday he has grown a little less worried about the state of ‌price pressures in the econom"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Waller says risks in US tilted towards high inflation - KITCO",
+      "url": "https://www.kitco.com/news/off-the-wire/2026-07-06/waller-says-risks-us-tilted-towards-high-inflation",
+      "content": "WASHINGTON, July 6 (Reuters) - U.S. Federal Reserve Governor Christopher Waller said on Monday that high inflation is the chief risk facing the Fed given ​a labor market that remains stable. \"A year ago I was advocating for ‌rate cuts because the labor market was not looking good, so I was willing t"
+    },
+    {
+      "source": "tavily_answer",
+      "query": "China PMI economic data this week",
+      "answer": "China's manufacturing Purchasing Managers' Index (PMI) rose to 50.3 in June from 50.0 in May, surpassing Bloomberg's forecast of 50.1. The new orders sub-index climbed to 51.2 from 49.9, and new export orders returned to expansion at 50.1 from 48.6. The services economy continued to grow for the 24th consecutive month in June, with the Services PMI reading at 54, slightly down from May but still indicating expansion. The composite PMI for medium-sized enterprises also rose to 50.5 from 48.6, ret"
+    },
+    {
+      "source": "tavily_result",
+      "title": "China manufacturing PMI beats forecast at 50.3 in June - Asian Business Review",
+      "url": "https://asianbusinessreview.com/manufacturing/news/china-manufacturing-pmi-beats-forecast-503-in-june",
+      "content": "China's manufacturing Purchasing Managers' Index (PMI) edged up to 50.3 in June from 50.0 in May, remaining in expansion territory and exceeding Bloomberg's consensus forecast of 50.1. According to data from the National Bureau of Statistics, cited in a UOB Kay Hian report, the new orders sub-index "
+    },
+    {
+      "source": "tavily_result",
+      "title": "Services economy grows for the 24th consecutive month in June, reports ISM - Logistics Management",
+      "url": "https://www.logisticsmgmt.com/article/services_economy_grows_for_the_24th_consecutive_month_in_june_reports_ism/",
+      "content": "June brought another month of services economy growth, according to the new edition of the ISM Services PMI Report, which was released today by the Institute for Supply Management (ISM). The June Services PMI reading, at 54 (a reading above 50 represents expansion and below 50 indicates contraction)"
+    },
+    {
+      "source": "tavily_result",
+      "title": "CNBC's The China Connection newsletter: What to watch for in the second half - CNBC",
+      "url": "https://www.cnbc.com/2026/07/06/cnbcs-the-china-connection-newsletter-a-focus-on-ai-ipos-diplomacy.html",
+      "content": "# CNBC's The China Connection newsletter: What to watch for in the second half. * It's less clear whether the rest of the economy will be able to keep pace amid tariff uncertainty and an ongoing slump in retail sales. * The U.S. and Chinese leaders are next set to meet in September, with a pre-set s"
+    }
+  ]
+}
