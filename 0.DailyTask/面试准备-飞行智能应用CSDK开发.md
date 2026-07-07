@@ -318,16 +318,14 @@ B   C
 虚继承引入**虚基类表**（vbtable），存虚基类子对象的偏移量：
 
 ```
-                                vbtable_for_Derived
-Derived 对象                    ┌──────────────────┐
-┌──────────────┐               │ offset_to_Base    │ ← 存偏移量，不存函数指针
-│  vptr_Derived┼──────→        └──────────────────┘
-│  Derived 成员 │
-│  vptr_Base   ┼──────→ vtable_for_Base（共享的）
-│  Base 成员   │        ┌────────────┐
-└──────────────┘        │ Base::f1   │
-                        │ Base::~B   │
-                        └────────────┘
+Derived 对象
+┌──────────────┐
+│  vptr_Derived┼──→ vbtable                ┌───────────────┐
+│  Derived 成员 │    │ offset_to_Base       │  ← 存偏移量    │
+│              │    └───────────────┘
+│  vptr_Base   ┼──→ vtable（共享的 Base）    ┌────────────┐
+│  Base 成员   │    │ Base::f1  Base::~B    │  ← 存函数指针  │
+└──────────────┘    └────────────┘
 ```
 
 **关键：** vbtable 和 vtable 是不同的东西。vtable 存函数指针（调哪个函数），vbtable 存偏移量（虚基类在哪）。调用虚基类成员时，先查 vbtable 找到偏移量，再跳过去。多了一次间接寻址，比普通继承慢一点，但解决了菱形继承的重复问题。
