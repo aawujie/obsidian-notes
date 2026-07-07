@@ -785,6 +785,29 @@ public:
 - **移动构造应标记 `noexcept`，否则 `vector` 扩容时走拷贝而不是移动**
 -  = default 显式要求编译器生成，= delete 禁止使用
 
+**Q22: 移动构造为什么必须加 noexcept？**
+
+`noexcept` 承诺函数不抛异常。移动构造不加 `noexcept` 的后果：**vector 扩容时回退到拷贝，不走移动。**
+
+```cpp
+// ❌ 没加 noexcept
+Foo(Foo&& other) : data_(other.data_) { other.data_ = nullptr; }
+
+// ✅ 加了 noexcept
+Foo(Foo&& other) noexcept : data_(other.data_) { other.data_ = nullptr; }
+```
+
+**为什么？** vector 扩容时把旧元素移动到新内存。如果移动中抛异常，旧内存已释放、新内存没建好，数据丢失。vector 的保守策略：移动构造没加 noexcept → 回退到拷贝（拷贝失败不影响原数据，安全但慢）。
+
+```cpp
+std::vector<Foo> v;
+v.push_back(Foo());  // 扩容时：
+// 有 noexcept → 移动，O(1) 偷指针
+// 无 noexcept → 拷贝，O(n) 全量复制
+```
+
+**什么时候加 noexcept：** 移动构造/移动赋值（必须加）、析构（默认 noexcept）、swap（只交换指针）。
+
 ---
 
 ## 三、设计模式（JD 明确要求，结合你的项目讲）
