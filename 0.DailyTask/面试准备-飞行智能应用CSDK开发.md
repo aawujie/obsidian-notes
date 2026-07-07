@@ -246,6 +246,31 @@ Derived d;  // 输出：Base::foo  然后  Derived::foo
 // 不是两个 Derived::foo！
 ```
 
+**为什么 vptr 要逐级设置？这是安全机制，不是多此一举：**
+
+```cpp
+class Base {
+public:
+    Base() { foo(); }
+    virtual void foo() { cout << "Base::foo" << endl; }
+};
+
+class Derived : public Base {
+    int* data_;  // 还没初始化！
+public:
+    Derived() : data_(new int(42)) {  // ← 这个要在 Base() 之后才执行
+        foo();
+    }
+    void foo() override {
+        *data_ = 10;  // 如果 Base() 时调了这行，data_ 还是野指针，直接崩！
+    }
+};
+```
+
+**构造顺序是基类先、派生类后。** 在 `Base()` 执行期间，**`Derived` 的成员变量 `data_` 还没初始化**。如果 vptr 一上来就指向 `Derived` 的 vtable，`Base()` 里调 `foo()` 就会查到 `Derived::foo()` → 访问未初始化的 `data_` → **崩溃**。
+
+**C++ 的设计：** 在 `Base()` 执行期间，vptr 指向 `Base` 的 vtable，保证调不到派生类成员。`Base()` 结束 → 派生类成员初始化完成 → vptr 更新为 `Derived` 的 vtable → 进入 `Derived()` 构造函数 → 此时所有成员已初始化，安全。
+
 执行顺序：进入 `Base()` 构造函数 → vptr 先设为 `Base` 的 vtable → 调 `foo()` 找到 `Base::foo` → `Base()` 结束 → **vptr 更新为 `Derived` 的 vtable** → 进入 `Derived()` → 调 `foo()` 找到 `Derived::foo`。
 
 **多继承下的 vtable：**
