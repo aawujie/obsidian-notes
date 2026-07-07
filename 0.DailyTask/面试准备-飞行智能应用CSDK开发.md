@@ -64,7 +64,7 @@ weak_ptr   — 配合 shared_ptr 打破循环引用，不增加引用计数
 
 - 默认用 unique_ptr、需要共享才用 shared_ptr
 
-**weak_ptr 什么时候用？打破循环引用**
+**weak_ptr 什么时候用？打破循环引用，弱引用，不增加引用计数**
 
 两个对象互相持有对方的 shared_ptr 会导致**永远不会释放**：
 
