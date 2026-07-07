@@ -1,6 +1,6 @@
 ---
 share_link: https://share.note.sx/nl8oz7h0#sqnDmv7E9/4yo6Ify+fQGpIs9OYOmljgPoC1NCnFZ6c
-share_updated: 2026-07-07T17:54:04+08:00
+share_updated: 2026-07-07T18:09:40+08:00
 ---
 # 飞行智能应用 CSDK 开发 — 一面准备手册
 
@@ -807,6 +807,41 @@ v.push_back(Foo());  // 扩容时：
 ```
 
 **什么时候加 noexcept：** 移动构造/移动赋值（必须加）、析构（默认 noexcept）、swap（只交换指针）。
+
+**自己写类时怎么设计 noexcept：**
+
+```cpp
+class MyClass {
+    int* data_;
+    std::string name_;  // string 移动是 noexcept，没问题
+    size_t size_;
+public:
+    // ✅ 只做指针赋值和基础类型赋值，不会抛异常
+    MyClass(MyClass&& other) noexcept
+        : data_(other.data_)
+        , name_(std::move(other.name_))
+        , size_(other.size_)
+    {
+        other.data_ = nullptr;
+        other.size_ = 0;
+    }
+};
+```
+
+**如果成员不确定是否 noexcept，用 `std::move_if_noexcept` 兜底：**
+
+```cpp
+SafeClass(SafeClass&& other) noexcept
+    : data_(std::move_if_noexcept(other.data_))   // 有 noexcept → 移动
+    , name_(std::move_if_noexcept(other.name_))   // 无 noexcept → 拷贝
+{}
+```
+
+**设计原则：**
+1. 成员尽量用标准库类型（`string`/`vector`/`unique_ptr`），它们的移动都是 noexcept
+2. 移动构造里只做指针赋值、`int`/`size_t` 赋值、`swap`，不调 `new`
+3. 不确定的成员用 `std::move_if_noexcept` 自动回退到拷贝
+4. **noexcept 不加 = 白写移动构造，乱加 = 异常来时直接 `std::terminate` 崩掉**
 
 ---
 
