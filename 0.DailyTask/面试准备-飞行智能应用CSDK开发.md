@@ -1,6 +1,6 @@
 ---
 share_link: https://share.note.sx/nl8oz7h0#sqnDmv7E9/4yo6Ify+fQGpIs9OYOmljgPoC1NCnFZ6c
-share_updated: 2026-07-07T15:21:52+08:00
+share_updated: 2026-07-07T17:54:04+08:00
 ---
 # 飞行智能应用 CSDK 开发 — 一面准备手册
 
@@ -601,6 +601,8 @@ void bar(const Foo& f) {
 | 能用于   | 只能成员函数               | 成员函数、普通函数都可以    |     |
 | 关键作用  | const 对象只能调 const 函数 | 返回值可以当数组大小、模板参数 |     |
 | 修饰返回值 | 语义不同，很少用             | —               |     |
+
+**const 修饰返回值（很少用，只有返回引用/指针时才有意义）**
 
 ```cpp
 // const 修饰返回值（很少用，只有返回引用/指针时才有意义）
