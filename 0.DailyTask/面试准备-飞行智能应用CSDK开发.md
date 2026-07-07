@@ -478,7 +478,7 @@ s1 = "world";           // ✅ 可以重新赋值，继续正常使用
 ```
 
 - **标准库类型**（`string`、`vector`、`unique_ptr`）：**move 后保证合法**——**string/vector 变空，unique_ptr 变 nullptr**
-- 自己写的类：移动构造函数里必须把原对象的指针置空（`other.ptr_ = nullptr`），否则析构时 double free
+- **自己写的类**：**移动构造函数里必须把原对象的指针置空（`other.ptr_ = nullptr`），否则析构时 double free**
 - 关键原则：move 后可以调用**没有前置条件**的方法（`.empty()`、赋值），但不能假设数据还在
 
 **Q10: lambda [=] 和 [&] 的区别？**
