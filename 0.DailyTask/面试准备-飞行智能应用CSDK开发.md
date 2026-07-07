@@ -812,16 +812,24 @@ public:
 
 **核心思想：** 把多个传感器的测量值融合成一个更准确的估计值。核心是 **"预测 → 更新"** 两步循环。
 
-```
-预测步：用运动模型推算下一时刻状态
-  x̂_k = F·x̂_{k-1} + B·u_k         （状态预测）
-  P_k = F·P_{k-1}·F^T + Q         （协方差预测，Q 是过程噪声）
+**预测步（用运动模型推算下一时刻状态）：**
 
-更新步：用传感器测量值修正预测
-  K = P_k·H^T·(H·P_k·H^T + R)^{-1} （卡尔曼增益，R 是测量噪声）
-  x̂_k = x̂_k + K·(z_k - H·x̂_k)      （状态修正）
-  P_k = (I - K·H)·P_k              （协方差更新）
-```
+$$
+\begin{aligned}
+\hat{x}_k &= F \cdot \hat{x}_{k-1} + B \cdot u_k \quad \text{（状态预测）} \\
+P_k &= F \cdot P_{k-1} \cdot F^T + Q \quad \text{（协方差预测，Q 是过程噪声）}
+\end{aligned}
+$$
+
+**更新步（用传感器测量值修正预测）：**
+
+$$
+\begin{aligned}
+K &= P_k \cdot H^T \cdot (H \cdot P_k \cdot H^T + R)^{-1} \quad \text{（卡尔曼增益，R 是测量噪声）} \\
+\hat{x}_k &= \hat{x}_k + K \cdot (z_k - H \cdot \hat{x}_k) \quad \text{（状态修正）} \\
+P_k &= (I - K \cdot H) \cdot P_k \quad \text{（协方差更新）}
+\end{aligned}
+$$
 
 **关键参数：**
 - Q（Process Noise Covariance，过程噪声协方差）大 → 预测模型不准，更信任传感器测量
@@ -879,11 +887,12 @@ $$
 
 每次选 open list 中 f(n) 最小的节点扩展：
 
-```
+$$
 f(n) = g(n) + h(n)
-g(n)：从起点到 n 的实际代价
-h(n)：从 n 到目标的启发式估计代价
-```
+$$
+
+- $g(n)$：从起点到 $n$ 的实际代价
+- $h(n)$：从 $n$ 到目标的启发式估计代价（必须不高估，才能保证最优解）
 
 **为什么 h(n) 不能高估？** 如果 h(n) > 实际距离，A* 可能跳过最优路径。h(n) 是"可接受启发"（admissible heuristic）时，保证找到最优解。
 
@@ -925,10 +934,16 @@ h(n)：从 n 到目标的启发式估计代价
 ### PID 控制
 
 **公式：**
-```
-u(t) = Kp·e(t)  +  Ki·∫e(t)dt  +  Kd·de(t)/dt
-        比例项(现在)   积分项(过去累积)    微分项(未来趋势)
-```
+
+$$
+u(t) = K_p \cdot e(t) + K_i \cdot \!\int\! e(t)\,dt + K_d \cdot \frac{de(t)}{dt}
+$$
+
+| 项 | 含义 | 别名 |
+|---|---|---|
+| $K_p \cdot e(t)$ | 比例项 | 现在（当前误差） |
+| $K_i \cdot \!\int\! e(t)\,dt$ | 积分项 | 过去（误差累积） |
+| $K_d \cdot \frac{de(t)}{dt}$ | 微分项 | 未来（误差趋势） |
 
 **三项的作用和调参经验：**
 
