@@ -280,16 +280,22 @@ public:
 class Derived : public Base1, public Base2 { ... };
 ```
 
-对象有**多个 vptr**——每个基类一个。**内存布局：**
+对象有**多个 vptr**——每个基类一个，按声明顺序堆叠。**内存布局：**
 
 ```
+Derived 对象                         vtables
 ┌──────────────┐
-│  vptr_Base1  │ → vtable_Derived_for_Base1
-│  Base1 成员   │
-│  vptr_Base2  │ → vtable_Derived_for_Base2
-│  Base2 成员   │
-│  Derived 成员 │
-└──────────────┘
+│  vptr_Base1 ─┼─────────────→ vtable_for_Base1
+│  Base1 成员   │              ┌──────────────────────┐
+│  vptr_Base2 ─┼──────┐       │ &Derived::func1()     │
+│  Base2 成员   │      │       │ &Base1::func2()       │
+│  Derived 成员 │      │       └──────────────────────┘
+└──────────────┘      │
+                      └───→ vtable_for_Base2
+                           ┌──────────────────────┐
+                           │ &Derived::func3()     │
+                           │ &Base2::func4()       │
+                           └──────────────────────┘
 ```
 
 **调用 `Base2*` 指针的虚函数时，需要先调整 this 指针（偏移到 Base2 子对象），再查 vtable**。这就是为什么 `static_cast` 和 `dynamic_cast` 在多继承下开销不同。
