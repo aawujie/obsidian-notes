@@ -297,7 +297,7 @@ class Derived : public Base1, public Base2 { ... };
 class Derived : public virtual Base { ... };
 ```
 
-虚继承引入**虚基类表**（vbtable），存虚基类子对象的偏移量。目的是解决菱形继承问题——`Base` 在最终派生类中只存在一份。
+虚继承引入**虚基类表**（vbtable），**存虚基类子对象的偏移量**。目的是**解决菱形继承问题**——**`Base` 在最终派生类中只存在一份。**
 
 **性能开销：**
 
