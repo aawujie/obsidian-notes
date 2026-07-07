@@ -481,6 +481,25 @@ s1 = "world";           // ✅ 可以重新赋值，继续正常使用
 - **自己写的类**：**移动构造函数里必须把原对象的指针置空（`other.ptr_ = nullptr`），否则析构时 double free**
 - 关键原则：move 后可以调用**没有前置条件**的方法（`.empty()`、赋值），但不能假设数据还在
 
+**什么场景会 move？**
+
+```cpp
+// 1. 放入容器，避免拷贝大对象
+std::string s = "very long string...";
+vec.push_back(std::move(s));  // 移动，O(1)；拷贝是 O(n)
+
+// 2. 转移所有权（unique_ptr 只能 move 不能 copy）
+std::unique_ptr<Foo> p2 = std::move(p1);  // p1 变 nullptr
+
+// 3. 高效的 swap（内部就是 move）
+std::swap(a, b);  // 只交换指针，不拷贝内容
+
+// 4. 把对象交给另一个线程
+std::thread t([data = std::move(data)] { process(data); });
+```
+
+**一句话：** 只要对象后面不再需要了，就 move——省一次深拷贝。`string`/`vector` move 是 O(1)（偷指针），拷贝是 O(n)（复制全部数据）。
+
 **Q10: lambda [=] 和 [&] 的区别？**
 
 - [x] 按值捕获，lambda 内只读，捕获的是当前值的一个拷贝
