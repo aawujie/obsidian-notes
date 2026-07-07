@@ -867,9 +867,9 @@ GoodMove(GoodMove&& other) noexcept
 }
 ```
 
-**能抛异常的操作（不能放 noexcept 里）：** `new`/`malloc`、`push_back`、调非 noexcept 函数、IO 操作。
+<span style="color:rgb(255, 77, 77)"><b>能抛异常的操作（不能放 noexcept 里）：</b></span> `new`/`malloc`、`push_back`、调非 noexcept 函数、IO 操作。
 
-**安全操作（可以放 noexcept 里）：** 指针赋值、`int`/`size_t` 赋值、`swap`、标准库 noexcept 函数。
+<span style="color:rgb(255, 77, 77)"><b>安全操作（可以放 noexcept 里）：</b></span> 指针赋值、`int`/`size_t` 赋值、`swap`、标准库 noexcept 函数。
 
 ---
 
