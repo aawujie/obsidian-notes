@@ -165,9 +165,34 @@ public:
 
 **基本机制：**
 
-- **每个有虚函数的类**有**一张** vtable，存在**只读数据段**（`.rodata`），编译期生成
+- 每个有虚函数的类有**一张** vtable，存在**只读数据段**（`.rodata`），编译期生成
 - 每个对象有**一个** vptr（8 字节，64 位系统），指向所在类的 vtable
 - 调用虚函数时：`obj->vptr[vtable_index]()` → 查表 → 跳转，比直接调用多一次间接寻址
+
+**为什么虚函数必须存在 vtable 里？**
+
+根本原因是**编译期不知道运行时对象的实际类型**：
+
+```cpp
+class Base {
+public:
+    virtual void foo() { ... }
+};
+class DerivedA : public Base {
+public:
+    void foo() override { ... }  // 行为 A
+};
+class DerivedB : public Base {
+public:
+    void foo() override { ... }  // 行为 B
+};
+
+void process(Base* p) {
+    p->foo();  // ← p 可能是 Base、DerivedA 或 DerivedB，编译期无法决定
+}
+```
+
+编译器看到 `p->foo()` 时，只知道 `p` 的静态类型是 `Base*`，但 `process` 可能被传入任何派生类对象。**编译器不可能在编译期穷举所有可能的类型**。vtable 的解决方案是把"调哪个函数"这个决策推迟到运行时——每个对象自带 vptr 指向正确的 vtable，运行时查表跳转。
 
 **内存布局（以单继承为例）：**
 
