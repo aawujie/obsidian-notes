@@ -981,19 +981,22 @@ $$
 **PPO（Proximal Policy Optimization，近端策略优化）：**
 - on-policy：必须用当前策略采的样本训练，用完就扔
 - 核心创新：用 clip 函数限制策略更新幅度，防止一步更新太大导致训练崩溃
-  ```
-  L_clip = min(r_t(θ)·A_t,  clip(r_t(θ), 1-ε, 1+ε)·A_t)
-  r_t(θ) = π_new(a|s) / π_old(a|s)  （新旧策略的概率比）
-  ```
+  $$
+  L^{\text{clip}} = \min\!\Big(r_t(\theta) \cdot A_t,; \text{clip}(r_t(\theta),\,1-\varepsilon,\,1+\varepsilon) \cdot A_t\Big)
+  $$
+
+  $$
+  r_t(\theta) = \frac{\pi_{\text{new}}(a|s)}{\pi_{\text{old}}(a|s)} \quad \text{（新旧策略的概率比）}
+  $$
 - 优点：稳定，调参友好；缺点：样本效率低
 
 **SAC（Soft Actor-Critic，柔性演员-评论家）：**
 - off-policy：数据存 replay buffer，历史数据复用
 - Actor-Critic 架构：Actor 输出动作，Critic 估计 Q 值
 - **Soft** 的核心：目标函数里加了熵项 H(π)，鼓励策略保持随机性，不贪婪收敛
-  ```
-  J(π) = Σ E[Q(s,a) + α·H(π(·|s))]
-  ```
+  $$
+  J(\pi) = \sum \mathbb{E}\!\Big[Q(s,a) + \alpha \cdot H(\pi(\cdot|s))\Big]
+  $$
 - 优点：样本效率高，探索充分；缺点：需要调 α 温度参数
 
 **on-policy vs off-policy：**
@@ -1007,15 +1010,21 @@ $$
 
 **价值估计方法：MC vs TD vs GAE：**
 
-```
-MC（蒙特卡洛）：跑完整个 episode，用实际回报累加
-  V(s_t) ≈ r_t + r_{t+1} + ... + r_T
-  优点：无偏   缺点：方差大，必须等到 episode 结束，不能在线更新
+**MC（蒙特卡洛）：** 跑完整个 episode，用实际回报累加
 
-TD（时序差分）：走一步就能更新
-  V(s_t) ≈ r_t + γ·V(s_{t+1})
-  优点：方差小，在线更新   缺点：有偏（V(s_{t+1}) 本身也不准）
-```
+$$
+V(s_t) \approx r_t + r_{t+1} + r_{t+2} + \dots + r_T
+$$
+
+- 优点：无偏 缺点：方差大，必须等到 episode 结束，不能在线更新
+
+**TD（时序差分）：** 走一步就能更新
+
+$$
+V(s_t) \approx r_t + \gamma \cdot V(s_{t+1})
+$$
+
+- 优点：方差小，在线更新 缺点：有偏（$V(s_{t+1})$ 本身也是估计值，不准确）
 
 **GAE（PPO 实际用）：** MC 和 TD 的折中，指数加权平均不同步数的估计：
 
