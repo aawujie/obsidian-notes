@@ -485,8 +485,8 @@ s1 = "world";           // ✅ 可以重新赋值，继续正常使用
 
 ```cpp
 // 1. 放入容器，避免第二次深拷贝
-std::string s = "very long string...";  // 第一次复制（.rodata → 堆，不可避免）
-vec.push_back(std::move(s));            // 省掉第二次复制（堆 → 新堆），O(1) 偷指针
+std::string s = "very long string...";// 第一次复制（.rodata → 堆，不可避免）
+vec.push_back(std::move(s));      // 省掉第二次复制（堆 → 新堆），O(1) 偷指针
 
 // 2. 转移所有权（unique_ptr 只能 move 不能 copy）
 std::unique_ptr<Foo> p2 = std::move(p1);  // p1 变 nullptr
@@ -533,7 +533,7 @@ constexpr int factorial(int n) {
 int arr[factorial(5)];  // ✅ 编译期算出 120
 ```
 
-**`constexpr` 函数不是"必须编译期执行"：**
+**`constexpr` 函数不是 "必须编译期执行"：**
 
 `constexpr` 标记的是函数**有能力**在编译期求值，不是强制。能不能编译期算，取决于参数是不是编译期常量：
 
