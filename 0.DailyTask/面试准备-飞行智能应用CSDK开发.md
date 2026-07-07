@@ -569,7 +569,178 @@ return *instance;
 
 ---
 
-## 三、手撕代码 6 题（写出来，不只是看懂）
+## 三、设计模式（JD 明确要求，结合你的项目讲）
+
+### 单例模式（Singleton）
+
+**用途：** 全局唯一实例，如配置管理器、连接池、日志系统。
+
+**C++11 最简线程安全实现：**
+
+```cpp
+class Singleton {
+public:
+    static Singleton& getInstance() {
+        static Singleton instance;  // C++11 保证线程安全初始化
+        return instance;
+    }
+    Singleton(const Singleton&) = delete;
+    Singleton& operator=(const Singleton&) = delete;
+private:
+    Singleton() = default;
+};
+```
+
+**你的项目：** HIL 监控看板的配置管理器、全局资源管理器。
+
+### 工厂模式（Factory）
+
+**用途：** 把对象创建逻辑封装起来，调用者不需要知道具体类型。
+
+```cpp
+// 定义统一接口
+class LidarDriver {
+public:
+    virtual void start() = 0;
+    virtual PointCloud getPointCloud() = 0;
+    virtual ~LidarDriver() = default;
+};
+
+// 各厂商实现
+class Pandar128Driver : public LidarDriver { ... };
+class RS128Driver : public LidarDriver { ... };
+
+// 工厂：根据配置创建对应的驱动
+std::unique_ptr<LidarDriver> createLidar(const std::string& model) {
+    if (model == "Pandar128") return std::make_unique<Pandar128Driver>();
+    if (model == "RS128")     return std::make_unique<RS128Driver>();
+    throw std::runtime_error("Unknown lidar model");
+}
+```
+
+**你的项目：** 真值系统中两套激光雷达方案（Pandar128 + 黑珍珠 / 速腾128 + 黑珍珠），定义统一 `LidarDriver` 接口，上层算法不感知底层厂商差异。CSDK 做多机型适配也是这个思路——工厂模式 + 接口抽象。
+
+### 策略模式（Strategy）
+
+**用途：** 同一行为有多种实现，运行时切换。消除 if-else/switch 分支。
+
+```cpp
+// 策略接口
+class ChassisStrategy {
+public:
+    virtual void sendControl(const ControlCmd& cmd) = 0;
+    virtual ~ChassisStrategy() = default;
+};
+
+// 不同车型的策略
+class GreatWallChassis : public ChassisStrategy { ... };  // CAN 协议
+class SmartChassis : public ChassisStrategy { ... };      // FlexRay 协议
+
+// 上下文类
+class ChassisController {
+    std::unique_ptr<ChassisStrategy> strategy_;
+public:
+    void setStrategy(std::unique_ptr<ChassisStrategy> s) { strategy_ = std::move(s); }
+    void execute(const ControlCmd& cmd) { strategy_->sendControl(cmd); }
+};
+```
+
+**你的项目：** HIL 底盘仿真模块，不同车型 CAN/FlexRay 协议不同，用策略模式各写一套实现，运行时根据车型配置切换。新车型接入只需新增一个策略类，不改框架代码。
+
+**面试时这句话很加分：** "策略模式最适合 SDK 的多平台适配——把'会变的部分'封装为策略，接口保持不变。"
+
+### 观察者模式（Observer）
+
+**用途：** 一对多通知，一个对象状态变化时自动通知所有依赖者。
+
+```cpp
+class TelemetryListener {
+public:
+    virtual void onPosition(double lat, double lon, double alt) = 0;
+    virtual void onAttitude(double roll, double pitch, double yaw) = 0;
+    virtual ~TelemetryListener() = default;
+};
+
+class DroneSDK {
+    std::vector<TelemetryListener*> listeners_;
+public:
+    void subscribe(TelemetryListener* l) { listeners_.push_back(l); }
+    void notifyPosition(double lat, double lon, double alt) {
+        for (auto* l : listeners_) l->onPosition(lat, lon, alt);
+    }
+};
+```
+
+**SDK 中的应用：** 遥测数据订阅推送——飞控状态变化时，SDK 自动回调所有注册的监听器。用户不需要轮询，SDK 推送。
+
+### 适配器模式（Adapter）
+
+**用途：** 把两个不兼容的接口对接起来，类似现实中的"转换插头"。
+
+```cpp
+// 第三方飞控的接口（不兼容）
+class DJIFlightController {
+public:
+    void flyToPosition(float x, float y, float z) { ... }
+};
+
+// SDK 需要的统一接口
+class IFlightController {
+public:
+    virtual void goToWaypoint(Waypoint wp) = 0;
+    virtual ~IFlightController() = default;
+};
+
+// 适配器：把 DJI 接口适配为统一接口
+class DJIAdapter : public IFlightController {
+    DJIFlightController& dji_;
+public:
+    DJIAdapter(DJIFlightController& dji) : dji_(dji) {}
+    void goToWaypoint(Waypoint wp) override {
+        dji_.flyToPosition(wp.x, wp.y, wp.z);  // 转换参数格式
+    }
+};
+```
+
+**你的项目：** Autosar RTE 层迁移到 x86——把 Autosar 的通信接口适配为 x86 平台可用的接口，上层代码不变。这就是适配器模式的实际应用。
+
+### Pimpl 模式（Pointer to Implementation）
+
+**用途：** 隐藏实现细节，保证 ABI 兼容。改了 .cpp 实现，.h 不变，调用方不用重新编译。
+
+```cpp
+// widget.h（公开头文件）
+class Widget {
+public:
+    Widget();
+    ~Widget();
+    void doSomething();
+private:
+    struct Impl;                    // 只声明，不暴露
+    std::unique_ptr<Impl> pImpl_;   // 指针指向实现
+};
+
+// widget.cpp（实现文件，不对外暴露）
+struct Widget::Impl {
+    int data;
+    std::string name;
+    // 可以随意加成员变量，不影响 ABI
+};
+
+Widget::Widget() : pImpl_(std::make_unique<Impl>()) {}
+Widget::~Widget() = default;  // 必须在这里定义，头文件里 Impl 是不完整类型
+void Widget::doSomething() { pImpl_->data = 42; }
+```
+
+**为什么 SDK 需要 Pimpl：** 头文件是给用户看的，不能暴露内部实现细节。Pimpl 让你随意改内部实现（加成员变量、改数据结构），只要接口不变，老用户不用重新编译——这就是 ABI 兼容。
+
+### 面试话术：SDK 中设计模式的应用
+
+> "SDK 开发中设计模式的核心价值是**抽象变化，隔离影响**。工厂模式屏蔽不同机型的硬件差异，策略模式处理不同协议的数据编码，观察者模式实现遥测数据推送，适配器模式对接第三方飞控的私有协议，Pimpl 模式保证 SDK 的 ABI 兼容。这些我在 HIL 框架和真值系统中都用过，思路和方法可以直接迁移到 CSDK。"
+
+---
+
+## 四、手撕代码 6 题（写出来，不只是看懂）
 
 ### 1. 线程安全单例（必考）
 
