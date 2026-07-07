@@ -643,8 +643,45 @@ const std::string& getName() const;  // 有意义，防止调用者修改内部�
 
 **Q16: 死锁怎么避免？**
 
-- 四条件：**互斥、持有等待、不可剥夺、循环等待**
-- 避免：**固定加锁顺序 + std::lock() 同时锁多个 + try_lock 超时放弃**
+死锁四个条件：**互斥、持有等待、不可剥夺、循环等待**。打破任意一个就不会死锁：
+
+**1. 固定加锁顺序（打破循环等待）**
+
+```cpp
+std::mutex a, b;
+
+// ❌ 死锁：线程1 先锁 a 再 b，线程2 先锁 b 再 a → 循环等待
+void thread1() { std::lock_guard lk1(a); std::lock_guard lk2(b); }
+void thread2() { std::lock_guard lk1(b); std::lock_guard lk2(a); }
+
+// ✅ 所有线程都先锁 a 再锁 b，顺序一致，不会形成环
+```
+
+**2. std::lock() 同时锁（打破持有等待）**
+
+```cpp
+// ✅ 一次拿所有锁，拿不到就全释放重试，不"持 A 等 B"
+std::lock(a, b);
+std::lock_guard lk1(a, std::adopt_lock);  // adopt_lock：接管，不重复加锁
+std::lock_guard lk2(b, std::adopt_lock);
+```
+
+**3. try_lock 超时放弃（打破不可剥夺）**
+
+```cpp
+std::timed_mutex a, b;
+
+if (a.try_lock_for(std::chrono::milliseconds(100))) {
+    if (b.try_lock_for(std::chrono::milliseconds(100))) {
+        std::lock_guard lk1(a, std::adopt_lock);
+        std::lock_guard lk2(b, std::adopt_lock);
+        return;
+    }
+    a.unlock();  // 拿到 a 但拿不到 b，释放 a
+}
+```
+
+**优先顺序：** `std::lock()` > 固定顺序 > `try_lock`。
 
 **Q17: 实现一个线程安全的单例？**
 
@@ -687,7 +724,7 @@ if (!initialized) {
 return *instance;
 ```
 
-**一句话：** C++11 把"双检查锁"（DCLP）的坑由编译器帮你填了，用函数内 static 变量就是最简单、最安全、最高效的单例写法。
+**一句话：** C++11 把 **"双检查锁"（DCLP）的坑由编译器帮你填了**，用函数内 static 变量就是最简单、最安全、最高效的单例写法。
 
 ### 编译与底层
 
