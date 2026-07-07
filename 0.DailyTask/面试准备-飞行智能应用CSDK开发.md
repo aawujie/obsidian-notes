@@ -64,6 +64,59 @@ weak_ptr   — 配合 shared_ptr 打破循环引用，不增加引用计数
 
 - 默认用 unique_ptr、需要共享才用 shared_ptr
 
+**weak_ptr 什么时候用？打破循环引用**
+
+两个对象互相持有对方的 shared_ptr 会导致**永远不会释放**：
+
+```cpp
+class B;  // 前向声明
+
+class A {
+public:
+    std::shared_ptr<B> ptr_b;  // A 持有 B
+    ~A() { std::cout << "A destroyed" << std::endl; }
+};
+
+class B {
+public:
+    std::shared_ptr<A> ptr_a;  // B 持有 A  ← 循环引用！
+    ~B() { std::cout << "B destroyed" << std::endl; }
+};
+
+int main() {
+    auto a = std::make_shared<A>();
+    auto b = std::make_shared<B>();
+    a->ptr_b = b;  // a 引用计数 = 1, b 引用计数 = 1
+    b->ptr_a = a;  // a 引用计数 = 2, b 引用计数 = 2
+    return 0;
+    // 离开作用域：a 引用计数 = 1, b 引用计数 = 1
+    // 互相持有，永远不会降到 0 → 内存泄漏！析构函数永远不会调用
+}
+```
+
+**解法：把其中一个换成 weak_ptr：**
+
+```cpp
+class B {
+public:
+    std::weak_ptr<A> ptr_a;  // 弱引用，不增加引用计数
+};
+
+// 离开作用域：a 引用计数 → 0, 释放 A → b 引用计数 → 0, 释放 B ✅
+```
+
+**weak_ptr 使用方式：** 不能直接访问对象，必须 `lock()` 转为 shared_ptr 后才能用：
+
+```cpp
+std::weak_ptr<A> weak_a = ...;
+if (auto shared = weak_a.lock()) {  // 如果对象还活着
+    shared->doSomething();           // 安全使用
+}
+// 如果对象已被销毁，lock() 返回 nullptr
+```
+
+**典型场景：** 观察者模式（subject 持有 observer 的 weak_ptr）、树结构（子节点用 shared_ptr 指向父节点时用 weak_ptr）、缓存（weak_ptr 不阻止缓存被清理）。
+
 **shared_ptr 的控制块（Control Block）详解：**
 
 **shared_ptr 内部有两个指针**：一个指向对象，一个指向**控制块**。**控制块里存着**：
