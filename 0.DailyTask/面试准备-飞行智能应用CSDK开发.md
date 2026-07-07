@@ -484,9 +484,9 @@ s1 = "world";           // ✅ 可以重新赋值，继续正常使用
 **什么场景会 move？**
 
 ```cpp
-// 1. 放入容器，避免拷贝大对象
-std::string s = "very long string...";
-vec.push_back(std::move(s));  // 移动，O(1)；拷贝是 O(n)
+// 1. 放入容器，避免第二次深拷贝
+std::string s = "very long string...";  // 第一次复制（.rodata → 堆，不可避免）
+vec.push_back(std::move(s));            // 省掉第二次复制（堆 → 新堆），O(1) 偷指针
 
 // 2. 转移所有权（unique_ptr 只能 move 不能 copy）
 std::unique_ptr<Foo> p2 = std::move(p1);  // p1 变 nullptr
@@ -498,7 +498,7 @@ std::swap(a, b);  // 只交换指针，不拷贝内容
 std::thread t([data = std::move(data)] { process(data); });
 ```
 
-**一句话：** 只要对象后面不再需要了，就 move——省一次深拷贝。`string`/`vector` move 是 O(1)（偷指针），拷贝是 O(n)（复制全部数据）。
+**一句话：** 只要对象后面不再需要了，就 move——省一次深拷贝。**`string`/`vector` move 是 O(1)（偷指针），拷贝是 O(n)（复制全部数据）。**
 
 **Q10: lambda [=] 和 [&] 的区别？**
 
