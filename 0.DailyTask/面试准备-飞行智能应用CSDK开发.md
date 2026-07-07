@@ -401,10 +401,10 @@ T&& forward(remove_reference_t<T>& arg) noexcept {
 }
 ```
 
-| 调用                     | T 推导为  | `T&&` 折叠后        | forward 返回 |
-| ---------------------- | ------ | ---------------- | ---------- |
-| `wrapper(a)` (a 是左值)   | `int&` | `int& && → int&` | 左值         |
-| `wrapper(10)` (10 是右值) | `int`  | `int&&`          | 右值         |
+| 调用                     | T 推导为  | `T&&` 折叠后        | forward 返回 |     |
+| ---------------------- | ------ | ---------------- | ---------- | --- |
+| `wrapper(a)` (a 是左值)   | `int&` | `int& && → int&` | 左值         |     |
+| `wrapper(10)` (10 是右值) | `int`  | `int&&`          | 右值         |     |
 
 **一句话对比：** move 和 forward 底层都是 `static_cast`，区别在于 move 无条件转右值，forward 通过模板推导决定是否转右值。
 
@@ -661,6 +661,47 @@ return *instance;
 - **破环 ABI 兼容**：删虚函数、改类大小（加成员变量）、改函数签名——这些都会改变二进制层面的符号表和内存布局
 - **保证 ABI 兼容**：**pimpl 模式（隐藏实现细节）**、**接口类只放纯虚函数**
 - 与 API 的区别：API 是源码级兼容（**编译通过**），ABI 是二进制级兼容（**链接通过**）
+
+**Q21: C++ 有哪几种构造函数？**
+
+```cpp
+class Foo {
+    int val_;
+    int* data_;
+public:
+    // 1. 默认构造函数
+    Foo() : val_(0), data_(nullptr) {}
+
+    // 2. 带参构造函数
+    Foo(int v) : val_(v), data_(new int(v)) {}
+
+    // 3. 拷贝构造函数（const 左值引用）
+    Foo(const Foo& other) : val_(other.val_), data_(new int(*other.data_)) {}
+
+    // 4. 移动构造函数（右值引用，noexcept）
+    Foo(Foo&& other) noexcept : val_(other.val_), data_(other.data_) {
+        other.data_ = nullptr;
+    }
+
+    // 5. 委托构造函数（C++11，调另一个构造函数）
+    Foo(double v) : Foo(static_cast<int>(v)) {}
+
+    ~Foo() { delete data_; }
+};
+```
+
+| 构造函数 | 签名 | 何时调用 |
+|---------|------|---------|
+| 默认 | `Foo()` | `Foo f;` |
+| 带参 | `Foo(int)` | `Foo f(42);` |
+| 拷贝 | `Foo(const Foo&)` | `Foo f2(f1);` |
+| 移动 | `Foo(Foo&&)` noexcept | `Foo f2(std::move(f1));` |
+| 委托 | 调用同类另一个构造函数 | 减少重复代码 |
+
+**特殊规则：**
+- 定义了任何构造函数，编译器就不再生成默认构造函数
+- 移动构造应标记 `noexcept`，否则 `vector` 扩容时走拷贝而不是移动
+- `= default` 显式要求编译器生成，`= delete` 禁止使用
 
 ---
 
