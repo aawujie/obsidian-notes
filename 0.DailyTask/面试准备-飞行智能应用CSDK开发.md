@@ -221,20 +221,12 @@ Base 对象                          Base vtable
 └──────────────┘                  └────────────┘
 
 
-Derived 对象
-┌──────────────┐
-│  vptr        │
-│  成员变量1    │
-│  成员变量2    │
-└──────┬───────┘
-       │ 指向
-       ▽
-  Derived vtable
-┌─────────────────────┐
-│ &Derived::func1()    │ ← 覆盖
-│ &Base::func2()       │ ← 保留基类
-│ &Derived::~Derived() │ ← 覆盖
-└─────────────────────┘
+Derived 对象                       Derived vtable
+┌──────────────┐                  ┌─────────────────────┐
+│  vptr ───────┼─────────────────→│ &Derived::func1()    │ ← 覆盖
+│  成员变量1    │                  │ &Base::func2()       │ ← 保留基类
+│  成员变量2    │                  │ &Derived::~Derived() │ ← 覆盖
+└──────────────┘                  └─────────────────────┘
 ```
 
 **关键：** 一个对象只有一个 vptr，指向一个 vtable。Base 对象指向 Base 的 vtable，Derived 对象指向 Derived 的 vtable。Derived 的 vtable 里，被重写的函数替换为自己的地址，没重写的保留基类地址。
