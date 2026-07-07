@@ -729,9 +729,44 @@ public:
 ```
 
 **关键参数：**
-- Q（Process Noise Covariance，过程噪声协方差）大 → **更信任模型预测（响应快但噪声大）**
-- R（Measurement Noise Covariance，测量噪声协方差）大 → **更信任测量值（平滑但响应慢）**
-- **卡尔曼增益 K 自动平衡两者**——Q 大则 K 大，R 大则 K 小
+- Q（Process Noise Covariance，过程噪声协方差）大 → 预测模型不准，更信任传感器测量
+- R（Measurement Noise Covariance，测量噪声协方差）大 → 传感器不准，更信任模型预测
+- 卡尔曼增益 K 自动平衡两者——Q 大则 K 大，R 大则 K 小
+
+**数学本质：两个高斯分布相乘**
+
+预测步给出一个高斯分布（"根据模型，车应该在 $\hat{x}_k$ 位置，误差 $\pm P_k$"）：
+
+$$
+\text{预测分布：} \quad \mathcal{N}(\hat{x}_k, P_k)
+$$
+
+测量步给出另一个高斯分布（"根据 GPS，车在 $z_k$ 位置，误差 $\pm R$"）：
+
+$$
+\text{测量分布：} \quad \mathcal{N}(z_k, R)
+$$
+
+**融合就是两个高斯分布相乘，得到一个更窄、更确定的高斯分布：**
+
+$$
+\mathcal{N}(\mu_1, \sigma_1^2) \times \mathcal{N}(\mu_2, \sigma_2^2) \propto \mathcal{N}\!\left(\frac{\sigma_2^2\mu_1 + \sigma_1^2\mu_2}{\sigma_1^2 + \sigma_2^2},\; \frac{\sigma_1^2\sigma_2^2}{\sigma_1^2 + \sigma_2^2}\right)
+$$
+
+- 新均值 = 加权平均，谁更准（方差更小）就偏向谁
+- 新方差 < 两个原始方差中的任何一个——融合后更确定
+
+推广到矩阵形式就是卡尔曼更新：
+
+$$
+\begin{aligned}
+K &= P_k H^T (H P_k H^T + R)^{-1} \quad \text{（卡尔曼增益 = 两个协方差的比例）} \\
+\hat{x}_k &= \hat{x}_k + K(z_k - H\hat{x}_k) \quad \text{（均值加权融合）} \\
+P_k &= (I - KH)P_k \quad \text{（协方差缩小）}
+\end{aligned}
+$$
+
+**一句话：** 卡尔曼滤波 = 两个高斯分布相乘，得到更确定的高斯分布。预测不准就多信测量，测量不准就多信预测，K 自动算比例。
 
 **在自动驾驶里怎么用：** GPS 10Hz 低频但绝对位置准，IMU 200Hz 高频但积分会漂移。卡尔曼滤波用 IMU 做预测（短时高频），用 GPS 做修正（长时消漂移），输出 200Hz 的准确位姿。
 
