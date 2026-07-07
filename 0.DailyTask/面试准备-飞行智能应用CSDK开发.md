@@ -838,9 +838,9 @@ SafeClass(SafeClass&& other) noexcept
 ```
 
 **设计原则：**
-1. 成员尽量用标准库类型（`string`/`vector`/`unique_ptr`），它们的移动都是 noexcept
+1. 成员尽量用标准库类型（`string`/`vector`/`unique_ptr`），它们的**移动都是 noexcept**
 2. 移动构造里只做指针赋值、`int`/`size_t` 赋值、`swap`，不调 `new`
-3. 不确定的成员用 `std::move_if_noexcept` 自动回退到拷贝
+3. 不确定的成员用 **`std::move_if_noexcept` 自动回退到拷贝**
 4. **noexcept 不加 = 白写移动构造，乱加 = 异常来时直接 `std::terminate` 崩掉**
 
 ---
