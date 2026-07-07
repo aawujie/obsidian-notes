@@ -1,6 +1,6 @@
 ---
 share_link: https://share.note.sx/nl8oz7h0#sqnDmv7E9/4yo6Ify+fQGpIs9OYOmljgPoC1NCnFZ6c
-share_updated: 2026-07-07T15:10:38+08:00
+share_updated: 2026-07-07T15:21:52+08:00
 ---
 # 飞行智能应用 CSDK 开发 — 一面准备手册
 
