@@ -1538,15 +1538,15 @@ $$
 
 <span style="color:rgb(255, 77, 77)"><b>价值估计方法：MC vs TD vs GAE：</b></span>
 
-**MC（蒙特卡洛）：** 跑完整个 episode，用实际回报累加
+**MC（蒙特卡洛）：** <span style="color:rgb(255, 77, 77)"><b>跑完整个 episode</b></span>，用实际回报累加
 
 $$
 V(s_t) \approx r_t + r_{t+1} + r_{t+2} + \dots + r_T
 $$
 
-- 优点：无偏 缺点：方差大，必须等到 episode 结束，不能在线更新
+- <span style="color:rgb(255, 77, 77)"><b>优点：无偏 缺点：方差大，必须等到 episode 结束，不能在线更新</b></span>
 
-**TD（时序差分）：** 走一步就能更新
+**TD（时序差分）：** <span style="color:rgb(255, 77, 77)"><b>走一步就能更新</b></span>
 
 $$
 V(s_t) \approx r_t + \gamma \cdot V(s_{t+1})
