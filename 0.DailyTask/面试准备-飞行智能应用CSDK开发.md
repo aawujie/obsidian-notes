@@ -610,6 +610,23 @@ const int  foo() { return 5; }       // 没意义，调用者拿的是拷贝
 const std::string& getName() const;  // 有意义，防止调用者修改内部数据
 ```
 
+**C++14/17 新特性（面试可能问，知道这些就够了）：**
+
+C++14 重点：
+- `auto` 返回值推导：函数返回值可以直接写 `auto`，编译器自动推导
+- 泛型 lambda：`[](auto x, auto y) { return x + y; }`，参数类型自动推导
+- `std::make_unique<T>()`：创建 unique_ptr，比 `new` 更安全
+- `constexpr` 放宽：函数内可以有循环和分支（文档 Q11 里 factorial 就是 C++14 特性）
+
+C++17 重点：
+- `if constexpr`：编译期 if，不符合条件的分支不会编译，结合 traits 做条件编译比 `enable_if` 简洁得多
+- 结构化绑定：`auto [x, y, z] = getPoint();` 一行拆解 tuple/struct
+- `std::optional<T>`：可能没有值的返回值，避免用空指针或 -1 表示"没有"
+- `std::string_view`：字符串的只读视图，不拷贝，传参高效
+- `std::variant<T1, T2, ...>`：类型安全的 union，存多个类型中的一个
+- `[[nodiscard]]`：标记返回值不应被忽略，编译器会警告
+- CTAD（类模板参数推导）：`std::pair p(1, 2.0);` 不用写 `std::pair<int, double>`
+
 ### STL
 
 **Q12: vector 扩容机制？**
@@ -1672,7 +1689,7 @@ $$
 
 **Q: "你最近两年主要写 Python，C++ 还熟吗？"**
 
-> 我在禾多做了 3 年纯 C++ 开发——传感器驱动、Autosar 迁移、CAN 通信、Linux 多线程，都是底层 C++ 项目。到元戎后虽然主力语言是 Python，但 HIL 框架的架构设计方法论是通用的。而且我一直在自学 C++20 的新特性，比如协程和 Asio 异步编程。我最近的笔记就是 C++20 协程重写 Asio 代理。写代码的话，C++ 的手感还在，需要的话我可以很快捡回来。
+> 我在禾多做了 3 年纯 C++ 开发——传感器驱动、Autosar 迁移、CAN 通信、Linux 多线程，都是底层 C++ 项目。到元戎后虽然主力语言是 Python，但 HIL 框架的架构设计方法论是通用的，我对 C++11/14/17 的核心特性都很熟悉，写代码的手感还在，需要的话可以很快捡回来。
 
 **Q: "你做过的是测试，和 SDK 开发有什么关系？"**
 
