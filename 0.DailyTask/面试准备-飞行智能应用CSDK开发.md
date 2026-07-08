@@ -613,9 +613,9 @@ const std::string& getName() const;  // 有意义，防止调用者修改内部�
 **C++14/17 新特性（面试可能问，知道这些就够了）：**
 
 C++14 重点：
-- `auto` 返回值推导：函数返回值可以直接写 `auto`，编译器自动推导
-- 泛型 lambda：`[](auto x, auto y) { return x + y; }`，参数类型自动推导
-- `std::make_unique<T>()`：创建 unique_ptr，比 `new` 更安全
+- `auto` 返回值推导：<span style="color:rgb(255, 77, 77)">函数返回值可以直接写 `auto`</span>，编译器自动推导
+- 泛型 lambda：`[](auto x, auto y) { return x + y; }`，<span style="color:rgb(255, 77, 77)">参数类型自动推导</span>
+- `std::make_unique<T>()`：<span style="color:rgb(255, 77, 77)">创建 unique_ptr，比 `new` 更安全</span>
 - `constexpr` 放宽：函数内可以有循环和分支（文档 Q11 里 factorial 就是 C++14 特性）
 
 C++17 重点：
