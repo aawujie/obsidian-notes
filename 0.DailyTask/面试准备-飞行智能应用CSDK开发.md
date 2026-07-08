@@ -1516,7 +1516,7 @@ $$
   $$
   r_t(\theta) = \frac{\pi_{\text{new}}(a|s)}{\pi_{\text{old}}(a|s)} \quad \text{（新旧策略的概率比）}
   $$
-- 优点：稳定，调参友好；缺点：样本效率低
+- 优点：稳定，调参友好；<span style="color:rgb(255, 77, 77)"><b>缺点：样本效率低</b></span>
 
 **SAC（Soft Actor-Critic，柔性演员-评论家）：**
 - <span style="color:rgb(255, 77, 77)">off-policy：数据存 replay buffer，历史数据复用</span>
@@ -1525,18 +1525,18 @@ $$
   $$
   J(\pi) = \sum \mathbb{E}\!\Big[Q(s,a) + \alpha \cdot H(\pi(\cdot|s))\Big]
   $$
-- 优点：样本效率高，探索充分；缺点：需要调 α 温度参数
+- <span style="color:rgb(255, 77, 77)"><b>优点：样本效率高，探索充分</b></span>；缺点：需要调 α 温度参数
 
 **on-policy vs off-policy：**
 
-| | on-policy（PPO） | off-policy（SAC） |
-|---|---|---|
-| 训练数据 | 必须当前策略新采的 | 历史数据 replay buffer 复用 |
-| 数据利用率 | 低，采完用完就扔 | 高 |
-| 稳定性 | 更稳定（无分布偏移） | 需额外技术防过估计 |
-| 典型场景 | 仿真（Isaac Gym 并行数千环境） | 真实机器人（数据采集成本高） |
+|       | on-policy（PPO）                                         | off-policy（SAC）                                                   |
+| ----- | ------------------------------------------------------ | ----------------------------------------------------------------- |
+| 训练数据  | <span style="color:rgb(255, 77, 77)">必须当前策略新采的</span>  | <span style="color:rgb(255, 77, 77)">历史数据 replay buffer 复用</span> |
+| 数据利用率 | 低，采完用完就扔                                               | 高                                                                 |
+| 稳定性   | <span style="color:rgb(255, 77, 77)">更稳定（无分布偏移）</span> | <span style="color:rgb(255, 77, 77)">需额外技术防过估计</span>             |
+| 典型场景  | 仿真（Isaac Gym 并行数千环境）                                   | 真实机器人（数据采集成本高）                                                    |
 
-**价值估计方法：MC vs TD vs GAE：**
+<span style="color:rgb(255, 77, 77)"><b>价值估计方法：MC vs TD vs GAE：</b></span>
 
 **MC（蒙特卡洛）：** 跑完整个 episode，用实际回报累加
 
