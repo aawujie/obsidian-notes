@@ -1010,7 +1010,7 @@ public:
 
 ### Pimpl 模式（Pointer to Implementation）
 
-**用途：** 隐藏实现细节，保证 ABI 兼容。改了 .cpp 实现，.h 不变，调用方不用重新编译。
+**用途：** **<span style="color:rgb(255, 77, 77)">隐藏实现细节，保证 ABI 兼容。改了 .cpp 实现，.h 不变</span>**，调用方不用重新编译。
 
 ```cpp
 // widget.h（公开头文件）
@@ -1036,7 +1036,7 @@ Widget::~Widget() = default;  // 必须在这里定义，头文件里 Impl 是�
 void Widget::doSomething() { pImpl_->data = 42; }
 ```
 
-**为什么 SDK 需要 Pimpl：** 头文件是给用户看的，不能暴露内部实现细节。Pimpl 让你随意改内部实现（加成员变量、改数据结构），只要接口不变，老用户不用重新编译——这就是 ABI 兼容。
+**为什么 SDK 需要 Pimpl：** <span style="color:rgb(255, 77, 77)">头文件是给用户看的，不能暴露内部实现细节</span>。Pimpl 让你随意改内部实现（加成员变量、改数据结构），只要接口不变，老用户不用重新编译——这就是 ABI 兼容。
 
 ### 面试话术：SDK 中设计模式的应用
 
