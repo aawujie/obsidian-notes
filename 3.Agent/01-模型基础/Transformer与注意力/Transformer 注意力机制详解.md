@@ -46,12 +46,12 @@ woman - man + uncle ≈ aunt
 - "one **mole** of carbon dioxide" → 摩尔（化学单位）
 - "biopsy of the **mole**" → 痣（医学）
 
-**初始嵌入**：三个 "mole" 的向量完全相同（仅查表，无上下文）
+<span style="color:rgb(255, 77, 77)"><b>初始嵌入</b>：三个 "mole" 的向量完全相同（仅查表，无上下文）</span>
 
 **注意力后**：根据周围词更新向量方向
-- "shrew" + "American" → 动物方向
-- "carbon dioxide" → 化学方向
-- "biopsy" → 医学方向
+- <span style="color:rgb(255, 77, 77)">"shrew" + "American" → 动物方向</span>
+- <span style="color:rgb(255, 77, 77)">"carbon dioxide" → 化学方向</span>
+- <span style="color:rgb(255, 77, 77)">"biopsy" → 医学方向</span>
 
 ### 示例 2：专有名词
 
@@ -80,12 +80,12 @@ woman - man + uncle ≈ aunt
 输入："a fluffy blue creature roamed the verdant forest"
 
 目标：形容词更新对应的名词
-- "fluffy" + "blue" → 更新 "creature"
-- "verdant" → 更新 "forest"
+- <span style="color:rgb(255, 77, 77)">"fluffy" + "blue" → 更新 "creature"</span>
+- <span style="color:rgb(255, 77, 77)">"verdant" → 更新 "forest"</span>
 
 ### 步骤 1：Query（查询）
 
-**概念**：每个词问"我需要什么信息？"
+**概念**：<span style="color:rgb(255, 77, 77)">每个词问"我需要什么信息？"</span>
 
 ```python
 # 名词 "creature" 的 query
@@ -102,7 +102,7 @@ Q_creature = W_q @ E_creature
 
 ### 步骤 2：Key（键）
 
-**概念**：每个词回答"我能提供什么信息？"
+**概念**：<span style="color:rgb(255, 77, 77)">每个词回答"我能提供什么信息？"</span>
 
 ```python
 # 形容词 "fluffy" 的 key
@@ -116,7 +116,7 @@ K_blue = W_k @ E_blue
 
 ### 步骤 3：计算注意力分数
 
-**方法**：Query 和 Key 的点积
+**方法**：<span style="color:rgb(255, 77, 77)">Query 和 Key 的点积</span>
 
 ```python
 score_creature_fluffy = Q_creature · K_fluffy  # 大正数（相关）
@@ -146,9 +146,9 @@ forest    ·      ·      ·        ·      ·     ●●●       ·
 attention_weights = softmax(scores / sqrt(d_k), dim=0)
 ```
 
-**技术细节**：除以 $\sqrt{d_k}$（128 的平方根 ≈ 11.3）用于数值稳定性。
+**技术细节**：<span style="color:rgb(255, 77, 77)">除以</span> $\sqrt{d_k}$（<span style="color:rgb(255, 77, 77)">128 的平方根 ≈ 11.3</span>）<span style="color:rgb(255, 77, 77)">用于数值稳定性。</span>
 
-**结果**：注意力模式 (Attention Pattern)
+**结果**：注意力模式 (Attention <span style="color:rgb(255, 77, 77)">Pattern</span>)
 
 ```
         creature  forest
@@ -179,7 +179,7 @@ delta_E_creature = 0.5 * V_fluffy + 0.5 * V_blue + 0 * V_others
 E_creature_new = E_creature + delta_E_creature
 ```
 
-**结果**："creature" 的嵌入现在编码了"fluffy blue creature"
+**结果**："creature" 的嵌入现在编码了 "fluffy blue creature"
 
 ---
 
@@ -211,7 +211,7 @@ pos3      ✓     ✓     ✓     0
 pos4      ✓     ✓     ✓     ✓
 ```
 
-- 下三角矩阵（因果掩码）
+- <span style="color:rgb(255, 77, 77)">下三角矩阵（因果掩码）</span>
 - GPT 系列始终使用此掩码
 
 ---
@@ -220,12 +220,12 @@ pos4      ✓     ✓     ✓     ✓
 
 注意力矩阵大小 = $(\text{context\_size})^2$
 
-| 上下文长度 | 注意力矩阵大小 |
-|-----------|---------------|
-| 1K | 1M |
-| 4K | 16M |
-| 32K | 1B |
-| 100K | 10B |
+| 上下文长度                                            | <span style="color:rgb(255, 77, 77)">注意力矩阵大小</span> |
+| ------------------------------------------------ | --------------------------------------------------- |
+| 1K                                               | 1M                                                  |
+| 4K                                               | 16M                                                 |
+| 32K                                              | 1B                                                  |
+| <span style="color:rgb(255, 77, 77)">100K</span> | <span style="color:rgb(255, 77, 77)">10B</span>     |
 
 **瓶颈**：上下文长度是 LLM 扩展的主要挑战，近年有变体 aimed at 更 scalable 的注意力机制。
 
@@ -237,7 +237,7 @@ pos4      ✓     ✓     ✓     ✓
 
 $W_v$: (embedding_dim, embedding_dim) = (12288, 12288)
 
-参数量：~1.5亿（比其他矩阵大 100 倍）
+参数量：~1.5亿（<span style="color:rgb(255, 77, 77)">比其他矩阵大 100 倍</span>）
 
 ### 实际实现（低秩分解）
 
@@ -256,15 +256,15 @@ W_v_up:   (embedding_dim, key_query_dim) = (12288, 128)
 
 ---
 
-## 多头注意力 (Multi-Head Attention)
+## 多头注意力 <span style="color:rgb(255, 77, 77)">(Multi-Head Attention</span>)
 
 ### 动机
 
 不同 head 学习不同类型的上下文关系：
-- Head 1：形容词 → 名词
-- Head 2：代词 → 先行词
-- Head 3：时间词关联
-- Head 4：情感分析
+- Head 1：<span style="color:rgb(255, 77, 77)">形容词 → 名词</span>
+- Head 2：<span style="color:rgb(255, 77, 77)">代词 → 先行词</span>
+- Head 3：<span style="color:rgb(255, 77, 77)">时间词关联</span>
+- Head 4：<span style="color:rgb(255, 77, 77)">情感分析</span>
 - ...
 
 ### 实现
@@ -343,8 +343,8 @@ Output
 3. **规模优势**：可扩展性让模型能从海量数据学习
 
 4. **参数分布**：
-   - 注意力：~33%（580亿）
-   - MLP：~66%（1160亿）
+   - 注意力：<span style="color:rgb(255, 77, 77)">~33%</span>（580亿）
+   - MLP：<span style="color:rgb(255, 77, 77)">~66%</span>（1160亿）
    - 其他：~1%
 
 5. **上下文限制**：注意力矩阵大小 = $O(n^2)$，是长上下文的主要瓶颈

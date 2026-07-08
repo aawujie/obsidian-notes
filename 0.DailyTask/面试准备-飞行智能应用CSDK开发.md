@@ -1,6 +1,6 @@
 ---
 share_link: https://share.note.sx/nl8oz7h0#sqnDmv7E9/4yo6Ify+fQGpIs9OYOmljgPoC1NCnFZ6c
-share_updated: 2026-07-07T18:09:40+08:00
+share_updated: 2026-07-08T15:20:06+08:00
 ---
 # 飞行智能应用 CSDK 开发 — 一面准备手册
 
@@ -22,7 +22,7 @@ share_updated: 2026-07-07T18:09:40+08:00
 
 ---
 
-## 二、C++ 必考 20 题（一面大概率出，每题能口头讲 1 分钟）
+## 二、C++ 必考 20 题
 
 ### 内存管理
 
@@ -873,7 +873,7 @@ GoodMove(GoodMove&& other) noexcept
 
 ---
 
-## 三、设计模式（JD 明确要求，结合你的项目讲）
+## 三、设计模式
 
 ### 单例模式（Singleton）
 
@@ -1044,7 +1044,7 @@ void Widget::doSomething() { pImpl_->data = 42; }
 
 ---
 
-## 四、手撕代码 6 题（写出来，不只是看懂）
+## 四、手撕代码 6 题
 
 ### 1. 线程安全单例（必考）
 
@@ -1280,7 +1280,7 @@ public:
 
 **"PTP 和 PPS 是什么？怎么做到 <1ms 的？"**
 
-> PPS（Pulse Per Second）是 GNSS 接收器每秒发出的一个硬件脉冲信号，精度在纳秒级，作为系统的绝对时钟基准。PTP（Precision Time Protocol）是网络时间同步协议，域控通过 PTP 和 GNSS 主机同步系统时间。
+> PPS（Pulse Per Second）是 GNSS 接收器每秒发出的一个硬件脉冲信号，精度在**纳秒级**，作为系统的绝对时钟基准。PTP（Precision Time Protocol）是网络时间同步协议，域控通过 PTP 和 GNSS 主机同步系统时间。
 >
 > 具体做法：GNSS 输出 PPS 脉冲给激光雷达和相机做硬件触发，保证它们在同一时刻曝光/扫描。域控通过 PTP 协议把自己的系统时钟和 GNSS 对齐。最终授时精度 <1ms，用示波器测 PPS 脉冲和传感器曝光信号的时延来验证。
 
@@ -1290,7 +1290,7 @@ public:
 
 **"同步后激光和相机的数据差多少？"**
 
-> 硬件触发同步保证时间戳对齐在 1ms 以内。但激光雷达一帧完整扫描本身要 100ms（10Hz），这期间的车辆运动会导致点云畸变，需要用 IMU 数据做运动补偿。我在项目里负责时间同步，畸变补偿是感知算法团队做的。时间同步解决的是"标签对齐"，运动畸变是另一个层面的问题。
+> 硬件触发同步保证时间戳对齐在 1ms 以内。**但激光雷达一帧完整扫描本身要 100ms（10Hz），这期间的车辆运动会导致点云畸变，需要用 IMU 数据做运动补偿**。我在项目里负责时间同步，畸变补偿是感知算法团队做的。时间同步解决的是"标签对齐"，运动畸变是另一个层面的问题。
 
 ### 真值系统 — 多激光雷达方案
 
@@ -1324,7 +1324,7 @@ public:
 
 **"PPO 和 MPC 有什么区别？为什么都学？"**
 
-> PPO 是数据驱动，从零学习策略，不需要环境模型，但需要大量试错。MPC 是模型驱动，需要精确的系统动力学模型，在线滚动优化，能处理约束。两者互补——MPC 做安全约束层保证不越界，学习策略做任务级决策。无人机上典型做法是：PPO/SAC 学出高层策略，底层用 MPC 或 PID 保证安全执行。
+> PPO 是数据驱动，<span style="color:rgb(195, 117, 255)"><b>从零学习策略，不需要环境模型，但需要大量试错</b></span>。MPC 是模型驱动，<span style="color:rgb(195, 117, 255)"><b>需要精确的系统动力学模型，在线滚动优化，能处理约束</b></span>。两者互补——<span style="color:rgb(255, 77, 77)"><b>MPC 做安全约束层保证不越界，学习策略做任务级决策</b></span>。无人机上典型做法是：<span style="color:rgb(255, 77, 77)"><b>PPO/SAC 学出高层策略，底层用 MPC 或 PID 保证安全执行。</b></span>
 
 **"为什么关注 VLA？"**
 
@@ -1338,9 +1338,9 @@ public:
 
 ### 卡尔曼滤波（传感器融合基础）
 
-**核心思想：** 把多个传感器的测量值融合成一个更准确的估计值。核心是 **"预测 → 更新"** 两步循环。
+**核心思想：** 把多个传感器的测量值融合成一个更准确的估计值。核心是 <span style="color:rgb(255, 77, 77)"><b>"预测 → 更新"</b> </span>两步循环。
 
-**预测步（用运动模型推算下一时刻状态）：**
+<span style="color:rgb(255, 77, 77)"><b>预测步（用运动模型推算下一时刻状态）：</b></span>
 
 $$
 \begin{aligned}
@@ -1349,7 +1349,7 @@ P_k &= F \cdot P_{k-1} \cdot F^T + Q \quad \text{（协方差预测，Q 是过�
 \end{aligned}
 $$
 
-**更新步（用传感器测量值修正预测）：**
+<span style="color:rgb(255, 77, 77)"><b>更新步（用传感器测量值修正预测）：</b></span>
 
 $$
 \begin{aligned}
@@ -1360,31 +1360,31 @@ P_k &= (I - K \cdot H) \cdot P_k \quad \text{（协方差更新）}
 $$
 
 **关键参数：**
-- Q（Process Noise Covariance，过程噪声协方差）大 → 预测模型不准，更信任传感器测量
-- R（Measurement Noise Covariance，测量噪声协方差）大 → 传感器不准，更信任模型预测
-- 卡尔曼增益 K 自动平衡两者——Q 大则 K 大，R 大则 K 小
+- Q（Process Noise Covariance，<span style="color:rgb(255, 77, 77)">过程噪声协方差</span>）大 → <span style="color:rgb(255, 77, 77)"><b>预测模型不准</b></span>，更信任传感器测量
+- R（Measurement Noise Covariance，<span style="color:rgb(255, 77, 77)">测量噪声协方差</span>）大 → <span style="color:rgb(255, 77, 77)"><b>传感器不准</b></span>，更信任模型预测
+- <span style="color:rgb(255, 77, 77)"><b>卡尔曼增益 K 自动平衡两者</b></span>——Q 大则 K 大，R 大则 K 小
 
-**数学本质：两个高斯分布相乘**
+<span style="color:rgb(255, 77, 77)"><b>数学本质：两个高斯分布相乘</b></span>
 
-预测步给出一个高斯分布（"根据模型，车应该在 $\hat{x}_k$ 位置，误差 $\pm P_k$"）：
+<span style="color:rgb(195, 117, 255)">预测步给出一个高斯分布</span>（"根据模型，车应该在 $\hat{x}_k$ 位置，误差 $\pm P_k$"）：
 
 $$
 \text{预测分布：} \quad \mathcal{N}(\hat{x}_k, P_k)
 $$
 
-测量步给出另一个高斯分布（"根据 GPS，车在 $z_k$ 位置，误差 $\pm R$"）：
+<span style="color:rgb(195, 117, 255)">测量步给出另一个高斯分布</span>（"根据 GPS，车在 $z_k$ 位置，误差 $\pm R$"）：
 
 $$
 \text{测量分布：} \quad \mathcal{N}(z_k, R)
 $$
 
-**融合就是两个高斯分布相乘，得到一个更窄、更确定的高斯分布：**
+<span style="color:rgb(195, 117, 255)"><b>融合就是两个高斯分布相乘，得到一个更窄、更确定的高斯分布：</b></span>
 
 $$
 \mathcal{N}(\mu_1, \sigma_1^2) \times \mathcal{N}(\mu_2, \sigma_2^2) \propto \mathcal{N}\!\left(\frac{\sigma_2^2\mu_1 + \sigma_1^2\mu_2}{\sigma_1^2 + \sigma_2^2},\; \frac{\sigma_1^2\sigma_2^2}{\sigma_1^2 + \sigma_2^2}\right)
 $$
 
-- 新均值 = 加权平均，谁更准（方差更小）就偏向谁
+- <span style="color:rgb(255, 77, 77)"><b>新均值 = 加权平均，谁更准（方差更小）就偏向谁</b></span>
 - 新方差 < 两个原始方差中的任何一个——融合后更确定
 
 推广到矩阵形式就是卡尔曼更新：

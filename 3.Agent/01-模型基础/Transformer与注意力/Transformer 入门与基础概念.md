@@ -44,6 +44,10 @@ Transformer 不仅用于文本生成，还广泛应用于：
 
 ### 如何生成长文本
 
+1. **预测下一个 token 的分布**
+2. 从分布中采样
+3. 追加到文本
+
 ```python
 # 自回归生成循环
 text = "Once upon a time"
@@ -60,7 +64,7 @@ for _ in range(100):
 - **GPT-2**（小模型）：生成故事不连贯
 - **GPT-3**（大模型，相同架构）：生成合理、连贯的故事
 
-**关键洞察**：规模（参数数量）带来质的提升。
+**关键洞察**：<span style="color:rgb(255, 77, 77)">规模（参数数量）</span>带来质的提升。
 
 ---
 
@@ -97,7 +101,7 @@ for _ in range(100):
 **特点**：
 - 通常是单词或单词片段
 - 也可能包含标点、子词等
-- 对于图像/音频：小块图像/声音片段
+- 对于图像/音频：<span style="color:rgb(255, 77, 77)"><b>小块图像/声音片段</b></span>
 
 **词表大小**：GPT-3 约 50,257 个 tokens
 
@@ -105,7 +109,7 @@ for _ in range(100):
 
 ### 2. Embedding（嵌入）
 
-**概念**：将每个 token 映射到高维向量
+**概念**：<span style="color:rgb(255, 77, 77)"><b>将每个 token 映射到高维向量</b></span>
 
 ```python
 # 嵌入矩阵 W_E: (vocab_size, embedding_dim)
@@ -115,8 +119,8 @@ E_hello = W_E[:, token_id("Hello")]  # 12288 维向量
 ```
 
 **关键特性**：
-- 语义相似的词，向量距离近
-- 高维空间（GPT-3: 12,288 维）
+- <span style="color:rgb(255, 77, 77)">语义相似的词，向量距离近</span>
+- 高维空间（GPT-3: <span style="color:rgb(255, 77, 77)"><b>12,288 维</b></span>）
 - 方向编码语义
 
 **经典例子**：
@@ -133,9 +137,9 @@ cats - cat ≈ 复数方向
 ```
 
 **点积的意义**：
-- 正数：方向相似
-- 零：垂直（无关）
-- 负数：方向相反
+- 正数：<span style="color:rgb(255, 77, 77)">方向相似</span>
+- 零：<span style="color:rgb(255, 77, 77)">垂直（无关）</span>
+- 负数：<span style="color:rgb(255, 77, 77)">方向相反</span>
 
 **参数统计**：
 - W_E: 50,257 × 12,288 ≈ **6.17亿参数**
@@ -162,7 +166,7 @@ cats - cat ≈ 复数方向
 
 ### 4. 注意力块（Attention Block）
 
-**作用**：让向量间传递信息，更新含义
+**作用**：<span style="color:rgb(255, 77, 77)">让向量间传递信息，更新含义</span>
 
 **例子**：
 ```
@@ -190,7 +194,7 @@ cats - cat ≈ 复数方向
 
 ### 6. Unembedding（反嵌入）
 
-**作用**：将最后一个向量映射到词表大小的 logits
+**作用**：<span style="color:rgb(255, 77, 77)">将最后一个向量映射到词表大小的 logits</span>
 
 ```python
 # W_U: (embedding_dim, vocab_size)
@@ -212,9 +216,9 @@ logits = E_last @ W_U  # (vocab_size,) = (50257,)
 
 ### 作用
 
-将任意实数列表转换为概率分布：
-- 每个值在 (0, 1) 之间
-- 所有值之和为 1
+将任意实数列表<span style="color:rgb(255, 77, 77)">转换为概率分布：</span>
+- <span style="color:rgb(255, 77, 77)">每个值在 (0, 1) 之间</span>
+- <span style="color:rgb(255, 77, 77)">所有值之和为 1</span>
 
 ### 公式
 
@@ -222,8 +226,8 @@ $$\text{softmax}(x_i) = \frac{e^{x_i}}{\sum_{j} e^{x_j}}$$
 
 ### 特性
 
-- 最大值的输出接近 1
-- 较小值的输出接近 0
+- <span style="color:rgb(255, 77, 77)">最大值的输出接近 1</span>
+- <span style="color:rgb(255, 77, 77)">较小值的输出接近 0</span>
 - 但比直接取 max "更软"（保留一些概率给次优选项）
 - 连续可导
 
@@ -231,16 +235,16 @@ $$\text{softmax}(x_i) = \frac{e^{x_i}}{\sum_{j} e^{x_j}}$$
 
 $$\text{softmax}(x_i / T) = \frac{e^{x_i / T}}{\sum_{j} e^{x_j / T}}$$
 
-| Temperature | 效果 |
-|-------------|------|
-| T → 0 | 最确定，总是选最大值 |
-| T = 1 | 标准 softmax |
-| T > 1 | 更均匀，更多随机性 |
-| T → ∞ | 均匀分布 |
+| Temperature | 效果                                                     |
+| ----------- | ------------------------------------------------------ |
+| T → 0       | <span style="color:rgb(255, 77, 77)">最确定，总是选最大值</span> |
+| T = 1       | 标准 softmax                                             |
+| T > 1       | 更均匀，更多随机性                                              |
+| T → ∞       | 均匀分布                                                   |
 
 **实际应用**：
-- **T=0**：生成可预测、但可能平庸的文本
-- **T=2**：更有创意，但可能混乱
+- **T=0**：<span style="color:rgb(255, 77, 77)">生成可预测、但可能平庸的文本</span>
+- **T=2**：<span style="color:rgb(255, 77, 77)">更有创意，但可能混乱</span>
 - API 通常限制 T ≤ 2
 
 ---
@@ -276,13 +280,13 @@ for image, label in training_data:
 
 ### GPT-3 参数统计
 
-| 组件 | 参数量 |
-|------|--------|
-| Embedding (W_E) | ~6.17亿 |
-| Unembedding (W_U) | ~6.17亿 |
-| Attention (96层 × 96 heads) | ~580亿 |
-| MLP (96层) | ~1160亿 |
-| **总计** | **~1750亿** |
+| 组件                         | 参数量        |
+| -------------------------- | ---------- |
+| Embedding (W_E)            | ~6.17亿     |
+| Unembedding (W_U)          | ~6.17亿     |
+| Attention (96层 × 96 heads) | ~580亿      |
+| MLP (96层)                  | ~1160亿     |
+| **总计**                     | **~1750亿** |
 
 **权重 vs 数据**：
 - **权重（蓝色/红色）**：模型学到的参数，决定行为
@@ -305,16 +309,16 @@ for image, label in training_data:
 
 ## 关键概念总结
 
-| 概念 | 说明 |
-|------|------|
-| Token | 文本的最小单位（词或子词） |
-| Embedding | 将 token 映射到高维向量 |
-| Context Size | 模型能处理的 token 数量 |
-| Attention | 向量间传递上下文信息 |
-| MLP | 独立处理向量，存储知识 |
-| Softmax | 转换为概率分布 |
-| Logits | Softmax 前的原始输出 |
-| Temperature | 控制生成的随机性 |
+| 概念           | 说明                                                          |
+| ------------ | ----------------------------------------------------------- |
+| Token        | <span style="color:rgb(255, 77, 77)">文本的最小单位</span>（词或子词）   |
+| Embedding    | <span style="color:rgb(255, 77, 77)">将 token 映射到高维向量</span> |
+| Context Size | 模型能处理的 token 数量                                             |
+| Attention    | 向量间传递上下文信息                                                  |
+| MLP          | 独立处理向量，存储知识                                                 |
+| Softmax      | 转换为概率分布                                                     |
+| Logits       | Softmax 前的原始输出                                              |
+| Temperature  | 控制生成的随机性                                                    |
 
 ---
 
