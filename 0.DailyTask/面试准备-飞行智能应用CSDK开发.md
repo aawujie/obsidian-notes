@@ -1316,7 +1316,7 @@ public:
 
 **"你简历里写了这些，学到什么程度？"**
 
-> 我系统学过 Transformer 架构——Self-Attention 的 QKV 计算、Multi-Head 并行、位置编码的作用。LoRA 是低秩适配，在原始权重旁加两个小矩阵 AB 做微调，只更新 AB 不动原始权重，参数量减少 90% 以上。DPO 是直接偏好优化，不需要训 reward model，直接用偏好数据对做对比学习。GRPO 是分组相对策略优化，DeepSeek-R1 用的方法，用组内相对排名替代 Critic 网络。
+> 我系统学过 Transformer 架构——Self-Attention 的 QKV 计算、Multi-Head 并行、位置编码的作用。LoRA 是低秩适配，在原始权重旁加两个小矩阵 AB 做微调，只更新 AB 不动原始权重，参数量减少 90% 以上。<span style="color:rgb(255, 77, 77)"><b>DPO 是直接偏好优化，不需要训 reward model，直接用偏好数据对做对比学习</b></span>。GRPO 是分组相对策略优化，DeepSeek-R1 用的方法，用组内相对排名替代 Critic 网络。
 >
 > 学这些主要是为了理解大模型怎么训练和微调——虽然 CSDK 不直接写模型，但 SDK 需要支撑模型部署，了解模型结构和推理优化有助于设计更好的 API 和部署方案。
 
