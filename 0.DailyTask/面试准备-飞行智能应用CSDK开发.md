@@ -1483,7 +1483,7 @@ $$
 
 **调参顺序：** <span style="color:rgb(255, 77, 77)">先 P 调到有轻微超调 → 加 D 抑制超调 → 最后加 I 消除静差</span>。<span style="color:rgb(195, 117, 255)">I 最危险，最容易导致不稳定</span>。
 
-**积分饱和（Integral Windup）：** <span style="color:rgb(255, 77, 77)">当执行器饱和（如电机到最大转速）时，误差持续存在</span>，<span style="color:rgb(255, 77, 77)">积分项不断累积到极大值，导致系统失控</span>。解法：<span style="color:rgb(255, 77, 77)">积分限幅、积分分离</span>（<span style="color:rgb(255, 77, 77)">误差大时不用 I</span>）、反计算抗饱和。
+**积分饱和（Integral Windup）：** <span style="color:rgb(255, 77, 77)">当执行器饱和（如电机到最大转速）时，误差持续存在</span>，<span style="color:rgb(255, 77, 77)">积分项不断累积到极大值，导致系统失控</span>。解法：<span style="color:rgb(255, 77, 77)"><b>积分限幅、积分分离</b></span>（<span style="color:rgb(255, 77, 77)">误差大时不用 I</span>）、反计算抗饱和。
 
 **在无人机里的应用：**
 - 串级 PID：外环（位置 → 期望姿态）→ 内环（姿态 → 电机转速），内环频率远高于外环
@@ -1508,7 +1508,7 @@ $$
 
 **PPO（Proximal Policy Optimization，近端策略优化）：**
 - on-policy：必须用当前策略采的样本训练，用完就扔
-- 核心创新：用 clip 函数限制策略更新幅度，防止一步更新太大导致训练崩溃
+- 核心创新：<span style="color:rgb(255, 77, 77)">用 clip 函数限制策略更新幅度</span>，防止一步更新太大导致训练崩溃
   $$
   L^{\text{clip}} = \min\!\Big(r_t(\theta) \cdot A_t,; \text{clip}(r_t(\theta),\,1-\varepsilon,\,1+\varepsilon) \cdot A_t\Big)
   $$
@@ -1519,9 +1519,9 @@ $$
 - 优点：稳定，调参友好；缺点：样本效率低
 
 **SAC（Soft Actor-Critic，柔性演员-评论家）：**
-- off-policy：数据存 replay buffer，历史数据复用
-- Actor-Critic 架构：Actor 输出动作，Critic 估计 Q 值
-- **Soft** 的核心：目标函数里加了熵项 H(π)，鼓励策略保持随机性，不贪婪收敛
+- <span style="color:rgb(255, 77, 77)">off-policy：数据存 replay buffer，历史数据复用</span>
+- Actor-Critic 架构：<span style="color:rgb(255, 77, 77)">Actor 输出动作，Critic 估计 Q 值</span>
+- **Soft** 的核心：<span style="color:rgb(255, 77, 77)">目标函数里加了熵项 </span>H(π)，<span style="color:rgb(255, 77, 77)"><b>鼓励策略保持随机性</b></span>，不贪婪收敛
   $$
   J(\pi) = \sum \mathbb{E}\!\Big[Q(s,a) + \alpha \cdot H(\pi(\cdot|s))\Big]
   $$
