@@ -662,7 +662,7 @@ C++17 重点：
 
 死锁四个条件：**互斥、持有等待、不可剥夺、循环等待**。打破任意一个就不会死锁：
 
-**1. 固定加锁顺序（打破循环等待）**
+<span style="color:rgb(255, 77, 77)"><b>1. 固定加锁顺序（打破循环等待）</b></span>
 
 ```cpp
 std::mutex a, b;
@@ -674,7 +674,7 @@ void thread2() { std::lock_guard lk1(b); std::lock_guard lk2(a); }
 // ✅ 所有线程都先锁 a 再锁 b，顺序一致，不会形成环
 ```
 
-**2. std::lock() 同时锁（打破持有等待）**
+<span style="color:rgb(255, 77, 77)"><b>2. std::lock() 同时锁（打破持有等待）</b></span>
 
 ```cpp
 // ✅ 一次拿所有锁，拿不到就全释放重试，不"持 A 等 B"
@@ -683,7 +683,7 @@ std::lock_guard lk1(a, std::adopt_lock);  // adopt_lock：接管，不重复加�
 std::lock_guard lk2(b, std::adopt_lock);
 ```
 
-**3. try_lock 超时放弃（打破不可剥夺）**
+<span style="color:rgb(255, 77, 77)"><b>3. try_lock 超时放弃（打破不可剥夺）</b></span>
 
 ```cpp
 std::timed_mutex a, b;
