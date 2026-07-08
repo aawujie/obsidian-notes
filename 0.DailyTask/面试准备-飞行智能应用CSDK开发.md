@@ -1384,8 +1384,8 @@ $$
 \mathcal{N}(\mu_1, \sigma_1^2) \times \mathcal{N}(\mu_2, \sigma_2^2) \propto \mathcal{N}\!\left(\frac{\sigma_2^2\mu_1 + \sigma_1^2\mu_2}{\sigma_1^2 + \sigma_2^2},\; \frac{\sigma_1^2\sigma_2^2}{\sigma_1^2 + \sigma_2^2}\right)
 $$
 
-- <span style="color:rgb(255, 77, 77)"><b>新均值 = 加权平均，谁更准（方差更小）就偏向谁</b></span>
-- 新方差 < 两个原始方差中的任何一个——融合后更确定
+- <span style="color:rgb(255, 77, 77)"><span style="color:rgb(255, 77, 77)"><b>新均值 = 加权平均，谁更准（方差更小）就偏向谁</b></span></span>
+- <span style="color:rgb(255, 77, 77)"><b>新方差 小于 两个原始方差中的任何一个——融合后更确定</b></span>
 
 推广到矩阵形式就是卡尔曼更新：
 
@@ -1401,7 +1401,7 @@ $$
 
 **在自动驾驶里怎么用：** GPS 10Hz 低频但绝对位置准，IMU 200Hz 高频但积分会漂移。卡尔曼滤波用 IMU 做预测（短时高频），用 GPS 做修正（长时消漂移），输出 200Hz 的准确位姿。
 
-**EKF 和 UKF：** 标准卡尔曼只能处理线性系统。EKF（扩展卡尔曼）对非线性函数做一阶泰勒展开，但雅可比矩阵难算且可能发散。UKF（无迹卡尔曼）不用线性化，而是用一组采样点（sigma points）直接传播非线性变换，精度更高，计算量更小。
+**EKF 和 UKF：** <span style="color:rgb(255, 77, 77)"><b>标准卡尔曼只能处理线性系统</b></span>。<span style="color:rgb(255, 77, 77)"><b>EKF（扩展卡尔曼）对非线性函数做一阶泰勒展开</b></span>，但雅可比矩阵难算且可能发散。<span style="color:rgb(255, 77, 77)"><b>UKF（无迹卡尔曼）不用线性化，而是用一组采样点（sigma points）直接传播非线性变换</b></span>，精度更高，计算量更小。
 
 **SDK 视角：** CSDK 需要给融合算法提供**时间戳对齐**的多传感器数据，这是融合的前提。
 
