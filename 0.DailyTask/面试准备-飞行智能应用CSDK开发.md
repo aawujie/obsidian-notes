@@ -1544,17 +1544,17 @@ $$
 V(s_t) \approx r_t + r_{t+1} + r_{t+2} + \dots + r_T
 $$
 
-- <span style="color:rgb(255, 77, 77)"><b>优点：无偏 缺点：方差大，必须等到 episode 结束，不能在线更新</b></span>
+- <span style="color:rgb(255, 77, 77)">优点：无偏 缺点：方差大，必须等到 episode 结束，不能在线更新</span>
 
-**TD（时序差分）：** <span style="color:rgb(255, 77, 77)"><b>走一步就能更新</b></span>
+**TD（时序差分）：** <span style="color:rgb(255, 77, 77)"><span style="color:rgb(255, 77, 77)"><b>走一步就能更新</b></span></span>
 
 $$
 V(s_t) \approx r_t + \gamma \cdot V(s_{t+1})
 $$
 
-- 优点：方差小，在线更新 缺点：有偏（$V(s_{t+1})$ 本身也是估计值，不准确）
+- <span style="color:rgb(255, 77, 77)">优点：方差小，在线更新</span> 缺点：<span style="color:rgb(255, 77, 77)">有偏</span>（$V(s_{t+1})$ 本身也是估计值，不准确）
 
-**GAE（PPO 实际用）：** MC 和 TD 的折中，指数加权平均不同步数的估计：
+**GAE（PPO 实际用）：** MC 和 TD 的折中，<span style="color:rgb(255, 77, 77)"><b>指数加权平均不同步数的估计</b></span>：
 
 | λ 值 | 退化为 | 特点 |
 |---|---|---|
