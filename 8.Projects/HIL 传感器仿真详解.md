@@ -221,11 +221,11 @@ Prophet → ROS → sim-relayer (--enable-lidar)
 
 ROS Topics：
 
-| Topic | 类型 | 频率 |
-|-------|------|------|
+| Topic                                  | 类型             | 频率    |
+| -------------------------------------- | -------------- | ----- |
 | `/sensors/gnss/original_gnss_position` | `GnssPosition` | ~1 Hz |
-| `/sensors/gnss/wgs84_gnss_position` | `GnssPosition` | ~1 Hz |
-| `/sensors/gnss/raw_gnss_velocity` | `GnssVelocity` | ~1 Hz |
+| `/sensors/gnss/wgs84_gnss_position`    | `GnssPosition` | ~1 Hz |
+| `/sensors/gnss/raw_gnss_velocity`      | `GnssVelocity` | ~1 Hz |
 
 ### 4.2 传输路径
 
