@@ -1,3 +1,7 @@
+---
+share_link: https://share.note.sx/i01bai5t#3eTayk6UXxR6iM2lic8pvCuFnIpmbdg2r1eu4lkIsUM
+share_updated: 2026-07-09T16:51:26+08:00
+---
 # HIL 传感器仿真详细文档
 
 > 本文档描述 `software_in_loop` 项目中所有传感器的仿真方式、数据来源、传输路径及关键代码位置。
