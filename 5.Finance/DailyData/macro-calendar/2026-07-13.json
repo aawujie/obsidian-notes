@@ -1,0 +1,85 @@
+{
+  "date": "2026-07-13",
+  "generated_at": "2026-07-13T06:06:41.967912",
+  "upcoming_events": [
+    {
+      "date": "2026-07-15",
+      "event": "美国 CPI (6月)",
+      "importance": "high",
+      "category": "通胀",
+      "days_until": 2
+    }
+  ],
+  "recent_events": [],
+  "web_events": [
+    {
+      "source": "tavily_answer",
+      "query": "US economic data release this week CPI GDP jobs",
+      "answer": "This week, the U.S. economic data release will feature the June Consumer Price Index (CPI) on Tuesday, which is expected to provide insights into inflation trends. The Federal Reserve's report highlighted that inflation has risen this year due to factors like tariffs, energy costs from the Iran war, and the AI buildout. Additionally, major banks, including Bank of America, are set to report their second-quarter earnings, which will shed light on the financial health of the banking sector and its"
+    },
+    {
+      "source": "tavily_result",
+      "title": "What to Expect in Markets this Week: Inflation Data, Warsh Testimony in Congress, Bank Earnings - Investopedia",
+      "url": "https://www.investopedia.com/what-to-expect-in-markets-this-week-june-inflation-data-warsh-testimony-in-congress-bank-earnings-reports-12015328",
+      "content": "* What Fed Chair Warsh Will Tell Congress. # What to Expect in Markets this Week: Inflation Data, Warsh Testimony in Congress, Bank Earnings. Inflation will loom large this week, with the government releasing new Consumer Price Index data and big bank earnings shedding light on how Americans are kee"
+    },
+    {
+      "source": "tavily_result",
+      "title": "America In Focus: Fed officials divided on US inflation views; US home prices hit all-time high - Greenwich Time",
+      "url": "https://www.greenwichtime.com/business/article/america-in-focus-fed-officials-divided-on-us-22341480.php",
+      "content": "# America In Focus: Fed officials divided on US inflation views; US home prices hit all-time high. Trips to the grocery store or gas station are more painful than they were last year, and rising costs are impacting the decisions of both households and businesses. Here’s a snapshot of prominent econo"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Wall St Week Ahead Investors to grapple with packed week of earnings, CPI, Iran headlines - KITCO",
+      "url": "https://www.kitco.com/news/off-the-wire/2026-07-10/wall-st-week-ahead-investors-grapple-packed-week-earnings-cpi-iran",
+      "content": "NEW YORK, July 10 (Reuters) - An eventful coming week of economic data, corporate earnings reports and Middle East developments will test a resilient U.S. stock market that has indexes around record highs despite turbulence beneath ​the surface. The S&P 500 (.SPX), was on course for a second straigh"
+    },
+    {
+      "source": "tavily_answer",
+      "query": "Federal Reserve speech this week monetary policy",
+      "answer": "The Federal Reserve reported that U.S. inflation \"stepped up further this spring\" due to the evolving impact of tariffs, a war-related rise in energy costs, and the booming artificial intelligence buildout. The most recent data showed the U.S. central bank's preferred Personal Consumption Expenditures Price Index running about double the Federal Open Market Committee's longer-run objective of 2% as of May. Despite elevated inflation, the labor market has stabilized with demand and supply roughly"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Fed report cites 'stepped-up' inflation due to tariffs, Iran war, AI buildout - KITCO",
+      "url": "https://www.kitco.com/news/off-the-wire/2026-07-10/fed-report-cites-stepped-inflation-due-tariffs-iran-war-ai-buildout",
+      "content": "WASHINGTON, July 10 (Reuters) - U.S. inflation \"stepped up further this spring\" as the ​evolving impact of tariffs, a war-related rise in energy costs, and the booming artificial intelligence buildout boosted price pressures that took root last year, the Federal Reserve said on Friday ‌in a monetary"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Fed report cites 'stepped-up' inflation due to tariffs, Iran war, AI buildout - Reuters",
+      "url": "https://www.reuters.com/business/fed-report-cites-stepped-up-inflation-2026-07-10/",
+      "content": "## Browse World. ## Browse Business. WASHINGTON, July 10 (Reuters) - U.S. inflation \"stepped up further this spring\" as the ​evolving impact of tariffs, a war-related rise in energy costs, and the booming artificial intelligence buildout boosted price pressures that took root last year, the Federal "
+    },
+    {
+      "source": "tavily_result",
+      "title": "Fed officials fret over inflation risk, weigh rate hikes - KITCO",
+      "url": "https://www.kitco.com/news/off-the-wire/2026-07-10/fed-officials-fret-over-inflation-risk-weigh-rate-hikes",
+      "content": "SAN FRANCISCO/WASHINGTON, July 10 (Reuters) - The leanest readout of a Federal Reserve policy meeting in years still made clear how concerned U.S. central bank officials remain about inflation and how they will likely react with interest rate hikes if it remains too high much longer, putting emphasi"
+    },
+    {
+      "source": "tavily_answer",
+      "query": "China PMI economic data this week",
+      "answer": "China's Purchasing Managers' Index (PMI) for the latest week indicates a continued slowdown in manufacturing activity. The data from the most recent reports show a significant decline in both the manufacturing and services sectors, with the overall PMI falling below the critical 50-mark, signaling contraction. This downturn is attributed to weakened domestic demand and heightened competition, particularly affecting major German carmakers whose sales in China plummeted by 30% to 41% in the April-"
+    },
+    {
+      "source": "tavily_result",
+      "title": "The Weekly Look at the Global Economy and Markets - t.co",
+      "url": "https://t.co/Lo0VWiOXbs",
+      "content": "By subscribing, you agree Substack's Terms of Use, and acknowledge its Information Collection Notice and Privacy Policy. We are coming off a week of fluctuating economic and market news, especially on the geopolitical and tech fronts, interspersed with FIFA-related controversies. The result was rene"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Major German carmakers hit by steep China sales plunge as competition heats up - Greenwich Time",
+      "url": "https://www.greenwichtime.com/news/world/article/major-german-carmakers-hit-by-steep-china-sales-22341493.php",
+      "content": "HONG KONG (AP) — Major German carmakers saw sharp quarterly sales declines in China as domestic demand weakened and competition heated up in the world’s biggest auto market. At Volkswagen, Mercedes-Benz, BMW and Porsche, China sales for the April-June quarter plummeted between 30% and 41% compared w"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Cubans endure second nationwide blackout in a week - Reuters",
+      "url": "https://www.reuters.com/video/watch/idRW712111072026RP1/",
+      "content": "Exclusive news, data and analytics for financial market professionals Learn more about Refinitiv. ## Browse World. *   Israel and Hamas at War. *   Ukraine and Russia at War. ## Browse Business. ## Browse Markets. ## Browse Legal. *   ### Image 3: Cubans endure second nationwide blackout in a week N"
+    }
+  ]
+}

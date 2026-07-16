@@ -13,13 +13,12 @@ share_updated: 2026-07-09T16:51:26+08:00
 1. [系统架构概览](#1-系统架构概览)
 2. [相机 (Camera)](#2-相机-camera)
 3. [LiDAR（激光雷达）](#3-lidar激光雷达)
-4. [GNSS（全球导航卫星系统）](#4-gnss全球导航卫星系统)
-5. [IMU（惯性测量单元）](#5-imu惯性测量单元)
-6. [毫米波雷达 (Radar)](#6-毫米波雷达-radar)
-7. [超声波传感器 (USS)](#7-超声波传感器-uss)
-8. [传感器开关与故障注入](#8-传感器开关与故障注入)
-9. [车型与模式对照表](#9-车型与模式对照表)
-10. [关键文件索引](#10-关键文件索引)
+4. [PBox / GNSS / IMU 全程详解](#4-pbox--gnss--imu-全程详解)
+5. [毫米波雷达 (Radar)](#5-毫米波雷达-radar)
+6. [超声波传感器 (USS)](#6-超声波传感器-uss)
+7. [传感器开关与故障注入](#7-传感器开关与故障注入)
+8. [车型与模式对照表](#8-车型与模式对照表)
+9. [关键文件索引](#9-关键文件索引)
 
 ---
 
@@ -215,158 +214,214 @@ Prophet → ROS → sim-relayer (--enable-lidar)
 
 ---
 
-## 4. GNSS（全球导航卫星系统）
+## 4. PBox / GNSS / IMU 全程详解
 
-### 4.1 数据来源
+### 4.0 术语说明
+
+**PBox** = **Positioning Box**（定位盒子），车载独立硬件设备，集成：
+- GNSS 接收机（GPS/GLONASS/BeiDou/Galileo）
+- IMU（加速度计 + 陀螺仪）
+- 组合导航算法（GNSS+IMU 融合）
+
+常见品牌：NovAtel、华测、导远。`sim-pbox` 模拟的就是这个硬件的**输出接口**。
+
+### 4.1 仿真原理
+
+```mermaid
+flowchart LR
+  A["高精地图轨迹\n(场景文件)"] --> B["vehicle-model\n车辆动力学引擎"]
+  B --> C["当前位置(WGS84)\n速度/加速度/角速度"]
+  C --> D["ROS Topic\n(protobuf)"]
+  D --> E["sim-pbox\n协议转换"]
+  E --> F["串口/SOMEIP/ZMQ\n→ 域控"]
+```
+
+**核心原理**：
+1. 场景文件定义基于**高精地图**的车辆轨迹（来自 `minio:prophet-world-sim`）
+2. `vehicle-model` 按动力学方程每帧推算：`位置(t+dt) = f(位置(t), 速度, 控制输入)`
+3. **经纬度直接就是仿真世界坐标**——不模拟卫星信号接收/解算过程
+4. sim-pbox 只做协议包装，不修改数据
+
+**不模拟的部分**：多路径效应、RTK 基站通信、卫星几何构型(GDOP)、电离层/对流层误差、冷启动延迟。需测试 GNSS 退化场景时通过**故障注入**改变 position_type。
+
+### 4.2 数据来源
 
 `vehicle-model`（`--enable-loc-sensors`）根据车辆动力学实时计算：
 - **完全本地仿真**，不依赖外部网络服务
-- 场景文件驱动，支持 RTK_FIXED / RTK_FLOAT / PSRDIFF / SINGLE 等状态模拟
+- 场景文件驱动，默认模拟"理想 RTK"状态
 
 ROS Topics：
 
 | Topic                                  | 类型             | 频率    |
 | -------------------------------------- | -------------- | ----- |
 | `/sensors/gnss/original_gnss_position` | `GnssPosition` | ~1 Hz |
-| `/sensors/gnss/wgs84_gnss_position`    | `GnssPosition` | ~1 Hz |
-| `/sensors/gnss/raw_gnss_velocity`      | `GnssVelocity` | ~1 Hz |
+| `/sensors/gnss/wgs84_gnss_position` | `GnssPosition` | ~1 Hz |
+| `/sensors/gnss/raw_gnss_velocity` | `GnssVelocity` | ~1 Hz |
+| `/sensors/gnss/raw_short_raw_imu` | `ShortRawImu` | ~100 Hz |
 
-### 4.2 传输路径
+### 4.3 GnssPosition 字段详解
 
-#### 路径 A：P03/DE09 系 — 串口 NovAtel
+| 字段 | 含义 | 数据来源 |
+|------|------|----------|
+| `latitude` / `longitude` | 经纬度 (WGS84) | **动力学计算**（高精地图坐标推算） |
+| `height` | 海拔高度 (m) | **动力学计算** |
+| `position_type` | 定位类型 | 场景配置（通常 50=RTK_FIXED） |
+| `solution_status` | 解算状态 | 场景配置 |
+| `std_latitude/longitude/height` | 位置标准差 (m) | 场景配置（通常很小） |
+| `undulation` | 高程异常（大地水准面差） | 场景配置 |
+| `number_satellites` | 可见卫星数 | 场景配置（通常 20+） |
+| `number_solution_used_satellites` | 参与解算的卫星数 | 场景配置 |
+| `differential_age` | 差分龄期 (s) | 场景配置 |
+| `base_station_id` | 基站 ID | 场景配置 |
+| `signals_mask_*` | 信号掩码 | 场景配置 |
 
+### 4.4 GnssVelocity 字段详解
+
+| 字段 | 含义 | 数据来源 |
+|------|------|----------|
+| `horizontal_speed` | 水平速度 (m/s) | **动力学计算** |
+| `track_over_ground` | 航迹角（航向，度） | **动力学计算** |
+| `vertical_speed` | 垂直速度 (m/s) | **动力学计算** |
+| `solution_status` / `velocity_type` | 解算状态 | 场景配置 |
+| `differential_age` | 差分龄期 | 场景配置 |
+| `measure_latency` | 测量延迟 | 场景配置 |
+
+### 4.5 ShortRawImu 字段详解
+
+| 字段 | 单位 | 数据来源 |
+|------|------|----------|
+| `x/y/z_acce` | μg（微 g） | **动力学计算**（加减速/转弯/坡道） |
+| `x/y/z_gyro` | μdeg/s | **动力学计算**（转弯/姿态变化） |
+| `imu_status` | enum | 固定（正常） |
+| `temperature` | °C | 固定/配置 |
+| `gps_week` / `gps_seconds` | GPS 时间 | 仿真时钟 |
+
+### 4.6 PBox 全程时序图（P03/DE09 串口线）
+
+```mermaid
+sequenceDiagram
+  participant Scene as 场景文件(高精地图)
+  participant VM as vehicle-model
+  participant ROS as Church/ROS
+  participant SP as sim-pbox(P03)
+  participant Serial as 串口 /dev/gnss
+  participant Orin as 域控 sensor_ins_online
+
+  Scene->>VM: 轨迹 + 动力学参数
+  VM->>VM: 每帧推算位置/速度/加速度
+
+  VM->>ROS: ShortRawImu (~100Hz)
+  VM->>ROS: GnssPosition (~1Hz)
+  VM->>ROS: GnssVelocity (~1Hz)
+
+  ROS->>SP: 订阅 /sensors/gnss/*
+  SP->>SP: IMU方向矫正(OrientationAntiRotate)
+  SP->>SP: LSB换算 + NovAtel帧打包
+  SP->>SP: CRC32校验
+
+  SP->>Serial: gnss_imu_frame_t [100Hz, 40B]
+  SP->>Serial: gnss_pos_frame_t [~1Hz, 81B]
+  SP->>Serial: gnss_vel_frame_t [~1Hz, 44B]
+  SP->>Serial: diag_frame_t [5Hz, 15B]
+
+  Serial->>Orin: 460800 baud 8N1
+  Orin->>Orin: NovAtel协议解析 → 定位输出
 ```
-vehicle-model → ROS → sim-pbox (p03::SimPboxServer)
-→ NovAtel 二进制帧 → 串口 /dev/gnss (460800 8N1)
-→ 域控 sensor_ins_online 读取
+
+### 4.7 NovAtel 帧格式（P03 串口）
+
+所有帧以 `0xAA 0x44` 开头，末尾 CRC32：
+
+**IMU 帧** (msg_id=1462, 40B, ~100Hz)：
+```
+[AA 44] [proto] [len] [msg_id] [gps_week] [gps_ms]
+[imu_info] [imu_type] [gps_week2] [gps_seconds(8B)]
+[imu_status] [z_acce] [y_acce] [x_acce] [z_gyro] [y_gyro] [x_gyro]
+[CRC32]
+```
+- 加速度 LSB 换算：`μg / 0.7777160582`
+- 角速度 LSB 换算：`μdeg/s / 15.2587890625`
+
+**Position 帧** (msg_id=1429, 81B, ~1Hz)：
+```
+[AA 44] [proto] [hdr_len=0x1C] [msg_id] [type] [port=0x20]
+[msg_len=0x48] [seq] [idle=0xC8] [time_status=0x14]
+[gps_week] [gps_ms] [receiver_status=0] [sw_ver=0x0310]
+[solution_status] [position_type]
+[latitude(8B)] [longitude(8B)] [height(8B)]
+[undulation(4B)] [datum_id]
+[std_lat] [std_lon] [std_height]
+[base_station_id(4B)] [diff_age] [sol_age]
+[num_sats] [num_used] [num_L1] [num_multi]
+[reserved] [ext_sol] [galileo_beidou_mask] [gps_glonass_mask]
+[CRC32]
 ```
 
-关键字段：latitude, longitude, altitude, solution_status, position_type, differential_age, num_satellites
-
-#### 路径 B：C01/M81 — SOME/IP
-
+**Velocity 帧** (msg_id=1430, 44B, ~1Hz)：
 ```
-vehicle-model → ROS → sim-pbox (c01::SimPboxServer)
-→ NMEA (GPGGA/GPRMC/GPGST) → SOME/IP fireINMU_GPSDataEvent
-→ 域控 INS 模块
+[AA 44] [header...] [solution_status] [velocity_type]
+[latency(4B)] [diff_age(4B)]
+[hor_spd(8B)] [trk_gnd(8B)] [vert_spd(8B)]
+[reserved(4B)] [CRC32]
 ```
 
-#### 路径 C：Leap (LPA10) — ZMQ
-
+**Diag 帧** (msg_id=0x4E27, 15B, 5Hz)：
 ```
-vehicle-model → ROS → sim-pbox (SimPboxPub)
-→ leap::insdata::GnssData → ZMQ /leap/gnss/gnss_data (:7004)
-→ lpcom-forwarder → 域控
-```
-
-#### 路径 D：虚拟 GNSS（`--vir-gnss`）— ZMQ 直注
-
-```
-vehicle-model → ROS → sim-relayer (--enable-gnss)
-→ ZMQ :7009 → 域控 sim_img_decompress (--gnss)
+[AA 44] [proto] [hdr_len] [msg_id] [week] [ms]
+[ant_status] [temp_status] [gnss_status]
+[imu_status] [hw_status] [power_status] [reserved]
+[CRC32]
 ```
 
-禁用 `sim-pbox` 和 `sensor_ins_online` DEM。
+### 4.8 三平台对比
 
-### 4.3 关键文件
+| | P03/DE09 (串口) | C01/M81 (SOMEIP) | LPA10 (ZMQ) |
+|--|----------------|-------------------|-------------|
+| **物理接口** | 串口 460800 8N1 | SOME/IP 以太网 | ZMQ TCP :7004 |
+| **协议格式** | NovAtel 二进制 | NMEA (GPGGA/GPRMC/GPGST) | C 结构体 raw |
+| **IMU 频率** | ~100Hz | 100Hz (10ms 定时) | ~100Hz |
+| **GNSS 频率** | ~1Hz | 1Hz | ~10Hz |
+| **Diag** | 5Hz | 5Hz | 无独立帧 |
+| **域控驱动** | sensor_ins_online | sensor_ins_online | lpcom-forwarder |
+
+### 4.9 故障注入（P03）
+
+| 故障 | 触发 | 效果 |
+|------|------|------|
+| IMU 帧率异常 | `frequency=50` | 每2帧丢1帧 |
+| IMU 通讯丢失 | `imulost.frame_num=-1` | IMU 停发 |
+| GNSS 通讯丢失 | `gpslost.frame_num=-1` | GNSS 停发 |
+| IMU E2E 错误 | `config="imu_e2e"` | CRC 取反 |
+| GNSS E2E 错误 | `config="gnss_e2e"` | CRC 取反 |
+| 诊断信号(13种) | `signal.diaginfo_data=1~13` | 设置 diag 状态位 |
+
+诊断状态位：IMU丢失/超量程/解析错误、电压异常、射频失锁、观测量中断、Flash失败、供电过高/过低、天线异常、GNSS/IMU温度超限、GNSS定位异常。
+
+### 4.10 关键文件
 
 | 文件 | 作用 |
 |------|------|
-| `src/server/sim-pbox/sim_pbox_server_base.cc` | ROS 订阅入口 |
-| `src/server/sim-pbox/p03/sim_pbox_server.cc` | 串口 NovAtel |
-| `src/server/sim-pbox/c01/sim_pbox_server.cc` | SOME/IP NMEA |
-| `src/server/sim-pbox/lp/sim_pbox_pub.cc` | Leap ZMQ |
+| `src/server/sim-pbox/sim_pbox_server_base.{h,cc}` | ROS 订阅 + IMU 方向矫正 |
+| `src/server/sim-pbox/p03/sim_pbox_server.cc` | P03 串口 NovAtel 全实现 |
+| `src/server/sim-pbox/p03/base/base.h` | 帧结构体定义 |
+| `src/server/sim-pbox/c01/sim_pbox_server.cc` | C01 SOMEIP + NMEA |
+| `src/server/sim-pbox/c01/base/gpgga.h` | GPGGA 生成 |
+| `src/server/sim-pbox/lp/sim_pbox_pub.cc` | LP ZMQ 转发 |
+| `src/server/sim-pbox/lp/ins_utils.h` | 坐标系旋转矩阵 |
 | `config/vehicle_integration.jsonnet` | GNSS_SERIAL_PORT / GNSS_VLAN |
+| `proto/imu_fault.proto` | GWM 故障注入定义 |
+| `proto/leap_pbox_fault.proto` | LP 故障注入定义 |
 
-### 4.4 注意事项
+### 4.11 注意事项
 
 - **不涉及 NTRIP/CORS/千寻等 RTK 差分服务**
-- `position_type` 状态码由 vehicle-model 场景直接生成
-- 高德 API 仅用于 **NCA 导航路径规划**（见 `pybind_so/common/utils/http_points.h`），与 GNSS 定位无关
+- `position_type` 状态码由 vehicle-model 场景直接配置
+- 高德 API 仅用于 **NCA 导航路径规划**（`pybind_so/common/utils/http_points.h`），与 GNSS 定位无关
+- 虚拟模式（`--vir-gnss`）时 sim-pbox 被禁用，改走 sim-relayer → ZMQ → 域控 sim_img_decompress
 
 ---
 
-## 5. IMU（惯性测量单元）
-
-### 5.1 数据来源
-
-与 GNSS 同源，由 `vehicle-model` 生成：
-- ROS Topic：`/sensors/gnss/raw_short_raw_imu`
-- 数据类型：`ShortRawImu`（protobuf）
-- 频率：~**100 Hz**
-
-### 5.2 数据字段
-
-| 字段 | 单位 | 说明 |
-|------|------|------|
-| `x/y/z_acce` | μg（微 g） | 三轴加速度 |
-| `x/y/z_gyro` | μdeg/s | 三轴角速度 |
-| `temperature` | °C | IMU 温度 |
-| `imu_status` | enum | IMU 工作状态 |
-| `gps_week` / `gps_seconds` | - | GPS 时间 |
-
-### 5.3 传输路径
-
-#### P03/DE09 系 — 串口
-
-```
-ROS ShortRawImu → OrientationAntiRotate(imu_orientation)
-→ 打包 gnss_imu_frame_t (msg_id=1462, 0xAA44 头)
-→ LSB 换算 → CRC32 → 串口 /dev/gnss
-```
-
-- 频率：事件驱动，跟随 ROS 到达（~100Hz）
-- LSB 换算：`acce / 0.7777160582`，`gyro / 15.2587890625`
-
-#### C01/M81 — SOME/IP
-
-```
-ROS ShortRawImu → 除以 1e6 转 float
-→ INMU_IMURawDataStruct → SOME/IP 事件 (0x8004)
-```
-
-- 固定 **100 Hz**（`interval_ = 10ms`）
-
-#### Leap — ZMQ
-
-```
-ROS ShortRawImu → OrientationInverseRotate()
-→ 加速度 ×9.81e-6 → m/s²
-→ 角速度 ×1e-6 → deg/s
-→ leap::insdata::ImuData → ZMQ /leap/imu/imu_data_adas (:7004)
-```
-
-#### 虚拟 GNSS 模式
-
-IMU 作为 GNSS 组的一部分，通过 `sim-relayer --enable-gnss` 中继（SensorSwitch ID: `GNSS_IMU`）。
-
-### 5.4 坐标系矫正
-
-`OrientationAntiRotate()` 支持 orientation 1–17（GWM）/ 1–32（LP），由：
-- `--orient` CLI 参数
-- 域控 `gnss_adapter_node.cfg` 的 `imu_orientation` 字段
-
-### 5.5 关键文件
-
-| 文件 | 作用 |
-|------|------|
-| `src/server/sim-pbox/p03/sim_pbox_server.cc` | P03 串口 IMU |
-| `src/server/sim-pbox/c01/sim_pbox_server.cc` | C01 SOMEIP IMU |
-| `src/server/sim-pbox/lp/sim_pbox_pub.cc` | LP ZMQ IMU |
-| `src/server/sim-pbox/lp/ins_utils.h` | 坐标系旋转矩阵 |
-| `proto/imu_fault.proto` | GWM 故障注入 |
-| `proto/leap_pbox_fault.proto` | LP 故障注入 |
-
-### 5.6 故障注入
-
-| 平台 | Topic | 能力 |
-|------|-------|------|
-| GWM | `/simulation/falut/imu` | 帧率异常、诊断信号、E2E CRC、串口丢失、零帧、时间差 |
-| LP | `/sensors/leap/pbox_faults` | imu_status / alignment / time_sync / temperature 注入 |
-
----
-
-## 6. 毫米波雷达 (Radar)
+## 5. 毫米波雷达 (Radar)
 
 ### 6.1 数据来源
 
@@ -430,7 +485,7 @@ Prophet → sim-radar (SimRadarPub) → ZMQ :7002
 
 ---
 
-## 7. 超声波传感器 (USS)
+## 6. 超声波传感器 (USS)
 
 ### 7.1 数据来源
 
@@ -484,7 +539,7 @@ Prophet → sim-uss (SimUssPub) → ZMQ :7003
 
 ---
 
-## 8. 传感器开关与故障注入
+## 7. 传感器开关与故障注入
 
 ### 8.1 传感器开关（数据链路切断）
 
@@ -506,7 +561,7 @@ Prophet → sim-uss (SimUssPub) → ZMQ :7003
 
 ---
 
-## 9. 车型与模式对照表
+## 8. 车型与模式对照表
 
 ### 9.1 车型平台分类
 
@@ -539,7 +594,7 @@ Prophet → sim-uss (SimUssPub) → ZMQ :7003
 
 ---
 
-## 10. 关键文件索引
+## 9. 关键文件索引
 
 ### 配置
 

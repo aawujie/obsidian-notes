@@ -1,0 +1,94 @@
+{
+  "date": "2026-07-16",
+  "generated_at": "2026-07-16T06:07:12.614533",
+  "upcoming_events": [
+    {
+      "date": "2026-07-29",
+      "event": "FOMC 利率决议",
+      "importance": "critical",
+      "category": "央行",
+      "note": "附新闻发布会",
+      "days_until": 13
+    }
+  ],
+  "recent_events": [
+    {
+      "date": "2026-07-15",
+      "event": "美国 CPI (6月)",
+      "importance": "high",
+      "category": "通胀",
+      "days_ago": 1
+    }
+  ],
+  "web_events": [
+    {
+      "source": "tavily_answer",
+      "query": "US economic data release this week CPI GDP jobs",
+      "answer": "The US consumer inflation moderated in June as energy prices retreated, with the Consumer Price Index (CPI) increasing by 3.5% year-on-year after a 4.2% surge in May. The CPI fell 0.4% over the month, the first decline since April 2020. Excluding food and energy, core CPI inflation was unchanged over the month. The Federal Open Market Committee can use this report to determine its interest rate decision at the end of July. US futures rose on cooling inflation data and strong earnings, underpinni"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Market expert says CPI, jobs data reflect 'strong economic picture' - Reuters",
+      "url": "https://www.reuters.com/video/watch/idRW796614072026RP1/",
+      "content": "Exclusive news, data and analytics for financial market professionals Learn more about Refinitiv. ## Browse World. *   Israel and Hamas at War. *   Ukraine and Russia at War. ## Browse Business. ## Browse Markets. *   ### Image 2: Market expert says CPI, jobs data reflect 'strong economic picture' N"
+    },
+    {
+      "source": "tavily_result",
+      "title": "June's inflation report comes out today. Here's what to expect. - Business Insider",
+      "url": "https://www.businessinsider.com/cpi-inflation-june-consumer-price-index-2026-7",
+      "content": "The Bureau of Labor Statistics will publish new consumer price index data for June at 8:30 am ET, and forecasters expect headline inflation to have slowed. After the past few months of acceleration, as of Monday, economists expected the inflation rate to cool to 3.8% in June.Anything above the 3.5% "
+    },
+    {
+      "source": "tavily_result",
+      "title": "Dollar jumps on renewed Middle East attacks, Hormuz closure - Reuters",
+      "url": "https://www.reuters.com/world/asia-pacific/dollar-jumps-renewed-middle-east-attacks-hormuz-closure-2026-07-13/",
+      "content": "Exclusive news, data and analytics for financial market professionals Learn more about Refinitiv. ## Browse World. SINGAPORE, July 13 (Reuters) - The dollar jumped against most of its peers as a renewal of conflict in the Middle East fanned inflation fears and the prospect of rate ​hikes from centra"
+    },
+    {
+      "source": "tavily_answer",
+      "query": "Federal Reserve speech this week monetary policy",
+      "answer": "Federal Reserve Chairman Kevin Warsh pledged to defeat inflation and \"get monetary policy right,\" emphasizing the economy's solid shape and benefits from AI investment. Meanwhile, Federal Reserve Governor Christopher Waller suggested that higher interest rates might be needed in the near term if inflation remains above the 2% target. New York Federal Reserve President John Williams stated that while inflation is \"unquestionably too high,\" it may soon subside, and U.S. monetary policy is well pos"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Warsh promises inflation will be a 'thing of the past,' cites benefits of AI investment boom - CNBC",
+      "url": "https://www.cnbc.com/2026/07/14/warsh-promises-inflation-will-be-a-thing-of-the-past-cites-benefits-of-ai-investment-boom.html",
+      "content": "# Warsh promises inflation will be a 'thing of the past,' cites benefits of AI investment boom. * Fed Chairman Kevin Warsh on Tuesday, in remarks he delivers to Congress this week, vowed to defeat inflation and \"get monetary policy right.\". * While he promised to tackle inflation, the central bank l"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Fed's Waller says higher rates possibly needed in 'near term' - KITCO",
+      "url": "https://www.kitco.com/news/off-the-wire/2026-07-13/feds-waller-says-higher-rates-possibly-needed-near-term",
+      "content": "NEW YORK, July 13 (Reuters) - The U.S. central bank may need to raise interest rates \"in the ‌near term\" if coming data show inflation continuing well above the 2% target, Federal Reserve Governor Christopher Waller said on Monday, in remarks that characterized monetary policy as being at a \"crossro"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Fed's Williams: \"Unquestionably too-high\" inflation may soon subside - Reuters",
+      "url": "https://www.reuters.com/business/feds-williams-unquestionably-too-high-inflation-may-soon-subside-2026-07-15/",
+      "content": "Exclusive news, data and analytics for financial market professionals Learn more about Refinitiv. ## Browse World. ## Browse Business. Image 3: New York Federal Reserve President John William speaks in New York. New York Federal Reserve President John Williams speaks to the Economic Club of New York"
+    },
+    {
+      "source": "tavily_answer",
+      "query": "China PMI economic data this week",
+      "answer": "China's economic growth in the second quarter of 2026 slowed to 4.3%, marking the slowest pace in over three years and falling short of the 4.5% target. This deceleration was driven by weak domestic consumption, which overshadowed robust manufacturing and export sectors. Retail sales rose by 1% in June, while industrial output expanded by 5.3%. Despite these figures, concerns persist about the sustainability of China's growth model, especially amid global economic tensions and imbalances."
+    },
+    {
+      "source": "tavily_result",
+      "title": "China's Q2 economic growth cools to 3-1/2-year low as imbalances worsen - Yahoo Finance",
+      "url": "https://finance.yahoo.com/news/chinas-q2-gdp-growth-slows-020844123.html",
+      "content": "2. Best 0% APR cards. # China's Q2 economic growth cools to 3-1/2-year low as imbalances worsen. By Liangping Gao, Kevin Yao and Claire Fu. By Liangping Gao, Kevin Yao and Claire Fu. BEIJING/SINGAPORE, July 15 (Reuters) - China's economy expanded at its slowest pace in over three years in the second"
+    },
+    {
+      "source": "tavily_result",
+      "title": "China reports slower-than-expected growth as Iran turmoil roils global trade - CNN",
+      "url": "https://www.cnn.com/2026/07/14/business/china-q2-gdp-export-economy-intl-hnk",
+      "content": "* China misses growth target for first time since Covid as Iran turmoil roils global trade. China is struggling to offset economic challenges both at home and abroad, as its economy grew at a slower-than-expected pace in the second quarter of the year. On Wednesday, China’s National Bureau of Statis"
+    },
+    {
+      "source": "tavily_result",
+      "title": "China's Q2 economic growth cools to 3-1/2-year low as imbalances worsen - Reuters",
+      "url": "https://www.reuters.com/world/china/chinas-q2-gdp-growth-slows-43-yy-misses-market-forecast-2026-07-15/",
+      "content": "Exclusive news, data and analytics for financial market professionals Learn more about Refinitiv. ## Browse World. *   Ukraine and Russia at War. ## Browse Business. ## Browse Markets. # China's Q2 economic growth cools to 3-1/2-year low as imbalances worsen. BEIJING/SINGAPORE, July 15 (Reuters) - C"
+    }
+  ]
+}

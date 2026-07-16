@@ -1,0 +1,85 @@
+{
+  "date": "2026-07-10",
+  "generated_at": "2026-07-10T06:06:45.622411",
+  "upcoming_events": [
+    {
+      "date": "2026-07-15",
+      "event": "美国 CPI (6月)",
+      "importance": "high",
+      "category": "通胀",
+      "days_until": 5
+    }
+  ],
+  "recent_events": [],
+  "web_events": [
+    {
+      "source": "tavily_answer",
+      "query": "US economic data release this week CPI GDP jobs",
+      "answer": "Based on the latest data, the US economic data release this week indicates a stable labor market. The number of Americans filing claims for unemployment benefits fell last week, dropping by 2,000 to a seasonally adjusted 215,000 for the week ending July 4, according to the Labor Department. This suggests that despite a slowdown in job growth in June, the labor market remains stable. The four-week moving average for new claims also came in at 218,750, slightly below expectations for 220,000."
+    },
+    {
+      "source": "tavily_result",
+      "title": "Treasury yields steady as traders await U.S. domestic economic data amid Iran flare-up - CNBC",
+      "url": "https://www.cnbc.com/2026/07/09/treasury-yields-jobs-home-sales-data.html",
+      "content": "# Treasury yields steady as traders await U.S. domestic economic data amid Iran flare-up. Treasurys were steady on Thursday morning after the previous session's yield spike, as traders awaited domestic economic data and sought to look beyond the renewed hostilities in the Middle East. The 2-year Tre"
+    },
+    {
+      "source": "tavily_result",
+      "title": "US weekly jobless claims fall amid stable labor market conditions - Yahoo Finance",
+      "url": "https://finance.yahoo.com/economy/articles/us-weekly-jobless-claims-fall-124028738.html",
+      "content": "2. Best 0% APR cards. 3. Best balance transfer cards. 3. Best money market accounts. WASHINGTON, July 9 (Reuters) - The number of Americans filing claims for unemployment benefits fell last week, suggesting the labor market remained stable despite a ‌slowdown in job growth in June. Initial claims fo"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Spot gold trades above $4,100/oz as U.S. weekly jobless claims hold at 215k - KITCO",
+      "url": "https://www.kitco.com/news/article/2026-07-09/spot-gold-trades-above-4100oz-us-weekly-jobless-claims-hold-215k",
+      "content": "Kitco NEWS has a diverse team of journalists reporting on the economy, stock markets, commodities, cryptocurrencies, mining and metals with accuracy and objectivity. (Kitco News) - Gold prices are trading higher after reclaiming $4,100 on Thursday morning following the release of better than expecte"
+    },
+    {
+      "source": "tavily_answer",
+      "query": "Federal Reserve speech this week monetary policy",
+      "answer": "Based on the most recent data, the Federal Reserve officials have indicated a flexible approach to monetary policy. Roberto Perli from the New York Fed emphasized that reserve management purchases can be adjusted based on money market conditions. John Williams, President of the Federal Reserve Bank of New York, expressed a more positive outlook on inflation due to declining energy prices but did not provide specific guidance on future rate moves. Additionally, Fed Chairman Kevin Warsh announced "
+    },
+    {
+      "source": "tavily_result",
+      "title": "Fed's Perli reiterates flexible path of reserve management buying - KITCO",
+      "url": "https://www.kitco.com/news/off-the-wire/2026-07-09/feds-perli-reiterates-flexible-path-reserve-management-buying",
+      "content": "NEW YORK, July 9 (Reuters) - The official responsible for implementing monetary policy at the New ‌York Federal Reserve reiterated on Thursday that Treasury bill-buying aimed at managing market liquidity levels can go up or down as needed. So-called reserve management purchases, or RMPs, \"are not on"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Fed's Williams tells Fox Business he's more sanguine on inflation due to energy price retreat - KITCO",
+      "url": "https://www.kitco.com/news/off-the-wire/2026-07-07/feds-williams-tells-fox-business-hes-more-sanguine-inflation-due",
+      "content": "# Fed's Williams tells Fox Business he's more sanguine on inflation due to energy price retreat. July 7 (Reuters) - Federal Reserve Bank of New York President John Williams ​said in a television interview on Tuesday he has grown a little less worried about the state of ‌price pressures in the econom"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Fed Chairman Warsh names members of monetary policy task forces - CNN",
+      "url": "https://www.cnn.com/2026/07/09/economy/federal-reserve-task-force-kevin-warsh",
+      "content": "Federal Reserve Chairman Kevin Warsh on Thursday unveiled the members of the five task forces that will examine key issues that shape US monetary policy as part of his broader bid to reshape the world’s most powerful central bank. The Federal Reserve Chairman’s views on monetary policy. Warsh first "
+    },
+    {
+      "source": "tavily_answer",
+      "query": "China PMI economic data this week",
+      "answer": "China's manufacturing Purchasing Managers' Index (PMI) rose to 50.3 in June from 50.0 in May, indicating continued expansion and surpassing forecasts. The new orders sub-index climbed to 51.2 from 49.9, and new export orders returned to expansion at 50.1 from 48.6. Meanwhile, consumer price growth weakened to 1% in June, missing forecasts, while producer prices increased by 4.1% year-on-year. The non-manufacturing PMI also increased to 50.2 in June, exceeding expectations."
+    },
+    {
+      "source": "tavily_result",
+      "title": "China manufacturing PMI beats forecast at 50.3 in June - Asian Business Review",
+      "url": "https://asianbusinessreview.com/manufacturing/news/china-manufacturing-pmi-beats-forecast-503-in-june",
+      "content": "China's manufacturing Purchasing Managers' Index (PMI) edged up to 50.3 in June from 50.0 in May, remaining in expansion territory and exceeding Bloomberg's consensus forecast of 50.1. According to data from the National Bureau of Statistics, cited in a UOB Kay Hian report, the new orders sub-index "
+    },
+    {
+      "source": "tavily_result",
+      "title": "China consumer price growth weakens in June while producer inflation rises on export orders - CNBC",
+      "url": "https://www.cnbc.com/2026/07/09/china-cpi-ppi-june-inflation-iran-war-.html",
+      "content": "# China consumer price growth weakens in June while producer inflation rises on export orders. * Consumer prices rose 1% in June, missing economists' forecast for 1.1% growth, and slowing from 1.2% in May. * Producer prices jumped 4.1% year on year, outpacing from 3.9% in May. A container ship is be"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Asia stocks: China rebounds on stimulus hopes, Iran risks limit tech gains - Investing.com",
+      "url": "https://www.investing.com/news/stock-market-news/asia-stocks-fall-as-oil-samsung-drag-weighs-japan-chip-rally-limits-broader-loss-4782968",
+      "content": "Investing.com -- Asian stock markets traded mostly higher on Thursday after mixed Chinese inflation data reinforced hopes for additional policy support from Beijing, although renewed U.S. military strikes on Iran continued to temper risk appetite after one of the region’s most volatile weeks for art"
+    }
+  ]
+}

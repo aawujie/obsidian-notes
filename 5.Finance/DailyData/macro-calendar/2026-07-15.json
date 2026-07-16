@@ -1,0 +1,93 @@
+{
+  "date": "2026-07-15",
+  "generated_at": "2026-07-15T06:08:05.318029",
+  "upcoming_events": [
+    {
+      "date": "2026-07-15",
+      "event": "美国 CPI (6月)",
+      "importance": "high",
+      "category": "通胀",
+      "days_until": 0
+    },
+    {
+      "date": "2026-07-29",
+      "event": "FOMC 利率决议",
+      "importance": "critical",
+      "category": "央行",
+      "note": "附新闻发布会",
+      "days_until": 14
+    }
+  ],
+  "recent_events": [],
+  "web_events": [
+    {
+      "source": "tavily_answer",
+      "query": "US economic data release this week CPI GDP jobs",
+      "answer": "The US economic data release this week includes the June Consumer Price Index (CPI) which showed a moderation in inflation. The CPI increased by 3.5% year-over-year in June, a decrease from the 4.2% year-over-year rise in May. The monthly CPI fell by 0.4%, the first decline since April 2020, primarily due to a 5.7% drop in energy prices. Core CPI, excluding food and energy, increased by 2.6% year-over-year in June, unchanged from the previous month. Additionally, major banks like Bank of America"
+    },
+    {
+      "source": "tavily_result",
+      "title": "What to Expect in Markets this Week: Inflation Data, Warsh Testimony in Congress, Bank Earnings - Investopedia",
+      "url": "https://www.investopedia.com/what-to-expect-in-markets-this-week-june-inflation-data-warsh-testimony-in-congress-bank-earnings-reports-12015328",
+      "content": "* What Fed Chair Warsh Will Tell Congress. # What to Expect in Markets this Week: Inflation Data, Warsh Testimony in Congress, Bank Earnings. Inflation will loom large this week, with the government releasing new Consumer Price Index data and big bank earnings shedding light on how Americans are kee"
+    },
+    {
+      "source": "tavily_result",
+      "title": "June's inflation report comes out today. Here's what to expect. - Business Insider",
+      "url": "https://www.businessinsider.com/cpi-inflation-june-consumer-price-index-2026-7",
+      "content": "The Bureau of Labor Statistics will publish new consumer price index data for June at 8:30 am ET, and forecasters expect headline inflation to have slowed. After the past few months of acceleration, as of Monday, economists expected the inflation rate to cool to 3.8% in June.Anything above the 3.5% "
+    },
+    {
+      "source": "tavily_result",
+      "title": "Dollar jumps on renewed Middle East attacks, Hormuz closure - Reuters",
+      "url": "https://www.reuters.com/world/asia-pacific/dollar-jumps-renewed-middle-east-attacks-hormuz-closure-2026-07-13/",
+      "content": "Exclusive news, data and analytics for financial market professionals Learn more about Refinitiv. ## Browse World. SINGAPORE, July 13 (Reuters) - The dollar jumped against most of its peers as a renewal of conflict in the Middle East fanned inflation fears and the prospect of rate ​hikes from centra"
+    },
+    {
+      "source": "tavily_answer",
+      "query": "Federal Reserve speech this week monetary policy",
+      "answer": "Federal Reserve Chairman Kevin Warsh pledged to defeat inflation and \"get monetary policy right,\" emphasizing the economy's solid shape and benefits from artificial intelligence investment. Meanwhile, Federal Reserve Governor Christopher Waller suggested that higher interest rates might be needed in the near term if inflation continues above the 2% target, indicating the Fed's monetary policy is at a crossroads. Warsh's testimony to the House Financial Services Committee highlighted a vigilant f"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Warsh promises inflation will be a 'thing of the past,' cites benefits of AI investment boom - CNBC",
+      "url": "https://www.cnbc.com/2026/07/14/warsh-promises-inflation-will-be-a-thing-of-the-past-cites-benefits-of-ai-investment-boom.html",
+      "content": "# Warsh promises inflation will be a 'thing of the past,' cites benefits of AI investment boom. * Fed Chairman Kevin Warsh on Tuesday, in remarks he delivers to Congress this week, vowed to defeat inflation and \"get monetary policy right.\". * While he promised to tackle inflation, the central bank l"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Fed's Waller says higher rates possibly needed in 'near term' - KITCO",
+      "url": "https://www.kitco.com/news/off-the-wire/2026-07-13/feds-waller-says-higher-rates-possibly-needed-near-term",
+      "content": "NEW YORK, July 13 (Reuters) - The U.S. central bank may need to raise interest rates \"in the ‌near term\" if coming data show inflation continuing well above the 2% target, Federal Reserve Governor Christopher Waller said on Monday, in remarks that characterized monetary policy as being at a \"crossro"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Fed's Waller says rate hike may be needed if core inflation stays hot - Yahoo Finance",
+      "url": "https://finance.yahoo.com/economy/policy/articles/feds-waller-says-higher-rates-173114529.html",
+      "content": "3. Best money market accounts. NEW YORK, July 13 (Reuters) - The U.S. central bank may need to raise interest rates \"in the near term\" if coming data show inflation continuing well above the 2% target, Federal Reserve Governor Christopher Waller said on Monday, in remarks that characterized monetary"
+    },
+    {
+      "source": "tavily_answer",
+      "query": "China PMI economic data this week",
+      "answer": "China's June trade data showed robust growth, with exports rising by 27% year-on-year and imports by 36% year-on-year, both surpassing economists' forecasts. This surge was driven by strong global demand for AI hardware and a rush by exporters to beat anticipated U.S. tariff hikes. The trade surplus also increased significantly, indicating the competitiveness and resilience of China's manufacturing sector."
+    },
+    {
+      "source": "tavily_result",
+      "title": "China’s trade surges in first half of 2026, extending growth streak - South China Morning Post",
+      "url": "https://www.scmp.com/economy/economic-indicators/article/3360451/chinas-trade-surges-june-maintaining-growth-streak-despite-global-tensions",
+      "content": "Exports rose by 27 per cent year on year and imports grew by 36 per cent last month, both beating projections. The country’s exports rose by 27 per cent year on year to US$412.39 billion last month, according to Chinese customs data released on Tuesday, beating the 18.5 per cent growth forecast by e"
+    },
+    {
+      "source": "tavily_result",
+      "title": "China exports in June rise at fastest pace since 2021 as AI boom, tariff rush lift trade - CNBC",
+      "url": "https://www.cnbc.com/2026/07/14/china-june-trade-data-exports-imports.html",
+      "content": "# China exports in June rise at fastest pace since 2021 as AI boom, tariff rush lift trade. * Overall exports rose 27% from a year earlier in U.S. dollar value terms, the strongest since October 2021. * China's crude imports dropped 41% from a year ago to the lowest level in nearly a decade. China's"
+    },
+    {
+      "source": "tavily_result",
+      "title": "China June exports growth set to cool, but AI demand underpins overall strength - Reuters poll - Reuters",
+      "url": "https://www.reuters.com/world/china/china-june-exports-growth-set-cool-ai-demand-underpins-overall-strength-2026-07-13/",
+      "content": "Exclusive news, data and analytics for financial market professionals Learn more about Refinitiv. ## Browse World. ## Browse Business. BEIJING, July 13 (Reuters) - China's exports likely grew at a slightly slower but still-solid pace in June, as firms accelerated shipments to the U.S. ahead of possi"
+    }
+  ]
+}
