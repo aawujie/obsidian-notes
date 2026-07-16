@@ -1,3 +1,7 @@
+---
+share_link: https://share.note.sx/vyex598c#xfSrL36YNJuV0u9eIIuYHMkXdrkFv7B0LPQSzfmr4qU
+share_updated: 2026-07-16T15:55:36+08:00
+---
 # 安克 AI 飞行员试炼 — 面试笔记
 
 ## 基本概念
