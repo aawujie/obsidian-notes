@@ -1,0 +1,86 @@
+{
+  "date": "2026-07-21",
+  "generated_at": "2026-07-21T06:07:08.305727",
+  "upcoming_events": [
+    {
+      "date": "2026-07-29",
+      "event": "FOMC 利率决议",
+      "importance": "critical",
+      "category": "央行",
+      "note": "附新闻发布会",
+      "days_until": 8
+    }
+  ],
+  "recent_events": [],
+  "web_events": [
+    {
+      "source": "tavily_answer",
+      "query": "US economic data release this week CPI GDP jobs",
+      "answer": "This week's US economic data shows that inflation cooled in June, declining to 3.5% year-over-year, down from 4.2% in May. The Federal Reserve's efforts to control inflation appear to be having some effect, but the rapid build-out of AI technology is expected to keep prices rising. Additionally, the latest economic reports indicate a continued focus on the impact of inflation on consumer and business decisions."
+    },
+    {
+      "source": "tavily_result",
+      "title": "America In Focus: US inflation cooled in June, but AI build-out poses latest threat - InsuranceNewsNet",
+      "url": "https://insurancenewsnet.com/oarticle/america-in-focus-us-inflation-cooled-in-june-but-ai-build-out-poses-latest-threat",
+      "content": "# America In Focus: US inflation cooled in June, but AI build-out poses latest threat. The economy, inflation and how those forces could impact the lives of Americans were front and center over the past week. Trips to the grocery store and gas station are more painful than they were last year, and r"
+    },
+    {
+      "source": "tavily_result",
+      "title": "America In Focus: US inflation cooled in June, but AI build-out poses latest threat - The Washington Post",
+      "url": "https://www.washingtonpost.com/business/2026/07/18/inflation-economy-iran-trump-unemployment-ai/8468c624-82b2-11f1-8a16-393bd03340b0_story.html",
+      "content": "# America In Focus: US inflation cooled in June, but AI build-out poses latest threat. U.S. inflation cooled last month as the cost of gas, clothes, and used cars fell, providing some relief to consumers, while underlying price pressures also cooled more than expected. The economy, inflation and how"
+    },
+    {
+      "source": "tavily_result",
+      "title": "America In Focus: US inflation cooled in June, but AI build-out poses latest threat - Greenwich Time",
+      "url": "https://www.greenwichtime.com/business/article/america-in-focus-us-inflation-cooled-in-june-22350555.php",
+      "content": "# America In Focus: US inflation cooled in June, but AI build-out poses latest threat. The economy, inflation and how those forces could impact the lives of Americans were front and center over the past week. Trips to the grocery store and gas station are more painful than they were last year, and r"
+    },
+    {
+      "source": "tavily_answer",
+      "query": "Federal Reserve speech this week monetary policy",
+      "answer": "Based on the most recent information, Federal Reserve Chairman Kevin Warsh has emphasized the central bank's ongoing fight against inflation, which has been above the 2% target for several years. Despite a slight cooling in inflation in June, with the yearly rate declining to 3.5% from 4.2% in May, the Fed remains focused on price stability. Warsh's commitment to this priority suggests that the Fed is likely to continue its current monetary policy stance, with expectations of potential interest "
+    },
+    {
+      "source": "tavily_result",
+      "title": "Bond Traders Take Warsh at Word, See Inflation Fight Continuing - Yahoo Finance",
+      "url": "https://finance.yahoo.com/economy/policy/articles/bond-traders-warsh-word-see-170000415.html",
+      "content": "(Bloomberg) -- Bond traders and Federal Reserve Chairman Kevin Warsh are in agreement on a crucial point: The central bank's fight against inflation still seems far from over. And Warsh, who took over as Fed chief two months ago, has made it clear that the central bank's priority is to pull down inf"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Fed Chair Kevin Warsh Just Hammered Home the 2 Words That'll Define His Tenure as Head of the Central Bank -- and They're Worrisome for Wall Street - The Motley Fool",
+      "url": "https://www.fool.com/investing/2026/07/19/fed-kevin-warsh-2-words-define-tenure-wall-street/",
+      "content": "▲ S&P 500 **+---%**|▲ Stock Advisor **+---%**Join The Motley Fool. This has been a historic year for Wall Street and investors -- and we still have more than five months to go. Fed Chair Kevin Warsh pledged to lead a reform-oriented Federal Reserve. In addition to Warsh ascending to his new role ami"
+    },
+    {
+      "source": "tavily_result",
+      "title": "'WarshGPT': How Wall Street is adapting to the Fed's new era of communication - Forex Factory",
+      "url": "https://www.forexfactory.com/news/1409269-warshgpt-how-wall-street-is-adapting-to-the",
+      "content": "'WarshGPT': How Wall Street is adapting to the Fed's new era of communication | Forex Factory. * # 'WarshGPT': How Wall Street is adapting to the Fed's new era of communication. Fed Chairman Kevin Warsh embarked on an overhaul of the central bank’s forward-looking communication since taking the post"
+    },
+    {
+      "source": "tavily_answer",
+      "query": "China PMI economic data this week",
+      "answer": "China's Purchasing Managers' Index (PMI) for July 2026 is not directly mentioned in the provided data. However, the data does highlight China's export growth, with shipments climbing 27% against the same month a year earlier to reach $412.4 billion, indicating a robust economic performance. This growth is attributed to semiconductor and artificial-intelligence shipments, which have reshaped the pattern of global trade."
+    },
+    {
+      "source": "tavily_result",
+      "title": "News by ACCESS Newswire on TradingView, 2026-07-19 - TradingView",
+      "url": "https://www.tradingview.com/news/reuters.com,2026-07-19:newsml_ACSd6zxba:0/",
+      "content": "Image 2: ACCESS NewswireImage 3: ACCESS Newswire. Sign up to read this news. ## Latest news. * Image 4 Dow Jones Newswires Start a free trial to read this news. Dow Jones Newswires Start a free trial to read this news. Dow Jones Newswires Week Ahead for FX, Bonds: U.S., European PMI Data, ECB Decisi"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Carvina Capital Sees China Exports Jump 27% - Digital Journal",
+      "url": "https://www.digitaljournal.com/pr/news/access-newswire/carvina-capital-sees-china-exports-1150553680.html",
+      "content": "***Semiconductor and artificial-intelligence shipments power the fastest monthly export expansion in over four years, lifting the trade surplus towards record territory even as protectionist investigations multiply and mainland investment weakens.***. **SINGAPORE, SG / ACCESS Newswire / July 19, 202"
+    },
+    {
+      "source": "tavily_result",
+      "title": "China seeks stable, transparent mineral rules from Indonesia - Mining.com",
+      "url": "https://www.mining.com/web/china-seeks-stable-transparent-mineral-rules-from-indonesia/",
+      "content": "Copper $ 5.6358 / lb  2.72%. Brent Crude Oil $ 104.4 / bbl  -4.21%. Palladium $ 1496.5 / ozt  5.39%. Crude Oil $ 101.85 / bbl  -3.06%. Silver Futures $ 75.495 / ozt  7.47%. Micro Gold Futures $ 4713.1 / ozt  3.80%. Micro Silver Futures $ 75.48 / ozt  7.54%. Platinum $ 1973.85 / ozt  4.22%. Gold Futu"
+    }
+  ]
+}
