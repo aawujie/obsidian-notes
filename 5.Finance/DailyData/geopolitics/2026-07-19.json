@@ -1,0 +1,1176 @@
+{
+  "date": "2026-07-19",
+  "generated_at": "2026-07-19T06:37:05.336568",
+  "total_events": 42,
+  "severity_distribution": {
+    "high": 3,
+    "critical": 2,
+    "medium": 37
+  },
+  "events": [
+    {
+      "title": "Iran's supreme leader in a new statement warns of 'unforgettable lessons' if U.S. continues attacks - PBS",
+      "title_cn": "伊朗最高领袖在新声明中警告美国将面临“难忘的教训”",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPRGpOOFM4VmwtdmJlaU5nTlNVbkNwZ3NMUk5Rb3pOSUduMVFpSHlXNVVWQzlSZUNVQ0gwbUdmVjIySUxSSmdzSFhfc2gyRXJKVjItaGVxLWl5VlFRbmpvNGROV29yTjl6NUdmSDJ1bGVCR2RfZzBMQW9Mbms5dEh2bDBUb3JvNHVtaWI4cmgwM0hzMDBsbjR0cXZ2TjJzU05oUzhWdmhMbXRnRGplZVR5T3VtN3VuX1BTZDY2aTdKZW1UTGZPcFJGbU930gHPAUFVX3lxTE9KYWc4WE5vbS1QYmRuSnY2eHp1dTF2dDQzWXQyd2Nqc2tENEs0MHVIb2lIY3dWbG50bjhmb1UzQmk2cEpQanZMa3pNSXdlWWd1MEctWWxOWE1FeE44WFpIVHU0bGhxQ2hBZGM2aW1lOFpHMFhRbzQ3X0xiZFVqaWhyaHpwblBpZTJoamdNR1lYaWpybFNub2ZpZmV5S1VWak5UMmZDOGNMRW9fR2xGV3VIUndvSElPbGgwZlBjN3BPeU55OUwtXzZCRDV4eDFEcw?oc=5",
+      "content": "Iran's supreme leader in a new statement warns of 'unforgettable lessons' if U.S. continues attacks  PBS",
+      "content_detail": "SCETV is your local station. \n\n Change \n\n# Select Your Local Station\n\nThere are no stations available for your selected ZIP Code.\n\n![Image 1: Station Logo](https://image.pbs.org/stations/wrlk-white-cobranded-logo-12YX7vH.png)\n\nSCETV Columbia, SC\n\nConfirm SCETV See More Stations\n\nBack\n\n## Search for a Station\n\nSearch ZIP Code\n\nPlease enter a valid ZIP Code\n\nSearch State\n\nPlease enter a valid State\n\n[PBS](https://www.pbs.org/ \"PBS\")\n\n![Image 2: SCETV](https://image.pbs.org/stations/wrlk-white-single-brand-logo-UeURhjO.png?resize=200x&format=png)\n\n[![Image 3: SCETV](https://image.pbs.org/stations/wrlk-white-single-brand-logo-UeURhjO.png?resize=200x&format=png)](https://www.scetv.org/)\n\n[Donate](https://www.etvendowment.org/show-support)\n\n[Change your local station](javascript:void(0))\n\n[Explore More from My Station](https://www.pbs.org/my-station/)\n\n## MORE FROM SCETV\n\n[Membership at SCETV](https://www.etvendowment.org/membership)[FOLLOW US!](https://www.facebook.com/SouthCarolinaETV/)[Contact Us](https://www.scetv.org/contact)[Visit SCETV.org](https://www.scetv.org/)\n\n*   [Live TV](https://www.pbs.org/livestream/)\n*   [PBS Shows](https://www.pbs.org/shows/)\n*   [My Station](https://www.pbs.org/my-station/)\n*   [My List](https://www.pbs.org/my-list/shows/)\n*   [Shop](https://shop.pbs.org/ \"PBS Shop\")\n*    [Donate](https://www.etvendowment.org/show-support)\n\nChoose station\n\n![Image 4: SCETV](https://image.pbs.org/stations/wrlk-white-single-brand-logo-UeURhjO.png?resize=200x&forma",
+      "published_date": "Sat, 18 Jul 2026 15:34:19 GMT",
+      "search_region": "美伊冲突",
+      "classified_regions": [
+        "美伊冲突"
+      ],
+      "event_types": [
+        "军事冲突升级"
+      ],
+      "severity": "high",
+      "summary": "SCETV is your local station.",
+      "affected_tickers": [
+        "GC=F",
+        "SI=F",
+        "LMT",
+        "NOC",
+        "RTX",
+        "GD",
+        "GLD",
+        "SLV",
+        "ITA",
+        "PPA"
+      ]
+    },
+    {
+      "title": "The war is all about the Strait of Hormuz now - NBC News",
+      "title_cn": "NBC新闻：整个战争现在围绕霍尔木兹海峡展开",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE8tU1duU2JId1FSbUpJeDg4NmcyaE5LZ3J2ZmZReGpaSjRRNmhVY3dFaTFJYzlGQjNkQ0lmZW9PNDVtYy1aLTBpQU42dTFFdDg4c0w4d1c4RGRCNTdoc0h0emVmZzhKcWNiU0dXRXQyY0FSRWJqWXc?oc=5",
+      "content": "The war is all about the Strait of Hormuz now  NBC News",
+      "content_detail": "Google News",
+      "published_date": "Thu, 16 Jul 2026 22:00:00 GMT",
+      "search_region": "美伊冲突",
+      "classified_regions": [
+        "美伊冲突"
+      ],
+      "event_types": [
+        "原油供应风险",
+        "军事冲突升级"
+      ],
+      "severity": "critical",
+      "summary": "The war is all about the Strait of Hormuz now NBC News",
+      "affected_tickers": [
+        "CL=F",
+        "BZ=F",
+        "USO",
+        "XLE",
+        "BNO",
+        "GC=F",
+        "SI=F",
+        "LMT",
+        "NOC",
+        "RTX",
+        "GD",
+        "GLD",
+        "SLV",
+        "ITA",
+        "PPA"
+      ]
+    },
+    {
+      "title": "Iran threatens to halt all Middle East energy exports amid renewed US blockade - The Guardian",
+      "title_cn": "伊朗威胁在美国重新封锁之际停止所有中东能源出口",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPcDBTaDhYU3lKaWhXTTFDZ0RaZjVaVFg5WHpfZGNNcWdjdXl3cHRCTklGVmM2MDhzUC1WLWdGVVVLVzZ0UkpCTDZmbF9oeF9wSmZlbkhsTkRPak9EVTk0RGtta1ZRSTA2VHp3Y2c3RmRPVUlZOXFmOUU2Nnoydjl0dWlYUzd2SEdfeldJQUZnV3BBWUM3Wl9yUUZTRXlyampBWXc?oc=5",
+      "content": "Iran threatens to halt all Middle East energy exports amid renewed US blockade  The Guardian",
+      "content_detail": "[Skip to main content](https://news.google.com/rss/articles/CBMiogFBVV95cUxPcDBTaDhYU3lKaWhXTTFDZ0RaZjVaVFg5WHpfZGNNcWdjdXl3cHRCTklGVmM2MDhzUC1WLWdGVVVLVzZ0UkpCTDZmbF9oeF9wSmZlbkhsTkRPak9EVTk0RGtta1ZRSTA2VHp3Y2c3RmRPVUlZOXFmOUU2Nnoydjl0dWlYUzd2SEdfeldJQUZnV3BBWUM3Wl9yUUZTRXlyampBWXc?oc=5#maincontent)[Skip to navigation](https://news.google.com/rss/articles/CBMiogFBVV95cUxPcDBTaDhYU3lKaWhXTTFDZ0RaZjVaVFg5WHpfZGNNcWdjdXl3cHRCTklGVmM2MDhzUC1WLWdGVVVLVzZ0UkpCTDZmbF9oeF9wSmZlbkhsTkRPak9EVTk0RGtta1ZRSTA2VHp3Y2c3RmRPVUlZOXFmOUU2Nnoydjl0dWlYUzd2SEdfeldJQUZnV3BBWUM3Wl9yUUZTRXlyampBWXc?oc=5#navigation)\n\nClose dialogue 1/1 Next image Previous image Toggle caption\n\n[Print subscriptions](https://support.theguardian.com/subscribe/weekly?REFPVID=mrljz0a191o7ooot49rb&INTCMP=undefined&acquisitionData=%7B%22source%22%3A%22GUARDIAN_WEB%22%2C%22componentId%22%3A%22PrintSubscriptionsHeaderLink%22%2C%22componentType%22%3A%22ACQUISITIONS_HEADER%22%2C%22referrerPageviewId%22%3A%22mrljz0a191o7ooot49rb%22%2C%22referrerUrl%22%3A%22https%3A%2F%2Fwww.theguardian.com%2Fworld%2F2026%2Fjul%2F15%2Ftrump-iran-power-plants-strike-threat-strait-of-hormuz%22%7D)\n\n[Newsletters](https://news.google.com/email-newsletters)\n\n[Sign in](https://profile.theguardian.com/signin?INTCMP=DOTCOM_NEWHEADER_SIGNIN&ABCMP=ab-sign-in&componentEventParams=componentType%3Didentityauthentication%26componentId%3Dguardian_signin_header)\n\nUS\n\n*   [US edition](https://news.google.com/preference/edition/us)\n*   [UK edition](https://news.g",
+      "published_date": "Wed, 15 Jul 2026 17:01:00 GMT",
+      "search_region": "美伊冲突",
+      "classified_regions": [
+        "美伊冲突"
+      ],
+      "event_types": [
+        "原油供应风险",
+        "军事冲突升级"
+      ],
+      "severity": "critical",
+      "summary": "",
+      "affected_tickers": [
+        "CL=F",
+        "BZ=F",
+        "USO",
+        "XLE",
+        "BNO",
+        "GC=F",
+        "SI=F",
+        "LMT",
+        "NOC",
+        "RTX",
+        "GD",
+        "GLD",
+        "SLV",
+        "ITA",
+        "PPA"
+      ]
+    },
+    {
+      "title": "Iran suggests MoU ‘suspended’ as 50 killed in US strikes in July - Al Jazeera",
+      "title_cn": "半岛电视台：伊朗暗示谅解备忘录“暂停”，因美国7月空袭造成50人死亡",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQSk10ZEFwTXRSZS12YXVYU0RhQnJ3eXJFTlVtc2FyRDlpUTdCWl9peDJpMGYzSHdGa0RPSkpQVUYxWnV6b2R4ZFowMER2N21GYkw1dl9SNzVZdjI0bTdTZWpBV2FVMzJzMFlrSTduOW1PbmhqNkFTaGJ4MmFxQVJwcnhwNUVIb21lSzM0STctdWR4MFk2M0hxam1TeTJGOThuNm1GMlhFZkYycHlLZ2JDWtIBtgFBVV95cUxPekM3c1pKVzhKMEZDNXJieE9ydE1IMU5XZHJBYXUzUFA0YVR2RnctUTdST0U2dG94RGZwakRHOUlPYjE2anFQdU10U3cxa3I3NFhPSko1bGRrRFlSc2syTGFnRDZxLUdYSkk4NE95VU1Ga2dwR2lGeUVkSUFBTXVQWldqbFl0V1Z2NVhvSl9PQnYxNC13dHJPNEl5dWpzbm1pdng3MzhHQXpmcmE4cktVX3JPNDBwUQ?oc=5",
+      "content": "Iran suggests MoU ‘suspended’ as 50 killed in US strikes in July  Al Jazeera",
+      "content_detail": "Advertisement \n\nSkip links[Skip to Content](https://news.google.com/rss/articles/CBMisAFBVV95cUxQSk10ZEFwTXRSZS12YXVYU0RhQnJ3eXJFTlVtc2FyRDlpUTdCWl9peDJpMGYzSHdGa0RPSkpQVUYxWnV6b2R4ZFowMER2N21GYkw1dl9SNzVZdjI0bTdTZWpBV2FVMzJzMFlrSTduOW1PbmhqNkFTaGJ4MmFxQVJwcnhwNUVIb21lSzM0STctdWR4MFk2M0hxam1TeTJGOThuNm1GMlhFZkYycHlLZ2JDWtIBtgFBVV95cUxPekM3c1pKVzhKMEZDNXJieE9ydE1IMU5XZHJBYXUzUFA0YVR2RnctUTdST0U2dG94RGZwakRHOUlPYjE2anFQdU10U3cxa3I3NFhPSko1bGRrRFlSc2syTGFnRDZxLUdYSkk4NE95VU1Ga2dwR2lGeUVkSUFBTXVQWldqbFl0V1Z2NVhvSl9PQnYxNC13dHJPNEl5dWpzbm1pdng3MzhHQXpmcmE4cktVX3JPNDBwUQ?oc=5#main-content-area)\n\n[](https://news.google.com/)\n\n[Live](https://news.google.com/video/live)\n\nSign up\n\nNavigation menu\n*   [News](https://news.google.com/news/)Show more news sections\n\n    *   [Africa](https://news.google.com/africa/)\n    *   [Asia](https://news.google.com/asia/)\n    *   [US & Canada](https://news.google.com/us-canada/)\n    *   [Latin America](https://news.google.com/latin-america/)\n    *   [Europe](https://news.google.com/europe/)\n    *   [Asia Pacific](https://news.google.com/asia-pacific/)\n\n*   [World Cup](https://news.google.com/fifa-world-cup-2026)\n*   [Middle East](https://news.google.com/middle-east/)\n*   [Explained](https://news.google.com/tag/explainer/)\n*   [Opinion](https://news.google.com/opinion/)\n*   [Video](https://news.google.com/videos/)\n*   More Show more sections\n\n    *   [Features](https://news.google.com/features/)\n    *   [Economy](https://news.google.com/economy/)\n    * ",
+      "published_date": "Sat, 18 Jul 2026 21:31:14 GMT",
+      "search_region": "美伊冲突",
+      "classified_regions": [
+        "美伊冲突"
+      ],
+      "event_types": [
+        "军事冲突升级"
+      ],
+      "severity": "high",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "SI=F",
+        "LMT",
+        "NOC",
+        "RTX",
+        "GD",
+        "GLD",
+        "SLV",
+        "ITA",
+        "PPA"
+      ]
+    },
+    {
+      "title": "Desalination plants, a vital source of Mideast drinking water, come under attack in US-Iran war - Fortune",
+      "title_cn": "中东重要饮用水源海水淡化厂遭袭",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOd0N0aTJLNUZkaHY3NC1ZZlM1TjNHa0pDN3pKUVJsa01YQzk2ejJ6VXRuVXVoTWpzaVVJQ1kyMWMwbk1UZ1ljQ1dMa2d2V2N0dU5SOF9TSXBzcWd5UC1hb1pqUUhNYVpnVDBqNmZ1WnJ4NjRKREFjRFg5endLUWZRTGVkZU1XY2R1enZlRGVYVFE2QTEtWklSVU5CNzhubnJlVnJPV2laZV9jYkd0R1p1eVNnRUQ?oc=5",
+      "content": "Desalination plants, a vital source of Mideast drinking water, come under attack in US-Iran war  Fortune",
+      "content_detail": "Google News",
+      "published_date": "Sat, 18 Jul 2026 14:09:00 GMT",
+      "search_region": "美伊冲突",
+      "classified_regions": [
+        "美伊冲突"
+      ],
+      "event_types": [
+        "军事冲突升级",
+        "供应链中断"
+      ],
+      "severity": "high",
+      "summary": "Desalination plants, a vital source of Mideast drinking water, come under attack in US-Iran war Fortune",
+      "affected_tickers": [
+        "GC=F",
+        "SI=F",
+        "LMT",
+        "NOC",
+        "RTX",
+        "GD",
+        "GLD",
+        "SLV",
+        "ITA",
+        "PPA",
+        "NVDA",
+        "TSM",
+        "INTC",
+        "AMD",
+        "ASML",
+        "SMH",
+        "SOXX"
+      ]
+    },
+    {
+      "title": "How far will Iran go for the Strait of Hormuz? - Financial Times",
+      "title_cn": "",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPR0djZXRQZzZBNlppQU9ORlVJZUkxZUdXcGg0emliWjRqczBCUDVMRkRYODRXR0JrVndMZ3RtS0RYc0pwVU96b0FLRHRDLVRpeWl3NHM0T0dCLVhJcDJZbUw3NnpPcHZIeTQ0Ym1vTlNjWExoeUhtdURjcTE5U215V2xBeU0?oc=5",
+      "content": "How far will Iran go for the Strait of Hormuz?  Financial Times",
+      "content_detail": "Google News",
+      "published_date": "Fri, 17 Jul 2026 04:00:45 GMT",
+      "search_region": "美伊冲突",
+      "classified_regions": [
+        "美伊冲突"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "How far will Iran go for the Strait of Hormuz?",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Latest Iran war news today: US military launches strikes for 7th night in a row as fighting escalates over Strait of Hormuz - ABC7 Los Angeles",
+      "title_cn": "",
+      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPa1NoQkJtUEpjT0p6X09mb0VCbzFzXzR2dFR6TkJ1eVgwVlhOQl9KRDRrSnZHTkVVS2JPUm0tWW9EQzZISWtNVjVtaEJLdUtMMnd6MzNIWUNvOWxybi00SDV5NDNFUExJLXNNdHVZRDB3VUNjZk1ab3JxQzNQaXFuZnFacC1tOGJDaGZXUXgxTnBCNkNpOFd5RDBndEE1TlZweVRlbVNLLTFncXpraUJPZm9qejZKTjRrcFBKZGgzdGlzd2xmaG0zdktnVGNPeTdiREN2RWxwS2c3TlVKQWJ2RHI3Z9IB6AFBVV95cUxOT3JYTEpkY2ZFM055VTV3dlN5LUNQa3Y1VTViVEpwc3Nmck1tbW9qNmZ2aVBfSjBYNXpVeWt2X2xYUUdQZVAtZWptbzA0R29yQ2c0LUg0cEpxWHdEQUdneTRDYklLb0F2LU1lQWUtSzVhbzBTZHFZLXdJa2ZuQXI2aTlmRUx1LXljOVlEQjdVQlFTWlkwN3AxTElTWFczLUN0LTN3UFVHYkhDSEhpQ2NKNE9Yd3pNMnpQRUZXbC00NkxJLWQ0N3pFb3Y1eDZoRUxPbndhUWY3VGFJMVBPR2VETGh5Vkt3al9P?oc=5",
+      "content": "Latest Iran war news today: US military launches strikes for 7th night in a row as fighting escalates over Strait of Hormuz  ABC7 Los Angeles",
+      "content_detail": "Google News",
+      "published_date": "Fri, 17 Jul 2026 15:26:12 GMT",
+      "search_region": "美伊冲突",
+      "classified_regions": [
+        "美伊冲突"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "Latest Iran war news today: US military launches strikes for 7th night in a row as fighting escalates over Strait of Hormuz ABC7 Los Angeles",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "US-Iran war news: US restores blockade on Iran after its attacks on ships in the Strait of Hormuz - ABC7 New York",
+      "title_cn": "",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNZmhZcFhjYTgtejlvVDc5OUlMZHlLazFsemg2d2thb2RnalgtZ1NXcnR0WVJLZ21NMGtEdVRabE4yczBPcHR2UGpnXzdvZjBTdWpOdk8zc1AyVWhkWXRQN0xxLWIzckc1WkFZSWVzRmNyTXU4TnNVS2IwbVdVb1FfN2F6dEJ0QzRlMHpZX1REc1NSbTZyRWxaRExyVGlrMUJpZnJZU9IBqgFBVV95cUxQbG8yVG14czJtSVlKNVp3cHhGamQzWkJoWGc2M2luNl81X2FEbWVQQkY4eERTWmZ6OVA3T2tpZkNhdHVub2ZRcWpOb3JnWDhrLUtsa2hlVVZlS0JVLThWMW5lem9UVmpqT1c2VzVmbldOR044VGtPWEctZUVNNjlzeGhnVlVMVGpnOFpDUVJxT3pyMWdZRlNGUFRLS3pQbDl3MGRZVjNiM0U3Zw?oc=5",
+      "content": "US-Iran war news: US restores blockade on Iran after its attacks on ships in the Strait of Hormuz  ABC7 New York",
+      "content_detail": "Google News",
+      "published_date": "Tue, 14 Jul 2026 11:33:46 GMT",
+      "search_region": "美伊冲突",
+      "classified_regions": [
+        "美伊冲突"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "US-Iran war news: US restores blockade on Iran after its attacks on ships in the Strait of Hormuz ABC7 New York",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "A Perfect Storm for Global Agriculture - Barchart.com",
+      "title_cn": "",
+      "url": "https://www.barchart.com/story/news/3343352/a-perfect-storm-for-global-agriculture",
+      "content": "1. The Black Sea Escalation: Why Wheat Soared This Week\n\nWheat prices spiked by roughly 5% to 7% this week due to an abrupt shift in the Russia-Ukraine conflict. While the market had largely grown numb to previous updates, Ukraine's recent drone campaign has completely shifted the risk premium. [...",
+      "content_detail": "![Barchart.com](https://assets.barchart.com/img/pdf_logo.svg)\n\n**[[ type === 'moc' ? 'MARKET ON CLOSE' : 'FREE WEBINAR' ]]**\n\n**[[ timeLabel ]]**   WATCH LIVE:\n\nYour browser of choice has not been tested for use with Barchart.com. If you have issues, please download one of the browsers listed [here](http://outdatedbrowser.com/en).\n\n* Barchart for Businesses\n\n  Barchart for Businesses\n\n  Let's find a solution for your business.\n\n  ✓ 1 Your market\n\n  ✓ 2 What are you looking for?\n\n  3 Your information\n\n  What industry are you in?\n\n  You're in . What are you looking for?\n\n  ← Back\n\n  Last step — Provide us your details so we can get in touch with you!\n\n  \\* All fields required. A specialist will respond within 1 business day.\n\n  ← Back\n\n  ### Thank you!\n\n  We've received your inquiry. A specialist will reach out within 1 business day.\n\n  Start over\n\n  Explore our Market Data & Technology Solutions\n\n  Data →\n\n  [Market Data](/solutions/market-category/all-markets) [Physical Commodity Prices](/solutions/market-category/cash-commodities) [Grain Prices & Yield Forecasts](/solutions/data/agindex) [Commodity Fundamentals](/solutions/market-category/fundamentals) [News Feeds](/solutions/news) [Company Data](/solutions/company) [Weather & Geospatial](/solutions/weather)\n\n  Services →\n\n  [Market Data & APIs](/solutions/services/market-data) [Charting & Tools](/solutions/services/digital) [Commodity Workflow Solutions](/solutions/services/cmdty)\n\n  Platforms →\n\n  [cmdtyView Front-End](/so",
+      "published_date": "Fri, 17 Jul 2026 23:13:28 GMT",
+      "search_region": "俄乌战争",
+      "classified_regions": [
+        "俄乌战争"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Sanctioned Russian Shadow Fleet Tanker Spills Oil Near Oman Coast - Kyiv Post",
+      "title_cn": "",
+      "url": "https://www.kyivpost.com/post/80593",
+      "content": "By Kyiv Post\n\n5h ago\n\nZelensky\n\n## Zelensky Confirms Strikes on Russian Logistics Hubs in Moscow and Tambov Regions\n\nBy Tymur Dubovyk\n\n5h ago\n\nRussia\n\n## EU Imposes Sanctions on Russian Defense Tech Group ABS Electro\n\nBy Kyiv Post\n\n5h ago\n\nRussia\n\n## Ukraine’s Unmanned Systems Forces Strike 13 More ",
+      "content_detail": "### \n\n* [North America](https://www.kyivpost.com/category/north-america)\n* [Latin America](https://www.kyivpost.com/category/latin-america)\n* [Europe](https://www.kyivpost.com/category/europe)\n* [Eastern Europe](https://www.kyivpost.com/category/eastern-europe)\n* [Middle East](https://www.kyivpost.com/category/middle-east)\n* [Africa](https://www.kyivpost.com/category/africa)\n* [Asia](https://www.kyivpost.com/category/asia)\n\n### \n\n* [Business](https://www.kyivpost.com/category/business)\n* [Technology](https://www.kyivpost.com/category/technology)\n* [Finance](https://www.kyivpost.com/category/finance)\n* [Energy](https://www.kyivpost.com/category/energy)\n* [Agriculture](https://www.kyivpost.com/category/agriculture)\n\n[###](https://www.kyivpost.com/category/corruption-watch)\n\n###\n\n[###](https://www.kyivpost.com/category/cartoon)\n\n![Search](/icons/header-search.svg) [![Kyiv Post](/icons/header-desktop-logo.svg)](https://www.kyivpost.com) [![Kyiv Post](/icons/kp_logo_white.svg)](https://www.kyivpost.com)\n\nEN\n\n![arrow](/icons/select-arrow.svg)\n\n* [UK](/language/uk)\n\n[![Kyiv Post](/assets/images/Kyivpost_logo_Black.svg)](https://www.kyivpost.com)\n\n[![Kador Group](/assets/images/kador_logo.jpg)](https://kadorrgroup.com/en/)\n\nEN\n\n![arrow](/icons/select-arrow.svg)\n\n* [UK](/language/uk)\n\n[PARTNERSHIP](https://www.kyivpost.com/marker/partnership)   [Russia](https://www.kyivpost.com/topic/russia)   [Russian Oil Crisis](https://www.kyivpost.com/topic/russian-oil-crisis)\n\n# Sanctioned Russia",
+      "published_date": "Sat, 18 Jul 2026 16:33:00 GMT",
+      "search_region": "俄乌战争",
+      "classified_regions": [
+        "俄乌战争"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Ukrainian Drones Strike Oil Depot in Moscow Region and Logistics Hubs - Kyiv Post",
+      "title_cn": "",
+      "url": "https://www.kyivpost.com/post/80562",
+      "content": "By Kyiv Post\n\nJuly 12, 2026\n\n### OPINION: The Bill for Crimea Comes Due for Putin\n\nBy Dr. Orhan Dragas\n\nJuly 11, 2026\n\n### 'Russian Leadership Has Gone Crazy Over War' – Zelensky After Fresh Drone Attacks\n\nBy Kyiv Post\n\nJuly 13, 2026\n\nMore on Russia\n\nUkraine\n\n## Russia Prepares Black Sea Fleet Famil",
+      "content_detail": "### \n\n* [North America](https://www.kyivpost.com/category/north-america)\n* [Latin America](https://www.kyivpost.com/category/latin-america)\n* [Europe](https://www.kyivpost.com/category/europe)\n* [Eastern Europe](https://www.kyivpost.com/category/eastern-europe)\n* [Middle East](https://www.kyivpost.com/category/middle-east)\n* [Africa](https://www.kyivpost.com/category/africa)\n* [Asia](https://www.kyivpost.com/category/asia)\n\n### \n\n* [Business](https://www.kyivpost.com/category/business)\n* [Technology](https://www.kyivpost.com/category/technology)\n* [Finance](https://www.kyivpost.com/category/finance)\n* [Energy](https://www.kyivpost.com/category/energy)\n* [Agriculture](https://www.kyivpost.com/category/agriculture)\n\n[###](https://www.kyivpost.com/category/corruption-watch)\n\n###\n\n![Search](/icons/header-search.svg) [![Kyiv Post](/icons/header-desktop-logo.svg)](https://www.kyivpost.com) [![Kyiv Post](/icons/kp_logo_white.svg)](https://www.kyivpost.com)\n\nEN\n\n![arrow](/icons/select-arrow.svg)\n\n* [UK](/language/uk)\n\n[![Kyiv Post](/assets/images/Kyivpost_logo_Black.svg)](https://www.kyivpost.com)\n\n[![Kador Group](/assets/images/kador_logo.jpg)](https://kadorrgroup.com/en/)\n\nEN\n\n![arrow](/icons/select-arrow.svg)\n\n* [UK](/language/uk)\n\n[BREAKING](https://www.kyivpost.com/marker/breaking)  [Russia](https://www.kyivpost.com/topic/russia)   [Drones](https://www.kyivpost.com/topic/drones)   [Moscow](https://www.kyivpost.com/topic/moscow)\n\n# Ukrainian Drones Strike Oil Depot in Moscow Regi",
+      "published_date": "Sat, 18 Jul 2026 09:29:00 GMT",
+      "search_region": "俄乌战争",
+      "classified_regions": [
+        "俄乌战争"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "BitRiver’s Bust and the Emerging Russian Crypto Order - CoinShares",
+      "title_cn": "",
+      "url": "https://coinshares.com/us/insights/the-node/por-bitrivers-bust-and-the-emerging-russian-crypto-order/",
+      "content": "In just a few years, Western sanctions over the war in Ukraine have brought crypto from the periphery of Russia’s economy to centre stage. Crypto has given the Kremlin a way to keep energy revenues flowing, settle trades outside the dollar system, and build a parallel financial architecture the West",
+      "content_detail": "[![Coinshares Logo](/icons/coinshares-logo-black.svg)](/us/)\n\n[![Coinshares Logo](/icons/coinshares-logo-white.svg)![Coinshares Logo](/icons/coinshares-logo-black.svg)](/)\n\n![Image BitRiver’s bust and the emerging Russian crypto order](https://a.storyblok.com/f/176807/3296x1600/53d0233211/cover-russia.png)\n\n[Home](/us/)[Insights](/us/insights/)[The Node](/us/insights/the-node/)\n\n# BitRiver’s bust and the emerging Russian crypto order\n\n![Timer](/icons/timer-gray.svg)13 min read\n\nThe materials on this website or any third-party websites accessed herein are not associated with and have not been reviewed or approved by: (i) Valkyrie Funds LLC dba CoinShares, its products, or the distributor of its products, or (ii) CoinShares Co., its products, or the marketing agent of its products.\n\nBitRiver was Russia's largest crypto miner, with a Stanford-educated founder and clients worldwide. Then the oligarchs and the tax authorities came calling.\n\nIn just a few years, Western sanctions over the war in Ukraine have brought crypto from the periphery of Russia’s economy to centre stage. Crypto has given the Kremlin a way to keep energy revenues flowing, settle trades outside the dollar system, and build a parallel financial architecture the West can’t easily reach. It’s too early to tell whether the Russian crypto industry will undergo an asset redistribution1 similar to that happening in the broader Russian economy, but it’s clear the industry has become too strategically vital to leave to",
+      "published_date": "Sat, 18 Jul 2026 04:52:05 GMT",
+      "search_region": "俄乌战争",
+      "classified_regions": [
+        "俄乌战争"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "BitRiver’s bust and the emerging Russian crypto order 13 min read The materials on this website or any third-party websites accessed herein are not associated with and have not been",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Ukrainian strikes in Russia are deadliest attack in two years - Modern Ghana",
+      "title_cn": "",
+      "url": "https://www.modernghana.com/amp/videonews/684492",
+      "content": "✕\n\n HOME\n NEWS\n SPORTS\n SHOWBIZ\n AFRICA\n WORLD\n BUSINESS\n OPINIONS\n POLITICS\n LIFESTYLE\n HEALTH\n\nHome  › CNN       18.07.2026\n\n# Ukrainian strikes in Russia are deadliest attack in two years\n\nSocial media video shows smoke billowing from a warehouse in Elektrostal, Russia, after Ukraine says it laun",
+      "content_detail": "[Home](# \"Home\")\n [› CNN](/videonews/CNN/1 \"CNN\")       18.07.2026\n\n# Ukrainian strikes in Russia are deadliest attack in two years\n\nSocial media video shows smoke billowing from a warehouse in Elektrostal, Russia, after Ukraine says it launched drone attacks on the facility on Saturday. A distribution center in Kotovsk was also struck. Ukrainian President Volodymyr Zelensky says the warehouses were used “to supply sanctioned components for drone production and navigation equipment.”\n#CNN #News #Ukraine #Russia",
+      "published_date": "Sat, 18 Jul 2026 16:40:00 GMT",
+      "search_region": "俄乌战争",
+      "classified_regions": [
+        "俄乌战争"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "18.07.2026 Ukrainian strikes in Russia are deadliest attack in two years Social media video shows smoke billowing from a warehouse in Elektrostal, Russia, after Ukraine says it launched drone attacks",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Ukrainians protest for second day, call to replace army chief - Reuters",
+      "title_cn": "",
+      "url": "https://www.reuters.com/video/watch/idRW895518072026RP1/?chan=world-news",
+      "content": "### Image 7: Ukrainian attacks on energy and shipping squeeze Russian farmers 01:20 Houseboats sit on dry riverbeds amid Netherlands drought\n\n   ### Image 8: Houseboats sit on dry riverbeds amid Netherlands drought 01:16 Andy Burnham becomes UK Labour leader; next stop - prime minister\n\n   ### Image",
+      "content_detail": "[Skip to main content](https://www.reuters.com/video/watch/idRW895518072026RP1?chan=world-news#main-content)\n\n[Exclusive news, data and analytics for financial market professionals Learn more about Refinitiv](https://www.reuters.com/differentiator/)\n\n[](https://www.reuters.com/)\n\n*   [World](https://www.reuters.com/world/) \n\n## [Browse World](https://www.reuters.com/world/)\n\n    *   [Africa](https://www.reuters.com/world/africa/)\n    *   [Americas](https://www.reuters.com/world/americas/)\n    *   [Asia Pacific](https://www.reuters.com/world/asia-pacific/)\n    *   [China](https://www.reuters.com/world/china/)\n    *   [Europe](https://www.reuters.com/world/europe/)\n    *   [India](https://www.reuters.com/world/india/)\n    *   [Iran War](https://www.reuters.com/world/iran/)\n\n    *   [Israel and Hamas at War](https://www.reuters.com/world/israel-hamas/)\n    *   [Japan](https://www.reuters.com/world/japan/)\n    *   [Middle East](https://www.reuters.com/world/middle-east/)\n    *   [Ukraine and Russia at War](https://www.reuters.com/world/ukraine-russia-war/)\n    *   [United Kingdom](https://www.reuters.com/world/uk/)\n    *   [United States](https://www.reuters.com/world/us/)\n    *   [Reuters NEXT](https://www.reuters.com/world/reuters-next/)\n\n*   [Business](https://www.reuters.com/business/) \n\n## [Browse Business](https://www.reuters.com/business/)\n\n    *   [Aerospace & Defense](https://www.reuters.com/business/aerospace-defense/)\n    *   [Autos & Transportation](https://www.reuter",
+      "published_date": "Sat, 18 Jul 2026 07:46:23 GMT",
+      "search_region": "俄乌战争",
+      "classified_regions": [
+        "俄乌战争"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Ukrainian drones hit Russian oil depot, logistics centers; 7 dead - Crypto Briefing",
+      "title_cn": "",
+      "url": "https://cryptobriefing.com/ukrainian-drones-hit-russian-oil-depot-logistics-centers-7-dead/",
+      "content": "Ukraine recapture of crimea\n\nby  Estefano Gomez\n\nShare\n\n Add us on Google\n\nUkrainian drones have reportedly targeted an oil depot and logistics centers in Russia and Crimea, resulting in fires and seven fatalities, according to the Kyiv Post. This development is part of Ukraine’s ongoing strategy to",
+      "content_detail": "[![Crypto Briefing](https://cryptobriefing.com/wp-content/themes/cryptobriefing-lovable/crypto-briefing-logo-BZ0L6Kp3.png)](https://cryptobriefing.com)\n\n[![Crypto Briefing](https://cryptobriefing.com/wp-content/themes/cryptobriefing-lovable/crypto-briefing-logo-BZ0L6Kp3.png)](https://cryptobriefing.com)\n\n#### Sections\n\n[Bitcoin](https://cryptobriefing.com/category/bitcoin/) [DeFi](https://cryptobriefing.com/category/defi/) [Ethereum](https://cryptobriefing.com/category/ethereum/) [NFTs](https://cryptobriefing.com/category/nfts/) [AI Agents](https://cryptobriefing.com/category/ai-agents/) [Regulation](https://cryptobriefing.com/category/regulation/) [Web3](https://cryptobriefing.com/category/web3/) [Business](https://cryptobriefing.com/category/business/) [Ecosystem](https://cryptobriefing.com/category/ecosystem/)\n\n#### Sections\n\n[Soccer](https://cryptobriefing.com/category/soccer/) [Esports](https://cryptobriefing.com/category/esports/)\n\n[![Crypto Briefing](https://cryptobriefing.com/wp-content/themes/cryptobriefing-lovable/crypto-briefing-logo-BZ0L6Kp3.png)](https://cryptobriefing.com)\n\n![Ukrainian drones hit Russian oil depot, logistics centers; 7 dead](https://static.cryptobriefing.com/wp-content/uploads/2026/07/18024038/https-upload-wikimedia-org-wikipedia-commons-7-73-the-protot-8-1-800x420.jpeg)\n\nhttps://en.wikipedia.org/wiki/Aerorozvidka\n\n# Ukrainian drones hit Russian oil depot, logistics centers; 7 dead\n\nUkraine recapture of crimea\n\nShare\n\n [Add us on Google](https:/",
+      "published_date": "Sat, 18 Jul 2026 06:40:40 GMT",
+      "search_region": "俄乌战争",
+      "classified_regions": [
+        "俄乌战争"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "‘Only fools are not afraid’: Ukrainians adapt to life under constant Russian drone attacks - CNN",
+      "title_cn": "",
+      "url": "https://www.cnn.com/2026/07/18/europe/ukraine-nikopol-drone-attacks-adapting-intl",
+      "content": "Ad Feedback\n\nThank You!\n\nYour effort and contribution in providing this feedback is much appreciated.\n\nWorld Europe 7 min read\n\n# ‘Only fools are not afraid’: Ukrainians adapt to life under constant Russian drone attacks\n\nBy Daria Tarasova-Markina, Svitlana Vlasova, Lauren Kent\n\nPUBLISHED\n\nPeople cl",
+      "content_detail": "### CNN values your feedback\n\n# ‘Only fools are not afraid’: Ukrainians adapt to life under constant Russian drone attacks\n\n![People clear debris at a market hit by a Russian drone strike on April 4, 2026, in Nikopol, Ukraine.](https://media.cnn.com/api/v1/images/stellar/prod/gettyimages-2269888116.jpg?c=16x9&q=w_1383,c_fill)\n\nNikopol, in southern [Ukraine](https://www.cnn.com/world/europe/ukraine), rarely makes the headlines – overshadowed by the threats to the occupied Zaporizhzhia Nuclear Power Plant directly across the river. But this city on the front line of Russia’s full-scale invasion has been attacked almost every day since the war began, local authorities say.\n\nIts proximity to Russian military positions only two miles away on the other bank of the Dnipro River means that [civilians face a heightened risk](https://www.cnn.com/2026/07/14/europe/ukraine-civilian-deaths-russia-war-intl) of attacks by short-range Russian drones.\n\n“We’ve actually grown somewhat accustomed to the danger, though the feeling of fear never really goes away,” said Oleksandr Varytsev, a poet who also runs a local charity that provides hot meals for elderly and disabled people. “It’s very scary – and if it’s scary for me, you can imagine how older men and women feel when they come to our volunteer center.”\n\nHorrifying video posted by authorities in June showed a small Russian drone target an elderly woman in a wheelchair – an attack that killed three people, including the 87-year-old woman and ",
+      "published_date": "Sat, 18 Jul 2026 07:53:28 GMT",
+      "search_region": "俄乌战争",
+      "classified_regions": [
+        "俄乌战争"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "CNN values your feedback ‘Only fools are not afraid’: Ukrainians adapt to life under constant Russian drone attacks",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "US universities got hundreds of millions of dollars from sanctioned China entities - Newsweek",
+      "title_cn": "",
+      "url": "https://www.newsweek.com/us-universities-got-millions-from-sanctioned-china-entities-12203394",
+      "content": "World\n\nChinaSanctionsColleges and universities\n\nNews Article\n\n# US Universities Got Over $300M From Sanctioned China Entities\n\nPublished\n\nJul 18, 2026 at 04:00 AM EDT\n\nBy Didi Kirsten Tatlow\n\nSenior Correspondent, International Affairs\n\nNewsweek is a Trust Project member\n\nSee more of our trusted cov",
+      "content_detail": "# US Universities Got Over $300M From Sanctioned China Entities\n\nPublished\n\nJul 18, 2026 at 04:00 AM EDT\n\n![Didi Kirsten Tatlow](/default-avatar.svg)\n\nSenior Correspondent, International Affairs\n\nSpooked by a decades-long outflow of top Amerian science and technology to adversaries, the Department of Education has disclosed new data on donations to American [universities](/topic/universities) by foreign companies and universities that today are sanctioned by the U.S., including 527 donations from Chinese entities.\n\nA spreadsheet of 697 donations in total, obtained by *Newsweek*, is titled \"Counterparties of Concern\" and includes 156 donations to U.S. universities from Chinese technology giant Huawei and its U.S. subsidary FutureWei, totaling $42 million. Also prominent among donors was the Beijing Institute of Technology (BIT), one China's \"Seven Sons of National Defense\" military-affiliated universities, which donated more than $49 million.\n\nThe data aims to increase transparency in the U.S. and help end influence, as well as technology and knowledge outflow to China, said research security expert Jeffrey Stoff, President of the Center for Research Security & Integrity. Universities were not disclosing all donations, Stoff told *Newsweek*. \"They [Department of Education] intend to enforce the reporting rules more aggressively,\" he said.\n\n#### Read More on World\n\nThe U.S. says [China](/topic/china) is its main adversary. Chinese leader Xi Jinping has said that technology is \"",
+      "published_date": "Sat, 18 Jul 2026 08:00:00 GMT",
+      "search_region": "中美博弈",
+      "classified_regions": [
+        "中美博弈"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "US Universities Got Over $300M From Sanctioned China Entities Published Jul 18, 2026 at 04:00 AM EDT Senior Correspondent, International Affairs Spooked by a decades-long outflow of top Amerian science",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Modera Wealth Management LLC Decreases Stock Position in Taiwan Semiconductor Manufacturing Company Ltd. $TSM - MarketBeat",
+      "title_cn": "",
+      "url": "https://www.marketbeat.com/instant-alerts/filing-modera-wealth-management-llc-decreases-stock-position-in-taiwan-semiconductor-manufacturing-company-ltd-tsm-2026-07-18/",
+      "content": "Several other institutional investors also recently bought and sold shares of the stock. Assetmark Inc. lifted its position in Taiwan Semiconductor Manufacturing by 0.7% in the first quarter. Assetmark Inc. now owns 556,577 shares of the semiconductor company's stock valued at $188,095,000 after pur",
+      "content_detail": "![MarketBeat home page](/images/master/MarketBeat-logo-r-white.svg?v=2019)\n![99% of You Will Miss This Memory Stock Dip](/logos/videos/thumb_20260717170430_videohuge.png)\n![Want a Stock Before It Peaks? These 3 Growth Stories Are HUGE.](/logos/videos/thumb_20260716172958_videonow2.png)\n![Rare Earth Boom: 3 ETFs to Buy Now.](/logos/videos/thumb_20260715175655_video83u7dopxz9w.jpg)\n![Get READY. Earnings Season Is About to Get Volatile.](/logos/videos/thumb_20260714185158_videolrcwizwrnhs.jpg)\n![](/images/loading-gif.gif?v=2)\n![tc pixel](https://www.marketbeat.com/scripts/TriggeredCampaignPixel.ashx?TriggeredCampaignID=20126&Placement=NativeDisplay&Source=NativeDisplay)\n\n# Modera Wealth Management LLC Decreases Stock Position in Taiwan Semiconductor Manufacturing Company Ltd. $TSM\n\n![Taiwan Semiconductor Manufacturing logo with Computer and Technology background](https://www.marketbeat.com/logos/taiwan-semiconductor-manufacturing-company-limited-logo-1200x675.png?v=20221020142229)\n\n## Key Points\n\nModera Wealth Management LLC lessened its stake in Taiwan Semiconductor Manufacturing Company Ltd. ([NYSE:TSM](https://www.marketbeat.com/stocks/NYSE/TSM/) - [Free Report](https://www.marketbeat.com/arnreports/ReportTickerOptin.aspx?RegistrationCode=TickerHyperlink&Prefix=NYSE&Symbol=TSM)) by 2.0% in the first quarter, according to the company in its most recent 13F filing with the Securities and Exchange Commission. The fund owned 251,807 shares of the semiconductor company's stock aft",
+      "published_date": "Sat, 18 Jul 2026 09:36:48 GMT",
+      "search_region": "中美博弈",
+      "classified_regions": [
+        "中美博弈"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "3 Emerging Market Mining Stocks Investors Are Watching As Tariffs Reroute Global Trade - simplywall.st",
+      "title_cn": "",
+      "url": "https://simplywall.st/stocks/id/materials/idx-antm/antam-persero-shares/news/3-emerging-market-mining-stocks-investors-are-watching-as-ta/amp",
+      "content": "This article by Simply Wall St is general in nature. We provide commentary based on historical data and analyst forecasts only using an unbiased methodology and our articles are not intended to be financial advice. It does not constitute a recommendation to buy or sell any stock, and does not take a",
+      "content_detail": "# 3 Emerging Market Mining Stocks Investors Are Watching As Tariffs Reroute Global Trade\n\nGlobal tariffs have scrambled trade routes and pricing power, and many U.S. focused exporters are now facing higher costs and weaker demand. At the same time, a different group is coming into focus: emerging market exporters that sit outside the tariff crossfire and may pick up business as trade is diverted away from the U.S. This article looks at three stocks from that Non U.S. Emerging Market Exporters screener that appear closely tied to the current trade shake up, and explains why some investors might see them as potential beneficiaries to watch or avoid.\n\n## Antam (Persero) (IDX:ANTM)\n\n**Overview:** Antam (Persero) is a Jakarta based, state linked metals and mining company that explores, mines, refines, and markets nickel, gold, silver, bauxite, alumina, and other minerals for both domestic and export customers, with activities that stretch from raw ore to processed metals and related services.\n\n**Operations:** Antam (Persero) generates most of its revenue from Precious Metals and Refinery at IDR 69,129,231 million, followed by Nickel at IDR 15,552,912 million and Bauxite and Alumina at IDR 3,085,957 million, with sales primarily in Indonesia at IDR 84,588,635 million and exports of IDR 3,225,441 million.\n\n**Market Cap:** IDR 73,794.5 billion\n\nAntam (Persero) sits at the heart of Indonesia’s nickel and precious metals industry, so the current rerouting of global supply chains has pu",
+      "published_date": "Sat, 18 Jul 2026 20:02:33 GMT",
+      "search_region": "中美博弈",
+      "classified_regions": [
+        "中美博弈"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "3 Emerging Market Mining Stocks Investors Are Watching As Tariffs Reroute Global Trade Global tariffs have scrambled trade routes and pricing power, and many U.S.",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Endeavour Silver (NYSE:EXK) Downgraded by Wall Street Zen to Hold - MarketBeat",
+      "title_cn": "",
+      "url": "https://www.marketbeat.com/instant-alerts/endeavour-silver-nyseexk-downgraded-by-wall-street-zen-to-hold-2026-07-18/",
+      "content": "Skip to main content\n\nAST SpaceMobile Stock Sinks as SpaceX Fallout Rattles Space Sector\n\nThe only metrics you should watch as a day trader. (Ad)\n\nSandisk: What the Chart Is Trying to Tell Us\n\nPalantir's Wild Ride: Inside the Stock Wall Street Can't Agree On\n\nIran War Shock: What I Was Told In That ",
+      "content_detail": "![MarketBeat home page](/images/master/MarketBeat-logo-r-white.svg?v=2019)\n![99% of You Will Miss This Memory Stock Dip](/logos/videos/thumb_20260717170430_videohuge.png)\n![Want a Stock Before It Peaks? These 3 Growth Stories Are HUGE.](/logos/videos/thumb_20260716172958_videonow2.png)\n![Rare Earth Boom: 3 ETFs to Buy Now.](/logos/videos/thumb_20260715175655_video83u7dopxz9w.jpg)\n![Get READY. Earnings Season Is About to Get Volatile.](/logos/videos/thumb_20260714185158_videolrcwizwrnhs.jpg)\n![](/images/loading-gif.gif?v=2)\n![tc pixel](https://www.marketbeat.com/scripts/TriggeredCampaignPixel.ashx?TriggeredCampaignID=18730&Placement=NativeDisplay&Source=NativeDisplay)\n\n# Endeavour Silver (NYSE:EXK) Downgraded by Wall Street Zen to Hold\n\n![Endeavour Silver logo with Basic Materials background](https://www.marketbeat.com/logos/endeavour-silver-corp-logo-1200x675.png?v=20250513083728)\n\n## Key Points\n\nEndeavour Silver ([NYSE:EXK](https://www.marketbeat.com/stocks/NYSE/EXK/) - [Get Free Report](https://www.marketbeat.com/arnreports/ReportTickerOptin.aspx?RegistrationCode=TickerHyperlink&Prefix=NYSE&Symbol=EXK)) TSE: EDR was downgraded by investment analysts at [Wall Street Zen](https://www.wallstreetzen.com/newsletters/zen-ratings?ticker=EXK&utm_campaign=getratings&utm_medium=online&utm_source=MarketBeat) from a \"buy\" rating to a \"hold\" rating in a research report issued on Saturday.\n\nSeveral other analysts have also recently issued reports on EXK. Zacks Research raised shares of E",
+      "published_date": "Sat, 18 Jul 2026 05:06:30 GMT",
+      "search_region": "中美博弈",
+      "classified_regions": [
+        "中美博弈"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "Downgraded by Wall Street Zen to Hold",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Dorsey Wright & Associates Acquires 2,555 Shares of Taiwan Semiconductor Manufacturing Company Ltd. $TSM - MarketBeat",
+      "title_cn": "",
+      "url": "https://www.marketbeat.com/instant-alerts/filing-dorsey-wright-associates-acquires-2555-shares-of-taiwan-semiconductor-manufacturing-company-ltd-tsm-2026-07-18/",
+      "content": "Skip to main content\n\nAST SpaceMobile Stock Sinks as SpaceX Fallout Rattles Space Sector\n\nSPCX Warning - and Worst News for Stocks in 50 Years (Ad)\n\nSandisk: What the Chart Is Trying to Tell Us\n\nPalantir's Wild Ride: Inside the Stock Wall Street Can't Agree On\n\nURGENT Dollar Reset Warning for Monday",
+      "content_detail": "",
+      "published_date": "Sat, 18 Jul 2026 08:25:20 GMT",
+      "search_region": "中美博弈",
+      "classified_regions": [
+        "中美博弈"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Global Self Storage (NASDAQ:SELF) Stock Crosses Below Fifty Day Moving Average - Here's Why - MarketBeat",
+      "title_cn": "",
+      "url": "https://www.marketbeat.com/instant-alerts/global-self-storage-nasdaqself-stock-crosses-below-fifty-day-moving-average-heres-why-2026-07-18/",
+      "content": "Skip to main content\n\nAST SpaceMobile Stock Sinks as SpaceX Fallout Rattles Space Sector\n\nSPCX Warning - and Worst News for Stocks in 50 Years (Ad)\n\nSandisk: What the Chart Is Trying to Tell Us\n\nPalantir's Wild Ride: Inside the Stock Wall Street Can't Agree On\n\nURGENT Dollar Reset Warning for Monday",
+      "content_detail": "",
+      "published_date": "Sat, 18 Jul 2026 08:00:47 GMT",
+      "search_region": "中美博弈",
+      "classified_regions": [
+        "中美博弈"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "The U.S. and Iran blow past red lines as they lurch back toward all-out war - NPR Las Vegas",
+      "title_cn": "",
+      "url": "https://knpr.org/npr/2026-07-17/the-u-s-and-iran-blow-past-red-lines-as-they-lurch-back-toward-all-out-war",
+      "content": "Iran condemned the U.S. strikes and the restoration of oil sanctions as violations of the agreement while insisting it had the right to control the strait, which the military command says is an \"unbreakable red line.\" Iran also broadened its retaliatory strikes, hitting Bahrain, Kuwait and mediator ",
+      "content_detail": "",
+      "published_date": "Sat, 18 Jul 2026 06:01:20 GMT",
+      "search_region": "中东/红海",
+      "classified_regions": [
+        "中东/红海"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Trump may have to choose between an endless quagmire and ceding the Strait of Hormuz to Iran - Fortune",
+      "title_cn": "",
+      "url": "https://fortune.com/2026/07/18/trump-choose-endless-quagmire-ceding-strait-hormuz-iran/",
+      "content": "Spurred by the war, the UAE is doubling the size of its West-East pipeline and planning a new Fujairah port to bypass Hormuz and move more oil directly into the Gulf of Oman. Iraq is building the Basra-Haditha Pipeline, creating pathways to oil hubs in Turkey, Syria, and Jordan.\n\nSaudi Arabia has ra",
+      "content_detail": "",
+      "published_date": "Sat, 18 Jul 2026 08:07:00 GMT",
+      "search_region": "中东/红海",
+      "classified_regions": [
+        "中东/红海"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Israeli Strike on Gaza Funeral Kills 7 | Haaretz Reports Daily Child Deaths - businesstimes-bd.com",
+      "title_cn": "",
+      "url": "https://www.businesstimes-bd.com/international/middle-east/9121",
+      "content": "Gaza funeral strike\n Israel Gaza war\n Nuseirat refugee camp\n Gaza ceasefire violations\n\n ## Latest\n ## Popular\n\n### SEBI Warns Warns of 'Boss Scam' Targeting Corporate Employees\n\n 1\n\n### U.S. Prosecutor Clarifies Role in Dropped Adani Bribery Case\n\n 2\n\n### The Ultimate 10-Track Playlist for the 2026",
+      "content_detail": "",
+      "published_date": "Sat, 18 Jul 2026 01:47:54 GMT",
+      "search_region": "中东/红海",
+      "classified_regions": [
+        "中东/红海"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Israeli ministers announce plans for new illegal settlements in Gaza and West Bank - The Guardian",
+      "title_cn": "",
+      "url": "https://www.theguardian.com/world/2026/jul/18/israel-plan-new-illegal-settlements-gaza-west-bank-occupied-palestine",
+      "content": "Israel now controls 65% of Gaza, Israel’s deputy chief of staff, Maj Gen Tamir Yadai, told Katz in an on-camera briefing. This is far beyond the 53% agreed under the ceasefire brokered last year by the US president, Donald Trump.\n\nAbout 2 million Palestinians who survived Israel’s war of annihilatio",
+      "content_detail": "",
+      "published_date": "Sat, 18 Jul 2026 06:00:50 GMT",
+      "search_region": "中东/红海",
+      "classified_regions": [
+        "中东/红海"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "The US and Iran have blown past red lines as they lurch back toward all-out war - AP News",
+      "title_cn": "",
+      "url": "https://apnews.com/article/iran-us-war-escalation-shipping-strait-hormuz-179973cfe1fb3fa1b7ea7b816648ad9c",
+      "content": "He said the U.S. strikes were in response to the attacks on shipping, warning that “if it happens again, it will get much worse!” But he also appeared to rule out long-term military action, saying “anything that happens is going to happen very fast.” He also suggested the U.S. military might “just f",
+      "content_detail": "",
+      "published_date": "Sat, 18 Jul 2026 09:35:46 GMT",
+      "search_region": "中东/红海",
+      "classified_regions": [
+        "中东/红海"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Photos of the Week by Haaretz Photographers - Haaretz",
+      "title_cn": "",
+      "url": "https://www.haaretz.com/photo-blog/2026-07-18/ty-article-magazine/.premium/photos-of-the-week-by-haaretz-photographers/0000019f-7562-dec7-afff-75ef8b190000",
+      "content": "Haaretz - back to home page\n\nSearch\n\n# Photos of the Week by Haaretz Photographers\n\nShare to FacebookShare to XComments:\n\nLionel Messi celebrating Argentina's victory over England. Credit: Shaul Greenfeld\n\nRami Shllush\n\nLoading...\n\n### Click the alert icon to follow topics:\n\nIsrael High Court\n\nIsrae",
+      "content_detail": "",
+      "published_date": "Sat, 18 Jul 2026 15:20:00 GMT",
+      "search_region": "中东/红海",
+      "classified_regions": [
+        "中东/红海"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Strait of Hormuz Global Energy Security Risk Explained in 2026 - Discovery Alert",
+      "title_cn": "",
+      "url": "https://discoveryalert.com.au/strait-hormuz-global-energy-security-crisis-2026-risk/",
+      "content": "The current disruption began on February 28, 2026, when US and Israeli military strikes on Iran triggered a conflict that has progressively strangled transit through the Strait. By mid-July 2026, the blockage had persisted for more than 100 days, making it, by the assessment of senior energy officia",
+      "content_detail": "",
+      "published_date": "Sat, 18 Jul 2026 10:12:33 GMT",
+      "search_region": "中东/红海",
+      "classified_regions": [
+        "中东/红海"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Palestinian Teen Dies One Week After Being Shot by Israeli Troops in West Bank - Haaretz",
+      "title_cn": "",
+      "url": "https://www.haaretz.com/west-bank/2026-07-18/ty-article/.premium/palestinian-teen-dies-one-week-after-being-shot-by-israeli-troops-in-west-bank/0000019f-7467-d526-abbf-f4672d230000",
+      "content": "## Comments\n\nLoading...\n\n## In the News\n\n### In the News:\n\nLive UpdatesSettler ViolenceU.S.-IranIsraeli SurveillanceNetanyahuNSO in MoroccoIsrael ElectionsHaQuizHaaretz Podcast\n\n### A Lesson From Vienna: Antisemitism Must Be Fought, Not \"Contextualized\"\n\n### Tax Authority Suspends Bnei Brak Missile ",
+      "content_detail": "",
+      "published_date": "Sat, 18 Jul 2026 09:35:00 GMT",
+      "search_region": "中东/红海",
+      "classified_regions": [
+        "中东/红海"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "China builds US Navy destroyer replica for missile testing in Xinjiang desert - Crypto Briefing",
+      "title_cn": "",
+      "url": "https://cryptobriefing.com/china-builds-us-navy-destroyer-replica-for-missile-testing-in-xinjiang-desert/",
+      "content": "Share\n\n Add us on Google\n\nby  Estefano Gomez\n\nRecent satellite images have uncovered that China has constructed a life-size replica of a U.S. Navy Arleigh Burke-class guided-missile destroyer in the Taklamakan Desert, Xinjiang. This full-scale mock-up is reportedly part of an anti-ship missile testi",
+      "content_detail": "",
+      "published_date": "Sat, 18 Jul 2026 01:02:07 GMT",
+      "search_region": "台海/南海/朝鲜",
+      "classified_regions": [
+        "台海/南海/朝鲜"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Deadly landslide in southwest China leaves dozens missing - Reuters",
+      "title_cn": "",
+      "url": "https://www.reuters.com/video/watch/idRW900318072026RP1/",
+      "content": "Load More Categories\n\n   17 hours agoApple unseats Nvidia to become world's most valuable company as AI bets shift , opens new tab\n\n### Stay Informed\n\n   Download the App (iOS), opens new tab\n   Download the App (Android), opens new tab\n   Newsletters\n   Subscribe\n\n### Information you can trust\n\nReu",
+      "content_detail": "",
+      "published_date": "Sat, 18 Jul 2026 10:19:02 GMT",
+      "search_region": "台海/南海/朝鲜",
+      "classified_regions": [
+        "台海/南海/朝鲜"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "India's activist on hunger strike remains stable, doctor says - Reuters",
+      "title_cn": "",
+      "url": "https://www.reuters.com/video/watch/idRW904918072026RP1/",
+      "content": "### 01:27 Families look for missing loved ones in deadly Bangkok pub fire\n\n   ### 01:33 'It was so rapid,' Bangkok pub fire survivor recounts deadly blaze\n\n   ### 00:26 Rescuers search for survivors in charred Bangkok pub after deadly fire\n\n   ### 00:16 Floodwaters carry vehicles away in China's Che",
+      "content_detail": "",
+      "published_date": "Sat, 18 Jul 2026 18:57:05 GMT",
+      "search_region": "台海/南海/朝鲜",
+      "classified_regions": [
+        "台海/南海/朝鲜"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Indian activist on hunger strike moved by police - CNN",
+      "title_cn": "",
+      "url": "https://www.cnn.com/2026/07/18/world/video/police-remove-sonam-wangchuk-hunger-strike-hnk-vrtc-digvid",
+      "content": "President Donald Trump’s claim that China has waged a campaign of interference in US elections threatens to upset a fragile stability between the two powers ahead of an expected visit by Chinese leader Xi Jinping to the US in September. CNN’s Simone McCarthy reports.\n\n01:22   • Source: CNN\n\nChina de",
+      "content_detail": "",
+      "published_date": "Sat, 18 Jul 2026 06:04:00 GMT",
+      "search_region": "台海/南海/朝鲜",
+      "classified_regions": [
+        "台海/南海/朝鲜"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Ukrainian strikes in Russia are deadliest attack in two years - CNN",
+      "title_cn": "",
+      "url": "https://edition.cnn.com/2026/07/18/world/video/ukraine-strikes-russia-warehouse-deadliest-two-year-digvid-vrtc",
+      "content": "Indian activist on hunger strike moved by police\n\n00:38\n\nVideo Ad Feedback\n\nNew video emerges of bomb assassination attempt in Monaco\n\nNew video from the first-ever bomb assassination attempt in Monaco shows a woman walking down the street and planting what appears to be a bomb at the entrance of an",
+      "content_detail": "",
+      "published_date": "Sat, 18 Jul 2026 15:21:00 GMT",
+      "search_region": "台海/南海/朝鲜",
+      "classified_regions": [
+        "台海/南海/朝鲜"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Minimum of eight killed by devastating landslide in China - Sky News Australia",
+      "title_cn": "",
+      "url": "https://www.skynews.com.au/world-news/china/minimum-of-eight-killed-by-devastating-landslide-in-china/video/f75f812849ae21f5d81507e05823823b",
+      "content": "MOST POPULAR‘Goblin’ Greta Thunberg’s sister ‘absolutely nothing like’ climate activistSky News Australia\n\nO smartwatch que as pessoas estão usando para o bem-estar diáriosmartwatch pro | \n\n[SponsoredSponsored]( \"O smartwatch que as pessoas estão usando para o bem-estar diário\")\n\nO Plano Safra está ",
+      "content_detail": "",
+      "published_date": "Sat, 18 Jul 2026 08:35:47 GMT",
+      "search_region": "台海/南海/朝鲜",
+      "classified_regions": [
+        "台海/南海/朝鲜"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "France and Germany Align on Tougher China Trade Defences - EU Today",
+      "title_cn": "",
+      "url": "https://eutoday.net/france-germany-china-trade-defence/",
+      "content": "##### EUToday Correspondents\n\nEUToday publishes articles from a variety of outside sources which express a wide range of viewpoints.Opinions expressed in these articles are not necessarily those of EUToday.\n\nprevious post\n\n##### EU ETS Review Pits Electrification Plan Against Steel Industry Cost Fea",
+      "content_detail": "",
+      "published_date": "Fri, 17 Jul 2026 22:31:12 GMT",
+      "search_region": "全球制裁",
+      "classified_regions": [
+        "全球制裁"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "US strikes Iran for seventh night in a row; Iranian forces launch retaliatory attacks - The Times of Israel",
+      "title_cn": "",
+      "url": "https://www.timesofisrael.com/liveblog-july-18-2026/amp/",
+      "content": "Advertisement\n\n Send by email\n Facebook\n X\n Whatsapp\n Telegram\n Bluesky\n Reddit\n\nAdd ToI as a preferred source on Google\n\n3:53 am\n\n#### CENTCOM denies Iranian claim that 2 tankers exploded after hitting mines\n\nUS Central Command denies a claim by Iran’s Islamic Revolutionary Guard Corps that two oil",
+      "content_detail": "",
+      "published_date": "Sat, 18 Jul 2026 04:01:30 GMT",
+      "search_region": "全球制裁",
+      "classified_regions": [
+        "全球制裁"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Looking beyond the tech sovereignty package: how the EU is moving to ensure tech sector resilience - Global Policy Watch",
+      "title_cn": "",
+      "url": "https://www.globalpolicywatch.com/2026/07/looking-beyond-the-tech-sovereignty-package-how-the-eu-is-moving-to-ensure-tech-sector-resilience/",
+      "content": "operational restrictions such as a requirement for the service to be “operated, managed, maintained or supported” only by personnel vetted by competent Member State authorities. [...] Building on this groundwork, the CSA2 proposal would grant the Commission powers to designate “high-risk suppliers” ",
+      "content_detail": "",
+      "published_date": "Sat, 18 Jul 2026 00:06:39 GMT",
+      "search_region": "全球制裁",
+      "classified_regions": [
+        "全球制裁"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Iranian Army claims attacks on US depots, Kuwait bridges, Jordan fuel reserve - Crypto Briefing",
+      "title_cn": "",
+      "url": "https://cryptobriefing.com/iranian-army-claims-attacks-on-us-depots-kuwait-bridges-jordan-fuel-reserve/",
+      "content": "#### Sections\n\nBitcoin DeFi Ethereum NFTs AI Agents Regulation Web3 Business Ecosystem\n\n#### Sections\n\nSoccer Esports\n\n# Iranian Army claims attacks on US depots, Kuwait bridges, Jordan fuel reserve\n\nIran military action against a gulf state\n\nShare\n\n Add us on Google\n\nby  Estefano Gomez [...] MACRO\n",
+      "content_detail": "",
+      "published_date": "Sat, 18 Jul 2026 00:57:24 GMT",
+      "search_region": "全球制裁",
+      "classified_regions": [
+        "全球制裁"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "BCSC alleges companies failed to disclose director's disciplinary history in AGM materials - Yahoo! Finance Canada",
+      "title_cn": "",
+      "url": "https://ca.finance.yahoo.com/news/bcsc-alleges-companies-failed-disclose-051100000.html",
+      "content": "The BCSC alleges that all three companies failed to disclose Greenway's 2012 sanctions. It also alleges that two of the three companies also failed to disclose his 2025 sanctions in information circulars sent after Greenway learned of his 2025 sanctions for the same type of disclosure failure. Green",
+      "content_detail": "",
+      "published_date": "Sat, 18 Jul 2026 05:11:00 GMT",
+      "search_region": "全球制裁",
+      "classified_regions": [
+        "全球制裁"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Top US prosecutor will not dispute DOJ decision to drop Indian tycoon Gautam Adani's criminal case - The Business Times",
+      "title_cn": "",
+      "url": "https://www.businesstimes.com.sg/international/top-us-prosecutor-will-not-dispute-doj-decision-drop-indian-tycoon-gautam-adanis-criminal-case",
+      "content": "Latest T-bills Treasury Bills Results & Interest NewsLatest SSB Singapore Savings Bonds NewsLatest COE Certificate of Entitlement News\n\nLatest Johor-Singapore SEZ NewsLatest BTO Build To Order & Sales of Balance NewsLatest STI Straits Times Index NewsLatest SGX Dividends, Share Price NewsLatest Bond",
+      "content_detail": "",
+      "published_date": "Sat, 18 Jul 2026 08:19:45 GMT",
+      "search_region": "全球制裁",
+      "classified_regions": [
+        "全球制裁"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "date": "2026-07-20",
+  "generated_at": "2026-07-20T06:07:01.481094",
+  "upcoming_events": [
+    {
+      "date": "2026-07-29",
+      "event": "FOMC 利率决议",
+      "importance": "critical",
+      "category": "央行",
+      "note": "附新闻发布会",
+      "days_until": 9
+    }
+  ],
+  "recent_events": [],
+  "web_events": [
+    {
+      "source": "tavily_answer",
+      "query": "US economic data release this week CPI GDP jobs",
+      "answer": "US economic data for this week indicates that inflation cooled in June, with the annual rate dropping to 3.5% from 4.2% in May. Consumer sentiment surged 10% to a preliminary reading of 54.4, the highest since February, driven by lower gas prices. The labor market remains strong with unemployment at 4.2%. Despite the positive inflation trend, concerns remain about the potential impact of renewed Middle East conflict and significant AI spending on future price increases."
+    },
+    {
+      "source": "tavily_result",
+      "title": "Prepare your portfolio for inflation risk with these moves - CNBC",
+      "url": "https://www.cnbc.com/2026/07/17/prepare-your-portfolio-for-inflation-risk-with-these-moves.html",
+      "content": "# Prepare your portfolio for inflation risk with these moves. A recent release of economic data suggests that price pressures are starting to let up, but investors may want to prepare for the risk of higher inflation going forward. The annual rate came in at 3.5%, cooler than the 4.2% jump in May. I"
+    },
+    {
+      "source": "tavily_result",
+      "title": "America In Focus: US inflation cooled in June, but AI build-out poses latest threat - InsuranceNewsNet",
+      "url": "https://insurancenewsnet.com/oarticle/america-in-focus-us-inflation-cooled-in-june-but-ai-build-out-poses-latest-threat",
+      "content": "# America In Focus: US inflation cooled in June, but AI build-out poses latest threat. The economy, inflation and how those forces could impact the lives of Americans were front and center over the past week. Trips to the grocery store and gas station are more painful than they were last year, and r"
+    },
+    {
+      "source": "tavily_result",
+      "title": "America In Focus: US inflation cooled in June, but AI build-out poses latest threat - The Washington Post",
+      "url": "https://www.washingtonpost.com/business/2026/07/18/inflation-economy-iran-trump-unemployment-ai/8468c624-82b2-11f1-8a16-393bd03340b0_story.html",
+      "content": "# America In Focus: US inflation cooled in June, but AI build-out poses latest threat. U.S. inflation cooled last month as the cost of gas, clothes, and used cars fell, providing some relief to consumers, while underlying price pressures also cooled more than expected. The economy, inflation and how"
+    },
+    {
+      "source": "tavily_answer",
+      "query": "Federal Reserve speech this week monetary policy",
+      "answer": "Recent Federal Reserve speeches indicate a potential shift towards raising interest rates to combat inflation. Fed Chairman Kevin Warsh emphasized the committee's zero tolerance for persistently elevated inflation. Cleveland Fed President Beth Hammack and Dallas Fed President Lorie Logan both suggested that inflation may necessitate rate hikes. Federal Reserve Vice Chair Philip Jefferson also expressed openness to raising rates if inflation does not improve soon. These signals set a hawkish tone"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Fed Officials Signal Inflation Crackdown Ahead of Next Interest Rate Meeting - Realtor.com",
+      "url": "https://www.realtor.com/news/real-estate-news/fed-officials-kevin-warsh-inflation-speeches-july-2026/",
+      "content": "Realtor.com® Real Estate App. Find a real estate agent. + 6 reasons you should never buy or sell a home without an agent. + How to find a REALTOR®. In public appearances this week, a number of top Federal Reserve officials signaled a strict crackdown on sticky inflation, setting a hawkish tone ahead"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Trump wants rate cuts. More Fed officials say hikes could be next. - The Washington Post",
+      "url": "https://www.washingtonpost.com/business/2026/07/17/trump-wants-rate-cuts-more-fed-officials-say-hikes-could-be-next/",
+      "content": "Cleveland Fed President Beth Hammack became the latest policymaker to warn that inflation may force the central bank to raise interest rates. President Donald Trump’s push for lower interest rates is colliding with a different reality at the Federal Reserve, where a growing chorus of policymakers is"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Fed may need to hike rates if inflation does not ease soon, Jefferson says - Reuters",
+      "url": "https://www.reuters.com/business/fed-may-need-hike-rates-if-inflation-does-not-ease-soon-jefferson-says-2026-07-16/",
+      "content": "Exclusive news, data and analytics for financial market professionals Learn more about Refinitiv. ## Browse World. ## Browse Business. U.S. Federal Reserve Vice Chair Philip Jefferson poses for a photo ahead of a G7 finance ministers and central bank governors meeting in Paris, France, May 18, 2026."
+    },
+    {
+      "source": "tavily_answer",
+      "query": "China PMI economic data this week",
+      "answer": "China's Purchasing Managers' Index (PMI) for July 2026 showed a surprising across-the-board fall in investment, which economists and government advisers believe can be countered by accelerating already-budgeted national infrastructure projects. This move aims to stabilize economic growth while maintaining tight control over local government spending. Additionally, China's exports experienced a significant jump in June, with shipments climbing 27% against the same month a year earlier, driven by "
+    },
+    {
+      "source": "tavily_result",
+      "title": "China bets on faster state-backed projects to shore up growth, avoid broad stimulus - Reuters",
+      "url": "https://www.reuters.com/business/autos-transportation/china-bets-faster-state-backed-projects-shore-up-growth-avoid-broad-stimulus-2026-07-16/",
+      "content": "Exclusive news, data and analytics for financial market professionals Learn more about Refinitiv. ## Browse World. ## Browse Business. Image 3: Logistics companies at a clothing wholesale district in Guangzhou. Item 1 of 4 Logistics workers operate along a street in a clothing wholesale district in "
+    },
+    {
+      "source": "tavily_result",
+      "title": "Import prices post surprise gain as costs of goods from China hit highest since 2008 - CNBC",
+      "url": "https://www.cnbc.com/2026/07/17/import-prices-post-surprise-gain-as-costs-of-goods-from-china-hit-highest-since-2008.html",
+      "content": "# Import prices post surprise gain as costs of goods from China hit highest since 2008. * Import prices were up 0.3% for the month, as a drop in energy was more than offset by increases elsewhere. * China played a role, with import prices rising 0.9%, the biggest monthly move since January 2008, a p"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Carvina Capital Sees China Exports Jump 27% - Digital Journal",
+      "url": "https://www.digitaljournal.com/pr/news/access-newswire/carvina-capital-sees-china-exports-1150553680.html",
+      "content": "***Semiconductor and artificial-intelligence shipments power the fastest monthly export expansion in over four years, lifting the trade surplus towards record territory even as protectionist investigations multiply and mainland investment weakens.***. **SINGAPORE, SG / ACCESS Newswire / July 19, 202"
+    }
+  ]
+}

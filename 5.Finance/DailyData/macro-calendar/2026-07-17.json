@@ -1,0 +1,94 @@
+{
+  "date": "2026-07-17",
+  "generated_at": "2026-07-17T06:07:15.466214",
+  "upcoming_events": [
+    {
+      "date": "2026-07-29",
+      "event": "FOMC 利率决议",
+      "importance": "critical",
+      "category": "央行",
+      "note": "附新闻发布会",
+      "days_until": 12
+    }
+  ],
+  "recent_events": [
+    {
+      "date": "2026-07-15",
+      "event": "美国 CPI (6月)",
+      "importance": "high",
+      "category": "通胀",
+      "days_ago": 2
+    }
+  ],
+  "web_events": [
+    {
+      "source": "tavily_answer",
+      "query": "US economic data release this week CPI GDP jobs",
+      "answer": "This week's US economic data releases will focus on key inflation metrics and jobs reports. On Tuesday, July 14, the June Consumer Price Index (CPI) will be released, followed by the Producer Price Index (PPI) on Wednesday, July 15. The June retail sales data will be announced on Thursday, July 16. These inflation figures are crucial for assessing the Federal Reserve's potential interest rate adjustments. Additionally, the US Q2 earnings season will kick off with major banks reporting, and the t"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Week Ahead: US June CPI, PPI Reports Arrive. US Stock Q2 Earnings Season Officially Kicks Off as JPMorgan, Netflix, TSMC Report",
+      "url": "https://www.tradingkey.com/analysis/economic/more/262024478-week-ahead-us-june-cpi-ppi-focus-q2-earnings-season-tradingkey",
+      "content": "US Stock Q2 Earnings Season Officially Kicks Off as JPMorgan, Netflix, TSMC Report. The upcoming week features a pivotal \"Super Week\" for global markets, defined by dense US inflation data—including June CPI, PPI, and retail sales—and Fed Chair Warsh's Congressional testimony, which will shape late-"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Week Ahead for FX, Bonds: U.S. Inflation Figures in Focus, China Data Due",
+      "url": "https://www.wsj.com/economy/week-ahead-for-fx-bonds-u-s-inflation-figures-in-focus-china-data-due-fc4a1c71",
+      "content": "U.S. inflation figures will mark the key economic data release as investors assess when and whether the Federal Reserve could raise interest rates."
+    },
+    {
+      "source": "tavily_result",
+      "title": "What to Expect in Markets this Week: Inflation Data, Warsh ...",
+      "url": "https://www.investopedia.com/what-to-expect-in-markets-this-week-june-inflation-data-warsh-testimony-in-congress-bank-earnings-reports-12015328",
+      "content": "# What to Expect in Markets this Week: Inflation Data, Warsh Testimony in Congress, Bank Earnings. :max_bytes(150000):strip_icc():format(webp)/IMG_5758-5ade87a95cf04dc0951bab565081cb4c.jpg). Jamie Dimon depicted in front of a JP Morgan sign:max_bytes(150000):strip_icc():format(webp)/GettyImages-2276"
+    },
+    {
+      "source": "tavily_answer",
+      "query": "Federal Reserve speech this week monetary policy",
+      "answer": "Federal Reserve Chairman Kevin Warsh has pledged to defeat inflation and \"get monetary policy right,\" emphasizing the central bank's commitment to restoring price stability. In his remarks to Congress, Warsh highlighted the benefits of artificial intelligence investment and assured that the economy remains in solid shape. New York Fed President John Williams also commented on inflation, stating that it is \"unquestionably too high\" but suggesting it may soon subside. Meanwhile, Kansas City Fed Pr"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Warsh promises inflation will be a 'thing of the past,' cites benefits of AI investment boom - CNBC",
+      "url": "https://www.cnbc.com/2026/07/14/warsh-promises-inflation-will-be-a-thing-of-the-past-cites-benefits-of-ai-investment-boom.html",
+      "content": "# Warsh promises inflation will be a 'thing of the past,' cites benefits of AI investment boom. * Fed Chairman Kevin Warsh on Tuesday, in remarks he delivers to Congress this week, vowed to defeat inflation and \"get monetary policy right.\". * While he promised to tackle inflation, the central bank l"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Fed's Williams: \"Unquestionably too-high\" inflation may soon subside - Reuters",
+      "url": "https://www.reuters.com/business/feds-williams-unquestionably-too-high-inflation-may-soon-subside-2026-07-15/",
+      "content": "Exclusive news, data and analytics for financial market professionals Learn more about Refinitiv. ## Browse World. ## Browse Business. Image 3: New York Federal Reserve President John William speaks in New York. New York Federal Reserve President John Williams speaks to the Economic Club of New York"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Takeaways from Fed Chairman Kevin Warsh’s first congressional testimony - CNN",
+      "url": "https://www.cnn.com/2026/07/14/economy/takeaways-kevin-warsh-congressional-testimony",
+      "content": "Federal Reserve Chairman Kevin Warsh on Tuesday offered his most detailed account yet of the sweeping changes he’s ushering in at America’s central bank and the philosophy behind them. Warsh appeared before the House Financial Services Committee to deliver the Fed’s semiannual Monetary Policy Report"
+    },
+    {
+      "source": "tavily_answer",
+      "query": "China PMI economic data this week",
+      "answer": "China's economic growth slowed to 4.3% in the second quarter of 2026, marking the slowest pace in over three years and falling short of the 4.5%-5.0% full-year target range. This deceleration is attributed to weak household consumption, despite robust manufacturing and export sectors. Retail sales rose by 1.0% in June, while industrial output expanded by 5.3%. The slowdown has raised concerns about the sustainability of China's growth model, especially amid global economic challenges and trade t"
+    },
+    {
+      "source": "tavily_result",
+      "title": "China's Q2 economic growth cools to 3-1/2-year low as imbalances worsen - Yahoo Finance",
+      "url": "https://finance.yahoo.com/news/chinas-q2-gdp-growth-slows-020844123.html",
+      "content": "2. Best 0% APR cards. # China's Q2 economic growth cools to 3-1/2-year low as imbalances worsen. By Liangping Gao, Kevin Yao and Claire Fu. By Liangping Gao, Kevin Yao and Claire Fu. BEIJING/SINGAPORE, July 15 (Reuters) - China's economy expanded at its slowest pace in over three years in the second"
+    },
+    {
+      "source": "tavily_result",
+      "title": "China reports slower-than-expected growth as Iran turmoil roils global trade - CNN",
+      "url": "https://www.cnn.com/2026/07/14/business/china-q2-gdp-export-economy-intl-hnk",
+      "content": "* China misses growth target for first time since Covid as Iran turmoil roils global trade. China is struggling to offset economic challenges both at home and abroad, as its economy grew at a slower-than-expected pace in the second quarter of the year. On Wednesday, China’s National Bureau of Statis"
+    },
+    {
+      "source": "tavily_result",
+      "title": "China's Q2 economic growth cools to 3-1/2-year low as imbalances worsen - Reuters",
+      "url": "https://www.reuters.com/world/china/chinas-q2-gdp-growth-slows-43-yy-misses-market-forecast-2026-07-15/",
+      "content": "Exclusive news, data and analytics for financial market professionals Learn more about Refinitiv. ## Browse World. *   Ukraine and Russia at War. ## Browse Business. ## Browse Markets. # China's Q2 economic growth cools to 3-1/2-year low as imbalances worsen. BEIJING/SINGAPORE, July 15 (Reuters) - C"
+    }
+  ]
+}
