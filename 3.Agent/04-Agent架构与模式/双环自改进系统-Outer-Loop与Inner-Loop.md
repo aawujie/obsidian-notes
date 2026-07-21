@@ -36,14 +36,13 @@ tags:
 
 ## 核心设计逻辑
 
-1. **分工明确**：强模型（Claude）不做执行，只做装备设计；快模型（Gemini）不做决策，只做跑分
+1. **分工明确**：<span style="color:rgb(255, 77, 77)">强模型（Claude）不做执行，只做装备设计</span>；<span style="color:rgb(255, 77, 77)">快模型（Gemini）不做决策，只做跑分</span>
 2. **量化反馈**：内循环必须输出可比较的分数，外循环才有优化方向
-3. **迭代收敛**：100 次循环后挑最优版本，本质是 genetic algorithm 的变体
-
+3. **迭代收敛**：100 次循环后挑最优版本，<span style="color:rgb(255, 77, 77)">本质是 genetic algorithm 的变体<br></span>
 ## 应用方向
 
 - **工具代码优化**：让 Claude 改 agent 用的工具函数，Gemini 跑 benchmark 验证
-- **提示词进化**：外循环改 system prompt，内循环跑一组任务打分
+- **提示词进化**：外循环改 system prompt，内[]()循环跑一组任务打分
 - **Skill 自动调优**：扫参数、跑回测、挑最优
 
 ## 风险
