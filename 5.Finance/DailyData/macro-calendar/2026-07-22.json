@@ -1,0 +1,86 @@
+{
+  "date": "2026-07-22",
+  "generated_at": "2026-07-22T06:07:09.298523",
+  "upcoming_events": [
+    {
+      "date": "2026-07-29",
+      "event": "FOMC 利率决议",
+      "importance": "critical",
+      "category": "央行",
+      "note": "附新闻发布会",
+      "days_until": 7
+    }
+  ],
+  "recent_events": [],
+  "web_events": [
+    {
+      "source": "tavily_answer",
+      "query": "US economic data release this week CPI GDP jobs",
+      "answer": "This week, key US economic data releases include the Consumer Price Index (CPI) and Gross Domestic Product (GDP) figures, alongside significant job market data. The CPI report is expected to provide insights into inflation trends, while the GDP data will shed light on the overall economic growth. Additionally, the job market data will offer a comprehensive view of employment conditions. These reports are anticipated to influence market dynamics and investor sentiment, particularly in light of on"
+    },
+    {
+      "source": "tavily_result",
+      "title": "What to Expect in Markets This Week: Alphabet, Tesla and Intel Headline Big Tech Earnings Reports - Investopedia",
+      "url": "https://www.investopedia.com/what-to-expect-in-markets-this-week-alphabet-tesla-and-intel-headline-big-tech-earnings-reports-12020649",
+      "content": "*   Here’s How Much Traders See Tesla Stock Moving After Earnings. *   Here’s How Much Google Parent Alphabet’s Stock Is Seen Moving After Earnings. # What to Expect in Markets This Week: Alphabet, Tesla and Intel Headline Big Tech Earnings Reports. Alphabet, the parent company of Google, is slated "
+    },
+    {
+      "source": "tavily_result",
+      "title": "News by ACCESS Newswire on TradingView, 2026-07-19 - TradingView",
+      "url": "https://www.tradingview.com/news/reuters.com,2026-07-19:newsml_ACSd6zxba:0/",
+      "content": "Image 2: ACCESS NewswireImage 3: ACCESS Newswire. Sign up to read this news. ## Latest news. * Image 4 Dow Jones Newswires Start a free trial to read this news. Dow Jones Newswires Start a free trial to read this news. Dow Jones Newswires Week Ahead for FX, Bonds: U.S., European PMI Data, ECB Decisi"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Paychecks under growing pressure: Here's what to know - CNBC",
+      "url": "https://www.cnbc.com/video/2026/07/21/paychecks-under-growing-pressure-heres-what-to-know.html",
+      "content": "# Paychecks under growing pressure: Here's what to know. New government data due this morning will show how median weekly earnings for full-time wage and salary workers changed in the second quarter. Even when pay rises, higher prices can limit how far those gains will go, and many Americans are fee"
+    },
+    {
+      "source": "tavily_answer",
+      "query": "Federal Reserve speech this week monetary policy",
+      "answer": "Based on the most recent data, Federal Reserve Chairman Kevin Warsh has emphasized the central bank's ongoing fight against inflation, which has been persistently above the 2% target for several years. Despite the Fed's steady monetary policy since December, with no rate cuts, the market anticipates a potential rate hike by the end of the year, possibly as early as September. This anticipation is driven by the rebound in the job market and the inflationary shock from geopolitical tensions. Addit"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Bond Traders Take Warsh at Word, See Inflation Fight Continuing - Yahoo Finance",
+      "url": "https://finance.yahoo.com/economy/policy/articles/bond-traders-warsh-word-see-170000415.html",
+      "content": "(Bloomberg) -- Bond traders and Federal Reserve Chairman Kevin Warsh are in agreement on a crucial point: The central bank's fight against inflation still seems far from over. And Warsh, who took over as Fed chief two months ago, has made it clear that the central bank's priority is to pull down inf"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Fed Chair Kevin Warsh Just Hammered Home the 2 Words That'll Define His Tenure as Head of the Central Bank -- and They're Worrisome for Wall Street - The Motley Fool",
+      "url": "https://www.fool.com/investing/2026/07/19/fed-kevin-warsh-2-words-define-tenure-wall-street/",
+      "content": "▲ S&P 500 **+---%**|▲ Stock Advisor **+---%**Join The Motley Fool. This has been a historic year for Wall Street and investors -- and we still have more than five months to go. Fed Chair Kevin Warsh pledged to lead a reform-oriented Federal Reserve. In addition to Warsh ascending to his new role ami"
+    },
+    {
+      "source": "tavily_result",
+      "title": "'WarshGPT': How Wall Street is adapting to the Fed's new era of communication - Forex Factory",
+      "url": "https://www.forexfactory.com/news/1409269-warshgpt-how-wall-street-is-adapting-to-the",
+      "content": "'WarshGPT': How Wall Street is adapting to the Fed's new era of communication | Forex Factory. * # 'WarshGPT': How Wall Street is adapting to the Fed's new era of communication. Fed Chairman Kevin Warsh embarked on an overhaul of the central bank’s forward-looking communication since taking the post"
+    },
+    {
+      "source": "tavily_answer",
+      "query": "China PMI economic data this week",
+      "answer": "China's latest Purchasing Managers' Index (PMI) data for July 2026 indicates a mixed economic performance. The manufacturing sector showed signs of recovery with exports jumping 27% to $412.4 billion, driven by semiconductor and artificial intelligence shipments. However, there are concerns about the steel sector, with vehicle sales dropping 4.1% in the first half of the year and rebar inventories higher. Meanwhile, China is considering tighter export controls on AI models and chips to prevent t"
+    },
+    {
+      "source": "tavily_result",
+      "title": "News by ACCESS Newswire on TradingView, 2026-07-19 - TradingView",
+      "url": "https://www.tradingview.com/news/reuters.com,2026-07-19:newsml_ACSd6zxba:0/",
+      "content": "Image 2: ACCESS NewswireImage 3: ACCESS Newswire. Sign up to read this news. ## Latest news. * Image 4 Dow Jones Newswires Start a free trial to read this news. Dow Jones Newswires Start a free trial to read this news. Dow Jones Newswires Week Ahead for FX, Bonds: U.S., European PMI Data, ECB Decisi"
+    },
+    {
+      "source": "tavily_result",
+      "title": "China's steel sector looks weaker than it is, reverse for iron ore - Reuters",
+      "url": "https://www.reuters.com/commentary/reuters-open-interest/chinas-steel-sector-looks-weaker-than-it-is-reverse-iron-ore-2026-07-21/",
+      "content": "Exclusive news, data and analytics for financial market professionals Learn more about Refinitiv. ## Browse World. Image 3: FILE PHOTO: An employee works next to molten iron at a steel mill of Dongbei Special Steel in Dalian. There are other signs of concern as well, with vehicle sales dropping 4.1%"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Carvina Capital Sees China Exports Jump 27% - Digital Journal",
+      "url": "https://www.digitaljournal.com/pr/news/access-newswire/carvina-capital-sees-china-exports-1150553680.html",
+      "content": "***Semiconductor and artificial-intelligence shipments power the fastest monthly export expansion in over four years, lifting the trade surplus towards record territory even as protectionist investigations multiply and mainland investment weakens.***. **SINGAPORE, SG / ACCESS Newswire / July 19, 202"
+    }
+  ]
+}
