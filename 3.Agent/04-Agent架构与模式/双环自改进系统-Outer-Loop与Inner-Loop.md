@@ -14,11 +14,11 @@ tags:
 
 ## 架构
 
-### 外循环（Outer Loop）—— 装备升级师
+### <span style="color:rgb(255, 77, 77)">外循环（Outer Loop）—— 装备升级师</span>
 
-用更强 AI（如 Claude）专门改"内层 AI 的工具代码"，像老板给员工升级装备。
+用更强 AI（如 Claude）专门改 "内层 AI 的工具代码"，像老板给员工升级装备。
 
-### 内循环（Inner Loop）—— 执行者
+### <span style="color:rgb(255, 77, 77)">内循环（Inner Loop）—— 执行者</span>
 
 用 AI（如 Gemini）拿着升级后的装备去实际写代码、测任务、找更好方案。
 
