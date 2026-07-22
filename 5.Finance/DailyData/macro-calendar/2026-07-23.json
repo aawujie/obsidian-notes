@@ -1,0 +1,86 @@
+{
+  "date": "2026-07-23",
+  "generated_at": "2026-07-23T06:07:16.475396",
+  "upcoming_events": [
+    {
+      "date": "2026-07-29",
+      "event": "FOMC 利率决议",
+      "importance": "critical",
+      "category": "央行",
+      "note": "附新闻发布会",
+      "days_until": 6
+    }
+  ],
+  "recent_events": [],
+  "web_events": [
+    {
+      "source": "tavily_answer",
+      "query": "US economic data release this week CPI GDP jobs",
+      "answer": "This week's US economic data release includes reports on CPI, GDP, and jobs. The latest jobs data indicates a mixed picture, with some sectors experiencing job losses while others show positive employment trends. The GDP growth remains a topic of debate, with some experts citing slowing factory construction and others highlighting the positive impact of certain legislations. Inflation rates are also under scrutiny, with some indicators showing slight increases. The stock market, particularly chi"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Trump’s Manufacturing Boom Claim Collides With Federal Jobs Data - Newsweek",
+      "url": "https://www.newsweek.com/trumps-manufacturing-boom-claim-collides-federal-jobs-data-12228805",
+      "content": "Trump’s Manufacturing ‘Resurgence’: What the Numbers Show According to the report, every state has seen a positive impact on employment from the OBBBA, and the White House says this proves Trump’s legislation has “delivered a powerful manufacturing resurgence in every state.” However, Dean Baker, co"
+    },
+    {
+      "source": "tavily_result",
+      "title": "News by ACCESS Newswire on TradingView, 2026-07-19 - TradingView",
+      "url": "https://www.tradingview.com/news/reuters.com,2026-07-19:newsml_ACSd6zxba:0/",
+      "content": "Image 2: ACCESS NewswireImage 3: ACCESS Newswire. Sign up to read this news. ## Latest news. * Image 4 Dow Jones Newswires Start a free trial to read this news. Dow Jones Newswires Start a free trial to read this news. Dow Jones Newswires Week Ahead for FX, Bonds: U.S., European PMI Data, ECB Decisi"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Paychecks under growing pressure: Here's what to know - CNBC",
+      "url": "https://www.cnbc.com/video/2026/07/21/paychecks-under-growing-pressure-heres-what-to-know.html",
+      "content": "# Paychecks under growing pressure: Here's what to know. New government data due this morning will show how median weekly earnings for full-time wage and salary workers changed in the second quarter. Even when pay rises, higher prices can limit how far those gains will go, and many Americans are fee"
+    },
+    {
+      "source": "tavily_answer",
+      "query": "Federal Reserve speech this week monetary policy",
+      "answer": "Based on the most recent information, the Federal Reserve is expected to keep its key interest rate steady for the rest of 2026, although there is a high likelihood of a hike this year. The probability of a July hike has risen to 26%, the highest since last week's surprise in the U.S. CPI print. However, the Fed's decision is also influenced by uncertainties around oil prices and the U.S. labor market."
+    },
+    {
+      "source": "tavily_result",
+      "title": "Treasury yields flat as traders reassess Fed rate hike bets - CNBC",
+      "url": "https://www.cnbc.com/2026/07/22/treasury-yields-fed-rate-hike-bets.html",
+      "content": "# Treasury yields flat as traders reassess Fed rate hike bets. U.S. Treasury yields inched higher on Wednesday as investors mapped escalating tensions across the Middle East and mulled prospects for Federal Reserve monetary policy in the months ahead. The yield on the 10-year U.S. Treasury note — th"
+    },
+    {
+      "source": "tavily_result",
+      "title": "A quieter Fed chief means others narrate the story - Axios",
+      "url": "https://www.axios.com/2026/07/22/warsh-fed-congress-comms",
+      "content": "Using some kinds of trackers (like cross-site or behavioral advertising cookies) may be considered a “sale” or “sharing” of personal data under certain state laws. Because we can't link your Axios subscriber account (email) to browser cookies, you may also want to update your settings in the Privacy"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Kevin Warsh has homed in on three key phrases. How Fed watchers interpret them - CNBC",
+      "url": "https://www.cnbc.com/2026/07/22/kevin-warsh-has-homed-in-on-three-key-phrases-how-fed-watchers-interpret-them.html",
+      "content": "He's not quite at the level of obscurity of former Federal Reserve Chairman Alan Greenspan, but new Fed chief Kevin Warsh has settled on a few phrases that are notable for their repetition and lack of clarity. In five public appearances, starting with his nomination hearing in April, through his fir"
+    },
+    {
+      "source": "tavily_answer",
+      "query": "China PMI economic data this week",
+      "answer": "China's latest Purchasing Managers' Index (PMI) data for July 2026 indicates a slight recovery in manufacturing activity. The chemical industry saw a 5.0% year-on-year increase in value added in the first half of 2026, with a small decline in June. The overall industrial sector experienced a 5.3% year-on-year growth in June, with the manufacturing industry growing by 6.0% and the production and supply of electricity, heat, gas, and water growing by 7.4%."
+    },
+    {
+      "source": "tavily_result",
+      "title": "News by ACCESS Newswire on TradingView, 2026-07-19 - TradingView",
+      "url": "https://www.tradingview.com/news/reuters.com,2026-07-19:newsml_ACSd6zxba:0/",
+      "content": "Image 2: ACCESS NewswireImage 3: ACCESS Newswire. Sign up to read this news. ## Latest news. * Image 4 Dow Jones Newswires Start a free trial to read this news. Dow Jones Newswires Start a free trial to read this news. Dow Jones Newswires Week Ahead for FX, Bonds: U.S., European PMI Data, ECB Decisi"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Better execution, not new fiscal plans, will support China's economy in H2 of 2026: Strategist - CNBC",
+      "url": "https://www.cnbc.com/video/2026/07/22/better-fiscal-execution-will-support-chinas-h2-growth.html",
+      "content": "Monday - Friday, 10:00 - 11:00 SIN/HK | 0400 - 05:00 CET. # Better execution, not new fiscal plans, will support China's economy in H2 of 2026: Strategist. CICC’s Yanliang Mao says that slowdown is endogenous and can be picked up by enhancing existing fiscal measures and increasing the pace of bond "
+    },
+    {
+      "source": "tavily_result",
+      "title": "Watch Out: Plenty of Economic Developments and Altcoin Events This Week—Here’s the Day-by-Day, Hour-by-Hour Schedule - Cryptonews.net",
+      "url": "https://cryptonews.net/news/altcoins/33171468/",
+      "content": "# Watch Out: Plenty of Economic Developments and Altcoin Events This Week—Here’s the Day-by-Day, Hour-by-Hour Schedule. Although the cryptocurrency market experienced a recovery this week following positive economic data from the US, it also saw a slight pullback due to renewed tensions between the "
+    }
+  ]
+}
