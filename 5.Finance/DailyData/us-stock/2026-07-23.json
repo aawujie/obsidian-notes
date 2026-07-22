@@ -1,0 +1,45 @@
+{
+  "date": "2026-07-23",
+  "generated_at": "2026-07-23T06:06:30.887524",
+  "total_stocks": 2,
+  "data": [
+    {
+      "ticker": "AVGO",
+      "name": "Broadcom Inc.",
+      "sector": "Technology",
+      "industry": "Semiconductors",
+      "market_cap": 1887855443968,
+      "close": 396.80999755859375,
+      "prev_close": 386.5,
+      "change_daily": 2.67,
+      "change_weekly": 0.64,
+      "change_monthly": null,
+      "volume": 15131620.0,
+      "avg_vol_5d": 18704524.0,
+      "vol_ratio": 0.81,
+      "high52": 495.0,
+      "low52": 273.0,
+      "dist_from_high": -19.84,
+      "is_new_high": false
+    },
+    {
+      "ticker": "VST",
+      "name": "Vistra Corp.",
+      "sector": "Utilities",
+      "industry": "Utilities - Independent Power Producers",
+      "market_cap": 56221806592,
+      "close": 166.74000549316406,
+      "prev_close": 162.3300018310547,
+      "change_daily": 2.72,
+      "change_weekly": 4.06,
+      "change_monthly": null,
+      "volume": 2575367.0,
+      "avg_vol_5d": 4212893.0,
+      "vol_ratio": 0.61,
+      "high52": 219.82,
+      "low52": 132.66,
+      "dist_from_high": -24.15,
+      "is_new_high": false
+    }
+  ]
+}
