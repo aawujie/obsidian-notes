@@ -1,0 +1,93 @@
+{
+  "date": "2026-07-27",
+  "generated_at": "2026-07-27T06:06:46.512179",
+  "upcoming_events": [
+    {
+      "date": "2026-07-29",
+      "event": "FOMC 利率决议",
+      "importance": "critical",
+      "category": "央行",
+      "note": "附新闻发布会",
+      "days_until": 2
+    },
+    {
+      "date": "2026-08-07",
+      "event": "非农就业报告 (7月)",
+      "importance": "high",
+      "category": "就业",
+      "days_until": 11
+    }
+  ],
+  "recent_events": [],
+  "web_events": [
+    {
+      "source": "tavily_answer",
+      "query": "US economic data release this week CPI GDP jobs",
+      "answer": "The latest US economic data for this week indicates a mixed picture. The Consumer Price Index (CPI) showed a year-over-year headline inflation rate of 3.5% for June, with a monthly decline of 0.4%. The GDP data from S&P Global Market Intelligence suggests that the US services sector activity accelerated in July, partly driven by spending around the FIFA World Cup and the Independence Day holiday. However, the manufacturing sector's growth slowed to its lowest pace since March due to a slowdown i"
+    },
+    {
+      "source": "tavily_result",
+      "title": "America In Focus: New tariffs, soaring gas, mortgages and a down week for Wall Street - Greenwich Time",
+      "url": "https://www.greenwichtime.com/business/article/america-in-focus-new-tariffs-soaring-gas-22360070.php",
+      "content": "# America In Focus: New tariffs, soaring gas, mortgages and a down week for Wall Street. Trips to the grocery store and gas station are more painful than they were last year, and rising costs are impacting the decisions of both households and businesses. Here’s a snapshot of prominent economic data "
+    },
+    {
+      "source": "tavily_result",
+      "title": "America In Focus: New tariffs, soaring gas, mortgages and a down week for Wall Street - AP News",
+      "url": "https://apnews.com/article/inflation-economy-iran-trump-unemployment-78432a0b6870a29f63ccf64adfab0c0b",
+      "content": "Your guide to the biggest stories in politics, policy and U.S. elections. President Donald Trump is going ahead with new double-digit tariffs on dozens of U.S. trading partners just as the clock ran out Friday on stopgap levies he imposed after a stinging defeat at the Supreme Court. U.S. gas prices"
+    },
+    {
+      "source": "tavily_result",
+      "title": "US business activity perks up in July, helped by World Cup, but trend may not last, S&P Global says - Reuters",
+      "url": "https://www.reuters.com/business/us-business-activity-perks-up-july-helped-by-world-cup-trend-may-not-last-sp-2026-07-24/",
+      "content": "## Browse World. ## Browse Business. July 24 (Reuters) - Activity in the vast U.S. services ​sector accelerated in July, aided in part by spending around the FIFA World Cup and the Independence ‌Day holiday, while the pace of growth in the manufacturing sector eased to the slowest since March amid a"
+    },
+    {
+      "source": "tavily_answer",
+      "query": "Federal Reserve speech this week monetary policy",
+      "answer": "Based on the most recent data, the Federal Reserve is expected to leave interest rates unchanged at its July meeting next week. However, there is a growing probability of a rate hike later in the year due to persistent inflation and other economic factors. The Federal Open Market Committee is scheduled to announce its decision on Wednesday, July 29, at 2 p.m. ET. While most experts predict the Fed will maintain its benchmark rate in a target range of 3.5% to 3.75%, the potential for a rate hike "
+    },
+    {
+      "source": "tavily_result",
+      "title": "Gold continues to hold $4,000, which could signal an inflection point, analysts say - KITCO",
+      "url": "https://www.kitco.com/news/article/2026-07-24/gold-continues-hold-4000-which-could-signal-inflection-point-analysts-say",
+      "content": "# Gold continues to hold $4,000, which could signal an inflection point, analysts say. Kitco NEWS has a diverse team of journalists reporting on the economy, stock markets, commodities, cryptocurrencies, mining and metals with accuracy and objectivity. (Kitco News) - Gold has managed to hold critica"
+    },
+    {
+      "source": "tavily_result",
+      "title": "The new Fed chair won’t tell you what he thinks - The Washington Post",
+      "url": "https://www.washingtonpost.com/business/2026/07/26/new-fed-chair-wont-tell-you-what-he-thinks/",
+      "content": "# The new Fed chair won’t tell you what he thinks. As the Fed meets this week to consider an interest rate hike, Kevin Warsh is saying as little as possible about that, inflation and his own thinking. Make us preferred on Google. Federal Reserve Chair Kevin Warsh testifies before the Senate Banking "
+    },
+    {
+      "source": "tavily_result",
+      "title": "Why the Federal Reserve should hike rates next week - CNBC",
+      "url": "https://www.cnbc.com/2026/07/24/why-the-federal-reserve-should-hike-rates-next-week.html",
+      "content": "The Federal Reserve needs to seriously consider raising rates at next week's meeting as upside risks to inflation have the potential to spiral out of control. If the current conflict persists for even a few more months, the resulting strain on global energy supplies and shipping routes could push pr"
+    },
+    {
+      "source": "tavily_answer",
+      "query": "China PMI economic data this week",
+      "answer": "China's latest economic data indicates a slight recovery in the manufacturing sector, with the CSI300 index rising about 3.2% for the week, as investors anticipated additional growth-supporting measures from the upcoming Politburo meeting. This follows weaker second-quarter economic data, which has prompted expectations of further policy interventions to bolster growth."
+    },
+    {
+      "source": "tavily_result",
+      "title": "Asia stocks fall as Trump tariffs rattle exporters; Japan, S.Korea tumble - Investing.com",
+      "url": "https://www.investing.com/news/stock-market-news/asia-stocks-fall-as-trump-tariffs-rattle-exporters-japan-skorea-tumble-4810449",
+      "content": "Investing.com -- Asian stocks fell sharply on Friday, with Japan and South Korea leading regional losses after President Donald Trump’s new tariffs on imports from 60 trading partners took effect, reviving concerns over global trade just as surging oil prices and heavyweight U.S. technology earnings"
+    },
+    {
+      "source": "tavily_result",
+      "title": "PMI reports second-quarter earnings, expands Zyn portfolio - CSP Daily News",
+      "url": "https://www.cspdailynews.com/tobacco/pmi-reports-second-quarter-earnings-expands-zyn-portfolio",
+      "content": "PMI reports second-quarter earnings, expands Zyn portfolio. * Category managers from Weigel’s, CrossAmerica Partners, Southwest Georgia Oil and R.L. Jordan Oil share tobacco trends and challenges. * What retailers need to know about the FDA’s new tobacco enforcement guidance. * Reshaping the back ba"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Gold stuck in neutral as S&P Global highlights healthy US PMI activity - KITCO",
+      "url": "https://www.kitco.com/news/article/2026-07-24/gold-stuck-neutral-sp-global-highlights-healthy-us-pmi-activity",
+      "content": "# Gold stuck in neutral as S&P Global highlights healthy US PMI activity. Kitco NEWS has a diverse team of journalists reporting on the economy, stock markets, commodities, cryptocurrencies, mining and metals with accuracy and objectivity. (Kitco News) - The gold market continues to hold support abo"
+    }
+  ]
+}
