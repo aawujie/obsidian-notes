@@ -1,0 +1,901 @@
+{
+  "date": "2026-07-27",
+  "generated_at": "2026-07-27T06:30:23.280372",
+  "total_events": 33,
+  "severity_distribution": {
+    "medium": 33
+  },
+  "events": [
+    {
+      "title": "After two quiet days, oil tanker hits mine in Strait of Hormuz - Ynetnews",
+      "title_cn": "",
+      "url": "https://www.ynetnews.com/article/hyfojfmszg",
+      "content": "Related Topics\n\nStrait of Hormuz\n\nIran\n\nAfter two days without exchanges of fire with the United States, Iranian media reported Sunday afternoon that an oil tanker that had “strayed from the route” designated by Iran for passage through the Strait of Hormuz struck a sea mine, triggering an explosion",
+      "content_detail": "[Updates](https://www.ynetnews.com/category/3089) [Red Mail](https://www.ynetnews.com/category/43972)\n\n[![](https://ynet-pic1.yit.co.il/static/Cnt/Images/Weather/1220.png)](https://www.ynetnews.com/weather/tel-aviv-yafo)\n\n[Tel Aviv-Jaffa](https://www.ynetnews.com/weather/tel-aviv-yafo)\n\n[![](https://ynet-pic1.yit.co.il/picserver6/wcm_upload/2025/08/28/BkLy3jaKlg/global_header_logo.png)](https://www.ynetnews.com/category/3083)\n\n[Main](https://www.ynetnews.com/category/3083)\n\n[Israel News](https://www.ynetnews.com/category/3082)\n\n[Mideast & World News](https://www.ynetnews.com/category/9733)\n\n[Tech & Digital](https://www.ynetnews.com/tech-and-digital)\n\n[Real Estate](https://www.ynetnews.com/real-estate)\n\n[Finance](https://www.ynetnews.com/business)\n\n[Lifestyle](https://www.ynetnews.com/culture)\n\n[Health & Science](https://www.ynetnews.com/health_science)\n\n[Jewish World](https://www.ynetnews.com/jewish-world)\n\n[Travel](https://www.ynetnews.com/travel)\n\nMore\n\nChannels\n\n* [Opinions](https://www.ynetnews.com/opinions-analysis)\n* [Magazine](https://www.ynetnews.com/magazine)\n* [Sports](https://www.ynetnews.com/sport)\n* [Food](https://www.ynetnews.com/food)\n* [Weather](https://www.ynetnews.com/weather)\n* [Podcasts](https://www.ynetnews.com/podcasts)\n\nSites & Sources\n\n* [Ynet](https://www.ynet.co.il/home/0,7340,L-8,00.html)\n* [Calcalist](https://www.calcalist.co.il/home/0,7340,L-8,00.html)\n* [yad2](https://www.yad2.co.il/?utm_source=ynet&utm_medium=link_footer)\n* [ynetespanol](https:/",
+      "published_date": "Sun, 26 Jul 2026 12:46:08 GMT",
+      "search_region": "美伊冲突",
+      "classified_regions": [
+        "美伊冲突"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "New front in US-Iran war escalates as Houthis fire at Saudi oil facilities - Al Jazeera",
+      "title_cn": "",
+      "url": "https://www.aljazeera.com/news/2026/7/26/new-front-in-us-iran-war-escalates-as-houthis-fire-at-saudi-oil-facilities",
+      "content": "But there have been no US air strikes since Friday, and tentative signs are emerging that Washington and Tehran are still talking via mediators and might return to more meaningful discussions.\n\nEven if another fragile truce is agreed, however, the cascade of consequences unleashed by the war is stil",
+      "content_detail": "Skip links[Skip to Content](#main-content-area)\n\n[Live](/video/live)\n\n[Live](/video/live)\n\n[News](/news/)|[Conflict](/tag/conflict/)\n\n# New front in US-Iran war escalates as Houthis fire at Saudi oil facilities\n\n*Conflict also spreads to Caspian Sea as Tehran accuses Ukraine of a deadly attack on an Iranian vessel.*\n\nSave\n\nShare\n\n![FILE PHOTO: A Houthi follower looks on, during a pro-Iran demonstration, as the U.S.-Israel conflict with Iran continues, in Sanaa, Yemen April 6, 2026. REUTERS/Khaled Abdullah/File Photo](/wp-content/uploads/2026/07/reuters_6a64aaf4-1784982260.jpg?resize=770%2C513&quality=80)\n\nA Houthi follower during a protest in Sanaa, Yemen [File: Khaled Abdullah/Reuters]\n\n[![](/wp-content/uploads/2024/05/2017-06-08T131939Z_1189275883_RC11B0FE7F20_RTRMADP_3_GULF-QATAR-JAZEERA-1714943623.jpg?resize=96%2C96&quality=80)](/author/al_jazeera_staff_150119130629458)\n\nBy [Al Jazeera Staff](/author/al_jazeera_staff_150119130629458), AP and Reuters\n\nPublished On 26 Jul 202626 Jul 2026\n\nTehran-backed Houthi forces in Yemen have fired missiles and drones at two of Saudi Arabia’s most strategically important oil facilities on the Red Sea, in a major escalation of the latest simmering regional conflict to be reignited by the war launched by the United States and Israel against Iran.\n\nBut the skies over the country at the epicentre of the widening war were quiet for a second successive night, with no new US attacks on Iran reported by Sunday morning.\n\n## Recommended Stories\n\n",
+      "published_date": "Sun, 26 Jul 2026 04:40:17 GMT",
+      "search_region": "美伊冲突",
+      "classified_regions": [
+        "美伊冲突"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "Skip links New front in US-Iran war escalates as Houthis fire at Saudi oil facilities Conflict also spreads to Caspian Sea as Tehran accuses Ukraine of a deadly attack on",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Tanker hits mine in the Strait of Hormuz as Iran intercepts six vessels - New York Post",
+      "title_cn": "",
+      "url": "https://nypost.com/2026/07/26/world-news/tanker-hits-mine-in-the-strait-of-hormuz-as-iran-intercepts-six-vessels/",
+      "content": "Iran has repeatedly warned ships from using non-approved routes to sail through the Strait of Hormuz or risk coming under attack as tensions continue to flare with the US.\n\nDespite repeated threats from the Trump administration, the regime continues to claim control over the critical oil chokepoint,",
+      "content_detail": "[Email](https://email.nypost.com/?c=20fcghruiewhihiwh)\n\n[New York Post](https://nypost.com)\n\n[![Read the Latest on Page Six](https://nypost.com/wp-content/uploads/sites/2/2023/02/button_3_bg-2.png?w=206)](https://pagesix.com/)\n\nSwitch between CA and NY editions here.\n\nEdition\n\n* [US News](https://nypost.com/us-news/)\n* [Metro](https://nypost.com/metro/)\n* [Long Island](https://nypost.com/long-island/)\n* [Politics](https://nypost.com/politics/)\n* [World News](https://nypost.com/world-news/)\n\n* [US News](https://nypost.com/us-news/)\n* [Metro](https://nypost.com/metro/)\n* [Long Island](https://nypost.com/long-island/)\n* [Politics](https://nypost.com/politics/)\n* [World News](https://nypost.com/world-news/)\n\n#### trending now in World News\n\n[![US physical therapist disappears in the Caribbean as husband pleads for ‘safe return’](https://nypost.com/wp-content/uploads/sites/2/2026/07/liz-waddell.jpg?quality=75&strip=all&1785026850&w=87)\n\n##### US physical therapist disappears in the Caribbean as husband...](https://nypost.com/2026/07/26/world-news/north-carolina-woman-elizabeth-waddell-disappears-in-caribbean-after-grenada-beach-trip/)\n\n[![Popular city cracks down on tourism saying 16 million visitors is more than enough: ‘Not one tourist more’](https://nypost.com/wp-content/uploads/sites/2/2026/07/135482172.jpg?quality=75&strip=all&w=87)\n\n##### Popular city cracks down on tourism saying 16 million visitors is...](https://nypost.com/2026/07/25/world-news/popular-city-cracks-down-on",
+      "published_date": "Sun, 26 Jul 2026 16:54:51 GMT",
+      "search_region": "美伊冲突",
+      "classified_regions": [
+        "美伊冲突"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "As Diplomacy Picks Up, Iran Claims Mine Strike on Ship in Strait of Hormuz - The Maritime Executive",
+      "title_cn": "",
+      "url": "https://maritime-executive.com/article/as-diplomacy-picks-up-iran-claims-mine-strike-on-ship-in-strait-of-hormuz",
+      "content": "SUBSCRIBE NOW\n\nMedia Kit\n\n news\n features\n Podcasts\n magazine\n newsletter\n Jobs\n advertise\n subscribe\n\n0\n\nViews\n\n# As Diplomacy Picks Up, Iran Claims Mine Strike on Ship in Strait of Hormuz\n\nOn Sunday, Iranian state media claimed that a \"violating\" oil tanker hit a mine in the Strait of Hormuz while",
+      "content_detail": "[SUBSCRIBE NOW](/subscribe)\n\n[![Maritime Executive Logo](https://maritime-executive.com/cdn-cgi/image/width=585,format=auto,quality=85,fit=scale-down,onerror=redirect/img/marexlogo2019.jpg) ![Maritime Executive Logo](https://maritime-executive.com/cdn-cgi/image/width=585,format=auto,quality=85,fit=scale-down,onerror=redirect/img/marexlogo2019.jpg)](/)\n\n[Media Kit](https://mediakit.maritime-executive.com/2025/wp-content/uploads/2025/tme-2026-mediakit-20251107.2.pdf)\n\n* [news](/)\n* [features](/features)\n* [Podcasts](/podcast)\n* [magazine](/magazine)\n* [newsletter](/newsletter)\n* [Jobs](/jobs)\n* [advertise](https://mediakit.maritime-executive.com/2025/wp-content/uploads/2025/tme-2026-mediakit-20251107.2.pdf)\n* [subscribe](/subscribe)\n\n152\n\nViews\n\n# As Diplomacy Picks Up, Iran Claims Mine Strike on Ship in Strait of Hormuz\n\n ![Mines](https://maritime-executive.com/cdn-cgi/image/width=1024,format=auto,quality=80,fit=scale-down,onerror=redirect,trim.left=0,trim.top=47,trim.width=442,trim.height=248/media/images/article/Photos/Navy_Govt_CoastGuard/IRGC-mine-warfare-boat-Fars-News.jpg) \n\nMinelaying small craft in Iranian service. Dozens of these vessels have been destroyed in U.S. attacks (IRGC)\n\nPublished Jul 26, 2026 2:04 PM by  **[The Maritime Executive](https://maritime-executive.com/author/marex)**\n\nOn Sunday, Iranian state media claimed that a \"violating\" oil tanker hit a mine in the Strait of Hormuz while navigating outside of the Iranian transit zone, breaking a brief pause i",
+      "published_date": "Sun, 26 Jul 2026 18:04:00 GMT",
+      "search_region": "美伊冲突",
+      "classified_regions": [
+        "美伊冲突"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "152 Views As Diplomacy Picks Up, Iran Claims Mine Strike on Ship in Strait of Hormuz Published Jul 26, 2026 2:04 PM by",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Oil tanker explodes after hitting naval mine in Strait of Hormuz, IRGC-linked media claims - report - The Jerusalem Post",
+      "title_cn": "",
+      "url": "https://www.jpost.com/middle-east/iran-news/article-903687",
+      "content": "This is a developing story.\n\n### See more on\n\nIran|\n\noil|\n\nMiddle East|\n\ntanker|\n\nIRGC|\n\nstrait of hormuz|\n\nExplosion\n\nFollow us on Google\n\n--- [...] # Oil tanker explodes after hitting naval mine in Strait of Hormuz, IRGC-linked media claims - report\n\n## There was no immediate official statement fr",
+      "content_detail": "# Oil tanker explodes after hitting naval mine in Strait of Hormuz, IRGC-linked media claims - report\n\n## There was no immediate official statement from Iranian authorities regarding the incident.\n\n[Follow us on **Google**](https://www.google.com/preferences/source?q=https://www.jpost.com/)\n\nVessels transiting through the Gulf of Oman are pictured off the coast of Muscat on July 25, 2026; Illustrative.\n\n(photo credit:  AFP via Getty Images)\n\nByREUTERS\n\nAn oil tanker exploded in the Strait of Hormuz after colliding with a naval mine, Iran's Islamic Revolutionary Guard Corps (IRGC)-linked Tasnim news agency reported on Sunday.\n\nTasnim said the tanker struck the mine after leaving the route designated by Iran in the strategic waterway.\n\nThere was no immediate official statement from Iranian authorities regarding the incident.\n\n*This is a developing story.*\n\n### See more on\n\n[Iran](/tags/iran)|\n\n[oil](/tags/oil)|\n\n[Middle East](/tags/middle-east)|\n\n[tanker](/tags/tanker)|\n\n[IRGC](/tags/irgc)|\n\n[strait of hormuz](/tags/strait-of-hormuz)|\n\n[Explosion](/tags/explosion)\n\n[Follow us on **Google**](https://www.google.com/preferences/source?q=https://www.jpost.com/)\n\n---",
+      "published_date": "Sun, 26 Jul 2026 12:27:47 GMT",
+      "search_region": "美伊冲突",
+      "classified_regions": [
+        "美伊冲突"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "Oil tanker explodes after hitting naval mine in Strait of Hormuz, IRGC-linked media claims - report There was no immediate official statement from Iranian authorities regarding the incident.",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Joint Iran-Hezbollah strike could cripple Israel’s energy lifelines, report says - The Jerusalem Post",
+      "title_cn": "",
+      "url": "https://www.jpost.com/israel-news/article-903689",
+      "content": "Beyond posing a risk to Israel’s water and energy supply, the center noted that seaports are essential for maritime trade and such trade could be disrupted by an escalation.\n\nIn both the 12 Day War in June and in March, Iran targeted Israel’s ports, gas rigs, and oil refineries as clear wartime targ",
+      "content_detail": "# Joint Iran-Hezbollah strike could paralyze Israel’s energy lifelines, Alma Center warns\n\n## Israel’s reliance on a small number of offshore rigs, desalination plants and ports leaves vital services vulnerable to a coordinated multi-domain assault,\n\n[Follow us on **Google**](https://www.google.com/preferences/source?q=https://www.jpost.com/)\n\nIsraeli natural gas field in the Mediterranean\n\n(photo credit: MARC ISRAEL SELLEM/THE JERUSALEM POST)\n\nBy[DANIELLE GREYMAN-KENNARD](/author/danielle-greyman-kennard)\n\nUpdated:\n\nA combined [Iranian](https://www.jpost.com/middle-east/iran-news/article-903678) and Hezbollah attack on Haifa Bay, including strikes against civilian shipping near the natural harbor or gas rigs in the Mediterranean, is among several key threats Israel must now prepare for, according to a new assessment published by the Alma Research and Education Center last week.\n\nWith a demonstrated willingness to target key maritime assets using ballistic [missiles](https://www.jpost.com/middle-east/iran-news/article-903582), drones, cruise missiles, anti-ship munitions, explosive boats, and potentially underwater threats and commando capabilities, the center warned that the threat must be taken seriously, even though Israel has proven defensive capabilities against each individual threat.\n\nMuch of Israel’s energy and water needs depend on rigs and facilities located along the Mediterranean coast. More than 70% of Israel’s electricity is produced from natural gas extracted f",
+      "published_date": "Sun, 26 Jul 2026 12:30:24 GMT",
+      "search_region": "美伊冲突",
+      "classified_regions": [
+        "美伊冲突"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "Joint Iran-Hezbollah strike could paralyze Israel’s energy lifelines, Alma Center warns Israel’s reliance on a small number of offshore rigs, desalination plants and ports leaves vital services vulnerable to a",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Van Hollen: Trump hit Saudi Arabia with ‘bait and switch’ by tying Israel relations to nuclear deal - The Hill",
+      "title_cn": "",
+      "url": "https://thehill.com/homenews/senate/5990897-van-hollen-trump-saudi-deal/",
+      "content": "1. GOP senator says Thune ‘being too cautious’ in talks with Senate Democrats ...\n2. Democrats favored to win House, underdogs in Senate 100 days out\n3. How often the sun would rise after 8 a.m. under permanent daylight saving time\n4. 5 standout moments from Trump’s appearance at makeup WHCA dinner\n",
+      "content_detail": "[Skip to content](https://thehill.com/homenews/senate/5990897-van-hollen-trump-saudi-deal#content)\n\nToggle Menu\n*   [Read The Paper](https://thehill.com/e-edition/)\n\n[![Image 1: TheHill.com](https://thehill.com/wp-content/themes/the-hill/assets/thehill-logo-blue.svg)](https://thehill.com/)\n\n*   [Subscribe](https://thehill.com/account/subscribe/)\n*   [Sign In](https://thehill.com/homenews/senate/5990897-van-hollen-trump-saudi-deal#)[Account](https://thehill.com/homenews/senate/5990897-van-hollen-trump-saudi-deal#)\n\n    *   [Profile](https://thehill.com/homenews/senate/5990897-van-hollen-trump-saudi-deal#)\n    *   [Manage Newsletters](https://thehill.com/account/newsletters/)\n    *   [Log Out](https://thehill.com/homenews/senate/5990897-van-hollen-trump-saudi-deal#)\n\n*   [Newsletters](https://thehill.com/account/newsletters/)\n\n    *   [Morning Report](https://thehill.com/newsletters/morning-report/)\n    *   [12:30 Report](https://thehill.com/newsletters/1230-report/)\n    *   [Evening Report](https://thehill.com/newsletters/evening-report/)\n    *   [Business](https://thehill.com/newsletters/business-economy/)\n    *   [Defense](https://thehill.com/newsletters/defense-national-security/)\n    *   [Healthcare](https://thehill.com/newsletters/healthcare/)\n    *   [Energy & Environment](https://thehill.com/newsletters/energy-environment/)\n    *   [Technology](https://thehill.com/newsletters/technology/)\n    *   [Whole Hog Politics](https://thehill.com/newsletters/whole-hog-politics/)\n",
+      "published_date": "Sun, 26 Jul 2026 18:26:39 GMT",
+      "search_region": "美伊冲突",
+      "classified_regions": [
+        "美伊冲突"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "The Guardian view on a US-Saudi nuclear agreement: an offer that further erodes international safeguards - The Guardian",
+      "title_cn": "",
+      "url": "https://www.theguardian.com/commentisfree/2026/jul/26/the-guardian-view-on-a-us-saudi-nuclear-agreement-an-offer-that-further-erodes-international-safeguards",
+      "content": "Gulf states premised their security on American-guaranteed order. But Benjamin Netanyahu’s strike on Hamas leaders in Qatar last year showed that the US shield would not protect them from Israel (itself an undeclared nuclear power). The reckless war on Iran has made US military presence an invitatio",
+      "content_detail": "[Skip to navigation](#navigation)\n\n[Print subscriptions](https://support.theguardian.com/subscribe/weekly?REFPVID=undefined&INTCMP=undefined&acquisitionData=%7B%22source%22%3A%22GUARDIAN_WEB%22%2C%22componentId%22%3A%22PrintSubscriptionsHeaderLink%22%2C%22componentType%22%3A%22ACQUISITIONS_HEADER%22%2C%22referrerUrl%22%3A%22%22%7D)\n\n[Search jobs](https://jobs.theguardian.com)\n\n[Sign in](https://profile.theguardian.com/signin?INTCMP=DOTCOM_NEWHEADER_SIGNIN&ABCMP=ab-sign-in&componentEventParams=componentType%3Didentityauthentication%26componentId%3Dguardian_signin_header)\n\nDonald Trump and Mohammed bin Salman at the White House last November. Photograph: Evelyn Hockstein/Reuters\n\nDonald Trump and Mohammed bin Salman at the White House last November. Photograph: Evelyn Hockstein/Reuters\n\n# The Guardian view on a US-Saudi nuclear agreement: an offer that further erodes international safeguards\n\n[Editorial](https://www.theguardian.com/profile/editorial)\n\nEven if no reactors are built, Donald Trump’s announcement of a double-standards deal with Riyadh has wrought further damage in a new era of proliferation\n\nEven as he threatened to escalate an unlawful war sold in part as preventing Iran from gaining a nuclear weapon, Donald Trump opened the door to proliferation in the region on Wednesday. The US announced that it had [signed a deal](https://www.theguardian.com/us-news/2026/jul/22/trump-nuclear-agreement-saudi-arabia) with Saudi Arabia which would potentially allow the kingdom to",
+      "published_date": "Sun, 26 Jul 2026 16:29:49 GMT",
+      "search_region": "美伊冲突",
+      "classified_regions": [
+        "美伊冲突"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Ukraine Strikes Russian Warship and Iran-Linked Cargo Vessels in Caspian Sea, Zelenskyy Says - Modern Ghana",
+      "title_cn": "",
+      "url": "https://www.modernghana.com/news/1513829/ukraine-strikes-russian-warship-and-iran-linked.html",
+      "content": "Previous strikes in the region have targeted specific sanctioned vessels, including the Composer Rakhmaninov and Askar-Sarydzha, and the cargo ship Port Olya-4, which Ukrainian intelligence says was sunk at the port of Olya while carrying Iranian-origin drone parts.\n\nBroader offensive  \nSaturday's a",
+      "content_detail": "[![ModernGhana logo](/assets/logo/site-logo.png)](/) [![ModernGhana logo](/assets/logo/site-logo2.png)](/)\n\n[![ModernGhana logo](/assets/logo/sticky-logo.png)](/)\n\n* [Archive](/archive/)\n* [More](/group/4/1)\n* [Blog](/ghanahome/blog/)\n* [Columnists](/columns/page/A)\n* [Articles](/section/article)\n* [Features](/section/feature-article)\n* [Opinions](/section/opinion)\n* [Editorial](/section/editorial)\n* [Polls](/ghanahome/poll/)\n* [Comments](/haveyoursay/)\n* [Hot Stories](/hotstories/)\n\n[OnAIR](https://radio.modernghana.com)\n\n![ModernGhana logo](/assets/logo/print-logo2.png)\n\n![body-container-line-1](/assets/categories-images/body-container-top-line.png)\n\nSun, 26 Jul 2026 [Feature Article](/section/feature-article \"Feature Article\")\n\n# Ukraine Strikes Russian Warship and Iran-Linked Cargo Vessels in Caspian Sea, Zelenskyy Says\n\nBy [Mustapha Bature Sallama](/columnist/mustapha-bature-sallama \"View Author Column\")\n\n![Ukraine Strikes Russian Warship and Iran-Linked Cargo Vessels in Caspian Sea, Zelenskyy Says](https://cdn.modernghana.com/content/300/360/726202695856-0f730m4yxs-screenshot20260716-1912311.png)\n\nUkraine has extended its long-range strike campaign deep into Russian territory, hitting a Russian warship and vessels used to move Iran-linked military cargo in the Caspian Sea, President Volodymyr Zelenskyy announced Saturday.  \nWriting on X, Zelenskyy said Ukraine had achieved strong results from long-range strikes in the Caspian Sea, including vessels used in military carg",
+      "published_date": "Sun, 26 Jul 2026 10:01:06 GMT",
+      "search_region": "俄乌战争",
+      "classified_regions": [
+        "俄乌战争"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "Ukraine Strikes Russian Warship and Iran-Linked Cargo Vessels in Caspian Sea, Zelenskyy Says By",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Ukraine sees highest civilian casualties since 2022 - CNN",
+      "title_cn": "",
+      "url": "https://www.cnn.com/2026/07/26/europe/ukraine-civilian-casualties-intl",
+      "content": "“Many areas of Russia and occupied Ukraine continue to struggle with fuel shortages, though Russian officials are increasingly posturing that the economic situation and fuel crisis are stabilizing,” the Institute for the Study of War in Washington said Saturday.\n\nRussia has retaliated by attacking f",
+      "content_detail": "### CNN values your feedback\n\n# Ukraine sees highest civilian casualties since 2022\n\n![A woman with her cat stands near an apartment building hit by a Russian airstrike in the town of Pavlohrad in eastern Ukraine on July 20.](https://media.cnn.com/api/v1/images/stellar/prod/008-008-008-2026-07-20t125454z-962380243-rc2ohma4zixs-rtrmadp-3-ukraine-crisis-attack-pavlohrad.JPG?c=original&q=w_860,c_fill)\n\n[Ukraine](https://www.cnn.com/2026/07/22/europe/ukraine-new-military-chief-zelensky-drapatyi-intl) has seen the highest number of civilian casualties in the war with [Russia](https://www.cnn.com/2026/07/16/europe/russia-ukraine-kostyantynivka-capture-claim-intl) this month for more than four years, according to government figures.\n\nRussian attacks this month have killed at least 377 civilians and injured 2,129, making it the deadliest month of the war since April 2022.\n\nThe attacks this month have included a high number of ballistic missiles, which are difficult to intercept, and have targeted the Ukrainian capital, Kyiv, on multiple occasions.\n\nRussia has used nearly 1,700 drones, more than 1,630 guided aerial bombs, and more than 50 ballistic missiles in the last week, according to Ukrainian President Volodymyr Zelensky.\n\n“We must undercut Russia’s gamble on ballistic terror,” Zelensky said in a post on [X](https://x.com/ZelenskyyUa/status/2081283464041492595?s=20) Sunday.\n\n“Every interceptor missile right now is literally helping save lives if it is here, in Ukrainian systems, ",
+      "published_date": "Sun, 26 Jul 2026 12:32:45 GMT",
+      "search_region": "俄乌战争",
+      "classified_regions": [
+        "俄乌战争"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "CNN values your feedback Ukraine sees highest civilian casualties since 2022",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Vessel sinks a week after being struck by Russian fire, Ukrainian officials say - Reuters",
+      "title_cn": "",
+      "url": "https://www.reuters.com/world/vessel-sinks-week-after-being-struck-by-russian-fire-ukrainian-officials-say-2026-07-26/",
+      "content": "The statement said ​the ship, which left the port of Chornomorsk with a cargo of corn, suffered considerable damage when it ​was shelled by Russian forces on July ​19.\n\nAdvertisement · Scroll to continue\n\nReport AdImage 4\n\nIt had been passing through a corridor overseen by Ukraine ‌along ⁠the coast ",
+      "content_detail": "[Skip to main content](https://www.reuters.com/world/vessel-sinks-week-after-being-struck-by-russian-fire-ukrainian-officials-say-2026-07-26#main-content)\n\n[Exclusive news, data and analytics for financial market professionals Learn more about Refinitiv](https://www.reuters.com/differentiator/)\n\n[](https://www.reuters.com/)\n\n*   [World](https://www.reuters.com/world/) \n\n## [Browse World](https://www.reuters.com/world/)\n\n    *   [Africa](https://www.reuters.com/world/africa/)\n    *   [Americas](https://www.reuters.com/world/americas/)\n    *   [Asia Pacific](https://www.reuters.com/world/asia-pacific/)\n    *   [China](https://www.reuters.com/world/china/)\n    *   [Europe](https://www.reuters.com/world/europe/)\n    *   [India](https://www.reuters.com/world/india/)\n    *   [Iran War](https://www.reuters.com/world/iran/)\n\n    *   [Israel and Hamas at War](https://www.reuters.com/world/israel-hamas/)\n    *   [Japan](https://www.reuters.com/world/japan/)\n    *   [Middle East](https://www.reuters.com/world/middle-east/)\n    *   [Ukraine and Russia at War](https://www.reuters.com/world/ukraine-russia-war/)\n    *   [United Kingdom](https://www.reuters.com/world/uk/)\n    *   [United States](https://www.reuters.com/world/us/)\n    *   [Reuters NEXT](https://www.reuters.com/world/reuters-next/)\n\n*   [Business](https://www.reuters.com/business/) \n\n## [Browse Business](https://www.reuters.com/business/)\n\n    *   [Aerospace & Defense](https://www.reuters.com/business/aerospace-defense/)\n    *",
+      "published_date": "Sun, 26 Jul 2026 18:24:08 GMT",
+      "search_region": "俄乌战争",
+      "classified_regions": [
+        "俄乌战争"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Russian Offensive Campaign Assessment, July 25, 2026 - Institute for the Study of War",
+      "title_cn": "",
+      "url": "https://understandingwar.org/research/russia-ukraine/russian-offensive-campaign-assessment-july-25-2026/",
+      "content": "Zelensky and the SBU reported that Ukrainian forces also struck several Russian assets in the Caspian Sea from July 24 to 25, including an oil production platform of the Filanovksy oil field, a Project 12418 “Molniya” missile boat, and several cargo vessels under international sanctions that Russia ",
+      "content_detail": "#### Options\n\n![Email](/wp-content/uploads/2024/12/Icon-Email.svg)\n![LinkedIn](/wp-content/uploads/2024/11/icon-linkedin.svg)\n![X](/wp-content/uploads/2024/11/icon-x.svg)\n![Facebook](/wp-content/uploads/2024/11/icon-facebook.svg)\n![Bluesky](/wp-content/uploads/2025/05/Bluesky-Streamline-Simple-Icon.svg)\n![Institute for the Study of War](https://understandingwar.org/wp-content/uploads/2025/08/ISW-Logo.svg)\n![Institute for the Study of War](https://understandingwar.org/wp-content/uploads/2025/08/ISW-Logo-Badge.svg)\n\n#### About ISW\n\nObjectivity, Truth, Insight\n\nISW’s Comparative Advantage\n\nImproving the National Security Debate\n\nMeet the Team\n\nJoin the Mission\n\n![ISW map room image of the world](https://understandingwar.org/wp-content/uploads/2026/07/half-map-no-bg-01-1.svg \"half map-no bg-01 1\")\n\n#### MAP ROOM\n\nISW produces the world’s premier open-source conflict maps\n\n#### Analysis\n\nThe General Jack Keane Center for National Security\n\nDive into ISW's Complete Map Catalog\n\nVideos, Podcasts, and Interactive Content\n\nBrowse ISW's Entire Body of Work\n\n### TEAMS/PORTFOLIOS\n\n#### Education\n\nThe General David H. Petraeus Center for Emerging Leaders\n\nISW’s Premier Educational Program for Undergraduates\n\nEnrichment and Advancement Opportunities for Entry-Level and Mid-Career Professionals\n\nLaunch your Career at ISW with an Internship in Open-Source Intelligence, Geospatial Intelligence, Cognitive Warfare, or Communications\n\n![research library icon of a magnifying glass over a laptop s",
+      "published_date": "Sat, 25 Jul 2026 23:44:40 GMT",
+      "search_region": "俄乌战争",
+      "classified_regions": [
+        "俄乌战争"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "Options MAP ROOM ISW produces the world’s premier open-source conflict maps Analysis The General Jack Keane Center for National Security Dive into ISW's Complete Map Catalog Videos, Podcasts, and Interactive",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "2 dead in Ukraine from Russian attacks, 4 more in Russian-held area hit by Ukrainian drones - The Sun Chronicle",
+      "title_cn": "",
+      "url": "https://www.thesunchronicle.com/news/nation_world/2-dead-in-ukraine-from-russian-attacks-4-more-in-russian-held-area-hit-by/article_532bf643-2e50-5954-8cb4-0fbca10874bb.html",
+      "content": "kAmu@==@H:?8 2 42== H:E9 9:D &A2:8? E92E 92D k2 9C67lQ9EEADi^^2A?6HD]4@>^2CE:4=6^CFDD:2\\F2;@C #FDD:2? 6?6C8J D:E6Dk^2m 2?5 k2 9C67lQ9EEADi^^2A?6HD]4@>^2CE:4=6^CFDD:2\\F:5C2?86\\5C@?6D\\H2C\\4\\_h\\_h5344bg5dhf`ca5`4eeahfh4gc\\_eQmD@F89E E@ 49@<6 @77 >:=:E2CJ DFAA=:6Dk^2m — $EF33 HC@E6 @? ) E92E “4@?E:?F65 ",
+      "content_detail": "You have permission to edit this article.\n\n[Edit](https://www.thesunchronicle.com/tncms/admin/editorial-asset/?edit=532bf643-2e50-5954-8cb4-0fbca10874bb)\n\n#### Latest E-Edition\n\n[![The Sun Chronicle](https://bloximages.chicago2.vip.townnews.com/thesunchronicle.com/content/tncms/assets/v3/eedition/2/b2/2b2a6868-1544-5353-b9ed-331d6d62938a/6a640e96b22b9.preview-300.jpg?resize=104%2C200)](/eedition/tsc/the-sun-chronicle/edition_7a8f8ea2-9cd6-58d4-845a-984e42e0569f.html) \n\n![](https://bloximages.chicago2.vip.townnews.com/thesunchronicle.com/content/tncms/assets/v3/eedition/2/b2/2b2a6868-1544-5353-b9ed-331d6d62938a/6a640e96b22b9.preview-300.jpg)\n\n#### [The Sun Chronicle](/eedition/tsc/the-sun-chronicle/edition_7a8f8ea2-9cd6-58d4-845a-984e42e0569f.html)\n\n[![site-logo](https://bloximages.chicago2.vip.townnews.com/thesunchronicle.com/content/tncms/custom/image/9c7ec4aa-6d97-11ec-a31e-37c9c23e6876.png?resize=200%2C36)](/)\n\nSunday, July 26, 2026\n\n* [Print Edition](/eedition)\n\n* [73° Sunny](/weather/?weather_zip=02703)\n\n[![Support local journalism. Subscribe today.](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAJCAQAAACRI2S5AAAAEklEQVR42mM8U8+AFzCOKgADAHdUC60wg0dkAAAAAElFTkSuQmCC)](https://www.thesunchronicle.com/subscribe/) \n\n![](https://bloximages.chicago2.vip.townnews.com/thesunchronicle.com/content/tncms/assets/v3/editorial/b/e3/be329875-a296-5b1f-adf2-0c258f8277f3/6297feaf3d5d0.image.jpg?resize=200%2C159)\n\n### [Support local journalism. Subscribe today.](https://www.thesunch",
+      "published_date": "Sun, 26 Jul 2026 13:15:42 GMT",
+      "search_region": "俄乌战争",
+      "classified_regions": [
+        "俄乌战争"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "You have permission to edit this article.",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Ukraine suffers highest civilian casualties of the war in four years, with kids among latest killed - New York Post",
+      "title_cn": "",
+      "url": "https://nypost.com/2026/07/26/world-news/ukraine-suffers-highest-civilian-casualties-of-the-war-in-four-years/?utm_campaign=nypost&utm_medium=referral",
+      "content": "Although Ukraine’s offenses have evolved and caused a string of humiliations for Russian President Vladimir Putin, Kyiv’s defenses are still marred by a lack of interceptor missiles.\n\nSunday’s assault saw Russia fire at least 8 missiles and 136 drones across Ukraine, with some of the projectiles get",
+      "content_detail": "[Email](https://email.nypost.com/?c=20fcghruiewhihiwh)\n\n[New York Post](https://nypost.com)\n\n[![Read the Latest on Page Six](https://nypost.com/wp-content/uploads/sites/2/2023/02/button_3_bg-2.png?w=206)](https://pagesix.com/)\n\nSwitch between CA and NY editions here.\n\nEdition\n\n* [US News](https://nypost.com/us-news/)\n* [Metro](https://nypost.com/metro/)\n* [Long Island](https://nypost.com/long-island/)\n* [Politics](https://nypost.com/politics/)\n* [World News](https://nypost.com/world-news/)\n\n* [US News](https://nypost.com/us-news/)\n* [Metro](https://nypost.com/metro/)\n* [Long Island](https://nypost.com/long-island/)\n* [Politics](https://nypost.com/politics/)\n* [World News](https://nypost.com/world-news/)\n\n#### trending now in World News\n\n[![US physical therapist disappears in the Caribbean as husband pleads for ‘safe return’](https://nypost.com/wp-content/uploads/sites/2/2026/07/liz-waddell.jpg?quality=75&strip=all&1785026850&w=87)\n\n##### US physical therapist disappears in the Caribbean as husband...](https://nypost.com/2026/07/26/world-news/north-carolina-woman-elizabeth-waddell-disappears-in-caribbean-after-grenada-beach-trip/)\n\n[![American and wife who recently ‘self-deported’ from US killed by  Venezuela earthquake](https://nypost.com/wp-content/uploads/sites/2/2026/07/ru6b6t7locoxvxedvn1v1bdvdyp62qj8pbbezx67odsogdr-135426196.jpg?quality=75&strip=all&w=87)\n\n##### American and wife who recently ‘self-deported’ from...](https://nypost.com/2026/07/25/world-news/body-of-ameri",
+      "published_date": "Sun, 26 Jul 2026 18:44:36 GMT",
+      "search_region": "俄乌战争",
+      "classified_regions": [
+        "俄乌战争"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Wildberries hides military goods in search results after Ukrainian strikes hammer warehouses - The Kyiv Independent",
+      "title_cn": "",
+      "url": "https://kyivindependent.com/wildberries-limits-visibility-of-military-related-goods-in-search-results-after-ukrainian-strikes/",
+      "content": "(Updated:  )\n\nResidential building struck in Kyiv as Russia launches ballistic missiles towards capital.\n\nRussia once again bombarded Kyiv with ballistic missile attacks overnight on July 25, as President Volodymyr Zelensky warned of Russia's plan to launch a massive missile attack against the Ukrai",
+      "content_detail": "![KI logo](/assets/images/logo.svg)\n\n# Wildberries hides military goods in search results after Ukrainian strikes hammer warehouses\n\n![Kyiv Independent Logo](/assets/images/kiv3/ki-short-logo.svg)\n![Avatar](/_next/image?url=https%3A%2F%2Fassets.kyivindependent.com%2Fcontent%2Fimages%2F2025%2F10%2FDSC02689.jpg&w=256&q=90)\n![Wildberries hides military goods in search results after Ukrainian strikes hammer warehouses](/_next/image?url=https%3A%2F%2Fassets.kyivindependent.com%2Fcontent%2Fimages%2F2026%2F07%2FGettyImages-1928937689_20260726-145652.jpg&w=1536&q=75)\n\nRussia's largest online retailer, Wildberries, has stopped displaying military-related goods in response to searches that refer directly to the Russian invasion of Ukraine, according to reports published on July 26.\n\nThe development comes after seven of the company's warehouses were hit in a [series of Ukrainian strikes](https://kyivindependent.com/ukrainian-drones-reportedly-strike-warehouses-energy-infrastructure-in-mass-attack-on-russias-belgorod/) beginning July 18. Kyiv has said that the facilities were targeted in order to disrupt Russian army logistics.\n\nWildberries offers a [number of dual-use items](https://kyivindependent.com/how-ukraines-strikes-on-wildberries-warehouses-put-russians-in-a-real-jam/) that can be used on the battlefield against Ukraine on its platform, including bulletproof vests and fiber-optic cable for drones.\n\nFollowing the July attacks, the company has now reportedly hidden such goods from",
+      "published_date": "Sun, 26 Jul 2026 15:37:20 GMT",
+      "search_region": "俄乌战争",
+      "classified_regions": [
+        "俄乌战争"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "The development comes after seven of the company's warehouses were hit in a",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Oil Market’s Glut Narrative Just Blew Up, Just as High as Tanker Prices - Energy News Beat",
+      "title_cn": "",
+      "url": "https://energynewsbeat.co/crude-oil/oil-markets-glut-narrative-just-blew-up-just-as-high-as-tanker-prices/",
+      "content": "Markets closed Friday with WTI crude near $89–$90 per barrel (September contract around $89.31 after earlier volatility that saw highs above $92) and Brent in the mid-to-high $90s after the brief foray above $100 earlier in the week. Over the weekend, the combination of confirmed Houthi strikes, the",
+      "content_detail": "[Skip to content](#content)\n\nSunday, July 26, 2026\n\n[![Energy News Beat](https://energynewsbeat.co/wp-content/uploads/2026/04/cropped-ENB-Header-1200-x-226-px.png)](https://energynewsbeat.co/)\n\n[Energy News Beat](https://energynewsbeat.co/)\n\nThe Intersection Between Energy and Finance\n\n[site mode button](#)\n\n[![](https://energynewsbeat.co/wp-content/uploads/2026/07/use-thisone.png)](https://rhgphoenixpetro.com/why-rhg/)\n\n[Home](https://energynewsbeat.co/)>[Crude Oil](https://energynewsbeat.co/category/crude-oil/)>Oil Market’s Glut Narrative Just Blew Up, Just as High as Tanker Prices\n\n![](https://energynewsbeat.co/wp-content/uploads/2026/07/pump-jack-in-the-persian-gulf.jpg)\n\n# Oil Market’s Glut Narrative Just Blew Up, Just as High as Tanker Prices\n\n[Crude Oil](https://energynewsbeat.co/category/crude-oil/) [Crude Oil News](https://energynewsbeat.co/category/crude-oil-news/) [Financial Crisis](https://energynewsbeat.co/category/financial-crisis/) [Geopolitical](https://energynewsbeat.co/category/geopolitical-futures/) [Geopolitical](https://energynewsbeat.co/category/geopolitical/) [International News](https://energynewsbeat.co/category/international-news/) [Tanker](https://energynewsbeat.co/category/tanker/) [Top News](https://energynewsbeat.co/category/top-news/)\n\n[Clark Savage](https://energynewsbeat.co/author/clarkbob/)12\n\nLess than a month ago, the dominant story in oil markets was a looming glut. Analysts pointed to recovering tanker traffic through the Strait of Hormuz",
+      "published_date": "Sun, 26 Jul 2026 17:57:19 GMT",
+      "search_region": "俄乌战争",
+      "classified_regions": [
+        "俄乌战争"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "Sunday, July 26, 2026 [ [",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "CXMT Becomes Symbol of China's Chip Industry Revival - IDNFinancials.com",
+      "title_cn": "",
+      "url": "https://www.idnfinancials.com/news/66558/cxmt-becomes-symbol-of-chinas-chip-industry-revival",
+      "content": "According to Reuters, CXMT was founded in 2016 with financial backing from the Hefei municipal government and has since grown into the world's fourth-largest producer of DRAM memory chips.\n\nRead Also:    CATL's net profit jumped 42%, driven by its energy storage business\n\nLocal governments and state",
+      "content_detail": "[English](#) \n\n[English](#)   [Indonesian](https://www.idnfinancials.com/id/news/66558/cxmt-becomes-symbol-of-chinas-chip-industry-revival?sl=id)   [日本語](https://www.idnfinancials.com/jp/news/66558/cxmt-becomes-symbol-of-chinas-chip-industry-revival?sl=jp)   [العربية](https://www.idnfinancials.com/ar/news/66558/cxmt-becomes-symbol-of-chinas-chip-industry-revival?sl=ar)   [中文](https://www.idnfinancials.com/cn/news/66558/cxmt-becomes-symbol-of-chinas-chip-industry-revival?sl=cn)\n\n[Login](https://www.idnfinancials.com/account/login)\n\n* [Home](https://www.idnfinancials.com/)\n* [Companies](https://www.idnfinancials.com/company)\n* [News](https://www.idnfinancials.com/news)\n* [Videos](https://www.idnfinancials.com/videos)\n* [Tools](#) \n\n  [Market Hints](https://www.idnfinancials.com/market-hints) [Bonds Call](https://www.idnfinancials.com/bonds-call) [People](https://www.idnfinancials.com/people) [Board Connections](https://www.idnfinancials.com/board-graph) [Net Foreign](https://www.idnfinancials.com/net-foreign) [Stake Monitor 1%+](https://www.idnfinancials.com/shareholder-insight)\n* [Foreign Exchange Rates](https://www.idnfinancials.com/currency)\n* [Business Info](https://www.idnfinancials.com/infobiz)\n* [Subscribe](https://www.idnfinancials.com/pricing)\n\nSelect Language!\n\n[English](#) \n\n[English](#)   [Indonesian](https://www.idnfinancials.com/id/news/66558/cxmt-becomes-symbol-of-chinas-chip-industry-revival?sl=id)   [日本語](https://www.idnfinancials.com/jp/news/66558/cxmt-becomes",
+      "published_date": "Sun, 26 Jul 2026 03:05:00 GMT",
+      "search_region": "中美博弈",
+      "classified_regions": [
+        "中美博弈"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "A forced-labor crackdown or an end-run around Congress? Dissecting Trump's new tariffs - WSLS",
+      "title_cn": "",
+      "url": "https://www.wsls.com/business/2026/07/26/a-forced-labor-crackdown-or-an-end-run-around-congress-dissecting-trumps-new-tariffs/",
+      "content": "During President Donald Trump 's first term, he cited Section 301 to impose sweeping tariffs on Chinese imports amid a dispute over the sharp-elbowed tactics Beijing was using to challenge America’s technological dominance. The U.S. is also using 301 powers to counter what it calls unfair Chinese pr",
+      "content_detail": "[Partly Cloudy icon\n\n68º](/weather/ \"Current weather: 68 degrees fahrenheit and Partly Cloudy\")\n\n[![WSLS logo](https://t.gmg.io/header/wsls-logo.png)Go to the WSLS homepage](/)\n\n[Join Insider](/insider/?ref=/business/2026/07/26/a-forced-labor-crackdown-or-an-end-run-around-congress-dissecting-trumps-new-tariffs/®_prompt=header_insider_button \"Join Insider\")\n\n\n\n#### [Business](/business)\n\n# A forced-labor crackdown or an end-run around Congress? Dissecting Trump's new tariffs\n\nMae Anderson\n\nAssociated Press\n\nFILE - Cargo containers line a ship at the Port of Oakland on Wednesday, Aug. 6, 2025, in Oakland, Calif. (AP Photo/Noah Berger, File) (Noah Berger, Copyright 2025 The Associated Press. All rights reserved.)\n\n**NEW YORK** – The Trump administration has imposed [double-digit tariffs on more than 60 countries](https://apnews.com/article/trump-tariffs-supreme-court-forced-labor-4ea091eeee3fa1bfbe55af3f482e6bc1), using a legal justification that permits the president to levy import taxes and other sanctions against countries found to engage in “unjustifiable,” “unreasonable” or “discriminatory” trade practices.\n\nThe new tariffs announced in recent days take effect just as [temporary 10% worldwide tariffs expired](https://apnews.com/article/trump-tariffs-supreme-court-trade-deficit-ec2bd8d8d928baafc619a161670d7725), and critics say they are less about cracking down on forced labor than they are a way to replace those tariffs. The expired tariffs were themselves a temporary repl",
+      "published_date": "Sun, 26 Jul 2026 10:02:22 GMT",
+      "search_region": "中美博弈",
+      "classified_regions": [
+        "中美博弈"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "A forced-labor crackdown or an end-run around Congress?",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "TSMC Stock And 2 Asian AI Exporters Worth Watching Now - simplywall.st",
+      "title_cn": "",
+      "url": "https://simplywall.st/stocks/tw/semiconductors/twse-2330/taiwan-semiconductor-manufacturing-shares/news/tsmc-stock-and-2-asian-ai-exporters-worth-watching-now/amp",
+      "content": "Investors watching AI hardware and advanced technology exports cannot really ignore Taiwan Semiconductor Manufacturing, which sits at the center of AI and high performance computing chip production while global demand for advanced nodes remains a key theme. Revenue and net income have been strong in",
+      "content_detail": "   \n\n# TSMC Stock And 2 Asian AI Exporters Worth Watching Now\n\n[Simply Wall St](/news/about-simply-wall-st-news)\n\nSurging oil prices near US$100 per barrel, rising global bond yields, and a tense run up to major central bank decisions are putting interest rate expectations back in focus, while AI driven export growth in Asia is supporting a different kind of story for technology exporters. For investors watching South Korean and Taiwanese stocks tied to AI, semiconductors, and hardware, this mix of inflation worries and export strength creates both potential openings and clear risks. This article unpacks how that backdrop connects to three stocks exposed to these trends and what to watch before deciding whether they deserve a place on your radar.\n\n[## Taiwan Semiconductor Manufacturing (TWSE:2330)](https://www.simplywall.st/stocks/tw/semiconductors/twse-2330/taiwan-semiconductor-manufacturing-shares?bpId=4674386&link_type=company_1_cta_header)\n\n**Overview:** Taiwan Semiconductor Manufacturing (TSMC) is the world’s largest contract chip manufacturer, producing advanced integrated circuits for clients across high performance computing, smartphones, automotive, Internet of Things, and consumer electronics markets from its global network of fabs and packaging facilities.\n\n**Operations:** TSMC generates essentially all of its NT$4,440,492.3m revenue from its foundry business, manufacturing wafers and related semiconductor processes for external customers.\n\n**Market Cap:** NT$60,94",
+      "published_date": "Sun, 26 Jul 2026 03:48:43 GMT",
+      "search_region": "中美博弈",
+      "classified_regions": [
+        "中美博弈"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "TSMC Stock And 2 Asian AI Exporters Worth Watching Now Surging oil prices near US$100 per barrel, rising global bond yields, and a tense run up to major central bank",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Israeli security cabinet approves letting international force enter Gaza areas beyond Israeli control - Reuters",
+      "title_cn": "",
+      "url": "https://www.reuters.com/world/middle-east/israeli-security-cabinet-approves-letting-international-force-enter-gaza-areas-2026-07-26/",
+      "content": "1 hour agoMiddle East categoryTrump is giving Iran talks 'a little bit of room,' US ambassador to UN says Image 7: United Nations Security Council meeting on the situation in the Middle East, in New York \n   3 hours agoMiddle East categoryMost Gulf markets ease after Houthi attacks on Saudi Red Sea ",
+      "content_detail": "[Skip to main content](https://www.reuters.com/world/middle-east/israeli-security-cabinet-approves-letting-international-force-enter-gaza-areas-2026-07-26#main-content)\n\n[Exclusive news, data and analytics for financial market professionals Learn more about Refinitiv](https://www.reuters.com/differentiator/)\n\n[](https://www.reuters.com/)\n\n*   [World](https://www.reuters.com/world/) \n\n## [Browse World](https://www.reuters.com/world/)\n\n    *   [Africa](https://www.reuters.com/world/africa/)\n    *   [Americas](https://www.reuters.com/world/americas/)\n    *   [Asia Pacific](https://www.reuters.com/world/asia-pacific/)\n    *   [China](https://www.reuters.com/world/china/)\n    *   [Europe](https://www.reuters.com/world/europe/)\n    *   [India](https://www.reuters.com/world/india/)\n    *   [Iran War](https://www.reuters.com/world/iran/)\n\n    *   [Israel and Hamas at War](https://www.reuters.com/world/israel-hamas/)\n    *   [Japan](https://www.reuters.com/world/japan/)\n    *   [Middle East](https://www.reuters.com/world/middle-east/)\n    *   [Ukraine and Russia at War](https://www.reuters.com/world/ukraine-russia-war/)\n    *   [United Kingdom](https://www.reuters.com/world/uk/)\n    *   [United States](https://www.reuters.com/world/us/)\n    *   [Reuters NEXT](https://www.reuters.com/world/reuters-next/)\n\n*   [Business](https://www.reuters.com/business/) \n\n## [Browse Business](https://www.reuters.com/business/)\n\n    *   [Aerospace & Defense](https://www.reuters.com/business/aerospace-d",
+      "published_date": "Sun, 26 Jul 2026 16:25:44 GMT",
+      "search_region": "中东/红海",
+      "classified_regions": [
+        "中东/红海"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Analysis • Red Sea rupture: Will the Houthis bring Trump and Iran back to the table? - Haaretz",
+      "title_cn": "",
+      "url": "https://www.haaretz.com/middle-east-news/iran/2026-07-26/ty-article/.premium/red-sea-rupture-will-the-houthis-bring-trump-and-iran-back-to-the-table/0000019f-9dff-db22-a5df-fdff84fd0000",
+      "content": "### Israel's Far Right Is Repeating the Sin That Brought Down the Temple\n\n### An Israeli Election Surprise Called the Democrats\n\n### Ed Miliband, the U.K.'s New Foreign Secretary – and His History With Israel\n\n### Biden Officials Now Regret What They Let Israel Do in Gaza. Does It Matter?\n\n## ICYMI\n",
+      "content_detail": "",
+      "published_date": "Sun, 26 Jul 2026 17:00:00 GMT",
+      "search_region": "中东/红海",
+      "classified_regions": [
+        "中东/红海"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "U.S. forgoes strikes on Iran, but conflict escalates in the Red Sea - NBC News",
+      "title_cn": "",
+      "url": "https://www.nbcnews.com/world/iran/us-forgoes-strikes-iran-conflict-escalates-red-sea-rcna589285",
+      "content": "In Yemen, officials said the air force of the Saudi-backed, internationally recognized government, which has ​opposed the Houthis for ⁠more than a decade, struck Houthi sites in the Marib and al-Jawf provinces.\n\nThe officials said both sides in Yemen’s civil war were mobilizing forces along the fron",
+      "content_detail": "",
+      "published_date": "Sun, 26 Jul 2026 14:34:08 GMT",
+      "search_region": "中东/红海",
+      "classified_regions": [
+        "中东/红海"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "South Lebanon residents inspect damaged homes after Israeli withdrawal - Reuters",
+      "title_cn": "",
+      "url": "https://www.reuters.com/video/watch/idRW097726072026RP1",
+      "content": "### 01:00 Trump says Netanyahu will not be arrested as Mamdani mulls options\n\n   ### 01:31 Hegseth defends U.S.-Iran war as Senators press him for 'straight answers'\n\n   ### 00:36 US war in Iran has cost $37.5 billion so far, Hegseth says\n\n   ### 00:46 Displaced Lebanese await return to southern tow",
+      "content_detail": "",
+      "published_date": "Sun, 26 Jul 2026 16:42:19 GMT",
+      "search_region": "中东/红海",
+      "classified_regions": [
+        "中东/红海"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Analysis • Settlers push for escalation in West Bank as Palestinian restraint wears thin - Haaretz",
+      "title_cn": "",
+      "url": "https://www.haaretz.com/west-bank/2026-07-26/ty-article/.premium/settlers-push-for-escalation-in-west-bank-as-palestinian-restraint-wears-thin/0000019f-9abe-df42-a1df-ffff2d9e0000",
+      "content": "### 'Choose Hope': Natalie Portman Backs Arab-Jewish Party Ahead of Israeli Election\n\n### An Israeli Election Surprise Called the Democrats\n\n### Ed Miliband, the U.K.'s New Foreign Secretary – and His History With Israel\n\n### Israel's Far Right Is Repeating the Sin That Brought Down the Temple\n\n## I",
+      "content_detail": "",
+      "published_date": "Sun, 26 Jul 2026 05:38:00 GMT",
+      "search_region": "中东/红海",
+      "classified_regions": [
+        "中东/红海"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "China built full-size models of US warships and aircraft to hone its missiles - Business Insider",
+      "title_cn": "",
+      "url": "https://www.businessinsider.com/satellite-images-china-full-size-mock-us-warships-attack-2026-7",
+      "content": "In 2015, soon after the first replica of the presidential office was built, the PLA released a training video showing soldiers firing and charging towards it.\n\nAlong with military drills, experts also note that imagery of these models is a very effective way to send a message to all potential advers",
+      "content_detail": "",
+      "published_date": "Sun, 26 Jul 2026 08:01:01 GMT",
+      "search_region": "台海/南海/朝鲜",
+      "classified_regions": [
+        "台海/南海/朝鲜"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "US, Japan join Philippines in South China Sea drills - Reuters",
+      "title_cn": "",
+      "url": "https://www.reuters.com/world/china/us-japan-join-philippines-south-china-sea-drills-2026-07-26/",
+      "content": "Purchase Licensing Rights\n\n## Read Next\n\n   July 24, 2026China categoryHow the 'twin stars' of China, CXMT and YMTC, changed the chip game Image 1: Illustration shows CXMT logo and computer motherboard \n   2 hours agoChina categoryChina holds air, navy patrol in South China Sea Image 2: Reuters logo",
+      "content_detail": "",
+      "published_date": "Sun, 26 Jul 2026 07:23:43 GMT",
+      "search_region": "台海/南海/朝鲜",
+      "classified_regions": [
+        "台海/南海/朝鲜"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "US and Japan join Philippines for South China Sea Drills - Marine News Magazine",
+      "title_cn": "",
+      "url": "https://www.marinelink.com/blogs/blog/us-and-japan-join-philippines-for-south-china-sea-drills-105161",
+      "content": "Sunday, July 26, 2026\n\n Home\n Magazines\n Advertising\n Events\n Videos\n Contact us\n Podcast\n Subscribe\n\nMaritime Activity Reports, Inc.\n\n# US and Japan join Philippines for South China Sea Drills\n\nPosted to Maritime Reporter on July 26, 2026\n\nAs the Philippines and China traded accusations after an en",
+      "content_detail": "",
+      "published_date": "Sun, 26 Jul 2026 04:03:15 GMT",
+      "search_region": "台海/南海/朝鲜",
+      "classified_regions": [
+        "台海/南海/朝鲜"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Middle East Arms Factories Are Redefining US Security | Opinion - Newsweek",
+      "title_cn": "",
+      "url": "https://www.newsweek.com/middle-east-arms-factories-are-redefining-us-security-opinion-12240061",
+      "content": "Opinion\n\nSaudi ArabiaMiddle EastWeaponsSecurityNational security\n\nopinion\n\n# Middle East Arms Factories Are Redefining US Security | Opinion\n\nPublished\n\nJul 26, 2026 at 06:00 AM EDT\n\nBy Bradley Martin and Liram Koblentz-Stenzler\n\nNewsweek is a Trust Project member\n\nSee more of our trusted coverage w",
+      "content_detail": "",
+      "published_date": "Sun, 26 Jul 2026 10:00:00 GMT",
+      "search_region": "台海/南海/朝鲜",
+      "classified_regions": [
+        "台海/南海/朝鲜"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Indias drone moment has arrived - India's News.Net",
+      "title_cn": "",
+      "url": "https://www.indiasnews.net/news/279210780/indias-drone-moment-has-arrived",
+      "content": "India's News.Net\n\n###### Japanese mayor who took maternity leave, criticized by citizens\n\nIndia's News.Net\n\n###### India's housing boom cushions tiles industry against West Asia supply disruptions\n\nIndia's News.Net\n\nAccess More\n\n### News Releases\n\nIndia's News.Net's News Release Publishing Service p",
+      "content_detail": "",
+      "published_date": "Sun, 26 Jul 2026 13:48:00 GMT",
+      "search_region": "台海/南海/朝鲜",
+      "classified_regions": [
+        "台海/南海/朝鲜"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Panic Around Chinese AI Models: What the US Tech Market Says - Zamin.uz",
+      "title_cn": "",
+      "url": "https://zamin.uz/en/technology/214622-panic-around-chinese-ai-models-what-the-us-tech-market-says.html",
+      "content": "## Comments0\n\n…\n\n## Related news\n\nCanon registered three new cameras: what is knownToday, 00:59Minecraft System Requirements Raised Sharply for the First Time in 17 YearsToday, 00:23July update released for Samsung Galaxy A57 and Galaxy A27Yesterday, 23:58NASA Faces Personnel Crisis: Every Fifth Emp",
+      "content_detail": "",
+      "published_date": "Sun, 26 Jul 2026 19:52:03 GMT",
+      "search_region": "台海/南海/朝鲜",
+      "classified_regions": [
+        "台海/南海/朝鲜"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Brazil denies visa requests to U.S. officials ahead of upcoming elections - CBS News",
+      "title_cn": "",
+      "url": "https://www.cbsnews.com/news/brazils-denies-visas-us-officials-upcoming-elections/",
+      "content": "#### CBS News 24/7\n\n #### Trump orders signs placed outside Smithsonian warning of \"inaccurate\" information\n #### San Francisco voters to again decide on Great Highway in November 2026 election\n #### Early voting underway in Michigan for August 2026 primary\n #### What Happens After Trump?: Why Tim M",
+      "content_detail": "",
+      "published_date": "Sun, 26 Jul 2026 02:48:35 GMT",
+      "search_region": "全球制裁",
+      "classified_regions": [
+        "全球制裁"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "PM highlights defence, self-reliance and environment in Mann Ki Baat, avoids reference to NEET unrest - BusinessLine",
+      "title_cn": "",
+      "url": "https://www.thehindubusinessline.com/news/national/pm-highlights-defence-self-reliance-and-environment-in-mann-ki-baat-avoids-reference-to-neet-unrest/article71268973.ece",
+      "content": "##### SENSEX   76,059.77\n\n##### NIFTY   23,767.45\n\n##### CRUDEOIL   8,617.00\n\n##### GOLD   143,104.00\n\n+ 283.00\n\n##### SILVER   222,234.00\n\n+ 2,859.00\n\n##### SENSEX   76,059.77\n\n -331.62\n\n##### NIFTY   23,767.45\n\n -102.15\n\n##### NIFTY   23,767.45\n\n -102.15\n\n##### CRUDEOIL   8,617.00\n\n -407.00\n\n#####",
+      "content_detail": "",
+      "published_date": "Sun, 26 Jul 2026 09:20:14 GMT",
+      "search_region": "全球制裁",
+      "classified_regions": [
+        "全球制裁"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Aclara wins US federal funding for AI rare earth processing - Mining.com.au",
+      "title_cn": "",
+      "url": "https://mining.com.au/aclara-wins-us-federal-funding-for-ai-rare-earth-processing/",
+      "content": "Aclara wins US federal funding for AI rare earth processing•Midland and Barrick begin exploring at Lewis•Heritage secures property-wide LiDAR data for Melba targeting•Integra reports ‘record’ mining rates in Q2•Goldgroup expands drilling after Gold Resource merger•Manhattan Uranium’s I-70 data revea",
+      "content_detail": "",
+      "published_date": "Sun, 26 Jul 2026 04:16:00 GMT",
+      "search_region": "全球制裁",
+      "classified_regions": [
+        "全球制裁"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    }
+  ]
+}
