@@ -1,0 +1,93 @@
+{
+  "date": "2026-07-28",
+  "generated_at": "2026-07-28T06:07:24.444766",
+  "upcoming_events": [
+    {
+      "date": "2026-07-29",
+      "event": "FOMC 利率决议",
+      "importance": "critical",
+      "category": "央行",
+      "note": "附新闻发布会",
+      "days_until": 1
+    },
+    {
+      "date": "2026-08-07",
+      "event": "非农就业报告 (7月)",
+      "importance": "high",
+      "category": "就业",
+      "days_until": 10
+    }
+  ],
+  "recent_events": [],
+  "web_events": [
+    {
+      "source": "tavily_answer",
+      "query": "US economic data release this week CPI GDP jobs",
+      "answer": "The latest US economic data for this week includes the Personal Consumption Expenditures (PCE) Price Index, which is expected to show a slight increase, reflecting ongoing inflation trends. The GDP Advance estimate is anticipated to indicate steady economic growth, supported by robust consumer spending and business investments. Jobless claims remain low, suggesting a tight labor market, while the unemployment rate is expected to stay near historic lows, indicating strong job creation. Wage growt"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Newsquawk Week in Focus: FOMC, BoE, BoJ, US PCE ...",
+      "url": "https://investinglive.com/news/newsquawk-week-in-focus-fomc-boe-boj-us-pce-us-gdp-and-ez-cpi",
+      "content": "* **Thu:** BoE Policy Announcement & MPR (Jul), CBRT Minutes (Jul), Australian Export/Import Prices (Q2), French/Spanish GDP (Q2), Spanish/German HICP (Jul), EZ GDP (Q2), Unemployment Rate (Jun), US PCE (Jun), GDP Advance (Q2), Jobless Claims. * **Fri:** BoJ Policy Announcement (Jul), Japanese Unemp"
+    },
+    {
+      "source": "tavily_result",
+      "title": "TD Economics - Weekly Bottom Line",
+      "url": "https://economics.td.com/ca-weekly-bottom-line",
+      "content": "# Our summary of recent economic events and what to expect in the weeks ahead. ## U.S. Highlights. | This Week in the Markets |. Chart 1 shows the three- and six-month annualized rate of inflation for the four categories of core inflation in Canada. The chart shows that on a six-month basis all cate"
+    },
+    {
+      "source": "tavily_result",
+      "title": "July Executive Briefing: Three risks facing the US in the second half of 2026",
+      "url": "https://www.rbc.com/en/economics/us-analysis/us-featured-analysis/july-executive-briefing-three-risks-facing-the-us-in-the-second-half-of-2026",
+      "content": "## July Executive Briefing: Three risks facing the US in the second half of 2026. We continue to view the unemployment rate as a better indicator of labor market health. Data over May and June have largely confirmed that the US economy is in a comfortable place as we head into the second half of the"
+    },
+    {
+      "source": "tavily_answer",
+      "query": "Federal Reserve speech this week monetary policy",
+      "answer": "The Federal Reserve is expected to hold interest rates steady at its upcoming July meeting, according to recent statements from Fed policymakers. Despite cooler inflation data, higher energy prices and renewed tensions with Iran have complicated the outlook. Market expectations have shifted, with traders now leaning towards a potential rate hike in September rather than this week. The Fed's focus remains on controlling inflation while balancing economic growth, with mixed signals clouding the po"
+    },
+    {
+      "source": "tavily_result",
+      "title": "What to Watch for at Next Week's Federal Reserve Meeting",
+      "url": "https://www.investopedia.com/federal-reserve-july-meeting-preview-12025264",
+      "content": "New York Fed President John Williams struck a similar tone in a recent speech.\n\n“With inflation running high, it is imperative that we restore it to the Federal Reserve’s 2% longer-run goal on a sustained basis,” Williams said. “The current stance of monetary policy is well positioned to do that.”\n\n"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Markets Price In Rising Odds Of July Fed Rate Hike",
+      "url": "https://www.forbes.com/sites/simonmoore/2026/07/23/markets-see-chance-fed-hikes-next-week-at-july-meeting",
+      "content": "In recent speeches, Fed policymakers have said that if inflation does not cool soon, then interest rates may have to increase. At a speech on July 15, Fed Governor Lisa Cook underlined potential inflation risks, “I am watching both sides of our dual mandate—price stability and maximum employment. Ho"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Federal Reserve Holds Rates Steady as Mixed Signals Cloud Policy Path: DBS",
+      "url": "https://cryptorank.io/news/feed/8bd22-federal-reserve-holds-rates-steady-mixed-signals-dbs",
+      "content": "Share:\n\nPredictions Markets\n\nSee what traders are focused on\n\nView analytics →\n\nPrediction Banner\n\nShare:\n\nRead More\n\nFederal Reserve: Extended Pause, But Rate Hike Risk Grows, Says UOB\n\n## Federal Reserve: Extended Pause, But Rate Hike Risk Grows, Says UOB\n\nBitcoinWorld Federal Reserve: Extended Pa"
+    },
+    {
+      "source": "tavily_answer",
+      "query": "China PMI economic data this week",
+      "answer": "China's industrial profit growth slowed to 15.1% in June 2026 from 21.1% in May, indicating a two-speed recovery where exports have bolstered the economy while domestic demand remains sluggish. The National Bureau of Statistics reported that first-half profits rose 18.7% year-on-year, reflecting a slowdown in the rebound driven by easing energy prices."
+    },
+    {
+      "source": "tavily_result",
+      "title": "China's industrial profit growth moderates as exports cushion uneven recovery - The Daily Star",
+      "url": "https://www.thedailystar.net/business/news/chinas-industrial-profit-growth-moderates-exports-cushion-uneven-recovery-4233721",
+      "content": "27 July 2026, 00:01 AM   In Focus. 27 July 2026, 00:00 AM   Economy. Profits at China's industrial firms grew at a solid, though slower, pace as resilient exports helped cushion sluggish domestic demand, highlighting the economy's uneven recovery despite policymakers' efforts to spur consumption. Ex"
+    },
+    {
+      "source": "tavily_result",
+      "title": "China industrial profit growth slows again in June as retreating oil prices sap earnings lift - CNBC",
+      "url": "https://www.cnbc.com/2026/07/27/china-industrial-profit-growth-exports-oil-drops.html",
+      "content": "* China's industrial profits rose 15.1% in June from a year earlier, slowing for a second straight month. * Industrial corporate earnings have rebounded this year, thanks to an AI-fueled boom in chip and equipment manufacturing. China's industrial profits rose 15.1% in June from a year earlier, acco"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Dow Gains Over 200 Points But Records Weekly Loss: Investor Sentiment Edges Higher, But Greed Index Remai - Benzinga",
+      "url": "https://www.benzinga.com/markets/market-summary/26/07/60687939/dow-gains-over-200-points-but-records-weekly-loss-investor-sentiment-edges-higher-but-greed-index-remains-in-fear-zone",
+      "content": "The CNN Money Fear and Greed index showed some improvement in the overall market sentiment, while the index remained in the “Fear” zone on Friday. U.S. stocks settled mixed on Friday, with the Dow Jones index gaining more than 200 points during the session. Major indices on Wall Street settled lower"
+    }
+  ]
+}
