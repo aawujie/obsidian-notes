@@ -1,0 +1,100 @@
+{
+  "date": "2026-07-29",
+  "generated_at": "2026-07-29T06:06:44.545490",
+  "upcoming_events": [
+    {
+      "date": "2026-07-29",
+      "event": "FOMC 利率决议",
+      "importance": "critical",
+      "category": "央行",
+      "note": "附新闻发布会",
+      "days_until": 0
+    },
+    {
+      "date": "2026-08-07",
+      "event": "非农就业报告 (7月)",
+      "importance": "high",
+      "category": "就业",
+      "days_until": 9
+    },
+    {
+      "date": "2026-08-12",
+      "event": "美国 CPI (7月)",
+      "importance": "high",
+      "category": "通胀",
+      "days_until": 14
+    }
+  ],
+  "recent_events": [],
+  "web_events": [
+    {
+      "source": "tavily_answer",
+      "query": "US economic data release this week CPI GDP jobs",
+      "answer": "This week's US economic data releases include GDP (Q2) and PCE on Thursday, July 30, and revised UoM consumer sentiment and revised inflation expectations on Friday, July 31. The GDP (Q2) and PCE data is expected to show continued expansion, albeit slower, in the second quarter. The PCE data will provide an updated assessment of underlying inflation and consumer spending trends. The revised UoM consumer sentiment and inflation expectations are anticipated to reflect the recent developments in th"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Newsquawk Week in Focus: FOMC, BoE, BoJ, US PCE, US GDP, and EZ CPI",
+      "url": "https://investinglive.com/news/newsquawk-week-in-focus-fomc-boe-boj-us-pce-us-gdp-and-ez-cpi",
+      "content": "Overall, the jobs report is unlikely to shift the BoE into July’s meeting. The unemployment rate held steady at 4.9% (in line/slightly below some expectations of 5%), while employment change exceeded forecasts at 147k (exp. 85k). The data suggest the labour market remained relatively stable in May, "
+    },
+    {
+      "source": "tavily_result",
+      "title": "How Is the Economy Doing Right Now?",
+      "url": "https://www.nerdwallet.com/finance/learn/state-of-the-economy",
+      "content": "Thu., July 30: GDP (Q2) and PCE, BEA - This release is likely to show continued (albeit slower) expansion in the second quarter. As usual, I’ll be looking closest at the spending data in the PCE release.\n Fri., July 31: Consumer Sentiment, University of Michigan - I expect a notable drop in what we "
+    },
+    {
+      "source": "tavily_result",
+      "title": "Market outlook for the week of 27th-31st July — TradingView News",
+      "url": "https://www.tradingview.com/news/forexlive:d5271349d094b:0-market-outlook-for-the-week-of-27th-31st-july",
+      "content": "Finally, on Friday in Japan, attention will be on the Tokyo core CPI y/y print and the BoJ meeting. The eurozone will release the flash core CPI estimate y/y, Canada will get the GDP m/m, and the U.S. will report the revised UoM consumer sentiment and revised inflation expectations.\n\nIn Australia, t"
+    },
+    {
+      "source": "tavily_answer",
+      "query": "Federal Reserve speech this week monetary policy",
+      "answer": "The Federal Reserve officials are facing growing pressure to hike rates due to a resurgence in price pressures, which could make their decision on whether to hold or increase interest rates a close call. Investors have recently increased their bets on a potential hike at this week's meeting, with some policymakers supporting higher rates now or soon. The Federal Open Markets Committee is likely to discuss AI and other factors influencing inflation during their meeting on Tuesday and Wednesday. W"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Fed Faces Growing Pressure to Hike Rates as Price Risks Rebound - Yahoo Finance",
+      "url": "https://finance.yahoo.com/economy/policy/articles/fed-faces-growing-pressure-to-hike-rates-as-price-risks-rebound-190000450.html",
+      "content": "3. Best money market accounts. (Bloomberg) -- Federal Reserve officials will head into their policy meeting this week confronting a resurgence in price pressures that could make their decision on whether to hold or hike interest rates a close call — and a contentious one. Add to that a demand boom f"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Fed Faces Growing Pressure to Hike Rates as Price Risks Rebound - Bloomberg.com",
+      "url": "https://www.bloomberg.com/news/articles/2026-07-26/fed-faces-growing-pressure-to-hike-rates-as-price-risks-rebound",
+      "content": "* Federal Reserve officials will head into their policy meeting confronting a resurgence in price pressures that could make their decision on whether to hold or hike interest rates a close call. * Investors have boosted their bets the central bank could hike at this week’s meeting, with some policym"
+    },
+    {
+      "source": "tavily_result",
+      "title": "What to Expect in Markets This Week: Amazon, Apple, Meta and Microsoft Earnings; Fed Interest Rate Decision - Investopedia",
+      "url": "https://www.investopedia.com/what-to-expect-in-markets-this-week-amazon-apple-meta-microsoft-earnings-fed-interest-rate-decision-12025525",
+      "content": "# What to Expect in Markets This Week: Amazon, Apple, Meta and Microsoft Earnings; Fed Interest Rate Decision. America’s AI buildout will be in the spotlight this week, with some of the world’s biggest tech companies due to hand in their latest results and Federal Reserve officials expected to take "
+    },
+    {
+      "source": "tavily_answer",
+      "query": "China PMI economic data this week",
+      "answer": "China's industrial profit growth slowed to 15.1% in June 2026 from 21.1% in May, indicating a deceleration in the pace of recovery. Despite this, exports have provided a cushion to the uneven economic recovery, with high-tech manufacturing hubs like Guangdong, Zhejiang, Shanghai, Anhui, and Shandong showing accelerated growth rates. National GDP growth for the first half of 2026 was 4.7%, down from 5.0% in 2025. The industrial profit growth slowdown was partly attributed to retreating oil prices"
+    },
+    {
+      "source": "tavily_result",
+      "title": "China's industrial profit growth moderates as exports cushion uneven recovery - The Daily Star",
+      "url": "https://www.thedailystar.net/business/news/chinas-industrial-profit-growth-moderates-exports-cushion-uneven-recovery-4233721",
+      "content": "27 July 2026, 00:01 AM   In Focus. 27 July 2026, 00:00 AM   Economy. Profits at China's industrial firms grew at a solid, though slower, pace as resilient exports helped cushion sluggish domestic demand, highlighting the economy's uneven recovery despite policymakers' efforts to spur consumption. Ex"
+    },
+    {
+      "source": "tavily_result",
+      "title": "High-tech manufacturing hubs pull ahead in China's uneven growth - Reuters",
+      "url": "https://www.reuters.com/business/autos-transportation/high-tech-manufacturing-hubs-pull-ahead-chinas-uneven-growth-2026-07-28/",
+      "content": "Exclusive news, data and analytics for financial market professionals Learn more about Refinitiv. ## Browse World. ## Browse Business. BEIJING, July 28 (Reuters) - China's regional growth data underscored the uneven nature of the country's economic transition in the first half of 2026, as ​provinces"
+    },
+    {
+      "source": "tavily_result",
+      "title": "China industrial profit growth slows again in June as retreating oil prices sap earnings lift - CNBC",
+      "url": "https://www.cnbc.com/2026/07/27/china-industrial-profit-growth-exports-oil-drops.html",
+      "content": "* China's industrial profits rose 15.1% in June from a year earlier, slowing for a second straight month. * Industrial corporate earnings have rebounded this year, thanks to an AI-fueled boom in chip and equipment manufacturing. China's industrial profits rose 15.1% in June from a year earlier, acco"
+    }
+  ]
+}
