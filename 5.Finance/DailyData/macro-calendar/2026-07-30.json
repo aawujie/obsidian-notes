@@ -1,0 +1,101 @@
+{
+  "date": "2026-07-30",
+  "generated_at": "2026-07-30T06:06:52.521016",
+  "upcoming_events": [
+    {
+      "date": "2026-08-07",
+      "event": "非农就业报告 (7月)",
+      "importance": "high",
+      "category": "就业",
+      "days_until": 8
+    },
+    {
+      "date": "2026-08-12",
+      "event": "美国 CPI (7月)",
+      "importance": "high",
+      "category": "通胀",
+      "days_until": 13
+    }
+  ],
+  "recent_events": [
+    {
+      "date": "2026-07-29",
+      "event": "FOMC 利率决议",
+      "importance": "critical",
+      "category": "央行",
+      "note": "附新闻发布会",
+      "days_ago": 1
+    }
+  ],
+  "web_events": [
+    {
+      "source": "tavily_answer",
+      "query": "US economic data release this week CPI GDP jobs",
+      "answer": "This week's US economic data releases include the July Consumer Price Index (CPI) on Wednesday, August 12, and the Personal Income and Outlays for June, alongside the advance estimate of second-quarter GDP, both on Thursday, July 30. The July CPI is a key inflation print between the July and September FOMC meetings, influencing market expectations for the Fed's next steps. The GDP and Personal Income and Outlays data will provide insights into the overall economic performance and income distribu"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Fed decision headlines two weeks of inflation and jobs data",
+      "url": "https://blog.kraken.com/economic-brief/july-29-2026",
+      "content": "The BLS publishes the July Consumer Price Index at 8:30 a.m. ET, the final scheduled release in this window. CPI is the most widely followed monthly inflation print, and this release lands between the July and September FOMC meetings, making it a key data point for how the market reads the Fed’s nex"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Newsquawk Week in Focus: FOMC, BoE, BoJ, US PCE, US GDP, and EZ CPI",
+      "url": "https://investinglive.com/news/newsquawk-week-in-focus-fomc-boe-boj-us-pce-us-gdp-and-ez-cpi",
+      "content": "Overall, the jobs report is unlikely to shift the BoE into July’s meeting. The unemployment rate held steady at 4.9% (in line/slightly below some expectations of 5%), while employment change exceeded forecasts at 147k (exp. 85k). The data suggest the labour market remained relatively stable in May, "
+    },
+    {
+      "source": "tavily_result",
+      "title": "Trump’s Numbers, July 2026 Update",
+      "url": "https://www.factcheck.org/2026/07/trumps-numbers-july-2026-update",
+      "content": "## Summary\n\nOur latest update in this series provides economic and other metrics of President Donald Trump’s second term, so far.\n\n Job growth remains slower, with a total of 716,000 jobs created as of June. The unemployment rate remains slightly higher at 4.2%.\n\n Inflation worsened to 3.5% in June,"
+    },
+    {
+      "source": "tavily_answer",
+      "query": "Federal Reserve speech this week monetary policy",
+      "answer": "The Federal Reserve decided to keep its key interest rate unchanged at its meeting this week, marking the fifth consecutive meeting with no change in the benchmark rate. The decision was made despite ongoing high inflation and energy price spikes due to the Iran war. The Fed's rate-setting committee reached a 9-3 decision, with three officials dissenting in favor of a rate increase. Fed Chair Kevin Warsh described the policy discussion as a \"good family fight.\" While some Fed officials have expr"
+    },
+    {
+      "source": "tavily_result",
+      "title": "What to Watch for at Next Week's Federal Reserve Meeting",
+      "url": "https://www.investopedia.com/federal-reserve-july-meeting-preview-12025264",
+      "content": "New York Fed President John Williams struck a similar tone in a recent speech.\n\n“With inflation running high, it is imperative that we restore it to the Federal Reserve’s 2% longer-run goal on a sustained basis,” Williams said. “The current stance of monetary policy is well positioned to do that.”\n\n"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Why Warsh won't raise Fed's interest rates this week",
+      "url": "https://www.cnbc.com/2026/07/28/warsh-fed-rate-decision-trump-powell-analysis.html",
+      "content": "Federal Reserve Chairman Kevin Warsh testifies during a Senate Banking Committee hearing titled \"The Semiannual Monetary Policy Report to the Congress\" on Capitol Hill in Washington, July 15, 2026.\n\nKen Cedeno | Afp | Getty Images\n\nFederal Reserve Chairman Kevin Warsh isn't likely to oversee an incr"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Federal Reserve expected to keep rates unchanged for now",
+      "url": "https://spectrumlocalnews.com/us/snplus/business/2026/07/29/federal-reserve-interest-rate-announcement",
+      "content": "Federal Reserve Board Chairman Kevin Warsh speaks at a news conference at the Federal Reserve in Washington, Wednesday, July 29, 2026. (AP Photo/Mark Schiefelbein)\n\n# Fed leaves interest rate unchanged but with 3 dissents as Warsh praises 'good family fight'\n\nBY   Associated Press  Washington, D.C.\n"
+    },
+    {
+      "source": "tavily_answer",
+      "query": "China PMI economic data this week",
+      "answer": "China's official July PMI data is expected to be released on Friday. The market anticipates the manufacturing PMI to remain at 50.3, while the non-manufacturing PMI is expected to slightly decrease to 50.2 from June's 50.3. ING forecasts a slightly weaker outcome, predicting the manufacturing PMI at 50.1 and the non-manufacturing PMI at 50.0."
+    },
+    {
+      "source": "tavily_result",
+      "title": "Newsquawk Week in Focus: FOMC, BoE, BoJ, US PCE, US GDP, and EZ CPI",
+      "url": "https://investinglive.com/news/newsquawk-week-in-focus-fomc-boe-boj-us-pce-us-gdp-and-ez-cpi",
+      "content": "China will release its official July PMI data on Friday, with the market expecting the manufacturing PMI to remain at 50.3 and the non-manufacturing PMI to edge down to 50.2 from 50.3 in June. ING expects a slightly weaker outcome, forecasting the manufacturing PMI at 50.1 and the non-manufacturing "
+    },
+    {
+      "source": "tavily_result",
+      "title": "Forex Economic Calendar Overview: Key Events for the Next Trading Week (03.08.2026–09.08.2026)",
+      "url": "https://www.litefinance.org/blog/analysts-opinions/weekly-economic-calendar-for-03082026-09082026",
+      "content": "The RatingDog Purchasing Managers' Index (PMI), released by Caixin Insight Group and S&P Global, is a leading indicator gauging business activity in China's services sector. Since China is the world's second-largest economy, its macroeconomic data releases can strongly influence financial markets.\n\n"
+    },
+    {
+      "source": "tavily_result",
+      "title": "A Packed Agenda! Fed Leads Super Central Bank Week ...",
+      "url": "https://news.futunn.com/en/post/76591161/week-ahead-a-packed-agenda-fed-leads-super-central-bank",
+      "content": "China’s official Manufacturing Purchasing Managers’ Index (PMI) will be released on July 31, along with data on profits of industrial enterprises above designated size for June, scheduled for release on July 27. Previously, the Manufacturing PMI rose to 50.3 in June, returning to expansionary territ"
+    }
+  ]
+}
