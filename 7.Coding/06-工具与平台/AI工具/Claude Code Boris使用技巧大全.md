@@ -2,7 +2,7 @@
 
 > 来源：[howborisusesclaudecode.com](https://howborisusesclaudecode.com)
 > 人物：Boris Cherny，Anthropic 公司 Claude Code 负责人
-> 时间跨度：2026 年 1 月 ~ 6 月，共 16 个 Part、127+ 条建议
+> 时间跨度：2026 年 1 月 ~ 7 月，共 22 个 Part、150+ 条建议
 
 ---
 
