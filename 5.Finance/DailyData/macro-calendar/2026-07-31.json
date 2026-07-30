@@ -1,0 +1,101 @@
+{
+  "date": "2026-07-31",
+  "generated_at": "2026-07-31T06:06:58.289264",
+  "upcoming_events": [
+    {
+      "date": "2026-08-07",
+      "event": "非农就业报告 (7月)",
+      "importance": "high",
+      "category": "就业",
+      "days_until": 7
+    },
+    {
+      "date": "2026-08-12",
+      "event": "美国 CPI (7月)",
+      "importance": "high",
+      "category": "通胀",
+      "days_until": 12
+    }
+  ],
+  "recent_events": [
+    {
+      "date": "2026-07-29",
+      "event": "FOMC 利率决议",
+      "importance": "critical",
+      "category": "央行",
+      "note": "附新闻发布会",
+      "days_ago": 2
+    }
+  ],
+  "web_events": [
+    {
+      "source": "tavily_answer",
+      "query": "US economic data release this week CPI GDP jobs",
+      "answer": "This week, the US economic data releases include the July Consumer Price Index (CPI) on Wednesday, August 12, and the advance estimate of second-quarter GDP and the Personal Consumption Expenditures (PCE) price index on Thursday, July 30. The July CPI release is significant as it provides a key data point for market expectations regarding the Federal Reserve's next steps. The GDP and PCE data on July 30 are expected to show continued, albeit slower, expansion in the second quarter, with a partic"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Fed decision headlines two weeks of inflation and jobs data",
+      "url": "https://blog.kraken.com/economic-brief/july-29-2026",
+      "content": "The BLS publishes the July Consumer Price Index at 8:30 a.m. ET, the final scheduled release in this window. CPI is the most widely followed monthly inflation print, and this release lands between the July and September FOMC meetings, making it a key data point for how the market reads the Fed’s nex"
+    },
+    {
+      "source": "tavily_result",
+      "title": "How Is the Economy Doing Right Now?",
+      "url": "https://www.nerdwallet.com/finance/learn/state-of-the-economy",
+      "content": "Thu., July 30: GDP (Q2) and PCE, BEA - This release is likely to show continued (albeit slower) expansion in the second quarter. As usual, I’ll be looking closest at the spending data in the PCE release.\n Fri., July 31: Consumer Sentiment, University of Michigan - I expect a notable drop in what we "
+    },
+    {
+      "source": "tavily_result",
+      "title": "Trump’s Numbers, July 2026 Update",
+      "url": "https://www.factcheck.org/2026/07/trumps-numbers-july-2026-update",
+      "content": "## Summary\n\nOur latest update in this series provides economic and other metrics of President Donald Trump’s second term, so far.\n\n Job growth remains slower, with a total of 716,000 jobs created as of June. The unemployment rate remains slightly higher at 4.2%.\n\n Inflation worsened to 3.5% in June,"
+    },
+    {
+      "source": "tavily_answer",
+      "query": "Federal Reserve speech this week monetary policy",
+      "answer": "The Federal Reserve's upcoming meeting is expected to maintain current monetary policy, with a focus on sustaining inflation at the 2% target. New York Fed President John Williams emphasized the importance of restoring inflation to the Federal Reserve’s longer-term goal. Analysts suggest that the Fed may hold rates steady due to limited evidence of price pressures becoming embedded and potential renewed signs of deterioration in the labor market. The Federal Reserve's policy decisions will be re"
+    },
+    {
+      "source": "tavily_result",
+      "title": "What to Watch for at Next Week’s Federal Reserve Meeting",
+      "url": "https://www.investopedia.com/federal-reserve-july-meeting-preview-12025264",
+      "content": "New York Fed President John Williams struck a similar tone in a recent speech.\n\n“With inflation running high, it is imperative that we restore it to the Federal Reserve’s 2% longer-run goal on a sustained basis,” Williams said. “The current stance of monetary policy is well positioned to do that.”\n\n"
+    },
+    {
+      "source": "tavily_result",
+      "title": "What time is this week's Fed meeting?",
+      "url": "https://finance.yahoo.com/personal-finance/banking/article/what-time-is-this-weeks-fed-meeting-120032072.html",
+      "content": "Following its last meeting, when it held rates steady, the Fed stated, \"The Committee decided to maintain the target range for the federal funds rate at 3-1/2 to 3-3/4 percent, in support of the Federal Reserve's dual mandate. The Committee reaffirmed its policy of maintaining ample reserves in the "
+    },
+    {
+      "source": "tavily_result",
+      "title": "Fed Chair Kevin Warsh to Continue Holding Press Conferences Through Year-End",
+      "url": "https://cryptorank.io/news/feed/2397a-fed-chair-kevin-warsh-press-conferences-year-end",
+      "content": "/\n\n/\n\n# Fed Chair Kevin Warsh to Continue Holding Press Conferences Through Year-End\n\nFederal ReserveMonetary PolicyKevin WarshFinancial RegulationPress Conferences\n\nJul 29, 2026\n\n2min read\n\nbyDhaval\n\nforBitcoin World\n\nFed Chair Kevin Warsh to Continue Holding Press Conferences Through Year-End\n\nSha"
+    },
+    {
+      "source": "tavily_answer",
+      "query": "China PMI economic data this week",
+      "answer": "China's official Manufacturing Purchasing Managers' Index (PMI) for July is scheduled to be released on July 31. Market expectations suggest the manufacturing PMI might remain at 50.3, while the non-manufacturing PMI is expected to edge down slightly to 50.2. However, ING forecasts a slightly weaker outcome, predicting the manufacturing PMI at 50.1 and the non-manufacturing PMI at 50.0."
+    },
+    {
+      "source": "tavily_result",
+      "title": "Week Ahead | A Packed Agenda! Fed Leads Super Central Bank Week into a 'Hawkish Test'; Earnings from the Big Four Tech Giants and Japan-South Korea’s Memory Triad Roll Out; Key U.S. and China Economic Data Released in Quick Succession",
+      "url": "https://news.futunn.com/en/post/76591161/week-ahead-a-packed-agenda-fed-leads-super-central-bank",
+      "content": "China’s official Manufacturing Purchasing Managers’ Index (PMI) will be released on July 31, along with data on profits of industrial enterprises above designated size for June, scheduled for release on July 27. Previously, the Manufacturing PMI rose to 50.3 in June, returning to expansionary territ"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Newsquawk Week in Focus: FOMC, BoE, BoJ, US PCE ...",
+      "url": "https://investinglive.com/news/newsquawk-week-in-focus-fomc-boe-boj-us-pce-us-gdp-and-ez-cpi",
+      "content": "China will release its official July PMI data on Friday, with the market expecting the manufacturing PMI to remain at 50.3 and the non-manufacturing PMI to edge down to 50.2 from 50.3 in June. ING expects a slightly weaker outcome, forecasting the manufacturing PMI at 50.1 and the non-manufacturing "
+    },
+    {
+      "source": "tavily_result",
+      "title": "Asia week ahead: Rate decisions in Japan and Singapore, data on China and Taiwan | articles | ING THINK",
+      "url": "https://think.ing.com/articles/asia-week-ahead-boj-decision-mas-review-and-key-data-on-china-and-taiwan",
+      "content": "China releases its industrial profits data for the first half of the year on Monday. Profits have been on a recovery trend so far this year, buoyed by hi-tech and export-facing industries. With June industrial data coming in stronger than expectations, this positive trend could continue. China also "
+    }
+  ]
+}
