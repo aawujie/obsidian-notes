@@ -1,0 +1,92 @@
+{
+  "date": "2026-08-03",
+  "generated_at": "2026-08-03T06:06:53.946087",
+  "upcoming_events": [
+    {
+      "date": "2026-08-07",
+      "event": "非农就业报告 (7月)",
+      "importance": "high",
+      "category": "就业",
+      "days_until": 4
+    },
+    {
+      "date": "2026-08-12",
+      "event": "美国 CPI (7月)",
+      "importance": "high",
+      "category": "通胀",
+      "days_until": 9
+    }
+  ],
+  "recent_events": [],
+  "web_events": [
+    {
+      "source": "tavily_answer",
+      "query": "US economic data release this week CPI GDP jobs",
+      "answer": "The upcoming US economic data releases this week include the July Consumer Price Index (CPI) on August 12, Federal Reserve decision, GDP, and PCE reports on July 29 and 30. The July jobs data will be pivotal in assessing the Federal Reserve's future interest rate outlook. The June CPI index stood at 3.5%, while the core CPI index was 2.6%. The June unemployment rate was 4.2%. The Federal Reserve left interest rates on hold, and the probability of two or more rate hikes this year increased to 54."
+    },
+    {
+      "source": "tavily_result",
+      "title": "Fed decision headlines two weeks of inflation and jobs data",
+      "url": "https://blog.kraken.com/economic-brief/july-29-2026",
+      "content": "The BLS publishes the July Consumer Price Index at 8:30 a.m. ET, the final scheduled release in this window. CPI is the most widely followed monthly inflation print, and this release lands between the July and September FOMC meetings, making it a key data point for how the market reads the Fed’s nex"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Week Ahead for FX, Bonds: U.S. Jobs Data in Focus, Could Give Steer on Fed Outlook",
+      "url": "https://www.wsj.com/economy/global/week-ahead-for-fx-bonds-u-s-jobs-data-in-focus-could-give-steer-on-fed-outlook-50e95649",
+      "content": "By Dow Jones Newswires staff\n\nListen\n\n(1 min)\n\nU.S. Federal Reserve Chairman Kevin Warsh speaking at a press conference.\n\nU.S. monthly jobs data for July will provide the focus of attention as investors gauge the prospects for interest rates over the next few months.\n\nThe Federal Reserve left intere"
+    },
+    {
+      "source": "tavily_result",
+      "title": "How Is the Economy Doing Right Now?",
+      "url": "https://www.nerdwallet.com/finance/learn/state-of-the-economy",
+      "content": "» MORE: What is stagflation? Are we experiencing it now?\n\n### Consumer price index (CPI)\n\nJune CPI index: 3.5%\n\nJune core CPI index: 2.6%\n\nThe current inflation rate typically reflects the consumer price index (CPI), released monthly by the Bureau of Labor Statistics. The CPI measures changes in pri"
+    },
+    {
+      "source": "tavily_answer",
+      "query": "Federal Reserve speech this week monetary policy",
+      "answer": "The Federal Reserve is expected to hold interest rates steady at 5.25%–5.50% this week, with markets focusing on the tone of the statement and Chair Powell’s comments for future rate move indications. Fed Chairman Kevin Warsh is unlikely to raise interest rates due to risks associated with prejudging task forces, temporary price shocks, and political dynamics. The Fed will release its policy decisions on Wednesday at 2 p.m. Eastern time, followed by a news conference at 2:30 p.m. Eastern time."
+    },
+    {
+      "source": "tavily_result",
+      "title": "Fed Chair Kevin Warsh Reaffirms 2% Inflation Target as Core Policy Goal",
+      "url": "https://cryptorank.io/news/feed/26cc1-fed-chair-kevin-warsh-2-percent-inflation-target",
+      "content": "Federal Reserve Chairman Kevin Warsh confirmed on Wednesday that the central bank’s long-standing 2% inflation target remains unchanged, pushing back against speculation that policymakers might adjust the goal in response to recent economic turbulence. Speaking after the Federal Open Market Committe"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Analysis: Kevin Warsh has three reasons to hold off on a Fed rate hike this week",
+      "url": "https://www.cnbc.com/2026/07/28/warsh-fed-rate-decision-trump-powell-analysis.html",
+      "content": "Fed Chairman Warsh says 'inflation is a choice.' Here's what that may mean for Fed meetings\n\nwatch now\n\nVIDEO5:5805:58\n\nWhy Warsh says inflation is a choice\n\nThe Fed\n\nFederal Reserve Chairman Kevin Warsh isn't likely to oversee an increase in interest rates at this week's Fed meeting, for at least t"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Dollar Edges Higher as Markets Eye Fed’s Next Move This Week",
+      "url": "https://cryptorank.io/news/feed/da680-dollar-edges-higher-fed-decision-week",
+      "content": "Q2: What is the Federal Reserve expected to do at this meeting?  \nMarkets widely expect the Fed to hold interest rates steady at 5.25%–5.50%, but the focus will be on the tone of its statement and Chair Powell’s comments for clues about future rate moves. [...] byBitcoin World\n\nUOB: Federal Reserve "
+    },
+    {
+      "source": "tavily_answer",
+      "query": "China PMI economic data this week",
+      "answer": "China's official manufacturing Purchasing Managers' Index (PMI) fell to 49.2 in July from 50.3 in June, indicating a contraction in factory activity. The composite PMI also dropped to 49.3, the lowest since the pandemic ended in 2022. The sub-index for new orders and new export orders both contracted, signaling a slowdown in both domestic and international demand. The construction and services PMI also slumped to record lows, reflecting broader economic weakness."
+    },
+    {
+      "source": "tavily_result",
+      "title": "China's factory activity unexpectedly contracts in July",
+      "url": "https://www.cnbc.com/2026/07/31/china-pmi-factory-activity-economic-growth-exports-.html",
+      "content": "The official manufacturing purchasing managers' index fell to 49.2 from 50.3 in June, National Bureau of Statistics data showed Friday, dropping below the 50-point threshold that separates expansion from contraction. Economists' median forecast had pegged PMI at 50.\n\nThe gauge — the weakest since Fe"
+    },
+    {
+      "source": "tavily_result",
+      "title": "China’s factory activity unexpectedly slips into contraction in July - ABC News",
+      "url": "https://abcnews.com/Business/wireStory/chinas-factory-activity-unexpectedly-slips-contraction-july-135250148",
+      "content": "PMI readings, based on surveys of factory managers, are measured on a scale of 0 to 100. A reading above 50 indicates an expansion, and below 50 reflects a contraction.\n\n“The latest (PMI) reading remains an unpromising start to the first wave of economic data for the second half of the year,” Lynn S"
+    },
+    {
+      "source": "tavily_result",
+      "title": "China's PMI fell sharply in July as markets await policy ...",
+      "url": "https://think.ing.com/snaps/china-pmi",
+      "content": "China’s manufacturing purchasing managers’ index fell to 49.2 in July, down from 50.3 in June and well below expectations (market: 50.1, ING: 50.1). This level marked a 5-month low and is well into contraction territory. Although the PMI's correlation with industrial output has weakened in recent ye"
+    }
+  ]
+}
