@@ -1,0 +1,92 @@
+{
+  "date": "2026-08-05",
+  "generated_at": "2026-08-05T06:06:02.499872",
+  "upcoming_events": [
+    {
+      "date": "2026-08-07",
+      "event": "非农就业报告 (7月)",
+      "importance": "high",
+      "category": "就业",
+      "days_until": 2
+    },
+    {
+      "date": "2026-08-12",
+      "event": "美国 CPI (7月)",
+      "importance": "high",
+      "category": "通胀",
+      "days_until": 7
+    }
+  ],
+  "recent_events": [],
+  "web_events": [
+    {
+      "source": "tavily_answer",
+      "query": "US economic data release this week CPI GDP jobs",
+      "answer": "This week's key US economic data releases include the July Consumer Price Index (CPI) on Wednesday, August 12, and the July jobs report on Friday, August 14. The CPI is a crucial inflation indicator, while the jobs report will provide insights into the labor market and influence expectations for Federal Reserve interest rate decisions. Additionally, GDP and PCE data are scheduled for release on July 29 and July 30, respectively. These reports are expected to shape market sentiment and influence "
+    },
+    {
+      "source": "tavily_result",
+      "title": "Fed decision headlines two weeks of inflation and jobs data",
+      "url": "https://blog.kraken.com/economic-brief/july-29-2026",
+      "content": "The BLS publishes the July Consumer Price Index at 8:30 a.m. ET, the final scheduled release in this window. CPI is the most widely followed monthly inflation print, and this release lands between the July and September FOMC meetings, making it a key data point for how the market reads the Fed’s nex"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Back-to-back Yen intervention deepens Dollar slide | Convera",
+      "url": "https://convera.com/blog/market-insights/fx-research/daily-market-updates/back-to-back-yen-intervention-deepens-dollar-slide",
+      "content": "## Key Takeaways\n\n Falling after the Fed meeting, the USD extended its decline following interventions aimed at stabilizing the Japanese Yen.\n Key economic data this week, includes US jobs reports and manufacturing figures, which will influence sentiment and currency markets this week.\n Canada’s GDP"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Week Ahead for FX, Bonds: U.S. Jobs Data in Focus, Could Give Steer on Fed Outlook - WSJ",
+      "url": "https://www.wsj.com/economy/global/week-ahead-for-fx-bonds-u-s-jobs-data-in-focus-could-give-steer-on-fed-outlook-50e95649",
+      "content": "By Dow Jones Newswires staff\n\nListen\n\n(1 min)\n\nU.S. Federal Reserve Chairman Kevin Warsh speaking at a press conference.\n\nU.S. monthly jobs data for July will provide the focus of attention as investors gauge the prospects for interest rates over the next few months.\n\nThe Federal Reserve left intere"
+    },
+    {
+      "source": "tavily_answer",
+      "query": "Federal Reserve speech this week monetary policy",
+      "answer": "The Federal Reserve left its key interest rate unchanged at its most recent meeting, marking the fifth consecutive meeting with no change to the benchmark rate, which remains around 3.6%. Despite this decision, three officials, including Dallas Fed President Lorie Logan, dissented in favor of a rate hike to better balance the outlook and risks for the Fed’s dual mandate goals. Financial markets had priced in about a one-in-three chance of a rate hike, but the Fed opted to hold rates steady, emph"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Statement from Dallas Fed President Lorie Logan on FOMC dissent",
+      "url": "https://www.dallasfed.org/news/releases/2026/nr260731dissent",
+      "content": "The FOMC’s policy framework, as described in the statement on longer-run goals and monetary policy strategy, also calls for a balanced approach to our Congressionally established price stability and maximum employment mandates. To better balance the outlook and risks for the Fed’s dual mandate goals"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Philip N Jefferson: Navigating economic shocks - a monetary policymaker's perspective",
+      "url": "https://www.bis.org/review/r260731b.htm",
+      "content": "The Bank for International Settlements\n\n# Philip N Jefferson: Navigating economic shocks - a monetary policymaker's perspective\n\nSpeech by Mr Philip N Jefferson, Vice Chair of the Board of Governors of the Federal Reserve System, at the Stanford Institute for Economic Policy Research, Stanford Unive"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Warsh-led Fed leaves rates on hold and a bond market scratching its head",
+      "url": "https://www.reuters.com/markets/us/uncertainty-creeps-into-feds-rate-decision-warsh-keeps-his-cards-hidden-2026-07-29",
+      "content": "Report AdImage 5\n\nUnder the Fed's current rules, Warsh's colleagues, including the dissenting chiefs of the Fed's Cleveland, Dallas and Minneapolis regional banks, are free to speak their minds beginning on Friday.\n\n## MARKETS PRICE IN HIKES\n\nWhile he declined to say what's next for monetary policy,"
+    },
+    {
+      "source": "tavily_answer",
+      "query": "China PMI economic data this week",
+      "answer": "China's official manufacturing Purchasing Managers' Index (PMI) fell to 49.2 in July from 50.3 in June, indicating a contraction as it dropped below the 50-point threshold. This decline was unexpected, as economists had forecasted a PMI of 50. The sub-index for new orders and production also fell, reflecting weak domestic demand and possible disruptions from typhoons. The construction PMI slumped to a record low of 47.0, and the services PMI hit its lowest point since the initial Covid-19 lockdo"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Economic Calendar: What Could Move the Market This Week? (03.08.2026)",
+      "url": "https://www.xtb.com/int/market-analysis/news-and-research/economic-calendar-what-could-move-the-market-this-week-03-08-2026",
+      "content": "In the first half of the week, we expect mainly revisions of PMI indicators. As these are revisions rather than preliminary readings, their potential to trigger volatility is relatively modest. An exception in this regard was the RatingDog data from China, which is published slightly later than the "
+    },
+    {
+      "source": "tavily_result",
+      "title": "EUR/USD: Busy Week Ahead",
+      "url": "https://m.investing.com/analysis/eurusd-busy-week-ahead-200685068?ampMode=1",
+      "content": "Monday brings business activity indices from China and the US. The US ISM Manufacturing PMI is expected at approximately 53.0, down from 53.3 previously. Holding firmly above 50 would support the dollar, while a more pronounced slowdown would raise doubts about economic resilience and provide suppor"
+    },
+    {
+      "source": "tavily_result",
+      "title": "China's factory activity unexpectedly contracts in July on demand slump, typhoons",
+      "url": "https://www.cnbc.com/2026/07/31/china-pmi-factory-activity-economic-growth-exports-.html",
+      "content": "The official manufacturing purchasing managers' index fell to 49.2 from 50.3 in June, National Bureau of Statistics data showed Friday, dropping below the 50-point threshold that separates expansion from contraction. Economists' median forecast had pegged PMI at 50.\n\nThe gauge — the weakest since Fe"
+    }
+  ]
+}
