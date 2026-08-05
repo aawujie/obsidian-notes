@@ -1,0 +1,69 @@
+{
+  "date": "2026-08-06",
+  "generated_at": "2026-08-06T06:08:42.420317",
+  "upcoming_events": [
+    {
+      "date": "2026-08-07",
+      "event": "非农就业报告 (7月)",
+      "importance": "high",
+      "category": "就业",
+      "days_until": 1
+    },
+    {
+      "date": "2026-08-12",
+      "event": "美国 CPI (7月)",
+      "importance": "high",
+      "category": "通胀",
+      "days_until": 6
+    }
+  ],
+  "recent_events": [],
+  "web_events": [
+    {
+      "source": "tavily_answer",
+      "query": "Federal Reserve speech this week monetary policy",
+      "answer": "Federal Reserve Governor Lisa Cook indicated that while inflation remains high, she voted to maintain steady interest rates to allow recent economic trends to unfold. Federal Reserve Chair Kevin Warsh hinted at a broader perspective in his upcoming Jackson Hole speech, emphasizing the Fed's independence from market pressures. Kansas City Fed President Jeffrey Schmid called for tighter monetary policy to address high inflation. Dallas Fed President Lorie Logan expressed a preference for a quarter"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Fed's Cook ready to hike rates 'if necessary'",
+      "url": "https://www.americanbanker.com/news/feds-cook-ready-to-hike-rates-if-necessary",
+      "content": "Others on the committee have also come out in support of tightening monetary policy this week. Kansas City Fed President Jeffrey Schmid — a non-voting member of the FOMC this year — said in a speech Tuesday that he was uncomfortable writing off any of the shocks impacting the economy as transitory. "
+    },
+    {
+      "source": "tavily_result",
+      "title": "Fed Chair Warsh Hints at \"Big Picture\" Jackson Hole Speech, Says Not \"Constrained by Market Prices\" — BigGo Finance",
+      "url": "https://finance.biggo.com/news/5199dcdf-716b-4f74-81f1-60f5a3b95518",
+      "content": "##### Key Elements\n\nFederal Reserve Chair Kevin Warsh indicated on the 29th that his speech at the Jackson Hole symposium—an event known for signaling the future path of monetary policy—could raise \"big questions\" that transcend the latest economic data. At the same time, during his press conference"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Philip N Jefferson: Navigating economic shocks - a monetary policymaker's perspective",
+      "url": "https://www.bis.org/review/r260731b.htm",
+      "content": "The Bank for International Settlements\n\n# Philip N Jefferson: Navigating economic shocks - a monetary policymaker's perspective\n\nSpeech by Mr Philip N Jefferson, Vice Chair of the Board of Governors of the Federal Reserve System, at the Stanford Institute for Economic Policy Research, Stanford Unive"
+    },
+    {
+      "source": "tavily_answer",
+      "query": "China PMI economic data this week",
+      "answer": "China's official manufacturing Purchasing Managers' Index (PMI) fell to 49.2 in July from 50.3 in June, indicating a contraction in factory activity. This decline was unexpected and below economists' forecast of 50.0, marking the weakest level since February. The sub-index for new orders dropped to 48.5, the lowest since 2023, while the production sub-index fell to 49.9. The disappointing data suggests a demand slump and could heighten expectations for economic easing."
+    },
+    {
+      "source": "tavily_result",
+      "title": "New Zealand holds gains near 0.5900 despite weaker China PMI data",
+      "url": "https://www.fxstreet.com/news/new-zealand-holds-gains-near-05900-despite-weaker-china-pmi-data-202608030207",
+      "content": "Data released by RatingDog on Monday showed that China's RatingDog Manufacturing Purchasing Managers' Index (PMI) declined to 50.9 in July from 51.7 in June. This figure came in below the market consensus of 51.5. The weaker-than-expected PMI data has little to no impact on the China-proxy Kiwi. [.."
+    },
+    {
+      "source": "tavily_result",
+      "title": "China's factory activity unexpectedly contracts in July on demand slump, typhoons",
+      "url": "https://www.cnbc.com/2026/07/31/china-pmi-factory-activity-economic-growth-exports-.html",
+      "content": "The official manufacturing purchasing managers' index fell to 49.2 from 50.3 in June, National Bureau of Statistics data showed Friday, dropping below the 50-point threshold that separates expansion from contraction. Economists' median forecast had pegged PMI at 50.\n\nThe gauge — the weakest since Fe"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Economic Calendar: What Could Move the Market This ...",
+      "url": "https://www.xtb.com/int/market-analysis/news-and-research/economic-calendar-what-could-move-the-market-this-week-03-08-2026",
+      "content": "In the first half of the week, we expect mainly revisions of PMI indicators. As these are revisions rather than preliminary readings, their potential to trigger volatility is relatively modest. An exception in this regard was the RatingDog data from China, which is published slightly later than the "
+    }
+  ]
+}
