@@ -1,0 +1,92 @@
+{
+  "date": "2026-08-07",
+  "generated_at": "2026-08-07T06:06:51.555749",
+  "upcoming_events": [
+    {
+      "date": "2026-08-07",
+      "event": "非农就业报告 (7月)",
+      "importance": "high",
+      "category": "就业",
+      "days_until": 0
+    },
+    {
+      "date": "2026-08-12",
+      "event": "美国 CPI (7月)",
+      "importance": "high",
+      "category": "通胀",
+      "days_until": 5
+    }
+  ],
+  "recent_events": [],
+  "web_events": [
+    {
+      "source": "tavily_answer",
+      "query": "US economic data release this week CPI GDP jobs",
+      "answer": "This week, the U.S. economic data release will focus on monthly jobs data for July, which is expected to provide insights into the Federal Reserve's interest rate outlook. The Federal Reserve left interest rates unchanged in its recent meeting, making key economic data releases crucial for understanding future rate hikes. Additionally, inflation risks remain a concern, with escalating Middle East tensions driving up oil prices and Treasury yields, reaching their highest levels since early 2025. "
+    },
+    {
+      "source": "tavily_result",
+      "title": "Week Ahead for FX, Bonds: U.S. Jobs Data in Focus, Could ...",
+      "url": "https://www.wsj.com/economy/global/week-ahead-for-fx-bonds-u-s-jobs-data-in-focus-could-give-steer-on-fed-outlook-50e95649",
+      "content": "By Dow Jones Newswires staff\n\nListen\n\n(1 min)\n\nU.S. Federal Reserve Chairman Kevin Warsh speaking at a press conference.\n\nU.S. monthly jobs data for July will provide the focus of attention as investors gauge the prospects for interest rates over the next few months.\n\nThe Federal Reserve left intere"
+    },
+    {
+      "source": "tavily_result",
+      "title": "The Weekly Bottom Line",
+      "url": "https://economics.td.com/ca-weekly-bottom-line",
+      "content": "Following last week’s heavy economic calendar, the data flow slowed to a trickle, leaving geopolitics and tariffs to drive the narrative. Escalating Middle East tensions sent WTI crude oil prices sharply higher, reigniting inflation concerns and pushing Treasury yields up across the curve. The polic"
+    },
+    {
+      "source": "tavily_result",
+      "title": "FX Weekly Overview (Brazil Issue)",
+      "url": "https://www.stonex.com/en-us/insights/fx-weekly-overview-brazil-issue-2026-08-03",
+      "content": "## US economic data\n\n## Expected impact on the USDBRL:bullish\n\nUS: Historical and expectations for interest rates – updated July 31, 2026Image 5: image-20260803105439-3\n\n##### Source: CME FedWatch Tool. Design: StoneX. Refers to the market’s most probable futures interest rate bet as of the indicate"
+    },
+    {
+      "source": "tavily_answer",
+      "query": "Federal Reserve speech this week monetary policy",
+      "answer": "Based on the most recent data, several Federal Reserve officials have expressed support for tightening monetary policy to address inflation concerns. Federal Reserve Gov. Lisa Cook indicated that while she voted to hold rates steady, she is prepared to hike rates if necessary. Kansas City Fed President Jeffrey Schmid and Minneapolis Fed President Neel Kashkari both called for tighter monetary policy to bring inflation down to the 2% target. Dallas Fed President Lorie Logan also dissented in favo"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Fed's Cook ready to hike rates 'if necessary'",
+      "url": "https://www.americanbanker.com/news/feds-cook-ready-to-hike-rates-if-necessary",
+      "content": "Others on the committee have also come out in support of tightening monetary policy this week. Kansas City Fed President Jeffrey Schmid — a non-voting member of the FOMC this year — said in a speech Tuesday that he was uncomfortable writing off any of the shocks impacting the economy as transitory. "
+    },
+    {
+      "source": "tavily_result",
+      "title": "Philip N Jefferson: Navigating economic shocks - a monetary policymaker's perspective",
+      "url": "https://www.bis.org/review/r260731b.htm",
+      "content": "The Bank for International Settlements\n\n# Philip N Jefferson: Navigating economic shocks - a monetary policymaker's perspective\n\nSpeech by Mr Philip N Jefferson, Vice Chair of the Board of Governors of the Federal Reserve System, at the Stanford Institute for Economic Policy Research, Stanford Unive"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Fed's Schmid calls for tighter monetary policy to tamp down on 'too high' inflation",
+      "url": "https://www.reuters.com/world/feds-schmid-calls-tighter-monetary-policy-tamp-down-too-high-inflation-2026-08-05",
+      "content": "Skip to main content\n\nReport AdImage 2\n\nExclusive news, data and analytics for financial market professionals Learn more about Refinitiv\n\n - Federal Reserve Bank of Kansas City President ​Jeff Schmid said on Tuesday that some sort of monetary policy tightening is needed to ‌get “too high” inflation "
+    },
+    {
+      "source": "tavily_answer",
+      "query": "China PMI economic data this week",
+      "answer": "China's official manufacturing PMI fell to 49.2 in July from 50.3 in June, missing economists' forecast of 50.0 and indicating contraction. The composite PMI also dropped to 49.3, the lowest since the pandemic ended in 2022. The Caixin services PMI slipped to 50.4, below expectations and signaling a slowdown in the services sector. These figures suggest a weakening economy, likely prompting expectations for policy easing."
+    },
+    {
+      "source": "tavily_result",
+      "title": "Economic Calendar: What Could Move the Market This Week? (03.08.2026)",
+      "url": "https://www.xtb.com/int/market-analysis/news-and-research/economic-calendar-what-could-move-the-market-this-week-03-08-2026",
+      "content": "In the first half of the week, we expect mainly revisions of PMI indicators. As these are revisions rather than preliminary readings, their potential to trigger volatility is relatively modest. An exception in this regard was the RatingDog data from China, which is published slightly later than the "
+    },
+    {
+      "source": "tavily_result",
+      "title": "China's factory activity unexpectedly contracts in July on demand slump, typhoons",
+      "url": "https://www.cnbc.com/2026/07/31/china-pmi-factory-activity-economic-growth-exports-.html",
+      "content": "The official manufacturing purchasing managers' index fell to 49.2 from 50.3 in June, National Bureau of Statistics data showed Friday, dropping below the 50-point threshold that separates expansion from contraction. Economists' median forecast had pegged PMI at 50.\n\nThe gauge — the weakest since Fe"
+    },
+    {
+      "source": "tavily_result",
+      "title": "China’s Caixin Services PMI Slips to 50.4 in July, Missing Forecasts",
+      "url": "https://cryptorank.io/news/feed/e36c4-china-caixin-services-pmi-july",
+      "content": "The Caixin services PMI, which tracks business activity in China’s services sector, fell to 50.4 in July, according to data released on Monday. A reading above 50 indicates expansion, while below 50 signals contraction. The figure marks a notable deceleration from the previous month and came in well"
+    }
+  ]
+}
