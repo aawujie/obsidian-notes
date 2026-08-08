@@ -1,0 +1,1171 @@
+{
+  "date": "2026-08-09",
+  "generated_at": "2026-08-09T06:30:43.120028",
+  "total_events": 43,
+  "severity_distribution": {
+    "medium": 43
+  },
+  "events": [
+    {
+      "title": "Trump's Iran war is going backwards",
+      "title_cn": "",
+      "url": "https://www.motherjones.com/politics/2026/08/trumps-iran-war-is-going-backward",
+      "content": "According to multiple media outlets, the US government did not deliver an immediate response tothe demands. Many of them resemble those in the interim ceasefire deal signed by the US and Iran in June. Back then, the Trump administration said that it would only lift sanctions completely if the two co",
+      "content_detail": "50 Years of Fearless Journalism\n\n\n\n* [Politics](https://www.motherjones.com/./politics/)\n\n10 minutes ago\n\n# Trump’s Iran War Is Going Backward\n\n## Iran’s demand that the US reopen a key oil shipping lane looks like June’s interim ceasefire deal.\n\n* [![Gradient photo of Alex Nguyen, a fellow at Mother Jones](https://www.motherjones.com/wp-content/uploads/2024/06/NguyenAlex_900px.jpg?w=60&h=60&crop=1)](https://www.motherjones.com/author/alex-nguyen/)\n\n  ### [Alex Nguyen](https://www.motherjones.com/author/alex-nguyen/ \"See all posts by Alex Nguyen\")\n\n  Reporter[Bio](https://www.motherjones.com/author/alex-nguyen/ \"See all posts by this author\")\n\n* [Share on Facebook](http://facebook.com/sharer.php?u=https%3A%2F%2Fwww.motherjones.com%2Fpolitics%2F2026%2F08%2Ftrumps-iran-war-is-going-backward%2F)\n* [Share on Twitter](https://x.com/intent/tweet?text=Trump%27s%20Iran%20war%20is%20going%20backwards&url=https%3A%2F%2Fwww.motherjones.com%2Fpolitics%2F2026%2F08%2Ftrumps-iran-war-is-going-backward%2F&via=MotherJones)\n* [Share on Bluesky](https://bsky.app/intent/compose?text=Trump%27s%20Iran%20war%20is%20going%20backwards https%3A%2F%2Fwww.motherjones.com%2Fpolitics%2F2026%2F08%2Ftrumps-iran-war-is-going-backward%2F)\n* [Email](mailto:?subject=Trump%E2%80%99s%20Iran%20War%20Is%20Going%20Backward&body=On%20Saturday%2C%20a%20senior%20Iranian%20national%20security%20official%20issued%20a%20set%20of%20demands%20that%20the%20US%20must%20meet%20before%20a%20key%20waterway%20for%20oil%20shipping",
+      "published_date": "Sat, 08 Aug 2026 18:31:17 GMT",
+      "search_region": "美伊冲突",
+      "classified_regions": [
+        "美伊冲突"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "50 Years of Fearless Journalism",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Iran Issues List of Demands, Complicating Efforts to Reopen Strait",
+      "title_cn": "",
+      "url": "https://www.nytimes.com/2026/08/08/world/middleeast/iran-us-oman-strait-of-hormuz.html",
+      "content": "The Trump administration is unlikely to agree to those demands. A previous cease-fire between Iran and the United States, agreed to in June, had said that sanctions would be fully lifted only in the event of a final deal regarding Iran’s nuclear program. And U.S. officials have said in the past that",
+      "content_detail": "War in the Middle East\n\nAdvertisement\n\nSupported by\n\n# Iran Issues List of Demands, Dampening Hopes of Reopening Strait of Hormuz\n\nThe head of Iran’s Supreme National Security Council said that the waterway will remain closed until the United States met certain conditions.\n\n![Boats on a hazy, still sea, with brown cliffs just visible in the distance.](https://static01.nyt.com/images/2026/08/08/multimedia/08int-iran-mwcl/08int-iran-mwcl-articleLarge.jpg?quality=75&auto=webp&disable=upscale)\n\nBy [Yeganeh Torbati](https://www.nytimes.com/by/yeganeh-torbati) and Leily Nikounazar\n\nA top Iranian national security official delivered a sweeping set of demands on Saturday that he said the United States must meet before the Strait of Hormuz can reopen to maritime traffic, throwing the fate of the critical trade waterway into question.\n\nMohammad Bagher Zolghadr, the secretary of Iran’s Supreme National Security Council, issued a [statement](https://www.irna.ir/news/86230680/%D8%B0%D9%88%D8%A7%D9%84%D9%82%D8%AF%D8%B1-%D8%A2%D9%85%D8%B1%DB%8C%DA%A9%D8%A7-%D8%AA%D8%A7-%D8%B1%D9%81%D8%AA%D8%A7%D8%B1%D8%B4-%D8%B1%D8%A7-%D8%AA%D8%B5%D8%AD%DB%8C%D8%AD-%D9%86%DA%A9%D9%86%D8%AF-%D8%AA%D9%86%DA%AF%D9%87-%D9%87%D8%B1%D9%85%D8%B2-%D8%A8%D8%A7%D8%B2-%D9%86%D8%AE%D9%88%D8%A7%D9%87%D8%AF) carried by state media laying out multiple requirements for reopening the strait. He called for the United States to lift its naval blockade and sanctions on Iran, withdraw the U.S. military from around Iran, pay war",
+      "published_date": "Sat, 08 Aug 2026 15:26:07 GMT",
+      "search_region": "美伊冲突",
+      "classified_regions": [
+        "美伊冲突"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Iran Says Draft US Deal Includes Oil Sanctions Waiver, Nuclear Limits and Asset Release - Canadian Energy News, Top Headlines, Commentaries, Features & Events - EnergyNow",
+      "title_cn": "",
+      "url": "https://energynow.ca/2026/06/iran-says-draft-us-deal-includes-oil-sanctions-waiver-nuclear-limits-and-asset-release",
+      "content": "# Iran Says Draft US Deal Includes Oil Sanctions Waiver, Nuclear Limits and Asset Release\n\ntrump iran supreme leader 1200x810\n\nReuters\n\nA senior Iranian official told Reuters a final draft of the memorandum of understanding with the U.S. covered a range of issues, from Tehran’s nuclear work to reope",
+      "content_detail": "![linkedin](https://energynow.ca/wp-content/themes/generatepress_child/assets/linkedin.png)\n![twitter](https://energynow.ca/wp-content/themes/generatepress_child/assets/twitter.png)\n![facebook](https://energynow.ca/wp-content/themes/generatepress_child/assets/facebook.png)\n![instagram](https://energynow.ca/wp-content/themes/generatepress_child/assets/instagram.png)\n![youtube2](https://energynow.ca/wp-content/themes/generatepress_child/assets/youtube2.png)\n![canada flag](https://energynow.ca/wp-content/uploads/2023/05/cad.png)\n![us flag](https://energynow.ca/wp-content/uploads/2023/05/usa.png)\n![linkedin](https://energynow.ca/wp-content/themes/generatepress_child/assets/linkedin.png)\n![twitter](https://energynow.ca/wp-content/themes/generatepress_child/assets/twitter.png)\n![facebook](https://energynow.ca/wp-content/themes/generatepress_child/assets/facebook.png)\n![instagram](https://energynow.ca/wp-content/themes/generatepress_child/assets/instagram.png)\n![youtube2](https://energynow.ca/wp-content/themes/generatepress_child/assets/youtube2.png)\n![Enterprise Group](https://energynow.ca/wp-content/uploads/2026/08/Evolution-PowerX-Desktop-Banner-1400x108-V1.jpg)\n![Canadian Energy News, Top Headlines, Commentaries, Features & Events – EnergyNow](https://energynow.ca/wp-content/uploads/en_logo_cdn.png)\n![Enterprise Group](https://energynow.ca/wp-content/uploads/2025/09/Enterprise-Group-2025-Update-Mobile-485x90-V1.png)\n![Canadian Energy News, Top Headlines, Commentaries, Features &",
+      "published_date": "Sat, 08 Aug 2026 12:00:00 GMT",
+      "search_region": "美伊冲突",
+      "classified_regions": [
+        "美伊冲突"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Tehran issues drastic new demands for deal to reopen Hormuz, says US must ‘correct its behavior’",
+      "title_cn": "",
+      "url": "https://www.timesofisrael.com/tehran-issues-drastic-new-demands-for-deal-to-reopen-hormuz-says-us-must-correct-its-behavior",
+      "content": "The United States must never threaten Iran again, the statement said, and must permanently end the war with Iran and its armed allies in the region. The US must lift the naval blockade of Iranian ports and withdraw its military from the area. It also must “completely compensate” Iran for war damage,",
+      "content_detail": "[Skip to main content](https://www.timesofisrael.com/tehran-issues-drastic-new-demands-for-deal-to-reopen-hormuz-says-us-must-correct-its-behavior#main-content)Toggle Menu\n\n[Join our Community](https://crm.timesofisrael.com/sign-up?utm_source=website&utm_medium=header&utm_campaign=community_announcement&utm_content=article_top_anonym)\n\n[Support ToI and remove all ads](https://crm.timesofisrael.com/sign-up?utm_source=website&utm_medium=header&utm_campaign=community_announcement&utm_content=article_top_anonym)\n\n[Learn more](https://crm.timesofisrael.com/sign-up?utm_source=website&utm_medium=header&utm_campaign=community_announcement&utm_content=article_top_anonym)\n\n*   [English](https://www.timesofisrael.com/)\n*   [Français](https://fr.timesofisrael.com/)\n*   [עברית](https://www.zman.co.il/)\n\n*   [Get The Daily Edition](https://www.timesofisrael.com/signup/)\n*   [![Image 2: user](https://static-cdn.toi-media.com/www/images/User1.png)Account](https://www.timesofisrael.com/tehran-issues-drastic-new-demands-for-deal-to-reopen-hormuz-says-us-must-correct-its-behavior#)\n\n*   [![Image 3: user](https://static-cdn.toi-media.com/www/images/User1.png)Sign In](https://crm.timesofisrael.com/sign-in?RedirectTo=https%3A%2F%2Fwww.timesofisrael.com%2Ftehran-issues-drastic-new-demands-for-deal-to-reopen-hormuz-says-us-must-correct-its-behavior%2F)\n    *   [Sign in](https://crm.timesofisrael.com/sign-in?RedirectTo=https%3A%2F%2Fwww.timesofisrael.com%2Ftehran-issues-drastic-new-demands-for-deal-t",
+      "published_date": "Sat, 08 Aug 2026 20:40:58 GMT",
+      "search_region": "美伊冲突",
+      "classified_regions": [
+        "美伊冲突"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "What are Israel's strategic dilemmas in Iran, Lebanon?",
+      "title_cn": "",
+      "url": "https://www.jpost.com/middle-east/article-904908",
+      "content": "The US tried to achieve two things that Iran did not want, and could not, accept. The first was to ease Iranian pressure in the Strait of Hormuz. There was a good chance Iran would have agreed to this if its concession had been met with an American concession, namely lifting the US blockade on Irani",
+      "content_detail": "# Iran front heats up as US faces mounting pressure, Israel confronts a growing dilemma - analysis\n\n## As tensions with Iran rise on Monday, the US faces the prospect of military escalation in the Gulf, while Israel confronts Hezbollah attacks in Lebanon and keeps Gaza a secondary front.\n\n[Follow us on **Google**](https://www.google.com/preferences/source?q=https://www.jpost.com/)\n\nUS forces operating in the Strait of Hormuz, July 17, 2026.\n\n(photo credit: Screenshot/X/@PeteHegseth)\n\nByMAJ.-GEN. (RES.) GIORA EILAND\n\nThe Iranian front appeared to be heating up as of last week, with the United States seeking to break Iran's blockade of the Strait of Hormuz and Tehran responding with missile fire against the United Arab Emirates and Oman.\n\nThe US tried to achieve two things that Iran did not want, and could not, accept. The first was to [ease Iranian pressure](https://www.jpost.com/middle-east/article-904891) in the Strait of Hormuz. There was a good chance Iran would have agreed to this if its concession had been met with an American concession, namely lifting the US blockade on Iranian oil exports. A unilateral concession would amount to defeat and even humiliation, something a Shi'ite leader cannot accept.\n\nThe second thing the US demanded, as a condition for regulating maritime traffic in the [Gulf](https://www.jpost.com/tags/gulf-states), was that Iran agree in advance to effectively give up its nuclear program. Iran's situation is difficult, but not desperate, so it was cl",
+      "published_date": "Sat, 08 Aug 2026 16:00:00 GMT",
+      "search_region": "美伊冲突",
+      "classified_regions": [
+        "美伊冲突"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "Iran front heats up as US faces mounting pressure, Israel confronts a growing dilemma - analysis As tensions with Iran rise on Monday, the US faces the prospect of military",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Iran believes time is on its side in the war with the U.S. But its strategy carries great risks",
+      "title_cn": "",
+      "url": "https://www.latimes.com/world-nation/story/2026-08-08/iran-thinks-time-is-on-its-side-in-u-s-war-but-strategy-is-risky",
+      "content": "Advertisement\n\nIt’s unclear whether the deal would allow Iran to charge fees. But it would formalize the country’s control over what had been an open international waterway before the war, one that carried a fifth of the world’s traded oil and gas.\n\nAbdolreza Davari, an analyst who once advised form",
+      "content_detail": " \n\nTap to enable a layout that focuses on the article.\n\n \n\nAdvertisement\n\n[World & Nation](https://www.latimes.com/world-nation)\n\n# Iran believes time is on its side in the war with the U.S. But its strategy carries great risks\n\n![People standing and walking, a child playing, all in silhouette](https://ca-times.brightspotcdn.com/dims4/default/53a47b1/2147483647/strip/true/crop/7033x4800+0+0/resize/1200x819!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F1d%2F9e%2F69c18e624e4db076ff63d98360e4%2Fgettyimages-2288486911.jpg) \n\nThe economic fallout from the war has spread worldwide but is particularly acute in Tehran, above, and throughout Iran.\n\n(Fatemeh Bahrami / Anadolu / Getty Images)\n\nBy Joseph Krauss and Amir-Hussein Radjy\n\n* Click here to listen to this article\n* Share via\n\n  + [Email](mailto:?body=Iran%20believes%20time%20is%20on%20its%20side%20in%20the%20war%20with%20the%20U.S.%20But%20its%20strategy%20carries%20great%20risks%0A%0Ahttps%3A%2F%2Fwww.latimes.com%2Fworld-nation%2Fstory%2F2026-08-08%2Firan-thinks-time-is-on-its-side-in-u-s-war-but-strategy-is-risky%0A%0AIran%20is%20betting%20that%20military%20pressure%20will%20ultimately%20force%20the%20United%20States%20to%20accept%20Tehran%27s%20control%20over%20the%20Strait%20of%20Hormuz%20%E2%80%94%20and%20that%20time%20is%20on%20its%20side.%20But%20its%20strategy%20carries%20risks.)\n  + [Facebook](https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.latimes.com%2Fworld-nation%2Fsto",
+      "published_date": "Sat, 08 Aug 2026 19:52:21 GMT",
+      "search_region": "美伊冲突",
+      "classified_regions": [
+        "美伊冲突"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "Tap to enable a layout that focuses on the article.",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Iran deliberates Hormuz arrangement amid uncertain prospects with US",
+      "title_cn": "",
+      "url": "https://www.aljazeera.com/news/2026/8/8/iran-deliberates-hormuz-arrangement-amid-uncertain-prospects-with-us",
+      "content": "end of list\n\nIran has previously slammed the US for backing a southern Omani route in the waterway without coordination with Tehran, not halting Israel’s attacks on Lebanon, and refusing to unfreeze any of Iran’s money blocked abroad due to sanctions.\n\nSeparately on Saturday, Hossein Mohebbi, spokes",
+      "content_detail": "[Live](/video/live)\n\n[Live](/video/live)\n\n[News](/news/)|[US-Israel war on Iran](/tag/israel-iran-conflict/)\n\n# Iran deliberates Hormuz arrangement amid uncertain prospects with US\n\n*Iran and Oman have agreed on the coordinates of routes to be taken by vessels through the Strait of Hormuz.*\n\nSave\n\nShare\n\n![People gesture beneath an Iranian national flag as they take part in a procession.](/wp-content/uploads/2026/08/AFP__20260804__C3WL3EA__v1__HighRes__IranReligionIslamShiaArbaeen-1785973213.jpg?resize=730%2C410&quality=80)\n\nVideo Duration 01 minutes 57 seconds 01:57\n\nIran Tightens Strait of Hormuz Control as US Blockade Disrupts Global Shipping\n\n[![](/wp-content/uploads/2019/05/83990b95560343dd90352efbb62bb090_6.jpeg?resize=96%2C96&quality=80)](/author/maziar_motamedi_190127060358086)\n\nBy [Maziar Motamedi](/author/maziar_motamedi_190127060358086)\n\nPublished On 8 Aug 20268 Aug 2026\n\n**Tehran, Iran –** Iran’s authorities are weighing a finalised arrangement with Oman over the Strait of Hormuz, but top officials maintain that the strategic waterway’s [full reopening](/news/2026/8/7/trump-says-war-cant-go-much-longer-whats-the-latest-on) will hinge on concessions from the United States.\n\nForeign Minister Abbas Araghchi on Saturday said the agreement with Oman was “very close”, but cautioned that a full reopening of the strait would depend on the US staying true to commitments given as part of a June memorandum of understanding (MoU) that were violated.\n\n## Recommended Stories\n\nl",
+      "published_date": "Sat, 08 Aug 2026 13:52:40 GMT",
+      "search_region": "美伊冲突",
+      "classified_regions": [
+        "美伊冲突"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "Iran deliberates Hormuz arrangement amid uncertain prospects with US Iran and Oman have agreed on the coordinates of routes to be taken by vessels through the Strait of Hormuz.",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "US expects Iran to ensure safe oil flow through Strait of Hormuz: Vance",
+      "title_cn": "",
+      "url": "https://www.aa.com.tr/en/energy/oil/us-expects-iran-to-ensure-safe-oil-flow-through-strait-of-hormuz-vance/58881",
+      "content": "- ‘Our expectation is you're going to see the same amount of oil and gas come out of the Gulf that you saw before the conflict started,’ says JD Vance\n\n22:39 Oil\n\n### Iran war pushes US Strategic Petroleum Reserve to 43-year low\n\n- Emergency releases following Iran conflict drive US oil stockpile to",
+      "content_detail": "[![Anadolu Agency](https://cdnassets.aa.com.tr/assets/enerjiterminali/images/logo_aa_energy_.png) Anadolu Agency](https://www.aa.com.tr/en/energy \"Anadolu Agency\")\n\n\n\n![](https://cdnassets.aa.com.tr/assets/enerjiterminali/images/aa_motto_en.png)\n\n# US expects Iran to ensure safe oil flow through Strait of Hormuz: Vance\n\n- ‘Our expectation is you're going to see the same amount of oil and gas come out of the Gulf that you saw before the conflict started,’ says JD Vance\n\n[home](https://www.aa.com.tr/en/energy/ \"home\") > [Oil](https://www.aa.com.tr/en/energy/oil \"Oil\")  08.08.2026 22:30       [![](https://cdnassets.aa.com.tr/assets/enerjiterminali/images/enerji-Nexthaberdetaybefore.svg)](https://nsosyal.com/share?url=http://et.aa.com.tr/58881&text=US expects Iran to ensure safe oil flow through Strait of Hormuz: Vance)\n\n![US expects Iran to ensure safe oil flow through Strait of Hormuz: Vance](https://cdnuploads.aa.com.tr/uploads/enerjiterminali/Contents/2026/08/08/thumbs_b_c_83fe8b2e36b83ba365dc52277c505268.jpg?v=223416)\n\nThe US expects Iran to restore the flow of oil and gas through the Strait of Hormuz to pre-conflict levels and ensure the safe passage of commercial vessels, US Vice President JD Vance said Saturday.\n\n“Our expectation is you're going to see the same amount of oil and gas come out of the Gulf that you saw before the conflict started,” Vance told Fox News, saying Iran had communicated that intention to Washington.\n\n“But you know, we don't trust. We verify,” Vanc",
+      "published_date": "Sat, 08 Aug 2026 20:00:00 GMT",
+      "search_region": "美伊冲突",
+      "classified_regions": [
+        "美伊冲突"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "#UKRAINERUSSIAWAR. Sweden will hand over a Russian \"shadow fleet\" merchant ship to Kiev; the United Kingdom applies new sanctions, including six oil tankers. Moscow responds by attacking merchant ships in Odessa - AGC COMMUNICATION NEWS",
+      "title_cn": "",
+      "url": "https://www.agcnews.eu/ukrainerussiawar-sweden-will-hand-over-a-russian-shadow-fleet-merchant-ship-to-kiev-the-united-kingdom-applies-new-sanctions-including-six-oil-tankers-moscow-responds-by-attacking-merchant-sh",
+      "content": "And now a look at the front line, updated at 3:30 PM on August 7). Over the past 24 hours, the Russian Ministry of Defense has reported the downing of 1,150 Ukrainian drones in Russian regions. Air defense operations were reported overnight in the Tula region, Crimea, and Sevastopol. In the Yaroslav",
+      "content_detail": "[Facebook](https://www.facebook.com/AGCCommunication/ \"Facebook\")     [Linkedin](https://www.linkedin.com/company/agc-communication?trk=cws-cpw-coname-0-0 \"Linkedin\")\n\n* [Home](http://www.agcnews.eu)\n* [Geopolitica](https://www.agcnews.eu/category/geopolitica/)\n* [Geoeconomia](https://www.agcnews.eu/category/geoeconomia/)\n* [Terza Pagina](https://www.agcnews.eu/category/terzapagina/)\n* [Regole d’Ingaggio](https://www.agcnews.eu/category/regoledingaggio/)\n* [Energia](https://www.agcnews.eu/category/energia/)\n* [Salute e Benessere](https://www.agcnews.eu/category/salute-e-benessere/)\n  + [Covid 19, l’altra storia](https://www.agcnews.eu/covid-19-laltra-storia/)\n* [AGC TV](https://www.agcnews.eu/category/agc-tv/)\n* [AGC Servizi – MEPA](https://www.agcnews.eu/agc-servizi-mepa/)\n\n22 C\n\nsabato, Agosto 8, 2026\n\n[Facebook](https://www.facebook.com/AGCCommunication/ \"Facebook\")     [Linkedin](https://www.linkedin.com/company/agc-communication?trk=cws-cpw-coname-0-0 \"Linkedin\")\n\nBenvenuto! Accedi al tuo account\n\n[Forgot your password? Get help](#)\n\nRecupero della password\n\nRecupera la tua password\n\nLa password verrà inviata via email.\n\n[![](http://www.agcnews.eu/wp-content/uploads/2016/08/logo272-90-1.png) AGC COMMUNICATION NEWS](https://www.agcnews.eu/)\n\n[![](http://www.agcnews.eu/wp-content/uploads/2016/08/logo544-180-1-300x99.png)](https://www.agcnews.eu/)   [![](http://www.agcnews.eu/wp-content/uploads/2016/08/logo272-90-1.png)](https://www.agcnews.eu/)\n\n* [Home](http://www.agcnews",
+      "published_date": "Sat, 08 Aug 2026 00:15:00 GMT",
+      "search_region": "俄乌战争",
+      "classified_regions": [
+        "俄乌战争"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "Accedi al tuo account Recupero della password Recupera la tua password La password verrà inviata via email.",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Russian Offensive Campaign Assessment, August 7, 2026 ...",
+      "title_cn": "",
+      "url": "https://www.facebook.com/InstitutefortheStudyofWar/posts/russian-offensive-campaign-assessment-august-7-2026-russian-president-vladimir-p/1494004346105171",
+      "content": "Ukraine’s intermediate-range strike campaign against the Russian rear, along with Ukrainian tactical drone overmatch on the frontline, are slowing down Russian operational tempo across the frontline.\n\nAn improvised explosive device (IED) explosion in central Moscow City on August 1 reportedly killed",
+      "content_detail": "## Institute for the Study of War's Post\n\n---\n\n### [**Institute for the Study of War**](https://www.facebook.com/InstitutefortheStudyofWar?__cft__[0]=AZYX6IQmBfGketexevY7KDbCBNSpmGwqtXLTE9B2NKAWjGwKaV3R0Jr6a7QlXg3LOWKy0sOtGaj2DLEEOcUMVG9z4ToTjMcGIpvHI-rhJVcTQ2D0Q1VgDqE9-d0Pdr3aY5wfqbhXoVPDE4n9V0vVjct7WNKUzs_yJx1mzyIuCB_2GQ&__tn__=-UC%2CP-R)\n\n[5h](https://www.facebook.com/InstitutefortheStudyofWar/posts/pfbid0pb7o81H1LjmXDGttpTcjHB4dWrX8GkVeoy5DrpWzCVSfx7Y4CNqRAeLtYf2MazXol?__cft__[0]=AZYX6IQmBfGketexevY7KDbCBNSpmGwqtXLTE9B2NKAWjGwKaV3R0Jr6a7QlXg3LOWKy0sOtGaj2DLEEOcUMVG9z4ToTjMcGIpvHI-rhJVcTQ2D0Q1VgDqE9-d0Pdr3aY5wfqbhXoVPDE4n9V0vVjct7WNKUzs_yJx1mzyIuCB_2GQ&__tn__=%2CO%2CP-R)  ·\n\nRussian Offensive Campaign Assessment, August 7, 2026: Russian President Vladimir Putin reportedly had a phone call on August 6 with the commander of a Russian Airborne Forces (VDV) division, indicating that Russian forces are prioritizing advances in the Pokrovsk and Dobropillya directions with the intent of encircling Ukraine’s Fortress Belt from the southwest.\n\nRead the full update: [https://isw.pub/UkrWar080726](https://l.facebook.com/l.php?u=https%3A%2F%2Fisw.pub%2FUkrWar080726&h=AUAJmJKo3hZOzyaaQltbxXTE6DhFtJeh89Yv3tv9jbsptGjxL7j_1DGRuSWuvD-g03tHPVn_mT_IVu_dw8qLVLXTqTas2oOxub1HNhdFbs93zv3IxhDo8jVZZk3LNpfMUeANL7hm3jdJrM7eofOEqxpQm9r1-e9ToCzBkNe5wNAupv18&__tn__=-UK-R&c[0]=AUAnmq6b7mupZRV0b-FXe0uv1cV7X-X6cTG1_HwuaDlElr9MXDmnekyY5w6Rtkr7Ua3chFxaGZWn5M18dZS8I29Zr3rxuTGvdNHfCmIzTZeWIz-68unlIdMQagHPSKdj",
+      "published_date": null,
+      "search_region": "俄乌战争",
+      "classified_regions": [
+        "俄乌战争"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "Institute for the Study of War's Post --- division, indicating that Russian forces are prioritizing advances in the Pokrovsk and Dobropillya directions with the intent of encircling Ukraine’s Fortress Belt",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Russian Strike on Kyiv Triggers Renewed Global Security Concerns",
+      "title_cn": "",
+      "url": "https://english.globalarabnetwork.com/2026/08/08/russian-strike-on-kyiv-triggers-renewed-global-security-concerns",
+      "content": "For many MENA nations, the war serves as a barometer for global stability. The disruption of agricultural exports from the Black Sea region, often facilitated by fragile humanitarian corridors, remains a pressing concern for states heavily dependent on grain imports. The latest fatalities in Kyiv hi",
+      "content_detail": "[Skip to content](#content)\n\n* [Password Reset](https://english.globalarabnetwork.com/password-reset/)\n* [Account](https://english.globalarabnetwork.com/account/)\n* [Login](https://english.globalarabnetwork.com/login/)\n* [Register](https://english.globalarabnetwork.com/register/)\n* [About us](https://english.globalarabnetwork.com/about-us/)\n* [Contact us](https://english.globalarabnetwork.com/contact-us/)\n\n[![Global Arab Network](https://english.globalarabnetwork.com/wp-content/uploads/2026/08/cropped-cropped-AE724FD7-BC81-4021-98AF-378658E8421B-1.png)](https://english.globalarabnetwork.com/)\n\n[![](//a.impactradius-go.com/display-ad/4704-3967863)](https://united.elfm.net/c/7566666/3967863/4704)![](https://united.elfm.net/i/7566666/3967863/4704)\n\n# Russian Strike on Kyiv Triggers Renewed Global Security Concerns\n\n* [Politics](https://english.globalarabnetwork.com/category/politics/)\n\n![Russian Strike on Kyiv Triggers Renewed Global Security Concerns](https://english.globalarabnetwork.com/wp-content/uploads/2026/08/1-1884534.jpg)\n\nA significant overnight aerial assault by Russian forces against Kyiv has resulted in the deaths of at least three individuals, including a child, local officials reported on Saturday. The attack marks another escalation in the protracted conflict, which continues to exert substantial influence on global geopolitical dynamics, including those within the Middle East and North Africa (MENA) region.\n\nThe strike, which utilized a combination of drones and",
+      "published_date": "Sat, 08 Aug 2026 08:00:00 GMT",
+      "search_region": "俄乌战争",
+      "classified_regions": [
+        "俄乌战争"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Ukraine says drones have hit 218 'shadow fleet' ships since July 6 - Türkiye Today",
+      "title_cn": "",
+      "url": "https://www.turkiyetoday.com/world/ukraine-says-drones-have-hit-218-shadow-fleet-ships-since-july-6-3225638",
+      "content": "Ukraine's Infrastructure Ministry recorded 35 attacks on vessels in port, 22 on vessels at sea and 67 on port facilities last month, while Ukraine has also intensified drone attacks on Russian ports, grain terminals and commercial vessels along the Black Sea and Sea of Azov coast.\n\nRussia's Defense ",
+      "content_detail": "![Close](https://www.turkiyetoday.com/s/i/i-menu-close.svg) [![Türkiye Today](https://www.turkiyetoday.com/s/i/logo.svg)](/ \"Türkiye Today - Politics, Diplomacy, Defense & More News from Turkey\")\n\n[NATION](/nation \"Nation\")\n\n[REGION](/region \"Region\")\n\n[Turkic World](/region/turkic-world \"Turkic World\")\n\n[Middle East](/region/middle-east \"Middle East\")\n\n[WORLD](/world \"World\")\n\n[Africa](/world/africa \"Africa\")\n\n[Americas](/world/americas \"Americas\")\n\n[Asia & Pacific](/world/asia-pacific \"Asia & Pacific\")\n\n[Conflicts](/world/conflicts \"Conflicts\")\n\n[BUSINESS](/business \"Business\")\n\n[Economy](/business/economy \"Economy\")\n\n[Finance](/business/finance \"Finance\")\n\n[Energy](/business/energy \"Energy\")\n\n[Tourism](/business/tourism \"Tourism\")\n\n[Tech](/business/tech \"Tech\")\n\n[Automotive](/business/automotive \"Automotive\")\n\n[LIFESTYLE](/lifestyle \"Lifestyle\")\n\n[Education](/lifestyle/education \"Education\")\n\n[Health](/lifestyle/health \"Health\")\n\n[Environment](/lifestyle/environment \"Environment\")\n\n[Travel](/lifestyle/travel \"Travel\")\n\n[Food](/lifestyle/food \"Food\")\n\n[Science](/lifestyle/science \"Science\")\n\n[CULTURE](/culture \"Culture\")\n\n[History](/culture/history \"History\")\n\n[Cinema](/culture/cinema \"Cinema\")\n\n[Music](/culture/music \"Music\")\n\n[Events](/culture/events \"Events\")\n\n[Portraits](/culture/portraits \"Portraits\")\n\n[Reviews](/culture/reviews \"Reviews\")\n\n[SPORTS](/sports \"Sports\")\n\n[Football](/sports/football \"Football\")\n\n[Basketball](/sports/basketball \"Basketball\")\n\n[Volleyball](/",
+      "published_date": "Sat, 08 Aug 2026 09:00:00 GMT",
+      "search_region": "俄乌战争",
+      "classified_regions": [
+        "俄乌战争"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Ukraine’s Unmanned Systems Forces struck 218 vessels in a month | Ukrainian News | LIGA.net",
+      "title_cn": "",
+      "url": "https://biz.liga.net/en/transport/news/the-operation-will-continue-ukraines-unmanned-systems-forces-struck-218-vessels-in-a-month",
+      "content": "# \"The operation will continue.\" Ukraine’s Unmanned Systems Forces struck 218 vessels in a month\n\nAndrii Vodianyi\n\"The operation will continue.\" Ukraine’s Unmanned Systems Forces struck 218 vessels in a month\n\nCommander of the Unmanned Systems Forces of the Armed Forces of Ukraine Robert Brovdi (Mag",
+      "content_detail": "Responsible quality journalism\n\n [PRO subscription](https://www.liga.net/en/subscribe)\n\n[liga.net](https://www.liga.net/en) \n\n* [RU](https://biz.liga.net/transport/news/operatsiya-budet-prodolzhatsya-za-mesyats-sbs-porazili-218-sudov-v-chernom-i-azovskom-moryah)\n* [UA](https://biz.liga.net/ua/transport/news/operatsiia-tryvatyme-sbs-za-misiats-urazyly-218-suden-u-chornomu-ta-azovskomu-moriakh)\n\n [PRO subscription](https://www.liga.net/en/subscribe)\n\n[home-icon](https://www.liga.net/en)\n\n1. [Home](https://www.liga.net/en)\n2. [Business](/en)\n3. [Transport](/en/transport)\n4. [\"The operation will continue.\" Ukraine’s Unmanned Systems Forces struck 218 vessels in a month](https://biz.liga.net/en/transport/news/the-operation-will-continue-ukraines-unmanned-systems-forces-struck-218-vessels-in-a-month)\n\n# \"The operation will continue.\" Ukraine’s Unmanned Systems Forces struck 218 vessels in a month\n\nBrovdi advised traders not to take either long or short positions on Russian grain and \"other commodities\"\n\n[Andrii Vodianyi](https://www.liga.net/en/author/andrei-vodyanyi)\n\nSenior editor\n\nThe 218th vessel struck during Operation MoLoChka (Photo: USF)\n\n \n\nCommander of the Unmanned Systems Forces of the Armed Forces of Ukraine [Robert Brovdi (Magyar)](https://file.liga.net/ua/persons/brovdi-robert) said that the USF had struck 134 vessels in the Sea of Azov and 84 in the Black Sea since the start of Operation \"MoLoChKa.\" Over the past week, from August 1 to August 8, another 12 vessels we",
+      "published_date": "Sat, 08 Aug 2026 10:57:40 GMT",
+      "search_region": "俄乌战争",
+      "classified_regions": [
+        "俄乌战争"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "Commander of the Unmanned Systems Forces of the Armed Forces of Ukraine",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Ukraine's grain exports could fall by 53% after russian attacks on ports - media | Ukrainian news",
+      "title_cn": "",
+      "url": "https://ukranews.com/en/news/1167619-ukraine-s-grain-exports-could-fall-by-53-after-russian-attacks-on-ports-media",
+      "content": "Ukrainian news\nUkrainian News\nUkrainian News\nGoogle Preferred\n\n# Ukraine's grain exports could fall by 53% after russian attacks on ports - media\n\nGrain exports from Ukraine may decrease by 53% due to russian attacks on ports. Photo: UkrAgroConsult.\nGoogle Preferred\n\nUkraine's agricultural exports c",
+      "content_detail": "![Ukrainian news](https://ukranews.com/images/second-logo.webp)\n![Ukrainian News](https://ukranews.com/images/logo_en.webp)\n![Ukrainian News](https://ukranews.com/images/second-logo.webp)\n![Google Preferred](/images/icons/social/google_preferred.webp)\n\n# Ukraine's grain exports could fall by 53% after russian attacks on ports - media\n\n![Grain exports from Ukraine may decrease by 53% due to russian attacks on ports. Photo: UkrAgroConsult.](https://ukranews.com/upload/media/2026/08/08/6a76e9bd22fbf-ukr-wheat3_913.jpg.webp \"Grain exports from Ukraine may decrease by 53% due to russian attacks on ports. Photo: UkrAgroConsult.\")\n![Google Preferred](/images/icons/social/google_preferred.webp)\n\nUkraine's agricultural exports could be cut by more than half this season after russian attacks disrupted the operation of Black Sea ports.\n\nThis was reported by [Bloomberg](https://www.bloomberg.com/news/articles/2026-08-07/ukraine-grain-exports-to-slump-after-russian-strikes-on-odesa).\n\nAccording to the Ministry of Agriculture of Ukraine, the country could export about 29.6 million tons of agricultural products in the 2026-27 marketing year, which is 54% less than the previous estimate of 64.4 million tons.\n\nWheat exports could fall by 53% to 8.3 million tons compared to the previous forecast.\n\nUkraine is one of the world's largest grain suppliers, with the agricultural sector generating more than half of the country's export revenues last year.\n\nRussian attacks on the port of Odesa, which ",
+      "published_date": "Sat, 08 Aug 2026 19:30:01 GMT",
+      "search_region": "俄乌战争",
+      "classified_regions": [
+        "俄乌战争"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "Ukraine's grain exports could fall by 53% after russian attacks on ports - media Ukraine's agricultural exports could be cut by more than half this season after russian attacks disrupted",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Ukraine War | Latest News & Updates| BBC News",
+      "title_cn": "",
+      "url": "https://www.bbc.co.uk/news/topics/c1vw6q14rzqt",
+      "content": "Ukraine hits two oil refineries deep in Russian territory\n\nHuge plumes of smoke seen rising in the skies from the site where the Slavneft-Yanos oil is located. \n\nIn Odesa, no-one is safe from Russia's new Black Sea strikes\n\nMen fish on a pier as black smoke rises from a vessel damaged by a Russian a",
+      "content_detail": "# War in Ukraine\n\nChild among three killed in Russian missile attacks near Kyiv\n\n![Garages ablaze in Ukraine.](https://ichef.bbci.co.uk/ace/standard/480/cpsprodpb/f243/live/91487a70-92dd-11f1-87f4-4f87722fb492.jpg)\n\n'I ran because I knew I would die': Russian drones target medics in Ukraine\n\n![A composite image of Inna Lytvynenko, in her bright orange body armour , standing in front of an ambulance. One the right is the inside of the ambulance, with vital equipment strewn on the floor.](https://ichef.bbci.co.uk/ace/standard/480/cpsprodpb/db46/live/2ce17130-927f-11f1-b2ab-0dd01740f9f6.jpg)\n\nUkraine Says Three Killed by Russian Missiles. Video, 2 minutesUkraine Says Three Killed by Russian Missiles\n\nThree people have been killed overnight near Kyiv, according to Ukrainian officials\n\n![](https://ichef.bbci.co.uk/images/ic/480x270/p0p3f3n8.jpg)\n\nGerman airport drone-bomb: Could Russia be involved?\n\n![ A police investigator works on the tarmac with a robot capable of defusing explosives near a Ukrainian Antonov cargo plane at Leipzig/Halle Airport on August 5, 2026 near Leipzig, Germany](https://ichef.bbci.co.uk/ace/standard/480/cpsprodpb/3b5c/live/8c44a560-923f-11f1-b2ab-0dd01740f9f6.jpg)\n\nHow Ukraine is taking the war 'deeper' into Russia. Video, 00:01:24How Ukraine is taking the war 'deeper' into Russia\n\n![A large plume of smoke rising over Russia](https://ichef.bbci.co.uk/ace/standard/480/cpsprodpb/7c50/live/50689bd0-91bf-11f1-a7ab-8b30adf0800a.jpg)\n\nRussia strike kills 21 as ",
+      "published_date": "Sat, 08 Aug 2026 19:00:00 GMT",
+      "search_region": "俄乌战争",
+      "classified_regions": [
+        "俄乌战争"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "War in Ukraine Child among three killed in Russian missile attacks near Kyiv",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "15K views · 476 reactions | Smoke rises from a ship off Ukraine’s Odesa; Russia claims its forces struck three vessels carrying Ukrainian military cargo in the Black Sea\n\n#Russia #Ukraine #BlackSea #CargoVessel | WION",
+      "title_cn": "",
+      "url": "https://www.facebook.com/WIONews/posts/smoke-rises-from-a-ship-off-ukraines-odesa-russia-claims-its-forces-struck-three/1413864050852765",
+      "content": "· \n\n1h ago\n\nImage 26: Video thumbnail 2:42\n\n[](\n\nMonsoon cripples India Heavy showers bring national capital to a standstill IMD issues yellow alert for Delhi Aadhya Juneja shares more\n\nWION\n\n196 views\n\n · \n\n1h ago\n\nImage 27: Video thumbnail 2:54\n\n[](\n\nDecoding 'Candida Auris' threat Reports: Over 3",
+      "content_detail": "[Log In](https://www.facebook.com/login/device-based/regular/login/?login_attempt=1&next=https%3A%2F%2Fwww.facebook.com%2FWIONews%2Fvideos%2Fsmoke-rises-from-a-ship-off-ukraines-odesa-russia-claims-its-forces-struck-three%2F1291158839607702%2F)\n\nLog In\n\n[Forgot Account?](https://www.facebook.com/recover/initiate?ars=royal_blue_bar)\n\n# [Video](https://www.facebook.com/watch/)\n\n[Home](https://www.facebook.com/watch/)\n\n[Live](https://www.facebook.com/watch/live/?ref=watch)\n\n[Reels](https://www.facebook.com/reel/?s=bookmark)\n\n[Explore](https://www.facebook.com/watch/topic/)\n\nMore\n\n[Home](https://www.facebook.com/watch/)\n\n[Live](https://www.facebook.com/watch/live/?ref=watch)\n\n[Reels](https://www.facebook.com/reel/?s=bookmark)\n\n[Explore](https://www.facebook.com/watch/topic/)\n\n![Image 1](https://scontent.fdxb1-1.fna.fbcdn.net/v/t15.5256-10/769412292_2338988400171808_4012540131106237329_n.jpg?stp=dst-jpg_tt6&cstp=mx1920x1080&ctp=s960x960&_nc_cat=103&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=50ce42&_nc_ohc=DYo1moLZbjcQ7kNvwEj394S&_nc_oc=AdqaxBaZ2AZYKmy2VhEYBhnuKrumAn6NuXD6rOWliGQ-NeYgk_KhijGVqh9Ow5P_yn4&_nc_zt=23&_nc_ht=scontent.fdxb1-1.fna&_nc_gid=3qfGExYBCPxCFuposyp2PQ&_nc_ss=7b289&oh=00_AQGVgJN4M6a8y9pzOkYkHklUqiRS_gu_cDd5pSMFRiG5YQ&oe=6A7CB432)\n\n[Video 1](https://www.facebook.com/WIONews/posts/smoke-rises-from-a-ship-off-ukraines-odesa-russia-claims-its-forces-struck-three/1413864050852765)\n\n0:00 / 0:47\n\nSmoke rises from a ship off Ukraine’s Odesa; Russia claims its forces struc",
+      "published_date": null,
+      "search_region": "俄乌战争",
+      "classified_regions": [
+        "俄乌战争"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "China announces ‘countermeasures’ after US trade sanctions",
+      "title_cn": "",
+      "url": "https://www.thedailystar.net/news/world/news/china-announces-countermeasures-after-us-trade-sanctions-4240756",
+      "content": "It also imposed sanctions on six US businesses, including biotech company Applied DNA Sciences and geoscience research firm Stratum Reservoir, barring organisations and individuals within China from \"engaging in relevant transactions, cooperation, or other activities with them\".\n\nThe six entities \"h",
+      "content_detail": "[![Home](/themes/custom/swallow/logo.svg)](/ \"Home\")\n\nFriday, August 7, 2026\n\n[![](/sites/default/files/styles/small_80x80/public/2026-08/post-july%20bangladesh.jpg?h=c673cd1c)](/star-multimedia/news/how-much-have-the-peoples-aspirations-been-reflected-post-july-bangladesh-4238191)\n\n##### [How much have the people’s aspirations been reflected in post-July Bangladesh?](/star-multimedia/news/how-much-have-the-peoples-aspirations-been-reflected-post-july-bangladesh-4238191)\n\n[![](/sites/default/files/styles/small_80x80/public/2026-08/student%20politics.jpg?h=c673cd1c)](/star-multimedia/news/the-future-student-politics-bangladesh-post-july-crisis-or-new-hope-4237516)\n\n##### [The future of student politics in Bangladesh: Post-July crisis or a new hope?](/star-multimedia/news/the-future-student-politics-bangladesh-post-july-crisis-or-new-hope-4237516)\n\n[![](/sites/default/files/styles/small_80x80/public/2026-08/david%20emon.jpg?h=c673cd1c)](/star-multimedia/news/david-emon-how-the-fugitive-top-criminal-was-brought-down-4237511)\n\n##### [David Emon: How the fugitive 'top criminal' was brought down](/star-multimedia/news/david-emon-how-the-fugitive-top-criminal-was-brought-down-4237511)\n\n* [বাংলা](//bangla.thedailystar.net)\n* [E-paper](https://epaper.thedailystar.net/)\n* [Today’s News](/todays-news)\n\nFriday, August 7, 2026\n\n* [E-paper](https://epaper.thedailystar.net/)\n* [Today’s News](/todays-news)\n\n* [News](/news)\n  + [Politics](/news/politics)\n  + [Governance](/news/governance)\n  +",
+      "published_date": "Sat, 08 Aug 2026 13:00:00 GMT",
+      "search_region": "中美博弈",
+      "classified_regions": [
+        "中美博弈"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "Friday, August 7, 2026 Friday, August 7, 2026",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Another crack in the China-U.S. truce - by PC",
+      "title_cn": "",
+      "url": "https://www.whatshappeninginchina.com/p/another-crack-in-the-china-us-truce",
+      "content": ">\n> The Commerce Ministry said the sanctions are in response to recent moves from the U.S., including a ban by the U.S. Federal Communications Commission on imports of Chinese drones, and the Department of Homeland Security’s decision to add 43 Chinese companies to the Uyghur Forced Labor Prevention",
+      "content_detail": "# [What's Happening in China](/)\n\n# Another crack in the China-U.S. truce\n\n### Beijing announced new countermeasures against Washington while warning that further U.S. restrictions could provoke a stronger response\n\n[PC](https://substack.com/@whatshappeninginchina)\n\n∙ Paid\n\n**Welcome back to What’s Happening in China,** your weekly China brief.\n\nThe Chinese government on Wednesday announced a series of countermeasures against the U.S. in response to recent actions by Washington, including tightened controls on drone exports to the U.S., as well as key components and related technologies, on a “case-by-case basis.”\n\nThe new measures come in response to last week’s U.S. Federal Communications Commission restriction on imports of foreign-made robotic devices, including humanoids, on the grounds of cybersecurity concerns; the Department of Homeland Security’s addition of 43 companies to the Uyghur Forced Labor Prevention Act (UFLPA) Entity List; and sanctions on mainland China and Hong Kong shipping companies accused of transporting Iranian oil to China.\n\nChina’s [Commerce Ministry](https://www.mofcom.gov.cn/xwfb/xwfyrth/art/2026/art_e247be3a58d7425e9cfd0813ae7c2695.html) said that the U.S. measures “seriously violate the important consensus reached by the two heads of state and severely damage China’s legitimate rights and interests.” It emphasized that “China's countermeasures have been generally restrained” and warned that if the U.S. “insists on introducing new restrictive me",
+      "published_date": "Sat, 08 Aug 2026 12:00:00 GMT",
+      "search_region": "中美博弈",
+      "classified_regions": [
+        "中美博弈"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "Another crack in the China-U.S.",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Striking Back Hard Against the US, China Announces 5 Countermeasures",
+      "title_cn": "",
+      "url": "https://www.bastillepost.com/global/article/6068183-striking-back-hard-against-the-us-china-announces-5-countermeasures",
+      "content": "Second, the Xinjiang sanctions. On July 30, the US Department of Homeland Security added over 40 Chinese entities to the entity list under the Uyghur Forced Labor Prevention Act. The move, effective August 3, swells the list from 144 to 187, the biggest expansion since it was created. The new target",
+      "content_detail": "[Skip to Content](#main) ![Facebook Feature Image](https://media.bastillepost.com/wp-content/uploads/hongkong/static/20230718-default-feature-704x369.jpg)\n\n# Striking Back Hard Against the US, China Announces 5 Countermeasures\n\n* [News](/global/category/129173-news)\n* [China](/global/category/129170-china)\n* [Business](/global/category/240808-business)\n* [TECH](/global/category/129175-tech)\n* [ENT](/global/category/129171-ent)\n* [Sport](/global/category/129174-sport)\n* [HK](/global/category/239709-hk)\n* [HotTV](/global/category/241745-hottv)\n* [Asia Pacific](/global/category/267292-asia%20pacific)\n* [Blog](/global/category/247278-blog)\n\n[![Bastille Post Global Logo](https://www.bastillepost.com/global/images/logo_global.jpg)](/global)\n\n\n\n![Striking Back Hard Against the US,  China Announces 5 Countermeasures](https://image.bastillepost.com/1200x/wp-content/uploads/global/2026/08/FB-Image_Bastille-Commentary-1-1.jpg.webp)\n\nBlog\n\nBlog\n\n## **Striking Back Hard Against the US, China Announces 5 Countermeasures**\n\n2026-08-08 19:44 Last Updated At：19:44\n\n* [Facebook](#)\n* [Weibo](#)\n\n[![Bastille Commentary](https://image.bastillepost.com/300x/wp-content/uploads/global/2024/07/巴士的點評02A_small.jpg.webp)\n\n### Bastille Commentary](/global/author/2927-bastille-commentary)\n\nChina's strategy is simple: throw one punch to avoid a hundred.\n\nOn Wednesday, August 5, China fired back with five consecutive moves to counter a string of recent US measures that Beijing sees as hostile. A spokespers",
+      "published_date": "Sat, 08 Aug 2026 11:44:23 GMT",
+      "search_region": "中美博弈",
+      "classified_regions": [
+        "中美博弈"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "[ China's strategy is simple: throw one punch to avoid a hundred.",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "The Periodic Table Is a Sanctions Weapon Now",
+      "title_cn": "",
+      "url": "https://moderndiplomacy.eu/2026/08/08/the-periodic-table-is-a-sanctions-weapon-now",
+      "content": "This was not a one-off improvisation. It is now the default move-countermove pattern. China’s first rare-earth export controls, in April 2025, followed US tariffs — an old-economy trade weapon answered with a new-economy one. Restrictions taking effect on 1 December 2025 specifically targeted compan",
+      "content_detail": "![Modern Diplomacy](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20270%2055'%3E%3C/svg%3E)\n![Modern Diplomacy](https://moderndiplomacy.eu/wp-content/uploads/2023/10/mdsmall.png)\n![Modern Diplomacy](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20270%2055'%3E%3C/svg%3E)\n![Modern Diplomacy](https://moderndiplomacy.eu/wp-content/uploads/2023/10/mdsmall.png)\n![Modern Diplomacy](https://moderndiplomacy.eu/wp-content/uploads/2026/07/toplogo.png)\n![Modern Diplomacy](https://moderndiplomacy.eu/wp-content/uploads/2026/07/toplogo.png)\n\n# The Periodic Table Is a Sanctions Weapon Now\n\nBrussels sanctioned Russian oil. Beijing retaliated with scandium and dysprosium. The “old” energy war over fossil-fuel chokepoints and the “new” one over critical minerals are no longer separate stories — this week they used the same toolkit within 24 hours.\n\n![MD Signal Editorial](https://moderndiplomacy.eu/wp-content/uploads/2026/06/signal-36x36.jpg)\n![](https://moderndiplomacy.eu/wp-content/uploads/2021/09/rare-earth-mine.jpg \"rare-earth-mine\")\n\nOn 23 July, the EU adopted its toughest sanctions package yet against Russian oil and gas revenue — asset freezes on 94 banks, an expanded shadow-fleet tanker list, a squeeze aimed squarely at the money funding Moscow’s war. On 24 July, China responded. Not with oil, not with a currency peg, but with scandium, yttrium, dysprosium and eleven other elements, banning their export to fourteen Europ",
+      "published_date": "Sat, 08 Aug 2026 02:00:22 GMT",
+      "search_region": "中美博弈",
+      "classified_regions": [
+        "中美博弈"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "On 23 July, the EU adopted its toughest sanctions package yet against Russian oil and gas revenue — asset freezes on 94 banks, an expanded shadow-fleet tanker list, a squeeze",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Trump is about to get 'unchecked authority' to impose tariffs of up to 100% on top trading partners",
+      "title_cn": "",
+      "url": "https://fortune.com/2026/08/08/trump-tariffs-100-percent-russia-sanctions-bill-congress-import-taxes",
+      "content": "“Trump could direct the trade representative to set the tariff rate at 100% for one buyer of Russian energy and zero for another.That unchecked authority gives Trump leverage in disputes unrelated to Ukraine,” they warned.\n\nFor example, Trump could threaten India with new tariffs as part of trade ta",
+      "content_detail": "",
+      "published_date": "Sat, 08 Aug 2026 17:00:00 GMT",
+      "search_region": "中美博弈",
+      "classified_regions": [
+        "中美博弈"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "US Senate passes sanctions bill that may penalise countries, including India, buying Russian oil and gas",
+      "title_cn": "",
+      "url": "https://www.newindianexpress.com/world/2026/Aug/08/us-senate-passes-sanctions-bill-that-may-penalise-countries-including-india-buying-russian-oil-and-gas",
+      "content": "Subscribe\n E-PAPER\n\nTNIE Logo Light\n\n INDIA\n WORLD\n STATES\n CITIES\n OPINION\n EXPLAINER\n BUSINESS\n SPORTS\n GOOD NEWS\n ENTERTAINMENT\n VIDEOS\n\nTNIE Logo Light\n\n INDIA\n WORLD\n STATES\n CITIES\n OPINION\n EXPLAINER\n BUSINESS\n SPORTS\n GOOD NEWS\n ENTERTAINMENT\n VIDEOS\n\nWorld\n\n# US Senate passes sanctions bill",
+      "content_detail": "",
+      "published_date": "Sat, 08 Aug 2026 01:00:00 GMT",
+      "search_region": "中美博弈",
+      "classified_regions": [
+        "中美博弈"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "U.S. Senate passes Russia sanctions bill that seeks 100% tariffs on India, four others",
+      "title_cn": "",
+      "url": "https://www.thehindu.com/news/international/us-senate-passes-russia-sanctions-bill-that-seeks-100-tariffs-on-india-four-others/article71320431.ece",
+      "content": "“We welcome our Senate colleagues’ urgent effort to support Ukraine and punish Russia for its continued illegal war, but this bill would not achieve those goals. Instead, it would allow President Trump to dodge holding Russia accountable and impose yet more tariffs in his destructive trade wars, lea",
+      "content_detail": "",
+      "published_date": "Sat, 08 Aug 2026 00:56:29 GMT",
+      "search_region": "中美博弈",
+      "classified_regions": [
+        "中美博弈"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Why Houthis’ targeting of civilians, infrastructure is raising stakes across region",
+      "title_cn": "",
+      "url": "https://www.arabnews.com/node/2653855/amp",
+      "content": "Such incidents highlight a defining feature of the Houthi strategy: the ability to use relatively inexpensive weapons to threaten targets whose disruption carries vastly greater economic and political costs.\n\nSince the outbreak of the Gaza war that strategy has increasingly extended into the maritim",
+      "content_detail": "",
+      "published_date": "Sat, 08 Aug 2026 09:00:00 GMT",
+      "search_region": "中东/红海",
+      "classified_regions": [
+        "中东/红海"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Yemen’s Houthis Ready to Join Iran War if Needed, Raising New Shipping Risk - Canadian Energy News, Top Headlines, Commentaries, Features & Events - EnergyNow",
+      "title_cn": "",
+      "url": "https://energynow.ca/2026/03/yemens-houthis-ready-to-join-iran-war-if-needed-raising-new-shipping-risk",
+      "content": "(Reuters) – Yemen’s Iran-aligned Houthi movement, whose attacks on the Red Sea caused international shipping and trade chaos during the Gaza war, stands ready to strike the key waterway again in solidarity with Tehran, one Houthi leader told Reuters, a move that would deepen a global oil and economi",
+      "content_detail": "",
+      "published_date": "Sat, 08 Aug 2026 11:00:00 GMT",
+      "search_region": "中东/红海",
+      "classified_regions": [
+        "中东/红海"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Oil Traders Stay Bearish Despite Deepening Middle East Disruptions in 2026",
+      "title_cn": "",
+      "url": "https://discoveryalert.com.au/oil-traders-bearish-middle-east-disruptions-hormuz-futures",
+      "content": "Houthi forces have conducted ballistic missile strikes on Saudi oil tankers operating in the Red Sea, forcing a fundamental rerouting of Saudi crude exports away from the primary East-West pipeline corridor toward the Suez Canal and a Mediterranean-connected pipeline that operates at significantly l",
+      "content_detail": "",
+      "published_date": "Sat, 08 Aug 2026 02:00:00 GMT",
+      "search_region": "中东/红海",
+      "classified_regions": [
+        "中东/红海"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Why are the Houthis attacking Saudi targets in the Red Sea again?",
+      "title_cn": "",
+      "url": "https://news.az/news/why-are-the-houthis-attacking-saudi-targets-in-the-red-sea-again",
+      "content": "What could these developments mean for regional security?  \nThe reported attacks underscore the continuing uncertainty surrounding security conditions in Yemen and the wider Red Sea region.\n\nIf military exchanges become more frequent, concerns may increase regarding commercial shipping, energy expor",
+      "content_detail": "",
+      "published_date": "Sat, 08 Aug 2026 07:00:00 GMT",
+      "search_region": "中东/红海",
+      "classified_regions": [
+        "中东/红海"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Can the world survive without Gulf oil? | The Business Standard",
+      "title_cn": "",
+      "url": "https://www.tbsnews.net/world/global-economy/can-world-survive-without-gulf-oil-1509261?amp=",
+      "content": "A major portion of Gulf oil and liquefied natural gas passes through the Strait of Hormuz, making global supply heavily dependent on maritime stability in the region. With war now spreading to the Red Sea, another major sea trade corridor now comes under fresh threat as Yemen-based Houthis targeted ",
+      "content_detail": "",
+      "published_date": "Sat, 08 Aug 2026 06:30:00 GMT",
+      "search_region": "中东/红海",
+      "classified_regions": [
+        "中东/红海"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Saudi Arabia, Turkey, Pakistan sign joint defence pact - Daijiworld.com",
+      "title_cn": "",
+      "url": "https://www.daijiworld.com/index.php/news/newsDisplay?newsID=1322148",
+      "content": "The Iran-backed Houthis have also increased pressure on Gulf energy exporters, which are already facing disruption from Tehran's blockade of the Strait of Hormuz, by threatening shipping in the Red Sea.\n\nSaudi Arabia has led a military coalition supporting Yemen's internationally recognised governme",
+      "content_detail": "",
+      "published_date": "Sat, 08 Aug 2026 04:00:00 GMT",
+      "search_region": "中东/红海",
+      "classified_regions": [
+        "中东/红海"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Trade cost rises with spikes in shipping charges",
+      "title_cn": "",
+      "url": "https://today.thefinancialexpress.com.bd/first-page/trade-cost-rises-with-spikes-in-shipping-charges-1786209794",
+      "content": "The Strait of Hormuz remains a major source of uncertainty for shipping and energy markets. Rising oil prices are increasing bunker costs, while heightened regional risks are also pushing up insurance and security-related charges.\n\nUncertainty over the Red Sea is adding to the pressure. If carriers ",
+      "content_detail": "",
+      "published_date": "Sat, 08 Aug 2026 18:00:00 GMT",
+      "search_region": "中东/红海",
+      "classified_regions": [
+        "中东/红海"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Deal with Oman on Strait of Hormuz close, Iran says",
+      "title_cn": "",
+      "url": "https://www.taipeitimes.com/News/front/archives/2026/08/09/2003862178",
+      "content": "2026-08-05\n\n    Japan’s Defense White Paper released yesterday highlighted Taiwan Strait security as a major concern, saying China has expanded military activities around Taiwan, used repeated drills to normalize the presence of the Chinese People’s Liberation Army (PLA), and strengthened blockade, ",
+      "content_detail": "",
+      "published_date": "Sat, 08 Aug 2026 16:00:00 GMT",
+      "search_region": "台海/南海/朝鲜",
+      "classified_regions": [
+        "台海/南海/朝鲜"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Taiwan Military Drills Explained: Why Lai Ching-te is Overseei...",
+      "title_cn": "",
+      "url": "https://www.ibtimes.sg/taiwan-military-drills-explained-why-lai-ching-te-overseeing-coastal-strike-exercises-91784",
+      "content": "Han Kuang 42 is a two-week live-fire drill (Aug. 5 - Aug. 14). The drill is aimed at testing military units under a continuous and realistic scenario, such as shifting from peacetime to wartime readiness, said the Ministry of National Defense of Taiwan.\n\nThe exercise comes at a time when Taiwan is p",
+      "content_detail": "",
+      "published_date": "Sat, 08 Aug 2026 09:31:41 GMT",
+      "search_region": "台海/南海/朝鲜",
+      "classified_regions": [
+        "台海/南海/朝鲜"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Taiwan’s William Lai rehearses late-night emergency escape during military drill",
+      "title_cn": "",
+      "url": "https://www.scmp.com/news/china/military/article/3363402/taiwans-william-lai-rehearses-late-night-emergency-escape-during-military-drill",
+      "content": "Taiwan\n\nChinaMilitary\n\n# Taiwan’s William Lai rehearses late-night emergency escape during military drill\n\nAs part of annual Han Kuang exercise, the island’s leader is evacuated in a drill simulating a potential PLA decapitation strike\n\n2-MIN READ2-MIN\n\n3\n\nListen\n\nTaiwanese leader William Lai Ching-",
+      "content_detail": "",
+      "published_date": "Sat, 08 Aug 2026 11:01:34 GMT",
+      "search_region": "台海/南海/朝鲜",
+      "classified_regions": [
+        "台海/南海/朝鲜"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Taiwan president oversees war games military drill | The Senior | Senior",
+      "title_cn": "",
+      "url": "https://www.thesenior.com.au/story/9326347/taiwan-president-oversees-war-games-military-drill",
+      "content": "The Senior\nThe Senior\nThe Senior\n\n## Good morning,\n\n### Your Content\n\n### Account\n\n## Quick Links\n\n## Network\n\n# Taiwan president oversees war games military drill\n\nTaiwan's Han Kuang exercises assess its preparedness for security contingencies involving China. Photo: EPA PHOTO\n\nTaiwan's President L",
+      "content_detail": "",
+      "published_date": "Sat, 08 Aug 2026 03:44:39 GMT",
+      "search_region": "台海/南海/朝鲜",
+      "classified_regions": [
+        "台海/南海/朝鲜"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Taiwan to attend Pacific Islands Forum leaders meeting in Palau - Türkiye Today",
+      "title_cn": "",
+      "url": "https://www.turkiyetoday.com/world/taiwan-to-attend-pacific-islands-forum-leaders-meeting-in-palau-3225631",
+      "content": "“Everyone wants that statement out,” Waqa later said, adding that the disagreement centered on whether the wording should focus specifically on China’s missile test or address all missile testing in the Pacific.\n\nThe U.S. also conducts ballistic missile tests in the northern Pacific under a defense ",
+      "content_detail": "",
+      "published_date": "Sat, 08 Aug 2026 07:00:00 GMT",
+      "search_region": "台海/南海/朝鲜",
+      "classified_regions": [
+        "台海/南海/朝鲜"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "President Lai oversees Kaohsiung coastal drills - Taipei Times",
+      "title_cn": "",
+      "url": "https://www.taipeitimes.com/News/taiwan/archives/2026/08/09/2003862184",
+      "content": "oversaw coastal strike drills yesterday during the Han Kuang Exercises, boarding a missile boat and watching the deployment of low-flying attack drones to simulate defending against a Chinese assault.\n\n  Taiwan began the exercises on Wednesday. Lasting 10 days, they focus on Taiwan’s combat readines",
+      "content_detail": "",
+      "published_date": "Sat, 08 Aug 2026 16:00:00 GMT",
+      "search_region": "台海/南海/朝鲜",
+      "classified_regions": [
+        "台海/南海/朝鲜"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "How Beijing’s hypersonic ‘carrier killers’ could distract US forces in a Taiwan conflict | South China Morning Post",
+      "title_cn": "",
+      "url": "https://www.scmp.com/news/china/military/article/3363386/how-chinas-hypersonic-carrier-killers-could-distract-us-forces-taiwan-conflict",
+      "content": "The hypersonic missile is one of several anti-ship missile varieties that the PLA unveiled during a large-scale military parade in Beijing in September last year. It illustrated the Chinese navy’s strategic focus on establishing robust anti-access/area denial (A2/AD) against adversaries across its c",
+      "content_detail": "",
+      "published_date": "Sat, 08 Aug 2026 14:00:05 GMT",
+      "search_region": "台海/南海/朝鲜",
+      "classified_regions": [
+        "台海/南海/朝鲜"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "​Out of bullets, US will have to adjust and change security policy",
+      "title_cn": "",
+      "url": "https://asiatimes.com/2026/08/out-of-bullets-us-will-have-to-adjust-and-change-security-policy",
+      "content": "US potential adversaries will almost certainly test the United States, jacking up pressure along the fault lines of the international system. Results could include the complete collapse of Ukraine, a Chinese military operation against Taiwan, or efforts by North Korea to gain a stranglehold over Sou",
+      "content_detail": "",
+      "published_date": "Fri, 07 Aug 2026 23:26:22 GMT",
+      "search_region": "台海/南海/朝鲜",
+      "classified_regions": [
+        "台海/南海/朝鲜"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Ukraine’s Refinery Strikes Put Physical Pressure on Russia Where Sanctions Face Limits",
+      "title_cn": "",
+      "url": "https://eutoday.net/ukraine-refinery-strikes-pressure-russian-oil-economy",
+      "content": "The consequences have moved beyond repair bills. Russia has faced restrictions on domestic fuel availability and has had to adjust the balance between crude exports and refined products. In July, Russian companies even approached Indian refiners about additional gasoline supplies after attacks reduc",
+      "content_detail": "",
+      "published_date": "Sat, 08 Aug 2026 19:59:22 GMT",
+      "search_region": "全球制裁",
+      "classified_regions": [
+        "全球制裁"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Treasury Sanctions Crypto Exchanges Funding Iran’s IRGC and Enabling Illicit Finance – Secretary Scott Bessent Locking Funding Down",
+      "title_cn": "",
+      "url": "https://energynewsbeat.co/finance/treasury-sanctions-crypto-exchanges-funding-irans-irgc-and-enabling-illicit-finance-secretary-scott-bessent-locking-funding-down",
+      "content": "Energy News Beat\n\nEnergy News Beat\n\nThe Intersection Between Energy and Finance\n\n# Treasury Sanctions Crypto Exchanges Funding Iran’s IRGC and Enabling Illicit Finance – Secretary Scott Bessent Locking Funding Down\n\nOn August 7, 2026, the U.S. Department of the Treasury’s Office of Foreign Assets Co",
+      "content_detail": "",
+      "published_date": "Sat, 08 Aug 2026 17:41:31 GMT",
+      "search_region": "全球制裁",
+      "classified_regions": [
+        "全球制裁"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "US Senate passes sweeping Russia sanctions bill",
+      "title_cn": "",
+      "url": "https://globalnation.inquirer.net/334077/us-senate-passes-sweeping-russia-sanctions-bill",
+      "content": "newsinfo\n\nRemulla: Romualdez behind bagmen’s tale\n\nnewsinfo\n\nUltra Lotto 6/58, Mega Lotto 6/45 draw results on Friday, August 7\n\nnewsinfo\n\nRemulla: Romualdez behind bagmen’s tale\n\nsports\n\nLIVE: Alex Eala vs Caty McNally - Canadian Open - Round of 32\n\nsports\n\nAlex Eala gets back in action with one ma",
+      "content_detail": "",
+      "published_date": "Sat, 08 Aug 2026 07:06:39 GMT",
+      "search_region": "全球制裁",
+      "classified_regions": [
+        "全球制裁"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "US Senate passes Russia sanctions bill with 100% tariff on India, 4 others - Rediff.com India News",
+      "title_cn": "",
+      "url": "https://www.rediff.com/news/report/us-senate-passes-russia-sanctions-bill-with-100-tariff-on-india-4-others/20260808.htm",
+      "content": "Rediff\n\nHome  » News » US Senate passes Russia sanctions bill with 100% tariff on India, 4 others\n\n# US Senate passes Russia sanctions bill with 100% tariff on India, 4 others\n\nBy Sagar Kulkarni  August 08, 2026 08:21 IST 4 Minutes Read\n\ngoogle preferred source\n\nx\n\nThe US Senate has overwhelmingly a",
+      "content_detail": "",
+      "published_date": "Sat, 08 Aug 2026 02:51:55 GMT",
+      "search_region": "全球制裁",
+      "classified_regions": [
+        "全球制裁"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "100% US tariff on India? What the Russia sanctions bill means",
+      "title_cn": "",
+      "url": "https://indianexpress.com/article/world/us-senate-russia-sanctions-bill-100-percent-tariff-india-china-10823146",
+      "content": "The bill passed with an overwhelming 86-11 vote and has been renamed the Lindsey O. Graham Sanctioning Russia and Iran Act of 2026, after the Republican senator who authored and championed it before his death on 11 July, following a visit to Kyiv.\n\nWhy this matters for India: India is the second-lar",
+      "content_detail": "",
+      "published_date": "Fri, 07 Aug 2026 23:46:30 GMT",
+      "search_region": "全球制裁",
+      "classified_regions": [
+        "全球制裁"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    }
+  ]
+}
