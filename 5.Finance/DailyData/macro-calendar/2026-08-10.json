@@ -1,0 +1,93 @@
+{
+  "date": "2026-08-10",
+  "generated_at": "2026-08-10T06:07:04.856982",
+  "upcoming_events": [
+    {
+      "date": "2026-08-12",
+      "event": "美国 CPI (7月)",
+      "importance": "high",
+      "category": "通胀",
+      "days_until": 2
+    }
+  ],
+  "recent_events": [
+    {
+      "date": "2026-08-07",
+      "event": "非农就业报告 (7月)",
+      "importance": "high",
+      "category": "就业",
+      "days_ago": 3
+    }
+  ],
+  "web_events": [
+    {
+      "source": "tavily_answer",
+      "query": "US economic data release this week CPI GDP jobs",
+      "answer": "This week's U.S. economic data releases focus on inflation, GDP, and jobs. The Consumer Price Index (CPI) for July is expected to show a slight monthly increase of 0.1% and an annual rise of 3.4%, down from June's 3.5%. The Producer Price Index (PPI) for July is also anticipated to provide insights into inflation trends. GDP data for the second quarter indicates a deceleration to a 1.5% annualized growth rate, down from the first quarter's 2.1%. Job data for July showed a decline of 23,000 nonfa"
+    },
+    {
+      "source": "tavily_result",
+      "title": "ECONOMIC WEEK AHEAD: August 10-14",
+      "url": "https://www.yardeniquicktakes.com/economic-week-ahead-august-10-14",
+      "content": "Last week, July payrolls fell 23,000, missing the 85,000 consensus, even as the unemployment rate edged down to 4.1%. The 2-year Treasury yield fell 7 bps on the release before recovering to close little changed near 4.21%. This week, attention turns to inflation. July CPI (Wed) and PPI (Thu) will b"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Weekly Roundup: A Hot Start to August as Portfolio Catches a Wave",
+      "url": "https://pro.thestreet.com/posts/weekly-roundup-a-hot-start-to-august-as-portfolio-catches-a-wave",
+      "content": "Here’s a closer look at the economic data coming at us next week:\n\n### U.S.\n\nTuesday, August 11\n\n ADP Employment Change Report (Weekly) – 8:15 AM ET\n\n Existing Home Sales (July) – 10:00 AM ET\n\nTotal Household Debt (Q2 2026) – 11:00 AM ET\n\nWednesday, August 12\n\nMBA Mortgage Applications Index (Weekly"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Week Ahead: Soft CPI To Follow Disappointing U.S. Jobs Report",
+      "url": "https://seekingalpha.com/article/4933869-week-ahead-soft-cpi-to-follow-disappointing-us-jobs-report",
+      "content": "### Recommended For You [...] ## Investing Groups\n\n## Portfolios\n\n## Find & Compare\n\n## Subscriptions\n\n# Week Ahead: Soft CPI To Follow Disappointing U.S. Jobs Report\n\n## Summary\n\nFederal Reserve Interest Rate Decision Concept with Currency Background \n\nundefined undefined/iStock via Getty Images\n\nF"
+    },
+    {
+      "source": "tavily_answer",
+      "query": "Federal Reserve speech this week monetary policy",
+      "answer": "Based on the most recent data, Federal Reserve Bank of Kansas City President Jeff Schmid called for tighter monetary policy to address \"too high\" inflation, emphasizing the need to bring inflation back to the 2% target. Schmid did not specify when or by how much rates should be raised. Similarly, Federal Reserve Bank of St. Louis President Alberto Musalem argued against setting monetary policy to bolster productivity, stressing the importance of bringing down inflation pressures. Musalem noted t"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Fed's Schmid calls for tighter monetary policy to tamp down on 'too high' inflation",
+      "url": "https://www.reuters.com/world/feds-schmid-calls-tighter-monetary-policy-tamp-down-too-high-inflation-2026-08-05",
+      "content": "Skip to main content\n\nExclusive news, data and analytics for financial market professionals Learn more about Refinitiv\n\n - Federal Reserve Bank of Kansas City President ​Jeff Schmid said on Tuesday that some sort of monetary policy tightening is needed to ‌get “too high” inflation back to the 2% tar"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Monetary Policy Perspective: Keeping an Open Mind",
+      "url": "https://www.philadelphiafed.org/the-economy/monetary-policy/monetary-policy-perspective-keeping-an-open-mind",
+      "content": "by\n\n27 Mar ’26\n\nPhiladelphia Fed President and CEO Anna Paulson delivered a keynote speech at the Federal Reserve Bank of San Francisco's Macroeconomics and Monetary Policy Conference, where she addressed key challenges facing monetary policymakers in the current economic environment.\n\nMonetary Poli"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Fed’s Musalem argues against easy policy just to bolster productivity | 1330 & 101.5 WHBL",
+      "url": "https://whbl.com/2026/08/06/feds-musalem-argues-against-easy-policy-just-to-bolster-productivity",
+      "content": "1330 & 101.5 WHBL\nfacebook\ntwitter\n\n# Fed’s Musalem argues against easy policy just to bolster productivity\n\nBy Michael S. Derby\n\nAug 6 (Reuters) – Federal Reserve Bank of St. Louis President Alberto Musalem said on Thursday it is critical for monetary policy to keep working to bring ​down inflation"
+    },
+    {
+      "source": "tavily_answer",
+      "query": "China PMI economic data this week",
+      "answer": "China's Caixin Services PMI slipped to 50.4 in July, indicating a slowdown in the services sector and missing market expectations. The RatingDog China general services PMI also fell to 50.4 in July, marking the slowest expansion in 10 months. Both readings suggest a deceleration in business activity and new orders, with companies citing softer domestic demand."
+    },
+    {
+      "source": "tavily_result",
+      "title": "Economic Calendar: What Could Move the Market This Week? (03.08.2026) | XTB",
+      "url": "https://www.xtb.com/int/market-analysis/news-and-research/economic-calendar-what-could-move-the-market-this-week-03-08-2026",
+      "content": "In the first half of the week, we expect mainly revisions of PMI indicators. As these are revisions rather than preliminary readings, their potential to trigger volatility is relatively modest. An exception in this regard was the RatingDog data from China, which is published slightly later than the "
+    },
+    {
+      "source": "tavily_result",
+      "title": "China’s Caixin Services PMI Slips to 50.4 in July, Missing Forecasts",
+      "url": "https://cryptorank.io/news/feed/e36c4-china-caixin-services-pmi-july",
+      "content": "The Caixin services PMI, which tracks business activity in China’s services sector, fell to 50.4 in July, according to data released on Monday. A reading above 50 indicates expansion, while below 50 signals contraction. The figure marks a notable deceleration from the previous month and came in well"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Weekly Top Stories: Copper Surge, $40 Trillion Debt, Jobs, Tariffs And China Minerals - Freeport-McMoRan",
+      "url": "https://www.benzinga.com/markets/macro-economic-events/26/08/61063556/top-stories-copper-us-debt-jobs-tariffs-china-minerals",
+      "content": "Despite President Donald Trump‘s emphasis on reshoring manufacturing through tariffs, the manufacturing revival was not due to these tariffs. The ISM Manufacturing PMI surged to 55.6 in July from 53.3 in June, marking its highest reading since May 2022.\n\nAll five components directly contributing to "
+    }
+  ]
+}
