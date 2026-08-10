@@ -1,0 +1,85 @@
+{
+  "date": "2026-08-11",
+  "generated_at": "2026-08-11T06:07:02.676245",
+  "upcoming_events": [
+    {
+      "date": "2026-08-12",
+      "event": "美国 CPI (7月)",
+      "importance": "high",
+      "category": "通胀",
+      "days_until": 1
+    }
+  ],
+  "recent_events": [],
+  "web_events": [
+    {
+      "source": "tavily_answer",
+      "query": "US economic data release this week CPI GDP jobs",
+      "answer": "This week's key US economic data releases include the Consumer Price Index (CPI) on Wednesday, August 11, 2026, at 8:30 AM ET, which is expected to show a modest cooling in both headline and core inflation. The July CPI report is anticipated to rise 0.1% month-over-month and 3.3% year-over-year for headline inflation, while core CPI, excluding food and energy, is projected to increase 0.2% month-over-month and 2.4% year-over-year. Additionally, the week includes the ADP Employment Change Report "
+    },
+    {
+      "source": "tavily_result",
+      "title": "US Inflation in Focus: Key Economic Data Set to Shape Fed Rate Path Next Week",
+      "url": "https://cryptorank.io/news/feed/101f1-us-inflation-data-fed-rate-path-next-week",
+      "content": "Beyond the CPI report, the week includes several other releases that will offer a fuller snapshot of the US economy: [...] ## FAQs\n\nQ1: When will the next US inflation data be released?  \nThe Consumer Price Index (CPI) for June 2026 is scheduled for release on Tuesday, July 11, 2026, at 8:30 AM ET.\n"
+    },
+    {
+      "source": "tavily_result",
+      "title": "ECONOMIC WEEK AHEAD: August 10-14",
+      "url": "https://www.yardeniquicktakes.com/economic-week-ahead-august-10-14",
+      "content": "Last week, July payrolls fell 23,000, missing the 85,000 consensus, even as the unemployment rate edged down to 4.1%. The 2-year Treasury yield fell 7 bps on the release before recovering to close little changed near 4.21%. This week, attention turns to inflation. July CPI (Wed) and PPI (Thu) will b"
+    },
+    {
+      "source": "tavily_result",
+      "title": "The Week Ahead (10 – 14 Aug): Economic data points vs. Mid East drama",
+      "url": "https://www.stockopedia.com/content/the-week-ahead-10-14-aug-economic-data-points-vs-mid-east-drama-1055686",
+      "content": "### US CPI\n\nInflation is always a hot topic and persistently above-target inflation is an important feature of the US economic and political landscape.\n\nWednesday will see the release of US CPI data for July. Here’s the year-on-year change in CPI:\n\nSource: tradingeconomics.com\n\nThe impact of the Ira"
+    },
+    {
+      "source": "tavily_answer",
+      "query": "Federal Reserve speech this week monetary policy",
+      "answer": "Based on the most recent data, Federal Reserve Governor Lisa Cook expressed readiness to raise interest rates if inflation does not start easing. Cook stated that while she voted to hold rates steady last week, she is prepared to act on interest rates if inflation remains elevated. Other Fed officials, including Kansas City Fed President Jeffrey Schmid, have also indicated support for tightening monetary policy to address high inflation levels. Schmid emphasized the need for monetary policy to b"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Fed's Cook ready to hike rates 'if necessary' | American Banker",
+      "url": "https://www.americanbanker.com/news/feds-cook-ready-to-hike-rates-if-necessary",
+      "content": "Others on the committee have also come out in support of tightening monetary policy this week. Kansas City Fed President Jeffrey Schmid — a non-voting member of the FOMC this year — said in a speech Tuesday that he was uncomfortable writing off any of the shocks impacting the economy as transitory. "
+    },
+    {
+      "source": "tavily_result",
+      "title": "Fed’s Musalem argues against easy policy just to bolster productivity | WTVB | 1590 AM · 95.5 FM | The Voice of Branch County",
+      "url": "https://wtvbam.com/2026/08/06/feds-musalem-argues-against-easy-policy-just-to-bolster-productivity",
+      "content": "Aug 6 (Reuters) – Federal Reserve Bank of St. Louis President Alberto Musalem said on Thursday it is critical for monetary policy to keep working to bring ​down inflation pressures amid ongoing risks to the central ‌bank’s price-pressure mandate, and should not be set to bolster high productivity le"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Fed governor Lisa Cook: 'I am prepared to act' on interest rates if inflation remains elevated",
+      "url": "https://finance.yahoo.com/economy/policy/article/fed-governor-lisa-cook-i-am-prepared-to-act-on-interest-rates-if-inflation-remains-elevated-201309391.html",
+      "content": "Read more:How jobs, inflation, and the Fed are all related\n\nFederal Reserve Board Governor Lisa Cook speaks on \n\nFederal Reserve Board governor Lisa Cook speaks on \"The Outlook for the Economy and Monetary Policy\" at the Brookings Institution in Washington, D.C., in November 2025. (Reuters/Kevin Lam"
+    },
+    {
+      "source": "tavily_answer",
+      "query": "China PMI economic data this week",
+      "answer": "China's economic data for this week indicates a slowdown in both manufacturing and services sectors. The official manufacturing PMI fell to 49.2 in July, marking a contraction after five months of expansion. The Caixin services PMI also slipped to 50.4 in July, missing forecasts and signaling the weakest growth since September 2024. These readings suggest a potential temporary setback in the economic recovery, with concerns about domestic demand and the impact on employment trends."
+    },
+    {
+      "source": "tavily_result",
+      "title": "SSE Composite: Shanghai Benchmark Slips 0.59% to 3,809.7 as Weak PMI Data and AI Selloff Weigh on Sentiment",
+      "url": "https://www.bbntimes.com/global-economy/sse-composite-shanghai-benchmark-slips-0-59-to-3-809-7-as-weak-pmi-data-and-ai-selloff-weigh-on-sentiment",
+      "content": "The coming week's data calendar, including further trade and credit figures, will be closely scrutinised for evidence that the softness observed in Monday's PMI readings represents a temporary setback rather than the start of a more sustained slowdown. Until such confirmation emerges, strategists ex"
+    },
+    {
+      "source": "tavily_result",
+      "title": "China’s Caixin Services PMI Slips to 50.4 in July, Missing Forecasts",
+      "url": "https://cryptorank.io/news/feed/e36c4-china-caixin-services-pmi-july",
+      "content": "The Caixin services PMI, which tracks business activity in China’s services sector, fell to 50.4 in July, according to data released on Monday. A reading above 50 indicates expansion, while below 50 signals contraction. The figure marks a notable deceleration from the previous month and came in well"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Copper Signals Economic Boom, US Debt Nears $40 Trillion, Trump's $2 Billion Pledge to Cut China Reliance and More: This Week in Economy — TradingView News",
+      "url": "https://www.tradingview.com/news/benzinga:819638b5e094b:0-copper-signals-economic-boom-us-debt-nears-40-trillion-trump-s-2-billion-pledge-to-cut-china-reliance-and-more-this-week-in-economy",
+      "content": "Despite President Donald Trump‘s emphasis on reshoring manufacturing through tariffs, the manufacturing revival was not due to these tariffs. The ISM Manufacturing PMI surged to 55.6 in July from 53.3 in June, marking its highest reading since May 2022.\n\nAll five components directly contributing to "
+    }
+  ]
+}
