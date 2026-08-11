@@ -1,0 +1,85 @@
+{
+  "date": "2026-08-12",
+  "generated_at": "2026-08-12T06:07:22.493052",
+  "upcoming_events": [
+    {
+      "date": "2026-08-12",
+      "event": "美国 CPI (7月)",
+      "importance": "high",
+      "category": "通胀",
+      "days_until": 0
+    }
+  ],
+  "recent_events": [],
+  "web_events": [
+    {
+      "source": "tavily_answer",
+      "query": "US economic data release this week CPI GDP jobs",
+      "answer": "This week's key US economic data releases include the July Consumer Price Index (CPI) on Wednesday, which is expected to show a modest increase of 0.1% month-over-month and 3.3% year-over-year, down from 3.5% in June. The core CPI, excluding food and energy, is projected to rise 0.2% month-over-month and 2.5% year-over-year, a slight decrease from June's 2.6%. Additionally, July's jobs report indicated a loss of 23,000 jobs, significantly below the expected 80,000 gains, signaling a cooling labo"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Fair Value, Tuesday, August 11, 2026",
+      "url": "https://buttondown.com/fairvalue/archive/fair-value-tuesday-august-11-2026",
+      "content": "Meanwhile, the consumer, driving 70% of U.S. GDP, faces growing pressure. Retail sales held flat in June, but credit card delinquencies are climbing, and July’s 23,000-job loss (versus expectations of 80,000 gains) signals a cooling labor market. The Fed now weighs a key question: Does the jobs weak"
+    },
+    {
+      "source": "tavily_result",
+      "title": "ECONOMIC WEEK AHEAD: August 10-14",
+      "url": "https://www.yardeniquicktakes.com/economic-week-ahead-august-10-14",
+      "content": "Last week, July payrolls fell 23,000, missing the 85,000 consensus, even as the unemployment rate edged down to 4.1%. The 2-year Treasury yield fell 7 bps on the release before recovering to close little changed near 4.21%. This week, attention turns to inflation. July CPI (Wed) and PPI (Thu) will b"
+    },
+    {
+      "source": "tavily_result",
+      "title": "The Week Ahead (10 – 14 Aug): Economic data points vs. Mid East drama | Stockopedia",
+      "url": "https://www.stockopedia.com/content/the-week-ahead-10-14-aug-economic-data-points-vs-mid-east-drama-1055686",
+      "content": "### US CPI\n\nInflation is always a hot topic and persistently above-target inflation is an important feature of the US economic and political landscape.\n\nWednesday will see the release of US CPI data for July. Here’s the year-on-year change in CPI:\n\nSource: tradingeconomics.com\n\nThe impact of the Ira"
+    },
+    {
+      "source": "tavily_answer",
+      "query": "Federal Reserve speech this week monetary policy",
+      "answer": "Based on the most recent data, Federal Reserve officials have expressed mixed views on monetary policy. St. Louis Fed President Alberto Musalem argued against easy monetary policy just to bolster productivity, emphasizing the need to bring down inflation pressures. Kansas City Fed President Jeffrey Schmid also called for tighter monetary policy to address \"too high\" inflation. However, San Francisco Fed President Mary Daly fully supported the July rate hold and stressed the need to gather more d"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Fed's Cook ready to hike rates 'if necessary' | American Banker",
+      "url": "https://www.americanbanker.com/news/feds-cook-ready-to-hike-rates-if-necessary",
+      "content": "Others on the committee have also come out in support of tightening monetary policy this week. Kansas City Fed President Jeffrey Schmid — a non-voting member of the FOMC this year — said in a speech Tuesday that he was uncomfortable writing off any of the shocks impacting the economy as transitory. "
+    },
+    {
+      "source": "tavily_result",
+      "title": "Monetary Policy and Productivity: Promoting Growth vs. ...",
+      "url": "https://www.stlouisfed.org/from-the-president/remarks/2026/monetary-policy-and-productivity-brazil",
+      "content": "Link Copied\n\nAug. 6, 2026\n\nSt. Louis Fed President Alberto Musalem delivered a speech titled “Monetary Policy and Productivity: Promoting Growth vs. Stabilizing Prices,” in which he discussed the possibility that monetary policy doesn’t merely respond to productivity growth but helps determine it. H"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Fed’s Musalem argues against easy policy just to bolster productivity | WTVB | 1590 AM · 95.5 FM | The Voice of Branch County",
+      "url": "https://wtvbam.com/2026/08/06/feds-musalem-argues-against-easy-policy-just-to-bolster-productivity",
+      "content": "Aug 6 (Reuters) – Federal Reserve Bank of St. Louis President Alberto Musalem said on Thursday it is critical for monetary policy to keep working to bring ​down inflation pressures amid ongoing risks to the central ‌bank’s price-pressure mandate, and should not be set to bolster high productivity le"
+    },
+    {
+      "source": "tavily_answer",
+      "query": "China PMI economic data this week",
+      "answer": "China's July services PMI dropped to 50.4, indicating a slowdown in the services sector, while the composite PMI fell to 50.8, suggesting a deceleration in overall business activity. The manufacturing PMI also slipped to 49.2, marking the first contraction in five months. These figures suggest a weakening economic momentum in the second half of 2026, absent increased stimulus."
+    },
+    {
+      "source": "tavily_result",
+      "title": "China's July Services PMI Plunges to 50.4, Hitting Near Two-Year Low Since September 2024 — BigGo Finance",
+      "url": "https://finance.biggo.com/news/beeef60d-899f-4151-a2d6-297b683afc43",
+      "content": "S&P Global reported that China's July services PMI plummeted to 50.4 from 54.1 in the previous month, marking the lowest level since September 2024, though it remained above the 50 threshold separating expansion from contraction. The data indicates that sluggish domestic demand led to slower growth "
+    },
+    {
+      "source": "tavily_result",
+      "title": "China’s July PMI points to a weaker second half of 2026 absent increased stimulus – Asian Chemical Connections",
+      "url": "https://www.icis.com/asian-chemical-connections/2026/08/chinas-july-pmi-points-to-a-weaker-second-half-of-2026-absent-increased-stimulus",
+      "content": "The July data suggested that weakness was not limited to factories. Manufacturing, construction and services all slowed at the same time, raising concerns that China’s economic slowdown could deepen in the second half of 2026. ING economist Lynn Song described the PMI data as an “unpromising start” "
+    },
+    {
+      "source": "tavily_result",
+      "title": "China’s Caixin Services PMI Slips to 50.4 in July, Missing Forecasts",
+      "url": "https://cryptorank.io/news/feed/e36c4-china-caixin-services-pmi-july",
+      "content": "The Caixin services PMI, which tracks business activity in China’s services sector, fell to 50.4 in July, according to data released on Monday. A reading above 50 indicates expansion, while below 50 signals contraction. The figure marks a notable deceleration from the previous month and came in well"
+    }
+  ]
+}
