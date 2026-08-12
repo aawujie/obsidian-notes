@@ -1,0 +1,85 @@
+{
+  "date": "2026-08-13",
+  "generated_at": "2026-08-13T06:07:22.435810",
+  "upcoming_events": [],
+  "recent_events": [
+    {
+      "date": "2026-08-12",
+      "event": "美国 CPI (7月)",
+      "importance": "high",
+      "category": "通胀",
+      "days_ago": 1
+    }
+  ],
+  "web_events": [
+    {
+      "source": "tavily_answer",
+      "query": "US economic data release this week CPI GDP jobs",
+      "answer": "This week, the most significant economic data release is the July Consumer Price Index (CPI) on Wednesday, August 12, at 8:30 a.m. ET. The CPI is expected to rise 3.4% year-over-year, slightly below June’s 3.5%. The July Producer Price Index (PPI) will follow on Thursday, August 13, at the same time, tracking price pressures further up the supply chain. Additionally, July’s jobs report showed a decline of 23,000 jobs against expectations of 80,000 gains, signaling a cooling labor market."
+    },
+    {
+      "source": "tavily_result",
+      "title": "US Economic Data and Key Earnings in the Week Ahead",
+      "url": "https://www.indexbox.io/blog/us-economic-data-and-key-earnings-in-the-week-ahead",
+      "content": "Wednesday, Aug. 12: The Bureau of Labor Statistics releases the July CPI at 8:30 a.m. ET. The CPI dipped 0.4% in June. The PPI update follows Thursday morning. Cerebras Systems is slated to release results after the closing bell and host a call at 5 p.m. ET. The AI chipmaker beat expectations in Jun"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Fair Value, Tuesday, August 11, 2026",
+      "url": "https://buttondown.com/fairvalue/archive/fair-value-tuesday-august-11-2026",
+      "content": "Meanwhile, the consumer, driving 70% of U.S. GDP, faces growing pressure. Retail sales held flat in June, but credit card delinquencies are climbing, and July’s 23,000-job loss (versus expectations of 80,000 gains) signals a cooling labor market. The Fed now weighs a key question: Does the jobs weak"
+    },
+    {
+      "source": "tavily_result",
+      "title": "CPI, PPI, and FOMC minutes headline a two-week data window",
+      "url": "https://blog.kraken.com/economic-brief/august-12-2026",
+      "content": "The Bureau of Economic Analysis releases the second estimate of Q2 GDP and corporate profits on Wednesday, August 26 at 8:30 a.m. ET. The advance estimate showed growth slowing to a 1.5% annualized pace, down from 2.1% in Q1, a deceleration that came in below consensus and reopened the debate betwee"
+    },
+    {
+      "source": "tavily_answer",
+      "query": "Federal Reserve speech this week monetary policy",
+      "answer": "Based on the most recent data, Federal Reserve Bank of St. Louis President Alberto Musalem emphasized the importance of maintaining a strict monetary policy to control inflation, arguing against easing policy to foster productivity growth. San Francisco Fed President Mary Daly expressed full support for the Fed's decision to hold interest rates steady, while stressing the need for more data before the September meeting. Fed Governor Lisa Cook indicated readiness to act if inflation does not show"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Musalem says inflation risks tilted higher, credibility at stake — TradingView News",
+      "url": "https://www.tradingview.com/news/forexlive:5be463a77094b:0-musalem-says-inflation-risks-tilted-higher-credibility-at-stake",
+      "content": "Federal Reserve Bank of St. Louis President Alberto Musalem said it is critical for monetary policy to keep working to bring down inflation, arguing that the Fed should not ease policy in hopes of fostering higher productivity growth that might lower prices down the road. Musalem said inflation rema"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Inflation dips, affirming Fed decision to keep interest rates steady",
+      "url": "https://www.cfodive.com/news/inflation-dips-affirming-fed-decision-keep-interest-rates-steady-ai-energy-oil-tariffs-trump/827734",
+      "content": "“If you follow the FOMC conversations at all, there has been this look-through strategy that we’ll look through tariffs and we look through oil prices,” San Francisco Fed President Mary Daly said in a speech last week. “And the AI remains an open question because it’s very early days in terms of how"
+    },
+    {
+      "source": "tavily_result",
+      "title": "San Francisco Fed's Daly \"Fully Supports\" July Rate Hold, Races to Gather Data Ahead of September Meeting",
+      "url": "https://finance.biggo.com/news/fb1a4c97-c2de-489d-82ab-acbfd69d23ed",
+      "content": "San Francisco Federal Reserve Bank President Mary Daly stated unequivocally during a speech at an economic conference on the 5th that she \"fully supports\" the decision to hold the policy interest rate steady made at last week's Federal Open Market Committee (FOMC) meeting. With inflation still signi"
+    },
+    {
+      "source": "tavily_answer",
+      "query": "China PMI economic data this week",
+      "answer": "China's PMI data for July indicated a slowdown in economic momentum. The official manufacturing PMI fell to 49.2 from 50.3 in June, entering contraction territory. The non-manufacturing PMI also dropped to 49.0 from 50.2, indicating contraction in services and construction sectors. The composite PMI declined to 48.8, reflecting a broader weakening in economic activity driven by soft domestic demand, the ongoing property sector downturn, and weather disruptions from typhoons."
+    },
+    {
+      "source": "tavily_result",
+      "title": "Newsquawk week ahead: RBA announcement and US retail sales",
+      "url": "https://www.tradingview.com/news/forexlive:338c89520094b:0-newsquawk-week-ahead-rba-announcement-and-us-retail-sales",
+      "content": "Chinese RatingDog PMIs pointed to a notable loss of momentum in July, although both manufacturing and services remained marginally in expansionary territory. Manufacturing PMI fell to 50.9 from 51.7 (exp. 51.5), marking a four-month low, although new orders continued to rise and new export orders re"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Strong Economic Data and Earnings Push Stocks Higher | Investing.com",
+      "url": "https://www.investing.com/analysis/strong-economic-data-and-earnings-push-stocks-higher-200685551",
+      "content": "The most significant economic catalyst of the week came from the manufacturing sector. The Institute for Supply Management’s Manufacturing Purchasing Managers’ Index (PMI) rose to 55.6 in July, its highest reading since May 2022 and well above consensus expectations. Importantly, the strength was br"
+    },
+    {
+      "source": "tavily_result",
+      "title": "China's July PMI points to a weaker second half of 2026 ...",
+      "url": "https://www.icis.com/asian-chemical-connections/2026/08/chinas-july-pmi-points-to-a-weaker-second-half-of-2026-absent-increased-stimulus",
+      "content": "The July data suggested that weakness was not limited to factories. Manufacturing, construction and services all slowed at the same time, raising concerns that China’s economic slowdown could deepen in the second half of 2026. ING economist Lynn Song described the PMI data as an “unpromising start” "
+    }
+  ]
+}
