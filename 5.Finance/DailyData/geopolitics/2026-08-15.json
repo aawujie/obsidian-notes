@@ -1,0 +1,1279 @@
+{
+  "date": "2026-08-15",
+  "generated_at": "2026-08-15T06:31:05.621982",
+  "total_events": 47,
+  "severity_distribution": {
+    "medium": 47
+  },
+  "events": [
+    {
+      "title": "Low oil prices now ‘goal No. 1’ in Iran war, Vance says, as U.S. threatens new economic pressure - NBC News",
+      "title_cn": "",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPS1RjRkdfWFhDa19XeVdJTExnYzQwX0ZJdFBnYzlkMVhfWXdPNFRxWVJVcUlMLTdtZ3NudmVvQTI4Mm1EZ25Lb25oelpLX0dyVl81TEpkbndwTTBhMzRUM052VmdVdnRGcjl5dUlhNUVfX1FJcU5fX3BRVmp1T3JUTUcxMWZFcExEdFE5dXVZSlN1TlNBQ0FYdEJPRFJOVXZvbmF6andjdEdnMDhjNXpjOXFZaw?oc=5",
+      "content": "Low oil prices now ‘goal No. 1’ in Iran war, Vance says, as U.S. threatens new economic pressure  NBC News",
+      "content_detail": "Google News",
+      "published_date": "Fri, 14 Aug 2026 11:14:12 GMT",
+      "search_region": "美伊冲突",
+      "classified_regions": [
+        "美伊冲突"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "Low oil prices now ‘goal No.",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Iran war: Trump to declare Hormuz US territory 'soon' - DW.com",
+      "title_cn": "",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxONXY5Q2d4LV9tc2hPRjVWcGxwOU9mOWROaFNpazlXX1h1OG0zOGJwbkxtWnpsR3V1WG16Z0ZDUzBRZnhQYk8tNVJwYVhGTWgzVWVqTC1RWnFtOUFzb0pYRkV2TmRwRGJLZ0xESnc5VmpJX3FtaDhoNTBVLWFSanV6RXFHOFdGalFG0gGIAUFVX3lxTE1ZMGs2Y3FudWN5aEVGZU1XMTJVWHExYTFLck96bHhkajhUanZhZndfaWhtS3lCdF9WSk9YeVZDdlFFLVpsX3FMS2RfR2YyY0NleHdMR2VYUHBrT3VQa190TGI3VDZhaU50ejU2WlJValNWZEZ4cjI1QkFxQVBzczhOdkN3OXJBanc?oc=5",
+      "content": "Iran war: Trump to declare Hormuz US territory 'soon'  DW.com",
+      "content_detail": "Google News",
+      "published_date": "Fri, 14 Aug 2026 22:17:18 GMT",
+      "search_region": "美伊冲突",
+      "classified_regions": [
+        "美伊冲突"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "Iran war: Trump to declare Hormuz US territory 'soon' DW.com",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "US says lower oil prices, not Iran's nuclear program, are now top priority in war - Al-Monitor",
+      "title_cn": "",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPY3BYNU82RUtqbTVNUm9nUkp4UldmMVNRcVFscFNwQkxnUmp1dWs2d1pvdktoSUdacktpa3lHbHpySUw1elBzUXZ0N2xzSjBiRkNwWW1URG1TWGpDR2tuSHpHQWRQbGRJM1R3dG5odGItdkc1TmNxdzNXS3Z6RV9xT3JZU0VDSHdfT05RMllVWTBkbWtiWWxOUUZfckVWeURyMnhsNHpTa3pTSi1NV2RuMVRmZ2FDUVBsLWtDVg?oc=5",
+      "content": "US says lower oil prices, not Iran's nuclear program, are now top priority in war  Al-Monitor",
+      "content_detail": "Google News",
+      "published_date": "Fri, 14 Aug 2026 03:02:21 GMT",
+      "search_region": "美伊冲突",
+      "classified_regions": [
+        "美伊冲突"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "US says lower oil prices, not Iran's nuclear program, are now top priority in war Al-Monitor",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Iran is draining its leverage in the Strait of Hormuz. Trump’s best move is to let it happen. - Atlantic Council",
+      "title_cn": "",
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOZW9nUDdNdHRyUTJHTzEybUtiUTVpQjNST3g0eVBPM0lmOXdtRWFvcHhiVWotZm1leFVxZ0tUdnRtQ1BrR2J3XzBwTDFEczU2ZHlrdTBYbEw2dGl4T1VYNURBY0ZTbmRsOVZlcXFQN3BndGRFeGJVQ1lOX05HR011N2FMNkgwZEl5ZDNHUU84ZGRxdThZWmZNRTFvREJMTUJOekVTaFJtcHZ1WGJzR243N0FoOHRHMDJITW5HeURYRGZ3Z2laZG04S1JpMmg0cFk?oc=5",
+      "content": "Iran is draining its leverage in the Strait of Hormuz. Trump’s best move is to let it happen.  Atlantic Council",
+      "content_detail": "Google News",
+      "published_date": "Wed, 12 Aug 2026 20:15:03 GMT",
+      "search_region": "美伊冲突",
+      "classified_regions": [
+        "美伊冲突"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "Iran is draining its leverage in the Strait of Hormuz.",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "2026 Iran war | Deal, Explained, United States, Israel, Strait of Hormuz, Map, & Conflict - Encyclopedia Britannica",
+      "title_cn": "",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5nTzlhOGZTS180cWNtVG91c2VWRVJFYlk0cW5Ba1RHUEFOSEtldU15QktQT0EzRVY1ZVdZZ0VTRHVWTVhyN1IzeU1wbmlDMUhrQ3Roc1YxcmdMUQ?oc=5",
+      "content": "2026 Iran war | Deal, Explained, United States, Israel, Strait of Hormuz, Map, & Conflict  Encyclopedia Britannica",
+      "content_detail": "Google News",
+      "published_date": "Wed, 12 Aug 2026 05:00:00 GMT",
+      "search_region": "美伊冲突",
+      "classified_regions": [
+        "美伊冲突"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "2026 Iran war Deal, Explained, United States, Israel, Strait of Hormuz, Map, & Conflict Encyclopedia Britannica",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Trump Thought Opening the Strait of Hormuz Was Imminent. Iran Had Other Plans. - WSJ",
+      "title_cn": "",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNdjBPMlROTlJtRUlMdW1nVEZJYVNPWERpM0JfM0U2M3lMU0hMbUctb24xVlozZGdGTXZqdy1LdkVDcm90TU5KejhlZDAxNDJmTEFHa0pWa0tiNDdNVE5PdDJqMkJlcEEyaFVhTmpKWlVKczNsVDBGcW5tWXhRLWdOdXdKeUNQRjZzbXZEQ3BYT0g2ZnhPRE9fVlk2TQ?oc=5",
+      "content": "Trump Thought Opening the Strait of Hormuz Was Imminent. Iran Had Other Plans.  WSJ",
+      "content_detail": "Google News",
+      "published_date": "Sun, 09 Aug 2026 11:00:00 GMT",
+      "search_region": "美伊冲突",
+      "classified_regions": [
+        "美伊冲突"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "Trump Thought Opening the Strait of Hormuz Was Imminent.",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Trump says he’ll declare Strait of Hormuz a US territory after defeating Iran during Long Island rally - New York Post",
+      "title_cn": "",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNbnJqaDBsQ2pEVEhIS0ZhcFhyY1o2Z0tFb1BXaVY5Y1lFdDAwRjZURUU4RUtUQk90TVVBOE9kMklSVkdpd1phYVNEeXExVVpPZXZuaDY5b1hiSG9pSzVrbURXd0Vsd2UtR09zdVlkRGUzc0JGa0N2cG9WaTltdDNpSUdvWDAzbU5ZUnRhOVItT3dCeG5kelJtWk8xMG5PTXdiQ3lkT2VPTzNsaWd3aTRyWW9yeG9JUQ?oc=5",
+      "content": "Trump says he’ll declare Strait of Hormuz a US territory after defeating Iran during Long Island rally  New York Post",
+      "content_detail": "Google News",
+      "published_date": "Fri, 14 Aug 2026 20:08:00 GMT",
+      "search_region": "美伊冲突",
+      "classified_regions": [
+        "美伊冲突"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "Trump says he’ll declare Strait of Hormuz a US territory after defeating Iran during Long Island rally New York Post",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "With US-Iran talks stalled, diplomatic efforts expand to unlikely European players - KEZI",
+      "title_cn": "",
+      "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxQTWMwRzNXQlhENVE3czJISWdEZzR0ZUd2Zmh4Um03NnJlRkc0b0xEcUJhVEpkMlpBYkpOU0lNRDBWeEJUbW5yYWRPeEtJZlZSUDNaRTNCUjdCbng4UllvTkZxVkFMRlJ0Q0xOdDhnWUlQLWFnSEQ0RWpOcHBSY1d0RVJYTTlfUW5naEFhQWlvdm0tX2FreUdTSFpSRDNlUUQwQy1MRWI4bjNPaFE0Vkx5RktHQlFPR1JQRjNvSTNsaVpQMlk5WmNEUnJISDdvRU9FbkExZ1g5ekM3QzdseU5YSG5NdkpjaWJFT3k1by0tcVUwRElyTUttQW1R?oc=5",
+      "content": "With US-Iran talks stalled, diplomatic efforts expand to unlikely European players  KEZI",
+      "content_detail": "Google News",
+      "published_date": "Fri, 14 Aug 2026 18:37:00 GMT",
+      "search_region": "美伊冲突",
+      "classified_regions": [
+        "美伊冲突"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "With US-Iran talks stalled, diplomatic efforts expand to unlikely European players KEZI",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Ukraine Sanctions 13 Vessels, 39 Entities Over Stolen Grain Exports",
+      "title_cn": "",
+      "url": "https://www.kyivpost.com/post/82371",
+      "content": "Sanctions targeting Russian oil refineries, alongside the strikes on Russian military logistics, including Ukraine’s operations in the Black Sea and the Sea of Azov, are all aimed at limiting Russia’s capacity to sustain its war effort.\n\n“We are preparing new sanctions against Russia’s military indu",
+      "content_detail": "### \n\n* [North America](https://www.kyivpost.com/category/north-america)\n* [Latin America](https://www.kyivpost.com/category/latin-america)\n* [Europe](https://www.kyivpost.com/category/europe)\n* [Eastern Europe](https://www.kyivpost.com/category/eastern-europe)\n* [Middle East](https://www.kyivpost.com/category/middle-east)\n* [Africa](https://www.kyivpost.com/category/africa)\n* [Asia](https://www.kyivpost.com/category/asia)\n\n### \n\n* [Business](https://www.kyivpost.com/category/business)\n* [Technology](https://www.kyivpost.com/category/technology)\n* [Finance](https://www.kyivpost.com/category/finance)\n* [Energy](https://www.kyivpost.com/category/energy)\n* [Agriculture](https://www.kyivpost.com/category/agriculture)\n\n[###](https://www.kyivpost.com/category/corruption-watch)\n\n###\n\n![Search](/icons/header-search.svg) [![Kyiv Post](/icons/header-desktop-logo.svg)](https://www.kyivpost.com) [![Kyiv Post](/icons/kp_logo_white.svg)](https://www.kyivpost.com)\n\nEN\n\n![arrow](/icons/select-arrow.svg)\n\n* [UK](/language/uk)\n\n[![Kyiv Post](/assets/images/Kyivpost_logo_Black.svg)](https://www.kyivpost.com)\n\n[![Kador Group](/assets/images/kador_logo.jpg)](https://kadorrgroup.com/en/)\n\nEN\n\n![arrow](/icons/select-arrow.svg)\n\n* [UK](/language/uk)\n\n[![](/storage/2026/07/29/6062b76d7a98a1dcc9689c0e7fcb301c.png)](https://createukraine.kyivpost.com/)\n\n[Ukraine](https://www.kyivpost.com/topic/ukraine)   [War in Ukraine](https://www.kyivpost.com/topic/war-in-ukraine)   [Sanctions](https://www.kyivpost.",
+      "published_date": "Fri, 14 Aug 2026 18:41:27 GMT",
+      "search_region": "俄乌战争",
+      "classified_regions": [
+        "俄乌战争"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Defence Intelligence of Ukraine: Most of 26 Russian Oil and Stolen Ukrainian Grain Vessels Remain Unsanctioned",
+      "title_cn": "",
+      "url": "https://militarnyi.com/en/news/defence-intelligence-of-ukraine-most-of-26-russian-oil-and-stolen-ukrainian-grain-vessels-remain-unsanctioned",
+      "content": "The Defence Intelligence of Ukraine reports that energy exports remain one of the main sources of funding for Russia’s war against Ukraine. Russia uses the theft and export of Ukrainian agricultural products as a tool to exert influence over other countries, including to secure political and economi",
+      "content_detail": "Fri, 14 August 2026\n\n[![logo](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20140%2049'%3E%3C/svg%3E)](https://militarnyi.com/en/)\n\n[Donate](https://militarnyi.com/en/support/)\n\n# Defence Intelligence of Ukraine: Most of 26 Russian Oil and Stolen Ukrainian Grain Vessels Remain Unsanctioned\n\n[#Defence intelligence](https://militarnyi.com/en/tag/defence-intelligence/)\n\n[#Russian aggression](https://militarnyi.com/en/tag/russian-aggression/)\n\n[#War with Russia](https://militarnyi.com/en/tag/war-with-russia/)\n\n[![Sania Kozatskyi](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E)\n\n#### Sania Kozatskyi\n\nAugust 14, 2026](https://militarnyi.com/en/author/kozak/)\n\n![Defence Intelligence of Ukraine: Most of 26 Russian Oil and Stolen Ukrainian Grain Vessels Remain Unsanctioned](https://militarnyi.com/wp-content/uploads/2026/08/shadow-fleet-vessels.jpg)\n\nShips of the Russian \"shadow fleet\". Illustration: DIU\n\n[![Latvia Tested Drone Interceptors Against Shahed-Like UAVs](https://militarnyi.com/wp-content/uploads/2026/08/Dron-mishen-v-prytsili-perehoplyuvacha-pid-chas-nachan-Baltic-Trust-26.Stop-kadr-z-video-Ministerstva-oborony-Latviyi-e1786727218540-1.jpg)\n\n### Latvia Tested Drone Interceptors Against Shahed-Like UAVs\n\nAugust 14, 2026\n\n21:52](https://militarnyi.com/en/news/latvia-drone-interceptors-shahed-like-uavs/)\n\n[![Blogger Kyivstoner May Have Been Targeted by Russian Agent in Poland Due to Prepar",
+      "published_date": "Fri, 14 Aug 2026 08:00:00 GMT",
+      "search_region": "俄乌战争",
+      "classified_regions": [
+        "俄乌战争"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "Fri, 14 August 2026 [",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Ukraine: 18 of 26 Russian oil and stolen-grain ships face no sanctions - Euromaidan Press",
+      "title_cn": "",
+      "url": "https://euromaidanpress.com/2026/08/14/shadow-fleet-sanctions-gap",
+      "content": "Russia relies on maritime trade both to fund its war through energy exports and to sell crops taken from occupied Ukraine. Kyiv began building a dedicated system against Russia’s shadow grain fleet in April, modeled on its oil-fleet campaign. A US bill introduced this week would also target vessels,",
+      "content_detail": "[Join our community of 1000+ patrons](https://www.patreon.com/euromaidanpress)\n\nEng\n\n[Join our community of 1000+ patrons](https://www.patreon.com/euromaidanpress)\n\n\n\n* [Latest news](https://euromaidanpress.com/category/news-ukraine/)\n\n# Ukraine: 18 of 26 Russian oil and stolen-grain ships face no sanctions\n\nHUR says the oil tankers run for firms like Lukoil and Rosneft, while the dry-cargo ships load stolen grain at occupied ports such as Sevastopol.\n\n[![](https://secure.gravatar.com/avatar/2762e3554ae4fcb6bcd7c9f061b5bc3fb94a226e060c9db496d488957d9d3e8a?s=26&d=mm&r=g)byDaniel Thomas](https://euromaidanpress.com/author/danielthomas/ \"View all posts by Daniel Thomas\")\n\n14/08/2026\n\n3 minute read\n\n[Follow Euromaidan Press on Google News](https://news.google.com/search?q=Euromaidan%20Press)\n\n  \n\nThe bulk carrier LAMAR S in Rijeka, Croatia under its former name SPLIT in 2016 or earlier. HUR says it loaded wheat in occupied Sevastopol in 2026 for delivery abroad, including to Syria. Photo: Dragec/VesselFinder\n\n[Ukraine: 18 of 26 Russian oil and stolen-grain ships face no sanctions](https://euromaidanpress.com/2026/08/14/shadow-fleet-sanctions-gap/)\n\nOn 14 August, Ukraine's Military Intelligence (HUR) [published](https://t.me/DIUkraine/9100) data on [26 vessels](https://war-sanctions.gur.gov.ua/en/transport/ships/) via its War&Sanctions portal, [noting](https://gur.gov.ua/content/warsanctions-hur-opryliudniuie-dani-pro-sudna-na-yakykh-rosiia-perevozyt-naftu-skraplenyi-haz-ta-kraden",
+      "published_date": "Fri, 14 Aug 2026 16:40:11 GMT",
+      "search_region": "俄乌战争",
+      "classified_regions": [
+        "俄乌战争"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "President announces new sanctions targeting Russia's defense industry and financial networks",
+      "title_cn": "",
+      "url": "https://www.ukrinform.net/amp/rubric-polytics/4154268-president-announces-new-sanctions-targeting-russias-defense-industry-and-financial-networks.html",
+      "content": "He recalled that Ukraine had imposed a sanctions package today targeting companies and vessels involved in exporting grain and other goods stolen in the temporarily occupied territories of Ukraine.\n\n\"We are preparing new sanctions packages against Russia's war industry, financial chains, and interme",
+      "content_detail": "# President announces new sanctions targeting Russia's defense industry and financial networks\n\nUkraine is preparing new sanctions packages targeting Russia's defense industry, financial networks and intermediaries that facilitate the production of missiles and drones and contribute to prolonging the war.\n\nPresident Volodymyr Zelensky said this in his nightly [video address](https://www.president.gov.ua/en/news/zavdyaki-vsim-rishennyam-vid-minuloyi-oseni-mi-zmogli-zimoyu-105833), according to Ukrinform.\n\n\"Our sanctions against Russian oil refineries and other facilities in Russia's oil sector, our mid-range strikes against Russian military logistics, and our operation in the waters of the Black Sea and the Sea of Azov – all of this is working to limit Russia's war potential. It is important to continue this with more active political and legal measures as well,\" he said.\n\nHe recalled that Ukraine had imposed a sanctions package today targeting companies and vessels involved in exporting grain and other goods stolen in the temporarily occupied territories of Ukraine.\n\n\"We are preparing new sanctions packages against Russia's war industry, financial chains, and intermediaries. Unfortunately, a significant number of Russian enterprises working for the war are still not under international sanctions, and this must be corrected during August and September. We will raise this with leaders at all working levels,\" Zelensky said.\n\n**Read also:** [Ukraine sanctions 13 vessels, 28 compa",
+      "published_date": "Fri, 14 Aug 2026 20:16:00 GMT",
+      "search_region": "俄乌战争",
+      "classified_regions": [
+        "俄乌战争"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "President announces new sanctions targeting Russia's defense industry and financial networks Ukraine is preparing new sanctions packages targeting Russia's defense industry, financial networks and intermediaries that facilitate the production of",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Ukraine’s intelligence releases data on 26 ships Russia uses to export Ukrainian grain and oil – Rubryka",
+      "title_cn": "",
+      "url": "https://rubryka.com/en/2026/08/14/gur-oprylyudnylo-dani-pro-26-suden-yaki-rosiya-vykorystovuye-dlya-vyvezennya-ukrayinskogo-zerna-ta-nafty",
+      "content": "Photo source: Marinetraffic\n\n##### Maria Ignatenko\n\n### Ukraine's Defense Intelligence has published data on 26 vessels in the \"Sea Vessels\" section of the War&Sanctions portal that Russia uses to transport grain from temporarily occupied territories of Ukraine, Russian oil and petroleum products, a",
+      "content_detail": "[Укр](https://rubryka.com/2026/08/14/gur-oprylyudnylo-dani-pro-26-suden-yaki-rosiya-vykorystovuye-dlya-vyvezennya-ukrayinskogo-zerna-ta-nafty/) [Рус](https://rubryka.com/ru/2026/08/14/gur-oprylyudnylo-dani-pro-26-suden-yaki-rosiya-vykorystovuye-dlya-vyvezennya-ukrayinskogo-zerna-ta-nafty/) [Eng](https://rubryka.com/en/2026/08/14/gur-oprylyudnylo-dani-pro-26-suden-yaki-rosiya-vykorystovuye-dlya-vyvezennya-ukrayinskogo-zerna-ta-nafty/)\n\n* [Rubrics](/en/articles/)\n  + [What’s Going On](https://rubryka.com/en/category/whatshappening/)\n  + [In Handy](https://rubryka.com/en/category/howtolive/)\n  + [Cases](https://rubryka.com/en/category/how-to/)\n  + [She’s Got It](https://rubryka.com/en/category/not-indifferent/)\n  + [Invest in Ukraine](https://rubryka.com/en/category/business/)\n  + [Health](https://rubryka.com/en/category/health/)\n  + [Ecorubric](https://rubryka.com/en/category/ecorubryka/)\n  + [Urban](https://rubryka.com/en/category/urban/)\n  + [eRubric](https://rubryka.com/en/category/erubryka/)\n* [News](https://rubryka.com/en/news/)\n  + [Politics](https://rubryka.com/en/rubricator/politics/)\n  + [Economics](https://rubryka.com/en/rubricator/economics/)\n  + [Society](https://rubryka.com/en/rubricator/society/)\n  + [World](https://rubryka.com/en/rubricator/world/)\n  + [Events](https://rubryka.com/en/rubricator/events/)\n  + [Science](https://rubryka.com/en/rubricator/science/)\n  + [Ecology](https://rubryka.com/en/tag/ecology/)\n  + [Technology](https://rubryka.com/en/rubricator/te",
+      "published_date": "Fri, 14 Aug 2026 08:50:07 GMT",
+      "search_region": "俄乌战争",
+      "classified_regions": [
+        "俄乌战争"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Ukraine identifies 26 ships carrying Russian oil, LNG and stolen Ukrainian grain / The New Voice of Ukraine",
+      "title_cn": "",
+      "url": "https://english.nv.ua/business/ukraine-identifies-26-ships-carrying-russian-oil-lng-and-stolen-ukrainian-grain-50632692.html",
+      "content": "In the Maritime Vessels section of its War & Sanctions portal, the agency published information on 26 ships Russia uses to transport grain from temporarily occupied Ukrainian territories, Russian oil and petroleum products, and liquefied natural gas from the sanctioned Arctic LNG 2 project.\n\nThe lis",
+      "content_detail": "![poster](https://static.nv.ua/images/main/nv_en_logo.png?q=85&f=png&stamp=4.168)\n![](/images/icons/bluesky.svg)\n\n# Russian ships move Ukrainian agricultural products through occupied ports\n\n![GUR published a list of vessels used by Russians to transport oil, gas and stolen grain (Photo: difesa.it)](https://static.nv.ua/shared/system/Article/posters/003/344/583/original/e5ed678aaf81172b7c0099fcb6658035.png?q=85&stamp=20260814160110&w=600&f=webp)\n\nGUR published a list of vessels used by Russians to transport oil, gas and stolen grain (Photo: difesa.it)\n\nEnergy exports remain one of Russia’s main sources of financing for its war against Ukraine, while Moscow also uses stolen Ukrainian grain as a tool of influence over other countries, [Ukraine’s Defense Intelligence said on Aug. 14.](https://t.me/DIUkraine/9100)\n\nIn the Maritime Vessels section of its War & Sanctions portal, the agency published information on 26 ships Russia uses to transport grain from temporarily occupied Ukrainian territories, Russian oil and petroleum products, and liquefied natural gas from the sanctioned Arctic LNG 2 project.\n\nThe list includes:\n\nAd\n\n[Ukraine’s Defense Intelligence stressed](https://war-sanctions.gur.gov.ua/transport/ships?f%5Bpub_id%5D=307) that the vast majority of the vessels — 18 out of 26 — are not sanctioned by any of Ukraine’s partner countries.\n\nAmong the unsanctioned vessels identified by the agency are:\n\nCoordinating sanctions and detaining vessels involved in sanctions violati",
+      "published_date": null,
+      "search_region": "俄乌战争",
+      "classified_regions": [
+        "俄乌战争"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "Russian ships move Ukrainian agricultural products through occupied ports Energy exports remain one of Russia’s main sources of financing for its war against Ukraine, while Moscow also uses stolen Ukrainian",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Russo-Ukrainian war, day 1633: July was Ukraine's deadliest month for civilians since 2022, as Russia's war grinds through another summer",
+      "title_cn": "",
+      "url": "https://euromaidanpress.com/2026/08/15/russo-ukrainian-war-day-1633",
+      "content": "Ukraine's drones crushed a US armored brigade in a war game in Germany. Ukrainian crews knocked out US units so fast the drill had to revive them, years and billions after America bet big on beating drones.\n\n### International\n\nMore than 100 drones detected near Romania in four days, NATO jets scramb",
+      "content_detail": "[Join our community of 1000+ patrons](https://www.patreon.com/euromaidanpress)\n\nEng\n\n[Join our community of 1000+ patrons](https://www.patreon.com/euromaidanpress)\n\n\n\n* [Daily review](https://euromaidanpress.com/category/ukraine/daily-review/)\n\n# Russo-Ukrainian war, day 1633: July was Ukraine’s deadliest month for civilians since 2022, as Russia’s war grinds through another summer\n\nRussian attacks killed 437 people and wounded more than 2,600 in a single month, the worst civilian toll UN monitors have recorded since May 2022.\n\n[byEuromaidan Press Staff](https://euromaidanpress.com/author/euromaidanpressstaff/ \"View all posts by Euromaidan Press Staff\")\n\n15/08/2026\n\n5 minute read\n\n[Follow Euromaidan Press on Google News](https://news.google.com/search?q=Euromaidan%20Press)\n\n[Russo-Ukrainian war, day 1633: July was Ukraine’s deadliest month for civilians since 2022, as Russia’s war grinds through another summer](https://euromaidanpress.com/2026/08/15/russo-ukrainian-war-day-1633/)\n\n### Exclusives\n\n|  |\n| --- |\n| [**Ukraine’s quiet counteroffensive took 745 square km. Russia’s dead Starlink is how**](https://euromaidanpress.com/2026/08/14/southeastern-counteroffensive-2/). Six months, 26 settlements, and almost no video. Russia lost its battlefield communications three days in, and Ukrainian armor drove through the gap. |\n\n|  |\n| --- |\n| [**Ukraine’s Zaporizhstal may idle half its capacity to fit new EU steel quotas**](https://euromaidanpress.com/2026/08/14/ukraine-zaporizhstal",
+      "published_date": "Fri, 14 Aug 2026 21:12:22 GMT",
+      "search_region": "俄乌战争",
+      "classified_regions": [
+        "俄乌战争"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Russia won’t accept a new Black Sea truce, saying the West already broke its word once — Meduza",
+      "title_cn": "",
+      "url": "https://meduza.io/en/feature/2026/08/15/russia-won-t-accept-a-new-black-sea-truce-saying-the-west-already-broke-its-word-once",
+      "content": "On August 12, Ukraine carried out a large-scale strike on Novorossiysk — Russia’s largest Black Sea port and one of its most important grain export hubs. Work stopped at all of Novorossiysk’s terminals as a result: the Novorossiysk Grain Terminal, the Novorossiysk Grain Products Plant, and the KSK G",
+      "content_detail": "# Russia won’t accept a new Black Sea truce, saying the West already broke its word once\n\nSource: [Meduza](https://meduza.io/feature/2026/08/14/voyna)\n\nWheat being loaded at a farm in Ukraine’s Zhytomyr region, August 7, 2026\n\nValentyn Ogirenko / Reuters / Scanpix / LETA\n\nMoscow has not received a formal proposal for a moratorium on Black Sea strikes, Russian Foreign Ministry spokesperson Maria Zakharova [said](https://t.me/MariaVladimirovnaZakharova/13651) on Friday. A day earlier, Reuters [reported](https://meduza.io/news/2026/08/13/reuters-ukraina-predlozhila-rossii-peremirie-v-chernom-more) that Kyiv had used an intermediary to deliver a proposal to Moscow for a mutual halt to strikes on civilian targets in the Black Sea. Reuters did not name the intermediary directly, but it was likely Turkey — Turkish Foreign Minister Hakan Fidan had already [said](https://www.kommersant.ru/doc/8875625) on August 8 that Ankara had sent a moratorium proposal to both sides in the conflict.\n\n“The Russian side has not received, through official channels, any formal communication from Turkey setting out the terms of this initiative,” Zakharova said.\n\nMoscow does not see “grounds for half-measures that only give the Kyiv regime a temporary reprieve,” she said. Russia agreed to a moratorium in 2022–2023 in exchange for access to global markets for its agricultural products, she said, but “the West acted in bad faith” and did not lift sanctions.\n\nTalk of a Black Sea truce has resumed as both si",
+      "published_date": "Fri, 14 Aug 2026 21:00:00 GMT",
+      "search_region": "俄乌战争",
+      "classified_regions": [
+        "俄乌战争"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "Russia won’t accept a new Black Sea truce, saying the West already broke its word once Source:",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "U.S. Report Names Korea a Route for Chinese Chip Tariff Evasion",
+      "title_cn": "",
+      "url": "https://en.sedaily.com/finance/2026/08/14/us-report-names-korea-a-route-for-chinese-chip-tariff",
+      "content": "Peter Navarro, White House senior counselor for trade and manufacturing, said in a press call that day that the report was a warning to countries that are subject to high tariffs and use third countries as a shield. China is only an example, he said, and stopping large-scale transshipment fraud is n",
+      "content_detail": "[![Samsung Newsroom](/ad-samsung-newsroom.gif)](https://news.samsung.com/global/)\n\n[Seoul Economic Daily](/)\n\n[Seoul Economic Daily](/)\n\n[![Samsung Newsroom](/ad-samsung-newsroom.gif)](https://news.samsung.com/global/)\n\n[![APAC Gold — Best AI-driven News Product, Format or Strategy (WAN-IFRA Digital Media Awards APAC 2026)](/awards/apac-gold-ai-driven.webp)![APAC Gold — Best Newsletter (WAN-IFRA Digital Media Awards APAC 2026)](/awards/apac-gold-newsletter.webp)![APAC Silver — Most Innovative Digital Product (WAN-IFRA Digital Media Awards APAC 2026)](/awards/apac-silver-innovative.webp)![Finalist — Best AI-driven News Product, Format or Strategy (WAN-IFRA Digital Media Awards 2026)](/awards/KakaoTalk_Photo_2026-05-12-09-52-54.webp)![Finalist — Best Newsletter (WAN-IFRA Digital Media Awards 2026)](/awards/KakaoTalk_Photo_2026-05-12-09-52-58.webp)![Winner — AI LINK (WAN-IFRA Digital Media Awards 2026)](/awards/dma-global-winner-ai-link.webp)](/ai-prism)[Seoul Economic Daily\n\nKorea's Leading Business News Since 1960](/)\n\n# U.S. Report Names Korea a Route for Chinese Chip Tariff Evasion\n\nWhite House releases \"Great Transshipment Scam\" report \"China dodges tariffs through transshipment network across 40-plus countries\" \"Annual scale of $303 billion; tens of billions in lost tax revenue\" Korea grouped with Japan, EU and Taiwan among top-tier transshipment risk countries \"Chinese chips distributed through Korea\" — U.S. pressures over semiconductor production\n\nFinance|\n|\n\nBy Joo Jae-",
+      "published_date": "Fri, 14 Aug 2026 14:32:36 GMT",
+      "search_region": "中美博弈",
+      "classified_regions": [
+        "中美博弈"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "Report Names Korea a Route for Chinese Chip Tariff Evasion White House releases \"Great Transshipment Scam\" report \"China dodges tariffs through transshipment network across 40-plus countries\" \"Annual scale of $303",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Trump to impose up to 100% tariffs on drone imports",
+      "title_cn": "",
+      "url": "https://asia.nikkei.com/economy/trade-war/trump-tariffs/trump-to-impose-up-to-100-tariffs-on-drone-imports",
+      "content": "US imposes 15% tariff on polysilicon in pushback against China\n\n US-China tensions#### China hits back at US FCC bans with sanctions and drone curbs\n\n  China hits back at US FCC bans with sanctions and drone curbs\n\n Interview#### Taiwan security chief says China's 'hybrid warfare' tests whole region",
+      "content_detail": "[Trump tariffs](/economy/trade-war/trump-tariffs)\n\n# Trump to impose up to 100% tariffs on drone imports\n\nPresident says US 'too reliant' on foreign sources of unmanned aircraft and parts\n\n![20260814 trump](https://images.ft.com/v3/image/raw/https%3A%2F%2Fcms-image-bucket-productionv3-ap-northeast-1-a7d2.s3.ap-northeast-1.amazonaws.com%2Fimages%2F7%2F9%2F9%2F5%2F12975997-1-eng-GB%2Fd6a498c371b1-2026-08-11T163404Z_314663398_RC29TMAWV7K7_RTRMADP_3_USA-TRUMP-BIRTHRIGHT-LAWSUIT.JPG?fit=cover&gravity=faces&dpr=2&quality=medium&source=nar-cms&format=auto&width=780)\n\nU.S. President Donald Trump signs executive orders at the White House: His administration is imposing new tariffs on drones and their components. © Reuters\n\nAugust 14, 2026 09:00 JST\n\nWASHINGTON (Reuters) -- President Donald Trump said on Thursday he will impose tariffs on imports of drones and their components, including from some key U.S. allies, with the Trump administration saying the country was \"too reliant\" on foreign sources of drones.\n\nA proclamation signed by Trump imposes a 100% ad valorem tariff on drones of a certain size or with certain capabilities that are particularly sensitive for national security purposes, the White House said, adding that a tariff of 25% will be imposed on drones that are smaller in size.\n\nA 15% tariff will be imposed on drones and components from the European Union, Japan, Liechtenstein, South Korea, Switzerland, and Taiwan, and a 10% ad valorem tariff will be imposed on drones fro",
+      "published_date": "Fri, 14 Aug 2026 00:00:45 GMT",
+      "search_region": "中美博弈",
+      "classified_regions": [
+        "中美博弈"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "Trump to impose up to 100% tariffs on drone imports President says US 'too reliant' on foreign sources of unmanned aircraft and parts -- President Donald Trump said on Thursday",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "US accuses 40+ countries of helping China evade tariffs",
+      "title_cn": "",
+      "url": "https://www.wionews.com/videos/us-accuses-40-countries-of-helping-china-evade-tariffs-1786707948798/amp",
+      "content": "Slide 13)\n\n### Prime Minister Modi addresses 57th IIT Delhi convocation ceremony\n\nSlide 14)\n\n### Central Bank Policy Will Depend on Oil Price\n\nSlide 15)\n\n### IAF's toughest course conquered: Bhawana Kanth joins 'top gun' league\n\nSlide 16)\n\n### US-China Trade War Escalates | Beijing Targets American ",
+      "content_detail": "![WionNews Video](https://cdn1.wionews.com/prod/wion/images/2026/20260814/1408_TARIFF_3PM-00000002.jpg?im=FitAndFill=(700,400))\n\n# US accuses 40+ countries of helping China evade tariffs\n\n## The White House has dropped a bombshell trade report, accusing over 40 countries, including Mexico, Canada, India, and the EU, of helping China dodge US tariffs through what it calls \"The Great Transshipment Scam.\" Goods are allegedly relabeled or lightly processed in these countries before reaching American shores at lower duty rates.\n\n#### Trending Topics\n\n### Trending Videos\n\n![Slide 0](https://cdn1.wionews.com/prod/wion/images/2026/20260807/0708_Alpha_2PM-00000002.jpg?im=FitAndFill=(700,400))\n\n### [Gujarat's mystery well baffles all: No earthquake link to ripples](/videos/gujarat-s-mystery-well-baffles-all-no-earthquake-link-to-ripples-1786095034445 \"Gujarat's mystery well baffles all: No earthquake link to ripples\")\n\n![Slide 1](https://cdn1.wionews.com/prod/wion/images/2026/20260807/0708_Ent_1PM-00000002.jpg?im=FitAndFill=(700,400))\n\n### ['Devil Wears Prada 2' wardrobe joins Hollywood history](/videos/devil-wears-prada-2-wardrobe-joins-hollywood-history-1786094127701 \"'Devil Wears Prada 2' wardrobe joins Hollywood history\")\n\n![Slide 2](https://cdn1.wionews.com/prod/wion/images/2026/20260808/0808_India_7AM-00000002.jpg?im=FitAndFill=(700,400))\n\n### [India names 27 sites in Arunachal Pradesh](/videos/india-names-27-sites-in-arunachal-pradesh-1786157155230 \"India names 27 sites in Aruna",
+      "published_date": "Fri, 14 Aug 2026 13:00:00 GMT",
+      "search_region": "中美博弈",
+      "classified_regions": [
+        "中美博弈"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "China buying raises stakes before presidential summit - Food Business News",
+      "title_cn": "",
+      "url": "https://www.foodbusinessnews.net/articles/30847-china-buying-raises-stakes-before-presidential-summit",
+      "content": "Those shifting trade flows are unfolding alongside continued US-China trade negotiations. China introduced a spate of countermeasures during the first week of August, including tighter export controls on drones and related technology and sanctions on several US companies, in response to recent US re",
+      "content_detail": "[Skip To Content](#skip-target)\n\n[Subscribe for Free](https://sos.dragonforms.com/SOS108_FBN_profile?pk=HeaderLink)\n\n[Subscribe Now](/subscriptions)\n\n[Home](/) » China buying raises stakes before presidential summit\n\n# China buying raises stakes before presidential summit\n\n![AdobeStock_269063320.jpg](https://www.foodbusinessnews.net/ext/resources/2026/08/14/AdobeStock_269063320.webp?height=667&t=1786710651&width=1080)\n\nPhoto: ©TAWACHAI1990 – STOCK.ADOBE.COM\n\n08.14.2026\n\nBy [Emily Wenerstrom](/authors/130-emily-wenerstrom)\n\n[![Google](/images/google_logo.svg)Add as a preferred  \nsource on Google](https://www.google.com/preferences/source?q=foodbusinessnews.net&location=article_header)\n\nKANSAS CITY — In May, US President Donald Trump announced a $17 billion agricultural deal with China that featured new commitments to purchase US farm commodities, including a target of 25 million tonnes of soybeans annually. In the months that followed, Chinese soybean purchases trickled in at a pace that fueled some skepticism about whether Beijing would meet its goal.\n\nHowever, Arlan Suderman, chief commodities economist at StoneX, said contacts in China are confident the government intends to follow through on its commitment. Buying accelerated this summer, and China is expected to continue purchasing US soybeans aggressively ahead of a planned September meeting between Trump and Chinese President Xi Jinping, raising the prospect of tighter US supplies and higher prices.\n\n“They reiterate tha",
+      "published_date": "Fri, 14 Aug 2026 11:00:00 GMT",
+      "search_region": "中美博弈",
+      "classified_regions": [
+        "中美博弈"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "» China buying raises stakes before presidential summit China buying raises stakes before presidential summit",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Global Times - The US on Thursday imposed sweeping...",
+      "title_cn": "",
+      "url": "https://www.facebook.com/globaltimesnews/posts/the-us-on-thursday-imposed-sweeping-tariffs-of-up-to-100-percent-on-imported-dro/1605127601659441",
+      "content": "## Global Times's Post\n\n### Global Times\n\nChina state-controlled media\n\n  · 14h  ·\n\nThe US on Thursday imposed sweeping #tariffs of up to 100 percent on imported #drones and related components, a move Chinese experts said marks Washington’s latest attempt to turn industrial competition into protecti",
+      "content_detail": "",
+      "published_date": null,
+      "search_region": "中美博弈",
+      "classified_regions": [
+        "中美博弈"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "White House puts India in Tier 1 of China-linked transshipment risk | World News - Business Standard",
+      "title_cn": "",
+      "url": "https://www.business-standard.com/world-news/us-india-tier-1-china-tariff-evasion-transshipment-scam-126081400794_1.html",
+      "content": "Business Standard\nNotification Icon\nuserprofile Icon\nSearch\nBS_logo\n\n## Buzzing :\n\n# White House puts India in Tier 1 of China-linked transshipment risk\n\n## White House report names India among 40-plus economies at risk of Chinese goods being rerouted to evade US tariffs; exporters could face toughe",
+      "content_detail": "",
+      "published_date": "Fri, 14 Aug 2026 06:09:47 GMT",
+      "search_region": "中美博弈",
+      "classified_regions": [
+        "中美博弈"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "US Flags India in China Tariff Evasion Network The White ...",
+      "title_cn": "",
+      "url": "https://www.instagram.com/reel/DcAzx5tTgC8",
+      "content": "Source: Hindustan Times  \n#indiaus #trumptariffs #chinatariffs #globaltrade #transhipment [...] Video by India Business & Finance | The Bean on August 13, 2026. May be an image of onion and text that says 'b. ONION PRICES JUMP 25% IN A WEEK Prices at Lasalgaon, India's top onion market, rise to ₹27/",
+      "content_detail": "",
+      "published_date": null,
+      "search_region": "中美博弈",
+      "classified_regions": [
+        "中美博弈"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Instagram",
+      "title_cn": "",
+      "url": "https://www.instagram.com/p/DcAfJ4OmhB-",
+      "content": "Follow\n\nthestatesmanltd's profile picture\n\nthestatesmanltd\n\nUS President Donald Trump has announced to impose new tariffs of up to 100 per cent on imports of drones and their components, including from some key US allies, stating that the move is aimed at reducing reliance on foreign suppliers in an",
+      "content_detail": "",
+      "published_date": null,
+      "search_region": "中美博弈",
+      "classified_regions": [
+        "中美博弈"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "The Red Sea: Emerging Complexities and Untapped Opportunities",
+      "title_cn": "",
+      "url": "https://moderndiplomacy.eu/2026/08/14/the-red-sea-emerging-complexities-and-untapped-opportunities",
+      "content": "\\Maritime Security Risks: Persistent threats from Houthi attacks on commercial shipping continue to disrupt trade through the Bal el-Mandeb Strait and the Suez Canal, forcing ongoing naval deterrence and re-routing around Africa. In terms of logistics expansion, upgrading the regional ports (like Je",
+      "content_detail": "",
+      "published_date": "Fri, 14 Aug 2026 00:00:13 GMT",
+      "search_region": "中东/红海",
+      "classified_regions": [
+        "中东/红海"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Saudi-led maritime coalition moves from blueprint to action |  | AW",
+      "title_cn": "",
+      "url": "http://www.thearabweekly.com/saudi-led-maritime-coalition-moves-blueprint-action",
+      "content": "Further south, the Red Sea has been reshaped by the Houthi attacks on commercial vessels. The campaign has already prompted international shipping companies to divert vessels away from the Suez Canal route, adding thousands of nautical miles to some journeys and increasing insurance, fuel and freigh",
+      "content_detail": "",
+      "published_date": "Fri, 14 Aug 2026 12:22:36 GMT",
+      "search_region": "中东/红海",
+      "classified_regions": [
+        "中东/红海"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Is Yemen Sliding Back Into War? Houthi Attacks Raise UN Alarm | Outlook India",
+      "title_cn": "",
+      "url": "https://www.outlookindia.com/international/is-yemen-sliding-back-into-war-houthi-attacks-raise-un-alarm",
+      "content": "The exchange of attacks raises concerns over wider regional tensions and disruption to Red Sea shipping. - Screengrab from the video/X\nThe exchange of attacks raises concerns over wider regional tensions and disruption to Red Sea shipping. - Screengrab from the video/X\n\nBy Outlook News Desk\n\n## Why ",
+      "content_detail": "",
+      "published_date": "Fri, 14 Aug 2026 07:27:19 GMT",
+      "search_region": "中东/红海",
+      "classified_regions": [
+        "中东/红海"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Bypass the Strait of Hormuz? Why That’s Not So Easy",
+      "title_cn": "",
+      "url": "https://energynow.com/2026/08/bypass-the-strait-of-hormuz-why-thats-not-so-easy",
+      "content": "Those actions represent a solution to the Hormuz problem, but not to the threat posed by Houthi militants in the Red Sea. As a result, some shippers are now experimenting with longer routes. A Saudi crude supertanker bound for Asia in late July crossed the Suez Canal at the northern end of the Red S",
+      "content_detail": "",
+      "published_date": "Fri, 14 Aug 2026 18:00:00 GMT",
+      "search_region": "中东/红海",
+      "classified_regions": [
+        "中东/红海"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Hormuz Shipping Traffic Remains Weak as Uncertainty Persists",
+      "title_cn": "",
+      "url": "https://www.globaltrademag.com/hormuz-shipping-traffic-remains-weak-as-uncertainty-persists",
+      "content": "### Red Sea Traffic Also Slips\n\nTraffic through the Bab el-Mandeb was relatively stable but edged lower. A total of 269 vessels were recorded crossing the strait, compared with 273 the previous week.\n\nMaritime analysts cautioned against reading too much into the second consecutive decline, particula",
+      "content_detail": "",
+      "published_date": "Fri, 14 Aug 2026 08:40:00 GMT",
+      "search_region": "中东/红海",
+      "classified_regions": [
+        "中东/红海"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Saudi Arabia announces start of Red Sea defence alliance: Will it work?",
+      "title_cn": "",
+      "url": "https://www.aljazeera.com/news/2026/8/14/saudi-arabia-announces-start-of-red-sea-defence-alliance-will-it-work",
+      "content": "These tensions have only worsened since the US-Israel war on Iran began with strikes on Tehran on February 28, with the Tehran-backed Houthis launching strikes against Saudi-flagged vessels and oil facilities in the Red Sea.\n\nAdvertisement\n\nThe escalating conflict has led to fears that the Houthis c",
+      "content_detail": "",
+      "published_date": "Fri, 14 Aug 2026 12:45:11 GMT",
+      "search_region": "中东/红海",
+      "classified_regions": [
+        "中东/红海"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Saudi and Turkish Envoys Convene in El Alamein Security Push Amid Regional Turmoil | Streamline",
+      "title_cn": "",
+      "url": "https://streamlinefeed.co.ke/news/saudi-and-turkish-envoys-convene-in-el-alamein-security-push-amid-regional-turmoil",
+      "content": "Abdelatty maintained a measured diplomatic posture, acknowledging the strategic value of the proposition while noting that any Egyptian integration into formal defense obligations would require extensive constitutional and legal review in Cairo.\n\n## Red Sea Trade and African Economic Exposure\n\nThe s",
+      "content_detail": "",
+      "published_date": "Fri, 14 Aug 2026 09:27:06 GMT",
+      "search_region": "中东/红海",
+      "classified_regions": [
+        "中东/红海"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Israeli attacks on Hamas officials 'destabilises' Gaza ceasefire",
+      "title_cn": "",
+      "url": "https://www.newarab.com/news/israeli-attacks-hamas-officials-destabilises-gaza-ceasefire",
+      "content": "Gaza-based political analyst Akram Attallah told TNA that Israel's continued targeting of Hamas members reflected its desire to maintain military pressure on the movement while negotiations continue.\n\n\"Israel views the targeting of Hamas figures as a way to prevent the group from rebuilding its mili",
+      "content_detail": "",
+      "published_date": "Fri, 14 Aug 2026 10:00:00 GMT",
+      "search_region": "中东/红海",
+      "classified_regions": [
+        "中东/红海"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Chinese defense ministry dismisses annual Han Kuang military drills as ‘wasteful charade’",
+      "title_cn": "",
+      "url": "https://www.presstv.ir/Detail/2026/08/14/774346/china-calls-taiwans-annual-military-drills-wasteful-charade",
+      "content": "The Han Kuang Exercise is a public military readiness drill held in Taipei and surrounding islets in the East China Sea by secessionists seeking independence from the Chinese mainland.\n\n  \n\nPress TV’s website can also be accessed at the following alternate addresses:\n\nwww.presstv.ir\n\nSHARE THIS ARTI",
+      "content_detail": "",
+      "published_date": "Fri, 14 Aug 2026 13:00:00 GMT",
+      "search_region": "台海/南海/朝鲜",
+      "classified_regions": [
+        "台海/南海/朝鲜"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "China calls Taiwan's annual military drills a 'wasteful charade'",
+      "title_cn": "",
+      "url": "https://mediaselangor.com/en/2026/08/389998",
+      "content": "Taiwan, a democratically governed island that rejects China's sovereignty claims, began the exercise last week, as Beijing ramps up its military presence around the island.\n\nThe exercises rehearsed various scenarios should China ever make good on threats to seize the island by force, including how t",
+      "content_detail": "",
+      "published_date": "Fri, 14 Aug 2026 08:22:36 GMT",
+      "search_region": "台海/南海/朝鲜",
+      "classified_regions": [
+        "台海/南海/朝鲜"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "China Criticizes Taiwan War Games as Military Tensions Rise",
+      "title_cn": "",
+      "url": "https://moderndiplomacy.eu/2026/08/14/china-criticizes-taiwan-war-games-as-military-tensions-rise",
+      "content": "The comments were China’s first official response since the exercises began last week. Taiwan, a democratically governed island that rejects Beijing’s sovereignty claims, launched the drills as Chinese military activity around the island continues to increase.\n\n## Taiwan Simulates Chinese Attack\n\nTh",
+      "content_detail": "",
+      "published_date": "Fri, 14 Aug 2026 08:00:59 GMT",
+      "search_region": "台海/南海/朝鲜",
+      "classified_regions": [
+        "台海/南海/朝鲜"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "China & Taiwan Update, August 14, 2026",
+      "title_cn": "",
+      "url": "https://understandingwar.org/research/china-taiwan/china-taiwan-update-august-14-2026",
+      "content": "Taiwan’s MAC argued that the PRC’s framing of military exercises in Taiwan’s EEZ east of the island is attempting to create “a false impression” that the PRC has jurisdiction over the waters. The MAC called the exercise a “military provocation.” Indonesian navy spokesperson First Admiral Tunggul sta",
+      "content_detail": "",
+      "published_date": "Fri, 14 Aug 2026 16:44:30 GMT",
+      "search_region": "台海/南海/朝鲜",
+      "classified_regions": [
+        "台海/南海/朝鲜"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Taiwan wrapped up its Han Kuang exercises with a first-ever Navy-Coast Guard drill. China ran its own naval exercise nearby at the same time",
+      "title_cn": "",
+      "url": "https://www.plataformamedia.com/en/2026/08/14/taiwan-concludes-annual-military-exercises-chinese-invasion",
+      "content": "The counter-blockade exercise also coincided with joint naval maneuvers between a Chinese frigate and an Indonesian frigate east of Taiwan—unprecedented exercises in the area that, according to Taipei, were intended to project the “false image” that Beijing exercises effective jurisdiction over thos",
+      "content_detail": "",
+      "published_date": "Fri, 14 Aug 2026 10:13:19 GMT",
+      "search_region": "台海/南海/朝鲜",
+      "classified_regions": [
+        "台海/南海/朝鲜"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Taiwan Wants to Know Why Indonesia Joined China in a Naval Exercise East of Taiwan",
+      "title_cn": "",
+      "url": "https://thediplomat.com/2026/08/taiwan-wants-to-know-why-indonesia-joined-china-in-a-naval-exercise-east-of-taiwan",
+      "content": "Credit: X/ China Military Bugle\n\nIn a rare moment of diplomatic friction, Taiwan has called on the Indonesian government to clarify joint naval exercises with China that took place in waters east of Taiwan. \n\nThe exercise took place on the morning of August 12, between 6:30 a.m. and 9:30 a.m. As par",
+      "content_detail": "",
+      "published_date": "Fri, 14 Aug 2026 15:00:00 GMT",
+      "search_region": "台海/南海/朝鲜",
+      "classified_regions": [
+        "台海/南海/朝鲜"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Putin in the Kurils: An Old Territorial Dispute in a New Asian Cold War",
+      "title_cn": "",
+      "url": "https://www.lvivherald.com/post/putin-in-the-kurils-an-old-territorial-dispute-in-a-new-asian-cold-war",
+      "content": "This is why seemingly symbolic provocations can have strategic consequences. A Russian President standing on disputed territory does not alter the legal position of the islands. Russia controlled Iturup the day before Putin arrived and controlled it the day afterwards. But politics operates through ",
+      "content_detail": "",
+      "published_date": "Fri, 14 Aug 2026 10:11:55 GMT",
+      "search_region": "台海/南海/朝鲜",
+      "classified_regions": [
+        "台海/南海/朝鲜"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Japón vuelve a mirar hacia las armas: el rearme que ...",
+      "title_cn": "",
+      "url": "https://www.atalayar.com/en/articulo/politics/japon-vuelve-mirar-armas-rearme-que-puede-cambiar-equilibrio-asia/20260812125444228325.html",
+      "content": "Following the collapse of the Soviet Bloc, developments such as North Korean missile programmes and Beijing's military rise began to strain this framework. Under Shinzo Abe's premiership, legislation passed in 2015 authorised the exercise of the right to collective self-defence under the doctrine of",
+      "content_detail": "",
+      "published_date": "Fri, 14 Aug 2026 07:30:00 GMT",
+      "search_region": "台海/南海/朝鲜",
+      "classified_regions": [
+        "台海/南海/朝鲜"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "FX Statecraft: Another Explanation for the Yen Intervention",
+      "title_cn": "",
+      "url": "https://instituteofgeoeconomics.org/en/research/2026081401",
+      "content": "U.S. Sanctions Iran’s Hormuz Toll Collectors: On July 29, the U.S. Treasury Department’s Office of Foreign Assets Control (OFAC) sanctioned two firms connected to Iran’s Islamic Revolutionary Guard Corps (IRGC) involved with the establishment of tolls through the Strait of Hormuz, as well as several",
+      "content_detail": "",
+      "published_date": "Fri, 14 Aug 2026 02:25:54 GMT",
+      "search_region": "全球制裁",
+      "classified_regions": [
+        "全球制裁"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Moscow warns Japan and G7 of retaliatory maritime actions",
+      "title_cn": "",
+      "url": "https://www.bankingnews.gr/en/index.php?id=893784&diethni%2Farticles%2F893784%2Fmoscow-warns-japan-and-g7-of-retaliatory-maritime-actions=",
+      "content": "Initially, Putin's warning appeared directed primarily at European states. However, Japan is now directly linked to the issue.  \n The European Union announced intensified measures against Russian «shadow fleet» vessels, while increasing diplomatic pressure on maritime registries in Panama, Barbados,",
+      "content_detail": "",
+      "published_date": "Fri, 14 Aug 2026 00:00:00 GMT",
+      "search_region": "全球制裁",
+      "classified_regions": [
+        "全球制裁"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "US Sanctions Iran: Historic Economic Siege · Daily Beirut",
+      "title_cn": "",
+      "url": "https://dailybeirut.com/en/world/economic-siege-and-isolation-washington-warns-of-historic-measures-against-iran",
+      "content": "President Donald Trump had hinted at his plans to economically choke Iran, telling Axios during the weekend: \"We are handling the matter calmly and quietly; negotiations with them are only partial, and we are content to monitor Iran under the backdrop of massive inflation rates and the fact that it ",
+      "content_detail": "",
+      "published_date": "Fri, 14 Aug 2026 05:53:44 GMT",
+      "search_region": "全球制裁",
+      "classified_regions": [
+        "全球制裁"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Minister Anand announces additional sanctions against Iranian individuals obstructing navigation rights in and around the Strait of Hormuz",
+      "title_cn": "",
+      "url": "https://www.canada.ca/en/global-affairs/news/2026/08/minister-anand-announces-additional-sanctions-against-iranian-individuals-obstructing-navigation-rights-in-and-around-the-strait-of-hormuz.html",
+      "content": "In statements issued in March and June 2026, the foreign ministers of the G7 countries, including Canada’s, reaffirmed the importance of safeguarding maritime routes and the safety of navigation. They also reiterated the need to permanently restore safe and toll-free freedom of navigation in and aro",
+      "content_detail": "",
+      "published_date": "Fri, 14 Aug 2026 12:29:10 GMT",
+      "search_region": "全球制裁",
+      "classified_regions": [
+        "全球制裁"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Trump announces up to 100 pc tariffs on drone imports, citing national security | MorungExpress | morungexpress.com",
+      "title_cn": "",
+      "url": "https://morungexpress.com/trump-announces-up-to-100-pc-tariffs-on-drone-imports-citing-national-security",
+      "content": "Friday, 14th August, 2026\n\nMorungExpress\n\nSubscribe E-Paper\n\n### Support The Morung Express. Your Contributions Matter Click Here\n\n# Trump announces up to 100 pc tariffs on drone imports, citing national security\n\nEvian: U.S. President Donald Trump during a meeting at the G7 Summit in Evian, France,",
+      "content_detail": "",
+      "published_date": "Fri, 14 Aug 2026 04:00:00 GMT",
+      "search_region": "全球制裁",
+      "classified_regions": [
+        "全球制裁"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Putin Visits Disputed Kuril Islands as Japan Lodges Strong Protest",
+      "title_cn": "",
+      "url": "https://eurasiabusinessnews.com/2026/08/14/putin-visits-disputed-kuril-islands-as-japan-lodges-strong-protest",
+      "content": "Advertisements\n\nJapan joined the G7 countries in imposing sanctions on Russia and has provided financial and non-lethal assistance to Ukraine. Moscow has responded by criticising Japan’s policies and reducing prospects for renewed territorial negotiations.\n\nPutin described Japanese sanctions as “unp",
+      "content_detail": "",
+      "published_date": "Fri, 14 Aug 2026 15:30:44 GMT",
+      "search_region": "全球制裁",
+      "classified_regions": [
+        "全球制裁"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "“The... - CSIS | Center for Strategic & International Studies",
+      "title_cn": "",
+      "url": "https://www.facebook.com/CSIS.org/posts/the-sanctioning-russia-and-iran-act-of-2026-comes-at-a-pivotal-moment-in-the-ukr/1495920432580062",
+      "content": "'/%3E%3Cpath d='M16.0001 7.9996c0 4.418-3.5815 7.9996-7.9995 7.9996S.001 12.4176.001 7.9996 3.5825 0 8.0006 0C12.4186 0 16 3.5815 16 7.9996Z' fill='url(%23paint1_radial_15251_63610)'/%3E%3Cpath d='M16.0001 7.9996c0 4.418-3.5815 7.9996-7.9995 7.9996S.001 12.4176.001 7.9996 3.5825 0 8.0006 0C12.4186 0",
+      "content_detail": "",
+      "published_date": null,
+      "search_region": "全球制裁",
+      "classified_regions": [
+        "全球制裁"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    }
+  ]
+}
