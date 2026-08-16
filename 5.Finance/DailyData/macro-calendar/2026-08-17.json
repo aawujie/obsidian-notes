@@ -1,0 +1,77 @@
+{
+  "date": "2026-08-17",
+  "generated_at": "2026-08-17T06:07:16.287219",
+  "upcoming_events": [],
+  "recent_events": [],
+  "web_events": [
+    {
+      "source": "tavily_answer",
+      "query": "US economic data release this week CPI GDP jobs",
+      "answer": "This week's US economic data releases include key indicators on inflation, GDP, and jobs. The Bureau of Economic Analysis will release the second estimate of Q2 GDP and corporate profits, showing a deceleration in growth to a 1.5% annualized pace. The Bureau of Labor Statistics will release the July Producer Price Index (PPI) and Consumer Price Index (CPI), providing insights into price pressures across different sectors. The jobs market remains a focal point, with reports indicating a decline i"
+    },
+    {
+      "source": "tavily_result",
+      "title": "CPI, PPI, and FOMC minutes headline a two-week data ...",
+      "url": "https://blog.kraken.com/economic-brief/august-12-2026",
+      "content": "The Bureau of Economic Analysis releases the second estimate of Q2 GDP and corporate profits on Wednesday, August 26 at 8:30 a.m. ET. The advance estimate showed growth slowing to a 1.5% annualized pace, down from 2.1% in Q1, a deceleration that came in below consensus and reopened the debate betwee"
+    },
+    {
+      "source": "tavily_result",
+      "title": "The Weekly Bottom Line",
+      "url": "https://economics.td.com/ca-weekly-bottom-line",
+      "content": "core inflation remains well-behaved and the jobs market, while improving, isn’t out of the woods just yet. [...] ## U.S. Highlights [...] the unemployment rate dipped 0.1 percentage points to 6.4% - its lowest level since 2024 - despite a rise in both the labour force and the participation rate. Hou"
+    },
+    {
+      "source": "tavily_result",
+      "title": "What’s happening this week in economics?",
+      "url": "https://www.deloitte.com/us/en/insights/topics/economy/global-economic-outlook/weekly-update.html",
+      "content": "The US government’s jobs report for July surprised many investors. The government reported a decline in payroll employment, the first drop since February. Moreover, the government also downwardly revised job growth for the previous two months. As such, it now appears that, for the past several month"
+    },
+    {
+      "source": "tavily_answer",
+      "query": "Federal Reserve speech this week monetary policy",
+      "answer": "Based on the most recent data, the Federal Reserve's monetary policy remains at a crossroads with officials divided over whether to hike interest rates to control inflation. Despite inflation remaining above the Fed's target for more than five years, a recent slowdown in price pressures may ease the need to raise rates. The Federal Reserve is expected to release minutes from its July meeting, which will provide more details about its interest rate policy. Additionally, fading expectations for a "
+    },
+    {
+      "source": "tavily_result",
+      "title": "Cooler inflation data may force Warsh's divided Fed to hold the line on rates - KITCO",
+      "url": "https://www.kitco.com/news/off-the-wire/2026-08-14/cooler-inflation-data-may-force-warshs-divided-fed-hold-line-rates",
+      "content": "# Cooler inflation data may force Warsh's divided Fed to hold the line on rates. GREENVILLE, South Carolina, Aug 14 (Reuters) - Kevin Warsh took over as head of the Federal Reserve in May with monetary policy at a crossroads, officials divided over whether they would need to hike interest rates to c"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Cooler inflation data may force Warsh's divided Fed to hold the line on rates - Reuters",
+      "url": "https://www.reuters.com/business/cooler-inflation-data-may-force-warshs-divided-fed-hold-line-rates-2026-08-14/",
+      "content": "Exclusive news, data and analytics for financial market professionals Learn more about Refinitiv. ## Browse World. ## Browse Business. U.S. Federal Reserve Chairman Kevin Warsh holds a press conference following a two-day meeting of the Federal Open Market Committee (FOMC), at the Federal Reserve, i"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Wall Street week ahead: Home Depot and Walmart report earnings, minutes of Fed meeting are released - bozemandailychronicle.com",
+      "url": "https://www.bozemandailychronicle.com/wire/business/wall-street-week-ahead-home-depot-and-walmart-report-earnings-minutes-of-fed-meeting-are/article_8657547e-bb37-5aa0-84bf-097f2ee83df8.html",
+      "content": "# Wall Street week ahead: Home Depot and Walmart report earnings, minutes of Fed meeting are released. ## Wall Street will get financial updates from some of the nation’s biggest retailers this week, along with more details from the Federal Reserve’s most recent meeting. Wall Street and economists w"
+    },
+    {
+      "source": "tavily_answer",
+      "query": "China PMI economic data this week",
+      "answer": "China’s official manufacturing Purchasing Managers’ Index (PMI) fell to 49.2 in July from 50.3 in June, marking its first contraction since February. Both the production and new-orders components weakened, while export orders returned to contraction. The nonmanufacturing index, which covers services and construction, declined to 49.0 from 50.2, its lowest reading since December 2022, while the composite index fell to 49.3 from 50.6. This suggests a slowdown in both manufacturing and services sec"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Weekly market recap",
+      "url": "https://www.troweprice.com/financial-intermediary/no/en/lp/global-equities/weekly-market-recap.html",
+      "content": "China’s official manufacturing Purchasing Managers’ Index (PMI) fell to 49.2 in July from 50.3 in June, below expectations and marking its first contraction since February. The production and new-orders components both weakened, while export orders returned to contraction. The nonmanufacturing index"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Asia week ahead: Indonesia rate call, data on China, Taiwan, Japan",
+      "url": "https://think.ing.com/articles/asia-week-ahead-140826",
+      "content": "China releases its key domestic activity data for July on Monday. We expect sluggish momentum to persist after the weak PMI readings earlier this month. We expect a modest rebound, but retail sales should remain weak at 1.7% year-on-year. Fixed asset investment is likely to slow further to -6.3% YoY"
+    },
+    {
+      "source": "tavily_result",
+      "title": "ECONOMIC WEEK AHEAD: August 17-21",
+      "url": "https://www.yardeniquicktakes.com/economic-week-ahead-august-17-21",
+      "content": "Weekly unemployment claims (Thu), industrial production (Tue), and regional business surveys round out this week’s docket of domestic economic news, with flash PMIs closing out the week on Friday. Earnings season is quiet, with Walmart and Alibaba the only notable June-quarter reports scheduled for "
+    }
+  ]
+}
