@@ -1,0 +1,45 @@
+{
+  "date": "2026-08-18",
+  "generated_at": "2026-08-18T06:06:55.142719",
+  "total_stocks": 2,
+  "data": [
+    {
+      "ticker": "EA",
+      "name": "Electronic Arts Inc.",
+      "sector": "Communication Services",
+      "industry": "Electronic Gaming & Multimedia",
+      "market_cap": 52925640704,
+      "close": 209.6999969482422,
+      "prev_close": 209.6999969482422,
+      "change_daily": 0.0,
+      "change_weekly": null,
+      "change_monthly": null,
+      "volume": 0.0,
+      "avg_vol_5d": 9742740.0,
+      "vol_ratio": 0.0,
+      "high52": 210.2,
+      "low52": 164.5,
+      "dist_from_high": -0.24,
+      "is_new_high": true
+    },
+    {
+      "ticker": "EOG",
+      "name": "EOG Resources, Inc.",
+      "sector": "Energy",
+      "industry": "Oil & Gas E&P",
+      "market_cap": 77843660800,
+      "close": 146.14999389648438,
+      "prev_close": 142.61000061035156,
+      "change_daily": 2.48,
+      "change_weekly": 2.76,
+      "change_monthly": null,
+      "volume": 1537547.0,
+      "avg_vol_5d": 2291989.0,
+      "vol_ratio": 0.67,
+      "high52": 151.87,
+      "low52": 101.59,
+      "dist_from_high": -3.77,
+      "is_new_high": false
+    }
+  ]
+}
