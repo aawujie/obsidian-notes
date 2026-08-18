@@ -1,0 +1,77 @@
+{
+  "date": "2026-08-19",
+  "generated_at": "2026-08-19T06:07:13.800447",
+  "upcoming_events": [],
+  "recent_events": [],
+  "web_events": [
+    {
+      "source": "tavily_answer",
+      "query": "US economic data release this week CPI GDP jobs",
+      "answer": "This week's US economic data releases include the July Consumer Price Index (CPI) on August 17, which is expected to show a year-over-year inflation rate of 3.5%, down from 3.7% in the previous month. The Producer Price Index (PPI) for July is also due on August 13, providing insights into price pressures further up the supply chain. Additionally, the second estimate of Q2 GDP and corporate profits will be released on August 26, with expectations of a slowdown in growth to 1.5% annualized pace. "
+    },
+    {
+      "source": "tavily_result",
+      "title": "CPI, PPI, and FOMC minutes headline a two-week data ...",
+      "url": "https://blog.kraken.com/economic-brief/august-12-2026",
+      "content": "The Bureau of Economic Analysis releases the second estimate of Q2 GDP and corporate profits on Wednesday, August 26 at 8:30 a.m. ET. The advance estimate showed growth slowing to a 1.5% annualized pace, down from 2.1% in Q1, a deceleration that came in below consensus and reopened the debate betwee"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Week Ahead: Downward Data Surprise Stretch the US Dollar’s Momentum Indicators | investing.com",
+      "url": "https://m.investing.com/analysis/week-ahead-downward-data-surprise-stretch-the-us-dollars-momentum-indicators-200685908?ampMode=1",
+      "content": "Data: After the July jobs reports and inflation gauges, the flurry of economic data in the coming week is somewhat less important. Housing starts and industrial production will feed into forecasts for Q3 GDP. Halfway through the quarter, and the median forecast in Bloomberg’s survey is for 2.1% annu"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Canadian dollar rally faces crucial US tariff deadline | Convera",
+      "url": "https://convera.com/blog/market-insights/fx-research/daily-market-updates/canadian-dollar-rally-faces-crucial-us-tariff-deadline",
+      "content": "## What’s happening in markets this week?\n\nThe week starts with global growth and inflation data (Mon), including China retail sales and industrial production, Japan GDP and industrial production, US Empire manufacturing and Canada CPI. The focus then shifts to activity and labour data (Tue), with t"
+    },
+    {
+      "source": "tavily_answer",
+      "query": "Federal Reserve speech this week monetary policy",
+      "answer": "The Federal Reserve's monetary policy is currently considered somewhat restrictive, according to the latest speech from the Reserve Bank of Australia. The Federal Reserve's July meeting minutes reveal that the committee voted to hold interest rates steady, but market concerns persist about the central bank's approach to inflation. Federal Reserve Chairman Kevin Warsh's recent sparse communication signals a commitment to the 2% inflation goal, potentially leading to tighter, more restrictive poli"
+    },
+    {
+      "source": "tavily_result",
+      "title": "The Restrictive Stance of Monetary Policy | Speeches",
+      "url": "https://www.rba.gov.au/speeches/2026/sp-ag-2026-08-13.html",
+      "content": "Monetary policy is considered ‘restrictive’ if financial conditions are restraining aggregate demand and ‘accommodative’ if they are stimulating demand.\n\nAt its meeting earlier this week, the Board judged that monetary policy is somewhat restrictive.1 That’s important since, among other things, it u"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Go to the mountains, come down from 30,000 feet",
+      "url": "https://stayathomemacro.substack.com/p/go-to-the-mountains-come-down-from?action=share",
+      "content": "Jerome Powell, August 24, 2018  \n“Monetary Policy in a Changing Economy.” [...] Janet Yellen, August 22, 2014  \n“Labor Market Dynamics and Monetary Policy.” [...] The risk manager, skeptical of false precision. Powell’s first Jackson Hole speech ties most directly to monetary policy, specifically ho"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Fed Minutes, Iran Top Economic News This Week",
+      "url": "https://www.usnews.com/news/national-news/articles/2026-08-17/fed-minutes-iran-top-economic-news-this-week",
+      "content": "Getty Images\n\nAt its last meeting in July, the Federal Reserve’s monetary policy committee voted 9-3 to hold interest rates steady. The decision was not well received by the market, which fears that the central bank has lost the plot with regard to inflation. [...] This week, with the release of the"
+    },
+    {
+      "source": "tavily_answer",
+      "query": "China PMI economic data this week",
+      "answer": "The latest China PMI economic data for this week is expected to be released on Friday, August 21. The preliminary August PMI is anticipated to provide insights into the manufacturing sector's performance, following a composite PMI of 53.2 in July, which marked the first back-to-back increase since July-August 2025. Analysts are closely watching this data to gauge whether the recent softness in PMI readings represents a temporary setback or a more sustained slowdown. The release will be part of a"
+    },
+    {
+      "source": "tavily_result",
+      "title": "SSE Composite: Shanghai Benchmark Slips 0.59% to 3,809.7 as Weak PMI Data and AI Selloff Weigh on Sentiment",
+      "url": "https://www.bbntimes.com/global-economy/sse-composite-shanghai-benchmark-slips-0-59-to-3-809-7-as-weak-pmi-data-and-ai-selloff-weigh-on-sentiment",
+      "content": "The coming week's data calendar, including further trade and credit figures, will be closely scrutinised for evidence that the softness observed in Monday's PMI readings represents a temporary setback rather than the start of a more sustained slowdown. Until such confirmation emerges, strategists ex"
+    },
+    {
+      "source": "tavily_result",
+      "title": "ECONOMIC WEEK AHEAD: August 17-21",
+      "url": "https://www.yardeniquicktakes.com/economic-week-ahead-august-17-21",
+      "content": "Weekly unemployment claims (Thu), industrial production (Tue), and regional business surveys round out this week’s docket of domestic economic news, with flash PMIs closing out the week on Friday. Earnings season is quiet, with Walmart and Alibaba the only notable June-quarter reports scheduled for "
+    },
+    {
+      "source": "tavily_result",
+      "title": "Asia week ahead: Indonesia rate call, data on China, Taiwan, Japan | articles | ING THINK",
+      "url": "https://think.ing.com/articles/asia-week-ahead-140826",
+      "content": "China releases its key domestic activity data for July on Monday. We expect sluggish momentum to persist after the weak PMI readings earlier this month. We expect a modest rebound, but retail sales should remain weak at 1.7% year-on-year. Fixed asset investment is likely to slow further to -6.3% YoY"
+    }
+  ]
+}
