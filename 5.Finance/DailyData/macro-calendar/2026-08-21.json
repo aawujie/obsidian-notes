@@ -1,0 +1,85 @@
+{
+  "date": "2026-08-21",
+  "generated_at": "2026-08-21T06:07:04.306038",
+  "upcoming_events": [
+    {
+      "date": "2026-09-04",
+      "event": "非农就业报告 (8月)",
+      "importance": "high",
+      "category": "就业",
+      "days_until": 14
+    }
+  ],
+  "recent_events": [],
+  "web_events": [
+    {
+      "source": "tavily_answer",
+      "query": "US economic data release this week CPI GDP jobs",
+      "answer": "This week's US economic data releases include the July Consumer Price Index (CPI) and the June retail sales report. The July CPI is expected to show a headline inflation rate around 2.9%, driven by rising gasoline prices, with a focus on core measures. The June retail sales report is anticipated to show a 0.4% increase, following a mild inflation print and softer Producer Price Index (PPI). Additionally, the Federal Open Market Committee (FOMC) minutes from the July meeting will be released, pro"
+    },
+    {
+      "source": "tavily_result",
+      "title": "The Weekly Bottom Line",
+      "url": "https://economics.td.com/ca-weekly-bottom-line",
+      "content": "this week argue for the Fed to remain in wait-and-see mode, particularly with one more jobs report and another CPI print still to come before the September meeting. Next week’s July FOMC minutes pre-date this week’s CPI release, but could still contain useful information about how worried officials "
+    },
+    {
+      "source": "tavily_result",
+      "title": "Week Ahead: Downward Data Surprise Stretch the US Dollar’s Momentum Indicators | investing.com",
+      "url": "https://m.investing.com/analysis/week-ahead-downward-data-surprise-stretch-the-us-dollars-momentum-indicators-200685908?ampMode=1",
+      "content": "Data: After the July jobs reports and inflation gauges, the flurry of economic data in the coming week is somewhat less important. Housing starts and industrial production will feed into forecasts for Q3 GDP. Halfway through the quarter, and the median forecast in Bloomberg’s survey is for 2.1% annu"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Canadian dollar rally faces crucial US tariff deadline | Convera",
+      "url": "https://convera.com/blog/market-insights/fx-research/daily-market-updates/canadian-dollar-rally-faces-crucial-us-tariff-deadline",
+      "content": "## What’s happening in markets this week?\n\nThe week starts with global growth and inflation data (Mon), including China retail sales and industrial production, Japan GDP and industrial production, US Empire manufacturing and Canada CPI. The focus then shifts to activity and labour data (Tue), with t"
+    },
+    {
+      "source": "tavily_answer",
+      "query": "Federal Reserve speech this week monetary policy",
+      "answer": "Federal Reserve Chairman Kevin Warsh is expected to deliver a significant speech at the Jackson Hole meeting next week, which could influence market expectations regarding monetary policy. Recent data indicates that several Fed officials supported an interest-rate hike if inflation does not decline, signaling a potential shift towards tighter monetary policy. Warsh's speech is anticipated to provide clarity on the Fed's stance on inflation and interest rates, potentially quelling market uncertai"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Sri-Kumar: Warsh Must Signal September Rate Hike in ...",
+      "url": "https://kathleenhays.substack.com/p/sri-kumar-warsh-must-signal-september",
+      "content": "So when a bond market selloff hits the U.S. and financial markets around the world, and the U.S. Treasury secretary jumps into the fray announcing that he is expanding a U.S. government bond repurchase program — which dates back to the Clinton Administration — it’s time to ask what is going on here?"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Wall Street Is Obsessing Over Every Word From Federal Reserve Chairman Kevin Warsh -- This Is the Phrase That Matters Most | The Motley Fool",
+      "url": "https://www.fool.com/investing/2026/08/14/wall-street-is-obsessing-over-every-word-from-fed",
+      "content": "Investors have no choice but to examine Warsh's sparse language, leaving them searching for clues about interest rates, inflation, and the Fed's priorities. Amid all the careful listening, one of Warsh's declarations stands out as the phrase that truly matters. Let's dig into what the Fed Chairman h"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Jackson Hole Meeting Gives Fed’s Kevin Warsh a Chance to Quell Market Fears",
+      "url": "https://www.barrons.com/articles/jackson-hole-warsh-federal-reserve-inflation-50d3d005",
+      "content": "Against the backdrop of the majestic Grand Teton mountains, Kevin Warsh will deliver a speech next week that is likely to have a profound impact on his term as chairman of the Federal Reserve and the credibility of the central bank.\n\nCopyright ©2026 Dow Jones & Company, Inc. All Rights Reserved. 879"
+    },
+    {
+      "source": "tavily_answer",
+      "query": "China PMI economic data this week",
+      "answer": "The latest Purchasing Managers' Index (PMI) for China's manufacturing sector stood at 49.2% in July, indicating a contraction. This follows months of targeted fiscal and monetary support by Chinese officials, suggesting structural headwinds still face the economy. The National Bureau of Statistics reported a 5.3% year-on-year increase in value-added industrial output, with high-tech manufacturing rising by 13.8%. The latest flash PMI data is due on Friday, August 21, which will provide further i"
+    },
+    {
+      "source": "tavily_result",
+      "title": "SSE Composite: Shanghai Benchmark Slips 0.59% to 3,809.7 as Weak PMI Data and AI Selloff Weigh on Sentiment",
+      "url": "https://www.bbntimes.com/global-economy/sse-composite-shanghai-benchmark-slips-0-59-to-3-809-7-as-weak-pmi-data-and-ai-selloff-weigh-on-sentiment",
+      "content": "The coming week's data calendar, including further trade and credit figures, will be closely scrutinised for evidence that the softness observed in Monday's PMI readings represents a temporary setback rather than the start of a more sustained slowdown. Until such confirmation emerges, strategists ex"
+    },
+    {
+      "source": "tavily_result",
+      "title": "ECONOMIC WEEK AHEAD: August 17-21",
+      "url": "https://www.yardeniquicktakes.com/economic-week-ahead-august-17-21",
+      "content": "Weekly unemployment claims (Thu), industrial production (Tue), and regional business surveys round out this week’s docket of domestic economic news, with flash PMIs closing out the week on Friday. Earnings season is quiet, with Walmart and Alibaba the only notable June-quarter reports scheduled for "
+    },
+    {
+      "source": "tavily_result",
+      "title": "China's economy maintains steady momentum in first seven months",
+      "url": "https://news.cgtn.com/news/2026-08-17/China-s-economy-maintains-steady-momentum-in-first-seven-months-1PGrkwAVus8/share_amp.html",
+      "content": "Meanwhile, the purchasing managers' index (PMI) for China's manufacturing sector stood at 49.2% last month.\n\nFrom January to June, total profits of China's industrial firms above designated size reached 3.948 trillion yuan (about $581.67 billion), up 18.7% year on year.\n\nIndustrial output is used to"
+    }
+  ]
+}
