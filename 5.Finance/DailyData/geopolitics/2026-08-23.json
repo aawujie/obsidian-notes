@@ -1,0 +1,1117 @@
+{
+  "date": "2026-08-23",
+  "generated_at": "2026-08-23T06:31:00.824899",
+  "total_events": 41,
+  "severity_distribution": {
+    "medium": 41
+  },
+  "events": [
+    {
+      "title": "Enriched uranium stockpile undercuts Trump claim of Iran's 'essential denuclearization' - PBS",
+      "title_cn": "",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNTGJiRVlnOFlkZTJrNS1kVVFYbTlYQ0ZxV21FeHY1QXkwZU1lRm5xRkthRV8xT0Z3cm1pRWRFRVYtVGNaSENWem1scHVsSjNkMzJ1bG82T0NLZnJ2V2U1bnBrRWxJa3VBOVB2c2NmN1BsSXRiWWtTNUcyQ2RVZUxtM3pQcXFlcVdWQjBuM3ZucGkyNDJoUWptdTJOLUt2NFl0Mm84NndMUENmbDVpRTUwVkdwck1DWWZFYkhR0gHAAUFVX3lxTE0yeUZlbGpQNE03X3hjWE5MR1lVQS1sN2gtNGlibDcwdWlrT2djTmdGZV8xM3V6Rzg2NW9BYnNzU2JTdDlYRTlocUNCX1ZhWV83d3ZJRWVwdTl5NHdZbjE3VURZNW1fOUVsVUpkakpnLWt0ajFibFlmVlVEQWgtazJZM0NqeHc1VW8yLXZYYS05YjlMT1VFQlYwVUFCaWoxWFhXU0ZfQUJRNEtwNXE4R3p1ZFdzLTNJenlMakVBcmhWMg?oc=5",
+      "content": "Enriched uranium stockpile undercuts Trump claim of Iran's 'essential denuclearization'  PBS",
+      "content_detail": "Google News",
+      "published_date": "Sat, 22 Aug 2026 19:41:51 GMT",
+      "search_region": "美伊冲突",
+      "classified_regions": [
+        "美伊冲突"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "Enriched uranium stockpile undercuts Trump claim of Iran's 'essential denuclearization' PBS",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Iran condemns US plans to announce new sanctions - Reuters",
+      "title_cn": "",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOdXVJYmgzQ2hHN1JlVkg0MFl5eU1hVWtYWTN2OFNvUFV3b3NoS053LTdCMDVWNTBZMEdhUDV3ZEQ3QXBBYnpNRDZST0l3amt6V0luVGtJek1aZnlPZVpwMndfY0VjemxrTWxsdUlZQkZxMU03SHA4LXJ2OVdSemltdzJfUGJseElLR3BCUjlFT1JIcXdhUW9CZU1xdVctMEFjN1B5ekl0cmplQQ?oc=5",
+      "content": "Iran condemns US plans to announce new sanctions  Reuters",
+      "content_detail": "Google News",
+      "published_date": "Sat, 22 Aug 2026 01:05:00 GMT",
+      "search_region": "美伊冲突",
+      "classified_regions": [
+        "美伊冲突"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "Iran condemns US plans to announce new sanctions Reuters",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Vance says war in \"new phase\" of economic pressure as Iran dismisses Trump threat - CBS News",
+      "title_cn": "",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNZmRJd19TelVBUVBiN0s3SjlmUFdnNTdEMmVsS3NCeUZ1MldCSWFNc19TTzI0amgxdDZJVGFJaFFVVEh0V0lhd0E5LTE0eExOb1ZGbnRra0NGRDhxRmYzOUgyY2VtTk9iMWwwN0lhblVIT09lNlNQcTRadUs5N3RsbFE2bWhqeWhXRERERUZ3?oc=5",
+      "content": "Vance says war in \"new phase\" of economic pressure as Iran dismisses Trump threat  CBS News",
+      "content_detail": "Google News",
+      "published_date": "Thu, 20 Aug 2026 10:44:00 GMT",
+      "search_region": "美伊冲突",
+      "classified_regions": [
+        "美伊冲突"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "Vance says war in \"new phase\" of economic pressure as Iran dismisses Trump threat CBS News",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Trump threatens 'Economic D-Day' for Iran and ‘tremendous’ consequences for its backers - CNBC",
+      "title_cn": "",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQbjdQcUlraHYyYTY1UG5sUDJpV1dwZnpzWWZObU5iZ3g2RW1HSzFwTWNhcE1NaUR3Q3pWT1pYQXZibW1wMS1oQ1dUSVhObUhwcHN4MTVDWTNKOXFneGItamNBeWptNENKNHRiYXFJV0VJY2taaXFyRnJSQy1pRFlDbUhHMFnSAYoBQVVfeXFMUF9NTjA0UzQxLWRzdHFabk5acVdjbklmdzlGSlowZ3h4QnVIdmdGQjFfYUZsbEZSV1Bia1hISjZGVEgyNWlWcVBzMkVOSzYtR05OaXlBM3oxVkRKR0pycFZDeUxXejZnbXQzbF82Rjhud3NHR3VGZUhmQnl3MlpibFNGcFc4LTFHei1B?oc=5",
+      "content": "Trump threatens 'Economic D-Day' for Iran and ‘tremendous’ consequences for its backers  CNBC",
+      "content_detail": "Google News",
+      "published_date": "Wed, 19 Aug 2026 23:11:20 GMT",
+      "search_region": "美伊冲突",
+      "classified_regions": [
+        "美伊冲突"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "Trump threatens 'Economic D-Day' for Iran and ‘tremendous’ consequences for its backers CNBC",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Why Iran has not folded yet - Atlantic Council",
+      "title_cn": "",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBzSjNfamhrQ2J3X3laRkM1UjZtTHFHYUZkV1lnRVNQLWVQdU1OY1UzdXpZTk9ZNTV4OW1veDFyUERVNF9IbHB0WmxTbHRfZVJyWHRzWDgwNjgyQV9VcGVUeHFzU2c1UXhlTnlKWV9mR1RfU1dYSDFiNGhaSQ?oc=5",
+      "content": "Why Iran has not folded yet  Atlantic Council",
+      "content_detail": "Google News",
+      "published_date": "Thu, 20 Aug 2026 16:06:11 GMT",
+      "search_region": "美伊冲突",
+      "classified_regions": [
+        "美伊冲突"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "Why Iran has not folded yet Atlantic Council",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "The 60-Day Deadline for an Iran Peace Deal Is Expiring. Here’s Where Things Stand - WTTW News",
+      "title_cn": "",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOR29HUWxoeFNMZ29tNEk2aXl2YVhrTWhZSHpGdGVBNFFDSGJqdEllX2N3M1hNUTZKMTRoMHJzdklKQTJuMzZFUl9Ca01VdkVWWjdpOUh3c2VmTUNEWTEzYUNfLUF1TVZTNF8xR1FUQlZJV28xTkJGVm9ORGFLazNHQ0w3R2JuenRNTWlaZU9sRk5QMVktWHlaNDdJLTVFdlJi?oc=5",
+      "content": "The 60-Day Deadline for an Iran Peace Deal Is Expiring. Here’s Where Things Stand  WTTW News",
+      "content_detail": "Google News",
+      "published_date": "Mon, 17 Aug 2026 17:22:14 GMT",
+      "search_region": "美伊冲突",
+      "classified_regions": [
+        "美伊冲突"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "The 60-Day Deadline for an Iran Peace Deal Is Expiring.",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Fighting While Talking: The Iran War Enters Its Bargaining Phase - Lawfare",
+      "title_cn": "",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNT3JJQmRWR0xLMENleWozcE9RZFZRRFdRNUxzVklZR241NWlTT3hGOUlib2M4aTNSbDg3Wkw1N0FPQkFCOEp6N2tady11R3hmUVl0M21mRU5rMGYwa2RZUUpBY3c4bE9pR0xFTjdpSzFmQlhFNTZUM0dPcDY5ekttWUFsc0FmOThwN25wRzhadmZZTkJRc1VoM2Z2QjRJSGpaYURB?oc=5",
+      "content": "Fighting While Talking: The Iran War Enters Its Bargaining Phase  Lawfare",
+      "content_detail": "Google News",
+      "published_date": "Tue, 18 Aug 2026 07:00:00 GMT",
+      "search_region": "美伊冲突",
+      "classified_regions": [
+        "美伊冲突"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "Fighting While Talking: The Iran War Enters Its Bargaining Phase Lawfare",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Trump Thought Opening the Strait of Hormuz Was Imminent. Iran Had Other Plans. - WSJ",
+      "title_cn": "",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNdjBPMlROTlJtRUlMdW1nVEZJYVNPWERpM0JfM0U2M3lMU0hMbUctb24xVlozZGdGTXZqdy1LdkVDcm90TU5KejhlZDAxNDJmTEFHa0pWa0tiNDdNVE5PdDJqMkJlcEEyaFVhTmpKWlVKczNsVDBGcW5tWXhRLWdOdXdKeUNQRjZzbXZEQ3BYT0g2ZnhPRE9fVlk2TQ?oc=5",
+      "content": "Trump Thought Opening the Strait of Hormuz Was Imminent. Iran Had Other Plans.  WSJ",
+      "content_detail": "Google News",
+      "published_date": "Mon, 10 Aug 2026 07:00:00 GMT",
+      "search_region": "美伊冲突",
+      "classified_regions": [
+        "美伊冲突"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "Trump Thought Opening the Strait of Hormuz Was Imminent.",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Putin Says Ukraine Opened ‘Pandora’s Box’ with Strikes on Economic Targets",
+      "title_cn": "",
+      "url": "https://english.aawsat.com/world/5309961-putin-says-ukraine-opened-%E2%80%98pandora%E2%80%99s-box%E2%80%99-strikes-economic-targets",
+      "content": "Ukraine has this summer escalated a campaign of drone strikes targeting Russian economic infrastructure, including oil refineries and online retailers' warehouses, seeking to ‌destroy infrastructure it ‌says is central to Russia's ‌war ⁠effort.\n\nRussia has responded ⁠with strikes against Ukrainian e",
+      "content_detail": "[عربي](https://aawsat.com) [English](https://english.aawsat.com) [Türkçe](https://turkish.aawsat.com) [اردو](https://urdu.aawsat.com) [فارسى](https://persian.aawsat.com)\n\n[![Logo](/themes/custom/enaawsatv3/assets/img/aawsat-english-logo.svg)](https://english.aawsat.com/)\n\n[![Logo](/themes/custom/enaawsatv3/assets/img/white-aawsat-english-logo.svg)](https://english.aawsat.com/)\n\n[![Logo](/themes/custom/enaawsatv3/assets/img/aawsat-logo.svg)](https://english.aawsat.com/)\n\n[![Logo](/themes/custom/enaawsatv3/assets/img/aawsat-logo-white.svg)](https://english.aawsat.com/)\n\n[![Logo](/themes/custom/enaawsatv3/assets/img/aawsat-english-logo.svg)](https://english.aawsat.com/)\n\n[![Logo](/themes/custom/enaawsatv3/assets/img/white-aawsat-english-logo.svg)](https://english.aawsat.com/)\n\n[![Logo](/themes/custom/enaawsatv3/assets/img/aawsat-logo-white.svg)](https://english.aawsat.com/)\n\n* [Gulf](https://english.aawsat.com/gulf)\n* [Arab World](https://english.aawsat.com/home/arab-world/section/2591)\n* [World](https://english.aawsat.com/home/world/section/2486)\n* [Opinion](https://english.aawsat.com/opinions)\n* [Interviews](https://english.aawsat.com/home/interviews/section/2541)\n* [Varieties](https://english.aawsat.com/home/varieties/section/2546)\n* [Business](https://english.aawsat.com/home/business/section/2531)\n* [Culture](https://english.aawsat.com/home/bookreviews/section/2551)\n* [Sports](https://english.aawsat.com/home/sport/section/2561)\n* [Entertainment](https://english.aawsat.com/ho",
+      "published_date": "Sat, 22 Aug 2026 16:00:00 GMT",
+      "search_region": "俄乌战争",
+      "classified_regions": [
+        "俄乌战争"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Ukraine Sanctions Five Russian Rusal Aluminum Enterprises",
+      "title_cn": "",
+      "url": "https://www.kyivpost.com/post/82869",
+      "content": "Advertisement\n\nZelensky framed the grain sanctions as part of a broader strategy to limit Russia’s capacity to sustain its war effort, which includes ongoing strikes on military logistics and oil refineries in the Black Sea and Sea of Azov regions.\n\nThe president had previously noted that Kyiv was p",
+      "content_detail": "### \n\n* [North America](https://www.kyivpost.com/category/north-america)\n* [Latin America](https://www.kyivpost.com/category/latin-america)\n* [Europe](https://www.kyivpost.com/category/europe)\n* [Eastern Europe](https://www.kyivpost.com/category/eastern-europe)\n* [Middle East](https://www.kyivpost.com/category/middle-east)\n* [Africa](https://www.kyivpost.com/category/africa)\n* [Asia](https://www.kyivpost.com/category/asia)\n\n### \n\n* [Business](https://www.kyivpost.com/category/business)\n* [Technology](https://www.kyivpost.com/category/technology)\n* [Finance](https://www.kyivpost.com/category/finance)\n* [Energy](https://www.kyivpost.com/category/energy)\n* [Agriculture](https://www.kyivpost.com/category/agriculture)\n\n[###](https://www.kyivpost.com/category/corruption-watch)\n\n###\n\n[###](https://www.kyivpost.com/category/cartoon)\n\n![Search](/icons/header-search.svg) [![Kyiv Post](/icons/header-desktop-logo.svg)](https://www.kyivpost.com) [![Kyiv Post](/icons/kp_logo_white.svg)](https://www.kyivpost.com)\n\nEN\n\n![arrow](/icons/select-arrow.svg)\n\n* [UK](/language/uk)\n\n[![Kyiv Post](/assets/images/Kyivpost_logo_Black.svg)](https://www.kyivpost.com)\n\n[![Kador Group](/assets/images/kador_logo.jpg)](https://kadorrgroup.com/en/)\n\nEN\n\n![arrow](/icons/select-arrow.svg)\n\n* [UK](/language/uk)\n\n[Sanctions](https://www.kyivpost.com/topic/sanctions)   [Russia](https://www.kyivpost.com/topic/russia)   [Ukraine](https://www.kyivpost.com/topic/ukraine)\n\n# Ukraine Sanctions Five Russian Rusal Aluminu",
+      "published_date": "Sat, 22 Aug 2026 08:34:00 GMT",
+      "search_region": "俄乌战争",
+      "classified_regions": [
+        "俄乌战争"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Pandora's Box: Economic Retaliation in the Russia-Ukraine Conflict",
+      "title_cn": "",
+      "url": "https://www.devdiscourse.com/article/politics/3966616-pandoras-box-economic-retaliation-in-the-russia-ukraine-conflict?amp=",
+      "content": "The conflict has intensified as Ukraine escalates its campaign of drone attacks on Russian infrastructure, focusing on oil refineries and online retail warehouses. The moves are aimed at crippling the parts of Russia’s economy that Ukraine claims are fueling the Kremlin’s military ambitions.\n\nPutin ",
+      "content_detail": "# Pandora's Box: Economic Retaliation in the Russia-Ukraine Conflict\n\n## Russian President Vladimir Putin has accused Kyiv of opening 'Pandora's box' with its strikes on Russian economic targets, warning of retaliatory strikes on Ukraine's economic sectors. This escalates a campaign that began with Ukrainian drone strikes targeting Russian infrastructure, further straining the fragile geopolitical landscape in Eastern Europe.\n\n[Devdiscourse News Desk](/devdiscourse-stories)\n\nIn a stern warning, Russian President Vladimir Putin accused Ukraine of provoking a new wave of economic hostilities. He stated that Kyiv's recent strikes on Russian economic targets have opened 'Pandora's box', prompting promises of retaliation against what he termed as Ukraine's most sensitive economic sectors.\n\nThe conflict has intensified as Ukraine escalates its campaign of drone attacks on Russian infrastructure, focusing on oil refineries and online retail warehouses. The moves are aimed at crippling the parts of Russia’s economy that Ukraine claims are fueling the Kremlin’s military ambitions.\n\nPutin assured that despite challenges in grain exports, Russia would prevent global food shortages, sidestepping issues caused by the termination of a Turkish-brokered Black Sea grain deal. Meanwhile, he reiterated Russia's openness to peace talks, emphasizing discussions based on 'realities on the ground'.\n\n(With inputs from agencies.)\n\n### READ MORE ON\n\n### READ MORE\n\n## {{title}}\n\n### {{subtitle}}\n\n{{#so",
+      "published_date": "Sat, 22 Aug 2026 15:00:00 GMT",
+      "search_region": "俄乌战争",
+      "classified_regions": [
+        "俄乌战争"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "Pandora's Box: Economic Retaliation in the Russia-Ukraine Conflict Russian President Vladimir Putin has accused Kyiv of opening 'Pandora's box' with its strikes on Russian economic targets, warning of retaliatory strikes",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Putin warns Russia to target Ukraine's ports, exports amid rising tensions",
+      "title_cn": "",
+      "url": "https://cryptobriefing.com/putin-warns-russia-to-target-ukraines-ports-exports-amid-rising-tensions",
+      "content": "Share\n\n Add us on Google\n\nby  Estefano Gomez\n\nRussian President Vladimir Putin has issued a stark warning, stating Russia will target Ukraine’s agricultural sector, ports, and exports in response to recent Ukrainian actions. This declaration comes amid ongoing military tensions between Russia and Uk",
+      "content_detail": "[![Crypto Briefing](https://cryptobriefing.com/wp-content/themes/cryptobriefing-lovable/crypto-briefing-logo-BZ0L6Kp3.png)](https://cryptobriefing.com)\n\n[![Crypto Briefing](https://cryptobriefing.com/wp-content/themes/cryptobriefing-lovable/crypto-briefing-logo-BZ0L6Kp3.png)](https://cryptobriefing.com)\n\n#### Sections\n\n[Bitcoin](https://cryptobriefing.com/category/bitcoin/) [DeFi](https://cryptobriefing.com/category/defi/) [Ethereum](https://cryptobriefing.com/category/ethereum/) [NFTs](https://cryptobriefing.com/category/nfts/) [AI Agents](https://cryptobriefing.com/category/ai-agents/) [Regulation](https://cryptobriefing.com/category/regulation/) [Web3](https://cryptobriefing.com/category/web3/) [Business](https://cryptobriefing.com/category/business/) [Ecosystem](https://cryptobriefing.com/category/ecosystem/)\n\n#### Sections\n\n[Soccer](https://cryptobriefing.com/category/soccer/) [Esports](https://cryptobriefing.com/category/esports/)\n\n[![Crypto Briefing](https://cryptobriefing.com/wp-content/themes/cryptobriefing-lovable/crypto-briefing-logo-BZ0L6Kp3.png)](https://cryptobriefing.com)\n\n![Putin warns Russia to target Ukraine’s ports, exports amid rising tensions](https://static.cryptobriefing.com/wp-content/uploads/2026/08/22132328/russian-president-vladimir-putin-attends-the-navy-day-parade-10-1-800x420.jpeg)\n\nhttps://www.cnn.com/2023/06/24/world/gallery/vladimir-putin/index.html\n\n# Putin warns Russia to target Ukraine’s ports, exports amid rising tensions\n\nRussia cities en",
+      "published_date": "Sat, 22 Aug 2026 17:23:29 GMT",
+      "search_region": "俄乌战争",
+      "classified_regions": [
+        "俄乌战争"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Ukraine: What is Driving the Push for Elections?",
+      "title_cn": "",
+      "url": "https://www.kyivpost.com/post/82904",
+      "content": "By Julia Struck-Feshchenko\n\nAug. 20, 2026\n\n### Ukraine Claims Heavy Russian Losses, Successful Counteroffensive in South\n\nBy Stefan Korshak\n\nAug. 15, 2026\n\nMore on Ukraine\n\nWho Is Lev Shlosberg, the Russian Politician Jailed for Opposing Russia’s War?  Ukraine\n\n## Who Is Lev Shlosberg, the Russian P",
+      "content_detail": "### \n\n* [North America](https://www.kyivpost.com/category/north-america)\n* [Latin America](https://www.kyivpost.com/category/latin-america)\n* [Europe](https://www.kyivpost.com/category/europe)\n* [Eastern Europe](https://www.kyivpost.com/category/eastern-europe)\n* [Middle East](https://www.kyivpost.com/category/middle-east)\n* [Africa](https://www.kyivpost.com/category/africa)\n* [Asia](https://www.kyivpost.com/category/asia)\n\n### \n\n* [Business](https://www.kyivpost.com/category/business)\n* [Technology](https://www.kyivpost.com/category/technology)\n* [Finance](https://www.kyivpost.com/category/finance)\n* [Energy](https://www.kyivpost.com/category/energy)\n* [Agriculture](https://www.kyivpost.com/category/agriculture)\n\n[###](https://www.kyivpost.com/category/corruption-watch)\n\n###\n\n![Search](/icons/header-search.svg) [![Kyiv Post](/icons/header-desktop-logo.svg)](https://www.kyivpost.com) [![Kyiv Post](/icons/kp_logo_white.svg)](https://www.kyivpost.com)\n\nEN\n\n![arrow](/icons/select-arrow.svg)\n\n* [UK](/language/uk)\n\n[![Kyiv Post](/assets/images/Kyivpost_logo_Black.svg)](https://www.kyivpost.com)\n\n[![Kador Group](/assets/images/kador_logo.jpg)](https://kadorrgroup.com/en/)\n\nEN\n\n![arrow](/icons/select-arrow.svg)\n\n* [UK](/language/uk)\n\n[Ukraine](https://www.kyivpost.com/topic/ukraine)   [Elections](https://www.kyivpost.com/topic/elections)   [Fedorov](https://www.kyivpost.com/topic/fedorov)\n\n# Ukraine: What is Driving the Push for Elections?\n\n**In brief:** Reactions in the European pr",
+      "published_date": "Sat, 22 Aug 2026 17:07:00 GMT",
+      "search_region": "俄乌战争",
+      "classified_regions": [
+        "俄乌战争"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Who Is Lev Shlosber, Sentenced to the Gulag by Russian Court for Opposing Putin’s War?",
+      "title_cn": "",
+      "url": "https://www.kyivpost.com/post/82849",
+      "content": "Lesia Dubenko \n\nLesia Dubenko\n\nLesia Dubenko is a Ukrainian political scientist and analyst. A graduate of Lund University (MSc in European Affairs), she covers issues relating to international affairs, migration, and disinformation.\n\nPOPULAR\n\n### Ukraine Planned 1,000-Drone Swarm to Paralyze Moscow",
+      "content_detail": "### \n\n* [North America](https://www.kyivpost.com/category/north-america)\n* [Latin America](https://www.kyivpost.com/category/latin-america)\n* [Europe](https://www.kyivpost.com/category/europe)\n* [Eastern Europe](https://www.kyivpost.com/category/eastern-europe)\n* [Middle East](https://www.kyivpost.com/category/middle-east)\n* [Africa](https://www.kyivpost.com/category/africa)\n* [Asia](https://www.kyivpost.com/category/asia)\n\n### \n\n* [Business](https://www.kyivpost.com/category/business)\n* [Technology](https://www.kyivpost.com/category/technology)\n* [Finance](https://www.kyivpost.com/category/finance)\n* [Energy](https://www.kyivpost.com/category/energy)\n* [Agriculture](https://www.kyivpost.com/category/agriculture)\n\n[###](https://www.kyivpost.com/category/corruption-watch)\n\n###\n\n![Search](/icons/header-search.svg) [![Kyiv Post](/icons/header-desktop-logo.svg)](https://www.kyivpost.com) [![Kyiv Post](/icons/kp_logo_white.svg)](https://www.kyivpost.com)\n\n* [UK](/uk/post/82845)\n\n[![Kyiv Post](/assets/images/Kyivpost_logo_Black.svg)](https://www.kyivpost.com)\n\n[![Kador Group](/assets/images/kador_logo.jpg)](https://kadorrgroup.com/en/)\n\nEN\n\n![arrow](/icons/select-arrow.svg)\n\n* [UK](/uk/post/82845)\n\n[Russia](https://www.kyivpost.com/topic/russia)   [Ukraine](https://www.kyivpost.com/topic/ukraine)   [Putin](https://www.kyivpost.com/topic/putin)\n\n# Who Is Lev Shlosberg, the Russian Politician Jailed for Opposing Russia’s War?\n\n**In brief:** Russian opposition politician Lev Shlosberg",
+      "published_date": "Sat, 22 Aug 2026 11:43:00 GMT",
+      "search_region": "俄乌战争",
+      "classified_regions": [
+        "俄乌战争"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Russian Emigration Interest Doubles Amid Fears of Mobilization This Fall",
+      "title_cn": "",
+      "url": "https://www.kyivpost.com/post/82875",
+      "content": "## Russia Seeks New Charges Against Teenager Accused of Blowing Up FSB Building in Minecraft\n\nSuspected Russian Handguns Found Near Berlin: German Media\n\n## Suspected Russian Handguns Found Near Berlin: German Media\n\nDrones Strike Novokuibyshevsk Refinery and Ozon Hub in Samara Region\n\n## Drones Str",
+      "content_detail": "### \n\n* [North America](https://www.kyivpost.com/category/north-america)\n* [Latin America](https://www.kyivpost.com/category/latin-america)\n* [Europe](https://www.kyivpost.com/category/europe)\n* [Eastern Europe](https://www.kyivpost.com/category/eastern-europe)\n* [Middle East](https://www.kyivpost.com/category/middle-east)\n* [Africa](https://www.kyivpost.com/category/africa)\n* [Asia](https://www.kyivpost.com/category/asia)\n\n### \n\n* [Business](https://www.kyivpost.com/category/business)\n* [Technology](https://www.kyivpost.com/category/technology)\n* [Finance](https://www.kyivpost.com/category/finance)\n* [Energy](https://www.kyivpost.com/category/energy)\n* [Agriculture](https://www.kyivpost.com/category/agriculture)\n\n[###](https://www.kyivpost.com/category/corruption-watch)\n\n###\n\n![Search](/icons/header-search.svg) [![Kyiv Post](/icons/header-desktop-logo.svg)](https://www.kyivpost.com) [![Kyiv Post](/icons/kp_logo_white.svg)](https://www.kyivpost.com)\n\nEN\n\n![arrow](/icons/select-arrow.svg)\n\n* [UK](/language/uk)\n\n[![Kyiv Post](/assets/images/Kyivpost_logo_Black.svg)](https://www.kyivpost.com)\n\n[![Kador Group](/assets/images/kador_logo.jpg)](https://kadorrgroup.com/en/)\n\nEN\n\n![arrow](/icons/select-arrow.svg)\n\n* [UK](/language/uk)\n\n[Russia](https://www.kyivpost.com/topic/russia)   [mobilization](https://www.kyivpost.com/topic/mobilization)   [Serbia](https://www.kyivpost.com/topic/serbia)\n\n# Russian Emigration Interest Doubles Amid Fears of Mobilization This Fall\n\n**In brief:** Ru",
+      "published_date": "Sat, 22 Aug 2026 06:55:00 GMT",
+      "search_region": "俄乌战争",
+      "classified_regions": [
+        "俄乌战争"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Kyiv to Host 10 Foreign Leaders for Ukraine's 35th Independence Day",
+      "title_cn": "",
+      "url": "https://www.kyivpost.com/post/82860",
+      "content": "By Julia Struck-Feshchenko\n\n1d ago\n\n### OPINION: Why Tehran Fears President Zelensky\n\nBy Saeed Ghasseminejad\n\nAug. 15, 2026\n\n### Ukraine Claims Heavy Russian Losses, Successful Counteroffensive in South\n\nBy Stefan Korshak\n\nAug. 15, 2026\n\n### Emergency Declared in Novorossiysk After Ukrainian Strike ",
+      "content_detail": "### \n\n* [North America](https://www.kyivpost.com/category/north-america)\n* [Latin America](https://www.kyivpost.com/category/latin-america)\n* [Europe](https://www.kyivpost.com/category/europe)\n* [Eastern Europe](https://www.kyivpost.com/category/eastern-europe)\n* [Middle East](https://www.kyivpost.com/category/middle-east)\n* [Africa](https://www.kyivpost.com/category/africa)\n* [Asia](https://www.kyivpost.com/category/asia)\n\n### \n\n* [Business](https://www.kyivpost.com/category/business)\n* [Technology](https://www.kyivpost.com/category/technology)\n* [Finance](https://www.kyivpost.com/category/finance)\n* [Energy](https://www.kyivpost.com/category/energy)\n* [Agriculture](https://www.kyivpost.com/category/agriculture)\n\n[###](https://www.kyivpost.com/category/corruption-watch)\n\n###\n\n[###](https://www.kyivpost.com/category/cartoon)\n\n![Search](/icons/header-search.svg) [![Kyiv Post](/icons/header-desktop-logo.svg)](https://www.kyivpost.com) [![Kyiv Post](/icons/kp_logo_white.svg)](https://www.kyivpost.com)\n\nEN\n\n![arrow](/icons/select-arrow.svg)\n\n* [UK](/language/uk)\n\n[![Kyiv Post](/assets/images/Kyivpost_logo_Black.svg)](https://www.kyivpost.com)\n\n[![Kador Group](/assets/images/kador_logo.jpg)](https://kadorrgroup.com/en/)\n\nEN\n\n![arrow](/icons/select-arrow.svg)\n\n* [UK](/language/uk)\n\n[Ukraine](https://www.kyivpost.com/topic/ukraine)\n\n# Kyiv to Host 10 Foreign Leaders for Ukraine’s 35th Independence Day\n\n**In brief:** Around 10 foreign leaders are expected in Kyiv for Ukraine’s 35th I",
+      "published_date": "Sat, 22 Aug 2026 00:49:26 GMT",
+      "search_region": "俄乌战争",
+      "classified_regions": [
+        "俄乌战争"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Trump's options for greater economic pressure on Iran: Sanctions on Chinese banks and refineries, \"whack a mole\"...",
+      "title_cn": "",
+      "url": "https://en.vijesti.me/world-a/globus/823228/Trump%27s-options-for-greater-economic-pressure-on-Iran-sanctions-on-Chinese-banks-and-refineries-whack-a-mole",
+      "content": "Trump administration officials have sought to ease tensions between Washington and Beijing ahead of an expected meeting between Trump and Chinese President Xi Jinping later this year. They fear that China could restrict exports of critical minerals, key to producing advanced technologies, at a time ",
+      "content_detail": "* [Balkans](/world-a/balkan)\n* [Europe](/world-a/evropa)\n* [Europe for us](/world-a/Europe-for-us)\n\n* [Home](/)\n* [Latest news](/latest-news)\n* [Search](/search-a)\n\n* [News](/news-b) \n  + [Politics](/news-b/politika)\n  + [Society](/news-b/society)\n  + [Economy](/news-b/economy-d)\n  + [Black Chronicle](/news-b/black-chronicle)\n  + [Culture](/news-b/culture)\n  + [Podcast](/Espaitec%27s)\n  + [Cars](/news-b/car-f)\n  + [Business Academy](/business-academy)\n  + [M-tech](/news-b/mtech)\n  + [Techno](/news-b/tehno)\n  + [Science](/news-b/science)\n  + [ombudsman](/ombudsman)\n  + [Ombudsman TV](/ombudsman-tv)\n  + [Our management](/our-management)\n\n* [Forbes](https://forbes.vijesti.me/)\n\n* [Sports](/sports-e) \n  + [![Volcano Bet](https://www.vijesti.me/resources/images/vendor/volcano-bet-logo.png?v=1) World Cup 2026](/World-Cup-2026)\n  + [Football](/sports-e/football-c)\n  + [Basketball](/sports-e/basketball)\n  + [Tennis](/sports-e/tennis)\n  + [Handball](/sports-e/handball)\n  + [Water polo](/sports-e/water-polo)\n  + [Other sports](/sports-e/other-sports)\n  + [Olympics](/sports-e/Olympic-games)\n  + [Volleyball](/sports-e/volleyball)\n  + [Borilački sportovi](/sports-e/combat-sports)\n  + [Sports and youth](/sports-e/sports-and-youth)\n  + [Sport marketing](/sports-e/sport-marketing)\n\n* [T Magazine](/t-magazine)\n\n* [World](/world-a) \n  + [Balkans](/world-a/balkan)\n  + [Europe](/world-a/evropa)\n  + [Europe for us](/world-a/Europe-for-us)\n\n* [entertainment](/fun) \n  + [MUSIC](/fun/muzika)\n  + [In",
+      "published_date": "Sat, 22 Aug 2026 21:44:20 GMT",
+      "search_region": "中美博弈",
+      "classified_regions": [
+        "中美博弈"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Iran-US War: Tehran Calls For End To Month-Long Conflict |Trump Says Iran Not Ready For “Right Deal”",
+      "title_cn": "",
+      "url": "https://www.wionews.com/videos/iran-us-war-tehran-calls-for-end-to-month-long-conflict-trump-says-iran-not-ready-for-right-deal-1787402737965/amp",
+      "content": "Slide 9)\n\n### Art meets nature in Australia\n\nSlide 10)\n\n### VIDEO: Mysterious well in Gujarat's Morbi found generating waves, ripples - Here's what geologists suggest\n\nSlide 11)\n\n### European-Led NATO in Planning if Trump Pulls Out\n\nSlide 12)\n\n### Ebola alert in Africa: cases cross 4,000 in Congo | ",
+      "content_detail": "![WionNews Video](https://cdn1.wionews.com/prod/wion/images/2026/20260822/2208_SUMIT_WAR_4PM-00000002.jpg?im=FitAndFill=(700,400))\n\n# Iran-US War: Tehran Calls For End To Month-Long Conflict |Trump Says Iran Not Ready For “Right Deal”\n\n## Iran-US tensions are intensifying as Iranian President Masoud Pezeshkian calls for an end to the month-long war while insisting that Tehran is negotiating from a position of strength. US President Donald Trump, however, says Iran is interested in a deal but is not yet ready to make what he considers the “right deal.” Trump has also claimed that the United States has total control of the Strait of Hormuz, one of the world’s most strategically important waterways. The comments come as Washington increases economic and maritime pressure on Tehran. Iran has rejected the latest US pressure campaign and warned that further threats could trigger a strong military response. Iranian officials say Tehran remains prepared to defend its strategic waterways and interests across the region. Meanwhile, the United States is expected to announce new sanctions targeting Iran, while discussions involving Iran and Oman continue over possible conditions for resuming talks, including security and freedom of navigation through the Strait of Hormuz.\n\n#### Trending Topics\n\n### Trending Videos\n\n![Slide 0](https://cdn1.wionews.com/prod/wion/images/2026/20260807/0708_Alpha_2PM-00000002.jpg?im=FitAndFill=(700,400))\n\n### [Gujarat's mystery well baffles all: No earthquake",
+      "published_date": "Sat, 22 Aug 2026 13:00:00 GMT",
+      "search_region": "中美博弈",
+      "classified_regions": [
+        "中美博弈"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "NATO Weighs Hormuz Security Role Without NATO Mission | Trump Pressures Allies | Iran Tensions",
+      "title_cn": "",
+      "url": "https://www.wionews.com/videos/nato-weighs-hormuz-security-role-without-nato-mission-trump-pressures-allies-iran-tensions-1787413539581/amp",
+      "content": "Slide 9)\n\n### Art meets nature in Australia\n\nSlide 10)\n\n### VIDEO: Mysterious well in Gujarat's Morbi found generating waves, ripples - Here's what geologists suggest\n\nSlide 11)\n\n### European-Led NATO in Planning if Trump Pulls Out\n\nSlide 12)\n\n### Ebola alert in Africa: cases cross 4,000 in Congo | ",
+      "content_detail": "![WionNews Video](https://cdn1.wionews.com/prod/wion/images/2026/20260822/2208_SUMIT_NATO_7PM-00000002.jpg?im=FitAndFill=(700,400))\n\n# NATO Weighs Hormuz Security Role Without NATO Mission | Trump Pressures Allies | Iran Tensions\n\n## NATO allies are discussing options to support freedom of navigation through the Strait of Hormuz, but the alliance is carefully stressing that this is not a formal NATO mission. The discussions come as US President Donald Trump increases pressure on Iran and claims Washington has control over the Strait of Hormuz and the surrounding region. NATO’s top military commander convened a video conference with interested allies to assess what individual countries could contribute to efforts aimed at protecting shipping through the strategic waterway. The alliance says it is facilitating coordination rather than taking military ownership of the operation.\n\n#### Trending Topics\n\n### Trending Videos\n\n![Slide 0](https://cdn1.wionews.com/prod/wion/images/2026/20260807/0708_Alpha_2PM-00000002.jpg?im=FitAndFill=(700,400))\n\n### [Gujarat's mystery well baffles all: No earthquake link to ripples](/videos/gujarat-s-mystery-well-baffles-all-no-earthquake-link-to-ripples-1786095034445 \"Gujarat's mystery well baffles all: No earthquake link to ripples\")\n\n![Slide 1](https://cdn1.wionews.com/prod/wion/images/2026/20260807/0708_Ent_1PM-00000002.jpg?im=FitAndFill=(700,400))\n\n### ['Devil Wears Prada 2' wardrobe joins Hollywood history](/videos/devil-wears-prada-2-wardrobe-",
+      "published_date": "Sat, 22 Aug 2026 15:00:00 GMT",
+      "search_region": "中美博弈",
+      "classified_regions": [
+        "中美博弈"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Trump wants more economic pressure on Iran. What are his options?",
+      "title_cn": "",
+      "url": "https://www.detroitnews.com/story/news/world/2026/08/22/trump-wants-more-economic-pressure-on-iran-what-are-his-options/91425879007",
+      "content": "Past U.S. sanctions have deterred larger independent refiners from buying Iranian oil. But the independent refineries are somewhat immune since they have little exposure to the U.S. financial system, sanctions experts say.\n\n## Sanctions on Chinese banks\n\nOFAC has imposed secondary sanctions on small",
+      "content_detail": "# Trump wants more economic pressure on Iran. What are his options?\n\nWASHINGTON — U.S. President Donald Trump has vowed to hit Iran hard economically, after Treasury Secretary Scott Bessent said that Washington would impose measures on Tehran that have \"never been seen\" as soon as next week.\n\nBessent is due to hold a press conference at ​2 p.m. EDT (1800 GMT) on Monday.\n\nThe United States, ‌United Nations and European Union have applied sanctions, implemented trade embargoes and frozen assets since the late 1970s over Iran's nuclear program, human rights violations and support for militant groups.\n\nSince the Iran war began in February, Washington has levied additional maritime, energy and financial sanctions and started a naval blockade.\n\nData from the U.S. Treasury Department's Office of Foreign Assets Control (OFAC) shows the agency has imposed sanctions on more than 1,000 people, vessels and aircraft since Trump began his second term.\n\nRecent measures have targeted Iran's shadow oil fleet; shipping insurers; entities and people enabling Iran's acquisition of weapons; and digital exchanges, freezing an estimated $500 billion in Iran-linked cryptocurrency.\n\n![U.S. Navy sailors work on the flight deck of the aircraft carrier USS George Washington as it transits the Arabian Sea to support U.S. military operations in the war with Iran August 20, 2026.]()\n\nIran has denounced U.S. plans to announce new sanctions that ​could put further strain on the Islamic Republic's economy.\n\nO",
+      "published_date": null,
+      "search_region": "中美博弈",
+      "classified_regions": [
+        "中美博弈"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "Trump wants more economic pressure on Iran.",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Oil importer China won't aid Trump economic warfare against Iran - Asia Times",
+      "title_cn": "",
+      "url": "https://asiatimes.com/2026/08/oil-importer-china-wont-aid-trump-economic-warfare-against-iran",
+      "content": "Hengli Petrochemical Co operates a 20-million-tons-per-year refining and petrochemical complex on Dalian’s Changxing Island. On Friday, the US Treasury Department added the refinery to its sanctions list. This marks Washington’s most significant action yet against China’s refining industry and highl",
+      "content_detail": "",
+      "published_date": "Sat, 22 Aug 2026 04:39:42 GMT",
+      "search_region": "中美博弈",
+      "classified_regions": [
+        "中美博弈"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Canada-US talks fail to avert new US tariffs",
+      "title_cn": "",
+      "url": "https://www.wionews.com/videos/canada-us-talks-fail-to-avert-new-us-tariffs-1787382967353/amp",
+      "content": "New 50% U.S. tariffs on some Canadian goods have taken effect after last-minute talks between Washington and Ottawa failed to reach a deal.",
+      "content_detail": "",
+      "published_date": "Sat, 22 Aug 2026 07:00:00 GMT",
+      "search_region": "中美博弈",
+      "classified_regions": [
+        "中美博弈"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "US Navy P-8A Flies Through Taiwan Strait Ahead Of Trump-Xi Meeting | China Reacts",
+      "title_cn": "",
+      "url": "https://www.wionews.com/videos/us-navy-p-8a-flies-through-taiwan-strait-ahead-of-trump-xi-meeting-china-reacts-1787399150676/amp",
+      "content": "A US Navy P-8A Poseidon aircraft conducted a transit through the Taiwan Strait on Friday, drawing close attention from China as Washington and Beijing",
+      "content_detail": "",
+      "published_date": "Sat, 22 Aug 2026 13:00:00 GMT",
+      "search_region": "中美博弈",
+      "classified_regions": [
+        "中美博弈"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Karoline Leavitt Set to Leave White House Press Secretary Post | Trump Reveals Possible Replacements",
+      "title_cn": "",
+      "url": "https://www.wionews.com/videos/karoline-leavitt-set-to-leave-white-house-press-secretary-post-trump-reveals-possible-replacements-1787407222747/amp",
+      "content": "Karoline Leavitt is set to leave her position as White House press secretary at the end of August, and President Donald Trump has begun teasing possible",
+      "content_detail": "",
+      "published_date": "Sat, 22 Aug 2026 14:00:00 GMT",
+      "search_region": "中美博弈",
+      "classified_regions": [
+        "中美博弈"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Iran war live: Trump says Iran not ready to make the ‘right deal’",
+      "title_cn": "",
+      "url": "https://www.arabianbusiness.com/abnews/iran-us-israel-war-live-latest-updates",
+      "content": "Iran says new US sanctions are declaration of warIranian Foreign Ministry spokesperson Esmaeil Baghaei has described new US sanctions on Iran as a “declaration of war” against all governments, according to remarks carried by Fars news agency.\n Trump warns of economic consequences for any country tha",
+      "content_detail": "",
+      "published_date": "Sat, 22 Aug 2026 06:02:50 GMT",
+      "search_region": "中东/红海",
+      "classified_regions": [
+        "中东/红海"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Is THIS Putin’s next land grab? Tyrant fires missiles off Pacific islands in 'alarming' escalation over naval flashpoint",
+      "title_cn": "",
+      "url": "https://www.thesun.co.uk/news/40127828/putin-kuril-islands-japan-missiles-flashpoint",
+      "content": "This month, North Korea launched a string of missiles towards the Sea of Japan, while the region has also seen a rise in joint air and maritime patrols by Moscow and Beijing.\n\nIt has fuelled concerns about an emerging anti-Western alignment involving the power trio.\n\nExperts say this is only the sta",
+      "content_detail": "",
+      "published_date": "Sat, 22 Aug 2026 08:56:24 GMT",
+      "search_region": "台海/南海/朝鲜",
+      "classified_regions": [
+        "台海/南海/朝鲜"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Taiwan detects surge in Chinese military activity around its territory",
+      "title_cn": "",
+      "url": "https://www.aninews.in/news/world/asia/taiwan-detects-surge-in-chinese-military-activity-around-its-territory20260822090729",
+      "content": "> 3 sorties of PLA aircraft, 8 PLAN vessels and 7 official ships operating around Taiwan detected up until 6 a.m. (UTC+8) today. 3 out of 3 sorties crossed the median line and entered Taiwan’s northern and southwestern part ADIZ. #ROCArmedForces have monitored the situation and… pic.twitter.com/jEwg",
+      "content_detail": "",
+      "published_date": "Sat, 22 Aug 2026 03:37:29 GMT",
+      "search_region": "台海/南海/朝鲜",
+      "classified_regions": [
+        "台海/南海/朝鲜"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "World News | Taiwan Detects Surge in Chinese Military Activity Around Its Territory | LatestLY",
+      "title_cn": "",
+      "url": "https://www.latestly.com/agency-news/world-news-taiwan-detects-surge-in-chinese-military-activity-around-its-territory-7570825.html/amp",
+      "content": "English\n हिन्दी\n मराठी‎\n বাংলা\n తెలుగు\n\n Home\n Agency News\n\n# World News | Taiwan Detects Surge in Chinese Military Activity Around Its Territory\n\n## Get latest articles and stories on World at LatestLY. Taiwan on Saturday detected three sorties by PLA aircraft, 8 PLAN vessels and 7 official ships o",
+      "content_detail": "",
+      "published_date": "Sat, 22 Aug 2026 03:00:00 GMT",
+      "search_region": "台海/南海/朝鲜",
+      "classified_regions": [
+        "台海/南海/朝鲜"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "China and Indonesia Hold First-Ever 2+2 Talks, Plan Naval Drill East of Taiwan",
+      "title_cn": "",
+      "url": "https://easternherald.com/2026/08/22/china-indonesia-first-2plus2-ministerial-naval-drill-taiwan",
+      "content": "Taiwan has no diplomatic relations with Indonesia to send a formal protest through. Its foreign ministry used the word “dangerous” without specifying which dimension it was addressing: the drill itself, the precedent for PLA naval freedom of movement in Pacific waters adjacent to Taiwan, or the broa",
+      "content_detail": "",
+      "published_date": "Sat, 22 Aug 2026 07:47:50 GMT",
+      "search_region": "台海/南海/朝鲜",
+      "classified_regions": [
+        "台海/南海/朝鲜"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Taiwan's First F-16V Block 70 Fighters Arrive as China ...",
+      "title_cn": "",
+      "url": "https://defencesecurityasia.com/en/taiwan-first-f-16v-block-70-fighters-china-missile-threat",
+      "content": "Beijing characterises American arms sales as interference, violations of its One-China principle and breaches of bilateral communiqués, while Washington treats the programme as compatible with the Taiwan Relations Act and Six Assurances, leaving each delivery embedded within competing legal and poli",
+      "content_detail": "",
+      "published_date": "Sat, 22 Aug 2026 09:21:43 GMT",
+      "search_region": "台海/南海/朝鲜",
+      "classified_regions": [
+        "台海/南海/朝鲜"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "US Navy aircraft transits Taiwan Strait before planned Xi-Trump meeting",
+      "title_cn": "",
+      "url": "https://asia.nikkei.com/politics/international-relations/taiwan-tensions/us-navy-aircraft-transits-taiwan-strait-before-planned-xi-trump-meeting",
+      "content": "Taiwan proposes boosting 2027 defense spending 18% to record high\n\n- Taiwan tensions#### Taiwan drills send 'serious' message with more realism, internet throttling\n\n  Taiwan drills send 'serious' message with more realism, internet throttling\n\n- Taiwan tensions#### Taiwan condemns 'dangerous' plann",
+      "content_detail": "",
+      "published_date": "Sat, 22 Aug 2026 01:27:27 GMT",
+      "search_region": "台海/南海/朝鲜",
+      "classified_regions": [
+        "台海/南海/朝鲜"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "US Navy P-8A Aircraft Flies Through Taiwan Strait, China Monitors Transit | Outlook India",
+      "title_cn": "",
+      "url": "https://www.outlookindia.com/international/us-navy-p-8a-aircraft-flies-through-taiwan-strait-china-monitors-transit",
+      "content": "Beijing routinely accuses the United States of hyping up these military transits and undermining regional peace and stability. China claims sovereignty over democratically governed Taiwan. Beijing also asserts jurisdiction over the strait separating the island from the mainland.\n\nRelated Content\n\nRe",
+      "content_detail": "",
+      "published_date": "Sat, 22 Aug 2026 07:36:23 GMT",
+      "search_region": "台海/南海/朝鲜",
+      "classified_regions": [
+        "台海/南海/朝鲜"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "US, S. Korea end drills early, 1 day after barrage by North",
+      "title_cn": "",
+      "url": "https://www.arkansasonline.com/news/2026/aug/22/us-s-korea-end-drills-early-1-day-after-barrage",
+      "content": "South Korea and the U.S. had also planned to hold 14 joint field training exercises during the Ulchi Freedom Shield period. But they've agreed to halve them as well, according to South Korea's military.\n\nKim Yo Jong, the influential sister of North Korean leader Kim Jong Un, brushed aside Trump's ov",
+      "content_detail": "",
+      "published_date": "Sat, 22 Aug 2026 08:07:00 GMT",
+      "search_region": "台海/南海/朝鲜",
+      "classified_regions": [
+        "台海/南海/朝鲜"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Treasury Department eases sanctions on telecommunications operations in Venezuela",
+      "title_cn": "",
+      "url": "https://voz.us/en/politics/260822/38500/the-treasury-department-eases-sanctions-on-telecommunications-operations-in-venezuela.html",
+      "content": "## Supreme Court lets Trump continue building ballroom while case proceeds\n\nLluvias en Los Ángeles \n\n## Severe storms and flooding threaten the eastern part of the country as extreme heat persists through the weekend\n\nDonald Trump y Mark Carney en la cumbre del G7/ EVELYN HOCKSTEIN \n\n## US, Canada f",
+      "content_detail": "",
+      "published_date": "Sat, 22 Aug 2026 01:12:03 GMT",
+      "search_region": "全球制裁",
+      "classified_regions": [
+        "全球制裁"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "US Sanctions Threat: Behind Iran's Fresh Rallying Cry Against 'Same Bull' | IBTimes",
+      "title_cn": "",
+      "url": "https://www.ibtimes.com/us-sanctions-threat-behind-irans-fresh-rallying-cry-against-same-bull-3806678",
+      "content": "SK Hynix\nTrump\ngta 6\nSemiconductor \nTaylor Swift\nBitcoin \nBitcoin\nSpaceX \nrefinery\nCanon Powershot G7 cover image\nSpaceX\nBitcoin\nIllustration shows Moderna logo\nnuclear power plant\noil\nTrump Aide Natalie Harp \nByron Donalds\nGold\nPutin\nIllustration shows Moderna logo\nOpenAI Sam Altman\nIran\ndata centr",
+      "content_detail": "",
+      "published_date": "Sat, 22 Aug 2026 18:14:48 GMT",
+      "search_region": "全球制裁",
+      "classified_regions": [
+        "全球制裁"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Carney: Canada will enact retaliatory US tariffs starting September 8 | International Trade News | Al Jazeera",
+      "title_cn": "",
+      "url": "https://www.aljazeera.com/amp/news/2026/8/22/carney-canada-will-enact-retaliatory-us-tariffs-starting-september-8",
+      "content": "## More from News\n\n### Israeli army and settlers injure several Palestinians across West Bank\n\n![An Israeli police vehicle stands near the location where armed Israeli settlers set fire to stone quarry machinery near Hebron, the occupied West Bank on August 21, 2026 [Mussa Qawasma/Reuters]](/wp-cont",
+      "content_detail": "",
+      "published_date": "Sat, 22 Aug 2026 19:00:25 GMT",
+      "search_region": "全球制裁",
+      "classified_regions": [
+        "全球制裁"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "U.S.-Canada trade talks collapse, ushering in wave of new tariffs",
+      "title_cn": "",
+      "url": "https://www.cnbc.com/2026/08/22/us-canada-trade-talks-collapse-ushering-in-wave-of-new-tariffs.html",
+      "content": "US President Donald Trump speaks with Canada's Prime Minister Mark Carney during a work lunch as part of the G7 summit, in Evian, eastern France, on June 16, 2026. A G7 summit is set to take place June 15 to 17 in the French town of Evian-les-Bains near Switzerland and it will be attended by country",
+      "content_detail": "",
+      "published_date": "Sat, 22 Aug 2026 13:57:48 GMT",
+      "search_region": "全球制裁",
+      "classified_regions": [
+        "全球制裁"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "US, Iran keep up hostile rhetoric ahead of new sanctions",
+      "title_cn": "",
+      "url": "https://www.thestandard.com.hk/world/article/340654/US-Iran-keep-up-hostile-rhetoric-ahead-of-new-sanctions",
+      "content": "logo\n\nCity VoicesHong Kong\n\nlogo\n\nCity Voices\n\nTrending\n\nHong Kong\n\nBusiness\n\nInternational\n\nRacing\n\nLifestyle\n\nShowbiz\n\nSport\n\nOpinion\n\nGames\n\nmenu__iconmenu__iconmenu__iconmenu__icon\n\nINTERNATIONAL\n\nbreadcrumb-arrow\n\nWORLD\n\n# US, Iran keep up hostile rhetoric ahead of new sanctions\n\nWORLD\n\n8 hours",
+      "content_detail": "",
+      "published_date": "Sat, 22 Aug 2026 03:00:00 GMT",
+      "search_region": "全球制裁",
+      "classified_regions": [
+        "全球制裁"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "US hits Canadian goods with 50% tariffs after trade talks fail",
+      "title_cn": "",
+      "url": "https://www.gmanetwork.com/news/topstories/world/999455/us-hits-canadian-goods-with-50-tariffs-after-trade-talks-fail/story",
+      "content": "The tariffs that came into effect just after midnight (0400 GMT) on some $20 billion of Canadian goods—things like wooden ice hockey sticks that are rarely used anymore—are far from an economic game-changer for the largest US trading partner after Mexico. That represents just over 5% of Canada's exp",
+      "content_detail": "",
+      "published_date": "Sat, 22 Aug 2026 07:00:00 GMT",
+      "search_region": "全球制裁",
+      "classified_regions": [
+        "全球制裁"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Canada to Start Retaliatory Tariffs on US Goods Beginning Sept. 8",
+      "title_cn": "",
+      "url": "https://mb.ntd.com/canadas-retaliatory-tariffs-on-us-goods-to-start-sept-8-after-trade-deal-collapses_1167985.html",
+      "content": "NTD TelevisionNTD Television\n\nUSChinaWorldPoliticsHealthBusinessEntertainmentSports\n\n●LIVE\n\nNTD TelevisionNTD Television\n\nNewsBusiness NewsTariffs\n\n# Canada to Start Retaliatory Tariffs on US Goods Beginning Sept. 8\n\nThe United States imposed new 50 percent tariffs on some Canadian imports on Aug. 2",
+      "content_detail": "",
+      "published_date": "Sat, 22 Aug 2026 17:24:26 GMT",
+      "search_region": "全球制裁",
+      "classified_regions": [
+        "全球制裁"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Ukraine urges EU to reopen talks on using frozen Russian assets | Ukrainian News | LIGA.net",
+      "title_cn": "",
+      "url": "https://finance.liga.net/en/state-finance/news/ukraine-urges-eu-to-reopen-talks-on-using-frozen-russian-assets",
+      "content": "\"Ukraine's fundamental position [is that] achieving true peace is possible only with Europe's active participation at the negotiating table. In this context, it is important to prepare new sanctions. This includes both the Graham bill in the U.S. and the EU’s 22nd sanctions package, which must be as",
+      "content_detail": "",
+      "published_date": "Sat, 22 Aug 2026 15:56:43 GMT",
+      "search_region": "全球制裁",
+      "classified_regions": [
+        "全球制裁"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    }
+  ]
+}
