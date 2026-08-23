@@ -1,0 +1,85 @@
+{
+  "date": "2026-08-24",
+  "generated_at": "2026-08-24T06:07:13.813204",
+  "upcoming_events": [
+    {
+      "date": "2026-09-04",
+      "event": "非农就业报告 (8月)",
+      "importance": "high",
+      "category": "就业",
+      "days_until": 11
+    }
+  ],
+  "recent_events": [],
+  "web_events": [
+    {
+      "source": "tavily_answer",
+      "query": "US economic data release this week CPI GDP jobs",
+      "answer": "This week's US economic data releases are expected to provide insights into inflation, GDP, and jobs. The Consumer Price Index (CPI) is anticipated to show headline inflation around 2.9%, driven by rising gasoline prices, while core inflation will be closely watched for any surprises. The Federal Reserve's July FOMC minutes may offer insights into officials' concerns about tariff and energy risks. The labor market remains a key focus, with recent reports indicating a weakening trend that could r"
+    },
+    {
+      "source": "tavily_result",
+      "title": "The Weekly Bottom Line",
+      "url": "https://economics.td.com/ca-weekly-bottom-line",
+      "content": "this week argue for the Fed to remain in wait-and-see mode, particularly with one more jobs report and another CPI print still to come before the September meeting. Next week’s July FOMC minutes pre-date this week’s CPI release, but could still contain useful information about how worried officials "
+    },
+    {
+      "source": "tavily_result",
+      "title": "Weekly Global Economic Update | Deloitte Insights",
+      "url": "https://www.deloitte.com/us/en/insights/topics/economy/global-economic-outlook/weekly-update.html",
+      "content": "## Week of August 11, 2026\n\n## A weakening US job market [...] ## The US Federal Reserve waits [...] What does the jobs report mean for monetary policy? The Federal Reserve has a dual mandate to seek low inflation and high employment. Inflation has been seen as the primary challenge given that it ha"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Watch for consumer stress as inflation remains top concern",
+      "url": "https://www.rbc.com/en/economics/us-week-ahead/watch-for-consumer-stress-as-inflation-remains-top-concern",
+      "content": "Next week the focus will be on the PCE deflators as inflation pressures remain a top concern. We expect core PCE to report a 0.2% m/m rise, keeping the y/y pace at 3.3%. We look for headline PCE to rise 0.1% m/m, knocking the y/y pace lower to 3.6%. On net we expect the PCE deflators to report in li"
+    },
+    {
+      "source": "tavily_answer",
+      "query": "Federal Reserve speech this week monetary policy",
+      "answer": "Federal Reserve Chair Kevin Warsh's upcoming speech at the Kansas City Fed's Jackson Hole symposium is anticipated to provide insights into the Fed's monetary policy direction. Recent data suggests that many Fed officials are considering raising the key short-term interest rate if inflation does not decrease. This comes amid concerns about the Fed's independence and credibility, particularly following Treasury Secretary Scott Bessent's intervention in Treasury markets to lower government debt co"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Here’s how Bessent’s newly activist Treasury Department is undercutting the Fed’s Warsh - MarketWatch",
+      "url": "https://www.marketwatch.com/story/heres-how-bessents-newly-activist-treasury-department-is-undercutting-the-feds-warsh-480455c2",
+      "content": "## The Fed. Image 2: Markets were already on edge after Fed Chair Kevin Warsh’s most recent press conference, and Treasury Secretary Scott Bessent’s remarks this week have added to that. Markets were already on edge after Fed Chair Kevin Warsh’s most recent press conference, and Treasury Secretary S"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Gold looks to PCE inflation, Jackson Hole for direction next week - KITCO",
+      "url": "https://www.kitco.com/news/article/2026-08-21/gold-looks-pce-inflation-jackson-hole-direction-next-week",
+      "content": "# Gold looks to PCE inflation, Jackson Hole for direction next week. Kitco NEWS has a diverse team of journalists reporting on the economy, stock markets, commodities, cryptocurrencies, mining and metals with accuracy and objectivity. (Kitco News) – Gold and silver head into the coming week with inv"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Warsh not eager to move needle either way on rates at Jackson Hole, says Fmr. Fed Vice Chair - CNBC",
+      "url": "https://www.cnbc.com/video/2026/08/21/warsh-not-eager-to-move-needle-either-way-on-rates-at-jackson-hole-says-fmr-fed-vice-chair.html",
+      "content": "# Warsh not eager to move needle either way on rates at Jackson Hole, says Fmr. Fed Vice Chair. Alan Blinder, Former Federal Reserve Vice Chair, joins ‘Closing Bell Overtime’ to talk Fed Chairman Warsh’s first Jackson Hole speech. ## Top Videos. A 5% bond yield won’t bring multiples down in stock ma"
+    },
+    {
+      "source": "tavily_answer",
+      "query": "China PMI economic data this week",
+      "answer": "China's economic data for July showed a slowdown. Industrial output rose 4.5%, missing the estimated 4.8% growth and slowing from June's 5.3% rise. Retail sales grew by just 0.6%, falling short of the expected 1.5% increase and decelerating from June's 1% growth. Urban fixed-asset investment contracted 6.7% year-on-year, worsening from the 5.7% decline in the first half of the year. Despite these indicators, market participants widely expect China to maintain its loan rates steady in August."
+    },
+    {
+      "source": "tavily_result",
+      "title": "Morning Brief: Bessent Flags Bigger Debt Buyback Potential; Japan’s Inflation Picks Up; China Plans New Fiscal Support Policies Soon; Eurozone Composite PMI Beat Expectations",
+      "url": "https://www.christophe-barraud.com/morning-brief-bessent-flags-bigger-debt-buyback-potential-japans-inflation-picks-up-china-plans-new-fiscal-support-policies-soon-eurozone-composite-pmi-beat-expectations",
+      "content": "⚠ #WeekAhead #Preview: Week 34 (2026) ⚠  \n  \n🇺🇸 #FOMC Minutes   \n🇪🇺 Lagarde's Speech  \n🇬🇧 🇨🇦 🇯🇵 U.K., Canada and Japan CPIs  \n🇨🇳 Chinese Monthly Data  \n🇬🇧 U.K., Australia and Eurozone Wages  \n🌎 Global Flash PMIs  \n🇨🇳 Beijing's World #Robot Conference  \n…\n\n\\Note: Previous briefs can be found here\n\n##"
+    },
+    {
+      "source": "tavily_result",
+      "title": "China's economy slows further in July as retail sales barely grow, investment slump steepens",
+      "url": "https://www.cnbc.com/2026/08/17/china-economy-sales-investment-july-.html",
+      "content": "Industrial output rose 4.5% in July, undershooting the estimated 4.8% growth and slowing from 5.3% rise in June.\n\nThe urban unemployment rate stood at 5.2% in July, ticking up from 5% in June.\n\nThe data, which was released at 3 p.m. instead of the usual 10 a.m., reinforced concerns about the health "
+    },
+    {
+      "source": "tavily_result",
+      "title": "New Zealand Dollar Weakens Below 0.5900 as China’s Economic Slowdown Weighs | Forex News economic indicators | CryptoRank.io",
+      "url": "https://cryptorank.io/news/feed/6b0a5-nzd-usd-china-economic-slowdown",
+      "content": "## China’s July Economic Data Disappoints\n\nChina’s National Bureau of Statistics reported that industrial production grew by 5.1% year-on-year in July, falling short of the 5.2% forecast and decelerating from June’s 5.3% pace. Retail sales also missed expectations, rising only 2.7% versus the antici"
+    }
+  ]
+}
