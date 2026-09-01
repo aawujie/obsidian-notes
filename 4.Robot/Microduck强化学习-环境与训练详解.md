@@ -6,6 +6,8 @@ tags:
   - mujoco
   - 训练
 created: 2026-08-31
+share_link: https://share.note.sx/q9iiwrxo#eC6YQUTtJ1gLtKM1lALUr8KBHjtMiFfXKB/eMVyEhzQ
+share_updated: 2026-09-01T14:54:56+08:00
 ---
 
 # Microduck 强化学习 · 环境定义与训练方法详解
@@ -93,12 +95,20 @@ body_pose_tracking / head_pose_bias 权重 0——保留观测槽但禁用。
 
 ### 课程学习(7 项)
 
-| 课程 | 内容 |
+**课程学习(Curriculum Learning)= 先易后难的训练调度**:像学生上课一样,先学简单的,再按训练进度逐步加难度,给策略一条平滑的可行路径——一上来难度拉满时奖励景观太陡,策略容易陷入乱转/摔倒的局部最优。概念出自 **Bengio et al. 2009 *Curriculum Learning***,中文译名"课程学习"是学界标准译法。
+
+| 课程 | 内容(源码档位) |
 |---|---|
-| action_rate_weight | -0.1 → -1.0 |
-| standing_envs | 站立环境 2% → 25% |
-| head_pose_range | 头命令范围 5% → 100% |
-| com_range | CoM 随机化 ±3mm → ±8mm |
+| action_rate_weight | -0.1 → -1.0:`{0: -0.1, 500×24: -0.2, 750×24: -0.4, 1000×24: -0.6, 1250×24: -0.8, 1500×24: -1.0}`——先放开学走路,再逐步拧紧动作平滑惩罚 |
+| standing_envs | 站立环境 2% → 25%:先练走路,走路稳了再逐步混入"站着不动"任务 |
+| head_pose_range | 头命令范围 5% → 15% → 35% → 65% → 100%(按各关节可达范围缩放) |
+| com_range | CoM 随机化 ±3mm → ±8mm:先学稳,再学抗扰 |
+
+**变体区分**:
+- **手动课程**(microduck 用的):难度档位表由工程师预先写死(`{"step": N, "weight": w}`)
+- **自动课程**(automatic curriculum learning):难度根据策略表现自适应——另一个研究领域,microduck 没用
+
+**和域随机化的关系**:近亲,一个调难度、一个调扰动,目的都是让部署时策略够稳;microduck 两者都有,且 DR 幅度本身也走课程(±3mm→±8mm)。
 
 ## 三、训练方法
 
