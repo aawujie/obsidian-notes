@@ -7,7 +7,7 @@ tags:
   - 训练
 created: 2026-08-31
 share_link: https://share.note.sx/q9iiwrxo#eC6YQUTtJ1gLtKM1lALUr8KBHjtMiFfXKB/eMVyEhzQ
-share_updated: 2026-09-01T15:00:28+08:00
+share_updated: 2026-09-01T15:03:02+08:00
 ---
 
 # Microduck 强化学习 · 环境定义与训练方法详解
