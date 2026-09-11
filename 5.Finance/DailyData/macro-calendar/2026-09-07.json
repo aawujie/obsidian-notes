@@ -1,0 +1,101 @@
+{
+  "date": "2026-09-07",
+  "generated_at": "2026-09-07T06:07:01.532529",
+  "upcoming_events": [
+    {
+      "date": "2026-09-11",
+      "event": "美国 CPI (8月)",
+      "importance": "high",
+      "category": "通胀",
+      "days_until": 4
+    },
+    {
+      "date": "2026-09-16",
+      "event": "FOMC 利率决议",
+      "importance": "critical",
+      "category": "央行",
+      "note": "附 SEP 经济预测 + 点阵图",
+      "days_until": 9
+    }
+  ],
+  "recent_events": [
+    {
+      "date": "2026-09-04",
+      "event": "非农就业报告 (8月)",
+      "importance": "high",
+      "category": "就业",
+      "days_ago": 3
+    }
+  ],
+  "web_events": [
+    {
+      "source": "tavily_answer",
+      "query": "US economic data release this week CPI GDP jobs",
+      "answer": "The upcoming week will feature key economic data releases, including the August Consumer Price Index (CPI) on September 11, which will be crucial in determining the Federal Reserve's stance on interest rates. The August Employment Report, released on September 8, showed a significant addition of 162,000 jobs, indicating a robust labor market. Additionally, the NFIB Small Business Optimism Index for August will be released on September 8 at 6 AM ET. These reports will provide insights into the cu"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Newsquawk Daily Economic Releases - 7th September 2026",
+      "url": "https://www.newsquawk.com/headlines/newsquawk-daily-economic-releases---7th-september-2026",
+      "content": "Newsquawk Logo\n\n# Newsquawk Daily Economic Releases - 7th September 2026\n\nNewsquawk Staff/Published /On the live feed at — 2 more headlines followed before this page went public\n\nNewsquawk headlinesUTC\n\nUS Treasury Secretary Bessent says that jobs data show that economy is not just being driven by t"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Next Week's Earnings & Economic Calendar (9/7–9/11): Keep an eye on US CPI and Apple's new product launch! Oracle earnings: Will the differentiation in the AI and semiconductor markets intensify?",
+      "url": "https://www.moomoo.com/community/feed/next-week-s-earnings-and-economic-calendar-sep-7-11-117213178953734",
+      "content": "This Week's US Economic Indicators [...] Key market points this week  \n\n1. Nikkei Average falls for the fourth consecutive session, down 1,384 points for the week. Rising US interest rates hit AI and semiconductor stocks hard; weekend buy-backs were limited in magnitude.\n\n2. US stocks rebound from '"
+    },
+    {
+      "source": "tavily_result",
+      "title": "U.S. Hiring Jumps, an Encouraging Sign for the Economy",
+      "url": "https://www.nytimes.com/live/2026/09/04/business/jobs-report-economy",
+      "content": "Still, Mr. Waller, like other policymakers recently, said he was putting significant weight on forthcoming data releases, most notably August’s Consumer Price Index report to be released on Sept. 11, in deciding whether to support a rate rise this month.\n\n“If there is continued progress toward our 2"
+    },
+    {
+      "source": "tavily_answer",
+      "query": "Federal Reserve speech this week monetary policy",
+      "answer": "Federal Reserve Chair Jerome Powell's recent speech at the Jackson Hole symposium has heightened market expectations for a potential interest rate hike in September. Powell's remarks emphasized vigilance towards inflation risks, leading to a reassessment of the Fed's monetary policy trajectory. While some market participants now see a 66% chance of a rate hike in September, others remain skeptical, citing slowing job and wage growth as factors that could keep inflation in check, allowing the Fed"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Fed Chair's Remarks Drive Rate Hike Expectations; Non-Farm Payrolls Data Marks Key Window This Week",
+      "url": "https://www.moomoo.com/news/post/75632328/fed-chair-s-remarks-drive-rate-hike-expectations-non-farm",
+      "content": "At last week's Jackson Hole symposium, Federal Reserve Chair Jerome Powell delivered a relatively hawkish speech, boosting the U.S. dollar index and prompting markets to reassess the Fed's September interest-rate policy trajectory. As a result, non‑U.S. currencies broadly traded in a choppy, consoli"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Chicago Fed’s Austan Goolsbee wants to get back to ‘old-school’ economics: Focused on ordinary Americans, mindful of AI hype, and sharp on inflation",
+      "url": "https://fortune.com/2026/09/02/austan-goolsbee-old-school-economics-consumers-health",
+      "content": "In a landmark Jackson Hole speech last week, new Federal Reserve chairman Kevin Warsh said inflation was the sharpest focus, at present, for the rate-setting Federal Open Market Committee (FOMC), of which Goolsbee is a member. The reason: Price rises are comfortably ahead of the central bank’s manda"
+    },
+    {
+      "source": "tavily_result",
+      "title": "How Wall Street is thinking about rate hikes following the latest Fed speech",
+      "url": "https://www.businessinsider.com/fed-rate-hikes-forecast-kevin-warsh-jackson-hole-speech-inflation-2026-8",
+      "content": "Save Saved\n\nThis story is available exclusively to Business Insider subscribers. Become an Insider and start reading now. Have an account? .\n\nFederal Reserve chair Kevin Warsh reiterated his hawkish tone in his Jackson Hole speech last Friday, and investors took it to heart.\n\nMarkets are now pricing"
+    },
+    {
+      "source": "tavily_answer",
+      "query": "China PMI economic data this week",
+      "answer": "China's latest PMI data for August 2026 indicates mixed economic signals. The National Bureau of Statistics (NBS) reported a Manufacturing PMI of 49.8, slightly above July's 49.2 and the consensus forecast of 49.7, indicating continued contraction but with some positive signs in output and new orders. The NBS Non-Manufacturing PMI remained flat at 49.0. Meanwhile, the RatingDog private sector services PMI rose to 51.4, surpassing the expected 50.6, suggesting a stronger services sector. Despite "
+    },
+    {
+      "source": "tavily_result",
+      "title": "Economic and event calendar in Asia Thursday, September 3 ...",
+      "url": "https://investinglive.com/news/economic-and-event-calendar-in-asia-thursday-september-3-2026-another-china-pmi",
+      "content": "# Economic and event calendar in Asia Thursday, September 3, 2026 - another China PMI\n\nThe data release of note due today, Thursday, September 3, 2026, from the Asian timezone is the private sector services PMI survey from Rating Dog / S&P.\n\nLook back recap: this week's China PMI data [...] Monday b"
+    },
+    {
+      "source": "tavily_result",
+      "title": "New Zealand Dollar rebounds above 0.5850 on stronger Chinese services PMI",
+      "url": "https://www.fxstreet.com/news/new-zealand-rebounds-above-05850-on-stronger-chinese-services-pmi-202609030214",
+      "content": "Data released by RatingDog on Thursday showed that China's Services Purchasing Managers' Index (PMI) rose to 51.4 in August from 50.4 in July. This figure came in above the market consensus of 50.6.\n\nEarlier this week, China's NBS Manufacturing PMI improved to 49.8 in August, up from 49.2 in July, s"
+    },
+    {
+      "source": "tavily_result",
+      "title": "China Stocks Open Week Lower — TradingView News",
+      "url": "https://www.tradingview.com/news/te_news:579328:0-china-stocks-open-week-lower",
+      "content": "Trading Economics\nTrading Economics\n\n# China Stocks Open Week Lower\n\nThe Shanghai Composite fell 0.5% to 3,931 on Monday, while the Shenzhen Component lost 1% to 13,810, as weak economic data reinforced concerns about China's growth outlook.\n\nOfficial PMI figures showed the Composite PMI edged up to"
+    }
+  ]
+}

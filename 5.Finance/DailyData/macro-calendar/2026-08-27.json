@@ -1,0 +1,85 @@
+{
+  "date": "2026-08-27",
+  "generated_at": "2026-08-27T06:07:42.834114",
+  "upcoming_events": [
+    {
+      "date": "2026-09-04",
+      "event": "非农就业报告 (8月)",
+      "importance": "high",
+      "category": "就业",
+      "days_until": 8
+    }
+  ],
+  "recent_events": [],
+  "web_events": [
+    {
+      "source": "tavily_answer",
+      "query": "US economic data release this week CPI GDP jobs",
+      "answer": "This week, the US economic data releases include the second quarter GDP estimate, which showed a sluggish 1.5% growth pace, down from 2.1% in the previous quarter. Consumer spending remained strong at a 3.4% annual rate. Additionally, July's personal consumption expenditures (PCE) data, the Fed's preferred inflation gauge, is expected to show a core PCE rise of 3.3% year-over-year, unchanged from June and above the Fed's 2% target. Treasury yields remained steady as investors await these economi"
+    },
+    {
+      "source": "tavily_result",
+      "title": "GDP, durable goods orders, and crude oil inventories among economic data due Wednesday - Investing.com",
+      "url": "https://m.investing.com/news/stock-market-news/gdp-durable-goods-orders-and-crude-oil-inventories-among-economic-data-due-wednesday-93CH-4875813?ampMode=1",
+      "content": "# GDP, durable goods orders, and crude oil inventories among economic data due Wednesday. • 7:30 AM ET - GDP: Expected at 1.5% versus previous 2.1%. Measures the annualized change in the inflation-adjusted value of all goods and services produced by the economy, serving as the broadest measure of ec"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Stock market today: S&P 500, Nasdaq futures recover in countdown to Nvidia earnings, Fed Jackson Hole summit - Yahoo Finance",
+      "url": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-august-25-dow-sp-500-nasdaq-080527092.html",
+      "content": "2. Best 0% APR cards. 3. Best balance transfer cards. 2. Best high-yield savings accounts. 3. Best money market accounts. 4. Best free checking accounts. Now part of Yahoo Finance Gold. # Stock market today: S&P 500, Nasdaq futures recover in countdown to Nvidia earnings, Fed Jackson Hole summit. US"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Dollar nudges higher ahead of US inflation data; Aussie gains on rate bets - KITCO",
+      "url": "https://www.kitco.com/news/off-the-wire/2026-08-26/dollar-nudges-higher-ahead-us-inflation-data-aussie-gains-rate-bets",
+      "content": "LONDON/SINGAPORE, Aug 26 (Reuters) - The dollar edged higher but remained range-bound against major peers on Wednesday as ​investors awaited U.S. inflation data that could set the tone ahead of the Jackson Hole symposium of central bankers ‌later this week. The most notable mover was the Australian "
+    },
+    {
+      "source": "tavily_answer",
+      "query": "Federal Reserve speech this week monetary policy",
+      "answer": "U.S. Federal Reserve Chairman Kevin Warsh's speech at the annual Jackson Hole conference this week has gained significant importance as traders and analysts seek guidance on the recent jump in bond yields and reassurance of his independence from the Trump administration. Warsh has indicated reluctance to provide conventional forward guidance, suggesting his speech may focus more on the Fed's reaction function and longer-term philosophy rather than signaling specific actions in September. Investo"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Bond market anxiety raises stakes for Warsh's debut Jackson Hole speech - KITCO",
+      "url": "https://www.kitco.com/news/off-the-wire/2026-08-24/bond-market-anxiety-raises-stakes-warshs-debut-jackson-hole-speech",
+      "content": "WASHINGTON, Aug 24 (Reuters) - U.S. Federal Reserve Chairman Kevin Warsh's debut speech at the annual Jackson Hole conference this week, self-advertised as a choice between discussing near-term policy or broader principles, has taken on added weight as traders and analysts look for guidance about th"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Bond market anxiety raises stakes for Warsh's debut Jackson Hole speech - Reuters",
+      "url": "https://www.reuters.com/business/bond-market-anxiety-raises-stakes-warshs-debut-jackson-hole-speech-2026-08-24/",
+      "content": "## Browse Business. Item 1 of 2 U.S. Federal Reserve Chairman Kevin Warsh holds a press conference following a two-day meeting of the Federal Open Market Committee (FOMC), as the Federal Reserve holds interest rates steady, at the Federal Reserve, in Washington, D.C., U.S. July 29, 2026. WASHINGTON,"
+    },
+    {
+      "source": "tavily_result",
+      "title": "First Thing: New Fed chair Kevin Warsh faces early test amid bond market worries - The Guardian",
+      "url": "https://www.theguardian.com/us-news/2026/aug/24/first-thing-new-fed-chair-kevin-warsh-faces-early-test-amid-bond-market-worries",
+      "content": "Key speech to be delivered this week at Jackson Hole said to focus on productivity and demographics in the US. The new US Federal Reserve chair, Kevin Warsh, faces a critical test this week amid anxiety in government bond markets over inflation and Donald Trump’s tax and spending plans. As the world"
+    },
+    {
+      "source": "tavily_answer",
+      "query": "China PMI economic data this week",
+      "answer": "China's latest economic data indicates a shift in growth drivers, with sectors like artificial intelligence, semiconductors, and advanced manufacturing showing significant improvements. The A-share earnings season highlights a recovery in selected cyclical sectors as key growth areas. Despite a $119 billion funding program launched to revive high-tech manufacturing and other sectors, private investment has fallen by 9.4% year-on-year, raising questions about the program's effectiveness."
+    },
+    {
+      "source": "tavily_result",
+      "title": "GDP, durable goods orders, and crude oil inventories among economic data due Wednesday - Investing.com",
+      "url": "https://m.investing.com/news/stock-market-news/gdp-durable-goods-orders-and-crude-oil-inventories-among-economic-data-due-wednesday-93CH-4875813?ampMode=1",
+      "content": "# GDP, durable goods orders, and crude oil inventories among economic data due Wednesday. • 7:30 AM ET - GDP: Expected at 1.5% versus previous 2.1%. Measures the annualized change in the inflation-adjusted value of all goods and services produced by the economy, serving as the broadest measure of ec"
+    },
+    {
+      "source": "tavily_result",
+      "title": "China prepares for ‘Economic D-Day’ - Semafor",
+      "url": "https://www.semafor.com/article/08/23/2026/china-prepares-for-economic-d-day",
+      "content": "Intelligence for the New World Economy. In your inbox, every weekday. # China prepares for ‘Economic D-Day’. Aug 23, 2026, 6:42pm EDT. China hosted Iran’s deputy foreign minister for talks last week related to the US-Iran war, Beijing announced Sunday, disclosing the previously unreported meeting on"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Trump's new economic squeeze on Iran has a big challenge: China - Greenwich Time",
+      "url": "https://www.greenwichtime.com/business/article/trump-s-new-economic-squeeze-on-iran-has-a-big-22403692.php",
+      "content": "# Trump's new economic squeeze on Iran has a big challenge: China. While the U.S. is trying to isolate the Islamic Republic from its remaining economic partners, President Donald Trump also is preparing to host Chinese leader Xi Jinping next month to maintain a fragile trade truce. Absent from Besse"
+    }
+  ]
+}

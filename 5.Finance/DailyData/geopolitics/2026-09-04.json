@@ -1,0 +1,1279 @@
+{
+  "date": "2026-09-04",
+  "generated_at": "2026-09-04T06:31:04.716011",
+  "total_events": 47,
+  "severity_distribution": {
+    "medium": 47
+  },
+  "events": [
+    {
+      "title": "As U.S. goals shift after 6 months of Iran war, Strait of Hormuz is now a top concern - PBS",
+      "title_cn": "",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNVm9TNGJBUFdmMnFkajBrcmRjQ3RxWGVjQWpFMFh5M0dyaDktaEk4WENBMk9TQVNsQjlzLXZJOW5ydEhaNGFzeDAwUmItWkhnU005TmhTc1U4QzFjYmxhUV81cm5qQ1FHTGJqa2RRUkZDSzFzZzFXN0c2UGU5cFFXbmN1RnRXbGRuQThsT0tfa0o1SHZsRjl2RGFGVlNiT1hWTURTX0p4MnMzbVlKcjJ4WXJZYlVjOEZCQ2fSAb8BQVVfeXFMTlZjLWdTQmNRQmJJN2NjQVMzM2VJcWFJMXFIR2ZjTXBQcHVEd1VELVRsWEtQeTdZWGNxbWVEMkhPSHp6Q2NLZ3FpWU14U0paeGZ5V0JuOWx5RmN2djVkeVJ2UFZtQlVHNElwMzhadEN1alE0NjlaLUhuUHY4anpUVVpRdFl5empfcXhzbmZ0ak9WQzRpOFQ2NUVrTWNtYk9Xaks3c3ZjdzdvUFVTTnZHMEdpaERMaUxpN3Azeng5UTA?oc=5",
+      "content": "As U.S. goals shift after 6 months of Iran war, Strait of Hormuz is now a top concern  PBS",
+      "content_detail": "Google News",
+      "published_date": "Thu, 27 Aug 2026 17:34:21 GMT",
+      "search_region": "美伊冲突",
+      "classified_regions": [
+        "美伊冲突"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "goals shift after 6 months of Iran war, Strait of Hormuz is now a top concern PBS",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Threats against Iran are growing more dire, but Tehran still isn't backing down - National Desk",
+      "title_cn": "",
+      "url": "https://news.google.com/rss/articles/CBMiogJBVV95cUxNQ05odEI0cG5xRTR5UDVWQjBULXRUTlBtckU3TkNscHlsb2ZoTUROUE9tbFhxX3NVZjRCNWVLTlRtZWZrekhGTEtvUjJZaVhfMTU2VmM4T3pXN214MnBBOHF0bURNc0dMN0ZpZ2sxOXBqSFFQbkhhYk12MTNyWnFwaFE1UkVFTm9fWV9wZlZmcDV0Q3o1eUV2MW45UVFMclpwOTczWjhxNF9Mc1I3LWQtNkdYRFdWaDlBelFOaFdlVmEybkdpd19hbFNhN3FVLTU5MWYtSk44TVpxdVYyd29pcENaRnBpQ2RIcXR1UXExRTdXTm9YeHdwRnNFbExYeUwxTXNpWkhMekZGRW9LY3RNR2RzUjJGNUx5cE5ZLW9pckFYdw?oc=5",
+      "content": "Threats against Iran are growing more dire, but Tehran still isn't backing down  National Desk",
+      "content_detail": "Google News",
+      "published_date": "Thu, 03 Sep 2026 17:48:56 GMT",
+      "search_region": "美伊冲突",
+      "classified_regions": [
+        "美伊冲突"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "Threats against Iran are growing more dire, but Tehran still isn't backing down National Desk",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "US-Iran strikes raise fears of renewed war across the Middle East - Reuters",
+      "title_cn": "",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxORjZ4d3JRTk1WcXR6eThpVm1wcVpzQV8wMm42eDB4bDJRMVhxelJpdmZTYXVPQ0JTUmtiNXFVWEZyb1NBTTZibmZJTkk4bjlRNGwtWTU1OF8zXzhENVZhWDN4TUwzekdfVG8xWUpmY3hmcHBDQk5TUzBLSERGbFJ0c05nekFpclo3cFdMcm93dHlEUXctVTY2MjJIMkkxSTRGWnc?oc=5",
+      "content": "US-Iran strikes raise fears of renewed war across the Middle East  Reuters",
+      "content_detail": "Google News",
+      "published_date": "Wed, 02 Sep 2026 15:55:10 GMT",
+      "search_region": "美伊冲突",
+      "classified_regions": [
+        "美伊冲突"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "US-Iran strikes raise fears of renewed war across the Middle East Reuters",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Trump dismisses Iran deal after Tehran pushes return to Islamabad memorandum - Iran International",
+      "title_cn": "",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9wXzNlSnFkUTV4QThtRzhGUEltTC1qMVJPMC1hN3lHejJSYk12dXZUUzRXM21LVUI4T1JkS2pIbEdwLXB2UE1GRGgzVy10Y3QwZ2c?oc=5",
+      "content": "Trump dismisses Iran deal after Tehran pushes return to Islamabad memorandum  Iran International",
+      "content_detail": "Google News",
+      "published_date": "Tue, 01 Sep 2026 16:11:00 GMT",
+      "search_region": "美伊冲突",
+      "classified_regions": [
+        "美伊冲突"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "Trump dismisses Iran deal after Tehran pushes return to Islamabad memorandum Iran International",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Can Trump's economic war against Iran do what airstrikes and negotiations couldn't? - NPR",
+      "title_cn": "",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5HMGs0bllsTEY2UjB0aXFHZl93a1RqdE5zaXJab05Cc1l0RFVyel9iaXlhdWZFS1NURDhzWk44SEtQZ2pjZXBNc0VxTnpuTS1ZbERHYUY1aFlPd2EwMUxrOFlYMzNzdm5MNVZWb0tkeVB2bEk?oc=5",
+      "content": "Can Trump's economic war against Iran do what airstrikes and negotiations couldn't?  NPR",
+      "content_detail": "Google News",
+      "published_date": "Tue, 25 Aug 2026 07:00:00 GMT",
+      "search_region": "美伊冲突",
+      "classified_regions": [
+        "美伊冲突"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "Can Trump's economic war against Iran do what airstrikes and negotiations couldn't?",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Report: As US prepares for war on Iran, Trump weighs declaring it over - www.israelhayom.com",
+      "title_cn": "",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNZmVpTUYxa08ycnVaaF9saFFrSkttRHFMWVpoY1FnMHZaNUREdkdsZllfUTdSbldldWNzRHFOYTdNY1hRU3ZjNF82WEtWNmJRa1R4OTdTUXpicDB3cXROdFdjZ19KMFNQUDRYNVJGTlJWNVJVbGtraDdYSU5vZFpYYU1GYUJLR3hta3VUZi16MFRkUkhXVjRHRWFwcml0MFJPVHQ4TlNuaHpmMkJP?oc=5",
+      "content": "Report: As US prepares for war on Iran, Trump weighs declaring it over  www.israelhayom.com",
+      "content_detail": "Google News",
+      "published_date": "Thu, 03 Sep 2026 06:40:28 GMT",
+      "search_region": "美伊冲突",
+      "classified_regions": [
+        "美伊冲突"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "Report: As US prepares for war on Iran, Trump weighs declaring it over www.israelhayom.com",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "60 targets struck, 18M barrels of oil protected: The US military’s record day in the Strait of Hormuz - cnn.com",
+      "title_cn": "",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOeXlRMElsZTdHUThtWXFaX0dIeEs4Rk5QTUtJVlhpWFNxZlN2YTB6R0pSa0RKLVR2TWJtdUUzSloxYTVWWDdpS1F0TjFFeTdMRURVQzlUOUhPdFlSQjRXNWFMaXpXNjVOd0xxdWpNWEVNa3lYU2hQQWt4c0UxRmF4TTBCemN6OEZqQV9BbG5qanJLVTIwR1FCdko4a0dLZw?oc=5",
+      "content": "60 targets struck, 18M barrels of oil protected: The US military’s record day in the Strait of Hormuz  cnn.com",
+      "content_detail": "Google News",
+      "published_date": "Wed, 02 Sep 2026 22:50:57 GMT",
+      "search_region": "美伊冲突",
+      "classified_regions": [
+        "美伊冲突"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "60 targets struck, 18M barrels of oil protected: The US military’s record day in the Strait of Hormuz cnn.com",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "U.S. crude oil hits $90 per barrel following latest U.S. attacks against Iran - CNBC",
+      "title_cn": "",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNT3cxd1pXWWxEcmhDbzBsbWExOW5RZENtYkZSMzdZMmotQkNKOUN2RG8tUEtXTERLWlYwWFhIV3k2Z0M3aDAxLV9qWWpHYUFEOGtKZGlLU2hpYWZocFVqVDE4M1pEMlFaMFVrNEQ2MGdDZ0JIcTBxZndKbXUxRURoZFZocjJvQ1A2djFwek52TnBfUGV5MjJzQ0JOd9IBoAFBVV95cUxNYXVjWjBPZlJxRTlhTDZSdkJqVDZobDgxNjhBclFobWd6TEI4Nk5QNVllQnhRVk44MWVIOXFXSy1NenlpZXEwZVI1Vk1FakdkVDlQUE1oeGtCdmtKc2h4dXlUcDhLSmFsUWhLcEFzUlM2MlFVNkFHTUVFZ2ZSREhPZGJ3dlJZU08xZ3hqbFptVGxwT0tfNWcyWEdTaXZfOExh?oc=5",
+      "content": "U.S. crude oil hits $90 per barrel following latest U.S. attacks against Iran  CNBC",
+      "content_detail": "Google News",
+      "published_date": "Tue, 01 Sep 2026 01:59:00 GMT",
+      "search_region": "美伊冲突",
+      "classified_regions": [
+        "美伊冲突"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "crude oil hits $90 per barrel following latest U.S.",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "For Russia and Ukraine, an Escalating Spiral With No End in Sight - The New York Times",
+      "title_cn": "",
+      "url": "https://www.nytimes.com/2026/09/03/world/europe/russia-ukraine-escalation.html",
+      "content": "They are both torching warehouses filled with food or online-shopping orders near major cities. They are blasting ports and ships carrying vital exports of grain. And they are smashing energy networks that keep the lights on and vehicles fueled.\n\nRussia and Ukraine, in cities far from the front line",
+      "content_detail": "[Russia-Ukraine War](https://www.nytimes.com/news-event/ukraine-russia)\n\nAdvertisement\n\nSupported by\n\nNews Analysis\n\n# A Spiral of Escalation for Russia and Ukraine, With No End in Sight\n\nEach side is using missiles and drones to try to pound the other into giving up, breeding ceaseless human suffering. But there is no sign that either country’s determination will weaken.\n\n![People stand by a railing, watching thick, dark smoke rise above apartment buildings. The sky is hazy with light blue and orange tones.](https://static01.nyt.com/images/2026/09/03/multimedia/03int-ukraine-russia-escalation-01-klvg/03int-ukraine-russia-escalation-01-klvg-articleLarge.jpg?quality=75&auto=webp&disable=upscale)\n\nBy [Kim Barker](https://www.nytimes.com/by/kim-barker)Oleksandra Mykolyshyn and [Ivan Nechepurenko](https://www.nytimes.com/by/ivan-nechepurenko)\n\nKim Barker and Oleksandra Mykolyshyn reported from Kyiv, Ukraine, and Ivan Nechepurenko from Moscow.\n\nThey are both torching warehouses filled with food or online-shopping orders near major cities. They are blasting ports and ships carrying [vital exports of grain.](https://www.nytimes.com/2026/08/13/world/europe/russia-ukraine-ports-odesa-cargo-ship-attacks.html) And they are smashing energy networks that keep the lights on and vehicles fueled.\n\nRussia and Ukraine, in cities far from the front line, are waging an intensifying tit-for-tat air war that is bringing more pain to the populations of both countries than at any other point since t",
+      "published_date": "Thu, 03 Sep 2026 09:08:39 GMT",
+      "search_region": "俄乌战争",
+      "classified_regions": [
+        "俄乌战争"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "The Russia-Ukraine War Has Been Impacting Global Wheat Prices - Farms.com",
+      "title_cn": "",
+      "url": "https://m.farms.com/news/the-russia-ukraine-war-has-been-impacting-global-wheat-prices-246535.aspx",
+      "content": "Image 26: Crops\n\nFigure 2 is a map showing the wheat-producing area surrounding the Black Sea. The Ukrainian port of Odessa and the Russian ports of Novorossiysk and Rostov on Don have sustained recent damage due to the expanding war. Industry estimates suggest that Russia exported 46.3 million metr",
+      "content_detail": "![Advancing Women in Agriculture Conference](/NewCreative/assets/company-logos/company-logos.svg#advancing-women-conference)\n![Ag Buyer's Guide](/NewCreative/assets/company-logos/company-logos.svg#abg)\n![AgConnection](/NewCreative/assets/company-logos/company-logos.svg#agconnection)\n![Ag & Country](/NewCreative/assets/company-logos/company-logos.svg#ag-country)\n![Agriville.com](/NewCreative/assets/company-logos/company-logos.svg#agriville)\n![AgSearch.com](/NewCreative/assets/company-logos/company-logos.svg#agsearch)\n![Alberta Seed Guide](/NewCreative/assets/company-logos/company-logos.svg#alberta-seed-guide)\n![Better Farming](/NewCreative/assets/company-logos/company-logos.svg#better-farming)\n![Better Pork](/NewCreative/assets/company-logos/company-logos.svg#better-pork)\n![Farms.com Risk Management](/NewCreative/assets/company-logos/company-logos.svg#farms-risk-management)\n![Farms.com Precision Agriculture Digital Digest](/NewCreative/assets/company-logos/company-logos.svg#pag)\n![Seed Manitoba](/NewCreative/assets/company-logos/company-logos.svg#seed-manitoba)\n![Seed World](/NewCreative/assets/company-logos/company-logos.svg#seed-world)\n![Service Truck Magazine](/NewCreative/assets/company-logos/company-logos.svg#service-truck-magazine)\n![Small Farm Canada](/NewCreative/assets/company-logos/company-logos.svg#small-farm-canada)\n![Spud Smart](/NewCreative/assets/company-logos/company-logos.svg#spud-smart)\n![Farms.com Professional Services](/NewCreative/assets/company-logos/comp",
+      "published_date": "Thu, 03 Sep 2026 10:00:05 GMT",
+      "search_region": "俄乌战争",
+      "classified_regions": [
+        "俄乌战争"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Why wheat prices are surging - Axios",
+      "title_cn": "",
+      "url": "https://www.axios.com/2026/09/03/wheat-prices-ukraine-russia",
+      "content": "Skip to main content\n\nAxios\n\n7 hours ago - Economy\n\n# Wheat prices are surging\n\n Emily Peck\n\nAdd Axios on Google\n\nAdd Axios as your preferred source to\n\nsee more of our stories on Google.\n\nAdd Axios on Google\n\nThe price of wheat is soaring — trading at levels last reached in early 2023, when markets",
+      "content_detail": "# Wheat prices are surging\n\n![](/_next/image?url=https%3A%2F%2Fimages.axios.com%2F9KkmKWQbEjmsAF6KgrVa6jc8oOQ%3D%2F52x0%2Fsmart%2F2026%2F04%2F03%2F1775241495396.jpg&w=128&q=75)\n\nAdd Axios as your preferred source to\n\nsee more of our stories on Google.\n\n![A line chart that tracks Chicago wheat futures per bushel from Jan. 3, 2023, to Sept. 2, 2026. Prices start at $7.76, fall to $6.0275 by Dec. 1, 2023, and $5.705 by Oct. 31, 2024, then recover to $7.75 by Sept. 2, 2026.](https://graphics.axios.com/hermesv2/2026-08-31-1104-wheat-futures/fallbacks/2026-08-31-1104-wheat-futures-fallback.png)\n![A line chart that tracks Chicago wheat futures per bushel from Jan. 3, 2023, to Sept. 2, 2026. Prices start at $7.76, fall to $6.0275 by Dec. 1, 2023, and $5.705 by Oct. 31, 2024, then recover to $7.75 by Sept. 2, 2026.](https://graphics.axios.com/hermesv2/2026-08-31-1104-wheat-futures/fallbacks/2026-08-31-1104-wheat-futures-apple.png)\n\nThe price of wheat is soaring — trading at levels last reached in early 2023, when markets were climbing down from the price shock of Russia's invasion of Ukraine.\n\n**Why it matters:** Escalating tensions in the war are again pushing up prices for this critical grain.\n\n**Zoom in:** Attacks on Black Sea ports, grain terminals and commercial vessels since July have disrupted grain exports in the region — together Russia and Ukraine are responsible for 27% of global wheat exports, [S&P notes](https://www.spglobal.com/energy/en/news-research/latest-news/agricul",
+      "published_date": "Thu, 03 Sep 2026 11:15:06 GMT",
+      "search_region": "俄乌战争",
+      "classified_regions": [
+        "俄乌战争"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "Wheat prices are surging Add Axios as your preferred source to see more of our stories on Google.",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "EU Wheat Drops After Putin's Hint At Peace Deal - Marine Link",
+      "title_cn": "",
+      "url": "https://www.marinelink.com/blogs/blog/eu-wheat-drops-after-putins-hint-at-peace-deal-105433",
+      "content": "The fundamental picture remains the same, Black Sea grain is not moving away and Middle East conflict has driven up crude oil.\n\nSaudi Arabia's tender to purchase 535,000 tons wheat creates a new demand at a time when attacks on Russian and Ukrainian Black Sea shipping have been disrupted.\n\nThe trade",
+      "content_detail": "![Marine Link](/Content/MarineLinkLogo.png)\n![marine link image](/Content/MarineLinkLogo-small-oneline.png)\n![LOGO](https://www.marinelink.com/Content/MarineLinkLogo.png)\n\n# EU wheat drops after Putin's hint at peace deal\n\nPosted to [Maritime Reporter](/blogs/blogs-maritime_reporter)\non\nSeptember 3, 2026\n\nThe price of European wheat dropped sharply after Russian President Vladimir Putin said there was a possibility for a peace deal to end the conflict in Ukraine. Later, the optimism over a possible agreement faded.\n\nAt 1636 GMT, December?milling whey, the most active contract on Paris based Euronext was down 3.2% to EUR248.5 ($289.13), after having fallen as low as EUR243.25 per ton earlier.\n\nChicago wheat futures fell on Thursday as well, falling from the multi-year highs reached this week. They are also nearing their lower limit.\n\nPutin said at an economic forum held in Russia's Far East that there is a chance for a \"peace agreement\" in Ukraine. However, resuming the talks would be difficult because of Ukrainian attacks against shipping and Kyiv's call to civilian aircraft not fly over Russian airspace.\n\nPutin's comments triggered profit-taking following a steep rally, as traders saw little signs of an easing of hostilities to ease a near-halt of Russian and Ukrainian shipments in the Black Sea region.\n\nTraders later noted, however, that Putin's comments did not indicate any immediate military deescalation.\n\nOne German trader stated that \"markets are sensitive to any news w",
+      "published_date": "Thu, 03 Sep 2026 14:04:13 GMT",
+      "search_region": "俄乌战争",
+      "classified_regions": [
+        "俄乌战争"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "on September 3, 2026 The price of European wheat dropped sharply after Russian President Vladimir Putin said there was a possibility for a peace deal to end the conflict in",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Putin cites chance of peace deal, Ukraine sees 'new dynamic' - Yahoo",
+      "title_cn": "",
+      "url": "https://www.yahoo.com/news/politics/articles/putin-cites-chance-peace-deal-095255693.html",
+      "content": "After ‌four and a half years of Europe's ⁠deadliest conflict since World War Two, it is rare for either side to offer an upbeat assessment of peace prospects. They last met for U.S.-mediated talks in February.\n\nAdvertisement\n\nAdvertisement\n\nSince then, with the U.S. distracted by ⁠the Iran war, both",
+      "content_detail": "* [Skip to main](#article-container)\n\n[Sports](https://sports.yahoo.com/)\n\n[Mail](https://mail.yahoo.com/)\n\nAdvertisement\n\nAdvertisement\n\n[Return to Homepage](https://www.yahoo.com)\n\n## Top Stories:\n\n* [Trump wants to rename Strait of Hormuz](https://www.yahoo.com/news/world/article/trump-proposes-renaming-the-strait-of-hormuz-the-trump-strait-can-he-do-that-210325104.html)\n* [Army secretary steps down](https://www.yahoo.com/news/politics/articles/driscoll-offers-no-reason-exit-160729383.html)\n* [$1 gold Trump coins go on sale](https://www.yahoo.com/news/politics/articles/1-gold-trump-coins-sale-133335425.html)\n* [Massachusetts primary](https://www.yahoo.com/news/politics/articles/markey-defies-democrats-age-referendum-034318636.html)\n* [Burger King goes Super Saiyan](https://www.yahoo.com/news/us/article/burger-king-goes-super-saiyan-with-its-dragon-ball-super-menu-174911882.html)\n* [Tupac murder conviction](https://www.yahoo.com/entertainment/music/article/tupac-murder-trial-duane-keffe-d-davis-found-guilty-of-killing-rapper-30-years-ago-200030594.html)\n* [Tropical Storm Edouard](https://www.yahoo.com/news/weather-news/article/tropical-depression-edouard-tracker-storms-extreme-rainfall-threatens-east-central-texas-through-thursday-171932693.html)\n* [U.S., Iran trade attacks](https://www.yahoo.com/news/us/articles/us-strikes-iranian-rocket-launchers-201854299.html)\n* [Grand Canyon flash flood](https://www.yahoo.com/news/weather-news/articles/more-20-may-missing-significant-2",
+      "published_date": "Thu, 03 Sep 2026 12:25:42 GMT",
+      "search_region": "俄乌战争",
+      "classified_regions": [
+        "俄乌战争"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Russians endured a summer of turmoil with gas crisis and swarms of drones as the war came home - AP News",
+      "title_cn": "",
+      "url": "https://apnews.com/article/russia-summer-war-ukraine-attacks-gas-2367e71fc35353e92dc4884028ba403b",
+      "content": "Ukraine has not disclosed how many drones it launches, but President Volodymyr Zelenskyy has talked about expanding the strikes, which he calls “long-range sanctions.” Officials in Kyiv say they will continue trying to pressure Russia into ending the war, even as Moscow intensifies its bombardment o",
+      "content_detail": "[![AP Logo](https://assets.apnews.com/19/66/bc546486408c8595f01753a9fbeb/ap-logo-176-by-208.svg)](/)\n\n* [World](https://apnews.com/world-news) \n\n  [Iran war](https://apnews.com/hub/iran) [Russia-Ukraine war](https://apnews.com/hub/russia-ukraine) [Español](https://apnews.com/hub/noticias) [China](https://apnews.com/hub/china) [Asia Pacific](https://apnews.com/hub/asia-pacific) [Latin America](https://apnews.com/hub/latin-america) [Europe](https://apnews.com/hub/europe) [Africa](https://apnews.com/hub/africa)\n\n  TOP STORIES\n\n  + [Iran fires on its Gulf neighbors, retaliating for US strikes after a wedding was hit](https://apnews.com/article/iran-us-strikes-hormuz-trump-september-2-2026-cc891e22860d7a53bf7ade9a3d74c0ae)\n  + [Italy has started exporting a delicacy prized abroad, reviled at home](https://apnews.com/article/italy-blue-crabs-invasion-export-12f1fb25558d35cf1230e335d5534af2)\n  + [USS Lincoln docks near Thai beach city of Pattaya after its Middle East deployment](https://apnews.com/article/uss-abraham-lincoln-pattaya-thailand-1bbd568f1c2c6ce6ba1dcbb12b0784fa)\n\n  [The Afternoon Wire\n\n  Our personalization engine sends you what you may have missed throughout the day.](/newsletters?id=Afternoon+Wire) [The Morning Wire\n\n  Our flagship newsletter breaks down the biggest headlines of the day.](/newsletters?id=Morning+Wire+Subscribers)\n\n  [See All Newsletters](/newsletters)\n* [U.S.](https://apnews.com/us-news) \n\n  SECTIONS\n\n  [Immigration](https://apnews.com/hub/immigration",
+      "published_date": "Thu, 03 Sep 2026 04:02:26 GMT",
+      "search_region": "俄乌战争",
+      "classified_regions": [
+        "俄乌战争"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Why Putin’s Nuclear Empire Doesn’t Need Warheads - Newsweek",
+      "title_cn": "",
+      "url": "https://www.newsweek.com/putin-nuclear-empire-rosatom-warheads-12399947",
+      "content": "Putin from waging war in Ukraine. Sanctions on oil and gas exports—the backbone of Russia’s economy and principal source of funding for its war effort in Ukraine—are perhaps the best example of this. Western powers have squeezed the oil revenues that fill the Kremlin's coffers by capping oil prices,",
+      "content_detail": "# Why Putin’s Nuclear Empire Doesn’t Need Warheads\n\nPublished\n\nSep 03, 2026 at 09:46 AM EDT\n\n![](https://assets.newsweek.com/wp-content/uploads/2026/09/GettyImages-1231628224.jpg?w=1600&quality=80&webp=1)\n![David Averre](https://assets.newsweek.com/wp-content/uploads/2026/07/ff8798d8-ebf9-43c1-ad66-7b97644bab88.png?w=1600&quality=80&webp=1)\n\nRussian President [Vladimir Putin](/topic/vladimir-putin) has two nuclear arsenals. The first one constitutes thousands of fearsome weapons that could wipe humanity off the map and destroy the world several times over. The other is more powerful.\n\n[Russia](/topic/russia)’s civilian nuclear program remains one of [Moscow](/topic/moscow)’s most durable instruments of power and prestige, and the past 72 hours alone offer three concrete examples.\n\nOn Tuesday, NATO member [Turkey](/topic/turkey) announced it wants Russia to build several [nuclear power](/topic/nuclear-power) plants. On Wednesday, while U.S. missiles struck targets in [Iran](/topic/iran), Russian officials handed Tehran’s representatives a draft agreement to build a series of small nuclear reactors. And on Thursday morning, Russia’s state nuclear corporation Rosatom inked a deal with [Kazakhstan](/topic/kazakhstan) to restore nuclear power to Central Asia’s largest state for the first time since 1999.\n\n#### Read More on Analysis\n\nAt a time when the United States and Europe are exploring the limits of non-military action to isolate Russia, Moscow’s mastery of civilian [nuclear e",
+      "published_date": "Thu, 03 Sep 2026 13:46:00 GMT",
+      "search_region": "俄乌战争",
+      "classified_regions": [
+        "俄乌战争"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "Why Putin’s Nuclear Empire Doesn’t Need Warheads Published Sep 03, 2026 at 09:46 AM EDT has two nuclear arsenals.",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Russian Offensive Campaign Assessment, September 2, 2026 - Institute for the Study of War",
+      "title_cn": "",
+      "url": "https://understandingwar.org/research/russia-ukraine/russian-offensive-campaign-assessment-september-2-2026/",
+      "content": "Russian forces conducted a series of drone and missile strikes against Ukraine overnight on September 1 to 2. The Ukrainian Air Force reported that Russian forces overnight launched two Iskander-M ballistic missiles from occupied Crimea, two Kh-59 or Kh-69 missiles from over the Black Sea, and 174 S",
+      "content_detail": "#### Options\n\n![Email](/wp-content/uploads/2024/12/Icon-Email.svg)\n![LinkedIn](/wp-content/uploads/2024/11/icon-linkedin.svg)\n![X](/wp-content/uploads/2024/11/icon-x.svg)\n![Facebook](/wp-content/uploads/2024/11/icon-facebook.svg)\n![Bluesky](/wp-content/uploads/2025/05/Bluesky-Streamline-Simple-Icon.svg)\n![Institute for the Study of War](https://understandingwar.org/wp-content/uploads/2025/08/ISW-Logo.svg)\n![Institute for the Study of War](https://understandingwar.org/wp-content/uploads/2025/08/ISW-Logo-Badge.svg)\n\n#### About ISW\n\nObjectivity, Truth, Insight\n\nISW’s Comparative Advantage\n\nImproving the National Security Debate\n\nMeet the Team\n\nJoin the Mission\n\n![silhouette of the world, with areas that ISW covers in a darker navy](https://understandingwar.org/wp-content/uploads/2026/08/map-1.svg \"silhouette of the world, with areas that ISW covers in a darker navy\")\n\n#### MAP ROOM\n\nISW produces the world’s premier open-source conflict maps\n\n#### Analysis\n\nThe General Jack Keane Center for National Security\n\nDive into ISW's Complete Map Catalog\n\nVideos, Podcasts, and Interactive Content\n\nBrowse ISW's Entire Body of Work\n\n### TEAMS/PORTFOLIOS\n\n#### Education\n\nThe General David H. Petraeus Center for Emerging Leaders\n\nISW’s Premier Educational Program for Undergraduates\n\nEnrichment and Advancement Opportunities for Entry-Level and Mid-Career Professionals\n\nLaunch your Career at ISW with an Internship in Open-Source Intelligence, Geospatial Intelligence, Cognitive Warfare, or Commu",
+      "published_date": "Thu, 03 Sep 2026 02:08:08 GMT",
+      "search_region": "俄乌战争",
+      "classified_regions": [
+        "俄乌战争"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "Options MAP ROOM ISW produces the world’s premier open-source conflict maps Analysis The General Jack Keane Center for National Security Dive into ISW's Complete Map Catalog Videos, Podcasts, and Interactive",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Canadian paper cup and bowl maker sees growing local demand amid tariffs - Castanet",
+      "title_cn": "",
+      "url": "https://www.castanet.net/edition/news-story-630094-6-.htm",
+      "content": "China is a leading source of the “cheap exports” Bessent criticized and the administration, echoing many economists, has blamed China for trade imbalances that have left it with a large trade surplus while the U.S. has a sizable deficit. At a closing press conference Tuesday, Bessent also previewed ",
+      "content_detail": "![Castanet](/img/mh/castanet-canada3.png \"Castanet\")\n![REW Logo](/img/mh/logo.e0bd1e4c.svg)\n![Story 630084](/content/2026/9/square/thumb/glacier_204749_p.jpg)\n![Story 630029](/content/2026/9/thumb/630029_1.jpg)\n![Story 630012](/content/2026/9/thumbs/630012_0.jpg)\n![Story 630098](/content/2026/9/thumbs/630098_0.jpg)\n![Story 630097](/content/2026/9/thumbs/630097_0.jpg)\n![Story 630096](/content/2026/9/square/thumb/4557b037adf625260de10a80f962cce51f9c2d2bdb6d991c18392e7d34188e67.jpg)\n![Story 630083](/content/2026/9/square/thumb/379d6e91db3e163b13d9f94879f3b435f75d2f928b0ec0716ddac37fd29a7767.jpg)\n![Story 630085](/content/2026/9/square/thumb/a6154137da5255eef8eae1455b0be27062dd3a6a5e3b1404d74e7231d2f95dd8.jpg)\n![Story 630022](/content/2026/9/thumb/630022_1.jpg)\n![Story 630094](/content/2026/9/thumbs/630094_0.jpg)\n![Story 630082](/content/2026/9/square/thumb/a2e9138ee1fc687ae44ef1af72d48d8480980e166fb33b8be1005e0faf03068f.jpg)\n![Story 630003](/content/2026/9/thumbs/630003_0.jpg)\n![Story 630045](/content/2026/9/thumb/630045_1.jpg)\n![Story 629899](/content/2025/10/square/thumb/vees_news_p4214317_1_p4239126.jpg)\n![Story 629893](/content/2025/10/square/thumb/vees_news_p4214317_1_p4239126.jpg)\n![Story 630072](/content/2026/9/thumb/630072_0.jpg)\n![Story 630071](/content/2026/9/thumb/630071_0.jpg)\n![Story 629956](/content/2026/9/thumbs/629956_0.jpg)\n![city links](/mh/flyout-fin.png)\n![300907](https://x.castanet.net/SolinskyConsultingIncBCChildrensHospitalLotteryChoices/26-07/display/Solin",
+      "published_date": "Thu, 03 Sep 2026 12:34:00 GMT",
+      "search_region": "中美博弈",
+      "classified_regions": [
+        "中美博弈"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Hidden China risks are emerging in America’s multibillion-dollar AI data center boom - cnbc.com",
+      "title_cn": "",
+      "url": "https://www.cnbc.com/2026/09/03/us-ai-data-centers-china-supply-chain.html",
+      "content": "CNBC has contacted the U.K. embassy of the People's Republic of China for comment on Trump's executive order and on the country's involvement in the supply of parts for the AI data center buildout.\n\nU.S. data center capacity is forecast to grow from 62 GW in March 2026 to 152 GW by 2030 due to high-",
+      "content_detail": "[Skip Navigation](#MainContent)\n\n[![CNBC](https://static-redesign.cnbcfm.com/dist/d6085c9e81f4d7365c8d.svg)](//www.cnbc.com/world/)\n\n[Markets](/markets/)\n\n\n\n* [Pre-Markets](/pre-markets/)\n* [U.S. Markets](/us-markets/)\n* [Europe Markets](/markets-europe/)\n* [China Markets](/china-markets/)\n* [Asia Markets](/markets-asia-pacific/)\n* [World Markets](/world-markets/)\n* [Currencies](/currencies/)\n* [Prediction Markets](/prediction-markets/)\n* [Cryptocurrency](/cryptocurrency/)\n* [Futures & Commodities](/futures-and-commodities/)\n* [Bonds](/bonds/)\n* [Funds & ETFs](/funds-and-etfs/)\n\n[Business](/business/)\n\n\n\n* [Economy](/economy/)\n* [Finance](/finance/)\n* [Health & Science](/health-and-science/)\n* [Media](/media/)\n* [Real Estate](/real-estate/)\n* [Energy](/energy/)\n* [Climate](/climate/)\n* [Transportation](/transportation/)\n* [Investigations](/cnbc-investigations/)\n* [Industrials](/industrials/)\n* [Retail](/retail/)\n* [Wealth](/wealth/)\n* [Sports](/sports/)\n* [Life](/life/)\n* [Small Business](/small-business/)\n\n[Investing](/investing/)\n\n\n\n* [Personal Finance](/personal-finance/)\n* [Fintech](/fintech/)\n* [Financial Advisors](/financial-advisors/)\n* [Options Action](/options-action/)\n* [ETF Street](/etf-street/)\n* [Buffett Archive](https://buffett.cnbc.com)\n* [Earnings](/earnings/)\n* [Trader Talk](/trader-talk/)\n\n[Tech](/technology/)\n\n\n\n* [Cybersecurity](/cybersecurity/)\n* [AI](/ai-artificial-intelligence/)\n* [Enterprise](/enterprise/)\n* [Internet](/internet/)\n* [Media](/media/)\n* ",
+      "published_date": "Thu, 03 Sep 2026 09:29:04 GMT",
+      "search_region": "中美博弈",
+      "classified_regions": [
+        "中美博弈"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "South Korea's semiconductor exports just tripled year-over-year. Is it too much of a good thing? - CNBC",
+      "title_cn": "",
+      "url": "https://www.cnbc.com/2026/09/03/south-korea-semiconductor-exports-surging-concerns.html",
+      "content": "Monetary policy could also limit the cushion if the cycle turns soon. The Bank of Korea raised its base rate to 3% in August, its second consecutive hike, as core inflation remained elevated.\n\nChia warned that if chip demand cools while policy is still tightening, \"the windfall fades when domestic d",
+      "content_detail": "[Skip Navigation](#MainContent)\n\n[![CNBC](https://static-redesign.cnbcfm.com/dist/d6085c9e81f4d7365c8d.svg)](//www.cnbc.com/)\n\n[Markets](/markets/)\n\n\n\n* [Pre-Markets](/pre-markets/)\n* [U.S. Markets](/us-markets/)\n* [Currencies](/currencies/)\n* [Prediction Markets](/prediction-markets/)\n* [Cryptocurrency](/cryptocurrency/)\n* [Futures & Commodities](/futures-and-commodities/)\n* [Bonds](/bonds/)\n* [Funds & ETFs](/funds-and-etfs/)\n\n[Business](/business/)\n\n\n\n* [Economy](/economy/)\n* [Finance](/finance/)\n* [Health & Science](/health-and-science/)\n* [Media](/media/)\n* [Real Estate](/real-estate/)\n* [Energy](/energy/)\n* [Climate](/climate/)\n* [Transportation](/transportation/)\n* [Investigations](/cnbc-investigations/)\n* [Industrials](/industrials/)\n* [Retail](/retail/)\n* [Wealth](/wealth/)\n* [Sports](/sports/)\n* [Life](/life/)\n* [Small Business](/small-business/)\n\n[Investing](/investing/)\n\n\n\n* [Personal Finance](/personal-finance/)\n* [Fintech](/fintech/)\n* [Financial Advisors](/financial-advisors/)\n* [Options Action](/options-action/)\n* [ETF Street](/etf-street/)\n* [Buffett Archive](https://buffett.cnbc.com)\n* [Earnings](/earnings/)\n* [Trader Talk](/trader-talk/)\n\n[Tech](/technology/)\n\n\n\n* [Cybersecurity](/cybersecurity/)\n* [AI](/ai-artificial-intelligence/)\n* [Enterprise](/enterprise/)\n* [Internet](/internet/)\n* [Media](/media/)\n* [Mobile](/mobile/)\n* [Social Media](/social-media/)\n* [CNBC Disruptor 50](/cnbc-disruptors/)\n* [Tech Guide](/tech-guide/)\n\n[Politics & Policy](/politics/)",
+      "published_date": "Thu, 03 Sep 2026 01:11:41 GMT",
+      "search_region": "中美博弈",
+      "classified_regions": [
+        "中美博弈"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "US trade deficit widens in July; capital goods imports hit record high - KITCO",
+      "title_cn": "",
+      "url": "https://www.kitco.com/news/off-the-wire/2026-09-03/us-trade-deficit-widens-july-capital-goods-imports-hit-record-high",
+      "content": "Imports of services decreased $0.6 billion to $78.7 billion in July, pulled down by charges for the use of intellectual property. Imports of transport services fell ​but those of travel services increased. Exports of services dipped $0.4 billion ​to $109.7 billion amid ⁠declines in travel, financial",
+      "content_detail": "[### off-the-wire](/news/off-the-wire)\n\n# US trade deficit widens in July; capital goods imports hit record high\n\n[![Kitco Media](/default-avatar.svg)](/author/reuters)\n\n###### By [Reuters](/author/reuters)\n\nPublished:\n\nUpdated:\n\n##### Reuters\n\n![US trade deficit widens in July; capital goods imports hit record high teaser image](https://images.kitco.com/img/height_691,width_1224,format_webp,quality_75/icms/852274e0-dbf7-4f10-ad77-fb757d6893c9.webp)\n\nWASHINGTON, Sept 3 (Reuters) - The U.S. trade deficit widened sharply in July as strong domestic demand boosted imports, positioning trade to exert another drag on economic growth in the third quarter.\n\nThe trade ​shortfall increased 24.4% to $88.6 billion, the Commerce Department's Bureau of Economic Analysis and ‌Census Bureau said on Thursday. Economists polled by Reuters had forecast the deficit at $90.0 billion.  \n  \nThe deterioration was flagged by data last week showing an import-driven surge in the goods trade deficit in July.  \n  \nDomestic demand soared in the ​second quarter, a combination of both strong consumer spending and business investment in artificial ​intelligence. Demand is, however, being satiated with imports, helping to widen the ⁠trade deficit.\n\nImports increased 2.8% to $399.3 billion in July. Goods imports shot up 3.7% to $320.6 billion. ​Imports of capital goods jumped $14.4 billion to a record high $140.3 billion, reflecting strong increases in computers, ​computer accessories and semiconductors, likel",
+      "published_date": "Thu, 03 Sep 2026 19:00:11 GMT",
+      "search_region": "中美博弈",
+      "classified_regions": [
+        "中美博弈"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "US trade deficit widens in July; capital goods imports hit record high By Published: Updated: Reuters - The U.S.",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Trump Administration: Latest News and Live Updates - The New York Times",
+      "title_cn": "",
+      "url": "https://www.nytimes.com/live/2026/09/03/us/trump-news",
+      "content": "Drone Levies: The Trump administration imposed tariffs of up to 100 percent on drone imports on Thursday as part of its campaign to stymie China’s drone industry and give local manufacturers a boost. Chinese-made drones are regularly used by law enforcement officials in the United States to track wi",
+      "content_detail": "",
+      "published_date": "Thu, 03 Sep 2026 12:02:15 GMT",
+      "search_region": "中美博弈",
+      "classified_regions": [
+        "中美博弈"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "China’s Soybean Buying Spree Continues Ahead of Xi Jinping’s Expected U.S. Visit - Global Agriculture",
+      "title_cn": "",
+      "url": "https://www.global-agriculture.com/global-agriculture/chinas-soybean-buying-spree-continues-ahead-of-xi-jinpings-expected-u-s-visit/",
+      "content": "A stronger U.S. dollar has also worked against American grain competitiveness relative to Brazilian and Argentine offers in recent weeks, compounding the tariff disadvantage American exporters already face in the Chinese market. Corn and wheat trackers also posted gains in the same session, with whe",
+      "content_detail": "",
+      "published_date": "Thu, 03 Sep 2026 06:17:48 GMT",
+      "search_region": "中美博弈",
+      "classified_regions": [
+        "中美博弈"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "US Trade Gap in July Widens to Biggest in Over a Year - IndustryWeek",
+      "title_cn": "",
+      "url": "https://www.industryweek.com/the-economy/trade/news/55402774/us-trade-gap-in-july-widens-to-biggest-in-over-a-year",
+      "content": "U.S. trade has seen wide fluctuations since last year as President Donald Trump imposed broad tariffs on goods from both allies and competitors.\n\nBusinesses have scrambled to step up imports before new waves of duties kicked in. Since the U.S. Supreme Court struck down a swath of Trump's global tari",
+      "content_detail": "",
+      "published_date": "Thu, 03 Sep 2026 13:52:45 GMT",
+      "search_region": "中美博弈",
+      "classified_regions": [
+        "中美博弈"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Shipping stocks at a crossroads amid their best rally in decades - CNBC",
+      "title_cn": "",
+      "url": "https://www.cnbc.com/2026/09/03/shipping-hormuz-tankers-earnings-freight-rates-iran-trump-crude-china-stocks.html",
+      "content": "\"Shipping provides a form of hedge to geopolitical instability,\" said Andreas Povlsen, managing director at Hayfin Capital Management. He noted that freight markets have benefited from volatility, including the Covid-19 pandemic, Houthi attacks in the Red Sea, and Russia's invasion of Ukraine.\n\nInve",
+      "content_detail": "",
+      "published_date": "Thu, 03 Sep 2026 03:59:53 GMT",
+      "search_region": "中东/红海",
+      "classified_regions": [
+        "中东/红海"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Live updates • IDF troops kill two Palestinian youths during settler raid, medics say - Haaretz",
+      "title_cn": "",
+      "url": "https://www.haaretz.com/israel-news/israel-security/2026-09-03/ty-article-live/idf-troops-kill-two-palestinian-youths-during-settler-raid-medics-say/000001a0-6509-d1e9-ade0-f5dbf60c0000?liveBlogItemId=355916390",
+      "content": "■ The IDF said it killed a Hamas commander and another operative in a Gaza strike, accusing them of advancing attacks against Israeli troops and civilians and of helping restore Hamas' capabilities in violation of the cease-fire.\n\n■ The FBI seized more than $560,000 in cryptocurrency destined for Ha",
+      "content_detail": "",
+      "published_date": "Thu, 03 Sep 2026 02:24:00 GMT",
+      "search_region": "中东/红海",
+      "classified_regions": [
+        "中东/红海"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Editorial | Sewage backfire: Israel is paying the price for Gaza's ruin - haaretz.com",
+      "title_cn": "",
+      "url": "https://www.haaretz.com/opinion/editorial/2026-09-04/ty-article-opinion/sewage-backfire-israel-is-paying-the-price-for-gazas-ruin/000001a0-68e1-de5c-a1e3-7fe714180000",
+      "content": "Israel-Gaza War\n\n## Comments\n\nLoading...\n\n## In the News\n\n### In the News:\n\nLive UpdatesIran-U.S.West BankSara NetanyahuGazaCafe BasimtaDesalinationPollHaQuizHaaretz Podcast\n\n### Netanyahu Ignored All the October 7 Wake-up Calls. Until It Came to His Own Fate\n\n### Vance Say U.S. Cuts Contact With Ir",
+      "content_detail": "",
+      "published_date": "Thu, 03 Sep 2026 21:52:00 GMT",
+      "search_region": "中东/红海",
+      "classified_regions": [
+        "中东/红海"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Iran Update, September 2, 2026 - Institute for the Study of War",
+      "title_cn": "",
+      "url": "https://understandingwar.org/research/middle-east/iran-update-september-2-2026/",
+      "content": "Hezbollah likely intends for such attacks to compel the Syrian government to divert resources from counter-smuggling efforts to focus on threats to Syrian stability. Lebanese and Syrian authorities have threatened Hezbollah’s weapons smuggling activities in recent months by interdicting Hezbollah we",
+      "content_detail": "",
+      "published_date": "Thu, 03 Sep 2026 00:35:31 GMT",
+      "search_region": "中东/红海",
+      "classified_regions": [
+        "中东/红海"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Top Democratic Senator Slams 'Confirmed' Israeli Plan to Ethnically Cleanse Gaza - Haaretz",
+      "title_cn": "",
+      "url": "https://www.haaretz.com/israel-news/israel-security/2026-09-03/ty-article/.premium/top-democratic-senator-slams-confirmed-israeli-plan-to-ethnically-cleanse-gaza/000001a0-65fe-def7-a7f7-6dffecfb0000",
+      "content": "## Comments\n\nLoading...\n\n## In the News\n\n### In the News:\n\nLive UpdatesIran-U.S.West BankSara NetanyahuGazaJD VanceNetanyahuDesalinationHaQuizHaaretz Podcast\n\n### Top Democratic Senator Slams 'Confirmed' Israeli Plan to Ethnically Cleanse Gaza\n\n### Poll: Far-right Parties Rise Above Threshold, Boost",
+      "content_detail": "",
+      "published_date": "Thu, 03 Sep 2026 09:55:00 GMT",
+      "search_region": "中东/红海",
+      "classified_regions": [
+        "中东/红海"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Oil prices mixed as investors weigh Middle East escalation, chance of Russia-Ukraine peace deal - Reuters",
+      "title_cn": "",
+      "url": "https://www.reuters.com/business/energy/oil-prices-rise-escalation-middle-east-2026-09-03/",
+      "content": "Advertisement · Scroll to continue\n\nReport AdImage 4\n\nIran's health minister said 18 people were killed and 108 wounded in Tuesday night's U.S. strikes across Iran. The Iranian ​Red Crescent said four people were killed and 67 wounded at a wedding ceremony near the coast ⁠of the Strait of Hormuz.\n\nT",
+      "content_detail": "",
+      "published_date": "Thu, 03 Sep 2026 14:09:05 GMT",
+      "search_region": "中东/红海",
+      "classified_regions": [
+        "中东/红海"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "How will Gadi Eisenkot differ from Benjamin Netanyahu on Iran, West Bank violence? - The Jerusalem Post",
+      "title_cn": "",
+      "url": "https://www.jpost.com/israel-election-2026/article-907531",
+      "content": "All in all, the Post understands that Eisenkot expects it to take two to three months to make the initial large-scale changes needed to restore prior policies within the police, the IDF, and the Shin Bet, followed by a longer period to ensure the situation stabilizes long-term.\n\nOf course, all of th",
+      "content_detail": "",
+      "published_date": "Thu, 03 Sep 2026 16:52:31 GMT",
+      "search_region": "中东/红海",
+      "classified_regions": [
+        "中东/红海"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Analysis • From Israel to Palestine to the U.S., condemnation games need to stop - Haaretz",
+      "title_cn": "",
+      "url": "https://www.haaretz.com/israel-news/2026-09-03/ty-article-magazine/.premium/from-israel-to-palestine-to-the-u-s-condemnation-games-need-to-stop/000001a0-6756-def7-a7f7-6ff71ded0000",
+      "content": "Dahlia Scheindlin\n\nWednesday morning in Israel this week offered another run-of-the mill interview with a shameless liar, in a low, dishonest era. Almog Cohen is a deputy minister who moved to Likud from Otzma Yehudit, two parties that are practically indistinguishable, and he spent a long rush-hour",
+      "content_detail": "",
+      "published_date": "Thu, 03 Sep 2026 18:20:00 GMT",
+      "search_region": "中东/红海",
+      "classified_regions": [
+        "中东/红海"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Chair of Pacific leaders meeting urges united front on China missile test - Reuters",
+      "title_cn": "",
+      "url": "https://www.reuters.com/world/china/chair-pacific-leaders-meeting-urges-united-front-china-missile-test-2026-09-03/",
+      "content": "Advertisement · Scroll to continue\n\nChina says the test was conducted safely.\n\n## CHINA-TAIWAN DISPUTE\n\nThis year's meeting of the Pacific Islands ‌Forum ⁠has been overshadowed by China's objections to the presence of Taiwan at the summit, saying the island was not qualified to attend.\n\nSummit host ",
+      "content_detail": "",
+      "published_date": "Thu, 03 Sep 2026 02:18:10 GMT",
+      "search_region": "台海/南海/朝鲜",
+      "classified_regions": [
+        "台海/南海/朝鲜"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "No China missile test condemnation from Pacific leaders - innereastreview.com.au",
+      "title_cn": "",
+      "url": "https://www.innereastreview.com.au/story/9343557/no-china-missile-test-condemnation-from-pacific-leaders/",
+      "content": "\"Recalling the Blue Pacific Ocean of Peace declaration, leaders registered concern about the recent inter-continental ballistic missile (ICBM) test which overflew a number of members without adequate notice,\" the relevant clause read.\n\n\"Leaders call on all states undertaking ICBM testing to provide ",
+      "content_detail": "",
+      "published_date": "Thu, 03 Sep 2026 17:33:49 GMT",
+      "search_region": "台海/南海/朝鲜",
+      "classified_regions": [
+        "台海/南海/朝鲜"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "China says it conducted survey of waters east of Taiwan last month - Reuters",
+      "title_cn": "",
+      "url": "https://www.reuters.com/world/asia-pacific/china-says-it-conducted-survey-waters-east-taiwan-last-month-2026-09-03/",
+      "content": "The coast ​guard also strongly ​condemned China's actions ⁠that \"sought to harass\" Taiwan through maritime activities while \"maliciously engaging in political manipulation\", referring to China's ​claims on the island and its maritime activities ​in ⁠the area.\n\nAdvertisement · Scroll to continue\n\nChi",
+      "content_detail": "",
+      "published_date": "Thu, 03 Sep 2026 03:57:05 GMT",
+      "search_region": "台海/南海/朝鲜",
+      "classified_regions": [
+        "台海/南海/朝鲜"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Pacific leaders at summit fail to reach unanimous condemnation of China's ballistic missile launch - Greenwich Time",
+      "title_cn": "",
+      "url": "https://www.greenwichtime.com/news/world/article/pacific-leaders-at-summit-fail-to-reach-unanimous-22416516.php",
+      "content": "Advertisement\n\nArticle continues below this ad\n\nIn 2024, Nauru severed its diplomatic ties with Taiwan, which Beijing sees as part of China, to align itself with Beijing. Palau, the host of this year's leaders' summit, is one of a handful of countries worldwide still to recognize Taiwan, prompting s",
+      "content_detail": "",
+      "published_date": "Thu, 03 Sep 2026 19:31:47 GMT",
+      "search_region": "台海/南海/朝鲜",
+      "classified_regions": [
+        "台海/南海/朝鲜"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Pacific island nations seek to turn geopolitics into funding to offset climate change harm - Greenwich Time",
+      "title_cn": "",
+      "url": "https://www.greenwichtime.com/news/world/article/pacific-island-nations-seek-to-turn-geopolitics-22415498.php",
+      "content": "Best Of\n\nPamper your pets with CT's best pet stores and groomers\n\nTreat your furry friends to gifts and spa days to make them wag and purr.\n\nBest Of\n\nHungry? These CT food trucks are serving the best street eats\n\nGood things come on wheels, like these food trucks dishing out the best eats in Connect",
+      "content_detail": "",
+      "published_date": "Thu, 03 Sep 2026 04:55:22 GMT",
+      "search_region": "台海/南海/朝鲜",
+      "classified_regions": [
+        "台海/南海/朝鲜"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Division 210 completes drill in Golan Heights, including wounded evacuation and mass casualty events - Ynetnews",
+      "title_cn": "",
+      "url": "https://www.ynetnews.com/article/7unw1dzrj",
+      "content": "The commenter agrees to the privacy policy of Ynet News and agrees not to submit comments that violate the terms of use, including incitement, libel and expressions that exceed the accepted norms of freedom of speech.\n\n\"\" [...] special forces and alertness across the entire IDF system. [...] Updates",
+      "content_detail": "",
+      "published_date": "Thu, 03 Sep 2026 06:00:16 GMT",
+      "search_region": "台海/南海/朝鲜",
+      "classified_regions": [
+        "台海/南海/朝鲜"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "US nuclear giants target Asia - Politico",
+      "title_cn": "",
+      "url": "https://www.politico.com/newsletters/politico-surge/2026/09/03/the-us-nuclear-renaissance-eyes-southeast-asia-01062945",
+      "content": "# US nuclear giants target Asia\n\nPresented by\n\nWith help from Benjamin Storrow, Sara Schonhardt and Zack Colman in the U.S., Mike Blanchfield in Canada, Alexandre Léchenet and Nicolas Camut in France, Charlie Cooper in the United Kingdom, and Zia Weise in Belgium.\n\n## Surge Preview\n\n The U.S. zeros ",
+      "content_detail": "",
+      "published_date": "Thu, 03 Sep 2026 17:00:00 GMT",
+      "search_region": "台海/南海/朝鲜",
+      "classified_regions": [
+        "台海/南海/朝鲜"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "US, China arm for space warfare: hunter satellites and orbital weapons - The Jerusalem Post",
+      "title_cn": "",
+      "url": "https://www.jpost.com/defense-and-tech/article-907403",
+      "content": "The institutions and the People's Liberation Army did not respond to requests for comment. On-orbit capabilities such as refueling and capturing another satellite could have non-military uses.\n\nChina's official military newspaper, PLA Daily, said in a 2022 editorial that controlling space was essent",
+      "content_detail": "",
+      "published_date": "Thu, 03 Sep 2026 06:35:14 GMT",
+      "search_region": "台海/南海/朝鲜",
+      "classified_regions": [
+        "台海/南海/朝鲜"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "In what is by now a Kremlin tradition, Russia's Ministry ...",
+      "title_cn": "",
+      "url": "https://www.facebook.com/EUvsDisinfo/posts/in-what-is-by-now-a-kremlin-tradition-russias-ministry-of-foreign-affairs-insist/1482210020598120",
+      "content": "EU sanctions and sanctions imposed by our allies and G7 partners. These sanctions were adopted in close coordination with the G-7 international law. Are",
+      "content_detail": "",
+      "published_date": null,
+      "search_region": "全球制裁",
+      "classified_regions": [
+        "全球制裁"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "The fading efficacy of US shadow fleet sanctions - Brookings Institution",
+      "title_cn": "",
+      "url": "https://www.brookings.edu/articles/the-fading-efficacy-of-us-shadow-fleet-sanctions",
+      "content": "Strengthening the joint sanctions effort by the U.S., EU, and UK demands two distinct actions by U.S. authorities. One, the U.S. must join its allies in continuing to sanction additional shadow fleet tankers, as Russia amasses additional tankers and employs increased use of unscrupulous shipping net",
+      "content_detail": "",
+      "published_date": "Thu, 03 Sep 2026 16:00:00 GMT",
+      "search_region": "全球制裁",
+      "classified_regions": [
+        "全球制裁"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "OFAC Launches “Operation Economic Outcast,” Expanding Secondary Sanctions Risks for Iran-Related Business",
+      "title_cn": "",
+      "url": "https://www.jdsupra.com/legalnews/ofac-launches-operation-economic-2321415",
+      "content": "Pillsbury - Global Trade & Sanctions Law\n\nOn August 24, 2026, the U.S. Department of the Treasury’s Office of Foreign Assets Control (OFAC) announced “Operation Economic Outcast,” a series of economic sanctions measures targeting Iran and persons that continue to maintain economic ties with Iran or ",
+      "content_detail": "",
+      "published_date": "Thu, 03 Sep 2026 16:00:00 GMT",
+      "search_region": "全球制裁",
+      "classified_regions": [
+        "全球制裁"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "EU pursuing more Russia sanctions after failed airport attack",
+      "title_cn": "",
+      "url": "https://www.facebook.com/aljazeera/posts/eu-pursuing-more-russia-sanctions-after-failed-airport-attack-kallas/1555560289951653",
+      "content": "- *Trade Measures*: Export restrictions on dual-use items, advanced technologies, and goods critical to Russia's military-industrial complex. The EU's efforts",
+      "content_detail": "",
+      "published_date": null,
+      "search_region": "全球制裁",
+      "classified_regions": [
+        "全球制裁"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Trade MEPs back temporary tariff relief for Armenia amid Russian trade restrictions",
+      "title_cn": "",
+      "url": "https://www.europeaninterest.eu/trade-meps-back-temporary-tariff-relief-for-armenia-amid-russian-trade-restrictions",
+      "content": "EU INSTITUTIONS\n  + EUROPEAN CENTRAL BANK\n  + EUROPEAN COMMISSION\n  + EUROPEAN COUNCIL\n  + EUROPEAN COURT OF JUSTICE\n  + EUROPEAN INSTITUTIONS\n  + EUROPEAN PARLIAMENT\n MEMBER STATES\n  + AUSTRIA\n  + BELGIUM\n  + BULGARIA\n  + CROATIA\n  + CYPRUS\n  + CZECH REPUBLIC\n  + DENMARK\n  + ESTONIA\n  + FINLAND\n  +",
+      "content_detail": "",
+      "published_date": "Thu, 03 Sep 2026 10:42:33 GMT",
+      "search_region": "全球制裁",
+      "classified_regions": [
+        "全球制裁"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Use of G20 to advance protectionist rhetoric slammed - Chinadaily.com.cn",
+      "title_cn": "",
+      "url": "https://global.chinadaily.com.cn/a/202609/04/WS6a99a371e4b06d4aa055c406.html",
+      "content": "Subramaniam, who is also chair emeritus of the US-China Business Council, said global trade is entering an era of \"re-globalization\", as supply chains are being rewired to become more resilient and diversified.\n\nRegarding US sanctions, the Ministry of Commerce urged the US to reverse its actions and",
+      "content_detail": "",
+      "published_date": "Thu, 03 Sep 2026 16:42:24 GMT",
+      "search_region": "全球制裁",
+      "classified_regions": [
+        "全球制裁"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Trump's Iran sanctions threat could strain US-India relations, expert says | Fox News",
+      "title_cn": "",
+      "url": "https://www.foxnews.com/world/indias-modi-iran-meeting-comes-amid-us-warnings-sanctions-tehrans-trading-partners.amp",
+      "content": "India has already come into the Treasury Department's crosshairs, with the U.S. sanctioning four India-based companies and three Indian nationals over alleged links to Iranian petroleum and petrochemical trade.\n\n`{{#rendered}}  {{/rendered}}`\n`{{/rendered}}`\n\nPresident Donald Trump (R) shakes hands ",
+      "content_detail": "",
+      "published_date": "Thu, 03 Sep 2026 11:46:40 GMT",
+      "search_region": "全球制裁",
+      "classified_regions": [
+        "全球制裁"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Global Trade Accelerates as Critical Minerals Shape Economic Landscape: Key Insights into the World Economy El Ciudadano",
+      "title_cn": "",
+      "url": "https://www.elciudadano.com/en/global-trade-accelerates-as-critical-minerals-shape-economic-landscape-key-insights-into-the-world-economy/09/03",
+      "content": "The global economy is navigating a landscape filled with both opportunities and tensions. International trade is experiencing rapid growth, yet trade wars, tariffs, and sanctions are reshaping the marketplace. Concurrently, governments are racing to secure supplies of strategic minerals and position",
+      "content_detail": "",
+      "published_date": "Thu, 03 Sep 2026 12:47:05 GMT",
+      "search_region": "全球制裁",
+      "classified_regions": [
+        "全球制裁"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    }
+  ]
+}

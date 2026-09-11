@@ -1,0 +1,100 @@
+{
+  "date": "2026-09-04",
+  "generated_at": "2026-09-04T06:07:03.174084",
+  "upcoming_events": [
+    {
+      "date": "2026-09-04",
+      "event": "非农就业报告 (8月)",
+      "importance": "high",
+      "category": "就业",
+      "days_until": 0
+    },
+    {
+      "date": "2026-09-11",
+      "event": "美国 CPI (8月)",
+      "importance": "high",
+      "category": "通胀",
+      "days_until": 7
+    },
+    {
+      "date": "2026-09-16",
+      "event": "FOMC 利率决议",
+      "importance": "critical",
+      "category": "央行",
+      "note": "附 SEP 经济预测 + 点阵图",
+      "days_until": 12
+    }
+  ],
+  "recent_events": [],
+  "web_events": [
+    {
+      "source": "tavily_answer",
+      "query": "US economic data release this week CPI GDP jobs",
+      "answer": "The latest US economic data for this week includes the Consumer Price Index (CPI), Gross Domestic Product (GDP), and jobs reports. The CPI remains high, indicating persistent inflation pressures, which may lead to potential rate hikes by the Federal Reserve. The number of people filing for unemployment benefits fell last week, remaining at historic lows, suggesting a robust job market. The upcoming Non-Farm Payrolls report on Friday will provide further insights into the labor market's health an"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Newsquawk Daily Economic Releases - 1st September 2026 | Newsquawk",
+      "url": "https://www.newsquawk.com/headlines/newsquawk-daily-economic-releases---1st-september-2026",
+      "content": "ByNewsquawk Staff\n\n Data: Chinese RatingDog Manufacturing PMI (Aug), German Retail Sales (Jul), Global S&P Manufacturing PMI Final (Aug), EZ CPI Prelim (Aug), US ISM Manufacturing PMI (Aug), JOLTS Job Openings (Jul), Atlanta Fed GDP (Q3)\n Events: US Midterm Primary Elections: Massachusetts\n Speakers"
+    },
+    {
+      "source": "tavily_result",
+      "title": "America In Focus: key inflation gauge remains high; Fed's Warsh signals rate hikes may be needed",
+      "url": "https://abcnews.com/Business/wireStory/america-focus-key-inflation-gauge-remains-high-feds-136056323",
+      "content": "The economy, inflation and how those forces could impact the lives of Americans were front and center over the past week. Trips to the grocery store and gas station are more painful than they were last year, and rising costs are impacting the decisions of both households and businesses.\n\nHere’s a sn"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Swiss Franc Short-term Outlook: USD/CHF Breakout Puts Yearly Highs Back in Play",
+      "url": "https://www.forex.com/en-us/news-and-analysis/swiss-franc-short-term-outlook-usd-chf-breakout-puts-yearly-highs-back-in-play-9-2-2026",
+      "content": "The economic calendar heats up into the close of the week, with Swiss CPI and second-quarter GDP figures on tap tomorrow followed by the highly anticipated U.S. Non-Farm Payrolls report on Friday. While the Swiss data could generate near-term volatility, the broader focus remains firmly on the U.S. "
+    },
+    {
+      "source": "tavily_answer",
+      "query": "Federal Reserve speech this week monetary policy",
+      "answer": "In his recent speech at the Jackson Hole Economic Policy Symposium, Federal Reserve Chair Kevin Warsh emphasized the importance of price stability and highlighted that the central bank's focus should be on lowering elevated inflation. Warsh avoided committing to forward guidance or a reaction function for monetary policy, instead stressing the need for underlying inflation to move towards the Fed's objective at a clear and sufficient speed. His speech led to increased market expectations for a r"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Warsh in Wyoming speech: High inflation should be policy priority",
+      "url": "https://www.upi.com/Top_News/US/2026/08/28/kevin-warsh-federal-reserve-symposium-wyoming/4011787924809",
+      "content": "Aug. 28 (UPI) -- Federal Reserve Chairman Kevin Warsh said the country's focus should be on lowering prices as inflation continues to stay elevated Friday at the Fed's annual symposium at Jackson Hole, Wyo.\n\nFederal Reserve chairs often use the speech to discuss monetary policy initiatives on a broa"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Kevin Warsh outlines hawkish PCE inflation stance at Jackson Hole",
+      "url": "https://www.foxbusiness.com/economy/what-warshs-jackson-hole-speech-signals-about-where-interest-rates-headed",
+      "content": "Federal Reserve Chair Kevin Warsh on Friday delivered his first keynote address at the annual Jackson Hole Symposium on monetary policy, outlining his views of the economy and his perspective on why he thinks the central bank's forward guidance should be reined in. [...] Fed Chair Kevin Warsh emphas"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Fed Chairman Warsh warns on inflation at Jackson Hole",
+      "url": "https://www.cnbc.com/2026/08/28/kevin-warsh-jackson-hole-federal-reserve-inflation.html",
+      "content": "Fed Chair Kevin Warsh in his speech Friday at Jackson Hole avoided committing either to forward guidance or a reaction function for monetary policy.\n Instead, Warsh used the presentation as a broad look at his approach to governance.\n \"We should not indulge a regime in which market participants are "
+    },
+    {
+      "source": "tavily_answer",
+      "query": "China PMI economic data this week",
+      "answer": "China's official August Purchasing Managers' Indices (PMI) showed mixed results. The manufacturing PMI improved to 49.8 from 49.2 in July, slightly above the consensus forecast of 49.7. The services PMI rose to 51.4 in August from 50.4 in July, exceeding the market consensus of 50.6. The composite PMI, which includes both manufacturing and services, edged up to 49.5 from 49.3. Despite the improvements, all indices remained below the 50-point mark indicating ongoing contraction in both sectors."
+    },
+    {
+      "source": "tavily_result",
+      "title": "Economic and event calendar in Asia 31 August 2026 - China official PMIs",
+      "url": "https://investinglive.com/news/economic-and-event-calendar-in-asia-31-august-2026-china-official-pmis",
+      "content": "# Economic and event calendar in Asia 31 August 2026 - China official PMIs\n\nIt's a packed data agenda ahead with the priority item Chinese PMI data.\n\nSetting the stage for the session ahead is this renewed hostility:\n\nChina's National Bureau of Statistics releases its official August Purchasing Mana"
+    },
+    {
+      "source": "tavily_result",
+      "title": "New Zealand Dollar rebounds above 0.5850 on stronger Chinese services PMI",
+      "url": "https://www.fxstreet.com/news/new-zealand-rebounds-above-05850-on-stronger-chinese-services-pmi-202609030214",
+      "content": "Data released by RatingDog on Thursday showed that China's Services Purchasing Managers' Index (PMI) rose to 51.4 in August from 50.4 in July. This figure came in above the market consensus of 50.6.\n\nEarlier this week, China's NBS Manufacturing PMI improved to 49.8 in August, up from 49.2 in July, s"
+    },
+    {
+      "source": "tavily_result",
+      "title": "China Stocks Rebound on Upbeat PMI Data — TradingView News",
+      "url": "https://www.tradingview.com/news/te_news:580664:0-china-stocks-rebound-on-upbeat-pmi-data",
+      "content": "Trading Economics\nTrading Economics\n\n# China Stocks Rebound on Upbeat PMI Data\n\nThe Shanghai Composite rose 0.5% to 3,960 on Thursday, while the Shenzhen Component gained 0.4% to 13,666, snapping a two-session losing streak as fresh PMI data reinforced signs of improving economic momentum in China.\n"
+    }
+  ]
+}

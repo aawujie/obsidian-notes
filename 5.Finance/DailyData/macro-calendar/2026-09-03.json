@@ -1,0 +1,100 @@
+{
+  "date": "2026-09-03",
+  "generated_at": "2026-09-03T06:07:04.387347",
+  "upcoming_events": [
+    {
+      "date": "2026-09-04",
+      "event": "非农就业报告 (8月)",
+      "importance": "high",
+      "category": "就业",
+      "days_until": 1
+    },
+    {
+      "date": "2026-09-11",
+      "event": "美国 CPI (8月)",
+      "importance": "high",
+      "category": "通胀",
+      "days_until": 8
+    },
+    {
+      "date": "2026-09-16",
+      "event": "FOMC 利率决议",
+      "importance": "critical",
+      "category": "央行",
+      "note": "附 SEP 经济预测 + 点阵图",
+      "days_until": 13
+    }
+  ],
+  "recent_events": [],
+  "web_events": [
+    {
+      "source": "tavily_answer",
+      "query": "US economic data release this week CPI GDP jobs",
+      "answer": "The upcoming US economic data releases this week include the August U.S. employment report on Friday, which is expected to show nonfarm payroll growth rebounding to 80K, an unemployment rate edging up to 4.2%, and average hourly earnings rising 0.3% month over month. The Consumer Price Index (CPI) data is scheduled for release on September 11, which will be crucial in determining the Federal Reserve's next monetary policy move. Additionally, the Federal Open Market Committee (FOMC) meeting is se"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Newsquawk Daily Economic Releases - 1st September 2026",
+      "url": "https://www.newsquawk.com/headlines/newsquawk-daily-economic-releases---1st-september-2026",
+      "content": "ByNewsquawk Staff\n\n Data: Chinese RatingDog Manufacturing PMI (Aug), German Retail Sales (Jul), Global S&P Manufacturing PMI Final (Aug), EZ CPI Prelim (Aug), US ISM Manufacturing PMI (Aug), JOLTS Job Openings (Jul), Atlanta Fed GDP (Q3)\n Events: US Midterm Primary Elections: Massachusetts\n Speakers"
+    },
+    {
+      "source": "tavily_result",
+      "title": "What are the key events for US stocks to watch in September? Keep an eye on the US FOMC meeting, employment data, CPI, Broadcom's earnings, OpenAI DevDay, Tesla's Cybercab, and Apple's new products! Who will be the main driver of the autumn mark",
+      "url": "https://www.moomoo.com/community/feed/what-are-the-key-u-s-stock-market-events-to-117171112575382",
+      "content": "From a macro perspective, the ADP Employment Report will be released at 21:15, followed simultaneously by the US August PCE deflator and the final Q2 GDP figures at 21:30. In other words, on the last day of September, we will have a complete report card covering employment, inflation, and growth. Am"
+    },
+    {
+      "source": "tavily_result",
+      "title": "The Week Ahead: US JOLTS and jobs report, Broadcom earnings",
+      "url": "https://www.cmcmarkets.com/en-gb/news-and-analysis/the-week-ahead-us-jolts-and-jobs-report-broadcom-earnings",
+      "content": "## Economic & company events calendar\n\nMajor scheduled data releases, plus selected UK, US and other listed company results:\n\nMonday 31 August• Germany: August flash consumer price index (CPI)  \n• Japan: July industrial production, July retail trade  \n• UK: Bank holiday  \n• Results: Cango (Q2), Lexi"
+    },
+    {
+      "source": "tavily_answer",
+      "query": "Federal Reserve speech this week monetary policy",
+      "answer": "Federal Reserve Chair Kevin Warsh's speech this week is anticipated to provide insights into U.S. monetary policy, with markets pricing in a 65% chance of a September rate hike following his hawkish comments last week. Warsh's speech at Jackson Hole emphasized a return to transparent monetary policy and acknowledged the Fed's responsibility for elevated inflation over the past 65 months. However, other Fed officials like John Williams advocate a \"wait-and-see\" approach before making any adjustme"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Fedspeak's Back, And Warsh Is A Breath of Fresh Air - First Trust Advisors - Commentaries - Advisor Perspectives",
+      "url": "https://www.advisorperspectives.com/commentaries/2026/09/01/fedspeaks-back-warsh-breath-fresh-air",
+      "content": "Federal Reserve Chairman Kevin Warsh used his Jackson Hole speech last week to lay out what he thinks of monetary policy. Two things jumped off the pages of his speech.\n\nFirst, “Fedspeak” may be making a comeback. Former Fed Chairman Alan Greenspan became famous for phrases like “irrational exuberan"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Fed Chair Warsh’s Speech Takes Center Stage: What Markets Are Watching",
+      "url": "https://cryptorank.io/news/feed/540b4-fed-chair-warsh-speech-center-stage",
+      "content": "Federal Reserve Chair Kevin Warsh is set to deliver a highly anticipated speech that could signal the direction of U.S. monetary policy, as investors and economists parse his remarks for clues on interest rates, inflation, and economic stability. The address, scheduled for this week, comes at a crit"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Fed's Williams not swayed that a rate hike is the answer yet",
+      "url": "https://www.americanbanker.com/news/feds-williams-not-swayed-that-a-rate-hike-is-the-answer-yet",
+      "content": "A key member of the Federal Reserve's monetary policy committee said he is not convinced that the central bank should be cutting interest rates just yet.\n\nProcessing Content\n\nFederal Reserve Bank of New York President John Williams speaking on CNBC Wednesday said the central bank has to \"wait and se"
+    },
+    {
+      "source": "tavily_answer",
+      "query": "China PMI economic data this week",
+      "answer": "China's official Purchasing Managers' Index (PMI) for August 2026 was released on Monday, showing a slight improvement in manufacturing activity. The PMI rose to 49.8 from 49.2 in July, indicating that while factory activity remains in contraction territory, it has shown a marginal recovery. The consensus among economists had predicted a reading of 49.6. The non-manufacturing PMI, which covers services and construction, also edged up to 49.5 from 49.3 in July, continuing to contract but showing "
+    },
+    {
+      "source": "tavily_result",
+      "title": "Economic and event calendar in Asia 31 August 2026 - China official PMIs",
+      "url": "https://investinglive.com/news/economic-and-event-calendar-in-asia-31-august-2026-china-official-pmis",
+      "content": "# Economic and event calendar in Asia 31 August 2026 - China official PMIs\n\nIt's a packed data agenda ahead with the priority item Chinese PMI data.\n\nSetting the stage for the session ahead is this renewed hostility:\n\nChina's National Bureau of Statistics releases its official August Purchasing Mana"
+    },
+    {
+      "source": "tavily_result",
+      "title": "China Stocks Open Week Lower — TradingView News",
+      "url": "https://www.tradingview.com/news/te_news:579328:0-china-stocks-open-week-lower",
+      "content": "Trading Economics\nTrading Economics\n\n# China Stocks Open Week Lower\n\nThe Shanghai Composite fell 0.5% to 3,931 on Monday, while the Shenzhen Component lost 1% to 13,810, as weak economic data reinforced concerns about China's growth outlook.\n\nOfficial PMI figures showed the Composite PMI edged up to"
+    },
+    {
+      "source": "tavily_result",
+      "title": "NZD/USD Holds Above 0.5900 as China’s Stronger PMI Data Lifts Risk Appetite",
+      "url": "https://cryptorank.io/news/feed/bf8cb-nzd-usd-rises-on-china-pmi-data",
+      "content": "The latest official Chinese PMI figures, released overnight, came in above market forecasts, indicating a continued expansion in the country’s manufacturing and services sectors. This positive economic signal from Beijing has a direct impact on the New Zealand Dollar due to the two nations’ strong t"
+    }
+  ]
+}

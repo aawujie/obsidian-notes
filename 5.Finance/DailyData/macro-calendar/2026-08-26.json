@@ -1,0 +1,85 @@
+{
+  "date": "2026-08-26",
+  "generated_at": "2026-08-26T06:07:31.065911",
+  "upcoming_events": [
+    {
+      "date": "2026-09-04",
+      "event": "非农就业报告 (8月)",
+      "importance": "high",
+      "category": "就业",
+      "days_until": 9
+    }
+  ],
+  "recent_events": [],
+  "web_events": [
+    {
+      "source": "tavily_answer",
+      "query": "US economic data release this week CPI GDP jobs",
+      "answer": "This week's U.S. economic data releases include the core PCE price index, preliminary GDP, and durable goods orders on Wednesday. Thursday will see the release of unemployment claims and the start of the Jackson Hole Economic Policy Symposium. Friday will feature the preliminary benchmark payroll revision for U.S. nonfarm payrolls. The consensus expects headline PCE prices to rise by +0.1% M/M, with the core measure rising by +0.2% M/M, while the annual rate of core PCE is seen unchanged at 3.3%"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Market outlook for the week of 24th-28th August",
+      "url": "https://investinglive.com/forex/market-outlook-for-the-week-of-24th-28th-august",
+      "content": "Wednesday will bring Australia's CPI data and in the U.S., the focus will shift to the core PCE price index m/m, preliminary GDP q/q, and durable goods orders m/m. The U.S. data releases will continue Thursday with the unemployment claims and the day will also mark the start of the Jackson Hole Econ"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Weekly Bottom Line - TD Economics - TD Bank",
+      "url": "https://economics.td.com/ca-weekly-bottom-line",
+      "content": "this week argue for the Fed to remain in wait-and-see mode, particularly with one more jobs report and another CPI print still to come before the September meeting. Next week’s July FOMC minutes pre-date this week’s CPI release, but could still contain useful information about how worried officials "
+    },
+    {
+      "source": "tavily_result",
+      "title": "Week in Focus 24-28th August 2026: Highlights include NVDA earnings, US PCE, BLS revisions, Bessent on Iran, and Jackson Hole",
+      "url": "https://www.newsquawk.com/headlines/week-in-focus-24-28th-august-2026-highlights-include-nvda-earnings-us-pce-bls-revisions-bessent-on-iran-and-jackson-hole-",
+      "content": "US PCE (WED): The consensus expects headline PCE prices to rise by +0.1% M/M in July (prev. -0.1%); the core measure is seen rising by +0.2% M/M (prev. 0.1%), with the annual rate of core PCE seen unchanged at 3.3% Y/Y. In July, headline CPI rose by +0.1% M/M (prev. -0.4%), with the annual rate slip"
+    },
+    {
+      "source": "tavily_answer",
+      "query": "Federal Reserve speech this week monetary policy",
+      "answer": "Federal Reserve Chair Kevin Warsh's speech at the Jackson Hole Economic Policy Symposium on August 28, 2026, is expected to provide significant insights into the direction of US monetary policy. The speech aims to clarify the Federal Reserve's approach to restoring price stability and may influence investor expectations about potential interest rate hikes. Warsh's address comes at a time when inflation remains above target, and the Federal Open Market Committee (FOMC) is divided on the appropria"
+    },
+    {
+      "source": "tavily_result",
+      "title": "FX Weekly Overview (Brazil Issue)",
+      "url": "https://www.stonex.com/en/insights/fx-weekly-overview-brazil-issue-2026-08-24",
+      "content": "Overview: This week marks the important Annual Monetary Policy Symposium in Jackson Hole, hosted by the Kansas City Federal Reserve, from Thursday (27) to Saturday (29).\n\nWhat to expect: In previous years, the Fed president's speech at Jackson Hole provided important insights into the direction of U"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Jackson Hole 2026: Fed Chair Warsh's Speech Could ...",
+      "url": "https://intellectia.ai/blog/jackson-hole-2026-fed-warsh-speech",
+      "content": "The 2026 Jackson Hole Economic Policy Symposium, scheduled for August 27-29, represents one of the most closely watched central banking events of the year. Federal Reserve Chair Kevin Warsh will deliver his first keynote address as Fed Chair on Friday, August 28, just three weeks before the critical"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Five Questions Kevin Warsh Must Answer This Week",
+      "url": "https://www.newsweek.com/five-questions-kevin-warsh-must-answer-this-week-12358601",
+      "content": "The Road to 9/11\n\n# Five Questions Kevin Warsh Must Answer This Week\n\nPublished\n\nAug 24, 2026 at 06:58 AM EDT\n\nHugh Cameron\n\nReporter\n\nFederal Reserve Chair Kevin Warsh will address the annual Jackson Hole Economic Policy Symposium this week, an opportunity for Donald Trump’s handpicked central bank"
+    },
+    {
+      "source": "tavily_answer",
+      "query": "China PMI economic data this week",
+      "answer": "China's National Bureau of Statistics released the August PMI on August 31 at 9:30 AM Beijing Time. The manufacturing PMI stood at 50.3%, 0.3 percentage point higher than the previous month, indicating stabilization in industrial momentum. The services PMI was forecasted at 53.9, reflecting business conditions in the service sector. These indices provide initial signals on new factory orders, service demand, employment, and price pressures, crucial for assessing domestic demand and economic acti"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Global Growth Resilience Tested by Jobs, PMI, and Inflation Data in Week 36",
+      "url": "https://www.kucoin.com/news/flash/global-growth-resilience-tested-by-jobs-pmi-and-inflation-data-in-week-36",
+      "content": "This week opens with regional growth signals and closes with the labor data most closely watched by global markets. China’s PMI will be released before Western markets have fully absorbed last week’s positions, so the new orders and employment components may set the opening tone for Asian equities, "
+    },
+    {
+      "source": "tavily_result",
+      "title": "Manufacturing PMI, services PMI among economic data due Friday",
+      "url": "https://ca.investing.com/news/stock-market-news/manufacturing-pmi-services-pmi-among-economic-data-due-friday-93CH-4810931",
+      "content": "• 8:45 AM ET - Manufacturing PMI (Forecast:54.0, Previous: 53.9) - Measures activity level of purchasing managers in the manufacturing sector, with readings above 50 indicating expansion.\n\n• 8:45 AM ET - Services PMI (Forecast:53.9, Previous: 54.6) - Tracks business conditions in the service sector "
+    },
+    {
+      "source": "tavily_result",
+      "title": "SCIO press conference on China's economic performance ...",
+      "url": "http://english.scio.gov.cn/m/pressroom/2026-08/25/content_118663630.html",
+      "content": "of 3D printing devices, lithium-ion batteries and industrial robots grew by 48.5%, 39.3% and 28.0% year on year, respectively. In June, the value added of industrial enterprises above designated size went up by 5.3% year on year, 0.8 percentage point faster than that of the previous month, or up by "
+    }
+  ]
+}

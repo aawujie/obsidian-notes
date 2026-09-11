@@ -1,0 +1,93 @@
+{
+  "date": "2026-09-10",
+  "generated_at": "2026-09-10T06:07:10.190736",
+  "upcoming_events": [
+    {
+      "date": "2026-09-11",
+      "event": "美国 CPI (8月)",
+      "importance": "high",
+      "category": "通胀",
+      "days_until": 1
+    },
+    {
+      "date": "2026-09-16",
+      "event": "FOMC 利率决议",
+      "importance": "critical",
+      "category": "央行",
+      "note": "附 SEP 经济预测 + 点阵图",
+      "days_until": 6
+    }
+  ],
+  "recent_events": [],
+  "web_events": [
+    {
+      "source": "tavily_answer",
+      "query": "US economic data release this week CPI GDP jobs",
+      "answer": "This week's US economic data releases include the Producer Price Index (PPI) report on Thursday and the Consumer Price Index (CPI) report on Friday. The PPI report will provide insights into wholesale price changes for goods, while the CPI report will shed light on consumer inflation trends. Additionally, the August US jobs report has already been released, showing solid labor demand, low unemployment, and moderate wage growth, indicating subdued inflationary pressures in the labor market. The G"
+    },
+    {
+      "source": "tavily_result",
+      "title": "What to Look Out for in Economic Data This Week ...",
+      "url": "https://www.kiplinger.com/investing/economy/this-weeks-economic-calendar",
+      "content": "The Bureau of Labor Statistics will release the Producer Price Index (PPI) report before Thursday's opening bell and the Consumer Price Index (CPI) report before Friday's opening bell.\n\nNote that the \"quiet period\" around the September 15-16 Federal Open Market Committee (FOMC) meeting started on Sa"
+    },
+    {
+      "source": "tavily_result",
+      "title": "The Week Ahead: A Lighter Week But CPI Looms",
+      "url": "https://pro.thestreet.com/market-commentary/the-week-ahead-a-lighter-week-but-cpi-looms",
+      "content": "And the strong jobs report saw the Citi economic surprise index jump to 24.8 from 18.5 prior to the report, although still well under the 57.1 six weeks ago (July 24th). [...] And as you know if you’re a regular reader, one of my favorite GDP trackers is the Weekly Economic Index from the Dallas Fed"
+    },
+    {
+      "source": "tavily_result",
+      "title": "TD Economics - Weekly Bottom Line",
+      "url": "https://economics.td.com/us-weekly-bottom-line",
+      "content": "U-6 measure, which includes those who are marginally attached to the labor force, fell to a 14-month low of 7.7%. On balance, this was a very healthy jobs report and pushed back on any fears that may have surfaced following July’s setback. [...] At this point, all eyes now shift to next week’s infla"
+    },
+    {
+      "source": "tavily_answer",
+      "query": "Federal Reserve speech this week monetary policy",
+      "answer": "Recent Federal Reserve discussions indicate a cautious approach to monetary policy. Federal Reserve Governor Christopher Waller suggested that while inflation remains above the FOMC's 2% target, he would support holding rates steady if disinflation trends continue. However, he also noted that a significant increase in inflation would prompt a rate hike. This cautious stance contrasts with earlier hawkish signals from Federal Reserve Chairman Kevin Warsh, who emphasized the need to address elevat"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Labor market rebounds, but all eyes are on inflation for Fed",
+      "url": "https://www.americanbanker.com/news/labor-market-rebounds-but-all-eyes-are-on-inflation-for-fed",
+      "content": "Yet, other FOMC participants have less optimistic inflation outlooks. Federal Reserve Bank of Cleveland President Beth Hammack, one of three committee members to vote in favor of a hike in July, has continued to beat the drum for tighter monetary policy. [...] Expert quote: \"With economic activity a"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Not so fast on rate hikes, some Fed officials say",
+      "url": "https://www.axios.com/2026/09/03/rates-waller-jobs-inflation-policy",
+      "content": "After Federal Reserve chairman Kevin Warsh's speech in Jackson Hole, the markets penciled in an interest rate hike for the central bank's mid-September meeting. Comments from two influential officials now throw those expectations into question.\n\nThe big picture: With August jobs and inflation data d"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Odds of a rate hike now 50-50 following Fed governor's speech",
+      "url": "https://www.realestatenews.com/2026/09/03/odds-of-a-rate-hike-now-50-50-following-fed-governors-speech",
+      "content": "For anyone watching mortgage rates, it's been a discouraging week. But one Federal Reserve governor is offering a more optimistic outlook ahead of the upcoming Fed meeting.\n\n## Inflation will likely determine the Fed's next move [...] Federal Reserve Governor Waller, who spoke on Sept. 3, appeared i"
+    },
+    {
+      "source": "tavily_answer",
+      "query": "China PMI economic data this week",
+      "answer": "China's services activity expanded at a faster pace in August, with the private RatingDog services PMI beating strongly at 51.4, indicating stronger domestic demand. The private Composite PMI rose to 52.1, while the official Composite PMI increased to 49.5. The private manufacturing PMI also rose to 51.5, contrasting with the official manufacturing PMI of 49.8. These private sector surveys outperforming official readings suggest a divergence likely due to differences in panel composition, with p"
+    },
+    {
+      "source": "tavily_result",
+      "title": "China's RatingDog services PMI beats strongly as domestic demand offsets soft export growth",
+      "url": "https://investinglive.com/news/china-s-ratingdog-services-pmi-beats-strongly-as-domestic-demand-offsets-soft-export-growth",
+      "content": "Today's data lands in clear contrast with Monday's official readings, when analysts noted that sluggish domestic demand weighed on services activity despite the summer travel peak, and the NBS non manufacturing index held flat at 49.0. The divergence mirrors the pattern already seen earlier in the w"
+    },
+    {
+      "source": "tavily_result",
+      "title": "China Stocks Gain As PMI Data Improves Economic Outlook",
+      "url": "https://www.directorstalkinterviews.com/china-stocks-gain-as-pmi-data-improves-economic-outlook/4121261730",
+      "content": "China’s private Composite PMI rose to 52.1 from 50.8, while the services PMI increased to 51.4 from 50.4. Manufacturing also strengthened, with the private manufacturing PMI rising to 51.5 from 50.9. Readings above 50 indicate expansion. [...] # China stocks gain as PMI data improves economic outloo"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Reading China PMI Data to Trade AUD/USD: A Practical Framework for Currency Traders",
+      "url": "https://www.financialcontent.com/article/globeprwire-2026-9-9-reading-china-pmi-data-to-trade-audusd-a-practical-framework-for-currency-traders",
+      "content": "China's official manufacturing PMI for August 2024 came in at 49.1, slightly below the 50.0 threshold. The reading, while weak, was not a significant surprise to markets that had been monitoring the country's economic slowdown. The non-manufacturing PMI showed a modest improvement, offering some sup"
+    }
+  ]
+}

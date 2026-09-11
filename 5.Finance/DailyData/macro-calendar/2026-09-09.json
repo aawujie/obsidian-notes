@@ -1,0 +1,93 @@
+{
+  "date": "2026-09-09",
+  "generated_at": "2026-09-09T06:07:04.469055",
+  "upcoming_events": [
+    {
+      "date": "2026-09-11",
+      "event": "美国 CPI (8月)",
+      "importance": "high",
+      "category": "通胀",
+      "days_until": 2
+    },
+    {
+      "date": "2026-09-16",
+      "event": "FOMC 利率决议",
+      "importance": "critical",
+      "category": "央行",
+      "note": "附 SEP 经济预测 + 点阵图",
+      "days_until": 7
+    }
+  ],
+  "recent_events": [],
+  "web_events": [
+    {
+      "source": "tavily_answer",
+      "query": "US economic data release this week CPI GDP jobs",
+      "answer": "The upcoming economic data releases this week include the Producer Price Index (PPI) report on Thursday and the Consumer Price Index (CPI) report on Friday. The PPI report will provide insights into wholesale price changes, while the CPI report will shed light on consumer inflation trends. Additionally, the weekly jobless claims report will be released on Thursday, offering a snapshot of the labor market's health. These reports are crucial for understanding the current economic conditions and po"
+    },
+    {
+      "source": "tavily_result",
+      "title": "What to Look Out for in Economic Data This Week ...",
+      "url": "https://www.kiplinger.com/investing/economy/this-weeks-economic-calendar",
+      "content": "The Bureau of Labor Statistics will release the Producer Price Index (PPI) report before Thursday's opening bell and the Consumer Price Index (CPI) report before Friday's opening bell.\n\nNote that the \"quiet period\" around the September 15-16 Federal Open Market Committee (FOMC) meeting started on Sa"
+    },
+    {
+      "source": "tavily_result",
+      "title": "The Week Ahead: A Lighter Week But CPI Looms - TheStreet Pro",
+      "url": "https://pro.thestreet.com/market-commentary/the-week-ahead-a-lighter-week-but-cpi-looms",
+      "content": "And as you know if you’re a regular reader, one of my favorite GDP trackers is the Weekly Economic Index from the Dallas Fed.\\\n\nIn the week through August 22nd (so doesn’t have last week’s data) it increased to a very solid +3.06%, the best since the week of July 4th, from +2.84% the prior week.\n\nTh"
+    },
+    {
+      "source": "tavily_result",
+      "title": "U.S. Hiring Jumps, an Encouraging Sign for the Economy",
+      "url": "https://www.nytimes.com/live/2026/09/04/business/jobs-report-economy",
+      "content": "Still, Mr. Waller, like other policymakers recently, said he was putting significant weight on forthcoming data releases, most notably August’s Consumer Price Index report to be released on Sept. 11, in deciding whether to support a rate rise this month.\n\n“If there is continued progress toward our 2"
+    },
+    {
+      "source": "tavily_answer",
+      "query": "Federal Reserve speech this week monetary policy",
+      "answer": "Recent Federal Reserve speeches indicate a cautious approach to monetary policy. Federal Reserve Bank of New York President John Williams emphasized the need for a \"wait-and-see\" approach, suggesting that interest rates may not need to be adjusted immediately. Meanwhile, Fed Chair Kevin Warsh's speech at Jackson Hole hinted at potential rate hikes if inflation does not improve sufficiently, though this was somewhat tempered by subsequent comments from Fed Governor Christopher Waller, who indicat"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Fed's Williams not swayed that a rate hike is the answer yet | American Banker",
+      "url": "https://www.americanbanker.com/news/feds-williams-not-swayed-that-a-rate-hike-is-the-answer-yet",
+      "content": "A key member of the Federal Reserve's monetary policy committee said he is not convinced that the central bank should be cutting interest rates just yet.\n\nProcessing Content\n\nFederal Reserve Bank of New York President John Williams speaking on CNBC Wednesday said the central bank has to \"wait and se"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Chicago Fed’s Austan Goolsbee wants to get back to ‘old-school’ economics: Focused on ordinary Americans, mindful of AI hype, and sharp on inflation",
+      "url": "https://fortune.com/2026/09/02/austan-goolsbee-old-school-economics-consumers-health",
+      "content": "In a landmark Jackson Hole speech last week, new Federal Reserve chairman Kevin Warsh said inflation was the sharpest focus, at present, for the rate-setting Federal Open Market Committee (FOMC), of which Goolsbee is a member. The reason: Price rises are comfortably ahead of the central bank’s manda"
+    },
+    {
+      "source": "tavily_result",
+      "title": "That’s Not the Warsh of It: The End(ish) of Forward Guidance and the Rise(?) of Treasury Monetary Policy",
+      "url": "https://www.crisesnotes.com/thats-not-the-warsh-of-it-the-end-ish-of-forward-guidance-and-the-rise-of-treasury-monetary-policy",
+      "content": "Last Friday was the “Jackson Hole” conference, a conference run by the Kansas City Federal Reserve in, well, Jackson Hole Wyoming. It became one of the most important central banker conferences in the world. Last year I critiqued former Chairman Jerome Powell for giving a generic speech he could hav"
+    },
+    {
+      "source": "tavily_answer",
+      "query": "China PMI economic data this week",
+      "answer": "China's private Composite PMI rose to 52.1 in August, indicating expansion, while the services PMI increased to 51.4. The official Composite PMI increased to 49.5, and the manufacturing PMI rose to 49.8, both showing slight improvement but remaining below the 50 mark indicating contraction. The private-sector services PMI climbed to 51.5, beating forecasts and marking a two-month high. The official Manufacturing PMI rose to 49.8, up from 49.2 in July, with new orders and output both showing sign"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Economic and event calendar in Asia Thursday ...",
+      "url": "https://investinglive.com/news/economic-and-event-calendar-in-asia-thursday-september-3-2026-another-china-pmi",
+      "content": "# Economic and event calendar in Asia Thursday, September 3, 2026 - another China PMI\n\nThe data release of note due today, Thursday, September 3, 2026, from the Asian timezone is the private sector services PMI survey from Rating Dog / S&P.\n\nLook back recap: this week's China PMI data [...] Monday b"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Growth Dragons Weekly: China's Economy Splits, Bank and Meituan Profits Return, Zhipu Grows 400%",
+      "url": "https://growthdragons.substack.com/p/growth-dragons-weekly-chinas-economy",
+      "content": "On one page, things are turning a corner. The private-sector services PMI rose to 51.4 from 50.4. New business accelerated, employment grew for a fourth straight month, and the composite PMI, which blends manufacturing and services, climbed to 52.1. Manufacturing improved too. The official PMI rose "
+    },
+    {
+      "source": "tavily_result",
+      "title": "China Stocks Gain As PMI Data Improves Economic Outlook",
+      "url": "https://www.directorstalkinterviews.com/china-stocks-gain-as-pmi-data-improves-economic-outlook/4121261730",
+      "content": "China’s private Composite PMI rose to 52.1 from 50.8, while the services PMI increased to 51.4 from 50.4. Manufacturing also strengthened, with the private manufacturing PMI rising to 51.5 from 50.9. Readings above 50 indicate expansion. [...] # China stocks gain as PMI data improves economic outloo"
+    }
+  ]
+}

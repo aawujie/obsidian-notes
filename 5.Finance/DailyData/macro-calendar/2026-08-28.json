@@ -1,0 +1,92 @@
+{
+  "date": "2026-08-28",
+  "generated_at": "2026-08-28T06:07:18.799734",
+  "upcoming_events": [
+    {
+      "date": "2026-09-04",
+      "event": "非农就业报告 (8月)",
+      "importance": "high",
+      "category": "就业",
+      "days_until": 7
+    },
+    {
+      "date": "2026-09-11",
+      "event": "美国 CPI (8月)",
+      "importance": "high",
+      "category": "通胀",
+      "days_until": 14
+    }
+  ],
+  "recent_events": [],
+  "web_events": [
+    {
+      "source": "tavily_answer",
+      "query": "US economic data release this week CPI GDP jobs",
+      "answer": "The U.S. economy expanded at a sluggish 1.5% pace in the second quarter, according to the latest GDP report. Consumer spending remained strong, increasing at a healthy 3.4% annual rate. The GDP growth decelerated from the 2.1% pace in the first quarter. Treasury yields remained steady as investors awaited more economic data releases, including the second quarter GDP estimate and July's personal consumption expenditure reading, which is the Fed's preferred inflation gauge."
+    },
+    {
+      "source": "tavily_result",
+      "title": "GDP, durable goods orders, and crude oil inventories among economic data due Wednesday - Investing.com",
+      "url": "https://m.investing.com/news/stock-market-news/gdp-durable-goods-orders-and-crude-oil-inventories-among-economic-data-due-wednesday-93CH-4875813?ampMode=1",
+      "content": "# GDP, durable goods orders, and crude oil inventories among economic data due Wednesday. • 7:30 AM ET - GDP: Expected at 1.5% versus previous 2.1%. Measures the annualized change in the inflation-adjusted value of all goods and services produced by the economy, serving as the broadest measure of ec"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Dollar nudges higher ahead of US inflation data; Aussie gains on rate bets - KITCO",
+      "url": "https://www.kitco.com/news/off-the-wire/2026-08-26/dollar-nudges-higher-ahead-us-inflation-data-aussie-gains-rate-bets",
+      "content": "LONDON/SINGAPORE, Aug 26 (Reuters) - The dollar edged higher but remained range-bound against major peers on Wednesday as ​investors awaited U.S. inflation data that could set the tone ahead of the Jackson Hole symposium of central bankers ‌later this week. The most notable mover was the Australian "
+    },
+    {
+      "source": "tavily_result",
+      "title": "US economy expands at sluggish 1.5% pace in second quarter, but consumer spending stayed strong - Greenwich Time",
+      "url": "https://www.greenwichtime.com/business/article/us-economy-expands-at-sluggish-1-5-pace-in-22404178.php",
+      "content": "# US economy expands at sluggish 1.5% pace in second quarter, but consumer spending stayed strong. WASHINGTON (AP) — The U.S. economy grew at a sluggish 1.5% pace from April through June. The Commerce Department reported Wednesday that growth in gross domestic product — the nation's output of a good"
+    },
+    {
+      "source": "tavily_answer",
+      "query": "Federal Reserve speech this week monetary policy",
+      "answer": "Federal Reserve Chairman Kevin Warsh is set to deliver his keynote speech at the Jackson Hole Economic Policy Symposium on Friday amid concerns over persistent inflation. Investors are hoping for clarity on Warsh's plan to manage inflation and the role of the bond market in his strategy. While some anticipate a high-level overview of the Fed's operations rather than specific policy details, there is a notable demand for transparency and guidance from the Fed chair to address market uncertainties"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Fed Chairman Kevin Warsh delivers his key Jackson Hole speech Friday. Here's what to expect - CNBC",
+      "url": "https://www.cnbc.com/2026/08/27/fed-chairman-kevin-warsh-delivers-his-key-jackson-hole-speech-friday.html",
+      "content": "# Fed Chairman Kevin Warsh delivers his key Jackson Hole speech Friday. * Federal Reserve Chairman Kevin Warsh delivers the keynote speech Friday at the central bank's Jackson Hole, Wyoming symposium. The Federal Reserve's cryptic chairman is set to deliver his much-awaited keynote address Friday in"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Fed Chair Warsh faces Jackson Hole spotlight with inflation, rate path in focus - Fox Business",
+      "url": "https://www.foxbusiness.com/economy/fed-chair-warsh-faces-jackson-hole-spotlight-inflation-rate-path-focus",
+      "content": "Federal Reserve Chair Kevin Warsh is set to deliver the first keynote speech of his chairmanship at the annual Jackson Hole Economic Policy Symposium on Friday amid uncertainty over stubborn inflation. Policymakers from the Fed and various central banks around the world will gather in Jackson Hole, "
+    },
+    {
+      "source": "tavily_result",
+      "title": "Anxious investors hope for clarity on Warsh's Fed plan at Jackson Hole - KITCO",
+      "url": "https://www.kitco.com/news/off-the-wire/2026-08-26/anxious-investors-hope-clarity-warshs-fed-plan-jackson-hole",
+      "content": "NEW YORK/TORONTO, Aug 26 (Reuters) - Investors this week will watch the annual Jackson Hole symposium for clues on how policymakers plan to ​navigate a landscape in which higher Treasury yields could do some of the tightening work for them. Investors say Warsh has also sown market confusion and ​sto"
+    },
+    {
+      "source": "tavily_answer",
+      "query": "China PMI economic data this week",
+      "answer": "China's industrial profit growth in July slowed to 11.2% from a year earlier, marking a 7-month low and down from the 15.1% increase in June. For the first seven months of the year, profits climbed 17.6% from the previous year, showing a slowdown from the 18.7% growth in the first half. This deceleration is attributed to weakening domestic demand and external uncertainties including trade tensions and geopolitical risks."
+    },
+    {
+      "source": "tavily_result",
+      "title": "GDP, durable goods orders, and crude oil inventories among economic data due Wednesday - Investing.com",
+      "url": "https://m.investing.com/news/stock-market-news/gdp-durable-goods-orders-and-crude-oil-inventories-among-economic-data-due-wednesday-93CH-4875813?ampMode=1",
+      "content": "# GDP, durable goods orders, and crude oil inventories among economic data due Wednesday. • 7:30 AM ET - GDP: Expected at 1.5% versus previous 2.1%. Measures the annualized change in the inflation-adjusted value of all goods and services produced by the economy, serving as the broadest measure of ec"
+    },
+    {
+      "source": "tavily_result",
+      "title": "China’s industrial profit growth cools as AI-linked sectors outpace - 93.3 The Drive",
+      "url": "https://www.933thedrive.com/2026/08/26/chinas-industrial-profit-growth-cools-as-ai-linked-sectors-outpace/",
+      "content": "BEIJING, Aug 27 (Reuters) – China’s industrial firms reported slower profit growth in July, with export-focused sectors riding the global AI boom, while industries reliant on domestic ​demand remained under pressure. Weakening demand at home has ‌strained a broader recovery in the $20 trillion econo"
+    },
+    {
+      "source": "tavily_result",
+      "title": "China industrial profit growth in July slumps to 7-month low of 11.2% - CNBC",
+      "url": "https://www.cnbc.com/2026/08/27/china-industrial-profits-july-factory-production-.html",
+      "content": "* China's industrial profits growth in July slowed to its weakest pace this year, expanding 11.2% from a year earlier. * For the first seven months of this year, profits climbed 17.6% from a year earlier. * Industrial corporate profitability has seen a notable turnaround, swinging from years of decl"
+    }
+  ]
+}

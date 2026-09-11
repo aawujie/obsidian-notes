@@ -1,0 +1,79 @@
+{
+  "date": "2026-08-25",
+  "generated_at": "2026-08-25T06:07:24.221723",
+  "upcoming_events": [
+    {
+      "date": "2026-09-04",
+      "event": "非农就业报告 (8月)",
+      "importance": "high",
+      "category": "就业",
+      "days_until": 10
+    }
+  ],
+  "recent_events": [],
+  "web_events": [
+    {
+      "source": "tavily_answer",
+      "query": "US economic data release this week CPI GDP jobs",
+      "answer": "This week's US economic data releases include the Consumer Price Index (CPI) and Gross Domestic Product (GDP) reports, alongside the latest jobs report. The CPI is expected to show a headline inflation rate around 2.9%, with a focus on core measures. The jobs report indicates a weakening labor market, which could reduce the likelihood of a near-term rate hike by the Federal Reserve. GDP data is anticipated to reflect the mixed economic signals, with some sectors showing resilience while others r"
+    },
+    {
+      "source": "tavily_result",
+      "title": "The Weekly Bottom Line",
+      "url": "https://economics.td.com/ca-weekly-bottom-line",
+      "content": "this week argue for the Fed to remain in wait-and-see mode, particularly with one more jobs report and another CPI print still to come before the September meeting. Next week’s July FOMC minutes pre-date this week’s CPI release, but could still contain useful information about how worried officials "
+    },
+    {
+      "source": "tavily_result",
+      "title": "Weekly Global Economic Update | Deloitte Insights",
+      "url": "https://www.deloitte.com/us/en/insights/topics/economy/global-economic-outlook/weekly-update.html",
+      "content": "## Week of August 11, 2026\n\n## A weakening US job market [...] ## The US Federal Reserve waits [...] What does the jobs report mean for monetary policy? The Federal Reserve has a dual mandate to seek low inflation and high employment. Inflation has been seen as the primary challenge given that it ha"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Watch for consumer stress as inflation remains top concern",
+      "url": "https://www.rbc.com/en/economics/us-week-ahead/watch-for-consumer-stress-as-inflation-remains-top-concern",
+      "content": "Next week the focus will be on the PCE deflators as inflation pressures remain a top concern. We expect core PCE to report a 0.2% m/m rise, keeping the y/y pace at 3.3%. We look for headline PCE to rise 0.1% m/m, knocking the y/y pace lower to 3.6%. On net we expect the PCE deflators to report in li"
+    },
+    {
+      "source": "tavily_answer",
+      "query": "Federal Reserve speech this week monetary policy",
+      "answer": "U.S. Federal Reserve Chairman Kevin Warsh's speech at the annual Jackson Hole conference this week has gained significant importance as traders and analysts seek guidance on the recent jump in bond yields and reassurance of his independence from the Trump administration. Warsh has indicated a preference for a less talkative central bank, viewing the Fed's past reliance on \"forward guidance\" about interest rates as outdated and potentially risky when the economic outlook is uncertain. Despite mar"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Bond market anxiety raises stakes for Warsh's debut Jackson Hole speech - KITCO",
+      "url": "https://www.kitco.com/news/off-the-wire/2026-08-24/bond-market-anxiety-raises-stakes-warshs-debut-jackson-hole-speech",
+      "content": "WASHINGTON, Aug 24 (Reuters) - U.S. Federal Reserve Chairman Kevin Warsh's debut speech at the annual Jackson Hole conference this week, self-advertised as a choice between discussing near-term policy or broader principles, has taken on added weight as traders and analysts look for guidance about th"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Bond market anxiety raises stakes for Warsh's debut Jackson Hole speech - Reuters",
+      "url": "https://www.reuters.com/business/bond-market-anxiety-raises-stakes-warshs-debut-jackson-hole-speech-2026-08-24/",
+      "content": "## Browse Business. Item 1 of 2 U.S. Federal Reserve Chairman Kevin Warsh holds a press conference following a two-day meeting of the Federal Open Market Committee (FOMC), as the Federal Reserve holds interest rates steady, at the Federal Reserve, in Washington, D.C., U.S. July 29, 2026. WASHINGTON,"
+    },
+    {
+      "source": "tavily_result",
+      "title": "First Thing: New Fed chair Kevin Warsh faces early test amid bond market worries - The Guardian",
+      "url": "https://www.theguardian.com/us-news/2026/aug/24/first-thing-new-fed-chair-kevin-warsh-faces-early-test-amid-bond-market-worries",
+      "content": "Key speech to be delivered this week at Jackson Hole said to focus on productivity and demographics in the US. The new US Federal Reserve chair, Kevin Warsh, faces a critical test this week amid anxiety in government bond markets over inflation and Donald Trump’s tax and spending plans. As the world"
+    },
+    {
+      "source": "tavily_answer",
+      "query": "China PMI economic data this week",
+      "answer": "The latest China PMI data for August 2026 shows the NBS Manufacturing PMI at 49.2, the NBS Non-Manufacturing PMI at 49.0, and the NBS General PMI at 49.3. The RatingDog data for August indicates a Manufacturing PMI of 50.9, a Services PMI of 50.4, and a Composite PMI of 50.8. The historical data from BizStats-Dashboard shows a range of PMI values, with the most recent figures being 49.4 for both the Manufacturing and Composite PMIs."
+    },
+    {
+      "source": "tavily_result",
+      "title": "China Calendar",
+      "url": "https://tradingeconomics.com/china/calendar",
+      "content": "|  | |  |  |  --- | |  | CN | | National People's Congress |  |  |  |  |  |  |  |\n| Monday August 31 2026 | | | Actual | Previous | Consensus | Forecast |  |  |\n ---  ---  ---  --- \n| Monday August 31 2026 | | | Actual | Previous | Consensus | Forecast |  |  |\n ---  ---  ---  --- \n| 01:30 AM | |  | "
+    },
+    {
+      "source": "tavily_result",
+      "title": "China PMI | Chart & Data | BizStats-Dashboard",
+      "url": "https://www.bizstats-dashboard.com/en/china/pmi",
+      "content": "| 49.6 | 49.2 | 50.1 | 50.3 | 50.1 | 50.2 | 49.5 | 47.4 | 49.6 | 50.2 | 49.0 | 49.4 | 50.1 | 49.2 | 48.0 | 47.0 | 50.1 | 52.6 | 51.9 | 49.2 | 48.8 | 49.0 | 49.3 | 49.7 | 50.2 | 49.5 | 49.4 | 49.0 | 49.2 | 49.1 | 50.8 | 50.4 | 49.5 | 49.5 | 49.4 | 49.1 | 49.8 | 50.1 | 50.3 | 50.1 | 49.1 | 50.2 | 50.5"
+    }
+  ]
+}

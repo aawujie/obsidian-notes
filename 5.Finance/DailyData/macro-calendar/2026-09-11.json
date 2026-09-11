@@ -1,0 +1,93 @@
+{
+  "date": "2026-09-11",
+  "generated_at": "2026-09-11T06:07:11.580147",
+  "upcoming_events": [
+    {
+      "date": "2026-09-11",
+      "event": "美国 CPI (8月)",
+      "importance": "high",
+      "category": "通胀",
+      "days_until": 0
+    },
+    {
+      "date": "2026-09-16",
+      "event": "FOMC 利率决议",
+      "importance": "critical",
+      "category": "央行",
+      "note": "附 SEP 经济预测 + 点阵图",
+      "days_until": 5
+    }
+  ],
+  "recent_events": [],
+  "web_events": [
+    {
+      "source": "tavily_answer",
+      "query": "US economic data release this week CPI GDP jobs",
+      "answer": "This week's US economic data release includes the Consumer Price Index (CPI) and core CPI on Friday, September 11, with inflation tracking at 3.38% year over year and 0.20% sequentially for core CPI. The August jobs report, released earlier, showed 162,000 new jobs created, the highest since March, with significant growth in healthcare and social assistance, accommodation and food service, and local government. The unemployment rate remains low, and the U-6 measure fell to a 14-month low of 7.7%"
+    },
+    {
+      "source": "tavily_result",
+      "title": "What to Look Out for in Economic Data This Week (September 7-11)",
+      "url": "https://www.kiplinger.com/investing/economy/this-weeks-economic-calendar",
+      "content": "Friday, September 11: CPI and core CPI: Consumer inflation accelerated in July after decelerating in June. Price stability remains a complex equation due to an ongoing energy shock.\n\nRead on to see the entire weekly economic calendar of the most important upcoming economic reports scheduled to be re"
+    },
+    {
+      "source": "tavily_result",
+      "title": "The Week Ahead: A Lighter Week But CPI Looms",
+      "url": "https://pro.thestreet.com/market-commentary/the-week-ahead-a-lighter-week-but-cpi-looms",
+      "content": "And the strong jobs report saw the Citi economic surprise index jump to 24.8 from 18.5 prior to the report, although still well under the 57.1 six weeks ago (July 24th). [...] And as you know if you’re a regular reader, one of my favorite GDP trackers is the Weekly Economic Index from the Dallas Fed"
+    },
+    {
+      "source": "tavily_result",
+      "title": "What’s happening this week in economics?",
+      "url": "https://www.deloitte.com/us/en/insights/topics/economy/global-economic-outlook/weekly-update.html",
+      "content": "The US government releases a monthly report on the jobs market that includes the results of two surveys—a survey of establishments and a survey of households. The establishment survey found that, in August, 162,000 new jobs were created. This was the highest number of jobs created since March, and w"
+    },
+    {
+      "source": "tavily_answer",
+      "query": "Federal Reserve speech this week monetary policy",
+      "answer": "Federal Reserve Governor Christopher Waller's recent speech has created uncertainty regarding the potential for a rate hike later this month. Waller indicated that he would be inclined to support holding the target for the federal funds rate at its current setting if there is continued progress toward the 2% inflation goal. However, his decision will largely depend on the upcoming inflation report due on September 11. Meanwhile, Fed Chair Kevin Warsh's speech at the Jackson Hole symposium last w"
+    },
+    {
+      "source": "tavily_result",
+      "title": "What’s happening this week in economics?",
+      "url": "https://www.deloitte.com/us/en/insights/topics/economy/global-economic-outlook/weekly-update.html",
+      "content": "Finally, as mentioned above, US yields temporarily fell last week after Federal Reserve Governor Christopher Waller spoke about the future trajectory of monetary policy. Specifically, Waller said that he “would be inclined to support holding the target for the federal funds rate at its current setti"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Fed interest rates: Why consumers may benefit if rates stay higher",
+      "url": "https://www.cnbc.com/2026/09/09/fed-interest-rates-consumers-benefit-rates-stay-higher.html",
+      "content": "Ahead of the Federal Reserve's September monetary policy meeting next week, President Donald Trump and senior administration officials have urged the Fed not to raise interest rates and, alternatively, even lower its benchmark.\n\nFor consumers, higher rates would increase borrowing costs at a time wh"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Labor market rebounds, but all eyes are on inflation for Fed",
+      "url": "https://www.americanbanker.com/news/labor-market-rebounds-but-all-eyes-are-on-inflation-for-fed",
+      "content": "Like other Fed officials, Waller said he would be willing to hold interest rates steady if inflation continued to inch toward the central bank's target or raise them if price growth accelerates.\n\nFed Gov. Michael Barr outlined a similar reaction function during a speech earlier this week. [...] \"Whe"
+    },
+    {
+      "source": "tavily_answer",
+      "query": "China PMI economic data this week",
+      "answer": "China's official National Bureau of Statistics (NBS) manufacturing PMI edged up to 49.8 in August from 49.2, slightly beating consensus forecasts of 49.7. The private RatingDog manufacturing PMI expanded to 51.5 versus 51.0 expected. China's RatingDog services PMI accelerated to 51.4 in August from 50.4 in July, outperforming consensus estimates of 50.6."
+    },
+    {
+      "source": "tavily_result",
+      "title": "Week Ahead: 7 September 2026 | IG Bank Switzerland",
+      "url": "https://www.ig.com/en-ch/news-and-trade-ideas/week-ahead--7-september-2026-260904",
+      "content": "In China (CN), the official National Bureau of Statistics (NBS) manufacturing PMI edged up to 49.8 in August from 49.2 prior, slightly beating consensus forecasts of 49.7, while the private RatingDog manufacturing PMI expanded to 51.5 versus 51.0 expected\n China's RatingDog services PMI accelerated "
+    },
+    {
+      "source": "tavily_result",
+      "title": "Reading China PMI Data to Trade AUD/USD: A Practical Framework for Currency Traders | FinancialContent",
+      "url": "https://www.financialcontent.com/article/globeprwire-2026-9-9-reading-china-pmi-data-to-trade-audusd-a-practical-framework-for-currency-traders",
+      "content": "China's official manufacturing PMI for August 2024 came in at 49.1, slightly below the 50.0 threshold. The reading, while weak, was not a significant surprise to markets that had been monitoring the country's economic slowdown. The non-manufacturing PMI showed a modest improvement, offering some sup"
+    },
+    {
+      "source": "tavily_result",
+      "title": "China's export growth seen accelerating in August",
+      "url": "https://www.reuters.com/world/asia-pacific/chinas-export-growth-seen-accelerating-august-2026-09-07",
+      "content": "Economic data released last month showed that domestic ​demand and investment remained weak in July, while the official manufacturing purchasing managers' index (PMI) for August pointed ‌to improved ⁠but still subdued manufacturing activity.\n\nChina's exports, on the other hand, remained resilient la"
+    }
+  ]
+}

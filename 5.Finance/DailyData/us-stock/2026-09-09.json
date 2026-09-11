@@ -1,0 +1,45 @@
+{
+  "date": "2026-09-09",
+  "generated_at": "2026-09-09T06:06:19.138011",
+  "total_stocks": 2,
+  "data": [
+    {
+      "ticker": "AVB",
+      "name": "AvalonBay Communities, Inc.",
+      "sector": "Real Estate",
+      "industry": "REIT - Residential",
+      "market_cap": 26283393024,
+      "close": 68.13999938964844,
+      "prev_close": 66.79000091552734,
+      "change_daily": 2.02,
+      "change_weekly": 7.04,
+      "change_monthly": null,
+      "volume": 6201087.0,
+      "avg_vol_5d": 6042196.0,
+      "vol_ratio": 1.03,
+      "high52": 185.62,
+      "low52": 57.320084,
+      "dist_from_high": -63.29,
+      "is_new_high": false
+    },
+    {
+      "ticker": "EQR",
+      "name": "Equity Residential",
+      "sector": "Real Estate",
+      "industry": "REIT - Residential",
+      "market_cap": 24609972224,
+      "close": 63.65999984741211,
+      "prev_close": 63.65999984741211,
+      "change_daily": 0.0,
+      "change_weekly": -3.5,
+      "change_monthly": null,
+      "volume": 0.0,
+      "avg_vol_5d": 3488684.0,
+      "vol_ratio": 0.0,
+      "high52": 71.5,
+      "low52": 57.57,
+      "dist_from_high": -10.97,
+      "is_new_high": false
+    }
+  ]
+}

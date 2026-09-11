@@ -1,0 +1,92 @@
+{
+  "date": "2026-08-31",
+  "generated_at": "2026-08-31T06:07:08.556813",
+  "upcoming_events": [
+    {
+      "date": "2026-09-04",
+      "event": "非农就业报告 (8月)",
+      "importance": "high",
+      "category": "就业",
+      "days_until": 4
+    },
+    {
+      "date": "2026-09-11",
+      "event": "美国 CPI (8月)",
+      "importance": "high",
+      "category": "通胀",
+      "days_until": 11
+    }
+  ],
+  "recent_events": [],
+  "web_events": [
+    {
+      "source": "tavily_answer",
+      "query": "US economic data release this week CPI GDP jobs",
+      "answer": "This week's US economic data releases are set to provide significant insights into the labor market and economic health. Key reports include the job openings and labor turnover survey (JOLTS) on Tuesday, which will offer a detailed look at job openings and labor turnover statistics. The ADP employment change report will also be released, providing an early read on private-sector employment. The US non-farm payrolls and unemployment rate, crucial for understanding the labor market's health, are s"
+    },
+    {
+      "source": "tavily_result",
+      "title": "The Week Ahead: US JOLTS and jobs report, Broadcom ...",
+      "url": "https://www.cmcmarkets.com/en-ie/news-and-analysis/the-week-ahead-us-jolts-and-jobs-report-broadcom-earnings",
+      "content": "## Economic & company events calendar\n\nMajor scheduled data releases, plus selected UK, US and other listed company results:\n\nMonday 31 August• Germany: August flash consumer price index (CPI)  \n• Japan: July industrial production, July retail trade  \n• UK: Bank holiday  \n• Results: Cango (Q2), Lexi"
+    },
+    {
+      "source": "tavily_result",
+      "title": "What’s happening this week in economics?",
+      "url": "https://www.deloitte.com/us/en/insights/topics/economy/global-economic-outlook/weekly-update.html",
+      "content": "What does the jobs report mean for monetary policy? The Federal Reserve has a dual mandate to seek low inflation and high employment. Inflation has been seen as the primary challenge given that it has persistently been above the Fed’s 2% target. Yet, the weakening labor market could become cause of "
+    },
+    {
+      "source": "tavily_result",
+      "title": "Week Ahead for FX, Bonds: U.S. Jobs Data in Focus",
+      "url": "https://www.wsj.com/economy/central-banking/week-ahead-for-fx-bonds-u-s-jobs-data-in-focus-bank-of-canada-decision-due-d4581c92",
+      "content": "Focus will turn to U.S. jobs data as investors assess the health of the economy and the likely timing of when the Federal Reserve could raise interest rates.\n\nAn interest-rate decision is due in Canada, while in Europe, eurozone inflation data will be in focus. [...] ## Focus will turn to U.S. jobs "
+    },
+    {
+      "source": "tavily_answer",
+      "query": "Federal Reserve speech this week monetary policy",
+      "answer": "In his speech at the Jackson Hole symposium, Federal Reserve Chairman Kevin Warsh avoided committing to forward guidance or a reaction function for monetary policy, instead focusing on his approach to governance. He expressed concern about elevated inflation but did not indicate whether he thinks interest rates should be higher or outline the conditions under which he would advocate for a change in policy. Warsh's speech differed from his predecessors, who often used the event to hint at future "
+    },
+    {
+      "source": "tavily_result",
+      "title": "Bond market anxiety raises stakes for Warsh's debut ...",
+      "url": "https://www.reuters.com/business/bond-market-anxiety-raises-stakes-warshs-debut-jackson-hole-speech-2026-08-24",
+      "content": "- U.S. Federal Reserve Chairman Kevin Warsh's debut speech at the annual Jackson Hole conference this week, self-advertised as a choice between discussing near-term policy or broader principles, has ​taken on added weight as traders and analysts look for guidance about the recent jump in bond yields"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Kevin Warsh to deliver keynote speech at Fed’s symposium in Wyoming - UPI.com",
+      "url": "https://www.upi.com/Top_News/US/2026/08/28/kevin-warsh-federal-reserve-symposium-wyoming/4011787924809",
+      "content": "Federal Reserve chairmen often use the speech to discuss monetary policy initiatives on a broad level, including offering insight into future interest rate plans. Since being appointed chairman in May, Warsh has been scant with details on future policy decisions and Friday's address is expected to b"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Fed Chair Warsh in Focus After Schnabel Signals ECB Rate Hike",
+      "url": "https://www.bloomberg.com/news/newsletters/2026-08-26/global-rates-markets-seek-fed-clarity-from-warsh-s-jackson-hole-speech",
+      "content": "Add us on Google\n\nContact us: Provide news feedback or report an error\n\nConfidential tip? Send a tip to our reporters\n\nSite feedback: Take our Survey\n\nBy Zoltan Simon\n\nAugust 26, 2026 at 4:00 PM UTC\n\nSave\n\nTranslate\n\nIt’s shaping up to be a pivotal week for global monetary policy, with Kevin Warsh m"
+    },
+    {
+      "source": "tavily_answer",
+      "query": "China PMI economic data this week",
+      "answer": "China's National Bureau of Statistics is set to release its official August Purchasing Managers' Indices on Monday at 9:30am Beijing time. The consensus among economists is for the manufacturing PMI to be 49.6, up from July's 49.2 but still below the 50-point line separating expansion from contraction. The non-manufacturing PMI, which covers services and construction, is expected to show a similar trend, having fallen to 49.0 in July from 50.2 in June. A print at or above the 49.6 consensus woul"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Economic and event calendar in Asia 31 August 2026 - China official PMIs",
+      "url": "https://investinglive.com/news/economic-and-event-calendar-in-asia-31-august-2026-china-official-pmis",
+      "content": "# Economic and event calendar in Asia 31 August 2026 - China official PMIs\n\nIt's a packed data agenda ahead with the priority item Chinese PMI data.\n\nSetting the stage for the session ahead is this renewed hostility:\n\nChina's National Bureau of Statistics releases its official August Purchasing Mana"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Forex Economic Calendar Overview: Key Events for the Next Trading Week (31.08.2026–06.09.2026) | LiteFinance",
+      "url": "https://www.litefinance.org/blog/analysts-opinions/weekly-economic-calendar-for-31082026-06092026",
+      "content": "## Monday, August 31\n\n### 01:30 – CNY: China's Manufacturing and Non-Manufacturing PMI by the China Federation of Logistics and Purchasing (CFLP)\n\nThis indicator is an essential gauge of the overall Chinese economy. An indicator reading above 50 is positive for the yuan, while a value below 50 is ne"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Preview of Next Week’s Key Events: Non-Farm Payrolls and Treasury Secretary Meetings Ahead of the Fed’s Rate Decision",
+      "url": "https://www.moomoo.com/news/post/75473419/preview-of-next-week-s-key-events-non-farm-payrolls",
+      "content": "In terms of economic data, China will release the Caixin (S&P Global) Manufacturing PMI for August. The Eurozone will follow with its August CPI data, which will directly impact the European Central Bank’s subsequent path for interest rate cuts. [...] On Monday (August 31), China will release its of"
+    }
+  ]
+}

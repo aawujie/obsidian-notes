@@ -1,0 +1,221 @@
+{
+  "date": "2026-08-28",
+  "data": [
+    {
+      "ticker": "^IRX",
+      "name": "13 WEEK TREASURY BILL",
+      "close": 3.677999973297119,
+      "prev_close": 3.690000057220459,
+      "change_daily": -0.33,
+      "change_weekly": -0.68,
+      "change_monthly": 0.55
+    },
+    {
+      "ticker": "^FVX",
+      "name": "Treasury Yield 5 Years",
+      "close": 4.395999908447266,
+      "prev_close": 4.38100004196167,
+      "change_daily": 0.34,
+      "change_weekly": 0.21,
+      "change_monthly": 1.01
+    },
+    {
+      "ticker": "^TNX",
+      "name": "CBOE Interest Rate 10 Year T No",
+      "close": 4.671999931335449,
+      "prev_close": 4.664000034332275,
+      "change_daily": 0.17,
+      "change_weekly": -0.51,
+      "change_monthly": 1.08
+    },
+    {
+      "ticker": "^TYX",
+      "name": "Treasury Yield 30 Years",
+      "close": 5.190999984741211,
+      "prev_close": 5.185999870300293,
+      "change_daily": 0.1,
+      "change_weekly": -0.88,
+      "change_monthly": 0.93
+    },
+    {
+      "ticker": "TLT",
+      "name": "iShares 20+ Year Treasury Bond ",
+      "close": 83.12999725341797,
+      "prev_close": 83.30000305175781,
+      "change_daily": -0.2,
+      "change_weekly": 0.96,
+      "change_monthly": 0.74
+    },
+    {
+      "ticker": "SHY",
+      "name": "iShares 1-3 Year Treasury Bond ",
+      "close": 82.03500366210938,
+      "prev_close": 82.05000305175781,
+      "change_daily": -0.02,
+      "change_weekly": 0.02,
+      "change_monthly": 0.36
+    },
+    {
+      "ticker": "IEF",
+      "name": "iShares 7-10 Year Treasury Bond",
+      "close": 93.2300033569336,
+      "prev_close": 93.31999969482422,
+      "change_daily": -0.1,
+      "change_weekly": 0.25,
+      "change_monthly": 0.41
+    },
+    {
+      "ticker": "HYG",
+      "name": "iShares iBoxx $ High Yield Corp",
+      "close": 79.87000274658203,
+      "prev_close": 79.9000015258789,
+      "change_daily": -0.04,
+      "change_weekly": 0.39,
+      "change_monthly": 1.28
+    },
+    {
+      "ticker": "LQD",
+      "name": "iShares iBoxx $ Investment Grad",
+      "close": 106.7300033569336,
+      "prev_close": 106.77999877929688,
+      "change_daily": -0.05,
+      "change_weekly": 0.63,
+      "change_monthly": 0.92
+    },
+    {
+      "ticker": "DX-Y.NYB",
+      "name": "ICE US Dollar Index - Index - C",
+      "close": 99.1240005493164,
+      "prev_close": 99.16999816894531,
+      "change_daily": -0.05,
+      "change_weekly": 0.23,
+      "change_monthly": -1.66
+    },
+    {
+      "ticker": "EURUSD=X",
+      "name": "EUR/USD",
+      "close": 1.1656370162963867,
+      "prev_close": 1.1674741506576538,
+      "change_daily": -0.16,
+      "change_weekly": -0.15,
+      "change_monthly": 2.37
+    },
+    {
+      "ticker": "CNY=X",
+      "name": "USD/CNY",
+      "close": 6.719299793243408,
+      "prev_close": 6.720300197601318,
+      "change_daily": -0.01,
+      "change_weekly": -0.15,
+      "change_monthly": -0.76
+    },
+    {
+      "ticker": "JPY=X",
+      "name": "USD/JPY",
+      "close": 159.37600708007812,
+      "prev_close": 159.22300720214844,
+      "change_daily": 0.1,
+      "change_weekly": 0.69,
+      "change_monthly": -2.74
+    },
+    {
+      "ticker": "GBPUSD=X",
+      "name": "GBP/USD",
+      "close": 1.3593605756759644,
+      "prev_close": 1.3647032976150513,
+      "change_daily": -0.39,
+      "change_weekly": -0.05,
+      "change_monthly": 2.31
+    },
+    {
+      "ticker": "^VIX",
+      "name": "CBOE Volatility Index",
+      "close": 14.510000228881836,
+      "prev_close": 15.210000038146973,
+      "change_daily": -4.6,
+      "change_weekly": -9.37,
+      "change_monthly": -29.77
+    },
+    {
+      "ticker": "CL=F",
+      "name": "Crude Oil Oct 26",
+      "close": 83.54000091552734,
+      "prev_close": 82.2300033569336,
+      "change_daily": 1.59,
+      "change_weekly": -4.88,
+      "change_monthly": -1.09
+    },
+    {
+      "ticker": "BZ=F",
+      "name": "Brent Crude Oil Last Day Financ",
+      "close": 88.55999755859375,
+      "prev_close": 87.83999633789062,
+      "change_daily": 0.82,
+      "change_weekly": -5.57,
+      "change_monthly": -2.4
+    },
+    {
+      "ticker": "NG=F",
+      "name": "Natural Gas Oct 26",
+      "close": 2.9049999713897705,
+      "prev_close": 2.8420000076293945,
+      "change_daily": 2.22,
+      "change_weekly": 6.29,
+      "change_monthly": 6.61
+    },
+    {
+      "ticker": "USO",
+      "name": "United States Oil Fund",
+      "close": 130.00999450683594,
+      "prev_close": 127.3499984741211,
+      "change_daily": 2.09,
+      "change_weekly": -3.37,
+      "change_monthly": 0.54
+    },
+    {
+      "ticker": "XLE",
+      "name": "State Street Energy Select Sect",
+      "close": 62.290000915527344,
+      "prev_close": 62.43000030517578,
+      "change_daily": -0.22,
+      "change_weekly": -2.29,
+      "change_monthly": 6.21
+    },
+    {
+      "ticker": "UNG",
+      "name": "United States Natural Gas Fund ",
+      "close": 10.430000305175781,
+      "prev_close": 10.40999984741211,
+      "change_daily": 0.19,
+      "change_weekly": 4.2,
+      "change_monthly": 5.04
+    },
+    {
+      "ticker": "BTC-USD",
+      "name": "Bitcoin USD",
+      "close": 80259.0078125,
+      "prev_close": 79027.421875,
+      "change_daily": 1.56,
+      "change_weekly": 4.12,
+      "change_monthly": 24.89
+    },
+    {
+      "ticker": "ETH-USD",
+      "name": "Ethereum USD",
+      "close": 2511.679931640625,
+      "prev_close": 2506.260986328125,
+      "change_daily": 0.22,
+      "change_weekly": 3.61,
+      "change_monthly": 32.05
+    },
+    {
+      "ticker": "SOL-USD",
+      "name": "Solana USD",
+      "close": 109.93000030517578,
+      "prev_close": 102.16743469238281,
+      "change_daily": 7.6,
+      "change_weekly": 17.06,
+      "change_monthly": 51.47
+    }
+  ]
+}

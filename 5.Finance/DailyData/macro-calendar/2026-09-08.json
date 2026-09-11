@@ -1,0 +1,93 @@
+{
+  "date": "2026-09-08",
+  "generated_at": "2026-09-08T06:07:11.420477",
+  "upcoming_events": [
+    {
+      "date": "2026-09-11",
+      "event": "美国 CPI (8月)",
+      "importance": "high",
+      "category": "通胀",
+      "days_until": 3
+    },
+    {
+      "date": "2026-09-16",
+      "event": "FOMC 利率决议",
+      "importance": "critical",
+      "category": "央行",
+      "note": "附 SEP 经济预测 + 点阵图",
+      "days_until": 8
+    }
+  ],
+  "recent_events": [],
+  "web_events": [
+    {
+      "source": "tavily_answer",
+      "query": "US economic data release this week CPI GDP jobs",
+      "answer": "This week's key US economic data releases include the Producer Price Index (PPI) on Thursday and the Consumer Price Index (CPI) on Friday. The PPI report will provide insights into wholesale price changes, while the CPI report will shed light on consumer inflation trends. Additionally, the August Employment Report, released earlier this month, showed the addition of 162,000 jobs, indicating a robust labor market. These reports are crucial for understanding inflationary pressures and economic hea"
+    },
+    {
+      "source": "tavily_result",
+      "title": "What to Look Out for in Economic Data This Week ...",
+      "url": "https://www.kiplinger.com/investing/economy/this-weeks-economic-calendar",
+      "content": "The Bureau of Labor Statistics will release the Producer Price Index (PPI) report before Thursday's opening bell and the Consumer Price Index (CPI) report before Friday's opening bell.\n\nNote that the \"quiet period\" around the September 15-16 Federal Open Market Committee (FOMC) meeting started on Sa"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Newsquawk Daily Economic Releases - 7th September 2026",
+      "url": "https://www.newsquawk.com/headlines/newsquawk-daily-economic-releases---7th-september-2026",
+      "content": "Newsquawk Logo\n\n# Newsquawk Daily Economic Releases - 7th September 2026\n\nNewsquawk Staff/Published /On the live feed at — 2 more headlines followed before this page went public\n\nNewsquawk headlinesUTC\n\nUS Treasury Secretary Bessent says that jobs data show that economy is not just being driven by t"
+    },
+    {
+      "source": "tavily_result",
+      "title": "U.S. Hiring Jumps, an Encouraging Sign for the Economy",
+      "url": "https://www.nytimes.com/live/2026/09/04/business/jobs-report-economy",
+      "content": "Still, Mr. Waller, like other policymakers recently, said he was putting significant weight on forthcoming data releases, most notably August’s Consumer Price Index report to be released on Sept. 11, in deciding whether to support a rate rise this month.\n\n“If there is continued progress toward our 2"
+    },
+    {
+      "source": "tavily_answer",
+      "query": "Federal Reserve speech this week monetary policy",
+      "answer": "Based on the most recent data, Federal Reserve Governor Michael Barr expressed openness to a rate hike if inflation does not moderate quickly. Barr emphasized that inflation remains too high and has been for over five years, and if trends in the data do not show inflation moving towards the 2% target, decisive action to raise rates will be necessary. This statement reflects the ongoing focus of the Federal Reserve on controlling inflation and adjusting monetary policy accordingly."
+    },
+    {
+      "source": "tavily_result",
+      "title": "Chicago Fed’s Austan Goolsbee wants to get back to ‘old-school’ economics: Focused on ordinary Americans, mindful of AI hype, and sharp on inflation",
+      "url": "https://fortune.com/2026/09/02/austan-goolsbee-old-school-economics-consumers-health",
+      "content": "In a landmark Jackson Hole speech last week, new Federal Reserve chairman Kevin Warsh said inflation was the sharpest focus, at present, for the rate-setting Federal Open Market Committee (FOMC), of which Goolsbee is a member. The reason: Price rises are comfortably ahead of the central bank’s manda"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Fed's Barr open to rate hike if inflation does not moderate | Reuters",
+      "url": "https://www.reuters.com/business/feds-barr-open-rate-hike-if-inflation-does-not-moderate-2026-09-01",
+      "content": "NEW YORK, Sept 1 (Reuters) - Federal Reserve Governor Michael Barr said on Tuesday that if inflation does not cool ​quickly, it will be time for the U.S. central ‌bank to increase interest rates.\n\n\"Inflation remains too high — and has been for over five years,\" Barr said in the text of a speech prep"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Fed's Barr noncommittal on September rate hike",
+      "url": "https://www.americanbanker.com/news/feds-barr-noncommittal-on-september-rate-hike",
+      "content": "Other Fed officials, including Fed Gov. Christopher Waller, are scheduled to speak publicly this week, potentially providing more insight into how the committee might react to incoming data. Next week, the FOMC begins its two-week communications black out heading into its September meeting. [...] Fe"
+    },
+    {
+      "source": "tavily_answer",
+      "query": "China PMI economic data this week",
+      "answer": "China's private Composite PMI rose to 52.1 in August, indicating a robust expansion in the private sector. The private services PMI also increased to 51.4, showing a faster pace of growth in the services sector. The private manufacturing PMI rose to 51.5, marking a two-month high and extending the current run of expansion to nine consecutive months. The official Composite PMI improved to 49.5, while the official manufacturing PMI rose to 49.8, both showing signs of recovery despite remaining bel"
+    },
+    {
+      "source": "tavily_result",
+      "title": "China private PMI beats forecast, longest upturn in five years. AUD support.",
+      "url": "https://investinglive.com/news/china-private-pmi-beats-forecast-longest-upturn-in-five-years-aud-support",
+      "content": "Separately, and unrelated to today's China data, Australia's own Q2 GDP components released this week showed net exports contributed 0.1 percentage points to growth, according to data out today, while underlying government demand and inventories contributed a further 0.33 percentage points, accordin"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Growth Dragons Weekly: China's Economy Splits, Bank and Meituan Profits Return, Zhipu Grows 400%",
+      "url": "https://growthdragons.substack.com/p/growth-dragons-weekly-chinas-economy",
+      "content": "On one page, things are turning a corner. The private-sector services PMI rose to 51.4 from 50.4. New business accelerated, employment grew for a fourth straight month, and the composite PMI, which blends manufacturing and services, climbed to 52.1. Manufacturing improved too. The official PMI rose "
+    },
+    {
+      "source": "tavily_result",
+      "title": "China Stocks Gain As PMI Data Improves Economic Outlook",
+      "url": "https://www.directorstalkinterviews.com/china-stocks-gain-as-pmi-data-improves-economic-outlook/4121261730",
+      "content": "China’s private Composite PMI rose to 52.1 from 50.8, while the services PMI increased to 51.4 from 50.4. Manufacturing also strengthened, with the private manufacturing PMI rising to 51.5 from 50.9. Readings above 50 indicate expansion. [...] # China stocks gain as PMI data improves economic outloo"
+    }
+  ]
+}

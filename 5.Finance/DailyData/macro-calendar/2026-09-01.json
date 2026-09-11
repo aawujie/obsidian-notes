@@ -1,0 +1,92 @@
+{
+  "date": "2026-09-01",
+  "generated_at": "2026-09-01T06:07:06.857295",
+  "upcoming_events": [
+    {
+      "date": "2026-09-04",
+      "event": "非农就业报告 (8月)",
+      "importance": "high",
+      "category": "就业",
+      "days_until": 3
+    },
+    {
+      "date": "2026-09-11",
+      "event": "美国 CPI (8月)",
+      "importance": "high",
+      "category": "通胀",
+      "days_until": 10
+    }
+  ],
+  "recent_events": [],
+  "web_events": [
+    {
+      "source": "tavily_answer",
+      "query": "US economic data release this week CPI GDP jobs",
+      "answer": "This week's key US economic data releases include the job openings and labor turnover survey (JOLTS) on September 1, followed by the ADP employment change and the US non-farm payrolls and unemployment rate. The Federal Reserve's next monetary policy move will likely be influenced by these labor-market reports. Additionally, ISM manufacturing and services readings will provide further insight into the state of the US economy. The number of people filing for US unemployment benefits fell last week"
+    },
+    {
+      "source": "tavily_result",
+      "title": "The Week Ahead: US JOLTS and jobs report, Broadcom earnings",
+      "url": "https://www.cmcmarkets.com/en-ie/news-and-analysis/the-week-ahead-us-jolts-and-jobs-report-broadcom-earnings",
+      "content": "## Economic & company events calendar\n\nMajor scheduled data releases, plus selected UK, US and other listed company results:\n\nMonday 31 August• Germany: August flash consumer price index (CPI)  \n• Japan: July industrial production, July retail trade  \n• UK: Bank holiday  \n• Results: Cango (Q2), Lexi"
+    },
+    {
+      "source": "tavily_result",
+      "title": "America In Focus: key inflation gauge remains high; Fed's Warsh signals rate hikes may be needed - ABC News",
+      "url": "https://abcnews.com/Business/wireStory/america-focus-key-inflation-gauge-remains-high-feds-136056323",
+      "content": "The economy, inflation and how those forces could impact the lives of Americans were front and center over the past week. Trips to the grocery store and gas station are more painful than they were last year, and rising costs are impacting the decisions of both households and businesses.\n\nHere’s a sn"
+    },
+    {
+      "source": "tavily_result",
+      "title": "What’s happening this week in economics?",
+      "url": "https://www.deloitte.com/us/en/insights/topics/economy/global-economic-outlook/weekly-update.html",
+      "content": "## Week of August 11, 2026\n\n## A weakening US job market [...] In the second quarter, real (inflation-adjusted) gross domestic product was up at an annualized rate of 1.5% from the previous quarter, down from 2.1% in the first quarter.  Real consumer spending grew at a very strong rate of 3.2%, acco"
+    },
+    {
+      "source": "tavily_answer",
+      "query": "Federal Reserve speech this week monetary policy",
+      "answer": "In his speech at Jackson Hole, Federal Reserve Chair Kevin Warsh expressed concern about elevated inflation but did not commit to specific future rate hikes or outline conditions for policy changes. Warsh emphasized a governance approach that discourages market participants from relying primarily on the Fed for trade cues. While Warsh's speech opened the door to potential rate hikes if inflation does not moderate, longer-term interest rates did not rise significantly, suggesting investors were r"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Fed Chair Warsh in Focus After Schnabel Signals ECB Rate Hike",
+      "url": "https://www.bloomberg.com/news/newsletters/2026-08-26/global-rates-markets-seek-fed-clarity-from-warsh-s-jackson-hole-speech",
+      "content": "It’s shaping up to be a pivotal week for global monetary policy, with Kevin Warsh making his first major speech as Fed chairman after a top European Central Bank official said euro-zone interest rates must rise.   \n  \nIsabel Schnabel, an Executive Board member of the European Central Bank, told Bloo"
+    },
+    {
+      "source": "tavily_result",
+      "title": "kevin-warsh-jackson-hole-federal-reserve-inflation",
+      "url": "https://www.cnbc.com/2026/08/28/kevin-warsh-jackson-hole-federal-reserve-inflation.html",
+      "content": "Fed Chair Kevin Warsh in his speech Friday at Jackson Hole avoided committing either to forward guidance or a reaction function for monetary policy.\n Instead, Warsh used the presentation as a broad look at his approach to governance.\n \"We should not indulge a regime in which market participants are "
+    },
+    {
+      "source": "tavily_result",
+      "title": "Fed Chairman Kevin Warsh delivers his key Jackson Hole speech Friday",
+      "url": "https://www.cnbc.com/2026/08/27/fed-chairman-kevin-warsh-delivers-his-key-jackson-hole-speech-friday.html",
+      "content": "With rising Treasury yields heavily in focus, the stakes particularly high for Friday's speech.\n\n\"We have the most unusual Jackson Hole monetary symposium in recent memory on deck because of Warsh's unforced errors early in his tenure,\" said Joseph Brusuelas, chief economist at RSM. \"The market has "
+    },
+    {
+      "source": "tavily_answer",
+      "query": "China PMI economic data this week",
+      "answer": "China's official Purchasing Managers' Index (PMI) for August was released today, showing a slight improvement to 49.8 from July's 49.2, indicating that while factory activity remains in contraction, there is a marginal positive trend. The Caixin/RatingDog PMI also edged up to 51.0 in August from 50.9 in July, reflecting a slight recovery in the private sector manufacturing. Despite these figures, both indices remain below the 50-point mark that separates contraction from expansion."
+    },
+    {
+      "source": "tavily_result",
+      "title": "Economic and event calendar in Asia 31 August 2026 - China official PMIs",
+      "url": "https://investinglive.com/news/economic-and-event-calendar-in-asia-31-august-2026-china-official-pmis",
+      "content": "# Economic and event calendar in Asia 31 August 2026 - China official PMIs\n\nIt's a packed data agenda ahead with the priority item Chinese PMI data.\n\nSetting the stage for the session ahead is this renewed hostility:\n\nChina's National Bureau of Statistics releases its official August Purchasing Mana"
+    },
+    {
+      "source": "tavily_result",
+      "title": "China Stocks Open Week Lower — TradingView News",
+      "url": "https://www.tradingview.com/news/te_news:579328:0-china-stocks-open-week-lower",
+      "content": "Trading Economics\nTrading Economics\n\n# China Stocks Open Week Lower\n\nThe Shanghai Composite fell 0.5% to 3,931 on Monday, while the Shenzhen Component lost 1% to 13,810, as weak economic data reinforced concerns about China's growth outlook.\n\nOfficial PMI figures showed the Composite PMI edged up to"
+    },
+    {
+      "source": "tavily_result",
+      "title": "NZD/USD Holds Above 0.5900 as China’s Stronger PMI Data Lifts Risk Appetite",
+      "url": "https://cryptorank.io/news/feed/bf8cb-nzd-usd-rises-on-china-pmi-data",
+      "content": "The latest official Chinese PMI figures, released overnight, came in above market forecasts, indicating a continued expansion in the country’s manufacturing and services sectors. This positive economic signal from Beijing has a direct impact on the New Zealand Dollar due to the two nations’ strong t"
+    }
+  ]
+}
