@@ -1,0 +1,94 @@
+{
+  "date": "2026-09-14",
+  "generated_at": "2026-09-14T06:07:08.546849",
+  "upcoming_events": [
+    {
+      "date": "2026-09-16",
+      "event": "FOMC 利率决议",
+      "importance": "critical",
+      "category": "央行",
+      "note": "附 SEP 经济预测 + 点阵图",
+      "days_until": 2
+    }
+  ],
+  "recent_events": [
+    {
+      "date": "2026-09-11",
+      "event": "美国 CPI (8月)",
+      "importance": "high",
+      "category": "通胀",
+      "days_ago": 3
+    }
+  ],
+  "web_events": [
+    {
+      "source": "tavily_answer",
+      "query": "US economic data release this week CPI GDP jobs",
+      "answer": "This week's US economic data releases include the August jobs report, which showed 162,000 new jobs created, the highest since March, and the August Consumer Price Index (CPI) report, which was in-line with expectations but still indicates inflation above the Federal Reserve's 2% target. Additionally, the August Producer Price Index (PPI) and weekly jobless claims for the week ending September 12 will be released."
+    },
+    {
+      "source": "tavily_result",
+      "title": "What to Look Out for in Economic Data This Week (September 14-18)",
+      "url": "https://www.kiplinger.com/investing/economy/this-weeks-economic-calendar",
+      "content": "The August jobs report came in much better than expected, which lifted odds of a September rate hike. And the August Producer Price Index (PPI) and Consumer Price Index (CPI) reports, which showed inflation remains well above the Fed's 2% target, keep a rate hike in play for the central bank's Septe"
+    },
+    {
+      "source": "tavily_result",
+      "title": "What’s happening this week in economics?",
+      "url": "https://www.deloitte.com/us/en/insights/topics/economy/global-economic-outlook/weekly-update.html",
+      "content": "The US government releases a monthly report on the jobs market that includes the results of two surveys—a survey of establishments and a survey of households. The establishment survey found that, in August, 162,000 new jobs were created. This was the highest number of jobs created since March, and w"
+    },
+    {
+      "source": "tavily_result",
+      "title": "August CPI Suggest September Fed Hike",
+      "url": "https://www.conference-board.org/research/global-economy-briefs/cpi-insights-august-2026",
+      "content": "### Innovation and Productivity\n\nTotal Economy Database\n\n### Global Economic Outlook\n\nGlobal Economic Outlook\n\n### Global Economic Indicators\n\n## Economic Indicator Calendar\n\nAll release times displayed are Eastern Time\n\n### \n\n## Related Content\n\nConnect and be informed about this topic through webc"
+    },
+    {
+      "source": "tavily_answer",
+      "query": "Federal Reserve speech this week monetary policy",
+      "answer": "The Federal Reserve is expected to raise interest rates at its meeting concluding on September 16, following strong labor market data and persistent inflation above the 2% target. Fed Governor Christopher Waller indicated he might support holding rates steady if there is continued progress toward the 2% goal, but Fed Chair Kevin Warsh emphasized the need to focus on prices due to inflation running above the target. The Fed's decision will be closely watched as an imminent tightening of monetary "
+    },
+    {
+      "source": "tavily_result",
+      "title": "What’s happening this week in economics?",
+      "url": "https://www.deloitte.com/us/en/insights/topics/economy/global-economic-outlook/weekly-update.html",
+      "content": "Finally, as mentioned above, US yields temporarily fell last week after Federal Reserve Governor Christopher Waller spoke about the future trajectory of monetary policy. Specifically, Waller said that he “would be inclined to support holding the target for the federal funds rate at its current setti"
+    },
+    {
+      "source": "tavily_result",
+      "title": "What to Look Out for in Economic Data This Week (September 14-18)",
+      "url": "https://www.kiplinger.com/investing/economy/this-weeks-economic-calendar",
+      "content": "This week's economic calendar is firmly focused on the Federal Reserve, with the central bank kicking off its meeting on Tuesday, September 15, and concluding on Wednesday, September 16, with its latest policy decision. After recent economic data showed a strong labor market and sticky inflation, it"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Forget Today's Inflation Report: Fed Chair Kevin Warsh and His Colleagues Have Likely Already Made Up Their Mind for the Sept. 16 FOMC Meeting",
+      "url": "https://finance.yahoo.com/economy/policy/articles/forget-todays-inflation-report-fed-082601737.html",
+      "content": "While Warsh and his colleagues take the CPI and other economic data into consideration in their conduct of monetary policy, the Personal Consumption Expenditures (PCE) price index is the holy grail of inflation measures.\n\nWhen delivering his first annual Jackson Hole speech, Warsh proclaimed:\n\n> The"
+    },
+    {
+      "source": "tavily_answer",
+      "query": "China PMI economic data this week",
+      "answer": "China's official manufacturing PMI improved to 49.8 in August from 49.2 in July but remained below the 50 level, indicating continued contraction. Production and new orders returned to expansion, and new export orders also improved. The official nonmanufacturing PMI remained at 49.0, its lowest level since December 2022. Private sector surveys showed stronger output and new orders, with the RatingDog manufacturing PMI rising to 51.5 and the services PMI increasing to 51.4. The composite PMI rose"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Weekly Market Recap",
+      "url": "https://www.troweprice.com/institutional/dk/en/lp/global-equities/weekly-market-recap.html",
+      "content": "China’s official manufacturing PMI improved to 49.8 in August from 49.2 in July but remained below the 50 level separating expansion from contraction for a second consecutive month. Production and new orders returned to expansion, and new export orders also improved, while the official nonmanufactur"
+    },
+    {
+      "source": "tavily_result",
+      "title": "China inflation rebounds on energy costs, but the demand story hasn't changed - recap",
+      "url": "https://investinglive.com/news/china-inflation-rebounds-on-energy-costs-but-the-demand-story-hasn-t-changed-recap",
+      "content": "That reading lines up with the rest of this week's data. Yesterday's trade figures showed exports up 25% year on year, in line with forecasts, while imports rose 28.2% year on year but missed the 30% consensus, a gap economists have read as evidence that domestic demand remains comparatively tepid e"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Weekly Outlook | A Super Central Bank Week and China's August Economic Data Are Coming; Iran Will Meet with Gulf States on the Hormuz Agreement on Monday, While the Korea Exchange Launches After-Hours Trading; the CLARITY Act Faces a Crucial V",
+      "url": "https://news.futunn.com/en/post/79152641/weekly-outlook-a-super-central-bank-week-and-china-s",
+      "content": "This week, the United States released its August PPI and CPI figures. The PPI rose 5.4% year over year, exceeding the market's expectation of 5.3%; the CPI increased 3.4% year over year, unchanged from July and in line with forecasts. Meanwhile, core CPI climbed 0.3% month over month, above the expe"
+    }
+  ]
+}
