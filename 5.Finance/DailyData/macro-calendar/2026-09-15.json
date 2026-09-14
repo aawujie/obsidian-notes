@@ -1,0 +1,86 @@
+{
+  "date": "2026-09-15",
+  "generated_at": "2026-09-15T06:07:06.106605",
+  "upcoming_events": [
+    {
+      "date": "2026-09-16",
+      "event": "FOMC 利率决议",
+      "importance": "critical",
+      "category": "央行",
+      "note": "附 SEP 经济预测 + 点阵图",
+      "days_until": 1
+    }
+  ],
+  "recent_events": [],
+  "web_events": [
+    {
+      "source": "tavily_answer",
+      "query": "US economic data release this week CPI GDP jobs",
+      "answer": "This week's US economic data releases include the Consumer Price Index (CPI) and the August jobs report. The jobs report showed a significant increase in new jobs created in August, with 162,000 new jobs added, surpassing expectations and indicating a robust labor market. The CPI data, although not released yet, is expected to show inflation remaining above the Federal Reserve's 2% target, which could influence the Fed's decision on interest rates in September. The market's confidence in a poten"
+    },
+    {
+      "source": "tavily_result",
+      "title": "August CPI Suggest September Fed Hike",
+      "url": "https://www.conference-board.org/research/global-economy-briefs/cpi-insights-august-2026",
+      "content": "### Innovation and Productivity\n\nTotal Economy Database\n\n### Global Economic Outlook\n\nGlobal Economic Outlook\n\n### Global Economic Indicators\n\n## Economic Indicator Calendar\n\nAll release times displayed are Eastern Time\n\n### \n\n## Related Content\n\nConnect and be informed about this topic through webc"
+    },
+    {
+      "source": "tavily_result",
+      "title": "The Weekly Bottom Line",
+      "url": "https://economics.td.com/ca-weekly-bottom-line",
+      "content": "Markets appear slightly more confident, with odds for a hike next week jumping from roughly 70% to 90% following the CPI data release. Chair Warsh’s post-meeting press conference and the updated summary of economic projections will be of particular interest, as markets assess the evolution of the Fe"
+    },
+    {
+      "source": "tavily_result",
+      "title": "What to Look Out for in Economic Data This Week ...",
+      "url": "https://www.kiplinger.com/investing/economy/this-weeks-economic-calendar",
+      "content": "The August jobs report came in much better than expected, which lifted odds of a September rate hike. And the August Producer Price Index (PPI) and Consumer Price Index (CPI) reports, which showed inflation remains well above the Fed's 2% target, keep a rate hike in play for the central bank's Septe"
+    },
+    {
+      "source": "tavily_answer",
+      "query": "Federal Reserve speech this week monetary policy",
+      "answer": "The Federal Reserve is expected to announce its latest rate decision on Wednesday, with market bets indicating a rate hike to address persistently high inflation. The decision will be followed by a press conference from Chairman Kevin Warsh. The inflation rate has remained above the Fed's target of 2%, influenced by factors such as the U.S. conflict with Iran and its impact on global oil supply. Analysts view this meeting as a critical test for Chairman Warsh's leadership and the Fed's approach "
+    },
+    {
+      "source": "tavily_result",
+      "title": "Former New York Fed Pres. Dudley: Expect the Fed to raise rates this week - CNBC",
+      "url": "https://www.cnbc.com/video/2026/09/14/former-new-york-fed-pres-dudley-expect-the-fed-to-raise-rates-this-week.html",
+      "content": "Former New York Fed Pres. Dudley: Expect the Fed to raise rates this week. William Dudley, Princeton University Griswold Center for Economic Policy Studies senior advisor and former New York Fed president, joins 'Squawk Box' to discuss the Fed's two-day policy meeting this week, interest rate outloo"
+    },
+    {
+      "source": "tavily_result",
+      "title": "A highly anticipated Fed meeting, war worries, and an unblinking stock market: What to watch this week - Yahoo Finance",
+      "url": "https://finance.yahoo.com/markets/article/a-highly-anticipated-fed-meeting-war-worries-and-an-unblinking-stock-market-what-to-watch-this-week-100000843.html",
+      "content": "2. Best 0% APR cards. 3. Best money market accounts. If last week was the setup (consumer and wholesale inflation data, surging oil prices), then this week is the main event, with all eyes squarely on Washington, D.C., where the Federal Reserve on Wednesday will announce its latest rate decision. Th"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Wall Street week ahead: Federal Reserve decision on interest rates, retail sales update - Greenwich Time",
+      "url": "https://www.greenwichtime.com/business/article/wall-street-week-ahead-federal-reserve-decision-22428506.php",
+      "content": "# Wall Street week ahead: Federal Reserve decision on interest rates, retail sales update. NEW YORK (AP) — The Federal Reserve and its interest rate policy will be the main focus for Wall Street this week. The central bank will close out its two-day meeting on Wednesday and could raise its benchmark"
+    },
+    {
+      "source": "tavily_answer",
+      "query": "China PMI economic data this week",
+      "answer": "China's official manufacturing PMI for August 2024 was 49.1, slightly below the 50.0 threshold, indicating a contraction in manufacturing activity. The non-manufacturing PMI showed a modest improvement, which provided some support to risk-sensitive currencies like the Australian dollar. The data suggests fragile economic activity in China, which limits its positive impact on the Australian dollar."
+    },
+    {
+      "source": "tavily_result",
+      "title": "Weekly Outlook | A Super Central Bank Week and China's August Economic Data Are Coming; on Monday, Iran will hold talks with Gulf states on the Hormuz Agreement, while the Korea Exchange launches after-hours stock trading; on Wednesday, the CLARI",
+      "url": "https://news.futunn.com/en/post/79152641/weekly-outlook-a-super-central-bank-week-and-china-s",
+      "content": "This week, the United States released its August PPI and CPI figures. The PPI rose 5.4% year over year, exceeding the market's expectation of 5.3%; the CPI increased 3.4% year over year, unchanged from July and in line with forecasts. Meanwhile, core CPI climbed 0.3% month over month, above the expe"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Reading China PMI Data to Trade AUD/USD: A Practical Framework for Currency Traders | FinancialContent",
+      "url": "https://www.financialcontent.com/article/globeprwire-2026-9-9-reading-china-pmi-data-to-trade-audusd-a-practical-framework-for-currency-traders",
+      "content": "China's official manufacturing PMI for August 2024 came in at 49.1, slightly below the 50.0 threshold. The reading, while weak, was not a significant surprise to markets that had been monitoring the country's economic slowdown. The non-manufacturing PMI showed a modest improvement, offering some sup"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Economic & event calendar Asia Tuesday, September 15, 2026",
+      "url": "https://investinglive.com/news/economic-event-calendar-asia-tuesday-september-15-2026-china-set-to-report-august-activity",
+      "content": "# Economic & event calendar Asia Tuesday, September 15, 2026: China set to report August activity\n\nChina's National Bureau of Statistics is due to release August industrial production, retail sales and fixed asset investment data at 0200 GMT on Tuesday, September 15, offering the next read on whethe"
+    }
+  ]
+}
