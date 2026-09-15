@@ -1,0 +1,86 @@
+{
+  "date": "2026-09-16",
+  "generated_at": "2026-09-16T06:07:08.109610",
+  "upcoming_events": [
+    {
+      "date": "2026-09-16",
+      "event": "FOMC 利率决议",
+      "importance": "critical",
+      "category": "央行",
+      "note": "附 SEP 经济预测 + 点阵图",
+      "days_until": 0
+    }
+  ],
+  "recent_events": [],
+  "web_events": [
+    {
+      "source": "tavily_answer",
+      "query": "US economic data release this week CPI GDP jobs",
+      "answer": "The latest US economic data for this week indicates a modest uptick in inflation, with the August Consumer Price Index (CPI) showing a slight acceleration in headline inflation driven by higher energy prices. The producer price index also rose 0.4% in August, contributing to an annual change of 5.4%. Despite these inflationary pressures, the markets are increasingly confident in a potential Federal Reserve interest rate hike, with odds rising from 70% to 90% following the CPI data release. Upcom"
+    },
+    {
+      "source": "tavily_result",
+      "title": "The Weekly Bottom Line",
+      "url": "https://economics.td.com/ca-weekly-bottom-line",
+      "content": "Markets appear slightly more confident, with odds for a hike next week jumping from roughly 70% to 90% following the CPI data release. Chair Warsh’s post-meeting press conference and the updated summary of economic projections will be of particular interest, as markets assess the evolution of the Fe"
+    },
+    {
+      "source": "tavily_result",
+      "title": "US August CPI: Inflation Is Moving in the Wrong Direction",
+      "url": "https://www.rbc.com/en/economics/us-analysis/us-data-flashes/us-august-cpi-inflation-is-moving-in-the-wrong-direction",
+      "content": "### Read This Next\n\nEconomy Jobs Labour Market September 4, 2026 #### August US employment report: Show me the weakness – I don’t see any Image 17 Share tooltipEconomy Fed Inflation August 12, 2026 #### US July CPI: Reassuring on the surface, yellow flags beneath Image 18 Share tooltipEconomy Jobs L"
+    },
+    {
+      "source": "tavily_result",
+      "title": "US Dollar Technical Outlook: USD Clings to Support Ahead of CPI, Fed",
+      "url": "https://www.forex.com/en-us/news-and-analysis/us-dollar-technical-outlook-usd-clings-to-support-ahead-of-cpi-fed-9-10-2026",
+      "content": "Video 1\n\n_This content was created by an affiliate of FOREX.com and represents the views and opinions of the author/speakers, not the views and opinions of Forex.com, StoneX Group Inc., or its subsidiaries. The content has not been independently reviewed by FOREX.com._\n\nImage 41: Whitepaper\n###### K"
+    },
+    {
+      "source": "tavily_answer",
+      "query": "Federal Reserve speech this week monetary policy",
+      "answer": "The Federal Reserve is widely expected to raise its benchmark interest rate this week, defying President Trump's demands for a cut. This expectation follows Fed Chair Kevin Warsh's hawkish speech at the Jackson Hole conference, where he argued that the Fed had not yet achieved its goal of controlling inflation. Warsh's stance is supported by other FOMC members, including Lorie Logan, Beth Hammack, and Neel Kashkari, who have also advocated for tighter monetary policy. Despite the pressure from T"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Warsh's credibility is on the line this week as Trump policies put pressure on Fed to hike",
+      "url": "https://www.cnbc.com/2026/09/14/warshs-credibility-is-on-the-line-this-week-as-trump-policies-put-pressure-on-fed-to-hike.html",
+      "content": "In his Jackson Hole speech, Warsh said if the Fed wasn't confident that underlying inflation was declining, it would have \"work to do.\" Warsh could gain that confidence with an apparent path to an end to the Iran War or some assurance that the president is satisfied with the current tariff regime. ["
+    },
+    {
+      "source": "tavily_result",
+      "title": "Warsh's push to pare back Fed communications has real limits",
+      "url": "https://www.americanbanker.com/news/warshs-push-to-pare-back-fed-communications-has-real-limits",
+      "content": "|  |  |\n --- |\n|  |  twitter  youtube  facebook  linkedin  whatsapp |\n\n© 2026 Arizent. All rights reserved.\n\n \n\nMarket Intelligence:\n\nAI\n\nPayments\n\nResearch\n\nIndustry Data\n\n  \n\nMonetary policy\n\n# Warsh's push to pare back Fed communications has real limits\n\nBy  Kyle Campbell\n\n|  |  |\n --- |\n|  | Abo"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Federal Reserve is expected to raise its benchmark rate, defying Trump's demands",
+      "url": "https://abcnews.com/Business/wireStory/federal-reserve-expected-raise-benchmark-rate-defying-trumps-136452242",
+      "content": "An increase in the Fed's rate, currently about 3.6%, isn't guaranteed because Fed Chair Kevin Warsh doesn't provide the signals about next moves that his predecessors did. Still, most analysts and economists expect a hike after a speech two weeks ago at the Fed’s annual conference in Jackson Hole, W"
+    },
+    {
+      "source": "tavily_answer",
+      "query": "China PMI economic data this week",
+      "answer": "China's August economic data indicates mixed results. The official manufacturing Purchasing Managers' Index (PMI) held at 49.0, below the 50 threshold indicating expansion, while the HSBC Flash China Manufacturing PMI reached a four-month high at 50.6. Industrial output rose 5.2% year-over-year, up from 4.5% in July, but retail sales only grew by 0.4%, down from 0.6% in July. Fixed-asset investment and retail sales are expected to show modest increases, with industrial production forecasted to r"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Weekly Outlook | A Super Central Bank Week and China's August Economic Data Are Coming; on Monday, Iran will hold talks with Gulf states on the Hormuz Agreement, while the Korea Exchange launches after-hours stock trading; on Wednesday, the CLARI",
+      "url": "https://news.futunn.com/en/post/79152641/weekly-outlook-a-super-central-bank-week-and-china-s",
+      "content": "This week, the United States released its August PPI and CPI figures. The PPI rose 5.4% year over year, exceeding the market's expectation of 5.3%; the CPI increased 3.4% year over year, unchanged from July and in line with forecasts. Meanwhile, core CPI climbed 0.3% month over month, above the expe"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Interpreting The Latest Chinese Government Economic Outlook In ...",
+      "url": "https://kraneshares.com/cannonball-cavalry-or-complacency-interpreting-the-latest-chinese-government-economic-outlook-in-advance-of-the-next-trump-xi-summit",
+      "content": "Retail sales rose just 0.6% year-over-year (YoY) in July, down from 1.0% in June and below consensus expectations of 1.5%.2 Meanwhile, China's official non-manufacturing Purchasing Managers' Index (PMI) held at 49.0 in August, below the 50 threshold that separates expansion from contraction; the ser"
+    },
+    {
+      "source": "tavily_result",
+      "title": "China's August Data May Force Stronger Stimulus",
+      "url": "https://www.briefs.co/news/china-eyes-august-data-as-a-make-or-break-moment-for-stimulu",
+      "content": "## Where activity is holding up and where it is not\n\nChina's official manufacturing PMI indicated that both new orders and output moved back into expansion in August after July's contraction, while producer prices posted their first increase in three months. Factories are benefiting from strong fore"
+    }
+  ]
+}
