@@ -1,0 +1,1144 @@
+{
+  "date": "2026-09-27",
+  "generated_at": "2026-09-27T06:30:59.819875",
+  "total_events": 42,
+  "severity_distribution": {
+    "medium": 42
+  },
+  "events": [
+    {
+      "title": "Exclusive | Trump Rejects Iran Ceasefire, Expects Renewed Bombing After Midterms - wsj.com",
+      "title_cn": "",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPbGVxM0NSSkVPVjdHTGNlUHBLbTdGTmh3OWZsTFRXVGVReHZGWmxEM2xjdUt4Y25KMVVyYlJ6WkdKZFVWdEFSVzFmcGx1X2lKTjd0MmxLak01UzgwYU5Iek1zazA1RzlhRXE0cGdhQzNtNFpUTVdhTWQ1Vk5DMWFxbHNEVTFLMTJRUFBFZjRNNU1UaHFoaDZqLWotX1RvUEhCVVotMElmMDdCRHB2RWFQVjMxNGs?oc=5",
+      "content": "Exclusive | Trump Rejects Iran Ceasefire, Expects Renewed Bombing After Midterms  wsj.com",
+      "content_detail": "Google News",
+      "published_date": "Sat, 26 Sep 2026 00:26:00 GMT",
+      "search_region": "美伊冲突",
+      "classified_regions": [
+        "美伊冲突"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "Exclusive Trump Rejects Iran Ceasefire, Expects Renewed Bombing After Midterms wsj.com",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Trump rejects Iran's proposal to reopen the Strait of Hormuz, and other Middle East news - PBS",
+      "title_cn": "",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNTlZ0aWRwdmFJU1pOQ3ZUWlByckdUVEt1ZGRUb20xYUFNRVBfMDZHa1o0RUN1czZNbkdFWTNodkV1YUc2ZHRWb3FYakdnMkxBaG5yNDdkUWpabkhSSzhxbUVHWXVXTFIta0ZxbEVQc0w0UmlGOVpTX0VGV29FQkExaDlUT2xxYlQ5eEM3YXZnbHl1Rnlvd1lSSHdzcExyVXJnanRnY1dDNGZoalhpaDdKdDgxOVo2ZVVvY3ZTazZB0gHDAUFVX3lxTE1ZZEdtZVdrQ01mbk85Z0JVdTBOOF9BZ1FXcXBFOGxjNExaN3pySk5ERmRDZURUSWJWWkw4eUd1cllmd0hxNzZteHlOLUpKTDFKUDdKUzBQV3Y1X3AtaWhSMnBIa01OTVFFVzJ2SWtybHNjSGozY01vTE0weEN3THBVOVNtZ3ZfQlp3MnRtdEV6VjRyYXRFM2FjSU9ycHlJX3ZZZGMtOUdlN05vRWZqajNORThMaHhyRFduSG55YUZXZFZSTQ?oc=5",
+      "content": "Trump rejects Iran's proposal to reopen the Strait of Hormuz, and other Middle East news  PBS",
+      "content_detail": "Google News",
+      "published_date": "Sat, 26 Sep 2026 15:53:23 GMT",
+      "search_region": "美伊冲突",
+      "classified_regions": [
+        "美伊冲突"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "Trump rejects Iran's proposal to reopen the Strait of Hormuz, and other Middle East news PBS",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Trump rejects Iran deal to reopen Strait of Hormuz in seven days - BBC",
+      "title_cn": "",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE45Z0pMeUNRaTNfWUlMQmJEWE1mcW04c09tZERDRTR0aFRicWJ0b1pLczlhQ2lYMGZDTFlBMXMya3ZrOHdwcmRqTk5PQzZiODFFNndGTm1iT1NBc1U?oc=5",
+      "content": "Trump rejects Iran deal to reopen Strait of Hormuz in seven days  BBC",
+      "content_detail": "Google News",
+      "published_date": "Sat, 26 Sep 2026 18:17:12 GMT",
+      "search_region": "美伊冲突",
+      "classified_regions": [
+        "美伊冲突"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "Trump rejects Iran deal to reopen Strait of Hormuz in seven days BBC",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Trump calls Iranian plan to reopen Strait of Hormuz not 'acceptable' - NPR",
+      "title_cn": "",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNbFFIUk9GUUctYjB3UzR4VmZGTTU0S2VKSm5paEYtbHNZSFAtSXl6TlgwRWxfREkyOXpkbTNTd0lyeTdfTW5kMlhnQmVhWUo0YnZydlRCVGFrVlZVellxTFlidFFTS2FiS3piUW8yVFlmVjVuN2FuWWR4bjB2ZDltWVpJTmFuVURhNXdaXzZHMDY2QQ?oc=5",
+      "content": "Trump calls Iranian plan to reopen Strait of Hormuz not 'acceptable'  NPR",
+      "content_detail": "Google News",
+      "published_date": "Sat, 26 Sep 2026 20:08:28 GMT",
+      "search_region": "美伊冲突",
+      "classified_regions": [
+        "美伊冲突"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "Trump calls Iranian plan to reopen Strait of Hormuz not 'acceptable' NPR",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Trump says he has rejected Iranian proposal to reopen Strait of Hormuz - NBC News",
+      "title_cn": "",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPWHo1SzFjTnJGYkExZzNTRklIMGdSSk9HZEw1MW1nOHpKZFQ2QkV4Ti1BdzBlSnJ6ZFg0T2tIcWx6cm5xU3NQRkF1UkFIQWN3MnQ3ZE1kclBMWHE1UjVQZ21RZ21VZnNyYWhnU3BPTkJBcmxjN0tWWm9xS3VJYzZieVZkNUtrV2YtMGFaYXR2WHl3QWlNdVJIR2R4aERVTHZTUVYyWkh6VnY?oc=5",
+      "content": "Trump says he has rejected Iranian proposal to reopen Strait of Hormuz  NBC News",
+      "content_detail": "Google News",
+      "published_date": "Sat, 26 Sep 2026 16:10:33 GMT",
+      "search_region": "美伊冲突",
+      "classified_regions": [
+        "美伊冲突"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "Trump says he has rejected Iranian proposal to reopen Strait of Hormuz NBC News",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Trump rejects Iranian proposal to open Hormuz and end fighting - Reuters",
+      "title_cn": "",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNZTlYWmNvWG9uODA3NXdWTTQ0d1EtNnFKczBKYThkcFExSmZGWjlqb2xmc0ZsUDNsYWxUWjhLNm1ocTRCcmJDMGdhUmZ1NC1WdjVJdWFxNDRzLTA0Mk11dUN6WHkyUUVpcFMxV1A1d2RFUXljR0xlY293UldHb2ZoUDAzT294ZmVUWVdCZUEzUTlGSkp4cEhTLTVqTllkU3lDNDREeXFqVlQzSUU1VGpnXzZYZ1ZSMXZ3dmU0Tg?oc=5",
+      "content": "Trump rejects Iranian proposal to open Hormuz and end fighting  Reuters",
+      "content_detail": "Google News",
+      "published_date": "Sat, 26 Sep 2026 15:15:54 GMT",
+      "search_region": "美伊冲突",
+      "classified_regions": [
+        "美伊冲突"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "Trump rejects Iranian proposal to open Hormuz and end fighting Reuters",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Trump rejects Iran’s proposal to reopen Strait of Hormuz, restart peace talks - The Washington Post",
+      "title_cn": "",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNa1Rja0Y2Z0RxMU12MzE5M2d5UUhPRnZYYWdhQVJ3YTdtdjBIZ1c0eXV1WjQzSVZJNnk2UGlpR2dQV2RtUHZqR2tzRjVwaTNSbXJRV1RWUEdEN2hBY1p0VXBxVzJnZFUxVV92N0gyTmhqYkg2Szc3THE3UTByRWUyN09fT2M2WWRDanQ5VTV0aGJCWXFDeXZCSjNxMEY4LUQyY3ZBWHk1VHl0RjktMGh2V0VwTUZ4SGpqOFpELVNTQlFSRjh2b1Vtdg?oc=5",
+      "content": "Trump rejects Iran’s proposal to reopen Strait of Hormuz, restart peace talks  The Washington Post",
+      "content_detail": "Google News",
+      "published_date": "Sat, 26 Sep 2026 21:59:22 GMT",
+      "search_region": "美伊冲突",
+      "classified_regions": [
+        "美伊冲突"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "Trump rejects Iran’s proposal to reopen Strait of Hormuz, restart peace talks The Washington Post",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "US-Iran war news updates: Donald Trump rejects Iran's proposal to reopen the Strait of Hormuz - ABC7 Chicago",
+      "title_cn": "",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQUWhReEtYYWZqUWoxeDRJOVFqQVJmcVZvTEJRRWIwdndvblh1bVlJdzluZnBJTnp1dTlHWWdObHh4NDhPZnBqeGxFSW5xVDFyZXlCLXk0eFY5RDU4aVhVN29RdkxnZkx6di16a3VuV2hpUGdYZXJwR0hMX0owR0EzeDFLM245VF9hN3B6TFlBcEp6eHE4LWpnWldyZXJ5S0xvVGlXSm9fVXJIaUVDLV9UMHhlU3R5VzA5TmtKT9IBwgFBVV95cUxQTktMYzlzMVJpeUJ2ZFFiRHhaX3NDNFpac3dzUEFCRVhFZzdpWE80LUlZUERlVS1obUk4RlBPQUNaRE9MMzZHeW9TdFBCdFFZRjJxaEFCaFlHXzJXZkJPc2ZkWTJkd1ZFd0g2bVBCbXViM0NaQmV2MDVXYzduWWZqNHY2WlVLUGFiT3ZUaW9uMVhQTml4bGtNWXFwOC1GVXhWOEY2Wk1OZ3Fxa1FFRE92YVRVbWN3RTVVc3J6b2gwdXFRQQ?oc=5",
+      "content": "US-Iran war news updates: Donald Trump rejects Iran's proposal to reopen the Strait of Hormuz  ABC7 Chicago",
+      "content_detail": "Google News",
+      "published_date": "Sat, 26 Sep 2026 15:44:51 GMT",
+      "search_region": "美伊冲突",
+      "classified_regions": [
+        "美伊冲突"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "US-Iran war news updates: Donald Trump rejects Iran's proposal to reopen the Strait of Hormuz ABC7 Chicago",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Russian Offensive Campaign Assessment, Sept. 25, 2026",
+      "title_cn": "",
+      "url": "https://understandingwar.org/research/russia-ukraine/russian-offensive-campaign-assessment-september-25-2026",
+      "content": "Russian strikes on data centers are one of the latest Russian attempts to disrupt the Ukrainian economy and follow a similarly targeted Russian strike campaigns against Ukraine’s port and railway infrastructure. Russian forces have recently intensified their strike campaign against Ukraine’s Black S",
+      "content_detail": "[Skip to content](#content \"Skip to content\")[Skip to Content](#main)\n\n\n[![Institute for the Study of War](https://understandingwar.org/wp-content/uploads/2025/08/ISW-Logo.svg)](https://understandingwar.org/)\n\nRussia & Ukraine\n\nUkraine\n\nRussian Offensive Campaign Assessment\n\n# Russian Offensive Campaign Assessment, September 25, 2026\n\n###### September 25, 2026\n\n## Jump to\n\n[Previous](https://understandingwar.org/research/middle-east/iran-update-september-25-2026/)\n\n# Russian Offensive Campaign Assessment, September 25, 2026\n\n## Toplines\n\n**Ukrainian President Volodymyr Zelensky stated on September 25 that US President Donald Trump has made a “final decision” to grant Ukraine licenses to produce unspecified types of Patriot air defense systems interceptor missiles.****[1]**Sources within Zelensky’s administration stated that Ukraine is in negotiations with the United States to obtain licenses for the production of more capable PAC-3 interceptors and the simpler PAC-2 interceptors.[2] Trump himself has yet to confirm his decision to grant Ukraine production licenses for Patriot interceptors as of this writing. Allowing Ukraine to domestically produce Patriot air defense missiles will help improve Ukraine’s ability to more effectively repel Russian ballistic missile strikes, though it will likely take time for Ukraine to establish production facilities and source components necessary to produce interceptors.\n\n**Russian forces are intensifying efforts to specifically target Ukrai",
+      "published_date": "Sat, 26 Sep 2026 00:21:53 GMT",
+      "search_region": "俄乌战争",
+      "classified_regions": [
+        "俄乌战争"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "At UN, Russia and Germany's top diplomats hold first talks ...",
+      "title_cn": "",
+      "url": "https://www.devdiscourse.com/article/international/3982897-at-un-russia-and-germanys-top-diplomats-hold-first-talks-since-2022?amp=",
+      "content": "Wadephul urged Russia to do \"everything possible to reach an agreement ‌on grain exports via the Black Sea\", a German delegation source said. Russian and Ukrainian exports via the Black Sea ‌have been sharply curtailed in recent months as Kyiv and Moscow targeted each other's port infrastructure and",
+      "content_detail": "[IN FOCUS](/top-stories) \n\n* [Home](/ \"Home\")\n* [News Analysis](/news-analysis \"News Analysis\")\n* [Agro-Forestry](/news/agro-forestry \"Agro-Forestry News\")\n* [Art & Culture](/news/art-culture \"Art & Culture News\")\n* [Technology](/news/technology \"Technology News\")\n* [Economy & Business](/news/economy-business \"Economy & Business News\")\n* [Education](/news/education \"Education News\")\n* [Energy & Extractives](/news/energy-extractives \"Energy & Extractives News\")\n* [Politics](/news/politics \"Politics News\")\n* [Law & Governance](/news/law-governance \"Law & Governance News\")\n* [Health](/news/health \"Health News\")\n* [Science & Environment](/news/science-environment \"Science & Environment News\")\n* [Social & Gender](/news/socialgender \"Social & Gender News\")\n* [Sports](/news/sports \"Sports News\")\n* [Transport](/news/transport \"Transport News\")\n* [Urban Development](/news/urban-development \"Urban Development News\")\n* [WASH](/news/wash \"Water, Sanitation and Hygiene News\")\n* [Research](/research \"Research\")\n* [LogIn/SignUp](/Account/Login \"Log In/Sign Up\")\n\n# At UN, Russia and Germany's top diplomats hold first talks since 2022\n\n\n\nUpdated: 26-09-2026 22:46 IST | Created: 26-09-2026 22:46 IST\n\nRussia and Germany's foreign ministers met on the sidelines of the UN General Assembly on Saturday, officials from both ‌sides said, in the first such talks since before Russia's full-scale invasion of Ukraine in 2022. Russia's Sergei Lavrov and Germany's Johann Wadephul discussed bilateral relati",
+      "published_date": "Sat, 26 Sep 2026 17:00:00 GMT",
+      "search_region": "俄乌战争",
+      "classified_regions": [
+        "俄乌战争"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "At UN, Russia and Germany's top diplomats hold first talks since 2022 Updated: 26-09-2026 22:46 IST Created: 26-09-2026 22:46 IST Russia and Germany's foreign ministers met on the sidelines of",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Russia-Ukraine War Latest Live News: Peace Talks Show Little Progress as Rubio Signals Limited Ceasefire, Lavrov Rejects Pause in Fighting After UN Diplomacy",
+      "title_cn": "",
+      "url": "https://sundayguardianlive.com/world/russia-ukraine-war-latest-live-news-peace-talks-show-little-progress-as-rubio-signals-limited-ceasefire-lavrov-rejects-pause-in-fighting-after-un-diplomacy-293095",
+      "content": "Russia-Ukraine War Latest Live News: Diplomatic efforts at the UN General Assembly produced limited movement on the Russia-Ukraine war, with discussions focusing on a possible limited ceasefire covering energy infrastructure and grain-related targets.\n\nUS Secretary of State Marco Rubio said after me",
+      "content_detail": "[![The Sunday Guardian](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201776%20213'%3E%3C/svg%3E)](https://sundayguardianlive.com/)\n\n[Read ePaper](https://epaper.sundayguardianlive.com)\n\n[![The Sunday Guardian](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201776%20213'%3E%3C/svg%3E)](https://sundayguardianlive.com/)\n\n[Read ePaper](https://epaper.sundayguardianlive.com)\n\n[![The Sunday Guardian](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201776%20213'%3E%3C/svg%3E)](https://sundayguardianlive.com/)\n\nCopyright 2025 - All Right Reserved.   \nSunday Guardian Live\n\n# Russia-Ukraine War Latest Live News: Peace Talks Show Little Progress as Rubio Signals Limited Ceasefire, Lavrov Rejects Pause in Fighting After UN Diplomacy\n\n## Russia-Ukraine peace efforts saw limited movement after UN diplomacy, with Marco Rubio signalling interest in a limited ceasefire covering energy and grain targets, while Sergei Lavrov rejected a pause in fighting.\n\nBy: **[Shubhi Kumar](https://sundayguardianlive.com/author/shubhi-kumar/)**  \nLast Updated: September 26, 2026 13:54:52 IST\n\n[![](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201170%20878'%3E%3C/svg%3E)](https://sundayguardianlive.com/wp-content/uploads/2026/09/russia-ukraine-war-latest-live-news-little-movement-on-peace-after-un-talks.png)\n\n*7*\n\n**Russia-Ukraine War Latest Live News:** Diplomatic efforts at th",
+      "published_date": "Sat, 26 Sep 2026 08:24:52 GMT",
+      "search_region": "俄乌战争",
+      "classified_regions": [
+        "俄乌战争"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Ukraine–U.S.–Russia: where is the negotiation track ...",
+      "title_cn": "",
+      "url": "https://www.ukrinform.net/amp/rubric-polytics/4168381-ukraineusrussia-where-is-the-negotiation-track-headed.html",
+      "content": "BLACK SEA: GRAIN, METALS AND MORE\n\nThe second track is the safety of navigation in the Black Sea.\n\nZelensky said Ukraine was ready for a maritime truce and that relevant proposals were already being developed with the participation of the UAE, India and Türkiye.\n\nIt is not only about grain. “Because",
+      "content_detail": "# Ukraine–U.S.–Russia: where is the negotiation track headed?\n\nZelensky’s visit to New York highlighted three tracks for further diplomacy on ending the war\n\n*During the high-level week of the UN General Assembly, statements were made that underscored the fundamental contradiction in the current negotiation track: Washington is seeking to reach at least some kind of agreement, Kyiv says it is ready for reciprocal steps, while Moscow publicly refuses even to agree to a pause in hostilities.*\n\n*Each side is pursuing very different objectives. The White House is primarily concerned about the prospect of a setback for the president’s party in the midterm elections and is therefore seeking some successes on the international front. Ukraine, understandably, wants the war to end on terms that are as fair as possible. What the Kremlin wants is also clear, but its demands are by no means matched by its capabilities. Moscow is therefore currently seeking to find the path that best serves its interests, while simultaneously trying not to exhaust the resources it needs to sustain the war and to prevent further escalation of U.S. pressure.*\n\n*Donald Trump’s latest statements and his contacts with Volodymyr Zelensky, as well as the progress of Lindsey Graham’s sanctions bill, have seriously alarmed the Putin regime. Russia’s leadership is forced to take into account the risk of tougher U.S. sanctions while at the same time demonstrating that it is not prepared to give up its ambitions. Thi",
+      "published_date": "Sat, 26 Sep 2026 17:00:00 GMT",
+      "search_region": "俄乌战争",
+      "classified_regions": [
+        "俄乌战争"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "Ukraine–U.S.–Russia: where is the negotiation track headed?",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Wadephul says talks with Lavrov showed deep divisions over Ukraine war",
+      "title_cn": "",
+      "url": "https://www.yahoo.com/news/politics/articles/wadephul-says-talks-lavrov-showed-184839359.html",
+      "content": "Wadephul said he had been asked by numerous counterparts to remain open to talks with Russia, with colleagues advising \"that at some point direct talks must resume.\" He also said he did not want Europeans to leave all contact with Russia entirely to the US side.\n\nWadephul stressed there were categor",
+      "content_detail": "* [Skip to main](#article-container)\n\n[Mail](https://mail.yahoo.com/)\n\nAdvertisement\n\nAdvertisement\n\n[Return to Homepage](https://www.yahoo.com)\n\n## Top Stories:\n\n* [Talarico suffers setback as Texas undecided voters decide](https://www.yahoo.com/news/politics/articles/talarico-suffers-double-poll-blow-134456620.html)\n* [White House blocks CNN](https://www.yahoo.com/news/politics/articles/trump-blocks-cnn-traveling-air-154546573.html)\n* [Nor’easter threatens East Coast](https://www.yahoo.com/news/weather-news/article/noreaster-expected-to-bring-heavy-rain-winds-and-flooding-to-east-coast-this-weekend-from-concerts-to-mlb-games-see-whats-already-impacted-183445169.html)\n* [Trump rejects Iran ceasefire](https://www.yahoo.com/news/politics/articles/trump-rejects-iran-ceasefire-expects-005228623.html)\n* [OpenAI probes user data leak](https://www.yahoo.com/news/us/articles/exclusive-openai-works-understand-full-203649029.html)\n* [Trump cuts $1B, sets deadline](https://www.yahoo.com/news/politics/articles/trump-administration-uses-rare-authority-234521611.html)\n* [ICE sweeps may hit beef prices](https://www.yahoo.com/news/us/articles/meatpacking-groups-ice-arrests-could-232510678.html)\n* [Top Court restores Trump voter system](https://www.yahoo.com/news/articles/supreme-court-restores-trumps-mass-153415643.html)\n* [Tech titans at Xi state dinner](https://www.yahoo.com/news/politics/articles/trumps-state-dinner-xi-feature-203656437.html)\n* [Tropical storm threatens Hawaii](https://w",
+      "published_date": "Sat, 26 Sep 2026 18:48:39 GMT",
+      "search_region": "俄乌战争",
+      "classified_regions": [
+        "俄乌战争"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Kremlin Welcomes Trump's Idea of Energy Truce With ...",
+      "title_cn": "",
+      "url": "https://energynow.ca/2026/09/kremlin-welcomes-trumps-idea-of-energy-truce-with-ukraine-calls-for-sanctions-removal",
+      "content": "The Kremlin ​said on ⁠Monday that the global market upheaval was mainly due to the conflict in the Gulf.\n\nTrump launched military strikes on Iran in February and Tehran responded by largely closing the Strait of Hormuz, through which about one-fifth of global ⁠oil ​and gas supplies had previously pa",
+      "content_detail": "Sign Up for FREE Daily Energy News\n\n* Stay Connected\n\n[Skip to content](#content \"Skip to content\")\n\n[![canada flag](https://energynow.ca/wp-content/uploads/2023/05/cad.png) CDN NEWS  |](https://energynow.ca)[![us flag](https://energynow.ca/wp-content/uploads/2023/05/usa.png) US NEWS](https://energynow.com/)  | TIMELY. FOCUSED. RELEVANT. FREE \n\n* Stay Connected\n\n[![Canadian Energy News, Top Headlines, Commentaries, Features & Events – EnergyNow](https://energynow.ca/wp-content/uploads/en_logo_cdn.png)](https://energynow.ca/)\n\n[![EvolutionPowerX](https://energynow.ca/wp-content/uploads/2026/08/Evolution-PowerX-Mobile-Banner-485x90-V1.jpg)](https://www.evolutionpowerx.com/)\n\nBREAKING NEWS:  \n\n#### [Majority of Voters in Energy-Rich Alberta Favor Staying in Canada Weeks Before Vote](https://energynow.ca/2026/09/majority-of-voters-in-energy-rich-alberta-favor-staying-in-canada-weeks-before-vote/)\n\n#### [EU Warns of Energy Price Crisis, Asks Countries to Consider Curbing Demand, Letter Shows](https://energynow.ca/2026/09/eu-warns-of-energy-price-crisis-asks-countries-to-consider-curbing-demand-letter-shows/)\n\n#### [COMMENTARY: Ottawa’s Bill C-39 Gives Cabinet Permanent Power Over Project Approval – Fraser Institute](https://energynow.ca/2026/09/commentary-ottawas-bill-c-39-gives-cabinet-permanent-power-over-project-approval-fraser-institute/)\n\n#### [Oil Ends Week Lower as U.S.-Iran Truce Hopes Hit WTI, While Middle East Supply Risks Keep Brent Above $100](https://energynow.ca/2026",
+      "published_date": "Sat, 26 Sep 2026 02:00:00 GMT",
+      "search_region": "俄乌战争",
+      "classified_regions": [
+        "俄乌战争"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "Sign Up for FREE Daily Energy News Stay Connected [",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Türkiye’s Black Sea push: Why the Erdoğan–Zelenskyy meeting matters - Foreign experts on Caliber.Az",
+      "title_cn": "",
+      "url": "https://caliber.az/en/post/turkiye-s-black-sea-push-why-the-erdogan-zelenskyy-meeting-matters",
+      "content": "The Turkish initiative to de-escalate the situation in the Black Sea is becoming even more important because it was also put forward at the United Nations, which, as during the previous grain deal, can play an important institutional role. In effect, Türkiye is calling on the international community",
+      "content_detail": "WHAT ARE YOU LOOKING FOR ?\n\n  \n  \n   \n  \n  \n\n---\n\nAny use of materials is allowed only if there is a hyperlink to Caliber.az\n\n**Caliber.az** © 2026. .\n\nPOPULAR TAGS\n\n  \n \n\n---\n\n[About us](https://caliber.az/en/post/126)\n\nAny use of materials is allowed only if there is a hyperlink to Caliber.az\n\n**Caliber.az** © 2026. .\n\n[INTERVIEWS](https://caliber.az/en/category/6)\n\n# Türkiye’s Black Sea push: Why the Erdoğan–Zelenskyy meeting matters Foreign experts on Caliber.Az\n\n[Vadim Mansurov\n\nCaliber.Az](https://caliber.az/en/user/114)\n\n26 September 2026 12:26\n\n**The meeting between Turkish President Recep Tayyip Erdoğan and Ukrainian President Volodymyr Zelenskyy on the sidelines of the 81st session of the UN General Assembly was marked by a number of important statements aimed at finding ways to end the Russian-Ukrainian confrontation.**\n\nThe main outcome of the closed-door talks at the “Turkish House” in New York was Kyiv’s official confirmation of its readiness to participate in a trilateral leaders’ summit aimed at ending the Russian-Ukrainian conflict, provided that Ankara organises it.\n\nDuring the meeting, the Turkish president also strongly condemned attacks on commercial vessels in the Black Sea, calling them entirely unjustified, and urged the parties to exercise maximum responsibility in the interests of global food-export stability. In addition, the two leaders reaffirmed their intention to fundamentally reshape their economic ties, announcing plans to increase bilateral t",
+      "published_date": "Sat, 26 Sep 2026 18:12:18 GMT",
+      "search_region": "俄乌战争",
+      "classified_regions": [
+        "俄乌战争"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "WHAT ARE YOU LOOKING FOR ?",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Ukraine's top-secret weapon in the counter-offensive ...",
+      "title_cn": "",
+      "url": "https://www.vietnam.vn/en/vu-khi-toi-mat-cua-ukraine-trong-chien-dich-phan-cong-khien-nga-choang-vang",
+      "content": "Source: \n\nTag: secret weapontop secret weaponsUkraine conflictUkrainecounterattackUkraine counterattacks.Russia\n\n#### Comment(0)\n\nTop Interests\n\nNewest\n\nPlease leave a comment to share your feelings!\n\nPeople queue up to check in at the 15-meter-long Mid-Autumn Festival gate in Hanoi's Old Quarter.\n\n",
+      "content_detail": "[![Vietnam.vn - Nền tảng quảng bá Việt Nam](https://vjs.vietnam.vn/assets/images/logo-vietnam.png)](https://www.vietnam.vn/en/ \"Vietnam.vn - Nền tảng quảng bá Việt Nam\")\n\n# Ukraine's top-secret weapon in the counter-offensive stunned Russia.\n\nThe Ukrainian 3rd Corps used intelligence and reconnaissance to pinpoint Russian command centers, then deployed suicide ground robots to attack, aiming to disrupt command and communication systems and cause panic within enemy ranks, Euromaidanpress reported.\n\n![Báo Dn Việt](https://vphoto.vietnam.vn/thumb/48x48/vietnam/resource/IMAGE/2025/1/21/6651aa8bec804737aad9143519a40dd9)Báo Dn Việt•25/09/2026\n\n---\n\n![](https://i.ex-cdn.com/danviet.vn/files/content/2026/09/25/robo-2036.png)\n\nPhoto of the 3rd Army Corps of [Ukraine](/en/tag/ukraine \"Ukraine\") / Telegram\n\nIn the counteroffensive codenamed Vivaldi, the Ukrainian 3rd Corps deployed suicide ground robots to Russian command posts that had been previously identified by reconnaissance forces.\n\nAn intelligence officer from the corps revealed to Radio NV that the goal of the raids was to disrupt command and control, forcing Russia to deploy more troops to protect command centers instead of sending them into combat.\n\nIn parallel with the attack on the command center, the intelligence operation also uncovered a diesel pipeline supplying approximately half of the daily fuel needs of Russian forces across the entire operational front.\n\nThe Russia-Ukraine conflict is entering its fifth year, with ",
+      "published_date": "Sat, 26 Sep 2026 05:00:00 GMT",
+      "search_region": "俄乌战争",
+      "classified_regions": [
+        "俄乌战争"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "[ Ukraine's top-secret weapon in the counter-offensive stunned Russia.",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Trump-Xi Truce Tests India’s Strategy | ummid.com",
+      "title_cn": "",
+      "url": "https://ummid.com/news/2026/9/26/trump-xi-truce-tests-indias-strategy.html",
+      "content": "Trade remained the practical centre of the discussion. Trump’s tariff plans have been tied not only to China’s trade surplus but also to Chinese purchases of Russian and Iranian energy. A new US law gives the president authority to impose tariffs of up to 100% on major buyers of Russian oil and gas,",
+      "content_detail": "![ummid logo](https://ummid.com/images/ummid_logo_with_urdu.webp)\n\n[ummid.com](https://ummid.com/) [India](../../../../../india.html) [World](../../../../../world.html) [Education](https://ummid.com/education.html) [Business](https://ummid.com/business.html) [Science & Technology](https://ummid.com/technology.html) [Health](https://ummid.com/health.html) [Views & Analysis](https://ummid.com/opinion.html) [Lifestyle](https://ummid.com/lifestyle.html)\n\nWelcome Guest! You are here: [Home](https://ummid.com) » [Views & Analysis](https://ummid.com/opinion.html)\n\n# Trump-Xi Truce Tests India’s Strategy\n\n#### The Trump-Xi meeting produced pageantry and tactical calm, but its deeper message was harder: Washington and Beijing are managing rivalry across trade, artificial intelligence, Iran, Taiwan and energy without resolving the strategic contest reshaping India’s choices and America’s Indo-Pacific partnership increasingly unevenly today.\n\nSaturday September 26, 2026 1:52 PM, Asad Mirza\n\n***The Trump-Xi meeting produced pageantry and tactical calm, but its deeper message was harder: Washington and Beijing are managing rivalry across trade, artificial intelligence, Iran, Taiwan and energy without resolving the strategic contest reshaping India’s choices and America’s Indo-Pacific partnership increasingly unevenly today.***\n\nThe White House meeting between US President Donald Trump and Chinese President Xi Jinping was less a breakthrough than a negotiated pause. Both leaders had incent",
+      "published_date": "Sat, 26 Sep 2026 08:00:00 GMT",
+      "search_region": "中美博弈",
+      "classified_regions": [
+        "中美博弈"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Key Takeaways From Trump–Xi Summit | NTD",
+      "title_cn": "",
+      "url": "https://mb.ntd.com/key-takeaways-from-trump-xi-summit_1175156.html",
+      "content": "Before the summit, both Greer and Treasury Secretary Scott Bessent held meetings in New York City with their counterparts on trade issues on the sidelines of the U.N. General Assembly.\n\nGreer said that the U.S. export controls on advanced chips and other strategic goods will remain in place. However",
+      "content_detail": "[NTD Television![NTD Television](https://i.ntd.com/assets/themes/ntd/images/NTDLogo.svg \"NTD Television\")](/)\n\n[U.S.](/us)[China](/china)[World](/world)[Politics](/politics)[Health](/health-news)[Business](/business)[Entertainment](/entertainment)[Sports](/sports)\n\n[●LIVE](/live)\n\n[NTD Television![NTD Television](https://ntd.com/assets/uploads/2025/07/id1080531-ntdplus1.png \"NTD Television\")](/ntdplus)\n\n[News](/news)[US News](/us)[Politics](/politics)[Executive Branch](/executive-branch)\n\n# Key Takeaways From Trump–Xi Summit\n\nAt the Washington summit, the U.S. president warned the Chinese leader over Beijing's support for Iran while securing progress on trade and agricultural deals.\n\n[![Emel Akan](https://i.ntd.com/assets/uploads/2024/05/id995560-15ef0812da90bd74_ttl7dayCNO_WEB_EmelAkan-1.jpg.webp \"Emel Akan\")](/author/emel-akan)\n\nBy\n\n[Emel Akan](/author/emel-akan)\n\n|\n\nPublished: 9/25/2026, 10:25:47 PM EDT\n\n![Key Takeaways From Trump–Xi Summit](https://i.ntd.com/assets/uploads/2026/09/id1175157-DSC06201-Trump-and-Xi-2026.jpg-900x506.webp)\n\nPresident Donald Trump, First Lady Melania Trump, Chinese leader Xi Jinping, and his wife Peng Liyuan, during a visit to the U.S. National Archives in Washington on Sept. 25, 2026. (Madalina Kilroy/The Epoch Times)\n\nWASHINGTON—President Donald Trump and Chinese leader Xi Jinping wrapped up their summit on Sept. 25 in Washington with a tea meeting at the White House, followed by a tour of the National Archives to view historic documents mark",
+      "published_date": "Sat, 26 Sep 2026 02:25:47 GMT",
+      "search_region": "中美博弈",
+      "classified_regions": [
+        "中美博弈"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "Key Takeaways From Trump–Xi Summit At the Washington summit, the U.S.",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Democrats accuse Trump of “appeasing” China in state visit by Xi",
+      "title_cn": "",
+      "url": "https://www.wsws.org/en/articles/2026/09/26/orsu-s26.html",
+      "content": "The Federal Reserve, which had not raised interest rates since 2023, lifted its benchmark rate on September 16 after annual inflation stood at 3.4 percent in August, with gasoline up 27.4 percent over 12 months.\n\nChinese exports have continued to grow despite the trade war. China’s trade surplus rea",
+      "content_detail": "Menu[Search](/en/search)\n\n[![](/static/img/wswslogo4red.png)![](/static/img/wswslogo4red.png)![](/static/img/wswslogo4red.png)](/en)\n\nLatest[Profile](/en/profile)\n\n[Contact](/en/special/pages/contact.html)|[About](/en/special/pages/icfi/wsws.html)|\n\n[International Committee of the Fourth International (ICFI)](/en/special/pages/icfi/about.html)\n\nMenu[Search](/en/search)\n\n[International Committee of the Fourth International (ICFI)](/en/special/pages/icfi/about.html)[![](/static/img/wswslogo4red.png)![](/static/img/wswslogo4red.png)![](/static/img/wswslogo4red.png)](/en)\n\nLatest[Profile](/en/profile)\n\n* [Fourth International](/en/special/pages/icfi/about.html)\n* [Socialist Equality Party](/en/special/pages/sep)\n* [IYSSE](/en/special/pages/iysse/about.html)\n* [About the WSWS](/en/special/pages/icfi/wsws.html)\n* [Contact](/en/special/pages/contact.html)\n* [Donate](/en/special/pages/donate.html)\n\n## Democrats accuse Trump of “appeasing” China in state visit by Xi\n\n##### [Andre Damon](/en/authors/Andre-Damon)[@Andre\\_\\_Damon](https://twitter.com/Andre__Damon)\n\nThe Democratic Party congressional leadership responded to a meeting between US President Donald Trump and Chinese President Xi Jinping with accusations that the fascist president, who had just threatened to “annihilate” Iran, was “appeasing” China.\n\nTwenty-one Democratic senators, including Senate Minority Leader Chuck Schumer of New York, issued a joint statement Thursday accusing Trump of not “confronting China’s ... compli",
+      "published_date": "Sat, 26 Sep 2026 04:00:00 GMT",
+      "search_region": "中美博弈",
+      "classified_regions": [
+        "中美博弈"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "US’s Russia Sanctions Threatens India Unduly - Daily Excelsior",
+      "title_cn": "",
+      "url": "https://www.dailyexcelsior.com/uss-russia-sanctions-threatens-india-unduly",
+      "content": "China’s response adds another layer to the crisis. Beijing is a much larger purchaser of Russian energy than India, yet Chinese commentary has been cautious rather than openly confrontational. That restraint reflects calculation. China does not want to offer Washington an easy justification for a br",
+      "content_detail": "[Home](/) [About](/about-us)\n\n[Android App](https://play.google.com/store/apps/details?id=com.dailyexcelsior) [iOS App](https://apps.apple.com/in/app/daily-excelsior/id1073026978) [Epaper](https://epaper.dailyexcelsior.com/)\n\n09/25/2026, 09/25/2026, 11:21:30 PM 25, 2026\n\n* [Todays story](https://www.dailyexcelsior.com/todays-story)\n* [Latest News](https://www.dailyexcelsior.com/latestnews)\n* [State](https://www.dailyexcelsior.com/state)\n* [Business](https://www.dailyexcelsior.com/business)\n* [National](https://www.dailyexcelsior.com/national)\n* [International](https://www.dailyexcelsior.com/international)\n* [Editorials](https://www.dailyexcelsior.com/editorials)\n* [Sunday Magazine](https://www.dailyexcelsior.com/sunday-magazine)\n\n* [Todays story](https://www.dailyexcelsior.com/todays-story)\n* [Latest News](https://www.dailyexcelsior.com/latestnews)\n* [State](https://www.dailyexcelsior.com/state)\n* [Business](https://www.dailyexcelsior.com/business)\n* [National](https://www.dailyexcelsior.com/national)\n* [International](https://www.dailyexcelsior.com/international)\n* [Editorials](https://www.dailyexcelsior.com/editorials)\n* [Sunday Magazine](https://www.dailyexcelsior.com/sunday-magazine)\n\nAdvertisement\n\n[Home](https://www.dailyexcelsior.com) **/** [Op-Ed](https://www.dailyexcelsior.com/op-ed-left) **/** US’s Russia Sanctions Threatens India Unduly\n\n# US’s Russia Sanctions Threatens India Unduly\n\n## Asad Mirza asad.mirza.nd@gmail.com India’s warning over Washington’s Russia sa",
+      "published_date": "Fri, 25 Sep 2026 22:30:49 GMT",
+      "search_region": "中美博弈",
+      "classified_regions": [
+        "中美博弈"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "China Lists 8 Outcomes From U.S. Summit, With Gaps From White House Version - Seoul Economic Daily",
+      "title_cn": "",
+      "url": "https://en.sedaily.com/international/2026/09/26/china-lists-8-outcomes-from-us-summit-with-gaps-from-white",
+      "content": "Most of China's statement that day overlapped with the White House fact sheet. But several items appeared only in the U.S. document and were omitted from the Chinese version: that tariff reductions would cover U.S. exports such as agricultural products, fish and seafood, logs and wood products, and ",
+      "content_detail": "",
+      "published_date": "Sat, 26 Sep 2026 10:36:34 GMT",
+      "search_region": "中美博弈",
+      "classified_regions": [
+        "中美博弈"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "From Hormuz to Saudi to US sanctions, world feels the oil heat",
+      "title_cn": "",
+      "url": "https://m.economictimes.com/news/international/world-news/from-hormuz-to-saudi-to-us-sanctions-world-feels-the-oil-heat/amp_articleshow/134509115.cms",
+      "content": "China pushes back against US on Iran and Cuba in UN speech [...] X\n\n### Popular News\n\n Noel Tata proposes splitting Tata Sons as alternative to RBI-mandated listing\n India’s 30-year wait for a seat has a new twist and an old problem\n ‘This is why people stereotype India’: Indian traveller tries to c",
+      "content_detail": "",
+      "published_date": "Sat, 26 Sep 2026 18:00:00 GMT",
+      "search_region": "中美博弈",
+      "classified_regions": [
+        "中美博弈"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Did Xi Leave the US Empty-Handed? Expert Weighs In | NTD",
+      "title_cn": "",
+      "url": "https://mb.ntd.com/ntdplus/did-xi-leave-the-us-empty-handed-expert-weighs-in_1175135.html",
+      "content": "What would you like to watch today?\n\nNTD TelevisionNTD Television\n\nvideo poster\n\n/\n\n# Did Xi Leave the US Empty-Handed? Expert Weighs In\n\nTiffany Meier Tonight\n\nTiffany Meier Tonight\n\nState Armor founder and CEO Michael Lucci joins Tiffany Meier after Xi Jinping’s Washington visit produced ceremony—",
+      "content_detail": "",
+      "published_date": "Sat, 26 Sep 2026 03:00:00 GMT",
+      "search_region": "中美博弈",
+      "classified_regions": [
+        "中美博弈"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Trump Warns Xi Against Helping Iran in War, China Assures US it Will Stop Support — But Tehran Says Beiji - Benzinga",
+      "title_cn": "",
+      "url": "https://www.benzinga.com/news/politics/26/09/62010390/trump-warns-xi-against-helping-iran-in-war-china-assures-us-it-will-stop-support-but-tehran-says-beijing-promised-the-opposite",
+      "content": "Politics\n\n##### Trump Taps ‘True Warrior’ Hung Cao As Navy Secretary: Urges Senate To Confirm Him ‘ASAP’\n\nTrump nominates Hung Cao as permanent Navy Secretary. Believes Cao's naval experience will help with shipbuilding push.\n\n3 min read\n\nRead this article\n\n## Iran Disputes China’s Commitment to the",
+      "content_detail": "",
+      "published_date": "Sat, 26 Sep 2026 03:08:41 GMT",
+      "search_region": "中美博弈",
+      "classified_regions": [
+        "中美博弈"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "At the mouth of the Red Sea, the chokepoint where global ...",
+      "title_cn": "",
+      "url": "https://countercurrents.org/2026/09/at-the-mouth-of-the-red-sea-the-chokepoint-where-global-crises-converge",
+      "content": "In 2023, China led negotiations between Saudia Arabia and Iran aimed at creating a diplomatic path to ending the war in Yemen. From November 2023, Houthi rebels began targeting Western linked vessels in the Bab el-Mandeb Strait in protest of Israel’s war against Hamas in Gaza, forcing many ships to ",
+      "content_detail": "",
+      "published_date": "Sat, 26 Sep 2026 04:28:25 GMT",
+      "search_region": "中东/红海",
+      "classified_regions": [
+        "中东/红海"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Here's What Happens To Shipping When The Strait ...",
+      "title_cn": "",
+      "url": "https://seekingalpha.com/article/4949498-heres-what-happens-to-shipping-when-strait-of-hormuz-reopens",
+      "content": "Home page Seeking Alpha - Power to Investors\n\nSearch for Symbols, analysts, keywords\n\n# Here's What Happens To Shipping When The Strait of Hormuz Reopens\n\nSep 26, 2026, 8:30 AM ETState Street SPDR S&P 500 ETF Trust (SPY), SPX, SP500, IVV, VOO, QQQ, IWM, DIA, NDX, DJI1 Comment\n\n## Summary [...] If yo",
+      "content_detail": "",
+      "published_date": "Sat, 26 Sep 2026 12:30:00 GMT",
+      "search_region": "中东/红海",
+      "classified_regions": [
+        "中东/红海"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "The politics limiting US arms deliveries to Taiwan",
+      "title_cn": "",
+      "url": "https://asiatimes.com/2026/09/the-politics-limiting-us-arms-deliveries-to-taiwan",
+      "content": "China continues to carry out continuous exercises rehearsing the components of a future quarantine or blockade, demonstrating how the PLA could surround the island, control shipping lanes, and test response timelines by the United States and Japan.\n\nBeijing maintains relentless pressure through incr",
+      "content_detail": "",
+      "published_date": "Sat, 26 Sep 2026 03:46:12 GMT",
+      "search_region": "台海/南海/朝鲜",
+      "classified_regions": [
+        "台海/南海/朝鲜"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "PLA activities in the waters and airspace around Taiwan",
+      "title_cn": "",
+      "url": "https://www.mnd.gov.tw/en/Publication/87839",
+      "content": "二、 PLA activities：\n\n5 sorties of PLA aircraft, 6 PLAN ships and 5 official ships operating around Taiwan were detected as of 6 a.m. (UTC+8) today. 1 out of 5 sorties crossed the median line of the Taiwan Strait and entered Taiwan’s northern ADIZ. ROC Armed Forces have monitored the situation and emp",
+      "content_detail": "",
+      "published_date": "Sat, 26 Sep 2026 01:00:00 GMT",
+      "search_region": "台海/南海/朝鲜",
+      "classified_regions": [
+        "台海/南海/朝鲜"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Taiwan deputy foreign minister expects US arms sale to proceed after Trump-Xi summit | Taiwan News | Sep. 26, 2026 14:08",
+      "title_cn": "",
+      "url": "https://www.taiwannews.com.tw/news/6446917",
+      "content": "Support Us\n\n# Trump Taiwan policy# US arms sales to Taiwan# Trump-Xi summit# Taiwan defense\n\n## Related Articles ---\n\nTrump, Xi leave questions over Taiwan unanswered after White House talks\n\nSep. 25, 2026 09:33\n\nRubio says arms sale to Taiwan still under evaluation\n\nSep. 24, 2026 11:10\n\nTaiwan’s Ch",
+      "content_detail": "",
+      "published_date": "Sat, 26 Sep 2026 14:08:00 GMT",
+      "search_region": "台海/南海/朝鲜",
+      "classified_regions": [
+        "台海/南海/朝鲜"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "\"Range Covers Chinese Coast\": Japan's Attack Missiles to Be Deployed in U.S.-Japan Joint Drills",
+      "title_cn": "",
+      "url": "https://news.sbs.co.kr/english/article.do?news_id=N1008770705",
+      "content": "These missiles were deployed to the Ground Self-Defense Force's Camp Kengun in Kumamoto Prefecture in March of this year. With a range of approximately 1,000 kilometers, they can reach coastal areas of China and waters around Taiwan.   \n   \n The Keen Sword exercise is conducted under the scenario of",
+      "content_detail": "",
+      "published_date": "Sat, 26 Sep 2026 04:24:44 GMT",
+      "search_region": "台海/南海/朝鲜",
+      "classified_regions": [
+        "台海/南海/朝鲜"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "China Demonstrates Ability to Rapidly Redeploy HQ-9B ...",
+      "title_cn": "",
+      "url": "https://militarywatchmagazine.com/article/china-rapidly-redeploy-hq9-air-defences",
+      "content": "Y-20 Strategic Transport Aircraft - Weibo Screenshot\n\nThe exercise demonstrates the considerable geographic reach available to PLA formations. The Eastern Theater Command is primarily associated with China’s eastern coastline and the Taiwan Strait, but its forces are not necessarily confined to that",
+      "content_detail": "",
+      "published_date": "Sat, 26 Sep 2026 04:25:00 GMT",
+      "search_region": "台海/南海/朝鲜",
+      "classified_regions": [
+        "台海/南海/朝鲜"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "China would face a ‘hellscape’ in a war over Taiwan",
+      "title_cn": "",
+      "url": "https://www.independent.ie/world-news/china-would-face-a-hellscape-in-a-war-over-taiwan/a/161938165.html",
+      "content": "###### Most Read\n\n1.   Image 13 Image 14 Live International Soccer ##### Gavin Bazunu releases statement on decision to withdraw from Ireland squad for Israel game\n\n3.   Image 15 Image 16 Politics ##### Premium Revealed: Pension hike of at least €7.50 in Budget 2027 and parents to benefit from big c",
+      "content_detail": "",
+      "published_date": "Sat, 26 Sep 2026 11:00:00 GMT",
+      "search_region": "台海/南海/朝鲜",
+      "classified_regions": [
+        "台海/南海/朝鲜"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Iran president says Strait of Hormuz crisis can be resolved through negotiations · Business Upturn",
+      "title_cn": "",
+      "url": "https://businessupturn.com/asia/middle-east-asia/iran/iran-president-says-strait-of-hormuz-crisis-can-be-resolved-through-negotiations",
+      "content": "### Iran proposes seven-day plan to reopen strait of hormuz in US talksPakistan, Iran foreign ministers discuss regional developments, agree to meet during UNGA in New York\n\n### Pakistan, Iran foreign ministers discuss regional developments, agree to meet during UNGA in New YorkPakistan army chief A",
+      "content_detail": "",
+      "published_date": "Sat, 26 Sep 2026 10:47:34 GMT",
+      "search_region": "台海/南海/朝鲜",
+      "classified_regions": [
+        "台海/南海/朝鲜"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Xi Jinping Concludes 3-Day State Visit to US; Tensions Rise Over Xi's Taiwan Message",
+      "title_cn": "",
+      "url": "https://www.ntd.com/ntdplus/xi-jinping-concludes-3-day-state-visit-to-us-tensions-rise-over-xis-taiwan-message_1175070.html",
+      "content": "What would you like to watch today?\n\nNTD TelevisionNTD Television\n\nvideo poster\n\n/\n\n# Xi Jinping Concludes 3-Day State Visit to US; Tensions Rise Over Xi's Taiwan Message\n\nChina in Focus\n\nChina in Focus\n\nTensions over Taiwan are rising after Chinese Communist Party leader Xi Jinping urged President ",
+      "content_detail": "",
+      "published_date": "Sat, 26 Sep 2026 00:00:00 GMT",
+      "search_region": "台海/南海/朝鲜",
+      "classified_regions": [
+        "台海/南海/朝鲜"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Beyond Dollar Monopoly: Decoding BRICS De-Dollarization, Eurozone Precedents, And Public International...",
+      "title_cn": "",
+      "url": "https://www.livelaw.in/amp/lawschool/articles/beyond-dollar-monopoly-decoding-brics-de-dollarization-eurozone-precedents-551812",
+      "content": "The shift to local currency clearing networks poses interesting legal challenges under Public International Law, international monetary law and cross-border commercial law. One of the major challenges is the assertion of the U.S. jurisdiction over the territories. If a transaction crosses through an",
+      "content_detail": "",
+      "published_date": "Sat, 26 Sep 2026 09:30:54 GMT",
+      "search_region": "全球制裁",
+      "classified_regions": [
+        "全球制裁"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "EU and China face an October choice: a real trade rebalance or the first shots of a trade war",
+      "title_cn": "",
+      "url": "https://eualive.net/eu-and-china-face-an-october-choice-a-real-trade-rebalance-or-the-first-shots-of-a-trade-war",
+      "content": "The alternative is escalation. The EU could activate the Anti-Coercion Instrument for the first time, pairing tariff hikes with quantitative restrictions. China would retaliate by targeting chokepoints. Both sides say they want to avoid that lose-lose outcome. Both also face their own dilemmas. Euro",
+      "content_detail": "",
+      "published_date": "Sat, 26 Sep 2026 06:00:00 GMT",
+      "search_region": "全球制裁",
+      "classified_regions": [
+        "全球制裁"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Brussels' push to draw UK into its China trade policy 'risks higher costs, disrupted supply chains,' reflecting EU's lack of confidence in going it alone: expert",
+      "title_cn": "",
+      "url": "https://www.globaltimes.cn/page/202609/1371357.shtml",
+      "content": "\"The EU may feel that it does not have sufficient confidence to push forward these restrictive measures on its own, so it wants to bring countries such as the UK into its broader plan,\" Huo said.  \n  \nJian Junbo, director of the Center for China-Europe Relations at Fudan University's Institute of In",
+      "content_detail": "",
+      "published_date": "Sat, 26 Sep 2026 05:00:00 GMT",
+      "search_region": "全球制裁",
+      "classified_regions": [
+        "全球制裁"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Billionaire entrepreneur Andrey Melnichenko: The New ...",
+      "title_cn": "",
+      "url": "https://www.europeaninterest.eu/billionaire-entrepreneur-andrey-melnichenko-the-new-world-will-be-defined-by-sovereignty",
+      "content": "Andrey Melnichenko: What are we observing now? The global economy has not been destroyed by the two ongoing wars. The conflict in the Middle East has led to rising risks and costs in energy, maritime logistics, and insurance. The events related to the conflict in Ukraine launched a different phase—p",
+      "content_detail": "",
+      "published_date": "Sat, 26 Sep 2026 09:49:25 GMT",
+      "search_region": "全球制裁",
+      "classified_regions": [
+        "全球制裁"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "US Says 'No Hard Feelings' Over India’s Warning On Russia Sanctions | Outlook India",
+      "title_cn": "",
+      "url": "https://www.outlookindia.com/international/us-says-no-hard-feelings-over-indias-warning-on-russia-sanctions",
+      "content": "Youtube Icon\n ### Video | Ground Report: Evictions in Assam Ahead of Polls | Voices from Kamrup\n\n  Video | Ground Report: Evictions in Assam Ahead of Polls | Voices from Kamrup\n\n  Youtube Icon\n ### Video | Liberation Or Violation? The Legal & Moral Questions Behind The US-Israel Strike On Iran\n\n  Vi",
+      "content_detail": "",
+      "published_date": "Sat, 26 Sep 2026 06:51:11 GMT",
+      "search_region": "全球制裁",
+      "classified_regions": [
+        "全球制裁"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "US Says 'No Hard Feelings' Over India’s Warning On Russia Sanctions",
+      "title_cn": "",
+      "url": "https://www.outlookindia.com/amp/story/international/us-says-no-hard-feelings-over-indias-warning-on-russia-sanctions",
+      "content": "US says it wants to become a major energy supplier to India amid fresh Russia sanctions. Trump's new law allows tariffs of up to 100 per cent on countries",
+      "content_detail": "",
+      "published_date": "Sat, 26 Sep 2026 06:00:00 GMT",
+      "search_region": "全球制裁",
+      "classified_regions": [
+        "全球制裁"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Iran war live: Tehran says UN nuclear inspectors can return under new accords",
+      "title_cn": "",
+      "url": "https://www.arabianbusiness.com/abnews/iran-us-israel-war-live-latest-updates",
+      "content": "Iraq seeks US exemption for airports serving Iranian flights. Iraq is holding direct talks with the US to secure sanctions exemptions for selected airports",
+      "content_detail": "",
+      "published_date": "Sat, 26 Sep 2026 07:00:00 GMT",
+      "search_region": "全球制裁",
+      "classified_regions": [
+        "全球制裁"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Addressing trade barriers into the United States and the world",
+      "title_cn": "",
+      "url": "https://en.vneconomy.vn/addressing-trade-barriers-into-the-united-states-and-the-world.htm",
+      "content": "22 Jul 2025\n\nVietnam scored higher overall than China and Bangladesh in the United States Fashion Industry Association (USFIA)’s recent survey’s recent survey\")  \n\n### Vietnam scored higher overall than China and Bangladesh in the United States Fashion Industry Association (USFIA)’s recent survey’s ",
+      "content_detail": "",
+      "published_date": "Sat, 26 Sep 2026 17:30:00 GMT",
+      "search_region": "全球制裁",
+      "classified_regions": [
+        "全球制裁"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    }
+  ]
+}

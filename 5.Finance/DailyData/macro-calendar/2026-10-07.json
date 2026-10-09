@@ -1,0 +1,85 @@
+{
+  "date": "2026-10-07",
+  "generated_at": "2026-10-07T06:07:47.218170",
+  "upcoming_events": [
+    {
+      "date": "2026-10-13",
+      "event": "美国 CPI (9月)",
+      "importance": "high",
+      "category": "通胀",
+      "days_until": 6
+    }
+  ],
+  "recent_events": [],
+  "web_events": [
+    {
+      "source": "tavily_answer",
+      "query": "US economic data release this week CPI GDP jobs",
+      "answer": "The sources do not provide specific information on the exact economic data releases this week, including CPI, GDP, or jobs. The FRED release calendar lists various economic indicators but does not specify CPI, GDP, or jobs. The Deloitte Insights article discusses inflation and employment trends but does not mention specific upcoming releases. The BEA site provides links to various economic data but does not specify what will be released this week. Therefore, the sources do not provide a definiti"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Economic Release Calendar | FRED",
+      "url": "https://fred.stlouisfed.org/releases/calendar",
+      "content": "| 10:00 am | Gasoline and Diesel Fuel Update |\n|  | Kansas City Fed Labor Market Conditions Indicators |\n| 10:15 am | Moody's Daily Corporate Bond Yield Averages |\n| 11:00 am | GDPNow |\n| 12:00 pm | Commercial Paper |\n|  | Kansas City Fed Policy Rate Skew |\n| 3:15 pm | H.15 Selected Interest Rates |"
+    },
+    {
+      "source": "tavily_result",
+      "title": "US economic forecast | Deloitte Insights",
+      "url": "https://www.deloitte.com/us/en/insights/topics/economy/us-economic-forecast/united-states-outlook-analysis.html",
+      "content": "### Prices\n\nSimilar to the labor market data, inflation data has also been sending mixed messages. While the core consumer price index (CPI), which excludes food and energy prices, was up 2.4% in August, the core personal consumption expenditures (PCE) price index increased 3.4% in the same period. "
+    },
+    {
+      "source": "tavily_result",
+      "title": "Personal Consumption Expenditures Price Index | U.S. Bureau of Economic Analysis (BEA)",
+      "url": "https://www.bea.gov/data/personal-consumption-expenditures-price-index",
+      "content": "Skip to main content\n\nImage 1: U.S. flag\nAn official website of the United States government\n\n\n       Global Value Chain Analyzer\n       Income Distribution Analysis Tool (IDAT)\n       Country Facts\n       BEARFACTS\n       Industry Facts\n       GDP & Personal Income Mapping\n       RIMS II\n       eFi"
+    },
+    {
+      "source": "tavily_answer",
+      "query": "Federal Reserve speech this week monetary policy",
+      "answer": "Investors are looking for clues on the Federal Reserve's monetary policy outlook, with attention on the minutes of the September Federal Open Market Committee meeting due on Wednesday. The yield on the 10-year note and shorter-term government debt yields have been volatile, reflecting uncertainty about the Fed's next steps. Some market analysts suggest the Fed may still need to tighten policy but are cautious about harming the economy. Treasury yields have inched lower after a selloff, and trade"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Gold climbs as dollar, Treasury yields slip - Kitco",
+      "url": "https://www.kitco.com/news/off-the-wire/2026-10-06/gold-climbs-dollar-treasury-yields-slip",
+      "content": "Oct 6 (Reuters) - Gold prices rose on Tuesday, supported by a pause ​in the US Treasury yield's rally and a weaker dollar, while investors ‌awaited the minutes of the Federal Reserve's September meeting for fresh clues on its monetary policy outlook. \"We're seeing some safe haven demand (in gold) ​b"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Wall St futures dip as tech stocks take a breather - Kitco",
+      "url": "https://www.kitco.com/news/off-the-wire/2026-10-05/wall-st-futures-dip-tech-stocks-take-breather",
+      "content": "Oct 5 (Reuters) - US stock index futures dipped on Monday, as technology stocks eased ‌from record highs, while investors looked for fresh clues on the monetary policy path with Treasury yields and oil prices still elevated. Chip stocks were a drag in premarket trade, with Intel (INTC.O), dropping m"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Treasury yields inch lower as investors pare back Fed rate hike bets - cnbc.com",
+      "url": "https://www.cnbc.com/2026/10/05/treasury-yields-bonds-fed-rates.html",
+      "content": "U.S. Treasury yields inched lower on Monday after a sharp selloff the week prior, as investors look ahead to the minutes from the Federal Reserve's latest meeting. The benchmark 10-year Treasury was down over one basis point to 5.255%, and the 30-year Treasury bond also declined one basis point to 5"
+    },
+    {
+      "source": "tavily_answer",
+      "query": "China PMI economic data this week",
+      "answer": "The sources don't provide a definitive answer to China's PMI economic data this week. While Kitco reports on the ISM Services PMI falling to 54.9 in September, it does not specify if this relates to China. Briefasia discusses China's listed firms' performance, noting a split between surging AI chipmakers and struggling property, auto, and consumer sectors, but does not mention PMI data. The other sources focus on different economic indicators and market activities, without addressing China's PMI"
+    },
+    {
+      "source": "tavily_result",
+      "title": "ISM non-manufacturing PMI comes in at 54.9 in September, missing estimates - CNBC",
+      "url": "https://www.cnbc.com/video/2026/10/05/ism-non-manufacturing-pmi-misses-expectations-by-0-point-1.html",
+      "content": "ISM non-manufacturing PMI comes in at 54.9 in September, missing estimates. CNBC's Steve Liesman reports on the ISM Services PMI coming in just short of expectations at 54.9, down from 55.4 the month prior. Wharton's Jeremy Siegel: September jobs report was 'a wonderful report' for Fed Chairman Wars"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Here are 3 things we're watching in the stock market in the week ahead - CNBC",
+      "url": "https://www.cnbc.com/investingclub/2026/10/04/here-are-3-things-were-watching-in-the-stock-market-in-the-week-ahead.html",
+      "content": "As the market tries to keep the momentum going, a quiet calendar of earnings and economic reports awaits in the week ahead. It also coincides with an air pocket in the economic data slate, in the shadow of last week's cooler-than-expected inflation data and a goldilocks September payroll update on F"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Gold dips to $4,141/oz after ISM Services PMI falls to 54.9 in September - Kitco",
+      "url": "https://www.kitco.com/news/article/2026-10-05/gold-dips-4141oz-after-ism-services-pmi-falls-549-september",
+      "content": "Kitco NEWS has a diverse team of journalists reporting on the economy, stock markets, commodities, cryptocurrencies, mining and metals with accuracy and objectivity. “The Business Activity Index remained in expansion territory in September, decreasing 5.2 percentage points to 56.5 percent from Augus"
+    }
+  ]
+}

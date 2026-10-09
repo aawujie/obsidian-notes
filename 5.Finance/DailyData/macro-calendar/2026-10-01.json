@@ -1,0 +1,92 @@
+{
+  "date": "2026-10-01",
+  "generated_at": "2026-10-01T06:06:57.759681",
+  "upcoming_events": [
+    {
+      "date": "2026-10-02",
+      "event": "非农就业报告 (9月)",
+      "importance": "high",
+      "category": "就业",
+      "days_until": 1
+    },
+    {
+      "date": "2026-10-13",
+      "event": "美国 CPI (9月)",
+      "importance": "high",
+      "category": "通胀",
+      "days_until": 12
+    }
+  ],
+  "recent_events": [],
+  "web_events": [
+    {
+      "source": "tavily_answer",
+      "query": "US economic data release this week CPI GDP jobs",
+      "answer": "This week, U.S. economic data releases will be significant, highlighted by the September Employment Situation report on Friday. Key reports include the August personal income and spending report on Wednesday, which also contains PCE prices and the Fed’s preferred inflation gauge, as well as the third estimate of Q2 GDP. The sources indicate that the U.S. economy is showing momentum, with inflation remaining above trend but stabilizing. The labor market data, including ADP and JOLTS, will be clos"
+    },
+    {
+      "source": "tavily_result",
+      "title": "The Week Ahead: Can Non-Tech Stocks Join the Rally?",
+      "url": "https://pro.thestreet.com/market-commentary/the-week-ahead-can-non-tech-stocks-join-the-rally",
+      "content": "After a light week, U.S. economic data comes roaring back this week — one of the busiest of the quarter highlighted by the September Employment Situation report Friday. We’ll also get another key report Wednesday with the August personal income and spending report (our most complete look at incomes "
+    },
+    {
+      "source": "tavily_result",
+      "title": "FX Daily: Data back in the driver’s seat this week | articles | ING THINK",
+      "url": "https://think.ing.com/articles/fx-daily-data-back-in-drivers-seat-this-week",
+      "content": "The August CPI report on 14 October will be the most important release, but Friday’s jobs figures have the potential to take October rate hike pricing above 20bp. We expect a consensus 90k for September payrolls, but see risks of downward revisions to August’s blowout 162k print. Overall, we expect "
+    },
+    {
+      "source": "tavily_result",
+      "title": "Week Ahead for FX, Bonds: U.S. Jobs Data in Focus as Another Fed Rate Hike Looks Possible - WSJ",
+      "url": "https://www.wsj.com/economy/week-ahead-for-fx-bonds-u-s-jobs-data-in-focus-as-another-fed-rate-hike-looks-possible-8593c44f",
+      "content": "U.S. jobs data for September will be the key highlight in the coming week as investors seek to gauge the likelihood of the Federal Reserve raising interest rates in October, which would mark a second consecutive increase.\n\nIn Europe, eurozone inflation data will attract attention. In Asia, China’s P"
+    },
+    {
+      "source": "tavily_answer",
+      "query": "Federal Reserve speech this week monetary policy",
+      "answer": "The sources indicate that Governor Michael S. Barr delivered a speech on economic conditions and monetary policy on September 29, 2026, at the Detroit Economic Club in Michigan. He discussed the outlook for the U.S. economy and monetary policy, emphasizing the role of structural changes in the economy. The sources don't provide a definitive answer regarding any specific Federal Reserve speech this week on monetary policy beyond this mention."
+    },
+    {
+      "source": "tavily_result",
+      "title": "Speech by Governor Barr on economic conditions and monetary policy - Federal Reserve Board",
+      "url": "https://www.federalreserve.gov/newsevents/speech/barr20260929a.htm",
+      "content": "Thank you for the opportunity to speak to you today.1 It's wonderful to be back in Michigan and in this great city. For more than a century, Detroit has been at the center of the U.S. economy, driving America's growth and prosperity, while also reflecting the profound forces that have transformed ou"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Musalem: How and Why",
+      "url": "https://www.stlouisfed.org/from-the-president/remarks/2026/how-and-why-communicating-monetary-policy-framework-london",
+      "content": "There is a lively debate in the U.S. about how and what the Federal Reserve should communicate about its monetary policy.2The debate is live within the FOMC itself. Several FOMC participants have recently addressed monetary policy communication in speeches (e.g., Warsh, 2026 and Waller, 2026) and in"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Unwavering Dedication - FEDERAL RESERVE BANK of NEW YORK",
+      "url": "https://www.newyorkfed.org/newsevents/speeches/2026/wil260929",
+      "content": "As I consider the future path of monetary policy, I will continue to assess the underlying trends in inflation and the balance of supply and demand in the economy. With the policy action we took at our September meeting, there is no need for urgency, and we have time to gather more information. The "
+    },
+    {
+      "source": "tavily_answer",
+      "query": "China PMI economic data this week",
+      "answer": "China's September purchasing managers’ index (PMI) data is expected to show a slight recovery, with the official manufacturing PMI likely rising to 50.1 and the non-manufacturing PMI to 49.2. The private RatingDog PMI is also expected to edge up to 51.6. The official PMI is anticipated to climb to 50.1 from 49.8 in August, ending two months of contraction. The Reuters poll suggests the private-sector economic readings reflected similar momentum across Chinese industries, with the RatingDog Manuf"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Asia week ahead: RBA decision, key data on China, Japan, Korea, Indonesia | articles | ING THINK",
+      "url": "https://think.ing.com/articles/asia-week-ahead-250926",
+      "content": "China releases September purchasing managers’ index data on Wednesday. We look for the National Bureau of Statistics to report a slight recovery in its official manufacturing and non-manufacturing PMIs to 50.1 and 49.2, respectively. The RatingDog PMI, which has generally outperformed lately because"
+    },
+    {
+      "source": "tavily_result",
+      "title": "China factories seen rebounding in September as Beijing signals more aid",
+      "url": "https://www.reuters.com/business/china-factories-seen-rebounding-september-beijing-signals-more-aid-2026-09-29",
+      "content": "The ​reading, which is based on company surveys, will be released by the National Bureau of Statistics on Wednesday.\n\nThe ​private RatingDog manufacturing PMI, compiled by S&P Global, is also due on Wednesday and is ⁠likely to edge up to 51.6 from 51.5 in August, according to the Reuters poll.\n\nThe "
+    },
+    {
+      "source": "tavily_result",
+      "title": "China Stocks Tick Higher as PMI Data Looms — TradingView News",
+      "url": "https://www.tradingview.com/news/te_news:587431:0-china-stocks-tick-higher-as-pmi-data-looms",
+      "content": "Trading Economics\nTrading Economics\n\n# China Stocks Tick Higher as PMI Data Looms\n\nThe Shanghai Composite edged up 0.1% to around 3,828 on Tuesday, while the Shenzhen Component added 0.2% to 12,884, trimming losses from the previous session as investors looked ahead to a batch of official and privat"
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "date": "2026-09-25",
+  "generated_at": "2026-09-25T06:07:05.035165",
+  "upcoming_events": [
+    {
+      "date": "2026-10-02",
+      "event": "非农就业报告 (9月)",
+      "importance": "high",
+      "category": "就业",
+      "days_until": 7
+    }
+  ],
+  "recent_events": [],
+  "web_events": [
+    {
+      "source": "tavily_answer",
+      "query": "US economic data release this week CPI GDP jobs",
+      "answer": "This week's notable US economic data releases include the September flash PMIs and UMich final consumer sentiment survey, August new home sales and durable goods reports, and some regional Fed PMIs. The Weekly Economic Index from the Dallas Fed showed a rebound in high-frequency employment metrics with ADP weekly job growth figures and subdued jobless claims. The housing market remains weak with pending home sales coming in below forecasts, although single-family housing starts hit their stronge"
+    },
+    {
+      "source": "tavily_result",
+      "title": "What to Look Out for in Economic Data This Week ...",
+      "url": "https://www.kiplinger.com/investing/economy/this-weeks-economic-calendar",
+      "content": "10:05 am\n\nFed Governor Michael Barr speaks\n\nN/A\n\n### Thursday (9/24)\n\nNoteworthy economic reports\n\n|  |  |  |\n --- \n| Time released | Economic report | Period |\n| 4:10 am | New York Fed President John Williams speaks | N/A |\n| 8:30 am | Weekly jobless claims | Week ending September 19 |\n| 8:50 am | "
+    },
+    {
+      "source": "tavily_result",
+      "title": "The Week Ahead – Can Tech Lead the Market Higher? - TheStreet Pro",
+      "url": "https://pro.thestreet.com/market-commentary/the-week-ahead-can-tech-lead-the-market-higher",
+      "content": "Unlock unlimited Pro access — 50% off Today. Offer Ends soon\n\nAlready registered or a Pro member? Log in\n\nThe Week Ahead – Can Tech Lead the Market Higher?\n\nUS economic data is fairly light next week with just the September flash PMIs and UMich final consumer sentiment survey, August new home sales "
+    },
+    {
+      "source": "tavily_result",
+      "title": "State Economic Forecast",
+      "url": "https://economics.td.com/state-economic-forecast",
+      "content": "| States | Real GDP  (% Chg.) | Employment  (% Chg.) | Unemployment Rate   (Average, %) | Home Prices  (% Chg.) | Population  (% Chg.) |\n| 2025 | 2026F | 2027F | 2025 | 2026F | 2027F | 2025 | 2026F | 2027F | 2025 | 2026F | 2027F | 2025 | 2026F | 2027F |\n| National | 2.1 | 2.2 | 2.2 | 0.5 | 0.4 | 0.5"
+    },
+    {
+      "source": "tavily_answer",
+      "query": "Federal Reserve speech this week monetary policy",
+      "answer": "Based on the most recent data, Federal Reserve Bank of Chicago President Austan Goolsbee emphasized the need to address inflationary pressures, suggesting that the central bank should not \"look through\" supply shocks and should instead reduce demand to close the gap. New York Federal Reserve President John Williams defended the Fed's rate-control toolkit, indicating it is adaptable to changing market conditions. Additionally, Fed's Barr stated that more rate hikes are necessary to bring down inf"
+    },
+    {
+      "source": "tavily_result",
+      "title": "OMFIF Event: Monetary Policy in an Uncertain World - Federal Reserve Bank of Chicago",
+      "url": "https://www.chicagofed.org/publications/speeches/2026/sept-21-omfif",
+      "content": "Our HistoryFinancial StatementsOMWIEthics Policies & DisclosuresNewsroomFederal Reserve CalendarsContact Us\n\nLast Updated: 09/21/26\n\n# OMFIF Event: Monetary Policy in an Uncertain World\n\nOn September 21, Chicago Fed President and CEO Austan Goolsbee spoke in London at an Official Monetary and Financ"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Fed's Williams says rate-control toolkit is working well | Reuters",
+      "url": "https://www.reuters.com/business/finance/feds-williams-says-rate-control-toolkit-is-working-well-2026-09-22",
+      "content": "NEW YORK, Sept 22 (Reuters) - New York Federal Reserve President John Williams defended ​the US central bank's monetary policy implementation system on Tuesday, while saying it can be adjusted ‌and tweaked in line with changes in financial markets. [...] Sign up here.\n\nWilliams did not address the o"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Three words from Kevin Warsh have Wall Street wondering how far ...",
+      "url": "https://www.cnbc.com/2026/09/18/three-words-from-kevin-warsh-have-wall-street-wondering-how-far-the-fed-will-go-with-rate-hikes.html",
+      "content": "With a few carefully chosen words, Federal Reserve Chairman Kevin Warsh both explained this week's decision to hike interest rates and raised vexing questions about what comes next."
+    },
+    {
+      "source": "tavily_answer",
+      "query": "China PMI economic data this week",
+      "answer": "The preliminary September Manufacturing PMI and Services PMI data for China are expected to provide new economic indicators. The manufacturing PMI stood at 49.8% in August, up 0.6 percentage points from July but still below the boom-bust threshold for the second consecutive month. The services PMI was 49.3%, while the construction PMI dropped to 46.9%. The PMI data indicates a mixed economic picture with production and new orders above 50, but concerns remain about orders in hand, raw material i"
+    },
+    {
+      "source": "tavily_result",
+      "title": "U.S.-China Summit, PMI and Other Can't Miss Items this Week",
+      "url": "https://finance.yahoo.com/economy/policy/articles/u-china-summit-pmi-other-170002981.html",
+      "content": "Wednesday's preliminary September Manufacturing PMI at 9:45am and Services PMI at 9:45am provide first new month economic indicators. The manufacturing survey reveals industrial sector health, new orders, and employment momentum heading into final quarter. Services PMI assesses the economy's dominan"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Traditional Support Mechanisms For China's Economic Growth May Gradually Lose Effectiveness - Analysis - Eurasia Review",
+      "url": "https://www.eurasiareview.com/18092026-traditional-support-mechanisms-for-chinas-economic-growth-may-gradually-lose-effectiveness-analysis",
+      "content": "Since September, based on integrated information from those recently released by relevant departments, China’s economic data for August 2026 reveals a notable contrast. The manufacturing Purchasing Managers’ Index (PMI) stood at 49.8%, up 0.6 percentage points from July, but remained below the boom-"
+    },
+    {
+      "source": "tavily_result",
+      "title": "What to Expect in the Week Ahead (Costco Earnings, S&P 100 Rebalancing & US-China Summit)",
+      "url": "https://www.moomoo.com/community/feed/what-to-expect-in-the-week-ahead-costco-earnings-s-117301988950022",
+      "content": "Tuesday (Sep. 22)\n\nS&P Global releases flash PMI readings for September — both manufacturing (prior: 54.9) and services (prior: 52.5). These will be the first hard economic data post the Fed meeting. A beat would validate the “soft landing” narrative and may push Treasury yields higher; a miss could"
+    }
+  ]
+}

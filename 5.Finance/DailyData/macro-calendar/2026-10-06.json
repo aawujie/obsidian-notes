@@ -1,0 +1,85 @@
+{
+  "date": "2026-10-06",
+  "generated_at": "2026-10-06T06:07:25.752836",
+  "upcoming_events": [
+    {
+      "date": "2026-10-13",
+      "event": "美国 CPI (9月)",
+      "importance": "high",
+      "category": "通胀",
+      "days_until": 7
+    }
+  ],
+  "recent_events": [],
+  "web_events": [
+    {
+      "source": "tavily_answer",
+      "query": "US economic data release this week CPI GDP jobs",
+      "answer": "The sources indicate that the U.S. unemployment rate in September was 4.2%. The Consumer Price Index (CPI) for August was 3.4%, and the core CPI was 2.4%. The establishment survey found that 162,000 new jobs were created in August, the highest number since March. The ADP report for the week ended September 19 showed total nonfarm payrolls increased by just 29,000 in September, while private payrolls rose by 46,000. The sources don't provide a definitive answer on the exact dates or specifics of "
+    },
+    {
+      "source": "tavily_result",
+      "title": "Weekly Global Economic Update | Deloitte Insights",
+      "url": "https://www.deloitte.com/us/en/insights/topics/economy/global-economic-outlook/weekly-update.html",
+      "content": "The US government releases a monthly report on the jobs market that includes the results of two surveys—a survey of establishments and a survey of households. The establishment survey found that, in August, 162,000 new jobs were created. This was the highest number of jobs created since March, and w"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Market Outlook: Inflation, Interest Rates and Economic Growth | Northwestern Mutual | Northwestern Mutual",
+      "url": "https://www.northwesternmutual.com/life-and-money/market-outlook-inflation-interest-rates-and-economic-growth-northwestern-mutual",
+      "content": "Tuesday: ADP will release its Weekly Employment Change report for the week ended Sept. 19. While not always a reliable predictor of government employment data, the report can offer insight into hiring trends and labor market conditions. Investors will be watching for signs of whether businesses cont"
+    },
+    {
+      "source": "tavily_result",
+      "title": "How Is the Economy Doing Right Now? - NerdWallet",
+      "url": "https://www.nerdwallet.com/finance/learn/state-of-the-economy",
+      "content": "» MORE: GDP Report\n\n## What is the U.S. unemployment rate?\n\nSeptember unemployment rate: 4.2%\n\nThe U.S. unemployment rate is the share of unemployed people as a percentage of the overall labor force. Unemployed people are those who are actively seeking work. The labor force doesn’t include the entir"
+    },
+    {
+      "source": "tavily_answer",
+      "query": "Federal Reserve speech this week monetary policy",
+      "answer": "The sources indicate that Federal Reserve officials have recently discussed the economic outlook and monetary policy. New York Fed President John C. Williams emphasized the Fed's commitment to its dual mandate of maximum employment and price stability and mentioned assessing underlying trends in inflation and supply and demand. Governor Michael S. Barr spoke about the need to recalibrate policy to balance risks to achieving the inflation target and labor market. Vice Chair Jefferson highlighted "
+    },
+    {
+      "source": "tavily_result",
+      "title": "Key Takeaways from President Williams’ Speech on the Economic Outlook and Monetary Policy",
+      "url": "https://tellerwindow.newyorkfed.org/2026/09/29/key-takeaways-from-president-williams-speech-on-the-economic-outlook-and-monetary-policy-2",
+      "content": "September 29, 2026\n\n  # Key Takeaways from President Williams’ Speech on the Economic Outlook and Monetary Policy\n\n  Judy DeHaven\n\n   John-Williams-Web\n\n  In remarks at the University at Buffalo on September 29, New York Fed President John C. Williams discussed the U.S. economy, monetary policy, and"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Speech by Governor Barr on economic conditions and monetary policy - Federal Reserve Board",
+      "url": "https://www.federalreserve.gov/newsevents/speech/barr20260929a.htm",
+      "content": "Thank you for the opportunity to speak to you today.1 It's wonderful to be back in Michigan and in this great city. For more than a century, Detroit has been at the center of the U.S. economy, driving America's growth and prosperity, while also reflecting the profound forces that have transformed ou"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Speech by Vice Chair Jefferson on the U.S. economy and monetary policy - Federal Reserve Board",
+      "url": "https://www.federalreserve.gov/newsevents/speech/jefferson20261001a.htm",
+      "content": "Today I will discuss in more detail how I see the economy unfolding, including for both sides of our dual mandate of maximum employment and price stability. Then, I will discuss the FOMC's policy decision last month and offer a few thoughts on how I will assess the appropriate future path of monetar"
+    },
+    {
+      "source": "tavily_answer",
+      "query": "China PMI economic data this week",
+      "answer": "The official manufacturing purchasing managers' index (PMI) rose to 50.1 in September, ending two straight months of contraction, according to a Reuters poll. The private RatingDog Manufacturing PMI compiled by S&P Global is also expected to edge up to 51.6 from 51.5 in August. The non-manufacturing PMI also returned to expansionary territory, climbing to 50.2, as business activity picked up in the services sector."
+    },
+    {
+      "source": "tavily_result",
+      "title": "China factories seen rebounding in September as Beijing signals more aid",
+      "url": "https://www.reuters.com/business/china-factories-seen-rebounding-september-beijing-signals-more-aid-2026-09-29",
+      "content": "The ​reading, which is based on company surveys, will be released by the National Bureau of Statistics on Wednesday.\n\nThe ​private RatingDog manufacturing PMI, compiled by S&P Global, is also due on Wednesday and is ⁠likely to edge up to 51.6 from 51.5 in August, according to the Reuters poll.\n\nThe "
+    },
+    {
+      "source": "tavily_result",
+      "title": "Australian Dollar struggles to gain traction despite solid Chinese PMI Data",
+      "url": "https://www.fxstreet.com/news/australian-dollar-struggles-to-gain-traction-despite-solid-chinese-pmi-data-202609300201",
+      "content": "The private-sector economic readings reflected similar momentum across Chinese industries. The RatingDog Manufacturing PMI climbed to 52.1 in September, outperforming both the previous 51.5 reading and the 51.6 consensus estimate. Additionally, China's Services PMI edged up to 51.6, beating both the"
+    },
+    {
+      "source": "tavily_result",
+      "title": "China PMIs Return To Expansion Territory, Signalling Modest Growth Uptick | Seeking Alpha",
+      "url": "https://seekingalpha.com/article/4950860-china-pmi-return-to-expansion-territory-signalling-modest-growth-uptick?feed_item_type=article%3Fsource%3DMarketBeat",
+      "content": "China's official manufacturing PMI data rose to 50.1 in September, coming in line with expectations (market: 50.1, ING: 50.1). This was the first time in three months that\n\nThis article was written by\n\n## Quick Insights\n\n### How does the manufacturing PMI's return to expansion impact economic outloo"
+    }
+  ]
+}

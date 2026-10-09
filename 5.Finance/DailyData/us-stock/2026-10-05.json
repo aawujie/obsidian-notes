@@ -1,0 +1,45 @@
+{
+  "date": "2026-10-05",
+  "generated_at": "2026-10-05T06:06:15.162876",
+  "total_stocks": 2,
+  "data": [
+    {
+      "ticker": "ODFL",
+      "name": "Old Dominion Freight Line, Inc.",
+      "sector": "Industrials",
+      "industry": "Trucking",
+      "market_cap": 37423722496,
+      "close": 180.47999572753906,
+      "prev_close": 178.10000610351562,
+      "change_daily": 1.34,
+      "change_weekly": 4.14,
+      "change_monthly": null,
+      "volume": 1958500.0,
+      "avg_vol_5d": 2088380.0,
+      "vol_ratio": 0.94,
+      "high52": 252.03,
+      "low52": 126.01,
+      "dist_from_high": -28.39,
+      "is_new_high": false
+    },
+    {
+      "ticker": "SLB",
+      "name": "SLB Limited",
+      "sector": "Energy",
+      "industry": "Oil & Gas Equipment & Services",
+      "market_cap": 72337145856,
+      "close": 48.7400016784668,
+      "prev_close": 48.65999984741211,
+      "change_daily": 0.16,
+      "change_weekly": -5.43,
+      "change_monthly": null,
+      "volume": 12596700.0,
+      "avg_vol_5d": 16533080.0,
+      "vol_ratio": 0.76,
+      "high52": 60.46,
+      "low52": 31.64,
+      "dist_from_high": -19.38,
+      "is_new_high": false
+    }
+  ]
+}

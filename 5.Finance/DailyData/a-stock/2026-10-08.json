@@ -1,0 +1,205 @@
+{
+  "date": "2026-10-08",
+  "data": [
+    {
+      "ticker": "000001.SS",
+      "name": "SSE Composite Index",
+      "close": 3811.904296875,
+      "change_daily": -0.79,
+      "change_weekly": -3.17,
+      "change_monthly": -4.22,
+      "high52": 4258.863,
+      "is_new_high": false
+    },
+    {
+      "ticker": "399001.SZ",
+      "name": "Shenzhen Index",
+      "close": 12620.8974609375,
+      "change_daily": -2.07,
+      "change_weekly": -7.44,
+      "change_monthly": -9.02,
+      "high52": 16374.02,
+      "is_new_high": false
+    },
+    {
+      "ticker": "FXI",
+      "name": "iShares China Large-Cap ETF",
+      "close": 33.41999816894531,
+      "change_daily": -1.04,
+      "change_weekly": -1.76,
+      "change_monthly": -4.51,
+      "high52": 41.24,
+      "is_new_high": false
+    },
+    {
+      "ticker": "ASHR",
+      "name": "Xtrackers Harvest CSI 300 China",
+      "close": 32.45000076293945,
+      "change_daily": -0.61,
+      "change_weekly": -0.67,
+      "change_monthly": -4.81,
+      "high52": 37.33,
+      "is_new_high": false
+    },
+    {
+      "ticker": "KWEB",
+      "name": "KraneShares CSI China Internet ",
+      "close": 24.329999923706055,
+      "change_daily": -0.86,
+      "change_weekly": -0.73,
+      "change_monthly": -4.06,
+      "high52": 42.24,
+      "is_new_high": false
+    },
+    {
+      "ticker": "MCHI",
+      "name": "iShares MSCI China ETF",
+      "close": 51.63999938964844,
+      "change_daily": -1.11,
+      "change_weekly": -1.05,
+      "change_monthly": -4.28,
+      "high52": 66.16,
+      "is_new_high": false
+    },
+    {
+      "ticker": "CQQQ",
+      "name": "Invesco China Technology ETF",
+      "close": 44.439998626708984,
+      "change_daily": -1.31,
+      "change_weekly": -1.02,
+      "change_monthly": -6.32,
+      "high52": 59.86,
+      "is_new_high": false
+    },
+    {
+      "ticker": "YINN",
+      "name": "Direxion Daily FTSE China Bull ",
+      "close": 23.559999465942383,
+      "change_daily": -2.97,
+      "change_weekly": -5.46,
+      "change_monthly": -14.28,
+      "high52": 54.1,
+      "is_new_high": false
+    },
+    {
+      "ticker": "0700.HK",
+      "name": "TENCENT",
+      "close": 413.0,
+      "change_daily": -1.81,
+      "change_weekly": -4.18,
+      "change_monthly": -5.14,
+      "high52": 681.0,
+      "is_new_high": false
+    },
+    {
+      "ticker": "9988.HK",
+      "name": "BABA-W",
+      "close": 104.5999984741211,
+      "change_daily": -0.76,
+      "change_weekly": -1.88,
+      "change_monthly": -4.47,
+      "high52": 179.0,
+      "is_new_high": false
+    },
+    {
+      "ticker": "3690.HK",
+      "name": "MEITUAN-W",
+      "close": 69.3499984741211,
+      "change_daily": -1.14,
+      "change_weekly": -3.28,
+      "change_monthly": -13.96,
+      "high52": 108.0,
+      "is_new_high": false
+    },
+    {
+      "ticker": "9618.HK",
+      "name": "JD-SW",
+      "close": 105.19999694824219,
+      "change_daily": 0.29,
+      "change_weekly": 0.86,
+      "change_monthly": -3.13,
+      "high52": 137.2,
+      "is_new_high": false
+    },
+    {
+      "ticker": "1810.HK",
+      "name": "XIAOMI-W",
+      "close": 23.719999313354492,
+      "change_daily": -0.92,
+      "change_weekly": -6.02,
+      "change_monthly": -11.89,
+      "high52": 54.7,
+      "is_new_high": false
+    },
+    {
+      "ticker": "9999.HK",
+      "name": "NTES",
+      "close": 186.5,
+      "change_daily": -1.06,
+      "change_weekly": -3.17,
+      "change_monthly": -0.9,
+      "high52": 244.8,
+      "is_new_high": false
+    },
+    {
+      "ticker": "9888.HK",
+      "name": "BIDU-W",
+      "close": 82.19999694824219,
+      "change_daily": -3.01,
+      "change_weekly": -4.2,
+      "change_monthly": -8.21,
+      "high52": 161.2,
+      "is_new_high": false
+    },
+    {
+      "ticker": "2015.HK",
+      "name": "LI AUTO-W",
+      "close": 42.880001068115234,
+      "change_daily": -1.43,
+      "change_weekly": -4.8,
+      "change_monthly": -13.06,
+      "high52": 97.4,
+      "is_new_high": false
+    },
+    {
+      "ticker": "9868.HK",
+      "name": "XPENG-W",
+      "close": 37.41999816894531,
+      "change_daily": -1.53,
+      "change_weekly": -1.16,
+      "change_monthly": -11.7,
+      "high52": 110.8,
+      "is_new_high": false
+    },
+    {
+      "ticker": "9961.HK",
+      "name": "TRIP.COM-S",
+      "close": 295.20001220703125,
+      "change_daily": -2.51,
+      "change_weekly": -4.22,
+      "change_monthly": -8.95,
+      "high52": 613.0,
+      "is_new_high": false
+    },
+    {
+      "ticker": "1024.HK",
+      "name": "KUAISHOU-W",
+      "close": 28.540000915527344,
+      "change_daily": -3.91,
+      "change_weekly": -7.76,
+      "change_monthly": -13.62,
+      "high52": 89.85,
+      "is_new_high": false
+    },
+    {
+      "ticker": "9626.HK",
+      "name": "BILIBILI-W",
+      "close": 115.19999694824219,
+      "change_daily": -1.87,
+      "change_weekly": -3.6,
+      "change_monthly": -7.1,
+      "high52": 285.6,
+      "is_new_high": false
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "date": "2026-09-21",
+  "generated_at": "2026-09-21T06:07:03.328479",
+  "upcoming_events": [
+    {
+      "date": "2026-10-02",
+      "event": "非农就业报告 (9月)",
+      "importance": "high",
+      "category": "就业",
+      "days_until": 11
+    }
+  ],
+  "recent_events": [],
+  "web_events": [
+    {
+      "source": "tavily_answer",
+      "query": "US economic data release this week CPI GDP jobs",
+      "answer": "This week's US economic data highlights a robust labor market with 162,000 new jobs created in August, the highest since March. The consumer price index (CPI) for August shows energy prices rebounding, keeping inflation elevated. The core CPI rose 0.3% month over month, above the 0.2% forecast, while the headline CPI increased 0.4%. These figures reinforce expectations of a Federal Reserve rate hike, with markets pricing in a 90% probability of a 25-basis-point increase in September."
+    },
+    {
+      "source": "tavily_result",
+      "title": "What to Look Out for in Economic Data This Week ...",
+      "url": "https://www.kiplinger.com/investing/economy/this-weeks-economic-calendar",
+      "content": "10:05 am\n\nFed Governor Michael Barr speaks\n\nN/A\n\n### Thursday (9/24)\n\nNoteworthy economic reports\n\n|  |  |  |\n --- \n| Time released | Economic report | Period |\n| 4:10 am | New York Fed President John Williams speaks | N/A |\n| 8:30 am | Weekly jobless claims | Week ending September 19 |\n| 8:50 am | "
+    },
+    {
+      "source": "tavily_result",
+      "title": "How Is the Economy Doing Right Now?",
+      "url": "https://www.nerdwallet.com/finance/learn/state-of-the-economy",
+      "content": "U.S. Unexpectedly Lost 23,000 Jobs in July\n\nUpdated on Aug. 14.\n\n## What NerdWallet's economist is watching this week\n\nHere’s what NerdWallet’s senior economist Elizabeth Renter is watching for in economic news and data in the week of Aug. 17. [...] Gross Domestic Product (GDP) is the market value —"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Weekly Global Economic Update | Deloitte Insights",
+      "url": "https://www.deloitte.com/us/en/insights/topics/economy/global-economic-outlook/weekly-update.html",
+      "content": "The US government releases a monthly report on the jobs market that includes the results of two surveys—a survey of establishments and a survey of households. The establishment survey found that, in August, 162,000 new jobs were created. This was the highest number of jobs created since March, and w"
+    },
+    {
+      "source": "tavily_answer",
+      "query": "Federal Reserve speech this week monetary policy",
+      "answer": "The Federal Reserve announced a 25 basis point increase in the federal funds rate, bringing it to a target range of 3.75%-4%. This decision was made to support a timelier return to the Committee's 2% inflation goal. Federal Reserve Chairman Kevin Warsh emphasized that despite strong productivity growth, robust capital investment, and resilient domestic spending, inflation remains elevated. The Committee aims to deliver price stability and is continuing its policy of maintaining ample reserves in"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Federal Reserve issues FOMC statement",
+      "url": "https://www.federalreserve.gov/monetarypolicy/files/monetary20260916a1.pdf",
+      "content": "202-452-2955. For release at 2:00 p.m. EDT September 16, 2026 Decisions Regarding Monetary Policy Implementation The Federal Reserve has made the following decisions to implement the monetary policy stance announced by the Federal Open Market Committee in its statement on September 16, 2026: • The B"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Fed meeting live updates: Fed hikes interest rates by 25 basis points ...",
+      "url": "https://finance.yahoo.com/economy/policy/live/federal-reserve-meeting-live-updates-chairman-kevin-warsh-143452661.html",
+      "content": "Federal Reserve Chairman Kevin Warsh opened his press conference comments on Wednesday with a focus on inflation, citing strength elsewhere while price increases continue to run above target levels.\n\n  \"Productivity growth is strong and capital investment is robust, job gains have kept pace with the"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Federal Reserve issues FOMC statement",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm?ref=n3_sticker",
+      "content": "Economic activity is expanding at a solid pace. While uncertainty remains elevated owing, in part, to geopolitical developments,domestic spending has been resilient. Productivity growth is strong, and capital investment is robust. Job gains have kept pace with the workforce, and the unemployment rat"
+    },
+    {
+      "source": "tavily_answer",
+      "query": "China PMI economic data this week",
+      "answer": "The preliminary September Manufacturing PMI and Services PMI are scheduled for release on Wednesday. The manufacturing survey is expected to provide insights into industrial sector health, new orders, and employment momentum. The Services PMI will assess the economy's dominant segment, which accounts for roughly 70% of GDP. Recent data indicates a slight easing in both manufacturing and services PMIs, with the manufacturing PMI coming in at 53.9 in August and services PMI at 56.5. The latest fla"
+    },
+    {
+      "source": "tavily_result",
+      "title": "U.S.-China Summit, PMI and Other Can't Miss Items this Week",
+      "url": "https://www.barchart.com/story/news/4701952/u-s-china-summit-pmi-and-other-can-t-miss-items-this-week",
+      "content": "Wednesday's preliminary September Manufacturing PMI at 9:45am and Services PMI at 9:45am provide first new month economic indicators. The manufacturing survey reveals industrial sector health, new orders, and employment momentum heading into final quarter. Services PMI assesses the economy's dominan"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Cannonball, Cavalry, or Complacency: Interpreting The Latest Chinese Government Economic Outlook In Advance Of The Next Trump-Xi Summit",
+      "url": "https://kraneshares.com/cannonball-cavalry-or-complacency-interpreting-the-latest-chinese-government-economic-outlook-in-advance-of-the-next-trump-xi-summit",
+      "content": "Retail sales rose just 0.6% year-over-year (YoY) in July, down from 1.0% in June and below consensus expectations of 1.5%.2 Meanwhile, China's official non-manufacturing Purchasing Managers' Index (PMI) held at 49.0 in August, below the 50 threshold that separates expansion from contraction; the ser"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Forex Economic Calendar Overview: Key Events for the Next Trading Week (21.09.2026–27.09.2026) | LiteFinance",
+      "url": "https://www.litefinance.org/blog/analysts-opinions/weekly-economic-calendar-for-21092026-27092026",
+      "content": "Manufacturing PMI: 51.7, 51.9, 52.5, 53.9, 53.7, 51.0, 51.7, 51.8, 50.6, 50.2, 49.7, 46.2, 47.0, 48.0, 47.7, 46.4, 45.4, 44.9, 46.9, 48.3, 48.0, 49.9, 51.5, 52.5, 52.1, 50.9, 51.2, 49.1, 50.3, 47.5, 47.0, 46.2, 44.8, 44.3, 45.3, 46.5, 47.1, 47.8, 47.9, 49.3, 47.0, 45.3, 46.5, 46.2, 48.4; [...] Compo"
+    }
+  ]
+}

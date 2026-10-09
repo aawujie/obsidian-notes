@@ -1,0 +1,94 @@
+{
+  "date": "2026-09-18",
+  "generated_at": "2026-09-18T06:07:10.222330",
+  "upcoming_events": [
+    {
+      "date": "2026-10-02",
+      "event": "非农就业报告 (9月)",
+      "importance": "high",
+      "category": "就业",
+      "days_until": 14
+    }
+  ],
+  "recent_events": [
+    {
+      "date": "2026-09-16",
+      "event": "FOMC 利率决议",
+      "importance": "critical",
+      "category": "央行",
+      "note": "附 SEP 经济预测 + 点阵图",
+      "days_ago": 2
+    }
+  ],
+  "web_events": [
+    {
+      "source": "tavily_answer",
+      "query": "US economic data release this week CPI GDP jobs",
+      "answer": "The latest US economic data indicates a robust labor market with the August jobs report showing 162,000 new jobs created, the highest since March. Inflation remains elevated, with the Consumer Price Index (CPI) showing a 0.4% increase in August, driven by higher energy prices and airfares. The Federal Reserve is expected to raise interest rates by 25 basis points in September, as markets have priced in a 90% probability of this hike following strong employment and inflation data."
+    },
+    {
+      "source": "tavily_result",
+      "title": "The Weekly Bottom Line",
+      "url": "https://economics.td.com/ca-weekly-bottom-line",
+      "content": "Markets appear slightly more confident, with odds for a hike next week jumping from roughly 70% to 90% following the CPI data release. Chair Warsh’s post-meeting press conference and the updated summary of economic projections will be of particular interest, as markets assess the evolution of the Fe"
+    },
+    {
+      "source": "tavily_result",
+      "title": "What to Look Out for in Economic Data This Week ...",
+      "url": "https://www.kiplinger.com/investing/economy/this-weeks-economic-calendar",
+      "content": "The August jobs report came in much better than expected, which lifted odds of a September rate hike. And the August Producer Price Index (PPI) and Consumer Price Index (CPI) reports, which showed inflation remains well above the Fed's 2% target, keep a rate hike in play for the central bank's Septe"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Weekly Global Economic Update | Deloitte Insights",
+      "url": "https://www.deloitte.com/us/en/insights/topics/economy/global-economic-outlook/weekly-update.html",
+      "content": "The US government releases a monthly report on the jobs market that includes the results of two surveys—a survey of establishments and a survey of households. The establishment survey found that, in August, 162,000 new jobs were created. This was the highest number of jobs created since March, and w"
+    },
+    {
+      "source": "tavily_answer",
+      "query": "Federal Reserve speech this week monetary policy",
+      "answer": "The Federal Reserve announced on September 16, 2026, that it had raised the target range for the federal funds rate by 1/4 percentage point to 3¾ to 4 percent, in support of its dual mandate of maximum employment and stable prices. The decision was made unanimously by the Federal Open Market Committee (FOMC) and aims to support a timelier return to the Committee's 2 percent inflation goal. The Committee noted that economic activity is expanding at a solid pace, productivity growth is strong, and"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Federal Reserve issues FOMC statement",
+      "url": "https://www.federalreserve.gov/monetarypolicy/files/monetary20260916a1.pdf",
+      "content": "202-452-2955. For release at 2:00 p.m. EDT September 16, 2026 Decisions Regarding Monetary Policy Implementation The Federal Reserve has made the following decisions to implement the monetary policy stance announced by the Federal Open Market Committee in its statement on September 16, 2026: • The B"
+    },
+    {
+      "source": "tavily_result",
+      "title": "FOMC Introductory Statement, September 16, 2026",
+      "url": "https://www.youtube.com/watch?v=hgpxmJrsPBY",
+      "content": "The Federal Reserve conducts the nation’s monetary policy to promote maximum employment, stable prices, and moderate long-term interest rates in the U.S. economy; promotes the stability of the financial system and seeks to minimize and contain systemic risks through active monitoring and engagement "
+    },
+    {
+      "source": "tavily_result",
+      "title": "Federal Reserve issues FOMC statement",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm",
+      "content": "Economic activity is expanding at a solid pace. While uncertainty remains elevated owing, in part, to geopolitical developments,domestic spending has been resilient. Productivity growth is strong, and capital investment is robust. Job gains have kept pace with the workforce, and the unemployment rat"
+    },
+    {
+      "source": "tavily_answer",
+      "query": "China PMI economic data this week",
+      "answer": "China's August economic data showed mixed results. The official manufacturing Purchasing Managers' Index (PMI) indicated expansion in both new orders and output, rising above the contraction seen in July. However, retail sales rose just 0.6% year-over-year in July, down from 1.0% in June and below consensus expectations of 1.5%. The official non-manufacturing PMI held at 49.0 in August, below the 50 threshold that separates expansion from contraction. These figures suggest that while manufacturi"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Weekly Outlook | A Super Central Bank Week and China's August Economic Data Are Coming; on Monday, Iran will hold talks with Gulf states on the Hormuz Agreement, while the Korea Exchange launches after-hours stock trading; on Wednesday, the CLARITY Act faces a pivotal vote; and on Friday, U.S. stocks enter Triple Witching Day.",
+      "url": "https://news.futunn.com/en/post/79152641/weekly-outlook-a-super-central-bank-week-and-china-s",
+      "content": "This week, the United States released its August PPI and CPI figures. The PPI rose 5.4% year over year, exceeding the market's expectation of 5.3%; the CPI increased 3.4% year over year, unchanged from July and in line with forecasts. Meanwhile, core CPI climbed 0.3% month over month, above the expe"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Interpreting The Latest Chinese Government Economic Outlook In ...",
+      "url": "https://kraneshares.com/cannonball-cavalry-or-complacency-interpreting-the-latest-chinese-government-economic-outlook-in-advance-of-the-next-trump-xi-summit",
+      "content": "Retail sales rose just 0.6% year-over-year (YoY) in July, down from 1.0% in June and below consensus expectations of 1.5%.2 Meanwhile, China's official non-manufacturing Purchasing Managers' Index (PMI) held at 49.0 in August, below the 50 threshold that separates expansion from contraction; the ser"
+    },
+    {
+      "source": "tavily_result",
+      "title": "China's August Data May Force Stronger Stimulus",
+      "url": "https://www.briefs.co/news/china-eyes-august-data-as-a-make-or-break-moment-for-stimulu",
+      "content": "## Where activity is holding up and where it is not\n\nChina's official manufacturing PMI indicated that both new orders and output moved back into expansion in August after July's contraction, while producer prices posted their first increase in three months. Factories are benefiting from strong fore"
+    }
+  ]
+}

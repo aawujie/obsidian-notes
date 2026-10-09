@@ -1,0 +1,1225 @@
+{
+  "date": "2026-10-05",
+  "generated_at": "2026-10-05T06:31:26.121536",
+  "total_events": 45,
+  "severity_distribution": {
+    "medium": 45
+  },
+  "events": [
+    {
+      "title": "Iran says Hormuz to remain closed until US meets conditions - Al Jazeera",
+      "title_cn": "",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNdEpOSExlamJ6VFM3V3hVMXl2M09LVHYxQnZpUHV6bXZuRkJmM3ljVHA0NFpQTmJ2WS1uZzhQVjAxVUJJYUZXeE5rMTVZMkdma3Z0a2NWUU9qRGJXZlhkSFYyVkVINHE1NjR6bklmTmxZUWdWNS1qaXc0cTNnU0xtZWV2QTRubWoyakdyMDNIUm9KcmpfSy1Jb3Nrb09mTEVMbjBlYVFybGNaa0JFOFhF0gG0AUFVX3lxTE12RHNGM054RWlsaVJaeEgtRWlIUDNKVWN0N0JLQmRfOHA1MU5SUVhXV1pjM1RKRlY2YjVkZlkyaG5vaDhWa0Fhd2hDeVZGMXRYcm5odHB1RWZ1eWJGeEZxRnZrWVNib2FvZHFySGVnNjdqTHlmUVJLdThHZHkwYk14ajdNWlptejNOYnhNR3dacmZMTWlLRDdGMFpkczBqcTBWZlN5UnlSUTV6a3NsWFBvY0djdQ?oc=5",
+      "content": "Iran says Hormuz to remain closed until US meets conditions  Al Jazeera",
+      "content_detail": "Google News",
+      "published_date": "Sun, 04 Oct 2026 20:21:04 GMT",
+      "search_region": "美伊冲突",
+      "classified_regions": [
+        "美伊冲突"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "Iran says Hormuz to remain closed until US meets conditions Al Jazeera",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Iran says Strait of Hormuz will not reopen until conditions are met - reuters.com",
+      "title_cn": "",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNUEhSM2E2MkI0TDU0LXVLZl9GLWY5d3FoTU1PdS1ON0xUV1NNQ3FnUlZGRFhOYkVHTVp5RDFaN3pxZ1pVeVNJdTdhemxsNkdRaHJBTWNtRDEwWjg2cnlKb3F5VmpEN25tTHNmV2hLTnFkc1IxSEhLVGplNTJJSnBXMDFmOUN1V3NpRmxoVnJkcmRxd1hmbzBRTHZjd05rWlhUbDBfQmFCZWRkS0pHUTJNa041QlRtSkd5YUE?oc=5",
+      "content": "Iran says Strait of Hormuz will not reopen until conditions are met  reuters.com",
+      "content_detail": "Google News",
+      "published_date": "Sun, 04 Oct 2026 12:59:41 GMT",
+      "search_region": "美伊冲突",
+      "classified_regions": [
+        "美伊冲突"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "Iran says Strait of Hormuz will not reopen until conditions are met reuters.com",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Live - Explosion heard near Iran’s Qeshm, Sirik Islands - Iran International",
+      "title_cn": "",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBOTk9NY25oVDA1VHhzR0hxT0pvLWs0MkRyZGN4QU5NZjl5RHZRNk13anozbldGMi1HcGlvclRQWktscHRETDIyd0luOTBhN3N6aVViYnRRU0YwWHlSQnc?oc=5",
+      "content": "Live - Explosion heard near Iran’s Qeshm, Sirik Islands  Iran International",
+      "content_detail": "Google News",
+      "published_date": "Sun, 04 Oct 2026 19:43:53 GMT",
+      "search_region": "美伊冲突",
+      "classified_regions": [
+        "美伊冲突"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "Live - Explosion heard near Iran’s Qeshm, Sirik Islands Iran International",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Iran says Strait of Hormuz main focus of talks to end war with US - Anadolu Ajansı",
+      "title_cn": "",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQU2FVcmhiWFZPTVVTMFctZWpLVldtZXZyMnYwV2pON1VyMXJHVG15U2Y3ZnE4ZkMzVHlaX29pQlBTazUxcFpsQl9YbkFjdHBac2xjUHBvN3FRSi1uZ0d5eFFuX3B1T05NYXM5QlFXaFVoMEotSlY2QmM5MkpiYUkyU21KSmZ5N0pmMHVJaGQ1MkFqeVIwU0IwcGw4QXJOR2wzcE9EcmV0WmI4d1NBUmZz?oc=5",
+      "content": "Iran says Strait of Hormuz main focus of talks to end war with US  Anadolu Ajansı",
+      "content_detail": "Google News",
+      "published_date": "Sun, 04 Oct 2026 12:42:55 GMT",
+      "search_region": "美伊冲突",
+      "classified_regions": [
+        "美伊冲突"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "Iran says Strait of Hormuz main focus of talks to end war with US Anadolu Ajansı",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "More tankers struck in the Middle East as Iran reiterates conditions for reopening the Strait of Hormuz - CNBC",
+      "title_cn": "",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQUjEwRGxoTll0b2ZCWkRZZl9iUzBKblN5TXJNM0Y5RXpZUmYwMW1YVW0wcFZYcEl1UTk0Q3VpTl9qZXBtYkg1QzdBWDZIa0wwdWZJZ0tsbU5DbHg1LWhOR2hCWWRzUVV4Qy1wd1pWVW9ZQ3NrdmE4RkpJUkRJYXk0ekNzVXQzalpLY3AtUU1mb3FlcnRnc1BEUi1KaDVEUWFiVUhF0gGoAUFVX3lxTFBMNDgyNFd0ZWdGbHlrRGNsUEtGbUx2ci1KakxlMXpuRks0Nl9jY2pjdC1pTkRVYXJRajFmdVZqaHVQZ2lmTmtzVkJaM1JnWWI3VlBTZHhYMDBRUjd5R0NzNEZ0S2w5bVJ5NkpvZHZqaWFPd0V0T2FrX1V1bW1vaFpiYUYtNHJoYko3ZTNXQW1ZTVV1RlNGN2ZZRmJvWUZiUWFxcGNRSWJ0UA?oc=5",
+      "content": "More tankers struck in the Middle East as Iran reiterates conditions for reopening the Strait of Hormuz  CNBC",
+      "content_detail": "Google News",
+      "published_date": "Sun, 04 Oct 2026 12:02:51 GMT",
+      "search_region": "美伊冲突",
+      "classified_regions": [
+        "美伊冲突"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "More tankers struck in the Middle East as Iran reiterates conditions for reopening the Strait of Hormuz CNBC",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Iran says no military solution to war as peace talks with US stall - France 24",
+      "title_cn": "",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOYkdGTmxyRWNXbGxHTklnUzRHbmk0OHJYNVQ2NUFpZHZ0NnB4V0xXa1ZMLWN0UmY0TlFxMHJtbHpwY0lvOFEyak90eVZJSlZHbjl3MTl1ZDFYY2FWQkJfOExRNkxCNXNuX1B2bUYxdnNLRzBYbkcyMjF4RHpoRzdRaUZmRm9JNjlkdmZTWWxLOFNpdjdJV3ZhVA?oc=5",
+      "content": "Iran says no military solution to war as peace talks with US stall  France 24",
+      "content_detail": "Google News",
+      "published_date": "Sun, 04 Oct 2026 21:41:47 GMT",
+      "search_region": "美伊冲突",
+      "classified_regions": [
+        "美伊冲突"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "Iran says no military solution to war as peace talks with US stall France 24",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Mediators still working on U.S.-Iran deal after Trump rejected latest Tehran proposal - PBS",
+      "title_cn": "",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPWXVCc0pIMDREUi0tSFptcHlnZVAyU1QwM3Z2a0VPTmZJbC1fcHNaOXVOclpjQ01NOXRLUktVZGJIRDdJZUpsZm03X1lvanBuZGd0WnJhYk52YTN0cXJoSU1yZF82VVBLR0o1clpHOTRJWndWTTFUU2tLZVQwTGl4cjEtVkIwQ0RaYmx3Y0ZUV252bXJNakJvNDR4MnBjU2lRVmJSTlN5OWMwcEN2ZElfdndVQ21RcXcyN2JB0gHAAUFVX3lxTE5XaV9rSjZCR1ZEbkd1MUh4QzJzUnFaR1B1cTUzcXp1bkc1cHhnV3lXcTVsUnpfSkhMczFMTzlkVE9SbHhEZkp4STFSbzlhdmhmeDZUSU9MejI0dkpvVUVwUW9NcElRcEN0UEpncVRpMjE0SGhsYmFXdHl4NEZROHhmUE1UQnJ4aFdaZzBjY3FzY3N0bzkzWE5YdUlHbWNhQ2x1Wk11TTJycjJ0OHFWUEpUcVFFWTFaWXU1bVJwVUdnQw?oc=5",
+      "content": "Mediators still working on U.S.-Iran deal after Trump rejected latest Tehran proposal  PBS",
+      "content_detail": "Google News",
+      "published_date": "Mon, 28 Sep 2026 17:23:59 GMT",
+      "search_region": "美伊冲突",
+      "classified_regions": [
+        "美伊冲突"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "Mediators still working on U.S.-Iran deal after Trump rejected latest Tehran proposal PBS",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Pete Hegseth warns Iran will 'never' get nuclear bomb, touts Hormuz blockade - The Jerusalem Post",
+      "title_cn": "",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9SQmt4aVVHV2F1NnVZSHNXdUFyRUQ5c0NZblJrWExud0FELVFsTHBpRk1NN1ZHd1FUQmdYQUFRU2dNeFlveWZwTUdrM2s0YlFmN1lKM0F0VWRYcU9CclBPUEVUVWtIV1d3NUE?oc=5",
+      "content": "Pete Hegseth warns Iran will 'never' get nuclear bomb, touts Hormuz blockade  The Jerusalem Post",
+      "content_detail": "Google News",
+      "published_date": "Sun, 04 Oct 2026 00:00:20 GMT",
+      "search_region": "美伊冲突",
+      "classified_regions": [
+        "美伊冲突"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "Pete Hegseth warns Iran will 'never' get nuclear bomb, touts Hormuz blockade The Jerusalem Post",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Russia issues Oct 3 warning for diplomats to leave Kyiv",
+      "title_cn": "",
+      "url": "https://www.nationthailand.com/news/world/40071852",
+      "content": "Russia issues Oct 3 warning for diplomats to leave Kyiv\n\nThe Russian Foreign Ministry said anyone ignoring its warning would bear full responsibility for any adverse consequences.\n\nRussian President Vladimir Putin said during the week that Ukraine would continue paying for its attacks on Russia as R",
+      "content_detail": "# Russia issues Oct 3 warning for diplomats to leave Kyiv\n\nSUNDAY, OCTOBER 04, 2026\n\n|[The Nation Editorial Team](/bylines/The%20Nation%20Editorial%20Team)\n\n![EN](https://media.nationthailand.com/images/translates/EN.png)\n\n![CN](https://media.nationthailand.com/images/translates/CN.png)\n\n## Russia’s warning follows a bridge strike in Kyiv, where intensified attacks on infrastructure have disrupted life for 3 million residents before winter.\n\n* Russia urged foreign diplomats and nationals to leave Kyiv on October 3, warning of continued large-scale strikes on the capital and other cities.\n* The warning was expanded to advise all foreign nationals against remaining in or traveling to any part of Ukraine.\n* Moscow justified the strikes as retaliation for what it termed \"terrorist acts\" by Ukraine's armed forces against Russian civilians and infrastructure.\n* The warning coincided with a Russian air attack on a bridge in Kyiv and came as strikes on infrastructure intensified ahead of winter.\n\nRussia urged foreign nationals and diplomats to leave Kyiv on October 3, 2026, warning that its forces would continue large-scale strikes on the Ukrainian capital and other cities.\n\nA Russian air attack hit a bridge over the Dnipro River in Kyiv on October 3. Intensified strikes on the capital’s infrastructure have disrupted daily life for its 3 million residents as winter approaches.\n\nThe Russian Foreign Ministry’s warning extended beyond Kyiv, advising foreign nationals, including diplomat",
+      "published_date": "Sun, 04 Oct 2026 05:46:00 GMT",
+      "search_region": "俄乌战争",
+      "classified_regions": [
+        "俄乌战争"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "Russia issues Oct 3 warning for diplomats to leave Kyiv SUNDAY, OCTOBER 04, 2026",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "India intensifies talks with Russia, Ukraine to end war ᐉ News from Fakti.bg - World | ФАКТИ.БГ",
+      "title_cn": "",
+      "url": "https://fakti.bg/en/amp/world/1086292-india-aktivira-razgovorite-s-rusia-i-ukraina-za-krai-na-voinata",
+      "content": "|  |  |\n --- |\n|  |  |\n\nOct 4, 2026 18:52\n\n84\n\n# India intensifies talks with Russia, Ukraine to end war\n\n## New Delhi is discussing with Moscow and Kiev the safety of shipping in the Black Sea, grain exports and energy.\n\nIndia intensifies talks with Russia, Ukraine to end war\n\nIndia has stepped up ",
+      "content_detail": "|  |  |\n| --- | --- |\n|  |  |\n\nOct 4, 2026 18:52\n\n\n85\n\n# India intensifies talks with Russia, Ukraine to end war\n\n## New Delhi is discussing with Moscow and Kiev the safety of shipping in the Black Sea, grain exports and energy.\n\n![India intensifies talks with Russia, Ukraine to end war](https://cdn4.focus.bg/fakti/photos/medium/742/india-aktivira-razgovorite-s-rusia-i-ukraina-za-krai-na-voinata-1.webp)\n\nIndia has stepped up its contacts with Russia and Ukraine in an attempt to help end the war, External Affairs Minister Subrahmanyam Jaishankar said at the Munich Security Conference leaders' meeting in New Delhi.\n\n“In recent months, we have become a little more engaged beyond advocacy and are talking to both Russia and Ukraine,“ Jaishankar said. According to him, India is trying to be helpful on specific issues related to the conflict.\n\n## Discussing shipping, grain and energy\n\nAmong the topics are the safety of shipping in the Black Sea, the export of grain and energy resources, as well as options for preventing mutual attacks. The Indian minister did not specify whether the talks led to a specific agreement or an agreed timetable for negotiations.\n\nFor years, India has been calling on Moscow and Kiev to seek a solution through diplomacy. “We want to see an end to this conflict and we believe that dialogue and diplomacy are needed for this“, Jaishankar said. He stressed that negotiations are a necessary part of the process.\n\n## New Delhi maintains contacts with both sides\n\nI",
+      "published_date": null,
+      "search_region": "俄乌战争",
+      "classified_regions": [
+        "俄乌战争"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "--- --- Oct 4, 2026 18:52 85 India intensifies talks with Russia, Ukraine to end war New Delhi is discussing with Moscow and Kiev the safety of shipping in the",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "How deadlock in the Ukraine war is crippling global food prices - AOL",
+      "title_cn": "",
+      "url": "https://www.aol.com/articles/deadlock-ukraine-war-crippling-global-092622000.html",
+      "content": "A flare up in hostilities has seen Russia’s Black Sea grain exports fall to their lowest level in 15 years, down 65 per cent year on year in July, according to Lloyd’s List. Ukraine has seen an even larger fall of three quarters, according to government data.\n\nEvghenia Sleptsova, senior economist at",
+      "content_detail": "* [Home](https://www.aol.com/ \"Home\")\n* [Quezon ..., MNL\n\n  Quezon City, MNL\n\n  Local News](https://www.aol.com/local/ \"Local\")\n* [Subscriptions](https://www.aol.com/products?ncid=mbr_rusacqlnk00000036 \"Subscriptions\")\n\n\n\n\n* [Home & Garden](https://www.aol.com/home-garden/ \"Home & Garden\")\n\n\n* [True Crime](https://www.aol.com/true-crime/ \"True Crime\")\n\n* Finance\n* [Finance](https://www.aol.com/finance/ \"Finance\")\n* [Banking](https://www.aol.com/finance/banking/ \"Banking\")\n* [Business News](https://www.aol.com/news/business/ \"Business News\")\n* [Estate & Retirement Planning](https://www.aol.com/finance/retirement-planning/ \"Estate & Retirement Planning\")\n* [Loans & Mortgages](https://www.aol.com/finance/mortgages/ \"Loans & Mortgages\")\n\n* News\n* [News](https://www.aol.com/news/ \"News\")\n* [Business](https://www.aol.com/news/business/ \"Business\")\n* [Lighter Side](https://www.aol.com/news/lighter \"Lighter Side\")\n* [Politics](https://www.aol.com/news/politics/ \"Politics\")\n* [Science & Tech](https://www.aol.com/news/science-tech/ \"Science & Tech\")\n* [Sports](https://www.aol.com/news/sports/ \"Sports\")\n* [Weather](https://www.aol.com/weather/ \"Weather\")\n\nFor premium support please call:\n\n[800 - 290 - 4726](tel:800 - 290 - 4726)[more ways to reach us](https://help.aol.com/contact/)\n\n[Sign in](https://auth.www.aol.com/login?return_to=https%3A%2F%2Fwww.aol.com%2Farticles%2Fdeadlock-ukraine-war-crippling-global-092622000.html \"Sign in\")\n\n[Mail](https://mail.aol.com \"email link\")\n\nFor premi",
+      "published_date": "Sun, 04 Oct 2026 09:00:00 GMT",
+      "search_region": "俄乌战争",
+      "classified_regions": [
+        "俄乌战争"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "Finance News For premium support please call: For premi",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "EU Blames Russia for Interrupting Ships' Movement in Balkan Sea | The Asian Age Online, Bangladesh",
+      "title_cn": "",
+      "url": "https://dailyasianage.com/news/358819/eu-blames-russia-for-interrupting-ships-movement-in-balkan-sea",
+      "content": "The dispute is particularly sensitive because the Black Sea is an important route for grain exports. Ukraine is one of the world's major producers and exporters of wheat, corn and other agricultural products. Before the full-scale Russian invasion in February 2022, much of Ukraine's agricultural exp",
+      "content_detail": "* [Home](https://dailyasianage.com/)\n* [Nation’s Hope and Trust](https://dailyasianage.com/news-category/60/Nation’s Hope and Trust)\n* [Frontpage](https://dailyasianage.com/news-category/1/Frontpage)\n* [Asia](https://dailyasianage.com/news-category/2/Asia)\n* [City](https://dailyasianage.com/news-category/3/City)\n* [World](https://dailyasianage.com/news-category/4/World)\n* [OP-ED](https://dailyasianage.com/news-category/5/OP-ED)\n* [Editorial](https://dailyasianage.com/news-category/14/Editorial)\n* [Business](https://dailyasianage.com/news-category/6/Business)\n* [Global Business](https://dailyasianage.com/news-category/7/Global Business)\n* [News A to Z](https://dailyasianage.com/news-category/8/News A to Z)\n* [Commercial Capital](https://dailyasianage.com/news-category/9/Commercial Capital)\n* [Sports](https://dailyasianage.com/news-category/10/Sports)\n* [Countrywide](https://dailyasianage.com/news-category/11/Countrywide)\n* [Featured](https://dailyasianage.com/news-category/28/Featured)\n  + [Etiquette](https://dailyasianage.com/news-category/48/Etiquette \"Etiquette\")\n  + [Sex & Relationship](https://dailyasianage.com/news-category/49/Sex & Relationship \"Sex & Relationship\")\n  + [Fitness](https://dailyasianage.com/news-category/54/Fitness \"Fitness\")\n  + [Student Voice](https://dailyasianage.com/news-category/61/Student Voice \"Student Voice\")\n  + [LitScape](https://dailyasianage.com/news-category/57/LitScape \"LitScape\")\n  + [Life Style](https://dailyasianage.com/news-category/15/",
+      "published_date": "Sun, 04 Oct 2026 05:02:00 GMT",
+      "search_region": "俄乌战争",
+      "classified_regions": [
+        "俄乌战争"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "India steps up peace efforts to help end Ukraine conflict",
+      "title_cn": "",
+      "url": "https://www.deccanherald.com/amp/story/india%2Findia-moves-beyond-advocacy-steps-up-efforts-to-end-ukraine-war-s-jaishankar-4170155",
+      "content": "\"We have been advocating it for many years, and in recent months we have got a little bit more involved beyond advocacy. We have conversations with both Russia and Ukraine in this regard. We are trying to be helpful, starting with the Black Sea safety of shipping issue.\"\n\nJaishankar said India is \"g",
+      "content_detail": "![<div class=\"paragraphs\"><p>S Jaishankar</p></div>](https://media.assettype.com/deccanherald/2026-10-04/abyrpcz7/file82pehfnzm201c1c2954l.jpg?w=900)\n\nS Jaishankar\n\nPTI photo\n\nNew Delhi: India has moved beyond advocacy and stepped up its efforts in recent months to resolve the Ukraine conflict by engaging in conversations with both Kyiv and Moscow, [External Affairs Minister S Jaishankar](https://www.deccanherald.com/tags/s-jaishankar) said on Sunday, in a first public acknowledgement of New Delhi's latest initiative in ending the lingering war.\n\nJaishankar's comments at an event came days after Russian President Vladimir Putin said Prime Minister Narendra Modi has \"good ideas\" to find a mutually acceptable solution to the conflict.\n\nUkraine Foreign Minister Andrii Sybiha said on Friday that Kyiv received separate proposals from India and three other nations for a possible ceasefire.\n\nSharing some details of New Delhi's efforts, Jaishankar said it is focusing on ensuring the safety of shipping in the Black Sea as well as on grain exports and energy supplies.\n\nFor over four years, India has been consistently pushing for resolving the Ukraine conflict through dialogue and diplomacy.\n\n\"Our position on that conflict has been very clear, which is that we would like to see an end to this conflict. This will require dialogue and diplomacy. There has to be negotiations in this regard,\" he said at the Munich Leaders' Meeting in New Delhi.\n\n\"We have been advocating it for many years, a",
+      "published_date": "Sun, 04 Oct 2026 14:11:56 GMT",
+      "search_region": "俄乌战争",
+      "classified_regions": [
+        "俄乌战争"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Estonia bans Russian and Belarusian grain transit through ports - Splash247",
+      "title_cn": "",
+      "url": "https://splash247.com/estonia-bans-russian-and-belarusian-grain-transit-through-ports",
+      "content": "Russian grain transit through Estonia has until now been virtually non-existent, according to the foreign ministry, but authorities said there has been interest in using the country’s ports and opted to block the trade before volumes develop.\n\nThe restriction will be introduced by amending Estonia’s",
+      "content_detail": "![](https://splash247.com/wp-content/themes/jannah-child/images/Splash.png)\n![](https://splash247.com/wp-content/themes/jannah-child/images/SplashPorts.png)\n![](https://splash247.com/wp-content/themes/jannah-child/images/SplashTech.png)\n![Splash Ports](https://splash247.com/wp-content/uploads/2026/07/Splash-Port-Logo-green.png)\n![Splash Ports](https://splash247.com/wp-content/uploads/2026/07/Splash-Port-Logo-green.png)\n\n# Estonia bans Russian and Belarusian grain transit through ports\n\n![Photo of Splash Ports](https://splash247.com/wp-content/uploads/2026/07/avatar_user_1865_1783060389-140x140.png)\n![](https://splash247.com/wp-content/uploads/2022/06/Port-of-Tallinn-780x470.jpg)\n\nEstonia is closing its ports to the transit of grain originating in Russia and Belarus, introducing a national sanction as Baltic governments tighten controls on agricultural cargo moving through the region.\n\nThe Estonian government approved the measure that covers grain classified under the CN 10 commodity group and will take effect the day after the amendment is published in the Riigi Teataja state gazette.\n\nTallinn said the move is designed to prevent Estonian ports from emerging as an alternative outlet for Russian grain as exporters look for routes beyond the Black Sea.\n\nRussian grain transit through Estonia has until now been virtually non-existent, according to the foreign ministry, but authorities said there has been interest in using the country’s ports and opted to block the trade before vo",
+      "published_date": "Sun, 04 Oct 2026 08:53:32 GMT",
+      "search_region": "俄乌战争",
+      "classified_regions": [
+        "俄乌战争"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Got little bit more involved beyond advocacy: Jaishankar on India's peace efforts to end Ukraine conflict - The Economic Times",
+      "title_cn": "",
+      "url": "https://m.economictimes.com/news/india/got-little-bit-more-involved-beyond-advocacy-jaishankar-on-indias-peace-efforts-to-end-ukraine-conflict/articleshow/134675788.cms",
+      "content": "The Economic Times\n\n##### The Economic Times daily newspaper is available online now.\n\n# Got little bit more involved beyond advocacy: Jaishankar on India's peace efforts to end Ukraine conflict\n\nGoogle Logo\nWhatsapp Follow Channel\n\nIndia has reportedly intensified its diplomatic initiatives to addr",
+      "content_detail": "![The Economic Times](https://img.etimg.com/photo/msid-76920425,quality-100/et-logo.jpg)\n\n##### The Economic Times daily newspaper is available online now.\n\n# Got little bit more involved beyond advocacy: Jaishankar on India's peace efforts to end Ukraine conflict\n\n![Google Logo](https://img.etimg.com/photo/124385886.cms)\n![Whatsapp Follow Channel](https://img.etimg.com/photo/104857408.cms)\n\nIndia has reportedly intensified its diplomatic initiatives to address the ongoing Ukraine conflict through discussions. External Affairs Minister S Jaishankar noted that India is engaging with both Kyiv and Moscow for resolution. Recent remarks from Russian President Vladimir Putin highlighted India's potential role in finding a solution.\n\n![External Affairs Minister S Jaishankar says India has stepped up efforts to resolve the Ukraine conflict through engagements with both Kyiv and Moscow.](https://img.etimg.com/thumb/msid-134675814,width-300,height-225,imgsize-62876,resizemode-75/external-affairs-minister-s-jaishankar-says-india-has-stepped-up-efforts-to-resolve-the-ukraine-conflict-through-engagements-with-both-kyiv-and-moscow-.jpg)\n\nExternal Affairs Minister S Jaishankar says India has stepped up efforts to resolve the Ukraine conflict through engagements with both Kyiv and Moscow.\n\n![ET logo](https://img.etimg.com/photo/118783427.cms)\n\n### Live Events\n\n![ET Logo](https://img.etimg.com/photo/123467569.cms)\n![Google Logo](https://img.etimg.com/photo/123467572.cms)![Q2 earnings season:",
+      "published_date": "Sun, 04 Oct 2026 13:17:00 GMT",
+      "search_region": "俄乌战争",
+      "classified_regions": [
+        "俄乌战争"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "What about, sort of, separating all trade from China? My ...",
+      "title_cn": "",
+      "url": "https://www.facebook.com/BJReview/posts/sometimes-people-in-the-us-have-asked-me-what-about-sort-of-separating-all-trade/1390578639827490",
+      "content": "Washington announced a new semiconductor export control package against China, curbing exports to 140 companies.",
+      "content_detail": "Beijing Review - &quot;Sometimes people in the U.S. have asked...",
+      "published_date": null,
+      "search_region": "中美博弈",
+      "classified_regions": [
+        "中美博弈"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "Beijing Review - \"Sometimes people in the U.S.",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Rare-earth magnets, battery materials and advanced ...",
+      "title_cn": "",
+      "url": "https://www.facebook.com/DesitvUs/posts/rare-earth-magnets-battery-materials-and-advanced-components-have-become-strateg/1432333082366397",
+      "content": "Export controls from the US and its allies have pushed Beijing to intensify semiconductor localization, while Chinese authorities have also promoted",
+      "content_detail": "Desi TV USA - Rare-earth magnets, battery materials and...",
+      "published_date": null,
+      "search_region": "中美博弈",
+      "classified_regions": [
+        "中美博弈"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "Desi TV USA - Rare-earth magnets, battery materials and...",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Inside the RISC-V Exception to US-China Tech Decoupling",
+      "title_cn": "",
+      "url": "https://www.opentechwire.com/article/risc-v-us-china-collaboration-chip-rivalry",
+      "content": "At Opentechwire, we've tracked semiconductor export controls as they've tightened month by month since 2022. GPU thresholds drop, lithography tools",
+      "content_detail": "[Editorial Standards](/trust/editorial)·[AI Disclosure](/trust/ai)\n\n[Tech Intelligence, Openly Wired](/)\n\n\n\n# Open Architecture, Closed Borders: Inside the RISC-V Exception to US-China Tech Decoupling\n\nWhile export controls tighten on advanced chips, American and Chinese engineers are deepening collaboration on the instruction set architecture that may shape computing's next decade.\n\nMH\n\nMarcus Halloran\n\nDeveloper Tools Reporter· Singapore\n\nOct 5, 2026\n\n6min read\n\nCredit: Handout\n\n## A Rare Island of Cooperation\n\nAt Opentechwire, we've tracked semiconductor export controls as they've tightened month by month since 2022. GPU thresholds drop, lithography tools disappear from shipping manifests, and design software licences vanish. Yet one corner of chip development remains conspicuously open: RISC-V, the instruction set architecture that defines how processors decode commands. MIPS, the intellectual property provider acquired by GlobalFoundries in 2025, is now collaborating with Chinese firms \"very closely\" on RISC-V standardisation, according to chief technology officer Yankin Tanurhan. The partnership underscores a paradox that few policymakers have resolved - how to contain advanced chip capabilities whilst an open-source blueprint for processor design flows freely across borders.\n\nRISC-V is not a physical chip. It is a specification, a shared language that tells silicon how to execute instructions. Because the architecture is open-source and maintained by a Switzerland-base",
+      "published_date": "Sun, 04 Oct 2026 16:00:00 GMT",
+      "search_region": "中美博弈",
+      "classified_regions": [
+        "中美博弈"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "· Open Architecture, Closed Borders: Inside the RISC-V Exception to US-China Tech Decoupling While export controls tighten on advanced chips, American and Chinese engineers are deepening collaboration on the instruction",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "The FE - Evolving dimensions in China-USA relationship",
+      "title_cn": "",
+      "url": "https://thefinancialexpress.com.bd/views/views/evolving-dimensions-in-china-usa-relationship",
+      "content": "The trade truce that saw both countries pause a tit-for-tat tariff war and prevent a further escalation, was extended by only a few months -- from November to January. This means that key disputes on tariffs is likely to remain. China's dominance on rare earth supplies and access to advanced US chip",
+      "content_detail": "[![Advertisement](https://thefe-bd.sgp1.cdn.digitaloceanspaces.com/advertisements/171578/970-90-gdn-chopstick-instant-noodles.jpeg)![Advertisement](https://thefe-bd.sgp1.cdn.digitaloceanspaces.com/advertisements/171575/320-100-gdn-chopstick-instant-noodles.jpeg)](https://www.shwapno.com/search?q=chopstick+noodles&cats=66a853ceb553767cca97ce86)\n\n[E-PAPER](https://epaper.thefinancialexpress.com.bd)\n[ARCHIVE](https://today.thefinancialexpress.com.bd/archive)\n[Today's FE](https://today.thefinancialexpress.com.bd/)\n\n[E-PAPER](https://epaper.thefinancialexpress.com.bd)\n[ARCHIVE](https://today.thefinancialexpress.com.bd/archive)\n[Today's FE](https://today.thefinancialexpress.com.bd/)\n\n[বাংলা](https://bangla.thefinancialexpress.com.bd)\n\n[![The Financial Express Logo](/assets/logos/FE-Logo-English-Black.svg)](/)\n\nLoading...\n\n[Muhammad Zamir](/reporter/muhammad-zamir)\n\nPublished:\n\nShare this news\n\n[Views](/category/views)\n\n# Evolving dimensions in China-USA relationship\n\nUS President Donald Trump ( R ) and Chinese President Xi Jinping ( L) react as Xi arrives ahead of a state visit at Joint Base Andrews, Maryland, US, September 23, 2026 —REUTERS Photo\n\n[Muhammad Zamir](/reporter/muhammad-zamir)\n\nPublished:\n\nIt may be recalled that when Trump first returned to the White House for his second term, he announced severe tariffs on Chinese goods that quickly set off a trade war between the world's two largest economies and warnings of wider fallout around the globe. However, despite such a r",
+      "published_date": "Sun, 04 Oct 2026 16:13:31 GMT",
+      "search_region": "中美博弈",
+      "classified_regions": [
+        "中美博弈"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "However, despite such a r",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "One reason China has not closed its economic gap ...",
+      "title_cn": "",
+      "url": "https://www.facebook.com/TheEconomist/posts/one-reason-china-has-not-closed-its-economic-gap-with-america-is-the-chronic-wea/1625040666321114",
+      "content": "Internationally, it also faces being the United States turns the heat up on a trade war against China, which has long relied on exports to drive growth.",
+      "content_detail": "The Economist - One reason China has not closed its...",
+      "published_date": null,
+      "search_region": "中美博弈",
+      "classified_regions": [
+        "中美博弈"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "Internationally, it also faces being the United States turns the heat up on a trade war against China, which has long relied on exports to drive growth.",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Frontier AI Lab Tracker - cleverhack dot com",
+      "title_cn": "",
+      "url": "https://cleverhack.com/frontier-ai-lab-tracker",
+      "content": "— Luta Security — 15-06-2026`   • EU AI: The Fables We Told Ourselves — Pleias — 14-06-2026   `• US Export Controls on Anthropic 'Should Not Be Discriminatory,' EU Commission Warns — Euronews — 14-06-2026`   `• China may have accessed Mythos — The Verge — 14-06-2026`   `• Dangerous Technology For Am",
+      "content_detail": "",
+      "published_date": "Sun, 04 Oct 2026 05:00:00 GMT",
+      "search_region": "中美博弈",
+      "classified_regions": [
+        "中美博弈"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Intense Competition and Growth Expected in Taiwan ...",
+      "title_cn": "",
+      "url": "https://www.linkedin.com/pulse/intense-competition-growth-expected-taiwan-wireless-telecom-tbwhf",
+      "content": "Additionally, U.S. regulatory influence, such as the Entity List and export controls, can directly restrict Taiwan's access to certain advanced technologies",
+      "content_detail": "",
+      "published_date": null,
+      "search_region": "中美博弈",
+      "classified_regions": [
+        "中美博弈"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "China is both a model and a warning for India's chip ambitions: US professor on what New Delhi should do - BusinessToday",
+      "title_cn": "",
+      "url": "https://www.businesstoday.in/technology/story/china-is-both-a-model-and-a-warning-for-indias-chip-ambitions-us-professor-on-what-new-delhi-should-do-559272-2026-10-04",
+      "content": "At the same time, China also serves as a cautionary tale in the sense that it tells you how hard it is to actually become a leader in this industry.\n\nThey've spent so much money, but in spite of this, all it takes is for the US or the Netherlands to stop shipment of some chip or some chipmaking equi",
+      "content_detail": "",
+      "published_date": "Sun, 04 Oct 2026 08:55:07 GMT",
+      "search_region": "中美博弈",
+      "classified_regions": [
+        "中美博弈"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Israeli strike kills 1 Palestinian in Gaza, and other Mideast news - Bozeman Daily Chronicle",
+      "title_cn": "",
+      "url": "https://www.bozemandailychronicle.com/wire/news/israeli-strike-kills-1-palestinian-in-gaza-and-other-mideast-news/article_d13a5008-a461-5d37-9424-a1cbec129119.html",
+      "content": "The Houthi media office reported the strikes without giving further details. It accused Saudi Arabia of launching the strikes, but didn’t offer evidence and there was no immediate comment from Saudi Arabia.\n\nHowever, the Yemeni military, which is backed by Riyadh, claimed responsibility for the stri",
+      "content_detail": "",
+      "published_date": "Sun, 04 Oct 2026 08:47:45 GMT",
+      "search_region": "中东/红海",
+      "classified_regions": [
+        "中东/红海"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Israeli strike kills 1 Palestinian in Gaza, and other Mideast news - Greenwich Time",
+      "title_cn": "",
+      "url": "https://www.greenwichtime.com/news/article/israeli-strike-kills-1-palestinian-in-gaza-and-22461679.php",
+      "content": "However, the Yemeni military, which is backed by Riyadh, claimed responsibility for the strikes.\n\nYemeni military spokesman Col. Majed al-Nazili said it struck “vital targets” in Sanaa as well as the northern province of Saada on the borders with Saudi Arabia.\n\nAdvertisement\n\nArticle continues below",
+      "content_detail": "",
+      "published_date": "Sun, 04 Oct 2026 09:15:01 GMT",
+      "search_region": "中东/红海",
+      "classified_regions": [
+        "中东/红海"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Tanker Reports Attack South of Bab el-Mandeb - The Maritime Executive",
+      "title_cn": "",
+      "url": "https://maritime-executive.com/article/tanker-reports-attack-south-of-bab-el-mandeb",
+      "content": "The attempted strike followed just hours after the Yemeni government publicly announced the launch of a major military operation targeting Houthi positions, with active support from Saudi forces. The Houthis have been making significant military gains against the IRG in recent weeks, seizing most of",
+      "content_detail": "",
+      "published_date": "Sun, 04 Oct 2026 21:14:22 GMT",
+      "search_region": "中东/红海",
+      "classified_regions": [
+        "中东/红海"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Live Updates: Latest from Israel, Iran, and the Middle East - The Jerusalem Post",
+      "title_cn": "",
+      "url": "https://www.jpost.com/middle-east/iran-news/2026-10-04/live-updates-910489",
+      "content": "Iran retaliated with missile attacks across the Middle East, targeting Gulf states and US military bases in the region.\n\nSince February 28, ballistic missile attacks on Israel have killed 39 IDF soldiers and 23 civilians, while injuring at least 7,693 others. CENTCOM said 18 US soldiers were also ki",
+      "content_detail": "",
+      "published_date": "Sun, 04 Oct 2026 17:00:05 GMT",
+      "search_region": "中东/红海",
+      "classified_regions": [
+        "中东/红海"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Crossings into West Bank and Gaza to be closed, ahead of Oct. 7 anniversary - The Times of Israel",
+      "title_cn": "",
+      "url": "https://www.timesofisrael.com/liveblog_entry/crossings-into-west-bank-and-gaza-to-be-closed-ahead-of-oct-7-anniversary/",
+      "content": "14 hours ago At rally, Trump mocks ‘Gays for Palestine’ over abuses in ‘that part of the world’  \n   14 hours ago Iranian rial at new record low, just days after previous nadir  \n   15 hours ago Former hostage shares photos from captivity, as Hamas doctor operates on her injured hand  \n   16 hours a",
+      "content_detail": "",
+      "published_date": "Sun, 04 Oct 2026 07:23:15 GMT",
+      "search_region": "中东/红海",
+      "classified_regions": [
+        "中东/红海"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Saudi Arabia preparing massive Yemen offensive - Global Village Space",
+      "title_cn": "",
+      "url": "https://www.globalvillagespace.com/saudi-arabia-preparing-massive-yemen-offensive/",
+      "content": "According to Reuters, the Saudis are considering two options: an attack focused on recapturing the coastal area around the Bab el-Mandeb Strait, which connects the Red Sea with the Gulf of Aden and the Indian Ocean, or a broader offensive involving synchronized attacks on multiple fronts in Al-Bayda",
+      "content_detail": "",
+      "published_date": "Sun, 04 Oct 2026 04:54:29 GMT",
+      "search_region": "中东/红海",
+      "classified_regions": [
+        "中东/红海"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Defense Ministry: 1,318 Israeli security personnel killed across all fronts since October 7 - The Jerusalem Post",
+      "title_cn": "",
+      "url": "https://www.jpost.com/israel-news/defense-news/article-910490",
+      "content": "The number includes fallen personnel from the IDF, Israel Police, Shin Bet (Israel Security Agency), Fire and Rescue Services, security coordinators, and local response team members.\n\nThe numbers account for the fallen across all fronts, including the Gaza Strip, Lebanon, and the West Bank.\n\n### Tho",
+      "content_detail": "",
+      "published_date": "Sun, 04 Oct 2026 03:03:07 GMT",
+      "search_region": "中东/红海",
+      "classified_regions": [
+        "中东/红海"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Why US Himars missile shortfalls raise stakes for a potential Taiwan Strait conflict | The Star",
+      "title_cn": "",
+      "url": "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/10/04/why-us-himars-missile-shortfalls-raise-stakes-for-a-potential-taiwan-strait-conflict",
+      "content": "At the same time, Lockheed Martin, which makes the ATACMS, is in the process of phasing out its production. How fast the stocks can be replenished and delivered to Taiwan remains highly uncertain.\n\nMeanwhile, although exact ammunition stockpiles remain classified, the PLA has recently released foota",
+      "content_detail": "",
+      "published_date": "Sun, 04 Oct 2026 20:37:00 GMT",
+      "search_region": "台海/南海/朝鲜",
+      "classified_regions": [
+        "台海/南海/朝鲜"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Trump's Erratic Diplomacy: Mysterious Strategic Wins",
+      "title_cn": "",
+      "url": "https://www.chosun.com/english/opinion-en/2026/10/04/PQL6MAR5IZFJRG5O6C5BYZZUOY",
+      "content": "The next phase of the Iran War will involve two major East Asian issues awaiting President Trump. The first is the Taiwan question. Chinese President Xi Jinping has ordered the People’s Liberation Army to prepare for an invasion of Taiwan by 2027, and the year will begin in a few months. The second ",
+      "content_detail": "",
+      "published_date": "Sun, 04 Oct 2026 14:55:29 GMT",
+      "search_region": "台海/南海/朝鲜",
+      "classified_regions": [
+        "台海/南海/朝鲜"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Kim Jong Un oversees North Korea's latest hypersonic missile launch",
+      "title_cn": "",
+      "url": "https://www.azernews.az/region/264949.html",
+      "content": "KCNA said the drill was intended to train missile troops operating the country’s “hypersonic strategic weapon system” and assess the reliability, efficiency and mobility of North Korea’s war deterrent.\n\nSouth Korea’s military provided a different estimate of the missile’s flight, saying it detected ",
+      "content_detail": "",
+      "published_date": "Sun, 04 Oct 2026 08:15:00 GMT",
+      "search_region": "台海/南海/朝鲜",
+      "classified_regions": [
+        "台海/南海/朝鲜"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "North Korea reports missile launch at target 1,000 km away — The Hindu | UA.NEWS",
+      "title_cn": "",
+      "url": "https://ua.news/en/world/kndr-zaiavila-pro-zapusk-raketi-do-tsili-za-1000-km-the-hindu",
+      "content": "North Korea said it conducted a training launch of an intermediate-range missile from the eastern part of the country on October 3. According to The Hindu, North Korean state agency KCNA claims that the missile hit a target 1,000 kilometers away in the sea east of the country.\n\n## Drill overseen by ",
+      "content_detail": "",
+      "published_date": "Sun, 04 Oct 2026 02:20:58 GMT",
+      "search_region": "台海/南海/朝鲜",
+      "classified_regions": [
+        "台海/南海/朝鲜"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "North Korean hypersonic missile hits target 1,000 km away - Mehr News Agency",
+      "title_cn": "",
+      "url": "https://en.mehrnews.com/news/248292/North-Korean-hypersonic-missile-hits-target-1-000-km-away",
+      "content": "\"We must make sustained and responsible efforts to repeatedly demonstrate to our enemies the reliability and lethal power of our strategic offensive capabilities,\" North Korean leader Kim Jong Un, who personally observed the drill, said.\n\nAccording to the news agency, the launch took place in the ea",
+      "content_detail": "",
+      "published_date": "Sun, 04 Oct 2026 04:55:06 GMT",
+      "search_region": "台海/南海/朝鲜",
+      "classified_regions": [
+        "台海/南海/朝鲜"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Kim oversees 1,000-km hypersonic missile test as Pyongyang claims Seoul, Tokyo failed to track it | Videos",
+      "title_cn": "",
+      "url": "https://www.hindustantimes.com/videos/kim-oversees-1-000-km-hypersonic-missile-test-as-pyongyang-claims-seoul-tokyo-failed-to-track-it-101791124515162.html",
+      "content": "Share\n\nShare via\n\nCopy link\n\n## North Korean leader Kim Jong Un oversaw a reported intermediate-range missile test as Pyongyang showcased what it described as a hypersonic strategic weapons system. North Korea’s KCNA said the missile was launched on October 3 and struck a target about 1,000 kilometr",
+      "content_detail": "",
+      "published_date": "Sun, 04 Oct 2026 14:36:55 GMT",
+      "search_region": "台海/南海/朝鲜",
+      "classified_regions": [
+        "台海/南海/朝鲜"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Laos air base part of China's Indian Ocean ambitions: Expert - Focus Taiwan",
+      "title_cn": "",
+      "url": "https://focustaiwan.tw/politics/202610040007",
+      "content": "The People's Liberation Army (PLA) already operates a military facility in Djibouti in East Africa, as well as a naval facility at Ream in Cambodia.\n\nWith the base in Laos, the PLA is expected to extend its presence toward the South China Sea, the Indian Ocean and the Strait of Malacca, according to",
+      "content_detail": "",
+      "published_date": "Sun, 04 Oct 2026 08:44:00 GMT",
+      "search_region": "台海/南海/朝鲜",
+      "classified_regions": [
+        "台海/南海/朝鲜"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Trump says he gets along with Kim Jong-un, cites North Korea's '112 nuclear missiles'",
+      "title_cn": "",
+      "url": "https://www.koreajoongangdaily.com/korea/trump-defends-relationship-with-nuclear-powers-including-norths-kim/12903923",
+      "content": "north korea korea kim jong-un donald trump nuclear weapons\n\n### Read more\n\n \n\n  #### Alaska LNG dispute threatens to stall Korea-U.S. security talks\n\n  U.S. President Donald Trump stated that Korea will invest $54 billion in the Alaska liquefied natural gas (LNG) project, but the Asian country has d",
+      "content_detail": "",
+      "published_date": "Sun, 04 Oct 2026 03:48:03 GMT",
+      "search_region": "台海/南海/朝鲜",
+      "classified_regions": [
+        "台海/南海/朝鲜"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Shell companies, Kyrgyz firms, and cryptocurrencies: The Kremlin’s phantom network to evade sanctions | International | EL PAÍS English",
+      "title_cn": "",
+      "url": "https://english.elpais.com/international/2026-10-03/shell-companies-kyrgyz-firms-and-cryptocurrencies-the-kremlins-phantom-network-to-evade-sanctions.html?outputType=amp",
+      "content": "One of the EU’s first measures was to exclude several Russian banks from the SWIFT payment platform in order to hinder international payments. In the following months new sanctions targeted companies linked to Russia and, in December 2023, then-U.S. president Joe Biden signed an executive order thre",
+      "content_detail": "",
+      "published_date": "Sun, 04 Oct 2026 04:00:00 GMT",
+      "search_region": "全球制裁",
+      "classified_regions": [
+        "全球制裁"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "G7 agrees deal to ease global energy supply concerns | The Daily Star",
+      "title_cn": "",
+      "url": "https://www.thedailystar.net/business/news/g7-agrees-deal-ease-global-energy-supply-concerns-4289126",
+      "content": "## - 'Sanctions against Russia' -\n\nEarlier this week, IEA chief Fatih Birol said European nations had yet to release part of those stocks, which could happen soon.\n\nAbout a third was yet to come to market, Birol said, adding that further releases were possible since 80 percent of overall IEA stocks ",
+      "content_detail": "",
+      "published_date": "Sun, 04 Oct 2026 19:00:00 GMT",
+      "search_region": "全球制裁",
+      "classified_regions": [
+        "全球制裁"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Trump says Iran has 'virtually given up' nuclear weapon ambitions - TRT World",
+      "title_cn": "",
+      "url": "https://www.trtworld.com/article/c4bdb2be3479",
+      "content": "G7 plans to release 100M barrels of diesel, crude oil amid global energy supply concerns\n\nG7 plans to release 100M barrels of diesel, crude oil amid global energy supply concerns\n\nTürkiye condemns Houthi strike on infrastructure serving Prophet's Mosque\n\nTürkiye condemns Houthi strike on infrastruct",
+      "content_detail": "",
+      "published_date": "Sun, 04 Oct 2026 01:00:00 GMT",
+      "search_region": "全球制裁",
+      "classified_regions": [
+        "全球制裁"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "G7 agrees to coordinated 100 million barrel release to stabilise energy markets",
+      "title_cn": "",
+      "url": "https://gulfbusiness.com/en/2026/energy/g7-agrees-coordinated-100-million-barrel-release-to-stabilise-energy-markets",
+      "content": "The G7 also reaffirmed its commitment not to impose restrictions on energy and energy-product exports between member countries and called on other producers",
+      "content_detail": "",
+      "published_date": "Sun, 04 Oct 2026 15:00:00 GMT",
+      "search_region": "全球制裁",
+      "classified_regions": [
+        "全球制裁"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Russia owes China $169 billion as sanctions deepen Beijing’s financial leverage",
+      "title_cn": "",
+      "url": "https://english.nv.ua/amp/russia-owes-china-169-billion-as-sanctions-deepen-dependence-on-beijing-50646914.html",
+      "content": "Economies cut off from Western capital markets by sweeping sanctions account for nearly a third of Beijing's total debt portfolio, according to World Bank",
+      "content_detail": "",
+      "published_date": "Sun, 04 Oct 2026 08:00:00 GMT",
+      "search_region": "全球制裁",
+      "classified_regions": [
+        "全球制裁"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Japan adds Garantex to list of Russia sanctions over Ukraine war — TradingView News",
+      "title_cn": "",
+      "url": "https://www.tradingview.com/news/cointelegraph:4b26a5193094b:0-japan-adds-garantex-to-list-of-russia-sanctions-over-ukraine-war",
+      "content": "Cointelegraph\nCointelegraph\n\n# Japan adds Garantex to list of Russia sanctions over Ukraine war\n\nThe Japanese government has added Russian cryptocurrency exchange Garantex to its expanded list of sanctions against Russia, citing the continuing war in Ukraine.\n\nOfficials added 33 organizations and ni",
+      "content_detail": "",
+      "published_date": "Sun, 04 Oct 2026 12:42:00 GMT",
+      "search_region": "全球制裁",
+      "classified_regions": [
+        "全球制裁"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    },
+    {
+      "title": "Japan Sanctions Garantex: Russian Crypto Under Pressure",
+      "title_cn": "",
+      "url": "https://investx.fr/en/crypto-news/japan-sanctions-garantex-russian-crypto",
+      "content": "Japan has added Garantex to its official sanctions list, aligning with the US and EU to cut off Russia's crypto escape routes. Here's what it means.",
+      "content_detail": "",
+      "published_date": "Sun, 04 Oct 2026 21:00:00 GMT",
+      "search_region": "全球制裁",
+      "classified_regions": [
+        "全球制裁"
+      ],
+      "event_types": [
+        "避险需求"
+      ],
+      "severity": "medium",
+      "summary": "",
+      "affected_tickers": [
+        "GC=F",
+        "GLD",
+        "SI=F",
+        "^VIX",
+        "DX-Y.NYB",
+        "IAU",
+        "TLT",
+        "UVXY"
+      ]
+    }
+  ]
+}

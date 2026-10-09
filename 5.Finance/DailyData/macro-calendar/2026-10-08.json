@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-08",
+  "generated_at": "2026-10-08T06:02:27.295872",
+  "upcoming_events": [
+    {
+      "date": "2026-10-13",
+      "event": "美国 CPI (9月)",
+      "importance": "high",
+      "category": "通胀",
+      "days_until": 5
+    }
+  ],
+  "recent_events": [],
+  "web_events": []
+}

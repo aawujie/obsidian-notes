@@ -1,0 +1,79 @@
+{
+  "date": "2026-09-22",
+  "generated_at": "2026-09-22T06:07:21.776644",
+  "upcoming_events": [
+    {
+      "date": "2026-10-02",
+      "event": "非农就业报告 (9月)",
+      "importance": "high",
+      "category": "就业",
+      "days_until": 10
+    }
+  ],
+  "recent_events": [],
+  "web_events": [
+    {
+      "source": "tavily_answer",
+      "query": "US economic data release this week CPI GDP jobs",
+      "answer": "This week's US economic data releases include notable reports on jobless claims, new home sales, and regional Fed President speeches. On Thursday, September 24, the key economic report is the weekly jobless claims for the week ending September 19. Additionally, new home sales data for August will be released. The week also features speeches from various Fed officials, including New York Fed President John Williams and Chicago Fed President Austan Goolsbee. The economic data remains light, with n"
+    },
+    {
+      "source": "tavily_result",
+      "title": "What to Look Out for in Economic Data This Week (September 21-25) | Kiplinger",
+      "url": "https://www.kiplinger.com/investing/economy/this-weeks-economic-calendar",
+      "content": "10:05 am\n\nFed Governor Michael Barr speaks\n\nN/A\n\n### Thursday (9/24)\n\nNoteworthy economic reports\n\n|  |  |  |\n --- \n| Time released | Economic report | Period |\n| 4:10 am | New York Fed President John Williams speaks | N/A |\n| 8:30 am | Weekly jobless claims | Week ending September 19 |\n| 8:50 am | "
+    },
+    {
+      "source": "tavily_result",
+      "title": "The Week Ahead – Can Tech Lead the Market Higher? - TheStreet Pro",
+      "url": "https://pro.thestreet.com/market-commentary/the-week-ahead-can-tech-lead-the-market-higher",
+      "content": "Unlock unlimited Pro access — 50% off Today. Offer Ends soon\n\nAlready registered or a Pro member? Log in\n\nThe Week Ahead – Can Tech Lead the Market Higher?\n\nUS economic data is fairly light next week with just the September flash PMIs and UMich final consumer sentiment survey, August new home sales "
+    },
+    {
+      "source": "tavily_answer",
+      "query": "Federal Reserve speech this week monetary policy",
+      "answer": "Based on the most recent data, the Federal Reserve raised interest rates on September 16, 2026, and indicated further hikes in the near future. New Fed chief Kevin Warsh emphasized the need for tighter monetary policy to address inflation, countering the Trump administration's belief that inflation would resolve on its own. Warsh's truncated press conference highlighted the urgency to control inflation, which policymakers fear could worsen. The decision was unanimous, and market expectations ali"
+    },
+    {
+      "source": "tavily_result",
+      "title": "OMFIF Event: Monetary Policy in an Uncertain World",
+      "url": "https://www.chicagofed.org/publications/speeches/2026/sept-21-omfif",
+      "content": "Our HistoryFinancial StatementsOMWIEthics Policies & DisclosuresNewsroomFederal Reserve CalendarsContact Us\n\nLast Updated: 09/21/26\n\n# OMFIF Event: Monetary Policy in an Uncertain World\n\nOn September 21, Chicago Fed President and CEO Austan Goolsbee spoke in London at an Official Monetary and Financ"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Warsh's push to pare back Fed communications has real limits",
+      "url": "https://www.americanbanker.com/news/warshs-push-to-pare-back-fed-communications-has-real-limits",
+      "content": "|  |  |\n --- |\n|  |  twitter  youtube  facebook  linkedin  whatsapp |\n\n© 2026 Arizent. All rights reserved.\n\n \n\nMarket Intelligence:\n\nAI\n\nPayments\n\nResearch\n\nIndustry Data\n\n  \n\nMonetary policy\n\n# Warsh's push to pare back Fed communications has real limits\n\nBy  Kyle Campbell\n\n|  |  |\n --- |\n|  | Abo"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Monetary policy and the post-Covid surge in long-term interest rates",
+      "url": "https://cepr.org/voxeu/columns/anatomy-rise-monetary-policy-and-post-covid-surge-long-term-interest-rates",
+      "content": "Chair Powell answers reporters' questions at the FOMC press conference on December 18, 2024. \n\nFederal Reserve\n\nVoxEU Column  COVID-19   Monetary Policy\n\n# Anatomy of a rise: Monetary policy and the post-Covid surge in long-term interest rates\n\n Paul Beaudry\n Paolo Cavallino\n Tim Willems\n / [...] 1."
+    },
+    {
+      "source": "tavily_answer",
+      "query": "China PMI economic data this week",
+      "answer": "The Purchasing Managers' Index for China in August 2026 was released by the National Bureau of Statistics of China, showing an increase of 12.5% in the New Economic Growth Drivers Index. The S&P Global Composite PMI Flash for September 2026 was reported at 56, with the Manufacturing PMI Flash at 53.9 and the Services PMI Flash at 56.5."
+    },
+    {
+      "source": "tavily_result",
+      "title": "Week Ahead: Heavy Economic Data as U.S.-China Summit Looms",
+      "url": "https://schwabnetwork.com/articles/week-ahead-heavy-economic-data-as-us-china-summit-looms",
+      "content": "SHARE\n\nEconomic data will be the theme of this trading week, with reports including the S&P Global PMI Index, Chicago Fed National Activity index, Richmond Fed Manufacturing Index, New Home Sales, and Durable Goods.\n\nCostco (COST) is the headliner name reporting results during a relatively light ear"
+    },
+    {
+      "source": "tavily_result",
+      "title": "National Bureau of Statistics of China >> Latest Releases",
+      "url": "https://www.stats.gov.cn/english/PressRelease",
+      "content": "1.Industrial Production Operation in August 2026 2026-09-16\n 2.Investment in Fixed Assets from January to August 2026 2026-09-16\n 3.Investment in Real Estate Development from January to August 2026 2026-09-16\n 4.Total Retail Sales of Consumer Goods from January to August 2026 2026-09-16\n 5.Energy Pr"
+    },
+    {
+      "source": "tavily_result",
+      "title": "United States Calendar",
+      "url": "https://tradingeconomics.com/united-states/calendar",
+      "content": "| 01:45 PM | |  |  |  --- | |  | US | | S&P Global Composite PMI Flash SEP |  | 56 |  | 55.2 |  |  |  |\n| 01:45 PM | |  |  |  --- | |  | US | | S&P Global Manufacturing PMI Flash SEP |  | 53.9 | 53.5 | 53 |  |  |  |\n| 01:45 PM | |  |  |  --- | |  | US | | S&P Global Services PMI Flash SEP |  | 56.5 "
+    }
+  ]
+}

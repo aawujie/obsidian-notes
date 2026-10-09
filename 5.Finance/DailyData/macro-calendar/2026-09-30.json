@@ -1,0 +1,92 @@
+{
+  "date": "2026-09-30",
+  "generated_at": "2026-09-30T06:07:07.842379",
+  "upcoming_events": [
+    {
+      "date": "2026-10-02",
+      "event": "非农就业报告 (9月)",
+      "importance": "high",
+      "category": "就业",
+      "days_until": 2
+    },
+    {
+      "date": "2026-10-13",
+      "event": "美国 CPI (9月)",
+      "importance": "high",
+      "category": "通胀",
+      "days_until": 13
+    }
+  ],
+  "recent_events": [],
+  "web_events": [
+    {
+      "source": "tavily_answer",
+      "query": "US economic data release this week CPI GDP jobs",
+      "answer": "This week, U.S. economic data will be heavily focused on labor market indicators and inflation measures. Key reports include the September Employment Situation report on Friday, which will provide insights into nonfarm payrolls, and the August Personal Consumption Expenditures Price Index (PCE) data on Thursday, which includes the Federal Reserve's preferred inflation gauge. Additionally, the Bureau of Economic Analysis (BEA) will release its August PCE data, along with revisions to GDP and PCE."
+    },
+    {
+      "source": "tavily_result",
+      "title": "The Week Ahead: Can Non-Tech Stocks Join the Rally?",
+      "url": "https://pro.thestreet.com/market-commentary/the-week-ahead-can-non-tech-stocks-join-the-rally",
+      "content": "After a light week, U.S. economic data comes roaring back this week — one of the busiest of the quarter highlighted by the September Employment Situation report Friday. We’ll also get another key report Wednesday with the August personal income and spending report (our most complete look at incomes "
+    },
+    {
+      "source": "tavily_result",
+      "title": "What to Look Out for in Economic Data This Week (Sept. 28-Oct. 2) | Kiplinger",
+      "url": "https://www.kiplinger.com/investing/economy/this-weeks-economic-calendar",
+      "content": "There is no shortage of incoming data as the economic calendar turns to October this week. With interest rates on the rise, the Federal Reserve's preferred inflation gauge and the September jobs report are on tap.\n\nThe Bureau of Economic Analysis (BEA) will release Personal Consumption Expenditures "
+    },
+    {
+      "source": "tavily_result",
+      "title": "FX Daily: Data back in the driver’s seat this week | articles | ING THINK",
+      "url": "https://think.ing.com/articles/fx-daily-data-back-in-drivers-seat-this-week",
+      "content": "The August CPI report on 14 October will be the most important release, but Friday’s jobs figures have the potential to take October rate hike pricing above 20bp. We expect a consensus 90k for September payrolls, but see risks of downward revisions to August’s blowout 162k print. Overall, we expect "
+    },
+    {
+      "source": "tavily_answer",
+      "query": "Federal Reserve speech this week monetary policy",
+      "answer": "New York Federal Reserve President John Williams said there is no pressing need for the central bank to follow up its quarter-point increase in the main interest rate this month with another one at the scheduled Oct. 27-28 monetary policy meeting. However, Federal Reserve Gov. Michael Barr said further policy adjustments are likely to ensure inflation comes down to target in a timely fashion. The sources don't provide a definitive answer on the exact stance of the Federal Reserve for the upcomin"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Consumer confidence sags to 12-year low, eroded by inflation, job anxiety",
+      "url": "https://www.cfodive.com/news/consumer-confidence-sags-12-year-low-eroded-inflation-job-anxiety-fed-federal-reserve/831693",
+      "content": "### Dive Insight:\n\nNew York Federal Reserve President John Williams on Tuesday said he saw no pressing need for the central bank to follow up its quarter-point increase in the main interest rate this month with another one at a scheduled Oct. 27-28 monetary policy meeting.\n\n“With the policy action w"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Fed's Barr: 'Further policy adjustments are likely' | American Banker",
+      "url": "https://www.americanbanker.com/news/feds-barr-further-policy-adjustments-are-likely",
+      "content": "The Federal Open Market Committee raised interest rates for the first time in three years last week, and at least one member believes more hikes are coming.\n\nIn a speech on Wednesday morning, Federal Reserve Gov. Michael Barr called the change to the federal funds rate a \"needed\" recalibration of po"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Horizon over which FOMC can achieve dual mandate could be communicated: St. Louis Fed's Musalem — TradingView News",
+      "url": "https://www.tradingview.com/news/seekingalpha:a7a4d3b0a094b:0-horizon-over-which-fomc-can-achieve-dual-mandate-could-be-communicated-st-louis-fed-s-musalem",
+      "content": "The speech comes amid a lively debate in the U.S. about how and what the Fed should communicate about its monetary policy. Fed Chair Kevin Warsh has staunchly defended his view that the so-called \"forward guidance\", or signaling the likely direction of the FOMC's policy path, isn't useful.\n\n\"A centr"
+    },
+    {
+      "source": "tavily_answer",
+      "query": "China PMI economic data this week",
+      "answer": "China's PMI data for September is expected to show a rebound in manufacturing and services sectors. The Reuters poll predicts the official manufacturing PMI to rise to 50.1 from 49.8 in August, while the private RatingDog manufacturing PMI is likely to edge up to 51.6 from 51.5. The National Bureau of Statistics is set to release these indices on Wednesday. The sources also mention that the RatingDog PMI, which gauges business activity in China's services sector, is a leading indicator that can "
+    },
+    {
+      "source": "tavily_result",
+      "title": "Forex Economic Calendar Overview: Key Events for the Next Trading Week (28.09.2026–04.10.2026) | LiteFinance",
+      "url": "https://www.litefinance.org/blog/analysts-opinions/weekly-economic-calendar-for-28092026-04102026",
+      "content": "### 01:45 – CNY: RatingDog China Services and Manufacturing PMI\n\nThe RatingDog Purchasing Managers' Index (PMI), released by Caixin Insight Group and S&P Global, is a leading indicator gauging business activity in China's services sector. Since China is the world's second-largest economy, its macroe"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Asia week ahead: RBA decision, key data on China, Japan, Korea, Indonesia | articles | ING THINK",
+      "url": "https://think.ing.com/articles/asia-week-ahead-250926",
+      "content": "China releases September purchasing managers’ index data on Wednesday. We look for the National Bureau of Statistics to report a slight recovery in its official manufacturing and non-manufacturing PMIs to 50.1 and 49.2, respectively. The RatingDog PMI, which has generally outperformed lately because"
+    },
+    {
+      "source": "tavily_result",
+      "title": "China factories seen rebounding in September as Beijing signals more aid",
+      "url": "https://www.reuters.com/business/china-factories-seen-rebounding-september-beijing-signals-more-aid-2026-09-29",
+      "content": "The ​reading, which is based on company surveys, will be released by the National Bureau of Statistics on Wednesday.\n\nThe ​private RatingDog manufacturing PMI, compiled by S&P Global, is also due on Wednesday and is ⁠likely to edge up to 51.6 from 51.5 in August, according to the Reuters poll.\n\nThe "
+    }
+  ]
+}

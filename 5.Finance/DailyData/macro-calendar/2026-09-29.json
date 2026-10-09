@@ -1,0 +1,92 @@
+{
+  "date": "2026-09-29",
+  "generated_at": "2026-09-29T06:07:33.135125",
+  "upcoming_events": [
+    {
+      "date": "2026-10-02",
+      "event": "非农就业报告 (9月)",
+      "importance": "high",
+      "category": "就业",
+      "days_until": 3
+    },
+    {
+      "date": "2026-10-13",
+      "event": "美国 CPI (9月)",
+      "importance": "high",
+      "category": "通胀",
+      "days_until": 14
+    }
+  ],
+  "recent_events": [],
+  "web_events": [
+    {
+      "source": "tavily_answer",
+      "query": "US economic data release this week CPI GDP jobs",
+      "answer": "This week, U.S. economic data releases will be significant, with key reports including the September Employment Situation report on Friday, the August personal income and spending report, and the third estimate of Q2 GDP on Wednesday. The Federal Reserve's preferred inflation gauge, the PCE, will also be released on Thursday. Additionally, the ADP National Employment Report and weekly jobless claims are scheduled for release on Wednesday and Thursday, respectively. The sources indicate a busy we"
+    },
+    {
+      "source": "tavily_result",
+      "title": "The Week Ahead: Can Non-Tech Stocks Join the Rally?",
+      "url": "https://realmoney.thestreet.com/market-commentary/the-week-ahead-can-non-tech-stocks-join-the-rally",
+      "content": "After a light week, U.S. economic data comes roaring back this week — one of the busiest of the quarter highlighted by the September Employment Situation report Friday. We’ll also get another key report Wednesday with the August personal income and spending report (our most complete look at incomes "
+    },
+    {
+      "source": "tavily_result",
+      "title": "What to Look Out for in Economic Data This Week (Sept. 28-Oct. 2) | Kiplinger",
+      "url": "https://www.kiplinger.com/investing/economy/this-weeks-economic-calendar",
+      "content": "There is no shortage of incoming data as the economic calendar turns to October this week. With interest rates on the rise, the Federal Reserve's preferred inflation gauge and the September jobs report are on tap.\n\nThe Bureau of Economic Analysis (BEA) will release Personal Consumption Expenditures "
+    },
+    {
+      "source": "tavily_result",
+      "title": "FX Daily: Data back in the driver’s seat this week | articles | ING THINK",
+      "url": "https://think.ing.com/articles/fx-daily-data-back-in-drivers-seat-this-week",
+      "content": "The August CPI report on 14 October will be the most important release, but Friday’s jobs figures have the potential to take October rate hike pricing above 20bp. We expect a consensus 90k for September payrolls, but see risks of downward revisions to August’s blowout 162k print. Overall, we expect "
+    },
+    {
+      "source": "tavily_answer",
+      "query": "Federal Reserve speech this week monetary policy",
+      "answer": "The sources do not provide a definitive answer regarding Federal Reserve speech this week on monetary policy. While some sources discuss the Federal Reserve's actions and outlook, none specifically mention an upcoming speech. The sources mention the Federal Reserve Bank of Cleveland President Beth Hammack's comments on bond yields and inflation, Richmond Fed chief's remarks on inflation, and the general context of the Federal Reserve's tightening monetary policy and interest rate hikes. However,"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Fed's Hammack says bond yield surge not about lost inflation confidence - Kitco",
+      "url": "https://www.kitco.com/news/off-the-wire/2026-09-25/feds-hammack-says-bond-yield-surge-not-about-lost-inflation-confidence",
+      "content": "Sept 25 (Reuters) - Federal Reserve Bank of Cleveland President Beth ​Hammack said on Friday ‌that surging bond yields are not being pushed up ​by inflation fears. When ​it comes to the jump ⁠in government bond ​yields, “it’s real rates that have ​moved up more than the inflation expectations,” Hamm"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Richmond Fed chief says it's time to push back on inflation - InsuranceNewsNet",
+      "url": "https://insurancenewsnet.com/oarticle/richmond-fed-chief-says-its-time-to-push-back-on-inflation",
+      "content": "Three months later, \"it didn't seem to have lasted,\" said Barkin, president of the Federal Reserve Bank of Richmond and a member of the Federal Reserve Board committee that adjusts interest rates to either stimulate the United States economy or slow down inflation. \"You have to ask yourself, how muc"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Gold is throwing out the old rulebook - Kitco",
+      "url": "https://www.kitco.com/news/article/2026-09-25/gold-throwing-out-old-rulebook",
+      "content": "### gold. Kitco NEWS has a diverse team of journalists reporting on the economy, stock markets, commodities, cryptocurrencies, mining and metals with accuracy and objectivity. (Kitco News) - By almost every traditional correlation, gold should be substantially lower than it is today – and the fact t"
+    },
+    {
+      "source": "tavily_answer",
+      "query": "China PMI economic data this week",
+      "answer": "China's PMI data for September is expected to show a slight recovery, with the National Bureau of Statistics reporting manufacturing and non-manufacturing PMIs at 50.1 and 49.2, respectively. The RatingDog PMI, which has generally outperformed lately, is also due the same day. Additionally, China releases August industrial profits on Monday and September PMI gauges on Wednesday. The sources do not provide a definitive answer for the exact values of the PMIs."
+    },
+    {
+      "source": "tavily_result",
+      "title": "Forex Economic Calendar Overview: Key Events for the Next Trading Week (28.09.2026–04.10.2026) | LiteFinance",
+      "url": "https://www.litefinance.org/blog/analysts-opinions/weekly-economic-calendar-for-28092026-04102026",
+      "content": "### 01:45 – CNY: RatingDog China Services and Manufacturing PMI\n\nThe RatingDog Purchasing Managers' Index (PMI), released by Caixin Insight Group and S&P Global, is a leading indicator gauging business activity in China's services sector. Since China is the world's second-largest economy, its macroe"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Asia week ahead: RBA decision, key data on China, Japan, Korea, Indonesia | articles | ING THINK",
+      "url": "https://think.ing.com/articles/asia-week-ahead-250926",
+      "content": "China releases September purchasing managers’ index data on Wednesday. We look for the National Bureau of Statistics to report a slight recovery in its official manufacturing and non-manufacturing PMIs to 50.1 and 49.2, respectively. The RatingDog PMI, which has generally outperformed lately because"
+    },
+    {
+      "source": "tavily_result",
+      "title": "ECONOMIC WEEK AHEAD: September 28 - October 2",
+      "url": "https://www.yardeniquicktakes.com/economic-week-ahead-september-28-october-2",
+      "content": "(4) M-PMI. ISM's M-PMI (Thu) was 54.6 in August, with the NM-PMI at 55.4 (chart). S&P Global's flash M-PMI for September jumped to 57.0 from 53.9, suggesting another strong ISM reading. The flash composite rose to 58.4, the strongest since July 2021. Input costs across goods and services rose at the"
+    }
+  ]
+}

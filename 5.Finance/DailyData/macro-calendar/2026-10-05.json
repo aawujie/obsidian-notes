@@ -1,0 +1,93 @@
+{
+  "date": "2026-10-05",
+  "generated_at": "2026-10-05T06:07:08.137949",
+  "upcoming_events": [
+    {
+      "date": "2026-10-13",
+      "event": "美国 CPI (9月)",
+      "importance": "high",
+      "category": "通胀",
+      "days_until": 8
+    }
+  ],
+  "recent_events": [
+    {
+      "date": "2026-10-02",
+      "event": "非农就业报告 (9月)",
+      "importance": "high",
+      "category": "就业",
+      "days_ago": 3
+    }
+  ],
+  "web_events": [
+    {
+      "source": "tavily_answer",
+      "query": "US economic data release this week CPI GDP jobs",
+      "answer": "This week's economic data releases include the University of Michigan Consumer Sentiment Index (preliminary) on Thursday, October 8, and the S&P Global US Services Purchasing Managers Index (PMI) and the Institute for Supply Management (ISM) Services PMI on the same day. The sources also mention the importance of the August CPI report on October 14 and the potential impact of Friday's jobs figures on October rate hike pricing. The sources don't provide a definitive answer on specific CPI, GDP, o"
+    },
+    {
+      "source": "tavily_result",
+      "title": "FX Daily: Data back in the driver’s seat this week | articles | ING THINK",
+      "url": "https://think.ing.com/articles/fx-daily-data-back-in-drivers-seat-this-week",
+      "content": "The August CPI report on 14 October will be the most important release, but Friday’s jobs figures have the potential to take October rate hike pricing above 20bp. We expect a consensus 90k for September payrolls, but see risks of downward revisions to August’s blowout 162k print. Overall, we expect "
+    },
+    {
+      "source": "tavily_result",
+      "title": "What to Look Out for in Economic Data This Week (October 5-9) | Kiplinger",
+      "url": "https://www.kiplinger.com/investing/economy/this-weeks-economic-calendar",
+      "content": "### Thursday (10/8)\n\nNoteworthy economic reports\n\n|  |  |  |\n --- \n| Time released | Economic report | Period |\n| 8:30 am | Weekly jobless claims | Week ending October 3 |\n| 10 am | University of Michigan Consumer Sentiment Index (preliminary) | October |\n\nTime released\n\nEconomic report\n\nPeriod\n\n8:3"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Weekly Global Economic Update | Deloitte Insights",
+      "url": "https://www.deloitte.com/us/en/insights/topics/economy/global-economic-outlook/weekly-update.html",
+      "content": "The US government releases a monthly report on the jobs market that includes the results of two surveys—a survey of establishments and a survey of households. The establishment survey found that, in August, 162,000 new jobs were created. This was the highest number of jobs created since March, and w"
+    },
+    {
+      "source": "tavily_answer",
+      "query": "Federal Reserve speech this week monetary policy",
+      "answer": "The sources indicate that Vice Chair Jefferson gave a speech on October 1, 2026, discussing the U.S. economy and monetary policy, noting the economy's challenges and opportunities, including the impact of artificial intelligence and geopolitical dynamics. There is no mention of any Federal Reserve speech this week beyond Jefferson's. The sources don't provide a definitive answer to any specific question about this week's monetary policy."
+    },
+    {
+      "source": "tavily_result",
+      "title": "Speech by Governor Barr on economic conditions and monetary policy - Federal Reserve Board",
+      "url": "https://www.federalreserve.gov/newsevents/speech/barr20260929a.htm",
+      "content": "Thank you for the opportunity to speak to you today.1 It's wonderful to be back in Michigan and in this great city. For more than a century, Detroit has been at the center of the U.S. economy, driving America's growth and prosperity, while also reflecting the profound forces that have transformed ou"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Speech by Vice Chair Jefferson on the U.S. economy and monetary policy - Federal Reserve Board",
+      "url": "https://www.federalreserve.gov/newsevents/speech/jefferson20261001a.htm",
+      "content": "Today I will discuss in more detail how I see the economy unfolding, including for both sides of our dual mandate of maximum employment and price stability. Then, I will discuss the FOMC's policy decision last month and offer a few thoughts on how I will assess the appropriate future path of monetar"
+    },
+    {
+      "source": "tavily_result",
+      "title": "The U.S. Economy and Monetary Policy: A speech at the Darden School of Business, University of Virginia, Charlottesville, Virginia., October 1, 2026 | Fed in Print",
+      "url": "https://fedinprint.org/item/fedgsq/103865",
+      "content": "File(s):  File format is application/pdf    \nDescription: Full Text\n\n## Authors\n\nJefferson, Philip N.\n\n## Bibliographic Information\n\nProvider:  Board of Governors of the Federal Reserve System (U.S.)\n\nPart of Series:  Speech\n\nPublication Date:  2026-10-01\n\n Board of Governors Publications\n Atlanta P"
+    },
+    {
+      "source": "tavily_answer",
+      "query": "China PMI economic data this week",
+      "answer": "China's official manufacturing PMI rose to 50.1 in September, indicating expansion after two months of contraction, while the non-manufacturing PMI also improved to 50.2. The private RatingDog PMI showed a stronger rise to 52.1, suggesting robust growth in manufacturing. The official PMI data aligns with expectations, signaling a modest uptick in economic activity. The divergence in China's economy remains clear, with manufacturing driven by external demand while domestic consumption and investm"
+    },
+    {
+      "source": "tavily_result",
+      "title": "China PMIs return to expansion territory, signalling modest growth uptick | snaps | ING THINK",
+      "url": "https://think.ing.com/snaps/china-pmis-bounce-back-into-expansion-territory-in-september",
+      "content": "The RatingDog manufacturing PMI, which uses a more export-oriented sample, unsurprisingly looked a fair bit stronger than the official PMI, up to 52.1 from 51.5.\n\nOverall, manufacturing has been a relative strength this year, though it has mostly been driven by external demand as domestic consumptio"
+    },
+    {
+      "source": "tavily_result",
+      "title": "China factories seen rebounding in September as Beijing signals more aid",
+      "url": "https://www.reuters.com/business/china-factories-seen-rebounding-september-beijing-signals-more-aid-2026-09-29",
+      "content": "The ​reading, which is based on company surveys, will be released by the National Bureau of Statistics on Wednesday.\n\nThe ​private RatingDog manufacturing PMI, compiled by S&P Global, is also due on Wednesday and is ⁠likely to edge up to 51.6 from 51.5 in August, according to the Reuters poll.\n\nThe "
+    },
+    {
+      "source": "tavily_result",
+      "title": "Australian Dollar struggles to gain traction despite solid Chinese PMI Data",
+      "url": "https://www.fxstreet.com/news/australian-dollar-struggles-to-gain-traction-despite-solid-chinese-pmi-data-202609300201",
+      "content": "The private-sector economic readings reflected similar momentum across Chinese industries. The RatingDog Manufacturing PMI climbed to 52.1 in September, outperforming both the previous 51.5 reading and the 51.6 consensus estimate. Additionally, China's Services PMI edged up to 51.6, beating both the"
+    }
+  ]
+}

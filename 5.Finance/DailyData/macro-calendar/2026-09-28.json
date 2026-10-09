@@ -1,0 +1,62 @@
+{
+  "date": "2026-09-28",
+  "generated_at": "2026-09-28T06:07:35.629791",
+  "upcoming_events": [
+    {
+      "date": "2026-10-02",
+      "event": "非农就业报告 (9月)",
+      "importance": "high",
+      "category": "就业",
+      "days_until": 4
+    }
+  ],
+  "recent_events": [],
+  "web_events": [
+    {
+      "source": "tavily_answer",
+      "query": "US economic data release this week CPI GDP jobs",
+      "answer": "This week's key U.S. economic data releases include the ADP National Employment Report at 8:15 am, the Personal Consumption Expenditures Price Index (PCE) and GDP for the second quarter at 8:30 am, and the September jobs report on Friday. The PCE data for August will also be released, providing insight into the Federal Reserve's preferred inflation gauge. Additionally, weekly jobless claims for the week ending September 26 will be released at 8:30 am, followed by the S&P Global US Manufacturing "
+    },
+    {
+      "source": "tavily_result",
+      "title": "What to Look Out for in Economic Data This Week (Sept. 28 ...",
+      "url": "https://www.kiplinger.com/investing/economy/this-weeks-economic-calendar",
+      "content": "There is no shortage of incoming data as the economic calendar turns to October this week. With interest rates on the rise, the Federal Reserve's preferred inflation gauge and the September jobs report are on tap.\n\nThe Bureau of Economic Analysis (BEA) will release Personal Consumption Expenditures "
+    },
+    {
+      "source": "tavily_result",
+      "title": "Week Ahead for FX, Bonds: U.S. Jobs Data in Focus as ...",
+      "url": "https://www.wsj.com/economy/week-ahead-for-fx-bonds-u-s-jobs-data-in-focus-as-another-fed-rate-hike-looks-possible-8593c44f",
+      "content": "U.S. jobs data for September will be the key highlight in the coming week as investors seek to gauge the likelihood of the Federal Reserve raising interest rates in October, which would mark a second consecutive increase.\n\nIn Europe, eurozone inflation data will attract attention. In Asia, China’s P"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Weekly market commentary | BlackRock Investment Institute",
+      "url": "https://www.blackrock.com/us/individual/insights/blackrock-investment-institute/weekly-commentary",
+      "content": "China total social financing\n\nU.S. CPI\n\nU.S. PPI; UK preliminary GDP\n\nUK total trade balance, flash employment & flash GDP\n\nRead our past weekly market commentaries here.\n\n## Intersecting mega forces [...] The S&P 500 and Nasdaq notched their biggest weekly gains in three months on hopes of a Middle"
+    },
+    {
+      "source": "tavily_answer",
+      "query": "Federal Reserve speech this week monetary policy",
+      "answer": "Based on the most recent data, Chicago Fed President Austan Goolsbee emphasized that strong demand may be contributing to U.S. inflation, indicating that higher interest rates may be necessary if this trend continues. Goolsbee did not comment on the outcome of the last Federal Reserve meeting or his specific monetary policy outlook. The Federal Reserve raised its policy rate by a quarter percentage point last week, with officials expecting at least one more increase this year to achieve the 2% i"
+    },
+    {
+      "source": "tavily_result",
+      "title": "OMFIF Event: Monetary Policy in an Uncertain World",
+      "url": "https://www.chicagofed.org/publications/speeches/2026/sept-21-omfif",
+      "content": "Our HistoryFinancial StatementsOMWIEthics Policies & DisclosuresNewsroomFederal Reserve CalendarsContact Us\n\nLast Updated: 09/21/26\n\n# OMFIF Event: Monetary Policy in an Uncertain World\n\nOn September 21, Chicago Fed President and CEO Austan Goolsbee spoke in London at an Official Monetary and Financ"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Fed's Goolsbee says strong demand may be adding to US ...",
+      "url": "https://www.reuters.com/business/feds-goolsbee-strong-demand-may-be-adding-us-inflation-no-ambiguity-how-fed-2026-09-21",
+      "content": "The Fed raised its policy rate a quarter of a percentage point last week, and in remarks at a press conference Fed Chairman Kevin ⁠Warsh ​emphasized the strength of domestic spending, business investment, and other aspects ​of the demand side of the economy.\n\nGoolsbee is not a voter on interest rate"
+    },
+    {
+      "source": "tavily_result",
+      "title": "What to Look Out for in Economic Data This Week (Sept. 28 ...",
+      "url": "https://www.kiplinger.com/investing/economy/this-weeks-economic-calendar",
+      "content": "September\n\n8:30 am\n\nPersonal Consumption Expenditures Price Index (PCE)\n\nAugust\n\n8:30 am\n\nCore PCE\n\nAugust\n\n8:30 am\n\nGDP\n\n2Q\n\n9:45 am\n\nChicago Business Barometer\n\nSeptember\n\n4 pm\n\nChicago Fed President Austan Goolsbee speaks\n\nN/A\n\n## All about price stability\n\nFed Chair Kevin Warsh has added a 25-ba"
+    }
+  ]
+}

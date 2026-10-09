@@ -1,0 +1,92 @@
+{
+  "date": "2026-10-02",
+  "generated_at": "2026-10-02T06:07:10.088102",
+  "upcoming_events": [
+    {
+      "date": "2026-10-02",
+      "event": "非农就业报告 (9月)",
+      "importance": "high",
+      "category": "就业",
+      "days_until": 0
+    },
+    {
+      "date": "2026-10-13",
+      "event": "美国 CPI (9月)",
+      "importance": "high",
+      "category": "通胀",
+      "days_until": 11
+    }
+  ],
+  "recent_events": [],
+  "web_events": [
+    {
+      "source": "tavily_answer",
+      "query": "US economic data release this week CPI GDP jobs",
+      "answer": "This week, key U.S. economic data releases include the September Employment Situation report on Friday, which will highlight nonfarm payrolls, and the August personal income and spending report on Wednesday, which includes the Fed’s preferred inflation gauge, PCE prices. Additionally, the third estimate of Q2 GDP and annual revisions to GDP and PCE will be released on Wednesday. The August CPI report on October 14 is also anticipated, along with the JOLTS report providing insights into the labor"
+    },
+    {
+      "source": "tavily_result",
+      "title": "The Week Ahead: Can Non-Tech Stocks Join the Rally?",
+      "url": "https://pro.thestreet.com/market-commentary/the-week-ahead-can-non-tech-stocks-join-the-rally",
+      "content": "After a light week, U.S. economic data comes roaring back this week — one of the busiest of the quarter highlighted by the September Employment Situation report Friday. We’ll also get another key report Wednesday with the August personal income and spending report (our most complete look at incomes "
+    },
+    {
+      "source": "tavily_result",
+      "title": "FX Daily: Data back in the driver’s seat this week | articles | ING THINK",
+      "url": "https://think.ing.com/articles/fx-daily-data-back-in-drivers-seat-this-week",
+      "content": "The August CPI report on 14 October will be the most important release, but Friday’s jobs figures have the potential to take October rate hike pricing above 20bp. We expect a consensus 90k for September payrolls, but see risks of downward revisions to August’s blowout 162k print. Overall, we expect "
+    },
+    {
+      "source": "tavily_result",
+      "title": "The 3 U.S. Economic Reports Investors Should Focus On Now<!-- --> - Barron's",
+      "url": "https://www.barrons.com/advisor/articles/best-economic-reports-investors-18cd1880",
+      "content": "housing starts, retail sales or weekly jobless claims. Complicating the situation, some economic data is final upon release while other data can get revised multiple times."
+    },
+    {
+      "source": "tavily_answer",
+      "query": "Federal Reserve speech this week monetary policy",
+      "answer": "New York Fed President John Williams will speak on the economic outlook and monetary policy on September 29, 2026, at 2:00 pm EDT (18:00 UTC) at the University at Buffalo. In his remarks, Williams stated that with the policy action taken in September, there is no urgency for another rate hike, and the Fed has time to gather more information. He emphasized the importance of returning inflation to the 2% target on a sustained basis. Meanwhile, Fed governor Lisa Cook warned that AI's inflationary p"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Fed Williams Speech September 29 2026: Yields and Odds",
+      "url": "https://admiralmarkets.com/analytics/traders-blog/fed-williams-speech-september-29-2026",
+      "content": "Sep 29, 2026\n\nThe Fed Williams speech today starts at 18:00 UTC at the University at Buffalo. New York Fed President John Williams will speak on the economic outlook and monetary policy. A moderated Williams Q&A follows, and reporters will get a media session afterwards. [...] | Question | Answer |\n"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Consumer confidence sags to 12-year low, eroded by inflation, job anxiety",
+      "url": "https://www.cfodive.com/news/consumer-confidence-sags-12-year-low-eroded-inflation-job-anxiety-fed-federal-reserve/831693",
+      "content": "### Dive Insight:\n\nNew York Federal Reserve President John Williams on Tuesday said he saw no pressing need for the central bank to follow up its quarter-point increase in the main interest rate this month with another one at a scheduled Oct. 27-28 monetary policy meeting.\n\n“With the policy action w"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Fed's Williams sees no urgency for next Fed rate hike",
+      "url": "https://www.reuters.com/business/feds-williams-sees-no-urgency-next-fed-rate-hike-2026-09-29",
+      "content": "In his remarks, Williams said with the economy growing robustly and the job market holding in, price pressures can now be the main ‌focus ⁠for monetary policy.\n\n“It is imperative that we return inflation to our 2% target on a sustained basis,” Williams said. “To do so, we must make certain that adve"
+    },
+    {
+      "source": "tavily_answer",
+      "query": "China PMI economic data this week",
+      "answer": "China's factory activity expanded in September, official and private surveys showed, as easing weather disruptions allowed factories to resume operations and a global AI boom supported the industrial sector. The official manufacturing purchasing managers' index (PMI) rose to 50.1 from 49.8 in August, ending two straight months of contraction, according to the National Bureau of Statistics. The private survey by RatingDog showed manufacturing PMI rose to a five-month high of 52.1 in September fro"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Chinese factory activity returns to growth in September amid AI boom - reuters.com",
+      "url": "https://www.reuters.com/world/china/chinese-factory-activity-returns-growth-september-amid-ai-boom-2026-09-30/",
+      "content": "BEIJING, Sept 30 (Reuters) - China's factory activity expanded in September, official and private surveys showed on Wednesday, as easing weather disruptions allowed ‌factories to resume operations and a global AI boom supported the industrial sector. The official manufacturing purchasing managers' i"
+    },
+    {
+      "source": "tavily_result",
+      "title": "Factory activity returns to expansion in a positive sign for China’s economy - AP News",
+      "url": "https://apnews.com/article/china-manufacturing-economy-pmi-exports-b53c7e697fc842de4c9a57ac5362cd05",
+      "content": "# Factory activity returns to expansion in a positive sign for China’s economy. The official manufacturing purchasing managers’ index, or PMI, climbed to 50.1 from 49.8 in August, China’s National Bureau of Statistics said Wednesday. PMI is measured on a scale of between 0 and 100 and a reading abov"
+    },
+    {
+      "source": "tavily_result",
+      "title": "China services growth hits three-month high, private PMI shows - reuters.com",
+      "url": "https://www.reuters.com/business/finance/china-services-growth-hits-three-month-high-private-pmi-shows-2026-09-30/",
+      "content": "BEIJING, Sept 30 (Reuters) - China's services activity expanded at its fastest pace in three months in ​September, as stronger new orders, including from ​overseas, lifted output, a private-sector survey showed on ⁠Wednesday. The RatingDog China General Services PMI rose to 51.6 ​in September from 5"
+    }
+  ]
+}
