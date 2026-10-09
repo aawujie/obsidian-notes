@@ -13,7 +13,7 @@ tags:
   - 财富自由
   - 播客笔记
 share_link: https://share.note.sx/yy5877w1#zJ1q/X3p/j656PYaDjZsq3123bRPKylmEJTYRKGzxCc
-share_updated: 2026-10-09T16:05:59+08:00
+share_updated: 2026-10-09T16:18:34+08:00
 ---
 
 # 孙宇晨×Alan 播客访谈笔记
